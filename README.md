@@ -93,6 +93,16 @@ pnpm dev:mobile   # 仅移动端（Expo Dev Tools）
 移动端额外步骤：在 `apps/mobile` 下需要把 `apiUrl` 配到 `app.json` 的
 `expo.extra.apiUrl` 或手机能访问的 API 地址（如 `http://192.168.x.x:4000`）。
 
+## 后台起停本地服务
+
+```bash
+pnpm services:start   # 后台启动 Docker 基础设施 + API + Web + Admin
+pnpm services:stop    # 停止后台服务，并关闭 Docker compose
+```
+
+日志与 pid 会写入 `.studyzone-dev/`。如果只想保留 Docker 基础设施，可用
+`pnpm services:stop -- --keep-docker`。
+
 ---
 
 ## 数据库工作流

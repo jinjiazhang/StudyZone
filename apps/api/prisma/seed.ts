@@ -170,6 +170,9 @@ async function buildEnglishCourse(courseId: string) {
       source: '谢谢',
       sourceLocale: 'zh-CN',
     }, { accepted: ['thank you', 'thanks'], tolerance: 1 }),
+    ex('listen_input', {
+      audioUrl: 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/hello--_gb_1.mp3',
+    }, { accepted: ['hello'], tolerance: 1 }),
     ex('word_bank', {
       source: '早上好',
       tokens: ['Good', 'morning', 'evening', 'night'],
@@ -210,6 +213,9 @@ async function buildEnglishCourse(courseId: string) {
       source: '晚安',
       tokens: ['Good', 'night', 'morning'],
     }, { ordered: ['Good', 'night'] }),
+    ex('listen_input', {
+      audioUrl: 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/welcome--_gb_1.mp3',
+    }, { accepted: ['welcome'], tolerance: 1 }),
     ex('translate_choice', {
       source: '你好吗',
       sourceLocale: 'zh-CN',
@@ -240,6 +246,15 @@ async function buildEnglishCourse(courseId: string) {
       source: '她',
       sourceLocale: 'zh-CN',
     }, { accepted: ['she'], tolerance: 0 }),
+    ex('image_choice', {
+      word: 'I',
+      options: [
+        { id: 'me', label: 'I', imageUrl: 'https://placehold.co/480x360/E6F4EC/1F2937.png?text=I' },
+        { id: 'you', label: 'You', imageUrl: 'https://placehold.co/480x360/EEF2FF/1F2937.png?text=You' },
+        { id: 'he', label: 'He', imageUrl: 'https://placehold.co/480x360/FEE2E2/1F2937.png?text=He' },
+        { id: 'they', label: 'They', imageUrl: 'https://placehold.co/480x360/FEF3C7/1F2937.png?text=They' },
+      ],
+    }, { correctOptionId: 'me' }),
     ex('word_bank', {
       source: '我们是学生',
       tokens: ['We', 'are', 'students', 'is', 'student'],
@@ -275,6 +290,16 @@ async function buildEnglishCourse(courseId: string) {
       source: '牛奶',
       sourceLocale: 'zh-CN',
     }, { accepted: ['milk'], tolerance: 0 }),
+    ex('image_choice', {
+      word: 'apple',
+      audioUrl: 'https://ssl.gstatic.com/dictionary/static/sounds/oxford/apple--_gb_1.mp3',
+      options: [
+        { id: 'apple', label: 'Apple', imageUrl: 'https://placehold.co/480x360/FEE2E2/991B1B.png?text=Apple' },
+        { id: 'bread', label: 'Bread', imageUrl: 'https://placehold.co/480x360/FEF3C7/92400E.png?text=Bread' },
+        { id: 'water', label: 'Water', imageUrl: 'https://placehold.co/480x360/DBEAFE/1D4ED8.png?text=Water' },
+        { id: 'milk', label: 'Milk', imageUrl: 'https://placehold.co/480x360/F8FAFC/334155.png?text=Milk' },
+      ],
+    }, { correctOptionId: 'apple' }),
     ex('match_pairs', {
       left: [
         { id: 'l1', text: '苹果' },
@@ -312,6 +337,15 @@ async function buildEnglishCourse(courseId: string) {
       source: '黄色',
       sourceLocale: 'zh-CN',
     }, { accepted: ['yellow'], tolerance: 1 }),
+    ex('image_choice', {
+      word: 'blue',
+      options: [
+        { id: 'red', label: 'Red', imageUrl: 'https://placehold.co/480x360/FEE2E2/DC2626.png?text=Red' },
+        { id: 'blue', label: 'Blue', imageUrl: 'https://placehold.co/480x360/DBEAFE/2563EB.png?text=Blue' },
+        { id: 'green', label: 'Green', imageUrl: 'https://placehold.co/480x360/DCFCE7/16A34A.png?text=Green' },
+        { id: 'yellow', label: 'Yellow', imageUrl: 'https://placehold.co/480x360/FEF9C3/CA8A04.png?text=Yellow' },
+      ],
+    }, { correctOptionId: 'blue' }),
     ex('word_bank', {
       source: '苹果是红色的',
       tokens: ['The', 'apple', 'is', 'red', 'blue'],
@@ -335,6 +369,18 @@ async function buildMathCourse(courseId: string) {
   await buildLesson(skill1a.id, 1, 0, [
     ex('numeric_input', { statement: '3 + 4 = ?' }, { value: 7 }),
     ex('numeric_input', { statement: '5 + 2 = ?' }, { value: 7 }),
+    ex('match_pairs', {
+      left: [
+        { id: 'l1', text: '3 + 4' },
+        { id: 'l2', text: '4 + 4' },
+        { id: 'l3', text: '6 + 3' },
+      ],
+      right: [
+        { id: 'r1', text: '9' },
+        { id: 'r2', text: '7' },
+        { id: 'r3', text: '8' },
+      ],
+    }, { pairs: { l1: 'r2', l2: 'r3', l3: 'r1' } }),
     ex('numeric_input', { statement: '6 + 3 = ?' }, { value: 9 }),
     ex('single_choice', {
       question: '8 + 1 = ?',
@@ -355,6 +401,15 @@ async function buildMathCourse(courseId: string) {
       question: '10 - 4 = ?',
       options: ['4', '5', '6', '7'],
     }, { correctIndex: 2 }),
+    ex('image_choice', {
+      word: 'Which picture shows 6?',
+      options: [
+        { id: 'four', label: '4', imageUrl: 'https://placehold.co/480x360/EEF2FF/3730A3.png?text=4' },
+        { id: 'five', label: '5', imageUrl: 'https://placehold.co/480x360/E0F2FE/0369A1.png?text=5' },
+        { id: 'six', label: '6', imageUrl: 'https://placehold.co/480x360/DCFCE7/15803D.png?text=6' },
+        { id: 'seven', label: '7', imageUrl: 'https://placehold.co/480x360/FEF3C7/B45309.png?text=7' },
+      ],
+    }, { correctOptionId: 'six' }),
     ex('numeric_input', { statement: '6 - 1 = ?' }, { value: 5 }),
     ex('single_choice', {
       question: '5 - 5 = ?',
@@ -374,6 +429,10 @@ async function buildMathCourse(courseId: string) {
       question: '2 × 7 = ?',
       options: ['12', '13', '14', '15'],
     }, { correctIndex: 2 }),
+    ex('word_bank', {
+      source: '2 × 8 等于 16',
+      tokens: ['2', '×', '8', '=', '16', '14'],
+    }, { ordered: ['2', '×', '8', '=', '16'] }),
     ex('numeric_input', { statement: '2 × 9 = ?' }, { value: 18 }),
     ex('single_choice', {
       question: '2 × 8 = ?',
@@ -389,6 +448,18 @@ async function buildMathCourse(courseId: string) {
       question: '5 × 5 = ?',
       options: ['20', '25', '30', '35'],
     }, { correctIndex: 1 }),
+    ex('match_pairs', {
+      left: [
+        { id: 'l1', text: '5 × 2' },
+        { id: 'l2', text: '5 × 4' },
+        { id: 'l3', text: '5 × 6' },
+      ],
+      right: [
+        { id: 'r1', text: '20' },
+        { id: 'r2', text: '30' },
+        { id: 'r3', text: '10' },
+      ],
+    }, { pairs: { l1: 'r3', l2: 'r1', l3: 'r2' } }),
     ex('numeric_input', { statement: '5 × 9 = ?' }, { value: 45 }),
     ex('single_choice', {
       question: '5 × 7 = ?',

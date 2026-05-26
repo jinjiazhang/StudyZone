@@ -15,6 +15,8 @@ import {
   MatchPairsExercise,
   SingleChoiceExercise,
   NumericInputExercise,
+  ListenInputExercise,
+  ImageChoiceExercise,
 } from '@/components/exercises';
 
 interface AttemptState {
@@ -178,6 +180,22 @@ function ExerciseSwitch({
     case ExerciseType.TRANSLATE_INPUT:
       return (
         <TranslateInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.LISTEN_INPUT:
+      return (
+        <ListenInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.IMAGE_CHOICE:
+      return (
+        <ImageChoiceExercise
           prompt={exercise.prompt as any}
           onSubmit={onSubmit}
           disabled={disabled}

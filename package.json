@@ -14,6 +14,8 @@
     "dev:web": "turbo run dev --filter=@studyzone/web",
     "dev:mobile": "turbo run dev --filter=@studyzone/mobile",
     "dev:admin": "turbo run dev --filter=@studyzone/admin",
+    "services:start": "node scripts/start-services.mjs",
+    "services:stop": "node scripts/stop-services.mjs",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
