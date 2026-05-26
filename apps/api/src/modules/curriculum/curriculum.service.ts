@@ -1,5 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { Prisma } from '@prisma/client';
+import type { ExerciseAnswer, ExercisePrompt } from '@studyzone/shared-types';
+
 import { PrismaService } from '../../infra/prisma.service';
+import { UpdateExerciseDto } from './curriculum.dto';
 
 @Injectable()
 export class CurriculumService {
@@ -102,5 +106,95 @@ export class CurriculumService {
     });
 
     return tree;
+  }
+
+  async getAdminCourseContent(courseId: string) {
+    const course = await this.prisma.course.findUnique({
+      where: { id: courseId },
+      include: {
+        units: {
+          orderBy: { orderIndex: 'asc' },
+          include: {
+            skills: {
+              orderBy: { orderIndex: 'asc' },
+              include: {
+                lessons: {
+                  orderBy: [{ level: 'asc' }, { orderIndex: 'asc' }],
+                  include: {
+                    exercises: {
+                      orderBy: { orderIndex: 'asc' },
+                      include: { exercise: true },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+    if (!course) throw new NotFoundException({ code: 'course_not_found', message: '课程不存在' });
+
+    return {
+      id: course.id,
+      name: course.name,
+      description: course.description,
+      units: course.units.map((unit) => ({
+        id: unit.id,
+        orderIndex: unit.orderIndex,
+        title: unit.title,
+        themeColor: unit.themeColor,
+        skills: unit.skills.map((skill) => ({
+          id: skill.id,
+          orderIndex: skill.orderIndex,
+          name: skill.name,
+          icon: skill.icon,
+          maxLevel: skill.maxLevel,
+          lessons: skill.lessons.map((lesson) => ({
+            id: lesson.id,
+            level: lesson.level,
+            orderIndex: lesson.orderIndex,
+            exerciseCount: lesson.exerciseCount,
+            exercises: lesson.exercises.map((le) => ({
+              id: le.exercise.id,
+              type: le.exercise.type,
+              prompt: le.exercise.prompt as unknown as ExercisePrompt,
+              answer: le.exercise.answer as unknown as ExerciseAnswer,
+              difficulty: le.exercise.difficulty,
+              orderIndex: le.orderIndex,
+            })),
+          })),
+        })),
+      })),
+    };
+  }
+
+  async updateExercise(exerciseId: string, dto: UpdateExerciseDto) {
+    const existing = await this.prisma.exercise.findUnique({ where: { id: exerciseId } });
+    if (!existing) throw new NotFoundException({ code: 'exercise_not_found', message: '题目不存在' });
+
+    const updated = await this.prisma.exercise.update({
+      where: { id: exerciseId },
+      data: {
+        ...(dto.type ? { type: dto.type } : {}),
+        ...(dto.prompt ? { prompt: dto.prompt as Prisma.InputJsonValue } : {}),
+        ...(dto.answer ? { answer: dto.answer as Prisma.InputJsonValue } : {}),
+        ...(dto.difficulty ? { difficulty: dto.difficulty } : {}),
+      },
+    });
+
+    const lessonLink = await this.prisma.lessonExercise.findFirst({
+      where: { exerciseId },
+      orderBy: { orderIndex: 'asc' },
+    });
+
+    return {
+      id: updated.id,
+      type: updated.type,
+      prompt: updated.prompt as unknown as ExercisePrompt,
+      answer: updated.answer as unknown as ExerciseAnswer,
+      difficulty: updated.difficulty,
+      orderIndex: lessonLink?.orderIndex ?? 0,
+    };
   }
 }

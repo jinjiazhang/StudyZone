@@ -3,15 +3,18 @@ import {
   Get,
   HttpCode,
   Param,
+  Patch,
   Post,
   Query,
   UseGuards,
+  Body,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
 import { CurriculumService } from './curriculum.service';
+import { UpdateExerciseDto } from './curriculum.dto';
 
 @ApiTags('curriculum')
 @Controller('api/v1')
@@ -46,5 +49,19 @@ export class CurriculumController {
   @Get('skills/:id/first-lesson')
   firstLesson(@Param('id') skillId: string) {
     return this.service.firstLessonOfSkill(skillId);
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @Get('admin/courses/:id/content')
+  adminCourseContent(@Param('id') courseId: string) {
+    return this.service.getAdminCourseContent(courseId);
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @Patch('admin/exercises/:id')
+  updateExercise(@Param('id') exerciseId: string, @Body() dto: UpdateExerciseDto) {
+    return this.service.updateExercise(exerciseId, dto);
   }
 }

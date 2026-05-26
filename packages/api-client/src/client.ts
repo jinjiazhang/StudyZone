@@ -1,5 +1,7 @@
 import type {
   ApiError,
+  AdminCourseContentDto,
+  AdminExerciseDto,
   AttemptResult,
   AuthResponse,
   CompleteSessionDto,
@@ -15,6 +17,7 @@ import type {
   StartLessonResponse,
   SubjectDto,
   SubmitAttemptDto,
+  UpdateExerciseDto,
   UserProfile,
 } from '@studyzone/shared-types';
 
@@ -125,6 +128,17 @@ export class StudyZoneClient {
 
   getCourseTree(courseId: string) {
     return this.request<CourseTreeNode[]>(`/api/v1/courses/${courseId}/tree`);
+  }
+
+  getAdminCourseContent(courseId: string) {
+    return this.request<AdminCourseContentDto>(`/api/v1/admin/courses/${courseId}/content`);
+  }
+
+  updateAdminExercise(exerciseId: string, dto: UpdateExerciseDto) {
+    return this.request<AdminExerciseDto>(`/api/v1/admin/exercises/${exerciseId}`, {
+      method: 'PATCH',
+      body: JSON.stringify(dto),
+    });
   }
 
   // --- Learning -------------------------------------------------------------

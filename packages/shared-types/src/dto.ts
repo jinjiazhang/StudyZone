@@ -7,7 +7,7 @@ import {
   SubjectCode,
   XPReason,
 } from './enums';
-import type { ExercisePrompt, UserAttemptPayload } from './exercise';
+import type { ExerciseAnswer, ExercisePrompt, UserAttemptPayload } from './exercise';
 
 // =============================================================================
 // Auth
@@ -103,6 +103,54 @@ export interface SkillNodeDto {
   unlocked: boolean;
   lessonCount: number;
   completedLessons: number;
+}
+
+export interface AdminCourseContentDto {
+  id: string;
+  name: string;
+  description: string;
+  units: AdminUnitDto[];
+}
+
+export interface AdminUnitDto {
+  id: string;
+  orderIndex: number;
+  title: string;
+  themeColor: string;
+  skills: AdminSkillDto[];
+}
+
+export interface AdminSkillDto {
+  id: string;
+  orderIndex: number;
+  name: string;
+  icon: string;
+  maxLevel: number;
+  lessons: AdminLessonDto[];
+}
+
+export interface AdminLessonDto {
+  id: string;
+  level: number;
+  orderIndex: number;
+  exerciseCount: number;
+  exercises: AdminExerciseDto[];
+}
+
+export interface AdminExerciseDto {
+  id: string;
+  type: ExerciseType;
+  prompt: ExercisePrompt;
+  answer: ExerciseAnswer;
+  difficulty: number;
+  orderIndex: number;
+}
+
+export interface UpdateExerciseDto {
+  type?: ExerciseType;
+  prompt?: ExercisePrompt;
+  answer?: ExerciseAnswer;
+  difficulty?: number;
 }
 
 // =============================================================================
