@@ -1,0 +1,72 @@
+// Centralized enums shared between client and server.
+
+export enum SubjectCode {
+  ENGLISH = 'english',
+  MATH = 'math',
+  MUSIC = 'music',
+}
+
+export enum Locale {
+  ZH_CN = 'zh-CN',
+  EN_US = 'en-US',
+  JA_JP = 'ja-JP',
+}
+
+export enum ExerciseType {
+  /** Choose the matching translation from 4 options. */
+  TRANSLATE_CHOICE = 'translate_choice',
+  /** Type the translation. */
+  TRANSLATE_INPUT = 'translate_input',
+  /** Listen to audio and type what you hear. */
+  LISTEN_INPUT = 'listen_input',
+  /** Match pairs (e.g. word ↔ translation). */
+  MATCH_PAIRS = 'match_pairs',
+  /** Pick the image that matches the prompt. */
+  IMAGE_CHOICE = 'image_choice',
+  /** Arrange tokens to form the correct sentence. */
+  WORD_BANK = 'word_bank',
+  /** Numeric answer (math). */
+  NUMERIC_INPUT = 'numeric_input',
+  /** Single-choice multiple choice (math). */
+  SINGLE_CHOICE = 'single_choice',
+}
+
+export enum LessonOutcome {
+  PASS = 'pass',
+  FAIL = 'fail',
+  ABANDONED = 'abandoned',
+}
+
+export enum FriendshipStatus {
+  PENDING = 'pending',
+  ACCEPTED = 'accepted',
+  BLOCKED = 'blocked',
+}
+
+export enum LeagueTier {
+  BRONZE = 'bronze',
+  SILVER = 'silver',
+  GOLD = 'gold',
+  SAPPHIRE = 'sapphire',
+  RUBY = 'ruby',
+  EMERALD = 'emerald',
+  DIAMOND = 'diamond',
+}
+
+export const LEAGUE_TIER_ORDER: LeagueTier[] = [
+  LeagueTier.BRONZE,
+  LeagueTier.SILVER,
+  LeagueTier.GOLD,
+  LeagueTier.SAPPHIRE,
+  LeagueTier.RUBY,
+  LeagueTier.EMERALD,
+  LeagueTier.DIAMOND,
+];
+
+export enum XPReason {
+  LESSON_COMPLETED = 'lesson_completed',
+  PERFECT_LESSON_BONUS = 'perfect_lesson_bonus',
+  DAILY_QUEST = 'daily_quest',
+  STREAK_BONUS = 'streak_bonus',
+  PRACTICE = 'practice',
+}

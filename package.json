@@ -1,0 +1,35 @@
+{
+  "name": "studyzone",
+  "version": "0.1.0",
+  "private": true,
+  "description": "StudyZone — gamified multi-subject learning platform",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:api": "turbo run dev --filter=@studyzone/api",
+    "dev:web": "turbo run dev --filter=@studyzone/web",
+    "dev:mobile": "turbo run dev --filter=@studyzone/mobile",
+    "dev:admin": "turbo run dev --filter=@studyzone/admin",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "db:migrate": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api prisma migrate dev",
+    "db:seed": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api db:seed",
+    "db:studio": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api prisma studio",
+    "docker:up": "docker compose -f infra/docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f infra/docker/docker-compose.yml down",
+    "docker:logs": "docker compose -f infra/docker/docker-compose.yml logs -f"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "prettier": "^3.2.5",
+    "eslint": "^8.57.0",
+    "@types/node": "^20.11.0"
+  }
+}

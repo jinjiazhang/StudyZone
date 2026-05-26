@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sz-bg: #f5f7fa;
+}
+
+html,
+body {
+  background: var(--sz-bg);
+  color: #1f2937;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+/* Custom utilities */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-chunky bg-sz-green px-6 py-3 font-bold text-white shadow-pop transition active:translate-y-0.5 active:shadow-none hover:bg-emerald-500;
+}
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-chunky border-2 border-sz-ink/10 bg-white px-6 py-3 font-bold text-sz-ink shadow-pop transition active:translate-y-0.5 active:shadow-none;
+}
+.btn-danger {
+  @apply inline-flex items-center justify-center rounded-chunky bg-sz-rose px-6 py-3 font-bold text-white shadow-pop transition active:translate-y-0.5 active:shadow-none;
+}
+.card {
+  @apply rounded-chunky bg-white p-5 shadow-card;
+}
