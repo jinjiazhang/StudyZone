@@ -46,7 +46,8 @@ export default function Lesson() {
     );
   }
 
-  const ex = session.exercises[cursor];
+  const activeSession = session;
+  const ex = activeSession.exercises[cursor];
   if (!ex) {
     return (
       <SafeAreaView style={styles.container}>
@@ -85,7 +86,7 @@ export default function Lesson() {
     setFeedback(null);
     setPick(null);
     setText('');
-    if (cursor + 1 < session.exercises.length) {
+    if (cursor + 1 < activeSession.exercises.length) {
       setCursor(cursor + 1);
     } else {
       const r = await complete.mutateAsync();
@@ -97,7 +98,7 @@ export default function Lesson() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.progress}>
-        {cursor + 1} / {session.exercises.length}
+        {cursor + 1} / {activeSession.exercises.length}
       </Text>
 
       {ex.type === ExerciseType.TRANSLATE_CHOICE && (

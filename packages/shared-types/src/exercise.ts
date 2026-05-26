@@ -128,5 +128,18 @@ export type ExerciseAnswer =
   | NumericInputAnswer
   | SingleChoiceAnswer;
 
-/** What the user submits for an attempt. The shape matches the answer shape. */
-export type UserAttemptPayload = ExerciseAnswer;
+export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
+export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
+export type MatchPairsAttemptPayload = MatchPairsAnswer;
+export type ImageChoiceAttemptPayload = ImageChoiceAnswer;
+export type WordBankAttemptPayload = WordBankAnswer;
+export type NumericInputAttemptPayload = NumericInputAnswer;
+
+/** What the user submits for an attempt. Server-only grading fields are omitted. */
+export type UserAttemptPayload =
+  | ChoiceAttemptPayload
+  | TextAttemptPayload
+  | MatchPairsAttemptPayload
+  | ImageChoiceAttemptPayload
+  | WordBankAttemptPayload
+  | NumericInputAttemptPayload;
