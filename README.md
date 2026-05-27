@@ -90,8 +90,15 @@ pnpm dev:admin    # 仅 Admin
 pnpm dev:mobile   # 仅移动端（Expo Dev Tools）
 ```
 
-移动端额外步骤：在 `apps/mobile` 下需要把 `apiUrl` 配到 `app.json` 的
-`expo.extra.apiUrl` 或手机能访问的 API 地址（如 `http://192.168.x.x:4000`）。
+移动端额外步骤（在真机上测试时）：
+
+```bash
+cp apps/mobile/.env.local.example apps/mobile/.env.local
+# 把 EXPO_PUBLIC_API_URL 改成你电脑的局域网 IP，例如 http://192.168.1.10:4000
+# （macOS: ipconfig getifaddr en0；Linux: hostname -I）
+```
+
+模拟器跑可直接用默认的 `localhost`，无需改任何东西。
 
 ## 后台起停本地服务
 
