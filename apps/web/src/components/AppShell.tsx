@@ -34,7 +34,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-30 border-b-2 border-sz-line bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           <Link href="/learn" className="flex items-center gap-2">
-            <Mascot size={40} />
+            <Mascot size={36} />
             <span className="hidden text-2xl font-heavy text-sz-green sm:inline">
               StudyZone
             </span>

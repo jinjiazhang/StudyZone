@@ -26,7 +26,7 @@ export function WordBankExercise({
       <h2 className="text-2xl font-heavy text-sz-ink md:text-3xl">把单词排成一句话</h2>
 
       <div className="flex items-end gap-3">
-        <Mascot size={68} />
+        <Mascot size={80} />
         <div className="relative flex-1 rounded-2xl border-2 border-sz-line bg-white px-5 py-4 text-xl font-heavy text-sz-ink md:text-2xl">
           {prompt.source}
           <span

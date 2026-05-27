@@ -42,7 +42,7 @@ export default function RegisterPage() {
       </Link>
 
       <div className="flex items-end gap-3">
-        <Mascot size={88} mood="cheer" />
+        <Mascot size={104} mood="cheer" />
         <SpeechBubble>嘿！加入 StudyZone，第一天就能解锁连胜 🔥</SpeechBubble>
       </div>
 

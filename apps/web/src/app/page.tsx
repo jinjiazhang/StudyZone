@@ -12,7 +12,7 @@ export default function LandingPage() {
       <div className="relative mx-auto max-w-6xl px-6 py-10">
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Mascot size={44} />
+            <Mascot size={40} />
             <span className="text-2xl font-heavy text-sz-green">StudyZone</span>
           </div>
           <Link
@@ -61,7 +61,7 @@ export default function LandingPage() {
 
           <div className="relative">
             <div className="absolute -top-6 left-10 hidden animate-wiggle md:block">
-              <Mascot size={120} mood="cheer" />
+              <Mascot size={144} mood="cheer" />
             </div>
             <div className="grid grid-cols-2 gap-4 rounded-3xl border-2 border-sz-line bg-white p-6 shadow-pop-lg md:ml-32 md:mt-24">
               <Stat label="支持学科" value="多学科" emoji="📚" tint="green" />

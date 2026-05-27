@@ -81,7 +81,7 @@ export default function LeaguePage() {
 
         {entries.length === 0 ? (
           <div className="flex items-end gap-3">
-            <Mascot size={72} mood="sad" />
+            <Mascot size={96} mood="sad" />
             <SpeechBubble>
               本周还没有排名记录。完成一节关卡就会自动进入青铜联赛！
             </SpeechBubble>

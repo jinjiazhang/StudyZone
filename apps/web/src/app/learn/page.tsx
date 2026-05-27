@@ -15,7 +15,7 @@ export default function LearnPage() {
     <AppShell>
       <div className="flex flex-col gap-8">
         <section className="flex items-end gap-4">
-          <Mascot size={84} mood="cheer" />
+          <Mascot size={100} mood="cheer" />
           <div className="flex-1">
             <SpeechBubble>选一门课开始学习吧！同时学多门完全没问题，进度互不影响。</SpeechBubble>
           </div>

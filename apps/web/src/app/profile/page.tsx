@@ -24,7 +24,7 @@ export default function ProfilePage() {
         <section className="rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-6">
           <div className="flex items-center gap-4">
             <div className="relative">
-              <Mascot size={96} mood="wink" />
+              <Mascot size={104} mood="wink" />
               {level && (
                 <span className="absolute -bottom-1 -right-1 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 text-xs font-heavy text-white shadow-pop">
                   Lv {level.level}

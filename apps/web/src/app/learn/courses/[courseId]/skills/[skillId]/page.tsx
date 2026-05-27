@@ -43,7 +43,7 @@ export default function SkillPage() {
         </div>
 
         <div className="flex items-end gap-3">
-          <Mascot size={72} />
+          <Mascot size={88} />
           <SpeechBubble>每练一次升一级，到顶级会冒小金星 ⭐</SpeechBubble>
         </div>
 

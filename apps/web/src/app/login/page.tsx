@@ -41,7 +41,7 @@ export default function LoginPage() {
       </Link>
 
       <div className="flex items-end gap-3">
-        <Mascot size={88} mood="wink" />
+        <Mascot size={104} mood="wink" />
         <SpeechBubble>欢迎回来！准备好继续学习了吗？</SpeechBubble>
       </div>
 

@@ -53,7 +53,7 @@ export default function CompletePage() {
           animate={{ scale: 1, rotate: 0 }}
           transition={{ type: 'spring', stiffness: 220, damping: 14 }}
         >
-          <Mascot size={144} mood="cheer" />
+          <Mascot size={176} mood="cheer" />
         </motion.div>
         <motion.h1
           initial={{ y: 20, opacity: 0 }}
