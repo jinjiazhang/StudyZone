@@ -52,7 +52,7 @@ if (!args.has('--no-docker')) {
 const started = [];
 for (const service of services) {
   const log = resolve(logDir, `${service.name}.log`);
-  const fd = openSync(log, 'a');
+  const fd = openSync(log, 'w');
   const child = spawn('pnpm', [service.script], {
     cwd: rootDir,
     detached: true,

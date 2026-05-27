@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const stateDir = resolve(rootDir, '.studyzone-dev');
 const pidFile = resolve(stateDir, 'services.json');
+const servicePorts = [3000, 3001, 4000];
 
 const args = new Set(process.argv.slice(2));
 
@@ -29,6 +30,10 @@ if (services.length === 0) {
     stopProcessGroup(service);
   }
   rmSync(pidFile, { force: true });
+}
+
+for (const port of servicePorts) {
+  stopStudyZonePortListeners(port);
 }
 
 if (!args.has('--keep-docker')) {
@@ -76,4 +81,37 @@ function run(command, commandArgs) {
   if (result.status !== 0) {
     process.exit(result.status ?? 1);
   }
+}
+
+function stopStudyZonePortListeners(port) {
+  const result = spawnSync('lsof', ['-nP', `-iTCP:${port}`, '-sTCP:LISTEN', '-t'], {
+    cwd: rootDir,
+    encoding: 'utf8',
+  });
+
+  if (result.status !== 0 && !result.stdout) return;
+
+  const pids = result.stdout
+    .split(/\s+/)
+    .map((value) => Number(value))
+    .filter(Boolean);
+
+  for (const pid of pids) {
+    const command = getProcessCommand(pid);
+    if (!command.includes(rootDir)) {
+      console.log(`Skipped pid=${pid} on port ${port}; it is outside this workspace`);
+      continue;
+    }
+
+    stopProcessGroup({ name: `port ${port}`, pid });
+  }
+}
+
+function getProcessCommand(pid) {
+  const result = spawnSync('ps', ['-p', String(pid), '-o', 'command='], {
+    cwd: rootDir,
+    encoding: 'utf8',
+  });
+
+  return result.stdout.trim();
 }
