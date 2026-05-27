@@ -13,10 +13,10 @@ import { useEffect } from 'react';
 export type MascotMood = 'happy' | 'cheer' | 'sad' | 'wink';
 
 const moodAssets: Record<MascotMood, ImageSourcePropType> = {
-  happy: require('../../assets/mascot/mascot-idle.png'),
-  wink: require('../../assets/mascot/mascot-wave.png'),
-  sad: require('../../assets/mascot/mascot-thinking.png'),
-  cheer: require('../../assets/mascot/mascot-celebrate.png'),
+  happy: require('../assets/mascot/mascot-idle.png'),
+  wink: require('../assets/mascot/mascot-wave.png'),
+  sad: require('../assets/mascot/mascot-thinking.png'),
+  cheer: require('../assets/mascot/mascot-celebrate.png'),
 };
 
 interface MascotProps {
