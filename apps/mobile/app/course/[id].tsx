@@ -5,6 +5,7 @@ import { useQuery, useMutation } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Lock, Star, ChevronLeft } from 'lucide-react-native';
 import { api } from '../../lib/api';
+import { useAuthStore } from '../../lib/auth-store';
 import { colors, fonts, radius } from '../../lib/theme';
 
 // Sine wave offsets for skill path (Duolingo-style winding path)
@@ -14,18 +15,22 @@ const OFFSET_PX = 36;
 export default function Course() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
+  const accessToken = useAuthStore((s) => s.accessToken);
+  const authHydrated = useAuthStore((s) => s.hydrated);
 
   const enroll = useMutation({ mutationFn: () => api.enrollCourse(id!) });
   useEffect(() => {
-    if (id) enroll.mutate();
+    if (id && accessToken) enroll.mutate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [id]);
+  }, [id, accessToken]);
 
-  const { data: tree } = useQuery({
+  const { data: tree, error, isError, isLoading, isFetching, refetch } = useQuery({
     queryKey: ['tree', id],
     queryFn: () => api.getCourseTree(id!),
-    enabled: !!id,
+    enabled: !!id && !!accessToken,
   });
+
+  const showLoading = !authHydrated || (Boolean(accessToken) && (isLoading || isFetching) && !tree);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -105,14 +110,39 @@ export default function Course() {
           </View>
         ))}
 
-        {!tree && (
+        {showLoading && (
           <View style={styles.loading}>
             <Text style={styles.loadingText}>加载课程地图中…</Text>
+          </View>
+        )}
+
+        {authHydrated && !accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>需要先登录</Text>
+            <Text style={styles.stateText}>登录后才能加载你的课程地图和学习进度。</Text>
+            <Pressable onPress={() => router.replace('/login')} style={styles.primaryButton}>
+              <Text style={styles.primaryButtonText}>去登录</Text>
+            </Pressable>
+          </View>
+        )}
+
+        {isError && accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>课程地图加载失败</Text>
+            <Text style={styles.stateText}>{getErrorMessage(error)}</Text>
+            <Pressable onPress={() => refetch()} style={styles.primaryButton}>
+              <Text style={styles.primaryButtonText}>重试</Text>
+            </Pressable>
           </View>
         )}
       </ScrollView>
     </SafeAreaView>
   );
+}
+
+function getErrorMessage(error: unknown): string {
+  if (error instanceof Error && error.message) return error.message;
+  return '请确认已登录，并检查网络或后端服务状态。';
 }
 
 /** Crude darken for border-bottom (subtract ~30 from each RGB channel) */
@@ -227,4 +257,35 @@ const styles = StyleSheet.create({
   },
   loading: { alignItems: 'center', paddingVertical: 40 },
   loadingText: { fontFamily: fonts.heavy, color: colors.inkSoft },
+  stateCard: {
+    borderWidth: 2,
+    borderColor: colors.line,
+    borderRadius: radius.lg,
+    padding: 18,
+    gap: 10,
+    backgroundColor: colors.white,
+  },
+  stateTitle: {
+    fontFamily: fonts.heavy,
+    fontSize: 18,
+    color: colors.ink,
+  },
+  stateText: {
+    fontFamily: fonts.regular,
+    fontSize: 14,
+    color: colors.inkSoft,
+    lineHeight: 20,
+  },
+  primaryButton: {
+    alignSelf: 'flex-start',
+    backgroundColor: colors.green,
+    borderRadius: radius.full,
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  primaryButtonText: {
+    fontFamily: fonts.heavy,
+    fontSize: 14,
+    color: colors.white,
+  },
 });

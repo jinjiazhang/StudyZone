@@ -7,8 +7,10 @@ interface AuthState {
   accessToken: string | null;
   refreshToken: string | null;
   user: UserPublic | null;
+  hydrated: boolean;
   setAuth: (data: { accessToken: string; refreshToken: string; user: UserPublic }) => void;
   clear: () => void;
+  setHydrated: (hydrated: boolean) => void;
 }
 
 const secureStorage = {
@@ -23,13 +25,18 @@ export const useAuthStore = create<AuthState>()(
       accessToken: null,
       refreshToken: null,
       user: null,
+      hydrated: false,
       setAuth: ({ accessToken, refreshToken, user }) =>
         set({ accessToken, refreshToken, user }),
       clear: () => set({ accessToken: null, refreshToken: null, user: null }),
+      setHydrated: (hydrated) => set({ hydrated }),
     }),
     {
       name: 'studyzone-auth',
       storage: createJSONStorage(() => secureStorage),
+      onRehydrateStorage: () => (state) => {
+        state?.setHydrated(true);
+      },
     },
   ),
 );

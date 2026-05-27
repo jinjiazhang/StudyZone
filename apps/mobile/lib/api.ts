@@ -17,4 +17,5 @@ const baseUrl =
 export const api = new StudyZoneClient({
   baseUrl,
   getAccessToken: () => useAuthStore.getState().accessToken,
+  onUnauthorized: () => useAuthStore.getState().clear(),
 });
