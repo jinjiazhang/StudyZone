@@ -1,7 +1,7 @@
 # Lesson Data
 
 This directory is the source of truth for curriculum content imported by
-`../seed.ts`.
+`../import-data.ts`.
 
 ## Layout
 
@@ -24,6 +24,6 @@ lesson-data/
 - Each unit `lessons.json` lists lesson metadata and lesson files.
 - Lesson files contain only exercises.
 
-Running `pnpm db:seed` clears curriculum content and related learning state, then
-reimports this tree. User accounts, wallets, quests, achievements, and XP ledger
-entries are preserved.
+Running `pnpm db:import` clears curriculum content and related learning state,
+then reimports this tree. User accounts, wallets, quests, achievements, and XP
+ledger entries are preserved.

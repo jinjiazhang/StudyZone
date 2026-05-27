@@ -10,7 +10,7 @@ pnpm install
 pnpm docker:up        # 启动 Postgres / Redis / MinIO
 cp .env.example .env
 pnpm db:migrate       # 运行 Prisma 迁移
-pnpm db:seed          # 写入种子数据
+pnpm db:import        # 导入课程数据和开发基础数据
 pnpm dev:api          # 启动 API（端口 4000）
 ```
 

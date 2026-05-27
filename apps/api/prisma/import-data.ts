@@ -1,5 +1,5 @@
 /**
- * StudyZone seed data.
+ * StudyZone import data.
  *
  * Provides:
  *   • 3 subjects with one course each.
@@ -20,7 +20,7 @@ import {
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('Seeding StudyZone...');
+  console.log('Importing StudyZone data...');
   console.log('Resetting curriculum content...');
   await resetCurriculumContent();
 
@@ -137,7 +137,7 @@ async function main() {
     });
   }
 
-  console.log('Seed complete.');
+  console.log('Import complete.');
   console.log('Demo login → demo@studyzone.dev / studyzone');
 }
 

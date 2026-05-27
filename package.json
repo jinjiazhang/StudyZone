@@ -21,7 +21,7 @@
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
     "db:migrate": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api prisma migrate dev",
-    "db:seed": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api db:seed",
+    "db:import": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api db:import",
     "db:studio": "node scripts/with-root-env.mjs pnpm --filter @studyzone/api prisma studio",
     "docker:up": "docker compose -f infra/docker/docker-compose.yml up -d",
     "docker:down": "docker compose -f infra/docker/docker-compose.yml down",

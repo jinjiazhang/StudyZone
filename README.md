@@ -57,9 +57,9 @@ pnpm docker:up
 cp .env.example .env
 cp apps/web/.env.local.example apps/web/.env.local
 
-# 4. 初始化数据库 + 种子（英语 + 数学课程，含示例账号）
+# 4. 初始化数据库 + 导入课程数据（英语 + 数学 + 语文，含示例账号）
 pnpm db:migrate
-pnpm db:seed
+pnpm db:import
 
 # 5. 启动全部应用（API + Web + Admin）
 pnpm dev
@@ -77,7 +77,7 @@ pnpm dev
 | Redis | localhost:6379 | |
 | MinIO 控制台 | http://localhost:9001 | minioadmin / minioadmin |
 
-**示例账号**：`demo@studyzone.dev` / `studyzone`（已自动选课英语 + 数学）。
+**示例账号**：`demo@studyzone.dev` / `studyzone`（已自动选课英语 + 数学 + 语文）。
 
 ---
 
@@ -116,7 +116,7 @@ pnpm services:stop    # 停止后台服务，并关闭 Docker compose
 
 ```bash
 pnpm db:migrate          # 应用 migrations
-pnpm db:seed             # 重新执行种子（幂等，可重复执行）
+pnpm db:import           # 清空课程内容和学习状态后重新导入仓库课程数据
 pnpm db:studio           # 打开 Prisma Studio 可视化数据库
 ```
 

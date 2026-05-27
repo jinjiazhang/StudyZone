@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts",
     "test": "vitest run --passWithNoTests",
-    "db:seed": "tsx prisma/seed.ts",
+    "db:import": "tsx prisma/import-data.ts",
     "prisma": "prisma"
   },
   "dependencies": {
