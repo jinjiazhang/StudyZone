@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, XCircle, Heart } from 'lucide-react';
 
 import { api } from '@/lib/api';
+import { playAnswerSound, preloadAnswerSounds } from '@/lib/answer-sounds';
 import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 import {
   TranslateChoiceExercise,
@@ -40,6 +41,10 @@ export default function LessonPage() {
     if (typeof me?.hearts === 'number') setHearts(me.hearts);
   }, [me?.hearts]);
 
+  useEffect(() => {
+    preloadAnswerSounds();
+  }, []);
+
   const { data: session, isLoading } = useQuery({
     queryKey: ['lesson-start', params.lessonId],
     queryFn: () => api.startLesson(params.lessonId),
@@ -61,12 +66,14 @@ export default function LessonPage() {
 
   async function handleSubmit(payload: any) {
     if (!current || !session) return;
+    preloadAnswerSounds();
     const responseMs = Date.now() - startTs;
     const res = await submit.mutateAsync({
       exerciseId: current.id,
       payload,
       responseMs,
     });
+    playAnswerSound(res.correct ? 'correct' : 'wrong');
     setFeedback({
       result: res.correct ? 'correct' : 'wrong',
       canonical: res.canonicalAnswer,

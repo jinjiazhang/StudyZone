@@ -25,6 +25,7 @@ import Animated, {
 import { X, Heart, CheckCircle2, XCircle, Volume2 } from 'lucide-react-native';
 import { ExerciseType } from '@studyzone/shared-types';
 import { api } from '../../lib/api';
+import { useAnswerSounds } from '../../lib/answer-sounds';
 import { colors, fonts, radius } from '../../lib/theme';
 
 export default function Lesson() {
@@ -42,6 +43,7 @@ export default function Lesson() {
   const [hearts, setHearts] = useState<number>(5);
   const [start] = useState(Date.now());
   const [checkPressed, setCheckPressed] = useState(false);
+  const { playAnswerSound } = useAnswerSounds();
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
   useEffect(() => {
@@ -124,6 +126,7 @@ export default function Lesson() {
     }
 
     const r = await submit.mutateAsync(payload);
+    void playAnswerSound(r.correct ? 'correct' : 'wrong');
     setFeedback({
       result: r.correct ? 'correct' : 'wrong',
       canonical: r.canonicalAnswer,
