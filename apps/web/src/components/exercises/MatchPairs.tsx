@@ -20,7 +20,6 @@ export function MatchPairsExercise({
 
   function toggleLeft(id: string) {
     if (pairs[id]) {
-      // unpair
       const { [id]: _, ...rest } = pairs;
       setPairs(rest);
       return;
@@ -36,26 +35,29 @@ export function MatchPairsExercise({
 
   return (
     <div className="flex flex-col gap-6">
-      <h2 className="text-xl font-extrabold text-sz-ink">把左右两列配对</h2>
+      <div className="text-xs font-heavy uppercase tracking-widest text-sz-ink-soft">配对</div>
+      <h2 className="text-2xl font-heavy text-sz-ink md:text-3xl">点击两侧组成配对</h2>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="flex flex-col gap-2">
-          {prompt.left.map((item) => (
-            <button
-              key={item.id}
-              disabled={disabled}
-              onClick={() => toggleLeft(item.id)}
-              className={clsx(
-                'rounded-chunky border-2 px-4 py-3 text-left font-bold transition',
-                pairs[item.id]
-                  ? 'border-sz-green bg-sz-green/10 text-sz-green'
-                  : pickedLeft === item.id
-                    ? 'border-sz-gold bg-yellow-50'
-                    : 'border-sz-ink/10 bg-white',
-              )}
-            >
-              {item.text}
-            </button>
-          ))}
+          {prompt.left.map((item) => {
+            const matched = !!pairs[item.id];
+            const picked = pickedLeft === item.id;
+            return (
+              <button
+                key={item.id}
+                disabled={disabled}
+                onClick={() => toggleLeft(item.id)}
+                className={clsx(
+                  'option-tile',
+                  matched && 'option-tile-correct',
+                  picked && 'border-sz-gold bg-yellow-50 text-sz-gold-dark',
+                )}
+              >
+                {item.text}
+              </button>
+            );
+          })}
         </div>
         <div className="flex flex-col gap-2">
           {prompt.right.map((item) => (
@@ -64,10 +66,8 @@ export function MatchPairsExercise({
               disabled={disabled || usedRight.has(item.id)}
               onClick={() => pickRight(item.id)}
               className={clsx(
-                'rounded-chunky border-2 px-4 py-3 text-left font-bold transition',
-                usedRight.has(item.id)
-                  ? 'border-sz-green bg-sz-green/10 text-sz-green'
-                  : 'border-sz-ink/10 bg-white hover:border-sz-ink/20',
+                'option-tile',
+                usedRight.has(item.id) && 'option-tile-correct',
               )}
             >
               {item.text}
@@ -78,9 +78,9 @@ export function MatchPairsExercise({
       <button
         disabled={Object.keys(pairs).length !== prompt.left.length || disabled}
         onClick={() => onSubmit({ pairs })}
-        className="btn-primary disabled:opacity-40"
+        className="btn-primary mt-2"
       >
-        检查答案
+        检 查
       </button>
     </div>
   );

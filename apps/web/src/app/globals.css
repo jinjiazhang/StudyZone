@@ -2,27 +2,138 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------- Fonts (Duolingo uses Feather Bold; Nunito is the closest free match) ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
 :root {
-  --sz-bg: #f5f7fa;
+  --sz-bg: #ffffff;
+  --sz-bg-soft: #f7f7f7;
+  --sz-ink: #3c3c3c;
 }
 
 html,
 body {
   background: var(--sz-bg);
-  color: #1f2937;
+  color: var(--sz-ink);
+  font-family: 'Nunito', 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif;
   font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Custom utilities */
-.btn-primary {
-  @apply inline-flex items-center justify-center rounded-chunky bg-sz-green px-6 py-3 font-bold text-white shadow-pop transition active:translate-y-0.5 active:shadow-none hover:bg-emerald-500;
+/* ---------- 3D "puffy" buttons – the signature Duolingo look ---------- */
+@layer components {
+  .btn-base {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-2xl px-6 py-3 text-base font-heavy uppercase tracking-wide transition-transform duration-100;
+    letter-spacing: 0.04em;
+  }
+
+  /* All buttons share the same outer box (border-2 + border-b-[4px]) so primary,
+     secondary, danger, sky, gold, purple line up perfectly when placed side by side. */
+  .btn-primary {
+    @apply btn-base border-2 border-b-[4px] border-sz-green-dark bg-sz-green text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50 disabled:active:translate-y-0 disabled:active:border-b-[4px];
+  }
+  .btn-secondary {
+    @apply btn-base border-2 border-b-[4px] border-sz-line bg-white text-sz-ink-soft hover:bg-sz-mist active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .btn-danger {
+    @apply btn-base border-2 border-b-[4px] border-sz-rose-dark bg-sz-rose text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .btn-sky {
+    @apply btn-base border-2 border-b-[4px] border-sz-sky-dark bg-sz-sky text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .btn-gold {
+    @apply btn-base border-2 border-b-[4px] border-sz-gold-dark bg-sz-gold text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .btn-purple {
+    @apply btn-base border-2 border-b-[4px] border-sz-purple-dark bg-sz-purple text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply btn-base bg-transparent text-sz-ink-soft hover:bg-sz-mist;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-2xl border-2 border-sz-line bg-white p-5;
+  }
+  .card-flat {
+    @apply rounded-2xl bg-white p-5;
+  }
+  .card-soft {
+    @apply rounded-2xl bg-sz-mist p-5;
+  }
+
+  /* Capsule chips for stats / nav */
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-sm font-extrabold text-sz-ink;
+  }
+  .pill-line {
+    @apply pill border-2 border-sz-line;
+  }
+
+  /* Option / answer button – the rectangular "puffy" tile used in lessons */
+  .option-tile {
+    @apply w-full select-none rounded-2xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-4 text-left text-lg font-heavy text-sz-ink transition-transform duration-100 hover:bg-sz-mist active:translate-y-[2px] active:border-b-2 disabled:opacity-60;
+  }
+  .option-tile-active {
+    @apply border-sz-sky bg-sky-50 text-sz-sky-dark;
+  }
+  .option-tile-correct {
+    @apply border-sz-green bg-emerald-50 text-sz-green-dark;
+  }
+  .option-tile-wrong {
+    @apply border-sz-rose bg-rose-50 text-sz-rose-dark;
+  }
+
+  /* Word-bank chips */
+  .token-chip {
+    @apply select-none rounded-xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-2 font-heavy text-sz-ink transition-transform duration-100 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+  }
+  .token-chip-picked {
+    @apply border-sz-sky bg-white text-sz-sky-dark;
+  }
+
+  /* Skill-tree star node */
+  .skill-node {
+    @apply relative flex h-20 w-20 items-center justify-center rounded-full text-3xl shadow-node transition-transform duration-150 hover:-translate-y-1 active:translate-y-[2px] active:shadow-[0_3px_0_0_rgba(0,0,0,0.10)];
+  }
+
+  /* Form inputs */
+  .input {
+    @apply w-full rounded-2xl border-2 border-sz-line bg-sz-mist px-4 py-3 text-base font-bold text-sz-ink placeholder:font-bold placeholder:text-sz-ink-soft focus:border-sz-sky focus:bg-white focus:outline-none;
+  }
+
+  /* Progress bar shell + fill */
+  .progress {
+    @apply h-4 overflow-hidden rounded-full bg-sz-line;
+  }
+  .progress-fill {
+    @apply relative h-full rounded-full bg-sz-green;
+  }
+  .progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    right: 8px;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Section divider w/ wavy bottom */
+  .duo-wave {
+    --c: #58cc02;
+    background:
+      radial-gradient(circle at 12px -8px, transparent 14px, var(--c) 14px) 0 0/24px 24px;
+  }
 }
-.btn-secondary {
-  @apply inline-flex items-center justify-center rounded-chunky border-2 border-sz-ink/10 bg-white px-6 py-3 font-bold text-sz-ink shadow-pop transition active:translate-y-0.5 active:shadow-none;
-}
-.btn-danger {
-  @apply inline-flex items-center justify-center rounded-chunky bg-sz-rose px-6 py-3 font-bold text-white shadow-pop transition active:translate-y-0.5 active:shadow-none;
-}
-.card {
-  @apply rounded-chunky bg-white p-5 shadow-card;
+
+/* Confetti dots for completion */
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  border-radius: 2px;
+  top: -20px;
+  animation: confetti 2.4s ease-in forwards;
 }

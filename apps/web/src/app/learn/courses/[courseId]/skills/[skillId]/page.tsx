@@ -2,51 +2,71 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useParams, useRouter } from 'next/navigation';
+import { Star } from 'lucide-react';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
+import { Mascot, SpeechBubble } from '@/components/Mascot';
 
-/**
- * Skill detail — for v1 we just auto-enter the next available lesson.
- * The skill view (multiple lessons inside one skill) can be expanded later.
- */
 export default function SkillPage() {
   const params = useParams<{ courseId: string; skillId: string }>();
   const router = useRouter();
 
-  // For MVP: we ask the API for the course tree and start the first lesson
-  // of the skill. A dedicated /api/v1/skills/:id/next endpoint would be cleaner.
   const { data: tree } = useQuery({
     queryKey: ['tree', params.courseId],
     queryFn: () => api.getCourseTree(params.courseId),
   });
 
   const skill = tree?.flatMap((u) => u.skills).find((s) => s.skillId === params.skillId);
+  const level = skill?.userLevel ?? 0;
+  const max = skill?.maxLevel ?? 5;
 
   return (
     <AppShell>
-    <div className="card flex flex-col items-center gap-4 text-center">
-      <div className="text-5xl">{skill?.icon ?? '⭐'}</div>
-      <div className="text-2xl font-extrabold">{skill?.name ?? '技能'}</div>
-      <div className="text-sz-ink/60">
-        Lv {skill?.userLevel ?? 0} / {skill?.maxLevel ?? 5}
+      <div className="mx-auto flex max-w-md flex-col items-center gap-6 text-center">
+        <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-sz-green bg-white text-6xl shadow-node">
+          {skill?.icon ?? '⭐'}
+        </div>
+        <div>
+          <div className="text-3xl font-heavy text-sz-ink">{skill?.name ?? '技能'}</div>
+          <div className="mt-1 text-sm font-heavy uppercase tracking-wider text-sz-ink-soft">
+            等级 {level} / {max}
+          </div>
+        </div>
+
+        <div className="flex items-center gap-1">
+          {Array.from({ length: max }).map((_, i) => (
+            <Star
+              key={i}
+              className={`h-7 w-7 ${i < level ? 'fill-sz-gold text-sz-gold-dark' : 'fill-sz-line text-sz-line'}`}
+            />
+          ))}
+        </div>
+
+        <div className="flex items-end gap-3">
+          <Mascot size={72} />
+          <SpeechBubble>每练一次升一级，到顶级会冒小金星 ⭐</SpeechBubble>
+        </div>
+
+        <button
+          className="btn-primary w-full px-8 py-4 text-lg"
+          onClick={async () => {
+            const res = await fetch(
+              `${process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000'}/api/v1/skills/${params.skillId}/first-lesson`,
+              { credentials: 'omit' },
+            );
+            const { lessonId } = (await res.json()) as { lessonId: string };
+            router.push(`/learn/lessons/${lessonId}`);
+          }}
+        >
+          开始练习 →
+        </button>
+        <button
+          onClick={() => router.back()}
+          className="btn-secondary w-full"
+        >
+          返回地图
+        </button>
       </div>
-      <button
-        className="btn-primary mt-4"
-        onClick={async () => {
-          // Find first lesson via API: we just call the skill's first lesson
-          // by fetching a lesson list endpoint. For brevity we use a server
-          // helper through course tree level 1 lesson id (resolved below).
-          const res = await fetch(
-            `${process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000'}/api/v1/skills/${params.skillId}/first-lesson`,
-            { credentials: 'omit' },
-          );
-          const { lessonId } = (await res.json()) as { lessonId: string };
-          router.push(`/learn/lessons/${lessonId}`);
-        }}
-      >
-        开始练习 →
-      </button>
-    </div>
     </AppShell>
   );
 }
