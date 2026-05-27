@@ -34,6 +34,11 @@ export enum ExerciseType {
   PINYIN_CHOICE = 'pinyin_choice',
   /** Fill in the blank of a classical poem line (Chinese subject). */
   POEM_COMPLETE = 'poem_complete',
+  /**
+   * Given a pinyin, assemble the target Chinese character by dragging
+   * components into structural slots (e.g. 上/下 or 左/右).
+   */
+  PINYIN_TO_CHARACTER_ASSEMBLE = 'pinyin_to_character_assemble',
 }
 
 export enum LessonOutcome {

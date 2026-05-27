@@ -37,6 +37,7 @@ export default function Lesson() {
   const [wordOrder, setWordOrder] = useState<number[]>([]);
   const [pairs, setPairs] = useState<Record<string, string>>({});
   const [pickedLeft, setPickedLeft] = useState<string | null>(null);
+  const [slotFills, setSlotFills] = useState<Record<string, string>>({});
   const [feedback, setFeedback] = useState<{ result: 'correct' | 'wrong'; canonical?: string } | null>(null);
   const [hearts, setHearts] = useState<number>(5);
   const [start] = useState(Date.now());
@@ -113,6 +114,10 @@ export default function Lesson() {
     } else if (ex.type === ExerciseType.IMAGE_CHOICE) {
       if (!imagePick) return;
       payload = { correctOptionId: imagePick };
+    } else if (ex.type === ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE) {
+      const slots = (ex.prompt as any).slots as { id: string }[];
+      if (Object.keys(slotFills).length !== slots.length) return;
+      payload = { slotFills };
     } else {
       Alert.alert('当前移动端版本暂未实现该题型');
       return;
@@ -134,6 +139,7 @@ export default function Lesson() {
     setWordOrder([]);
     setPairs({});
     setPickedLeft(null);
+    setSlotFills({});
     if (cursor + 1 < total) {
       setCursor(cursor + 1);
     } else {
@@ -145,7 +151,7 @@ export default function Lesson() {
     }
   }
 
-  const hasAnswer = pick !== null || imagePick !== null || text.trim() !== '' || wordOrder.length > 0 || Object.keys(pairs).length > 0;
+  const hasAnswer = pick !== null || imagePick !== null || text.trim() !== '' || wordOrder.length > 0 || Object.keys(pairs).length > 0 || Object.keys(slotFills).length > 0;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -273,6 +279,19 @@ export default function Lesson() {
             pick={imagePick}
             onPick={setImagePick}
             audioUrl={(ex.prompt as any).audioUrl}
+            disabled={!!feedback}
+          />
+        )}
+
+        {ex.type === ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE && (
+          <PinyinAssembleBlock
+            pinyin={(ex.prompt as any).pinyin}
+            hint={(ex.prompt as any).hint}
+            structure={(ex.prompt as any).structure}
+            slots={(ex.prompt as any).slots}
+            candidates={(ex.prompt as any).candidates}
+            slotFills={slotFills}
+            onSlotFills={setSlotFills}
             disabled={!!feedback}
           />
         )}
@@ -551,6 +570,113 @@ function ImageChoiceBlock({ word, options, pick, onPick, audioUrl, disabled }: {
   );
 }
 
+function PinyinAssembleBlock({
+  pinyin,
+  hint,
+  structure,
+  slots,
+  candidates,
+  slotFills,
+  onSlotFills,
+  disabled,
+}: {
+  pinyin: string;
+  hint?: string;
+  structure: 'horizontal' | 'vertical';
+  slots: { id: string; label?: string }[];
+  candidates: string[];
+  slotFills: Record<string, string>;
+  onSlotFills: (v: Record<string, string>) => void;
+  disabled: boolean;
+}) {
+  const usedComponents = new Set(Object.values(slotFills));
+  const allFilled = slots.every((s) => slotFills[s.id]);
+
+  function placeComponent(component: string) {
+    if (disabled || usedComponents.has(component)) return;
+    const empty = slots.find((s) => !slotFills[s.id]);
+    if (!empty) return;
+    onSlotFills({ ...slotFills, [empty.id]: component });
+  }
+
+  function clearSlot(slotId: string) {
+    if (disabled || !slotFills[slotId]) return;
+    const { [slotId]: _, ...rest } = slotFills;
+    onSlotFills(rest);
+  }
+
+  return (
+    <View style={{ gap: 12 }}>
+      <Text style={styles.labelSmall}>看拼音拼字</Text>
+
+      <View style={[styles.promptCard, { alignItems: 'center' }]}>
+        <Text style={styles.assemblePinyin}>{pinyin}</Text>
+        {hint ? <Text style={styles.assembleHint}>{hint}</Text> : null}
+      </View>
+
+      {/* Structure template */}
+      <View style={styles.assembleTemplateWrap}>
+        <View
+          style={[
+            styles.assembleTemplate,
+            structure === 'vertical' ? { flexDirection: 'column' } : { flexDirection: 'row' },
+          ]}
+        >
+          {slots.map((slot, i) => {
+            const filled = slotFills[slot.id];
+            const isLast = i === slots.length - 1;
+            return (
+              <Pressable
+                key={slot.id}
+                onPress={() => filled && clearSlot(slot.id)}
+                disabled={disabled || !filled}
+                style={[
+                  styles.assembleSlot,
+                  structure === 'vertical'
+                    ? !isLast && { borderBottomWidth: 2, borderBottomColor: colors.line, borderStyle: 'dashed' }
+                    : !isLast && { borderRightWidth: 2, borderRightColor: colors.line, borderStyle: 'dashed' },
+                ]}
+              >
+                <Text style={filled ? styles.assembleSlotChar : styles.assembleSlotEmpty}>
+                  {filled ?? '？'}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+
+      {allFilled && (
+        <Text style={styles.assembleReveal}>
+          你拼出的字：
+          <Text style={styles.assembleRevealChar}>
+            {' ' + slots.map((s) => slotFills[s.id]).join('')}
+          </Text>
+        </Text>
+      )}
+
+      {/* Candidates pool */}
+      <View style={styles.assemblePool}>
+        {candidates.map((c) => {
+          const used = usedComponents.has(c);
+          return (
+            <Pressable
+              key={c}
+              onPress={() => placeComponent(c)}
+              disabled={disabled || used}
+              style={[styles.assembleCandidate, used && styles.assembleCandidateUsed]}
+            >
+              <Text style={[styles.assembleCandidateText, used && { color: colors.inkSoft, opacity: 0.4 }]}>
+                {c}
+              </Text>
+            </Pressable>
+          );
+        })}
+      </View>
+    </View>
+  );
+}
+
 /* ─── Styles ─── */
 
 const styles = StyleSheet.create({
@@ -768,4 +894,72 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   feedbackBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.white, textTransform: 'uppercase' },
+
+  // Pinyin → character assemble
+  assemblePinyin: {
+    fontFamily: fonts.heavy,
+    fontSize: 36,
+    letterSpacing: 2,
+    color: colors.skyDark,
+    textAlign: 'center',
+  },
+  assembleHint: {
+    fontFamily: fonts.regular,
+    fontSize: 14,
+    color: colors.inkSoft,
+    marginTop: 6,
+    textAlign: 'center',
+  },
+  assembleTemplateWrap: {
+    alignItems: 'center',
+    paddingVertical: 8,
+  },
+  assembleTemplate: {
+    borderWidth: 3,
+    borderColor: colors.line,
+    borderStyle: 'dashed',
+    borderRadius: radius.lg,
+    backgroundColor: colors.mist,
+    padding: 8,
+  },
+  assembleSlot: {
+    width: 88,
+    height: 88,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  assembleSlotChar: { fontFamily: fonts.heavy, fontSize: 48, color: colors.ink },
+  assembleSlotEmpty: { fontFamily: fonts.heavy, fontSize: 28, color: colors.inkSoft, opacity: 0.35 },
+  assembleReveal: {
+    textAlign: 'center',
+    fontFamily: fonts.heavy,
+    fontSize: 12,
+    color: colors.inkSoft,
+    textTransform: 'uppercase',
+    letterSpacing: 1.2,
+  },
+  assembleRevealChar: { fontFamily: fonts.heavy, fontSize: 22, color: colors.ink, textTransform: 'none' },
+  assemblePool: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 10,
+    marginTop: 4,
+  },
+  assembleCandidate: {
+    width: 60,
+    height: 60,
+    borderRadius: radius.lg,
+    borderWidth: 2,
+    borderBottomWidth: 4,
+    borderColor: colors.line,
+    backgroundColor: colors.white,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  assembleCandidateUsed: {
+    backgroundColor: colors.mist,
+    borderBottomWidth: 2,
+  },
+  assembleCandidateText: { fontFamily: fonts.heavy, fontSize: 30, color: colors.ink },
 });

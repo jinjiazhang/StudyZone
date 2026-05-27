@@ -79,6 +79,37 @@ describe('judge', () => {
       ).correct,
     ).toBe(true);
   });
+
+  it('judges pinyin-to-character assemble by slot+component', () => {
+    const prompt = {
+      type: ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE,
+      pinyin: 'liǔ',
+      structure: 'horizontal' as const,
+      slots: [{ id: 'left' }, { id: 'right' }],
+      candidates: ['木', '卯', '禾', '印'],
+      target: '柳',
+    };
+    const answer = { slotFills: { left: '木', right: '卯' } };
+
+    // exact match
+    expect(judge(prompt, answer, { slotFills: { left: '木', right: '卯' } })).toEqual({
+      correct: true,
+      canonicalAnswer: '柳',
+    });
+
+    // components correct but positions swapped → wrong
+    expect(
+      judge(prompt, answer, { slotFills: { left: '卯', right: '木' } }).correct,
+    ).toBe(false);
+
+    // missing one slot → wrong
+    expect(judge(prompt, answer, { slotFills: { left: '木' } }).correct).toBe(false);
+
+    // distractor → wrong
+    expect(
+      judge(prompt, answer, { slotFills: { left: '禾', right: '卯' } }).correct,
+    ).toBe(false);
+  });
 });
 
 describe('levenshtein', () => {

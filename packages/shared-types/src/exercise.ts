@@ -159,6 +159,49 @@ export interface PoemCompleteAnswer {
   correctIndex: number;
 }
 
+/**
+ * Assemble a Chinese character from its components, given a pinyin prompt.
+ * The UI shows structural slots (e.g. top/bottom for 上下结构, left/right for
+ * 左右结构) and a pool of component candidates (correct components + distractors).
+ * The user fills each slot with the right component — both *which* component and
+ * *where* it goes are checked.
+ *
+ * Example for 李 (lǐ):
+ *   pinyin: "lǐ",
+ *   hint: "桃 ___ 满天下",
+ *   structure: "vertical",
+ *   slots: [{ id: "top" }, { id: "bottom" }],
+ *   candidates: ["木", "子", "禾", "立", "田", "了"],
+ *   target: "李",
+ *   answer.slotFills: { top: "木", bottom: "子" }
+ */
+export interface PinyinToCharacterAssemblePrompt {
+  type: ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE;
+  /** Pinyin with tone, e.g. "lǐ". */
+  pinyin: string;
+  /** Optional context word, e.g. "桃 ___ 满天下". */
+  hint?: string;
+  /** Layout of the structural template. */
+  structure: 'horizontal' | 'vertical';
+  /**
+   * Ordered list of slots. Order matches reading order:
+   * - horizontal: left → right
+   * - vertical:   top  → bottom
+   */
+  slots: { id: string; label?: string }[];
+  /** Pool of component candidates (correct + distractors), shown shuffled. */
+  candidates: string[];
+  /** The target composite character — used for the reveal animation / feedback. */
+  target: string;
+  /** Optional audio of the standard pronunciation. */
+  audioUrl?: string;
+}
+
+export interface PinyinToCharacterAssembleAnswer {
+  /** Map from slot.id → component string. Every slot must be present. */
+  slotFills: Record<string, string>;
+}
+
 export type ExercisePrompt =
   | TranslateChoicePrompt
   | TranslateInputPrompt
@@ -169,7 +212,8 @@ export type ExercisePrompt =
   | NumericInputPrompt
   | SingleChoicePrompt
   | PinyinChoicePrompt
-  | PoemCompletePrompt;
+  | PoemCompletePrompt
+  | PinyinToCharacterAssemblePrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -181,7 +225,8 @@ export type ExerciseAnswer =
   | NumericInputAnswer
   | SingleChoiceAnswer
   | PinyinChoiceAnswer
-  | PoemCompleteAnswer;
+  | PoemCompleteAnswer
+  | PinyinToCharacterAssembleAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
@@ -189,6 +234,7 @@ export type MatchPairsAttemptPayload = MatchPairsAnswer;
 export type ImageChoiceAttemptPayload = ImageChoiceAnswer;
 export type WordBankAttemptPayload = WordBankAnswer;
 export type NumericInputAttemptPayload = NumericInputAnswer;
+export type PinyinToCharacterAssembleAttemptPayload = PinyinToCharacterAssembleAnswer;
 
 /** What the user submits for an attempt. Server-only grading fields are omitted. */
 export type UserAttemptPayload =
@@ -197,4 +243,5 @@ export type UserAttemptPayload =
   | MatchPairsAttemptPayload
   | ImageChoiceAttemptPayload
   | WordBankAttemptPayload
-  | NumericInputAttemptPayload;
+  | NumericInputAttemptPayload
+  | PinyinToCharacterAssembleAttemptPayload;

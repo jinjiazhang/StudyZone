@@ -81,6 +81,17 @@ export function judge(
       return { correct, canonicalAnswer: String(a.value) };
     }
 
+    case ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE: {
+      const p = prompt as { slots: { id: string }[]; target: string };
+      const a = answer as { slotFills: Record<string, string> };
+      const u = attempt as { slotFills: Record<string, string> };
+      // Every slot must be filled with the correct component.
+      const correct =
+        p.slots.length === Object.keys(a.slotFills).length &&
+        p.slots.every((slot) => u.slotFills?.[slot.id] === a.slotFills[slot.id]);
+      return { correct, canonicalAnswer: p.target };
+    }
+
     default:
       // Exhaustiveness check
       return { correct: false };

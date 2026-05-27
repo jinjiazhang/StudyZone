@@ -71,6 +71,48 @@
       "difficulty": 1
     },
     {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "liǔ",
+        "hint": "《咏___》的“___”",
+        "structure": "horizontal",
+        "slots": [
+          { "id": "left" },
+          { "id": "right" }
+        ],
+        "candidates": ["木", "卯", "禾", "印", "邦", "卫"],
+        "target": "柳"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "木",
+          "right": "卯"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tāo",
+        "hint": "“万条垂下绿丝___”的“___”",
+        "structure": "horizontal",
+        "slots": [
+          { "id": "left" },
+          { "id": "right" }
+        ],
+        "candidates": ["纟", "条", "糸", "各", "木", "系"],
+        "target": "绦"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "纟",
+          "right": "条"
+        }
+      },
+      "difficulty": 2
+    },
+    {
       "type": "match_pairs",
       "prompt": {
         "left": [
