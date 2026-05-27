@@ -30,22 +30,15 @@ export class LearningService {
     private readonly events: EventEmitter2,
   ) {}
 
-  /**
-   * Start a learning session for a lesson.
-   * Picks an exercise queue (SRS due cards mixed with lesson exercises) and
-   * persists it on the session so attempts are validated against the queue.
-   */
   async startLesson(userId: string, lessonId: string) {
     const lesson = await this.prisma.lesson.findUnique({
       where: { id: lessonId },
       include: {
         exercises: { include: { exercise: true }, orderBy: { orderIndex: 'asc' } },
-        skill: true,
       },
     });
     if (!lesson) throw new NotFoundException({ code: 'lesson_not_found', message: '关卡不存在' });
 
-    // Pick exercises: up to `exerciseCount`, with light shuffling.
     const target = lesson.exerciseCount;
     const pool = lesson.exercises.map((le) => le.exercise);
     const queue = pickAndShuffle(pool, target);
@@ -62,7 +55,6 @@ export class LearningService {
     return {
       sessionId: session.id,
       lessonId: lesson.id,
-      skillId: lesson.skillId,
       startedAt: session.startedAt.toISOString(),
       exercises: queue.map((e) => ({
         id: e.id,
@@ -73,10 +65,6 @@ export class LearningService {
     };
   }
 
-  /**
-   * Submit a single attempt. Judges server-side and returns the verdict.
-   * Hearts decrement on incorrect.
-   */
   async submitAttempt(userId: string, sessionId: string, dto: SubmitAttemptDto) {
     const session = await this.prisma.learningSession.findUnique({
       where: { id: sessionId },
@@ -112,7 +100,6 @@ export class LearningService {
       });
     }
 
-    // Persist attempt and update counters.
     await this.prisma.$transaction([
       this.prisma.exerciseAttempt.create({
         data: {
@@ -132,7 +119,6 @@ export class LearningService {
       }),
     ]);
 
-    // Update SRS card.
     const quality = result.correct ? (dto.responseMs < 8000 ? 5 : 4) : 2;
     const existing = await this.prisma.srsCard.findUnique({
       where: { userId_exerciseId: { userId, exerciseId: dto.exerciseId } },
@@ -168,15 +154,11 @@ export class LearningService {
     };
   }
 
-  /**
-   * Complete a session. Computes XP/gems, updates streak, level, skill progress.
-   * Emits a learning.lesson.completed event for downstream listeners.
-   */
   async completeSession(userId: string, sessionId: string, _dto: CompleteSessionDto) {
     const session = await this.prisma.learningSession.findUnique({
       where: { id: sessionId },
       include: {
-        lesson: { include: { skill: true } },
+        lesson: true,
         user: { include: { wallet: true, streak: true } },
       },
     });
@@ -194,8 +176,6 @@ export class LearningService {
     });
 
     const outcome = score.totalXp > 0 ? 'pass' : 'fail';
-
-    // Streak update (use UTC date as local for now; proper impl reads user.timezone).
     const todayLocalDate = new Date().toISOString().slice(0, 10);
     const streak = updateStreak({
       todayLocalDate,
@@ -204,16 +184,17 @@ export class LearningService {
       streakFreezes: session.user.wallet?.streakFreezes ?? 0,
     });
 
-    // Old level for level-up detection.
     const oldXp = session.user.wallet?.xpTotal ?? 0;
     const oldLevel = xpToLevel(oldXp).level;
     const newXp = oldXp + score.totalXp;
     const newLevel = xpToLevel(newXp).level;
+    const lessonProgress = await this.updateLessonProgress(
+      userId,
+      session.lesson.id,
+      outcome === 'pass',
+      session.totalCount > 0 ? Math.round((session.correctCount / session.totalCount) * 100) : 0,
+    );
 
-    // Skill progress: if lesson passed, advance level/strength on its skill.
-    const skillProgress = await this.advanceSkill(userId, session.lesson.skill.id, outcome === 'pass');
-
-    // Persist everything in a transaction.
     await this.prisma.$transaction([
       this.prisma.learningSession.update({
         where: { id: sessionId },
@@ -253,9 +234,12 @@ export class LearningService {
           refId: sessionId,
         },
       }),
+      this.prisma.enrollment.updateMany({
+        where: { userId, courseId: { in: await this.courseIdsForLesson(session.lesson.id) } },
+        data: { currentLessonId: session.lesson.id, lastActiveAt: new Date() },
+      }),
     ]);
 
-    // Emit domain event.
     this.events.emit('learning.lesson.completed', {
       type: 'learning.lesson.completed',
       occurredAt: new Date().toISOString(),
@@ -264,7 +248,6 @@ export class LearningService {
         userId,
         sessionId,
         lessonId: session.lessonId,
-        skillId: session.lesson.skillId,
         outcome,
         correctCount: session.correctCount,
         totalCount: session.totalCount,
@@ -281,50 +264,51 @@ export class LearningService {
       newStreak: streak.newStreak,
       streakAdvanced: streak.advanced,
       levelUp: newLevel > oldLevel ? { from: oldLevel, to: newLevel } : null,
-      skillProgress,
+      lessonProgress,
     };
   }
 
-  private async advanceSkill(userId: string, skillId: string, passed: boolean) {
-    const existing = await this.prisma.userSkillProgress.findUnique({
-      where: { userId_skillId: { userId, skillId } },
+  private async updateLessonProgress(userId: string, lessonId: string, passed: boolean, score: number) {
+    const existing = await this.prisma.userLessonProgress.findUnique({
+      where: { userId_lessonId: { userId, lessonId } },
     });
-    const skill = await this.prisma.skill.findUnique({ where: { id: skillId } });
-    if (!skill) throw new NotFoundException({ code: 'skill_not_found' });
 
     if (!existing) {
-      const created = await this.prisma.userSkillProgress.create({
+      const created = await this.prisma.userLessonProgress.create({
         data: {
           userId,
-          skillId,
-          level: passed ? 1 : 0,
-          strength: passed ? 20 : 5,
+          lessonId,
+          completed: passed,
+          bestScore: score,
         },
       });
-      return { skillId, level: created.level, strength: created.strength };
+      return { lessonId, completed: created.completed, bestScore: created.bestScore };
     }
 
-    // 5 lessons per level-up cap by maxLevel.
-    const nextStrength = Math.min(100, existing.strength + (passed ? 20 : 5));
-    const nextLevel = nextStrength >= 100 && existing.level < skill.maxLevel
-      ? existing.level + 1
-      : existing.level;
-    const resetStrength = nextLevel > existing.level ? 0 : nextStrength;
-
-    const updated = await this.prisma.userSkillProgress.update({
-      where: { userId_skillId: { userId, skillId } },
-      data: { level: nextLevel, strength: resetStrength },
+    const updated = await this.prisma.userLessonProgress.update({
+      where: { userId_lessonId: { userId, lessonId } },
+      data: {
+        completed: existing.completed || passed,
+        bestScore: Math.max(existing.bestScore, score),
+      },
     });
-    return { skillId, level: updated.level, strength: updated.strength };
+    return { lessonId, completed: updated.completed, bestScore: updated.bestScore };
+  }
+
+  private async courseIdsForLesson(lessonId: string) {
+    const lesson = await this.prisma.lesson.findUnique({
+      where: { id: lessonId },
+      include: { unit: true },
+    });
+    return lesson ? [lesson.unit.courseId] : [];
   }
 }
 
-// Fisher–Yates shuffle, then take first `n`.
 function pickAndShuffle<T>(arr: T[], n: number): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j]!, a[i]!];
+    [a[i], a[j]!] = [a[j]!, a[i]!];
   }
   return a.slice(0, n);
 }

@@ -32,7 +32,7 @@ model User {
   devices           Device[]
   refreshTokens     RefreshToken[]
   enrollments       Enrollment[]
-  skillProgress     UserSkillProgress[]
+  lessonProgress    UserLessonProgress[]
   sessions          LearningSession[]
   wallet            UserWallet?
   streak            StreakRecord?
@@ -134,38 +134,25 @@ model Unit {
   title      String
   themeColor String   @default("#3FB984")
 
-  skills     Skill[]
+  lessons    Lesson[]
 
   @@unique([courseId, orderIndex])
 }
 
-model Skill {
-  id         String   @id @default(cuid())
-  unit       Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
-  unitId     String
-  orderIndex Int
-  name       String
-  icon       String   @default("")
-  maxLevel   Int      @default(5)
-
-  lessons       Lesson[]
-  userProgress  UserSkillProgress[]
-
-  @@unique([unitId, orderIndex])
-}
-
 model Lesson {
   id            String   @id @default(cuid())
-  skill         Skill    @relation(fields: [skillId], references: [id], onDelete: Cascade)
-  skillId       String
-  level         Int      // which skill level this lesson belongs to (1..maxLevel)
-  orderIndex    Int      // order within a skill level
+  unit          Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  unitId        String
+  orderIndex    Int
+  title         String
+  icon          String   @default("")
   exerciseCount Int      @default(8) // target count (server may pick subset)
 
-  exercises LessonExercise[]
-  sessions  LearningSession[]
+  exercises     LessonExercise[]
+  sessions      LearningSession[]
+  userProgress  UserLessonProgress[]
 
-  @@unique([skillId, level, orderIndex])
+  @@unique([unitId, orderIndex])
 }
 
 model Exercise {
@@ -205,7 +192,7 @@ model Enrollment {
   course           Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
   courseId         String
   currentUnitId    String?
-  currentSkillId   String?
+  currentLessonId  String?
   xpInCourse       Int      @default(0)
   enrolledAt       DateTime @default(now())
   lastActiveAt     DateTime @default(now())
@@ -214,16 +201,16 @@ model Enrollment {
   @@index([userId])
 }
 
-model UserSkillProgress {
+model UserLessonProgress {
   user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  skill     Skill  @relation(fields: [skillId], references: [id], onDelete: Cascade)
-  skillId   String
-  level     Int    @default(0)
-  strength  Int    @default(0) // 0..100 mastery decays over time
+  lesson    Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lessonId  String
+  completed Boolean @default(false)
+  bestScore Int     @default(0)
   updatedAt DateTime @updatedAt
 
-  @@id([userId, skillId])
+  @@id([userId, lessonId])
   @@index([userId])
 }
 

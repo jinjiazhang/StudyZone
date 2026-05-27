@@ -6,24 +6,17 @@ export interface SeedExercise {
 }
 
 export interface SeedLesson {
-  level: number;
   orderIndex: number;
-  exercises: SeedExercise[];
-}
-
-export interface SeedSkill {
-  orderIndex: number;
-  name: string;
+  title: string;
   icon: string;
-  maxLevel?: number;
-  lessons: SeedLesson[];
+  exercises: SeedExercise[];
 }
 
 export interface SeedUnit {
   orderIndex: number;
   title: string;
   themeColor: string;
-  skills: SeedSkill[];
+  lessons: SeedLesson[];
 }
 
 export interface SeedCourseContent {

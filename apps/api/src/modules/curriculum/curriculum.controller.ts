@@ -46,11 +46,6 @@ export class CurriculumController {
     return this.service.getCourseTree(user.id, courseId);
   }
 
-  @Get('skills/:id/first-lesson')
-  firstLesson(@Param('id') skillId: string) {
-    return this.service.firstLessonOfSkill(skillId);
-  }
-
   @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
   @Get('admin/courses/:id/content')

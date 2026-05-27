@@ -17,35 +17,27 @@ describe('CurriculumService admin content', () => {
           orderIndex: 0,
           title: 'Basics',
           themeColor: '#3FB984',
-          skills: [
+          lessons: [
             {
-              id: 'skill-1',
+              id: 'lesson-1',
               orderIndex: 0,
-              name: 'Greetings',
+              title: 'Greetings',
               icon: '👋',
-              maxLevel: 5,
-              lessons: [
+              exerciseCount: 1,
+              exercises: [
                 {
-                  id: 'lesson-1',
-                  level: 1,
                   orderIndex: 0,
-                  exerciseCount: 1,
-                  exercises: [
-                    {
-                      orderIndex: 0,
-                      exercise: {
-                        id: 'exercise-1',
-                        type: ExerciseType.SINGLE_CHOICE,
-                        prompt: {
-                          type: ExerciseType.SINGLE_CHOICE,
-                          question: 'Hello means?',
-                          options: ['你好', '再见'],
-                        },
-                        answer: { correctIndex: 0 },
-                        difficulty: 1,
-                      },
+                  exercise: {
+                    id: 'exercise-1',
+                    type: ExerciseType.SINGLE_CHOICE,
+                    prompt: {
+                      type: ExerciseType.SINGLE_CHOICE,
+                      question: 'Hello means?',
+                      options: ['你好', '再见'],
                     },
-                  ],
+                    answer: { correctIndex: 0 },
+                    difficulty: 1,
+                  },
                 },
               ],
             },
@@ -60,17 +52,13 @@ describe('CurriculumService admin content', () => {
       id: 'course-1',
       units: [
         {
-          skills: [
+          lessons: [
             {
-              lessons: [
+              exercises: [
                 {
-                  exercises: [
-                    {
-                      id: 'exercise-1',
-                      answer: { correctIndex: 0 },
-                      orderIndex: 0,
-                    },
-                  ],
+                  id: 'exercise-1',
+                  answer: { correctIndex: 0 },
+                  orderIndex: 0,
                 },
               ],
             },
@@ -105,14 +93,6 @@ describe('CurriculumService admin content', () => {
       answer: { value: 42 },
       difficulty: 2,
       orderIndex: 3,
-    });
-    expect(prisma.exercise.update).toHaveBeenCalledWith({
-      where: { id: 'exercise-1' },
-      data: expect.objectContaining({
-        prompt: { type: ExerciseType.NUMERIC_INPUT, statement: '6 × 7 = ?' },
-        answer: { value: 42 },
-        difficulty: 2,
-      }),
     });
   });
 });

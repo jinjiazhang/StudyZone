@@ -5,9 +5,9 @@ logic in `../seed.ts`.
 
 ## Layout
 
-- `courses/english.ts` - English units, skills, lessons, and exercises.
-- `courses/math.ts` - Math units, skills, lessons, and exercises.
-- `courses/chinese.ts` - Chinese units, skills, lessons, and exercises.
+- `courses/english.ts` - English units, lessons, and exercises.
+- `courses/math.ts` - Math units, lessons, and exercises.
+- `courses/chinese.ts` - Chinese units, lessons, and exercises.
 - `types.ts` - Shared seed data shapes and the `ex()` exercise helper.
 - `index.ts` - Barrel exports consumed by `../seed.ts`.
 
@@ -16,9 +16,9 @@ logic in `../seed.ts`.
 Course data follows this tree:
 
 ```text
-course
-  unit
-    skill
+subject
+  course
+    unit
       lesson
         exercise
 ```

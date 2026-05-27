@@ -92,23 +92,12 @@ CREATE TABLE "Unit" (
 );
 
 -- CreateTable
-CREATE TABLE "Skill" (
+CREATE TABLE "Lesson" (
     "id" TEXT NOT NULL,
     "unitId" TEXT NOT NULL,
     "orderIndex" INTEGER NOT NULL,
-    "name" TEXT NOT NULL,
+    "title" TEXT NOT NULL,
     "icon" TEXT NOT NULL DEFAULT '',
-    "maxLevel" INTEGER NOT NULL DEFAULT 5,
-
-    CONSTRAINT "Skill_pkey" PRIMARY KEY ("id")
-);
-
--- CreateTable
-CREATE TABLE "Lesson" (
-    "id" TEXT NOT NULL,
-    "skillId" TEXT NOT NULL,
-    "level" INTEGER NOT NULL,
-    "orderIndex" INTEGER NOT NULL,
     "exerciseCount" INTEGER NOT NULL DEFAULT 8,
 
     CONSTRAINT "Lesson_pkey" PRIMARY KEY ("id")
@@ -142,7 +131,7 @@ CREATE TABLE "Enrollment" (
     "userId" TEXT NOT NULL,
     "courseId" TEXT NOT NULL,
     "currentUnitId" TEXT,
-    "currentSkillId" TEXT,
+    "currentLessonId" TEXT,
     "xpInCourse" INTEGER NOT NULL DEFAULT 0,
     "enrolledAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "lastActiveAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -151,14 +140,14 @@ CREATE TABLE "Enrollment" (
 );
 
 -- CreateTable
-CREATE TABLE "UserSkillProgress" (
+CREATE TABLE "UserLessonProgress" (
     "userId" TEXT NOT NULL,
-    "skillId" TEXT NOT NULL,
-    "level" INTEGER NOT NULL DEFAULT 0,
-    "strength" INTEGER NOT NULL DEFAULT 0,
+    "lessonId" TEXT NOT NULL,
+    "completed" BOOLEAN NOT NULL DEFAULT false,
+    "bestScore" INTEGER NOT NULL DEFAULT 0,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
-    CONSTRAINT "UserSkillProgress_pkey" PRIMARY KEY ("userId","skillId")
+    CONSTRAINT "UserLessonProgress_pkey" PRIMARY KEY ("userId","lessonId")
 );
 
 -- CreateTable
@@ -390,10 +379,7 @@ CREATE UNIQUE INDEX "Course_subjectId_fromLocale_toLocale_key" ON "Course"("subj
 CREATE UNIQUE INDEX "Unit_courseId_orderIndex_key" ON "Unit"("courseId", "orderIndex");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "Skill_unitId_orderIndex_key" ON "Skill"("unitId", "orderIndex");
-
--- CreateIndex
-CREATE UNIQUE INDEX "Lesson_skillId_level_orderIndex_key" ON "Lesson"("skillId", "level", "orderIndex");
+CREATE UNIQUE INDEX "Lesson_unitId_orderIndex_key" ON "Lesson"("unitId", "orderIndex");
 
 -- CreateIndex
 CREATE INDEX "LessonExercise_lessonId_orderIndex_idx" ON "LessonExercise"("lessonId", "orderIndex");
@@ -402,7 +388,7 @@ CREATE INDEX "LessonExercise_lessonId_orderIndex_idx" ON "LessonExercise"("lesso
 CREATE INDEX "Enrollment_userId_idx" ON "Enrollment"("userId");
 
 -- CreateIndex
-CREATE INDEX "UserSkillProgress_userId_idx" ON "UserSkillProgress"("userId");
+CREATE INDEX "UserLessonProgress_userId_idx" ON "UserLessonProgress"("userId");
 
 -- CreateIndex
 CREATE INDEX "LearningSession_userId_idx" ON "LearningSession"("userId");
@@ -477,10 +463,7 @@ ALTER TABLE "Course" ADD CONSTRAINT "Course_subjectId_fkey" FOREIGN KEY ("subjec
 ALTER TABLE "Unit" ADD CONSTRAINT "Unit_courseId_fkey" FOREIGN KEY ("courseId") REFERENCES "Course"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "Skill" ADD CONSTRAINT "Skill_unitId_fkey" FOREIGN KEY ("unitId") REFERENCES "Unit"("id") ON DELETE CASCADE ON UPDATE CASCADE;
-
--- AddForeignKey
-ALTER TABLE "Lesson" ADD CONSTRAINT "Lesson_skillId_fkey" FOREIGN KEY ("skillId") REFERENCES "Skill"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "Lesson" ADD CONSTRAINT "Lesson_unitId_fkey" FOREIGN KEY ("unitId") REFERENCES "Unit"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "LessonExercise" ADD CONSTRAINT "LessonExercise_lessonId_fkey" FOREIGN KEY ("lessonId") REFERENCES "Lesson"("id") ON DELETE CASCADE ON UPDATE CASCADE;
@@ -495,10 +478,10 @@ ALTER TABLE "Enrollment" ADD CONSTRAINT "Enrollment_userId_fkey" FOREIGN KEY ("u
 ALTER TABLE "Enrollment" ADD CONSTRAINT "Enrollment_courseId_fkey" FOREIGN KEY ("courseId") REFERENCES "Course"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "UserSkillProgress" ADD CONSTRAINT "UserSkillProgress_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "UserLessonProgress" ADD CONSTRAINT "UserLessonProgress_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "UserSkillProgress" ADD CONSTRAINT "UserSkillProgress_skillId_fkey" FOREIGN KEY ("skillId") REFERENCES "Skill"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE "UserLessonProgress" ADD CONSTRAINT "UserLessonProgress_lessonId_fkey" FOREIGN KEY ("lessonId") REFERENCES "Lesson"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "LearningSession" ADD CONSTRAINT "LearningSession_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
@@ -556,3 +539,4 @@ ALTER TABLE "Subscription" ADD CONSTRAINT "Subscription_userId_fkey" FOREIGN KEY
 
 -- AddForeignKey
 ALTER TABLE "Notification" ADD CONSTRAINT "Notification_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+

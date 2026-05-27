@@ -5,10 +5,9 @@ import { useQuery, useMutation } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { Lock, Star, Trophy } from 'lucide-react';
+import { CheckCircle2, Lock, PlayCircle, Trophy } from 'lucide-react';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
-import { Mascot } from '@/components/Mascot';
 
 export default function CoursePage() {
   const params = useParams<{ courseId: string }>();
@@ -17,7 +16,6 @@ export default function CoursePage() {
   const enroll = useMutation({ mutationFn: () => api.enrollCourse(courseId) });
   useEffect(() => {
     enroll.mutate();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [courseId]);
 
   const { data: tree, isLoading } = useQuery({
@@ -25,34 +23,25 @@ export default function CoursePage() {
     queryFn: () => api.getCourseTree(courseId),
   });
 
-  if (isLoading)
-    return (
-      <AppShell>
-        <div className="font-bold text-sz-ink-soft">加载课程地图中…</div>
-      </AppShell>
-    );
-  if (!tree)
-    return (
-      <AppShell>
-        <div className="card font-heavy">课程未找到</div>
-      </AppShell>
-    );
+  if (isLoading) {
+    return <AppShell><div className="font-bold text-sz-ink-soft">加载课程地图中…</div></AppShell>;
+  }
+  if (!tree) {
+    return <AppShell><div className="card font-heavy">课程未找到</div></AppShell>;
+  }
 
   return (
     <AppShell>
-      <div className="mx-auto flex max-w-2xl flex-col gap-12">
+      <div className="mx-auto flex max-w-3xl flex-col gap-12">
         {tree.map((unit, unitIdx) => (
           <section key={unit.unitId}>
-            {/* Unit banner */}
             <header
               className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"
               style={{ background: unit.themeColor }}
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="flex-1">
-                  <div className="text-xs font-heavy uppercase tracking-widest opacity-80">
-                    第 {unit.unitOrder + 1} 单元
-                  </div>
+                  <div className="text-xs font-heavy uppercase tracking-widest opacity-80">第 {unit.unitOrder + 1} 单元</div>
                   <div className="mt-1 text-2xl font-heavy">{unit.unitTitle}</div>
                 </div>
                 <button className="inline-flex items-center gap-2 rounded-2xl border-2 border-white/30 bg-white/15 px-4 py-2 text-sm font-heavy uppercase tracking-wider">
@@ -64,17 +53,15 @@ export default function CoursePage() {
               </div>
             </header>
 
-            {/* Skill path */}
             <ol className="mt-8 flex flex-col items-center gap-8">
-              {unit.skills.map((skill, idx) => {
-                // Curved path: -2..2 offset using a sine-ish pattern
+              {unit.lessons.map((lesson, idx) => {
                 const offsets = [-1, 1, 2, 1, -1, -2];
                 const offset = offsets[idx % offsets.length] ?? 0;
                 return (
-                  <SkillNode
-                    key={skill.skillId}
+                  <LessonNode
+                    key={lesson.lessonId}
                     courseId={courseId}
-                    skill={skill}
+                    lesson={lesson}
                     offset={offset}
                     themeColor={unit.themeColor}
                   />
@@ -88,78 +75,51 @@ export default function CoursePage() {
   );
 }
 
-function SkillNode({
+function LessonNode({
   courseId,
-  skill,
+  lesson,
   offset,
   themeColor,
 }: {
   courseId: string;
-  skill: {
-    skillId: string;
+  lesson: {
+    lessonId: string;
     name: string;
     icon: string;
     unlocked: boolean;
-    userLevel: number;
-    maxLevel: number;
+    completed: boolean;
   };
   offset: number;
   themeColor: string;
 }) {
-  const percent = Math.round((skill.userLevel / skill.maxLevel) * 100);
-  const isMastered = skill.userLevel >= skill.maxLevel;
-  const inProgress = skill.unlocked && skill.userLevel > 0 && !isMastered;
-  const isNext = skill.unlocked && skill.userLevel === 0;
+  const isNext = lesson.unlocked && !lesson.completed;
 
   return (
-    <li
-      className="flex flex-col items-center gap-2"
-      style={{ transform: `translateX(${offset * 36}px)` }}
-    >
+    <li className="flex flex-col items-center gap-2" style={{ transform: `translateX(${offset * 36}px)` }}>
       <Link
-        href={skill.unlocked ? `/learn/courses/${courseId}/skills/${skill.skillId}` : '#'}
-        aria-disabled={!skill.unlocked}
-        className={clsx(
-          'skill-node',
-          !skill.unlocked && 'pointer-events-none',
-          isNext && 'animate-pulseGlow',
-        )}
+        href={lesson.unlocked ? `/learn/lessons/${lesson.lessonId}` : '#'}
+        aria-disabled={!lesson.unlocked}
+        className={clsx('lesson-node', !lesson.unlocked && 'pointer-events-none', isNext && 'animate-pulseGlow')}
         style={{
-          background: skill.unlocked ? (isMastered ? '#FFC800' : 'white') : '#E5E5E5',
-          color: skill.unlocked ? '#3C3C3C' : '#bbbbbb',
+          background: lesson.unlocked ? (lesson.completed ? '#FFC800' : 'white') : '#E5E5E5',
+          color: lesson.unlocked ? '#3C3C3C' : '#bbbbbb',
           borderColor: themeColor,
         }}
       >
-        {skill.unlocked ? (
-          <>
-            <span className="text-3xl">{skill.icon || '⭐'}</span>
-            {isMastered && (
-              <span className="absolute -right-1 -top-1 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-sz-gold text-white shadow-pop">
-                <Star className="h-4 w-4" fill="white" />
-              </span>
-            )}
-            {inProgress && (
-              <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 text-[10px] font-heavy text-white">
-                Lv {skill.userLevel}/{skill.maxLevel}
-              </span>
-            )}
-            {isNext && (
-              <span className="absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-xl bg-sz-green px-3 py-1 text-xs font-heavy uppercase tracking-wider text-white shadow-pop">
-                开始
-              </span>
-            )}
-          </>
-        ) : (
-          <Lock className="h-7 w-7" />
+        {!lesson.unlocked && <Lock className="h-7 w-7" />}
+        {lesson.unlocked && !lesson.completed && <span className="text-3xl">{lesson.icon || '📘'}</span>}
+        {lesson.completed && <CheckCircle2 className="h-8 w-8 text-white" />}
+        {isNext && (
+          <span className="absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-xl bg-sz-green px-3 py-1 text-xs font-heavy uppercase tracking-wider text-white shadow-pop">
+            <PlayCircle className="mr-1 inline h-3.5 w-3.5" /> 开始
+          </span>
         )}
       </Link>
       <div className="text-center">
-        <div className="font-heavy text-sz-ink">{skill.name}</div>
-        {skill.unlocked && !isMastered && (
-          <div className="mx-auto mt-1 h-2 w-24 overflow-hidden rounded-full bg-sz-line">
-            <div className="h-full rounded-full bg-sz-green" style={{ width: `${percent}%` }} />
-          </div>
-        )}
+        <div className="font-heavy text-sz-ink">{lesson.name}</div>
+        <div className="mt-1 text-xs font-bold text-sz-ink-soft">
+          {lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}
+        </div>
       </div>
     </li>
   );

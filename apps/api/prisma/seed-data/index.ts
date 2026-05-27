@@ -5,6 +5,5 @@ export type {
   SeedCourseContent,
   SeedExercise,
   SeedLesson,
-  SeedSkill,
   SeedUnit,
 } from './types';

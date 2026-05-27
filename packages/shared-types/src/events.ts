@@ -20,7 +20,6 @@ export interface LessonCompletedEvent extends BaseEvent {
     userId: string;
     sessionId: string;
     lessonId: string;
-    skillId: string;
     outcome: LessonOutcome;
     correctCount: number;
     totalCount: number;

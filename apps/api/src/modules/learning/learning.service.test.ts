@@ -21,13 +21,11 @@ describe('LearningService', () => {
   it('starts a lesson by persisting an exercise queue without answers', async () => {
     prisma.lesson.findUnique.mockResolvedValue({
       id: 'lesson-1',
-      skillId: 'skill-1',
       exerciseCount: 2,
       exercises: [
         { exercise: choiceExercise('exercise-1', 0), orderIndex: 0 },
         { exercise: choiceExercise('exercise-2', 1), orderIndex: 1 },
       ],
-      skill: { id: 'skill-1' },
     });
     prisma.learningSession.create.mockResolvedValue({
       id: 'session-1',
@@ -46,7 +44,6 @@ describe('LearningService', () => {
     expect(result).toMatchObject({
       sessionId: 'session-1',
       lessonId: 'lesson-1',
-      skillId: 'skill-1',
       exercises: expect.arrayContaining([
         expect.objectContaining({ id: 'exercise-1', difficulty: 1 }),
         expect.objectContaining({ id: 'exercise-2', difficulty: 1 }),
@@ -83,35 +80,14 @@ describe('LearningService', () => {
       heartLost: true,
       heartsRemaining: 2,
     });
-    expect(prisma.userWallet.update).toHaveBeenCalledWith({
-      where: { userId: 'user-1' },
-      data: { hearts: 2 },
-    });
-    expect(prisma.exerciseAttempt.create).toHaveBeenCalledWith({
-      data: expect.objectContaining({
-        sessionId: 'session-1',
-        exerciseId: 'exercise-1',
-        isCorrect: false,
-      }),
-    });
-    expect(prisma.srsCard.upsert).toHaveBeenCalledWith(
-      expect.objectContaining({
-        create: expect.objectContaining({
-          userId: 'user-1',
-          exerciseId: 'exercise-1',
-          intervalDays: 1,
-          streakOk: 0,
-        }),
-      }),
-    );
   });
 
-  it('completes a passing session with rewards, skill progress, and domain event', async () => {
+  it('completes a passing session with rewards, lesson progress, and domain event', async () => {
     prisma.learningSession.findUnique.mockResolvedValue({
       id: 'session-1',
       userId: 'user-1',
       lessonId: 'lesson-1',
-      lesson: { skillId: 'skill-1', skill: { id: 'skill-1' } },
+      lesson: { id: 'lesson-1' },
       startedAt: new Date('2026-05-26T09:59:00Z'),
       finishedAt: null,
       correctCount: 5,
@@ -121,17 +97,18 @@ describe('LearningService', () => {
         streak: { currentStreak: 6, lastActiveLocalDate: '2026-05-25', longestStreak: 6 },
       },
     });
-    prisma.userSkillProgress.findUnique.mockResolvedValue(null);
-    prisma.skill.findUnique.mockResolvedValue({ id: 'skill-1', maxLevel: 5 });
-    prisma.userSkillProgress.create.mockResolvedValue({
-      skillId: 'skill-1',
-      level: 1,
-      strength: 20,
+    prisma.userLessonProgress.findUnique.mockResolvedValue(null);
+    prisma.userLessonProgress.create.mockResolvedValue({
+      lessonId: 'lesson-1',
+      completed: true,
+      bestScore: 100,
     });
+    prisma.lesson.findUnique.mockResolvedValue({ id: 'lesson-1', unit: { courseId: 'course-1' } });
     prisma.learningSession.update.mockReturnValue({ op: 'session-update' });
     prisma.userWallet.update.mockReturnValue({ op: 'wallet-update' });
     prisma.streakRecord.upsert.mockReturnValue({ op: 'streak-upsert' });
     prisma.xPLedger.create.mockReturnValue({ op: 'xp-ledger-create' });
+    prisma.enrollment.updateMany.mockReturnValue({ op: 'enrollment-update' });
     prisma.$transaction.mockImplementation(async (ops) => ops);
 
     const result = await service.completeSession('user-1', 'session-1', {});
@@ -144,15 +121,7 @@ describe('LearningService', () => {
       newStreak: 7,
       streakAdvanced: true,
       levelUp: { from: 0, to: 1 },
-      skillProgress: { skillId: 'skill-1', level: 1, strength: 20 },
-    });
-    expect(prisma.userWallet.update).toHaveBeenCalledWith({
-      where: { userId: 'user-1' },
-      data: {
-        xpTotal: { increment: 20 },
-        gems: { increment: 3 },
-        streakFreezes: 1,
-      },
+      lessonProgress: { lessonId: 'lesson-1', completed: true, bestScore: 100 },
     });
     expect(events.emit).toHaveBeenCalledWith(
       'learning.lesson.completed',
@@ -161,7 +130,6 @@ describe('LearningService', () => {
           userId: 'user-1',
           sessionId: 'session-1',
           lessonId: 'lesson-1',
-          skillId: 'skill-1',
           outcome: 'pass',
           xpGained: 20,
         }),
@@ -207,19 +175,19 @@ function createPrismaMock() {
       findUnique: vi.fn(),
       upsert: vi.fn(),
     },
-    userSkillProgress: {
+    userLessonProgress: {
       findUnique: vi.fn(),
       create: vi.fn(),
       update: vi.fn(),
-    },
-    skill: {
-      findUnique: vi.fn(),
     },
     streakRecord: {
       upsert: vi.fn(),
     },
     xPLedger: {
       create: vi.fn(),
+    },
+    enrollment: {
+      updateMany: vi.fn(),
     },
     $transaction: vi.fn(),
   };

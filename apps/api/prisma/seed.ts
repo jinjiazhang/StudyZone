@@ -2,13 +2,9 @@
  * StudyZone seed data.
  *
  * Provides:
- *   • 3 subjects: English (for Chinese speakers), Math (Grade 3),
- *     Chinese / 语文 (Grade 1-3 — pinyin, characters, poetry).
- *   • For each subject: 2 units × 2 skills × 1-2 lessons × ~7 exercises.
- *   • A demo user (demo@studyzone.dev / studyzone) so the app is usable
- *     immediately after `pnpm db:seed`.
- *
- * Run with:  pnpm --filter @studyzone/api db:seed
+ *   • 3 subjects with one course each.
+ *   • Hierarchy: Subject -> Course -> Unit -> Lesson.
+ *   • A demo user (demo@studyzone.dev / studyzone).
  */
 import { PrismaClient } from '@prisma/client';
 import * as argon2 from 'argon2';
@@ -25,7 +21,6 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('Seeding StudyZone...');
 
-  // --- Subjects -------------------------------------------------------------
   const english = await prisma.subject.upsert({
     where: { code: 'english' },
     create: { code: 'english', name: '英语', icon: '🇬🇧', color: '#3FB984', order: 1 },
@@ -44,15 +39,8 @@ async function main() {
     update: {},
   });
 
-  // --- English course -------------------------------------------------------
   const enCourse = await prisma.course.upsert({
-    where: {
-      subjectId_fromLocale_toLocale: {
-        subjectId: english.id,
-        fromLocale: 'zh-CN',
-        toLocale: 'en-US',
-      },
-    },
+    where: { subjectId_fromLocale_toLocale: { subjectId: english.id, fromLocale: 'zh-CN', toLocale: 'en-US' } },
     create: {
       subjectId: english.id,
       fromLocale: 'zh-CN',
@@ -64,18 +52,10 @@ async function main() {
     },
     update: {},
   });
-
   await buildCourseContent(enCourse.id, englishCourseContent);
 
-  // --- Math course ----------------------------------------------------------
   const mathCourse = await prisma.course.upsert({
-    where: {
-      subjectId_fromLocale_toLocale: {
-        subjectId: math.id,
-        fromLocale: 'zh-CN',
-        toLocale: 'math',
-      },
-    },
+    where: { subjectId_fromLocale_toLocale: { subjectId: math.id, fromLocale: 'zh-CN', toLocale: 'math' } },
     create: {
       subjectId: math.id,
       fromLocale: 'zh-CN',
@@ -87,33 +67,23 @@ async function main() {
     },
     update: {},
   });
-
   await buildCourseContent(mathCourse.id, mathCourseContent);
 
-  // --- Chinese course -------------------------------------------------------
   const zhCourse = await prisma.course.upsert({
-    where: {
-      subjectId_fromLocale_toLocale: {
-        subjectId: chinese.id,
-        fromLocale: 'zh-CN',
-        toLocale: 'zh-CN',
-      },
-    },
+    where: { subjectId_fromLocale_toLocale: { subjectId: chinese.id, fromLocale: 'zh-CN', toLocale: 'zh-CN' } },
     create: {
       subjectId: chinese.id,
       fromLocale: 'zh-CN',
       toLocale: 'zh-CN',
-      name: '语文一年级',
-      description: '从拼音、汉字到古诗启蒙，给小学低段同学量身打造。',
+      name: '语文二年级下',
+      description: '按单元组织课文与古诗，每课就是一个独立关卡。',
       flagEmoji: '📖',
       status: 'published',
     },
     update: {},
   });
-
   await buildCourseContent(zhCourse.id, chineseCourseContent);
 
-  // --- Daily quests ---------------------------------------------------------
   await prisma.dailyQuest.upsert({
     where: { code: 'complete_lessons' },
     create: {
@@ -137,7 +107,6 @@ async function main() {
     update: {},
   });
 
-  // --- Achievements ---------------------------------------------------------
   const achievements = [
     { code: 'first_lesson', title: '初出茅庐', description: '完成你的第一节关卡', icon: '🎯', threshold: 1, category: 'xp' },
     { code: 'streak_7', title: '坚持一周', description: '连续学习 7 天', icon: '🔥', threshold: 7, category: 'streak' },
@@ -151,7 +120,6 @@ async function main() {
     });
   }
 
-  // --- Demo user ------------------------------------------------------------
   const passwordHash = await argon2.hash('studyzone');
   const demo = await prisma.user.upsert({
     where: { email: 'demo@studyzone.dev' },
@@ -167,56 +135,28 @@ async function main() {
     include: { wallet: true, streak: true },
   });
 
-  await prisma.enrollment.upsert({
-    where: { userId_courseId: { userId: demo.id, courseId: enCourse.id } },
-    create: { userId: demo.id, courseId: enCourse.id },
-    update: {},
-  });
-  await prisma.enrollment.upsert({
-    where: { userId_courseId: { userId: demo.id, courseId: mathCourse.id } },
-    create: { userId: demo.id, courseId: mathCourse.id },
-    update: {},
-  });
-  await prisma.enrollment.upsert({
-    where: { userId_courseId: { userId: demo.id, courseId: zhCourse.id } },
-    create: { userId: demo.id, courseId: zhCourse.id },
-    update: {},
-  });
+  for (const courseId of [enCourse.id, mathCourse.id, zhCourse.id]) {
+    await prisma.enrollment.upsert({
+      where: { userId_courseId: { userId: demo.id, courseId } },
+      create: { userId: demo.id, courseId },
+      update: {},
+    });
+  }
 
   console.log('Seed complete.');
   console.log('Demo login → demo@studyzone.dev / studyzone');
 }
 
-// =============================================================================
-// Helpers
-// =============================================================================
-
 async function buildCourseContent(courseId: string, content: SeedCourseContent) {
   for (const unitData of content.units) {
     const unit = await upsertUnit(courseId, unitData.orderIndex, unitData.title, unitData.themeColor);
-
-    for (const skillData of unitData.skills) {
-      const skill = await upsertSkill(
-        unit.id,
-        skillData.orderIndex,
-        skillData.name,
-        skillData.icon,
-        skillData.maxLevel,
-      );
-
-      for (const lessonData of skillData.lessons) {
-        await buildLesson(skill.id, lessonData.level, lessonData.orderIndex, lessonData.exercises);
-      }
+    for (const lessonData of unitData.lessons) {
+      await buildLesson(unit.id, lessonData);
     }
   }
 }
 
-async function upsertUnit(
-  courseId: string,
-  orderIndex: number,
-  title: string,
-  themeColor: string,
-) {
+async function upsertUnit(courseId: string, orderIndex: number, title: string, themeColor: string) {
   return prisma.unit.upsert({
     where: { courseId_orderIndex: { courseId, orderIndex } },
     create: { courseId, orderIndex, title, themeColor },
@@ -224,37 +164,27 @@ async function upsertUnit(
   });
 }
 
-async function upsertSkill(
-  unitId: string,
-  orderIndex: number,
-  name: string,
-  icon: string,
-  maxLevel = 5,
-) {
-  return prisma.skill.upsert({
-    where: { unitId_orderIndex: { unitId, orderIndex } },
-    create: { unitId, orderIndex, name, icon, maxLevel },
-    update: { name, icon, maxLevel },
-  });
-}
-
-async function buildLesson(
-  skillId: string,
-  level: number,
-  orderIndex: number,
-  exercises: SeedExercise[],
-) {
+async function buildLesson(unitId: string, lessonData: SeedLesson) {
   const lesson = await prisma.lesson.upsert({
-    where: { skillId_level_orderIndex: { skillId, level, orderIndex } },
-    create: { skillId, level, orderIndex, exerciseCount: exercises.length },
-    update: { exerciseCount: exercises.length },
+    where: { unitId_orderIndex: { unitId, orderIndex: lessonData.orderIndex } },
+    create: {
+      unitId,
+      orderIndex: lessonData.orderIndex,
+      title: lessonData.title,
+      icon: lessonData.icon,
+      exerciseCount: lessonData.exercises.length,
+    },
+    update: {
+      title: lessonData.title,
+      icon: lessonData.icon,
+      exerciseCount: lessonData.exercises.length,
+    },
   });
 
-  // Reset junctions so re-seeding is idempotent.
   await prisma.lessonExercise.deleteMany({ where: { lessonId: lesson.id } });
 
-  for (let i = 0; i < exercises.length; i++) {
-    const e = exercises[i]!;
+  for (let i = 0; i < lessonData.exercises.length; i++) {
+    const e: SeedExercise = lessonData.exercises[i]!;
     const created = await prisma.exercise.create({
       data: {
         type: e.type,

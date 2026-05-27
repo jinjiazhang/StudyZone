@@ -9,7 +9,6 @@ import type {
   CourseDto,
   CourseTreeNode,
   DailyQuestDto,
-  FirstLessonResponse,
   FriendDto,
   LeagueStandingDto,
   LoginDto,
@@ -81,7 +80,6 @@ export class StudyZoneClient {
     return (await res.json()) as T;
   }
 
-  // --- Auth -----------------------------------------------------------------
   register(dto: RegisterDto) {
     return this.request<AuthResponse>('/api/v1/auth/register', {
       method: 'POST',
@@ -106,12 +104,10 @@ export class StudyZoneClient {
     });
   }
 
-  // --- Me -------------------------------------------------------------------
   me() {
     return this.request<UserProfile>('/api/v1/me');
   }
 
-  // --- Curriculum -----------------------------------------------------------
   listSubjects() {
     return this.request<SubjectDto[]>('/api/v1/subjects');
   }
@@ -131,12 +127,6 @@ export class StudyZoneClient {
     return this.request<CourseTreeNode[]>(`/api/v1/courses/${courseId}/tree`);
   }
 
-  firstLessonOfSkill(skillId: string) {
-    return this.request<FirstLessonResponse>(`/api/v1/skills/${skillId}/first-lesson`, {
-      auth: false,
-    });
-  }
-
   getAdminCourseContent(courseId: string) {
     return this.request<AdminCourseContentDto>(`/api/v1/admin/courses/${courseId}/content`);
   }
@@ -148,7 +138,6 @@ export class StudyZoneClient {
     });
   }
 
-  // --- Learning -------------------------------------------------------------
   startLesson(lessonId: string) {
     return this.request<StartLessonResponse>(`/api/v1/lessons/${lessonId}/start`, {
       method: 'POST',
@@ -169,12 +158,10 @@ export class StudyZoneClient {
     });
   }
 
-  // --- Gamification ---------------------------------------------------------
   dailyQuests() {
     return this.request<DailyQuestDto[]>('/api/v1/quests/daily');
   }
 
-  // --- Social ---------------------------------------------------------------
   friends(cursor?: string) {
     const q = cursor ? `?cursor=${encodeURIComponent(cursor)}` : '';
     return this.request<Paginated<FriendDto>>(`/api/v1/friends${q}`);

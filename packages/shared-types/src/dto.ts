@@ -88,21 +88,17 @@ export interface CourseTreeNode {
   unitTitle: string;
   unitOrder: number;
   themeColor: string;
-  skills: SkillNodeDto[];
+  lessons: LessonNodeDto[];
 }
 
-export interface SkillNodeDto {
-  skillId: string;
+export interface LessonNodeDto {
+  lessonId: string;
   name: string;
   icon: string;
   order: number;
-  maxLevel: number;
-  /** 0..maxLevel; clamps to 0 if not started. */
-  userLevel: number;
-  /** Whether the user has unlocked this skill (predecessors complete). */
   unlocked: boolean;
-  lessonCount: number;
-  completedLessons: number;
+  completed: boolean;
+  exerciseCount: number;
 }
 
 export interface AdminCourseContentDto {
@@ -117,22 +113,14 @@ export interface AdminUnitDto {
   orderIndex: number;
   title: string;
   themeColor: string;
-  skills: AdminSkillDto[];
-}
-
-export interface AdminSkillDto {
-  id: string;
-  orderIndex: number;
-  name: string;
-  icon: string;
-  maxLevel: number;
   lessons: AdminLessonDto[];
 }
 
 export interface AdminLessonDto {
   id: string;
-  level: number;
   orderIndex: number;
+  title: string;
+  icon: string;
   exerciseCount: number;
   exercises: AdminExerciseDto[];
 }
@@ -153,11 +141,6 @@ export interface UpdateExerciseDto {
   difficulty?: number;
 }
 
-export interface FirstLessonResponse {
-  lessonId: string;
-  level: number;
-}
-
 // =============================================================================
 // Learning
 // =============================================================================
@@ -165,7 +148,6 @@ export interface FirstLessonResponse {
 export interface StartLessonResponse {
   sessionId: string;
   lessonId: string;
-  skillId: string;
   exercises: SessionExerciseDto[];
   startedAt: string;
 }
@@ -185,15 +167,12 @@ export interface SubmitAttemptDto {
 
 export interface AttemptResult {
   correct: boolean;
-  /** Server's canonical correct answer (revealed after the attempt). */
   canonicalAnswer?: string;
-  /** Whether the user lost a heart for this attempt. */
   heartLost: boolean;
   heartsRemaining: number;
 }
 
 export interface CompleteSessionDto {
-  /** Optional, server can also infer from server-recorded attempts. */
   abandoned?: boolean;
 }
 
@@ -205,10 +184,10 @@ export interface CompleteSessionResponse {
   newStreak: number;
   streakAdvanced: boolean;
   levelUp: { from: number; to: number } | null;
-  skillProgress: {
-    skillId: string;
-    level: number;
-    strength: number;
+  lessonProgress: {
+    lessonId: string;
+    completed: boolean;
+    bestScore: number;
   };
 }
 
@@ -240,10 +219,15 @@ export interface DailyQuestDto {
 // =============================================================================
 
 export interface FriendDto {
-  user: UserPublic;
+  id: string;
+  nickname: string;
+  avatarUrl: string | null;
   status: FriendshipStatus;
-  weeklyXp: number;
-  currentStreak: number;
+}
+
+export interface Paginated<T> {
+  items: T[];
+  nextCursor: string | null;
 }
 
 export interface LeagueStandingDto {
@@ -251,29 +235,16 @@ export interface LeagueStandingDto {
   tier: LeagueTier;
   weekStart: string;
   weekEnd: string;
-  entries: LeagueEntryDto[];
-  /** Index of the current user in entries (0-based). */
   selfIndex: number;
-}
-
-export interface LeagueEntryDto {
-  rank: number;
-  user: UserPublic;
-  weeklyXp: number;
-}
-
-// =============================================================================
-// Common
-// =============================================================================
-
-export interface Paginated<T> {
-  items: T[];
-  nextCursor: string | null;
-  total?: number;
+  entries: Array<{
+    rank: number;
+    user: UserPublic;
+    weeklyXp: number;
+  }>;
 }
 
 export interface ApiError {
   code: string;
-  message: string;
-  details?: Record<string, unknown>;
+  message?: string;
+  details?: unknown;
 }
