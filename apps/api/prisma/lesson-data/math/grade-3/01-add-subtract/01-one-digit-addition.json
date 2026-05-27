@@ -1,0 +1,107 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 4 = ?"
+      },
+      "answer": {
+        "value": 7
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 2 = ?"
+      },
+      "answer": {
+        "value": 7
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3 + 4"
+          },
+          {
+            "id": "l2",
+            "text": "4 + 4"
+          },
+          {
+            "id": "l3",
+            "text": "6 + 3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "9"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r3",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 3 = ?"
+      },
+      "answer": {
+        "value": 9
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "8 + 1 = ?",
+        "options": ["7", "8", "9", "10"]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 2 = ?"
+      },
+      "answer": {
+        "value": 4
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 + 5 = ?",
+        "options": ["8", "9", "10", "11"]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 2 = ?"
+      },
+      "answer": {
+        "value": 10
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 4 = ?"
+      },
+      "answer": {
+        "value": 20
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 6 = ?"
+      },
+      "answer": {
+        "value": 30
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5 × 5 = ?",
+        "options": ["20", "25", "30", "35"]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5 × 2"
+          },
+          {
+            "id": "l2",
+            "text": "5 × 4"
+          },
+          {
+            "id": "l3",
+            "text": "5 × 6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "20"
+          },
+          {
+            "id": "r2",
+            "text": "30"
+          },
+          {
+            "id": "r3",
+            "text": "10"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 9 = ?"
+      },
+      "answer": {
+        "value": 45
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5 × 7 = ?",
+        "options": ["30", "35", "40", "45"]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

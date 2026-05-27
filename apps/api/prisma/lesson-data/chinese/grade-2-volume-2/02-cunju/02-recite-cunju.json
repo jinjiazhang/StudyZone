@@ -1,0 +1,130 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          ["草长", null, "二月天", "，"],
+          ["拂堤杨柳", "醉春烟", "。"]
+        ],
+        "options": ["莺飞", "柳飞", "燕回", "花开"]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          ["儿童散学", "归来早", "，"],
+          ["忙趁东风", null, "。"]
+        ],
+        "options": ["放纸鸢", "看柳树", "唱春歌", "过小桥"]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "草长莺飞二月天"
+          },
+          {
+            "id": "l2",
+            "text": "拂堤杨柳醉春烟"
+          },
+          {
+            "id": "l3",
+            "text": "儿童散学归来早"
+          },
+          {
+            "id": "l4",
+            "text": "忙趁东风放纸鸢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "放学的孩子早早回来"
+          },
+          {
+            "id": "r2",
+            "text": "青草生长、黄莺飞舞，正是二月春天"
+          },
+          {
+            "id": "r3",
+            "text": "赶忙借着东风放风筝"
+          },
+          {
+            "id": "r4",
+            "text": "杨柳轻拂堤岸，好像醉在春雾里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出第一句",
+        "tokens": ["草长", "莺飞", "二月天", "东风", "纸鸢"]
+      },
+      "answer": {
+        "ordered": ["草长", "莺飞", "二月天"]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出第二句",
+        "tokens": ["拂堤", "杨柳", "醉春烟", "莺飞", "归来早"]
+      },
+      "answer": {
+        "ordered": ["拂堤", "杨柳", "醉春烟"]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出第三句",
+        "tokens": ["儿童", "散学", "归来早", "草长", "春烟"]
+      },
+      "answer": {
+        "ordered": ["儿童", "散学", "归来早"]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出第四句",
+        "tokens": ["忙趁", "东风", "放纸鸢", "杨柳", "二月天"]
+      },
+      "answer": {
+        "ordered": ["忙趁", "东风", "放纸鸢"]
+      },
+      "difficulty": 1
+    }
+  ]
+}
