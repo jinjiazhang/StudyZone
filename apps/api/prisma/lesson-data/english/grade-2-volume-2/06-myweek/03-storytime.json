@@ -1,0 +1,460 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which days are the weekend?",
+        "options": [
+          "Monday and Tuesday",
+          "Wednesday and Thursday",
+          "Saturday and Sunday",
+          "Friday and Saturday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What day comes after Tuesday?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "How many days are there in a week?",
+        "options": [
+          "five days",
+          "six days",
+          "seven days",
+          "ten days"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What do kids do from Monday to Friday?",
+        "options": [
+          "play snowman",
+          "go to school",
+          "go swimming in winter",
+          "stay in bed"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Today is Friday. What day is tomorrow?",
+        "options": [
+          "Thursday",
+          "Saturday",
+          "Sunday",
+          "Monday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What day starts with 'M'?",
+        "options": [
+          "Monday",
+          "Tuesday",
+          "Sunday",
+          "Friday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'It is Monday today.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期六骑自行车。",
+          "今天星期一。",
+          "我星期日踢足球。",
+          "我周三有英语课。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'What do you do on Saturday?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我周三有英语课。",
+          "你星期六做什么？",
+          "今天星期一。",
+          "我星期日踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I ride a bike on Saturday.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我周三有英语课。",
+          "今天星期一。",
+          "我星期六骑自行车。",
+          "你星期日做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'What do you do on Sunday?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期五做飞机模型。",
+          "今天星期一。",
+          "你星期日做什么？",
+          "你星期六做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I play football on Sunday.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期六骑自行车。",
+          "我周三有英语课。",
+          "你星期五做什么？",
+          "我星期日踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'We go to school from Monday to Friday.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你星期五做什么？",
+          "我们从周一到周五去上学。",
+          "你星期日做什么？",
+          "我星期六骑自行车。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我星期六骑自行车。'",
+        "tokens": [
+          "a",
+          "on",
+          "ride",
+          "bike",
+          "Saturday",
+          "I"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "ride",
+          "a",
+          "bike",
+          "on",
+          "Saturday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '你星期日做什么？'",
+        "tokens": [
+          "on",
+          "you",
+          "Sunday",
+          "What",
+          "do",
+          "do"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "do",
+          "you",
+          "do",
+          "on",
+          "Sunday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我星期日踢足球。'",
+        "tokens": [
+          "play",
+          "on",
+          "football",
+          "Sunday",
+          "I"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "play",
+          "football",
+          "on",
+          "Sunday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我们从周一到周五去上学。'",
+        "tokens": [
+          "We",
+          "Friday",
+          "to",
+          "from",
+          "school",
+          "Monday",
+          "to",
+          "go"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "go",
+          "to",
+          "school",
+          "from",
+          "Monday",
+          "to",
+          "Friday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我周三有英语课。'",
+        "tokens": [
+          "I",
+          "on",
+          "English",
+          "have",
+          "class",
+          "Wednesday"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "have",
+          "English",
+          "class",
+          "on",
+          "Wednesday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '今天星期三。'",
+        "tokens": [
+          "is",
+          "Today",
+          "Wednesday"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Today",
+          "is",
+          "Wednesday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: We go to school from Monday to ___? (我们从周一到周五去上学。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: F"
+      },
+      "answer": {
+        "accepted": [
+          "Friday",
+          "friday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: I have English class on ___? (我周三有英语课。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: W"
+      },
+      "answer": {
+        "accepted": [
+          "Wednesday",
+          "wednesday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Today is ___? (今天星期三。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: W"
+      },
+      "answer": {
+        "accepted": [
+          "Wednesday",
+          "wednesday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: What do you do on ___? (你星期五做什么？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: F"
+      },
+      "answer": {
+        "accepted": [
+          "Friday",
+          "friday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: I make a model plane on ___? (我星期五做飞机模型。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: F"
+      },
+      "answer": {
+        "accepted": [
+          "Friday",
+          "friday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: What day is it ___? (今天星期几？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: t"
+      },
+      "answer": {
+        "accepted": [
+          "today",
+          "today"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: It is Monday ___? (今天星期一。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: t"
+      },
+      "answer": {
+        "accepted": [
+          "today",
+          "today"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

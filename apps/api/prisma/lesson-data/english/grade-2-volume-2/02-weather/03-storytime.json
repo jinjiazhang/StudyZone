@@ -1,0 +1,428 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "When it is rainy, what do you need?",
+        "options": [
+          "a bike",
+          "an umbrella",
+          "a football",
+          "a snowman"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What is the weather like when there is snow?",
+        "options": [
+          "It's sunny.",
+          "It's windy.",
+          "It's snowy.",
+          "It's rainy."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Is it hot or cold when it is snowy?",
+        "options": [
+          "It's hot.",
+          "It's cold.",
+          "It's warm.",
+          "It's cool."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Can we fly a kite when there is no wind?",
+        "options": [
+          "Yes, we can.",
+          "No, we can't.",
+          "Yes, we do.",
+          "No, we don't."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "It's sunny. Let's go to play in the...",
+        "options": [
+          "bed",
+          "school",
+          "park",
+          "hospital"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "When the sun shines brightly, the weather is:",
+        "options": [
+          "sunny",
+          "snowy",
+          "rainy",
+          "windy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'It's sunny today.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气怎么样？",
+          "今天天气晴朗。",
+          "今天下雪。",
+          "带上你的雨伞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'It's rainy today.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雨。",
+          "今天天气怎么样？",
+          "带上你的雨伞。",
+          "今天天气晴朗。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'It's windy today.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气晴朗。",
+          "不，不是。",
+          "今天多云。",
+          "今天有风。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'It's snowy today.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雪。",
+          "是的，下雪了。",
+          "今天下雨。",
+          "天气非常冷。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Take your umbrella.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气怎么样？",
+          "今天有风。",
+          "带上你的雨伞。",
+          "今天多云。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Is it snowy?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "下雪了吗？",
+          "天气非常热。",
+          "天气非常冷。",
+          "带上你的雨伞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '今天有风。'",
+        "tokens": [
+          "It's",
+          "today",
+          "windy"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "windy",
+          "today"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '今天下雪。'",
+        "tokens": [
+          "today",
+          "It's",
+          "snowy"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "snowy",
+          "today"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '带上你的雨伞。'",
+        "tokens": [
+          "Take",
+          "umbrella",
+          "your"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Take",
+          "your",
+          "umbrella"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '下雪了吗？'",
+        "tokens": [
+          "Is",
+          "snowy",
+          "it"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Is",
+          "it",
+          "snowy"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '是的，下雪了。'",
+        "tokens": [
+          "is",
+          "Yes,",
+          "it"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Yes,",
+          "it",
+          "is"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '不，不是。'",
+        "tokens": [
+          "it",
+          "No,",
+          "isn't"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "No,",
+          "it",
+          "isn't"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Is it ___? (下雪了吗？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: s"
+      },
+      "answer": {
+        "accepted": [
+          "snowy",
+          "snowy"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Yes, it ___? (是的，下雪了。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: i"
+      },
+      "answer": {
+        "accepted": [
+          "is",
+          "is"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: No, it ___? (不，不是。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: i"
+      },
+      "answer": {
+        "accepted": [
+          "isn't",
+          "isn't"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: It's cloudy ___? (今天多云。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: t"
+      },
+      "answer": {
+        "accepted": [
+          "today",
+          "today"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: It is very ___? (天气非常冷。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: c"
+      },
+      "answer": {
+        "accepted": [
+          "cold",
+          "cold"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: It is very ___? (天气非常热。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: h"
+      },
+      "answer": {
+        "accepted": [
+          "hot",
+          "hot"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: What's the weather like ___? (今天天气怎么样？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: t"
+      },
+      "answer": {
+        "accepted": [
+          "today",
+          "today"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

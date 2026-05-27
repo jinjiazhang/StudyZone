@@ -1,0 +1,714 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "When do you get up every day?",
+        "sourceLocale": "en-US",
+        "options": [
+          "我七点四十去上学。",
+          "我十二点吃午饭。",
+          "我九点钟上床睡觉。",
+          "你每天什么时候起床？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I get up at six thirty.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我八点钟去上学。",
+          "我六点半起床。",
+          "你什么时候上床睡觉？",
+          "你每天什么时候起床？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "When do you go to school?",
+        "sourceLocale": "en-US",
+        "options": [
+          "你什么时候上床睡觉？",
+          "我九点钟上床睡觉。",
+          "你什么时候去上学？",
+          "我六点半起床。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I go to school at seven forty.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你什么时候去上学？",
+          "我七点四十去上学。",
+          "我九点钟上床睡觉。",
+          "我十二点吃午饭。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I eat lunch at twelve.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你八点钟做什么？",
+          "我八点钟去上学。",
+          "我十二点吃午饭。",
+          "你每天什么时候起床？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I go home at four thirty.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我七点钟吃早饭。",
+          "你每天什么时候起床？",
+          "我六点半起床。",
+          "我四点半回家。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你什么时候去上学？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I go to school at seven forty.",
+          "I go home at four thirty.",
+          "When do you go to school?",
+          "I eat breakfast at seven."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我七点四十去上学。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "When do you go to bed?",
+          "I get up at six thirty.",
+          "I go to school at seven forty.",
+          "What do you do at eight?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我十二点吃午饭。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I go to bed at nine o'clock.",
+          "When do you go to school?",
+          "I eat lunch at twelve.",
+          "When do you get up every day?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我四点半回家。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I go home at four thirty.",
+          "I eat lunch at twelve.",
+          "What do you do at eight?",
+          "When do you get up every day?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你什么时候上床睡觉？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "When do you get up every day?",
+          "When do you go to bed?",
+          "I eat breakfast at seven.",
+          "When do you go to school?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我九点钟上床睡觉。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I go to school at seven forty.",
+          "I eat lunch at twelve.",
+          "I go to school at eight.",
+          "I go to bed at nine o'clock."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我十二点吃午饭。",
+        "tokens": [
+          "twelve",
+          "at",
+          "eat",
+          "go",
+          "I",
+          "lunch"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "eat",
+          "lunch",
+          "at",
+          "twelve"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我四点半回家。",
+        "tokens": [
+          "thirty",
+          "I",
+          "at",
+          "home",
+          "you",
+          "four",
+          "go"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "go",
+          "home",
+          "at",
+          "four",
+          "thirty"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 你什么时候上床睡觉？",
+        "tokens": [
+          "bed",
+          "go",
+          "When",
+          "you",
+          "to",
+          "nine",
+          "do"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "When",
+          "do",
+          "you",
+          "go",
+          "to",
+          "bed"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我九点钟上床睡觉。",
+        "tokens": [
+          "nine",
+          "bed",
+          "o'clock",
+          "at",
+          "to",
+          "eight",
+          "I",
+          "go"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "go",
+          "to",
+          "bed",
+          "at",
+          "nine",
+          "o'clock"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 你八点钟做什么？",
+        "tokens": [
+          "go",
+          "What",
+          "you",
+          "eight",
+          "do",
+          "do",
+          "at"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "do",
+          "you",
+          "do",
+          "at",
+          "eight"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我八点钟去上学。",
+        "tokens": [
+          "I",
+          "go",
+          "at",
+          "eight",
+          "school",
+          "eat",
+          "to"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "go",
+          "to",
+          "school",
+          "at",
+          "eight"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I go to school at eight."
+          },
+          {
+            "id": "l_1",
+            "text": "When do you get up every day?"
+          },
+          {
+            "id": "l_2",
+            "text": "When do you go to bed?"
+          },
+          {
+            "id": "l_3",
+            "text": "When do you go to school?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "你每天什么时候起床？"
+          },
+          {
+            "id": "r_3",
+            "text": "你什么时候去上学？"
+          },
+          {
+            "id": "r_0",
+            "text": "我八点钟去上学。"
+          },
+          {
+            "id": "r_2",
+            "text": "你什么时候上床睡觉？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "When do you go to school?"
+          },
+          {
+            "id": "l_1",
+            "text": "I eat lunch at twelve."
+          },
+          {
+            "id": "l_2",
+            "text": "I eat breakfast at seven."
+          },
+          {
+            "id": "l_3",
+            "text": "I go to school at seven forty."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "我七点钟吃早饭。"
+          },
+          {
+            "id": "r_3",
+            "text": "我七点四十去上学。"
+          },
+          {
+            "id": "r_1",
+            "text": "我十二点吃午饭。"
+          },
+          {
+            "id": "r_0",
+            "text": "你什么时候去上学？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "When do you go to school?"
+          },
+          {
+            "id": "l_1",
+            "text": "What do you do at eight?"
+          },
+          {
+            "id": "l_2",
+            "text": "I go to school at seven forty."
+          },
+          {
+            "id": "l_3",
+            "text": "I go to bed at nine o'clock."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "我九点钟上床睡觉。"
+          },
+          {
+            "id": "r_2",
+            "text": "我七点四十去上学。"
+          },
+          {
+            "id": "r_1",
+            "text": "你八点钟做什么？"
+          },
+          {
+            "id": "r_0",
+            "text": "你什么时候去上学？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I go home at four thirty."
+          },
+          {
+            "id": "l_1",
+            "text": "When do you go to school?"
+          },
+          {
+            "id": "l_2",
+            "text": "I eat lunch at twelve."
+          },
+          {
+            "id": "l_3",
+            "text": "I go to school at seven forty."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "你什么时候去上学？"
+          },
+          {
+            "id": "r_2",
+            "text": "我十二点吃午饭。"
+          },
+          {
+            "id": "r_0",
+            "text": "我四点半回家。"
+          },
+          {
+            "id": "r_3",
+            "text": "我七点四十去上学。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I eat breakfast at seven."
+          },
+          {
+            "id": "l_1",
+            "text": "I get up at six thirty."
+          },
+          {
+            "id": "l_2",
+            "text": "What do you do at eight?"
+          },
+          {
+            "id": "l_3",
+            "text": "When do you go to bed?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "我六点半起床。"
+          },
+          {
+            "id": "r_0",
+            "text": "我七点钟吃早饭。"
+          },
+          {
+            "id": "r_3",
+            "text": "你什么时候上床睡觉？"
+          },
+          {
+            "id": "r_2",
+            "text": "你八点钟做什么？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I go home at four thirty."
+          },
+          {
+            "id": "l_1",
+            "text": "I get up at six thirty."
+          },
+          {
+            "id": "l_2",
+            "text": "What do you do at eight?"
+          },
+          {
+            "id": "l_3",
+            "text": "When do you get up every day?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "你每天什么时候起床？"
+          },
+          {
+            "id": "r_1",
+            "text": "我六点半起床。"
+          },
+          {
+            "id": "r_2",
+            "text": "你八点钟做什么？"
+          },
+          {
+            "id": "r_0",
+            "text": "我四点半回家。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I go to school at seven forty."
+          },
+          {
+            "id": "l_1",
+            "text": "When do you get up every day?"
+          },
+          {
+            "id": "l_2",
+            "text": "I eat lunch at twelve."
+          },
+          {
+            "id": "l_3",
+            "text": "I go to bed at nine o'clock."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "我七点四十去上学。"
+          },
+          {
+            "id": "r_1",
+            "text": "你每天什么时候起床？"
+          },
+          {
+            "id": "r_2",
+            "text": "我十二点吃午饭。"
+          },
+          {
+            "id": "r_3",
+            "text": "我九点钟上床睡觉。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

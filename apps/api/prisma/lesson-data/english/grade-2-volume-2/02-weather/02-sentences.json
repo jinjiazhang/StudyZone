@@ -1,0 +1,678 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What's the weather like today?",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气晴朗。",
+          "今天天气怎么样？",
+          "天气非常热。",
+          "今天多云。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's sunny today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "不，不是。",
+          "今天有风。",
+          "今天下雨。",
+          "今天天气晴朗。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's rainy today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气晴朗。",
+          "今天有风。",
+          "今天下雨。",
+          "带上你的雨伞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's windy today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雨。",
+          "今天有风。",
+          "下雪了吗？",
+          "今天天气晴朗。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's snowy today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雪。",
+          "今天天气晴朗。",
+          "不，不是。",
+          "今天多云。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Take your umbrella.",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雪。",
+          "天气非常热。",
+          "天气非常冷。",
+          "带上你的雨伞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "今天下雨。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Yes, it is.",
+          "It's rainy today.",
+          "It's windy today.",
+          "Is it snowy?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "今天有风。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Is it snowy?",
+          "It's windy today.",
+          "It's snowy today.",
+          "Take your umbrella."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "今天下雪。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's snowy today.",
+          "Is it snowy?",
+          "It's rainy today.",
+          "It is very hot."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "带上你的雨伞。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "What's the weather like today?",
+          "It's rainy today.",
+          "Take your umbrella.",
+          "It's snowy today."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "下雪了吗？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It is very cold.",
+          "Is it snowy?",
+          "Take your umbrella.",
+          "It's windy today."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "是的，下雪了。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It is very hot.",
+          "It's snowy today.",
+          "Yes, it is.",
+          "What's the weather like today?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 今天下雪。",
+        "tokens": [
+          "snowy",
+          "umbrella",
+          "today",
+          "It's"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "snowy",
+          "today"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 带上你的雨伞。",
+        "tokens": [
+          "your",
+          "Is",
+          "Take",
+          "umbrella"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Take",
+          "your",
+          "umbrella"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 下雪了吗？",
+        "tokens": [
+          "Yes,",
+          "Is",
+          "it",
+          "snowy"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Is",
+          "it",
+          "snowy"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 是的，下雪了。",
+        "tokens": [
+          "isn't",
+          "is",
+          "it",
+          "Yes,"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Yes,",
+          "it",
+          "is"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 不，不是。",
+        "tokens": [
+          "isn't",
+          "No,",
+          "It's",
+          "it"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "No,",
+          "it",
+          "isn't"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 今天多云。",
+        "tokens": [
+          "It's",
+          "today",
+          "It",
+          "cloudy"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "cloudy",
+          "today"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's snowy today."
+          },
+          {
+            "id": "l_1",
+            "text": "Take your umbrella."
+          },
+          {
+            "id": "l_2",
+            "text": "It's rainy today."
+          },
+          {
+            "id": "l_3",
+            "text": "What's the weather like today?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "带上你的雨伞。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天天气怎么样？"
+          },
+          {
+            "id": "r_0",
+            "text": "今天下雪。"
+          },
+          {
+            "id": "r_2",
+            "text": "今天下雨。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's snowy today."
+          },
+          {
+            "id": "l_1",
+            "text": "Take your umbrella."
+          },
+          {
+            "id": "l_2",
+            "text": "It is very hot."
+          },
+          {
+            "id": "l_3",
+            "text": "It's sunny today."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "今天下雪。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天天气晴朗。"
+          },
+          {
+            "id": "r_2",
+            "text": "天气非常热。"
+          },
+          {
+            "id": "r_1",
+            "text": "带上你的雨伞。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's rainy today."
+          },
+          {
+            "id": "l_1",
+            "text": "It's snowy today."
+          },
+          {
+            "id": "l_2",
+            "text": "No, it isn't."
+          },
+          {
+            "id": "l_3",
+            "text": "Take your umbrella."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "不，不是。"
+          },
+          {
+            "id": "r_3",
+            "text": "带上你的雨伞。"
+          },
+          {
+            "id": "r_1",
+            "text": "今天下雪。"
+          },
+          {
+            "id": "r_0",
+            "text": "今天下雨。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Yes, it is."
+          },
+          {
+            "id": "l_1",
+            "text": "What's the weather like today?"
+          },
+          {
+            "id": "l_2",
+            "text": "It is very hot."
+          },
+          {
+            "id": "l_3",
+            "text": "It's snowy today."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "天气非常热。"
+          },
+          {
+            "id": "r_0",
+            "text": "是的，下雪了。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天下雪。"
+          },
+          {
+            "id": "r_1",
+            "text": "今天天气怎么样？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Take your umbrella."
+          },
+          {
+            "id": "l_1",
+            "text": "It's windy today."
+          },
+          {
+            "id": "l_2",
+            "text": "It is very hot."
+          },
+          {
+            "id": "l_3",
+            "text": "What's the weather like today?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "天气非常热。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天天气怎么样？"
+          },
+          {
+            "id": "r_0",
+            "text": "带上你的雨伞。"
+          },
+          {
+            "id": "r_1",
+            "text": "今天有风。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's windy today."
+          },
+          {
+            "id": "l_1",
+            "text": "Is it snowy?"
+          },
+          {
+            "id": "l_2",
+            "text": "No, it isn't."
+          },
+          {
+            "id": "l_3",
+            "text": "It's snowy today."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "今天下雪。"
+          },
+          {
+            "id": "r_2",
+            "text": "不，不是。"
+          },
+          {
+            "id": "r_0",
+            "text": "今天有风。"
+          },
+          {
+            "id": "r_1",
+            "text": "下雪了吗？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Is it snowy?"
+          },
+          {
+            "id": "l_1",
+            "text": "No, it isn't."
+          },
+          {
+            "id": "l_2",
+            "text": "It's cloudy today."
+          },
+          {
+            "id": "l_3",
+            "text": "It's windy today."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "今天多云。"
+          },
+          {
+            "id": "r_1",
+            "text": "不，不是。"
+          },
+          {
+            "id": "r_0",
+            "text": "下雪了吗？"
+          },
+          {
+            "id": "r_3",
+            "text": "今天有风。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

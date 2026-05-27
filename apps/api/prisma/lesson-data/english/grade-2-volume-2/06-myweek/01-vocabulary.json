@@ -1,0 +1,654 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Sunday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期三",
+          "今天",
+          "星期四",
+          "星期日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Monday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期",
+          "星期四",
+          "星期三",
+          "星期一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Tuesday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期三",
+          "星期",
+          "星期五",
+          "星期二"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Wednesday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期六",
+          "星期四",
+          "今天",
+          "星期三"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Thursday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期四",
+          "星期三",
+          "星期二",
+          "星期一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Friday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期四",
+          "星期五",
+          "星期一",
+          "在星期几"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期二",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Sunday",
+          "Tuesday",
+          "today",
+          "Friday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期三",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "on",
+          "Sunday",
+          "week",
+          "Wednesday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期四",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "today",
+          "Sunday",
+          "Thursday",
+          "Friday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期五",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Friday",
+          "today",
+          "Thursday",
+          "Sunday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期六",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "on",
+          "Saturday",
+          "week",
+          "Monday"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "今天",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Tuesday",
+          "Friday",
+          "week",
+          "today"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "星期四",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: T_______"
+      },
+      "answer": {
+        "accepted": [
+          "Thursday",
+          "thursday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "星期五",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: F_____"
+      },
+      "answer": {
+        "accepted": [
+          "Friday",
+          "friday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "星期六",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: S_______"
+      },
+      "answer": {
+        "accepted": [
+          "Saturday",
+          "saturday"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "今天",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: t____"
+      },
+      "answer": {
+        "accepted": [
+          "today",
+          "today"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "星期",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w___"
+      },
+      "answer": {
+        "accepted": [
+          "week",
+          "week"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "在星期几",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: o_"
+      },
+      "answer": {
+        "accepted": [
+          "on",
+          "on"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Monday"
+          },
+          {
+            "id": "l_1",
+            "text": "today"
+          },
+          {
+            "id": "l_2",
+            "text": "Tuesday"
+          },
+          {
+            "id": "l_3",
+            "text": "Sunday"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "今天"
+          },
+          {
+            "id": "r_0",
+            "text": "星期一"
+          },
+          {
+            "id": "r_2",
+            "text": "星期二"
+          },
+          {
+            "id": "r_3",
+            "text": "星期日"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "week"
+          },
+          {
+            "id": "l_1",
+            "text": "Wednesday"
+          },
+          {
+            "id": "l_2",
+            "text": "Monday"
+          },
+          {
+            "id": "l_3",
+            "text": "on"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "星期三"
+          },
+          {
+            "id": "r_2",
+            "text": "星期一"
+          },
+          {
+            "id": "r_0",
+            "text": "星期"
+          },
+          {
+            "id": "r_3",
+            "text": "在星期几"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Sunday"
+          },
+          {
+            "id": "l_1",
+            "text": "on"
+          },
+          {
+            "id": "l_2",
+            "text": "Thursday"
+          },
+          {
+            "id": "l_3",
+            "text": "Monday"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "星期一"
+          },
+          {
+            "id": "r_1",
+            "text": "在星期几"
+          },
+          {
+            "id": "r_0",
+            "text": "星期日"
+          },
+          {
+            "id": "r_2",
+            "text": "星期四"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Wednesday"
+          },
+          {
+            "id": "l_1",
+            "text": "Saturday"
+          },
+          {
+            "id": "l_2",
+            "text": "today"
+          },
+          {
+            "id": "l_3",
+            "text": "week"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "星期三"
+          },
+          {
+            "id": "r_1",
+            "text": "星期六"
+          },
+          {
+            "id": "r_2",
+            "text": "今天"
+          },
+          {
+            "id": "r_3",
+            "text": "星期"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "week"
+          },
+          {
+            "id": "l_1",
+            "text": "Wednesday"
+          },
+          {
+            "id": "l_2",
+            "text": "Thursday"
+          },
+          {
+            "id": "l_3",
+            "text": "Monday"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "星期一"
+          },
+          {
+            "id": "r_1",
+            "text": "星期三"
+          },
+          {
+            "id": "r_0",
+            "text": "星期"
+          },
+          {
+            "id": "r_2",
+            "text": "星期四"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Wednesday"
+          },
+          {
+            "id": "l_1",
+            "text": "Thursday"
+          },
+          {
+            "id": "l_2",
+            "text": "Sunday"
+          },
+          {
+            "id": "l_3",
+            "text": "Friday"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "星期三"
+          },
+          {
+            "id": "r_1",
+            "text": "星期四"
+          },
+          {
+            "id": "r_2",
+            "text": "星期日"
+          },
+          {
+            "id": "r_3",
+            "text": "星期五"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "Tuesday"
+          },
+          {
+            "id": "l_1",
+            "text": "Sunday"
+          },
+          {
+            "id": "l_2",
+            "text": "today"
+          },
+          {
+            "id": "l_3",
+            "text": "Thursday"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "星期四"
+          },
+          {
+            "id": "r_2",
+            "text": "今天"
+          },
+          {
+            "id": "r_1",
+            "text": "星期日"
+          },
+          {
+            "id": "r_0",
+            "text": "星期二"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

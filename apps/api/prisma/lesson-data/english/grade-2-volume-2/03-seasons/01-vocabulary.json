@@ -1,0 +1,654 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "season",
+        "sourceLocale": "en-US",
+        "options": [
+          "夏天",
+          "季节",
+          "冬天",
+          "最喜爱的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "spring",
+        "sourceLocale": "en-US",
+        "options": [
+          "寒冷的",
+          "春天",
+          "季节",
+          "炎热的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "summer",
+        "sourceLocale": "en-US",
+        "options": [
+          "冬天",
+          "寒冷的",
+          "秋天",
+          "夏天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "autumn",
+        "sourceLocale": "en-US",
+        "options": [
+          "寒冷的",
+          "夏天",
+          "秋天",
+          "炎热的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "winter",
+        "sourceLocale": "en-US",
+        "options": [
+          "炎热的",
+          "冬天",
+          "凉爽的",
+          "寒冷的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "warm",
+        "sourceLocale": "en-US",
+        "options": [
+          "秋天",
+          "季节",
+          "冬天",
+          "温暖的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "夏天",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "spring",
+          "autumn",
+          "summer",
+          "winter"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "秋天",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "winter",
+          "autumn",
+          "hot",
+          "cool"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "冬天",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "season",
+          "cool",
+          "autumn",
+          "winter"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "温暖的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "summer",
+          "favourite",
+          "season",
+          "warm"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "炎热的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "favourite",
+          "hot",
+          "cool",
+          "autumn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "凉爽的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "cold",
+          "favourite",
+          "cool",
+          "autumn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "冬天",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w_____"
+      },
+      "answer": {
+        "accepted": [
+          "winter",
+          "winter"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "温暖的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w___"
+      },
+      "answer": {
+        "accepted": [
+          "warm",
+          "warm"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "炎热的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: h__"
+      },
+      "answer": {
+        "accepted": [
+          "hot",
+          "hot"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "凉爽的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: c___"
+      },
+      "answer": {
+        "accepted": [
+          "cool",
+          "cool"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "寒冷的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: c___"
+      },
+      "answer": {
+        "accepted": [
+          "cold",
+          "cold"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "最喜爱的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: f________"
+      },
+      "answer": {
+        "accepted": [
+          "favourite",
+          "favourite"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "cool"
+          },
+          {
+            "id": "l_1",
+            "text": "warm"
+          },
+          {
+            "id": "l_2",
+            "text": "winter"
+          },
+          {
+            "id": "l_3",
+            "text": "autumn"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "冬天"
+          },
+          {
+            "id": "r_0",
+            "text": "凉爽的"
+          },
+          {
+            "id": "r_3",
+            "text": "秋天"
+          },
+          {
+            "id": "r_1",
+            "text": "温暖的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "winter"
+          },
+          {
+            "id": "l_1",
+            "text": "cold"
+          },
+          {
+            "id": "l_2",
+            "text": "autumn"
+          },
+          {
+            "id": "l_3",
+            "text": "hot"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "炎热的"
+          },
+          {
+            "id": "r_2",
+            "text": "秋天"
+          },
+          {
+            "id": "r_1",
+            "text": "寒冷的"
+          },
+          {
+            "id": "r_0",
+            "text": "冬天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "summer"
+          },
+          {
+            "id": "l_1",
+            "text": "autumn"
+          },
+          {
+            "id": "l_2",
+            "text": "cool"
+          },
+          {
+            "id": "l_3",
+            "text": "spring"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "春天"
+          },
+          {
+            "id": "r_0",
+            "text": "夏天"
+          },
+          {
+            "id": "r_2",
+            "text": "凉爽的"
+          },
+          {
+            "id": "r_1",
+            "text": "秋天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "hot"
+          },
+          {
+            "id": "l_1",
+            "text": "autumn"
+          },
+          {
+            "id": "l_2",
+            "text": "favourite"
+          },
+          {
+            "id": "l_3",
+            "text": "winter"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "最喜爱的"
+          },
+          {
+            "id": "r_0",
+            "text": "炎热的"
+          },
+          {
+            "id": "r_3",
+            "text": "冬天"
+          },
+          {
+            "id": "r_1",
+            "text": "秋天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "hot"
+          },
+          {
+            "id": "l_1",
+            "text": "cool"
+          },
+          {
+            "id": "l_2",
+            "text": "cold"
+          },
+          {
+            "id": "l_3",
+            "text": "warm"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "寒冷的"
+          },
+          {
+            "id": "r_0",
+            "text": "炎热的"
+          },
+          {
+            "id": "r_1",
+            "text": "凉爽的"
+          },
+          {
+            "id": "r_3",
+            "text": "温暖的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "winter"
+          },
+          {
+            "id": "l_1",
+            "text": "favourite"
+          },
+          {
+            "id": "l_2",
+            "text": "cold"
+          },
+          {
+            "id": "l_3",
+            "text": "autumn"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "秋天"
+          },
+          {
+            "id": "r_2",
+            "text": "寒冷的"
+          },
+          {
+            "id": "r_1",
+            "text": "最喜爱的"
+          },
+          {
+            "id": "r_0",
+            "text": "冬天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "autumn"
+          },
+          {
+            "id": "l_1",
+            "text": "summer"
+          },
+          {
+            "id": "l_2",
+            "text": "warm"
+          },
+          {
+            "id": "l_3",
+            "text": "spring"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "夏天"
+          },
+          {
+            "id": "r_3",
+            "text": "春天"
+          },
+          {
+            "id": "r_0",
+            "text": "秋天"
+          },
+          {
+            "id": "r_2",
+            "text": "温暖的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

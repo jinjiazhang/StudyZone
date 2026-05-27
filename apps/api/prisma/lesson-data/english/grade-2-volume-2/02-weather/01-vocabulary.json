@@ -1,0 +1,654 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "weather",
+        "sourceLocale": "en-US",
+        "options": [
+          "天气",
+          "多风的",
+          "下雨的",
+          "冷的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "sunny",
+        "sourceLocale": "en-US",
+        "options": [
+          "下雪的",
+          "冷的",
+          "晴朗的",
+          "多风的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "cloudy",
+        "sourceLocale": "en-US",
+        "options": [
+          "下雨的",
+          "多云的",
+          "晴朗的",
+          "多风的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "rainy",
+        "sourceLocale": "en-US",
+        "options": [
+          "多云的",
+          "多风的",
+          "下雪的",
+          "下雨的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "windy",
+        "sourceLocale": "en-US",
+        "options": [
+          "晴朗的",
+          "多风的",
+          "下雪的",
+          "冷的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "snowy",
+        "sourceLocale": "en-US",
+        "options": [
+          "冷的",
+          "雨伞",
+          "下雪的",
+          "天气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "多云的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "cold",
+          "cloudy",
+          "snowy",
+          "hot"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "下雨的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "umbrella",
+          "sunny",
+          "rainy",
+          "cloudy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "多风的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "windy",
+          "cold",
+          "rainy",
+          "snowy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "下雪的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "snowy",
+          "cloudy",
+          "weather",
+          "rainy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "雨伞",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "windy",
+          "umbrella",
+          "hot",
+          "rainy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "热的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "weather",
+          "rainy",
+          "sunny",
+          "hot"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "多风的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w____"
+      },
+      "answer": {
+        "accepted": [
+          "windy",
+          "windy"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "下雪的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: s____"
+      },
+      "answer": {
+        "accepted": [
+          "snowy",
+          "snowy"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "雨伞",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: u_______"
+      },
+      "answer": {
+        "accepted": [
+          "umbrella",
+          "umbrella"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "热的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: h__"
+      },
+      "answer": {
+        "accepted": [
+          "hot",
+          "hot"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "冷的",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: c___"
+      },
+      "answer": {
+        "accepted": [
+          "cold",
+          "cold"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "天气",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w______"
+      },
+      "answer": {
+        "accepted": [
+          "weather",
+          "weather"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "snowy"
+          },
+          {
+            "id": "l_1",
+            "text": "hot"
+          },
+          {
+            "id": "l_2",
+            "text": "cold"
+          },
+          {
+            "id": "l_3",
+            "text": "weather"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "热的"
+          },
+          {
+            "id": "r_3",
+            "text": "天气"
+          },
+          {
+            "id": "r_2",
+            "text": "冷的"
+          },
+          {
+            "id": "r_0",
+            "text": "下雪的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "weather"
+          },
+          {
+            "id": "l_1",
+            "text": "rainy"
+          },
+          {
+            "id": "l_2",
+            "text": "hot"
+          },
+          {
+            "id": "l_3",
+            "text": "snowy"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "下雨的"
+          },
+          {
+            "id": "r_2",
+            "text": "热的"
+          },
+          {
+            "id": "r_0",
+            "text": "天气"
+          },
+          {
+            "id": "r_3",
+            "text": "下雪的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "hot"
+          },
+          {
+            "id": "l_1",
+            "text": "windy"
+          },
+          {
+            "id": "l_2",
+            "text": "cold"
+          },
+          {
+            "id": "l_3",
+            "text": "sunny"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "晴朗的"
+          },
+          {
+            "id": "r_1",
+            "text": "多风的"
+          },
+          {
+            "id": "r_2",
+            "text": "冷的"
+          },
+          {
+            "id": "r_0",
+            "text": "热的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "snowy"
+          },
+          {
+            "id": "l_1",
+            "text": "cold"
+          },
+          {
+            "id": "l_2",
+            "text": "umbrella"
+          },
+          {
+            "id": "l_3",
+            "text": "rainy"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "下雨的"
+          },
+          {
+            "id": "r_2",
+            "text": "雨伞"
+          },
+          {
+            "id": "r_0",
+            "text": "下雪的"
+          },
+          {
+            "id": "r_1",
+            "text": "冷的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "sunny"
+          },
+          {
+            "id": "l_1",
+            "text": "cloudy"
+          },
+          {
+            "id": "l_2",
+            "text": "cold"
+          },
+          {
+            "id": "l_3",
+            "text": "umbrella"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "晴朗的"
+          },
+          {
+            "id": "r_2",
+            "text": "冷的"
+          },
+          {
+            "id": "r_3",
+            "text": "雨伞"
+          },
+          {
+            "id": "r_1",
+            "text": "多云的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "windy"
+          },
+          {
+            "id": "l_1",
+            "text": "hot"
+          },
+          {
+            "id": "l_2",
+            "text": "umbrella"
+          },
+          {
+            "id": "l_3",
+            "text": "weather"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "雨伞"
+          },
+          {
+            "id": "r_0",
+            "text": "多风的"
+          },
+          {
+            "id": "r_3",
+            "text": "天气"
+          },
+          {
+            "id": "r_1",
+            "text": "热的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "cold"
+          },
+          {
+            "id": "l_1",
+            "text": "cloudy"
+          },
+          {
+            "id": "l_2",
+            "text": "umbrella"
+          },
+          {
+            "id": "l_3",
+            "text": "hot"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "冷的"
+          },
+          {
+            "id": "r_3",
+            "text": "热的"
+          },
+          {
+            "id": "r_2",
+            "text": "雨伞"
+          },
+          {
+            "id": "r_1",
+            "text": "多云的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

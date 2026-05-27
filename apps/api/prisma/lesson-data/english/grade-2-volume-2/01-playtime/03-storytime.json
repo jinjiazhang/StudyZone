@@ -1,0 +1,442 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Can a fish fly a kite?",
+        "options": [
+          "Yes, it can.",
+          "No, it can't.",
+          "Yes, it does.",
+          "No, it doesn't."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Can a bird fly?",
+        "options": [
+          "Yes, it can.",
+          "No, it can't.",
+          "Yes, it does.",
+          "No, it doesn't."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Lucky is a dog. Can he swim?",
+        "options": [
+          "No, he can't.",
+          "Yes, he can.",
+          "He likes to read.",
+          "No, he is a cat."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What do you do with a football?",
+        "options": [
+          "I ride it.",
+          "I swim it.",
+          "I play it.",
+          "I make it."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "We want to make a snowman in...",
+        "options": [
+          "spring",
+          "summer",
+          "autumn",
+          "winter"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which one is NOT a sport or game?",
+        "options": [
+          "swim",
+          "play football",
+          "ride a bike",
+          "eat dinner"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I want to play football.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "让我们堆雪人吧！",
+          "他会放风筝吗？",
+          "是的，我会。",
+          "我想踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Can you swim?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你会游泳吗？",
+          "是的，他会。",
+          "我不会放风筝。",
+          "我想踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Yes, I can.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你会游泳吗？",
+          "是的，我会。",
+          "你想玩什么？",
+          "他会放风筝吗？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'No, I can't.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "是的，他会。",
+          "我会骑自行车。",
+          "不，我不会。",
+          "我想踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I can ride a bike.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你会游泳吗？",
+          "不，他不会。",
+          "不，我不会。",
+          "我会骑自行车。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I can't fly a kite.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "不，我不会。",
+          "不，他不会。",
+          "我不会放风筝。",
+          "我想踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '是的，我会。'",
+        "tokens": [
+          "I",
+          "Yes,",
+          "can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Yes,",
+          "I",
+          "can"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '不，我不会。'",
+        "tokens": [
+          "I",
+          "can't",
+          "No,"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "No,",
+          "I",
+          "can't"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我会骑自行车。'",
+        "tokens": [
+          "ride",
+          "a",
+          "bike",
+          "I",
+          "can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "can",
+          "ride",
+          "a",
+          "bike"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '我不会放风筝。'",
+        "tokens": [
+          "can't",
+          "a",
+          "I",
+          "fly",
+          "kite"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "can't",
+          "fly",
+          "a",
+          "kite"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '让我们堆雪人吧！'",
+        "tokens": [
+          "a",
+          "Let's",
+          "snowman",
+          "make"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Let's",
+          "make",
+          "a",
+          "snowman"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "根据情景，组装英语句子: '他会放风筝吗？'",
+        "tokens": [
+          "fly",
+          "kite",
+          "he",
+          "a",
+          "Can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Can",
+          "he",
+          "fly",
+          "a",
+          "kite"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: I can't fly a ___? (我不会放风筝。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: k"
+      },
+      "answer": {
+        "accepted": [
+          "kite",
+          "kite"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Let's make a ___? (让我们堆雪人吧！)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: s"
+      },
+      "answer": {
+        "accepted": [
+          "snowman",
+          "snowman"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Can he fly a ___? (他会放风筝吗？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: k"
+      },
+      "answer": {
+        "accepted": [
+          "kite",
+          "kite"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: Yes, he ___? (是的，他会。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: c"
+      },
+      "answer": {
+        "accepted": [
+          "can",
+          "can"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: No, he ___? (不，他不会。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: c"
+      },
+      "answer": {
+        "accepted": [
+          "can't",
+          "can't"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: What do you want to ___? (你想做什么？)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: m"
+      },
+      "answer": {
+        "accepted": [
+          "make",
+          "make"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "补全句子: I want to make a model ___? (我想做飞机模型。)",
+        "sourceLocale": "zh-CN",
+        "hint": "首字母提示: p"
+      },
+      "answer": {
+        "accepted": [
+          "plane",
+          "plane"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

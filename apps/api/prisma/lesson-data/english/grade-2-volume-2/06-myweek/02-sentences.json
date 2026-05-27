@@ -1,0 +1,710 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What day is it today?",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期日踢足球。",
+          "我星期五做飞机模型。",
+          "今天星期几？",
+          "你星期日做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It is Monday today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期日踢足球。",
+          "今天星期一。",
+          "我周三有英语课。",
+          "我们从周一到周五去上学。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What do you do on Saturday?",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期六骑自行车。",
+          "我星期日踢足球。",
+          "我们从周一到周五去上学。",
+          "你星期六做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I ride a bike on Saturday.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我周三有英语课。",
+          "我星期六骑自行车。",
+          "你星期六做什么？",
+          "我星期日踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What do you do on Sunday?",
+        "sourceLocale": "en-US",
+        "options": [
+          "我们从周一到周五去上学。",
+          "你星期五做什么？",
+          "今天星期几？",
+          "你星期日做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I play football on Sunday.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你星期六做什么？",
+          "今天星期三。",
+          "我星期日踢足球。",
+          "你星期五做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你星期六做什么？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "What do you do on Friday?",
+          "What do you do on Saturday?",
+          "Today is Wednesday.",
+          "I make a model plane on Friday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我星期六骑自行车。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "We go to school from Monday to Friday.",
+          "I ride a bike on Saturday.",
+          "What do you do on Friday?",
+          "Today is Wednesday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你星期日做什么？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "What do you do on Saturday?",
+          "What day is it today?",
+          "What do you do on Sunday?",
+          "I have English class on Wednesday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我星期日踢足球。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "We go to school from Monday to Friday.",
+          "I play football on Sunday.",
+          "What do you do on Friday?",
+          "What do you do on Saturday?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我们从周一到周五去上学。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I play football on Sunday.",
+          "We go to school from Monday to Friday.",
+          "What day is it today?",
+          "It is Monday today."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我周三有英语课。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "We go to school from Monday to Friday.",
+          "What day is it today?",
+          "I have English class on Wednesday.",
+          "What do you do on Sunday?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 你星期日做什么？",
+        "tokens": [
+          "do",
+          "do",
+          "play",
+          "on",
+          "Sunday",
+          "you",
+          "What"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "do",
+          "you",
+          "do",
+          "on",
+          "Sunday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我星期日踢足球。",
+        "tokens": [
+          "go",
+          "Sunday",
+          "play",
+          "on",
+          "football",
+          "I"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "play",
+          "football",
+          "on",
+          "Sunday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我们从周一到周五去上学。",
+        "tokens": [
+          "school",
+          "class",
+          "from",
+          "Friday",
+          "Monday",
+          "to",
+          "go",
+          "We",
+          "to"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "go",
+          "to",
+          "school",
+          "from",
+          "Monday",
+          "to",
+          "Friday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 我周三有英语课。",
+        "tokens": [
+          "Wednesday",
+          "I",
+          "Today",
+          "class",
+          "English",
+          "have",
+          "on"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "have",
+          "English",
+          "class",
+          "on",
+          "Wednesday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 今天星期三。",
+        "tokens": [
+          "Wednesday",
+          "is",
+          "Today",
+          "you"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Today",
+          "is",
+          "Wednesday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 你星期五做什么？",
+        "tokens": [
+          "Friday",
+          "on",
+          "What",
+          "do",
+          "plane",
+          "you",
+          "do"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "do",
+          "you",
+          "do",
+          "on",
+          "Friday"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I play football on Sunday."
+          },
+          {
+            "id": "l_1",
+            "text": "We go to school from Monday to Friday."
+          },
+          {
+            "id": "l_2",
+            "text": "I make a model plane on Friday."
+          },
+          {
+            "id": "l_3",
+            "text": "Today is Wednesday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "我星期五做飞机模型。"
+          },
+          {
+            "id": "r_0",
+            "text": "我星期日踢足球。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天星期三。"
+          },
+          {
+            "id": "r_1",
+            "text": "我们从周一到周五去上学。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "What do you do on Sunday?"
+          },
+          {
+            "id": "l_1",
+            "text": "What do you do on Saturday?"
+          },
+          {
+            "id": "l_2",
+            "text": "I play football on Sunday."
+          },
+          {
+            "id": "l_3",
+            "text": "I ride a bike on Saturday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "你星期六做什么？"
+          },
+          {
+            "id": "r_3",
+            "text": "我星期六骑自行车。"
+          },
+          {
+            "id": "r_0",
+            "text": "你星期日做什么？"
+          },
+          {
+            "id": "r_2",
+            "text": "我星期日踢足球。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I have English class on Wednesday."
+          },
+          {
+            "id": "l_1",
+            "text": "What do you do on Sunday?"
+          },
+          {
+            "id": "l_2",
+            "text": "I make a model plane on Friday."
+          },
+          {
+            "id": "l_3",
+            "text": "We go to school from Monday to Friday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "我星期五做飞机模型。"
+          },
+          {
+            "id": "r_3",
+            "text": "我们从周一到周五去上学。"
+          },
+          {
+            "id": "r_0",
+            "text": "我周三有英语课。"
+          },
+          {
+            "id": "r_1",
+            "text": "你星期日做什么？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I ride a bike on Saturday."
+          },
+          {
+            "id": "l_1",
+            "text": "What day is it today?"
+          },
+          {
+            "id": "l_2",
+            "text": "We go to school from Monday to Friday."
+          },
+          {
+            "id": "l_3",
+            "text": "I have English class on Wednesday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "今天星期几？"
+          },
+          {
+            "id": "r_2",
+            "text": "我们从周一到周五去上学。"
+          },
+          {
+            "id": "r_0",
+            "text": "我星期六骑自行车。"
+          },
+          {
+            "id": "r_3",
+            "text": "我周三有英语课。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "I make a model plane on Friday."
+          },
+          {
+            "id": "l_1",
+            "text": "What do you do on Saturday?"
+          },
+          {
+            "id": "l_2",
+            "text": "What do you do on Friday?"
+          },
+          {
+            "id": "l_3",
+            "text": "I play football on Sunday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "你星期六做什么？"
+          },
+          {
+            "id": "r_0",
+            "text": "我星期五做飞机模型。"
+          },
+          {
+            "id": "r_3",
+            "text": "我星期日踢足球。"
+          },
+          {
+            "id": "r_2",
+            "text": "你星期五做什么？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "We go to school from Monday to Friday."
+          },
+          {
+            "id": "l_1",
+            "text": "I play football on Sunday."
+          },
+          {
+            "id": "l_2",
+            "text": "What day is it today?"
+          },
+          {
+            "id": "l_3",
+            "text": "What do you do on Saturday?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "你星期六做什么？"
+          },
+          {
+            "id": "r_2",
+            "text": "今天星期几？"
+          },
+          {
+            "id": "r_0",
+            "text": "我们从周一到周五去上学。"
+          },
+          {
+            "id": "r_1",
+            "text": "我星期日踢足球。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "What do you do on Sunday?"
+          },
+          {
+            "id": "l_1",
+            "text": "We go to school from Monday to Friday."
+          },
+          {
+            "id": "l_2",
+            "text": "It is Monday today."
+          },
+          {
+            "id": "l_3",
+            "text": "Today is Wednesday."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "我们从周一到周五去上学。"
+          },
+          {
+            "id": "r_0",
+            "text": "你星期日做什么？"
+          },
+          {
+            "id": "r_2",
+            "text": "今天星期一。"
+          },
+          {
+            "id": "r_3",
+            "text": "今天星期三。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

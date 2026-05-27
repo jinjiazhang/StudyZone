@@ -1,0 +1,654 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "time",
+        "sourceLocale": "en-US",
+        "options": [
+          "时间",
+          "时钟",
+          "五十",
+          "十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "clock",
+        "sourceLocale": "en-US",
+        "options": [
+          "半",
+          "时钟",
+          "十二",
+          "点钟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "o'clock",
+        "sourceLocale": "en-US",
+        "options": [
+          "三十",
+          "时间",
+          "点钟",
+          "二十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "half",
+        "sourceLocale": "en-US",
+        "options": [
+          "时钟",
+          "十二",
+          "十四",
+          "半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "past",
+        "sourceLocale": "en-US",
+        "options": [
+          "二十",
+          "十三",
+          "过",
+          "三十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "eleven",
+        "sourceLocale": "en-US",
+        "options": [
+          "十三",
+          "五十",
+          "十二",
+          "十一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "点钟",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "twenty",
+          "o'clock",
+          "half",
+          "eleven"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "半",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "time",
+          "fifty",
+          "half",
+          "fifteen"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "过",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "half",
+          "fifty",
+          "time",
+          "past"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "十一",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "twenty",
+          "twelve",
+          "time",
+          "eleven"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "十二",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "time",
+          "fifty",
+          "fourteen",
+          "twelve"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "十三",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "twenty",
+          "thirteen",
+          "time",
+          "twelve"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "过",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: p___"
+      },
+      "answer": {
+        "accepted": [
+          "past",
+          "past"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "十一",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: e_____"
+      },
+      "answer": {
+        "accepted": [
+          "eleven",
+          "eleven"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "十二",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: t_____"
+      },
+      "answer": {
+        "accepted": [
+          "twelve",
+          "twelve"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "十三",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: t_______"
+      },
+      "answer": {
+        "accepted": [
+          "thirteen",
+          "thirteen"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "十四",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: f_______"
+      },
+      "answer": {
+        "accepted": [
+          "fourteen",
+          "fourteen"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "十五",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: f______"
+      },
+      "answer": {
+        "accepted": [
+          "fifteen",
+          "fifteen"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "twelve"
+          },
+          {
+            "id": "l_1",
+            "text": "clock"
+          },
+          {
+            "id": "l_2",
+            "text": "half"
+          },
+          {
+            "id": "l_3",
+            "text": "thirty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "时钟"
+          },
+          {
+            "id": "r_3",
+            "text": "三十"
+          },
+          {
+            "id": "r_2",
+            "text": "半"
+          },
+          {
+            "id": "r_0",
+            "text": "十二"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "thirty"
+          },
+          {
+            "id": "l_1",
+            "text": "twelve"
+          },
+          {
+            "id": "l_2",
+            "text": "eleven"
+          },
+          {
+            "id": "l_3",
+            "text": "forty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "十二"
+          },
+          {
+            "id": "r_2",
+            "text": "十一"
+          },
+          {
+            "id": "r_3",
+            "text": "四十"
+          },
+          {
+            "id": "r_0",
+            "text": "三十"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "clock"
+          },
+          {
+            "id": "l_1",
+            "text": "past"
+          },
+          {
+            "id": "l_2",
+            "text": "time"
+          },
+          {
+            "id": "l_3",
+            "text": "fifty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "过"
+          },
+          {
+            "id": "r_3",
+            "text": "五十"
+          },
+          {
+            "id": "r_0",
+            "text": "时钟"
+          },
+          {
+            "id": "r_2",
+            "text": "时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "forty"
+          },
+          {
+            "id": "l_1",
+            "text": "eleven"
+          },
+          {
+            "id": "l_2",
+            "text": "time"
+          },
+          {
+            "id": "l_3",
+            "text": "twelve"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "十二"
+          },
+          {
+            "id": "r_0",
+            "text": "四十"
+          },
+          {
+            "id": "r_2",
+            "text": "时间"
+          },
+          {
+            "id": "r_1",
+            "text": "十一"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "time"
+          },
+          {
+            "id": "l_1",
+            "text": "eleven"
+          },
+          {
+            "id": "l_2",
+            "text": "fourteen"
+          },
+          {
+            "id": "l_3",
+            "text": "forty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "四十"
+          },
+          {
+            "id": "r_2",
+            "text": "十四"
+          },
+          {
+            "id": "r_0",
+            "text": "时间"
+          },
+          {
+            "id": "r_1",
+            "text": "十一"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "time"
+          },
+          {
+            "id": "l_1",
+            "text": "thirty"
+          },
+          {
+            "id": "l_2",
+            "text": "o'clock"
+          },
+          {
+            "id": "l_3",
+            "text": "clock"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "点钟"
+          },
+          {
+            "id": "r_3",
+            "text": "时钟"
+          },
+          {
+            "id": "r_1",
+            "text": "三十"
+          },
+          {
+            "id": "r_0",
+            "text": "时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "time"
+          },
+          {
+            "id": "l_1",
+            "text": "o'clock"
+          },
+          {
+            "id": "l_2",
+            "text": "eleven"
+          },
+          {
+            "id": "l_3",
+            "text": "twelve"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "点钟"
+          },
+          {
+            "id": "r_3",
+            "text": "十二"
+          },
+          {
+            "id": "r_2",
+            "text": "十一"
+          },
+          {
+            "id": "r_0",
+            "text": "时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

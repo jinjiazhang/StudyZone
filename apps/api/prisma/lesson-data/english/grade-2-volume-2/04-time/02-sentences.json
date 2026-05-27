@@ -1,0 +1,700 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What time is it now?",
+        "sourceLocale": "en-US",
+        "options": [
+          "现在是八点整。",
+          "现在是十二点三十分。",
+          "现在几点了？",
+          "你几点睡觉？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's eight o'clock.",
+        "sourceLocale": "en-US",
+        "options": [
+          "现在是八点整。",
+          "现在是七点半。",
+          "该吃午饭了。",
+          "该起床了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's half past seven.",
+        "sourceLocale": "en-US",
+        "options": [
+          "现在是七点半。",
+          "我九点钟睡觉。",
+          "现在几点了？",
+          "该去上学了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's twelve thirty.",
+        "sourceLocale": "en-US",
+        "options": [
+          "现在十点十五分。",
+          "现在是十二点三十分。",
+          "现在几点了？",
+          "该去上学了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's time to get up.",
+        "sourceLocale": "en-US",
+        "options": [
+          "该起床了。",
+          "现在是七点半。",
+          "你几点睡觉？",
+          "现在是十二点三十分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's time to go to school.",
+        "sourceLocale": "en-US",
+        "options": [
+          "现在十点十五分。",
+          "该去上学了。",
+          "现在是十二点三十分。",
+          "你几点睡觉？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "现在是七点半。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's half past seven.",
+          "It's time to go to bed.",
+          "It's half past eleven.",
+          "What time is it now?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "现在是十二点三十分。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "What time do you go to bed?",
+          "It's twelve thirty.",
+          "It's half past seven.",
+          "It's time to go to bed."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "该起床了。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's ten fifteen.",
+          "It's half past seven.",
+          "It's time to get up.",
+          "I go to bed at nine."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "该去上学了。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's time to go to school.",
+          "It's eight o'clock.",
+          "It's ten fifteen.",
+          "It's time to get up."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "该吃午饭了。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I go to bed at nine.",
+          "It's time to have lunch.",
+          "It's time to go to bed.",
+          "What time do you go to bed?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "该睡觉了。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's time to go to bed.",
+          "It's time to have lunch.",
+          "It's time to get up.",
+          "It's ten fifteen."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 该起床了。",
+        "tokens": [
+          "up",
+          "get",
+          "to",
+          "time",
+          "go",
+          "It's"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "time",
+          "to",
+          "get",
+          "up"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 该去上学了。",
+        "tokens": [
+          "It's",
+          "school",
+          "to",
+          "to",
+          "have",
+          "time",
+          "go"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "time",
+          "to",
+          "go",
+          "to",
+          "school"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 该吃午饭了。",
+        "tokens": [
+          "lunch",
+          "It's",
+          "have",
+          "go",
+          "time",
+          "to"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "time",
+          "to",
+          "have",
+          "lunch"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 该睡觉了。",
+        "tokens": [
+          "to",
+          "bed",
+          "time",
+          "It's",
+          "to",
+          "fifteen",
+          "go"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "time",
+          "to",
+          "go",
+          "to",
+          "bed"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 现在十点十五分。",
+        "tokens": [
+          "fifteen",
+          "ten",
+          "half",
+          "It's"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "ten",
+          "fifteen"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子: 现在十一点半。",
+        "tokens": [
+          "go",
+          "half",
+          "eleven",
+          "past",
+          "It's"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "half",
+          "past",
+          "eleven"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's half past eleven."
+          },
+          {
+            "id": "l_1",
+            "text": "It's time to get up."
+          },
+          {
+            "id": "l_2",
+            "text": "It's time to go to bed."
+          },
+          {
+            "id": "l_3",
+            "text": "It's time to have lunch."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "该起床了。"
+          },
+          {
+            "id": "r_2",
+            "text": "该睡觉了。"
+          },
+          {
+            "id": "r_0",
+            "text": "现在十一点半。"
+          },
+          {
+            "id": "r_3",
+            "text": "该吃午饭了。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's half past eleven."
+          },
+          {
+            "id": "l_1",
+            "text": "I go to bed at nine."
+          },
+          {
+            "id": "l_2",
+            "text": "What time do you go to bed?"
+          },
+          {
+            "id": "l_3",
+            "text": "It's time to get up."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "你几点睡觉？"
+          },
+          {
+            "id": "r_0",
+            "text": "现在十一点半。"
+          },
+          {
+            "id": "r_3",
+            "text": "该起床了。"
+          },
+          {
+            "id": "r_1",
+            "text": "我九点钟睡觉。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's eight o'clock."
+          },
+          {
+            "id": "l_1",
+            "text": "It's time to go to school."
+          },
+          {
+            "id": "l_2",
+            "text": "It's half past seven."
+          },
+          {
+            "id": "l_3",
+            "text": "It's time to have lunch."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "该吃午饭了。"
+          },
+          {
+            "id": "r_1",
+            "text": "该去上学了。"
+          },
+          {
+            "id": "r_2",
+            "text": "现在是七点半。"
+          },
+          {
+            "id": "r_0",
+            "text": "现在是八点整。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's half past seven."
+          },
+          {
+            "id": "l_1",
+            "text": "It's time to have lunch."
+          },
+          {
+            "id": "l_2",
+            "text": "What time is it now?"
+          },
+          {
+            "id": "l_3",
+            "text": "It's ten fifteen."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "现在是七点半。"
+          },
+          {
+            "id": "r_1",
+            "text": "该吃午饭了。"
+          },
+          {
+            "id": "r_2",
+            "text": "现在几点了？"
+          },
+          {
+            "id": "r_3",
+            "text": "现在十点十五分。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's twelve thirty."
+          },
+          {
+            "id": "l_1",
+            "text": "What time is it now?"
+          },
+          {
+            "id": "l_2",
+            "text": "It's half past seven."
+          },
+          {
+            "id": "l_3",
+            "text": "I go to bed at nine."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "现在是七点半。"
+          },
+          {
+            "id": "r_3",
+            "text": "我九点钟睡觉。"
+          },
+          {
+            "id": "r_0",
+            "text": "现在是十二点三十分。"
+          },
+          {
+            "id": "r_1",
+            "text": "现在几点了？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's time to get up."
+          },
+          {
+            "id": "l_1",
+            "text": "It's ten fifteen."
+          },
+          {
+            "id": "l_2",
+            "text": "What time do you go to bed?"
+          },
+          {
+            "id": "l_3",
+            "text": "It's half past eleven."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "你几点睡觉？"
+          },
+          {
+            "id": "r_3",
+            "text": "现在十一点半。"
+          },
+          {
+            "id": "r_0",
+            "text": "该起床了。"
+          },
+          {
+            "id": "r_1",
+            "text": "现在十点十五分。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "It's time to get up."
+          },
+          {
+            "id": "l_1",
+            "text": "What time is it now?"
+          },
+          {
+            "id": "l_2",
+            "text": "It's time to have lunch."
+          },
+          {
+            "id": "l_3",
+            "text": "It's time to go to school."
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "现在几点了？"
+          },
+          {
+            "id": "r_3",
+            "text": "该去上学了。"
+          },
+          {
+            "id": "r_0",
+            "text": "该起床了。"
+          },
+          {
+            "id": "r_2",
+            "text": "该吃午饭了。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

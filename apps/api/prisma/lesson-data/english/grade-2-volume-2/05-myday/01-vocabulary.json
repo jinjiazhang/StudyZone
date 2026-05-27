@@ -1,0 +1,654 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "get up",
+        "sourceLocale": "en-US",
+        "options": [
+          "吃午饭",
+          "在……",
+          "起床",
+          "去学校"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "eat breakfast",
+        "sourceLocale": "en-US",
+        "options": [
+          "上床睡觉",
+          "起床",
+          "吃早饭",
+          "回家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "eat lunch",
+        "sourceLocale": "en-US",
+        "options": [
+          "回家",
+          "吃午饭",
+          "吃早饭",
+          "上床睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "eat dinner",
+        "sourceLocale": "en-US",
+        "options": [
+          "去学校",
+          "什么时候",
+          "吃晚饭",
+          "回家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "go to school",
+        "sourceLocale": "en-US",
+        "options": [
+          "起床",
+          "回家",
+          "去学校",
+          "什么时候"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "go home",
+        "sourceLocale": "en-US",
+        "options": [
+          "什么时候",
+          "回家",
+          "起床",
+          "去学校"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "吃午饭",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "get up",
+          "eat breakfast",
+          "go to school",
+          "eat lunch"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "吃晚饭",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "go to school",
+          "go home",
+          "at",
+          "eat dinner"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "去学校",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "at",
+          "eat dinner",
+          "go to bed",
+          "go to school"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "回家",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "get up",
+          "go to school",
+          "go home",
+          "every day"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "上床睡觉",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "every day",
+          "go to bed",
+          "eat dinner",
+          "get up"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "什么时候",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "eat lunch",
+          "when",
+          "go to bed",
+          "eat breakfast"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "去学校",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: g___________"
+      },
+      "answer": {
+        "accepted": [
+          "go to school",
+          "go to school"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "回家",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: g______"
+      },
+      "answer": {
+        "accepted": [
+          "go home",
+          "go home"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "上床睡觉",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: g________"
+      },
+      "answer": {
+        "accepted": [
+          "go to bed",
+          "go to bed"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "什么时候",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: w___"
+      },
+      "answer": {
+        "accepted": [
+          "when",
+          "when"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "在……",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: a_"
+      },
+      "answer": {
+        "accepted": [
+          "at",
+          "at"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "每天",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: e________"
+      },
+      "answer": {
+        "accepted": [
+          "every day",
+          "every day"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "eat breakfast"
+          },
+          {
+            "id": "l_1",
+            "text": "go to school"
+          },
+          {
+            "id": "l_2",
+            "text": "go to bed"
+          },
+          {
+            "id": "l_3",
+            "text": "eat dinner"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "去学校"
+          },
+          {
+            "id": "r_2",
+            "text": "上床睡觉"
+          },
+          {
+            "id": "r_0",
+            "text": "吃早饭"
+          },
+          {
+            "id": "r_3",
+            "text": "吃晚饭"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "eat lunch"
+          },
+          {
+            "id": "l_1",
+            "text": "get up"
+          },
+          {
+            "id": "l_2",
+            "text": "when"
+          },
+          {
+            "id": "l_3",
+            "text": "go to bed"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "上床睡觉"
+          },
+          {
+            "id": "r_1",
+            "text": "起床"
+          },
+          {
+            "id": "r_0",
+            "text": "吃午饭"
+          },
+          {
+            "id": "r_2",
+            "text": "什么时候"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "go to bed"
+          },
+          {
+            "id": "l_1",
+            "text": "go to school"
+          },
+          {
+            "id": "l_2",
+            "text": "get up"
+          },
+          {
+            "id": "l_3",
+            "text": "eat dinner"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "吃晚饭"
+          },
+          {
+            "id": "r_1",
+            "text": "去学校"
+          },
+          {
+            "id": "r_0",
+            "text": "上床睡觉"
+          },
+          {
+            "id": "r_2",
+            "text": "起床"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "go to school"
+          },
+          {
+            "id": "l_1",
+            "text": "when"
+          },
+          {
+            "id": "l_2",
+            "text": "get up"
+          },
+          {
+            "id": "l_3",
+            "text": "go home"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "去学校"
+          },
+          {
+            "id": "r_2",
+            "text": "起床"
+          },
+          {
+            "id": "r_3",
+            "text": "回家"
+          },
+          {
+            "id": "r_1",
+            "text": "什么时候"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "go to school"
+          },
+          {
+            "id": "l_1",
+            "text": "every day"
+          },
+          {
+            "id": "l_2",
+            "text": "eat dinner"
+          },
+          {
+            "id": "l_3",
+            "text": "eat breakfast"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "每天"
+          },
+          {
+            "id": "r_3",
+            "text": "吃早饭"
+          },
+          {
+            "id": "r_0",
+            "text": "去学校"
+          },
+          {
+            "id": "r_2",
+            "text": "吃晚饭"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "when"
+          },
+          {
+            "id": "l_1",
+            "text": "go home"
+          },
+          {
+            "id": "l_2",
+            "text": "eat lunch"
+          },
+          {
+            "id": "l_3",
+            "text": "get up"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "起床"
+          },
+          {
+            "id": "r_0",
+            "text": "什么时候"
+          },
+          {
+            "id": "r_1",
+            "text": "回家"
+          },
+          {
+            "id": "r_2",
+            "text": "吃午饭"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "go to bed"
+          },
+          {
+            "id": "l_1",
+            "text": "eat dinner"
+          },
+          {
+            "id": "l_2",
+            "text": "go home"
+          },
+          {
+            "id": "l_3",
+            "text": "get up"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "起床"
+          },
+          {
+            "id": "r_0",
+            "text": "上床睡觉"
+          },
+          {
+            "id": "r_1",
+            "text": "吃晚饭"
+          },
+          {
+            "id": "r_2",
+            "text": "回家"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}
