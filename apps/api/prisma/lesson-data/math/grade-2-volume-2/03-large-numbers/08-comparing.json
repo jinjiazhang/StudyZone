@@ -1,0 +1,529 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比较大小：899 和 1001，哪个大？1001=1，899=2。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比较大小：4560 和 4506，大的是？"
+      },
+      "answer": {
+        "value": 4560,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比较大小：7890 和 7980，大的是？"
+      },
+      "answer": {
+        "value": 7980,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在四位数中，最小的四位数是？"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在四位数中，最大的四位数是？"
+      },
+      "answer": {
+        "value": 9999,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在三位数中，最大的三位数是？"
+      },
+      "answer": {
+        "value": 999,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比较大小：9999 和 10000，大的是？"
+      },
+      "answer": {
+        "value": 10000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比较大小：3020 和 3200，小的是？"
+      },
+      "answer": {
+        "value": 3020,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比2000大，比3000小的四位数，千位上的数字是？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "五位数一定比四位数？大=1，小=2。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "位数不同的两个数比较大小，结果是？",
+        "options": [
+          "位数多的数大",
+          "位数少的数大",
+          "一样大",
+          "无法比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "位数相同的两个数比较大小，应该先比较哪一位？",
+        "options": [
+          "最高位",
+          "个位",
+          "十位",
+          "百位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果两个数的最高位相同，接下来应该比较哪一位？",
+        "options": [
+          "次高位（右边第一位）",
+          "个位",
+          "十位",
+          "最低位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个数最接近 3000？",
+        "options": [
+          "2998",
+          "3005",
+          "2990",
+          "3100"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较 5890 和 589，结果是？",
+        "options": [
+          "5890 > 589",
+          "5890 < 589",
+          "5890 = 589",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 876, 867, 8760, 8670 中，最大的是？",
+        "options": [
+          "8760",
+          "8670",
+          "876",
+          "867"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "999"
+          },
+          {
+            "id": "l2",
+            "text": "4500"
+          },
+          {
+            "id": "l3",
+            "text": "789"
+          },
+          {
+            "id": "l4",
+            "text": "10000"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "< 1000"
+          },
+          {
+            "id": "r2",
+            "text": "> 4050"
+          },
+          {
+            "id": "r3",
+            "text": "< 800"
+          },
+          {
+            "id": "r4",
+            "text": "> 9999"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "999"
+          },
+          {
+            "id": "l2",
+            "text": "4500"
+          },
+          {
+            "id": "l3",
+            "text": "789"
+          },
+          {
+            "id": "l4",
+            "text": "10000"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "< 1000"
+          },
+          {
+            "id": "r2",
+            "text": "> 4050"
+          },
+          {
+            "id": "r3",
+            "text": "< 800"
+          },
+          {
+            "id": "r4",
+            "text": "> 9999"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "999"
+          },
+          {
+            "id": "l2",
+            "text": "4500"
+          },
+          {
+            "id": "l3",
+            "text": "789"
+          },
+          {
+            "id": "l4",
+            "text": "10000"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "< 1000"
+          },
+          {
+            "id": "r2",
+            "text": "> 4050"
+          },
+          {
+            "id": "r3",
+            "text": "< 800"
+          },
+          {
+            "id": "r4",
+            "text": "> 9999"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "999"
+          },
+          {
+            "id": "l2",
+            "text": "4500"
+          },
+          {
+            "id": "l3",
+            "text": "789"
+          },
+          {
+            "id": "l4",
+            "text": "10000"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "< 1000"
+          },
+          {
+            "id": "r2",
+            "text": "> 4050"
+          },
+          {
+            "id": "r3",
+            "text": "< 800"
+          },
+          {
+            "id": "r4",
+            "text": "> 9999"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "899",
+          "901",
+          "1002",
+          "3000",
+          "从大到小排列 (应该是从小到大吧，我们写好顺序)",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "899",
+          "901",
+          "1002",
+          "3000",
+          "从大到小排列 (应该是从小到大吧，我们写好顺序)"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "99",
+          "999",
+          "9999",
+          "10000",
+          "从小到大排列",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "99",
+          "999",
+          "9999",
+          "10000",
+          "从小到大排列"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "位数多者",
+          "一定比",
+          "位数少者",
+          "大",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "位数多者",
+          "一定比",
+          "位数少者",
+          "大"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "相同位数",
+          "从最高位",
+          "依次向右",
+          "进行比较",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "相同位数",
+          "从最高位",
+          "依次向右",
+          "进行比较"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "4501",
+          "4510",
+          "4560",
+          "从大到小反向排序",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "4501",
+          "4510",
+          "4560",
+          "从大到小反向排序"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

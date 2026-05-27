@@ -1,0 +1,527 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果太阳从东边升起，那么它从哪边落下？东对的是？落下的方向是西。西=1，东=2。西的值设为"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "指南针红色的指针指向北，蓝色的指向南。南是北的反方向。如果面向北，右边是？东=3，西=4。东的值设为"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小明面向东方，他的后面是什么方向？西=5，南=6。西的值设为"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "地图通常是按照什么方向绘制的？上北下南，左西右东。上面的方向是北=7，南=8。北的值设为"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小红面向南站立，她的左手边是什么方向？东=9，西=10。东的值设为"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果面向西，后面是？东=11，南=12。东的值为"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "指南针能指示方向，它南极指向的方向是南。北极指向？北=13。北的值为"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "树木年轮宽的一面通常朝向什么方向？南=14，北=15。南的值为"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "早晨起来，面向太阳，前面是东，后面是西，左边是北，右边是？南=16，北=17。南的值为"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "夜晚面向北极星，前面是北，左边是？西=18，东=19。西的值为"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨，太阳从哪个方向升起？",
+        "options": [
+          "东方",
+          "西方",
+          "南方",
+          "北方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在野外，我们可以通过什么工具来辨别方向？",
+        "options": [
+          "指南针",
+          "手电筒",
+          "尺子",
+          "放大镜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "地图上通常的方向划分是？",
+        "options": [
+          "上北下南，左西右东",
+          "上南下北，左东右西",
+          "上东下西，左南右北",
+          "上西下东，左北右南"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小华面向北，他的左边是哪个方向？",
+        "options": [
+          "西方",
+          "东方",
+          "南方",
+          "北极"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "傍晚，面向落下的太阳，前面是西，右边是？",
+        "options": [
+          "北方",
+          "南方",
+          "东方",
+          "北极"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "树木茂盛的一面一般是哪个方向？",
+        "options": [
+          "南方",
+          "北方",
+          "西方",
+          "东方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东的反方向"
+          },
+          {
+            "id": "l2",
+            "text": "南的反方向"
+          },
+          {
+            "id": "l3",
+            "text": "面向北时的右边"
+          },
+          {
+            "id": "l4",
+            "text": "面向北时的左边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "西"
+          },
+          {
+            "id": "r2",
+            "text": "北"
+          },
+          {
+            "id": "r3",
+            "text": "东"
+          },
+          {
+            "id": "r4",
+            "text": "西 (等同)"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东的反方向"
+          },
+          {
+            "id": "l2",
+            "text": "南的反方向"
+          },
+          {
+            "id": "l3",
+            "text": "面向北时的右边"
+          },
+          {
+            "id": "l4",
+            "text": "面向北时的左边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "西"
+          },
+          {
+            "id": "r2",
+            "text": "北"
+          },
+          {
+            "id": "r3",
+            "text": "东"
+          },
+          {
+            "id": "r4",
+            "text": "西 (等同)"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东的反方向"
+          },
+          {
+            "id": "l2",
+            "text": "南的反方向"
+          },
+          {
+            "id": "l3",
+            "text": "面向北时的右边"
+          },
+          {
+            "id": "l4",
+            "text": "面向北时的左边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "西"
+          },
+          {
+            "id": "r2",
+            "text": "北"
+          },
+          {
+            "id": "r3",
+            "text": "东"
+          },
+          {
+            "id": "r4",
+            "text": "西 (等同)"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东的反方向"
+          },
+          {
+            "id": "l2",
+            "text": "南的反方向"
+          },
+          {
+            "id": "l3",
+            "text": "面向北时的右边"
+          },
+          {
+            "id": "l4",
+            "text": "面向北时的左边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "西"
+          },
+          {
+            "id": "r2",
+            "text": "北"
+          },
+          {
+            "id": "r3",
+            "text": "东"
+          },
+          {
+            "id": "r4",
+            "text": "西 (等同)"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "上北",
+          "下南",
+          "左西",
+          "右东",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "上北",
+          "下南",
+          "左西",
+          "右东"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "早晨起来",
+          "面向太阳",
+          "前面是东",
+          "后面是西",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "早晨起来",
+          "面向太阳",
+          "前面是东",
+          "后面是西"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "指南针",
+          "红指北",
+          "蓝指南",
+          "辨方向",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "指南针",
+          "红指北",
+          "蓝指南",
+          "辨方向"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "北极星",
+          "黑夜里",
+          "高高挂",
+          "指示北",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "北极星",
+          "黑夜里",
+          "高高挂",
+          "指示北"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "东",
+          "南",
+          "西",
+          "北",
+          "顺时针排列",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "东",
+          "南",
+          "西",
+          "北",
+          "顺时针排列"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

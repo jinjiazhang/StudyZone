@@ -1,0 +1,523 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形有几个直角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "长方形有几个直角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比直角小的角是什么角？锐角=1，钝角=2。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比直角大的角是什么角？钝角=2，锐角=1。答："
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "直角三角形中最多有几个直角？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "三角尺上有几个直角？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一块三角尺上有几个锐角？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "直角、锐角、钝角中，最大的是？钝角=1，直角=2，锐角=3。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "直角、锐角、钝角中，最小的是？锐角=3，直角=2，钝角=1。答："
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个钝角三角形中最多有几个钝角？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "我们在比较一个角是不是直角时，通常用什么工具来量？",
+        "options": [
+          "三角尺上的直角",
+          "普通的直尺",
+          "铅笔",
+          "圆规"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个角比直角小？",
+        "options": [
+          "锐角",
+          "直角",
+          "钝角",
+          "平角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个角比直角大？",
+        "options": [
+          "钝角",
+          "锐角",
+          "直角",
+          "所有的角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课桌桌面上的四个角都是什么角？",
+        "options": [
+          "直角",
+          "锐角",
+          "钝角",
+          "不确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红领巾上最大的角是什么角？",
+        "options": [
+          "钝角",
+          "直角",
+          "锐角",
+          "平角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "钟面上 3 点整时，时针和分针组成的角是什么角？",
+        "options": [
+          "直角",
+          "锐角",
+          "钝角",
+          "平角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "直角"
+          },
+          {
+            "id": "l2",
+            "text": "锐角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "三角板上的直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "等于直角"
+          },
+          {
+            "id": "r2",
+            "text": "比直角小"
+          },
+          {
+            "id": "r3",
+            "text": "比直角大"
+          },
+          {
+            "id": "r4",
+            "text": "只有一个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "直角"
+          },
+          {
+            "id": "l2",
+            "text": "锐角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "三角板上的直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "等于直角"
+          },
+          {
+            "id": "r2",
+            "text": "比直角小"
+          },
+          {
+            "id": "r3",
+            "text": "比直角大"
+          },
+          {
+            "id": "r4",
+            "text": "只有一个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "直角"
+          },
+          {
+            "id": "l2",
+            "text": "锐角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "三角板上的直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "等于直角"
+          },
+          {
+            "id": "r2",
+            "text": "比直角小"
+          },
+          {
+            "id": "r3",
+            "text": "比直角大"
+          },
+          {
+            "id": "r4",
+            "text": "只有一个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "直角"
+          },
+          {
+            "id": "l2",
+            "text": "锐角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "三角板上的直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "等于直角"
+          },
+          {
+            "id": "r2",
+            "text": "比直角小"
+          },
+          {
+            "id": "r3",
+            "text": "比直角大"
+          },
+          {
+            "id": "r4",
+            "text": "只有一个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "锐角",
+          "直角",
+          "钝角",
+          "从小到大排列",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "锐角",
+          "直角",
+          "钝角",
+          "从小到大排列"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "钝角",
+          "直角",
+          "锐角",
+          "从大到小排列",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "钝角",
+          "直角",
+          "锐角",
+          "从大到小排列"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "三角尺上",
+          "有一个直角",
+          "两个锐角",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "三角尺上",
+          "有一个直角",
+          "两个锐角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "用三角尺直角",
+          "顶点对顶点",
+          "边对边测量",
+          "判断是否直角",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用三角尺直角",
+          "顶点对顶点",
+          "边对边测量",
+          "判断是否直角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "课桌面",
+          "书封面",
+          "都有四个",
+          "直角",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "课桌面",
+          "书封面",
+          "都有四个",
+          "直角"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

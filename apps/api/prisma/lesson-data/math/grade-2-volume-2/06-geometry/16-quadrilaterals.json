@@ -1,0 +1,511 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "长方形有几条边？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形有几条边？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "长方形对边相等吗？相等=1，不相等=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形四条边都相等吗？都相等=1，不都相等=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "长方形有几个直角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形有几个直角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形是特殊的长方形吗？是=1，不是=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个长方形的长是8厘米，对边的长是多少厘米？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个正方形的边长是5厘米，它相对的那条边是多少厘米？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把一个长方形沿对角线剪开，可以得到两个什么三角形？直角三角形=1。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形的边有什么特点？",
+        "options": [
+          "对边相等，四个角都是直角",
+          "四条边都相等",
+          "相邻的两条边相等",
+          "没有特点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形的边有什么特点？",
+        "options": [
+          "四条边都相等，四个角都是直角",
+          "对边相等，邻边不相等",
+          "有两条边相等",
+          "四个角都是锐角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形和正方形的共同点是？",
+        "options": [
+          "都有四条边，四个角都是直角",
+          "四条边都相等",
+          "对边不相等",
+          "四个角都是钝角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个长方形的长是 6厘米，宽是 4厘米，它的周长是？",
+        "options": [
+          "20厘米",
+          "10厘米",
+          "24厘米",
+          "16厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个正方形的边长是 4分米，它的周长是？",
+        "options": [
+          "16分米",
+          "8分米",
+          "12分米",
+          "20分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形和长方形的区别在于？",
+        "options": [
+          "正方形的四条边都相等，而长方形只有对边相等",
+          "正方形有四个直角",
+          "长方形有四个直角",
+          "正方形是五边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形的对边"
+          },
+          {
+            "id": "l4",
+            "text": "正方形的四条边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "四个角都是直角"
+          },
+          {
+            "id": "r2",
+            "text": "特殊的长方形"
+          },
+          {
+            "id": "r3",
+            "text": "相等"
+          },
+          {
+            "id": "r4",
+            "text": "都相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形的对边"
+          },
+          {
+            "id": "l4",
+            "text": "正方形的四条边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "四个角都是直角"
+          },
+          {
+            "id": "r2",
+            "text": "特殊的长方形"
+          },
+          {
+            "id": "r3",
+            "text": "相等"
+          },
+          {
+            "id": "r4",
+            "text": "都相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形的对边"
+          },
+          {
+            "id": "l4",
+            "text": "正方形的四条边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "四个角都是直角"
+          },
+          {
+            "id": "r2",
+            "text": "特殊的长方形"
+          },
+          {
+            "id": "r3",
+            "text": "相等"
+          },
+          {
+            "id": "r4",
+            "text": "都相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形的对边"
+          },
+          {
+            "id": "l4",
+            "text": "正方形的四条边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "四个角都是直角"
+          },
+          {
+            "id": "r2",
+            "text": "特殊的长方形"
+          },
+          {
+            "id": "r3",
+            "text": "相等"
+          },
+          {
+            "id": "r4",
+            "text": "都相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "长方形对边相等",
+          "四个角都是直角",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长方形对边相等",
+          "四个角都是直角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "正方形四边相等",
+          "四个角都是直角",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "正方形四边相等",
+          "四个角都是直角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "长方形和正方形",
+          "都是四边形",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长方形和正方形",
+          "都是四边形"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "正方形是",
+          "特殊的",
+          "长方形",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "正方形是",
+          "特殊的",
+          "长方形"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "用折纸法",
+          "或者用尺子量",
+          "可以验证",
+          "对边相等",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用折纸法",
+          "或者用尺子量",
+          "可以验证",
+          "对边相等"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "东和北之间的方向是？东北=1，东南=2。东北的值为"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "东和南之间的方向是？东南=2，西南=3。东南的值为"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "西和南之间的方向是？西南=3，西北=4。西南的值为"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "西和北之间的方向是？西北=4，东北=5。西北的值为"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "东北的反方向是？西南=6，东南=7。西南的值为"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "西北的反方向是？东南=8，东北=9。东南的值为"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果面向东北，你的后面是？西南=10，东南=11。西南的值为"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果面向西北，你的后面是？东南=12，西南=13。东南的值为"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "面向东南，左边是东北，右边是？西南=14。西南的值为"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "面向西南，左边是东南，右边是？西北=15。西北的值为"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "东和北中间的方向叫什么？",
+        "options": [
+          "东北",
+          "东南",
+          "西北",
+          "西南"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西和南中间的方向叫什么？",
+        "options": [
+          "西南",
+          "西北",
+          "东北",
+          "东南"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小明面向西北，他的反方向是？",
+        "options": [
+          "东南",
+          "东北",
+          "西南",
+          "西北"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在风向图上，风从西北方吹向什么方叫西北风？",
+        "options": [
+          "东南方",
+          "西北方",
+          "东北方",
+          "西南方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小华从家出发向东北走，回家时应该向什么方向走？",
+        "options": [
+          "西南方",
+          "西北方",
+          "东南方",
+          "东北方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学校在小红家的东南方向，小红家在学校的什么方向？",
+        "options": [
+          "西北方向",
+          "东北方向",
+          "西南方向",
+          "东南方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东北"
+          },
+          {
+            "id": "l2",
+            "text": "西北"
+          },
+          {
+            "id": "l3",
+            "text": "东南"
+          },
+          {
+            "id": "l4",
+            "text": "西南"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "东与北之间"
+          },
+          {
+            "id": "r2",
+            "text": "西与北之间"
+          },
+          {
+            "id": "r3",
+            "text": "东与南之间"
+          },
+          {
+            "id": "r4",
+            "text": "西与南之间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东北"
+          },
+          {
+            "id": "l2",
+            "text": "西北"
+          },
+          {
+            "id": "l3",
+            "text": "东南"
+          },
+          {
+            "id": "l4",
+            "text": "西南"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "东与北之间"
+          },
+          {
+            "id": "r2",
+            "text": "西与北之间"
+          },
+          {
+            "id": "r3",
+            "text": "东与南之间"
+          },
+          {
+            "id": "r4",
+            "text": "西与南之间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东北"
+          },
+          {
+            "id": "l2",
+            "text": "西北"
+          },
+          {
+            "id": "l3",
+            "text": "东南"
+          },
+          {
+            "id": "l4",
+            "text": "西南"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "东与北之间"
+          },
+          {
+            "id": "r2",
+            "text": "西与北之间"
+          },
+          {
+            "id": "r3",
+            "text": "东与南之间"
+          },
+          {
+            "id": "r4",
+            "text": "西与南之间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东北"
+          },
+          {
+            "id": "l2",
+            "text": "西北"
+          },
+          {
+            "id": "l3",
+            "text": "东南"
+          },
+          {
+            "id": "l4",
+            "text": "西南"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "东与北之间"
+          },
+          {
+            "id": "r2",
+            "text": "西与北之间"
+          },
+          {
+            "id": "r3",
+            "text": "东与南之间"
+          },
+          {
+            "id": "r4",
+            "text": "西与南之间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "东北",
+          "东南",
+          "西南",
+          "西北",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "东北",
+          "东南",
+          "西南",
+          "西北"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "面向西北",
+          "后面是",
+          "东南方",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "面向西北",
+          "后面是",
+          "东南方"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "面向东北",
+          "后面是",
+          "西南方",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "面向东北",
+          "后面是",
+          "西南方"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "风从西北来",
+          "吹向东南",
+          "是西北风",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "风从西北来",
+          "吹向东南",
+          "是西北风"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "东",
+          "东北",
+          "北",
+          "西北",
+          "西",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "东",
+          "东北",
+          "北",
+          "西北",
+          "西"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

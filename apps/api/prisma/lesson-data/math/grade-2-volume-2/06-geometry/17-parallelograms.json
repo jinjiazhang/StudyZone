@@ -1,0 +1,515 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形有几条边？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形有几个角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形对边相等吗？相等=1，不相等=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形有直角吗？通常没有=0，有=1。答："
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形对角相等吗？相等=1，不相等=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "拉动长方形木框的对角，长方形会变成什么图形？平行四边形=1。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形容易变形吗？容易=1，不容易=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "电动伸缩门和防护栏利用了平行四边形的什么特性？易变形性=1。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "平行四边形有几组对边平行且相等？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正方形是平行四边形吗？是=1，不是=0。答："
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形边和角的特点是？",
+        "options": [
+          "对边平行且相等，对角相等",
+          "相邻两条边相等",
+          "四个角都是直角",
+          "对角互补"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把一个长方形框架拉成一个平行四边形，周长会发生什么变化？",
+        "options": [
+          "周长不变",
+          "周长变大",
+          "周长变小",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学校伸缩门利用了平行四边形的什么特点？",
+        "options": [
+          "容易变形（不稳定特性）",
+          "三角形的稳定性",
+          "不容易变形",
+          "对称性"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个图形是平行四边形？",
+        "options": [
+          "两组对边分别平行的四边形",
+          "只有一组对边平行的四边形",
+          "梯形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形和长方形的共同特点不包括？",
+        "options": [
+          "四个角都是直角",
+          "对边相等",
+          "有四条边",
+          "有四个角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形的两个锐角和两个什么角组成？",
+        "options": [
+          "钝角",
+          "直角",
+          "锐角",
+          "平角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "三角形"
+          },
+          {
+            "id": "l3",
+            "text": "拉动长方形"
+          },
+          {
+            "id": "l4",
+            "text": "伸缩铁门"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "容易变形"
+          },
+          {
+            "id": "r2",
+            "text": "具有稳定性"
+          },
+          {
+            "id": "r3",
+            "text": "变成平行四边形"
+          },
+          {
+            "id": "r4",
+            "text": "利用了易变形性"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "三角形"
+          },
+          {
+            "id": "l3",
+            "text": "拉动长方形"
+          },
+          {
+            "id": "l4",
+            "text": "伸缩铁门"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "容易变形"
+          },
+          {
+            "id": "r2",
+            "text": "具有稳定性"
+          },
+          {
+            "id": "r3",
+            "text": "变成平行四边形"
+          },
+          {
+            "id": "r4",
+            "text": "利用了易变形性"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "三角形"
+          },
+          {
+            "id": "l3",
+            "text": "拉动长方形"
+          },
+          {
+            "id": "l4",
+            "text": "伸缩铁门"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "容易变形"
+          },
+          {
+            "id": "r2",
+            "text": "具有稳定性"
+          },
+          {
+            "id": "r3",
+            "text": "变成平行四边形"
+          },
+          {
+            "id": "r4",
+            "text": "利用了易变形性"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "三角形"
+          },
+          {
+            "id": "l3",
+            "text": "拉动长方形"
+          },
+          {
+            "id": "l4",
+            "text": "伸缩铁门"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "容易变形"
+          },
+          {
+            "id": "r2",
+            "text": "具有稳定性"
+          },
+          {
+            "id": "r3",
+            "text": "变成平行四边形"
+          },
+          {
+            "id": "r4",
+            "text": "利用了易变形性"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "平行四边形对边相等",
+          "对角也相等",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "平行四边形对边相等",
+          "对角也相等"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "三角形稳定性",
+          "平行四边形易变形",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "三角形稳定性",
+          "平行四边形易变形"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "长方形拉动对角",
+          "可以变成",
+          "平行四边形",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长方形拉动对角",
+          "可以变成",
+          "平行四边形"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "伸缩门",
+          "防盗网",
+          "利用了",
+          "易变形性",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "伸缩门",
+          "防盗网",
+          "利用了",
+          "易变形性"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "两组对边",
+          "分别平行且相等",
+          "的四边形",
+          "是平行四边形",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "两组对边",
+          "分别平行且相等",
+          "的四边形",
+          "是平行四边形"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

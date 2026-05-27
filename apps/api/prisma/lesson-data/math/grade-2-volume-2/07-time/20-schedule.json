@@ -1,0 +1,521 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小红从 8:00 开始写作业，8:40 完成，写了多少分钟？"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一节课 40分钟，从 9:10 开始上课，下课时间是 9:？"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "淘气每天 7:20 起床，7:45 吃完早餐，吃早餐用了多少分钟？"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小明下午 4:10 放学，4:35 到家，路上走了多少分钟？"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一场电影 2小时，下午 2:00 放映，结束时间是下午几点？下午"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "做广播操用了 15分钟，从 9:50 开始，结束时间是 10:？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小红看书用了 30分钟，9:00 结束，她是从几点开始看书的？8:"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "坐公交车用了 20分钟，8:10 出发，到达时间是 8:？"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "午睡从 12:30 到 13:10，睡了多少分钟？"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "早操 8:30 开始，8:45 结束，一共做了多少分钟？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气早上 7:30 出发上学，7:50 到校，路上用了多长时间？",
+        "options": [
+          "20分钟",
+          "10分钟",
+          "30分钟",
+          "15分钟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一节课 40分钟，课间休息 10分钟，一共是多少分钟？",
+        "options": [
+          "50分钟",
+          "30分钟",
+          "60分钟",
+          "1小时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下午 3:40 开始做大扫除，做了 45分钟，结束时间是？",
+        "options": [
+          "下午 4:25",
+          "下午 4:15",
+          "下午 4:35",
+          "下午 4:05"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "怎样计算经历的时间？",
+        "options": [
+          "结束时间 减去 开始时间",
+          "开始时间 加上 结束时间",
+          "结束时间 加上 1小时",
+          "随便估算"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小明洗脸刷牙用了 10分钟，吃早饭用了 15分钟，一共用了？",
+        "options": [
+          "25分钟",
+          "20分钟",
+          "15分钟",
+          "30分钟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早读从 8:00 到 8:20，一共进行了多少分钟？",
+        "options": [
+          "20分钟",
+          "10分钟",
+          "30分钟",
+          "25分钟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "开始: 8:00 结束: 8:30"
+          },
+          {
+            "id": "l2",
+            "text": "开始: 9:10 结束: 9:50"
+          },
+          {
+            "id": "l3",
+            "text": "开始: 10:20 结束: 11:20"
+          },
+          {
+            "id": "l4",
+            "text": "开始: 1:30 结束: 2:15"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "经历了 30 分钟"
+          },
+          {
+            "id": "r2",
+            "text": "经历了 40 分钟"
+          },
+          {
+            "id": "r3",
+            "text": "经历了 1 小时"
+          },
+          {
+            "id": "r4",
+            "text": "经历了 45 分钟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "开始: 8:00 结束: 8:30"
+          },
+          {
+            "id": "l2",
+            "text": "开始: 9:10 结束: 9:50"
+          },
+          {
+            "id": "l3",
+            "text": "开始: 10:20 结束: 11:20"
+          },
+          {
+            "id": "l4",
+            "text": "开始: 1:30 结束: 2:15"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "经历了 30 分钟"
+          },
+          {
+            "id": "r2",
+            "text": "经历了 40 分钟"
+          },
+          {
+            "id": "r3",
+            "text": "经历了 1 小时"
+          },
+          {
+            "id": "r4",
+            "text": "经历了 45 分钟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "开始: 8:00 结束: 8:30"
+          },
+          {
+            "id": "l2",
+            "text": "开始: 9:10 结束: 9:50"
+          },
+          {
+            "id": "l3",
+            "text": "开始: 10:20 结束: 11:20"
+          },
+          {
+            "id": "l4",
+            "text": "开始: 1:30 结束: 2:15"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "经历了 30 分钟"
+          },
+          {
+            "id": "r2",
+            "text": "经历了 40 分钟"
+          },
+          {
+            "id": "r3",
+            "text": "经历了 1 小时"
+          },
+          {
+            "id": "r4",
+            "text": "经历了 45 分钟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "开始: 8:00 结束: 8:30"
+          },
+          {
+            "id": "l2",
+            "text": "开始: 9:10 结束: 9:50"
+          },
+          {
+            "id": "l3",
+            "text": "开始: 10:20 结束: 11:20"
+          },
+          {
+            "id": "l4",
+            "text": "开始: 1:30 结束: 2:15"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "经历了 30 分钟"
+          },
+          {
+            "id": "r2",
+            "text": "经历了 40 分钟"
+          },
+          {
+            "id": "r3",
+            "text": "经历了 1 小时"
+          },
+          {
+            "id": "r4",
+            "text": "经历了 45 分钟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "起床",
+          "洗漱",
+          "吃早餐",
+          "上学",
+          "淘气的早晨",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "起床",
+          "洗漱",
+          "吃早餐",
+          "上学",
+          "淘气的早晨"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "计算经过时间",
+          "用结束时间",
+          "减去",
+          "开始时间",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "计算经过时间",
+          "用结束时间",
+          "减去",
+          "开始时间"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "7:30 出发",
+          "路上用20分",
+          "7:50 到校",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "7:30 出发",
+          "路上用20分",
+          "7:50 到校"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "一节课 40 分",
+          "休息 10 分",
+          "正好 50 分",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一节课 40 分",
+          "休息 10 分",
+          "正好 50 分"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列以复习数学概念",
+        "tokens": [
+          "8:00 上课",
+          "8:40 下课",
+          "经过40分钟",
+          "加上",
+          "乘上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "8:00 上课",
+          "8:40 下课",
+          "经过40分钟"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}
