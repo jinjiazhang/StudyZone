@@ -1,0 +1,648 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在太空舱里，宇航员睡觉时必须怎么做？",
+        "options": [
+          "把自己绑在睡袋里，不然会飘走",
+          "睁着眼睛睡",
+          "站在地上靠着墙睡",
+          "不需要睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在太空舱里，为什么拿普通的杯子倒水，水倒不出来？",
+        "options": [
+          "在宇宙飞船里物体处于失重状态",
+          "因为水结冰了",
+          "因为杯子被粘住了",
+          "因为水很贵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宇航员在太空舱里走路为什么很费劲，需要穿带钩的鞋子？",
+        "options": [
+          "因为稍一用力，就会飘到半空中",
+          "因为太空舱非常滑",
+          "因为鞋子很重",
+          "因为宇航员累了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宇航员洗澡需要用特制的淋浴器，这是为了？",
+        "options": [
+          "把喷出来的水和身上洗下来的水全部吸走，防止飘浮",
+          "洗得更干净",
+          "太空舱没有普通水",
+          "好玩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“失重”的意思是指？",
+        "options": [
+          "重力极其微弱或消失的状态，物体会飘起来",
+          "体重减轻了",
+          "没有精神",
+          "秤坏了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "航",
+        "hint": "“宇航员”的航",
+        "options": [
+          "háng",
+          "kāng",
+          "yáng",
+          "sháng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "宇",
+        "hint": "“宇宙”的宇",
+        "options": [
+          "yǔ",
+          "yū",
+          "yǒu",
+          "wù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舱",
+        "hint": "“太空舱”的舱",
+        "options": [
+          "cāng",
+          "chāng",
+          "qiāng",
+          "shāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绑",
+        "hint": "“绑在睡袋里”的绑",
+        "options": [
+          "bǎng",
+          "bāng",
+          "páng",
+          "máng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饮",
+        "hint": "“饮水”的饮",
+        "options": [
+          "yǐn",
+          "yíng",
+          "yǐng",
+          "yìn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "稍",
+        "hint": "“稍一用力”的稍",
+        "options": [
+          "shāo",
+          "qiáo",
+          "xiāo",
+          "zhāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bēi",
+        "hint": "“水___”的“杯”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "木",
+          "不",
+          "木",
+          "氵",
+          "日",
+          "人"
+        ],
+        "target": "杯"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "木",
+          "right": "不"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shī",
+        "hint": "“___重”的“失”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "丿",
+          "夫",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "失"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "丿",
+          "bottom": "夫"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xǐ",
+        "hint": "“___脸”的“洗”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "先",
+          "冫",
+          "木",
+          "口",
+          "日"
+        ],
+        "target": "洗"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "氵",
+          "right": "先"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "róng",
+        "hint": "“___易”的“容”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "宀",
+          "谷",
+          "艹",
+          "羊",
+          "木",
+          "口"
+        ],
+        "target": "容"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "宀",
+          "bottom": "谷"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "站着睡觉"
+          },
+          {
+            "id": "l2",
+            "text": "带吸管的水袋"
+          },
+          {
+            "id": "l3",
+            "text": "带钩的鞋子"
+          },
+          {
+            "id": "l4",
+            "text": "特制的淋浴器"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "必须绑在睡袋里"
+          },
+          {
+            "id": "r2",
+            "text": "水倒不出来，需要吸"
+          },
+          {
+            "id": "r3",
+            "text": "防止失重飘走"
+          },
+          {
+            "id": "r4",
+            "text": "把水吸回管里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "航"
+          },
+          {
+            "id": "l2",
+            "text": "宇"
+          },
+          {
+            "id": "l3",
+            "text": "舱"
+          },
+          {
+            "id": "l4",
+            "text": "绑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "háng"
+          },
+          {
+            "id": "r2",
+            "text": "yǔ"
+          },
+          {
+            "id": "r3",
+            "text": "cāng"
+          },
+          {
+            "id": "r4",
+            "text": "bǎng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "站着睡觉"
+          },
+          {
+            "id": "l2",
+            "text": "带吸管的水袋"
+          },
+          {
+            "id": "l3",
+            "text": "带钩的鞋子"
+          },
+          {
+            "id": "l4",
+            "text": "特制的淋浴器"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "必须绑在睡袋里"
+          },
+          {
+            "id": "r2",
+            "text": "水倒不出来，需要吸"
+          },
+          {
+            "id": "r3",
+            "text": "防止失重飘走"
+          },
+          {
+            "id": "r4",
+            "text": "把水吸回管里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "航"
+          },
+          {
+            "id": "l2",
+            "text": "宇"
+          },
+          {
+            "id": "l3",
+            "text": "舱"
+          },
+          {
+            "id": "l4",
+            "text": "绑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "háng"
+          },
+          {
+            "id": "r2",
+            "text": "yǔ"
+          },
+          {
+            "id": "r3",
+            "text": "cāng"
+          },
+          {
+            "id": "r4",
+            "text": "bǎng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《太空生活趣事多》中的名句",
+        "tokens": [
+          "在宇宙飞船里，",
+          "宇航员",
+          "必须把自己",
+          "绑在睡袋里",
+          "睡觉。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "在宇宙飞船里，",
+          "宇航员",
+          "必须把自己",
+          "绑在睡袋里",
+          "睡觉。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《太空生活趣事多》中的名句",
+        "tokens": [
+          "因为在太空中，",
+          "物体处于",
+          "失重状态。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "因为在太空中，",
+          "物体处于",
+          "失重状态。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《太空生活趣事多》中的名句",
+        "tokens": [
+          "在太空生活，",
+          "是不是",
+          "非常有趣？",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "在太空生活，",
+          "是不是",
+          "非常有趣？"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《太空生活趣事多》段落",
+        "tokens": [
+          "在宇宙飞船里，",
+          "宇航员",
+          "必须把自己",
+          "绑在睡袋里",
+          "睡觉。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "在宇宙飞船里，",
+          "宇航员",
+          "必须把自己",
+          "绑在睡袋里",
+          "睡觉。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《太空生活趣事多》段落",
+        "tokens": [
+          "在太空生活，",
+          "是不是",
+          "非常有趣？",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "在太空生活，",
+          "是不是",
+          "非常有趣？"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《太空生活趣事多》段落",
+        "tokens": [
+          "因为在太空中，",
+          "物体处于",
+          "失重状态。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "因为在太空中，",
+          "物体处于",
+          "失重状态。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

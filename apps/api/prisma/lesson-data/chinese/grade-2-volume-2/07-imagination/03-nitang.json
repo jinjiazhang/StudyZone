@@ -1,0 +1,644 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙一开始为什么要卖泥塘？",
+        "options": [
+          "觉得泥塘太烂了，想卖了去城里住",
+          "因为他需要钱买吃的",
+          "因为水干了，没有水",
+          "因为大象抢了他的房子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛过来看泥塘，觉得泥塘缺点什么？",
+        "options": [
+          "缺点草，如果在周围种上草就好了",
+          "缺点水",
+          "缺点树木",
+          "缺点房子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "野鸭飞过来觉得泥塘怎么样？",
+        "options": [
+          "缺点水，水太少了",
+          "非常美丽",
+          "水里有很多鱼",
+          "太咸了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙为了卖泥塘，先后做了哪些改造？",
+        "options": [
+          "种了草、引了水、栽了树、种了花、盖了房子",
+          "什么也没做，只是立了牌子",
+          "把泥塘填平了",
+          "捉了许多虫子放进去"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后，青蛙为什么又舍不得卖泥塘了？",
+        "options": [
+          "因为他把泥塘改造得太美丽、太舒服了，自己住最棒",
+          "因为没有动物买得起",
+          "因为他的牌子丢了",
+          "因为泥塘干涸了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "卖",
+        "hint": "“卖泥塘”的卖",
+        "options": [
+          "mài",
+          "mǎi",
+          "dú",
+          "hù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "烂",
+        "hint": "“烂泥塘”的烂",
+        "options": [
+          "làn",
+          "nàn",
+          "lǎng",
+          "qián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "牌",
+        "hint": "“牌子”的牌",
+        "options": [
+          "pái",
+          "bái",
+          "pí",
+          "tí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舒",
+        "hint": "“舒服”的舒",
+        "options": [
+          "shū",
+          "sū",
+          "shú",
+          "kū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "播",
+        "hint": "“播撒”的播",
+        "options": [
+          "bō",
+          "pō",
+          "fō",
+          "mō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "灌",
+        "hint": "“灌水”的灌",
+        "options": [
+          "guàn",
+          "huàn",
+          "kū",
+          "shù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wā",
+        "hint": "“青___”的“蛙”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "虫",
+          "卦",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "蛙"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "虫",
+          "right": "卦"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "mài",
+        "hint": "“___出”的“卖”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "十",
+          "买",
+          "艹",
+          "木",
+          "口",
+          "人"
+        ],
+        "target": "卖"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "十",
+          "bottom": "买"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bān",
+        "hint": "“___家”的“搬”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "手",
+          "般",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "搬"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "抄",
+          "right": "般"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "quán",
+        "hint": "“___水”的“泉”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "白",
+          "水",
+          "艹",
+          "木",
+          "口",
+          "日"
+        ],
+        "target": "泉"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "白",
+          "bottom": "水"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "烂泥塘"
+          },
+          {
+            "id": "l2",
+            "text": "牌子"
+          },
+          {
+            "id": "l3",
+            "text": "播撒"
+          },
+          {
+            "id": "l4",
+            "text": "改造"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "泥巴烂稀的池塘"
+          },
+          {
+            "id": "r2",
+            "text": "标志写字板"
+          },
+          {
+            "id": "r3",
+            "text": "撒下草籽"
+          },
+          {
+            "id": "r4",
+            "text": "改造建设、让它变美"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "卖"
+          },
+          {
+            "id": "l2",
+            "text": "烂"
+          },
+          {
+            "id": "l3",
+            "text": "牌"
+          },
+          {
+            "id": "l4",
+            "text": "舒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "mài"
+          },
+          {
+            "id": "r2",
+            "text": "làn"
+          },
+          {
+            "id": "r3",
+            "text": "pái"
+          },
+          {
+            "id": "r4",
+            "text": "shū"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "烂泥塘"
+          },
+          {
+            "id": "l2",
+            "text": "牌子"
+          },
+          {
+            "id": "l3",
+            "text": "播撒"
+          },
+          {
+            "id": "l4",
+            "text": "改造"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "泥巴烂稀的池塘"
+          },
+          {
+            "id": "r2",
+            "text": "标志写字板"
+          },
+          {
+            "id": "r3",
+            "text": "撒下草籽"
+          },
+          {
+            "id": "r4",
+            "text": "改造建设、让它变美"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "卖"
+          },
+          {
+            "id": "l2",
+            "text": "烂"
+          },
+          {
+            "id": "l3",
+            "text": "牌"
+          },
+          {
+            "id": "l4",
+            "text": "舒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "mài"
+          },
+          {
+            "id": "r2",
+            "text": "làn"
+          },
+          {
+            "id": "r3",
+            "text": "pái"
+          },
+          {
+            "id": "r4",
+            "text": "shū"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《青蛙卖泥塘》中的名句",
+        "tokens": [
+          "青蛙住在",
+          "烂泥塘里，",
+          "他觉得",
+          "这里不怎么样。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙住在",
+          "烂泥塘里，",
+          "他觉得",
+          "这里不怎么样。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《青蛙卖泥塘》中的名句",
+        "tokens": [
+          "青蛙在泥塘",
+          "周围种了",
+          "许多青草。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙在泥塘",
+          "周围种了",
+          "许多青草。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《青蛙卖泥塘》中的名句",
+        "tokens": [
+          "多好的地方！",
+          "有树，有花，",
+          "有草，有水。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "多好的地方！",
+          "有树，有花，",
+          "有草，有水。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《青蛙卖泥塘》段落",
+        "tokens": [
+          "青蛙住在",
+          "烂泥塘里，",
+          "他觉得",
+          "这里不怎么样。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙住在",
+          "烂泥塘里，",
+          "他觉得",
+          "这里不怎么样。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《青蛙卖泥塘》段落",
+        "tokens": [
+          "多好的地方！",
+          "有树，有花，",
+          "有草，有水。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "多好的地方！",
+          "有树，有花，",
+          "有草，有水。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《青蛙卖泥塘》段落",
+        "tokens": [
+          "青蛙在泥塘",
+          "周围种了",
+          "许多青草。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙在泥塘",
+          "周围种了",
+          "许多青草。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

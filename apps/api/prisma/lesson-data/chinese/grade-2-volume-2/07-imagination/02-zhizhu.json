@@ -1,0 +1,640 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜘蛛每天蹲在网上，觉得怎样？",
+        "options": [
+          "很寂寞，很无聊",
+          "非常快乐",
+          "非常忙碌",
+          "很累想睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜘蛛开的第一家店是卖什么的？",
+        "options": [
+          "卖口罩，因为口罩简单",
+          "卖围巾",
+          "卖袜子",
+          "卖玩具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长颈鹿来买围巾时，为什么蜘蛛织了一个星期？",
+        "options": [
+          "长颈鹿的脖子实在太长了，围巾很长",
+          "因为蜘蛛在偷懒",
+          "因为织针断了",
+          "因为有很多顾客排队"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后蜘蛛开店卖袜子，看到谁来买，吓得连夜跑回网上？",
+        "options": [
+          "长着四十几只脚的蜈蚣",
+          "一只大象",
+          "一条大蟒蛇",
+          "一只恐龙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《蜘蛛开店》这篇寓言告诉我们什么？",
+        "options": [
+          "做事情不能怕麻烦，如果总是逃避、急躁是做不好事情的",
+          "开店可以赚很多钱",
+          "蜘蛛跑得很快",
+          "长颈鹿是坏蛋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "店",
+        "hint": "“商店”的店",
+        "options": [
+          "diàn",
+          "zhān",
+          "gū",
+          "kū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蹲",
+        "hint": "“蹲在网上”的蹲",
+        "options": [
+          "dūn",
+          "tūn",
+          "zūn",
+          "cūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寂",
+        "hint": "“寂寞”的寂",
+        "options": [
+          "jì",
+          "jī",
+          "shū",
+          "wǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寞",
+        "hint": "“寂寞”的寞",
+        "options": [
+          "mò",
+          "mù",
+          "tán",
+          "gū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "罩",
+        "hint": "“口罩”的罩",
+        "options": [
+          "zhào",
+          "zào",
+          "shào",
+          "cháo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蜈",
+        "hint": "“蜈蚣”的蜈",
+        "options": [
+          "wú",
+          "hú",
+          "zhī",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "diàn",
+        "hint": "“商___”的“店”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "广",
+          "占",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "店"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "广",
+          "bottom": "占"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wán",
+        "hint": "“___成”的“完”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "宀",
+          "元",
+          "艹",
+          "大",
+          "木",
+          "口"
+        ],
+        "target": "完"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "宀",
+          "bottom": "元"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhōng",
+        "hint": "“___于”的“终”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "冬",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "终"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "纟",
+          "right": "冬"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qī",
+        "hint": "“星___”的“期”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "其",
+          "月",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "期"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "其",
+          "right": "月"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "口罩"
+          },
+          {
+            "id": "l2",
+            "text": "围巾"
+          },
+          {
+            "id": "l3",
+            "text": "袜子"
+          },
+          {
+            "id": "l4",
+            "text": "寂寞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "河马来买，织了一整天"
+          },
+          {
+            "id": "r2",
+            "text": "长颈鹿来买，织了一个星期"
+          },
+          {
+            "id": "r3",
+            "text": "蜈蚣来买，吓得蜘蛛跑掉了"
+          },
+          {
+            "id": "r4",
+            "text": "孤单无聊"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "店"
+          },
+          {
+            "id": "l2",
+            "text": "蹲"
+          },
+          {
+            "id": "l3",
+            "text": "寂"
+          },
+          {
+            "id": "l4",
+            "text": "寞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "diàn"
+          },
+          {
+            "id": "r2",
+            "text": "dūn"
+          },
+          {
+            "id": "r3",
+            "text": "jì"
+          },
+          {
+            "id": "r4",
+            "text": "mò"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "口罩"
+          },
+          {
+            "id": "l2",
+            "text": "围巾"
+          },
+          {
+            "id": "l3",
+            "text": "袜子"
+          },
+          {
+            "id": "l4",
+            "text": "寂寞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "河马来买，织了一整天"
+          },
+          {
+            "id": "r2",
+            "text": "长颈鹿来买，织了一个星期"
+          },
+          {
+            "id": "r3",
+            "text": "蜈蚣来买，吓得蜘蛛跑掉了"
+          },
+          {
+            "id": "r4",
+            "text": "孤单无聊"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "店"
+          },
+          {
+            "id": "l2",
+            "text": "蹲"
+          },
+          {
+            "id": "l3",
+            "text": "寂"
+          },
+          {
+            "id": "l4",
+            "text": "寞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "diàn"
+          },
+          {
+            "id": "r2",
+            "text": "dūn"
+          },
+          {
+            "id": "r3",
+            "text": "jì"
+          },
+          {
+            "id": "r4",
+            "text": "mò"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《蜘蛛开店》中的名句",
+        "tokens": [
+          "有一只蜘蛛，",
+          "每天蹲在网上，",
+          "感到很寂寞。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "有一只蜘蛛，",
+          "每天蹲在网上，",
+          "感到很寂寞。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《蜘蛛开店》中的名句",
+        "tokens": [
+          "蜘蛛决定",
+          "开一家商店，",
+          "卖什么呢？",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛决定",
+          "开一家商店，",
+          "卖什么呢？"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《蜘蛛开店》中的名句",
+        "tokens": [
+          "蜘蛛织啊织，",
+          "足足织了一星期，",
+          "才完工。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛织啊织，",
+          "足足织了一星期，",
+          "才完工。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《蜘蛛开店》段落",
+        "tokens": [
+          "有一只蜘蛛，",
+          "每天蹲在网上，",
+          "感到很寂寞。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "有一只蜘蛛，",
+          "每天蹲在网上，",
+          "感到很寂寞。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《蜘蛛开店》段落",
+        "tokens": [
+          "蜘蛛织啊织，",
+          "足足织了一星期，",
+          "才完工。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛织啊织，",
+          "足足织了一星期，",
+          "才完工。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《蜘蛛开店》段落",
+        "tokens": [
+          "蜘蛛决定",
+          "开一家商店，",
+          "卖什么呢？",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛决定",
+          "开一家商店，",
+          "卖什么呢？"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

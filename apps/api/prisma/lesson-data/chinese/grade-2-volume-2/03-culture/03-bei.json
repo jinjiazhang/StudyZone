@@ -1,0 +1,640 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古时候人们把贝壳当作什么？",
+        "options": [
+          "钱币",
+          "玩具",
+          "餐具",
+          "武器"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么古人把贝壳当作钱币？",
+        "options": [
+          "暗指贝壳漂亮、珍贵，还不易损坏",
+          "因为贝壳很多、随处可见",
+          "因为贝壳很轻，好携带",
+          "因为贝壳可以吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用“贝”作偏旁的字，大多和什么有关？",
+        "options": [
+          "钱财和价值",
+          "水和天气",
+          "树木 and 植物",
+          "金属和兵器"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个字和钱财有关？",
+        "options": [
+          "赚",
+          "跑",
+          "跳",
+          "吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪个字不含有“贝”字旁？",
+        "options": [
+          "跑",
+          "赔",
+          "购",
+          "贫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "壳",
+        "hint": "“贝壳”的壳",
+        "options": [
+          "ké",
+          "qiào",
+          "kè",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "甲",
+        "hint": "“甲骨文”的甲",
+        "options": [
+          "jiǎ",
+          "shén",
+          "yà",
+          "tián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "骨",
+        "hint": "“甲骨文”的骨",
+        "options": [
+          "gǔ",
+          "gū",
+          "hú",
+          "kū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "损",
+        "hint": "“损坏”的损",
+        "options": [
+          "sǔn",
+          "shǔn",
+          "wǎn",
+          "xùn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赚",
+        "hint": "“赚钱”的赚",
+        "options": [
+          "zhuàn",
+          "zuàn",
+          "zhān",
+          "xián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赔",
+        "hint": "“赔钱”的赔",
+        "options": [
+          "péi",
+          "bèi",
+          "póu",
+          "tí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qián",
+        "hint": "“铜___”的“钱”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "钅",
+          "戋",
+          "木",
+          "浅",
+          "氵",
+          "戈"
+        ],
+        "target": "钱"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "钅",
+          "right": "戋"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cái",
+        "hint": "“钱___”的“财”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "贝",
+          "才",
+          "木",
+          "才",
+          "氵",
+          "人"
+        ],
+        "target": "财"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "贝",
+          "right": "才"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "guān",
+        "hint": "“___系”的“关”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "丷",
+          "天",
+          "艹",
+          "大",
+          "木",
+          "口"
+        ],
+        "target": "关"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "丷",
+          "bottom": "天"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bì",
+        "hint": "“钱___”的“币”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "丿",
+          "巾",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "币"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "丿",
+          "bottom": "巾"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "珍贵"
+          },
+          {
+            "id": "l2",
+            "text": "损坏"
+          },
+          {
+            "id": "l3",
+            "text": "容易"
+          },
+          {
+            "id": "l4",
+            "text": "钱币"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "宝贵、极有价值"
+          },
+          {
+            "id": "r2",
+            "text": "破损、坏掉"
+          },
+          {
+            "id": "r3",
+            "text": "不难、简单"
+          },
+          {
+            "id": "r4",
+            "text": "钱财物资媒介"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "壳"
+          },
+          {
+            "id": "l2",
+            "text": "甲"
+          },
+          {
+            "id": "l3",
+            "text": "骨"
+          },
+          {
+            "id": "l4",
+            "text": "损"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "ké"
+          },
+          {
+            "id": "r2",
+            "text": "jiǎ"
+          },
+          {
+            "id": "r3",
+            "text": "gǔ"
+          },
+          {
+            "id": "r4",
+            "text": "sǔn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "珍贵"
+          },
+          {
+            "id": "l2",
+            "text": "损坏"
+          },
+          {
+            "id": "l3",
+            "text": "容易"
+          },
+          {
+            "id": "l4",
+            "text": "钱币"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "宝贵、极有价值"
+          },
+          {
+            "id": "r2",
+            "text": "破损、坏掉"
+          },
+          {
+            "id": "r3",
+            "text": "不难、简单"
+          },
+          {
+            "id": "r4",
+            "text": "钱财物资媒介"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "壳"
+          },
+          {
+            "id": "l2",
+            "text": "甲"
+          },
+          {
+            "id": "l3",
+            "text": "骨"
+          },
+          {
+            "id": "l4",
+            "text": "损"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "ké"
+          },
+          {
+            "id": "r2",
+            "text": "jiǎ"
+          },
+          {
+            "id": "r3",
+            "text": "gǔ"
+          },
+          {
+            "id": "r4",
+            "text": "sǔn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《“贝”的故事》中的名句",
+        "tokens": [
+          "古时候，",
+          "人们把贝壳",
+          "当作钱币。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "古时候，",
+          "人们把贝壳",
+          "当作钱币。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《“贝”的故事》中的名句",
+        "tokens": [
+          "用‘贝’作偏旁的字，",
+          "大多与",
+          "钱财有关。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用‘贝’作偏旁的字，",
+          "大多与",
+          "钱财有关。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《“贝”的故事》中的名句",
+        "tokens": [
+          "贝壳很漂亮，",
+          "很珍贵，",
+          "还不容易损坏。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贝壳很漂亮，",
+          "很珍贵，",
+          "还不容易损坏。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《“贝”的故事》段落",
+        "tokens": [
+          "古时候，",
+          "人们把贝壳",
+          "当作钱币。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "古时候，",
+          "人们把贝壳",
+          "当作钱币。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《“贝”的故事》段落",
+        "tokens": [
+          "贝壳很漂亮，",
+          "很珍贵，",
+          "还不容易损坏。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贝壳很漂亮，",
+          "很珍贵，",
+          "还不容易损坏。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《“贝”的故事》段落",
+        "tokens": [
+          "用‘贝’作偏旁的字，",
+          "大多与",
+          "钱财有关。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用‘贝’作偏旁的字，",
+          "大多与",
+          "钱财有关。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

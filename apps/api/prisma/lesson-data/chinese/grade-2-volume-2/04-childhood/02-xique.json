@@ -1,0 +1,648 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”把枫树上的喜鹊当作什么？",
+        "options": [
+          "“我”的喜鹊阿姨和喜鹊弟弟",
+          "野生动物",
+          "好吃的鸟类",
+          "宠物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊的巢建在什么树上？",
+        "options": [
+          "很大很高的枫树上",
+          "柳树上",
+          "杨树上",
+          "苹果树上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”看到喜鹊阿姨教喜鹊弟弟做什么？",
+        "options": [
+          "学拼音字母和看日出",
+          "在水里捉鱼",
+          "筑巢和挖土",
+          "在天空中乱飞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊弟弟发出“鹊！鹊！鹊！”的声音是在做什么？",
+        "options": [
+          "和妈妈对话，回答问题",
+          "在唱歌",
+          "在争吵",
+          "在哭泣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者觉得喜鹊阿姨的叫声是什么意思？",
+        "options": [
+          "在教学和关爱孩子",
+          "在警告敌人",
+          "肚子饿了要吃的",
+          "没有意义"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "渡",
+        "hint": "“渡口”的渡",
+        "options": [
+          "dù",
+          "tù",
+          "duō",
+          "shù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荫",
+        "hint": "“绿荫”的荫",
+        "options": [
+          "yìn",
+          "yīn",
+          "lù",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蔽",
+        "hint": "“遮蔽”的蔽",
+        "options": [
+          "bì",
+          "pī",
+          "mì",
+          "shī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "撑",
+        "hint": "“撑伞”的撑",
+        "options": [
+          "chēng",
+          "zhǎng",
+          "cēng",
+          "táng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "懂",
+        "hint": "“懂得”的懂",
+        "options": [
+          "dǒng",
+          "tǒng",
+          "chǒng",
+          "dōng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "姨",
+        "hint": "“阿姨”的姨",
+        "options": [
+          "yí",
+          "tí",
+          "nǐ",
+          "zhī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "sǎn",
+        "hint": "“雨___”的“伞”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "人",
+          "仒",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "伞"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "人",
+          "bottom": "仒"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yí",
+        "hint": "“阿___”的“姨”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "女",
+          "夷",
+          "木",
+          "日",
+          "氵",
+          "人"
+        ],
+        "target": "姨"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "女",
+          "right": "夷"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dì",
+        "hint": "“兄___”的“弟”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "丷",
+          "弔",
+          "木",
+          "弓",
+          "日",
+          "人"
+        ],
+        "target": "弟"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "丷",
+          "bottom": "弔"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yóu",
+        "hint": "“___戏”的“游”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "放",
+          "木",
+          "方",
+          "日",
+          "人"
+        ],
+        "target": "游"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "氵",
+          "right": "放"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "渡口"
+          },
+          {
+            "id": "l2",
+            "text": "遮蔽"
+          },
+          {
+            "id": "l3",
+            "text": "拼音"
+          },
+          {
+            "id": "l4",
+            "text": "喜鹊"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "过河的码头"
+          },
+          {
+            "id": "r2",
+            "text": "挡住不外露"
+          },
+          {
+            "id": "r3",
+            "text": "拼音字母"
+          },
+          {
+            "id": "r4",
+            "text": "报喜的鸟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "渡"
+          },
+          {
+            "id": "l2",
+            "text": "荫"
+          },
+          {
+            "id": "l3",
+            "text": "蔽"
+          },
+          {
+            "id": "l4",
+            "text": "撑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dù"
+          },
+          {
+            "id": "r2",
+            "text": "yìn"
+          },
+          {
+            "id": "r3",
+            "text": "bì"
+          },
+          {
+            "id": "r4",
+            "text": "chēng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "渡口"
+          },
+          {
+            "id": "l2",
+            "text": "遮蔽"
+          },
+          {
+            "id": "l3",
+            "text": "拼音"
+          },
+          {
+            "id": "l4",
+            "text": "喜鹊"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "过河的码头"
+          },
+          {
+            "id": "r2",
+            "text": "挡住不外露"
+          },
+          {
+            "id": "r3",
+            "text": "拼音字母"
+          },
+          {
+            "id": "r4",
+            "text": "报喜的鸟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "渡"
+          },
+          {
+            "id": "l2",
+            "text": "荫"
+          },
+          {
+            "id": "l3",
+            "text": "蔽"
+          },
+          {
+            "id": "l4",
+            "text": "撑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dù"
+          },
+          {
+            "id": "r2",
+            "text": "yìn"
+          },
+          {
+            "id": "r3",
+            "text": "bì"
+          },
+          {
+            "id": "r4",
+            "text": "chēng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《枫树上的喜鹊》中的名句",
+        "tokens": [
+          "我们村子口",
+          "旁有一棵",
+          "很大很高的",
+          "枫树。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们村子口",
+          "旁有一棵",
+          "很大很高的",
+          "枫树。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《枫树上的喜鹊》中的名句",
+        "tokens": [
+          "我真是喜欢",
+          "极了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我真是喜欢",
+          "极了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《枫树上的喜鹊》中的名句",
+        "tokens": [
+          "喜鹊阿姨",
+          "站在巢边，",
+          "指着上升的",
+          "太阳，",
+          "问喜鹊弟弟。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "喜鹊阿姨",
+          "站在巢边，",
+          "指着上升的",
+          "太阳，",
+          "问喜鹊弟弟。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《枫树上的喜鹊》段落",
+        "tokens": [
+          "我们村子口",
+          "旁有一棵",
+          "很大很高的",
+          "枫树。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们村子口",
+          "旁有一棵",
+          "很大很高的",
+          "枫树。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《枫树上的喜鹊》段落",
+        "tokens": [
+          "喜鹊阿姨",
+          "站在巢边，",
+          "指着上升的",
+          "太阳，",
+          "问喜鹊弟弟。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "喜鹊阿姨",
+          "站在巢边，",
+          "指着上升的",
+          "太阳，",
+          "问喜鹊弟弟。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《枫树上的喜鹊》段落",
+        "tokens": [
+          "我真是喜欢",
+          "极了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我真是喜欢",
+          "极了。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

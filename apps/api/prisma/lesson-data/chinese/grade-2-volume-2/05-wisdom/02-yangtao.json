@@ -1,0 +1,640 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”把杨桃画成了什么形状？",
+        "options": [
+          "五角星",
+          "正方形",
+          "圆球",
+          "大苹果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么“我”要把杨桃画成五角星？",
+        "options": [
+          "从特定的角度看，杨桃确实就是个五角星",
+          "因为“我”想好玩画错的",
+          "因为“我”不知道杨桃的形状",
+          "因为老师让“我”这么画的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同学们看到“我”画的杨桃时，态度是怎样的？",
+        "options": [
+          "哈哈大笑、嘲笑“我”画错了",
+          "非常赞叹“我”画得好",
+          "非常伤心",
+          "根本不理睬"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老师看到画后，他是怎么做的？",
+        "options": [
+          "亲自坐到“我”的座位上审视，并让嘲笑的同学也坐过去看",
+          "把“我”狠狠批评了一顿",
+          "把画丢进了垃圾桶里",
+          "让“我”重新画一幅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《画杨桃》告诉了我们什么做人做事的道理？",
+        "options": [
+          "看问题做事要实事求是，从不同角度看问题会有不同结论",
+          "画画必须用彩色铅笔",
+          "不要听同学的意见",
+          "杨桃很难吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "图",
+        "hint": "“画图”的图",
+        "options": [
+          "tú",
+          "dù",
+          "kū",
+          "hú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "课",
+        "hint": "“上课”的课",
+        "options": [
+          "kè",
+          "gě",
+          "guǒ",
+          "huò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "摆",
+        "hint": "“摆放”的摆",
+        "options": [
+          "bǎi",
+          "pái",
+          "mài",
+          "tí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "审",
+        "hint": "“审视”的审",
+        "options": [
+          "shěn",
+          "shēn",
+          "sěn",
+          "shì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "视",
+        "hint": "“审视”的视",
+        "options": [
+          "shì",
+          "sì",
+          "zhì",
+          "xì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晌",
+        "hint": "“半晌”的晌",
+        "options": [
+          "shǎng",
+          "xiǎng",
+          "táng",
+          "dǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tú",
+        "hint": "“地图”的“图”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "囗",
+          "冬",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "图"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "囗",
+          "right": "冬"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kè",
+        "hint": "“上___”的“课”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "讠",
+          "果",
+          "木",
+          "且",
+          "氵",
+          "十"
+        ],
+        "target": "课"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "讠",
+          "right": "果"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yè",
+        "hint": "“第一___”的“页”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "一",
+          "贝",
+          "艹",
+          "木",
+          "口",
+          "人"
+        ],
+        "target": "页"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "一",
+          "bottom": "贝"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qiǎng",
+        "hint": "“___先”的“抢”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "手",
+          "仓",
+          "木",
+          "口",
+          "氵",
+          "人"
+        ],
+        "target": "抢"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "扌",
+          "right": "仓"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "审视"
+          },
+          {
+            "id": "l2",
+            "text": "和颜悦色"
+          },
+          {
+            "id": "l3",
+            "text": "教诲"
+          },
+          {
+            "id": "l4",
+            "text": "老老实实"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "仔细看着、审查"
+          },
+          {
+            "id": "r2",
+            "text": "态度温和、脸色喜悦"
+          },
+          {
+            "id": "r3",
+            "text": "教导、教诲"
+          },
+          {
+            "id": "r4",
+            "text": "诚实老实、规矩一律"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "图"
+          },
+          {
+            "id": "l2",
+            "text": "课"
+          },
+          {
+            "id": "l3",
+            "text": "摆"
+          },
+          {
+            "id": "l4",
+            "text": "审"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "tú"
+          },
+          {
+            "id": "r2",
+            "text": "kè"
+          },
+          {
+            "id": "r3",
+            "text": "bǎi"
+          },
+          {
+            "id": "r4",
+            "text": "shěn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "审视"
+          },
+          {
+            "id": "l2",
+            "text": "和颜悦色"
+          },
+          {
+            "id": "l3",
+            "text": "教诲"
+          },
+          {
+            "id": "l4",
+            "text": "老老实实"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "仔细看着、审查"
+          },
+          {
+            "id": "r2",
+            "text": "态度温和、脸色喜悦"
+          },
+          {
+            "id": "r3",
+            "text": "教导、教诲"
+          },
+          {
+            "id": "r4",
+            "text": "诚实老实、规矩一律"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "图"
+          },
+          {
+            "id": "l2",
+            "text": "课"
+          },
+          {
+            "id": "l3",
+            "text": "摆"
+          },
+          {
+            "id": "l4",
+            "text": "审"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "tú"
+          },
+          {
+            "id": "r2",
+            "text": "kè"
+          },
+          {
+            "id": "r3",
+            "text": "bǎi"
+          },
+          {
+            "id": "r4",
+            "text": "shěn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《画杨桃》中的名句",
+        "tokens": [
+          "我们做事要",
+          "实事求是，",
+          "看到什么样",
+          "就画成什么样。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们做事要",
+          "实事求是，",
+          "看到什么样",
+          "就画成什么样。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《画杨桃》中的名句",
+        "tokens": [
+          "你看到的",
+          "杨桃，",
+          "是什么样子的？",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你看到的",
+          "杨桃，",
+          "是什么样子的？"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《画杨桃》中的名句",
+        "tokens": [
+          "老师的面容",
+          "变得严肃了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老师的面容",
+          "变得严肃了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《画杨桃》段落",
+        "tokens": [
+          "我们做事要",
+          "实事求是，",
+          "看到什么样",
+          "就画成什么样。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们做事要",
+          "实事求是，",
+          "看到什么样",
+          "就画成什么样。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《画杨桃》段落",
+        "tokens": [
+          "老师的面容",
+          "变得严肃了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老师的面容",
+          "变得严肃了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《画杨桃》段落",
+        "tokens": [
+          "你看到的",
+          "杨桃，",
+          "是什么样子的？",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你看到的",
+          "杨桃，",
+          "是什么样子的？"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

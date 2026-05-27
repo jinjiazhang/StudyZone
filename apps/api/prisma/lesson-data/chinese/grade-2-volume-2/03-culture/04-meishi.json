@@ -1,0 +1,648 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“煎、烤、爆、炖、蒸、炸、炒”这些字都表示什么？",
+        "options": [
+          "烹饪食物的方法",
+          "餐具的种类",
+          "调味料的名称",
+          "蔬菜的品种"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一道美食是用“蒸”的方法做出来的？",
+        "options": [
+          "蒸饺",
+          "烤鸭",
+          "红烧茄子",
+          "炸酱面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拌、炒、烤、烧”这四个动作中，哪一个与“火”有关？",
+        "options": [
+          "炒、烤、烧",
+          "拌",
+          "都有关",
+          "都无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "中国美食享誉世界，课文中提到的小葱拌什么？",
+        "options": [
+          "豆腐",
+          "排骨",
+          "牛肉",
+          "面条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“爆、炖、炸”三个字都有什么偏旁？",
+        "options": [
+          "火字旁",
+          "水字旁",
+          "草字头",
+          "金字旁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "菠",
+        "hint": "“菠菜”的菠",
+        "options": [
+          "bō",
+          "pō",
+          "fō",
+          "mō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "煎",
+        "hint": "“煎鱼”的煎",
+        "options": [
+          "jiān",
+          "qián",
+          "zhǎn",
+          "shān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "腐",
+        "hint": "“豆腐”的腐",
+        "options": [
+          "fǔ",
+          "fú",
+          "hǔ",
+          "bǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茄",
+        "hint": "“茄子”的茄",
+        "options": [
+          "qié",
+          "jiā",
+          "xié",
+          "kē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "烤",
+        "hint": "“烤鸭”的烤",
+        "options": [
+          "kǎo",
+          "qiǎo",
+          "gǎo",
+          "hǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "炖",
+        "hint": "“炖排骨”的炖",
+        "options": [
+          "dùn",
+          "tún",
+          "dūn",
+          "zhūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shāo",
+        "hint": "“红___”的“烧”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "火",
+          "尧",
+          "木",
+          "戈",
+          "日",
+          "人"
+        ],
+        "target": "烧"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "火",
+          "right": "尧"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qié",
+        "hint": "“___子”的“茄”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "加",
+          "木",
+          "口",
+          "日",
+          "力"
+        ],
+        "target": "茄"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "艹",
+          "bottom": "加"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kǎo",
+        "hint": "“___肉”的“烤”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "火",
+          "考",
+          "木",
+          "耂",
+          "日",
+          "人"
+        ],
+        "target": "烤"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "火",
+          "right": "考"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chǎo",
+        "hint": "“___饭”的“炒”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "火",
+          "少",
+          "木",
+          "小",
+          "日",
+          "人"
+        ],
+        "target": "炒"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "火",
+          "right": "少"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "凉拌"
+          },
+          {
+            "id": "l2",
+            "text": "红烧"
+          },
+          {
+            "id": "l3",
+            "text": "清蒸"
+          },
+          {
+            "id": "l4",
+            "text": "油炸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "小葱拌豆腐"
+          },
+          {
+            "id": "r2",
+            "text": "红烧茄子"
+          },
+          {
+            "id": "r3",
+            "text": "清蒸鲈鱼"
+          },
+          {
+            "id": "r4",
+            "text": "油炸丸子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "菠"
+          },
+          {
+            "id": "l2",
+            "text": "煎"
+          },
+          {
+            "id": "l3",
+            "text": "腐"
+          },
+          {
+            "id": "l4",
+            "text": "茄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "bō"
+          },
+          {
+            "id": "r2",
+            "text": "jiān"
+          },
+          {
+            "id": "r3",
+            "text": "fǔ"
+          },
+          {
+            "id": "r4",
+            "text": "qié"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "凉拌"
+          },
+          {
+            "id": "l2",
+            "text": "红烧"
+          },
+          {
+            "id": "l3",
+            "text": "清蒸"
+          },
+          {
+            "id": "l4",
+            "text": "油炸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "小葱拌豆腐"
+          },
+          {
+            "id": "r2",
+            "text": "红烧茄子"
+          },
+          {
+            "id": "r3",
+            "text": "清蒸鲈鱼"
+          },
+          {
+            "id": "r4",
+            "text": "油炸丸子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "菠"
+          },
+          {
+            "id": "l2",
+            "text": "煎"
+          },
+          {
+            "id": "l3",
+            "text": "腐"
+          },
+          {
+            "id": "l4",
+            "text": "茄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "bō"
+          },
+          {
+            "id": "r2",
+            "text": "jiān"
+          },
+          {
+            "id": "r3",
+            "text": "fǔ"
+          },
+          {
+            "id": "r4",
+            "text": "qié"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《中国美食》中的名句",
+        "tokens": [
+          "红烧茄子，",
+          "烤鸭，",
+          "小葱拌豆腐。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "红烧茄子，",
+          "烤鸭，",
+          "小葱拌豆腐。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《中国美食》中的名句",
+        "tokens": [
+          "水饺，",
+          "煎饺，",
+          "炸酱面，",
+          "小米粥。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水饺，",
+          "煎饺，",
+          "炸酱面，",
+          "小米粥。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《中国美食》中的名句",
+        "tokens": [
+          "蒸饺，",
+          "炒饭，",
+          "炖排骨，",
+          "烤羊肉。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蒸饺，",
+          "炒饭，",
+          "炖排骨，",
+          "烤羊肉。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《中国美食》段落",
+        "tokens": [
+          "红烧茄子，",
+          "烤鸭，",
+          "小葱拌豆腐。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "红烧茄子，",
+          "烤鸭，",
+          "小葱拌豆腐。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《中国美食》段落",
+        "tokens": [
+          "蒸饺，",
+          "炒饭，",
+          "炖排骨，",
+          "烤羊肉。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蒸饺，",
+          "炒饭，",
+          "炖排骨，",
+          "烤羊肉。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《中国美食》段落",
+        "tokens": [
+          "水饺，",
+          "煎饺，",
+          "炸酱面，",
+          "小米粥。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水饺，",
+          "煎饺，",
+          "炸酱面，",
+          "小米粥。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨前，天上的乌云是怎样的状态？",
+        "options": [
+          "黑沉沉地压下来",
+          "白茫茫的",
+          "飘来飘去",
+          "变成了红云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨前，大风吹得树木怎么样？",
+        "options": [
+          "乱摆，一只蜘蛛从网上垂下来逃走了",
+          "一动不动",
+          "开花了",
+          "树叶全落光了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨中，天上的雨是怎样下的？",
+        "options": [
+          "哗，哗，哗，下得非常大",
+          "像毛毛细雨",
+          "像小冰雹",
+          "根本没有雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨后，天空中挂起了什么？",
+        "options": [
+          "一条美丽的彩虹，太阳出来了",
+          "一个月亮",
+          "许多星星",
+          "又一片黑乌云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨后，池塘里的水怎么样？",
+        "options": [
+          "水满了，青蛙叫起来了",
+          "水干涸了",
+          "水结冰了",
+          "小鱼都不见了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "压",
+        "hint": "“压下来”的压",
+        "options": [
+          "yā",
+          "yà",
+          "lā",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蝉",
+        "hint": "“知了/蝉”的蝉",
+        "options": [
+          "chán",
+          "shán",
+          "dān",
+          "tán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "垂",
+        "hint": "“垂下来”的垂",
+        "options": [
+          "chuí",
+          "cuí",
+          "shuǐ",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "哗",
+        "hint": "“哗哗哗”的哗",
+        "options": [
+          "huā",
+          "huá",
+          "wá",
+          "kā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "户",
+        "hint": "“窗户”的户",
+        "options": [
+          "hù",
+          "shǐ",
+          "fāng",
+          "cāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扑",
+        "hint": "“扑面而来”的扑",
+        "options": [
+          "pū",
+          "fū",
+          "bū",
+          "shǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "léi",
+        "hint": "“___雨”的“雷”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "雨",
+          "田",
+          "艹",
+          "大",
+          "木",
+          "口"
+        ],
+        "target": "雷"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "雨",
+          "bottom": "田"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yā",
+        "hint": "“气___”的“压”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "厂",
+          "土",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "压"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "厂",
+          "bottom": "土"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "pū",
+        "hint": "“___倒”的“扑”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "手",
+          "卜",
+          "木",
+          "口",
+          "氵",
+          "人"
+        ],
+        "target": "扑"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "扌",
+          "right": "卜"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chuí",
+        "hint": "“___直”的“垂”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "千",
+          "里",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "垂"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "千",
+          "bottom": "里"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "黑沉沉"
+          },
+          {
+            "id": "l2",
+            "text": "垂下来"
+          },
+          {
+            "id": "l3",
+            "text": "渐渐"
+          },
+          {
+            "id": "l4",
+            "text": "雷雨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "乌云非常浓重"
+          },
+          {
+            "id": "r2",
+            "text": "柳枝或蜘蛛挂下来"
+          },
+          {
+            "id": "r3",
+            "text": "慢慢、一步步"
+          },
+          {
+            "id": "r4",
+            "text": "带电雷鸣的暴雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "压"
+          },
+          {
+            "id": "l2",
+            "text": "蝉"
+          },
+          {
+            "id": "l3",
+            "text": "垂"
+          },
+          {
+            "id": "l4",
+            "text": "哗"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "yā"
+          },
+          {
+            "id": "r2",
+            "text": "chán"
+          },
+          {
+            "id": "r3",
+            "text": "chuí"
+          },
+          {
+            "id": "r4",
+            "text": "huā"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "黑沉沉"
+          },
+          {
+            "id": "l2",
+            "text": "垂下来"
+          },
+          {
+            "id": "l3",
+            "text": "渐渐"
+          },
+          {
+            "id": "l4",
+            "text": "雷雨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "乌云非常浓重"
+          },
+          {
+            "id": "r2",
+            "text": "柳枝或蜘蛛挂下来"
+          },
+          {
+            "id": "r3",
+            "text": "慢慢、一步步"
+          },
+          {
+            "id": "r4",
+            "text": "带电雷鸣的暴雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "压"
+          },
+          {
+            "id": "l2",
+            "text": "蝉"
+          },
+          {
+            "id": "l3",
+            "text": "垂"
+          },
+          {
+            "id": "l4",
+            "text": "哗"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "yā"
+          },
+          {
+            "id": "r2",
+            "text": "chán"
+          },
+          {
+            "id": "r3",
+            "text": "chuí"
+          },
+          {
+            "id": "r4",
+            "text": "huā"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《雷雨》中的名句",
+        "tokens": [
+          "满天的乌云，",
+          "黑沉沉地",
+          "压下来。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "满天的乌云，",
+          "黑沉沉地",
+          "压下来。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《雷雨》中的名句",
+        "tokens": [
+          "一只蜘蛛",
+          "从网上",
+          "垂下来，",
+          "逃走了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一只蜘蛛",
+          "从网上",
+          "垂下来，",
+          "逃走了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《雷雨》中的名句",
+        "tokens": [
+          "渐渐地，",
+          "渐渐地，",
+          "雷声小了，",
+          "雨声也小了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "渐渐地，",
+          "渐渐地，",
+          "雷声小了，",
+          "雨声也小了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《雷雨》段落",
+        "tokens": [
+          "满天的乌云，",
+          "黑沉沉地",
+          "压下来。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "满天的乌云，",
+          "黑沉沉地",
+          "压下来。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《雷雨》段落",
+        "tokens": [
+          "渐渐地，",
+          "渐渐地，",
+          "雷声小了，",
+          "雨声也小了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "渐渐地，",
+          "渐渐地，",
+          "雷声小了，",
+          "雨声也小了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《雷雨》段落",
+        "tokens": [
+          "一只蜘蛛",
+          "从网上",
+          "垂下来，",
+          "逃走了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一只蜘蛛",
+          "从网上",
+          "垂下来，",
+          "逃走了。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

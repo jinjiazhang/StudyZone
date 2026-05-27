@@ -1,0 +1,656 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当世界年纪还小的时候，每样事物都必须做什么？",
+        "options": [
+          "学习怎么生活",
+          "每天都在打架",
+          "拼命找东西吃",
+          "什么都不做"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "太阳学会了做什么？",
+        "options": [
+          "发光，并且每天上山下山",
+          "唱歌和跳舞",
+          "写字和画画",
+          "游泳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "月亮最后学会了做什么？",
+        "options": [
+          "每天晚上变化，时圆时缺",
+          "一直像个大圆盘",
+          "像火一样燃烧",
+          "藏在云彩里不出来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水是怎么学习生活的？",
+        "options": [
+          "一直往低处流，流进大河和大海",
+          "在天空中飞翔",
+          "停着一动不动",
+          "变成冰块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“世界很有秩序”的意思是指？",
+        "options": [
+          "万物都找到了自己最简单、最适合的生存方式",
+          "大家都很守规矩排队",
+          "有警察维持治安",
+          "没有吵架的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "纪",
+        "hint": "“年纪”的纪",
+        "options": [
+          "jì",
+          "jī",
+          "xí",
+          "shì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "必",
+        "hint": "“必须”的必",
+        "options": [
+          "bì",
+          "mì",
+          "shī",
+          "zhì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "须",
+        "hint": "“必须”的须",
+        "options": [
+          "xū",
+          "shū",
+          "jì",
+          "xú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "糙",
+        "hint": "“粗糙”的糙",
+        "options": [
+          "cāo",
+          "zào",
+          "shā",
+          "bái"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "敏",
+        "hint": "“敏感”的敏",
+        "options": [
+          "mǐn",
+          "mǐng",
+          "wén",
+          "xíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "由",
+        "hint": "“自由”的由",
+        "options": [
+          "yóu",
+          "dián",
+          "jiǎ",
+          "shén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shì",
+        "hint": "“___界”的“世”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "廿",
+          "乚",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "世"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "廿",
+          "bottom": "乚"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jiè",
+        "hint": "“世___”的“界”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "田",
+          "介",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "界"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "田",
+          "bottom": "介"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "gōng",
+        "hint": "“___劳”的“功”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "工",
+          "力",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "功"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "工",
+          "right": "力"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jiǎn",
+        "hint": "“___单”的“简”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "竹",
+          "间",
+          "艹",
+          "大",
+          "木",
+          "口"
+        ],
+        "target": "简"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "⺮",
+          "bottom": "间"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "世界年纪小"
+          },
+          {
+            "id": "l2",
+            "text": "粗糙"
+          },
+          {
+            "id": "l3",
+            "text": "秩序"
+          },
+          {
+            "id": "l4",
+            "text": "自由自在"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "万物都要学习生活"
+          },
+          {
+            "id": "r2",
+            "text": "不光滑、质地粗"
+          },
+          {
+            "id": "r3",
+            "text": "条理和规矩"
+          },
+          {
+            "id": "r4",
+            "text": "不受拘束、无忧无虑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纪"
+          },
+          {
+            "id": "l2",
+            "text": "必"
+          },
+          {
+            "id": "l3",
+            "text": "须"
+          },
+          {
+            "id": "l4",
+            "text": "糙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "jì"
+          },
+          {
+            "id": "r2",
+            "text": "bì"
+          },
+          {
+            "id": "r3",
+            "text": "xū"
+          },
+          {
+            "id": "r4",
+            "text": "cāo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "世界年纪小"
+          },
+          {
+            "id": "l2",
+            "text": "粗糙"
+          },
+          {
+            "id": "l3",
+            "text": "秩序"
+          },
+          {
+            "id": "l4",
+            "text": "自由自在"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "万物都要学习生活"
+          },
+          {
+            "id": "r2",
+            "text": "不光滑、质地粗"
+          },
+          {
+            "id": "r3",
+            "text": "条理和规矩"
+          },
+          {
+            "id": "r4",
+            "text": "不受拘束、无忧无虑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纪"
+          },
+          {
+            "id": "l2",
+            "text": "必"
+          },
+          {
+            "id": "l3",
+            "text": "须"
+          },
+          {
+            "id": "l4",
+            "text": "糙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "jì"
+          },
+          {
+            "id": "r2",
+            "text": "bì"
+          },
+          {
+            "id": "r3",
+            "text": "xū"
+          },
+          {
+            "id": "r4",
+            "text": "cāo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《当世界年纪还小的时候》中的名句",
+        "tokens": [
+          "当世界年纪",
+          "还小的时候，",
+          "每样事物",
+          "都必须学习",
+          "怎么生活。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "当世界年纪",
+          "还小的时候，",
+          "每样事物",
+          "都必须学习",
+          "怎么生活。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《当世界年纪还小的时候》中的名句",
+        "tokens": [
+          "太阳开始",
+          "学习发光，",
+          "它把它的路",
+          "走得很好。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳开始",
+          "学习发光，",
+          "它把它的路",
+          "走得很好。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《当世界年纪还小的时候》中的名句",
+        "tokens": [
+          "只要万物都",
+          "做它最容易",
+          "做的事，",
+          "世界就有秩序。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "只要万物都",
+          "做它最容易",
+          "做的事，",
+          "世界就有秩序。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《当世界年纪还小的时候》段落",
+        "tokens": [
+          "当世界年纪",
+          "还小的时候，",
+          "每样事物",
+          "都必须学习",
+          "怎么生活。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "当世界年纪",
+          "还小的时候，",
+          "每样事物",
+          "都必须学习",
+          "怎么生活。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《当世界年纪还小的时候》段落",
+        "tokens": [
+          "只要万物都",
+          "做它最容易",
+          "做的事，",
+          "世界就有秩序。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "只要万物都",
+          "做它最容易",
+          "做的事，",
+          "世界就有秩序。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《当世界年纪还小的时候》段落",
+        "tokens": [
+          "太阳开始",
+          "学习发光，",
+          "它把它的路",
+          "走得很好。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳开始",
+          "学习发光，",
+          "它把它的路",
+          "走得很好。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

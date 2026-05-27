@@ -1,0 +1,636 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子们在沙滩上堆沙子，建造了什么？",
+        "options": [
+          "城堡和大山",
+          "一座大桥",
+          "一间普通的平房",
+          "一个公园"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "城堡里住着一个怎样的魔王？",
+        "options": [
+          "凶狠的魔王",
+          "善良的国王",
+          "美丽的仙女",
+          "调皮的小狗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "魔王抢走了谁，关在城堡里？",
+        "options": [
+          "美丽的公主",
+          "可怜的老爷爷",
+          "一只猫咪",
+          "小猪佩奇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子们最后是用什么办法救出公主的？",
+        "options": [
+          "挖地道、用火药轰塌城堡",
+          "向魔王求情",
+          "把魔王气死",
+          "等魔王自己放人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子们救出的“公主”实际上是谁？",
+        "options": [
+          "在一旁含笑看着他们的妈妈",
+          "一个漂亮的布娃娃",
+          "一只可爱的小兔子",
+          "邻居家的小妹妹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "堡",
+        "hint": "“城堡”的堡",
+        "options": [
+          "bǎo",
+          "dǎo",
+          "pù",
+          "bào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "插",
+        "hint": "“插上”的插",
+        "options": [
+          "chā",
+          "cā",
+          "sā",
+          "zhā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "凶",
+        "hint": "“凶狠”的凶",
+        "options": [
+          "xiōng",
+          "xōng",
+          "xī",
+          "shōng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狠",
+        "hint": "“凶狠”的狠",
+        "options": [
+          "hěn",
+          "hén",
+          "hèn",
+          "lěn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "攻",
+        "hint": "“攻打”的攻",
+        "options": [
+          "gōng",
+          "gōngg",
+          "kōng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "商",
+        "hint": "“商量”的商",
+        "options": [
+          "shāng",
+          "sāng",
+          "cháng",
+          "táng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhōu",
+        "hint": "“___围”的“周”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "冂",
+          "吉",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "周"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "冂",
+          "bottom": "吉"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wéi",
+        "hint": "“周___”的“围”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "囗",
+          "韦",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "围"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "囗",
+          "right": "韦"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bǔ",
+        "hint": "“___充”的“补”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "衣",
+          "卜",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "补"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "衤",
+          "right": "卜"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chōng",
+        "hint": "“补___”的“充”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "亠",
+          "允",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "充"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "亠",
+          "bottom": "允"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "城堡"
+          },
+          {
+            "id": "l2",
+            "text": "凶狠"
+          },
+          {
+            "id": "l3",
+            "text": "攻打"
+          },
+          {
+            "id": "l4",
+            "text": "补充"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "坚固的城池"
+          },
+          {
+            "id": "r2",
+            "text": "凶恶毒辣"
+          },
+          {
+            "id": "r3",
+            "text": "向敌人发起进攻"
+          },
+          {
+            "id": "r4",
+            "text": "额外增加说明"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "堡"
+          },
+          {
+            "id": "l2",
+            "text": "插"
+          },
+          {
+            "id": "l3",
+            "text": "凶"
+          },
+          {
+            "id": "l4",
+            "text": "狠"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "bǎo"
+          },
+          {
+            "id": "r2",
+            "text": "chā"
+          },
+          {
+            "id": "r3",
+            "text": "xiōng"
+          },
+          {
+            "id": "r4",
+            "text": "hěn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "城堡"
+          },
+          {
+            "id": "l2",
+            "text": "凶狠"
+          },
+          {
+            "id": "l3",
+            "text": "攻打"
+          },
+          {
+            "id": "l4",
+            "text": "补充"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "坚固的城池"
+          },
+          {
+            "id": "r2",
+            "text": "凶恶毒辣"
+          },
+          {
+            "id": "r3",
+            "text": "向敌人发起进攻"
+          },
+          {
+            "id": "r4",
+            "text": "额外增加说明"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "堡"
+          },
+          {
+            "id": "l2",
+            "text": "插"
+          },
+          {
+            "id": "l3",
+            "text": "凶"
+          },
+          {
+            "id": "l4",
+            "text": "狠"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "bǎo"
+          },
+          {
+            "id": "r2",
+            "text": "chā"
+          },
+          {
+            "id": "r3",
+            "text": "xiōng"
+          },
+          {
+            "id": "r4",
+            "text": "hěn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《沙滩上的童话》中的名句",
+        "tokens": [
+          "海边的沙滩",
+          "是我们的",
+          "快乐天地。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "海边的沙滩",
+          "是我们的",
+          "快乐天地。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《沙滩上的童话》中的名句",
+        "tokens": [
+          "我们在沙滩上",
+          "垒起城堡。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们在沙滩上",
+          "垒起城堡。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《沙滩上的童话》中的名句",
+        "tokens": [
+          "我的办法",
+          "得到了大家的",
+          "赞同。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的办法",
+          "得到了大家的",
+          "赞同。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《沙滩上的童话》段落",
+        "tokens": [
+          "海边的沙滩",
+          "是我们的",
+          "快乐天地。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "海边的沙滩",
+          "是我们的",
+          "快乐天地。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《沙滩上的童话》段落",
+        "tokens": [
+          "我的办法",
+          "得到了大家的",
+          "赞同。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的办法",
+          "得到了大家的",
+          "赞同。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《沙滩上的童话》段落",
+        "tokens": [
+          "我们在沙滩上",
+          "垒起城堡。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们在沙滩上",
+          "垒起城堡。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

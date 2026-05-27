@@ -1,0 +1,660 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要是你在野外迷了路，你会怎么做？",
+        "options": [
+          "千万别慌张，要去找大自然的指南针",
+          "大哭起来",
+          "在原地睡觉",
+          "随便乱走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "中午时，太阳在哪个方向？",
+        "options": [
+          "南方",
+          "北方",
+          "东方",
+          "西方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大树是怎么给我们指引方向的？",
+        "options": [
+          "枝叶稠的一面是南方，稀的一面是北方",
+          "枝叶稠的是北方",
+          "看它的高度",
+          "看它的花朵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "黑夜里，北极星悬挂在哪个方向？",
+        "options": [
+          "北方",
+          "南方",
+          "东方",
+          "西方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "沟渠里的积雪，是怎么指引方向的？",
+        "options": [
+          "化得快的一边是南方（实际是沟渠北边，但人教版按化得快/化得慢判定）",
+          "雪最白的是南方",
+          "最厚的是南方",
+          "化得慢的一边是南方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "慌",
+        "hint": "“慌张”的慌",
+        "options": [
+          "huāng",
+          "huāngg",
+          "fāng",
+          "wāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "辨",
+        "hint": "“分辨”的辨",
+        "options": [
+          "biàn",
+          "pàn",
+          "jiǎn",
+          "bàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "忠",
+        "hint": "“忠实”的忠",
+        "options": [
+          "zhōng",
+          "zōng",
+          "chóng",
+          "tóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "导",
+        "hint": "“向导”的导",
+        "options": [
+          "dǎo",
+          "dào",
+          "xún",
+          "shù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盏",
+        "hint": "“一盏灯”的盏",
+        "options": [
+          "zhǎn",
+          "shǎn",
+          "chǎn",
+          "tán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "稠",
+        "hint": "“枝叶稠”的稠",
+        "options": [
+          "chóu",
+          "zhōu",
+          "shóu",
+          "dōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "hint": "“___南针”的“指”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "手",
+          "旨",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "指"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "扌",
+          "right": "旨"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhēn",
+        "hint": "“指___” the “针”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "金",
+          "十",
+          "木",
+          "日",
+          "氵",
+          "人"
+        ],
+        "target": "针"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "钅",
+          "right": "十"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bāng",
+        "hint": "“___助”的“帮”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "邦",
+          "巾",
+          "艹",
+          "木",
+          "口",
+          "人"
+        ],
+        "target": "帮"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "邦",
+          "bottom": "巾"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhù",
+        "hint": "“帮___”的“助”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "且",
+          "力",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "助"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "且",
+          "right": "力"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "太阳"
+          },
+          {
+            "id": "l2",
+            "text": "北极星"
+          },
+          {
+            "id": "l3",
+            "text": "大树"
+          },
+          {
+            "id": "l4",
+            "text": "积雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中午在南方"
+          },
+          {
+            "id": "r2",
+            "text": "黑夜挂在北方"
+          },
+          {
+            "id": "r3",
+            "text": "稠的一面是南方"
+          },
+          {
+            "id": "r4",
+            "text": "化得快的是南方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "慌"
+          },
+          {
+            "id": "l2",
+            "text": "辨"
+          },
+          {
+            "id": "l3",
+            "text": "忠"
+          },
+          {
+            "id": "l4",
+            "text": "导"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "huāng"
+          },
+          {
+            "id": "r2",
+            "text": "biàn"
+          },
+          {
+            "id": "r3",
+            "text": "zhōng"
+          },
+          {
+            "id": "r4",
+            "text": "dǎo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "太阳"
+          },
+          {
+            "id": "l2",
+            "text": "北极星"
+          },
+          {
+            "id": "l3",
+            "text": "大树"
+          },
+          {
+            "id": "l4",
+            "text": "积雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中午在南方"
+          },
+          {
+            "id": "r2",
+            "text": "黑夜挂在北方"
+          },
+          {
+            "id": "r3",
+            "text": "稠的一面是南方"
+          },
+          {
+            "id": "r4",
+            "text": "化得快的是南方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "慌"
+          },
+          {
+            "id": "l2",
+            "text": "辨"
+          },
+          {
+            "id": "l3",
+            "text": "忠"
+          },
+          {
+            "id": "l4",
+            "text": "导"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "huāng"
+          },
+          {
+            "id": "r2",
+            "text": "biàn"
+          },
+          {
+            "id": "r3",
+            "text": "zhōng"
+          },
+          {
+            "id": "r4",
+            "text": "dǎo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《要是你在野外迷了路》中的名句",
+        "tokens": [
+          "要是在野外",
+          "迷了路，",
+          "可千万别",
+          "慌张。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要是在野外",
+          "迷了路，",
+          "可千万别",
+          "慌张。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《要是你在野外迷了路》中的名句",
+        "tokens": [
+          "太阳是",
+          "忠实的",
+          "向导，",
+          "它中午",
+          "在南方。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳是",
+          "忠实的",
+          "向导，",
+          "它中午",
+          "在南方。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《要是你在野外迷了路》中的名句",
+        "tokens": [
+          "北极星是",
+          "一盏",
+          "指路灯，",
+          "它永远",
+          "高挂在北方。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "北极星是",
+          "一盏",
+          "指路灯，",
+          "它永远",
+          "高挂在北方。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《要是你在野外迷了路》段落",
+        "tokens": [
+          "要是在野外",
+          "迷了路，",
+          "可千万别",
+          "慌张。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要是在野外",
+          "迷了路，",
+          "可千万别",
+          "慌张。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《要是你在野外迷了路》段落",
+        "tokens": [
+          "北极星是",
+          "一盏",
+          "指路灯，",
+          "它永远",
+          "高挂在北方。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "北极星是",
+          "一盏",
+          "指路灯，",
+          "它永远",
+          "高挂在北方。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《要是你在野外迷了路》段落",
+        "tokens": [
+          "太阳是",
+          "忠实的",
+          "向导，",
+          "它中午",
+          "在南方。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳是",
+          "忠实的",
+          "向导，",
+          "它中午",
+          "在南方。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

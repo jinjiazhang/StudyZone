@@ -1,0 +1,656 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“彩色的梦”在文中指的是什么？",
+        "options": [
+          "彩色铅笔和画出的美丽世界",
+          "晚上的美梦",
+          "五彩的泡泡",
+          "彩虹的颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "彩色铅笔躺在什么地方？",
+        "options": [
+          "白纸上",
+          "大盒里",
+          "书包里",
+          "桌子上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“脚尖滑过的地方，大块的草坪，绿了”，这里的脚尖指？",
+        "options": [
+          "彩色铅笔的笔尖",
+          "孩子跳舞的脚尖",
+          "小鸟的脚",
+          "画画的手指"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在彩色的梦里，雪松在做什么？",
+        "options": [
+          "手拉手唱歌聊天",
+          "在雪地里跳舞",
+          "静静地睡觉",
+          "在森林里奔跑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "梦境里“烟囱上”有什么？",
+        "options": [
+          "大朵苹果般的红云",
+          "厚厚的乌云",
+          "白色的烟雾",
+          "一只鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盒",
+        "hint": "“大盒”的盒",
+        "options": [
+          "hé",
+          "gě",
+          "huò",
+          "kē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "聊",
+        "hint": "“聊天”的聊",
+        "options": [
+          "liáo",
+          "liào",
+          "zhāo",
+          "qiáo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "坪",
+        "hint": "“草坪”的坪",
+        "options": [
+          "píng",
+          "pīng",
+          "bīng",
+          "páng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "郁",
+        "hint": "“葱郁”的郁",
+        "options": [
+          "yù",
+          "yū",
+          "yǒu",
+          "shū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "囱",
+        "hint": "“烟囱”的囱",
+        "options": [
+          "cōng",
+          "chuāng",
+          "tōng",
+          "sōng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "般",
+        "hint": "“一般”的般",
+        "options": [
+          "bān",
+          "pán",
+          "bō",
+          "chuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cǎi",
+        "hint": "“___梦”的“彩”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "采",
+          "彡",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "彩"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "采",
+          "right": "彡"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "sēn",
+        "hint": "“___林”的“森”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "木",
+          "林",
+          "木",
+          "大",
+          "氵",
+          "人"
+        ],
+        "target": "森"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "木",
+          "bottom": "林"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lā",
+        "hint": "“___手”的“拉”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "扌",
+          "立",
+          "木",
+          "口",
+          "氵",
+          "人"
+        ],
+        "target": "拉"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "扌",
+          "right": "立"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "mèng",
+        "hint": "“作___”的“梦”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "林",
+          "夕",
+          "木",
+          "夕",
+          "艹",
+          "口"
+        ],
+        "target": "梦"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "林",
+          "bottom": "夕"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "彩色"
+          },
+          {
+            "id": "l2",
+            "text": "叮咛"
+          },
+          {
+            "id": "l3",
+            "text": "葱郁"
+          },
+          {
+            "id": "l4",
+            "text": "聊天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "多种颜色"
+          },
+          {
+            "id": "r2",
+            "text": "反复叮嘱"
+          },
+          {
+            "id": "r3",
+            "text": "青翠茂密"
+          },
+          {
+            "id": "r4",
+            "text": "谈话聊天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "盒"
+          },
+          {
+            "id": "l2",
+            "text": "聊"
+          },
+          {
+            "id": "l3",
+            "text": "坪"
+          },
+          {
+            "id": "l4",
+            "text": "郁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "hé"
+          },
+          {
+            "id": "r2",
+            "text": "liáo"
+          },
+          {
+            "id": "r3",
+            "text": "píng"
+          },
+          {
+            "id": "r4",
+            "text": "yù"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "彩色"
+          },
+          {
+            "id": "l2",
+            "text": "叮咛"
+          },
+          {
+            "id": "l3",
+            "text": "葱郁"
+          },
+          {
+            "id": "l4",
+            "text": "聊天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "多种颜色"
+          },
+          {
+            "id": "r2",
+            "text": "反复叮嘱"
+          },
+          {
+            "id": "r3",
+            "text": "青翠茂密"
+          },
+          {
+            "id": "r4",
+            "text": "谈话聊天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "盒"
+          },
+          {
+            "id": "l2",
+            "text": "聊"
+          },
+          {
+            "id": "l3",
+            "text": "坪"
+          },
+          {
+            "id": "l4",
+            "text": "郁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "hé"
+          },
+          {
+            "id": "r2",
+            "text": "liáo"
+          },
+          {
+            "id": "r3",
+            "text": "píng"
+          },
+          {
+            "id": "r4",
+            "text": "yù"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《彩色的梦》中的名句",
+        "tokens": [
+          "我有一大盒",
+          "彩色的梦，",
+          "有的长，",
+          "有的圆，",
+          "有的硬。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我有一大盒",
+          "彩色的梦，",
+          "有的长，",
+          "有的圆，",
+          "有的硬。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《彩色的梦》中的名句",
+        "tokens": [
+          "脚尖滑过的",
+          "地方，",
+          "大块的草坪，",
+          "绿了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "脚尖滑过的",
+          "地方，",
+          "大块的草坪，",
+          "绿了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《彩色的梦》中的名句",
+        "tokens": [
+          "大朵的野花，",
+          "红了，",
+          "大片的森林，",
+          "青了。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大朵的野花，",
+          "红了，",
+          "大片的森林，",
+          "青了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《彩色的梦》段落",
+        "tokens": [
+          "我有一大盒",
+          "彩色的梦，",
+          "有的长，",
+          "有的圆，",
+          "有的硬。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我有一大盒",
+          "彩色的梦，",
+          "有的长，",
+          "有的圆，",
+          "有的硬。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《彩色的梦》段落",
+        "tokens": [
+          "大朵的野花，",
+          "红了，",
+          "大片的森林，",
+          "青了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大朵的野花，",
+          "红了，",
+          "大片的森林，",
+          "青了。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《彩色的梦》段落",
+        "tokens": [
+          "脚尖滑过的",
+          "地方，",
+          "大块的草坪，",
+          "绿了。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "脚尖滑过的",
+          "地方，",
+          "大块的草坪，",
+          "绿了。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

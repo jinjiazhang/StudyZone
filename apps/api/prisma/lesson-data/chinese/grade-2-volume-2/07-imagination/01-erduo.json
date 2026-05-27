@@ -1,0 +1,640 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象的耳朵天生是怎样的？",
+        "options": [
+          "耷拉着的，像两把大扇子",
+          "直直竖立起来的",
+          "非常小，几乎看不见",
+          "红色的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小兔子为什么说大象的耳朵“有病了”？",
+        "options": [
+          "因为小兔子的耳朵是竖着的，而大象的耳朵是耷拉着的",
+          "因为大象的耳朵在流血",
+          "因为大象的耳朵是绿色的",
+          "因为大象听不见声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象后来想办法把耳朵竖起来后，发生了什么麻烦？",
+        "options": [
+          "许多小虫子飞进他的耳朵眼儿里咬他，让他很头痛",
+          "大象听不到任何声音了",
+          "大家都夸大象变帅了",
+          "耳朵被风吹走了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象最后决定把耳朵怎么样？",
+        "options": [
+          "耷拉着，因为耷拉着最舒服，最适合他",
+          "剪掉",
+          "一直竖着",
+          "用布包起来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“人家是人家，我是我”这句话说明了什么？",
+        "options": [
+          "每个人都有自己的独特和合适方式，不要盲目去学别人",
+          "我很自私，不想理人",
+          "我比别人聪明",
+          "大象很骄傲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "耷",
+        "hint": "“耷拉”的耷",
+        "options": [
+          "dā",
+          "ěr",
+          "tíng",
+          "shù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扇",
+        "hint": "“扇风/扇子”的扇",
+        "options": [
+          "shàn",
+          "shān",
+          "hù",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竖",
+        "hint": "“竖起来”的竖",
+        "options": [
+          "shù",
+          "sù",
+          "zhù",
+          "chù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "遇",
+        "hint": "“遇见”的遇",
+        "options": [
+          "yù",
+          "yū",
+          "yǒu",
+          "wù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "兔",
+        "hint": "“兔子”的兔",
+        "options": [
+          "tù",
+          "mǐn",
+          "hǔ",
+          "fú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "撑",
+        "hint": "“撑起来”的撑",
+        "options": [
+          "chēng",
+          "zhǎng",
+          "cēng",
+          "táng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shàn",
+        "hint": "“___子”的“扇”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "户",
+          "羽",
+          "门",
+          "日",
+          "木",
+          "口"
+        ],
+        "target": "扇"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "户",
+          "bottom": "羽"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "màn",
+        "hint": "“___慢”的“慢”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "忄",
+          "曼",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "慢"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "忄",
+          "right": "曼"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yù",
+        "hint": "“___到”的“遇”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "辶",
+          "禺",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "遇"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "辶",
+          "right": "禺"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tòng",
+        "hint": "“___苦”的“痛”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "疒",
+          "甬",
+          "门",
+          "日",
+          "木",
+          "口"
+        ],
+        "target": "痛"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "疒",
+          "bottom": "甬"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "耷拉"
+          },
+          {
+            "id": "l2",
+            "text": "竖起来"
+          },
+          {
+            "id": "l3",
+            "text": "扇风"
+          },
+          {
+            "id": "l4",
+            "text": "自言自语"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "垂挂下来"
+          },
+          {
+            "id": "r2",
+            "text": "直立起来"
+          },
+          {
+            "id": "r3",
+            "text": "扇动翅膀或耳朵"
+          },
+          {
+            "id": "r4",
+            "text": "自己和自己说话"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "耷"
+          },
+          {
+            "id": "l2",
+            "text": "扇"
+          },
+          {
+            "id": "l3",
+            "text": "竖"
+          },
+          {
+            "id": "l4",
+            "text": "遇"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dā"
+          },
+          {
+            "id": "r2",
+            "text": "shàn"
+          },
+          {
+            "id": "r3",
+            "text": "shù"
+          },
+          {
+            "id": "r4",
+            "text": "yù"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "耷拉"
+          },
+          {
+            "id": "l2",
+            "text": "竖起来"
+          },
+          {
+            "id": "l3",
+            "text": "扇风"
+          },
+          {
+            "id": "l4",
+            "text": "自言自语"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "垂挂下来"
+          },
+          {
+            "id": "r2",
+            "text": "直立起来"
+          },
+          {
+            "id": "r3",
+            "text": "扇动翅膀或耳朵"
+          },
+          {
+            "id": "r4",
+            "text": "自己和自己说话"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "耷"
+          },
+          {
+            "id": "l2",
+            "text": "扇"
+          },
+          {
+            "id": "l3",
+            "text": "竖"
+          },
+          {
+            "id": "l4",
+            "text": "遇"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dā"
+          },
+          {
+            "id": "r2",
+            "text": "shàn"
+          },
+          {
+            "id": "r3",
+            "text": "shù"
+          },
+          {
+            "id": "r4",
+            "text": "yù"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《大象的耳朵》中的名句",
+        "tokens": [
+          "大象有一对",
+          "耷拉着的",
+          "耳朵，",
+          "像两把大扇子。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大象有一对",
+          "耷拉着的",
+          "耳朵，",
+          "像两把大扇子。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《大象的耳朵》中的名句",
+        "tokens": [
+          "人家是人家，",
+          "我是我。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人家是人家，",
+          "我是我。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《大象的耳朵》中的名句",
+        "tokens": [
+          "我还是",
+          "让耳朵",
+          "耷拉着吧。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我还是",
+          "让耳朵",
+          "耷拉着吧。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《大象的耳朵》段落",
+        "tokens": [
+          "大象有一对",
+          "耷拉着的",
+          "耳朵，",
+          "像两把大扇子。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大象有一对",
+          "耷拉着的",
+          "耳朵，",
+          "像两把大扇子。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《大象的耳朵》段落",
+        "tokens": [
+          "我还是",
+          "让耳朵",
+          "耷拉着吧。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我还是",
+          "让耳朵",
+          "耷拉着吧。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《大象的耳朵》段落",
+        "tokens": [
+          "人家是人家，",
+          "我是我。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人家是人家，",
+          "我是我。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

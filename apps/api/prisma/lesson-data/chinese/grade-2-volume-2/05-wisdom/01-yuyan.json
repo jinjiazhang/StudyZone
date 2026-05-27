@@ -1,0 +1,644 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“亡羊补牢”中的“亡” and “牢”分别是什么意思？",
+        "options": [
+          "丢失；养牲畜的圈",
+          "死亡；牢固的监牢",
+          "逃跑；牢记心头",
+          "忘记；羊圈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "那个人在第一次丢羊后，为什么不修补羊圈？",
+        "options": [
+          "因为他觉得羊已经丢了，修补没有用",
+          "因为他没有木头",
+          "因为他太累了，想睡觉",
+          "因为他不在乎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“揠苗助长”中，那个人为什么要把禾苗往上拔？",
+        "options": [
+          "因为他嫌禾苗长得太慢，想帮它们长高",
+          "因为他想把禾苗带回家",
+          "因为他疯了",
+          "因为他想拔草"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "被往上拔的禾苗最后怎么样了？",
+        "options": [
+          "全都枯死了",
+          "长得又高又壮",
+          "结出了很多稻谷",
+          "被小羊吃掉了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“揠苗助长”这个寓言故事告诉我们什么道理？",
+        "options": [
+          "违背客观规律，急于求成，反而会坏事",
+          "拔河是一项有益的运动",
+          "禾苗需要多喝水",
+          "我们要多帮禾苗浇水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寓",
+        "hint": "“寓言”的寓",
+        "options": [
+          "yù",
+          "yū",
+          "yǒu",
+          "wù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "则",
+        "hint": "“一则”的则",
+        "options": [
+          "zé",
+          "zhí",
+          "cè",
+          "sè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "亡",
+        "hint": "“亡羊补牢”的亡",
+        "options": [
+          "wáng",
+          "wángg",
+          "wǎng",
+          "wáng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "牢",
+        "hint": "“亡羊补牢”的牢",
+        "options": [
+          "láo",
+          "nǎo",
+          "lǎo",
+          "kū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叼",
+        "hint": "“叼走”的叼",
+        "options": [
+          "diāo",
+          "tiáo",
+          "yǎo",
+          "dāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "焦",
+        "hint": "“焦急”的焦",
+        "options": [
+          "jiāo",
+          "qiáo",
+          "jiào",
+          "shū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wáng",
+        "hint": "“___羊补牢”的“亡”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "亠",
+          "乚",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "亡"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "亠",
+          "bottom": "乚"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "láo",
+        "hint": "“亡羊补___”的“牢”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "宀",
+          "牛",
+          "艹",
+          "羊",
+          "木",
+          "口"
+        ],
+        "target": "牢"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "宀",
+          "bottom": "牛"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zuān",
+        "hint": "“___孔”的“钻”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "金",
+          "占",
+          "木",
+          "口",
+          "氵",
+          "人"
+        ],
+        "target": "钻"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "钅",
+          "right": "占"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "diū",
+        "hint": "“___失”的“丢”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "丿",
+          "去",
+          "艹",
+          "木",
+          "口",
+          "人"
+        ],
+        "target": "丢"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "丿",
+          "bottom": "去"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "亡羊补牢"
+          },
+          {
+            "id": "l2",
+            "text": "揠苗助长"
+          },
+          {
+            "id": "l3",
+            "text": "懊悔"
+          },
+          {
+            "id": "l4",
+            "text": "焦急"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "出了问题及时修补还不算晚"
+          },
+          {
+            "id": "r2",
+            "text": "急于求成反而坏了事"
+          },
+          {
+            "id": "r3",
+            "text": "后悔"
+          },
+          {
+            "id": "r4",
+            "text": "着急、非常担心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "寓"
+          },
+          {
+            "id": "l2",
+            "text": "则"
+          },
+          {
+            "id": "l3",
+            "text": "亡"
+          },
+          {
+            "id": "l4",
+            "text": "牢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "yù"
+          },
+          {
+            "id": "r2",
+            "text": "zé"
+          },
+          {
+            "id": "r3",
+            "text": "wáng"
+          },
+          {
+            "id": "r4",
+            "text": "láo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "亡羊补牢"
+          },
+          {
+            "id": "l2",
+            "text": "揠苗助长"
+          },
+          {
+            "id": "l3",
+            "text": "懊悔"
+          },
+          {
+            "id": "l4",
+            "text": "焦急"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "出了问题及时修补还不算晚"
+          },
+          {
+            "id": "r2",
+            "text": "急于求成反而坏了事"
+          },
+          {
+            "id": "r3",
+            "text": "后悔"
+          },
+          {
+            "id": "r4",
+            "text": "着急、非常担心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "寓"
+          },
+          {
+            "id": "l2",
+            "text": "则"
+          },
+          {
+            "id": "l3",
+            "text": "亡"
+          },
+          {
+            "id": "l4",
+            "text": "牢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "yù"
+          },
+          {
+            "id": "r2",
+            "text": "zé"
+          },
+          {
+            "id": "r3",
+            "text": "wáng"
+          },
+          {
+            "id": "r4",
+            "text": "láo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《寓言二则》中的名句",
+        "tokens": [
+          "羊已经丢了，",
+          "现在修补羊圈",
+          "还不算晚。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "羊已经丢了，",
+          "现在修补羊圈",
+          "还不算晚。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《寓言二则》中的名句",
+        "tokens": [
+          "禾苗好像",
+          "一点儿也",
+          "没有长高。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "禾苗好像",
+          "一点儿也",
+          "没有长高。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《寓言二则》中的名句",
+        "tokens": [
+          "他急急忙忙",
+          "跑到田里，",
+          "把禾苗一棵一棵",
+          "往上拔。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他急急忙忙",
+          "跑到田里，",
+          "把禾苗一棵一棵",
+          "往上拔。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《寓言二则》段落",
+        "tokens": [
+          "羊已经丢了，",
+          "现在修补羊圈",
+          "还不算晚。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "羊已经丢了，",
+          "现在修补羊圈",
+          "还不算晚。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《寓言二则》段落",
+        "tokens": [
+          "他急急忙忙",
+          "跑到田里，",
+          "把禾苗一棵一棵",
+          "往上拔。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他急急忙忙",
+          "跑到田里，",
+          "把禾苗一棵一棵",
+          "往上拔。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《寓言二则》段落",
+        "tokens": [
+          "禾苗好像",
+          "一点儿也",
+          "没有长高。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "禾苗好像",
+          "一点儿也",
+          "没有长高。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

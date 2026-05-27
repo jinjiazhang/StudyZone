@@ -1,0 +1,652 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《神州谣》中，“神州”指的是什么？",
+        "options": [
+          "中国",
+          "杭州",
+          "神仙住的地方",
+          "一个省份"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黄河奔，长江涌”写出了什么景象？",
+        "options": [
+          "祖国山河的壮丽与生机",
+          "下大雨的灾害",
+          "河水干涸了",
+          "坐船旅行的快乐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“台湾岛，隔海峡，与大陆，是一家”表达了什么？",
+        "options": [
+          "台湾是祖国领土不可分割的一部分，两岸一家亲",
+          "台湾离大陆很远",
+          "台湾有很多好玩的",
+          "两岸人民不认识"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "各民族的感情是怎样的？",
+        "options": [
+          "情谊浓",
+          "很普通",
+          "不认识",
+          "情谊淡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“繁荣”的意思是？",
+        "options": [
+          "兴旺蓬勃、蓬勃发展",
+          "很贫穷",
+          "很冷清",
+          "花开了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "州",
+        "hint": "“神州”的州",
+        "options": [
+          "zhōu",
+          "zhōug",
+          "zōu",
+          "shōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "涌",
+        "hint": "“长江涌”的涌",
+        "options": [
+          "yǒng",
+          "tǒng",
+          "yōng",
+          "chōng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "峰",
+        "hint": "“珠峰耸”的峰",
+        "options": [
+          "fēng",
+          "fēn",
+          "pēng",
+          "hēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "耸",
+        "hint": "“珠峰耸”的耸",
+        "options": [
+          "sǒng",
+          "sōng",
+          "shǒng",
+          "cǒng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "湾",
+        "hint": "“台湾岛”的湾",
+        "options": [
+          "wān",
+          "wǎn",
+          "wāng",
+          "bān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "峡",
+        "hint": "“海峡”的峡",
+        "options": [
+          "xiá",
+          "jiá",
+          "huá",
+          "qiá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wān",
+        "hint": "“台___岛”的“湾”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "东",
+          "湾",
+          "木",
+          "弓",
+          "日",
+          "人"
+        ],
+        "target": "湾"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "氵",
+          "right": "弯"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xiá",
+        "hint": "“海___”的“峡”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "山",
+          "夹",
+          "木",
+          "大",
+          "氵",
+          "土"
+        ],
+        "target": "峡"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "山",
+          "right": "夹"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yì",
+        "hint": "“情___”的“谊”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "讠",
+          "宜",
+          "木",
+          "且",
+          "日",
+          "氵"
+        ],
+        "target": "谊"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "讠",
+          "right": "宜"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fèn",
+        "hint": "“奋___”的“奋”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "大",
+          "田",
+          "艹",
+          "木",
+          "力",
+          "口"
+        ],
+        "target": "奋"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "大",
+          "bottom": "田"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "神州"
+          },
+          {
+            "id": "l2",
+            "text": "黄河"
+          },
+          {
+            "id": "l3",
+            "text": "长江"
+          },
+          {
+            "id": "l4",
+            "text": "长城"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中华"
+          },
+          {
+            "id": "r2",
+            "text": "奔流"
+          },
+          {
+            "id": "r3",
+            "text": "汹涌"
+          },
+          {
+            "id": "r4",
+            "text": "长又长"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "州"
+          },
+          {
+            "id": "l2",
+            "text": "涌"
+          },
+          {
+            "id": "l3",
+            "text": "峰"
+          },
+          {
+            "id": "l4",
+            "text": "耸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "zhōu"
+          },
+          {
+            "id": "r2",
+            "text": "yǒng"
+          },
+          {
+            "id": "r3",
+            "text": "fēng"
+          },
+          {
+            "id": "r4",
+            "text": "sǒng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "神州"
+          },
+          {
+            "id": "l2",
+            "text": "黄河"
+          },
+          {
+            "id": "l3",
+            "text": "长江"
+          },
+          {
+            "id": "l4",
+            "text": "长城"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中华"
+          },
+          {
+            "id": "r2",
+            "text": "奔流"
+          },
+          {
+            "id": "r3",
+            "text": "汹涌"
+          },
+          {
+            "id": "r4",
+            "text": "长又长"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "州"
+          },
+          {
+            "id": "l2",
+            "text": "涌"
+          },
+          {
+            "id": "l3",
+            "text": "峰"
+          },
+          {
+            "id": "l4",
+            "text": "耸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "zhōu"
+          },
+          {
+            "id": "r2",
+            "text": "yǒng"
+          },
+          {
+            "id": "r3",
+            "text": "fēng"
+          },
+          {
+            "id": "r4",
+            "text": "sǒng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《神州谣》中的名句",
+        "tokens": [
+          "我神州，",
+          "称中华，",
+          "山川美，",
+          "可入画。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我神州，",
+          "称中华，",
+          "山川美，",
+          "可入画。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《神州谣》中的名句",
+        "tokens": [
+          "黄河奔，",
+          "长江涌，",
+          "长城长，",
+          "珠峰耸。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄河奔，",
+          "长江涌，",
+          "长城长，",
+          "珠峰耸。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《神州谣》中的名句",
+        "tokens": [
+          "台湾岛，",
+          "隔海峡，",
+          "与大陆，",
+          "是一家。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "台湾岛，",
+          "隔海峡，",
+          "与大陆，",
+          "是一家。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《神州谣》中的名句",
+        "tokens": [
+          "各民族，",
+          "情谊浓，",
+          "齐奋斗，",
+          "共繁荣。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "各民族，",
+          "情谊浓，",
+          "齐奋斗，",
+          "共繁荣。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《神州谣》段落",
+        "tokens": [
+          "台湾岛，",
+          "隔海峡，",
+          "与大陆，",
+          "是一家。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "台湾岛，",
+          "隔海峡，",
+          "与大陆，",
+          "是一家。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《神州谣》段落",
+        "tokens": [
+          "黄河奔，",
+          "长江涌，",
+          "长城长，",
+          "珠峰耸。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄河奔，",
+          "长江涌，",
+          "长城长，",
+          "珠峰耸。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

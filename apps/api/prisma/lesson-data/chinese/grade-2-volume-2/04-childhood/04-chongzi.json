@@ -1,0 +1,652 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当一只小虫子，伙伴们觉得怎么样？",
+        "options": [
+          "一点儿都不好，非常危险",
+          "非常棒，想做什么就做什么",
+          "很有趣，每天到处去旅行",
+          "非常累"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么小虫子觉得当虫子“其实还真不错”？",
+        "options": [
+          "可以用露水洗脸，坐免费列车旅行，还有很多好朋友",
+          "可以每天睡大觉",
+          "可以吃很多大苹果",
+          "可以欺负其他动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小虫子早上是在哪里醒来的？",
+        "options": [
+          "在摇晃的草叶上",
+          "在坚硬的石头下",
+          "在泥土里",
+          "在温热的鸟窝里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“免费的特快列车”在文中实际指的是什么？",
+        "options": [
+          "毛茸茸的狗狗的身上",
+          "一辆玩具小火车",
+          "一片落叶",
+          "一根柳条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "以下哪一个不是小虫子在森林里的好朋友？",
+        "options": [
+          "伤心的天敌小鸟",
+          "屎壳郎",
+          "螳螂",
+          "天牛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "屁",
+        "hint": "“屁股”的屁",
+        "options": [
+          "pì",
+          "bǐ",
+          "nì",
+          "shǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "股",
+        "hint": "“屁股”的股",
+        "options": [
+          "gǔ",
+          "gū",
+          "hú",
+          "kū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "昏",
+        "hint": "“昏头昏脑”的昏",
+        "options": [
+          "hūn",
+          "hūn",
+          "kūn",
+          "mǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "尿",
+        "hint": "“狗尿”的尿",
+        "options": [
+          "niào",
+          "suī",
+          "niàn",
+          "shǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茸",
+        "hint": "“毛茸茸”的茸",
+        "options": [
+          "róng",
+          "lóng",
+          "zhōng",
+          "róngg"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "醒",
+        "hint": "“醒来”的醒",
+        "options": [
+          "xǐng",
+          "xīng",
+          "shǐng",
+          "yǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "pì",
+        "hint": "“___股”的“屁”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "尸",
+          "比",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "屁"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "尸",
+          "bottom": "比"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "niào",
+        "hint": "“洒___”的“尿”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "尸",
+          "水",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "尿"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "尸",
+          "bottom": "水"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jìng",
+        "hint": "“干___”的“净”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "冫",
+          "争",
+          "氵",
+          "静",
+          "木",
+          "口"
+        ],
+        "target": "净"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "冫",
+          "right": "争"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shǐ",
+        "hint": "“拉___”的“屎”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "尸",
+          "米",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "屎"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "尸",
+          "bottom": "米"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "屁股"
+          },
+          {
+            "id": "l2",
+            "text": "毛茸茸"
+          },
+          {
+            "id": "l3",
+            "text": "免费"
+          },
+          {
+            "id": "l4",
+            "text": "昏头昏脑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "身体后部臀部"
+          },
+          {
+            "id": "r2",
+            "text": "身体毛绒绒的"
+          },
+          {
+            "id": "r3",
+            "text": "不用付钱"
+          },
+          {
+            "id": "r4",
+            "text": "神志不清、糊涂"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "屁"
+          },
+          {
+            "id": "l2",
+            "text": "股"
+          },
+          {
+            "id": "l3",
+            "text": "昏"
+          },
+          {
+            "id": "l4",
+            "text": "尿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "pì"
+          },
+          {
+            "id": "r2",
+            "text": "gǔ"
+          },
+          {
+            "id": "r3",
+            "text": "hūn"
+          },
+          {
+            "id": "r4",
+            "text": "niào"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "屁股"
+          },
+          {
+            "id": "l2",
+            "text": "毛茸茸"
+          },
+          {
+            "id": "l3",
+            "text": "免费"
+          },
+          {
+            "id": "l4",
+            "text": "昏头昏脑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "身体后部臀部"
+          },
+          {
+            "id": "r2",
+            "text": "身体毛绒绒的"
+          },
+          {
+            "id": "r3",
+            "text": "不用付钱"
+          },
+          {
+            "id": "r4",
+            "text": "神志不清、糊涂"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "屁"
+          },
+          {
+            "id": "l2",
+            "text": "股"
+          },
+          {
+            "id": "l3",
+            "text": "昏"
+          },
+          {
+            "id": "l4",
+            "text": "尿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "pì"
+          },
+          {
+            "id": "r2",
+            "text": "gǔ"
+          },
+          {
+            "id": "r3",
+            "text": "hūn"
+          },
+          {
+            "id": "r4",
+            "text": "niào"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《我是一只小虫子》中的名句",
+        "tokens": [
+          "当一只小虫子",
+          "其实",
+          "还真不错。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "当一只小虫子",
+          "其实",
+          "还真不错。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《我是一只小虫子》中的名句",
+        "tokens": [
+          "我有很多",
+          "小伙伴，",
+          "每一个都",
+          "非常特别。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我有很多",
+          "小伙伴，",
+          "每一个都",
+          "非常特别。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《我是一只小虫子》中的名句",
+        "tokens": [
+          "我喜欢",
+          "在草叶上",
+          "大口大口地",
+          "喝着清凉的",
+          "露水。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我喜欢",
+          "在草叶上",
+          "大口大口地",
+          "喝着清凉的",
+          "露水。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《我是一只小虫子》段落",
+        "tokens": [
+          "当一只小虫子",
+          "其实",
+          "还真不错。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "当一只小虫子",
+          "其实",
+          "还真不错。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《我是一只小虫子》段落",
+        "tokens": [
+          "我喜欢",
+          "在草叶上",
+          "大口大口地",
+          "喝着清凉的",
+          "露水。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我喜欢",
+          "在草叶上",
+          "大口大口地",
+          "喝着清凉的",
+          "露水。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《我是一只小虫子》段落",
+        "tokens": [
+          "我有很多",
+          "小伙伴，",
+          "每一个都",
+          "非常特别。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我有很多",
+          "小伙伴，",
+          "每一个都",
+          "非常特别。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

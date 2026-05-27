@@ -1,0 +1,648 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马驮着一袋什么去磨坊？",
+        "options": [
+          "麦子",
+          "面粉",
+          "苹果",
+          "大米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛觉得河水怎么样？",
+        "options": [
+          "很浅，刚没过小腿，能趟过去",
+          "非常深，不能过",
+          "结了冰",
+          "水里有鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "松鼠为什么大喊别过河？",
+        "options": [
+          "河水很深，他的一个同伴昨天刚被淹死了",
+          "因为他想抢小马的麦子",
+          "因为河里有鳄鱼",
+          "因为他在开玩笑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马最后是怎么过河的？",
+        "options": [
+          "在妈妈鼓励下试探，发现河水既不像老牛说的浅，也不像松鼠说的深",
+          "直接跳了过去",
+          "坐着大船过河",
+          "等水干了再过"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《小马过河》教给我们什么道理？",
+        "options": [
+          "遇到事情要自己动脑筋试一试，不能光听别人的话",
+          "河水非常危险，不能随便靠近",
+          "松鼠是坏人",
+          "老牛比松鼠更聪明"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "棚",
+        "hint": "“马棚”的棚",
+        "options": [
+          "péng",
+          "bēng",
+          "fēng",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "驮",
+        "hint": "“驮着”的驮",
+        "options": [
+          "tuó",
+          "dǎ",
+          "mǎ",
+          "fú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浅",
+        "hint": "“河水浅”的浅",
+        "options": [
+          "qiǎn",
+          "jiǎn",
+          "xiàn",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "突",
+        "hint": "“突然”的突",
+        "options": [
+          "tū",
+          "hū",
+          "chōng",
+          "qiào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "唉",
+        "hint": "“唉！”的唉",
+        "options": [
+          "āi",
+          "ā",
+          "hēi",
+          "yā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qǐ",
+        "hint": "“___立”的“起”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "走",
+          "己",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "起"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "走",
+          "right": "己"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bù",
+        "hint": "“散___”的“步”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "止",
+          "少",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "步"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "止",
+          "bottom": "少"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yuàn",
+        "hint": "“___意”的“愿”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "原",
+          "心",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "愿"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "原",
+          "bottom": "心"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yì",
+        "hint": "“意___”的“意”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "音",
+          "心",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "意"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "音",
+          "bottom": "心"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "磨坊"
+          },
+          {
+            "id": "l2",
+            "text": "深浅"
+          },
+          {
+            "id": "l3",
+            "text": "突然"
+          },
+          {
+            "id": "l4",
+            "text": "亲切"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "磨面粉的作坊"
+          },
+          {
+            "id": "r2",
+            "text": "河水深度"
+          },
+          {
+            "id": "r3",
+            "text": "忽然发生"
+          },
+          {
+            "id": "r4",
+            "text": "态度和蔼可亲"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "棚"
+          },
+          {
+            "id": "l2",
+            "text": "驮"
+          },
+          {
+            "id": "l3",
+            "text": "浅"
+          },
+          {
+            "id": "l4",
+            "text": "突"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "péng"
+          },
+          {
+            "id": "r2",
+            "text": "tuó"
+          },
+          {
+            "id": "r3",
+            "text": "qiǎn"
+          },
+          {
+            "id": "r4",
+            "text": "tū"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "磨坊"
+          },
+          {
+            "id": "l2",
+            "text": "深浅"
+          },
+          {
+            "id": "l3",
+            "text": "突然"
+          },
+          {
+            "id": "l4",
+            "text": "亲切"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "磨面粉的作坊"
+          },
+          {
+            "id": "r2",
+            "text": "河水深度"
+          },
+          {
+            "id": "r3",
+            "text": "忽然发生"
+          },
+          {
+            "id": "r4",
+            "text": "态度和蔼可亲"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "棚"
+          },
+          {
+            "id": "l2",
+            "text": "驮"
+          },
+          {
+            "id": "l3",
+            "text": "浅"
+          },
+          {
+            "id": "l4",
+            "text": "突"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "péng"
+          },
+          {
+            "id": "r2",
+            "text": "tuó"
+          },
+          {
+            "id": "r3",
+            "text": "qiǎn"
+          },
+          {
+            "id": "r4",
+            "text": "tū"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《小马过河》中的名句",
+        "tokens": [
+          "河水既不像",
+          "老牛说的那样浅，",
+          "也不像",
+          "松鼠说的那样深。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "河水既不像",
+          "老牛说的那样浅，",
+          "也不像",
+          "松鼠说的那样深。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《小马过河》中的名句",
+        "tokens": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《小马过河》中的名句",
+        "tokens": [
+          "光听别人说，",
+          "自己不动脑筋，",
+          "是不行的。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "光听别人说，",
+          "自己不动脑筋，",
+          "是不行的。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《小马过河》段落",
+        "tokens": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《小马过河》段落",
+        "tokens": [
+          "河水既不像",
+          "老牛说的那样浅，",
+          "也不像",
+          "松鼠说的那样深。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "河水既不像",
+          "老牛说的那样浅，",
+          "也不像",
+          "松鼠说的那样深。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《小马过河》段落",
+        "tokens": [
+          "光听别人说，",
+          "自己不动脑筋，",
+          "是不行的。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "光听别人说，",
+          "自己不动脑筋，",
+          "是不行的。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《小马过河》段落",
+        "tokens": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小马驮着口袋，",
+          "飞快地",
+          "往磨坊跑去。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

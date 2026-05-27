@@ -1,0 +1,642 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "端午节时，人们会做什么？",
+        "options": [
+          "赛龙舟、包粽子",
+          "吃月饼、赏月",
+          "放鞭炮、贴窗花",
+          "扫墓、踏青"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“重阳节，要敬老”体现了什么？",
+        "options": [
+          "尊老爱老的美德",
+          "爱国主义",
+          "团结合作",
+          "热爱自然"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "清明节的习俗是？",
+        "options": [
+          "去墓前祭扫先人",
+          "吃元宵看花灯",
+          "吃饺子拜年",
+          "吃月饼赏月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春节最热闹的活动是？",
+        "options": [
+          "贴窗花放鞭炮",
+          "赛龙舟",
+          "赏菊花",
+          "吃月饼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“大街小巷人如潮”说明了什么？",
+        "options": [
+          "元宵节观灯的人非常多",
+          "街上下了大雨",
+          "路上没人",
+          "元宵节很冷清"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "传",
+        "hint": "“传统”的传",
+        "options": [
+          "chuán",
+          "zhuàn",
+          "chuān",
+          "cuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "贴",
+        "hint": "“贴窗花”的贴",
+        "options": [
+          "tiē",
+          "diē",
+          "zhān",
+          "tī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "街",
+        "hint": "“大街”的街",
+        "options": [
+          "jiē",
+          "jié",
+          "gāi",
+          "xiē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扫",
+        "hint": "“祭扫”的扫",
+        "options": [
+          "sǎo",
+          "sào",
+          "shǎo",
+          "shào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赏",
+        "hint": "“赏菊”的赏",
+        "options": [
+          "shǎng",
+          "chǎng",
+          "sǎng",
+          "táng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "菊",
+        "hint": "“赏菊”的菊",
+        "options": [
+          "jú",
+          "qí",
+          "jū",
+          "xú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tiē",
+        "hint": "“___窗花”的“贴”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "贝",
+          "占",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
+        "target": "贴"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "贝",
+          "right": "占"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "sǎo",
+        "hint": "“打___”的“扫”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "手",
+          "彐",
+          "木",
+          "口",
+          "氵",
+          "十"
+        ],
+        "target": "扫"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "扌",
+          "right": "彐"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhuǎn",
+        "hint": "“___弯”的“转”",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ],
+        "candidates": [
+          "车",
+          "专",
+          "钅",
+          "寸",
+          "木",
+          "氵"
+        ],
+        "target": "转"
+      },
+      "answer": {
+        "slotFills": {
+          "left": "车",
+          "right": "专"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jié",
+        "hint": "“___日”的“节”",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "卩",
+          "木",
+          "子",
+          "口",
+          "十"
+        ],
+        "target": "节"
+      },
+      "answer": {
+        "slotFills": {
+          "top": "艹",
+          "bottom": "卩"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "端午节"
+          },
+          {
+            "id": "l2",
+            "text": "中秋节"
+          },
+          {
+            "id": "l3",
+            "text": "重阳节"
+          },
+          {
+            "id": "l4",
+            "text": "元宵节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "赛龙舟"
+          },
+          {
+            "id": "r2",
+            "text": "吃月饼"
+          },
+          {
+            "id": "r3",
+            "text": "赏菊登高"
+          },
+          {
+            "id": "r4",
+            "text": "看花灯"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "传"
+          },
+          {
+            "id": "l2",
+            "text": "贴"
+          },
+          {
+            "id": "l3",
+            "text": "街"
+          },
+          {
+            "id": "l4",
+            "text": "扫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "chuán"
+          },
+          {
+            "id": "r2",
+            "text": "tiē"
+          },
+          {
+            "id": "r3",
+            "text": "jiē"
+          },
+          {
+            "id": "r4",
+            "text": "sǎo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "端午节"
+          },
+          {
+            "id": "l2",
+            "text": "中秋节"
+          },
+          {
+            "id": "l3",
+            "text": "重阳节"
+          },
+          {
+            "id": "l4",
+            "text": "元宵节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "赛龙舟"
+          },
+          {
+            "id": "r2",
+            "text": "吃月饼"
+          },
+          {
+            "id": "r3",
+            "text": "赏菊登高"
+          },
+          {
+            "id": "r4",
+            "text": "看花灯"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "传"
+          },
+          {
+            "id": "l2",
+            "text": "贴"
+          },
+          {
+            "id": "l3",
+            "text": "街"
+          },
+          {
+            "id": "l4",
+            "text": "扫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "chuán"
+          },
+          {
+            "id": "r2",
+            "text": "tiē"
+          },
+          {
+            "id": "r3",
+            "text": "jiē"
+          },
+          {
+            "id": "r4",
+            "text": "sǎo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《传统节日》中的名句",
+        "tokens": [
+          "春节到，",
+          "人欢笑，",
+          "贴窗花，",
+          "放鞭炮。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春节到，",
+          "人欢笑，",
+          "贴窗花，",
+          "放鞭炮。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《传统节日》中的名句",
+        "tokens": [
+          "元宵节，",
+          "看花灯，",
+          "大街小巷人如潮。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "元宵节，",
+          "看花灯，",
+          "大街小巷人如潮。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《传统节日》中的名句",
+        "tokens": [
+          "清明节，",
+          "雨纷纷，",
+          "先人墓前去祭扫。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "清明节，",
+          "雨纷纷，",
+          "先人墓前去祭扫。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文《传统节日》中的名句",
+        "tokens": [
+          "过端午，",
+          "赛龙舟，",
+          "粽香艾香满堂飘。",
+          "小松鼠",
+          "到处乱飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "过端午，",
+          "赛龙舟，",
+          "粽香艾香满堂飘。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《传统节日》段落",
+        "tokens": [
+          "清明节，",
+          "雨纷纷，",
+          "先人墓前去祭扫。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "清明节，",
+          "雨纷纷，",
+          "先人墓前去祭扫。"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重新排列句子以复习《传统节日》段落",
+        "tokens": [
+          "元宵节，",
+          "看花灯，",
+          "大街小巷人如潮。",
+          "大森林",
+          "草地上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "元宵节，",
+          "看花灯，",
+          "大街小巷人如潮。"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}
