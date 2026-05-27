@@ -6,3 +6,5 @@ export { SingleChoiceExercise } from './SingleChoice';
 export { NumericInputExercise } from './NumericInput';
 export { ListenInputExercise } from './ListenInput';
 export { ImageChoiceExercise } from './ImageChoice';
+export { PinyinChoiceExercise } from './PinyinChoice';
+export { PoemCompleteExercise } from './PoemComplete';

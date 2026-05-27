@@ -108,6 +108,57 @@ export interface SingleChoiceAnswer {
   correctIndex: number;
 }
 
+// -----------------------------------------------------------------------------
+// Chinese (语文) — pinyin & poem types
+// -----------------------------------------------------------------------------
+
+/**
+ * Pick the correct pinyin (with tone) for a displayed Chinese character / word.
+ * Renders the character in a large glyph and 4 pinyin options.
+ */
+export interface PinyinChoicePrompt {
+  type: ExerciseType.PINYIN_CHOICE;
+  /** The Chinese character or word, e.g. "妈". */
+  character: string;
+  /** Optional gloss / hint, e.g. "妈妈的妈". */
+  hint?: string;
+  /** 4 candidate pinyin strings, e.g. ["mā", "má", "mǎ", "mà"]. */
+  options: string[];
+  /** Optional audio of the standard pronunciation. */
+  audioUrl?: string;
+}
+
+export interface PinyinChoiceAnswer {
+  /** Index into options. */
+  correctIndex: number;
+}
+
+/**
+ * Classical-poem cloze deletion. The line is split into segments; one segment
+ * is `null` (the blank) and the user picks the correct token from `options`.
+ *
+ * Example for 《静夜思》line 1:
+ *   title: "静夜思",  author: "李白",
+ *   lines: [
+ *     ["床前", null, "光"],      // blank in the middle
+ *     ["疑是地上霜"],
+ *   ],
+ *   options: ["明月", "白雪", "灯火", "彩霞"],
+ *   answer.correctIndex: 0
+ */
+export interface PoemCompletePrompt {
+  type: ExerciseType.POEM_COMPLETE;
+  title: string;
+  author: string;
+  /** Each entry is a row of the poem; tokens are strings, the blank is `null`. */
+  lines: Array<Array<string | null>>;
+  options: string[];
+}
+
+export interface PoemCompleteAnswer {
+  correctIndex: number;
+}
+
 export type ExercisePrompt =
   | TranslateChoicePrompt
   | TranslateInputPrompt
@@ -116,7 +167,9 @@ export type ExercisePrompt =
   | ImageChoicePrompt
   | WordBankPrompt
   | NumericInputPrompt
-  | SingleChoicePrompt;
+  | SingleChoicePrompt
+  | PinyinChoicePrompt
+  | PoemCompletePrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -126,7 +179,9 @@ export type ExerciseAnswer =
   | ImageChoiceAnswer
   | WordBankAnswer
   | NumericInputAnswer
-  | SingleChoiceAnswer;
+  | SingleChoiceAnswer
+  | PinyinChoiceAnswer
+  | PoemCompleteAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;

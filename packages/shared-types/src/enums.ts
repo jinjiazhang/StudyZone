@@ -4,6 +4,7 @@ export enum SubjectCode {
   ENGLISH = 'english',
   MATH = 'math',
   MUSIC = 'music',
+  CHINESE = 'chinese',
 }
 
 export enum Locale {
@@ -29,6 +30,10 @@ export enum ExerciseType {
   NUMERIC_INPUT = 'numeric_input',
   /** Single-choice multiple choice (math). */
   SINGLE_CHOICE = 'single_choice',
+  /** Pick the correct pinyin for a Chinese character (Chinese subject). */
+  PINYIN_CHOICE = 'pinyin_choice',
+  /** Fill in the blank of a classical poem line (Chinese subject). */
+  POEM_COMPLETE = 'poem_complete',
 }
 
 export enum LessonOutcome {

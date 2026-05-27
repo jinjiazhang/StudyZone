@@ -69,7 +69,9 @@ export default function Lesson() {
     let payload: any = null;
     if (
       ex.type === ExerciseType.TRANSLATE_CHOICE ||
-      ex.type === ExerciseType.SINGLE_CHOICE
+      ex.type === ExerciseType.SINGLE_CHOICE ||
+      ex.type === ExerciseType.PINYIN_CHOICE ||
+      ex.type === ExerciseType.POEM_COMPLETE
     ) {
       if (pick === null) return;
       payload = { correctIndex: pick };
@@ -199,6 +201,24 @@ export default function Lesson() {
             pick={imagePick}
             onPick={setImagePick}
             audioUrl={(ex.prompt as any).audioUrl}
+          />
+        )}
+
+        {ex.type === ExerciseType.PINYIN_CHOICE && (
+          <ChoiceBlock
+            title={(ex.prompt as any).character}
+            options={(ex.prompt as any).options}
+            pick={pick}
+            onPick={setPick}
+          />
+        )}
+
+        {ex.type === ExerciseType.POEM_COMPLETE && (
+          <ChoiceBlock
+            title={`《${(ex.prompt as any).title}》— 选出正确的字`}
+            options={(ex.prompt as any).options}
+            pick={pick}
+            onPick={setPick}
           />
         )}
 

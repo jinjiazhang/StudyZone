@@ -23,16 +23,15 @@ export function judge(
 ): JudgeResult {
   switch (prompt.type) {
     case ExerciseType.TRANSLATE_CHOICE:
-    case ExerciseType.SINGLE_CHOICE: {
+    case ExerciseType.SINGLE_CHOICE:
+    case ExerciseType.PINYIN_CHOICE:
+    case ExerciseType.POEM_COMPLETE: {
       const a = answer as { correctIndex: number };
       const u = attempt as { correctIndex: number };
       const correct = u.correctIndex === a.correctIndex;
       return {
         correct,
-        canonicalAnswer:
-          prompt.type === ExerciseType.SINGLE_CHOICE
-            ? prompt.options[a.correctIndex]
-            : prompt.options[a.correctIndex],
+        canonicalAnswer: prompt.options[a.correctIndex],
       };
     }
 
