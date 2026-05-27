@@ -153,6 +153,11 @@ export interface UpdateExerciseDto {
   difficulty?: number;
 }
 
+export interface FirstLessonResponse {
+  lessonId: string;
+  level: number;
+}
+
 // =============================================================================
 // Learning
 // =============================================================================

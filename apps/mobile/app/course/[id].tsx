@@ -3,7 +3,13 @@ import { ScrollView, View, Text, Pressable, StyleSheet } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Lock, Star, ChevronLeft } from 'lucide-react-native';
 import { api } from '../../lib/api';
+import { colors, fonts, radius } from '../../lib/theme';
+
+// Sine wave offsets for skill path (Duolingo-style winding path)
+const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
+const OFFSET_PX = 36;
 
 export default function Course() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -22,55 +28,203 @@ export default function Course() {
   });
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#F5F7FA' }}>
-      <ScrollView contentContainerStyle={{ padding: 16, gap: 24 }}>
+    <SafeAreaView style={styles.container}>
+      {/* Back button */}
+      <Pressable onPress={() => router.back()} style={styles.backBtn}>
+        <ChevronLeft size={20} color={colors.inkSoft} />
+        <Text style={styles.backText}>返回</Text>
+      </Pressable>
+
+      <ScrollView contentContainerStyle={styles.scroll}>
         {tree?.map((unit) => (
-          <View key={unit.unitId}>
-            <View style={[styles.unitHeader, { backgroundColor: unit.themeColor }]}>
+          <View key={unit.unitId} style={styles.unitBlock}>
+            {/* Unit header banner */}
+            <View
+              style={[
+                styles.unitHeader,
+                {
+                  backgroundColor: unit.themeColor,
+                  borderBottomColor: darken(unit.themeColor),
+                },
+              ]}
+            >
               <Text style={styles.unitSub}>第 {unit.unitOrder + 1} 单元</Text>
               <Text style={styles.unitTitle}>{unit.unitTitle}</Text>
             </View>
 
-            <View style={{ gap: 16, marginTop: 16 }}>
-              {unit.skills.map((skill) => (
-                <Pressable
-                  key={skill.skillId}
-                  disabled={!skill.unlocked}
-                  onPress={() => router.push(`/skill/${skill.skillId}`)}
-                  style={[styles.skill, !skill.unlocked && styles.skillLocked]}
-                >
-                  <Text style={{ fontSize: 32 }}>{skill.unlocked ? skill.icon : '🔒'}</Text>
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.skillName}>{skill.name}</Text>
-                    {skill.unlocked && (
+            {/* Skill path - circular nodes with sine wave offset */}
+            <View style={styles.skillPath}>
+              {unit.skills.map((skill, idx) => {
+                const offset = OFFSET_PATTERN[idx % OFFSET_PATTERN.length] * OFFSET_PX;
+                const isLocked = !skill.unlocked;
+                const isNext = skill.unlocked && skill.userLevel === 0;
+                const isMastered = skill.unlocked && skill.userLevel >= skill.maxLevel;
+
+                return (
+                  <View
+                    key={skill.skillId}
+                    style={[styles.skillNodeWrap, { marginLeft: offset + OFFSET_PX * 2 }]}
+                  >
+                    <Pressable
+                      disabled={isLocked}
+                      onPress={() => router.push(`/skill/${skill.skillId}`)}
+                      style={[
+                        styles.skillNode,
+                        isLocked && styles.skillNodeLocked,
+                        isNext && styles.skillNodeNext,
+                        isMastered && styles.skillNodeMastered,
+                      ]}
+                    >
+                      {isLocked ? (
+                        <Lock size={28} color={colors.inkSoft} />
+                      ) : isMastered ? (
+                        <Star size={28} color={colors.white} fill={colors.white} />
+                      ) : (
+                        <Text style={styles.skillIcon}>{skill.icon || '📖'}</Text>
+                      )}
+                    </Pressable>
+
+                    {/* Label below node */}
+                    <Text style={[styles.skillName, isLocked && { opacity: 0.4 }]}>
+                      {skill.name}
+                    </Text>
+                    {skill.unlocked && !isNext && (
                       <Text style={styles.skillLevel}>
                         Lv {skill.userLevel} / {skill.maxLevel}
                       </Text>
                     )}
+                    {isNext && (
+                      <View style={styles.startBadge}>
+                        <Text style={styles.startBadgeText}>开始</Text>
+                      </View>
+                    )}
                   </View>
-                </Pressable>
-              ))}
+                );
+              })}
             </View>
           </View>
         ))}
+
+        {!tree && (
+          <View style={styles.loading}>
+            <Text style={styles.loadingText}>加载课程地图中…</Text>
+          </View>
+        )}
       </ScrollView>
     </SafeAreaView>
   );
 }
 
+/** Crude darken for border-bottom (subtract ~30 from each RGB channel) */
+function darken(hex: string): string {
+  try {
+    const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - 40);
+    const g = Math.max(0, parseInt(hex.slice(3, 5), 16) - 40);
+    const b = Math.max(0, parseInt(hex.slice(5, 7), 16) - 40);
+    return `rgb(${r},${g},${b})`;
+  } catch {
+    return 'rgba(0,0,0,0.15)';
+  }
+}
+
 const styles = StyleSheet.create({
-  unitHeader: { borderRadius: 16, padding: 16 },
-  unitSub: { color: 'rgba(255,255,255,0.8)', fontSize: 11, textTransform: 'uppercase' },
-  unitTitle: { color: 'white', fontWeight: '800', fontSize: 20, marginTop: 4 },
-  skill: {
-    backgroundColor: 'white',
-    borderRadius: 16,
-    padding: 16,
+  container: { flex: 1, backgroundColor: colors.white },
+  backBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 16,
+    gap: 4,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
   },
-  skillLocked: { opacity: 0.5 },
-  skillName: { fontWeight: '700', fontSize: 16 },
-  skillLevel: { color: '#6B7280', marginTop: 2 },
+  backText: { fontFamily: fonts.heavy, color: colors.inkSoft, fontSize: 14 },
+  scroll: { padding: 16, paddingBottom: 48, gap: 32 },
+  unitBlock: {},
+  unitHeader: {
+    borderRadius: radius.lg,
+    padding: 16,
+    borderBottomWidth: 6,
+  },
+  unitSub: {
+    fontFamily: fonts.heavy,
+    fontSize: 10,
+    color: 'rgba(255,255,255,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+  unitTitle: {
+    fontFamily: fonts.heavy,
+    fontSize: 20,
+    color: colors.white,
+    marginTop: 4,
+  },
+  skillPath: {
+    alignItems: 'flex-start',
+    paddingVertical: 20,
+    gap: 24,
+  },
+  skillNodeWrap: {
+    alignItems: 'center',
+    gap: 6,
+  },
+  skillNode: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+    backgroundColor: colors.white,
+    borderWidth: 3,
+    borderColor: colors.line,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  skillNodeLocked: {
+    backgroundColor: colors.line,
+    borderColor: '#D0D0D0',
+    opacity: 0.5,
+    elevation: 0,
+    shadowOpacity: 0,
+  },
+  skillNodeNext: {
+    borderColor: colors.green,
+    borderWidth: 4,
+    shadowColor: colors.green,
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+  skillNodeMastered: {
+    backgroundColor: colors.gold,
+    borderColor: colors.goldDark,
+  },
+  skillIcon: { fontSize: 32 },
+  skillName: {
+    fontFamily: fonts.heavy,
+    fontSize: 12,
+    color: colors.ink,
+    textAlign: 'center',
+    maxWidth: 100,
+  },
+  skillLevel: {
+    fontFamily: fonts.sansBold,
+    fontSize: 10,
+    color: colors.inkSoft,
+  },
+  startBadge: {
+    backgroundColor: colors.green,
+    borderRadius: radius.full,
+    paddingHorizontal: 12,
+    paddingVertical: 3,
+  },
+  startBadgeText: {
+    fontFamily: fonts.heavy,
+    fontSize: 11,
+    color: colors.white,
+    textTransform: 'uppercase',
+  },
+  loading: { alignItems: 'center', paddingVertical: 40 },
+  loadingText: { fontFamily: fonts.heavy, color: colors.inkSoft },
 });

@@ -9,6 +9,7 @@ import type {
   CourseDto,
   CourseTreeNode,
   DailyQuestDto,
+  FirstLessonResponse,
   FriendDto,
   LeagueStandingDto,
   LoginDto,
@@ -128,6 +129,12 @@ export class StudyZoneClient {
 
   getCourseTree(courseId: string) {
     return this.request<CourseTreeNode[]>(`/api/v1/courses/${courseId}/tree`);
+  }
+
+  firstLessonOfSkill(skillId: string) {
+    return this.request<FirstLessonResponse>(`/api/v1/skills/${skillId}/first-lesson`, {
+      auth: false,
+    });
   }
 
   getAdminCourseContent(courseId: string) {
