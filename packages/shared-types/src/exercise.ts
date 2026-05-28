@@ -202,6 +202,65 @@ export interface PinyinToCharacterAssembleAnswer {
   slotFills: Record<string, string>;
 }
 
+/**
+ * 看拼音写字 — show a sentence with a blank and the missing character's pinyin;
+ * the learner hand-writes the target character on a canvas. HanziWriter checks
+ * each stroke against the canonical stroke order/shape.
+ *
+ * Example:
+ *   pinyin: "shī",
+ *   sentence: "老__在黑板上写字。",
+ *   blankPlaceholder: "__",
+ *   character: "师",
+ *   allowedMistakes: 3,
+ *   leniency: 1.0
+ */
+export interface PinyinToCharacterWritePrompt {
+  type: ExerciseType.PINYIN_TO_CHARACTER_WRITE;
+  /** Pinyin with tone, e.g. "shī". */
+  pinyin: string;
+  /** Sentence containing the blank, e.g. "老__在黑板上写字。". */
+  sentence: string;
+  /**
+   * Substring inside `sentence` that marks the blank to be filled.
+   * Defaults to "__" (two underscores) when omitted by the data file.
+   */
+  blankPlaceholder?: string;
+  /**
+   * The target Chinese character, e.g. "师". Sent to HanziWriter to load
+   * stroke data and judge each stroke against it.
+   */
+  character: string;
+  /**
+   * Maximum wrong strokes still considered a pass. Default 3.
+   * (A "wrong stroke" = user drew a stroke that didn't match the next
+   * expected one in HanziWriter's quiz mode.)
+   */
+  allowedMistakes?: number;
+  /**
+   * HanziWriter leniency factor; 1.0 is the library default.
+   * Lower = stricter shape matching. Recommended 0.8–1.3.
+   */
+  leniency?: number;
+}
+
+export interface PinyinToCharacterWriteAnswer {
+  /**
+   * The canonical character — mirrors prompt.character but kept here so the
+   * `answer` JSON column remains self-describing.
+   */
+  character: string;
+}
+
+export interface PinyinToCharacterWriteAttemptPayload {
+  /** Echoes prompt.character (lets the server cross-check it). */
+  character: string;
+  /** How many wrong strokes HanziWriter recorded during the quiz. */
+  mistakes: number;
+  /** Did the learner complete every stroke of the character? */
+  completed: boolean;
+}
+
 export type ExercisePrompt =
   | TranslateChoicePrompt
   | TranslateInputPrompt
@@ -213,7 +272,8 @@ export type ExercisePrompt =
   | SingleChoicePrompt
   | PinyinChoicePrompt
   | PoemCompletePrompt
-  | PinyinToCharacterAssemblePrompt;
+  | PinyinToCharacterAssemblePrompt
+  | PinyinToCharacterWritePrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -226,7 +286,8 @@ export type ExerciseAnswer =
   | SingleChoiceAnswer
   | PinyinChoiceAnswer
   | PoemCompleteAnswer
-  | PinyinToCharacterAssembleAnswer;
+  | PinyinToCharacterAssembleAnswer
+  | PinyinToCharacterWriteAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
@@ -244,4 +305,5 @@ export type UserAttemptPayload =
   | ImageChoiceAttemptPayload
   | WordBankAttemptPayload
   | NumericInputAttemptPayload
-  | PinyinToCharacterAssembleAttemptPayload;
+  | PinyinToCharacterAssembleAttemptPayload
+  | PinyinToCharacterWriteAttemptPayload;

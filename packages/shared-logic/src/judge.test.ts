@@ -81,6 +81,43 @@ describe('judge', () => {
     ).toBe(true);
   });
 
+  it('judges pinyin-to-character WRITE by completion + mistake budget', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.PINYIN_TO_CHARACTER_WRITE,
+      pinyin: 'shī',
+      sentence: '老__在黑板上写字。',
+      blankPlaceholder: '__',
+      character: '师',
+      allowedMistakes: 3,
+    };
+    const answer = { character: '师' };
+
+    // perfect write
+    expect(
+      judge(prompt, answer, { character: '师', mistakes: 0, completed: true }),
+    ).toEqual({ correct: true, canonicalAnswer: '师' });
+
+    // mistakes within budget → still pass
+    expect(
+      judge(prompt, answer, { character: '师', mistakes: 3, completed: true }).correct,
+    ).toBe(true);
+
+    // mistakes over budget → fail
+    expect(
+      judge(prompt, answer, { character: '师', mistakes: 4, completed: true }).correct,
+    ).toBe(false);
+
+    // gave up without completing → fail
+    expect(
+      judge(prompt, answer, { character: '师', mistakes: 1, completed: false }).correct,
+    ).toBe(false);
+
+    // wrong character echoed back (data tampering / desync) → fail
+    expect(
+      judge(prompt, answer, { character: '诗', mistakes: 0, completed: true }).correct,
+    ).toBe(false);
+  });
+
   it('judges pinyin-to-character assemble by slot+component', () => {
     const prompt: ExercisePrompt = {
       type: ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE,

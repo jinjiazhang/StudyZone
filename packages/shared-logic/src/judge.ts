@@ -92,6 +92,22 @@ export function judge(
       return { correct, canonicalAnswer: p.target };
     }
 
+    case ExerciseType.PINYIN_TO_CHARACTER_WRITE: {
+      // HanziWriter judges each stroke on the client. The server's job is to
+      // sanity-check the summary the client submits: the right character was
+      // practiced, the user actually finished it, and they stayed within the
+      // mistake budget.
+      const p = prompt as { character: string; allowedMistakes?: number };
+      const u = attempt as { character: string; mistakes: number; completed: boolean };
+      const allowed = p.allowedMistakes ?? 3;
+      const correct =
+        !!u.completed &&
+        u.character === p.character &&
+        typeof u.mistakes === 'number' &&
+        u.mistakes <= allowed;
+      return { correct, canonicalAnswer: p.character };
+    }
+
     default:
       // Exhaustiveness check
       return { correct: false };

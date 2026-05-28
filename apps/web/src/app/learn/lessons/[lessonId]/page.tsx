@@ -21,6 +21,7 @@ import {
   PinyinChoiceExercise,
   PoemCompleteExercise,
   PinyinToCharacterAssembleExercise,
+  PinyinToCharacterWriteExercise,
 } from '@/components/exercises';
 
 interface AttemptState {
@@ -240,6 +241,8 @@ function ExerciseSwitch({
       return <PoemCompleteExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     case ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE:
       return <PinyinToCharacterAssembleExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.PINYIN_TO_CHARACTER_WRITE:
+      return <PinyinToCharacterWriteExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     default:
       return <div className="card font-heavy">暂不支持该题型：{exercise.type}</div>;
   }
