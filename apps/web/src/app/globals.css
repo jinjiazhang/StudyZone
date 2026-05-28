@@ -51,6 +51,27 @@ body {
     @apply btn-base bg-transparent text-sz-ink-soft hover:bg-sz-mist;
   }
 
+  .duo-home-button {
+    @apply inline-flex h-[62px] w-full select-none items-center justify-center rounded-2xl border-2 border-b-[5px] px-5 text-[18px] font-heavy uppercase tracking-[0.8px] transition-transform duration-100 active:translate-y-[2px] active:border-b-2;
+  }
+  .duo-home-button-primary {
+    @apply border-[#58a700] bg-[#58cc02] text-white hover:brightness-105;
+  }
+  .duo-home-button-secondary {
+    @apply border-[#e5e5e5] bg-white text-[#1cb0f6] hover:bg-[#f7f7f7];
+  }
+  .duo-store-button {
+    @apply inline-flex h-[58px] min-w-[170px] select-none items-center justify-center gap-3 rounded-2xl border-2 border-b-[4px] border-[#e5e5e5] bg-white px-5 text-[15px] font-heavy uppercase tracking-[0.8px] text-[#4b4b4b] transition-transform duration-100 hover:bg-[#f7f7f7] active:translate-y-[2px] active:border-b-2;
+  }
+  .brand-logo {
+    @apply inline-flex select-none items-center text-[42px] font-heavy leading-none text-[#58cc02] transition-transform duration-150 hover:-translate-y-0.5 sm:text-[48px];
+    font-family: 'Nunito', 'Inter', 'PingFang SC', system-ui, sans-serif;
+    letter-spacing: -0.04em;
+    text-shadow:
+      0 3px 0 #58a700,
+      0 6px 0 rgba(0, 0, 0, 0.08);
+  }
+
   /* Cards */
   .card {
     @apply rounded-2xl border-2 border-sz-line bg-white p-5;
@@ -178,5 +199,71 @@ body {
   }
   70% {
     transform: translateY(2px) rotate(1deg);
+  }
+}
+
+@keyframes heroMascot {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0) rotate(-1deg);
+  }
+  45% {
+    transform: translateX(-50%) translateY(-16px) rotate(2deg);
+  }
+  68% {
+    transform: translateX(-50%) translateY(3px) rotate(-1deg);
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes nodePop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  42% {
+    transform: translateY(-8px) scale(1.06);
+  }
+  62% {
+    transform: translateY(2px) scale(0.98);
+  }
+}
+
+@keyframes pathGrow {
+  0%,
+  100% {
+    width: 36%;
+  }
+  55% {
+    width: 72%;
+  }
+}
+
+@keyframes progressShine {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.15);
+  }
+}
+
+@keyframes studyPulse {
+  0%,
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.04);
   }
 }

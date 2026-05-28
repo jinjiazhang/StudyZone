@@ -1,145 +1,116 @@
 import Link from 'next/link';
-import { Mascot } from '@/components/Mascot';
+import {
+  ChevronDown,
+  Flame,
+  GraduationCap,
+  ShieldCheck,
+  Star,
+} from 'lucide-react';
+
+const footerColumns = [
+  ['关于我们', '课程体系', '学习方法', '帮助中心'],
+  ['语文', '数学', '英语', '拼音'],
+  ['隐私政策', '服务条款', '联系我们', '开源项目'],
+  ['博客', '社区', '家长中心', '学校合作'],
+];
 
 export default function LandingPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-white">
-      {/* decorative blobs */}
-      <div className="pointer-events-none absolute -left-32 top-10 h-72 w-72 rounded-full bg-sz-green-soft blur-3xl opacity-60" />
-      <div className="pointer-events-none absolute -right-24 top-40 h-72 w-72 rounded-full bg-sky-100 blur-3xl opacity-70" />
-      <div className="pointer-events-none absolute bottom-10 left-1/3 h-60 w-60 rounded-full bg-yellow-100 blur-3xl opacity-60" />
-
-      <div className="relative mx-auto max-w-6xl px-6 py-10">
-        <header className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Mascot size={40} />
-            <span className="text-2xl font-heavy text-sz-green">StudyZone</span>
-          </div>
-          <Link
-            href="/login"
-            className="text-sm font-heavy uppercase tracking-wider text-sz-ink-soft hover:text-sz-green-dark"
-          >
-            登录 →
+    <main className="flex min-h-screen flex-col bg-white text-[#3c3c3c]">
+      <header className="border-b-2 border-[#e5e5e5] bg-white">
+        <div className="mx-auto flex h-[70px] max-w-[1065px] items-center justify-between px-5">
+          <Link href="/" className="brand-logo" aria-label="StudyZone 首页">
+            StudyZone
           </Link>
-        </header>
+          <button className="inline-flex items-center gap-2 text-[15px] font-heavy uppercase tracking-[.8px] text-[#777]">
+            网站语言：中文
+            <ChevronDown size={18} strokeWidth={3} />
+          </button>
+        </div>
+      </header>
 
-        <section className="mt-16 grid items-center gap-12 md:mt-24 md:grid-cols-2">
+      <section className="mx-auto grid w-full max-w-[1065px] flex-1 items-center gap-8 px-5 py-[58px] md:grid-cols-[1.08fr_.92fr] md:py-10">
+        <HeroIllustration />
+        <div className="mx-auto flex w-full max-w-[430px] flex-col items-center text-center">
+          <h1 className="text-[40px] font-heavy leading-[1.18] text-[#4b4b4b] sm:text-[46px]">
+            学习课内知识，寓教于乐。
+          </h1>
+          <div className="mt-10 flex w-full flex-col gap-4">
+            <Link href="/register" className="duo-home-button duo-home-button-primary">
+              开始学习
+            </Link>
+            <Link href="/login" className="duo-home-button duo-home-button-secondary">
+              已有帐号
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <footer className="mt-auto border-t-2 border-[#e5e5e5] bg-[#58cc02] text-white">
+        <div className="mx-auto grid max-w-[1065px] gap-8 px-5 py-8 md:grid-cols-[220px_1fr]">
           <div>
-            <span className="inline-flex rounded-full bg-sz-green-soft px-4 py-1.5 text-sm font-heavy uppercase tracking-wider text-sz-green-dark">
-              🦊 每天 15 分钟
-            </span>
-            <h1 className="mt-5 text-5xl font-heavy leading-tight text-sz-ink md:text-6xl">
-              让学习
-              <br />
-              变成<span className="text-sz-green"> 游戏</span>
-              <span className="text-sz-orange"> 🎮</span>
-            </h1>
-            <p className="mt-6 max-w-md text-lg font-bold text-sz-ink-soft">
-              英语、数学、音乐……一套关卡机制，把所有学科变成你愿意每天打卡的小冒险。
-            </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <Link
-                href="/register"
-                className="btn-primary w-full px-8 py-4 text-lg sm:w-56"
-              >
-                开始学习 →
-              </Link>
-              <Link
-                href="/login"
-                className="btn-secondary w-full px-8 py-4 text-lg sm:w-56"
-              >
-                我已注册
-              </Link>
-            </div>
-            <p className="mt-6 text-sm font-bold text-sz-ink-soft">
-              示例账号：
-              <code className="rounded-lg border-2 border-sz-line bg-sz-mist px-2 py-0.5 text-sz-ink">
-                demo@studyzone.dev / studyzone
-              </code>
+            <div className="text-[30px] font-heavy lowercase leading-none">studyzone</div>
+            <p className="mt-3 text-[15px] font-bold leading-6 text-white/80">
+              免费、有趣、看得见进步。
             </p>
           </div>
-
-          <div className="relative">
-            <div className="absolute -top-6 left-10 hidden animate-wiggle md:block">
-              <Mascot size={144} mood="cheer" />
-            </div>
-            <div className="grid grid-cols-2 gap-4 rounded-3xl border-2 border-sz-line bg-white p-6 shadow-pop-lg md:ml-32 md:mt-24">
-              <Stat label="支持学科" value="多学科" emoji="📚" tint="green" />
-              <Stat label="题型种类" value="8+" emoji="🎯" tint="sky" />
-              <Stat label="连胜机制" value="每日 🔥" emoji="🔥" tint="orange" />
-              <Stat label="周联赛" value="7 段位" emoji="🏆" tint="gold" />
-            </div>
+          <div className="grid gap-5 sm:grid-cols-4">
+            {footerColumns.map((column, index) => (
+              <div key={index} className="space-y-2">
+                {column.map((item) => (
+                  <Link key={item} href="/" className="block text-[15px] font-heavy text-white/80 hover:text-white">
+                    {item}
+                  </Link>
+                ))}
+              </div>
+            ))}
           </div>
-        </section>
-
-        {/* Feature row */}
-        <section className="mt-24 grid gap-6 md:grid-cols-3">
-          <Feature emoji="🗺️" title="一张大地图" tint="green">
-            像走通关一样推进每一节小课，目标随时看得见。
-          </Feature>
-          <Feature emoji="❤️" title="生命系统" tint="rose">
-            做错会扣心，逼你认真——但 5 颗心吃完就要等回血或买宝石。
-          </Feature>
-          <Feature emoji="🏆" title="每周联赛" tint="gold">
-            跟其他学习者拼 XP，每周一晋升或降级，竞争才有动力。
-          </Feature>
-        </section>
-
-        <footer className="mt-24 pb-10 text-center text-sm font-bold text-sz-ink-soft">
-          StudyZone · 个人学习园地 · 一个开源的多邻国式学习平台
-        </footer>
-      </div>
+        </div>
+      </footer>
     </main>
   );
 }
 
-function Stat({
-  label,
-  value,
-  emoji,
-  tint,
-}: {
-  label: string;
-  value: string;
-  emoji: string;
-  tint: 'green' | 'sky' | 'orange' | 'gold';
-}) {
-  const bg = {
-    green: 'bg-sz-green-soft',
-    sky: 'bg-sky-100',
-    orange: 'bg-orange-100',
-    gold: 'bg-yellow-100',
-  }[tint];
+function HeroIllustration() {
   return (
-    <div className={`rounded-2xl ${bg} p-4`}>
-      <div className="text-3xl">{emoji}</div>
-      <div className="mt-2 text-2xl font-heavy text-sz-ink">{value}</div>
-      <div className="text-xs font-bold uppercase tracking-wider text-sz-ink-soft">{label}</div>
+    <div className="relative mx-auto h-[360px] w-full max-w-[560px] md:h-[430px]" aria-hidden>
+      <div className="absolute left-1/2 top-[34px] h-[286px] w-[286px] -translate-x-1/2 rounded-full bg-[#d7ffb8]" />
+      <div className="absolute left-1/2 top-[72px] h-[210px] w-[210px] -translate-x-1/2 rounded-full bg-[#58cc02]" />
+      <div className="absolute left-1/2 top-[102px] grid h-[150px] w-[150px] -translate-x-1/2 place-items-center rounded-full bg-white text-[#58cc02] shadow-[0_6px_0_#58a700] animate-[studyPulse_3.5s_ease-in-out_infinite]">
+        <GraduationCap size={82} strokeWidth={2.7} />
+      </div>
+      <div className="absolute left-[35px] top-[52px] animate-[floatCard_5s_ease-in-out_infinite]">
+        <MiniBadge icon={<Flame size={21} fill="currentColor" />} label="12 天" color="orange" />
+      </div>
+      <div className="absolute right-[28px] top-[128px] animate-[floatCard_5.4s_ease-in-out_.25s_infinite]">
+        <MiniBadge icon={<Star size={21} fill="currentColor" />} label="+25 XP" color="gold" />
+      </div>
+      <div className="absolute bottom-[60px] left-[84px] animate-[floatCard_5.8s_ease-in-out_.45s_infinite]">
+        <MiniBadge icon={<ShieldCheck size={21} />} label="86%" color="sky" />
+      </div>
     </div>
   );
 }
 
-function Feature({
-  emoji,
-  title,
-  tint,
-  children,
+function MiniBadge({
+  icon,
+  label,
+  color,
 }: {
-  emoji: string;
-  title: string;
-  tint: 'green' | 'rose' | 'gold';
-  children: React.ReactNode;
+  icon: React.ReactNode;
+  label: string;
+  color: 'orange' | 'gold' | 'sky';
 }) {
-  const ring = {
-    green: 'border-sz-green',
-    rose: 'border-sz-rose',
-    gold: 'border-sz-gold',
-  }[tint];
+  const colors = {
+    orange: 'text-[#ff9600]',
+    gold: 'text-[#ffc800]',
+    sky: 'text-[#1cb0f6]',
+  }[color];
+
   return (
-    <div className={`rounded-3xl border-b-[6px] ${ring} border-2 bg-white p-6`}>
-      <div className="text-4xl">{emoji}</div>
-      <h3 className="mt-3 text-xl font-heavy text-sz-ink">{title}</h3>
-      <p className="mt-2 font-bold text-sz-ink-soft">{children}</p>
+    <div className="inline-flex items-center gap-2 rounded-2xl border-2 border-[#e5e5e5] bg-white px-4 py-3 shadow-[0_4px_0_rgba(0,0,0,.12)]">
+      <span className={colors}>{icon}</span>
+      <span className="text-[18px] font-heavy text-[#4b4b4b]">{label}</span>
     </div>
   );
 }
