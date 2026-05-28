@@ -20,7 +20,7 @@ function Protected({ children }: { children: React.ReactNode }) {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <QueryClientProvider client={client}>
-      <BrowserRouter>
+      <BrowserRouter basename="/admin">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route

@@ -29,6 +29,6 @@ export const api = new StudyZoneClient({
   getAccessToken: () => useAuth.getState().accessToken,
   onUnauthorized: () => {
     useAuth.getState().clear();
-    window.location.href = '/login';
+    window.location.href = '/admin/login';
   },
 });
