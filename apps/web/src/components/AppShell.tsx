@@ -48,16 +48,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       </header>
 
-      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-6 md:grid-cols-[220px,1fr] md:px-6 md:py-8">
+      <div className="mx-auto grid max-w-[84rem] gap-10 px-4 py-6 md:grid-cols-[260px,1fr] md:px-8 md:py-8">
         {/* left rail (desktop) */}
-        <nav className="hidden md:block">
-          <ul className="sticky top-24 flex flex-col gap-2 text-base">
-            <NavLink href="/learn" current={pathname} icon={<BookOpen className="h-6 w-6" />} label="学习" tint="green" />
-            <NavLink href="/league" current={pathname} icon={<Trophy className="h-6 w-6" />} label="联赛" tint="gold" />
-            <NavLink href="/profile" current={pathname} icon={<User className="h-6 w-6" />} label="我" tint="sky" />
-          </ul>
+        <nav className="hidden border-r-2 border-sz-line pr-5 md:block">
+          <div className="sticky top-24 flex flex-col gap-7">
+            <Link href="/learn" className="flex items-center gap-3 px-4">
+              <Mascot size={42} />
+              <span className="text-[1.65rem] font-heavy leading-none text-sz-green">
+                StudyZone
+              </span>
+            </Link>
+            <ul className="flex flex-col gap-3">
+              <NavLink href="/learn" current={pathname} icon={<BookOpen className="h-8 w-8" />} label="学习" tint="green" />
+              <NavLink href="/league" current={pathname} icon={<Trophy className="h-8 w-8" />} label="联赛" tint="gold" />
+              <NavLink href="/profile" current={pathname} icon={<User className="h-8 w-8" />} label="我" tint="sky" />
+            </ul>
+          </div>
         </nav>
-        <main className="min-h-[60vh] pb-24 md:pb-0">{children}</main>
+        <main className="min-h-[60vh] pb-24 md:pb-0 md:text-[1.03rem]">{children}</main>
       </div>
 
       {/* bottom tabs (mobile) */}
@@ -127,7 +135,7 @@ function NavLink({
       <Link
         href={href}
         className={clsx(
-          'flex items-center gap-3 rounded-2xl border-2 px-4 py-3 font-heavy uppercase tracking-wide transition',
+          'flex h-[68px] items-center gap-4 rounded-[1.25rem] border-2 px-5 text-xl font-heavy transition',
           active ? activeStyles : 'border-transparent text-sz-ink-soft hover:bg-sz-mist',
         )}
       >
