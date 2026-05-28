@@ -32,8 +32,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-white">
       {/* top bar */}
       <header className="sticky top-0 z-30 border-b-2 border-sz-line bg-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-          <Link href="/learn" className="flex items-center gap-2">
+        <div className="mx-auto flex max-w-[84rem] items-center justify-between px-6 py-3 md:justify-end md:px-8">
+          <Link href="/learn" className="flex items-center gap-2 md:hidden">
             <Mascot size={36} />
             <span className="hidden text-2xl font-heavy text-sz-green sm:inline">
               StudyZone
