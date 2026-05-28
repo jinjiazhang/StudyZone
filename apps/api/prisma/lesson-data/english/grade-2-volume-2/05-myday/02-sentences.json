@@ -8,12 +8,12 @@
         "options": [
           "我七点四十去上学。",
           "我十二点吃午饭。",
-          "我九点钟上床睡觉。",
-          "你每天什么时候起床？"
+          "你每天什么时候起床？",
+          "我九点钟上床睡觉。"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -23,10 +23,10 @@
         "source": "I get up at six thirty.",
         "sourceLocale": "en-US",
         "options": [
-          "我八点钟去上学。",
+          "你每天什么时候起床？",
           "我六点半起床。",
           "你什么时候上床睡觉？",
-          "你每天什么时候起床？"
+          "我八点钟去上学。"
         ]
       },
       "answer": {
@@ -40,14 +40,14 @@
         "source": "When do you go to school?",
         "sourceLocale": "en-US",
         "options": [
-          "你什么时候上床睡觉？",
-          "我九点钟上床睡觉。",
           "你什么时候去上学？",
-          "我六点半起床。"
+          "我六点半起床。",
+          "我九点钟上床睡觉。",
+          "你什么时候上床睡觉？"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -58,9 +58,26 @@
         "sourceLocale": "en-US",
         "options": [
           "你什么时候去上学？",
-          "我七点四十去上学。",
           "我九点钟上床睡觉。",
+          "我七点四十去上学。",
           "我十二点吃午饭。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I eat lunch at twelve.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你每天什么时候起床？",
+          "我十二点吃午饭。",
+          "我八点钟去上学。",
+          "你八点钟做什么？"
         ]
       },
       "answer": {
@@ -71,34 +88,17 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "I eat lunch at twelve.",
+        "source": "I go home at four thirty.",
         "sourceLocale": "en-US",
         "options": [
-          "你八点钟做什么？",
-          "我八点钟去上学。",
-          "我十二点吃午饭。",
+          "我四点半回家。",
+          "我七点钟吃早饭。",
+          "我六点半起床。",
           "你每天什么时候起床？"
         ]
       },
       "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "I go home at four thirty.",
-        "sourceLocale": "en-US",
-        "options": [
-          "我七点钟吃早饭。",
-          "你每天什么时候起床？",
-          "我六点半起床。",
-          "我四点半回家。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -108,14 +108,14 @@
         "source": "你什么时候去上学？",
         "sourceLocale": "zh-CN",
         "options": [
-          "I go to school at seven forty.",
-          "I go home at four thirty.",
           "When do you go to school?",
-          "I eat breakfast at seven."
+          "I go to school at seven forty.",
+          "I eat breakfast at seven.",
+          "I go home at four thirty."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -125,8 +125,8 @@
         "source": "我七点四十去上学。",
         "sourceLocale": "zh-CN",
         "options": [
-          "When do you go to bed?",
           "I get up at six thirty.",
+          "When do you go to bed?",
           "I go to school at seven forty.",
           "What do you do at eight?"
         ]
@@ -142,26 +142,9 @@
         "source": "我十二点吃午饭。",
         "sourceLocale": "zh-CN",
         "options": [
-          "I go to bed at nine o'clock.",
+          "I eat lunch at twelve.",
           "When do you go to school?",
-          "I eat lunch at twelve.",
-          "When do you get up every day?"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "我四点半回家。",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "I go home at four thirty.",
-          "I eat lunch at twelve.",
-          "What do you do at eight?",
+          "I go to bed at nine o'clock.",
           "When do you get up every day?"
         ]
       },
@@ -173,13 +156,13 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "你什么时候上床睡觉？",
+        "source": "我四点半回家。",
         "sourceLocale": "zh-CN",
         "options": [
+          "I eat lunch at twelve.",
+          "I go home at four thirty.",
           "When do you get up every day?",
-          "When do you go to bed?",
-          "I eat breakfast at seven.",
-          "When do you go to school?"
+          "What do you do at eight?"
         ]
       },
       "answer": {
@@ -190,17 +173,34 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "我九点钟上床睡觉。",
+        "source": "你什么时候上床睡觉？",
         "sourceLocale": "zh-CN",
         "options": [
-          "I go to school at seven forty.",
-          "I eat lunch at twelve.",
-          "I go to school at eight.",
-          "I go to bed at nine o'clock."
+          "When do you go to bed?",
+          "When do you go to school?",
+          "I eat breakfast at seven.",
+          "When do you get up every day?"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "我九点钟上床睡觉。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I eat lunch at twelve.",
+          "I go to bed at nine o'clock.",
+          "I go to school at seven forty.",
+          "I go to school at eight."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
       },
       "difficulty": 2
     },

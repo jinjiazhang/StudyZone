@@ -5,14 +5,14 @@
       "prompt": {
         "question": "When it is rainy, what do you need?",
         "options": [
-          "a bike",
-          "an umbrella",
           "a football",
-          "a snowman"
+          "a snowman",
+          "a bike",
+          "an umbrella"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -23,12 +23,12 @@
         "options": [
           "It's sunny.",
           "It's windy.",
-          "It's snowy.",
-          "It's rainy."
+          "It's rainy.",
+          "It's snowy."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -37,10 +37,10 @@
       "prompt": {
         "question": "Is it hot or cold when it is snowy?",
         "options": [
-          "It's hot.",
+          "It's cool.",
           "It's cold.",
           "It's warm.",
-          "It's cool."
+          "It's hot."
         ]
       },
       "answer": {
@@ -53,14 +53,14 @@
       "prompt": {
         "question": "Can we fly a kite when there is no wind?",
         "options": [
-          "Yes, we can.",
-          "No, we can't.",
           "Yes, we do.",
-          "No, we don't."
+          "No, we don't.",
+          "Yes, we can.",
+          "No, we can't."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -70,9 +70,9 @@
         "question": "It's sunny. Let's go to play in the...",
         "options": [
           "bed",
-          "school",
+          "hospital",
           "park",
-          "hospital"
+          "school"
         ]
       },
       "answer": {
@@ -85,14 +85,14 @@
       "prompt": {
         "question": "When the sun shines brightly, the weather is:",
         "options": [
-          "sunny",
+          "windy",
           "snowy",
           "rainy",
-          "windy"
+          "sunny"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -102,10 +102,10 @@
         "source": "在对话中，听到 'It's sunny today.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "今天天气怎么样？",
-          "今天天气晴朗。",
           "今天下雪。",
-          "带上你的雨伞。"
+          "今天天气晴朗。",
+          "带上你的雨伞。",
+          "今天天气怎么样？"
         ]
       },
       "answer": {
@@ -119,14 +119,14 @@
         "source": "在对话中，听到 'It's rainy today.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "今天下雨。",
-          "今天天气怎么样？",
           "带上你的雨伞。",
-          "今天天气晴朗。"
+          "今天天气晴朗。",
+          "今天下雨。",
+          "今天天气怎么样？"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -136,43 +136,9 @@
         "source": "在对话中，听到 'It's windy today.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "今天天气晴朗。",
           "不，不是。",
-          "今天多云。",
-          "今天有风。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'It's snowy today.' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "今天下雪。",
-          "是的，下雪了。",
-          "今天下雨。",
-          "天气非常冷。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 0
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'Take your umbrella.' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "今天天气怎么样？",
+          "今天天气晴朗。",
           "今天有风。",
-          "带上你的雨伞。",
           "今天多云。"
         ]
       },
@@ -184,17 +150,51 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "在对话中，听到 'Is it snowy?' 对应的意思是：",
+        "source": "在对话中，听到 'It's snowy today.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "下雪了吗？",
-          "天气非常热。",
           "天气非常冷。",
-          "带上你的雨伞。"
+          "是的，下雪了。",
+          "今天下雪。",
+          "今天下雨。"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Take your umbrella.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天天气怎么样？",
+          "带上你的雨伞。",
+          "今天有风。",
+          "今天多云。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'Is it snowy?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "天气非常热。",
+          "带上你的雨伞。",
+          "天气非常冷。",
+          "下雪了吗？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
       },
       "difficulty": 2
     },

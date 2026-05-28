@@ -6,9 +6,25 @@
         "question": "What meal do you eat in the morning?",
         "options": [
           "lunch",
-          "dinner",
           "breakfast",
-          "supper"
+          "supper",
+          "dinner"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "When do you usually go to school?",
+        "options": [
+          "at twelve noon",
+          "at midnight",
+          "at seven in the morning",
+          "at seven in the evening"
         ]
       },
       "answer": {
@@ -19,12 +35,28 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "When do you usually go to school?",
+        "question": "What do you do at four thirty in the afternoon?",
         "options": [
-          "at seven in the morning",
-          "at seven in the evening",
-          "at twelve noon",
-          "at midnight"
+          "eat breakfast",
+          "go home",
+          "go to bed",
+          "get up"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Where do you eat lunch on weekdays?",
+        "options": [
+          "at school",
+          "at home",
+          "in the bed",
+          "in the park"
         ]
       },
       "answer": {
@@ -35,28 +67,12 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "What do you do at four thirty in the afternoon?",
+        "question": "I ___ at nine thirty in the evening.",
         "options": [
+          "eat lunch",
+          "go to bed",
           "get up",
-          "eat breakfast",
-          "go home",
-          "go to bed"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "Where do you eat lunch on weekdays?",
-        "options": [
-          "at home",
-          "at school",
-          "in the park",
-          "in the bed"
+          "go to school"
         ]
       },
       "answer": {
@@ -67,32 +83,16 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "I ___ at nine thirty in the evening.",
-        "options": [
-          "get up",
-          "go to school",
-          "go to bed",
-          "eat lunch"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
         "question": "When do you eat dinner?",
         "options": [
-          "at 7:00 AM",
           "at 12:00 PM",
           "at 6:30 PM",
-          "at 1:00 AM"
+          "at 1:00 AM",
+          "at 7:00 AM"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -103,13 +103,13 @@
         "sourceLocale": "en-US",
         "options": [
           "你八点钟做什么？",
-          "我七点四十去上学。",
           "我六点半起床。",
+          "我七点四十去上学。",
           "我七点钟吃早饭。"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -119,27 +119,10 @@
         "source": "在对话中，听到 'When do you go to school?' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你每天什么时候起床？",
-          "你什么时候去上学？",
           "你八点钟做什么？",
-          "你什么时候上床睡觉？"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'I go to school at seven forty.' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "我七点钟吃早饭。",
-          "我八点钟去上学。",
-          "我七点四十去上学。",
-          "我六点半起床。"
+          "你什么时候上床睡觉？",
+          "你什么时候去上学？",
+          "你每天什么时候起床？"
         ]
       },
       "answer": {
@@ -150,30 +133,30 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "在对话中，听到 'I eat lunch at twelve.' 对应的意思是：",
+        "source": "在对话中，听到 'I go to school at seven forty.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
           "我七点四十去上学。",
-          "我九点钟上床睡觉。",
-          "我八点钟去上学。",
-          "我十二点吃午饭。"
+          "我六点半起床。",
+          "我七点钟吃早饭。",
+          "我八点钟去上学。"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 2
     },
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "在对话中，听到 'I go home at four thirty.' 对应的意思是：",
+        "source": "在对话中，听到 'I eat lunch at twelve.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你八点钟做什么？",
-          "我四点半回家。",
+          "我九点钟上床睡觉。",
+          "我十二点吃午饭。",
           "我七点四十去上学。",
-          "我九点钟上床睡觉。"
+          "我八点钟去上学。"
         ]
       },
       "answer": {
@@ -184,13 +167,30 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "在对话中，听到 'I go home at four thirty.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我七点四十去上学。",
+          "我九点钟上床睡觉。",
+          "我四点半回家。",
+          "你八点钟做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "在对话中，听到 'When do you go to bed?' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你每天什么时候起床？",
+          "我七点钟吃早饭。",
           "你八点钟做什么？",
           "你什么时候上床睡觉？",
-          "我七点钟吃早饭。"
+          "你每天什么时候起床？"
         ]
       },
       "answer": {

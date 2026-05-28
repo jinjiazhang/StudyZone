@@ -6,10 +6,27 @@
         "source": "time",
         "sourceLocale": "en-US",
         "options": [
-          "时间",
           "时钟",
           "五十",
-          "十五"
+          "十五",
+          "时间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "clock",
+        "sourceLocale": "en-US",
+        "options": [
+          "时钟",
+          "十二",
+          "点钟",
+          "半"
         ]
       },
       "answer": {
@@ -20,34 +37,17 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "clock",
-        "sourceLocale": "en-US",
-        "options": [
-          "半",
-          "时钟",
-          "十二",
-          "点钟"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
         "source": "o'clock",
         "sourceLocale": "en-US",
         "options": [
-          "三十",
-          "时间",
           "点钟",
-          "二十"
+          "时间",
+          "二十",
+          "三十"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -57,8 +57,8 @@
         "source": "half",
         "sourceLocale": "en-US",
         "options": [
-          "时钟",
           "十二",
+          "时钟",
           "十四",
           "半"
         ]
@@ -75,26 +75,9 @@
         "sourceLocale": "en-US",
         "options": [
           "二十",
+          "三十",
           "十三",
-          "过",
-          "三十"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "eleven",
-        "sourceLocale": "en-US",
-        "options": [
-          "十三",
-          "五十",
-          "十二",
-          "十一"
+          "过"
         ]
       },
       "answer": {
@@ -105,13 +88,13 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "点钟",
-        "sourceLocale": "zh-CN",
+        "source": "eleven",
+        "sourceLocale": "en-US",
         "options": [
-          "twenty",
-          "o'clock",
-          "half",
-          "eleven"
+          "十二",
+          "十一",
+          "五十",
+          "十三"
         ]
       },
       "answer": {
@@ -122,17 +105,34 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "半",
+        "source": "点钟",
         "sourceLocale": "zh-CN",
         "options": [
-          "time",
-          "fifty",
-          "half",
-          "fifteen"
+          "twenty",
+          "eleven",
+          "o'clock",
+          "half"
         ]
       },
       "answer": {
         "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "半",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "half",
+          "fifteen",
+          "fifty",
+          "time"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -159,14 +159,14 @@
         "source": "十一",
         "sourceLocale": "zh-CN",
         "options": [
-          "twenty",
-          "twelve",
           "time",
-          "eleven"
+          "twenty",
+          "eleven",
+          "twelve"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -176,14 +176,14 @@
         "source": "十二",
         "sourceLocale": "zh-CN",
         "options": [
-          "time",
           "fifty",
-          "fourteen",
-          "twelve"
+          "twelve",
+          "time",
+          "fourteen"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -194,13 +194,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "twenty",
-          "thirteen",
           "time",
+          "thirteen",
           "twelve"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },

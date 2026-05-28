@@ -6,10 +6,27 @@
         "source": "What's the weather like today?",
         "sourceLocale": "en-US",
         "options": [
-          "今天天气晴朗。",
           "今天天气怎么样？",
-          "天气非常热。",
-          "今天多云。"
+          "今天多云。",
+          "今天天气晴朗。",
+          "天气非常热。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's sunny today.",
+        "sourceLocale": "en-US",
+        "options": [
+          "今天下雨。",
+          "今天天气晴朗。",
+          "今天有风。",
+          "不，不是。"
         ]
       },
       "answer": {
@@ -20,30 +37,13 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "It's sunny today.",
-        "sourceLocale": "en-US",
-        "options": [
-          "不，不是。",
-          "今天有风。",
-          "今天下雨。",
-          "今天天气晴朗。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
         "source": "It's rainy today.",
         "sourceLocale": "en-US",
         "options": [
+          "带上你的雨伞。",
           "今天天气晴朗。",
-          "今天有风。",
           "今天下雨。",
-          "带上你的雨伞。"
+          "今天有风。"
         ]
       },
       "answer": {
@@ -57,27 +57,10 @@
         "source": "It's windy today.",
         "sourceLocale": "en-US",
         "options": [
-          "今天下雨。",
           "今天有风。",
-          "下雪了吗？",
-          "今天天气晴朗。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "It's snowy today.",
-        "sourceLocale": "en-US",
-        "options": [
-          "今天下雪。",
           "今天天气晴朗。",
-          "不，不是。",
-          "今天多云。"
+          "下雪了吗？",
+          "今天下雨。"
         ]
       },
       "answer": {
@@ -88,17 +71,34 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "Take your umbrella.",
+        "source": "It's snowy today.",
         "sourceLocale": "en-US",
         "options": [
+          "今天天气晴朗。",
           "今天下雪。",
-          "天气非常热。",
-          "天气非常冷。",
-          "带上你的雨伞。"
+          "不，不是。",
+          "今天多云。"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Take your umbrella.",
+        "sourceLocale": "en-US",
+        "options": [
+          "带上你的雨伞。",
+          "天气非常冷。",
+          "今天下雪。",
+          "天气非常热。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -108,10 +108,10 @@
         "source": "今天下雨。",
         "sourceLocale": "zh-CN",
         "options": [
-          "Yes, it is.",
+          "Is it snowy?",
           "It's rainy today.",
-          "It's windy today.",
-          "Is it snowy?"
+          "Yes, it is.",
+          "It's windy today."
         ]
       },
       "answer": {
@@ -125,27 +125,10 @@
         "source": "今天有风。",
         "sourceLocale": "zh-CN",
         "options": [
-          "Is it snowy?",
           "It's windy today.",
+          "Is it snowy?",
           "It's snowy today.",
           "Take your umbrella."
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "今天下雪。",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "It's snowy today.",
-          "Is it snowy?",
-          "It's rainy today.",
-          "It is very hot."
         ]
       },
       "answer": {
@@ -156,17 +139,34 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "今天下雪。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Is it snowy?",
+          "It's snowy today.",
+          "It's rainy today.",
+          "It is very hot."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "带上你的雨伞。",
         "sourceLocale": "zh-CN",
         "options": [
           "What's the weather like today?",
-          "It's rainy today.",
           "Take your umbrella.",
+          "It's rainy today.",
           "It's snowy today."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -176,14 +176,14 @@
         "source": "下雪了吗？",
         "sourceLocale": "zh-CN",
         "options": [
-          "It is very cold.",
-          "Is it snowy?",
           "Take your umbrella.",
-          "It's windy today."
+          "It's windy today.",
+          "Is it snowy?",
+          "It is very cold."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },

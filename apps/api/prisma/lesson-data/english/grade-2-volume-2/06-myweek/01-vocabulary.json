@@ -6,14 +6,14 @@
         "source": "Sunday",
         "sourceLocale": "en-US",
         "options": [
-          "星期三",
           "今天",
-          "星期四",
-          "星期日"
+          "星期日",
+          "星期三",
+          "星期四"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -23,14 +23,14 @@
         "source": "Monday",
         "sourceLocale": "en-US",
         "options": [
-          "星期",
-          "星期四",
           "星期三",
-          "星期一"
+          "星期一",
+          "星期",
+          "星期四"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -58,9 +58,26 @@
         "sourceLocale": "en-US",
         "options": [
           "星期六",
+          "星期三",
           "星期四",
-          "今天",
-          "星期三"
+          "今天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Thursday",
+        "sourceLocale": "en-US",
+        "options": [
+          "星期二",
+          "星期三",
+          "星期一",
+          "星期四"
         ]
       },
       "answer": {
@@ -71,13 +88,30 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "Thursday",
+        "source": "Friday",
         "sourceLocale": "en-US",
         "options": [
+          "在星期几",
+          "星期一",
           "星期四",
-          "星期三",
-          "星期二",
-          "星期一"
+          "星期五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "星期二",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "Tuesday",
+          "today",
+          "Friday",
+          "Sunday"
         ]
       },
       "answer": {
@@ -88,51 +122,17 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "Friday",
-        "sourceLocale": "en-US",
-        "options": [
-          "星期四",
-          "星期五",
-          "星期一",
-          "在星期几"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "星期二",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "Sunday",
-          "Tuesday",
-          "today",
-          "Friday"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
         "source": "星期三",
         "sourceLocale": "zh-CN",
         "options": [
-          "on",
-          "Sunday",
+          "Wednesday",
           "week",
-          "Wednesday"
+          "Sunday",
+          "on"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -142,14 +142,14 @@
         "source": "星期四",
         "sourceLocale": "zh-CN",
         "options": [
-          "today",
-          "Sunday",
           "Thursday",
-          "Friday"
+          "Friday",
+          "Sunday",
+          "today"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -160,8 +160,8 @@
         "sourceLocale": "zh-CN",
         "options": [
           "Friday",
-          "today",
           "Thursday",
+          "today",
           "Sunday"
         ]
       },
@@ -176,10 +176,10 @@
         "source": "星期六",
         "sourceLocale": "zh-CN",
         "options": [
-          "on",
+          "Monday",
           "Saturday",
           "week",
-          "Monday"
+          "on"
         ]
       },
       "answer": {
@@ -194,13 +194,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "Tuesday",
+          "today",
           "Friday",
-          "week",
-          "today"
+          "week"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },

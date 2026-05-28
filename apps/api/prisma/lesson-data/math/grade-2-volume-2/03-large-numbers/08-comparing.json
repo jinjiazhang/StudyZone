@@ -115,14 +115,14 @@
       "prompt": {
         "question": "位数不同的两个数比较大小，结果是？",
         "options": [
-          "位数多的数大",
-          "位数少的数大",
           "一样大",
-          "无法比较"
+          "位数多的数大",
+          "无法比较",
+          "位数少的数大"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -131,14 +131,14 @@
       "prompt": {
         "question": "位数相同的两个数比较大小，应该先比较哪一位？",
         "options": [
-          "最高位",
           "个位",
-          "十位",
-          "百位"
+          "百位",
+          "最高位",
+          "十位"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -147,14 +147,14 @@
       "prompt": {
         "question": "如果两个数的最高位相同，接下来应该比较哪一位？",
         "options": [
-          "次高位（右边第一位）",
           "个位",
           "十位",
-          "最低位"
+          "最低位",
+          "次高位（右边第一位）"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -163,14 +163,14 @@
       "prompt": {
         "question": "以下哪一个数最接近 3000？",
         "options": [
-          "2998",
-          "3005",
+          "3100",
           "2990",
-          "3100"
+          "3005",
+          "2998"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -179,14 +179,14 @@
       "prompt": {
         "question": "比较 5890 和 589，结果是？",
         "options": [
-          "5890 > 589",
-          "5890 < 589",
           "5890 = 589",
-          "无法确定"
+          "5890 < 589",
+          "无法确定",
+          "5890 > 589"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -195,14 +195,14 @@
       "prompt": {
         "question": "在 876, 867, 8760, 8670 中，最大的是？",
         "options": [
-          "8760",
           "8670",
-          "876",
-          "867"
+          "8760",
+          "867",
+          "876"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },

@@ -6,10 +6,10 @@
         "source": "What season is it now?",
         "sourceLocale": "en-US",
         "options": [
-          "秋天很凉爽。",
           "因为春天很美。",
+          "冬天很冷。",
           "现在是什么季节？",
-          "冬天很冷。"
+          "秋天很凉爽。"
         ]
       },
       "answer": {
@@ -23,14 +23,14 @@
         "source": "It is spring now.",
         "sourceLocale": "en-US",
         "options": [
-          "现在是春天。",
           "现在是什么季节？",
+          "我们在夏天可以去游泳。",
           "你为什么喜欢春天？",
-          "我们在夏天可以去游泳。"
+          "现在是春天。"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -41,9 +41,9 @@
         "sourceLocale": "en-US",
         "options": [
           "春天很温暖。",
-          "秋天很凉爽。",
+          "你最喜欢什么季节？",
           "因为春天很美。",
-          "你最喜欢什么季节？"
+          "秋天很凉爽。"
         ]
       },
       "answer": {
@@ -57,14 +57,14 @@
         "source": "What's your favourite season?",
         "sourceLocale": "en-US",
         "options": [
-          "现在是春天。",
           "你为什么喜欢春天？",
           "你最喜欢什么季节？",
+          "现在是春天。",
           "春天很温暖。"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -74,14 +74,14 @@
         "source": "My favourite season is summer.",
         "sourceLocale": "en-US",
         "options": [
-          "现在是什么季节？",
-          "现在是春天。",
           "我最喜欢的季节是夏天。",
-          "冬天很冷。"
+          "现在是什么季节？",
+          "冬天很冷。",
+          "现在是春天。"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -91,14 +91,14 @@
         "source": "We can go swimming in summer.",
         "sourceLocale": "en-US",
         "options": [
-          "现在是什么季节？",
-          "秋天很凉爽。",
           "我们在夏天可以去游泳。",
-          "冬天很冷。"
+          "冬天很冷。",
+          "秋天很凉爽。",
+          "现在是什么季节？"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -108,10 +108,27 @@
         "source": "春天很温暖。",
         "sourceLocale": "zh-CN",
         "options": [
-          "What's your favourite season?",
           "It is warm in spring.",
+          "What's your favourite season?",
           "My favourite season is summer.",
           "We can go swimming in summer."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你最喜欢什么季节？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It is cold in winter.",
+          "What's your favourite season?",
+          "My favourite season is summer.",
+          "Why do you like spring?"
         ]
       },
       "answer": {
@@ -122,34 +139,17 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "你最喜欢什么季节？",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "My favourite season is summer.",
-          "It is cold in winter.",
-          "What's your favourite season?",
-          "Why do you like spring?"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
         "source": "我最喜欢的季节是夏天。",
         "sourceLocale": "zh-CN",
         "options": [
-          "My favourite season is summer.",
           "Why do you like spring?",
+          "It is spring now.",
           "It is cold in winter.",
-          "It is spring now."
+          "My favourite season is summer."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -161,8 +161,8 @@
         "options": [
           "My favourite season is summer.",
           "We can go swimming in summer.",
-          "It is cold in winter.",
-          "It is cool in autumn."
+          "It is cool in autumn.",
+          "It is cold in winter."
         ]
       },
       "answer": {
@@ -176,14 +176,14 @@
         "source": "秋天很凉爽。",
         "sourceLocale": "zh-CN",
         "options": [
-          "We can go swimming in summer.",
           "It is cool in autumn.",
           "Why do you like winter?",
-          "Because I can play in the snow."
+          "Because I can play in the snow.",
+          "We can go swimming in summer."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -195,8 +195,8 @@
         "options": [
           "My favourite season is summer.",
           "Why do you like winter?",
-          "Why do you like spring?",
-          "We can go swimming in summer."
+          "We can go swimming in summer.",
+          "Why do you like spring?"
         ]
       },
       "answer": {

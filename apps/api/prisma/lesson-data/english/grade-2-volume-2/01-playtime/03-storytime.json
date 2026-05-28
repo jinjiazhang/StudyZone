@@ -5,26 +5,10 @@
       "prompt": {
         "question": "Can a fish fly a kite?",
         "options": [
-          "Yes, it can.",
           "No, it can't.",
-          "Yes, it does.",
-          "No, it doesn't."
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "Can a bird fly?",
-        "options": [
+          "No, it doesn't.",
           "Yes, it can.",
-          "No, it can't.",
-          "Yes, it does.",
-          "No, it doesn't."
+          "Yes, it does."
         ]
       },
       "answer": {
@@ -35,16 +19,32 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "Lucky is a dog. Can he swim?",
+        "question": "Can a bird fly?",
         "options": [
-          "No, he can't.",
-          "Yes, he can.",
-          "He likes to read.",
-          "No, he is a cat."
+          "Yes, it does.",
+          "No, it doesn't.",
+          "No, it can't.",
+          "Yes, it can."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Lucky is a dog. Can he swim?",
+        "options": [
+          "No, he is a cat.",
+          "He likes to read.",
+          "Yes, he can.",
+          "No, he can't."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -53,10 +53,10 @@
       "prompt": {
         "question": "What do you do with a football?",
         "options": [
-          "I ride it.",
           "I swim it.",
+          "I make it.",
           "I play it.",
-          "I make it."
+          "I ride it."
         ]
       },
       "answer": {
@@ -69,14 +69,14 @@
       "prompt": {
         "question": "We want to make a snowman in...",
         "options": [
-          "spring",
-          "summer",
           "autumn",
-          "winter"
+          "winter",
+          "summer",
+          "spring"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -85,14 +85,14 @@
       "prompt": {
         "question": "Which one is NOT a sport or game?",
         "options": [
-          "swim",
           "play football",
           "ride a bike",
-          "eat dinner"
+          "eat dinner",
+          "swim"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -103,13 +103,13 @@
         "sourceLocale": "en-US",
         "options": [
           "让我们堆雪人吧！",
-          "他会放风筝吗？",
           "是的，我会。",
-          "我想踢足球。"
+          "我想踢足球。",
+          "他会放风筝吗？"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -119,14 +119,14 @@
         "source": "在对话中，听到 'Can you swim?' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你会游泳吗？",
           "是的，他会。",
-          "我不会放风筝。",
-          "我想踢足球。"
+          "我想踢足球。",
+          "你会游泳吗？",
+          "我不会放风筝。"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -153,14 +153,14 @@
         "source": "在对话中，听到 'No, I can't.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
+          "不，我不会。",
           "是的，他会。",
           "我会骑自行车。",
-          "不，我不会。",
           "我想踢足球。"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -170,14 +170,14 @@
         "source": "在对话中，听到 'I can ride a bike.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你会游泳吗？",
-          "不，他不会。",
           "不，我不会。",
-          "我会骑自行车。"
+          "我会骑自行车。",
+          "你会游泳吗？",
+          "不，他不会。"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -187,10 +187,10 @@
         "source": "在对话中，听到 'I can't fly a kite.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
+          "我想踢足球。",
           "不，我不会。",
-          "不，他不会。",
           "我不会放风筝。",
-          "我想踢足球。"
+          "不，他不会。"
         ]
       },
       "answer": {

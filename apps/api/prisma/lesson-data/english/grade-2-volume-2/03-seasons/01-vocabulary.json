@@ -6,14 +6,14 @@
         "source": "season",
         "sourceLocale": "en-US",
         "options": [
-          "夏天",
           "季节",
           "冬天",
+          "夏天",
           "最喜爱的"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -24,13 +24,13 @@
         "sourceLocale": "en-US",
         "options": [
           "寒冷的",
-          "春天",
           "季节",
+          "春天",
           "炎热的"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -40,14 +40,14 @@
         "source": "summer",
         "sourceLocale": "en-US",
         "options": [
-          "冬天",
           "寒冷的",
-          "秋天",
-          "夏天"
+          "冬天",
+          "夏天",
+          "秋天"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -75,26 +75,9 @@
         "sourceLocale": "en-US",
         "options": [
           "炎热的",
-          "冬天",
           "凉爽的",
-          "寒冷的"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "warm",
-        "sourceLocale": "en-US",
-        "options": [
-          "秋天",
-          "季节",
-          "冬天",
-          "温暖的"
+          "寒冷的",
+          "冬天"
         ]
       },
       "answer": {
@@ -105,17 +88,34 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "warm",
+        "sourceLocale": "en-US",
+        "options": [
+          "季节",
+          "温暖的",
+          "冬天",
+          "秋天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "夏天",
         "sourceLocale": "zh-CN",
         "options": [
           "spring",
+          "winter",
           "autumn",
-          "summer",
-          "winter"
+          "summer"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -126,13 +126,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "winter",
-          "autumn",
           "hot",
-          "cool"
+          "cool",
+          "autumn"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -159,10 +159,27 @@
         "source": "温暖的",
         "sourceLocale": "zh-CN",
         "options": [
-          "summer",
+          "warm",
           "favourite",
           "season",
-          "warm"
+          "summer"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "炎热的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "cool",
+          "favourite",
+          "autumn",
+          "hot"
         ]
       },
       "answer": {
@@ -173,34 +190,17 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "炎热的",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "favourite",
-          "hot",
-          "cool",
-          "autumn"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
         "source": "凉爽的",
         "sourceLocale": "zh-CN",
         "options": [
-          "cold",
           "favourite",
-          "cool",
-          "autumn"
+          "autumn",
+          "cold",
+          "cool"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },

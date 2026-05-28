@@ -6,14 +6,14 @@
         "source": "What time is it now?",
         "sourceLocale": "en-US",
         "options": [
-          "现在是八点整。",
           "现在是十二点三十分。",
           "现在几点了？",
-          "你几点睡觉？"
+          "你几点睡觉？",
+          "现在是八点整。"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -24,9 +24,9 @@
         "sourceLocale": "en-US",
         "options": [
           "现在是八点整。",
-          "现在是七点半。",
+          "该起床了。",
           "该吃午饭了。",
-          "该起床了。"
+          "现在是七点半。"
         ]
       },
       "answer": {
@@ -40,14 +40,14 @@
         "source": "It's half past seven.",
         "sourceLocale": "en-US",
         "options": [
-          "现在是七点半。",
-          "我九点钟睡觉。",
           "现在几点了？",
+          "我九点钟睡觉。",
+          "现在是七点半。",
           "该去上学了。"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -57,14 +57,14 @@
         "source": "It's twelve thirty.",
         "sourceLocale": "en-US",
         "options": [
-          "现在十点十五分。",
-          "现在是十二点三十分。",
           "现在几点了？",
-          "该去上学了。"
+          "现在十点十五分。",
+          "该去上学了。",
+          "现在是十二点三十分。"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -74,25 +74,8 @@
         "source": "It's time to get up.",
         "sourceLocale": "en-US",
         "options": [
-          "该起床了。",
           "现在是七点半。",
-          "你几点睡觉？",
-          "现在是十二点三十分。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 0
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "It's time to go to school.",
-        "sourceLocale": "en-US",
-        "options": [
-          "现在十点十五分。",
-          "该去上学了。",
+          "该起床了。",
           "现在是十二点三十分。",
           "你几点睡觉？"
         ]
@@ -105,17 +88,34 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "现在是七点半。",
-        "sourceLocale": "zh-CN",
+        "source": "It's time to go to school.",
+        "sourceLocale": "en-US",
         "options": [
-          "It's half past seven.",
-          "It's time to go to bed.",
-          "It's half past eleven.",
-          "What time is it now?"
+          "你几点睡觉？",
+          "现在是十二点三十分。",
+          "现在十点十五分。",
+          "该去上学了。"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "现在是七点半。",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "It's time to go to bed.",
+          "What time is it now?",
+          "It's half past seven.",
+          "It's half past eleven."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -125,10 +125,10 @@
         "source": "现在是十二点三十分。",
         "sourceLocale": "zh-CN",
         "options": [
-          "What time do you go to bed?",
+          "It's time to go to bed.",
           "It's twelve thirty.",
-          "It's half past seven.",
-          "It's time to go to bed."
+          "What time do you go to bed?",
+          "It's half past seven."
         ]
       },
       "answer": {
@@ -143,13 +143,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "It's ten fifteen.",
-          "It's half past seven.",
           "It's time to get up.",
+          "It's half past seven.",
           "I go to bed at nine."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -176,14 +176,14 @@
         "source": "该吃午饭了。",
         "sourceLocale": "zh-CN",
         "options": [
-          "I go to bed at nine.",
-          "It's time to have lunch.",
           "It's time to go to bed.",
-          "What time do you go to bed?"
+          "I go to bed at nine.",
+          "What time do you go to bed?",
+          "It's time to have lunch."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -193,14 +193,14 @@
         "source": "该睡觉了。",
         "sourceLocale": "zh-CN",
         "options": [
-          "It's time to go to bed.",
           "It's time to have lunch.",
           "It's time to get up.",
+          "It's time to go to bed.",
           "It's ten fifteen."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },

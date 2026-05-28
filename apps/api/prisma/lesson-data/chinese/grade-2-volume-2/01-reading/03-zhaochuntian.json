@@ -4,7 +4,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "《找春天》中，孩子们脱掉什么奔向田野寻找春天？",
-        "options": ["棉袄", "雨衣", "皮鞋", "帽子"]
+        "options": [
+          "棉袄",
+          "雨衣",
+          "帽子",
+          "皮鞋"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -15,7 +20,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "文中把春天比作什么？",
-        "options": ["害羞的小姑娘", "爱唱歌的小鸟", "奔跑的小骏马", "辛勤的园丁"]
+        "options": [
+          "害羞的小姑娘",
+          "奔跑的小骏马",
+          "爱唱歌的小鸟",
+          "辛勤的园丁"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -26,7 +36,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "“小草从地下探出头来”被孩子们比作春天的什么？",
-        "options": ["眉毛", "眼睛", "琴声", "衣裳"]
+        "options": [
+          "眉毛",
+          "眼睛",
+          "琴声",
+          "衣裳"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -37,10 +52,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“树木吐出点点嫩芽”被孩子们比作春天的什么？",
-        "options": ["音符", "眉毛", "眼睛", "琴声"]
+        "options": [
+          "眼睛",
+          "眉毛",
+          "琴声",
+          "音符"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -48,7 +68,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "“解冻的小溪丁丁冬冬”被比作春天的什么？",
-        "options": ["琴声", "泪水", "微笑", "眼睛"]
+        "options": [
+          "琴声",
+          "泪水",
+          "微笑",
+          "眼睛"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -60,7 +85,12 @@
       "prompt": {
         "character": "羞",
         "hint": "“害羞”的羞",
-        "options": ["xiū", "xiù", "xū", "qiū"]
+        "options": [
+          "xiū",
+          "xū",
+          "xiù",
+          "qiū"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -72,10 +102,15 @@
       "prompt": {
         "character": "掩",
         "hint": "“遮掩”的掩",
-        "options": ["yǎn", "yān", "yàn", "ǎn"]
+        "options": [
+          "yān",
+          "yǎn",
+          "ǎn",
+          "yàn"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -84,10 +119,15 @@
       "prompt": {
         "character": "嫩",
         "hint": "“嫩芽”的嫩",
-        "options": ["nèn", "lùn", "nèng", "nèi"]
+        "options": [
+          "nèi",
+          "lùn",
+          "nèn",
+          "nèng"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -96,10 +136,15 @@
       "prompt": {
         "character": "符",
         "hint": "“音符”的符",
-        "options": ["fú", "fǔ", "hú", "fū"]
+        "options": [
+          "fū",
+          "fú",
+          "fǔ",
+          "hú"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -108,10 +153,15 @@
       "prompt": {
         "character": "触",
         "hint": "“触到”的触",
-        "options": ["chù", "cù", "zhù", "shǔ"]
+        "options": [
+          "shǔ",
+          "chù",
+          "cù",
+          "zhù"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -120,7 +170,12 @@
       "prompt": {
         "character": "躲",
         "hint": "“躲躲藏藏”的躲",
-        "options": ["duǒ", "duō", "duò", "tuō"]
+        "options": [
+          "duǒ",
+          "tuō",
+          "duò",
+          "duō"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -134,10 +189,21 @@
         "hint": "“___下棉袄”的“脱”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["月", "兑", "日", "说", "木", "钅"],
+        "candidates": [
+          "月",
+          "兑",
+          "日",
+          "说",
+          "木",
+          "钅"
+        ],
         "target": "脱"
       },
       "answer": {
@@ -155,10 +221,21 @@
         "hint": "“解___”的“冻”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["冫", "东", "氵", "车", "木", "冬"],
+        "candidates": [
+          "冫",
+          "东",
+          "氵",
+          "车",
+          "木",
+          "冬"
+        ],
         "target": "冻"
       },
       "answer": {
@@ -176,10 +253,21 @@
         "hint": "“___藏”的“躲”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["身", "朵", "木", "几", "口", "予"],
+        "candidates": [
+          "身",
+          "朵",
+          "木",
+          "几",
+          "口",
+          "予"
+        ],
         "target": "躲"
       },
       "answer": {
@@ -197,10 +285,21 @@
         "hint": "“___娘”的“姑”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["女", "古", "子", "口", "木", "十"],
+        "candidates": [
+          "女",
+          "古",
+          "子",
+          "口",
+          "木",
+          "十"
+        ],
         "target": "姑"
       },
       "answer": {
@@ -215,16 +314,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "脱" },
-          { "id": "l2", "text": "寻" },
-          { "id": "l3", "text": "嫩" },
-          { "id": "l4", "text": "触" }
+          {
+            "id": "l1",
+            "text": "脱"
+          },
+          {
+            "id": "l2",
+            "text": "寻"
+          },
+          {
+            "id": "l3",
+            "text": "嫩"
+          },
+          {
+            "id": "l4",
+            "text": "触"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "寻找" },
-          { "id": "r2", "text": "触摸" },
-          { "id": "r3", "text": "脱掉" },
-          { "id": "r4", "text": "嫩绿" }
+          {
+            "id": "r1",
+            "text": "寻找"
+          },
+          {
+            "id": "r2",
+            "text": "触摸"
+          },
+          {
+            "id": "r3",
+            "text": "脱掉"
+          },
+          {
+            "id": "r4",
+            "text": "嫩绿"
+          }
         ]
       },
       "answer": {
@@ -241,16 +364,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "小草" },
-          { "id": "l2", "text": "野花" },
-          { "id": "l3", "text": "嫩芽" },
-          { "id": "l4", "text": "小溪" }
+          {
+            "id": "l1",
+            "text": "小草"
+          },
+          {
+            "id": "l2",
+            "text": "野花"
+          },
+          {
+            "id": "l3",
+            "text": "嫩芽"
+          },
+          {
+            "id": "l4",
+            "text": "小溪"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "春天的眉毛" },
-          { "id": "r2", "text": "春天的音符" },
-          { "id": "r3", "text": "春天的眼睛" },
-          { "id": "r4", "text": "春天的琴声" }
+          {
+            "id": "r1",
+            "text": "春天的眉毛"
+          },
+          {
+            "id": "r2",
+            "text": "春天的音符"
+          },
+          {
+            "id": "r3",
+            "text": "春天的眼睛"
+          },
+          {
+            "id": "r4",
+            "text": "春天的琴声"
+          }
         ]
       },
       "answer": {
@@ -267,16 +414,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "柳树枝" },
-          { "id": "l2", "text": "风筝尾巴" },
-          { "id": "l3", "text": "喜鹊嘴里" },
-          { "id": "l4", "text": "杏花枝头" }
+          {
+            "id": "l1",
+            "text": "柳树枝"
+          },
+          {
+            "id": "l2",
+            "text": "风筝尾巴"
+          },
+          {
+            "id": "l3",
+            "text": "喜鹊嘴里"
+          },
+          {
+            "id": "l4",
+            "text": "杏花枝头"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "摇啊摇" },
-          { "id": "r2", "text": "笑" },
-          { "id": "r3", "text": "荡秋千" },
-          { "id": "r4", "text": "叫" }
+          {
+            "id": "r1",
+            "text": "摇啊摇"
+          },
+          {
+            "id": "r2",
+            "text": "笑"
+          },
+          {
+            "id": "r3",
+            "text": "荡秋千"
+          },
+          {
+            "id": "r4",
+            "text": "叫"
+          }
         ]
       },
       "answer": {
@@ -293,7 +464,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "“遮遮掩掩，躲躲藏藏”这个词形容春天怎样的性格？",
-        "options": ["害羞", "勇敢", "大方", "骄傲"]
+        "options": [
+          "害羞",
+          "勇敢",
+          "大方",
+          "骄傲"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -304,10 +480,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“小草从地下探出头来”，其中的“探”字写出了什么？",
-        "options": ["悄悄地、好奇地向外张望", "用力地撞击地面", "拼命地向外跑", "非常伤心地哭泣"]
+        "options": [
+          "拼命地向外跑",
+          "用力地撞击地面",
+          "悄悄地、好奇地向外张望",
+          "非常伤心地哭泣"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -315,10 +496,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出描写小草探出头的句子",
-        "tokens": ["小草", "从地下", "探出头来", "大树", "开花"]
+        "tokens": [
+          "小草",
+          "从地下",
+          "探出头来",
+          "大树",
+          "开花"
+        ]
       },
       "answer": {
-        "ordered": ["小草", "从地下", "探出头来"]
+        "ordered": [
+          "小草",
+          "从地下",
+          "探出头来"
+        ]
       },
       "difficulty": 1
     },
@@ -326,10 +517,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出描写春天性格的句子",
-        "tokens": ["春天像个", "害羞的", "小姑娘", "大象", "非常强壮"]
+        "tokens": [
+          "春天像个",
+          "害羞的",
+          "小姑娘",
+          "大象",
+          "非常强壮"
+        ]
       },
       "answer": {
-        "ordered": ["春天像个", "害羞的", "小姑娘"]
+        "ordered": [
+          "春天像个",
+          "害羞的",
+          "小姑娘"
+        ]
       },
       "difficulty": 1
     },
@@ -337,10 +538,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出描写小溪的句子",
-        "tokens": ["解冻的", "小溪", "丁丁冬冬", "大河", "波涛汹涌"]
+        "tokens": [
+          "解冻的",
+          "小溪",
+          "丁丁冬冬",
+          "大河",
+          "波涛汹涌"
+        ]
       },
       "answer": {
-        "ordered": ["解冻的", "小溪", "丁丁冬冬"]
+        "ordered": [
+          "解冻的",
+          "小溪",
+          "丁丁冬冬"
+        ]
       },
       "difficulty": 1
     },
@@ -348,10 +559,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出孩子们在柳树枝上游玩的句子",
-        "tokens": ["我们在", "柳枝上", "荡秋千", "月亮", "上睡觉"]
+        "tokens": [
+          "我们在",
+          "柳枝上",
+          "荡秋千",
+          "月亮",
+          "上睡觉"
+        ]
       },
       "answer": {
-        "ordered": ["我们在", "柳枝上", "荡秋千"]
+        "ordered": [
+          "我们在",
+          "柳枝上",
+          "荡秋千"
+        ]
       },
       "difficulty": 1
     },
@@ -359,10 +580,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "我们在哪里“听到”了春天？",
-        "options": ["在喜鹊、杜鹃的叫声里", "在大卡车的喇叭声里", "在轰隆隆的雷雨声中", "在教室的大声喧哗里"]
+        "options": [
+          "在轰隆隆的雷雨声中",
+          "在喜鹊、杜鹃的叫声里",
+          "在大卡车的喇叭声里",
+          "在教室的大声喧哗里"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     }

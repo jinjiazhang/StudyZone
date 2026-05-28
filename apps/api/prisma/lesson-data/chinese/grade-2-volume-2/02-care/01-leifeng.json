@@ -4,7 +4,12 @@
       "type": "single_choice",
       "prompt": {
         "question": "《雷锋叔叔，你在哪里》一文中，雷锋叔叔在什么地方抱着迷路的孩子？",
-        "options": ["小溪边", "大山上", "小桥上", "学校里"]
+        "options": [
+          "小溪边",
+          "小桥上",
+          "大山上",
+          "学校里"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -15,10 +20,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "雷锋叔叔在什么地方背着年迈的大娘？",
-        "options": ["小路上", "小溪里", "大树下", "山谷里"]
+        "options": [
+          "小溪里",
+          "大树下",
+          "小路上",
+          "山谷里"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -26,10 +36,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“踩着路上的泥泞”中，“泥泞”是指什么？",
-        "options": ["因有雨水而烂泥不好走的路", "非常平整的水泥路", "绿油油的草地路", "宽敞明亮的大道"]
+        "options": [
+          "宽敞明亮的大道",
+          "绿油油的草地路",
+          "因有雨水而烂泥不好走的路",
+          "非常平整的水泥路"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -37,10 +52,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "课文最后，我们在哪里找到了雷锋叔叔？",
-        "options": ["哪里需要献出爱心，雷锋叔叔就出现在哪里", "在学校的操场上", "在静静的图书馆里", "在长颈鹿大叔的森林里"]
+        "options": [
+          "在静静的图书馆里",
+          "哪里需要献出爱心，雷锋叔叔就出现在哪里",
+          "在学校的操场上",
+          "在长颈鹿大叔的森林里"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -48,10 +68,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“顺着弯弯的小路，寻找雷锋的足迹”中，“足迹”的意思是？",
-        "options": ["脚印", "歌声", "笑容", "衣服"]
+        "options": [
+          "笑容",
+          "脚印",
+          "衣服",
+          "歌声"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -60,10 +85,15 @@
       "prompt": {
         "character": "泞",
         "hint": "“泥泞”的泞",
-        "options": ["nìng", "níng", "dǐng", "tíng"]
+        "options": [
+          "dǐng",
+          "níng",
+          "nìng",
+          "tíng"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -72,10 +102,15 @@
       "prompt": {
         "character": "迈",
         "hint": "“年迈”的迈",
-        "options": ["mài", "wàn", "bǎi", "màn"]
+        "options": [
+          "bǎi",
+          "màn",
+          "wàn",
+          "mài"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -84,7 +119,12 @@
       "prompt": {
         "character": "荆",
         "hint": "“荆棘”的荆",
-        "options": ["jīng", "xíng", "qíng", "jǐn"]
+        "options": [
+          "jīng",
+          "xíng",
+          "qíng",
+          "jǐn"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -96,7 +136,12 @@
       "prompt": {
         "character": "觅",
         "hint": "“寻觅”的觅",
-        "options": ["mì", "jiàn", "bèi", "nì"]
+        "options": [
+          "mì",
+          "nì",
+          "bèi",
+          "jiàn"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -108,10 +153,15 @@
       "prompt": {
         "character": "需",
         "hint": "“需要”的需",
-        "options": ["xū", "xǔ", "shū", "rù"]
+        "options": [
+          "xǔ",
+          "xū",
+          "shū",
+          "rù"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -120,10 +170,15 @@
       "prompt": {
         "character": "曾",
         "hint": "“曾经”的曾",
-        "options": ["céng", "zhēng", "cén", "shéng"]
+        "options": [
+          "zhēng",
+          "cén",
+          "shéng",
+          "céng"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -134,10 +189,21 @@
         "hint": "“___天”的“昨”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["日", "乍", "月", "口", "氵", "车"],
+        "candidates": [
+          "日",
+          "乍",
+          "月",
+          "口",
+          "氵",
+          "车"
+        ],
         "target": "昨"
       },
       "answer": {
@@ -155,10 +221,21 @@
         "hint": "“雷___”的“锋”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["钅", "夆", "木", "氵", "土", "日"],
+        "candidates": [
+          "钅",
+          "夆",
+          "木",
+          "氵",
+          "土",
+          "日"
+        ],
         "target": "锋"
       },
       "answer": {
@@ -176,10 +253,21 @@
         "hint": "“___下”的“洒”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["氵", "西", "木", "口", "日", "人"],
+        "candidates": [
+          "氵",
+          "西",
+          "木",
+          "口",
+          "日",
+          "人"
+        ],
         "target": "洒"
       },
       "answer": {
@@ -197,10 +285,21 @@
         "hint": "“温___”的“暖”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["日", "爰", "爱", "爪", "又", "木"],
+        "candidates": [
+          "日",
+          "爰",
+          "爱",
+          "爪",
+          "又",
+          "木"
+        ],
         "target": "暖"
       },
       "answer": {
@@ -215,16 +314,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "雷" },
-          { "id": "l2", "text": "昨" },
-          { "id": "l3", "text": "年" },
-          { "id": "l4", "text": "泥" }
+          {
+            "id": "l1",
+            "text": "雷"
+          },
+          {
+            "id": "l2",
+            "text": "昨"
+          },
+          {
+            "id": "l3",
+            "text": "年"
+          },
+          {
+            "id": "l4",
+            "text": "泥"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "锋" },
-          { "id": "r2", "text": "天" },
-          { "id": "r3", "text": "迈" },
-          { "id": "r4", "text": "泞" }
+          {
+            "id": "r1",
+            "text": "锋"
+          },
+          {
+            "id": "r2",
+            "text": "天"
+          },
+          {
+            "id": "r3",
+            "text": "迈"
+          },
+          {
+            "id": "r4",
+            "text": "泞"
+          }
         ]
       },
       "answer": {
@@ -241,16 +364,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "足迹" },
-          { "id": "l2", "text": "寻觅" },
-          { "id": "l3", "text": "年迈" },
-          { "id": "l4", "text": "温暖" }
+          {
+            "id": "l1",
+            "text": "足迹"
+          },
+          {
+            "id": "l2",
+            "text": "寻觅"
+          },
+          {
+            "id": "l3",
+            "text": "年迈"
+          },
+          {
+            "id": "l4",
+            "text": "温暖"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "脚印" },
-          { "id": "r2", "text": "寻找" },
-          { "id": "r3", "text": "年纪很大" },
-          { "id": "r4", "text": "暖和、充满爱心" }
+          {
+            "id": "r1",
+            "text": "脚印"
+          },
+          {
+            "id": "r2",
+            "text": "寻找"
+          },
+          {
+            "id": "r3",
+            "text": "年纪很大"
+          },
+          {
+            "id": "r4",
+            "text": "暖和、充满爱心"
+          }
         ]
       },
       "answer": {
@@ -267,16 +414,40 @@
       "type": "match_pairs",
       "prompt": {
         "left": [
-          { "id": "l1", "text": "踩着" },
-          { "id": "l2", "text": "迈步" },
-          { "id": "l3", "text": "冒着" },
-          { "id": "l4", "text": "抱着" }
+          {
+            "id": "l1",
+            "text": "踩着"
+          },
+          {
+            "id": "l2",
+            "text": "迈步"
+          },
+          {
+            "id": "l3",
+            "text": "冒着"
+          },
+          {
+            "id": "l4",
+            "text": "抱着"
+          }
         ],
         "right": [
-          { "id": "r1", "text": "泥泞" },
-          { "id": "r2", "text": "荆棘" },
-          { "id": "r3", "text": "细雨" },
-          { "id": "r4", "text": "孩子" }
+          {
+            "id": "r1",
+            "text": "泥泞"
+          },
+          {
+            "id": "r2",
+            "text": "荆棘"
+          },
+          {
+            "id": "r3",
+            "text": "细雨"
+          },
+          {
+            "id": "r4",
+            "text": "孩子"
+          }
         ]
       },
       "answer": {
@@ -293,10 +464,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“哪里需要献出爱心，雷锋叔叔就出现在哪里”，这句话的真正含义是？",
-        "options": ["我们要像雷锋叔叔一样，随时随地关爱、帮助别人", "雷锋叔叔懂得瞬间移动", "雷锋叔叔只在有人叫他时才出现", "雷锋叔叔会在每个商场里出现"]
+        "options": [
+          "雷锋叔叔懂得瞬间移动",
+          "雷锋叔叔只在有人叫他时才出现",
+          "雷锋叔叔会在每个商场里出现",
+          "我们要像雷锋叔叔一样，随时随地关爱、帮助别人"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -304,10 +480,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“瞧，那泥泞路上的脚窝，就是他留下的足迹”，这里的“脚窝”是指什么？",
-        "options": ["踩在烂泥路里陷下去的脚印", "马路上的大水坑", "小动物在泥土里挖的洞", "地上的小石子凹坑"]
+        "options": [
+          "小动物在泥土里挖的洞",
+          "地上的小石子凹坑",
+          "马路上的大水坑",
+          "踩在烂泥路里陷下去的脚印"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -315,10 +496,18 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出向春天风儿询问雷锋下落的句子",
-        "tokens": ["雷锋叔叔，", "你在哪里", "松鼠太太，", "你出门吗"]
+        "tokens": [
+          "雷锋叔叔，",
+          "你在哪里",
+          "松鼠太太，",
+          "你出门吗"
+        ]
       },
       "answer": {
-        "ordered": ["雷锋叔叔，", "你在哪里"]
+        "ordered": [
+          "雷锋叔叔，",
+          "你在哪里"
+        ]
       },
       "difficulty": 1
     },
@@ -326,10 +515,21 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出我们乘风寻找的句子",
-        "tokens": ["乘着", "温暖的春风，", "我们", "四处寻觅", "大雪下着"]
+        "tokens": [
+          "乘着",
+          "温暖的春风，",
+          "我们",
+          "四处寻觅",
+          "大雪下着"
+        ]
       },
       "answer": {
-        "ordered": ["乘着", "温暖的春风，", "我们", "四处寻觅"]
+        "ordered": [
+          "乘着",
+          "温暖的春风，",
+          "我们",
+          "四处寻觅"
+        ]
       },
       "difficulty": 1
     },
@@ -337,10 +537,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出雷锋抱迷路孩子的句子",
-        "tokens": ["雷锋叔叔", "抱着", "迷路的孩子", "叔叔", "吃着苹果"]
+        "tokens": [
+          "雷锋叔叔",
+          "抱着",
+          "迷路的孩子",
+          "叔叔",
+          "吃着苹果"
+        ]
       },
       "answer": {
-        "ordered": ["雷锋叔叔", "抱着", "迷路的孩子"]
+        "ordered": [
+          "雷锋叔叔",
+          "抱着",
+          "迷路的孩子"
+        ]
       },
       "difficulty": 1
     },
@@ -348,10 +558,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出雷锋背年迈大娘的句子",
-        "tokens": ["雷锋叔叔", "背着", "年迈的大娘", "小猫", "爬上了树"]
+        "tokens": [
+          "雷锋叔叔",
+          "背着",
+          "年迈的大娘",
+          "小猫",
+          "爬上了树"
+        ]
       },
       "answer": {
-        "ordered": ["雷锋叔叔", "背着", "年迈的大娘"]
+        "ordered": [
+          "雷锋叔叔",
+          "背着",
+          "年迈的大娘"
+        ]
       },
       "difficulty": 1
     },
@@ -359,10 +579,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“顺着弯弯的小溪”，我们寻找雷锋叔叔，听到了什么？",
-        "options": ["泉水丁冬的声音", "小鸟的歌声", "风筝呼呼作响", "下雨的声音"]
+        "options": [
+          "风筝呼呼作响",
+          "泉水丁冬的声音",
+          "下雨的声音",
+          "小鸟的歌声"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     }

@@ -6,10 +6,10 @@
         "source": "get up",
         "sourceLocale": "en-US",
         "options": [
-          "吃午饭",
           "在……",
+          "去学校",
           "起床",
-          "去学校"
+          "吃午饭"
         ]
       },
       "answer": {
@@ -24,13 +24,13 @@
         "sourceLocale": "en-US",
         "options": [
           "上床睡觉",
-          "起床",
           "吃早饭",
+          "起床",
           "回家"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -40,10 +40,10 @@
         "source": "eat lunch",
         "sourceLocale": "en-US",
         "options": [
-          "回家",
-          "吃午饭",
           "吃早饭",
-          "上床睡觉"
+          "吃午饭",
+          "上床睡觉",
+          "回家"
         ]
       },
       "answer": {
@@ -57,14 +57,14 @@
         "source": "eat dinner",
         "sourceLocale": "en-US",
         "options": [
+          "回家",
           "去学校",
           "什么时候",
-          "吃晚饭",
-          "回家"
+          "吃晚饭"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -74,27 +74,10 @@
         "source": "go to school",
         "sourceLocale": "en-US",
         "options": [
-          "起床",
-          "回家",
-          "去学校",
-          "什么时候"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "go home",
-        "sourceLocale": "en-US",
-        "options": [
           "什么时候",
+          "去学校",
           "回家",
-          "起床",
-          "去学校"
+          "起床"
         ]
       },
       "answer": {
@@ -105,17 +88,34 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "吃午饭",
-        "sourceLocale": "zh-CN",
+        "source": "go home",
+        "sourceLocale": "en-US",
         "options": [
-          "get up",
-          "eat breakfast",
-          "go to school",
-          "eat lunch"
+          "去学校",
+          "什么时候",
+          "起床",
+          "回家"
         ]
       },
       "answer": {
         "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "吃午饭",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "get up",
+          "go to school",
+          "eat lunch",
+          "eat breakfast"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -125,14 +125,14 @@
         "source": "吃晚饭",
         "sourceLocale": "zh-CN",
         "options": [
-          "go to school",
           "go home",
           "at",
-          "eat dinner"
+          "eat dinner",
+          "go to school"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -142,9 +142,9 @@
         "source": "去学校",
         "sourceLocale": "zh-CN",
         "options": [
+          "go to bed",
           "at",
           "eat dinner",
-          "go to bed",
           "go to school"
         ]
       },
@@ -159,14 +159,14 @@
         "source": "回家",
         "sourceLocale": "zh-CN",
         "options": [
-          "get up",
-          "go to school",
+          "every day",
           "go home",
-          "every day"
+          "go to school",
+          "get up"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -193,14 +193,14 @@
         "source": "什么时候",
         "sourceLocale": "zh-CN",
         "options": [
-          "eat lunch",
           "when",
-          "go to bed",
-          "eat breakfast"
+          "eat breakfast",
+          "eat lunch",
+          "go to bed"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 1
     },

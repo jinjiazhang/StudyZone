@@ -4,10 +4,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "《村居》的作者是？",
-        "options": ["高鼎", "贺知章", "孟浩然", "王之涣"]
+        "options": [
+          "王之涣",
+          "孟浩然",
+          "高鼎",
+          "贺知章"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -15,10 +20,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "《村居》是哪一个朝代的诗人写的？",
-        "options": ["清", "唐", "宋", "元"]
+        "options": [
+          "唐",
+          "宋",
+          "元",
+          "清"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -27,10 +37,15 @@
       "prompt": {
         "character": "莺",
         "hint": "“草长莺飞二月天”的莺",
-        "options": ["yīng", "yín", "yǐng", "yìng"]
+        "options": [
+          "yǐng",
+          "yín",
+          "yìng",
+          "yīng"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -39,10 +54,15 @@
       "prompt": {
         "character": "堤",
         "hint": "“拂堤杨柳醉春烟”的堤",
-        "options": ["dī", "tí", "dēi", "dì"]
+        "options": [
+          "tí",
+          "dēi",
+          "dī",
+          "dì"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -51,7 +71,12 @@
       "prompt": {
         "character": "趁",
         "hint": "“忙趁东风放纸鸢”的趁",
-        "options": ["chèn", "chèng", "cèn", "chéng"]
+        "options": [
+          "chèn",
+          "chéng",
+          "chèng",
+          "cèn"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -63,7 +88,12 @@
       "prompt": {
         "character": "鸢",
         "hint": "“忙趁东风放纸鸢”的鸢",
-        "options": ["yuān", "yān", "yuán", "yàn"]
+        "options": [
+          "yuān",
+          "yuán",
+          "yàn",
+          "yān"
+        ]
       },
       "answer": {
         "correctIndex": 0
@@ -77,10 +107,21 @@
         "hint": "“忙趁东风放纸___”的“___”",
         "structure": "vertical",
         "slots": [
-          { "id": "top" },
-          { "id": "bottom" }
+          {
+            "id": "top"
+          },
+          {
+            "id": "bottom"
+          }
         ],
-        "candidates": ["弋", "鸟", "弓", "戈", "鸡", "燕"],
+        "candidates": [
+          "弋",
+          "鸟",
+          "弓",
+          "戈",
+          "鸡",
+          "燕"
+        ],
         "target": "鸢"
       },
       "answer": {
@@ -98,10 +139,21 @@
         "hint": "“拂___杨柳醉春烟”的“___”",
         "structure": "horizontal",
         "slots": [
-          { "id": "left" },
-          { "id": "right" }
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
         ],
-        "candidates": ["土", "是", "工", "提", "走", "足"],
+        "candidates": [
+          "土",
+          "是",
+          "工",
+          "提",
+          "走",
+          "足"
+        ],
         "target": "堤"
       },
       "answer": {
@@ -216,10 +268,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“草长莺飞二月天”写出了什么景象？",
-        "options": ["青草生长、黄莺飞舞的早春", "大雪纷飞的冬天", "秋天落叶满地", "夏夜星星很多"]
+        "options": [
+          "夏夜星星很多",
+          "秋天落叶满地",
+          "大雪纷飞的冬天",
+          "青草生长、黄莺飞舞的早春"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -227,10 +284,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "“拂堤杨柳醉春烟”中的“拂堤”是什么意思？",
-        "options": ["柳枝轻轻拂着堤岸", "孩子们跑过堤岸", "春风吹散烟雾", "小船停在岸边"]
+        "options": [
+          "小船停在岸边",
+          "春风吹散烟雾",
+          "孩子们跑过堤岸",
+          "柳枝轻轻拂着堤岸"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -238,10 +300,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "诗中儿童放学后急着去做什么？",
-        "options": ["放风筝", "读书", "采花", "划船"]
+        "options": [
+          "读书",
+          "采花",
+          "放风筝",
+          "划船"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -249,10 +316,15 @@
       "type": "single_choice",
       "prompt": {
         "question": "《村居》表达了怎样的生活气息？",
-        "options": ["春天乡村生活的生机与快乐", "边塞战争的紧张", "夜晚思乡的忧愁", "秋收劳动的辛苦"]
+        "options": [
+          "夜晚思乡的忧愁",
+          "春天乡村生活的生机与快乐",
+          "边塞战争的紧张",
+          "秋收劳动的辛苦"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -260,10 +332,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出第一句",
-        "tokens": ["草长", "莺飞", "二月天", "东风", "纸鸢"]
+        "tokens": [
+          "草长",
+          "莺飞",
+          "二月天",
+          "东风",
+          "纸鸢"
+        ]
       },
       "answer": {
-        "ordered": ["草长", "莺飞", "二月天"]
+        "ordered": [
+          "草长",
+          "莺飞",
+          "二月天"
+        ]
       },
       "difficulty": 1
     },
@@ -271,10 +353,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出第二句",
-        "tokens": ["拂堤", "杨柳", "醉春烟", "莺飞", "归来早"]
+        "tokens": [
+          "拂堤",
+          "杨柳",
+          "醉春烟",
+          "莺飞",
+          "归来早"
+        ]
       },
       "answer": {
-        "ordered": ["拂堤", "杨柳", "醉春烟"]
+        "ordered": [
+          "拂堤",
+          "杨柳",
+          "醉春烟"
+        ]
       },
       "difficulty": 1
     },
@@ -282,10 +374,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出第三句",
-        "tokens": ["儿童", "散学", "归来早", "草长", "春烟"]
+        "tokens": [
+          "儿童",
+          "散学",
+          "归来早",
+          "草长",
+          "春烟"
+        ]
       },
       "answer": {
-        "ordered": ["儿童", "散学", "归来早"]
+        "ordered": [
+          "儿童",
+          "散学",
+          "归来早"
+        ]
       },
       "difficulty": 1
     },
@@ -293,10 +395,20 @@
       "type": "word_bank",
       "prompt": {
         "source": "排出第四句",
-        "tokens": ["忙趁", "东风", "放纸鸢", "杨柳", "二月天"]
+        "tokens": [
+          "忙趁",
+          "东风",
+          "放纸鸢",
+          "杨柳",
+          "二月天"
+        ]
       },
       "answer": {
-        "ordered": ["忙趁", "东风", "放纸鸢"]
+        "ordered": [
+          "忙趁",
+          "东风",
+          "放纸鸢"
+        ]
       },
       "difficulty": 1
     },
@@ -307,13 +419,27 @@
         "author": "高鼎",
         "context": "草长莺飞二月天，拂堤杨柳醉春烟。",
         "lines": [
-          ["草长", null, "二月天", "，"],
-          ["拂堤杨柳", "醉春烟", "。"]
+          [
+            "草长",
+            null,
+            "二月天",
+            "，"
+          ],
+          [
+            "拂堤杨柳",
+            "醉春烟",
+            "。"
+          ]
         ],
-        "options": ["莺飞", "柳飞", "燕回", "花开"]
+        "options": [
+          "燕回",
+          "柳飞",
+          "花开",
+          "莺飞"
+        ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -324,10 +450,23 @@
         "author": "高鼎",
         "context": "儿童散学归来早，忙趁东风放纸鸢。",
         "lines": [
-          ["儿童散学", "归来早", "，"],
-          ["忙趁东风", null, "。"]
+          [
+            "儿童散学",
+            "归来早",
+            "，"
+          ],
+          [
+            "忙趁东风",
+            null,
+            "。"
+          ]
         ],
-        "options": ["放纸鸢", "看柳树", "唱春歌", "过小桥"]
+        "options": [
+          "放纸鸢",
+          "过小桥",
+          "唱春歌",
+          "看柳树"
+        ]
       },
       "answer": {
         "correctIndex": 0

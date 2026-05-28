@@ -6,14 +6,14 @@
         "source": "swim",
         "sourceLocale": "en-US",
         "options": [
-          "不会",
-          "会",
           "做飞机模型",
-          "游泳"
+          "游泳",
+          "不会",
+          "会"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -23,14 +23,14 @@
         "source": "play",
         "sourceLocale": "en-US",
         "options": [
+          "放风筝",
           "会",
           "不会",
-          "玩",
-          "放风筝"
+          "玩"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -41,13 +41,13 @@
         "sourceLocale": "en-US",
         "options": [
           "不会",
+          "做飞机模型",
           "会",
-          "堆雪人",
-          "做飞机模型"
+          "堆雪人"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -57,61 +57,10 @@
         "source": "can't",
         "sourceLocale": "en-US",
         "options": [
-          "不会",
-          "踢足球",
-          "放风筝",
-          "会"
-        ]
-      },
-      "answer": {
-        "correctIndex": 0
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "ride a bike",
-        "sourceLocale": "en-US",
-        "options": [
-          "放风筝",
-          "骑自行车",
           "会",
-          "游泳"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "fly a kite",
-        "sourceLocale": "en-US",
-        "options": [
-          "放风筝",
-          "骑自行车",
           "踢足球",
-          "玩"
-        ]
-      },
-      "answer": {
-        "correctIndex": 0
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "会",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "fly a kite",
-          "play football",
-          "ride a bike",
-          "can"
+          "放风筝",
+          "不会"
         ]
       },
       "answer": {
@@ -122,13 +71,13 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "不会",
-        "sourceLocale": "zh-CN",
+        "source": "ride a bike",
+        "sourceLocale": "en-US",
         "options": [
-          "can't",
-          "play",
-          "fly a kite",
-          "play football"
+          "骑自行车",
+          "会",
+          "游泳",
+          "放风筝"
         ]
       },
       "answer": {
@@ -139,13 +88,30 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "骑自行车",
+        "source": "fly a kite",
+        "sourceLocale": "en-US",
+        "options": [
+          "踢足球",
+          "玩",
+          "骑自行车",
+          "放风筝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "会",
         "sourceLocale": "zh-CN",
         "options": [
+          "fly a kite",
+          "can",
           "play football",
-          "ride a bike",
-          "swim",
-          "make a snowman"
+          "ride a bike"
         ]
       },
       "answer": {
@@ -156,12 +122,46 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "不会",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "fly a kite",
+          "play football",
+          "play",
+          "can't"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "骑自行车",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "swim",
+          "make a snowman",
+          "ride a bike",
+          "play football"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "放风筝",
         "sourceLocale": "zh-CN",
         "options": [
-          "make a model plane",
-          "fly a kite",
           "make a snowman",
+          "fly a kite",
+          "make a model plane",
           "ride a bike"
         ]
       },
@@ -176,14 +176,14 @@
         "source": "做飞机模型",
         "sourceLocale": "zh-CN",
         "options": [
-          "can't",
+          "play football",
           "can",
-          "make a model plane",
-          "play football"
+          "can't",
+          "make a model plane"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -193,14 +193,14 @@
         "source": "堆雪人",
         "sourceLocale": "zh-CN",
         "options": [
+          "ride a bike",
           "make a snowman",
           "can't",
-          "ride a bike",
           "make a model plane"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },

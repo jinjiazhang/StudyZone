@@ -6,10 +6,10 @@
         "source": "What day is it today?",
         "sourceLocale": "en-US",
         "options": [
-          "我星期日踢足球。",
+          "你星期日做什么？",
           "我星期五做飞机模型。",
           "今天星期几？",
-          "你星期日做什么？"
+          "我星期日踢足球。"
         ]
       },
       "answer": {
@@ -24,13 +24,13 @@
         "sourceLocale": "en-US",
         "options": [
           "我星期日踢足球。",
-          "今天星期一。",
+          "我们从周一到周五去上学。",
           "我周三有英语课。",
-          "我们从周一到周五去上学。"
+          "今天星期一。"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -40,61 +40,10 @@
         "source": "What do you do on Saturday?",
         "sourceLocale": "en-US",
         "options": [
-          "我星期六骑自行车。",
           "我星期日踢足球。",
           "我们从周一到周五去上学。",
-          "你星期六做什么？"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "I ride a bike on Saturday.",
-        "sourceLocale": "en-US",
-        "options": [
-          "我周三有英语课。",
-          "我星期六骑自行车。",
           "你星期六做什么？",
-          "我星期日踢足球。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "What do you do on Sunday?",
-        "sourceLocale": "en-US",
-        "options": [
-          "我们从周一到周五去上学。",
-          "你星期五做什么？",
-          "今天星期几？",
-          "你星期日做什么？"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "I play football on Sunday.",
-        "sourceLocale": "en-US",
-        "options": [
-          "你星期六做什么？",
-          "今天星期三。",
-          "我星期日踢足球。",
-          "你星期五做什么？"
+          "我星期六骑自行车。"
         ]
       },
       "answer": {
@@ -105,17 +54,68 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "你星期六做什么？",
-        "sourceLocale": "zh-CN",
+        "source": "I ride a bike on Saturday.",
+        "sourceLocale": "en-US",
         "options": [
-          "What do you do on Friday?",
-          "What do you do on Saturday?",
-          "Today is Wednesday.",
-          "I make a model plane on Friday."
+          "我周三有英语课。",
+          "我星期日踢足球。",
+          "我星期六骑自行车。",
+          "你星期六做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "What do you do on Sunday?",
+        "sourceLocale": "en-US",
+        "options": [
+          "我们从周一到周五去上学。",
+          "你星期日做什么？",
+          "你星期五做什么？",
+          "今天星期几？"
         ]
       },
       "answer": {
         "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I play football on Sunday.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你星期五做什么？",
+          "我星期日踢足球。",
+          "你星期六做什么？",
+          "今天星期三。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "你星期六做什么？",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "I make a model plane on Friday.",
+          "What do you do on Friday?",
+          "What do you do on Saturday?",
+          "Today is Wednesday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -126,13 +126,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "We go to school from Monday to Friday.",
+          "Today is Wednesday.",
           "I ride a bike on Saturday.",
-          "What do you do on Friday?",
-          "Today is Wednesday."
+          "What do you do on Friday?"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -142,8 +142,8 @@
         "source": "你星期日做什么？",
         "sourceLocale": "zh-CN",
         "options": [
-          "What do you do on Saturday?",
           "What day is it today?",
+          "What do you do on Saturday?",
           "What do you do on Sunday?",
           "I have English class on Wednesday."
         ]
@@ -159,10 +159,10 @@
         "source": "我星期日踢足球。",
         "sourceLocale": "zh-CN",
         "options": [
-          "We go to school from Monday to Friday.",
+          "What do you do on Saturday?",
           "I play football on Sunday.",
-          "What do you do on Friday?",
-          "What do you do on Saturday?"
+          "We go to school from Monday to Friday.",
+          "What do you do on Friday?"
         ]
       },
       "answer": {
@@ -176,14 +176,14 @@
         "source": "我们从周一到周五去上学。",
         "sourceLocale": "zh-CN",
         "options": [
+          "What day is it today?",
           "I play football on Sunday.",
           "We go to school from Monday to Friday.",
-          "What day is it today?",
           "It is Monday today."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -193,10 +193,10 @@
         "source": "我周三有英语课。",
         "sourceLocale": "zh-CN",
         "options": [
+          "What do you do on Sunday?",
           "We go to school from Monday to Friday.",
-          "What day is it today?",
           "I have English class on Wednesday.",
-          "What do you do on Sunday?"
+          "What day is it today?"
         ]
       },
       "answer": {

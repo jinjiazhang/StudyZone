@@ -6,14 +6,14 @@
         "source": "weather",
         "sourceLocale": "en-US",
         "options": [
-          "天气",
           "多风的",
+          "天气",
           "下雨的",
           "冷的"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -24,9 +24,9 @@
         "sourceLocale": "en-US",
         "options": [
           "下雪的",
-          "冷的",
+          "多风的",
           "晴朗的",
-          "多风的"
+          "冷的"
         ]
       },
       "answer": {
@@ -40,14 +40,14 @@
         "source": "cloudy",
         "sourceLocale": "en-US",
         "options": [
-          "下雨的",
-          "多云的",
           "晴朗的",
-          "多风的"
+          "多风的",
+          "多云的",
+          "下雨的"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -57,14 +57,14 @@
         "source": "rainy",
         "sourceLocale": "en-US",
         "options": [
-          "多云的",
-          "多风的",
           "下雪的",
-          "下雨的"
+          "多云的",
+          "下雨的",
+          "多风的"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -74,9 +74,9 @@
         "source": "windy",
         "sourceLocale": "en-US",
         "options": [
-          "晴朗的",
-          "多风的",
           "下雪的",
+          "多风的",
+          "晴朗的",
           "冷的"
         ]
       },
@@ -92,26 +92,9 @@
         "sourceLocale": "en-US",
         "options": [
           "冷的",
-          "雨伞",
           "下雪的",
-          "天气"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "多云的",
-        "sourceLocale": "zh-CN",
-        "options": [
-          "cold",
-          "cloudy",
-          "snowy",
-          "hot"
+          "天气",
+          "雨伞"
         ]
       },
       "answer": {
@@ -122,30 +105,30 @@
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "下雨的",
+        "source": "多云的",
         "sourceLocale": "zh-CN",
         "options": [
-          "umbrella",
-          "sunny",
-          "rainy",
+          "snowy",
+          "hot",
+          "cold",
           "cloudy"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
     {
       "type": "translate_choice",
       "prompt": {
-        "source": "多风的",
+        "source": "下雨的",
         "sourceLocale": "zh-CN",
         "options": [
-          "windy",
-          "cold",
           "rainy",
-          "snowy"
+          "cloudy",
+          "sunny",
+          "umbrella"
         ]
       },
       "answer": {
@@ -156,12 +139,29 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "多风的",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "cold",
+          "snowy",
+          "windy",
+          "rainy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "下雪的",
         "sourceLocale": "zh-CN",
         "options": [
           "snowy",
-          "cloudy",
           "weather",
+          "cloudy",
           "rainy"
         ]
       },
@@ -176,14 +176,14 @@
         "source": "雨伞",
         "sourceLocale": "zh-CN",
         "options": [
-          "windy",
-          "umbrella",
+          "rainy",
           "hot",
-          "rainy"
+          "umbrella",
+          "windy"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -194,13 +194,13 @@
         "sourceLocale": "zh-CN",
         "options": [
           "weather",
+          "hot",
           "rainy",
-          "sunny",
-          "hot"
+          "sunny"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },

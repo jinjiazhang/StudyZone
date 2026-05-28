@@ -5,14 +5,14 @@
       "prompt": {
         "question": "Which days are the weekend?",
         "options": [
-          "Monday and Tuesday",
-          "Wednesday and Thursday",
+          "Friday and Saturday",
           "Saturday and Sunday",
-          "Friday and Saturday"
+          "Wednesday and Thursday",
+          "Monday and Tuesday"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -21,26 +21,10 @@
       "prompt": {
         "question": "What day comes after Tuesday?",
         "options": [
+          "Friday",
           "Monday",
           "Wednesday",
-          "Thursday",
-          "Friday"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "How many days are there in a week?",
-        "options": [
-          "five days",
-          "six days",
-          "seven days",
-          "ten days"
+          "Thursday"
         ]
       },
       "answer": {
@@ -51,16 +35,32 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "What do kids do from Monday to Friday?",
+        "question": "How many days are there in a week?",
         "options": [
-          "play snowman",
-          "go to school",
-          "go swimming in winter",
-          "stay in bed"
+          "six days",
+          "seven days",
+          "ten days",
+          "five days"
         ]
       },
       "answer": {
         "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What do kids do from Monday to Friday?",
+        "options": [
+          "go swimming in winter",
+          "play snowman",
+          "go to school",
+          "stay in bed"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -69,14 +69,14 @@
       "prompt": {
         "question": "Today is Friday. What day is tomorrow?",
         "options": [
+          "Monday",
           "Thursday",
           "Saturday",
-          "Sunday",
-          "Monday"
+          "Sunday"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -85,14 +85,14 @@
       "prompt": {
         "question": "What day starts with 'M'?",
         "options": [
-          "Monday",
           "Tuesday",
           "Sunday",
+          "Monday",
           "Friday"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -103,13 +103,13 @@
         "sourceLocale": "en-US",
         "options": [
           "我星期六骑自行车。",
-          "今天星期一。",
           "我星期日踢足球。",
+          "今天星期一。",
           "我周三有英语课。"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -119,61 +119,10 @@
         "source": "在对话中，听到 'What do you do on Saturday?' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
+          "今天星期一。",
+          "我星期日踢足球。",
           "我周三有英语课。",
-          "你星期六做什么？",
-          "今天星期一。",
-          "我星期日踢足球。"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'I ride a bike on Saturday.' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "我周三有英语课。",
-          "今天星期一。",
-          "我星期六骑自行车。",
-          "你星期日做什么？"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'What do you do on Sunday?' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "我星期五做飞机模型。",
-          "今天星期一。",
-          "你星期日做什么？",
           "你星期六做什么？"
-        ]
-      },
-      "answer": {
-        "correctIndex": 2
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "translate_choice",
-      "prompt": {
-        "source": "在对话中，听到 'I play football on Sunday.' 对应的意思是：",
-        "sourceLocale": "en-US",
-        "options": [
-          "我星期六骑自行车。",
-          "我周三有英语课。",
-          "你星期五做什么？",
-          "我星期日踢足球。"
         ]
       },
       "answer": {
@@ -184,13 +133,64 @@
     {
       "type": "translate_choice",
       "prompt": {
+        "source": "在对话中，听到 'I ride a bike on Saturday.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你星期日做什么？",
+          "今天星期一。",
+          "我周三有英语课。",
+          "我星期六骑自行车。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'What do you do on Sunday?' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "你星期日做什么？",
+          "我星期五做飞机模型。",
+          "今天星期一。",
+          "你星期六做什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "在对话中，听到 'I play football on Sunday.' 对应的意思是：",
+        "sourceLocale": "en-US",
+        "options": [
+          "我星期六骑自行车。",
+          "你星期五做什么？",
+          "我星期日踢足球。",
+          "我周三有英语课。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
         "source": "在对话中，听到 'We go to school from Monday to Friday.' 对应的意思是：",
         "sourceLocale": "en-US",
         "options": [
-          "你星期五做什么？",
+          "我星期六骑自行车。",
           "我们从周一到周五去上学。",
           "你星期日做什么？",
-          "我星期六骑自行车。"
+          "你星期五做什么？"
         ]
       },
       "answer": {
