@@ -23,12 +23,13 @@ export const useAuth = create<AuthState>()(
 
 const baseUrl =
   (import.meta as any).env?.VITE_API_URL ?? 'http://localhost:4000';
+const adminBase = ((import.meta as any).env?.VITE_ADMIN_BASE ?? '/admin').replace(/\/$/, '');
 
 export const api = new StudyZoneClient({
   baseUrl,
   getAccessToken: () => useAuth.getState().accessToken,
   onUnauthorized: () => {
     useAuth.getState().clear();
-    window.location.href = '/admin/login';
+    window.location.href = `${adminBase}/login`;
   },
 });

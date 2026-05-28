@@ -1,0 +1,17 @@
+[Unit]
+Description=StudyZone Web
+After=network.target studyzone-api.service
+Wants=studyzone-api.service
+
+[Service]
+Type=simple
+WorkingDirectory={{ROOT_DIR}}/apps/web
+EnvironmentFile={{ROOT_DIR}}/.env
+ExecStart={{ROOT_DIR}}/apps/web/node_modules/.bin/next start -p {{WEB_PORT}} -H 127.0.0.1
+Restart=always
+RestartSec=5
+StandardOutput=append:{{ROOT_DIR}}/.studyzone-prod/logs/web.log
+StandardError=append:{{ROOT_DIR}}/.studyzone-prod/logs/web.log
+
+[Install]
+WantedBy=multi-user.target

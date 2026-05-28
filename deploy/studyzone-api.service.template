@@ -1,0 +1,17 @@
+[Unit]
+Description=StudyZone API
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory={{ROOT_DIR}}/apps/api
+EnvironmentFile={{ROOT_DIR}}/.env
+ExecStart={{PNPM_BIN}} --filter @studyzone/api start
+Restart=always
+RestartSec=5
+StandardOutput=append:{{ROOT_DIR}}/.studyzone-prod/logs/api.log
+StandardError=append:{{ROOT_DIR}}/.studyzone-prod/logs/api.log
+
+[Install]
+WantedBy=multi-user.target

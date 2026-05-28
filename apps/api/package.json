@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node ../../scripts/with-root-env.mjs nest start --watch --builder webpack",
-    "build": "nest build",
-    "start": "node dist/main.js",
+    "build": "nest build --webpack",
+    "start": "node ../../scripts/with-root-env.mjs node dist/main.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts",
     "test": "vitest run --passWithNoTests",

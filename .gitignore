@@ -11,8 +11,10 @@ coverage/
 # env
 .env
 .env.local
+.env.production
 .env.*.local
 !.env.example
+!.env.production.example
 
 # logs
 *.log
@@ -28,3 +30,5 @@ npm-debug.log*
 .cache/
 tmp/
 .studyzone-dev/
+.studyzone-prod/
+*_nginx.zip

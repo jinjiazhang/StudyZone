@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ExerciseType } from '@studyzone/shared-types';
+import type { ExercisePrompt } from '@studyzone/shared-types';
 
 import { judge, levenshtein } from './judge';
 
@@ -81,7 +82,7 @@ describe('judge', () => {
   });
 
   it('judges pinyin-to-character assemble by slot+component', () => {
-    const prompt = {
+    const prompt: ExercisePrompt = {
       type: ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE,
       pinyin: 'liǔ',
       structure: 'horizontal' as const,

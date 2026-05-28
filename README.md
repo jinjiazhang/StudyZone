@@ -168,6 +168,50 @@ pnpm lint             # ESLint
 
 详见 `01-架构设计.md` 第 4 章「系统总体架构」。
 
+### 单机 Nginx 部署
+
+仓库内提供了单机部署模板，适合一台 Ubuntu 服务器上运行 Docker 基础设施、API、Next.js Web，并由 Nginx 统一提供 HTTPS 入口。
+
+1. 准备服务器环境：Node.js 20、pnpm 9、Docker、Nginx。
+2. 复制 `.env.production.example` 为 `.env`，填写域名、JWT secret、数据库、Redis 和公开访问地址。
+3. 启动基础设施并初始化数据：
+
+```bash
+pnpm docker:up
+pnpm db:migrate
+pnpm db:import
+```
+
+4. 安装 systemd 服务：
+
+```bash
+pnpm deploy:install-systemd -- --restart
+```
+
+5. 安装 Nginx 站点配置：
+
+```bash
+pnpm deploy:install-nginx -- \
+  --domain=study.example.com \
+  --ssl-cert=/etc/nginx/ssl/study.example.com/fullchain.crt \
+  --ssl-key=/etc/nginx/ssl/study.example.com/private.key \
+  --disable-default \
+  --reload
+```
+
+6. 后续更新代码后运行：
+
+```bash
+pnpm deploy:prod
+```
+
+默认约定：
+
+- API 只监听 `127.0.0.1:4000`
+- Web 只监听 `127.0.0.1:3000`
+- Nginx 监听 `80/443`
+- Admin 发布到 `/var/www/studyzone-admin` 并通过 `/admin/` 访问
+
 ---
 
 ## 路线图

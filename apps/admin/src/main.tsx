@@ -10,6 +10,7 @@ import { Users } from './pages/Users';
 import { useAuth } from './state';
 
 const client = new QueryClient();
+const adminBase = ((import.meta as any).env?.VITE_ADMIN_BASE ?? '/admin').replace(/\/$/, '');
 
 function Protected({ children }: { children: React.ReactNode }) {
   const token = useAuth((s) => s.accessToken);
@@ -20,7 +21,7 @@ function Protected({ children }: { children: React.ReactNode }) {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <QueryClientProvider client={client}>
-      <BrowserRouter basename="/admin">
+      <BrowserRouter basename={adminBase}>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route
