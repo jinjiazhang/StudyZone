@@ -1,0 +1,746 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "什",
+        "hint": "请选择字【什】的正确拼音",
+        "options": [
+          "shén",
+          "shí",
+          "kǒu",
+          "fēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "么",
+        "hint": "请选择字【么】的正确拼音",
+        "options": [
+          "me",
+          "mù",
+          "xué",
+          "shǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "我",
+        "hint": "请选择字【我】的正确拼音",
+        "options": [
+          "ní",
+          "tā",
+          "dì",
+          "wǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "你",
+        "hint": "请选择字【你】的正确拼音",
+        "options": [
+          "nǐ",
+          "rén",
+          "ní",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "他",
+        "hint": "请选择字【他】的正确拼音",
+        "options": [
+          "mù",
+          "ěr",
+          "tā",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "人",
+        "hint": "请选择字【人】的正确拼音",
+        "options": [
+          "tā",
+          "niǎo",
+          "xué",
+          "rén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "me",
+        "hint": "请组装字【么】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "口",
+          "木",
+          "氵",
+          "厶",
+          "丿"
+        ],
+        "target": "么"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丿",
+          "slot_2": "厶"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wǒ",
+        "hint": "请组装字【我】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "口",
+          "找",
+          "日",
+          "丿",
+          "土",
+          "纟"
+        ],
+        "target": "我"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丿",
+          "slot_2": "找"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "nǐ",
+        "hint": "请组装字【你】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "尔",
+          "口",
+          "日",
+          "亻",
+          "扌"
+        ],
+        "target": "你"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "尔"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tā",
+        "hint": "请组装字【他】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "也",
+          "亻",
+          "木",
+          "扌",
+          "纟",
+          "土"
+        ],
+        "target": "他"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "也"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "rén",
+        "hint": "请组装字【人】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "纟",
+          "丿",
+          "口",
+          "亻",
+          "乀"
+        ],
+        "target": "人"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丿",
+          "slot_2": "乀"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shén",
+        "hint": "请组装字【什】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "扌",
+          "十",
+          "口",
+          "木",
+          "土"
+        ],
+        "target": "什"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "十"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "快乐"
+          },
+          {
+            "id": "l_1",
+            "text": "月亮"
+          },
+          {
+            "id": "l_2",
+            "text": "诚实"
+          },
+          {
+            "id": "l_3",
+            "text": "学校"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "心里感到欢喜和满足"
+          },
+          {
+            "id": "r_3",
+            "text": "专门进行教育的机构"
+          },
+          {
+            "id": "r_1",
+            "text": "夜空中弯弯或圆圆的卫星"
+          },
+          {
+            "id": "r_2",
+            "text": "言行一致，不说谎"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "学生"
+          },
+          {
+            "id": "l_1",
+            "text": "冬天"
+          },
+          {
+            "id": "l_2",
+            "text": "健康"
+          },
+          {
+            "id": "l_3",
+            "text": "写字"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "一年中寒冷、白雪茫茫的季节"
+          },
+          {
+            "id": "r_2",
+            "text": "身体强壮、精神饱满的状态"
+          },
+          {
+            "id": "r_3",
+            "text": "用笔在纸上书写文字"
+          },
+          {
+            "id": "r_0",
+            "text": "在学校学习的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "学校"
+          },
+          {
+            "id": "l_1",
+            "text": "读书"
+          },
+          {
+            "id": "l_2",
+            "text": "太阳"
+          },
+          {
+            "id": "l_3",
+            "text": "学生"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "在学校学习的人"
+          },
+          {
+            "id": "r_1",
+            "text": "阅读书籍获取知识"
+          },
+          {
+            "id": "r_0",
+            "text": "专门进行教育的机构"
+          },
+          {
+            "id": "r_2",
+            "text": "白天照亮大地、带来温暖的恒星"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "快乐"
+          },
+          {
+            "id": "l_1",
+            "text": "秋天"
+          },
+          {
+            "id": "l_2",
+            "text": "大自然"
+          },
+          {
+            "id": "l_3",
+            "text": "读书"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "一年中凉爽、落叶丰收的季节"
+          },
+          {
+            "id": "r_2",
+            "text": "包含山川、河流、动植物的自然界"
+          },
+          {
+            "id": "r_3",
+            "text": "阅读书籍获取知识"
+          },
+          {
+            "id": "r_0",
+            "text": "心里感到欢喜和满足"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "大自然"
+          },
+          {
+            "id": "l_1",
+            "text": "冬天"
+          },
+          {
+            "id": "l_2",
+            "text": "健康"
+          },
+          {
+            "id": "l_3",
+            "text": "夏天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "身体强壮、精神饱满的状态"
+          },
+          {
+            "id": "r_0",
+            "text": "包含山川、河流、动植物的自然界"
+          },
+          {
+            "id": "r_3",
+            "text": "一年中炎热、万物旺盛的季节"
+          },
+          {
+            "id": "r_1",
+            "text": "一年中寒冷、白雪茫茫的季节"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诚实"
+          },
+          {
+            "id": "l_1",
+            "text": "朋友"
+          },
+          {
+            "id": "l_2",
+            "text": "写字"
+          },
+          {
+            "id": "l_3",
+            "text": "教师"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "用笔在纸上书写文字"
+          },
+          {
+            "id": "r_0",
+            "text": "言行一致，不说谎"
+          },
+          {
+            "id": "r_1",
+            "text": "志同道合、互相帮助的人"
+          },
+          {
+            "id": "r_3",
+            "text": "在学校传授学问的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大自然中有许多美妙的声音，比如风声、雨声和鸟叫声。这告诉我们：",
+        "options": [
+          "只在教室听歌",
+          "大自然很神奇，要用心聆听",
+          "不要去户外",
+          "声音很刺耳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学习新知识时，遇到不懂的问题，我们应该：",
+        "options": [
+          "不懂就要问，主动思考",
+          "抄袭别人的答案",
+          "装作懂了",
+          "直接放弃不学"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "保护大自然和小动物是每个人的责任，我们应该：",
+        "options": [
+          "随意砍伐树木",
+          "爱护动物，不乱扔垃圾",
+          "关起窗户不看",
+          "捕捉野生动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古人说“一寸光阴一寸金”，这句话告诉我们：",
+        "options": [
+          "一分钟不重要",
+          "时间非常宝贵，要珍惜时间",
+          "可以天天偷懒",
+          "金子很容易买到"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中所说的“两件宝”是指我们的双手和什么？",
+        "options": [
+          "大脑，用来思考和创造",
+          "眼睛和耳朵",
+          "双脚",
+          "零食和玩具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成经典的句子: '我喜欢读书和写字。'",
+        "tokens": [
+          "喜",
+          "天",
+          "我",
+          "写",
+          "和",
+          "读",
+          "书",
+          "字",
+          "欢",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "喜",
+          "欢",
+          "读",
+          "书",
+          "和",
+          "写",
+          "字"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请组合出正确的句子: '我们一起快快乐乐地上学去。'",
+        "tokens": [
+          "上学去",
+          "我们",
+          "快快乐乐地",
+          "。",
+          "一起",
+          "，",
+          "学校"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "一起",
+          "快快乐乐地",
+          "上学去",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
