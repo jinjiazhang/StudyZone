@@ -1,0 +1,748 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饶",
+        "hint": "请选择字【饶】的正确拼音",
+        "options": [
+          "xiā",
+          "ráo",
+          "shēn",
+          "qiǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "优",
+        "hint": "请选择字【优】的正确拼音",
+        "options": [
+          "yōu",
+          "yán",
+          "cuò",
+          "qiǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "淡",
+        "hint": "请选择字【淡】的正确拼音",
+        "options": [
+          "ráo",
+          "cuò",
+          "shēn",
+          "dàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "深",
+        "hint": "请选择字【深】的正确拼音",
+        "options": [
+          "qiǎn",
+          "shēn",
+          "yōu",
+          "dàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浅",
+        "hint": "请选择字【浅】的正确拼音",
+        "options": [
+          "yán",
+          "qiǎn",
+          "xiā",
+          "yōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "错",
+        "hint": "请选择字【错】的正确拼音",
+        "options": [
+          "cuò",
+          "yán",
+          "qiǎn",
+          "ráo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yōu",
+        "hint": "请组装字【优】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "尤",
+          "土",
+          "纟",
+          "亻",
+          "扌",
+          "氵"
+        ],
+        "target": "优"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "尤"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dàn",
+        "hint": "请组装字【淡】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "日",
+          "月",
+          "口",
+          "炎",
+          "氵"
+        ],
+        "target": "淡"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "炎"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "深",
+        "hint": "请选择【深】的拼音",
+        "options": [
+          "shēn",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qiǎn",
+        "hint": "请组装字【浅】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "戋",
+          "氵",
+          "亻",
+          "艹",
+          "木",
+          "日"
+        ],
+        "target": "浅"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "戋"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cuò",
+        "hint": "请组装字【错】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "昔",
+          "金",
+          "钅",
+          "扌",
+          "口"
+        ],
+        "target": "错"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "钅",
+          "slot_2": "昔"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yán",
+        "hint": "请组装字【岩】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "石",
+          "木",
+          "山",
+          "日",
+          "纟",
+          "氵"
+        ],
+        "target": "岩"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "山",
+          "slot_2": "石"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_1",
+            "text": "五光十色"
+          },
+          {
+            "id": "l_2",
+            "text": "富饶"
+          },
+          {
+            "id": "l_3",
+            "text": "成群结队"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "物产丰富"
+          },
+          {
+            "id": "r_1",
+            "text": "色彩繁多耀眼"
+          },
+          {
+            "id": "r_0",
+            "text": "异常奇特美丽"
+          },
+          {
+            "id": "r_3",
+            "text": "众多人或动物聚在一起"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "五光十色"
+          },
+          {
+            "id": "l_1",
+            "text": "成群结队"
+          },
+          {
+            "id": "l_2",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_3",
+            "text": "富饶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "色彩繁多耀眼"
+          },
+          {
+            "id": "r_2",
+            "text": "异常奇特美丽"
+          },
+          {
+            "id": "r_1",
+            "text": "众多人或动物聚在一起"
+          },
+          {
+            "id": "r_3",
+            "text": "物产丰富"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "富饶"
+          },
+          {
+            "id": "l_1",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_2",
+            "text": "五光十色"
+          },
+          {
+            "id": "l_3",
+            "text": "成群结队"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "物产丰富"
+          },
+          {
+            "id": "r_1",
+            "text": "异常奇特美丽"
+          },
+          {
+            "id": "r_3",
+            "text": "众多人或动物聚在一起"
+          },
+          {
+            "id": "r_2",
+            "text": "色彩繁多耀眼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "成群结队"
+          },
+          {
+            "id": "l_1",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_2",
+            "text": "富饶"
+          },
+          {
+            "id": "l_3",
+            "text": "五光十色"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "色彩繁多耀眼"
+          },
+          {
+            "id": "r_1",
+            "text": "异常奇特美丽"
+          },
+          {
+            "id": "r_0",
+            "text": "众多人或动物聚在一起"
+          },
+          {
+            "id": "r_2",
+            "text": "物产丰富"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "五光十色"
+          },
+          {
+            "id": "l_1",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_2",
+            "text": "成群结队"
+          },
+          {
+            "id": "l_3",
+            "text": "富饶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "众多人或动物聚在一起"
+          },
+          {
+            "id": "r_3",
+            "text": "物产丰富"
+          },
+          {
+            "id": "r_0",
+            "text": "色彩繁多耀眼"
+          },
+          {
+            "id": "r_1",
+            "text": "异常奇特美丽"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "瑰丽无比"
+          },
+          {
+            "id": "l_1",
+            "text": "五光十色"
+          },
+          {
+            "id": "l_2",
+            "text": "成群结队"
+          },
+          {
+            "id": "l_3",
+            "text": "富饶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "众多人或动物聚在一起"
+          },
+          {
+            "id": "r_1",
+            "text": "色彩繁多耀眼"
+          },
+          {
+            "id": "r_3",
+            "text": "物产丰富"
+          },
+          {
+            "id": "r_0",
+            "text": "异常奇特美丽"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西沙群岛在地图上位于我国的什么地方？",
+        "options": [
+          "南海的西北部，是一群美丽的岛屿",
+          "东海之滨",
+          "黄河中游",
+          "新疆吐鲁番"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西沙群岛的海水为什么呈现出深蓝、淡青、杏黄等各种颜色？",
+        "options": [
+          "因为海底高低不平，有山崖和峡谷，海水有深有浅",
+          "因为有人倒了颜料",
+          "因为天空的颜色一直在变",
+          "因为海水里有很多彩色小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "海底长着各种各样的珊瑚，有的像绽开的花朵，有的像：",
+        "options": [
+          "分枝的鹿角",
+          "高大的法国梧桐树",
+          "圆圆的红苹果",
+          "锋利的斧子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中说“西沙群岛的海里一半是水，一半是鱼”，这是为了说明：",
+        "options": [
+          "海里的鱼极其多，物产非常丰富",
+          "海水和鱼一样大",
+          "海里没有水只有鱼",
+          "鱼都在水面上游"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西沙群岛岸上有什么特别的景象？",
+        "options": [
+          "是鸟的天下，树林里积了厚厚的鸟粪，还有很多鸟蛋",
+          "有一片金色的沙漠",
+          "到处都是椰子树和游乐场",
+          "有很多冰雪世界"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '西沙群岛也是鸟的天下，树林里积了厚厚的鸟粪。'",
+        "tokens": [
+          "的",
+          "饶",
+          "树",
+          "西",
+          "里",
+          "沙",
+          "粪",
+          "天",
+          "鸟",
+          "鸟",
+          "林",
+          "积",
+          "岛",
+          "下",
+          "是",
+          "，",
+          "了",
+          "群"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "西",
+          "沙",
+          "群",
+          "岛",
+          "是",
+          "鸟",
+          "的",
+          "天",
+          "下",
+          "，",
+          "树",
+          "林",
+          "里",
+          "积",
+          "了",
+          "鸟",
+          "粪"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "，",
+          "学问",
+          "就是",
+          "不懂",
+          "。",
+          "多思考",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

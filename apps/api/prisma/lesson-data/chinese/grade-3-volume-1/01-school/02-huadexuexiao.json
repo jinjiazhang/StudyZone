@@ -1,0 +1,731 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "落",
+        "hint": "请选择字【落】的正确拼音",
+        "options": [
+          "luò",
+          "hù",
+          "huāng",
+          "kuáng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荒",
+        "hint": "请选择字【荒】的正确拼音",
+        "options": [
+          "hù",
+          "luò",
+          "wǔ",
+          "huāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "笛",
+        "hint": "请选择字【笛】的正确拼音",
+        "options": [
+          "fá",
+          "kuáng",
+          "dí",
+          "luò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舞",
+        "hint": "请选择字【舞】的正确拼音",
+        "options": [
+          "wǔ",
+          "kuáng",
+          "jià",
+          "huāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狂",
+        "hint": "请选择字【狂】的正确拼音",
+        "options": [
+          "kuáng",
+          "dí",
+          "jià",
+          "hù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "罚",
+        "hint": "请选择字【罚】的正确拼音",
+        "options": [
+          "dí",
+          "luò",
+          "huāng",
+          "fá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "huāng",
+        "hint": "请组装字【荒】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "扌",
+          "巟",
+          "艹",
+          "月",
+          "纟"
+        ],
+        "target": "荒"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "艹",
+          "slot_2": "巟"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dí",
+        "hint": "请组装字【笛】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "扌",
+          "月",
+          "⺮",
+          "纟",
+          "由",
+          "金"
+        ],
+        "target": "笛"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "⺮",
+          "slot_2": "由"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舞",
+        "hint": "请选择【舞】的拼音",
+        "options": [
+          "wǔ",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kuáng",
+        "hint": "请组装字【狂】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "王",
+          "木",
+          "月",
+          "犭",
+          "亻",
+          "扌"
+        ],
+        "target": "狂"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "犭",
+          "slot_2": "王"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "罚",
+        "hint": "请选择【罚】的拼音",
+        "options": [
+          "fá",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jià",
+        "hint": "请组装字【假】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "叚",
+          "木",
+          "日",
+          "艹",
+          "月",
+          "亻"
+        ],
+        "target": "假"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "叚"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "荒野"
+          },
+          {
+            "id": "l_1",
+            "text": "狂欢"
+          },
+          {
+            "id": "l_2",
+            "text": "湿润"
+          },
+          {
+            "id": "l_3",
+            "text": "急急忙忙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r_2",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_0",
+            "text": "荒凉的原野"
+          },
+          {
+            "id": "r_3",
+            "text": "心里着急动作快"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "湿润"
+          },
+          {
+            "id": "l_1",
+            "text": "急急忙忙"
+          },
+          {
+            "id": "l_2",
+            "text": "狂欢"
+          },
+          {
+            "id": "l_3",
+            "text": "荒野"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_3",
+            "text": "荒凉的原野"
+          },
+          {
+            "id": "r_2",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r_1",
+            "text": "心里着急动作快"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "荒野"
+          },
+          {
+            "id": "l_1",
+            "text": "湿润"
+          },
+          {
+            "id": "l_2",
+            "text": "狂欢"
+          },
+          {
+            "id": "l_3",
+            "text": "急急忙忙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "心里着急动作快"
+          },
+          {
+            "id": "r_0",
+            "text": "荒凉的原野"
+          },
+          {
+            "id": "r_1",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_2",
+            "text": "纵情欢乐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "狂欢"
+          },
+          {
+            "id": "l_1",
+            "text": "荒野"
+          },
+          {
+            "id": "l_2",
+            "text": "急急忙忙"
+          },
+          {
+            "id": "l_3",
+            "text": "湿润"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "心里着急动作快"
+          },
+          {
+            "id": "r_0",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r_3",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_1",
+            "text": "荒凉的原野"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "急急忙忙"
+          },
+          {
+            "id": "l_1",
+            "text": "狂欢"
+          },
+          {
+            "id": "l_2",
+            "text": "湿润"
+          },
+          {
+            "id": "l_3",
+            "text": "荒野"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r_2",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_0",
+            "text": "心里着急动作快"
+          },
+          {
+            "id": "r_3",
+            "text": "荒凉的原野"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "湿润"
+          },
+          {
+            "id": "l_1",
+            "text": "急急忙忙"
+          },
+          {
+            "id": "l_2",
+            "text": "荒野"
+          },
+          {
+            "id": "l_3",
+            "text": "狂欢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r_2",
+            "text": "荒凉的原野"
+          },
+          {
+            "id": "r_0",
+            "text": "潮湿润泽"
+          },
+          {
+            "id": "r_1",
+            "text": "心里着急动作快"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《花的学校》作者是谁？",
+        "options": [
+          "泰戈尔",
+          "李白",
+          "冰心",
+          "叶圣陶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据课文，当雷云拍打着魔手时，花儿会怎么样？",
+        "options": [
+          "从地底跑出来，在绿草上跳舞狂欢",
+          "在土里睡觉",
+          "开始枯萎",
+          "被大水冲走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "花儿的学校在哪里？",
+        "options": [
+          "在地下",
+          "在树上",
+          "在水里",
+          "在云端"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中花儿“急急忙忙”要赶去哪里？",
+        "options": [
+          "回家找她们的妈妈",
+          "去公园里跳舞",
+          "去河边洗澡",
+          "去商店买衣服"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者为什么觉得花儿们的妈妈在家里等着她们？",
+        "options": [
+          "因为花儿渴望妈妈的爱和温暖的家",
+          "因为妈妈有很多零食",
+          "因为学校太吵了",
+          "因为妈妈生病了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '当雷云拍打着魔手的时候，雨落了下来。'",
+        "tokens": [
+          "雨",
+          "云",
+          "打",
+          "落",
+          "着",
+          "拍",
+          "魔",
+          "来",
+          "时",
+          "下",
+          "，",
+          "手",
+          "了",
+          "落",
+          "雷",
+          "候",
+          "当",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "当",
+          "雷",
+          "云",
+          "拍",
+          "打",
+          "着",
+          "魔",
+          "手",
+          "的",
+          "时",
+          "候",
+          "，",
+          "雨",
+          "落",
+          "了",
+          "下",
+          "来"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就是",
+          "。",
+          "就要问",
+          "多思考",
+          "，",
+          "不懂",
+          "学问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "司",
+        "hint": "请选择字【司】的正确拼音",
+        "options": [
+          "dēng",
+          "pò",
+          "sī",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "庭",
+        "hint": "请选择字【庭】的正确拼音",
+        "options": [
+          "sī",
+          "diē",
+          "tíng",
+          "dēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "登",
+        "hint": "请选择字【登】的正确拼音",
+        "options": [
+          "zhòng",
+          "diē",
+          "dēng",
+          "sī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "跌",
+        "hint": "请选择字【跌】的正确拼音",
+        "options": [
+          "diē",
+          "chí",
+          "zhòng",
+          "sī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "众",
+        "hint": "请选择字【众】的正确拼音",
+        "options": [
+          "zhòng",
+          "sī",
+          "chí",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弃",
+        "hint": "请选择字【弃】的正确拼音",
+        "options": [
+          "pò",
+          "zhòng",
+          "chí",
+          "qì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tíng",
+        "hint": "请组装字【庭】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "广",
+          "木",
+          "廷",
+          "金",
+          "土",
+          "亻"
+        ],
+        "target": "庭"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "广",
+          "slot_2": "廷"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dēng",
+        "hint": "请组装字【登】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "木",
+          "扌",
+          "豆",
+          "癶",
+          "金"
+        ],
+        "target": "登"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "癶",
+          "slot_2": "豆"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "diē",
+        "hint": "请组装字【跌】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "木",
+          "失",
+          "日",
+          "纟",
+          "⻊"
+        ],
+        "target": "跌"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "⻊",
+          "slot_2": "失"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "众",
+        "hint": "请选择【众】的拼音",
+        "options": [
+          "zhòng",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弃",
+        "hint": "请选择【弃】的拼音",
+        "options": [
+          "qì",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chí",
+        "hint": "请组装字【持】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "扌",
+          "寺",
+          "月",
+          "口",
+          "土"
+        ],
+        "target": "持"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "寺"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "瓮"
+          },
+          {
+            "id": "l_1",
+            "text": "破之"
+          },
+          {
+            "id": "l_2",
+            "text": "儿得活"
+          },
+          {
+            "id": "l_3",
+            "text": "持石击瓮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "落水的小孩得救了"
+          },
+          {
+            "id": "r_0",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_3",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_1",
+            "text": "把水缸砸破"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "瓮"
+          },
+          {
+            "id": "l_1",
+            "text": "儿得活"
+          },
+          {
+            "id": "l_2",
+            "text": "持石击瓮"
+          },
+          {
+            "id": "l_3",
+            "text": "破之"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_0",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_1",
+            "text": "落水的小孩得救了"
+          },
+          {
+            "id": "r_3",
+            "text": "把水缸砸破"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "儿得活"
+          },
+          {
+            "id": "l_1",
+            "text": "持石击瓮"
+          },
+          {
+            "id": "l_2",
+            "text": "破之"
+          },
+          {
+            "id": "l_3",
+            "text": "瓮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_3",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_0",
+            "text": "落水的小孩得救了"
+          },
+          {
+            "id": "r_2",
+            "text": "把水缸砸破"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "瓮"
+          },
+          {
+            "id": "l_1",
+            "text": "破之"
+          },
+          {
+            "id": "l_2",
+            "text": "持石击瓮"
+          },
+          {
+            "id": "l_3",
+            "text": "儿得活"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_1",
+            "text": "把水缸砸破"
+          },
+          {
+            "id": "r_2",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_3",
+            "text": "落水的小孩得救了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "破之"
+          },
+          {
+            "id": "l_1",
+            "text": "持石击瓮"
+          },
+          {
+            "id": "l_2",
+            "text": "儿得活"
+          },
+          {
+            "id": "l_3",
+            "text": "瓮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "落水的小孩得救了"
+          },
+          {
+            "id": "r_3",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_1",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_0",
+            "text": "把水缸砸破"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "儿得活"
+          },
+          {
+            "id": "l_1",
+            "text": "持石击瓮"
+          },
+          {
+            "id": "l_2",
+            "text": "破之"
+          },
+          {
+            "id": "l_3",
+            "text": "瓮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "一种大盛水容器"
+          },
+          {
+            "id": "r_2",
+            "text": "把水缸砸破"
+          },
+          {
+            "id": "r_1",
+            "text": "拿着石头砸水缸"
+          },
+          {
+            "id": "r_0",
+            "text": "落水的小孩得救了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《司马光》是小学阶段接触的第一篇什么课文？",
+        "options": [
+          "文言文（古文）",
+          "现代童话",
+          "现代散文",
+          "抒情诗歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古文中，“群儿戏于庭”的“庭”字是什么意思？",
+        "options": [
+          "庭院，院子里",
+          "大厅",
+          "法庭",
+          "家庭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一儿登瓮，足跌没水中”，这里小孩遇到了什么危险？",
+        "options": [
+          "爬上大水缸，不小心跌入水中快被淹死了",
+          "从山上滚了下去",
+          "在河里游泳抽筋了",
+          "被大石头压住了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "其他小朋友看到有人落水，表现得怎么样？“众皆弃去”说明：",
+        "options": [
+          "大家都吓跑了，只有司马光留下来想办法",
+          "大家都在水边大哭",
+          "大家都跳下去救人",
+          "大家在嘲笑落水的人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "司马光是如何救出落水小伙伴的？",
+        "options": [
+          "持石击瓮破之，水迸，儿得活",
+          "大声呼喊大人来救命",
+          "用一根竹竿把小伙伴拉了上来",
+          "跳进水里抱起小伙伴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '光持石击瓮破之，水迸，儿得活。'",
+        "tokens": [
+          "之",
+          "得",
+          "瓮",
+          "，",
+          "，",
+          "击",
+          "光",
+          "儿",
+          "水",
+          "破",
+          "石",
+          "持",
+          "迸",
+          "活",
+          "司"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "光",
+          "持",
+          "石",
+          "击",
+          "瓮",
+          "破",
+          "之",
+          "，",
+          "水",
+          "迸",
+          "，",
+          "儿",
+          "得",
+          "活"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "。",
+          "多思考",
+          "就是",
+          "学问",
+          "就要问",
+          "不懂",
+          "，"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

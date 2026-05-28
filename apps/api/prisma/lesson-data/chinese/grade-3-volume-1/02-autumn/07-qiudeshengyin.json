@@ -1,0 +1,771 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "抖",
+        "hint": "请选择字【抖】的正确拼音",
+        "options": [
+          "zhèn",
+          "dǒu",
+          "yùn",
+          "yín"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蟋",
+        "hint": "请选择字【蟋】的正确拼音",
+        "options": [
+          "zhèn",
+          "liáo",
+          "xī",
+          "shuài"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蟀",
+        "hint": "请选择字【蟀】的正确拼音",
+        "options": [
+          "shuài",
+          "zhèn",
+          "lüè",
+          "dǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "振",
+        "hint": "请选择字【振】的正确拼音",
+        "options": [
+          "zhèn",
+          "yùn",
+          "xī",
+          "dǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "韵",
+        "hint": "请选择字【韵】的正确拼音",
+        "options": [
+          "lüè",
+          "dǒu",
+          "yùn",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "掠",
+        "hint": "请选择字【掠】的正确拼音",
+        "options": [
+          "lüè",
+          "liáo",
+          "shuài",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xī",
+        "hint": "请组装字【蟋】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "日",
+          "金",
+          "纟",
+          "虫",
+          "悉"
+        ],
+        "target": "蟋"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "虫",
+          "slot_2": "悉"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shuài",
+        "hint": "请组装字【蟀】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "艹",
+          "亻",
+          "月",
+          "率",
+          "虫"
+        ],
+        "target": "蟀"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "虫",
+          "slot_2": "率"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhèn",
+        "hint": "请组装字【振】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "扌",
+          "日",
+          "月",
+          "口",
+          "土",
+          "辰"
+        ],
+        "target": "振"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "辰"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yùn",
+        "hint": "请组装字【韵】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "音",
+          "员",
+          "亻",
+          "氵",
+          "纟",
+          "木"
+        ],
+        "target": "韵"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "音",
+          "slot_2": "员"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lüè",
+        "hint": "请组装字【掠】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "木",
+          "艹",
+          "土",
+          "京",
+          "扌"
+        ],
+        "target": "掠"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "京"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yín",
+        "hint": "请组装字【吟】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "土",
+          "日",
+          "口",
+          "今",
+          "木"
+        ],
+        "target": "吟"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "口",
+          "slot_2": "今"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "辽阔"
+          },
+          {
+            "id": "l_1",
+            "text": "话别"
+          },
+          {
+            "id": "l_2",
+            "text": "歌韵"
+          },
+          {
+            "id": "l_3",
+            "text": "匆匆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "空旷辽远"
+          },
+          {
+            "id": "r_2",
+            "text": "美妙的歌声"
+          },
+          {
+            "id": "r_1",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_3",
+            "text": "急急忙忙的样子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "辽阔"
+          },
+          {
+            "id": "l_1",
+            "text": "歌韵"
+          },
+          {
+            "id": "l_2",
+            "text": "话别"
+          },
+          {
+            "id": "l_3",
+            "text": "匆匆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "急急忙忙的样子"
+          },
+          {
+            "id": "r_2",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_0",
+            "text": "空旷辽远"
+          },
+          {
+            "id": "r_1",
+            "text": "美妙的歌声"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "歌韵"
+          },
+          {
+            "id": "l_1",
+            "text": "话别"
+          },
+          {
+            "id": "l_2",
+            "text": "辽阔"
+          },
+          {
+            "id": "l_3",
+            "text": "匆匆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "急急忙忙的样子"
+          },
+          {
+            "id": "r_1",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_0",
+            "text": "美妙的歌声"
+          },
+          {
+            "id": "r_2",
+            "text": "空旷辽远"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "歌韵"
+          },
+          {
+            "id": "l_1",
+            "text": "匆匆"
+          },
+          {
+            "id": "l_2",
+            "text": "话别"
+          },
+          {
+            "id": "l_3",
+            "text": "辽阔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_0",
+            "text": "美妙的歌声"
+          },
+          {
+            "id": "r_1",
+            "text": "急急忙忙的样子"
+          },
+          {
+            "id": "r_3",
+            "text": "空旷辽远"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "辽阔"
+          },
+          {
+            "id": "l_1",
+            "text": "匆匆"
+          },
+          {
+            "id": "l_2",
+            "text": "话别"
+          },
+          {
+            "id": "l_3",
+            "text": "歌韵"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_3",
+            "text": "美妙的歌声"
+          },
+          {
+            "id": "r_1",
+            "text": "急急忙忙的样子"
+          },
+          {
+            "id": "r_0",
+            "text": "空旷辽远"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "歌韵"
+          },
+          {
+            "id": "l_1",
+            "text": "话别"
+          },
+          {
+            "id": "l_2",
+            "text": "辽阔"
+          },
+          {
+            "id": "l_3",
+            "text": "匆匆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "临别时诉说离情"
+          },
+          {
+            "id": "r_0",
+            "text": "美妙的歌声"
+          },
+          {
+            "id": "r_2",
+            "text": "空旷辽远"
+          },
+          {
+            "id": "r_3",
+            "text": "急急忙忙的样子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《听听，秋的声音》中，落叶抖抖手臂，发出什么声音？",
+        "options": [
+          "刷刷的告别声",
+          "大声的哭泣声",
+          "沙沙的唱歌声",
+          "噼里啪啦的响声"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蟋蟀振动翅膀，发出什么声音？",
+        "options": [
+          "㘗㘗的惜别歌",
+          "大声的呼喊声",
+          "嗡嗡的吵闹声",
+          "静悄悄的声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋的声音还藏在哪里？",
+        "options": [
+          "藏在每一片叶子、每一朵小花、每一滴汗水里",
+          "只藏在天上",
+          "只藏在学校里",
+          "哪里都没有"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首诗歌通过“秋的声音”表现了作者怎样的情感？",
+        "options": [
+          "对秋天大自然的赞美与喜爱",
+          "对冬天来临的害怕",
+          "写诗时觉得很累",
+          "对夏天离去感到悲伤"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“辽阔的音乐厅”在诗中指的是什么？",
+        "options": [
+          "美丽的大自然",
+          "学校的礼堂",
+          "剧院的音乐厅",
+          "自己的房间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '听听，秋的声音，大自然正演奏着美妙的乐曲。'",
+        "tokens": [
+          "着",
+          "，",
+          "正",
+          "曲",
+          "的",
+          "的",
+          "抖",
+          "声",
+          "演",
+          "乐",
+          "听",
+          "自",
+          "听",
+          "，",
+          "妙",
+          "大",
+          "美",
+          "然",
+          "奏",
+          "秋",
+          "音"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "听",
+          "听",
+          "，",
+          "秋",
+          "的",
+          "声",
+          "音",
+          "，",
+          "大",
+          "自",
+          "然",
+          "正",
+          "演",
+          "奏",
+          "着",
+          "美",
+          "妙",
+          "的",
+          "乐",
+          "曲"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就是",
+          "多思考",
+          "就要问",
+          "学问",
+          "不懂",
+          "。",
+          "，"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "郊",
+        "hint": "请选择字【郊】的正确拼音",
+        "options": [
+          "jiāo",
+          "chéng",
+          "gǔ",
+          "yǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "养",
+        "hint": "请选择字【养】的正确拼音",
+        "options": [
+          "xī",
+          "jiāo",
+          "chéng",
+          "yǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "粉",
+        "hint": "请选择字【粉】的正确拼音",
+        "options": [
+          "fěn",
+          "chéng",
+          "yǎng",
+          "gǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "谷",
+        "hint": "请选择字【谷】的正确拼音",
+        "options": [
+          "lěng",
+          "xī",
+          "gǔ",
+          "fěn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "粒",
+        "hint": "请选择字【粒】的正确拼音",
+        "options": [
+          "lì",
+          "lěng",
+          "xī",
+          "yǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "诚",
+        "hint": "请选择字【诚】的正确拼音",
+        "options": [
+          "xī",
+          "gǔ",
+          "yǎng",
+          "chéng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yǎng",
+        "hint": "请组装字【养】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "纟",
+          "艹",
+          "并",
+          "𠫓",
+          "亻"
+        ],
+        "target": "养"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "并",
+          "slot_2": "𠫓"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fěn",
+        "hint": "请组装字【粉】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "米",
+          "日",
+          "亻",
+          "氵",
+          "口",
+          "分"
+        ],
+        "target": "粉"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "米",
+          "slot_2": "分"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "谷",
+        "hint": "请选择【谷】的拼音",
+        "options": [
+          "gǔ",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lì",
+        "hint": "请组装字【粒】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "口",
+          "月",
+          "日",
+          "米",
+          "金",
+          "立"
+        ],
+        "target": "粒"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "米",
+          "slot_2": "立"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chéng",
+        "hint": "请组装字【诚】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "成",
+          "氵",
+          "讠",
+          "艹",
+          "木"
+        ],
+        "target": "诚"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "讠",
+          "slot_2": "成"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lěng",
+        "hint": "请组装字【冷】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "扌",
+          "令",
+          "月",
+          "木",
+          "冫"
+        ],
+        "target": "冷"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "冫",
+          "slot_2": "令"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "灰雀"
+          },
+          {
+            "id": "l_1",
+            "text": "欢蹦乱跳"
+          },
+          {
+            "id": "l_2",
+            "text": "爱护动物"
+          },
+          {
+            "id": "l_3",
+            "text": "诚实"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "活泼健康跳跃"
+          },
+          {
+            "id": "r_0",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "真实诚恳没虚假"
+          },
+          {
+            "id": "r_2",
+            "text": "爱护关怀野生动物"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诚实"
+          },
+          {
+            "id": "l_1",
+            "text": "欢蹦乱跳"
+          },
+          {
+            "id": "l_2",
+            "text": "灰雀"
+          },
+          {
+            "id": "l_3",
+            "text": "爱护动物"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "真实诚恳没虚假"
+          },
+          {
+            "id": "r_2",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "爱护关怀野生动物"
+          },
+          {
+            "id": "r_1",
+            "text": "活泼健康跳跃"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "灰雀"
+          },
+          {
+            "id": "l_1",
+            "text": "欢蹦乱跳"
+          },
+          {
+            "id": "l_2",
+            "text": "诚实"
+          },
+          {
+            "id": "l_3",
+            "text": "爱护动物"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "爱护关怀野生动物"
+          },
+          {
+            "id": "r_2",
+            "text": "真实诚恳没虚假"
+          },
+          {
+            "id": "r_0",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_1",
+            "text": "活泼健康跳跃"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诚实"
+          },
+          {
+            "id": "l_1",
+            "text": "爱护动物"
+          },
+          {
+            "id": "l_2",
+            "text": "欢蹦乱跳"
+          },
+          {
+            "id": "l_3",
+            "text": "灰雀"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "爱护关怀野生动物"
+          },
+          {
+            "id": "r_2",
+            "text": "活泼健康跳跃"
+          },
+          {
+            "id": "r_3",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_0",
+            "text": "真实诚恳没虚假"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诚实"
+          },
+          {
+            "id": "l_1",
+            "text": "灰雀"
+          },
+          {
+            "id": "l_2",
+            "text": "爱护动物"
+          },
+          {
+            "id": "l_3",
+            "text": "欢蹦乱跳"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "爱护关怀野生动物"
+          },
+          {
+            "id": "r_1",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "活泼健康跳跃"
+          },
+          {
+            "id": "r_0",
+            "text": "真实诚恳没虚假"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "灰雀"
+          },
+          {
+            "id": "l_1",
+            "text": "欢蹦乱跳"
+          },
+          {
+            "id": "l_2",
+            "text": "爱护动物"
+          },
+          {
+            "id": "l_3",
+            "text": "诚实"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "爱护关怀野生动物"
+          },
+          {
+            "id": "r_1",
+            "text": "活泼健康跳跃"
+          },
+          {
+            "id": "r_0",
+            "text": "一种红胸脯的可爱小鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "真实诚恳没虚假"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列宁在公园里非常喜欢那三只灰雀，他每天都去做什么？",
+        "options": [
+          "去给它们带面包渣和谷粒，静静地看它们",
+          "想把它们抓回家养在笼子里",
+          "用小石头驱赶它们",
+          "教它们唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有一天，那只最招人喜爱的深红色胸脯的灰雀突然不见了，被谁抓走了？",
+        "options": [
+          "被一个喜爱灰雀的小男孩抓回了家",
+          "被大猫吃掉了",
+          "自己飞到南方去了",
+          "被列宁藏起来了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列宁发现灰雀不见了，在和小男孩聊天时是怎么做的？",
+        "options": [
+          "没有责备男孩，而是通过表达对鸟的惋惜和爱护，委婉感化了他",
+          "大声斥责男孩，让他赔钱",
+          "去找警察把男孩抓起来",
+          "觉得没意思就回家了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第二天清晨，列宁在白桦树下看到了什么？小男孩表现得怎么样？",
+        "options": [
+          "看到了那只灰雀飞回来了，小男孩低着头站在树旁",
+          "什么都没有看到",
+          "看到树被砍倒了",
+          "看到男孩又抓了另外两只鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列宁为什么不问小男孩灰雀是不是他放回来的？",
+        "options": [
+          "因为列宁尊重男孩，保护了他的自尊心，并相信他的诚实",
+          "因为列宁忘记问了",
+          "因为列宁不想和男孩说话",
+          "因为鸟自己飞回来的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '列宁看看男孩，又看看灰雀，微笑着说。'",
+        "tokens": [
+          "说",
+          "列",
+          "，",
+          "又",
+          "笑",
+          "看",
+          "孩",
+          "雀",
+          "宁",
+          "郊",
+          "灰",
+          "看",
+          "看",
+          "看",
+          "着",
+          "男",
+          "，",
+          "微"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "列",
+          "宁",
+          "看",
+          "看",
+          "男",
+          "孩",
+          "，",
+          "又",
+          "看",
+          "看",
+          "灰",
+          "雀",
+          "，",
+          "微",
+          "笑",
+          "着",
+          "说"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "多思考",
+          "学问",
+          "就是",
+          "。",
+          "，",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

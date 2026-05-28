@@ -1,0 +1,742 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "滨",
+        "hint": "请选择字【滨】的正确拼音",
+        "options": [
+          "bīn",
+          "tǎng",
+          "biàn",
+          "yú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "靠",
+        "hint": "请选择字【靠】的正确拼音",
+        "options": [
+          "chú",
+          "bīn",
+          "zǎi",
+          "kào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "渔",
+        "hint": "请选择字【渔】的正确拼音",
+        "options": [
+          "biàn",
+          "tǎng",
+          "kào",
+          "yú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "遍",
+        "hint": "请选择字【遍】的正确拼音",
+        "options": [
+          "tǎng",
+          "zǎi",
+          "bīn",
+          "biàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "躺",
+        "hint": "请选择字【躺】的正确拼音",
+        "options": [
+          "tǎng",
+          "zǎi",
+          "kào",
+          "yú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "载",
+        "hint": "请选择字【载】的正确拼音",
+        "options": [
+          "tǎng",
+          "zǎi",
+          "chú",
+          "bīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kào",
+        "hint": "请组装字【靠】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "非",
+          "月",
+          "扌",
+          "氵",
+          "告",
+          "土"
+        ],
+        "target": "靠"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "告",
+          "slot_2": "非"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yú",
+        "hint": "请组装字【渔】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "口",
+          "氵",
+          "艹",
+          "鱼",
+          "亻"
+        ],
+        "target": "渔"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "鱼"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "biàn",
+        "hint": "请组装字【遍】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "扁",
+          "土",
+          "氵",
+          "辶",
+          "木",
+          "亻"
+        ],
+        "target": "遍"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "辶",
+          "slot_2": "扁"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tǎng",
+        "hint": "请组装字【躺】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "尚",
+          "身",
+          "艹",
+          "纟",
+          "亻",
+          "土"
+        ],
+        "target": "躺"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "身",
+          "slot_2": "尚"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "载",
+        "hint": "请选择【载】的拼音",
+        "options": [
+          "zǎi",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kào",
+        "hint": "请组装字【靠】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "金",
+          "氵",
+          "土",
+          "非",
+          "告"
+        ],
+        "target": "靠"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "告",
+          "slot_2": "非"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "整洁"
+          },
+          {
+            "id": "l_1",
+            "text": "海滨"
+          },
+          {
+            "id": "l_2",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_3",
+            "text": "浩瀚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "大声吵闹"
+          },
+          {
+            "id": "r_1",
+            "text": "靠近海边的地方"
+          },
+          {
+            "id": "r_3",
+            "text": "广大繁多"
+          },
+          {
+            "id": "r_0",
+            "text": "整齐干净"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "浩瀚"
+          },
+          {
+            "id": "l_1",
+            "text": "整洁"
+          },
+          {
+            "id": "l_2",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_3",
+            "text": "海滨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "大声吵闹"
+          },
+          {
+            "id": "r_1",
+            "text": "整齐干净"
+          },
+          {
+            "id": "r_3",
+            "text": "靠近海边的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "广大繁多"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "浩瀚"
+          },
+          {
+            "id": "l_1",
+            "text": "海滨"
+          },
+          {
+            "id": "l_2",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_3",
+            "text": "整洁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "广大繁多"
+          },
+          {
+            "id": "r_1",
+            "text": "靠近海边的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "大声吵闹"
+          },
+          {
+            "id": "r_3",
+            "text": "整齐干净"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "浩瀚"
+          },
+          {
+            "id": "l_1",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_2",
+            "text": "整洁"
+          },
+          {
+            "id": "l_3",
+            "text": "海滨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "靠近海边的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "整齐干净"
+          },
+          {
+            "id": "r_0",
+            "text": "广大繁多"
+          },
+          {
+            "id": "r_1",
+            "text": "大声吵闹"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "整洁"
+          },
+          {
+            "id": "l_1",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_2",
+            "text": "海滨"
+          },
+          {
+            "id": "l_3",
+            "text": "浩瀚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "整齐干净"
+          },
+          {
+            "id": "r_2",
+            "text": "靠近海边的地方"
+          },
+          {
+            "id": "r_1",
+            "text": "大声吵闹"
+          },
+          {
+            "id": "r_3",
+            "text": "广大繁多"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "浩瀚"
+          },
+          {
+            "id": "l_1",
+            "text": "喧闹"
+          },
+          {
+            "id": "l_2",
+            "text": "海滨"
+          },
+          {
+            "id": "l_3",
+            "text": "整洁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "广大繁多"
+          },
+          {
+            "id": "r_1",
+            "text": "大声吵闹"
+          },
+          {
+            "id": "r_3",
+            "text": "整齐干净"
+          },
+          {
+            "id": "r_2",
+            "text": "靠近海边的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文主要按什么顺序来描写海滨小城的美丽景色？",
+        "options": [
+          "空间转移顺序（由海滨到小城）",
+          "春夏秋冬四季顺序",
+          "清晨到傍晚的时间顺序",
+          "小城人物的故事顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在海滨，作者写了海上有什么？",
+        "options": [
+          "浩瀚的大海，各种船只，飞翔的军舰鸟，以及金色的沙滩",
+          "只有一片大雾",
+          "巨大的现代游乐场",
+          "只有渔民在唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小城里种植了许多树木，其中有桉树和什么树？",
+        "options": [
+          "椰子树和橄榄树",
+          "梧桐树和枫树",
+          "苹果树和桃树",
+          "松树和柏树"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文写小城的街道“是用细沙铺成的，踩上去咯吱咯吱地响”，这说明：",
+        "options": [
+          "街道干净别致，富有海滨小城的特色",
+          "路太脏了没扫干净",
+          "走路很累",
+          "沙子很扎脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文表达了作者怎样的情感？",
+        "options": [
+          "对这座海滨小城的无限热爱与由衷赞美",
+          "想离开海边去大城市",
+          "觉得海边风太大太冷",
+          "对捕鱼工作感到好奇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '海滨小城的街道是用细沙铺成的，踩上去咯吱咯吱地响。'",
+        "tokens": [
+          "街",
+          "细",
+          "海",
+          "成",
+          "用",
+          "城",
+          "的",
+          "是",
+          "小",
+          "滨",
+          "滨",
+          "道",
+          "铺",
+          "沙",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "海",
+          "滨",
+          "小",
+          "城",
+          "的",
+          "街",
+          "道",
+          "是",
+          "用",
+          "细",
+          "沙",
+          "铺",
+          "成",
+          "的"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "多思考",
+          "。",
+          "就要问",
+          "不懂",
+          "就是",
+          "学问",
+          "，"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

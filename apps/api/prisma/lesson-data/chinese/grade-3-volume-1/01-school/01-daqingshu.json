@@ -1,0 +1,767 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晨",
+        "hint": "请选择字【晨】的正确拼音",
+        "options": [
+          "bà",
+          "róng",
+          "yàn",
+          "chén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "艳",
+        "hint": "请选择字【艳】的正确拼音",
+        "options": [
+          "dú",
+          "chén",
+          "bàn",
+          "yàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绒",
+        "hint": "请选择字【绒】的正确拼音",
+        "options": [
+          "yàn",
+          "róng",
+          "bà",
+          "hàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "坝",
+        "hint": "请选择字【坝】的正确拼音",
+        "options": [
+          "hàn",
+          "dú",
+          "róng",
+          "bà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "汉",
+        "hint": "请选择字【汉】的正确拼音",
+        "options": [
+          "bàn",
+          "hàn",
+          "shuāi",
+          "bà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扮",
+        "hint": "请选择字【扮】的正确拼音",
+        "options": [
+          "yàn",
+          "hàn",
+          "dú",
+          "bàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yàn",
+        "hint": "请组装字【艳】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "色",
+          "木",
+          "丰",
+          "亻",
+          "艹",
+          "氵"
+        ],
+        "target": "艳"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丰",
+          "slot_2": "色"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "róng",
+        "hint": "请组装字【绒】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "土",
+          "戎",
+          "艹",
+          "金",
+          "月"
+        ],
+        "target": "绒"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "纟",
+          "slot_2": "戎"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bà",
+        "hint": "请组装字【坝】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "扌",
+          "氵",
+          "亻",
+          "土",
+          "贝"
+        ],
+        "target": "坝"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "土",
+          "slot_2": "贝"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "hàn",
+        "hint": "请组装字【汉】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "口",
+          "氵",
+          "金",
+          "扌",
+          "又"
+        ],
+        "target": "汉"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "又"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bàn",
+        "hint": "请组装字【扮】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "分",
+          "艹",
+          "扌",
+          "土",
+          "木"
+        ],
+        "target": "扮"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "分"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dú",
+        "hint": "请组装字【读】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "讠",
+          "纟",
+          "扌",
+          "卖",
+          "亻"
+        ],
+        "target": "读"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "讠",
+          "slot_2": "卖"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "安静"
+          },
+          {
+            "id": "l_1",
+            "text": "绚丽"
+          },
+          {
+            "id": "l_2",
+            "text": "摔跤"
+          },
+          {
+            "id": "l_3",
+            "text": "招引"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_1",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r_2",
+            "text": "跌倒或竞技"
+          },
+          {
+            "id": "r_0",
+            "text": "没有声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "招引"
+          },
+          {
+            "id": "l_1",
+            "text": "摔跤"
+          },
+          {
+            "id": "l_2",
+            "text": "绚丽"
+          },
+          {
+            "id": "l_3",
+            "text": "安静"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_1",
+            "text": "跌倒或竞技"
+          },
+          {
+            "id": "r_2",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r_3",
+            "text": "没有声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "安静"
+          },
+          {
+            "id": "l_1",
+            "text": "摔跤"
+          },
+          {
+            "id": "l_2",
+            "text": "绚丽"
+          },
+          {
+            "id": "l_3",
+            "text": "招引"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "跌倒或竞技"
+          },
+          {
+            "id": "r_3",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_2",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r_0",
+            "text": "没有声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "安静"
+          },
+          {
+            "id": "l_1",
+            "text": "摔跤"
+          },
+          {
+            "id": "l_2",
+            "text": "绚丽"
+          },
+          {
+            "id": "l_3",
+            "text": "招引"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "跌倒或竞技"
+          },
+          {
+            "id": "r_3",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_2",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r_0",
+            "text": "没有声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "绚丽"
+          },
+          {
+            "id": "l_1",
+            "text": "招引"
+          },
+          {
+            "id": "l_2",
+            "text": "安静"
+          },
+          {
+            "id": "l_3",
+            "text": "摔跤"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "没有声音"
+          },
+          {
+            "id": "r_1",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_0",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r_3",
+            "text": "跌倒或竞技"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "摔跤"
+          },
+          {
+            "id": "l_1",
+            "text": "安静"
+          },
+          {
+            "id": "l_2",
+            "text": "招引"
+          },
+          {
+            "id": "l_3",
+            "text": "绚丽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "没有声音"
+          },
+          {
+            "id": "r_0",
+            "text": "跌倒或竞技"
+          },
+          {
+            "id": "r_2",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r_3",
+            "text": "灿烂美丽"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《大青树下的小学》里，不同民族的小朋友都在哪里上学？",
+        "options": [
+          "在同一所大青树下的小学",
+          "在不同的学校",
+          "在山上",
+          "在河边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中大青树下的小学最特别的地方是什么？",
+        "options": [
+          "不同民族的小朋友在同一个教室学习",
+          "学校只有一棵树",
+          "学校没有操场",
+          "学生都是汉族"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当上课铃声响起，教室里变得怎么样？",
+        "options": [
+          "非常安静，连小鸟都停下来听课",
+          "非常吵闹",
+          "大家都在外面玩耍",
+          "老师在大声唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文想要表达的核心思想是什么？",
+        "options": [
+          "各民族小朋友团结友爱，幸福快乐",
+          "爬山的好处",
+          "读书有多难",
+          "学校里动物很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在学校里，小动物们（猴子、松鼠、山羊）做了什么？",
+        "options": [
+          "安静地听小朋友读书或好奇地看他们",
+          "在抢小朋友的零食",
+          "在操场上和学生赛跑",
+          "在黑板上画画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '这时候，窗外十分安静，树枝不摇了，鸟儿不叫了。'",
+        "tokens": [
+          "静",
+          "外",
+          "，",
+          "了",
+          "叫",
+          "摇",
+          "安",
+          "鸟",
+          "树",
+          "枝",
+          "分",
+          "不",
+          "不",
+          "了",
+          "儿",
+          "十",
+          "窗",
+          "，",
+          "晨"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "窗",
+          "外",
+          "十",
+          "分",
+          "安",
+          "静",
+          "，",
+          "树",
+          "枝",
+          "不",
+          "摇",
+          "了",
+          "，",
+          "鸟",
+          "儿",
+          "不",
+          "叫",
+          "了"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就是",
+          "不懂",
+          "，",
+          "就要问",
+          "学问",
+          "多思考",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

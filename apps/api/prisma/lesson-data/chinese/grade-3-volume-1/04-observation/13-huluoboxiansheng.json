@@ -1,0 +1,752 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "萝",
+        "hint": "请选择字【萝】的正确拼音",
+        "options": [
+          "liàng",
+          "bǎng",
+          "zhǎng",
+          "luó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "卜",
+        "hint": "请选择字【卜】的正确拼音",
+        "options": [
+          "bo",
+          "chóu",
+          "zhǎng",
+          "bǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "愁",
+        "hint": "请选择字【愁】的正确拼音",
+        "options": [
+          "zhǎng",
+          "chóu",
+          "bǎng",
+          "luó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "沾",
+        "hint": "请选择字【沾】的正确拼音",
+        "options": [
+          "zhān",
+          "tuō",
+          "bo",
+          "zhǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晾",
+        "hint": "请选择字【晾】的正确拼音",
+        "options": [
+          "zhān",
+          "luó",
+          "liàng",
+          "zhǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绑",
+        "hint": "请选择字【绑】的正确拼音",
+        "options": [
+          "bǎng",
+          "bo",
+          "zhān",
+          "luó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bo",
+        "hint": "请组装字【卜】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "丶",
+          "日",
+          "金",
+          "丨",
+          "氵",
+          "亻"
+        ],
+        "target": "卜"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丨",
+          "slot_2": "丶"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chóu",
+        "hint": "请组装字【愁】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "口",
+          "土",
+          "心",
+          "亻",
+          "秋"
+        ],
+        "target": "愁"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "秋",
+          "slot_2": "心"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhān",
+        "hint": "请组装字【沾】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "扌",
+          "占",
+          "口",
+          "亻",
+          "氵"
+        ],
+        "target": "沾"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "占"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "liàng",
+        "hint": "请组装字【晾】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "金",
+          "日",
+          "土",
+          "京",
+          "氵"
+        ],
+        "target": "晾"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "日",
+          "slot_2": "京"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bǎng",
+        "hint": "请组装字【绑】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "扌",
+          "邦",
+          "亻",
+          "氵",
+          "纟"
+        ],
+        "target": "绑"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "纟",
+          "slot_2": "邦"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "长",
+        "hint": "请选择【长】的拼音",
+        "options": [
+          "zhǎng",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_1",
+            "text": "发愁"
+          },
+          {
+            "id": "l_2",
+            "text": "派用处"
+          },
+          {
+            "id": "l_3",
+            "text": "飘动"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "在空中随风摇摆"
+          },
+          {
+            "id": "r_0",
+            "text": "大方不吝啬"
+          },
+          {
+            "id": "r_1",
+            "text": "因为忧虑而愁闷"
+          },
+          {
+            "id": "r_2",
+            "text": "派上用场"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_1",
+            "text": "发愁"
+          },
+          {
+            "id": "l_2",
+            "text": "派用处"
+          },
+          {
+            "id": "l_3",
+            "text": "飘动"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "派上用场"
+          },
+          {
+            "id": "r_3",
+            "text": "在空中随风摇摆"
+          },
+          {
+            "id": "r_0",
+            "text": "大方不吝啬"
+          },
+          {
+            "id": "r_1",
+            "text": "因为忧虑而愁闷"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_1",
+            "text": "派用处"
+          },
+          {
+            "id": "l_2",
+            "text": "发愁"
+          },
+          {
+            "id": "l_3",
+            "text": "飘动"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "因为忧虑而愁闷"
+          },
+          {
+            "id": "r_1",
+            "text": "派上用场"
+          },
+          {
+            "id": "r_3",
+            "text": "在空中随风摇摆"
+          },
+          {
+            "id": "r_0",
+            "text": "大方不吝啬"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "飘动"
+          },
+          {
+            "id": "l_1",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_2",
+            "text": "派用处"
+          },
+          {
+            "id": "l_3",
+            "text": "发愁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "派上用场"
+          },
+          {
+            "id": "r_1",
+            "text": "大方不吝啬"
+          },
+          {
+            "id": "r_0",
+            "text": "在空中随风摇摆"
+          },
+          {
+            "id": "r_3",
+            "text": "因为忧虑而愁闷"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "发愁"
+          },
+          {
+            "id": "l_1",
+            "text": "派用处"
+          },
+          {
+            "id": "l_2",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_3",
+            "text": "飘动"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "派上用场"
+          },
+          {
+            "id": "r_2",
+            "text": "大方不吝啬"
+          },
+          {
+            "id": "r_0",
+            "text": "因为忧虑而愁闷"
+          },
+          {
+            "id": "r_3",
+            "text": "在空中随风摇摆"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "慷慨"
+          },
+          {
+            "id": "l_1",
+            "text": "飘动"
+          },
+          {
+            "id": "l_2",
+            "text": "发愁"
+          },
+          {
+            "id": "l_3",
+            "text": "派用处"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "因为忧虑而愁闷"
+          },
+          {
+            "id": "r_1",
+            "text": "在空中随风摇摆"
+          },
+          {
+            "id": "r_0",
+            "text": "大方不吝啬"
+          },
+          {
+            "id": "r_3",
+            "text": "派上用场"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "胡萝卜先生为什么有一根越来越长的胡子？",
+        "options": [
+          "因为他漏刮了一根，且胡子沾到了甜甜的果酱",
+          "因为他魔法很厉害",
+          "因为他吃了神奇的苹果",
+          "因为天气太热了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小男孩把胡萝卜先生的胡子剪下一段做了什么？",
+        "options": [
+          "当做风筝的线",
+          "当做跳绳",
+          "送给了妈妈",
+          "做成小木船的帆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸟太太把胡萝卜先生的胡子当做什么来用？",
+        "options": [
+          "当做晾衣绳，用来晾晒小鸟的尿布",
+          "当做鸟巢的被子",
+          "当做琴弦",
+          "当做毛线织毛衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇故事说明胡萝卜先生的胡子给别人带来了什么？",
+        "options": [
+          "带来了方便与快乐",
+          "带来了很多麻烦",
+          "让大家觉得很奇怪",
+          "让他自己变得很丑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇童话让我们体会到什么道理？",
+        "options": [
+          "无私的分享能给他人和自己都带来快乐与价值",
+          "胡萝卜要多吃",
+          "刮胡子很重要",
+          "风筝飞得很高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '胡萝卜先生的胡子在风里飘动着，越来越长。'",
+        "tokens": [
+          "长",
+          "越",
+          "胡",
+          "里",
+          "子",
+          "风",
+          "着",
+          "生",
+          "的",
+          "越",
+          "先",
+          "飘",
+          "萝",
+          "在",
+          "胡",
+          "来",
+          "萝",
+          "动",
+          "，",
+          "卜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "胡",
+          "萝",
+          "卜",
+          "先",
+          "生",
+          "的",
+          "胡",
+          "子",
+          "在",
+          "风",
+          "里",
+          "飘",
+          "动",
+          "着",
+          "，",
+          "越",
+          "来",
+          "越",
+          "长"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "。",
+          "就是",
+          "不懂",
+          "多思考",
+          "，",
+          "学问",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

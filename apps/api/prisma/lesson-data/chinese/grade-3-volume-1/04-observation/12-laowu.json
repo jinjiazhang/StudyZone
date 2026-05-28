@@ -1,0 +1,761 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "暴",
+        "hint": "请选择字【暴】的正确拼音",
+        "options": [
+          "fū",
+          "bì",
+          "bào",
+          "ǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "凑",
+        "hint": "请选择字【凑】的正确拼音",
+        "options": [
+          "bào",
+          "jī",
+          "è",
+          "còu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "孵",
+        "hint": "请选择字【孵】的正确拼音",
+        "options": [
+          "è",
+          "bào",
+          "fū",
+          "jī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饱",
+        "hint": "请选择字【饱】的正确拼音",
+        "options": [
+          "còu",
+          "bǎo",
+          "è",
+          "bì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叽",
+        "hint": "请选择字【叽】的正确拼音",
+        "options": [
+          "còu",
+          "jī",
+          "bì",
+          "ǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饿",
+        "hint": "请选择字【饿】的正确拼音",
+        "options": [
+          "còu",
+          "jī",
+          "fū",
+          "è"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "còu",
+        "hint": "请组装字【凑】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "艹",
+          "奏",
+          "氵",
+          "口",
+          "冫"
+        ],
+        "target": "凑"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "冫",
+          "slot_2": "奏"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fū",
+        "hint": "请组装字【孵】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "卵",
+          "月",
+          "木",
+          "孚",
+          "口",
+          "金"
+        ],
+        "target": "孵"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "卵",
+          "slot_2": "孚"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bǎo",
+        "hint": "请组装字【饱】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "包",
+          "氵",
+          "扌",
+          "饣",
+          "亻"
+        ],
+        "target": "饱"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "饣",
+          "slot_2": "包"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jī",
+        "hint": "请组装字【叽】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "扌",
+          "亻",
+          "几",
+          "口",
+          "木",
+          "纟"
+        ],
+        "target": "叽"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "口",
+          "slot_2": "几"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "è",
+        "hint": "请组装字【饿】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "氵",
+          "土",
+          "我",
+          "月",
+          "饣"
+        ],
+        "target": "饿"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "饣",
+          "slot_2": "我"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "ǒu",
+        "hint": "请组装字【偶】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "月",
+          "口",
+          "禺",
+          "扌",
+          "木"
+        ],
+        "target": "偶"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "禺"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_1",
+            "text": "破烂"
+          },
+          {
+            "id": "l_2",
+            "text": "同情心"
+          },
+          {
+            "id": "l_3",
+            "text": "倒塌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "建筑物倒下"
+          },
+          {
+            "id": "r_0",
+            "text": "猛烈的风雨"
+          },
+          {
+            "id": "r_2",
+            "text": "对不幸表示同情"
+          },
+          {
+            "id": "r_1",
+            "text": "陈旧破碎"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "同情心"
+          },
+          {
+            "id": "l_1",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_2",
+            "text": "破烂"
+          },
+          {
+            "id": "l_3",
+            "text": "倒塌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "对不幸表示同情"
+          },
+          {
+            "id": "r_2",
+            "text": "陈旧破碎"
+          },
+          {
+            "id": "r_1",
+            "text": "猛烈的风雨"
+          },
+          {
+            "id": "r_3",
+            "text": "建筑物倒下"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "破烂"
+          },
+          {
+            "id": "l_1",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_2",
+            "text": "同情心"
+          },
+          {
+            "id": "l_3",
+            "text": "倒塌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "陈旧破碎"
+          },
+          {
+            "id": "r_3",
+            "text": "建筑物倒下"
+          },
+          {
+            "id": "r_1",
+            "text": "猛烈的风雨"
+          },
+          {
+            "id": "r_2",
+            "text": "对不幸表示同情"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "破烂"
+          },
+          {
+            "id": "l_1",
+            "text": "同情心"
+          },
+          {
+            "id": "l_2",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_3",
+            "text": "倒塌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "猛烈的风雨"
+          },
+          {
+            "id": "r_1",
+            "text": "对不幸表示同情"
+          },
+          {
+            "id": "r_3",
+            "text": "建筑物倒下"
+          },
+          {
+            "id": "r_0",
+            "text": "陈旧破碎"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "破烂"
+          },
+          {
+            "id": "l_1",
+            "text": "同情心"
+          },
+          {
+            "id": "l_2",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_3",
+            "text": "倒塌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "建筑物倒下"
+          },
+          {
+            "id": "r_0",
+            "text": "陈旧破碎"
+          },
+          {
+            "id": "r_1",
+            "text": "对不幸表示同情"
+          },
+          {
+            "id": "r_2",
+            "text": "猛烈的风雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "倒塌"
+          },
+          {
+            "id": "l_1",
+            "text": "破烂"
+          },
+          {
+            "id": "l_2",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l_3",
+            "text": "同情心"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "对不幸表示同情"
+          },
+          {
+            "id": "r_2",
+            "text": "猛烈的风雨"
+          },
+          {
+            "id": "r_1",
+            "text": "陈旧破碎"
+          },
+          {
+            "id": "r_0",
+            "text": "建筑物倒下"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老屋准备倒下的时候，首先谁请求它再站几天？",
+        "options": [
+          "一只准备避雨的小猫",
+          "一只准备孵蛋的老母鸡",
+          "一只准备织网的小蜘蛛",
+          "一只迷路的小鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老母鸡请求老屋再站二十天是为了做什么？",
+        "options": [
+          "在里面安心孵化她的小鸡",
+          "躲避暴风雨",
+          "唱歌跳舞",
+          "和老屋聊天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后，谁请求老屋再站一会儿，让它织网抓虫子？",
+        "options": [
+          "一只小蜘蛛",
+          "一只大狗",
+          "一个小朋友",
+          "一只小麻雀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么老屋“总也倒不了”？",
+        "options": [
+          "因为老屋充满了慈祥和爱心，为了帮助别人不断坚持",
+          "因为它的墙壁是铁做的",
+          "因为风太小了吹不倒",
+          "因为它不想睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据课文内容预测：如果蜘蛛停止讲故事，老屋会怎么样？",
+        "options": [
+          "老屋可能会幸福地倒下，或者继续帮助其他有需要的动物",
+          "会立刻大哭起来",
+          "会变成高楼大厦",
+          "会倒向学校"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '老屋低头看看，墙壁吱吱呀呀地响。'",
+        "tokens": [
+          "，",
+          "低",
+          "墙",
+          "老",
+          "响",
+          "暴",
+          "吱",
+          "壁",
+          "屋",
+          "呀",
+          "地",
+          "吱",
+          "头",
+          "看",
+          "呀",
+          "看"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老",
+          "屋",
+          "低",
+          "头",
+          "看",
+          "看",
+          "，",
+          "墙",
+          "壁",
+          "吱",
+          "吱",
+          "呀",
+          "呀",
+          "地",
+          "响"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "学问",
+          "就要问",
+          "多思考",
+          "就是",
+          "。",
+          "，"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

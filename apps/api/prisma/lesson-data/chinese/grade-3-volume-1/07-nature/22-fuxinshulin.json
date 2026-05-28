@@ -1,0 +1,767 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "朝",
+        "hint": "请选择字【朝】的正确拼音",
+        "options": [
+          "dǒu",
+          "zhāo",
+          "bí",
+          "méng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "雾",
+        "hint": "请选择字【雾】的正确拼音",
+        "options": [
+          "lù",
+          "shī",
+          "zhāo",
+          "wù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蒙",
+        "hint": "请选择字【蒙】的正确拼音",
+        "options": [
+          "lù",
+          "wù",
+          "zhāo",
+          "méng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鼻",
+        "hint": "请选择字【鼻】的正确拼音",
+        "options": [
+          "xī",
+          "wù",
+          "shī",
+          "bí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "抖",
+        "hint": "请选择字【抖】的正确拼音",
+        "options": [
+          "lù",
+          "shī",
+          "dǒu",
+          "wù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "露",
+        "hint": "请选择字【露】的正确拼音",
+        "options": [
+          "zhāo",
+          "wù",
+          "dǒu",
+          "lù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wù",
+        "hint": "请组装字【雾】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "口",
+          "金",
+          "雨",
+          "艹",
+          "纟",
+          "务"
+        ],
+        "target": "雾"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "雨",
+          "slot_2": "务"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "méng",
+        "hint": "请组装字【蒙】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "土",
+          "冡",
+          "木",
+          "月",
+          "日"
+        ],
+        "target": "蒙"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "艹",
+          "slot_2": "冡"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bí",
+        "hint": "请组装字【鼻】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "自",
+          "土",
+          "纟",
+          "金",
+          "氵",
+          "畀"
+        ],
+        "target": "鼻"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "自",
+          "slot_2": "畀"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dǒu",
+        "hint": "请组装字【抖】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "手",
+          "口",
+          "日",
+          "月",
+          "金",
+          "斗"
+        ],
+        "target": "抖"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "手",
+          "slot_2": "斗"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lù",
+        "hint": "请组装字【露】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "氵",
+          "雨",
+          "路",
+          "亻",
+          "金"
+        ],
+        "target": "露"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "雨",
+          "slot_2": "路"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shī",
+        "hint": "请组装字【湿】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "亻",
+          "月",
+          "纟",
+          "日",
+          "显"
+        ],
+        "target": "湿"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "显"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "幽深"
+          },
+          {
+            "id": "l_1",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_2",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_3",
+            "text": "警觉"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "幽静深邃"
+          },
+          {
+            "id": "r_2",
+            "text": "鸟的羽翼"
+          },
+          {
+            "id": "r_1",
+            "text": "含有水分"
+          },
+          {
+            "id": "r_3",
+            "text": "对危险敏锐察觉"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "幽深"
+          },
+          {
+            "id": "l_1",
+            "text": "警觉"
+          },
+          {
+            "id": "l_2",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_3",
+            "text": "潮湿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "鸟的羽翼"
+          },
+          {
+            "id": "r_1",
+            "text": "对危险敏锐察觉"
+          },
+          {
+            "id": "r_3",
+            "text": "含有水分"
+          },
+          {
+            "id": "r_0",
+            "text": "幽静深邃"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_1",
+            "text": "警觉"
+          },
+          {
+            "id": "l_2",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_3",
+            "text": "幽深"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "对危险敏锐察觉"
+          },
+          {
+            "id": "r_0",
+            "text": "鸟的羽翼"
+          },
+          {
+            "id": "r_3",
+            "text": "幽静深邃"
+          },
+          {
+            "id": "r_2",
+            "text": "含有水分"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_1",
+            "text": "警觉"
+          },
+          {
+            "id": "l_2",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_3",
+            "text": "幽深"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "鸟的羽翼"
+          },
+          {
+            "id": "r_0",
+            "text": "含有水分"
+          },
+          {
+            "id": "r_3",
+            "text": "幽静深邃"
+          },
+          {
+            "id": "r_1",
+            "text": "对危险敏锐察觉"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_1",
+            "text": "幽深"
+          },
+          {
+            "id": "l_2",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_3",
+            "text": "警觉"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "对危险敏锐察觉"
+          },
+          {
+            "id": "r_0",
+            "text": "含有水分"
+          },
+          {
+            "id": "r_2",
+            "text": "鸟的羽翼"
+          },
+          {
+            "id": "r_1",
+            "text": "幽静深邃"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "羽毛"
+          },
+          {
+            "id": "l_1",
+            "text": "警觉"
+          },
+          {
+            "id": "l_2",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_3",
+            "text": "幽深"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "幽静深邃"
+          },
+          {
+            "id": "r_1",
+            "text": "对危险敏锐察觉"
+          },
+          {
+            "id": "r_2",
+            "text": "含有水分"
+          },
+          {
+            "id": "r_0",
+            "text": "鸟的羽翼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中，父亲对树林和鸟持有什么样的情感？",
+        "options": [
+          "父亲一生最喜欢树林和歌唱的鸟，深爱大自然",
+          "父亲讨厌鸟叫声",
+          "父亲喜欢打猎捕鸟",
+          "父亲觉得树林很危险"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在幽深的雾蒙蒙的树林里，父亲是怎么发现鸟的存在的？",
+        "options": [
+          "通过闻树林里鸟羽毛的潮湿气味，和看叶子的动静",
+          "听到小鸟大声唱歌",
+          "看到有很多鸟飞来飞去",
+          "用望远镜观察到的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "父亲说：“林子里有不少鸟。”为什么“我”却没有看见也没有听见？",
+        "options": [
+          "因为“我”没有父亲那样留心观察大自然的经验和深爱",
+          "因为鸟都飞走了",
+          "因为当时天太黑了",
+          "因为“我”在睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么清晨鸟儿准备飞起歌唱时，是它们最危险的时候？",
+        "options": [
+          "因为此时羽毛潮湿沉重，飞得慢，最容易被猎人打中",
+          "因为有大鸟来抢食",
+          "因为天太冷了容易感冒",
+          "因为大树会倒下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事最后，“我真高兴，父亲不是猎人”，这表达了作者：",
+        "options": [
+          "对生命和自然的尊重，以及对父亲爱鸟行为的自豪",
+          "高兴父亲能抓到很多鸟",
+          "高兴可以去树林里玩耍",
+          "猎人工作太累了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '我真高兴，父亲不是猎人，他是那么爱鸟。'",
+        "tokens": [
+          "猎",
+          "我",
+          "是",
+          "爱",
+          "父",
+          "是",
+          "高",
+          "亲",
+          "他",
+          "不",
+          "真",
+          "人",
+          "朝",
+          "那",
+          "鸟",
+          "么",
+          "，",
+          "，",
+          "兴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "真",
+          "高",
+          "兴",
+          "，",
+          "父",
+          "亲",
+          "不",
+          "是",
+          "猎",
+          "人",
+          "，",
+          "他",
+          "是",
+          "那",
+          "么",
+          "爱",
+          "鸟"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "就是",
+          "，",
+          "就要问",
+          "多思考",
+          "学问",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

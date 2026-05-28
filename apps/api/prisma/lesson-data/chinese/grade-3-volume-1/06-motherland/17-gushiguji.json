@@ -1,0 +1,744 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "断",
+        "hint": "请选择字【断】的正确拼音",
+        "options": [
+          "jìng",
+          "zhì",
+          "duàn",
+          "mó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "楚",
+        "hint": "请选择字【楚】的正确拼音",
+        "options": [
+          "gū",
+          "mó",
+          "zhì",
+          "chǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "至",
+        "hint": "请选择字【至】的正确拼音",
+        "options": [
+          "gū",
+          "mó",
+          "zhì",
+          "chǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "孤",
+        "hint": "请选择字【孤】的正确拼音",
+        "options": [
+          "jìng",
+          "gū",
+          "chǔ",
+          "zhì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "帆",
+        "hint": "请选择字【帆】的正确拼音",
+        "options": [
+          "duàn",
+          "zhì",
+          "gū",
+          "fān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饮",
+        "hint": "请选择字【饮】的正确拼音",
+        "options": [
+          "mó",
+          "yǐn",
+          "duàn",
+          "zhì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chǔ",
+        "hint": "请组装字【楚】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "日",
+          "疋",
+          "月",
+          "林",
+          "金"
+        ],
+        "target": "楚"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "林",
+          "slot_2": "疋"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "至",
+        "hint": "请选择【至】的拼音",
+        "options": [
+          "zhì",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "gū",
+        "hint": "请组装字【孤】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "金",
+          "艹",
+          "子",
+          "口",
+          "瓜"
+        ],
+        "target": "孤"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "子",
+          "slot_2": "瓜"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fān",
+        "hint": "请组装字【帆】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "巾",
+          "亻",
+          "日",
+          "艹",
+          "金",
+          "凡"
+        ],
+        "target": "帆"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "巾",
+          "slot_2": "凡"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yǐn",
+        "hint": "请组装字【饮】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "欠",
+          "日",
+          "纟",
+          "木",
+          "金",
+          "饣"
+        ],
+        "target": "饮"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "饣",
+          "slot_2": "欠"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jìng",
+        "hint": "请组装字【镜】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "竟",
+          "土",
+          "钅",
+          "月",
+          "金"
+        ],
+        "target": "镜"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "钅",
+          "slot_2": "竟"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "山色空蒙"
+          },
+          {
+            "id": "l_1",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_2",
+            "text": "天门中断"
+          },
+          {
+            "id": "l_3",
+            "text": "淡妆浓抹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "淡雅的妆容和浓艳的打扮"
+          },
+          {
+            "id": "r_2",
+            "text": "天门山从中间断开"
+          },
+          {
+            "id": "r_0",
+            "text": "山峦在雨雾中迷茫朦胧"
+          },
+          {
+            "id": "r_1",
+            "text": "水波在阳光下波光闪烁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "山色空蒙"
+          },
+          {
+            "id": "l_1",
+            "text": "淡妆浓抹"
+          },
+          {
+            "id": "l_2",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_3",
+            "text": "天门中断"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "山峦在雨雾中迷茫朦胧"
+          },
+          {
+            "id": "r_1",
+            "text": "淡雅的妆容和浓艳的打扮"
+          },
+          {
+            "id": "r_2",
+            "text": "水波在阳光下波光闪烁"
+          },
+          {
+            "id": "r_3",
+            "text": "天门山从中间断开"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "天门中断"
+          },
+          {
+            "id": "l_1",
+            "text": "淡妆浓抹"
+          },
+          {
+            "id": "l_2",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_3",
+            "text": "山色空蒙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "水波在阳光下波光闪烁"
+          },
+          {
+            "id": "r_3",
+            "text": "山峦在雨雾中迷茫朦胧"
+          },
+          {
+            "id": "r_0",
+            "text": "天门山从中间断开"
+          },
+          {
+            "id": "r_1",
+            "text": "淡雅的妆容和浓艳的打扮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "淡妆浓抹"
+          },
+          {
+            "id": "l_1",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_2",
+            "text": "天门中断"
+          },
+          {
+            "id": "l_3",
+            "text": "山色空蒙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "天门山从中间断开"
+          },
+          {
+            "id": "r_1",
+            "text": "水波在阳光下波光闪烁"
+          },
+          {
+            "id": "r_0",
+            "text": "淡雅的妆容和浓艳的打扮"
+          },
+          {
+            "id": "r_3",
+            "text": "山峦在雨雾中迷茫朦胧"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_1",
+            "text": "天门中断"
+          },
+          {
+            "id": "l_2",
+            "text": "山色空蒙"
+          },
+          {
+            "id": "l_3",
+            "text": "淡妆浓抹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "天门山从中间断开"
+          },
+          {
+            "id": "r_0",
+            "text": "水波在阳光下波光闪烁"
+          },
+          {
+            "id": "r_2",
+            "text": "山峦在雨雾中迷茫朦胧"
+          },
+          {
+            "id": "r_3",
+            "text": "淡雅的妆容和浓艳的打扮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "山色空蒙"
+          },
+          {
+            "id": "l_1",
+            "text": "水光潋滟"
+          },
+          {
+            "id": "l_2",
+            "text": "天门中断"
+          },
+          {
+            "id": "l_3",
+            "text": "淡妆浓抹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "天门山从中间断开"
+          },
+          {
+            "id": "r_1",
+            "text": "水波在阳光下波光闪烁"
+          },
+          {
+            "id": "r_3",
+            "text": "淡雅的妆容和浓艳的打扮"
+          },
+          {
+            "id": "r_0",
+            "text": "山峦在雨雾中迷茫朦胧"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《望天门山》的作者李白被誉为什么？",
+        "options": [
+          "诗仙",
+          "诗圣",
+          "诗鬼",
+          "诗佛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两岸青山相对出，孤帆一片日边来”写的是哪里的风光？",
+        "options": [
+          "长江天门山段的壮丽自然景象",
+          "西湖的宁静秋色",
+          "洞庭湖的朦胧月色",
+          "华山的险峻风光"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "苏轼的《饮湖上初晴后雨》中，把西湖比作了谁？",
+        "options": [
+          "西子（古代美女西施）",
+          "织女",
+          "嫦娥",
+          "王母娘娘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《望洞庭》中，“白银盘里一青螺”把洞庭湖和君山比作了什么？",
+        "options": [
+          "把洞庭湖比作白银盘，把君山比作青螺",
+          "把洞庭湖比作绿色草地",
+          "把君山比作大山",
+          "把镜子比作玉盘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“欲把西湖比西子，淡妆浓抹总相宜”这句话赞美了西湖：",
+        "options": [
+          "在任何天气下都美丽动人、仪态万千",
+          "只在晴天好看",
+          "只在雨天好看",
+          "已经不美丽了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '欲把西湖比西子，淡妆浓抹总相宜。'",
+        "tokens": [
+          "把",
+          "西",
+          "子",
+          "浓",
+          "相",
+          "湖",
+          "比",
+          "，",
+          "抹",
+          "妆",
+          "西",
+          "断",
+          "欲",
+          "总",
+          "淡",
+          "宜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "欲",
+          "把",
+          "西",
+          "湖",
+          "比",
+          "西",
+          "子",
+          "，",
+          "淡",
+          "妆",
+          "浓",
+          "抹",
+          "总",
+          "相",
+          "宜"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "学问",
+          "就是",
+          "不懂",
+          "，",
+          "就要问",
+          "多思考",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

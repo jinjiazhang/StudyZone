@@ -1,0 +1,729 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "孙",
+        "hint": "请选择字【孙】的正确拼音",
+        "options": [
+          "quān",
+          "bèi",
+          "lì",
+          "sūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "照",
+        "hint": "请选择字【照】的正确拼音",
+        "options": [
+          "sūn",
+          "lì",
+          "zhào",
+          "bèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "段",
+        "hint": "请选择字【段】的正确拼音",
+        "options": [
+          "duàn",
+          "sūn",
+          "zhào",
+          "lì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "例",
+        "hint": "请选择字【例】的正确拼音",
+        "options": [
+          "zhào",
+          "bǎn",
+          "bèi",
+          "lì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "背",
+        "hint": "请选择字【背】的正确拼音",
+        "options": [
+          "duàn",
+          "zhào",
+          "bèi",
+          "quān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "板",
+        "hint": "请选择字【板】的正确拼音",
+        "options": [
+          "sūn",
+          "lì",
+          "bǎn",
+          "bèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "照",
+        "hint": "请选择【照】的拼音",
+        "options": [
+          "zhào",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "段",
+        "hint": "请选择【段】的拼音",
+        "options": [
+          "duàn",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "lì",
+        "hint": "请组装字【例】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "列",
+          "木",
+          "艹",
+          "亻",
+          "月",
+          "纟"
+        ],
+        "target": "例"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "列"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bèi",
+        "hint": "请组装字【背】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "金",
+          "北",
+          "氵",
+          "月",
+          "日"
+        ],
+        "target": "背"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "北",
+          "slot_2": "月"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bǎn",
+        "hint": "请组装字【板】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "月",
+          "艹",
+          "木",
+          "反",
+          "口"
+        ],
+        "target": "板"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "木",
+          "slot_2": "反"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "quān",
+        "hint": "请组装字【圈】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "氵",
+          "日",
+          "卷",
+          "土",
+          "囗"
+        ],
+        "target": "圈"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "囗",
+          "slot_2": "卷"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "刹那间"
+          },
+          {
+            "id": "l_1",
+            "text": "厉害"
+          },
+          {
+            "id": "l_2",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_3",
+            "text": "鸦雀无声"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "严厉或程度深"
+          },
+          {
+            "id": "r_2",
+            "text": "不明事理没头脑"
+          },
+          {
+            "id": "r_0",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_3",
+            "text": "形容非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_1",
+            "text": "厉害"
+          },
+          {
+            "id": "l_2",
+            "text": "鸦雀无声"
+          },
+          {
+            "id": "l_3",
+            "text": "刹那间"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "形容非常安静"
+          },
+          {
+            "id": "r_3",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_0",
+            "text": "不明事理没头脑"
+          },
+          {
+            "id": "r_1",
+            "text": "严厉或程度深"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "刹那间"
+          },
+          {
+            "id": "l_1",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_2",
+            "text": "鸦雀无声"
+          },
+          {
+            "id": "l_3",
+            "text": "厉害"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_3",
+            "text": "严厉或程度深"
+          },
+          {
+            "id": "r_1",
+            "text": "不明事理没头脑"
+          },
+          {
+            "id": "r_2",
+            "text": "形容非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "鸦雀无声"
+          },
+          {
+            "id": "l_1",
+            "text": "刹那间"
+          },
+          {
+            "id": "l_2",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_3",
+            "text": "厉害"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_2",
+            "text": "不明事理没头脑"
+          },
+          {
+            "id": "r_3",
+            "text": "严厉或程度深"
+          },
+          {
+            "id": "r_0",
+            "text": "形容非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "厉害"
+          },
+          {
+            "id": "l_1",
+            "text": "刹那间"
+          },
+          {
+            "id": "l_2",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_3",
+            "text": "鸦雀无声"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "严厉或程度深"
+          },
+          {
+            "id": "r_3",
+            "text": "形容非常安静"
+          },
+          {
+            "id": "r_1",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_2",
+            "text": "不明事理没头脑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "糊里糊涂"
+          },
+          {
+            "id": "l_1",
+            "text": "厉害"
+          },
+          {
+            "id": "l_2",
+            "text": "刹那间"
+          },
+          {
+            "id": "l_3",
+            "text": "鸦雀无声"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "形容非常安静"
+          },
+          {
+            "id": "r_2",
+            "text": "极短的时间"
+          },
+          {
+            "id": "r_0",
+            "text": "不明事理没头脑"
+          },
+          {
+            "id": "r_1",
+            "text": "严厉或程度深"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文讲述的是谁小时候学习的故事？",
+        "options": [
+          "孙中山",
+          "毛泽东",
+          "童第周",
+          "鲁迅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孙中山小时候在私塾读书时，有什么特别的举动？",
+        "options": [
+          "不懂就要向先生发问",
+          "只背书不问问题",
+          "经常逃学去玩",
+          "上课睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当孙中山向先生提问时，其他同学表现得怎么样？",
+        "options": [
+          "吓呆了，教室里鸦雀无声",
+          "都在嘲笑他",
+          "大声为他鼓掌",
+          "继续大声背书"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先生听了孙中山的要求后，是怎么做的？",
+        "options": [
+          "先让他背书，背完后耐心地讲解了意思",
+          "严厉地批评了他",
+          "把他赶出了教室",
+          "让他回家去问妈妈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孙中山说：“学问学问，不懂就要问”，这句话告诉我们什么？",
+        "options": [
+          "学习要主动思考，勇于发问",
+          "只要会背书就行",
+          "要听老师的所有话",
+          "不认识字就不要读了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '学问学问，不懂就要问，挨打也值得。'",
+        "tokens": [
+          "也",
+          "问",
+          "学",
+          "问",
+          "值",
+          "就",
+          "不",
+          "，",
+          "问",
+          "要",
+          "打",
+          "孙",
+          "，",
+          "学",
+          "得",
+          "挨",
+          "懂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "学",
+          "问",
+          "学",
+          "问",
+          "，",
+          "不",
+          "懂",
+          "就",
+          "要",
+          "问",
+          "，",
+          "挨",
+          "打",
+          "也",
+          "值",
+          "得"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就是",
+          "。",
+          "多思考",
+          "学问",
+          "就要问",
+          "，",
+          "不懂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

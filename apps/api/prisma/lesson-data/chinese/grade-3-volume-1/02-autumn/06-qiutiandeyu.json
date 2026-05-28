@@ -1,0 +1,744 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盒",
+        "hint": "请选择字【盒】的正确拼音",
+        "options": [
+          "hé",
+          "xiān",
+          "piào",
+          "yán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "颜",
+        "hint": "请选择字【颜】的正确拼音",
+        "options": [
+          "hé",
+          "xiān",
+          "yán",
+          "piào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "料",
+        "hint": "请选择字【料】的正确拼音",
+        "options": [
+          "hé",
+          "liào",
+          "lí",
+          "xiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "票",
+        "hint": "请选择字【票】的正确拼音",
+        "options": [
+          "lí",
+          "piào",
+          "piāo",
+          "xiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "飘",
+        "hint": "请选择字【飘】的正确拼音",
+        "options": [
+          "liào",
+          "piāo",
+          "yán",
+          "piào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "争",
+        "hint": "请选择字【争】的正确拼音",
+        "options": [
+          "hé",
+          "piào",
+          "piāo",
+          "zhēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yán",
+        "hint": "请组装字【颜】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "日",
+          "页",
+          "彦",
+          "氵",
+          "土"
+        ],
+        "target": "颜"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "彦",
+          "slot_2": "页"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "liào",
+        "hint": "请组装字【料】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "斗",
+          "土",
+          "米",
+          "氵",
+          "金",
+          "木"
+        ],
+        "target": "料"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "米",
+          "slot_2": "斗"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "piào",
+        "hint": "请组装字【票】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "西",
+          "日",
+          "口",
+          "扌",
+          "示",
+          "氵"
+        ],
+        "target": "票"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "西",
+          "slot_2": "示"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "piāo",
+        "hint": "请组装字【飘】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "日",
+          "月",
+          "票",
+          "风",
+          "土"
+        ],
+        "target": "飘"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "票",
+          "slot_2": "风"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "争",
+        "hint": "请选择【争】的拼音",
+        "options": [
+          "zhēng",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xiān",
+        "hint": "请组装字【仙】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "山",
+          "木",
+          "氵",
+          "日",
+          "亻",
+          "金"
+        ],
+        "target": "仙"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "山"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "丰收"
+          },
+          {
+            "id": "l_1",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_2",
+            "text": "温柔"
+          },
+          {
+            "id": "l_3",
+            "text": "五彩缤纷"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "比喻解决问题的关键"
+          },
+          {
+            "id": "r_2",
+            "text": "温和柔顺"
+          },
+          {
+            "id": "r_3",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_0",
+            "text": "收成极好"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_1",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l_2",
+            "text": "丰收"
+          },
+          {
+            "id": "l_3",
+            "text": "温柔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "温和柔顺"
+          },
+          {
+            "id": "r_1",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_2",
+            "text": "收成极好"
+          },
+          {
+            "id": "r_0",
+            "text": "比喻解决问题的关键"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_1",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l_2",
+            "text": "温柔"
+          },
+          {
+            "id": "l_3",
+            "text": "丰收"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "比喻解决问题的关键"
+          },
+          {
+            "id": "r_3",
+            "text": "收成极好"
+          },
+          {
+            "id": "r_1",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_2",
+            "text": "温和柔顺"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "温柔"
+          },
+          {
+            "id": "l_1",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_2",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l_3",
+            "text": "丰收"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "温和柔顺"
+          },
+          {
+            "id": "r_2",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_3",
+            "text": "收成极好"
+          },
+          {
+            "id": "r_1",
+            "text": "比喻解决问题的关键"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l_1",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_2",
+            "text": "温柔"
+          },
+          {
+            "id": "l_3",
+            "text": "丰收"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "温和柔顺"
+          },
+          {
+            "id": "r_0",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_3",
+            "text": "收成极好"
+          },
+          {
+            "id": "r_1",
+            "text": "比喻解决问题的关键"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "钥匙"
+          },
+          {
+            "id": "l_1",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l_2",
+            "text": "温柔"
+          },
+          {
+            "id": "l_3",
+            "text": "丰收"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "色彩绚丽多样"
+          },
+          {
+            "id": "r_0",
+            "text": "比喻解决问题的关键"
+          },
+          {
+            "id": "r_2",
+            "text": "温和柔顺"
+          },
+          {
+            "id": "r_3",
+            "text": "收成极好"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中说秋天的雨是一把钥匙，它打开了什么？",
+        "options": [
+          "秋天的大门",
+          "学校的宝箱",
+          "老师的抽屉",
+          "大自然的小溪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋天的雨有一盒五彩缤纷的颜料，它把黄色给了谁？",
+        "options": [
+          "银杏树的叶子",
+          "枫树的叶子",
+          "美丽的菊花",
+          "红红的苹果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋天的雨把红色给了谁？",
+        "options": [
+          "枫树的叶子",
+          "美丽的菊花",
+          "银杏树的叶子",
+          "金黄的田野"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文写“金黄色是给田野的”，田野像什么？",
+        "options": [
+          "像金色的海洋",
+          "像红色的地毯",
+          "像碧绿的草地",
+          "像一面镜子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋天的雨带给大地和朋友们什么？",
+        "options": [
+          "带给大地的是一曲丰收的歌，带给小朋友的是一首欢乐的歌",
+          "带来寒冷的北风",
+          "带来很多泥泞的路",
+          "带来感冒和生病"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '秋天的雨，有一盒五彩缤纷的颜料。'",
+        "tokens": [
+          "盒",
+          "秋",
+          "缤",
+          "一",
+          "的",
+          "颜",
+          "天",
+          "雨",
+          "纷",
+          "料",
+          "盒",
+          "五",
+          "的",
+          "，",
+          "彩",
+          "有"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "秋",
+          "天",
+          "的",
+          "雨",
+          "，",
+          "有",
+          "一",
+          "盒",
+          "五",
+          "彩",
+          "缤",
+          "纷",
+          "的",
+          "颜",
+          "料"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "。",
+          "就要问",
+          "，",
+          "多思考",
+          "就是",
+          "学问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

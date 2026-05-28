@@ -1,0 +1,746 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "铺",
+        "hint": "请选择字【铺】的正确拼音",
+        "options": [
+          "ní",
+          "yuàn",
+          "pái",
+          "pū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "泥",
+        "hint": "请选择字【泥】的正确拼音",
+        "options": [
+          "luàn",
+          "pái",
+          "ní",
+          "pū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晶",
+        "hint": "请选择字【晶】的正确拼音",
+        "options": [
+          "yìn",
+          "luàn",
+          "pū",
+          "jīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "紧",
+        "hint": "请选择字【紧】的正确拼音",
+        "options": [
+          "jǐn",
+          "luàn",
+          "yìn",
+          "ní"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "院",
+        "hint": "请选择字【院】的正确拼音",
+        "options": [
+          "yìn",
+          "yuàn",
+          "pái",
+          "jǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "印",
+        "hint": "请选择字【印】的正确拼音",
+        "options": [
+          "yìn",
+          "yuàn",
+          "luàn",
+          "pái"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "ní",
+        "hint": "请组装字【泥】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "尼",
+          "日",
+          "亻",
+          "氵",
+          "纟",
+          "木"
+        ],
+        "target": "泥"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "氵",
+          "slot_2": "尼"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晶",
+        "hint": "请选择【晶】的拼音",
+        "options": [
+          "jīng",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jǐn",
+        "hint": "请组装字【紧】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "月",
+          "糸",
+          "艹",
+          "氵",
+          "臣"
+        ],
+        "target": "紧"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "臣",
+          "slot_2": "糸"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yuàn",
+        "hint": "请组装字【院】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "⻖",
+          "完",
+          "日",
+          "氵",
+          "亻",
+          "木"
+        ],
+        "target": "院"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "⻖",
+          "slot_2": "完"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yìn",
+        "hint": "请组装字【印】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "卩",
+          "月",
+          "亻",
+          "纟",
+          "⺕",
+          "土"
+        ],
+        "target": "印"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "⺕",
+          "slot_2": "卩"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "pái",
+        "hint": "请组装字【排】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "非",
+          "日",
+          "月",
+          "金",
+          "土",
+          "扌"
+        ],
+        "target": "排"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "非"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_1",
+            "text": "亮晶晶"
+          },
+          {
+            "id": "l_2",
+            "text": "凌乱"
+          },
+          {
+            "id": "l_3",
+            "text": "金色巴掌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "光亮闪烁"
+          },
+          {
+            "id": "r_2",
+            "text": "杂乱不整齐"
+          },
+          {
+            "id": "r_0",
+            "text": "含有水分潮湿"
+          },
+          {
+            "id": "r_3",
+            "text": "法国梧桐的落叶"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "金色巴掌"
+          },
+          {
+            "id": "l_1",
+            "text": "凌乱"
+          },
+          {
+            "id": "l_2",
+            "text": "亮晶晶"
+          },
+          {
+            "id": "l_3",
+            "text": "潮湿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "含有水分潮湿"
+          },
+          {
+            "id": "r_1",
+            "text": "杂乱不整齐"
+          },
+          {
+            "id": "r_0",
+            "text": "法国梧桐的落叶"
+          },
+          {
+            "id": "r_2",
+            "text": "光亮闪烁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "亮晶晶"
+          },
+          {
+            "id": "l_1",
+            "text": "凌乱"
+          },
+          {
+            "id": "l_2",
+            "text": "金色巴掌"
+          },
+          {
+            "id": "l_3",
+            "text": "潮湿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "含有水分潮湿"
+          },
+          {
+            "id": "r_0",
+            "text": "光亮闪烁"
+          },
+          {
+            "id": "r_2",
+            "text": "法国梧桐的落叶"
+          },
+          {
+            "id": "r_1",
+            "text": "杂乱不整齐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "凌乱"
+          },
+          {
+            "id": "l_1",
+            "text": "亮晶晶"
+          },
+          {
+            "id": "l_2",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_3",
+            "text": "金色巴掌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "含有水分潮湿"
+          },
+          {
+            "id": "r_3",
+            "text": "法国梧桐的落叶"
+          },
+          {
+            "id": "r_0",
+            "text": "杂乱不整齐"
+          },
+          {
+            "id": "r_1",
+            "text": "光亮闪烁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "亮晶晶"
+          },
+          {
+            "id": "l_1",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_2",
+            "text": "金色巴掌"
+          },
+          {
+            "id": "l_3",
+            "text": "凌乱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "法国梧桐的落叶"
+          },
+          {
+            "id": "r_1",
+            "text": "含有水分潮湿"
+          },
+          {
+            "id": "r_0",
+            "text": "光亮闪烁"
+          },
+          {
+            "id": "r_3",
+            "text": "杂乱不整齐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "潮湿"
+          },
+          {
+            "id": "l_1",
+            "text": "金色巴掌"
+          },
+          {
+            "id": "l_2",
+            "text": "凌乱"
+          },
+          {
+            "id": "l_3",
+            "text": "亮晶晶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "光亮闪烁"
+          },
+          {
+            "id": "r_2",
+            "text": "杂乱不整齐"
+          },
+          {
+            "id": "r_1",
+            "text": "法国梧桐的落叶"
+          },
+          {
+            "id": "r_0",
+            "text": "含有水分潮湿"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水泥道上铺满的“金色巴掌”是指什么？",
+        "options": [
+          "法国梧桐树的落叶",
+          "真人的手掌印",
+          "金子做的玩具",
+          "秋天的小花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者走在铺满金色巴掌的水泥道上，心情怎么样？",
+        "options": [
+          "感到非常愉快，觉得路面美极了",
+          "觉得路太滑了不好走",
+          "非常讨厌下雨天",
+          "急着回家写作业"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水泥道上的落叶在雨后看起来像什么？",
+        "options": [
+          "像一块块小小的地毯，粘在湿漉漉的水泥道上",
+          "像垃圾一样脏",
+          "像金币一样闪光",
+          "像小鱼在水里游"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中写“我一步一步小心地走着，一片一片仔细地数着”，这表现了作者：",
+        "options": [
+          "对秋天景色的无限喜爱与留恋",
+          "数数能力很好",
+          "害怕摔跤",
+          "路太难走了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文告诉我们要学会什么？",
+        "options": [
+          "在日常生活中留心观察身边美丽的事物",
+          "不要在雨天出门",
+          "保护法国梧桐树",
+          "多练习走路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '每一片法国梧桐树的落叶，都像一个金色的小巴掌。'",
+        "tokens": [
+          "像",
+          "小",
+          "巴",
+          "落",
+          "的",
+          "的",
+          "铺",
+          "桐",
+          "国",
+          "梧",
+          "法",
+          "，",
+          "叶",
+          "金",
+          "色",
+          "树",
+          "掌"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "法",
+          "国",
+          "梧",
+          "桐",
+          "树",
+          "的",
+          "落",
+          "叶",
+          "，",
+          "像",
+          "金",
+          "色",
+          "的",
+          "小",
+          "巴",
+          "掌"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "多思考",
+          "就要问",
+          "就是",
+          "，",
+          "学问",
+          "不懂",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

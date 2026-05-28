@@ -1,0 +1,763 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "等",
+        "hint": "请选择字【等】的正确拼音",
+        "options": [
+          "děng",
+          "fá",
+          "zhēng",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "剩",
+        "hint": "请选择字【剩】的正确拼音",
+        "options": [
+          "zhēng",
+          "xī",
+          "shèng",
+          "fá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "伐",
+        "hint": "请选择字【伐】的正确拼音",
+        "options": [
+          "fǔ",
+          "fá",
+          "děng",
+          "zhēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "斧",
+        "hint": "请选择字【斧】的正确拼音",
+        "options": [
+          "xī",
+          "děng",
+          "shèng",
+          "fǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "煤",
+        "hint": "请选择字【煤】的正确拼音",
+        "options": [
+          "méi",
+          "rán",
+          "fǔ",
+          "zhēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "燃",
+        "hint": "请选择字【燃】的正确拼音",
+        "options": [
+          "zhēng",
+          "méi",
+          "rán",
+          "fá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shèng",
+        "hint": "请组装字【剩】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "刂",
+          "氵",
+          "月",
+          "土",
+          "日",
+          "乘"
+        ],
+        "target": "剩"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "乘",
+          "slot_2": "刂"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fá",
+        "hint": "请组装字【伐】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "戈",
+          "木",
+          "月",
+          "亻",
+          "金"
+        ],
+        "target": "伐"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "戈"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fǔ",
+        "hint": "请组装字【斧】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "斤",
+          "纟",
+          "口",
+          "父",
+          "艹",
+          "月"
+        ],
+        "target": "斧"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "父",
+          "slot_2": "斤"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "méi",
+        "hint": "请组装字【煤】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "口",
+          "某",
+          "土",
+          "火",
+          "艹"
+        ],
+        "target": "煤"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "火",
+          "slot_2": "某"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "rán",
+        "hint": "请组装字【燃】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "日",
+          "氵",
+          "火",
+          "然",
+          "土"
+        ],
+        "target": "燃"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "火",
+          "slot_2": "然"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhēng",
+        "hint": "请组装字【睁】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "目",
+          "争",
+          "土",
+          "亻",
+          "艹"
+        ],
+        "target": "睁"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "目",
+          "slot_2": "争"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "盯着"
+          },
+          {
+            "id": "l_1",
+            "text": "融化"
+          },
+          {
+            "id": "l_2",
+            "text": "去年的树"
+          },
+          {
+            "id": "l_3",
+            "text": "信守诺言"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_0",
+            "text": "聚精会神看"
+          },
+          {
+            "id": "r_3",
+            "text": "答应的事一定要做到"
+          },
+          {
+            "id": "r_2",
+            "text": "化为火柴火焰的树"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "融化"
+          },
+          {
+            "id": "l_1",
+            "text": "盯着"
+          },
+          {
+            "id": "l_2",
+            "text": "去年的树"
+          },
+          {
+            "id": "l_3",
+            "text": "信守诺言"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "答应的事一定要做到"
+          },
+          {
+            "id": "r_0",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_2",
+            "text": "化为火柴火焰的树"
+          },
+          {
+            "id": "r_1",
+            "text": "聚精会神看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "融化"
+          },
+          {
+            "id": "l_1",
+            "text": "去年的树"
+          },
+          {
+            "id": "l_2",
+            "text": "盯着"
+          },
+          {
+            "id": "l_3",
+            "text": "信守诺言"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "答应的事一定要做到"
+          },
+          {
+            "id": "r_2",
+            "text": "聚精会神看"
+          },
+          {
+            "id": "r_0",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_1",
+            "text": "化为火柴火焰的树"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "信守诺言"
+          },
+          {
+            "id": "l_1",
+            "text": "融化"
+          },
+          {
+            "id": "l_2",
+            "text": "盯着"
+          },
+          {
+            "id": "l_3",
+            "text": "去年的树"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_3",
+            "text": "化为火柴火焰的树"
+          },
+          {
+            "id": "r_0",
+            "text": "答应的事一定要做到"
+          },
+          {
+            "id": "r_2",
+            "text": "聚精会神看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "盯着"
+          },
+          {
+            "id": "l_1",
+            "text": "去年的树"
+          },
+          {
+            "id": "l_2",
+            "text": "融化"
+          },
+          {
+            "id": "l_3",
+            "text": "信守诺言"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_3",
+            "text": "答应的事一定要做到"
+          },
+          {
+            "id": "r_1",
+            "text": "化为火柴火焰的树"
+          },
+          {
+            "id": "r_0",
+            "text": "聚精会神看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "盯着"
+          },
+          {
+            "id": "l_1",
+            "text": "信守诺言"
+          },
+          {
+            "id": "l_2",
+            "text": "去年的树"
+          },
+          {
+            "id": "l_3",
+            "text": "融化"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "聚精会神看"
+          },
+          {
+            "id": "r_2",
+            "text": "化为火柴火焰的树"
+          },
+          {
+            "id": "r_3",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_1",
+            "text": "答应的事一定要做到"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸟和树是好朋友，小鸟答应树冬天过后回来做什么？",
+        "options": [
+          "再给树唱歌听",
+          "和树一起跳舞",
+          "给树浇水",
+          "带树去南方旅行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第二年春天，小鸟飞回来发现树怎么了？",
+        "options": [
+          "被伐木人用斧子砍倒，运到工厂做成了火柴",
+          "长得更高了",
+          "叶子变红了",
+          "搬家到别的地方去了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸟最后在哪里找到了用树做成的火柴的火焰？",
+        "options": [
+          "在一个小女孩的家里，煤油灯正亮着",
+          "在森林里",
+          "在工厂的大烟囱里",
+          "在火车站"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸟对着火柴点燃的灯火做了什么？",
+        "options": [
+          "睁大眼睛盯着灯火看了一会儿，然后唱起了去年的歌",
+          "大声哭泣并把灯火吹灭了",
+          "觉得没意思就飞走了",
+          "和火焰聊天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个童话故事想要赞美小鸟什么样的品质？",
+        "options": [
+          "诚信、重情重义、信守诺言",
+          "飞得很快",
+          "唱歌很好听",
+          "喜欢四处旅行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '鸟儿睁大眼睛，盯着灯火看了一会儿。'",
+        "tokens": [
+          "灯",
+          "着",
+          "等",
+          "眼",
+          "，",
+          "儿",
+          "火",
+          "会",
+          "了",
+          "一",
+          "看",
+          "睁",
+          "大",
+          "盯",
+          "鸟",
+          "睛",
+          "儿"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟",
+          "儿",
+          "睁",
+          "大",
+          "眼",
+          "睛",
+          "，",
+          "盯",
+          "着",
+          "灯",
+          "火",
+          "看",
+          "了",
+          "一",
+          "会",
+          "儿"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就要问",
+          "。",
+          "学问",
+          "多思考",
+          "，",
+          "就是",
+          "不懂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

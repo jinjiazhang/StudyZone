@@ -1,0 +1,761 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "刺",
+        "hint": "请选择字【刺】的正确拼音",
+        "options": [
+          "kē",
+          "pá",
+          "zǎo",
+          "cì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "枣",
+        "hint": "请选择字【枣】的正确拼音",
+        "options": [
+          "cì",
+          "pá",
+          "wān",
+          "zǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "颗",
+        "hint": "请选择字【颗】的正确拼音",
+        "options": [
+          "cì",
+          "cōng",
+          "kē",
+          "wān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "忽",
+        "hint": "请选择字【忽】的正确拼音",
+        "options": [
+          "cōng",
+          "zǎo",
+          "cì",
+          "hū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爬",
+        "hint": "请选择字【爬】的正确拼音",
+        "options": [
+          "cì",
+          "shēn",
+          "pá",
+          "hū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "伸",
+        "hint": "请选择字【伸】的正确拼音",
+        "options": [
+          "zǎo",
+          "pá",
+          "kē",
+          "shēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zǎo",
+        "hint": "请组装字【枣】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "木",
+          "金",
+          "木",
+          "氵",
+          "日",
+          "纟"
+        ],
+        "target": "枣"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "木",
+          "slot_2": "木"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "kē",
+        "hint": "请组装字【颗】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "亻",
+          "果",
+          "日",
+          "页",
+          "扌"
+        ],
+        "target": "颗"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "果",
+          "slot_2": "页"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "hū",
+        "hint": "请组装字【忽】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "木",
+          "心",
+          "金",
+          "勿",
+          "纟"
+        ],
+        "target": "忽"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "勿",
+          "slot_2": "心"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "pá",
+        "hint": "请组装字【爬】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "爪",
+          "巴",
+          "木",
+          "扌",
+          "日"
+        ],
+        "target": "爬"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "爪",
+          "slot_2": "巴"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shēn",
+        "hint": "请组装字【伸】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "扌",
+          "亻",
+          "口",
+          "申",
+          "氵"
+        ],
+        "target": "伸"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "申"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "wān",
+        "hint": "请组装字【弯】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亦",
+          "弓",
+          "木",
+          "氵",
+          "日",
+          "月"
+        ],
+        "target": "弯"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亦",
+          "slot_2": "弓"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "敏捷"
+          },
+          {
+            "id": "l_1",
+            "text": "本事"
+          },
+          {
+            "id": "l_2",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_3",
+            "text": "偷枣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_3",
+            "text": "刺猬用身上的刺扎枣运走"
+          },
+          {
+            "id": "r_1",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_0",
+            "text": "动作迅速灵敏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_1",
+            "text": "本事"
+          },
+          {
+            "id": "l_2",
+            "text": "敏捷"
+          },
+          {
+            "id": "l_3",
+            "text": "偷枣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_3",
+            "text": "刺猬用身上的刺扎枣运走"
+          },
+          {
+            "id": "r_0",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_2",
+            "text": "动作迅速灵敏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "偷枣"
+          },
+          {
+            "id": "l_1",
+            "text": "敏捷"
+          },
+          {
+            "id": "l_2",
+            "text": "本事"
+          },
+          {
+            "id": "l_3",
+            "text": "惊讶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_0",
+            "text": "刺猬用身上的刺扎枣运走"
+          },
+          {
+            "id": "r_2",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_1",
+            "text": "动作迅速灵敏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "偷枣"
+          },
+          {
+            "id": "l_1",
+            "text": "本事"
+          },
+          {
+            "id": "l_2",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_3",
+            "text": "敏捷"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_3",
+            "text": "动作迅速灵敏"
+          },
+          {
+            "id": "r_0",
+            "text": "刺猬用身上的刺扎枣运走"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_1",
+            "text": "偷枣"
+          },
+          {
+            "id": "l_2",
+            "text": "敏捷"
+          },
+          {
+            "id": "l_3",
+            "text": "本事"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_2",
+            "text": "动作迅速灵敏"
+          },
+          {
+            "id": "r_0",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_1",
+            "text": "刺猬用身上的刺扎枣运走"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "敏捷"
+          },
+          {
+            "id": "l_1",
+            "text": "本事"
+          },
+          {
+            "id": "l_2",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_3",
+            "text": "偷枣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "刺猬用身上的刺扎枣运走"
+          },
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_1",
+            "text": "本领和技能"
+          },
+          {
+            "id": "r_0",
+            "text": "动作迅速灵敏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文中，“带刺的朋友”指的是什么动物？",
+        "options": [
+          "一只聪明机灵的小刺猬",
+          "一棵大枣树",
+          "一只小猫",
+          "一只豪猪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小刺猬是怎样把树上的红枣弄下来的？",
+        "options": [
+          "它顺着树干爬上去，用力摇晃树枝让枣掉落",
+          "用小石头把枣砸下来",
+          "请大风吹落红枣",
+          "大声叫唤让枣掉下来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "枣子掉了一地后，小刺猬是用什么神奇的方法把枣子运走的？",
+        "options": [
+          "打滚把红枣扎在满身的刺上，然后驮着回家",
+          "用嘴巴含着一颗颗运走",
+          "用小篮子提着回家",
+          "请别的小动物帮忙搬运"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者看着小刺猬偷枣的整个过程，心情变化是怎样的？",
+        "options": [
+          "由好奇、惊讶到由衷地赞叹它本事高超",
+          "感到非常愤怒想抓住它",
+          "觉得很无聊走开了",
+          "害怕小刺猬扎伤自己"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文通过观察刺猬偷枣，展现了作者：",
+        "options": [
+          "对小动物的喜爱和对大自然趣味的细致观察",
+          "想要吃红枣的渴望",
+          "刺猬全身长满刺很危险",
+          "抓刺猬的技巧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '小刺猬在地上打了一个滚，身上扎满了红枣。'",
+        "tokens": [
+          "上",
+          "了",
+          "上",
+          "刺",
+          "打",
+          "刺",
+          "身",
+          "滚",
+          "满",
+          "扎",
+          "小",
+          "枣",
+          "猬",
+          "地",
+          "，",
+          "红"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小",
+          "刺",
+          "猬",
+          "地",
+          "上",
+          "打",
+          "滚",
+          "，",
+          "身",
+          "上",
+          "扎",
+          "满",
+          "了",
+          "红",
+          "枣"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "。",
+          "多思考",
+          "学问",
+          "就是",
+          "不懂",
+          "，",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

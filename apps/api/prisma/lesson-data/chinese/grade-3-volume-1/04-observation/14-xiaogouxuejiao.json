@@ -1,0 +1,759 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "厌",
+        "hint": "请选择字【厌】的正确拼音",
+        "options": [
+          "nù",
+          "yàn",
+          "fēng",
+          "wāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "讨",
+        "hint": "请选择字【讨】的正确拼音",
+        "options": [
+          "fǎng",
+          "tǎo",
+          "yàn",
+          "pī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "怒",
+        "hint": "请选择字【怒】的正确拼音",
+        "options": [
+          "pī",
+          "wāng",
+          "nù",
+          "fēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "批",
+        "hint": "请选择字【批】的正确拼音",
+        "options": [
+          "fēng",
+          "dān",
+          "pī",
+          "wāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "访",
+        "hint": "请选择字【访】的正确拼音",
+        "options": [
+          "pī",
+          "yàn",
+          "fǎng",
+          "tǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "担",
+        "hint": "请选择字【担】的正确拼音",
+        "options": [
+          "yàn",
+          "fǎng",
+          "dān",
+          "pī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tǎo",
+        "hint": "请组装字【讨】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "日",
+          "讠",
+          "纟",
+          "木",
+          "寸"
+        ],
+        "target": "讨"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "讠",
+          "slot_2": "寸"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "nù",
+        "hint": "请组装字【怒】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "奴",
+          "土",
+          "心",
+          "艹",
+          "月",
+          "纟"
+        ],
+        "target": "怒"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "奴",
+          "slot_2": "心"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "pī",
+        "hint": "请组装字【批】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "比",
+          "木",
+          "扌",
+          "氵",
+          "金",
+          "亻"
+        ],
+        "target": "批"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "比"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fǎng",
+        "hint": "请组装字【访】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "金",
+          "讠",
+          "木",
+          "方",
+          "亻"
+        ],
+        "target": "访"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "讠",
+          "slot_2": "方"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dān",
+        "hint": "请组装字【担】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "扌",
+          "金",
+          "土",
+          "纟",
+          "口",
+          "旦"
+        ],
+        "target": "担"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "旦"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fēng",
+        "hint": "请组装字【疯】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "风",
+          "扌",
+          "艹",
+          "疒",
+          "亻"
+        ],
+        "target": "疯"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "疒",
+          "slot_2": "风"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "逼真"
+          },
+          {
+            "id": "l_1",
+            "text": "百发百中"
+          },
+          {
+            "id": "l_2",
+            "text": "诧异"
+          },
+          {
+            "id": "l_3",
+            "text": "讨厌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "非常像真的"
+          },
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_3",
+            "text": "极度反感"
+          },
+          {
+            "id": "r_1",
+            "text": "每次都打中目标"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诧异"
+          },
+          {
+            "id": "l_1",
+            "text": "讨厌"
+          },
+          {
+            "id": "l_2",
+            "text": "逼真"
+          },
+          {
+            "id": "l_3",
+            "text": "百发百中"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "极度反感"
+          },
+          {
+            "id": "r_2",
+            "text": "非常像真的"
+          },
+          {
+            "id": "r_3",
+            "text": "每次都打中目标"
+          },
+          {
+            "id": "r_0",
+            "text": "觉得十分奇怪"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "逼真"
+          },
+          {
+            "id": "l_1",
+            "text": "讨厌"
+          },
+          {
+            "id": "l_2",
+            "text": "诧异"
+          },
+          {
+            "id": "l_3",
+            "text": "百发百中"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "每次都打中目标"
+          },
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_1",
+            "text": "极度反感"
+          },
+          {
+            "id": "r_0",
+            "text": "非常像真的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "逼真"
+          },
+          {
+            "id": "l_1",
+            "text": "百发百中"
+          },
+          {
+            "id": "l_2",
+            "text": "诧异"
+          },
+          {
+            "id": "l_3",
+            "text": "讨厌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "非常像真的"
+          },
+          {
+            "id": "r_1",
+            "text": "每次都打中目标"
+          },
+          {
+            "id": "r_3",
+            "text": "极度反感"
+          },
+          {
+            "id": "r_2",
+            "text": "觉得十分奇怪"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "百发百中"
+          },
+          {
+            "id": "l_1",
+            "text": "讨厌"
+          },
+          {
+            "id": "l_2",
+            "text": "逼真"
+          },
+          {
+            "id": "l_3",
+            "text": "诧异"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "非常像真的"
+          },
+          {
+            "id": "r_0",
+            "text": "每次都打中目标"
+          },
+          {
+            "id": "r_1",
+            "text": "极度反感"
+          },
+          {
+            "id": "r_3",
+            "text": "觉得十分奇怪"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "诧异"
+          },
+          {
+            "id": "l_1",
+            "text": "逼真"
+          },
+          {
+            "id": "l_2",
+            "text": "讨厌"
+          },
+          {
+            "id": "l_3",
+            "text": "百发百中"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "觉得十分奇怪"
+          },
+          {
+            "id": "r_1",
+            "text": "非常像真的"
+          },
+          {
+            "id": "r_3",
+            "text": "每次都打中目标"
+          },
+          {
+            "id": "r_2",
+            "text": "极度反感"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这只孤单的小狗最初有什么缺陷？",
+        "options": [
+          "它不会叫，甚至不知道自己应该会叫",
+          "它没有腿",
+          "它耳朵聋了",
+          "它跑得很慢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小狗首先跟着公鸡学会了什么？",
+        "options": [
+          "喔喔喔地叫",
+          "咯咯哒地叫",
+          "咩咩咩地叫",
+          "汪汪汪地叫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当小狗对着狐狸大声学公鸡叫时，狐狸是什么反应？",
+        "options": [
+          "笑得肚子疼，以为是世界上最滑稽的事情",
+          "非常害怕地逃跑了",
+          "和它一起唱歌",
+          "把它当成了好朋友"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小狗后来又跟谁学叫，结果被猎人误当作鸟开枪射击？",
+        "options": [
+          "杜鹃鸟",
+          "大灰狼",
+          "小黄莺",
+          "大公鸡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个故事通过小狗学叫的曲折经历告诉我们什么？",
+        "options": [
+          "要走属于自己的路，找到自己真正的声音",
+          "学鸡叫最容易",
+          "猎人都很坏",
+          "动物应该住在森林里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '小狗开始练习，虽然叫声很滑稽，但他很努力。'",
+        "tokens": [
+          "练",
+          "始",
+          "很",
+          "滑",
+          "然",
+          "稽",
+          "狗",
+          "叫",
+          "开",
+          "厌",
+          "虽",
+          "小",
+          "习",
+          "，",
+          "声"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小",
+          "狗",
+          "开",
+          "始",
+          "练",
+          "习",
+          "，",
+          "虽",
+          "然",
+          "叫",
+          "声",
+          "很",
+          "滑",
+          "稽"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就要问",
+          "多思考",
+          "，",
+          "学问",
+          "。",
+          "就是",
+          "不懂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

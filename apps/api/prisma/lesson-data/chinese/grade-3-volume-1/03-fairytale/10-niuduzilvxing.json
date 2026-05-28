@@ -1,0 +1,748 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "旅",
+        "hint": "请选择字【旅】的正确拼音",
+        "options": [
+          "lǚ",
+          "zán",
+          "yīng",
+          "wèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "咱",
+        "hint": "请选择字【咱】的正确拼音",
+        "options": [
+          "tōu",
+          "zán",
+          "chǐ",
+          "yīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "偷",
+        "hint": "请选择字【偷】的正确拼音",
+        "options": [
+          "yīng",
+          "lǚ",
+          "dá",
+          "tōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "答",
+        "hint": "请选择字【答】的正确拼音",
+        "options": [
+          "dá",
+          "yīng",
+          "tūn",
+          "tōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "应",
+        "hint": "请选择字【应】的正确拼音",
+        "options": [
+          "tōu",
+          "zán",
+          "dá",
+          "yīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "齿",
+        "hint": "请选择字【齿】的正确拼音",
+        "options": [
+          "yīng",
+          "zán",
+          "dá",
+          "chǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zán",
+        "hint": "请组装字【咱】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "自",
+          "日",
+          "口",
+          "土",
+          "纟",
+          "月"
+        ],
+        "target": "咱"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "口",
+          "slot_2": "自"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tōu",
+        "hint": "请组装字【偷】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "木",
+          "土",
+          "艹",
+          "俞",
+          "亻"
+        ],
+        "target": "偷"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亻",
+          "slot_2": "俞"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dá",
+        "hint": "请组装字【答】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "合",
+          "扌",
+          "竹",
+          "氵",
+          "口",
+          "月"
+        ],
+        "target": "答"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "竹",
+          "slot_2": "合"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "应",
+        "hint": "请选择【应】的拼音",
+        "options": [
+          "yīng",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chǐ",
+        "hint": "请组装字【齿】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "凵",
+          "氵",
+          "止",
+          "月",
+          "口",
+          "扌"
+        ],
+        "target": "齿"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "止",
+          "slot_2": "凵"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tūn",
+        "hint": "请组装字【吞】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "口",
+          "艹",
+          "木",
+          "天",
+          "金",
+          "亻"
+        ],
+        "target": "吞"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "天",
+          "slot_2": "口"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "勇敢"
+          },
+          {
+            "id": "l_1",
+            "text": "细嚼慢咽"
+          },
+          {
+            "id": "l_2",
+            "text": "旅行"
+          },
+          {
+            "id": "l_3",
+            "text": "吞咽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "有胆量不害怕"
+          },
+          {
+            "id": "r_2",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_3",
+            "text": "不嚼咽下去"
+          },
+          {
+            "id": "r_1",
+            "text": "慢慢吃东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "吞咽"
+          },
+          {
+            "id": "l_1",
+            "text": "细嚼慢咽"
+          },
+          {
+            "id": "l_2",
+            "text": "勇敢"
+          },
+          {
+            "id": "l_3",
+            "text": "旅行"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "有胆量不害怕"
+          },
+          {
+            "id": "r_1",
+            "text": "慢慢吃东西"
+          },
+          {
+            "id": "r_3",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_0",
+            "text": "不嚼咽下去"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "旅行"
+          },
+          {
+            "id": "l_1",
+            "text": "吞咽"
+          },
+          {
+            "id": "l_2",
+            "text": "勇敢"
+          },
+          {
+            "id": "l_3",
+            "text": "细嚼慢咽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "有胆量不害怕"
+          },
+          {
+            "id": "r_0",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_1",
+            "text": "不嚼咽下去"
+          },
+          {
+            "id": "r_3",
+            "text": "慢慢吃东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "吞咽"
+          },
+          {
+            "id": "l_1",
+            "text": "勇敢"
+          },
+          {
+            "id": "l_2",
+            "text": "旅行"
+          },
+          {
+            "id": "l_3",
+            "text": "细嚼慢咽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "慢慢吃东西"
+          },
+          {
+            "id": "r_0",
+            "text": "不嚼咽下去"
+          },
+          {
+            "id": "r_2",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_1",
+            "text": "有胆量不害怕"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "吞咽"
+          },
+          {
+            "id": "l_1",
+            "text": "细嚼慢咽"
+          },
+          {
+            "id": "l_2",
+            "text": "旅行"
+          },
+          {
+            "id": "l_3",
+            "text": "勇敢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "慢慢吃东西"
+          },
+          {
+            "id": "r_2",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_0",
+            "text": "不嚼咽下去"
+          },
+          {
+            "id": "r_3",
+            "text": "有胆量不害怕"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "细嚼慢咽"
+          },
+          {
+            "id": "l_1",
+            "text": "旅行"
+          },
+          {
+            "id": "l_2",
+            "text": "吞咽"
+          },
+          {
+            "id": "l_3",
+            "text": "勇敢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "不嚼咽下去"
+          },
+          {
+            "id": "r_0",
+            "text": "慢慢吃东西"
+          },
+          {
+            "id": "r_1",
+            "text": "游历外出"
+          },
+          {
+            "id": "r_3",
+            "text": "有胆量不害怕"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "谁在牛肚子里旅行了一次？",
+        "options": [
+          "小蟋蟀红头",
+          "小蟋蟀青头",
+          "一头老牛",
+          "一个小木偶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红头是怎么进入牛肚子的？",
+        "options": [
+          "和草一起被牛卷进了嘴里",
+          "自己跳进去玩耍",
+          "青头把它推进去的",
+          "在牛背上睡觉滑下去的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青头是怎么帮助红头的？",
+        "options": [
+          "用知识指导红头并鼓励它，最后在牛打喷嚏时救出了它",
+          "在旁边大声哭泣",
+          "去找农民帮忙",
+          "在外面睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "牛胃有什么特别的生理特点在课文中被提到了？",
+        "options": [
+          "牛有四个胃，会把吃下去的草反刍（重新咀嚼）",
+          "牛的胃很大",
+          "牛的胃可以消化石头",
+          "牛只有一个胃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青头和红头的故事展现了什么？",
+        "options": [
+          "真挚深厚的友情和面对危险时的沉着勇敢",
+          "牛的牙齿有多锋利",
+          "蟋蟀很喜欢旅行",
+          "老牛很爱吃草"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '红头在牛肚子里随着草一起移动，开始了他的旅行。'",
+        "tokens": [
+          "子",
+          "行",
+          "旅",
+          "头",
+          "红",
+          "他",
+          "的",
+          "始",
+          "在",
+          "肚",
+          "开",
+          "，",
+          "牛",
+          "动",
+          "里",
+          "移",
+          "了",
+          "旅"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "红",
+          "头",
+          "在",
+          "牛",
+          "肚",
+          "子",
+          "里",
+          "移",
+          "动",
+          "，",
+          "开",
+          "始",
+          "了",
+          "他",
+          "的",
+          "旅",
+          "行"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "学问",
+          "，",
+          "就要问",
+          "多思考",
+          "。",
+          "就是"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,769 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "脑",
+        "hint": "请选择字【脑】的正确拼音",
+        "options": [
+          "tán",
+          "shì",
+          "nǎo",
+          "yán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "袋",
+        "hint": "请选择字【袋】的正确拼音",
+        "options": [
+          "tán",
+          "nǎo",
+          "dài",
+          "xiàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "严",
+        "hint": "请选择字【严】的正确拼音",
+        "options": [
+          "dài",
+          "yán",
+          "xiàn",
+          "tán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "实",
+        "hint": "请选择字【实】的正确拼音",
+        "options": [
+          "shí",
+          "shì",
+          "yán",
+          "tán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挡",
+        "hint": "请选择字【挡】的正确拼音",
+        "options": [
+          "xiàn",
+          "shì",
+          "yán",
+          "dǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "视",
+        "hint": "请选择字【视】的正确拼音",
+        "options": [
+          "shì",
+          "yán",
+          "dài",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dài",
+        "hint": "请组装字【袋】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "口",
+          "氵",
+          "月",
+          "纟",
+          "衣",
+          "代"
+        ],
+        "target": "袋"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "代",
+          "slot_2": "衣"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yán",
+        "hint": "请组装字【严】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "厂",
+          "月",
+          "氵",
+          "土",
+          "亚",
+          "金"
+        ],
+        "target": "严"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "亚",
+          "slot_2": "厂"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shí",
+        "hint": "请组装字【实】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "头",
+          "宀",
+          "亻",
+          "氵",
+          "土",
+          "月"
+        ],
+        "target": "实"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "宀",
+          "slot_2": "头"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "dǎng",
+        "hint": "请组装字【挡】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "扌",
+          "当",
+          "纟",
+          "木",
+          "氵"
+        ],
+        "target": "挡"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "当"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "shì",
+        "hint": "请组装字【视】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "见",
+          "口",
+          "氵",
+          "艹",
+          "礻"
+        ],
+        "target": "视"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "礻",
+          "slot_2": "见"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xiàn",
+        "hint": "请组装字【线】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "木",
+          "线",
+          "氵",
+          "土",
+          "纟"
+        ],
+        "target": "线"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "纟",
+          "slot_2": "线"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "葱葱茏茏"
+          },
+          {
+            "id": "l_1",
+            "text": "融化"
+          },
+          {
+            "id": "l_2",
+            "text": "宝库"
+          },
+          {
+            "id": "l_3",
+            "text": "密密层层"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "非常紧密层叠"
+          },
+          {
+            "id": "r_0",
+            "text": "草木茂盛"
+          },
+          {
+            "id": "r_2",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_1",
+            "text": "冰雪化水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "融化"
+          },
+          {
+            "id": "l_1",
+            "text": "密密层层"
+          },
+          {
+            "id": "l_2",
+            "text": "宝库"
+          },
+          {
+            "id": "l_3",
+            "text": "葱葱茏茏"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "草木茂盛"
+          },
+          {
+            "id": "r_1",
+            "text": "非常紧密层叠"
+          },
+          {
+            "id": "r_2",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "冰雪化水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "宝库"
+          },
+          {
+            "id": "l_1",
+            "text": "葱葱茏茏"
+          },
+          {
+            "id": "l_2",
+            "text": "融化"
+          },
+          {
+            "id": "l_3",
+            "text": "密密层层"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "草木茂盛"
+          },
+          {
+            "id": "r_0",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_3",
+            "text": "非常紧密层叠"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "密密层层"
+          },
+          {
+            "id": "l_1",
+            "text": "葱葱茏茏"
+          },
+          {
+            "id": "l_2",
+            "text": "宝库"
+          },
+          {
+            "id": "l_3",
+            "text": "融化"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "草木茂盛"
+          },
+          {
+            "id": "r_2",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "非常紧密层叠"
+          },
+          {
+            "id": "r_3",
+            "text": "冰雪化水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "融化"
+          },
+          {
+            "id": "l_1",
+            "text": "宝库"
+          },
+          {
+            "id": "l_2",
+            "text": "密密层层"
+          },
+          {
+            "id": "l_3",
+            "text": "葱葱茏茏"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "冰雪化水"
+          },
+          {
+            "id": "r_2",
+            "text": "非常紧密层叠"
+          },
+          {
+            "id": "r_3",
+            "text": "草木茂盛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "密密层层"
+          },
+          {
+            "id": "l_1",
+            "text": "宝库"
+          },
+          {
+            "id": "l_2",
+            "text": "融化"
+          },
+          {
+            "id": "l_3",
+            "text": "葱葱茏茏"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "储藏珍贵物品的地方"
+          },
+          {
+            "id": "r_3",
+            "text": "草木茂盛"
+          },
+          {
+            "id": "r_0",
+            "text": "非常紧密层叠"
+          },
+          {
+            "id": "r_2",
+            "text": "冰雪化水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小兴安岭数不清的红松、白桦、栎树汇聚在一起，像什么？",
+        "options": [
+          "绿色的海洋",
+          "金色的地毯",
+          "雪白的世界",
+          "红色的枫林"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春天的小兴安岭，冰雪融化，小鹿在溪边做什么？",
+        "options": [
+          "俯下身子喝水，欣赏自己映在水里的影子",
+          "和熊一起睡觉",
+          "在森林里奔跑躲避猎人",
+          "在雪地里玩耍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "夏天，森林被浓雾笼罩，太阳出来时，阳光像什么射进森林？",
+        "options": [
+          "利剑一样，穿过茂密的树梢，照射在积满落叶的土地上",
+          "雨点一样打下来",
+          "镜子一样闪光",
+          "火焰一样灼热"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋天的小兴安岭奉献了什么？",
+        "options": [
+          "酸甜可口的山葡萄，又香又脆的榛子，鲜嫩的蘑菇和木耳",
+          "厚厚的白雪",
+          "美丽的鲜花",
+          "炎热的阳光"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么说小兴安岭是一座美丽的“大花园”，也是一座巨大的“宝库”？",
+        "options": [
+          "因为四季景色美丽，物产丰富，蕴藏着丰富的木材和药材",
+          "因为里面有很多金币",
+          "因为有很多游客来玩",
+          "因为这里住着很多老神仙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '小兴安岭一年四季景色诱人，是一座美丽的大花园。'",
+        "tokens": [
+          "景",
+          "园",
+          "诱",
+          "脑",
+          "是",
+          "座",
+          "一",
+          "小",
+          "兴",
+          "人",
+          "四",
+          "色",
+          "，",
+          "岭",
+          "安",
+          "大",
+          "年",
+          "季",
+          "一",
+          "花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小",
+          "兴",
+          "安",
+          "岭",
+          "一",
+          "年",
+          "四",
+          "季",
+          "景",
+          "色",
+          "诱",
+          "人",
+          "，",
+          "是",
+          "一",
+          "座",
+          "大",
+          "花",
+          "园"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "不懂",
+          "。",
+          "多思考",
+          "就是",
+          "，",
+          "学问",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

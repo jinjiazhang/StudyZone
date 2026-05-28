@@ -1,0 +1,748 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搭",
+        "hint": "请选择字【搭】的正确拼音",
+        "options": [
+          "fù",
+          "jìng",
+          "cuì",
+          "dā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舱",
+        "hint": "请选择字【舱】的正确拼音",
+        "options": [
+          "suō",
+          "cāng",
+          "dā",
+          "tūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "父",
+        "hint": "请选择字【父】的正确拼音",
+        "options": [
+          "suō",
+          "fù",
+          "dā",
+          "cāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嘴",
+        "hint": "请选择字【嘴】的正确拼音",
+        "options": [
+          "dā",
+          "tūn",
+          "zuǐ",
+          "jìng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "翠",
+        "hint": "请选择字【翠】的正确拼音",
+        "options": [
+          "cuì",
+          "zuǐ",
+          "dā",
+          "fù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓑",
+        "hint": "请选择字【蓑】的正确拼音",
+        "options": [
+          "cāng",
+          "dā",
+          "jìng",
+          "suō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cāng",
+        "hint": "请组装字【舱】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "舟",
+          "扌",
+          "木",
+          "氵",
+          "金",
+          "仓"
+        ],
+        "target": "舱"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "舟",
+          "slot_2": "仓"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "fù",
+        "hint": "请组装字【父】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "八",
+          "扌",
+          "纟",
+          "乂",
+          "土",
+          "艹"
+        ],
+        "target": "父"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "八",
+          "slot_2": "乂"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嘴",
+        "hint": "请选择【嘴】的拼音",
+        "options": [
+          "zuǐ",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cuì",
+        "hint": "请组装字【翠】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "卒",
+          "月",
+          "口",
+          "氵",
+          "羽",
+          "木"
+        ],
+        "target": "翠"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "羽",
+          "slot_2": "卒"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "suō",
+        "hint": "请组装字【蓑】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "月",
+          "日",
+          "衰",
+          "艹",
+          "木"
+        ],
+        "target": "蓑"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "艹",
+          "slot_2": "衰"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jìng",
+        "hint": "请组装字【静】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "争",
+          "木",
+          "土",
+          "亻",
+          "青"
+        ],
+        "target": "静"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "青",
+          "slot_2": "争"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "搭船"
+          },
+          {
+            "id": "l_1",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_2",
+            "text": "蓑衣"
+          },
+          {
+            "id": "l_3",
+            "text": "悄悄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_2",
+            "text": "防雨的草衣"
+          },
+          {
+            "id": "r_3",
+            "text": "声音非常安静"
+          },
+          {
+            "id": "r_1",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_1",
+            "text": "蓑衣"
+          },
+          {
+            "id": "l_2",
+            "text": "悄悄"
+          },
+          {
+            "id": "l_3",
+            "text": "搭船"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_1",
+            "text": "防雨的草衣"
+          },
+          {
+            "id": "r_2",
+            "text": "声音非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "搭船"
+          },
+          {
+            "id": "l_1",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_2",
+            "text": "蓑衣"
+          },
+          {
+            "id": "l_3",
+            "text": "悄悄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "防雨的草衣"
+          },
+          {
+            "id": "r_1",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          },
+          {
+            "id": "r_0",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_3",
+            "text": "声音非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "蓑衣"
+          },
+          {
+            "id": "l_1",
+            "text": "搭船"
+          },
+          {
+            "id": "l_2",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_3",
+            "text": "悄悄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "声音非常安静"
+          },
+          {
+            "id": "r_2",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          },
+          {
+            "id": "r_1",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_0",
+            "text": "防雨的草衣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_1",
+            "text": "搭船"
+          },
+          {
+            "id": "l_2",
+            "text": "悄悄"
+          },
+          {
+            "id": "l_3",
+            "text": "蓑衣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          },
+          {
+            "id": "r_2",
+            "text": "声音非常安静"
+          },
+          {
+            "id": "r_3",
+            "text": "防雨的草衣"
+          },
+          {
+            "id": "r_1",
+            "text": "顺便乘船"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "搭船"
+          },
+          {
+            "id": "l_1",
+            "text": "翠鸟"
+          },
+          {
+            "id": "l_2",
+            "text": "悄悄"
+          },
+          {
+            "id": "l_3",
+            "text": "蓑衣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "声音非常安静"
+          },
+          {
+            "id": "r_0",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_1",
+            "text": "一种羽毛鲜艳的捕鱼鸟"
+          },
+          {
+            "id": "r_3",
+            "text": "防雨的草衣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”和母亲坐船时，天正下着什么？",
+        "options": [
+          "大雨，雨点打在船篷上沙沙作响",
+          "大雪",
+          "刮着大风",
+          "天气晴朗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭船的鸟是一只什么鸟？它的外形有什么特点？",
+        "options": [
+          "一只翠鸟，羽毛是翠绿的，有一张红色的长嘴",
+          "一只小麻雀，灰蒙蒙的",
+          "一只白天鹅，雪白美丽",
+          "一只黑色的大乌鸦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这只翠鸟站在船头是在做什么？",
+        "options": [
+          "等待时机冲进水里捕鱼吃",
+          "在船头唱歌跳舞",
+          "在雨中避雨",
+          "和作者聊天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中翠鸟捕鱼的动作是怎样的？",
+        "options": [
+          "一下子冲进水里，眨眼间就叼着一条小鱼飞了起来",
+          "动作很慢，试了好几次都没成功",
+          "静静地看着小鱼游走",
+          "在船头拍打翅膀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者为什么能写出这么生动美丽的翠鸟？",
+        "options": [
+          "因为作者在旅途中进行了极其细致、留心的观察",
+          "因为是听妈妈讲的故事",
+          "因为是在书上看到的图片",
+          "因为是他自己想象的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '它的羽毛是翠绿的，翅膀带着一些蓝色。'",
+        "tokens": [
+          "翠",
+          "毛",
+          "着",
+          "蓝",
+          "是",
+          "膀",
+          "的",
+          "羽",
+          "翅",
+          "的",
+          "搭",
+          "带",
+          "色",
+          "，",
+          "一",
+          "绿",
+          "些",
+          "它"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "的",
+          "羽",
+          "毛",
+          "是",
+          "翠",
+          "绿",
+          "的",
+          "，",
+          "翅",
+          "膀",
+          "带",
+          "着",
+          "一",
+          "些",
+          "蓝",
+          "色"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "就要问",
+          "。",
+          "，",
+          "多思考",
+          "不懂",
+          "学问",
+          "就是"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

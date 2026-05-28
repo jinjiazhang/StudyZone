@@ -1,0 +1,750 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "酪",
+        "hint": "请选择字【酪】的正确拼音",
+        "options": [
+          "lào",
+          "xuān",
+          "qiáng",
+          "tiǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "宣",
+        "hint": "请选择字【宣】的正确拼音",
+        "options": [
+          "lào",
+          "yòu",
+          "xuān",
+          "bù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "布",
+        "hint": "请选择字【布】的正确拼音",
+        "options": [
+          "yì",
+          "bù",
+          "qiáng",
+          "fàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "诱",
+        "hint": "请选择字【诱】的正确拼音",
+        "options": [
+          "tiǎn",
+          "yì",
+          "qiáng",
+          "yòu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舔",
+        "hint": "请选择字【舔】的正确拼音",
+        "options": [
+          "qiáng",
+          "yì",
+          "bù",
+          "tiǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "毅",
+        "hint": "请选择字【毅】的正确拼音",
+        "options": [
+          "yì",
+          "yòu",
+          "lào",
+          "tiǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xuān",
+        "hint": "请组装字【宣】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "月",
+          "口",
+          "亘",
+          "金",
+          "宀"
+        ],
+        "target": "宣"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "宀",
+          "slot_2": "亘"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "bù",
+        "hint": "请组装字【布】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "巾",
+          "𠂇",
+          "扌",
+          "亻",
+          "木",
+          "氵"
+        ],
+        "target": "布"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "𠂇",
+          "slot_2": "巾"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "yòu",
+        "hint": "请组装字【诱】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "秀",
+          "纟",
+          "氵",
+          "金",
+          "讠",
+          "日"
+        ],
+        "target": "诱"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "讠",
+          "slot_2": "秀"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tiǎn",
+        "hint": "请组装字【舔】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "艹",
+          "舌",
+          "扌",
+          "土",
+          "口",
+          "忝"
+        ],
+        "target": "舔"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "舌",
+          "slot_2": "忝"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "毅",
+        "hint": "请选择【毅】的拼音",
+        "options": [
+          "yì",
+          "xīn",
+          "zhōng",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "qiáng",
+        "hint": "请组装字【强】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "扌",
+          "日",
+          "虽",
+          "弓",
+          "亻"
+        ],
+        "target": "强"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "弓",
+          "slot_2": "虽"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "七嘴八舌"
+          },
+          {
+            "id": "l_1",
+            "text": "争先恐后"
+          },
+          {
+            "id": "l_2",
+            "text": "齐心协力"
+          },
+          {
+            "id": "l_3",
+            "text": "纪律"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "规则规章"
+          },
+          {
+            "id": "r_2",
+            "text": "同心协力"
+          },
+          {
+            "id": "r_0",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_1",
+            "text": "争着向前怕落后"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "七嘴八舌"
+          },
+          {
+            "id": "l_1",
+            "text": "齐心协力"
+          },
+          {
+            "id": "l_2",
+            "text": "纪律"
+          },
+          {
+            "id": "l_3",
+            "text": "争先恐后"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_3",
+            "text": "争着向前怕落后"
+          },
+          {
+            "id": "r_1",
+            "text": "同心协力"
+          },
+          {
+            "id": "r_2",
+            "text": "规则规章"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "七嘴八舌"
+          },
+          {
+            "id": "l_1",
+            "text": "争先恐后"
+          },
+          {
+            "id": "l_2",
+            "text": "纪律"
+          },
+          {
+            "id": "l_3",
+            "text": "齐心协力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "规则规章"
+          },
+          {
+            "id": "r_0",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_3",
+            "text": "同心协力"
+          },
+          {
+            "id": "r_1",
+            "text": "争着向前怕落后"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "争先恐后"
+          },
+          {
+            "id": "l_1",
+            "text": "齐心协力"
+          },
+          {
+            "id": "l_2",
+            "text": "七嘴八舌"
+          },
+          {
+            "id": "l_3",
+            "text": "纪律"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "争着向前怕落后"
+          },
+          {
+            "id": "r_3",
+            "text": "规则规章"
+          },
+          {
+            "id": "r_2",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_1",
+            "text": "同心协力"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "齐心协力"
+          },
+          {
+            "id": "l_1",
+            "text": "争先恐后"
+          },
+          {
+            "id": "l_2",
+            "text": "纪律"
+          },
+          {
+            "id": "l_3",
+            "text": "七嘴八舌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_2",
+            "text": "规则规章"
+          },
+          {
+            "id": "r_1",
+            "text": "争着向前怕落后"
+          },
+          {
+            "id": "r_0",
+            "text": "同心协力"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "七嘴八舌"
+          },
+          {
+            "id": "l_1",
+            "text": "争先恐后"
+          },
+          {
+            "id": "l_2",
+            "text": "纪律"
+          },
+          {
+            "id": "l_3",
+            "text": "齐心协力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "人多口杂议论纷纷"
+          },
+          {
+            "id": "r_1",
+            "text": "争着向前怕落后"
+          },
+          {
+            "id": "r_3",
+            "text": "同心协力"
+          },
+          {
+            "id": "r_2",
+            "text": "规则规章"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁队长宣布的运送粮食纪律是什么？",
+        "options": [
+          "只许出力，不许偷嘴，犯了法要受罚",
+          "大家可以随便吃",
+          "跑得快的有奖励",
+          "不能说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁队长在运送奶酪时，遇到了什么诱惑？",
+        "options": [
+          "奶酪掉下了一角拽在地上，奶酪味非常诱人",
+          "有一只大鸟来抢夺",
+          "下起了大雨",
+          "其他蚂蚁都在偷吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁队长最后是怎么处理掉落的奶酪渣的？",
+        "options": [
+          "让年龄最小的蚂蚁吃掉了它",
+          "自己悄悄吃掉了它",
+          "扔到了垃圾桶里",
+          "埋在土里不让大家看见"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁们看到队长命令最小的蚂蚁吃掉奶酪渣后，是怎么做的？",
+        "options": [
+          "劲头更足了，大家齐心协力把奶酪运回了洞里",
+          "大家都在抱怨不公平",
+          "大家开始抢夺奶酪",
+          "蚂蚁们都散开了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁队长是一个怎样的管理者？",
+        "options": [
+          "以身作则、严守纪律、关爱弱小",
+          "非常自私冷酷",
+          "胆子很小",
+          "只知道惩罚下属"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '大家齐心协力，终于把大奶酪运回了洞里。'",
+        "tokens": [
+          "齐",
+          "，",
+          "奶",
+          "洞",
+          "于",
+          "协",
+          "家",
+          "了",
+          "里",
+          "运",
+          "大",
+          "酪",
+          "力",
+          "心",
+          "把",
+          "大",
+          "终",
+          "酪",
+          "回"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大",
+          "家",
+          "齐",
+          "心",
+          "协",
+          "力",
+          "，",
+          "终",
+          "于",
+          "把",
+          "大",
+          "奶",
+          "酪",
+          "运",
+          "回",
+          "了",
+          "洞",
+          "里"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "学问",
+          "不懂",
+          "。",
+          "，",
+          "多思考",
+          "就是",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

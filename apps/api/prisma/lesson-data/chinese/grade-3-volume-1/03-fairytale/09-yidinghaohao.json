@@ -1,0 +1,763 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "缩",
+        "hint": "请选择字【缩】的正确拼音",
+        "options": [
+          "pū",
+          "suō",
+          "jīng",
+          "tuī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "努",
+        "hint": "请选择字【努】的正确拼音",
+        "options": [
+          "tuī",
+          "chāi",
+          "nǔ",
+          "pū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茎",
+        "hint": "请选择字【茎】的正确拼音",
+        "options": [
+          "jīng",
+          "nǔ",
+          "pū",
+          "zhī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "推",
+        "hint": "请选择字【推】的正确拼音",
+        "options": [
+          "pū",
+          "suō",
+          "tuī",
+          "jīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "吱",
+        "hint": "请选择字【吱】的正确拼音",
+        "options": [
+          "zhī",
+          "chāi",
+          "jiù",
+          "suō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拆",
+        "hint": "请选择字【拆】的正确拼音",
+        "options": [
+          "jiù",
+          "nǔ",
+          "chāi",
+          "tuī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "nǔ",
+        "hint": "请组装字【努】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "奴",
+          "力",
+          "亻",
+          "口",
+          "木",
+          "艹"
+        ],
+        "target": "努"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "奴",
+          "slot_2": "力"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jīng",
+        "hint": "请组装字【茎】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "金",
+          "纟",
+          "扌",
+          "径",
+          "艹",
+          "亻"
+        ],
+        "target": "茎"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "艹",
+          "slot_2": "径"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "tuī",
+        "hint": "请组装字【推】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "隹",
+          "亻",
+          "月",
+          "扌",
+          "土",
+          "纟"
+        ],
+        "target": "推"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "隹"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zhī",
+        "hint": "请组装字【吱】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "支",
+          "艹",
+          "纟",
+          "口",
+          "木"
+        ],
+        "target": "吱"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "口",
+          "slot_2": "支"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "chāi",
+        "hint": "请组装字【拆】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "艹",
+          "木",
+          "亻",
+          "扌",
+          "斥"
+        ],
+        "target": "拆"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "扌",
+          "slot_2": "斥"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jiù",
+        "hint": "请组装字【旧】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "丨",
+          "扌",
+          "氵",
+          "木",
+          "亻",
+          "日"
+        ],
+        "target": "旧"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "丨",
+          "slot_2": "日"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "乐观"
+          },
+          {
+            "id": "l_1",
+            "text": "努力"
+          },
+          {
+            "id": "l_2",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_3",
+            "text": "费力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_0",
+            "text": "对事物抱有信心"
+          },
+          {
+            "id": "r_1",
+            "text": "尽量使出力量"
+          },
+          {
+            "id": "r_3",
+            "text": "耗费很大力气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "努力"
+          },
+          {
+            "id": "l_1",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_2",
+            "text": "乐观"
+          },
+          {
+            "id": "l_3",
+            "text": "费力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "对事物抱有信心"
+          },
+          {
+            "id": "r_3",
+            "text": "耗费很大力气"
+          },
+          {
+            "id": "r_1",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_0",
+            "text": "尽量使出力量"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "费力"
+          },
+          {
+            "id": "l_1",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_2",
+            "text": "努力"
+          },
+          {
+            "id": "l_3",
+            "text": "乐观"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_0",
+            "text": "耗费很大力气"
+          },
+          {
+            "id": "r_2",
+            "text": "尽量使出力量"
+          },
+          {
+            "id": "r_3",
+            "text": "对事物抱有信心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "乐观"
+          },
+          {
+            "id": "l_1",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_2",
+            "text": "努力"
+          },
+          {
+            "id": "l_3",
+            "text": "费力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "对事物抱有信心"
+          },
+          {
+            "id": "r_1",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_3",
+            "text": "耗费很大力气"
+          },
+          {
+            "id": "r_2",
+            "text": "尽量使出力量"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_1",
+            "text": "努力"
+          },
+          {
+            "id": "l_2",
+            "text": "乐观"
+          },
+          {
+            "id": "l_3",
+            "text": "费力"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "尽量使出力量"
+          },
+          {
+            "id": "r_0",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_2",
+            "text": "对事物抱有信心"
+          },
+          {
+            "id": "r_3",
+            "text": "耗费很大力气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "舒舒服服"
+          },
+          {
+            "id": "l_1",
+            "text": "费力"
+          },
+          {
+            "id": "l_2",
+            "text": "努力"
+          },
+          {
+            "id": "l_3",
+            "text": "乐观"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "耗费很大力气"
+          },
+          {
+            "id": "r_3",
+            "text": "对事物抱有信心"
+          },
+          {
+            "id": "r_0",
+            "text": "轻松愉快"
+          },
+          {
+            "id": "r_2",
+            "text": "尽量使出力量"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事里的种子最初的愿望是什么？",
+        "options": [
+          "站起来，大口大口地呼吸新鲜空气",
+          "在泥土里睡觉",
+          "变成一朵美丽的花",
+          "被小鸟吃掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这棵树后来被砍倒，依次做成了什么？",
+        "options": [
+          "做成了手推车、椅子、最后拆成了木地板",
+          "做成了火柴、纸张、铅笔",
+          "做成了小木屋、玩具船",
+          "做成了扫帚、木盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当这棵树变成木地板躺在阳台上时，它觉得怎么样？",
+        "options": [
+          "它觉得自己又躺在泥土里，那一定会很好",
+          "觉得非常难过",
+          "觉得很无聊",
+          "觉得身体很痛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "树的一生都在发生改变，这体现了它怎样的生活态度？",
+        "options": [
+          "随遇而安、乐观面对、服务他人",
+          "总是爱抱怨",
+          "希望什么都不做",
+          "爱慕虚荣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇童话告诉我们什么道理？",
+        "options": [
+          "生命的价值在于奉献和乐观，每个阶段都可以很美好",
+          "不要长得太大",
+          "做手推车最辛苦",
+          "种子很神奇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '种子把身体缩得紧紧的，努力往上长。'",
+        "tokens": [
+          "得",
+          "子",
+          "种",
+          "把",
+          "长",
+          "体",
+          "往",
+          "，",
+          "紧",
+          "的",
+          "力",
+          "缩",
+          "缩",
+          "努",
+          "紧",
+          "身",
+          "上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "种",
+          "子",
+          "把",
+          "身",
+          "体",
+          "缩",
+          "得",
+          "紧",
+          "紧",
+          "的",
+          "，",
+          "努",
+          "力",
+          "往",
+          "上",
+          "长"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "学问",
+          "就是",
+          "不懂",
+          "。",
+          "，",
+          "就要问",
+          "多思考"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

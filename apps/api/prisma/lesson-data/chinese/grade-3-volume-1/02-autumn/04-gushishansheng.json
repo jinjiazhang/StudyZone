@@ -1,0 +1,761 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寒",
+        "hint": "请选择字【寒】的正确拼音",
+        "options": [
+          "hán",
+          "xié",
+          "jìng",
+          "chéng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "径",
+        "hint": "请选择字【径】的正确拼音",
+        "options": [
+          "jìng",
+          "zèng",
+          "chéng",
+          "jūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "斜",
+        "hint": "请选择字【斜】的正确拼音",
+        "options": [
+          "xié",
+          "hán",
+          "chéng",
+          "jìng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赠",
+        "hint": "请选择字【赠】的正确拼音",
+        "options": [
+          "zèng",
+          "liú",
+          "cán",
+          "xié"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "刘",
+        "hint": "请选择字【刘】的正确拼音",
+        "options": [
+          "hán",
+          "liú",
+          "chéng",
+          "jūn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "残",
+        "hint": "请选择字【残】的正确拼音",
+        "options": [
+          "xié",
+          "cán",
+          "hán",
+          "jìng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jìng",
+        "hint": "请组装字【径】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "纟",
+          "木",
+          "彳",
+          "氵",
+          "径",
+          "口"
+        ],
+        "target": "径"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "彳",
+          "slot_2": "径"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "xié",
+        "hint": "请组装字【斜】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "日",
+          "月",
+          "余",
+          "艹",
+          "金",
+          "斗"
+        ],
+        "target": "斜"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "余",
+          "slot_2": "斗"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "zèng",
+        "hint": "请组装字【赠】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "亻",
+          "纟",
+          "土",
+          "曾",
+          "扌",
+          "贝"
+        ],
+        "target": "赠"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "贝",
+          "slot_2": "曾"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "liú",
+        "hint": "请组装字【刘】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "土",
+          "日",
+          "刂",
+          "月",
+          "口",
+          "文"
+        ],
+        "target": "刘"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "文",
+          "slot_2": "刂"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "cán",
+        "hint": "请组装字【残】",
+        "structure": "horizontal",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "氵",
+          "木",
+          "歹",
+          "金",
+          "戈",
+          "土"
+        ],
+        "target": "残"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "歹",
+          "slot_2": "戈"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_character_assemble",
+      "prompt": {
+        "pinyin": "jūn",
+        "hint": "请组装字【君】",
+        "structure": "vertical",
+        "slots": [
+          {
+            "id": "slot_1",
+            "label": "部首/偏旁"
+          },
+          {
+            "id": "slot_2",
+            "label": "部件/声旁"
+          }
+        ],
+        "candidates": [
+          "月",
+          "土",
+          "口",
+          "金",
+          "日",
+          "尹"
+        ],
+        "target": "君"
+      },
+      "answer": {
+        "slotFills": {
+          "slot_1": "尹",
+          "slot_2": "口"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "傲霜枝"
+          },
+          {
+            "id": "l_1",
+            "text": "白云生处"
+          },
+          {
+            "id": "l_2",
+            "text": "寒山"
+          },
+          {
+            "id": "l_3",
+            "text": "擎雨盖"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "经受严霜不凋谢的枝头"
+          },
+          {
+            "id": "r_1",
+            "text": "白云飘浮缭绕的地方"
+          },
+          {
+            "id": "r_3",
+            "text": "荷叶像雨伞一样支撑"
+          },
+          {
+            "id": "r_2",
+            "text": "深秋时节的山"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "寒山"
+          },
+          {
+            "id": "l_1",
+            "text": "白云生处"
+          },
+          {
+            "id": "l_2",
+            "text": "擎雨盖"
+          },
+          {
+            "id": "l_3",
+            "text": "傲霜枝"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "经受严霜不凋谢的枝头"
+          },
+          {
+            "id": "r_1",
+            "text": "白云飘浮缭绕的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "深秋时节的山"
+          },
+          {
+            "id": "r_2",
+            "text": "荷叶像雨伞一样支撑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白云生处"
+          },
+          {
+            "id": "l_1",
+            "text": "擎雨盖"
+          },
+          {
+            "id": "l_2",
+            "text": "寒山"
+          },
+          {
+            "id": "l_3",
+            "text": "傲霜枝"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "荷叶像雨伞一样支撑"
+          },
+          {
+            "id": "r_3",
+            "text": "经受严霜不凋谢的枝头"
+          },
+          {
+            "id": "r_0",
+            "text": "白云飘浮缭绕的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "深秋时节的山"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "傲霜枝"
+          },
+          {
+            "id": "l_1",
+            "text": "擎雨盖"
+          },
+          {
+            "id": "l_2",
+            "text": "寒山"
+          },
+          {
+            "id": "l_3",
+            "text": "白云生处"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "白云飘浮缭绕的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "深秋时节的山"
+          },
+          {
+            "id": "r_0",
+            "text": "经受严霜不凋谢的枝头"
+          },
+          {
+            "id": "r_1",
+            "text": "荷叶像雨伞一样支撑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白云生处"
+          },
+          {
+            "id": "l_1",
+            "text": "擎雨盖"
+          },
+          {
+            "id": "l_2",
+            "text": "傲霜枝"
+          },
+          {
+            "id": "l_3",
+            "text": "寒山"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "荷叶像雨伞一样支撑"
+          },
+          {
+            "id": "r_3",
+            "text": "深秋时节的山"
+          },
+          {
+            "id": "r_0",
+            "text": "白云飘浮缭绕的地方"
+          },
+          {
+            "id": "r_2",
+            "text": "经受严霜不凋谢的枝头"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白云生处"
+          },
+          {
+            "id": "l_1",
+            "text": "寒山"
+          },
+          {
+            "id": "l_2",
+            "text": "傲霜枝"
+          },
+          {
+            "id": "l_3",
+            "text": "擎雨盖"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "荷叶像雨伞一样支撑"
+          },
+          {
+            "id": "r_1",
+            "text": "深秋时节的山"
+          },
+          {
+            "id": "r_2",
+            "text": "经受严霜不凋谢的枝头"
+          },
+          {
+            "id": "r_0",
+            "text": "白云飘浮缭绕的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《山行》中“停车坐爱枫林晚”的“坐”字是什么意思？",
+        "options": [
+          "因为",
+          "坐下",
+          "座位",
+          "乘车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“霜叶红于二月花”写的是什么季节的什么景色？",
+        "options": [
+          "深秋被霜打过的红枫叶比春花还红",
+          "春天的百花",
+          "夏天的荷花",
+          "冬天的雪景"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《赠刘景文》中，作者认为秋天一年中最好的景色是什么？",
+        "options": [
+          "最是橙黄橘绿时",
+          "荷尽已无擎雨盖",
+          "菊残犹有傲霜枝",
+          "一年好景君须记"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《夜书所见》中，“动客情”写出了诗人怎样的心情？",
+        "options": [
+          "客居他乡的思乡孤独之情",
+          "非常高兴想跳舞",
+          "看到秋天景色很兴奋",
+          "想找朋友喝酒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《夜书所见》中，诗人看到什么景物猜想儿童在挑灯看蟋蟀？",
+        "options": [
+          "知有儿童挑促织，夜深篱落一灯明",
+          "萧萧梧叶送寒声",
+          "江上秋风动客情",
+          "最是橙黄橘绿时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请把拼出的字词组合成课文中的经典原句: '停车坐爱枫林晚，霜叶红于二月花。'",
+        "tokens": [
+          "霜",
+          "爱",
+          "晚",
+          "停",
+          "，",
+          "于",
+          "寒",
+          "月",
+          "花",
+          "二",
+          "坐",
+          "叶",
+          "枫",
+          "红",
+          "林",
+          "车"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "停",
+          "车",
+          "坐",
+          "爱",
+          "枫",
+          "林",
+          "晚",
+          "，",
+          "霜",
+          "叶",
+          "红",
+          "于",
+          "二",
+          "月",
+          "花"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请拼出句子: '不懂就要问，学问就是多思考。'",
+        "tokens": [
+          "，",
+          "多思考",
+          "不懂",
+          "学问",
+          "。",
+          "就是",
+          "就要问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不懂",
+          "就要问",
+          "，",
+          "学问",
+          "就是",
+          "多思考",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
