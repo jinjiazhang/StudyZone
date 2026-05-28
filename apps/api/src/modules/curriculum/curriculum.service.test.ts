@@ -5,6 +5,80 @@ import { CurriculumService } from './curriculum.service';
 import { PrismaService } from '../../infra/prisma.service';
 
 describe('CurriculumService admin content', () => {
+  it('locks later units until all lessons in the previous unit are completed', async () => {
+    const prisma = createPrismaMock();
+    prisma.course.findUnique.mockResolvedValue({
+      id: 'course-1',
+      units: [
+        {
+          id: 'unit-1',
+          orderIndex: 0,
+          title: 'Basics',
+          themeColor: '#1CB0F6',
+          lessons: [
+            { id: 'lesson-1', orderIndex: 0, title: 'One', icon: '1', exerciseCount: 1 },
+            { id: 'lesson-2', orderIndex: 1, title: 'Two', icon: '2', exerciseCount: 1 },
+          ],
+        },
+        {
+          id: 'unit-2',
+          orderIndex: 1,
+          title: 'Next',
+          themeColor: '#58CC02',
+          lessons: [
+            { id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 },
+          ],
+        },
+      ],
+    });
+    prisma.userLessonProgress.findMany.mockResolvedValue([
+      { lessonId: 'lesson-1', completed: true },
+    ]);
+
+    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const tree = await service.getCourseTree('user-1', 'course-1');
+
+    expect(tree[0].lessons.map((lesson) => lesson.unlocked)).toEqual([true, true]);
+    expect(tree[1].lessons.map((lesson) => lesson.unlocked)).toEqual([false]);
+  });
+
+  it('unlocks the next unit after every lesson in the previous unit is completed', async () => {
+    const prisma = createPrismaMock();
+    prisma.course.findUnique.mockResolvedValue({
+      id: 'course-1',
+      units: [
+        {
+          id: 'unit-1',
+          orderIndex: 0,
+          title: 'Basics',
+          themeColor: '#1CB0F6',
+          lessons: [
+            { id: 'lesson-1', orderIndex: 0, title: 'One', icon: '1', exerciseCount: 1 },
+            { id: 'lesson-2', orderIndex: 1, title: 'Two', icon: '2', exerciseCount: 1 },
+          ],
+        },
+        {
+          id: 'unit-2',
+          orderIndex: 1,
+          title: 'Next',
+          themeColor: '#58CC02',
+          lessons: [
+            { id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 },
+          ],
+        },
+      ],
+    });
+    prisma.userLessonProgress.findMany.mockResolvedValue([
+      { lessonId: 'lesson-1', completed: true },
+      { lessonId: 'lesson-2', completed: true },
+    ]);
+
+    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const tree = await service.getCourseTree('user-1', 'course-1');
+
+    expect(tree[1].lessons[0].unlocked).toBe(true);
+  });
+
   it('returns nested course content including exercise answers for CMS editing', async () => {
     const prisma = createPrismaMock();
     prisma.course.findUnique.mockResolvedValue({
@@ -101,6 +175,9 @@ function createPrismaMock() {
   return {
     course: {
       findUnique: vi.fn(),
+    },
+    userLessonProgress: {
+      findMany: vi.fn(),
     },
     exercise: {
       findUnique: vi.fn(),

@@ -2,6 +2,7 @@
 
 import { useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
@@ -34,13 +35,19 @@ export default function LearnPage() {
               <Link
                 key={c.id}
                 href={`/learn/courses/${c.id}`}
-                className="group flex items-center gap-4 rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-5 transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-[2px] active:border-b-2"
+                className="group flex items-center gap-5 rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-5 transition-transform duration-100 hover:-translate-y-0.5 active:translate-y-[2px] active:border-b-2"
               >
                 <div
-                  className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl text-4xl text-white shadow-pop"
-                  style={{ background: color }}
+                  className="flex h-36 w-28 shrink-0 items-center justify-center overflow-hidden rounded-2xl border-2 border-sz-line bg-white shadow-pop"
+                  style={{ borderColor: color }}
                 >
-                  {c.flagEmoji || subject?.icon || '📘'}
+                  <Image
+                    src={c.coverImageUrl}
+                    alt={`${c.name}封面`}
+                    width={112}
+                    height={144}
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <div className="flex-1">
                   <div className="text-lg font-heavy text-sz-ink">{c.name}</div>

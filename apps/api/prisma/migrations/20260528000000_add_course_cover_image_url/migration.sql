@@ -1,0 +1,2 @@
+ALTER TABLE "Course" ADD COLUMN "coverImageUrl" TEXT NOT NULL DEFAULT '';
+ALTER TABLE "Course" DROP COLUMN "flagEmoji";

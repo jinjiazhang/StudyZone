@@ -118,6 +118,45 @@ body {
     @apply relative flex h-20 w-20 items-center justify-center rounded-full text-3xl shadow-node transition-transform duration-150 hover:-translate-y-1 active:translate-y-[2px] active:shadow-[0_3px_0_0_rgba(0,0,0,0.10)];
   }
 
+  .lesson-node-duo {
+    @apply relative flex h-24 w-24 items-center justify-center rounded-full border-0 bg-sz-sky text-white transition-transform duration-150 hover:-translate-y-1 active:translate-y-[3px];
+    box-shadow:
+      inset 0 -12px 0 rgba(0, 0, 0, 0.13),
+      0 7px 0 #0e8fcc,
+      0 10px 0 rgba(60, 60, 60, 0.12);
+  }
+  .lesson-node-duo::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 999px;
+    border: 6px solid rgba(229, 229, 229, 0.95);
+    opacity: 0;
+  }
+  .lesson-node-duo-current::before {
+    opacity: 1;
+  }
+  .lesson-node-duo-shine {
+    position: absolute;
+    left: 18px;
+    top: 13px;
+    width: 42px;
+    height: 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(-32deg);
+  }
+  .lesson-node-duo-completed {
+    @apply bg-sz-sky text-white;
+  }
+  .lesson-node-duo-locked {
+    @apply bg-sz-line text-[#b5b5b5];
+    box-shadow:
+      inset 0 -10px 0 rgba(0, 0, 0, 0.1),
+      0 7px 0 #c7c7c7,
+      0 10px 0 rgba(60, 60, 60, 0.1);
+  }
+
   /* Form inputs */
   .input {
     @apply w-full rounded-2xl border-2 border-sz-line bg-sz-mist px-4 py-3 text-base font-bold text-sz-ink placeholder:font-bold placeholder:text-sz-ink-soft focus:border-sz-sky focus:bg-white focus:outline-none;

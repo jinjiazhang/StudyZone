@@ -25,7 +25,18 @@ export function Courses() {
               color: '#1f2937',
             }}
           >
-            <div style={{ fontSize: 32 }}>{c.flagEmoji}</div>
+            <img
+              src={c.coverImageUrl}
+              alt={`${c.name}封面`}
+              style={{
+                width: 112,
+                height: 152,
+                borderRadius: 8,
+                border: '1px solid #e5e7eb',
+                objectFit: 'contain',
+                background: 'white',
+              }}
+            />
             <div style={{ fontWeight: 700, marginTop: 8 }}>{c.name}</div>
             <div style={{ fontSize: 12, color: '#6b7280', marginTop: 4 }}>{c.description}</div>
           </Link>

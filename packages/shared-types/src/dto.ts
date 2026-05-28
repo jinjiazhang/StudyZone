@@ -80,7 +80,7 @@ export interface CourseDto {
   toLocale: Locale;
   name: string;
   description: string;
-  flagEmoji: string;
+  coverImageUrl: string;
 }
 
 export interface CourseTreeNode {

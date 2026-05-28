@@ -1,4 +1,4 @@
-import { ScrollView, Text, View, StyleSheet, Pressable } from 'react-native';
+import { Image, ScrollView, Text, View, StyleSheet, Pressable } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -44,8 +44,8 @@ export default function Learn() {
             onPress={() => router.push(`/course/${c.id}`)}
             style={styles.card}
           >
-            <View style={[styles.cardIcon, { backgroundColor: colors.greenSoft }]}>
-              <Text style={styles.cardEmoji}>{c.flagEmoji || '📘'}</Text>
+            <View style={styles.cardCover}>
+              <Image source={{ uri: c.coverImageUrl }} style={styles.cardCoverImage} />
             </View>
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>{c.name}</Text>
@@ -93,14 +93,16 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 14,
   },
-  cardIcon: {
-    width: 48,
-    height: 48,
+  cardCover: {
+    width: 76,
+    height: 104,
     borderRadius: radius.md,
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: colors.line,
+    backgroundColor: colors.white,
+    overflow: 'hidden',
   },
-  cardEmoji: { fontSize: 24 },
+  cardCoverImage: { width: '100%', height: '100%', resizeMode: 'contain' },
   cardBody: { flex: 1 },
   cardTitle: { fontFamily: fonts.heavy, fontSize: 16, color: colors.ink },
   cardDesc: { fontFamily: fonts.regular, fontSize: 13, color: colors.inkSoft, marginTop: 2 },

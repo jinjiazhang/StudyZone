@@ -5,7 +5,7 @@ import { useQuery, useMutation } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { CheckCircle2, Lock, PlayCircle, Trophy } from 'lucide-react';
+import { BookOpen, Check, Lock, PlayCircle, Star } from 'lucide-react';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
 
@@ -33,25 +33,27 @@ export default function CoursePage() {
   return (
     <AppShell>
       <div className="mx-auto flex max-w-3xl flex-col gap-12">
-        {tree.map((unit, unitIdx) => (
-          <section key={unit.unitId}>
-            <header
-              className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"
-              style={{ background: unit.themeColor }}
-            >
-              <div className="flex items-center justify-between gap-4">
+        {tree.map((unit, unitIdx) => {
+          const completedCount = unit.lessons.filter((lesson) => lesson.completed).length;
+          const unitLocked = unit.lessons.every((lesson) => !lesson.unlocked);
+
+          return (
+            <section key={unit.unitId} className={clsx(unitLocked && 'opacity-70')}>
+              <header
+                className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"
+                style={{ background: unit.themeColor }}
+              >
                 <div className="flex-1">
                   <div className="text-xs font-heavy uppercase tracking-widest opacity-80">第 {unit.unitOrder + 1} 单元</div>
                   <div className="mt-1 text-2xl font-heavy">{unit.unitTitle}</div>
+                  <div className="mt-2 text-sm font-heavy opacity-90">
+                    {completedCount}/{unit.lessons.length} 关完成
+                  </div>
                 </div>
-                <button className="inline-flex items-center gap-2 rounded-2xl border-2 border-white/30 bg-white/15 px-4 py-2 text-sm font-heavy uppercase tracking-wider">
-                  <Trophy className="h-4 w-4" /> 单元测验
-                </button>
-              </div>
-              <div className="pointer-events-none absolute -bottom-8 -right-8 text-9xl opacity-20">
-                {['🌱', '🌳', '🌟', '🚀', '🏔️'][unitIdx % 5]}
-              </div>
-            </header>
+                <div className="pointer-events-none absolute -bottom-8 -right-8 text-9xl opacity-20">
+                  {['🌱', '🌳', '🌟', '🚀', '🏔️'][unitIdx % 5]}
+                </div>
+              </header>
 
             <ol className="mt-8 flex flex-col items-center gap-8">
               {unit.lessons.map((lesson, idx) => {
@@ -68,8 +70,9 @@ export default function CoursePage() {
                 );
               })}
             </ol>
-          </section>
-        ))}
+            </section>
+          );
+        })}
       </div>
     </AppShell>
   );
@@ -93,25 +96,29 @@ function LessonNode({
   themeColor: string;
 }) {
   const isNext = lesson.unlocked && !lesson.completed;
+  const isLocked = !lesson.unlocked;
 
   return (
-    <li className="flex flex-col items-center gap-2" style={{ transform: `translateX(${offset * 36}px)` }}>
+    <li className="flex flex-col items-center gap-3" style={{ transform: `translateX(${offset * 38}px)` }}>
       <Link
         href={lesson.unlocked ? `/learn/lessons/${lesson.lessonId}` : '#'}
         aria-disabled={!lesson.unlocked}
-        className={clsx('lesson-node', !lesson.unlocked && 'pointer-events-none', isNext && 'animate-pulseGlow')}
-        style={{
-          background: lesson.unlocked ? (lesson.completed ? '#FFC800' : 'white') : '#E5E5E5',
-          color: lesson.unlocked ? '#3C3C3C' : '#bbbbbb',
-          borderColor: themeColor,
-        }}
+        className={clsx(
+          'lesson-node-duo',
+          isLocked && 'lesson-node-duo-locked pointer-events-none',
+          lesson.completed && 'lesson-node-duo-completed',
+          isNext && 'lesson-node-duo-current animate-pulseGlow',
+        )}
+        style={{ ['--unit-color' as string]: themeColor }}
       >
-        {!lesson.unlocked && <Lock className="h-7 w-7" />}
-        {lesson.unlocked && !lesson.completed && <span className="text-3xl">{lesson.icon || '📘'}</span>}
-        {lesson.completed && <CheckCircle2 className="h-8 w-8 text-white" />}
+        <span className="lesson-node-duo-shine" />
+        {isLocked && <Lock className="relative z-10 h-8 w-8" />}
+        {lesson.unlocked && !lesson.completed && !isNext && <BookOpen className="relative z-10 h-9 w-9" />}
+        {isNext && <Star className="relative z-10 h-10 w-10 fill-current" />}
+        {lesson.completed && <Check className="relative z-10 h-10 w-10 stroke-[4]" />}
         {isNext && (
-          <span className="absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-xl bg-sz-green px-3 py-1 text-xs font-heavy uppercase tracking-wider text-white shadow-pop">
-            <PlayCircle className="mr-1 inline h-3.5 w-3.5" /> 开始
+          <span className="absolute -top-12 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-2xl border-2 border-sz-line bg-white px-5 py-2 text-xl font-heavy text-sz-sky shadow-pop after:absolute after:left-1/2 after:top-full after:h-4 after:w-4 after:-translate-x-1/2 after:-translate-y-2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-sz-line after:bg-white">
+            <PlayCircle className="mr-1 inline h-5 w-5" /> 开始
           </span>
         )}
       </Link>

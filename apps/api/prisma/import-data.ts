@@ -46,7 +46,7 @@ async function main() {
           toLocale: courseData.toLocale,
           name: courseData.name,
           description: courseData.description,
-          flagEmoji: courseData.flagEmoji,
+          coverImageUrl: courseData.coverImageUrl,
           version: courseData.version,
           status: courseData.status,
         },

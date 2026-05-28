@@ -27,7 +27,7 @@ export interface LessonDataCourse {
   toLocale: string;
   name: string;
   description: string;
-  flagEmoji: string;
+  coverImageUrl: string;
   version: number;
   status: string;
   units: LessonDataUnit[];
@@ -64,7 +64,7 @@ interface CoursesIndex {
     toLocale: string;
     name: string;
     description: string;
-    flagEmoji?: string;
+    coverImageUrl: string;
     version?: number;
     status?: string;
   }>;
@@ -155,7 +155,11 @@ function loadCourse(
       `${subjectDirName}/courses.json`,
       `${course.name}.description`,
     ),
-    flagEmoji: course.flagEmoji ?? '',
+    coverImageUrl: requiredString(
+      course.coverImageUrl,
+      `${subjectDirName}/courses.json`,
+      `${course.name}.coverImageUrl`,
+    ),
     version: course.version ?? 1,
     status: course.status ?? 'published',
     units: unitsIndex.units.map((unit) =>

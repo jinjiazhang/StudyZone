@@ -53,13 +53,16 @@ export class CurriculumService {
     });
     const progressMap = new Map(progress.map((p) => [p.lessonId, p]));
 
+    let previousUnitsCompleted = true;
+
     return course.units.map((unit) => {
-      let unlockedAll = true;
+      const unitUnlocked = previousUnitsCompleted;
+      let previousLessonsCompleted = true;
       const lessons = unit.lessons.map((lesson, idx) => {
         const p = progressMap.get(lesson.id);
         const completed = p?.completed ?? false;
-        const unlocked = idx === 0 || unlockedAll;
-        if (!completed) unlockedAll = false;
+        const unlocked = unitUnlocked && (idx === 0 || previousLessonsCompleted);
+        if (!completed) previousLessonsCompleted = false;
 
         return {
           lessonId: lesson.id,
@@ -71,6 +74,10 @@ export class CurriculumService {
           exerciseCount: lesson.exerciseCount,
         };
       });
+      const unitCompleted =
+        unit.lessons.length > 0 &&
+        unit.lessons.every((lesson) => progressMap.get(lesson.id)?.completed ?? false);
+      previousUnitsCompleted = previousUnitsCompleted && unitCompleted;
 
       return {
         unitId: unit.id,

@@ -16,17 +16,17 @@ datasource db {
 // =============================================================================
 
 model User {
-  id                String   @id @default(cuid())
-  email             String   @unique
-  passwordHash      String
-  nickname          String
-  avatarUrl         String?
-  locale            String   @default("zh-CN")
-  timezone          String   @default("Asia/Shanghai")
-  dailyGoalMinutes  Int      @default(10)
-  status            String   @default("active") // active | suspended | deleted
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  id               String   @id @default(cuid())
+  email            String   @unique
+  passwordHash     String
+  nickname         String
+  avatarUrl        String?
+  locale           String   @default("zh-CN")
+  timezone         String   @default("Asia/Shanghai")
+  dailyGoalMinutes Int      @default(10)
+  status           String   @default("active") // active | suspended | deleted
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 
   identities        AuthIdentity[]
   devices           Device[]
@@ -39,8 +39,8 @@ model User {
   xpLedger          XPLedger[]
   achievements      UserAchievement[]
   questProgress     UserQuestProgress[]
-  friendshipsA      Friendship[]      @relation("friendshipUser")
-  friendshipsB      Friendship[]      @relation("friendshipFriend")
+  friendshipsA      Friendship[]         @relation("friendshipUser")
+  friendshipsB      Friendship[]         @relation("friendshipFriend")
   leagueMemberships LeaderboardEntry[]
   subscriptions     Subscription[]
   notifications     Notification[]
@@ -54,7 +54,7 @@ model AuthIdentity {
   id          String   @id @default(cuid())
   user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId      String
-  provider    String   // google | apple | wechat | github
+  provider    String // google | apple | wechat | github
   providerUid String
   createdAt   DateTime @default(now())
 
@@ -66,7 +66,7 @@ model Device {
   id           String   @id @default(cuid())
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId       String
-  platform     String   // ios | android | web
+  platform     String // ios | android | web
   pushToken    String?
   userAgent    String?
   lastActiveAt DateTime @default(now())
@@ -77,13 +77,13 @@ model Device {
 }
 
 model RefreshToken {
-  id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id        String    @id @default(cuid())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  tokenHash String   @unique
+  tokenHash String    @unique
   expiresAt DateTime
   revokedAt DateTime?
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
 
   @@index([userId])
   @@index([expiresAt])
@@ -94,30 +94,30 @@ model RefreshToken {
 // =============================================================================
 
 model Subject {
-  id        String   @id @default(cuid())
-  code      String   @unique // english | math | music
-  name      String
-  icon      String
-  color     String
-  order     Int      @default(0)
-  courses   Course[]
+  id      String   @id @default(cuid())
+  code    String   @unique // english | math | music
+  name    String
+  icon    String
+  color   String
+  order   Int      @default(0)
+  courses Course[]
 
   @@index([order])
 }
 
 model Course {
-  id          String   @id @default(cuid())
-  subject     Subject  @relation(fields: [subjectId], references: [id])
-  subjectId   String
-  fromLocale  String   // user's UI language, e.g. zh-CN
-  toLocale    String   // language being learned, e.g. en-US (math uses "math")
-  name        String
-  description String
-  flagEmoji   String   @default("")
-  version     Int      @default(1)
-  status      String   @default("published") // draft | beta | published
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id            String   @id @default(cuid())
+  subject       Subject  @relation(fields: [subjectId], references: [id])
+  subjectId     String
+  fromLocale    String // user's UI language, e.g. zh-CN
+  toLocale      String // language being learned, e.g. en-US (math uses "math")
+  name          String
+  description   String
+  coverImageUrl String   @default("")
+  version       Int      @default(1)
+  status        String   @default("published") // draft | beta | published
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
   units       Unit[]
   enrollments Enrollment[]
@@ -127,30 +127,30 @@ model Course {
 }
 
 model Unit {
-  id         String   @id @default(cuid())
-  course     Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  id         String @id @default(cuid())
+  course     Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
   courseId   String
   orderIndex Int
   title      String
-  themeColor String   @default("#3FB984")
+  themeColor String @default("#3FB984")
 
-  lessons    Lesson[]
+  lessons Lesson[]
 
   @@unique([courseId, orderIndex])
 }
 
 model Lesson {
-  id            String   @id @default(cuid())
-  unit          Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  id            String @id @default(cuid())
+  unit          Unit   @relation(fields: [unitId], references: [id], onDelete: Cascade)
   unitId        String
   orderIndex    Int
   title         String
-  icon          String   @default("")
-  exerciseCount Int      @default(8) // target count (server may pick subset)
+  icon          String @default("")
+  exerciseCount Int    @default(8) // target count (server may pick subset)
 
-  exercises     LessonExercise[]
-  sessions      LearningSession[]
-  userProgress  UserLessonProgress[]
+  exercises    LessonExercise[]
+  sessions     LearningSession[]
+  userProgress UserLessonProgress[]
 
   @@unique([unitId, orderIndex])
 }
@@ -165,9 +165,9 @@ model Exercise {
   imageUrl   String?
   createdAt  DateTime @default(now())
 
-  lessons   LessonExercise[]
-  attempts  ExerciseAttempt[]
-  srsCards  SrsCard[]
+  lessons  LessonExercise[]
+  attempts ExerciseAttempt[]
+  srsCards SrsCard[]
 }
 
 // Many-to-many: an exercise can be reused across lessons.
@@ -187,27 +187,27 @@ model LessonExercise {
 // =============================================================================
 
 model Enrollment {
-  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId           String
-  course           Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  courseId         String
-  currentUnitId    String?
-  currentLessonId  String?
-  xpInCourse       Int      @default(0)
-  enrolledAt       DateTime @default(now())
-  lastActiveAt     DateTime @default(now())
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId          String
+  course          Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId        String
+  currentUnitId   String?
+  currentLessonId String?
+  xpInCourse      Int      @default(0)
+  enrolledAt      DateTime @default(now())
+  lastActiveAt    DateTime @default(now())
 
   @@id([userId, courseId])
   @@index([userId])
 }
 
 model UserLessonProgress {
-  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  lesson    Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lesson    Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   lessonId  String
-  completed Boolean @default(false)
-  bestScore Int     @default(0)
+  completed Boolean  @default(false)
+  bestScore Int      @default(0)
   updatedAt DateTime @updatedAt
 
   @@id([userId, lessonId])
@@ -215,19 +215,19 @@ model UserLessonProgress {
 }
 
 model LearningSession {
-  id            String   @id @default(cuid())
-  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id            String    @id @default(cuid())
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId        String
-  lesson        Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  lesson        Lesson    @relation(fields: [lessonId], references: [id], onDelete: Cascade)
   lessonId      String
-  startedAt     DateTime @default(now())
+  startedAt     DateTime  @default(now())
   finishedAt    DateTime?
-  correctCount  Int      @default(0)
-  totalCount    Int      @default(0)
-  xpGained      Int      @default(0)
-  heartsUsed    Int      @default(0)
-  outcome       String?  // pass | fail | abandoned
-  exerciseQueue Json     // ordered list of exerciseIds picked for this session
+  correctCount  Int       @default(0)
+  totalCount    Int       @default(0)
+  xpGained      Int       @default(0)
+  heartsUsed    Int       @default(0)
+  outcome       String? // pass | fail | abandoned
+  exerciseQueue Json // ordered list of exerciseIds picked for this session
 
   attempts ExerciseAttempt[]
 
@@ -236,15 +236,15 @@ model LearningSession {
 }
 
 model ExerciseAttempt {
-  id          String   @id @default(cuid())
-  session     LearningSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-  sessionId   String
-  exercise    Exercise @relation(fields: [exerciseId], references: [id])
-  exerciseId  String
-  userAnswer  Json
-  isCorrect   Boolean
-  responseMs  Int      @default(0)
-  createdAt   DateTime @default(now())
+  id         String          @id @default(cuid())
+  session    LearningSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  sessionId  String
+  exercise   Exercise        @relation(fields: [exerciseId], references: [id])
+  exerciseId String
+  userAnswer Json
+  isCorrect  Boolean
+  responseMs Int             @default(0)
+  createdAt  DateTime        @default(now())
 
   @@index([sessionId])
 }
@@ -268,21 +268,21 @@ model SrsCard {
 // =============================================================================
 
 model UserWallet {
-  user           User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId         String @id
-  gems           Int    @default(50)
-  hearts         Int    @default(5)
-  maxHearts      Int    @default(5)
-  streakFreezes  Int    @default(0)
-  xpTotal        Int    @default(0)
-  updatedAt      DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId        String   @id
+  gems          Int      @default(50)
+  hearts        Int      @default(5)
+  maxHearts     Int      @default(5)
+  streakFreezes Int      @default(0)
+  xpTotal       Int      @default(0)
+  updatedAt     DateTime @updatedAt
 }
 
 model StreakRecord {
-  user                User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId              String @id
-  currentStreak       Int    @default(0)
-  longestStreak       Int    @default(0)
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId              String   @id
+  currentStreak       Int      @default(0)
+  longestStreak       Int      @default(0)
   lastActiveLocalDate String? // YYYY-MM-DD in user's tz
   updatedAt           DateTime @updatedAt
 }
@@ -300,48 +300,48 @@ model XPLedger {
 }
 
 model Achievement {
-  id          String   @id @default(cuid())
-  code        String   @unique
+  id          String @id @default(cuid())
+  code        String @unique
   title       String
   description String
   icon        String
   threshold   Int
-  category    String   // streak | xp | skill_complete | social
+  category    String // streak | xp | skill_complete | social
 
   earned UserAchievement[]
 }
 
 model UserAchievement {
-  user           User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId         String
-  achievement    Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
-  achievementId  String
-  earnedAt       DateTime @default(now())
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId        String
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  achievementId String
+  earnedAt      DateTime    @default(now())
 
   @@id([userId, achievementId])
   @@index([userId])
 }
 
 model DailyQuest {
-  id          String   @id @default(cuid())
-  code        String   @unique
+  id          String  @id @default(cuid())
+  code        String  @unique
   title       String
   targetValue Int
   xpReward    Int
   gemsReward  Int
-  active      Boolean  @default(true)
+  active      Boolean @default(true)
 
   progress UserQuestProgress[]
 }
 
 model UserQuestProgress {
-  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId      String
-  quest       DailyQuest @relation(fields: [questId], references: [id], onDelete: Cascade)
-  questId     String
-  date        String     // YYYY-MM-DD
-  currentValue Int       @default(0)
-  completedAt DateTime?
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId       String
+  quest        DailyQuest @relation(fields: [questId], references: [id], onDelete: Cascade)
+  questId      String
+  date         String // YYYY-MM-DD
+  currentValue Int        @default(0)
+  completedAt  DateTime?
 
   @@id([userId, questId, date])
   @@index([userId, date])
@@ -352,11 +352,11 @@ model UserQuestProgress {
 // =============================================================================
 
 model Friendship {
-  user      User   @relation("friendshipUser", fields: [userId], references: [id], onDelete: Cascade)
+  user      User     @relation("friendshipUser", fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  friend    User   @relation("friendshipFriend", fields: [friendId], references: [id], onDelete: Cascade)
+  friend    User     @relation("friendshipFriend", fields: [friendId], references: [id], onDelete: Cascade)
   friendId  String
-  status    String @default("pending") // pending | accepted | blocked
+  status    String   @default("pending") // pending | accepted | blocked
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -367,7 +367,7 @@ model Friendship {
 
 model LeagueGroup {
   id        String   @id @default(cuid())
-  tier      String   // bronze | silver | gold | ...
+  tier      String // bronze | silver | gold | ...
   weekStart DateTime // Monday 00:00 UTC of the league week
   status    String   @default("active") // active | settled
 
@@ -378,12 +378,12 @@ model LeagueGroup {
 }
 
 model LeaderboardEntry {
-  group     LeagueGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
-  groupId   String
-  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId    String
-  weeklyXp  Int         @default(0)
-  rank      Int         @default(0)
+  group    LeagueGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  groupId  String
+  user     User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId   String
+  weeklyXp Int         @default(0)
+  rank     Int         @default(0)
 
   @@id([groupId, userId])
   @@index([groupId, weeklyXp])
@@ -397,9 +397,9 @@ model Subscription {
   id        String   @id @default(cuid())
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
-  plan      String   // monthly | yearly | family
-  provider  String   // stripe | apple_iap | google_play | wechat | alipay
-  status    String   // active | trialing | past_due | canceled
+  plan      String // monthly | yearly | family
+  provider  String // stripe | apple_iap | google_play | wechat | alipay
+  status    String // active | trialing | past_due | canceled
   expiresAt DateTime
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -414,15 +414,15 @@ model Subscription {
 // =============================================================================
 
 model Notification {
-  id        String   @id @default(cuid())
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id        String    @id @default(cuid())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
   type      String
   title     String
   body      String
   data      Json?
   readAt    DateTime?
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
 
   @@index([userId, createdAt])
   @@index([userId, readAt])
