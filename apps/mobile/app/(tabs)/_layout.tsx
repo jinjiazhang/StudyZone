@@ -45,7 +45,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: '我',
+          title: '档案',
           tabBarIcon: ({ color, size }) => <User size={size} color={color} />,
         }}
       />

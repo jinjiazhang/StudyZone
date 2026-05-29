@@ -62,7 +62,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <NavLink href="/learn" current={pathname} icon={<BookOpen className="h-8 w-8" />} label="学习" tint="green" />
               <NavLink href="/league" current={pathname} icon={<Trophy className="h-8 w-8" />} label="联赛" tint="gold" />
               <NavLink href="/friends" current={pathname} icon={<Users className="h-8 w-8" />} label="好友" tint="rose" />
-              <NavLink href="/profile" current={pathname} icon={<User className="h-8 w-8" />} label="我" tint="sky" />
+              <NavLink href="/profile" current={pathname} icon={<User className="h-8 w-8" />} label="档案" tint="sky" />
             </ul>
           </div>
         </nav>
@@ -75,7 +75,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <BottomTab href="/learn" current={pathname} icon={<BookOpen className="h-6 w-6" />} label="学习" />
           <BottomTab href="/league" current={pathname} icon={<Trophy className="h-6 w-6" />} label="联赛" />
           <BottomTab href="/friends" current={pathname} icon={<Users className="h-6 w-6" />} label="好友" />
-          <BottomTab href="/profile" current={pathname} icon={<User className="h-6 w-6" />} label="我" />
+          <BottomTab href="/profile" current={pathname} icon={<User className="h-6 w-6" />} label="档案" />
         </ul>
       </nav>
     </div>
