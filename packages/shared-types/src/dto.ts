@@ -299,6 +299,60 @@ export interface AdminSettleLeaguesResult {
   demoted: number;
 }
 
+// =============================================================================
+// Admin — users
+// =============================================================================
+
+export type UserStatus = 'active' | 'suspended' | 'deleted';
+
+export interface AdminUserListItemDto {
+  id: string;
+  email: string;
+  nickname: string;
+  avatarUrl: string | null;
+  locale: Locale;
+  status: UserStatus;
+  xpTotal: number;
+  currentStreak: number;
+  createdAt: string;
+}
+
+export interface AdminUserListQuery {
+  /** Free-text search over email + nickname. */
+  search?: string;
+  status?: UserStatus;
+  /** Opaque cursor (user id) for keyset pagination. */
+  cursor?: string;
+  /** Page size, 1-100. Defaults to 20. */
+  limit?: number;
+}
+
+export interface AdminUserDetailDto extends AdminUserListItemDto {
+  dailyGoalMinutes: number;
+  timezone: string;
+  longestStreak: number;
+  gems: number;
+  hearts: number;
+  maxHearts: number;
+  leagueTier: LeagueTier | null;
+  enrolledCourses: number;
+  lessonsCompleted: number;
+  updatedAt: string;
+}
+
+export interface AdminUpdateUserDto {
+  nickname?: string;
+  status?: UserStatus;
+  dailyGoalMinutes?: number;
+}
+
+export interface AdminAdjustWalletDto {
+  /** Delta applied to gems (can be negative). */
+  gemsDelta?: number;
+  /** Absolute value to set hearts to. */
+  hearts?: number;
+}
+
 export interface ApiError {
   code: string;
   message?: string;

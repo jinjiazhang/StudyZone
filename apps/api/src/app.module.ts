@@ -11,6 +11,7 @@ import { LearningModule } from './modules/learning/learning.module';
 import { GamificationModule } from './modules/gamification/gamification.module';
 import { SocialModule } from './modules/social/social.module';
 import { LeagueModule } from './modules/league/league.module';
+import { AdminModule } from './modules/admin/admin.module';
 import { HealthController } from './common/health.controller';
 
 @Module({
@@ -26,6 +27,7 @@ import { HealthController } from './common/health.controller';
     GamificationModule,
     SocialModule,
     LeagueModule,
+    AdminModule,
   ],
   controllers: [HealthController],
 })

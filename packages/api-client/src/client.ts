@@ -14,6 +14,11 @@ import type {
   LeagueHistoryItemDto,
   AdminLeagueWeekDto,
   AdminSettleLeaguesResult,
+  AdminUserListItemDto,
+  AdminUserListQuery,
+  AdminUserDetailDto,
+  AdminUpdateUserDto,
+  AdminAdjustWalletDto,
   LoginDto,
   Paginated,
   RegisterDto,
@@ -187,6 +192,36 @@ export class StudyZoneClient {
     return this.request<AdminSettleLeaguesResult>('/api/v1/admin/leagues/settle', {
       method: 'POST',
       body: JSON.stringify(weekStart ? { weekStart } : {}),
+    });
+  }
+
+  listAdminUsers(query: AdminUserListQuery = {}) {
+    const params = new URLSearchParams();
+    if (query.search) params.set('search', query.search);
+    if (query.status) params.set('status', query.status);
+    if (query.cursor) params.set('cursor', query.cursor);
+    if (query.limit) params.set('limit', String(query.limit));
+    const q = params.toString();
+    return this.request<Paginated<AdminUserListItemDto>>(
+      `/api/v1/admin/users${q ? `?${q}` : ''}`,
+    );
+  }
+
+  getAdminUser(id: string) {
+    return this.request<AdminUserDetailDto>(`/api/v1/admin/users/${id}`);
+  }
+
+  updateAdminUser(id: string, dto: AdminUpdateUserDto) {
+    return this.request<AdminUserDetailDto>(`/api/v1/admin/users/${id}`, {
+      method: 'PATCH',
+      body: JSON.stringify(dto),
+    });
+  }
+
+  adjustAdminUserWallet(id: string, dto: AdminAdjustWalletDto) {
+    return this.request<AdminUserDetailDto>(`/api/v1/admin/users/${id}/wallet`, {
+      method: 'POST',
+      body: JSON.stringify(dto),
     });
   }
 }
