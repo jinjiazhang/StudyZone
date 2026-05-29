@@ -34,6 +34,7 @@ export class LearningService {
     const lesson = await this.prisma.lesson.findUnique({
       where: { id: lessonId },
       include: {
+        unit: true,
         exercises: { include: { exercise: true }, orderBy: { orderIndex: 'asc' } },
       },
     });
@@ -55,6 +56,7 @@ export class LearningService {
     return {
       sessionId: session.id,
       lessonId: lesson.id,
+      courseId: lesson.unit.courseId,
       startedAt: session.startedAt.toISOString(),
       exercises: queue.map((e) => ({
         id: e.id,

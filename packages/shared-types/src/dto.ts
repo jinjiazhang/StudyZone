@@ -148,6 +148,7 @@ export interface UpdateExerciseDto {
 export interface StartLessonResponse {
   sessionId: string;
   lessonId: string;
+  courseId: string;
   exercises: SessionExerciseDto[];
   startedAt: string;
 }

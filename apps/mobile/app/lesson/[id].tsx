@@ -86,6 +86,7 @@ export default function Lesson() {
   }
 
   const total = session.exercises.length;
+  const courseId = session.courseId;
   const progress = total > 0 ? (cursor / total) * 100 : 0;
 
   async function check() {
@@ -149,7 +150,12 @@ export default function Lesson() {
       const r = await complete.mutateAsync();
       router.replace({
         pathname: '/lesson/complete',
-        params: { xp: String(r.xpGained), gems: String(r.gemsGained ?? 0), streak: String(r.newStreak ?? 0) },
+        params: {
+          xp: String(r.xpGained),
+          gems: String(r.gemsGained ?? 0),
+          streak: String(r.newStreak ?? 0),
+          courseId,
+        },
       });
     }
   }

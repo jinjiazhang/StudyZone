@@ -14,6 +14,8 @@ export default function CompletePage() {
   const xp = Number(params.get('xp') ?? 0);
   const gems = Number(params.get('gems') ?? 0);
   const streak = Number(params.get('streak') ?? 0);
+  const courseId = params.get('courseId');
+  const continueHref = courseId ? `/learn/courses/${courseId}` : '/learn';
   const router = useRouter();
 
   // Pre-compute confetti so they re-render the same on every paint
@@ -79,7 +81,7 @@ export default function CompletePage() {
         </div>
 
         <div className="mt-2 flex w-full flex-col gap-3">
-          <Link href="/learn" className="btn-primary w-full px-8 py-4 text-lg">
+          <Link href={continueHref} className="btn-primary w-full px-8 py-4 text-lg">
             继续学习
           </Link>
           <button onClick={() => router.back()} className="btn-secondary w-full">

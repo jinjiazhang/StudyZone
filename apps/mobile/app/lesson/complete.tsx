@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import { useLocalSearchParams, useRouter, Link } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, {
   useSharedValue,
@@ -20,7 +20,12 @@ import { Mascot } from '../../components/Mascot';
 const CONFETTI_COLORS = [colors.green, colors.sky, colors.gold, colors.rose, colors.purple, colors.orange];
 
 export default function LessonComplete() {
-  const { xp, gems, streak } = useLocalSearchParams<{ xp: string; gems: string; streak: string }>();
+  const { xp, gems, streak, courseId } = useLocalSearchParams<{
+    xp: string;
+    gems: string;
+    streak: string;
+    courseId?: string;
+  }>();
   const router = useRouter();
 
   const xpNum = Number(xp ?? 0);
@@ -88,7 +93,7 @@ export default function LessonComplete() {
         {/* Buttons */}
         <View style={styles.buttons}>
           <Pressable
-            onPress={() => router.replace('/(tabs)/learn')}
+            onPress={() => router.replace(courseId ? `/course/${courseId}` : '/(tabs)/learn')}
             style={styles.btnPrimary}
           >
             <Text style={styles.btnPrimaryText}>继续学习</Text>

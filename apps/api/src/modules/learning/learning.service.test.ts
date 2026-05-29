@@ -21,6 +21,7 @@ describe('LearningService', () => {
   it('starts a lesson by persisting an exercise queue without answers', async () => {
     prisma.lesson.findUnique.mockResolvedValue({
       id: 'lesson-1',
+      unit: { courseId: 'course-1' },
       exerciseCount: 2,
       exercises: [
         { exercise: choiceExercise('exercise-1', 0), orderIndex: 0 },
@@ -44,6 +45,7 @@ describe('LearningService', () => {
     expect(result).toMatchObject({
       sessionId: 'session-1',
       lessonId: 'lesson-1',
+      courseId: 'course-1',
       exercises: expect.arrayContaining([
         expect.objectContaining({ id: 'exercise-1', difficulty: 1 }),
         expect.objectContaining({ id: 'exercise-2', difficulty: 1 }),

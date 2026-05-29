@@ -89,7 +89,7 @@ export default function LessonPage() {
     } else if (session) {
       const r = await complete.mutateAsync();
       router.push(
-        `/learn/lessons/${params.lessonId}/complete?xp=${r.xpGained}&gems=${r.gemsGained}&streak=${r.newStreak}`,
+        `/learn/lessons/${params.lessonId}/complete?xp=${r.xpGained}&gems=${r.gemsGained}&streak=${r.newStreak}&courseId=${session.courseId}`,
       );
     }
   }
