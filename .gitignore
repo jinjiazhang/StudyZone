@@ -29,6 +29,10 @@ npm-debug.log*
 # misc
 .cache/
 tmp/
+# temp prisma-client typecheck artifacts (safe to delete)
+.pcgen/
+*.pcgen.prisma
+tsconfig.pcgen.json
 .studyzone-dev/
 .studyzone-prod/
 *_nginx.zip

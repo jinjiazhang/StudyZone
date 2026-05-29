@@ -42,6 +42,7 @@ model User {
   friendshipsA      Friendship[]         @relation("friendshipUser")
   friendshipsB      Friendship[]         @relation("friendshipFriend")
   leagueMemberships LeaderboardEntry[]
+  leagueHistory     LeagueHistory[]
   subscriptions     Subscription[]
   notifications     Notification[]
   srsCards          SrsCard[]
@@ -366,27 +367,50 @@ model Friendship {
 }
 
 model LeagueGroup {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   tier      String // bronze | silver | gold | ...
   weekStart DateTime // Monday 00:00 UTC of the league week
-  status    String   @default("active") // active | settled
+  capacity  Int       @default(30) // max players in this group
+  status    String    @default("active") // active | settled
+  settledAt DateTime?
 
   entries LeaderboardEntry[]
 
-  @@unique([tier, weekStart, id])
-  @@index([weekStart, tier])
+  @@index([weekStart, tier, status])
 }
 
 model LeaderboardEntry {
-  group    LeagueGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
-  groupId  String
-  user     User        @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId   String
-  weeklyXp Int         @default(0)
-  rank     Int         @default(0)
+  group     LeagueGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  groupId   String
+  user      User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  weeklyXp  Int         @default(0)
+  rank      Int         @default(0)
+  joinedAt  DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
 
   @@id([groupId, userId])
   @@index([groupId, weeklyXp])
+  @@index([userId])
+}
+
+// One row per user per settled league week — the source of truth for a
+// player's league history, current tier, and promotion/relegation streaks.
+model LeagueHistory {
+  id          String   @id @default(cuid())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  weekStart   DateTime
+  tier        String // tier the user competed in this week
+  finalRank   Int
+  weeklyXp    Int
+  result      String // promoted | stayed | demoted
+  nextTier    String // tier the user lands in next week
+  gemsAwarded Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@unique([userId, weekStart])
+  @@index([userId, createdAt])
 }
 
 // =============================================================================

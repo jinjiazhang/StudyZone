@@ -11,6 +11,9 @@ import type {
   DailyQuestDto,
   FriendDto,
   LeagueStandingDto,
+  LeagueHistoryItemDto,
+  AdminLeagueWeekDto,
+  AdminSettleLeaguesResult,
   LoginDto,
   Paginated,
   RegisterDto,
@@ -169,5 +172,21 @@ export class StudyZoneClient {
 
   myLeague() {
     return this.request<LeagueStandingDto>('/api/v1/leagues/me');
+  }
+
+  leagueHistory() {
+    return this.request<LeagueHistoryItemDto[]>('/api/v1/leagues/history');
+  }
+
+  getAdminLeagues(weekStart?: string) {
+    const q = weekStart ? `?weekStart=${encodeURIComponent(weekStart)}` : '';
+    return this.request<AdminLeagueWeekDto>(`/api/v1/admin/leagues${q}`);
+  }
+
+  settleAdminLeagues(weekStart?: string) {
+    return this.request<AdminSettleLeaguesResult>('/api/v1/admin/leagues/settle', {
+      method: 'POST',
+      body: JSON.stringify(weekStart ? { weekStart } : {}),
+    });
   }
 }

@@ -230,17 +230,72 @@ export interface Paginated<T> {
   nextCursor: string | null;
 }
 
+export type LeagueResultType = 'promoted' | 'stayed' | 'demoted';
+
+export interface LeagueEntryDto {
+  rank: number;
+  user: UserPublic;
+  weeklyXp: number;
+  /** Projected outcome at settlement given the current standing. */
+  zone: LeagueResultType;
+}
+
 export interface LeagueStandingDto {
   leagueId: string;
   tier: LeagueTier;
   weekStart: string;
   weekEnd: string;
   selfIndex: number;
-  entries: Array<{
-    rank: number;
-    user: UserPublic;
-    weeklyXp: number;
-  }>;
+  /** Total players in the group. */
+  groupSize: number;
+  /** Number of top players who promote this week (0 if top tier). */
+  promoteCount: number;
+  /** Number of bottom players who demote this week (0 if bottom tier). */
+  demoteCount: number;
+  entries: LeagueEntryDto[];
+}
+
+export interface LeagueHistoryItemDto {
+  weekStart: string;
+  tier: LeagueTier;
+  finalRank: number;
+  weeklyXp: number;
+  result: LeagueResultType;
+  nextTier: LeagueTier;
+  gemsAwarded: number;
+}
+
+// =============================================================================
+// Admin — leagues
+// =============================================================================
+
+export interface AdminLeagueGroupDto {
+  id: string;
+  tier: LeagueTier;
+  weekStart: string;
+  capacity: number;
+  status: 'active' | 'settled';
+  settledAt: string | null;
+  memberCount: number;
+}
+
+export interface AdminLeagueWeekDto {
+  weekStart: string;
+  groups: AdminLeagueGroupDto[];
+  totalPlayers: number;
+}
+
+export interface AdminSettleLeaguesDto {
+  /** ISO week-start (Monday UTC) to settle. Defaults to the most recent completed week. */
+  weekStart?: string;
+}
+
+export interface AdminSettleLeaguesResult {
+  weekStart: string;
+  groupsSettled: number;
+  playersSettled: number;
+  promoted: number;
+  demoted: number;
 }
 
 export interface ApiError {

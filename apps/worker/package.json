@@ -1,0 +1,28 @@
+{
+  "name": "@studyzone/worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ../../scripts/with-root-env.mjs tsx watch src/main.ts",
+    "start": "node ../../scripts/with-root-env.mjs tsx src/main.ts",
+    "settle:now": "node ../../scripts/with-root-env.mjs tsx src/settle-now.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "@nestjs/core": "^10.3.0",
+    "@nestjs/config": "^3.2.0",
+    "@prisma/client": "^5.13.0",
+    "@studyzone/shared-logic": "workspace:*",
+    "@studyzone/shared-types": "workspace:*",
+    "bullmq": "^5.7.0",
+    "ioredis": "^5.4.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.0"
+  }
+}

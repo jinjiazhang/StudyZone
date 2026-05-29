@@ -43,9 +43,4 @@ export class SocialController {
   async accept(@CurrentUser() user: AuthenticatedUser, @Param('requesterId') requesterId: string) {
     await this.service.accept(user.id, requesterId);
   }
-
-  @Get('leagues/me')
-  league(@CurrentUser() user: AuthenticatedUser) {
-    return this.service.myLeague(user.id);
-  }
 }

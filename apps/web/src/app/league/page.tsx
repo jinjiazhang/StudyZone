@@ -37,13 +37,31 @@ const TIER_EMOJI: Record<string, string> = {
   diamond: '💎',
 };
 
+const RESULT_LABEL: Record<string, string> = {
+  promoted: '晋级',
+  stayed: '保级',
+  demoted: '降级',
+};
+const RESULT_COLOR: Record<string, string> = {
+  promoted: '#58CC02',
+  stayed: '#AFAFAF',
+  demoted: '#FF4B4B',
+};
+
 export default function LeaguePage() {
   const { data: league } = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
+  const { data: history } = useQuery({
+    queryKey: ['league-history'],
+    queryFn: () => api.leagueHistory(),
+  });
 
   const tier = league?.tier ?? 'bronze';
   const tierColor = TIER_COLOR[tier] ?? '#58CC02';
   const entries = league?.entries ?? [];
   const selfIndex = league?.selfIndex ?? -1;
+  const promoteCount = league?.promoteCount ?? 0;
+  const demoteCount = league?.demoteCount ?? 0;
+  const groupSize = league?.groupSize ?? entries.length;
 
   // top 3 stand on a podium
   const podium = entries.slice(0, 3);
@@ -70,12 +88,21 @@ export default function LeaguePage() {
             </div>
           </div>
           <div className="mt-4 flex flex-wrap gap-2 text-sm font-heavy">
-            <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1">
-              <ChevronUp className="h-4 w-4" /> 前 3 名晋级
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1">
-              <ChevronDown className="h-4 w-4" /> 末 3 名降级
-            </span>
+            {promoteCount > 0 && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1">
+                <ChevronUp className="h-4 w-4" /> 前 {promoteCount} 名晋级
+              </span>
+            )}
+            {demoteCount > 0 && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1">
+                <ChevronDown className="h-4 w-4" /> 末 {demoteCount} 名降级
+              </span>
+            )}
+            {promoteCount === 0 && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-3 py-1">
+                👑 最高段位
+              </span>
+            )}
           </div>
         </header>
 
@@ -100,35 +127,109 @@ export default function LeaguePage() {
               </section>
             )}
 
-            {/* Rest of the leaderboard */}
+            {/* Rest of the leaderboard, with promotion / demotion zone dividers */}
             <ol className="flex flex-col gap-2">
               {others.map((entry, idx) => {
                 const rank = entry.rank;
                 const isSelf = selfIndex === idx + 3;
+                // Insert a "promotion line" right after the last promoting rank.
+                const showPromoteLine = promoteCount > 3 && rank === promoteCount;
+                // Insert a "demotion line" right before the first demoting rank.
+                const showDemoteLine =
+                  demoteCount > 0 && rank === groupSize - demoteCount + 1;
                 return (
-                  <li
-                    key={entry.user.id}
-                    className={clsx(
-                      'flex items-center gap-4 rounded-2xl border-2 bg-white px-4 py-3 transition',
-                      isSelf
-                        ? 'border-sz-green bg-sz-green-soft'
-                        : 'border-sz-line',
-                    )}
-                  >
-                    <div className="w-7 text-center text-lg font-heavy text-sz-ink-soft">{rank}</div>
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sz-mist text-xl">
-                      🦊
-                    </div>
-                    <div className="flex-1 font-heavy text-sz-ink">{entry.user.nickname}</div>
-                    <div className="font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
-                  </li>
+                  <div key={entry.user.id} className="flex flex-col gap-2">
+                    {showDemoteLine && <ZoneDivider kind="demote" />}
+                    <li
+                      className={clsx(
+                        'flex items-center gap-4 rounded-2xl border-2 bg-white px-4 py-3 transition',
+                        isSelf
+                          ? 'border-sz-green bg-sz-green-soft'
+                          : entry.zone === 'promoted'
+                            ? 'border-[#58CC02]/40'
+                            : entry.zone === 'demoted'
+                              ? 'border-[#FF4B4B]/40'
+                              : 'border-sz-line',
+                      )}
+                    >
+                      <div className="w-7 text-center text-lg font-heavy text-sz-ink-soft">
+                        {rank}
+                      </div>
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sz-mist text-xl">
+                        🦊
+                      </div>
+                      <div className="flex-1 font-heavy text-sz-ink">{entry.user.nickname}</div>
+                      {entry.zone === 'promoted' && (
+                        <ChevronUp className="h-4 w-4 text-[#58CC02]" />
+                      )}
+                      {entry.zone === 'demoted' && (
+                        <ChevronDown className="h-4 w-4 text-[#FF4B4B]" />
+                      )}
+                      <div className="font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
+                    </li>
+                    {showPromoteLine && <ZoneDivider kind="promote" />}
+                  </div>
                 );
               })}
             </ol>
           </>
         )}
+
+        {/* History */}
+        {history && history.length > 0 && (
+          <section className="flex flex-col gap-2">
+            <h2 className="text-lg font-heavy text-sz-ink">历史战绩</h2>
+            <ul className="flex flex-col gap-2">
+              {history.map((h) => (
+                <li
+                  key={h.weekStart}
+                  className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
+                >
+                  <span className="text-xl">{TIER_EMOJI[h.tier] ?? '🏆'}</span>
+                  <div className="flex-1">
+                    <div className="font-heavy text-sz-ink">
+                      {TIER_LABEL[h.tier] ?? '联赛'} · 第 {h.finalRank} 名
+                    </div>
+                    <div className="text-xs font-bold text-sz-ink-soft">
+                      {h.weekStart.slice(0, 10)} · {h.weeklyXp} XP
+                      {h.gemsAwarded > 0 ? ` · +${h.gemsAwarded} 💎` : ''}
+                    </div>
+                  </div>
+                  <span
+                    className="rounded-full px-3 py-1 text-xs font-heavy text-white"
+                    style={{ background: RESULT_COLOR[h.result] ?? '#AFAFAF' }}
+                  >
+                    {RESULT_LABEL[h.result] ?? h.result}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
     </AppShell>
+  );
+}
+
+function ZoneDivider({ kind }: { kind: 'promote' | 'demote' }) {
+  const isPromote = kind === 'promote';
+  const color = isPromote ? '#58CC02' : '#FF4B4B';
+  return (
+    <div className="flex items-center gap-2 py-1" style={{ color }}>
+      <div className="h-0.5 flex-1 rounded-full" style={{ background: color }} />
+      <span className="flex items-center gap-1 text-xs font-heavy">
+        {isPromote ? (
+          <>
+            <ChevronUp className="h-3 w-3" /> 晋级区
+          </>
+        ) : (
+          <>
+            <ChevronDown className="h-3 w-3" /> 降级区
+          </>
+        )}
+      </span>
+      <div className="h-0.5 flex-1 rounded-full" style={{ background: color }} />
+    </div>
   );
 }
 

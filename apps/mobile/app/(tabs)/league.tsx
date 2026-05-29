@@ -7,13 +7,31 @@ import { colors, fonts, radius, TIER_LABEL, TIER_COLOR, TIER_EMOJI } from '../..
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
 
+const RESULT_LABEL: Record<string, string> = {
+  promoted: '晋级',
+  stayed: '保级',
+  demoted: '降级',
+};
+const RESULT_COLOR: Record<string, string> = {
+  promoted: '#58CC02',
+  stayed: '#AFAFAF',
+  demoted: '#FF4B4B',
+};
+
 export default function League() {
   const { data } = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
+  const { data: history } = useQuery({
+    queryKey: ['league-history'],
+    queryFn: () => api.leagueHistory(),
+  });
 
   const tier = data?.tier ?? 'bronze';
   const tierColor = TIER_COLOR[tier] ?? colors.green;
   const entries = data?.entries ?? [];
   const selfIndex = data?.selfIndex ?? -1;
+  const promoteCount = data?.promoteCount ?? 0;
+  const demoteCount = data?.demoteCount ?? 0;
+  const groupSize = data?.groupSize ?? entries.length;
   const podium = entries.slice(0, 3);
   const others = entries.slice(3);
 
@@ -40,14 +58,23 @@ export default function League() {
                 </View>
               </View>
               <View style={styles.tierBadges}>
-                <View style={styles.badge}>
-                  <ChevronUp size={14} color="white" />
-                  <Text style={styles.badgeText}>前 3 名晋级</Text>
-                </View>
-                <View style={styles.badge}>
-                  <ChevronDown size={14} color="white" />
-                  <Text style={styles.badgeText}>末 3 名降级</Text>
-                </View>
+                {promoteCount > 0 && (
+                  <View style={styles.badge}>
+                    <ChevronUp size={14} color="white" />
+                    <Text style={styles.badgeText}>前 {promoteCount} 名晋级</Text>
+                  </View>
+                )}
+                {demoteCount > 0 && (
+                  <View style={styles.badge}>
+                    <ChevronDown size={14} color="white" />
+                    <Text style={styles.badgeText}>末 {demoteCount} 名降级</Text>
+                  </View>
+                )}
+                {promoteCount === 0 && (
+                  <View style={styles.badge}>
+                    <Text style={styles.badgeText}>👑 最高段位</Text>
+                  </View>
+                )}
               </View>
             </View>
 
@@ -70,27 +97,83 @@ export default function League() {
             )}
           </>
         }
-        renderItem={({ item, index }) => {
-          const isSelf = selfIndex === index + 3;
+        renderItem={({ item }) => {
+          const isSelf = selfIndex === item.rank - 1;
+          const showPromoteLine = promoteCount > 3 && item.rank === promoteCount;
+          const showDemoteLine = demoteCount > 0 && item.rank === groupSize - demoteCount + 1;
+          const zoneBorder =
+            item.zone === 'promoted'
+              ? 'rgba(88,204,2,0.4)'
+              : item.zone === 'demoted'
+                ? 'rgba(255,75,75,0.4)'
+                : undefined;
           return (
-            <View
-              style={[
-                styles.row,
-                isSelf && { borderColor: colors.green, backgroundColor: colors.greenSoft },
-              ]}
-            >
-              <Text style={styles.rank}>{item.rank}</Text>
-              <View style={styles.avatar}>
-                <Text style={{ fontSize: 20 }}>🦊</Text>
+            <>
+              {showDemoteLine && <ZoneDivider kind="demote" />}
+              <View
+                style={[
+                  styles.row,
+                  zoneBorder ? { borderColor: zoneBorder } : null,
+                  isSelf && { borderColor: colors.green, backgroundColor: colors.greenSoft },
+                ]}
+              >
+                <Text style={styles.rank}>{item.rank}</Text>
+                <View style={styles.avatar}>
+                  <Text style={{ fontSize: 20 }}>🦊</Text>
+                </View>
+                <Text style={styles.name}>{item.user.nickname}</Text>
+                {item.zone === 'promoted' && <ChevronUp size={14} color="#58CC02" />}
+                {item.zone === 'demoted' && <ChevronDown size={14} color="#FF4B4B" />}
+                <Text style={styles.xp}>{item.weeklyXp} XP</Text>
               </View>
-              <Text style={styles.name}>{item.user.nickname}</Text>
-              <Text style={styles.xp}>{item.weeklyXp} XP</Text>
-            </View>
+              {showPromoteLine && <ZoneDivider kind="promote" />}
+            </>
           );
         }}
+        ListFooterComponent={
+          history && history.length > 0 ? (
+            <View style={{ marginTop: 16, gap: 8 }}>
+              <Text style={styles.historyTitle}>历史战绩</Text>
+              {history.map((h) => (
+                <View key={h.weekStart} style={styles.historyRow}>
+                  <Text style={{ fontSize: 20 }}>{TIER_EMOJI[h.tier] ?? '🏆'}</Text>
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.historyName}>
+                      {TIER_LABEL[h.tier] ?? '联赛'} · 第 {h.finalRank} 名
+                    </Text>
+                    <Text style={styles.historySub}>
+                      {h.weekStart.slice(0, 10)} · {h.weeklyXp} XP
+                      {h.gemsAwarded > 0 ? ` · +${h.gemsAwarded} 💎` : ''}
+                    </Text>
+                  </View>
+                  <View
+                    style={[styles.historyBadge, { backgroundColor: RESULT_COLOR[h.result] ?? '#AFAFAF' }]}
+                  >
+                    <Text style={styles.historyBadgeText}>{RESULT_LABEL[h.result] ?? h.result}</Text>
+                  </View>
+                </View>
+              ))}
+            </View>
+          ) : null
+        }
         ListEmptyComponent={entries.length > 0 ? null : undefined}
       />
     </SafeAreaView>
+  );
+}
+
+function ZoneDivider({ kind }: { kind: 'promote' | 'demote' }) {
+  const isPromote = kind === 'promote';
+  const color = isPromote ? '#58CC02' : '#FF4B4B';
+  return (
+    <View style={styles.zoneDivider}>
+      <View style={[styles.zoneLine, { backgroundColor: color }]} />
+      <View style={styles.zoneLabel}>
+        {isPromote ? <ChevronUp size={12} color={color} /> : <ChevronDown size={12} color={color} />}
+        <Text style={[styles.zoneText, { color }]}>{isPromote ? '晋级区' : '降级区'}</Text>
+      </View>
+      <View style={[styles.zoneLine, { backgroundColor: color }]} />
+    </View>
   );
 }
 
@@ -220,4 +303,23 @@ const styles = StyleSheet.create({
   },
   name: { flex: 1, fontFamily: fonts.heavy, color: colors.ink },
   xp: { fontFamily: fonts.heavy, color: colors.greenDark },
+  zoneDivider: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 4 },
+  zoneLine: { flex: 1, height: 2, borderRadius: 1 },
+  zoneLabel: { flexDirection: 'row', alignItems: 'center', gap: 2 },
+  zoneText: { fontFamily: fonts.heavy, fontSize: 11 },
+  historyTitle: { fontFamily: fonts.heavy, fontSize: 18, color: colors.ink, marginBottom: 4 },
+  historyRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    padding: 12,
+    backgroundColor: colors.white,
+    borderRadius: radius.lg,
+    borderWidth: 2,
+    borderColor: colors.line,
+  },
+  historyName: { fontFamily: fonts.heavy, color: colors.ink },
+  historySub: { fontFamily: fonts.sansBold, fontSize: 11, color: colors.inkSoft, marginTop: 2 },
+  historyBadge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: radius.full },
+  historyBadgeText: { fontFamily: fonts.heavy, fontSize: 12, color: colors.white },
 });

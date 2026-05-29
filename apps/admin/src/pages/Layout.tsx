@@ -23,6 +23,7 @@ export function Layout() {
         </div>
         <div style={{ fontSize: 12, color: '#6b7280', marginBottom: 12 }}>{email}</div>
         <Link to="/courses" style={nav}>课程管理</Link>
+        <Link to="/leagues" style={nav}>联赛管理</Link>
         <Link to="/users" style={nav}>用户管理</Link>
         <button
           onClick={() => {

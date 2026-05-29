@@ -74,48 +74,6 @@ export class SocialService {
     ]);
   }
 
-  async myLeague(userId: string) {
-    const weekStart = startOfWeek(new Date());
-    const weekEnd = new Date(weekStart);
-    weekEnd.setUTCDate(weekEnd.getUTCDate() + 7);
-
-    const myEntry = await this.prisma.leaderboardEntry.findFirst({
-      where: { userId, group: { weekStart } },
-      include: { group: { include: { entries: { include: { user: true }, orderBy: { weeklyXp: 'desc' } } } } },
-    });
-
-    if (!myEntry) {
-      return {
-        leagueId: '',
-        tier: 'bronze',
-        weekStart: weekStart.toISOString(),
-        weekEnd: weekEnd.toISOString(),
-        entries: [],
-        selfIndex: -1,
-      };
-    }
-
-    const entries = myEntry.group.entries.map((e, idx) => ({
-      rank: idx + 1,
-      user: {
-        id: e.user.id,
-        nickname: e.user.nickname,
-        avatarUrl: e.user.avatarUrl,
-        locale: e.user.locale,
-        createdAt: e.user.createdAt.toISOString(),
-      },
-      weeklyXp: e.weeklyXp,
-    }));
-
-    return {
-      leagueId: myEntry.group.id,
-      tier: myEntry.group.tier,
-      weekStart: myEntry.group.weekStart.toISOString(),
-      weekEnd: weekEnd.toISOString(),
-      entries,
-      selfIndex: entries.findIndex((e) => e.user.id === userId),
-    };
-  }
 }
 
 function startOfWeek(d: Date): Date {

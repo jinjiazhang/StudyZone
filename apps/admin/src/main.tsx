@@ -7,6 +7,7 @@ import { Layout } from './pages/Layout';
 import { Courses } from './pages/Courses';
 import { CourseDetail } from './pages/CourseDetail';
 import { Users } from './pages/Users';
+import { Leagues } from './pages/Leagues';
 import { useAuth } from './state';
 
 const client = new QueryClient();
@@ -35,6 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route index element={<Navigate to="/courses" replace />} />
             <Route path="courses" element={<Courses />} />
             <Route path="courses/:id" element={<CourseDetail />} />
+            <Route path="leagues" element={<Leagues />} />
             <Route path="users" element={<Users />} />
           </Route>
         </Routes>
