@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import {
   Alert,
   Image,
-  Linking,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -26,6 +25,7 @@ import { X, Heart, CheckCircle2, XCircle, Volume2 } from 'lucide-react-native';
 import { ExerciseType } from '@studyzone/shared-types';
 import { api } from '../../lib/api';
 import { useAnswerSounds } from '../../lib/answer-sounds';
+import { useAudioPlayer } from '../../lib/use-audio-player';
 import { colors, fonts, radius } from '../../lib/theme';
 import { HanziWriterCanvas } from '../../components/HanziWriterCanvas';
 
@@ -438,6 +438,7 @@ function TextInputBlock({ title, label, text, onText, placeholder, audioUrl, aud
   title: string; label: string; text: string; onText: (v: string) => void;
   placeholder: string; audioUrl?: string; audioUrlSlow?: string; disabled: boolean;
 }) {
+  const { play, playingUrl } = useAudioPlayer();
   return (
     <View style={{ gap: 12 }}>
       <Text style={styles.labelSmall}>{label}</Text>
@@ -446,13 +447,19 @@ function TextInputBlock({ title, label, text, onText, placeholder, audioUrl, aud
       </View>
       {audioUrl && (
         <View style={{ flexDirection: 'row', gap: 8 }}>
-          <Pressable onPress={() => Linking.openURL(audioUrl)} style={styles.audioBtn}>
-            <Volume2 size={20} color={colors.sky} />
-            <Text style={styles.audioBtnText}>播放</Text>
+          <Pressable
+            onPress={() => play(audioUrl)}
+            style={[styles.audioBtn, playingUrl === audioUrl && styles.audioBtnActive]}
+          >
+            <Volume2 size={20} color={playingUrl === audioUrl ? colors.white : colors.sky} />
+            <Text style={[styles.audioBtnText, playingUrl === audioUrl && { color: colors.white }]}>播放</Text>
           </Pressable>
           {audioUrlSlow && (
-            <Pressable onPress={() => Linking.openURL(audioUrlSlow)} style={styles.audioBtn}>
-              <Text style={styles.audioBtnText}>🐢 慢速</Text>
+            <Pressable
+              onPress={() => play(audioUrlSlow)}
+              style={[styles.audioBtn, playingUrl === audioUrlSlow && styles.audioBtnActive]}
+            >
+              <Text style={[styles.audioBtnText, playingUrl === audioUrlSlow && { color: colors.white }]}>🐢 慢速</Text>
             </Pressable>
           )}
         </View>
@@ -572,14 +579,15 @@ function ImageChoiceBlock({ word, options, pick, onPick, audioUrl, disabled }: {
   word: string; options: { id: string; imageUrl: string; label: string }[];
   pick: string | null; onPick: (id: string) => void; audioUrl?: string; disabled: boolean;
 }) {
+  const { play, playingUrl } = useAudioPlayer();
   return (
     <View style={{ gap: 12 }}>
       <Text style={styles.labelSmall}>选择图片</Text>
       <View style={styles.promptCard}>
         <Text style={styles.promptBold}>{word}</Text>
         {audioUrl && (
-          <Pressable onPress={() => Linking.openURL(audioUrl)} style={{ marginTop: 8 }}>
-            <Volume2 size={20} color={colors.sky} />
+          <Pressable onPress={() => play(audioUrl)} style={{ marginTop: 8 }}>
+            <Volume2 size={20} color={playingUrl === audioUrl ? colors.skyDark : colors.sky} />
           </Pressable>
         )}
       </View>
@@ -839,6 +847,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 10,
   },
+  audioBtnActive: { backgroundColor: colors.sky, borderColor: colors.skyDark },
   audioBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.skyDark },
 
   // Word bank

@@ -8,18 +8,27 @@ import { colors, fonts, radius } from '../lib/theme';
 import { Mascot } from '../components/Mascot';
 import { SpeechBubble } from '../components/SpeechBubble';
 
-export default function Login() {
+export default function Register() {
   const router = useRouter();
-  const [email, setEmail] = useState('demo@studyzone.dev');
-  const [password, setPassword] = useState('studyzone');
+  const [nickname, setNickname] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const setAuth = useAuthStore((s) => s.setAuth);
   const [loading, setLoading] = useState(false);
   const [pressed, setPressed] = useState(false);
 
-  async function onLogin() {
+  async function onRegister() {
+    if (nickname.trim().length < 2) {
+      Alert.alert('注册失败', '昵称至少需要 2 个字符');
+      return;
+    }
+    if (password.length < 8) {
+      Alert.alert('注册失败', '密码至少需要 8 位');
+      return;
+    }
     try {
       setLoading(true);
-      const res = await api.login({ email, password });
+      const res = await api.register({ email: email.trim(), nickname: nickname.trim(), password });
       setAuth({
         accessToken: res.tokens.accessToken,
         refreshToken: res.tokens.refreshToken,
@@ -27,7 +36,7 @@ export default function Login() {
       });
       router.replace('/(tabs)/learn');
     } catch (e: any) {
-      Alert.alert('登录失败', e?.body?.message ?? '请重试');
+      Alert.alert('注册失败', e?.body?.message ?? '请重试');
     } finally {
       setLoading(false);
     }
@@ -36,14 +45,22 @@ export default function Login() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        {/* Mascot + Speech bubble */}
         <View style={styles.mascotRow}>
-          <Mascot size={104} mood="wink" />
-          <SpeechBubble>欢迎回来！准备好继续学习了吗？</SpeechBubble>
+          <Mascot size={104} mood="cheer" />
+          <SpeechBubble>嘿！加入 StudyZone，第一天就能解锁连胜 🔥</SpeechBubble>
         </View>
 
-        <Text style={styles.title}>登录账号</Text>
+        <Text style={styles.title}>创建账号</Text>
 
+        <TextInput
+          value={nickname}
+          onChangeText={setNickname}
+          placeholder="昵称"
+          autoCapitalize="none"
+          maxLength={30}
+          style={styles.input}
+          placeholderTextColor={colors.inkSoft}
+        />
         <TextInput
           value={email}
           onChangeText={setEmail}
@@ -56,15 +73,14 @@ export default function Login() {
         <TextInput
           value={password}
           onChangeText={setPassword}
-          placeholder="密码"
+          placeholder="密码（至少 8 位）"
           secureTextEntry
           style={styles.input}
           placeholderTextColor={colors.inkSoft}
         />
 
-        {/* 3D puffy login button */}
         <Pressable
-          onPress={onLogin}
+          onPress={onRegister}
           disabled={loading}
           onPressIn={() => setPressed(true)}
           onPressOut={() => setPressed(false)}
@@ -74,16 +90,12 @@ export default function Login() {
             loading && { opacity: 0.5 },
           ]}
         >
-          <Text style={styles.buttonText}>{loading ? '登录中…' : '登 录'}</Text>
+          <Text style={styles.buttonText}>{loading ? '注册中…' : '注 册'}</Text>
         </Pressable>
 
-        <Pressable onPress={() => router.replace('/register')}>
-          <Text style={styles.link}>还没有账号？立即注册</Text>
+        <Pressable onPress={() => router.replace('/login')}>
+          <Text style={styles.link}>已有账号？去登录</Text>
         </Pressable>
-
-        <Text style={styles.hint}>
-          演示账号：demo@studyzone.dev / studyzone
-        </Text>
       </View>
     </SafeAreaView>
   );
@@ -146,13 +158,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 13,
     fontFamily: fonts.heavy,
-    color: colors.inkSoft,
-    marginTop: 8,
-  },
-  hint: {
-    textAlign: 'center',
-    fontSize: 12,
-    fontFamily: fonts.regular,
     color: colors.inkSoft,
     marginTop: 8,
   },
