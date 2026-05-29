@@ -27,6 +27,7 @@ import { ExerciseType } from '@studyzone/shared-types';
 import { api } from '../../lib/api';
 import { useAnswerSounds } from '../../lib/answer-sounds';
 import { colors, fonts, radius } from '../../lib/theme';
+import { HanziWriterCanvas } from '../../components/HanziWriterCanvas';
 
 export default function Lesson() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -39,6 +40,7 @@ export default function Lesson() {
   const [pairs, setPairs] = useState<Record<string, string>>({});
   const [pickedLeft, setPickedLeft] = useState<string | null>(null);
   const [slotFills, setSlotFills] = useState<Record<string, string>>({});
+  const [writeResult, setWriteResult] = useState<{ mistakes: number; completed: boolean } | null>(null);
   const [feedback, setFeedback] = useState<{ result: 'correct' | 'wrong'; canonical?: string } | null>(null);
   const [hearts, setHearts] = useState<number>(5);
   const [start] = useState(Date.now());
@@ -121,6 +123,13 @@ export default function Lesson() {
       const slots = (ex.prompt as any).slots as { id: string }[];
       if (Object.keys(slotFills).length !== slots.length) return;
       payload = { slotFills };
+    } else if (ex.type === ExerciseType.PINYIN_TO_CHARACTER_WRITE) {
+      if (!writeResult) return;
+      payload = {
+        character: (ex.prompt as any).character,
+        mistakes: writeResult.mistakes,
+        completed: writeResult.completed,
+      };
     } else {
       Alert.alert('当前移动端版本暂未实现该题型');
       return;
@@ -144,6 +153,7 @@ export default function Lesson() {
     setPairs({});
     setPickedLeft(null);
     setSlotFills({});
+    setWriteResult(null);
     if (cursor + 1 < total) {
       setCursor(cursor + 1);
     } else {
@@ -160,7 +170,7 @@ export default function Lesson() {
     }
   }
 
-  const hasAnswer = pick !== null || imagePick !== null || text.trim() !== '' || wordOrder.length > 0 || Object.keys(pairs).length > 0 || Object.keys(slotFills).length > 0;
+  const hasAnswer = pick !== null || imagePick !== null || text.trim() !== '' || wordOrder.length > 0 || Object.keys(pairs).length > 0 || Object.keys(slotFills).length > 0 || writeResult !== null;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -302,6 +312,21 @@ export default function Lesson() {
             slotFills={slotFills}
             onSlotFills={setSlotFills}
             disabled={!!feedback}
+          />
+        )}
+
+        {ex.type === ExerciseType.PINYIN_TO_CHARACTER_WRITE && (
+          <HanziWriterCanvas
+            character={(ex.prompt as any).character}
+            pinyin={(ex.prompt as any).pinyin}
+            sentence={(ex.prompt as any).sentence}
+            blankPlaceholder={(ex.prompt as any).blankPlaceholder}
+            allowedMistakes={(ex.prompt as any).allowedMistakes}
+            leniency={(ex.prompt as any).leniency}
+            disabled={!!feedback}
+            completedResult={writeResult}
+            onComplete={setWriteResult}
+            onSkip={setWriteResult}
           />
         )}
       </ScrollView>
