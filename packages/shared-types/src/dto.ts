@@ -226,6 +226,27 @@ export interface FriendDto {
   status: FriendshipStatus;
 }
 
+/** A confirmed friend, with this week's competitive stats. */
+export interface FriendSummaryDto {
+  user: UserPublic;
+  status: FriendshipStatus;
+  weeklyXp: number;
+  currentStreak: number;
+}
+
+export type FriendRequestDirection = 'incoming' | 'outgoing';
+
+/** A pending friend request, either received or sent by the current user. */
+export interface FriendRequestDto {
+  user: UserPublic;
+  direction: FriendRequestDirection;
+  createdAt: string;
+}
+
+export interface SendFriendRequestDto {
+  email: string;
+}
+
 export interface Paginated<T> {
   items: T[];
   nextCursor: string | null;

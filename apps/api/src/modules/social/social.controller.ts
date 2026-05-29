@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   HttpCode,
   Param,
@@ -32,6 +33,11 @@ export class SocialController {
     return this.service.listFriends(user.id, cursor);
   }
 
+  @Get('friends/requests')
+  requests(@CurrentUser() user: AuthenticatedUser) {
+    return this.service.listRequests(user.id);
+  }
+
   @Post('friends/requests')
   @HttpCode(204)
   async sendRequest(@CurrentUser() user: AuthenticatedUser, @Body() dto: FriendRequestDto) {
@@ -42,5 +48,17 @@ export class SocialController {
   @HttpCode(204)
   async accept(@CurrentUser() user: AuthenticatedUser, @Param('requesterId') requesterId: string) {
     await this.service.accept(user.id, requesterId);
+  }
+
+  @Post('friends/:requesterId/decline')
+  @HttpCode(204)
+  async decline(@CurrentUser() user: AuthenticatedUser, @Param('requesterId') requesterId: string) {
+    await this.service.decline(user.id, requesterId);
+  }
+
+  @Delete('friends/:otherId')
+  @HttpCode(204)
+  async remove(@CurrentUser() user: AuthenticatedUser, @Param('otherId') otherId: string) {
+    await this.service.remove(user.id, otherId);
   }
 }

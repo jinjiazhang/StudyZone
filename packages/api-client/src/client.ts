@@ -9,7 +9,8 @@ import type {
   CourseDto,
   CourseTreeNode,
   DailyQuestDto,
-  FriendDto,
+  FriendSummaryDto,
+  FriendRequestDto,
   LeagueStandingDto,
   LeagueHistoryItemDto,
   AdminLeagueWeekDto,
@@ -172,7 +173,32 @@ export class StudyZoneClient {
 
   friends(cursor?: string) {
     const q = cursor ? `?cursor=${encodeURIComponent(cursor)}` : '';
-    return this.request<Paginated<FriendDto>>(`/api/v1/friends${q}`);
+    return this.request<Paginated<FriendSummaryDto>>(`/api/v1/friends${q}`);
+  }
+
+  friendRequests() {
+    return this.request<{ incoming: FriendRequestDto[]; outgoing: FriendRequestDto[] }>(
+      '/api/v1/friends/requests',
+    );
+  }
+
+  sendFriendRequest(email: string) {
+    return this.request<void>('/api/v1/friends/requests', {
+      method: 'POST',
+      body: JSON.stringify({ email }),
+    });
+  }
+
+  acceptFriendRequest(requesterId: string) {
+    return this.request<void>(`/api/v1/friends/${requesterId}/accept`, { method: 'POST' });
+  }
+
+  declineFriendRequest(requesterId: string) {
+    return this.request<void>(`/api/v1/friends/${requesterId}/decline`, { method: 'POST' });
+  }
+
+  removeFriend(otherId: string) {
+    return this.request<void>(`/api/v1/friends/${otherId}`, { method: 'DELETE' });
   }
 
   myLeague() {

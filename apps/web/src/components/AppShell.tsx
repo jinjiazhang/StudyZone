@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Flame, Gem, Heart, BookOpen, Trophy, User, Sparkles } from 'lucide-react';
+import { Flame, Gem, Heart, BookOpen, Trophy, User, Users, Sparkles } from 'lucide-react';
 import clsx from 'clsx';
 
 import { api } from '@/lib/api';
@@ -61,6 +61,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <ul className="flex flex-col gap-3">
               <NavLink href="/learn" current={pathname} icon={<BookOpen className="h-8 w-8" />} label="学习" tint="green" />
               <NavLink href="/league" current={pathname} icon={<Trophy className="h-8 w-8" />} label="联赛" tint="gold" />
+              <NavLink href="/friends" current={pathname} icon={<Users className="h-8 w-8" />} label="好友" tint="rose" />
               <NavLink href="/profile" current={pathname} icon={<User className="h-8 w-8" />} label="我" tint="sky" />
             </ul>
           </div>
@@ -70,9 +71,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
       {/* bottom tabs (mobile) */}
       <nav className="fixed inset-x-0 bottom-0 z-30 border-t-2 border-sz-line bg-white md:hidden">
-        <ul className="mx-auto grid max-w-md grid-cols-3 px-2 py-2">
+        <ul className="mx-auto grid max-w-md grid-cols-4 px-2 py-2">
           <BottomTab href="/learn" current={pathname} icon={<BookOpen className="h-6 w-6" />} label="学习" />
           <BottomTab href="/league" current={pathname} icon={<Trophy className="h-6 w-6" />} label="联赛" />
+          <BottomTab href="/friends" current={pathname} icon={<Users className="h-6 w-6" />} label="好友" />
           <BottomTab href="/profile" current={pathname} icon={<User className="h-6 w-6" />} label="我" />
         </ul>
       </nav>
@@ -122,13 +124,14 @@ function NavLink({
   current: string | null;
   icon: React.ReactNode;
   label: string;
-  tint: 'green' | 'gold' | 'sky';
+  tint: 'green' | 'gold' | 'sky' | 'rose';
 }) {
   const active = current === href || (href !== '/' && current?.startsWith(href));
   const activeStyles = {
     green: 'bg-sz-green-soft text-sz-green-dark border-sz-green',
     gold: 'bg-yellow-50 text-sz-gold-dark border-sz-gold',
     sky: 'bg-sky-50 text-sz-sky-dark border-sz-sky',
+    rose: 'bg-rose-50 text-sz-rose-dark border-sz-rose',
   }[tint];
   return (
     <li>

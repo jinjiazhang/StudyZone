@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { BookOpen, Trophy, User } from 'lucide-react-native';
+import { BookOpen, Trophy, Users, User } from 'lucide-react-native';
 import { colors, fonts } from '../../lib/theme';
 
 export default function TabsLayout() {
@@ -33,6 +33,13 @@ export default function TabsLayout() {
         options={{
           title: '联赛',
           tabBarIcon: ({ color, size }) => <Trophy size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="friends"
+        options={{
+          title: '好友',
+          tabBarIcon: ({ color, size }) => <Users size={size} color={color} />,
         }}
       />
       <Tabs.Screen
