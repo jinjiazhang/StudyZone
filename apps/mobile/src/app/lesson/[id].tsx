@@ -3,7 +3,7 @@ import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useQuery, useMutation } from '@tanstack/react-query';
-import Animated, { SlideInDown } from 'react-native-reanimated';
+import Animated, { withSpring, withTiming } from 'react-native-reanimated';
 import { X, Heart, CheckCircle2, XCircle } from 'lucide-react-native';
 import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 
@@ -75,6 +75,21 @@ export default function Lesson() {
   const courseId = session.courseId;
   const progress = total > 0 ? (cursor / total) * 100 : 0;
 
+  // Gentle slide-up entrance for the feedback drawer (small amplitude).
+  const feedbackEntering = (values: any) => {
+    'worklet';
+    return {
+      initialValues: {
+        originY: values.targetOriginY + 24,
+        opacity: 0,
+      },
+      animations: {
+        originY: withSpring(values.targetOriginY, { damping: 26, stiffness: 260 }),
+        opacity: withTiming(1, { duration: 160 }),
+      },
+    };
+  };
+
   async function handleSubmit(payload: any) {
     if (!current || !session) return;
     const responseMs = Date.now() - start;
@@ -136,7 +151,7 @@ export default function Lesson() {
       {/* Feedback drawer */}
       {feedback && (
         <Animated.View
-          entering={SlideInDown.springify().damping(22).stiffness(220)}
+          entering={feedbackEntering}
           style={[
             styles.feedbackDrawer,
             { borderTopColor: feedback.result === 'correct' ? colors.green : colors.rose },
