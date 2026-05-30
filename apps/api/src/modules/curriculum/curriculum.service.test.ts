@@ -169,6 +169,79 @@ describe('CurriculumService admin content', () => {
       orderIndex: 3,
     });
   });
+
+  it('lists user enrollments sorted by recency with subjectId attached', async () => {
+    const prisma = createPrismaMock();
+    prisma.enrollment.findMany.mockResolvedValue([
+      {
+        courseId: 'course-2',
+        enrolledAt: new Date('2024-01-02T00:00:00Z'),
+        lastActiveAt: new Date('2024-01-10T00:00:00Z'),
+        course: { subjectId: 'subject-math' },
+      },
+      {
+        courseId: 'course-1',
+        enrolledAt: new Date('2024-01-01T00:00:00Z'),
+        lastActiveAt: new Date('2024-01-05T00:00:00Z'),
+        course: { subjectId: 'subject-english' },
+      },
+    ]);
+
+    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const enrollments = await service.listMyEnrollments('user-1');
+
+    expect(prisma.enrollment.findMany).toHaveBeenCalledWith(
+      expect.objectContaining({
+        where: { userId: 'user-1' },
+        orderBy: { lastActiveAt: 'desc' },
+      }),
+    );
+    expect(enrollments).toEqual([
+      {
+        courseId: 'course-2',
+        subjectId: 'subject-math',
+        enrolledAt: '2024-01-02T00:00:00.000Z',
+        lastActiveAt: '2024-01-10T00:00:00.000Z',
+      },
+      {
+        courseId: 'course-1',
+        subjectId: 'subject-english',
+        enrolledAt: '2024-01-01T00:00:00.000Z',
+        lastActiveAt: '2024-01-05T00:00:00.000Z',
+      },
+    ]);
+  });
+
+  it('bumps lastActiveAt when fetching the course tree for an enrolled user', async () => {
+    const prisma = createPrismaMock();
+    prisma.course.findUnique.mockResolvedValue({
+      id: 'course-1',
+      units: [],
+    });
+    prisma.userLessonProgress.findMany.mockResolvedValue([]);
+    prisma.enrollment.update.mockResolvedValue({});
+
+    const service = new CurriculumService(prisma as unknown as PrismaService);
+    await service.getCourseTree('user-1', 'course-1');
+
+    expect(prisma.enrollment.update).toHaveBeenCalledWith({
+      where: { userId_courseId: { userId: 'user-1', courseId: 'course-1' } },
+      data: { lastActiveAt: expect.any(Date) },
+    });
+  });
+
+  it('does not fail when fetching course tree for a not-yet-enrolled user', async () => {
+    const prisma = createPrismaMock();
+    prisma.course.findUnique.mockResolvedValue({
+      id: 'course-1',
+      units: [],
+    });
+    prisma.userLessonProgress.findMany.mockResolvedValue([]);
+    prisma.enrollment.update.mockRejectedValue(new Error('record not found'));
+
+    const service = new CurriculumService(prisma as unknown as PrismaService);
+    await expect(service.getCourseTree('user-1', 'course-1')).resolves.toEqual([]);
+  });
 });
 
 function createPrismaMock() {
@@ -185,6 +258,10 @@ function createPrismaMock() {
     },
     lessonExercise: {
       findFirst: vi.fn(),
+    },
+    enrollment: {
+      findMany: vi.fn(),
+      update: vi.fn(),
     },
   };
 }

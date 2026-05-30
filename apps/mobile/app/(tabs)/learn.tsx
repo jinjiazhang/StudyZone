@@ -1,8 +1,11 @@
+import { useMemo, useState } from 'react';
 import { Image, ScrollView, Text, View, StyleSheet, Pressable } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Flame, Gem, Heart, ChevronRight } from 'lucide-react-native';
+import { Flame, Gem, Heart, ChevronRight, BookOpen, Repeat } from 'lucide-react-native';
+import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
+import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '../../lib/api';
 import { resolveAssetUrl } from '../../lib/assets';
 import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
@@ -10,12 +13,37 @@ import { colors, fonts, radius } from '../../lib/theme';
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
 import { StatPill } from '../../components/StatPill';
+import { SubjectPickerSheet } from '../../components/SubjectPickerSheet';
 
 export default function Learn() {
   const router = useRouter();
-  useTabFocusGuard([['courses'], ['me']]);
+  useTabFocusGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
+
   const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
+  const { data: subjects } = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
+  const { data: enrollments } = useQuery({
+    queryKey: ['enrollments'],
+    queryFn: () => api.listMyEnrollments(),
+  });
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+
+  const [pickerSubject, setPickerSubject] = useState<SubjectDto | null>(null);
+
+  const currentBySubject = useMemo(
+    () => pickCurrentCourseBySubject(enrollments ?? [], courses ?? []),
+    [enrollments, courses],
+  );
+
+  const subjectGroups = useMemo(() => {
+    if (!subjects || !courses) return [];
+    return subjects
+      .map((subject) => ({
+        subject,
+        subjectCourses: courses.filter((c) => c.subjectId === subject.id),
+        current: currentBySubject.get(subject.id),
+      }))
+      .filter((g) => g.subjectCourses.length > 0);
+  }, [subjects, courses, currentBySubject]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -41,34 +69,83 @@ export default function Learn() {
 
         <Text style={styles.title}>我的课程</Text>
 
-        {courses?.map((c) => (
-          <Pressable
-            key={c.id}
-            onPress={() => router.push(`/course/${c.id}`)}
-            style={styles.card}
-          >
-            <View style={styles.cardCover}>
-              {resolveAssetUrl(c.coverImageUrl) ? (
-                <Image
-                  source={{ uri: resolveAssetUrl(c.coverImageUrl) }}
-                  style={styles.cardCoverImage}
-                />
-              ) : null}
+        {subjectGroups.map(({ subject, current }) => (
+          <View key={subject.id} style={styles.subjectSection}>
+            <View style={styles.subjectHeader}>
+              <View style={[styles.colorDot, { backgroundColor: subject.color }]} />
+              <Text style={styles.subjectName}>{subject.name}</Text>
+              <View style={styles.divider} />
             </View>
-            <View style={styles.cardBody}>
-              <Text style={styles.cardTitle}>{c.name}</Text>
-              <Text style={styles.cardDesc} numberOfLines={2}>{c.description}</Text>
-            </View>
-            <ChevronRight size={20} color={colors.inkSoft} />
-          </Pressable>
+
+            {current ? (
+              <View style={styles.cardWrap}>
+                <Pressable
+                  style={styles.card}
+                  onPress={() => router.push(`/course/${current.id}`)}
+                >
+                  <View style={[styles.cardCover, { borderColor: subject.color }]}>
+                    {resolveAssetUrl(current.coverImageUrl) ? (
+                      <Image
+                        source={{ uri: resolveAssetUrl(current.coverImageUrl) }}
+                        style={styles.cardCoverImage}
+                      />
+                    ) : null}
+                  </View>
+                  <View style={styles.cardBody}>
+                    <Text style={styles.cardTitle}>{current.name}</Text>
+                    <Text style={styles.cardDesc} numberOfLines={2}>{current.description}</Text>
+                    <View style={styles.currentBadge}>
+                      <Text style={styles.currentBadgeText}>正在学习</Text>
+                    </View>
+                  </View>
+                  <ChevronRight size={20} color={colors.inkSoft} />
+                </Pressable>
+                <Pressable
+                  style={styles.switchBtn}
+                  onPress={() => setPickerSubject(subject)}
+                  hitSlop={6}
+                >
+                  <Repeat size={12} color={colors.inkSoft} />
+                  <Text style={styles.switchBtnText}>切换</Text>
+                </Pressable>
+              </View>
+            ) : (
+              <Pressable
+                style={styles.emptyCardCTA}
+                onPress={() => setPickerSubject(subject)}
+              >
+                <View style={[styles.cardCoverEmpty, { borderColor: subject.color }]}>
+                  <BookOpen size={32} color={colors.inkSoft} />
+                </View>
+                <View style={styles.cardBody}>
+                  <Text style={styles.cardTitle}>还没选课本</Text>
+                  <Text style={styles.cardDesc} numberOfLines={2}>
+                    点击选择一本{subject.name}课本开始学习。
+                  </Text>
+                  <View style={styles.chooseBadge}>
+                    <BookOpen size={12} color={colors.white} />
+                    <Text style={styles.chooseBadgeText}>选择课本</Text>
+                  </View>
+                </View>
+              </Pressable>
+            )}
+          </View>
         ))}
 
-        {courses && courses.length === 0 && (
+        {subjectGroups.length === 0 && (
           <View style={styles.emptyCard}>
             <Text style={styles.emptyText}>还没有课程，过会儿再来看看。</Text>
           </View>
         )}
       </ScrollView>
+
+      <SubjectPickerSheet
+        visible={pickerSubject !== null}
+        subject={pickerSubject}
+        courses={pickerSubject ? (courses ?? []).filter((c) => c.subjectId === pickerSubject.id) : []}
+        currentCourseId={pickerSubject ? currentBySubject.get(pickerSubject.id)?.id : undefined}
+        onClose={() => setPickerSubject(null)}
+      />
     </SafeAreaView>
   );
 }
@@ -91,6 +168,14 @@ const styles = StyleSheet.create({
   scroll: { padding: 16, paddingBottom: 32, gap: 12 },
   mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   title: { fontSize: 22, fontFamily: fonts.heavy, color: colors.ink, marginBottom: 4 },
+
+  subjectSection: { gap: 8, marginBottom: 8 },
+  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  colorDot: { width: 14, height: 14, borderRadius: 999 },
+  subjectName: { fontFamily: fonts.heavy, fontSize: 16, color: colors.ink },
+  divider: { flex: 1, height: 2, backgroundColor: colors.line, borderRadius: 999 },
+
+  cardWrap: { position: 'relative' },
   card: {
     backgroundColor: colors.white,
     borderRadius: radius.lg,
@@ -105,15 +190,88 @@ const styles = StyleSheet.create({
     width: 76,
     height: 104,
     borderRadius: radius.md,
-    borderWidth: 1,
-    borderColor: colors.line,
+    borderWidth: 2,
     backgroundColor: colors.white,
     overflow: 'hidden',
+  },
+  cardCoverEmpty: {
+    width: 76,
+    height: 104,
+    borderRadius: radius.md,
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    backgroundColor: colors.mist,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   cardCoverImage: { width: '100%', height: '100%', resizeMode: 'contain' },
   cardBody: { flex: 1 },
   cardTitle: { fontFamily: fonts.heavy, fontSize: 16, color: colors.ink },
   cardDesc: { fontFamily: fonts.regular, fontSize: 13, color: colors.inkSoft, marginTop: 2 },
+
+  currentBadge: {
+    marginTop: 6,
+    alignSelf: 'flex-start',
+    backgroundColor: colors.mist,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 999,
+  },
+  currentBadgeText: {
+    fontFamily: fonts.heavy,
+    fontSize: 10,
+    color: colors.inkSoft,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  chooseBadge: {
+    marginTop: 8,
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: colors.green,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 999,
+  },
+  chooseBadgeText: {
+    fontFamily: fonts.heavy,
+    fontSize: 11,
+    color: colors.white,
+  },
+
+  switchBtn: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: colors.white,
+    borderWidth: 2,
+    borderColor: colors.line,
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  switchBtnText: {
+    fontFamily: fonts.heavy,
+    fontSize: 11,
+    color: colors.inkSoft,
+  },
+
+  emptyCardCTA: {
+    backgroundColor: colors.white,
+    borderRadius: radius.lg,
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    borderColor: colors.line,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 16,
+    gap: 14,
+  },
   emptyCard: {
     backgroundColor: colors.white,
     borderRadius: radius.lg,

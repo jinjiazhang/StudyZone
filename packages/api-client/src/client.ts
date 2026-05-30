@@ -9,6 +9,7 @@ import type {
   CourseDto,
   CourseTreeNode,
   DailyQuestDto,
+  EnrollmentDto,
   FriendSummaryDto,
   FriendRequestDto,
   LeagueStandingDto,
@@ -130,6 +131,10 @@ export class StudyZoneClient {
     return this.request<void>(`/api/v1/courses/${courseId}/enroll`, {
       method: 'POST',
     });
+  }
+
+  listMyEnrollments() {
+    return this.request<EnrollmentDto[]>('/api/v1/me/enrollments');
   }
 
   getCourseTree(courseId: string) {

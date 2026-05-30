@@ -21,6 +21,25 @@ export class CurriculumService {
     });
   }
 
+  async listMyEnrollments(userId: string) {
+    const rows = await this.prisma.enrollment.findMany({
+      where: { userId },
+      select: {
+        courseId: true,
+        enrolledAt: true,
+        lastActiveAt: true,
+        course: { select: { subjectId: true } },
+      },
+      orderBy: { lastActiveAt: 'desc' },
+    });
+    return rows.map((r) => ({
+      courseId: r.courseId,
+      subjectId: r.course.subjectId,
+      enrolledAt: r.enrolledAt.toISOString(),
+      lastActiveAt: r.lastActiveAt.toISOString(),
+    }));
+  }
+
   async enroll(userId: string, courseId: string) {
     const course = await this.prisma.course.findUnique({ where: { id: courseId } });
     if (!course) throw new NotFoundException({ code: 'course_not_found', message: '课程不存在' });
@@ -47,6 +66,17 @@ export class CurriculumService {
       },
     });
     if (!course) throw new NotFoundException({ code: 'course_not_found', message: '课程不存在' });
+
+    // Touch lastActiveAt so "currently studying" reflects real usage. Wrap in
+    // try/catch so unenrolled previews don't fail the tree fetch.
+    try {
+      await this.prisma.enrollment.update({
+        where: { userId_courseId: { userId, courseId } },
+        data: { lastActiveAt: new Date() },
+      });
+    } catch {
+      // not enrolled yet — ignore
+    }
 
     const progress = await this.prisma.userLessonProgress.findMany({
       where: { userId, lesson: { unit: { courseId } } },

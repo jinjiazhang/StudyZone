@@ -83,6 +83,20 @@ export interface CourseDto {
   coverImageUrl: string;
 }
 
+export interface EnrollmentDto {
+  courseId: string;
+  subjectId: string;
+  enrolledAt: string;
+  lastActiveAt: string;
+}
+
+export interface EnrollmentDto {
+  courseId: string;
+  subjectId: string;
+  enrolledAt: string;
+  lastActiveAt: string;
+}
+
 export interface CourseTreeNode {
   unitId: string;
   unitTitle: string;

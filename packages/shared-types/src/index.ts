@@ -3,3 +3,4 @@ export * from './enums';
 export * from './exercise';
 export * from './dto';
 export * from './events';
+export * from './selectors';

@@ -41,6 +41,13 @@ export class CurriculumController {
 
   @ApiBearerAuth()
   @UseGuards(JwtAuthGuard)
+  @Get('me/enrollments')
+  listMyEnrollments(@CurrentUser() user: AuthenticatedUser) {
+    return this.service.listMyEnrollments(user.id);
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('courses/:id/tree')
   tree(@CurrentUser() user: AuthenticatedUser, @Param('id') courseId: string) {
     return this.service.getCourseTree(user.id, courseId);
