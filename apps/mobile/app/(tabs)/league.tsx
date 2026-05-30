@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { Crown, Medal, ChevronUp, ChevronDown } from 'lucide-react-native';
 import { api } from '../../lib/api';
+import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
 import { colors, fonts, radius, TIER_LABEL, TIER_COLOR, TIER_EMOJI } from '../../lib/theme';
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
@@ -19,6 +20,7 @@ const RESULT_COLOR: Record<string, string> = {
 };
 
 export default function League() {
+  useTabFocusGuard([['league'], ['league-history']]);
   const { data } = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
   const { data: history } = useQuery({
     queryKey: ['league-history'],

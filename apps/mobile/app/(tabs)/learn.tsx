@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Flame, Gem, Heart, ChevronRight } from 'lucide-react-native';
 import { api } from '../../lib/api';
 import { resolveAssetUrl } from '../../lib/assets';
+import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
 import { colors, fonts, radius } from '../../lib/theme';
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
@@ -12,6 +13,7 @@ import { StatPill } from '../../components/StatPill';
 
 export default function Learn() {
   const router = useRouter();
+  useTabFocusGuard([['courses'], ['me']]);
   const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
 

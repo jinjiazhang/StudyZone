@@ -14,6 +14,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react-native';
 import { ApiClientError } from '@studyzone/api-client';
 import { api } from '../../lib/api';
+import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
 import { colors, fonts, radius } from '../../lib/theme';
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
@@ -27,6 +28,7 @@ const ERROR_LABEL: Record<string, string> = {
 
 export default function Friends() {
   const qc = useQueryClient();
+  useTabFocusGuard([['friends'], ['friend-requests']]);
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
 
