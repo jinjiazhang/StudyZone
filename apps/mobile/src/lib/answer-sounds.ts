@@ -13,8 +13,8 @@ export function useAnswerSounds() {
     async function loadSounds() {
       await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
       const [correct, wrong] = await Promise.all([
-        Audio.Sound.createAsync(require('../assets/sounds/answer-correct.wav')),
-        Audio.Sound.createAsync(require('../assets/sounds/answer-wrong.wav')),
+        Audio.Sound.createAsync(require('../../assets/sounds/answer-correct.wav')),
+        Audio.Sound.createAsync(require('../../assets/sounds/answer-wrong.wav')),
       ]);
 
       if (!mounted) {
