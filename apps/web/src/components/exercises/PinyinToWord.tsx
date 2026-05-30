@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 import { RotateCcw, Eye } from 'lucide-react';
-import type { PinyinToCharacterWritePrompt } from '@studyzone/shared-types';
+import type { PinyinToWordPrompt } from '@studyzone/shared-types';
 
 /**
  * 看拼音写字 — show a sentence with a blank + the missing character's pinyin;
@@ -56,12 +56,12 @@ type HanziWriterModule = {
 
 const DEFAULT_BLANK_PLACEHOLDER = '__';
 
-export function PinyinToCharacterWriteExercise({
+export function PinyinToWordExercise({
   prompt,
   onSubmit,
   disabled,
 }: {
-  prompt: PinyinToCharacterWritePrompt;
+  prompt: PinyinToWordPrompt;
   onSubmit: (payload: {
     character: string;
     mistakes: number;
@@ -189,7 +189,7 @@ export function PinyinToCharacterWriteExercise({
           },
         });
       } catch (err) {
-        console.error('[PinyinToCharacterWrite] failed to load hanzi-writer', err);
+        console.error('[PinyinToWord] failed to load hanzi-writer', err);
         if (!cancelled) {
           setLoadError(
             '汉字数据加载失败，请检查网络（hanzi-writer 默认从 jsDelivr CDN 拉取笔顺数据）。',

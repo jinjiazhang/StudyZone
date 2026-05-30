@@ -35,16 +35,11 @@ export enum ExerciseType {
   /** Fill in the blank of a classical poem line (Chinese subject). */
   POEM_COMPLETE = 'poem_complete',
   /**
-   * Given a pinyin, assemble the target Chinese character by dragging
-   * components into structural slots (e.g. 上/下 or 左/右).
-   */
-  PINYIN_TO_CHARACTER_ASSEMBLE = 'pinyin_to_character_assemble',
-  /**
    * Given a sentence with a blank and the missing character's pinyin,
    * the learner must hand-write the character stroke-by-stroke on a canvas.
    * Stroke order and shape are graded by HanziWriter.
    */
-  PINYIN_TO_CHARACTER_WRITE = 'pinyin_to_character_write',
+  PINYIN_TO_WORD = 'pinyin_to_word',
 }
 
 export enum LessonOutcome {

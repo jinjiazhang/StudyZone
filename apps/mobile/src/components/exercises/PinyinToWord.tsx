@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react';
 import { View } from 'react-native';
-import type { PinyinToCharacterWritePrompt } from '@studyzone/shared-types';
+import type { PinyinToWordPrompt } from '@studyzone/shared-types';
 import { HanziWriterCanvas } from '@/components/HanziWriterCanvas';
 import { exerciseStyles as s } from './styles';
 
 /**
  * 看拼音写字 — wraps the shared `HanziWriterCanvas` (which embeds the
  * `hanzi-writer` library inside a WebView) and forwards the result up via
- * `onSubmit`. Behaviour mirrors the web `PinyinToCharacterWrite`:
+ * `onSubmit`. Behaviour mirrors the web `PinyinToWord`:
  *   - Stroke-by-stroke quiz; on completion auto-submits with `completed: true`.
  *   - "写不出来，跳过" surfaces inside HanziWriterCanvas; we treat its `onSkip`
  *     as a manual submission with the canonical mistake budget exceeded.
@@ -15,12 +15,12 @@ import { exerciseStyles as s } from './styles';
  * `submittedRef` guards against the Reanimated feedback drawer triggering a
  * re-render that re-fires onComplete.
  */
-export function PinyinToCharacterWriteExercise({
+export function PinyinToWordExercise({
   prompt,
   onSubmit,
   disabled,
 }: {
-  prompt: PinyinToCharacterWritePrompt;
+  prompt: PinyinToWordPrompt;
   onSubmit: (payload: {
     character: string;
     mistakes: number;

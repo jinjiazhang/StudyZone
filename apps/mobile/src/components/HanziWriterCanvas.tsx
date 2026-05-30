@@ -5,7 +5,7 @@ import { RotateCcw, Eye } from 'lucide-react-native';
 import { colors, fonts, radius } from '@/lib/theme';
 
 /**
- * 看拼音写字 — React Native counterpart of the web PinyinToCharacterWrite
+ * 看拼音写字 — React Native counterpart of the web PinyinToWord
  * exercise. React Native has no DOM, so we run the exact same `hanzi-writer`
  * library inside a WebView (loaded from the same jsDelivr CDN the web app
  * relies on) and bridge its quiz callbacks back over `postMessage`.

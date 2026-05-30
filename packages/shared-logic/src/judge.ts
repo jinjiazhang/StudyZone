@@ -81,18 +81,7 @@ export function judge(
       return { correct, canonicalAnswer: String(a.value) };
     }
 
-    case ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE: {
-      const p = prompt as { slots: { id: string }[]; target: string };
-      const a = answer as { slotFills: Record<string, string> };
-      const u = attempt as { slotFills: Record<string, string> };
-      // Every slot must be filled with the correct component.
-      const correct =
-        p.slots.length === Object.keys(a.slotFills).length &&
-        p.slots.every((slot) => u.slotFills?.[slot.id] === a.slotFills[slot.id]);
-      return { correct, canonicalAnswer: p.target };
-    }
-
-    case ExerciseType.PINYIN_TO_CHARACTER_WRITE: {
+    case ExerciseType.PINYIN_TO_WORD: {
       // HanziWriter judges each stroke on the client. The server's job is to
       // sanity-check the summary the client submits: the right character was
       // practiced, the user actually finished it, and they stayed within the

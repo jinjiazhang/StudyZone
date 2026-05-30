@@ -515,61 +515,6 @@ def main():
                 })
                 
             # ----------------------------------------------------
-            # Type 2: pinyin_to_character_assemble (6 questions)
-            # ----------------------------------------------------
-            for i in range(6):
-                char, py, struct_str = vocab[(i + 1) % len(vocab)]
-                # Parse structure: "日+辰" -> left+right or top+bottom
-                parts = struct_str.split("+")
-                if len(parts) == 2:
-                    left_part, right_part = parts[0], parts[1]
-                    # Check vertical or horizontal split
-                    # Standard guess: if vertical (e.g. 晨 = 日+辰) -> vertical
-                    # We can hardcode standard layout structures
-                    struct_type = "vertical"
-                    if char in ["艳", "绒", "坝", "汉", "扮", "例", "板", "印", "排", "乱", "仙", "票", "飘", "粉", "粒", "诚", "惜", "拨", "谁", "摔", "残", "橙", "泥", "找", "推", "嘴", "舱", "耍", "装", "嘴", "断", "镜", "岩", "靠", "躺", "视", "线", "挡", "柔", "敲", "翅", "湿", "吸", "爬", "伸", "跌", "谁", "惜", "怜", "诚", "输"]:
-                        struct_type = "horizontal"
-                        
-                    # Create candidates pool (correct parts + distractors)
-                    distractor_pool = ["木", "氵", "亻", "纟", "扌", "口", "日", "土", "金", "艹", "月"]
-                    distractors = list(set(distractor_pool) - {left_part, right_part})
-                    candidates = [left_part, right_part] + random.sample(distractors, 4)
-                    random.shuffle(candidates)
-                    
-                    exercises.append({
-                        "type": "pinyin_to_character_assemble",
-                        "prompt": {
-                            "pinyin": py,
-                            "hint": f"请组装字【{char}】",
-                            "structure": struct_type,
-                            "slots": [{"id": "slot_1", "label": "部首/偏旁"}, {"id": "slot_2", "label": "部件/声旁"}],
-                            "candidates": candidates,
-                            "target": char
-                        },
-                        "answer": {
-                            "slotFills": {
-                                "slot_1": left_part,
-                                "slot_2": right_part
-                            }
-                        },
-                        "difficulty": 2
-                    })
-                else:
-                    # Fallback to horizontal
-                    exercises.append({
-                        "type": "pinyin_choice",
-                        "prompt": {
-                            "character": char,
-                            "hint": f"请选择【{char}】的拼音",
-                            "options": [py, "xīn", "zhōng", "xuán"]
-                        },
-                        "answer": {
-                            "correctIndex": 0
-                        },
-                        "difficulty": 1
-                    })
-                    
-            # ----------------------------------------------------
             # Type 3: match_pairs (6 questions)
             # ----------------------------------------------------
             for i in range(6):

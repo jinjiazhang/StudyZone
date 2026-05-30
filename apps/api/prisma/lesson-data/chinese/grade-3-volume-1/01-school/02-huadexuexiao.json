@@ -103,74 +103,6 @@
       "difficulty": 1
     },
     {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "huāng",
-        "hint": "请组装字【荒】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "金",
-          "扌",
-          "巟",
-          "艹",
-          "月",
-          "纟"
-        ],
-        "target": "荒"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "艹",
-          "slot_2": "巟"
-        }
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "dí",
-        "hint": "请组装字【笛】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "扌",
-          "月",
-          "⺮",
-          "纟",
-          "由",
-          "金"
-        ],
-        "target": "笛"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "⺮",
-          "slot_2": "由"
-        }
-      },
-      "difficulty": 2
-    },
-    {
       "type": "pinyin_choice",
       "prompt": {
         "character": "舞",
@@ -188,40 +120,6 @@
       "difficulty": 1
     },
     {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "kuáng",
-        "hint": "请组装字【狂】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "王",
-          "木",
-          "月",
-          "犭",
-          "亻",
-          "扌"
-        ],
-        "target": "狂"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "犭",
-          "slot_2": "王"
-        }
-      },
-      "difficulty": 2
-    },
-    {
       "type": "pinyin_choice",
       "prompt": {
         "character": "罚",
@@ -237,40 +135,6 @@
         "correctIndex": 0
       },
       "difficulty": 1
-    },
-    {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "jià",
-        "hint": "请组装字【假】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "叚",
-          "木",
-          "日",
-          "艹",
-          "月",
-          "亻"
-        ],
-        "target": "假"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "亻",
-          "slot_2": "叚"
-        }
-      },
-      "difficulty": 2
     },
     {
       "type": "match_pairs",

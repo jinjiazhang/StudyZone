@@ -103,40 +103,6 @@
       "difficulty": 1
     },
     {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "zòu",
-        "hint": "请组装字【奏】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "金",
-          "氵",
-          "大",
-          "奏",
-          "艹",
-          "扌"
-        ],
-        "target": "奏"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "大",
-          "slot_2": "奏"
-        }
-      },
-      "difficulty": 2
-    },
-    {
       "type": "pinyin_choice",
       "prompt": {
         "character": "琴",
@@ -154,74 +120,6 @@
       "difficulty": 1
     },
     {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "róu",
-        "hint": "请组装字【柔】",
-        "structure": "horizontal",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "矛",
-          "木",
-          "土",
-          "艹",
-          "金",
-          "亻"
-        ],
-        "target": "柔"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "矛",
-          "slot_2": "木"
-        }
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "gǎn",
-        "hint": "请组装字【感】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "金",
-          "纟",
-          "心",
-          "月",
-          "扌",
-          "咸"
-        ],
-        "target": "感"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "咸",
-          "slot_2": "心"
-        }
-      },
-      "difficulty": 2
-    },
-    {
       "type": "pinyin_choice",
       "prompt": {
         "character": "激",
@@ -237,40 +135,6 @@
         "correctIndex": 0
       },
       "difficulty": 1
-    },
-    {
-      "type": "pinyin_to_character_assemble",
-      "prompt": {
-        "pinyin": "qì",
-        "hint": "请组装字【器】",
-        "structure": "vertical",
-        "slots": [
-          {
-            "id": "slot_1",
-            "label": "部首/偏旁"
-          },
-          {
-            "id": "slot_2",
-            "label": "部件/声旁"
-          }
-        ],
-        "candidates": [
-          "木",
-          "㗊",
-          "亻",
-          "日",
-          "工",
-          "月"
-        ],
-        "target": "器"
-      },
-      "answer": {
-        "slotFills": {
-          "slot_1": "㗊",
-          "slot_2": "工"
-        }
-      },
-      "difficulty": 2
     },
     {
       "type": "match_pairs",

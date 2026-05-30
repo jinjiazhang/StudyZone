@@ -8,5 +8,4 @@ export { ListenInputExercise } from './ListenInput';
 export { ImageChoiceExercise } from './ImageChoice';
 export { PinyinChoiceExercise } from './PinyinChoice';
 export { PoemCompleteExercise } from './PoemComplete';
-export { PinyinToCharacterAssembleExercise } from './PinyinToCharacterAssemble';
-export { PinyinToCharacterWriteExercise } from './PinyinToCharacterWrite';
+export { PinyinToWordExercise } from './PinyinToWord';

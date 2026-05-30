@@ -741,36 +741,6 @@ def generate_chinese_lesson(course_id, unit_dir, lesson):
         })
         
     # ----------------------------------------------------
-    # Type 2: pinyin_to_character_assemble (6 exercises)
-    # ----------------------------------------------------
-    for i in range(6):
-        char = vocab[(i + 1) % len(vocab)]
-        py, struct, left, right = VOCAB_DICT.get(char, ("zhōng", "horizontal", "口", "丨"))
-        
-        distractors = random.sample([c for c in ["木", "氵", "亻", "纟", "扌", "口", "日", "土"] if c not in [left, right]], 4)
-        candidates = [left, right] + distractors
-        random.shuffle(candidates)
-        
-        exercises.append({
-          "type": "pinyin_to_character_assemble",
-          "prompt": {
-            "pinyin": py,
-            "hint": f"请组装字【{char}】",
-            "structure": struct,
-            "slots": [{"id": "slot_1", "label": "部首/偏旁"}, {"id": "slot_2", "label": "部件/声旁"}],
-            "candidates": candidates,
-            "target": char
-          },
-          "answer": {
-            "slotFills": {
-              "slot_1": left,
-              "slot_2": right
-            }
-          },
-          "difficulty": 2
-        })
-        
-    # ----------------------------------------------------
     # Type 3: match_pairs (6 exercises)
     # ----------------------------------------------------
     for i in range(6):

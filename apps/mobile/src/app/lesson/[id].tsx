@@ -21,8 +21,7 @@ import {
   ImageChoiceExercise,
   PinyinChoiceExercise,
   PoemCompleteExercise,
-  PinyinToCharacterAssembleExercise,
-  PinyinToCharacterWriteExercise,
+  PinyinToWordExercise,
 } from '@/components/exercises';
 
 type Feedback = { result: 'correct' | 'wrong'; canonical?: string };
@@ -282,17 +281,9 @@ function ExerciseSwitch({
           disabled={disabled}
         />
       );
-    case ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE:
+    case ExerciseType.PINYIN_TO_WORD:
       return (
-        <PinyinToCharacterAssembleExercise
-          prompt={exercise.prompt as any}
-          onSubmit={onSubmit}
-          disabled={disabled}
-        />
-      );
-    case ExerciseType.PINYIN_TO_CHARACTER_WRITE:
-      return (
-        <PinyinToCharacterWriteExercise
+        <PinyinToWordExercise
           prompt={exercise.prompt as any}
           onSubmit={onSubmit}
           disabled={disabled}

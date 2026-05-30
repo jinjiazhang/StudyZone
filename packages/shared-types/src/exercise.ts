@@ -160,49 +160,6 @@ export interface PoemCompleteAnswer {
 }
 
 /**
- * Assemble a Chinese character from its components, given a pinyin prompt.
- * The UI shows structural slots (e.g. top/bottom for 上下结构, left/right for
- * 左右结构) and a pool of component candidates (correct components + distractors).
- * The user fills each slot with the right component — both *which* component and
- * *where* it goes are checked.
- *
- * Example for 李 (lǐ):
- *   pinyin: "lǐ",
- *   hint: "桃 ___ 满天下",
- *   structure: "vertical",
- *   slots: [{ id: "top" }, { id: "bottom" }],
- *   candidates: ["木", "子", "禾", "立", "田", "了"],
- *   target: "李",
- *   answer.slotFills: { top: "木", bottom: "子" }
- */
-export interface PinyinToCharacterAssemblePrompt {
-  type: ExerciseType.PINYIN_TO_CHARACTER_ASSEMBLE;
-  /** Pinyin with tone, e.g. "lǐ". */
-  pinyin: string;
-  /** Optional context word, e.g. "桃 ___ 满天下". */
-  hint?: string;
-  /** Layout of the structural template. */
-  structure: 'horizontal' | 'vertical';
-  /**
-   * Ordered list of slots. Order matches reading order:
-   * - horizontal: left → right
-   * - vertical:   top  → bottom
-   */
-  slots: { id: string; label?: string }[];
-  /** Pool of component candidates (correct + distractors), shown shuffled. */
-  candidates: string[];
-  /** The target composite character — used for the reveal animation / feedback. */
-  target: string;
-  /** Optional audio of the standard pronunciation. */
-  audioUrl?: string;
-}
-
-export interface PinyinToCharacterAssembleAnswer {
-  /** Map from slot.id → component string. Every slot must be present. */
-  slotFills: Record<string, string>;
-}
-
-/**
  * 看拼音写字 — show a sentence with a blank and the missing character's pinyin;
  * the learner hand-writes the target character on a canvas. HanziWriter checks
  * each stroke against the canonical stroke order/shape.
@@ -215,8 +172,8 @@ export interface PinyinToCharacterAssembleAnswer {
  *   allowedMistakes: 3,
  *   leniency: 1.0
  */
-export interface PinyinToCharacterWritePrompt {
-  type: ExerciseType.PINYIN_TO_CHARACTER_WRITE;
+export interface PinyinToWordPrompt {
+  type: ExerciseType.PINYIN_TO_WORD;
   /** Pinyin with tone, e.g. "shī". */
   pinyin: string;
   /** Sentence containing the blank, e.g. "老__在黑板上写字。". */
@@ -244,7 +201,7 @@ export interface PinyinToCharacterWritePrompt {
   leniency?: number;
 }
 
-export interface PinyinToCharacterWriteAnswer {
+export interface PinyinToWordAnswer {
   /**
    * The canonical character — mirrors prompt.character but kept here so the
    * `answer` JSON column remains self-describing.
@@ -252,7 +209,7 @@ export interface PinyinToCharacterWriteAnswer {
   character: string;
 }
 
-export interface PinyinToCharacterWriteAttemptPayload {
+export interface PinyinToWordAttemptPayload {
   /** Echoes prompt.character (lets the server cross-check it). */
   character: string;
   /** How many wrong strokes HanziWriter recorded during the quiz. */
@@ -272,8 +229,7 @@ export type ExercisePrompt =
   | SingleChoicePrompt
   | PinyinChoicePrompt
   | PoemCompletePrompt
-  | PinyinToCharacterAssemblePrompt
-  | PinyinToCharacterWritePrompt;
+  | PinyinToWordPrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -286,8 +242,7 @@ export type ExerciseAnswer =
   | SingleChoiceAnswer
   | PinyinChoiceAnswer
   | PoemCompleteAnswer
-  | PinyinToCharacterAssembleAnswer
-  | PinyinToCharacterWriteAnswer;
+  | PinyinToWordAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
@@ -295,7 +250,6 @@ export type MatchPairsAttemptPayload = MatchPairsAnswer;
 export type ImageChoiceAttemptPayload = ImageChoiceAnswer;
 export type WordBankAttemptPayload = WordBankAnswer;
 export type NumericInputAttemptPayload = NumericInputAnswer;
-export type PinyinToCharacterAssembleAttemptPayload = PinyinToCharacterAssembleAnswer;
 
 /** What the user submits for an attempt. Server-only grading fields are omitted. */
 export type UserAttemptPayload =
@@ -305,5 +259,4 @@ export type UserAttemptPayload =
   | ImageChoiceAttemptPayload
   | WordBankAttemptPayload
   | NumericInputAttemptPayload
-  | PinyinToCharacterAssembleAttemptPayload
-  | PinyinToCharacterWriteAttemptPayload;
+  | PinyinToWordAttemptPayload;
