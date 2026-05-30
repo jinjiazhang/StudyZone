@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Flame, Gem, Heart, ChevronRight } from 'lucide-react-native';
 import { api } from '../../lib/api';
+import { resolveAssetUrl } from '../../lib/assets';
 import { colors, fonts, radius } from '../../lib/theme';
 import { Mascot } from '../../components/Mascot';
 import { SpeechBubble } from '../../components/SpeechBubble';
@@ -45,7 +46,12 @@ export default function Learn() {
             style={styles.card}
           >
             <View style={styles.cardCover}>
-              <Image source={{ uri: c.coverImageUrl }} style={styles.cardCoverImage} />
+              {resolveAssetUrl(c.coverImageUrl) ? (
+                <Image
+                  source={{ uri: resolveAssetUrl(c.coverImageUrl) }}
+                  style={styles.cardCoverImage}
+                />
+              ) : null}
             </View>
             <View style={styles.cardBody}>
               <Text style={styles.cardTitle}>{c.name}</Text>

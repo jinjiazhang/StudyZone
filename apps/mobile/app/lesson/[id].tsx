@@ -24,6 +24,7 @@ import Animated, {
 import { X, Heart, CheckCircle2, XCircle, Volume2 } from 'lucide-react-native';
 import { ExerciseType } from '@studyzone/shared-types';
 import { api } from '../../lib/api';
+import { resolveAssetUrl } from '../../lib/assets';
 import { useAnswerSounds } from '../../lib/answer-sounds';
 import { useAudioPlayer } from '../../lib/use-audio-player';
 import { colors, fonts, radius } from '../../lib/theme';
@@ -600,7 +601,7 @@ function ImageChoiceBlock({ word, options, pick, onPick, audioUrl, disabled }: {
               onPress={() => !disabled && onPick(option.id)}
               style={[styles.imageOption, selected && { borderColor: colors.sky }]}
             >
-              <Image source={{ uri: option.imageUrl }} style={styles.image} />
+              <Image source={{ uri: resolveAssetUrl(option.imageUrl) }} style={styles.image} />
               <Text style={[styles.imageLabel, selected && { backgroundColor: '#EFF6FF', color: colors.skyDark }]}>
                 {option.label}
               </Text>
