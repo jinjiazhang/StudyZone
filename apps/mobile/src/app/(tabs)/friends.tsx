@@ -13,11 +13,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react-native';
 import { ApiClientError } from '@studyzone/api-client';
-import { api } from '../../lib/api';
-import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
-import { colors, fonts, radius } from '../../lib/theme';
-import { Mascot } from '../../components/Mascot';
-import { SpeechBubble } from '../../components/SpeechBubble';
+import { api } from '@/lib/api';
+import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
+import { colors, fonts, radius } from '@/lib/theme';
+import { Mascot } from '@/components/Mascot';
+import { SpeechBubble } from '@/components/SpeechBubble';
 
 const ERROR_LABEL: Record<string, string> = {
   user_not_found: '找不到这个邮箱对应的用户',

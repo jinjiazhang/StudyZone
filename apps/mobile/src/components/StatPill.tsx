@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, fonts } from '../lib/theme';
+import { colors, fonts } from '@/lib/theme';
 
 interface StatPillProps {
   icon: React.ReactNode;

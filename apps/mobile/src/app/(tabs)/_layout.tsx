@@ -1,6 +1,6 @@
 import { Tabs } from 'expo-router';
 import { BookOpen, Trophy, Users, User } from 'lucide-react-native';
-import { colors, fonts } from '../../lib/theme';
+import { colors, fonts } from '@/lib/theme';
 
 export default function TabsLayout() {
   return (

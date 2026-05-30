@@ -14,8 +14,8 @@ import Animated, {
   withSequence,
 } from 'react-native-reanimated';
 import { Flame, Gem, Sparkles } from 'lucide-react-native';
-import { colors, fonts, radius } from '../../lib/theme';
-import { Mascot } from '../../components/Mascot';
+import { colors, fonts, radius } from '@/lib/theme';
+import { Mascot } from '@/components/Mascot';
 
 const CONFETTI_COLORS = [colors.green, colors.sky, colors.gold, colors.rose, colors.purple, colors.orange];
 

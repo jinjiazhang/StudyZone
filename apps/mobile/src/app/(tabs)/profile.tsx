@@ -3,11 +3,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
 import { Flame, Gem, Heart, LogOut, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
-import { api } from '../../lib/api';
-import { useAuthStore } from '../../lib/auth-store';
-import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
-import { colors, fonts, radius } from '../../lib/theme';
-import { Mascot } from '../../components/Mascot';
+import { api } from '@/lib/api';
+import { useAuthStore } from '@/lib/auth-store';
+import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
+import { colors, fonts, radius } from '@/lib/theme';
+import { Mascot } from '@/components/Mascot';
 import { xpToLevel } from '@studyzone/shared-logic';
 
 export default function Profile() {

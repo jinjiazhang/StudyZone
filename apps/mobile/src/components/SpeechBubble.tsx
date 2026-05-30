@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { colors, fonts, radius } from '../lib/theme';
+import { colors, fonts, radius } from '@/lib/theme';
 
 interface SpeechBubbleProps {
   children: React.ReactNode;

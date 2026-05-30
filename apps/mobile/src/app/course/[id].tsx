@@ -4,9 +4,9 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { BookOpen, Check, ChevronLeft, Lock, Star } from 'lucide-react-native';
-import { api } from '../../lib/api';
-import { useAuthStore } from '../../lib/auth-store';
-import { colors, fonts, radius } from '../../lib/theme';
+import { api } from '@/lib/api';
+import { useAuthStore } from '@/lib/auth-store';
+import { colors, fonts, radius } from '@/lib/theme';
 
 const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
 const OFFSET_PX = 36;

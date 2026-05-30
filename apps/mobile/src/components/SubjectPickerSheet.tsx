@@ -2,9 +2,9 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View, Image } from 'rea
 import { X } from 'lucide-react-native';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import type { CourseDto, SubjectDto } from '@studyzone/shared-types';
-import { api } from '../lib/api';
-import { resolveAssetUrl } from '../lib/assets';
-import { colors, fonts, radius } from '../lib/theme';
+import { api } from '@/lib/api';
+import { resolveAssetUrl } from '@/lib/assets';
+import { colors, fonts, radius } from '@/lib/theme';
 
 interface SubjectPickerSheetProps {
   visible: boolean;

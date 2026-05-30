@@ -6,14 +6,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Flame, Gem, Heart, ChevronRight, BookOpen, Repeat } from 'lucide-react-native';
 import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
 import type { SubjectDto } from '@studyzone/shared-types';
-import { api } from '../../lib/api';
-import { resolveAssetUrl } from '../../lib/assets';
-import { useTabFocusGuard } from '../../lib/use-tab-focus-guard';
-import { colors, fonts, radius } from '../../lib/theme';
-import { Mascot } from '../../components/Mascot';
-import { SpeechBubble } from '../../components/SpeechBubble';
-import { StatPill } from '../../components/StatPill';
-import { SubjectPickerSheet } from '../../components/SubjectPickerSheet';
+import { api } from '@/lib/api';
+import { resolveAssetUrl } from '@/lib/assets';
+import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
+import { colors, fonts, radius } from '@/lib/theme';
+import { Mascot } from '@/components/Mascot';
+import { SpeechBubble } from '@/components/SpeechBubble';
+import { StatPill } from '@/components/StatPill';
+import { SubjectPickerSheet } from '@/components/SubjectPickerSheet';
 
 export default function Learn() {
   const router = useRouter();

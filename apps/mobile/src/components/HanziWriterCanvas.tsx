@@ -2,7 +2,7 @@ import { useCallback, useMemo, useRef, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { WebView, type WebViewMessageEvent } from 'react-native-webview';
 import { RotateCcw, Eye } from 'lucide-react-native';
-import { colors, fonts, radius } from '../lib/theme';
+import { colors, fonts, radius } from '@/lib/theme';
 
 /**
  * 看拼音写字 — React Native counterpart of the web PinyinToCharacterWrite
