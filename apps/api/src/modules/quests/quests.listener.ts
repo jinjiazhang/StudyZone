@@ -1,7 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { OnEvent } from '@nestjs/event-emitter';
-import { GamificationService } from './gamification.service';
-import { LeagueService } from '../league/league.service';
+import { QuestsService } from './quests.service';
 
 interface LessonCompletedEventPayload {
   payload: {
@@ -12,13 +11,10 @@ interface LessonCompletedEventPayload {
 }
 
 @Injectable()
-export class GamificationListener {
-  private readonly logger = new Logger('GamificationListener');
+export class QuestsListener {
+  private readonly logger = new Logger('QuestsListener');
 
-  constructor(
-    private readonly service: GamificationService,
-    private readonly league: LeagueService,
-  ) {}
+  constructor(private readonly service: QuestsService) {}
 
   @OnEvent('learning.lesson.completed')
   async onLessonCompleted(evt: LessonCompletedEventPayload) {
@@ -28,8 +24,5 @@ export class GamificationListener {
     // Bump the "complete N lessons" quest and the "earn N XP" quest.
     await this.service.tickQuests(userId, 'complete_lessons', 1);
     await this.service.tickQuests(userId, 'earn_xp', xpGained);
-
-    // Update weekly leaderboard XP (assigns a group + recomputes ranks).
-    await this.league.addWeeklyXp(userId, xpGained);
   }
 }

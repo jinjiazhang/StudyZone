@@ -2,14 +2,14 @@ import { Controller, Get, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
-import { GamificationService } from './gamification.service';
+import { QuestsService } from './quests.service';
 
-@ApiTags('gamification')
+@ApiTags('quests')
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard)
 @Controller('api/v1/quests')
-export class GamificationController {
-  constructor(private readonly service: GamificationService) {}
+export class QuestsController {
+  constructor(private readonly service: QuestsService) {}
 
   @Get('daily')
   daily(@CurrentUser() user: AuthenticatedUser) {

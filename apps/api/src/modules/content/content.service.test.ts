@@ -1,10 +1,10 @@
 import { describe, expect, it, vi } from 'vitest';
 import { ExerciseType } from '@studyzone/shared-types';
 
-import { CurriculumService } from './curriculum.service';
+import { ContentService } from './content.service';
 import { PrismaService } from '../../infra/prisma.service';
 
-describe('CurriculumService admin content', () => {
+describe('ContentService admin content', () => {
   it('locks later units until all lessons in the previous unit are completed', async () => {
     const prisma = createPrismaMock();
     prisma.course.findUnique.mockResolvedValue({
@@ -35,7 +35,7 @@ describe('CurriculumService admin content', () => {
       { lessonId: 'lesson-1', completed: true },
     ]);
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     const tree = await service.getCourseTree('user-1', 'course-1');
 
     expect(tree[0].lessons.map((lesson) => lesson.unlocked)).toEqual([true, true]);
@@ -73,7 +73,7 @@ describe('CurriculumService admin content', () => {
       { lessonId: 'lesson-2', completed: true },
     ]);
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     const tree = await service.getCourseTree('user-1', 'course-1');
 
     expect(tree[1].lessons[0].unlocked).toBe(true);
@@ -120,7 +120,7 @@ describe('CurriculumService admin content', () => {
       ],
     });
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
 
     await expect(service.getAdminCourseContent('course-1')).resolves.toMatchObject({
       id: 'course-1',
@@ -154,7 +154,7 @@ describe('CurriculumService admin content', () => {
     });
     prisma.lessonExercise.findFirst.mockResolvedValue({ orderIndex: 3 });
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     const result = await service.updateExercise('exercise-1', {
       prompt: { type: ExerciseType.NUMERIC_INPUT, statement: '6 × 7 = ?' },
       answer: { value: 42 },
@@ -187,7 +187,7 @@ describe('CurriculumService admin content', () => {
       },
     ]);
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     const enrollments = await service.listMyEnrollments('user-1');
 
     expect(prisma.enrollment.findMany).toHaveBeenCalledWith(
@@ -221,7 +221,7 @@ describe('CurriculumService admin content', () => {
     prisma.userLessonProgress.findMany.mockResolvedValue([]);
     prisma.enrollment.update.mockResolvedValue({});
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     await service.getCourseTree('user-1', 'course-1');
 
     expect(prisma.enrollment.update).toHaveBeenCalledWith({
@@ -239,7 +239,7 @@ describe('CurriculumService admin content', () => {
     prisma.userLessonProgress.findMany.mockResolvedValue([]);
     prisma.enrollment.update.mockRejectedValue(new Error('record not found'));
 
-    const service = new CurriculumService(prisma as unknown as PrismaService);
+    const service = new ContentService(prisma as unknown as PrismaService);
     await expect(service.getCourseTree('user-1', 'course-1')).resolves.toEqual([]);
   });
 });

@@ -29,7 +29,7 @@ export interface LessonCompletedEvent extends BaseEvent {
 }
 
 export interface XPAwardedEvent extends BaseEvent {
-  type: 'gamification.xp.awarded';
+  type: 'rewards.xp.awarded';
   payload: {
     userId: string;
     delta: number;
@@ -40,7 +40,7 @@ export interface XPAwardedEvent extends BaseEvent {
 }
 
 export interface StreakChangedEvent extends BaseEvent {
-  type: 'gamification.streak.changed';
+  type: 'rewards.streak.changed';
   payload: {
     userId: string;
     previousStreak: number;

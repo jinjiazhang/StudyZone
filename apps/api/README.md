@@ -20,9 +20,10 @@ pnpm dev:api          # 启动 API（端口 4000）
 |---|---|---|
 | Auth | `src/modules/auth` | 注册 / 登录 / 刷新令牌，JWT + Argon2 |
 | Account | `src/modules/account` | `GET/PATCH /api/v1/me` |
-| Curriculum | `src/modules/curriculum` | 学科 / 课程 / 选课 / 技能树 |
+| Content | `src/modules/content` | 学科 / 课程 / 选课 / 技能树 |
 | Learning | `src/modules/learning` | 开始关卡、提交单题、结算 |
-| Gamification | `src/modules/gamification` | 每日任务、监听 `learning.lesson.completed` |
+| Rewards | `src/modules/rewards` | XP / 宝石 / 钱包发放（被 Quests / Learning 复用） |
+| Quests | `src/modules/quests` | 每日任务、监听 `learning.lesson.completed` |
 | Social | `src/modules/social` | 好友、周联赛 |
 
 ## 接口文档

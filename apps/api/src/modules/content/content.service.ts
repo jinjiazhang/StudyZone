@@ -3,10 +3,10 @@ import { Prisma } from '@prisma/client';
 import type { ExerciseAnswer, ExercisePrompt } from '@studyzone/shared-types';
 
 import { PrismaService } from '../../infra/prisma.service';
-import { UpdateExerciseDto } from './curriculum.dto';
+import { UpdateExerciseDto } from './content.dto';
 
 @Injectable()
-export class CurriculumService {
+export class ContentService {
   constructor(private readonly prisma: PrismaService) {}
 
   listSubjects() {

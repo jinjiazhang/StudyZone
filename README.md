@@ -138,7 +138,7 @@ pnpm --filter @studyzone/api prisma migrate dev --name your_change
 4. **关卡** — `/learn/lessons/:id` → `POST /api/v1/lessons/:id/start` + `POST /sessions/:id/attempts`
 5. **结算** — `/learn/lessons/:id/complete` → `POST /api/v1/sessions/:id/complete`
    - 同步：XP / 宝石写入钱包、连胜更新、SRS 卡更新、`learning.lesson.completed` 事件
-   - 异步监听：`GamificationListener` 推动每日任务进度、联赛周榜
+   - 异步监听：`QuestsListener` 推动每日任务进度，`LeagueListener` 累加联赛周榜
 6. **联赛** — `/league` → `GET /api/v1/leagues/me`
 7. **个人主页** — `/profile` → `GET /api/v1/me` + `GET /api/v1/quests/daily`
 

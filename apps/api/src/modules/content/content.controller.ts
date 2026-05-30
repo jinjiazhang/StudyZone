@@ -13,13 +13,13 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
-import { CurriculumService } from './curriculum.service';
-import { UpdateExerciseDto } from './curriculum.dto';
+import { ContentService } from './content.service';
+import { UpdateExerciseDto } from './content.dto';
 
-@ApiTags('curriculum')
+@ApiTags('content')
 @Controller('api/v1')
-export class CurriculumController {
-  constructor(private readonly service: CurriculumService) {}
+export class ContentController {
+  constructor(private readonly service: ContentService) {}
 
   @Get('subjects')
   subjects() {

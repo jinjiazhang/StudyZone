@@ -1,9 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../infra/prisma.service';
+import { RewardsService } from '../rewards/rewards.service';
 
 @Injectable()
-export class GamificationService {
-  constructor(private readonly prisma: PrismaService) {}
+export class QuestsService {
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly rewards: RewardsService,
+  ) {}
 
   async dailyQuests(userId: string) {
     const today = new Date().toISOString().slice(0, 10);
@@ -55,16 +59,12 @@ export class GamificationService {
       });
 
       if (justCompleted) {
-        // Reward.
-        await this.prisma.userWallet.update({
-          where: { userId },
-          data: {
-            xpTotal: { increment: q.xpReward },
-            gems: { increment: q.gemsReward },
-          },
-        });
-        await this.prisma.xPLedger.create({
-          data: { userId, delta: q.xpReward, reason: 'daily_quest', refId: q.id },
+        await this.rewards.awardXpAndGems({
+          userId,
+          xp: q.xpReward,
+          gems: q.gemsReward,
+          reason: 'daily_quest',
+          refId: q.id,
         });
       }
     }

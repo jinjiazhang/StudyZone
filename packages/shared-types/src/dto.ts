@@ -61,7 +61,7 @@ export interface UserProfile extends UserPublic {
 }
 
 // =============================================================================
-// Curriculum
+// Content
 // =============================================================================
 
 export interface SubjectDto {
