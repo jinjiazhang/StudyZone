@@ -40,6 +40,17 @@ export enum ExerciseType {
    * Stroke order and shape are graded by HanziWriter.
    */
   PINYIN_TO_WORD = 'pinyin_to_word',
+  /**
+   * Classical poem cloze with MULTIPLE blanks, each with its own option set.
+   * Generalized form of POEM_COMPLETE.
+   */
+  POEM_MULTI_BLANK = 'poem_multi_blank',
+  /**
+   * Pick N tokens from a pool that combine with a central character to form
+   * valid words (e.g. 中心字 "明" + 选 ["白","天","光"] → 明白/明天/光明).
+   * Unordered selection; multiple accepted answer sets are allowed.
+   */
+  WORD_BUILD = 'word_build',
 }
 
 export enum LessonOutcome {

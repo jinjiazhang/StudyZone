@@ -21,6 +21,8 @@ import {
   PinyinChoiceExercise,
   PoemCompleteExercise,
   PinyinToWordExercise,
+  PoemMultiBlankExercise,
+  WordBuildExercise,
 } from '@/components/exercises';
 
 interface AttemptState {
@@ -240,6 +242,10 @@ function ExerciseSwitch({
       return <PoemCompleteExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     case ExerciseType.PINYIN_TO_WORD:
       return <PinyinToWordExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.POEM_MULTI_BLANK:
+      return <PoemMultiBlankExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.WORD_BUILD:
+      return <WordBuildExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     default:
       return <div className="card font-heavy">暂不支持该题型：{exercise.type}</div>;
   }

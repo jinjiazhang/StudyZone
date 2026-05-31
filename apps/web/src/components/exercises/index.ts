@@ -9,3 +9,5 @@ export { ImageChoiceExercise } from './ImageChoice';
 export { PinyinChoiceExercise } from './PinyinChoice';
 export { PoemCompleteExercise } from './PoemComplete';
 export { PinyinToWordExercise } from './PinyinToWord';
+export { PoemMultiBlankExercise } from './PoemMultiBlank';
+export { WordBuildExercise } from './WordBuild';

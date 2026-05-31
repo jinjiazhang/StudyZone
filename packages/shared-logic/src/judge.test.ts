@@ -117,6 +117,93 @@ describe('judge', () => {
       judge(prompt, answer, { character: '诗', mistakes: 0, completed: true }).correct,
     ).toBe(false);
   });
+
+  it('judges multi-blank poem when all blanks correct', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.POEM_MULTI_BLANK,
+      title: '静夜思',
+      author: '李白',
+      lines: [
+        ['床前', null, '光'],
+        ['疑是地上', null],
+      ],
+      blanks: [
+        { options: ['明月', '白雪', '灯火', '彩霞'] },
+        { options: ['霜', '雪', '雨', '云'] },
+      ],
+    };
+    const answer = { correctIndices: [0, 0] };
+
+    expect(
+      judge(prompt, answer, { correctIndices: [0, 0] }),
+    ).toEqual({ correct: true, canonicalAnswer: '明月 / 霜' });
+  });
+
+  it('judges multi-blank poem wrong when any blank wrong', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.POEM_MULTI_BLANK,
+      title: '静夜思',
+      author: '李白',
+      lines: [['床前', null, '光'], ['疑是地上', null]],
+      blanks: [
+        { options: ['明月', '白雪'] },
+        { options: ['霜', '雪'] },
+      ],
+    };
+    const answer = { correctIndices: [0, 0] };
+
+    const r = judge(prompt, answer, { correctIndices: [0, 1] });
+    expect(r.correct).toBe(false);
+    expect(r.canonicalAnswer).toBe('明月 / 霜');
+  });
+
+  it('judges word build by unordered set match', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.WORD_BUILD,
+      character: '明',
+      tokens: ['白', '天', '光', '亮', '星', '暗'],
+      targetCount: 3,
+    };
+    const answer = {
+      acceptedSets: [
+        ['白', '天', '光'],
+        ['白', '天', '亮'],
+      ],
+    };
+
+    // user picked an accepted set in a different click order → still correct
+    expect(
+      judge(prompt, answer, { selected: ['天', '白', '光'] }),
+    ).toEqual({ correct: true, canonicalAnswer: '白、天、光' });
+
+    // user picked the second accepted set
+    expect(
+      judge(prompt, answer, { selected: ['亮', '天', '白'] }).correct,
+    ).toBe(true);
+  });
+
+  it('rejects word build when token count mismatches or token wrong', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.WORD_BUILD,
+      character: '明',
+      tokens: ['白', '天', '光', '亮', '星', '暗'],
+      targetCount: 3,
+    };
+    const answer = { acceptedSets: [['白', '天', '光']] };
+
+    // too few
+    expect(
+      judge(prompt, answer, { selected: ['白', '天'] }).correct,
+    ).toBe(false);
+    // too many
+    expect(
+      judge(prompt, answer, { selected: ['白', '天', '光', '亮'] }).correct,
+    ).toBe(false);
+    // right count but wrong token
+    expect(
+      judge(prompt, answer, { selected: ['白', '天', '星'] }).correct,
+    ).toBe(false);
+  });
 });
 
 describe('levenshtein', () => {

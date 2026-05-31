@@ -97,6 +97,38 @@ export function judge(
       return { correct, canonicalAnswer: p.character };
     }
 
+    case ExerciseType.POEM_MULTI_BLANK: {
+      // Multi-blank cloze: every blank must match its expected option index.
+      // No partial credit — all-or-nothing, mirroring single-blank POEM_COMPLETE.
+      const p = prompt as { blanks: Array<{ options: string[] }> };
+      const a = answer as { correctIndices: number[] };
+      const u = attempt as { correctIndices: number[] };
+      const correct =
+        Array.isArray(u.correctIndices) &&
+        a.correctIndices.length === u.correctIndices.length &&
+        a.correctIndices.every((idx, i) => idx === u.correctIndices[i]);
+      const canonicalAnswer = a.correctIndices
+        .map((idx, i) => p.blanks[i]?.options[idx])
+        .filter((s): s is string => typeof s === 'string')
+        .join(' / ');
+      return { correct, canonicalAnswer };
+    }
+
+    case ExerciseType.WORD_BUILD: {
+      // Unordered set match: user wins if their selected tokens equal (as a
+      // multiset) any one of the accepted answer sets.
+      const a = answer as { acceptedSets: string[][] };
+      const u = attempt as { selected: string[] };
+      const userSorted = [...(u.selected ?? [])].sort();
+      const correct = a.acceptedSets.some((set) => {
+        if (set.length !== userSorted.length) return false;
+        const setSorted = [...set].sort();
+        return setSorted.every((t, i) => t === userSorted[i]);
+      });
+      const canonicalAnswer = a.acceptedSets[0]?.join('、');
+      return { correct, canonicalAnswer };
+    }
+
     default:
       // Exhaustiveness check
       return { correct: false };

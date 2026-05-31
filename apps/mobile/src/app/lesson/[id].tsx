@@ -22,6 +22,8 @@ import {
   PinyinChoiceExercise,
   PoemCompleteExercise,
   PinyinToWordExercise,
+  PoemMultiBlankExercise,
+  WordBuildExercise,
 } from '@/components/exercises';
 
 type Feedback = { result: 'correct' | 'wrong'; canonical?: string };
@@ -299,6 +301,22 @@ function ExerciseSwitch({
     case ExerciseType.PINYIN_TO_WORD:
       return (
         <PinyinToWordExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.POEM_MULTI_BLANK:
+      return (
+        <PoemMultiBlankExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.WORD_BUILD:
+      return (
+        <WordBuildExercise
           prompt={exercise.prompt as any}
           onSubmit={onSubmit}
           disabled={disabled}

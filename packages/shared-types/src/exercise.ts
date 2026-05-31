@@ -218,6 +218,79 @@ export interface PinyinToWordAttemptPayload {
   completed: boolean;
 }
 
+/**
+ * Multi-blank classical poem cloze. Generalization of POEM_COMPLETE: every
+ * `null` in `lines` is a separate blank with its own option set, and the
+ * answer is an array of indices — one per blank, in the order they appear.
+ *
+ * Example for 《静夜思》:
+ *   title: "静夜思", author: "李白",
+ *   lines: [
+ *     ["床前", null, "光"],         // blank 0
+ *     ["疑是地上", null],            // blank 1
+ *   ],
+ *   blanks: [
+ *     { options: ["明月", "白雪", "灯火", "彩霞"] },
+ *     { options: ["霜", "雪", "雨", "云"] },
+ *   ],
+ *   answer.correctIndices: [0, 0]
+ */
+export interface PoemMultiBlankPrompt {
+  type: ExerciseType.POEM_MULTI_BLANK;
+  title: string;
+  author: string;
+  /** Each entry is a row of the poem; tokens are strings, blanks are `null`. */
+  lines: Array<Array<string | null>>;
+  /**
+   * One entry per blank. blanks[i] corresponds to the i-th `null` encountered
+   * when iterating `lines` left-to-right, top-to-bottom.
+   */
+  blanks: Array<{ options: string[] }>;
+}
+
+export interface PoemMultiBlankAnswer {
+  /** Same length as prompt.blanks; each entry is the correct option index. */
+  correctIndices: number[];
+}
+
+export type PoemMultiBlankAttemptPayload = PoemMultiBlankAnswer;
+
+/**
+ * 组词 — pick N tokens from a pool that pair with a central Chinese character
+ * to form valid 2-character words. Selection is UNORDERED, and any token set
+ * matching one of `acceptedSets` is correct.
+ *
+ * Example:
+ *   character: "明",
+ *   tokens: ["白", "天", "光", "亮", "星", "暗"],
+ *   targetCount: 3,
+ *   answer.acceptedSets: [["白","天","光"], ["白","天","亮"]]
+ */
+export interface WordBuildPrompt {
+  type: ExerciseType.WORD_BUILD;
+  /** Central character displayed prominently in the UI. */
+  character: string;
+  /** Candidate tokens shown to the learner (includes distractors). */
+  tokens: string[];
+  /** How many tokens the learner must pick. */
+  targetCount: number;
+  /** Optional override for the prompt copy above the token pool. */
+  instruction?: string;
+}
+
+export interface WordBuildAnswer {
+  /**
+   * Each entry is one acceptable solution as an unordered set of token
+   * strings. The user wins if their selection equals (as a set) ANY entry.
+   */
+  acceptedSets: string[][];
+}
+
+export interface WordBuildAttemptPayload {
+  /** The tokens the learner picked, in click order (server compares as a set). */
+  selected: string[];
+}
+
 export type ExercisePrompt =
   | TranslateChoicePrompt
   | TranslateInputPrompt
@@ -229,7 +302,9 @@ export type ExercisePrompt =
   | SingleChoicePrompt
   | PinyinChoicePrompt
   | PoemCompletePrompt
-  | PinyinToWordPrompt;
+  | PinyinToWordPrompt
+  | PoemMultiBlankPrompt
+  | WordBuildPrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -242,7 +317,9 @@ export type ExerciseAnswer =
   | SingleChoiceAnswer
   | PinyinChoiceAnswer
   | PoemCompleteAnswer
-  | PinyinToWordAnswer;
+  | PinyinToWordAnswer
+  | PoemMultiBlankAnswer
+  | WordBuildAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
@@ -259,4 +336,6 @@ export type UserAttemptPayload =
   | ImageChoiceAttemptPayload
   | WordBankAttemptPayload
   | NumericInputAttemptPayload
-  | PinyinToWordAttemptPayload;
+  | PinyinToWordAttemptPayload
+  | PoemMultiBlankAttemptPayload
+  | WordBuildAttemptPayload;
