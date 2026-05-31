@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, FlatList, Pressable } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Pressable, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { Crown, Medal, ChevronUp, ChevronDown } from 'lucide-react-native';
@@ -120,9 +120,7 @@ export default function League() {
                 ]}
               >
                 <Text style={styles.rank}>{item.rank}</Text>
-                <View style={styles.avatar}>
-                  <Text style={{ fontSize: 20 }}>🦊</Text>
-                </View>
+                <Avatar url={item.user.avatarUrl} size={40} />
                 <Text style={styles.name}>{item.user.nickname}</Text>
                 {item.zone === 'promoted' && <ChevronUp size={14} color="#58CC02" />}
                 {item.zone === 'demoted' && <ChevronDown size={14} color="#FF4B4B" />}
@@ -179,12 +177,48 @@ function ZoneDivider({ kind }: { kind: 'promote' | 'demote' }) {
   );
 }
 
+function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
+  if (url) {
+    return (
+      <Image
+        source={{ uri: url }}
+        style={{
+          width: size,
+          height: size,
+          borderRadius: size / 2,
+          backgroundColor: colors.mist,
+        }}
+        resizeMode="cover"
+      />
+    );
+  }
+  return (
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        backgroundColor: colors.mist,
+        alignItems: 'center',
+        justifyContent: 'center',
+        overflow: 'hidden',
+      }}
+    >
+      <Image
+        source={require('../../../assets/mascot/mascot-idle.png')}
+        style={{ width: size * 0.86, height: size * 0.86 }}
+        resizeMode="contain"
+      />
+    </View>
+  );
+}
+
 function PodiumCard({
   entry,
   place,
   active,
 }: {
-  entry?: { user: { id: string; nickname: string }; weeklyXp: number };
+  entry?: { user: { id: string; nickname: string; avatarUrl: string | null }; weeklyXp: number };
   place: 1 | 2 | 3;
   active: boolean;
 }) {
@@ -198,7 +232,7 @@ function PodiumCard({
     <View style={styles.podiumCard}>
       <View style={styles.podiumAvatarWrap}>
         <View style={[styles.podiumAvatar, { borderColor: ringColor }]}>
-          <Text style={{ fontSize: 24 }}>🦊</Text>
+          <Avatar url={entry.user.avatarUrl} size={50} />
         </View>
         <View style={[styles.podiumBadge, { backgroundColor: baseColor }]}>
           {place === 1 ? (
@@ -261,6 +295,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
   },
   podiumBadge: {
     position: 'absolute',

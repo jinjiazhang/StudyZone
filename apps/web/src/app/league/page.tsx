@@ -155,9 +155,7 @@ export default function LeaguePage() {
                       <div className="w-7 text-center text-lg font-heavy text-sz-ink-soft">
                         {rank}
                       </div>
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sz-mist text-xl">
-                        🦊
-                      </div>
+                      <Avatar url={entry.user.avatarUrl} />
                       <div className="flex-1 font-heavy text-sz-ink">{entry.user.nickname}</div>
                       {entry.zone === 'promoted' && (
                         <ChevronUp className="h-4 w-4 text-[#58CC02]" />
@@ -239,7 +237,7 @@ function PodiumCard({
   active,
   height,
 }: {
-  entry?: { user: { id: string; nickname: string }; weeklyXp: number };
+  entry?: { user: { id: string; nickname: string; avatarUrl: string | null }; weeklyXp: number };
   place: 1 | 2 | 3;
   active: boolean;
   height: string;
@@ -257,11 +255,11 @@ function PodiumCard({
       <div className="relative">
         <div
           className={clsx(
-            'flex h-16 w-16 items-center justify-center rounded-full border-4 bg-white text-2xl',
+            'flex h-16 w-16 items-center justify-center overflow-hidden rounded-full border-4 bg-white',
             ringColor,
           )}
         >
-          🦊
+          <Avatar url={entry.user.avatarUrl} size={56} />
         </div>
         <span
           className={clsx(
@@ -280,5 +278,32 @@ function PodiumCard({
         <div className="pt-3 text-3xl">{place}</div>
       </div>
     </div>
+  );
+}
+
+function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
+  if (url) {
+    return (
+      <img
+        src={url}
+        alt=""
+        draggable={false}
+        className="shrink-0 rounded-full bg-sz-mist object-cover"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+  return (
+    <span
+      className="flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-sz-mist"
+      style={{ width: size, height: size }}
+    >
+      <img
+        src="/assets/mascot/mascot-idle.png"
+        alt=""
+        draggable={false}
+        className="h-[86%] w-[86%] object-contain"
+      />
+    </span>
   );
 }

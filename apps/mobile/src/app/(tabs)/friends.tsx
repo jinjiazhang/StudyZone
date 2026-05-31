@@ -8,6 +8,7 @@ import {
   ScrollView,
   Alert,
   ActivityIndicator,
+  Image,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
@@ -130,7 +131,7 @@ export default function Friends() {
             <Text style={styles.sectionTitle}>收到的请求 ({incoming.length})</Text>
             {incoming.map((r) => (
               <View key={r.user.id} style={styles.row}>
-                <Avatar />
+                <Avatar url={r.user.avatarUrl} />
                 <Text style={styles.name}>{r.user.nickname}</Text>
                 <Pressable
                   style={[styles.iconBtn, { backgroundColor: colors.green }]}
@@ -155,7 +156,7 @@ export default function Friends() {
             <Text style={styles.sectionTitle}>已发送 ({outgoing.length})</Text>
             {outgoing.map((r) => (
               <View key={r.user.id} style={styles.row}>
-                <Avatar />
+                <Avatar url={r.user.avatarUrl} />
                 <Text style={styles.name}>{r.user.nickname}</Text>
                 <View style={styles.pending}>
                   <Clock size={14} color={colors.inkSoft} />
@@ -185,7 +186,7 @@ export default function Friends() {
           ) : (
             friends.map((f) => (
               <View key={f.user.id} style={styles.row}>
-                <Avatar />
+                <Avatar url={f.user.avatarUrl} />
                 <View style={{ flex: 1 }}>
                   <Text style={styles.name}>{f.user.nickname}</Text>
                   <View style={styles.stats}>
@@ -223,10 +224,23 @@ export default function Friends() {
   );
 }
 
-function Avatar() {
+function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
+  if (url) {
+    return (
+      <Image
+        source={{ uri: url }}
+        style={[styles.avatar, { width: size, height: size, borderRadius: size / 2 }]}
+        resizeMode="cover"
+      />
+    );
+  }
   return (
-    <View style={styles.avatar}>
-      <Text style={{ fontSize: 18 }}>🦊</Text>
+    <View style={[styles.avatar, { width: size, height: size, borderRadius: size / 2 }]}>
+      <Image
+        source={require('../../../assets/mascot/mascot-idle.png')}
+        style={{ width: size * 0.86, height: size * 0.86 }}
+        resizeMode="contain"
+      />
     </View>
   );
 }
@@ -292,6 +306,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.mist,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
   },
   iconBtn: { width: 36, height: 36, borderRadius: radius.full, alignItems: 'center', justifyContent: 'center' },
   iconBtnGhost: { borderWidth: 2, borderColor: colors.line },

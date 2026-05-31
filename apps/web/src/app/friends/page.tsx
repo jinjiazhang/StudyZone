@@ -123,7 +123,7 @@ export default function FriendsPage() {
                   key={r.user.id}
                   className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar />
+                  <Avatar url={r.user.avatarUrl} />
                   <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
                   <button
                     onClick={() => acceptMutation.mutate(r.user.id)}
@@ -157,7 +157,7 @@ export default function FriendsPage() {
                   key={r.user.id}
                   className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar />
+                  <Avatar url={r.user.avatarUrl} />
                   <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
                   <span className="flex items-center gap-1 text-xs font-heavy text-sz-ink-soft">
                     <Clock className="h-4 w-4" /> 等待确认
@@ -191,7 +191,7 @@ export default function FriendsPage() {
                   key={f.user.id}
                   className="group flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar />
+                  <Avatar url={f.user.avatarUrl} />
                   <div className="flex-1">
                     <div className="font-heavy text-sz-ink">{f.user.nickname}</div>
                     <div className="flex items-center gap-3 text-xs font-bold text-sz-ink-soft">
@@ -224,10 +224,29 @@ export default function FriendsPage() {
   );
 }
 
-function Avatar() {
+function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
+  if (url) {
+    return (
+      <img
+        src={url}
+        alt=""
+        draggable={false}
+        className="shrink-0 rounded-full bg-sz-mist object-cover"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
   return (
-    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sz-mist text-xl">
-      🦊
-    </div>
+    <span
+      className="flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-sz-mist"
+      style={{ width: size, height: size }}
+    >
+      <img
+        src="/assets/mascot/mascot-idle.png"
+        alt=""
+        draggable={false}
+        className="h-[86%] w-[86%] object-contain"
+      />
+    </span>
   );
 }
