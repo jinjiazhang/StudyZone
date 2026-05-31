@@ -1,0 +1,319 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《咏柳》的作者是哪位唐代诗人？",
+        "options": ["贺知章", "李白", "高鼎", "白居易"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《村居》是哪个朝代的作品？",
+        "options": ["唐代", "宋代", "明代", "清代"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《村居》的作者是谁？",
+        "options": ["贺知章", "高鼎", "杜甫", "李白"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "咏",
+        "hint": "《咏柳》的“咏”",
+        "options": ["yōng", "yǒng", "róng", "yáng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妆",
+        "hint": "“碧玉妆成一树高”的“妆”",
+        "options": ["zhāng", "zhuāng", "chuāng", "zuāng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绦",
+        "hint": "“万条垂下绿丝绦”的“绦”",
+        "options": ["tāo", "táo", "tiáo", "dāo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "裁",
+        "hint": "“不知细叶谁裁出”的“裁”",
+        "options": ["zāi", "cǎi", "cái", "chái"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "莺",
+        "hint": "“草长莺飞二月天”的“莺”",
+        "options": ["yīng", "yǐng", "yìng", "yīn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拂",
+        "hint": "“拂堤杨柳醉春烟”的“拂”",
+        "options": ["fó", "fú", "fǔ", "bù"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "醉",
+        "hint": "“拂堤杨柳醉春烟”的“醉”",
+        "options": ["zui", "zuì", "cuì", "suì"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "趁",
+        "hint": "“忙趁东风放纸鸢”的“趁”",
+        "options": ["chēn", "chén", "chèn", "zhèn"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shī",
+        "sentence": "贺知章是唐代著名的__人。",
+        "blankPlaceholder": "__",
+        "character": "诗",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "诗" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tóng",
+        "sentence": "儿__散学归来早。",
+        "blankPlaceholder": "__",
+        "character": "童",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "童" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guī",
+        "sentence": "儿童散学__来早。",
+        "blankPlaceholder": "__",
+        "character": "归",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "归" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎn",
+        "sentence": "二月春风似__刀。",
+        "blankPlaceholder": "__",
+        "character": "剪",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "剪" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "碧玉" },
+          { "id": "l2", "text": "绿丝绦" },
+          { "id": "l3", "text": "似剪刀" },
+          { "id": "l4", "text": "纸鸢" }
+        ],
+        "right": [
+          { "id": "r1", "text": "像剪刀一样" },
+          { "id": "r2", "text": "绿色的美玉" },
+          { "id": "r3", "text": "风筝" },
+          { "id": "r4", "text": "绿色的丝带" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "祝贺" },
+          { "id": "l2", "text": "丝绸" },
+          { "id": "l3", "text": "吹拂" },
+          { "id": "l4", "text": "河堤" }
+        ],
+        "right": [
+          { "id": "r1", "text": "用蚕丝织成的布料" },
+          { "id": "r2", "text": "为别人的喜事道喜" },
+          { "id": "r3", "text": "拦河的土埂" },
+          { "id": "r4", "text": "风轻轻地吹过" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r1", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碧玉妆成一树高”这句诗把柳树比作了什么？",
+        "options": ["一位用碧玉打扮的美人", "一条小溪", "一只黄莺", "一把剪刀"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“二月春风似剪刀”把春风比作什么？",
+        "options": ["丝带", "碧玉", "剪刀", "纸鸢"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“儿童散学归来早”里的“散学”是什么意思？",
+        "options": ["孩子们走散了", "放学", "出去玩", "上学迟到"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“忙趁东风放纸鸢”中的“纸鸢”指的是什么？",
+        "options": ["纸船", "风筝", "纸飞机", "气球"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《咏柳》和《村居》描写的都是哪个季节？",
+        "options": ["春天", "夏天", "秋天", "冬天"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《咏柳》的第一句",
+        "tokens": ["碧玉", "妆成", "一树高", "万条", "细叶"]
+      },
+      "answer": { "ordered": ["碧玉", "妆成", "一树高"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《村居》的第一句",
+        "tokens": ["草长", "莺飞", "二月天", "杨柳", "纸鸢"]
+      },
+      "answer": { "ordered": ["草长", "莺飞", "二月天"] },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          ["碧玉", null, "一树高，"],
+          ["万条垂下", null, "。"],
+          ["不知细叶谁", null, "出，"],
+          ["二月春风似", null, "。"]
+        ],
+        "blanks": [
+          { "options": ["妆成", "栽成", "长成", "化成"] },
+          { "options": ["绿丝绦", "白丝带", "青丝绳", "翠丝绳"] },
+          { "options": ["裁", "栽", "猜", "采"] },
+          { "options": ["剪刀", "钢刀", "菜刀", "镰刀"] }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0, 0, 0] },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          ["草长莺飞", null, "天，"],
+          [null, "杨柳醉春烟。"],
+          ["儿童散学", null, "来早，"],
+          ["忙趁东风放", null, "。"]
+        ],
+        "blanks": [
+          { "options": ["二月", "三月", "四月", "六月"] },
+          { "options": ["拂堤", "弄堤", "扶堤", "卷堤"] },
+          { "options": ["归", "回", "晚", "早"] },
+          { "options": ["纸鸢", "风车", "气球", "灯笼"] }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0, 0, 0] },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一个词不是用来形容“春天”的？",
+        "options": ["草长莺飞", "春暖花开", "万紫千红", "白雪皑皑"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 2
+    }
+  ]
+}

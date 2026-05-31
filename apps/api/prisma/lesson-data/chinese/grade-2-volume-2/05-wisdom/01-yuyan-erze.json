@@ -1,0 +1,281 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寓",
+        "hint": "“寓言”的“寓”",
+        "options": ["yū", "yú", "yǔ", "yù"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "亡",
+        "hint": "“亡羊补牢”的“亡”",
+        "options": ["wáng", "wǎng", "wàng", "máng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "补",
+        "hint": "“补牢”的“补”",
+        "options": ["bū", "bǔ", "bù", "pǔ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "牢",
+        "hint": "“补牢”的“牢”",
+        "options": ["láo", "lǎo", "nǎo", "lào"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "圈",
+        "hint": "“羊圈”的“圈”",
+        "options": ["quān", "juàn", "juān", "quàn"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叼",
+        "hint": "“狼叼走了羊”的“叼”",
+        "options": ["dāo", "diāo", "diào", "dáo"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "悔",
+        "hint": "“后悔”的“悔”",
+        "options": ["huí", "huì", "huǐ", "měi"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "揠",
+        "hint": "“揠苗助长”的“揠”",
+        "options": ["yà", "yān", "yǎ", "yáng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "焦",
+        "hint": "“焦急”的“焦”",
+        "options": ["jiāo", "jiào", "qiáo", "jiǎo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "筋",
+        "hint": "“筋疲力尽”的“筋”",
+        "options": ["jīn", "jǐn", "jìn", "qín"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wáng",
+        "sentence": "__羊补牢，为时未晚。",
+        "blankPlaceholder": "__",
+        "character": "亡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "亡" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "láo",
+        "sentence": "亡羊补__。",
+        "blankPlaceholder": "__",
+        "character": "牢",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "牢" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "diū",
+        "sentence": "羊已经__了，还修羊圈干什么？",
+        "blankPlaceholder": "__",
+        "character": "丢",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "丢" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "quàn",
+        "sentence": "邻居__他赶紧把羊圈修一修。",
+        "blankPlaceholder": "__",
+        "character": "劝",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "劝" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhù",
+        "sentence": "我得想个办法__它们长。",
+        "blankPlaceholder": "__",
+        "character": "助",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "助" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sǐ",
+        "sentence": "禾苗都枯__了。",
+        "blankPlaceholder": "__",
+        "character": "死",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "死" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "亡羊补牢" },
+          { "id": "l2", "text": "揠苗助长" },
+          { "id": "l3", "text": "筋疲力尽" },
+          { "id": "l4", "text": "焦急" }
+        ],
+        "right": [
+          { "id": "r1", "text": "形容心里非常着急" },
+          { "id": "r2", "text": "出了问题及时补救还来得及" },
+          { "id": "r3", "text": "形容非常累，没有一点力气了" },
+          { "id": "r4", "text": "硬要把禾苗拔起来想让它长得快，反而坏事" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r3", "l4": "r1" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《亡羊补牢》中的“亡”是什么意思？",
+        "options": ["死亡", "丢失", "灭亡", "忘记"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《亡羊补牢》中养羊人最后为什么再也没丢羊？",
+        "options": ["把羊全卖了", "听从邻居劝告，赶紧堵上窟窿、修好了羊圈", "搬家了", "把狼赶走了"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《亡羊补牢》告诉我们的道理是？",
+        "options": ["丢了就算了", "出了问题要及时补救，还不算晚", "羊圈不重要", "听不听邻居都行"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《揠苗助长》里的人为什么把禾苗都拔高？",
+        "options": ["想让禾苗赶快长高", "禾苗太挤", "禾苗生病了", "他在玩"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《揠苗助长》第二天禾苗变成什么样？",
+        "options": ["长得更高了", "长出新叶", "都枯死了", "更绿了"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《揠苗助长》告诉我们的道理是？",
+        "options": ["事物的发展有规律，不能违背规律强求快速", "拔禾苗会让它长高", "禾苗不需要水", "种田很容易"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把《亡羊补牢》故事按顺序排好",
+        "tokens": ["羊圈破了窟窿", "狼把羊叼走了", "邻居劝他修羊圈", "他堵上窟窿羊再没丢"]
+      },
+      "answer": {
+        "ordered": ["羊圈破了窟窿", "狼把羊叼走了", "邻居劝他修羊圈", "他堵上窟窿羊再没丢"]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "助",
+        "tokens": ["手", "人", "理", "学", "苦", "硬", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“助”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["手", "人", "理", "学"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

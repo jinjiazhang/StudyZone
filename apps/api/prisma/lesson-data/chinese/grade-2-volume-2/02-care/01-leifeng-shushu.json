@@ -1,0 +1,294 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "锋",
+        "hint": "“雷锋”的“锋”",
+        "options": ["fēng", "féng", "fěng", "fèng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "迹",
+        "hint": "“足迹”的“迹”",
+        "options": ["jì", "jí", "jǐ", "jī"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "曾",
+        "hint": "“他曾路过这里”的“曾”",
+        "options": ["zēng", "céng", "cén", "chén"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蒙",
+        "hint": "“蒙蒙的细雨”的“蒙”",
+        "options": ["mēng", "ménɡ", "měng", "mèng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瞧",
+        "hint": "“瞧那花瓣”的“瞧”",
+        "options": ["qiáo", "qiào", "qiǎo", "jiāo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荆",
+        "hint": "“路上的荆棘”的“荆”",
+        "options": ["jīn", "jǐng", "jīng", "qīng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瓣",
+        "hint": "“花瓣”的“瓣”",
+        "options": ["bàn", "biàn", "pàn", "fán"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "莹",
+        "hint": "“晶莹的露珠”的“莹”",
+        "options": ["yíng", "yìng", "yǐng", "rónɡ"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "献",
+        "hint": "“献出爱心”的“献”",
+        "options": ["xiān", "xiàn", "yán", "zhàn"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "léi",
+        "sentence": "__锋叔叔，你在哪里？",
+        "blankPlaceholder": "__",
+        "character": "雷",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "雷" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zuó",
+        "sentence": "__天，他曾路过这里。",
+        "blankPlaceholder": "__",
+        "character": "昨",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "昨" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bèi",
+        "sentence": "__着年迈的大娘。",
+        "blankPlaceholder": "__",
+        "character": "背",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "背" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sǎ",
+        "sentence": "就是他__下的汗滴。",
+        "blankPlaceholder": "__",
+        "character": "洒",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "洒" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nuǎn",
+        "sentence": "乘着温__的春风。",
+        "blankPlaceholder": "__",
+        "character": "暖",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "暖" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "足迹" },
+          { "id": "l2", "text": "泥泞" },
+          { "id": "l3", "text": "晶莹" },
+          { "id": "l4", "text": "寻觅" }
+        ],
+        "right": [
+          { "id": "r1", "text": "光亮透明的样子" },
+          { "id": "r2", "text": "走过留下的脚印" },
+          { "id": "r3", "text": "寻找" },
+          { "id": "r4", "text": "下过雨后的烂泥地" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "脚窝" },
+          { "id": "l2", "text": "汗滴" },
+          { "id": "l3", "text": "荆棘" },
+          { "id": "l4", "text": "年迈" }
+        ],
+        "right": [
+          { "id": "r1", "text": "脚踩出的小坑" },
+          { "id": "r2", "text": "年纪很大" },
+          { "id": "r3", "text": "汗水的滴" },
+          { "id": "r4", "text": "带刺的小灌木" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r1", "l2": "r3", "l3": "r4", "l4": "r2" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“小溪说”雷锋曾抱着什么样的孩子？",
+        "options": ["生病的孩子", "迷路的孩子", "饥饿的孩子", "受伤的孩子"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小路说”雷锋曾背着什么样的人？",
+        "options": ["年迈的大娘", "小妹妹", "受伤的战士", "迷路的孩子"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“瞧，那花瓣上晶莹的露珠，就是他洒下的汗滴。”这句话用了什么修辞手法？",
+        "options": ["夸张", "比喻", "反问", "对比"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最后告诉我们雷锋会出现在哪里？",
+        "options": ["雷锋叔叔的家里", "需要献出爱心的地方", "学校里", "河边"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首诗有什么特点？",
+        "options": ["有问有答", "全是疑问句", "全是感叹句", "没有标点"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "雷锋叔叔，你在哪里（节选）",
+        "author": "佚名",
+        "lines": [
+          ["沿着长长的", null, "，"],
+          ["寻找雷锋的", null, "。"]
+        ],
+        "blanks": [
+          { "options": ["小溪", "大河", "海边", "山路"] },
+          { "options": ["足迹", "脚步", "身影", "歌声"] }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把诗句排好",
+        "tokens": ["哪里", "需要", "献出", "爱心"]
+      },
+      "answer": { "ordered": ["哪里", "需要", "献出", "爱心"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "温",
+        "tokens": ["暖", "和", "度", "柔", "冷", "硬", "冬"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“温”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["暖", "和", "度", "柔"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“顺着弯弯的小路”里的“顺”是什么意思？",
+        "options": ["顺利", "沿着", "翻过", "跨过"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    }
+  ]
+}

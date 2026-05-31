@@ -1,0 +1,305 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拌",
+        "hint": "“凉拌菠菜”的“拌”",
+        "options": ["bàn", "pàn", "bān", "pán"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "菠",
+        "hint": "“菠菜”的“菠”",
+        "options": ["pō", "bō", "bǒ", "pò"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "煎",
+        "hint": "“香煎豆腐”的“煎”",
+        "options": ["jiān", "jiàn", "jiǎn", "qiān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "腐",
+        "hint": "“豆腐”的“腐”",
+        "options": ["fú", "fǔ", "fù", "pǔ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茄",
+        "hint": "“茄子”的“茄”",
+        "options": ["jiā", "qié", "jié", "qiá"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "炖",
+        "hint": "“小鸡炖蘑菇”的“炖”",
+        "options": ["dùn", "tūn", "tún", "zhuàn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饺",
+        "hint": "“蒸饺”的“饺”",
+        "options": ["jiǎo", "jiào", "jiāo", "qiǎo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "粥",
+        "hint": "“小米粥”的“粥”",
+        "options": ["zhōu", "zōu", "zhóu", "shōu"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shí",
+        "sentence": "中国美__。",
+        "blankPlaceholder": "__",
+        "character": "食",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "食" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kǎo",
+        "sentence": "__鸭。",
+        "blankPlaceholder": "__",
+        "character": "烤",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "烤" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǔ",
+        "sentence": "水__鱼。",
+        "blankPlaceholder": "__",
+        "character": "煮",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "煮" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dàn",
+        "sentence": "__炒饭。",
+        "blankPlaceholder": "__",
+        "character": "蛋",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "蛋" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jī",
+        "sentence": "小__炖蘑菇。",
+        "blankPlaceholder": "__",
+        "character": "鸡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "鸡" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fàn",
+        "sentence": "蛋炒__。",
+        "blankPlaceholder": "__",
+        "character": "饭",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "饭" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "凉拌" },
+          { "id": "l2", "text": "香煎" },
+          { "id": "l3", "text": "红烧" },
+          { "id": "l4", "text": "葱爆" }
+        ],
+        "right": [
+          { "id": "r1", "text": "茄子" },
+          { "id": "r2", "text": "豆腐" },
+          { "id": "r3", "text": "羊肉" },
+          { "id": "r4", "text": "菠菜" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r4", "l2": "r2", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "甜津津" },
+          { "id": "l2", "text": "酸溜溜" },
+          { "id": "l3", "text": "辣乎乎" },
+          { "id": "l4", "text": "香喷喷" }
+        ],
+        "right": [
+          { "id": "r1", "text": "辣的味道" },
+          { "id": "r2", "text": "酸的味道" },
+          { "id": "r3", "text": "甜的味道" },
+          { "id": "r4", "text": "很香的味道" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r2", "l3": "r1", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "炒" },
+          { "id": "l2", "text": "煎" },
+          { "id": "l3", "text": "蒸" },
+          { "id": "l4", "text": "煮" }
+        ],
+        "right": [
+          { "id": "r1", "text": "用蒸汽弄熟食物" },
+          { "id": "r2", "text": "用油在锅里翻动食物" },
+          { "id": "r3", "text": "把食物放在水里煮熟" },
+          { "id": "r4", "text": "用少量油把食物两面烤香" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一个不是课文中提到的中国美食？",
+        "options": ["蒸饺", "炸酱面", "披萨", "蛋炒饭"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中带“火”或“灬”的字大多与什么有关？",
+        "options": ["水", "火", "树", "石头"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“煮”字下面的“灬”表示什么？",
+        "options": ["四点水", "火（与火有关）", "石头", "山"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一道菜的做法是“蒸”？",
+        "options": ["蒸饺", "烤鸭", "炸酱面", "凉拌菠菜"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小鸡炖蘑菇”用的烹饪方法是？",
+        "options": ["炒", "炖", "煎", "炸"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把烹饪的步骤排好（以煮鸡蛋为例）",
+        "tokens": ["洗鸡蛋", "锅里加水", "下蛋煮熟", "捞出装盘"]
+      },
+      "answer": { "ordered": ["洗鸡蛋", "锅里加水", "下蛋煮熟", "捞出装盘"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "饭",
+        "tokens": ["菜", "盒", "店", "桌", "海", "云", "雪"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“饭”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["菜", "盒", "店", "桌"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "香",
+        "tokens": ["味", "甜", "气", "蕉", "苦", "丑", "黑"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“香”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["味", "甜", "气", "蕉"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

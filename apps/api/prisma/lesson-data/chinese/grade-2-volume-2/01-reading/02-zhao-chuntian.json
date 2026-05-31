@@ -1,0 +1,289 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "脱",
+        "hint": "“脱掉棉袄”的“脱”",
+        "options": ["tuō", "tuó", "duō", "tōu"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "袄",
+        "hint": "“棉袄”的“袄”",
+        "options": ["āo", "ǎo", "ào", "yǎo"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "遮",
+        "hint": "“遮遮掩掩”的“遮”",
+        "options": ["zē", "zhē", "zhé", "shē"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "探",
+        "hint": "“小草探出头来”的“探”",
+        "options": ["tàn", "tān", "shēn", "tān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嫩",
+        "hint": "“点点嫩芽”的“嫩”",
+        "options": ["nèn", "nén", "lèn", "rèn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "解",
+        "hint": "“解冻的小溪”的“解”",
+        "options": ["xiè", "jié", "jiě", "jiè"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鹃",
+        "hint": "“杜鹃”的“鹃”",
+        "options": ["juān", "juàn", "quán", "jiān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "符",
+        "hint": "“春天的音符”的“符”",
+        "options": ["fú", "fǔ", "fù", "fē"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chōng",
+        "sentence": "我们__出家门，奔向田野。",
+        "blankPlaceholder": "__",
+        "character": "冲",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "冲" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xún",
+        "sentence": "去__找春天。",
+        "blankPlaceholder": "__",
+        "character": "寻",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "寻" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǔ",
+        "sentence": "树木__出点点嫩芽。",
+        "blankPlaceholder": "__",
+        "character": "吐",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "吐" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "méi",
+        "sentence": "那是春天的__毛吧？",
+        "blankPlaceholder": "__",
+        "character": "眉",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "眉" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dàng",
+        "sentence": "她在柳枝上__秋千。",
+        "blankPlaceholder": "__",
+        "character": "荡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "荡" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "小草" },
+          { "id": "l2", "text": "野花" },
+          { "id": "l3", "text": "嫩芽" },
+          { "id": "l4", "text": "小溪" }
+        ],
+        "right": [
+          { "id": "r1", "text": "春天的音符" },
+          { "id": "r2", "text": "春天的眼睛" },
+          { "id": "r3", "text": "春天的眉毛" },
+          { "id": "r4", "text": "春天的琴声" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r2", "l3": "r1", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "脱" },
+          { "id": "l2", "text": "冲" },
+          { "id": "l3", "text": "奔" },
+          { "id": "l4", "text": "寻" }
+        ],
+        "right": [
+          { "id": "r1", "text": "找" },
+          { "id": "r2", "text": "跑" },
+          { "id": "r3", "text": "向前快步走" },
+          { "id": "r4", "text": "脱去" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r4", "l2": "r2", "l3": "r3", "l4": "r1" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“春天像个害羞的小姑娘”，这个句子用的是什么修辞手法？",
+        "options": ["夸张", "比喻", "排比", "反问"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“遮遮掩掩，躲躲藏藏”形容的是什么？",
+        "options": ["孩子们玩游戏", "春天像害羞的小姑娘那样不容易被发现", "下雪了", "风很大"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小草从地下探出头来”里的“探”字写出了什么？",
+        "options": ["小草很有力气", "小草小心、好奇地冒出地面", "小草怕冷", "小草长得很高"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“我们”用哪些感官找到了春天？",
+        "options": ["只用眼睛看", "看、听、闻、触", "只用耳朵听", "只用鼻子闻"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中没有提到春天藏在哪里？",
+        "options": ["柳枝上", "风筝尾巴上", "桃花枝头", "雪人身上"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“早开的野花一朵两朵，那是春天的眼睛吧？”这是什么句式？",
+        "options": ["陈述句", "疑问句", "感叹句", "祈使句"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子们为什么“脱掉棉袄”？",
+        "options": ["天气热了，春天来了", "棉袄破了", "要去游泳", "棉袄太脏了"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排成正确的顺序",
+        "tokens": ["我们", "几个孩子", "脱掉", "棉袄", "今天"]
+      },
+      "answer": { "ordered": ["我们", "几个孩子", "脱掉", "棉袄"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "春",
+        "tokens": ["天", "风", "雨", "节", "冬", "夏", "雪"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“春”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["天", "风", "雨", "节"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "柳",
+        "tokens": ["树", "枝", "条", "叶", "门", "石", "石头"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“柳”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["树", "枝", "条", "叶"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

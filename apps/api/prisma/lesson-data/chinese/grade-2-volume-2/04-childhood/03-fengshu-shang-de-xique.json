@@ -1,0 +1,285 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鹊",
+        "hint": "“喜鹊”的“鹊”",
+        "options": ["què", "qiè", "quē", "jué"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "渡",
+        "hint": "“渡口”的“渡”",
+        "options": ["dù", "dú", "dǔ", "tù"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荫",
+        "hint": "“绿荫”的“荫”",
+        "options": ["yīn", "yìn", "yǐn", "yīng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蔽",
+        "hint": "“遮蔽”的“蔽”",
+        "options": ["bì", "bí", "bǐ", "pì"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "姨",
+        "hint": "“喜鹊阿姨”的“姨”",
+        "options": ["yī", "yí", "yǐ", "yì"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "撑",
+        "hint": "“撑着渡船”的“撑”",
+        "options": ["chēng", "chéng", "chěng", "shēng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "便",
+        "hint": "“一有空便来”的“便”",
+        "options": ["pián", "biàn", "biān", "miàn"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "懂",
+        "hint": "“懂得”的“懂”",
+        "options": ["dōng", "dǒng", "dòng", "tǒng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fēng",
+        "sentence": "__树上的喜鹊。",
+        "blankPlaceholder": "__",
+        "character": "枫",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "枫" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wō",
+        "sentence": "枫树上有个喜鹊__。",
+        "blankPlaceholder": "__",
+        "character": "窝",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "窝" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tái",
+        "sentence": "我喜欢站在枫树下，__头看喜鹊窝。",
+        "blankPlaceholder": "__",
+        "character": "抬",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "抬" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "sentence": "喜鹊阿姨__着上升的太阳。",
+        "blankPlaceholder": "__",
+        "character": "指",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "指" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dā",
+        "sentence": "喜鹊弟弟一齐快乐地回__。",
+        "blankPlaceholder": "__",
+        "character": "答",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "答" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "渡口" },
+          { "id": "l2", "text": "绿荫" },
+          { "id": "l3", "text": "喜鹊窝" },
+          { "id": "l4", "text": "山冈" }
+        ],
+        "right": [
+          { "id": "r1", "text": "喜鹊住的家" },
+          { "id": "r2", "text": "渡船停靠的地方" },
+          { "id": "r3", "text": "不太高的小山" },
+          { "id": "r4", "text": "树叶遮出来的阴凉" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“它好像一把很大又很高的绿色太阳伞，一直打开着。”这一句把枫树比作什么？",
+        "options": ["大伞", "蘑菇", "蓝天", "大房子"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”在心里把喜鹊母亲叫作什么？",
+        "options": ["喜鹊妈妈", "喜鹊阿姨", "喜鹊老师", "喜鹊太太"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”从喜鹊阿姨的“鹊！鹊！鹊！”里听出了什么？",
+        "options": ["a、o、e（拼音字母）", "三声叫", "上课铃声", "歌声"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我懂得，她问话的意思是‘看！那是什么？’”这句体现了？",
+        "options": ["“我”不喜欢喜鹊", "“我”把喜鹊当朋友、能听懂它们的语言", "喜鹊会说人话", "喜鹊有问题"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊阿姨教喜鹊弟弟做了哪些事？",
+        "options": ["唱歌、做游戏、学拼音字母", "学游泳、捕食", "写字、做饭", "讲故事、画画"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“葱郁”这个词最适合用来形容？",
+        "options": ["森林、树木", "高楼", "大海", "沙漠"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”对喜鹊一家的感情可以用哪个词来形容？",
+        "options": ["讨厌", "害怕", "喜欢极了", "无所谓"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "鹊！" },
+          { "id": "l2", "text": "鹊鹊鹊？" },
+          { "id": "l3", "text": "鹊！鹊鹊！鹊鹊鹊！" },
+          { "id": "l4", "text": "葱郁" }
+        ],
+        "right": [
+          { "id": "r1", "text": "“看！那是什么？”" },
+          { "id": "r2", "text": "“鹊！”（喜鹊的发音）" },
+          { "id": "r3", "text": "草木茂盛、深绿" },
+          { "id": "r4", "text": "“妈妈，那是太阳！太阳升上来了！”" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r1", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排好",
+        "tokens": ["渡口旁", "有一棵", "枫树", "我很喜欢它"]
+      },
+      "answer": { "ordered": ["渡口旁", "有一棵", "枫树", "我很喜欢它"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "树",
+        "tokens": ["林", "叶", "枝", "根", "云", "海", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“树”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["林", "叶", "枝", "根"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一会儿教喜鹊弟弟唱歌，一会儿教他们做游戏，一会儿教他们学自己发明的拼音字母。”这一句用了什么修辞？",
+        "options": ["排比", "比喻", "夸张", "反问"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 3
+    }
+  ]
+}

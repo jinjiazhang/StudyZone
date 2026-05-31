@@ -1,0 +1,295 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "棚",
+        "hint": "“马棚”的“棚”",
+        "options": ["pēng", "péng", "pèng", "péng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "驮",
+        "hint": "“驮口袋”的“驮”",
+        "options": ["tuō", "duǒ", "tuó", "duò"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "坊",
+        "hint": "“磨坊”的“坊”",
+        "options": ["fáng", "fāng", "fǎng", "pāng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挡",
+        "hint": "“挡住去路”的“挡”",
+        "options": ["dǎng", "dāng", "dàng", "tǎng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蹄",
+        "hint": "“蹬过去”的“蹬”",
+        "options": ["dèng", "tī", "tī", "dēng"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浅",
+        "hint": "“水很浅”的“浅”",
+        "options": ["qiǎn", "qiān", "jiān", "jiǎn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "淹",
+        "hint": "“淹死”的“淹”",
+        "options": ["yān", "yán", "yǎn", "yìn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叹",
+        "hint": "“叹了口气”的“叹”",
+        "options": ["tān", "tǎn", "tàn", "tāng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuàn",
+        "sentence": "我很__意帮您做事。",
+        "blankPlaceholder": "__",
+        "character": "愿",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "愿" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guò",
+        "sentence": "小马__河。",
+        "blankPlaceholder": "__",
+        "character": "过",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "过" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shēn",
+        "sentence": "可是松鼠说河水很__。",
+        "blankPlaceholder": "__",
+        "character": "深",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "深" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǔ",
+        "sentence": "妈妈让小马__己去试一试。",
+        "blankPlaceholder": "自",
+        "character": "自",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "自" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "什么事都要自己去__一__。",
+        "blankPlaceholder": "__",
+        "character": "试",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "试" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "为难" },
+          { "id": "l2", "text": "焦急" },
+          { "id": "l3", "text": "难为情" },
+          { "id": "l4", "text": "动脑筋" }
+        ],
+        "right": [
+          { "id": "r1", "text": "想办法" },
+          { "id": "r2", "text": "感到不好意思" },
+          { "id": "r3", "text": "感到不好处理" },
+          { "id": "r4", "text": "心里着急" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r4", "l3": "r2", "l4": "r1" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马要把什么驮到磨坊去？",
+        "options": ["半口袋玉米", "半口袋麦子", "一篮苹果", "一筐土豆"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛说河水深浅是？",
+        "options": ["很浅，刚没过小腿", "很深，能淹死人", "他不知道", "结冰了"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "松鼠说河水深浅是？",
+        "options": ["很浅", "很深，他的伙伴掉下去淹死了", "刚好", "干涸了"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么老牛和松鼠说的河水深浅不一样？",
+        "options": ["两人撒谎", "他们身高不同，对水深的感受也不同", "河水时刻在变化", "他们跑错河了"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈最后让小马怎么做？",
+        "options": ["回家不去了", "自己去试一试", "等爸爸回来", "找别的路"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文告诉我们的最重要道理是？",
+        "options": [
+          "什么事都要自己去试一试，别人的经验只能参考",
+          "老牛比松鼠对",
+          "松鼠比老牛对",
+          "再也不要过河"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个说法正确？",
+        "options": [
+          "老牛和松鼠都对小马撒了谎",
+          "老牛和松鼠都没撒谎，只是身高不同感受不同",
+          "只有妈妈说的才对",
+          "河里的水是假的"
+        ]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把故事顺序排好",
+        "tokens": ["老马让小马驮麦子", "小河挡住去路", "老牛说浅、松鼠说深", "回家问妈妈", "小马自己试着过了河"]
+      },
+      "answer": {
+        "ordered": [
+          "老马让小马驮麦子",
+          "小河挡住去路",
+          "老牛说浅、松鼠说深",
+          "回家问妈妈",
+          "小马自己试着过了河"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "试",
+        "tokens": ["验", "卷", "题", "用", "苦", "硬", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“试”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["验", "卷", "题", "用"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "深",
+        "tokens": ["浅", "夜", "色", "浓", "云", "石", "苦"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“深”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["浅", "夜", "色", "浓"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马最后过河的实际感受是？",
+        "options": ["不深也不浅，他可以蹚过去", "深到淹死了", "浅得像没水", "结冰了"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    }
+  ]
+}

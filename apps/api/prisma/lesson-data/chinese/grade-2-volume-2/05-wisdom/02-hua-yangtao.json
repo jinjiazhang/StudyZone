@@ -1,0 +1,284 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "杨",
+        "hint": "“杨桃”的“杨”",
+        "options": ["yáng", "yǎng", "yàng", "shāng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "肃",
+        "hint": "“严肃”的“肃”",
+        "options": ["sù", "shù", "xiào", "sū"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晌",
+        "hint": "“半晌”的“晌”",
+        "options": ["xiǎng", "shǎng", "shāng", "xiàng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嘻",
+        "hint": "“嘻嘻地笑”的“嘻”",
+        "options": ["xī", "xí", "xǐ", "xì"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "诲",
+        "hint": "“教诲”的“诲”",
+        "options": ["huì", "huí", "huǐ", "měi"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "审",
+        "hint": "“审视”的“审”",
+        "options": ["shěn", "shēn", "shèn", "chén"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "悦",
+        "hint": "“和颜悦色”的“悦”",
+        "options": ["yuè", "yuě", "ruì", "ruò"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tú",
+        "sentence": "上__画课。",
+        "blankPlaceholder": "__",
+        "character": "图",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "图" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huà",
+        "sentence": "__杨桃。",
+        "blankPlaceholder": "__",
+        "character": "画",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "画" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎo",
+        "sentence": "看的__度不同。",
+        "blankPlaceholder": "__",
+        "character": "角",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "角" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiàng",
+        "sentence": "这幅画画得__不像？",
+        "blankPlaceholder": "__",
+        "character": "像",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "像" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiào",
+        "sentence": "同学们哈哈大__。",
+        "blankPlaceholder": "__",
+        "character": "笑",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "笑" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "审视" },
+          { "id": "l2", "text": "和颜悦色" },
+          { "id": "l3", "text": "教诲" },
+          { "id": "l4", "text": "严肃" }
+        ],
+        "right": [
+          { "id": "r1", "text": "脸色温和、亲切" },
+          { "id": "r2", "text": "（神情）认真、不轻浮" },
+          { "id": "r3", "text": "教导、指点" },
+          { "id": "r4", "text": "仔细看" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r4", "l2": "r1", "l3": "r3", "l4": "r2" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”看到的杨桃是什么样子？",
+        "options": ["像一个圆球", "像五个角的什么东西", "像一颗糖", "像一只苹果"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”为什么把杨桃画成五角星？",
+        "options": ["故意搞笑", "因为他坐的位置看到的杨桃就是那样", "想模仿别人", "不会画"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同学们一开始是什么反应？",
+        "options": ["佩服“我”", "哈哈大笑、说画错了", "向老师告状", "鼓掌"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老师让其他同学坐到“我”的座位上去看杨桃，他们看到的样子是？",
+        "options": ["还是平时的杨桃", "也像五角星", "是一个圆球", "是黑色"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最重要的道理是？",
+        "options": ["看的角度不同，事物的样子也会不一样；不要轻易嘲笑别人", "杨桃很难画", "老师很严肃", "同学不喜欢画画"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“老师的神情变得严肃了”，下面哪一个词与“严肃”意思相近？",
+        "options": ["开心", "认真、庄重", "生气", "害怕"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老师“和颜悦色地说”，老师此时是什么态度？",
+        "options": ["温和、亲切地讲道理", "严厉批评", "生气地骂人", "毫不在意"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把课文情节按顺序排好",
+        "tokens": ["老师把杨桃摆在讲桌上", "“我”照样子画成五角星", "同学们看了哈哈大笑", "老师让大家轮流坐到“我”的位置看", "同学们明白了道理"]
+      },
+      "answer": {
+        "ordered": [
+          "老师把杨桃摆在讲桌上",
+          "“我”照样子画成五角星",
+          "同学们看了哈哈大笑",
+          "老师让大家轮流坐到“我”的位置看",
+          "同学们明白了道理"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "图",
+        "tokens": ["画", "书", "形", "案", "云", "苦", "硬"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“图”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["画", "书", "形", "案"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "笑",
+        "tokens": ["容", "声", "话", "脸", "苦", "黑", "丑"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“笑”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["容", "声", "话", "脸"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学习了《画杨桃》，下列哪一种做法最值得提倡？",
+        "options": ["看到别人画的和自己不同就嘲笑", "认真观察、尊重不同的角度和看法", "随便画", "永远只看自己的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“老师的教诲让我终生难忘”里“终生”的意思是？",
+        "options": ["一辈子", "一段时间", "几年", "永远不"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    }
+  ]
+}

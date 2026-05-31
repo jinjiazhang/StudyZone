@@ -1,0 +1,279 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "匹",
+        "hint": "“一匹马”的“匹”",
+        "options": ["pī", "pǐ", "pì", "bǐ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "郊",
+        "hint": "“郊外”的“郊”",
+        "options": ["jiāo", "jiào", "jiǎo", "qiáo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "微",
+        "hint": "“微风”的“微”",
+        "options": ["wēi", "wéi", "wěi", "wèi"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "泛",
+        "hint": "“泛起波纹”的“泛”",
+        "options": ["fán", "fǎn", "fàn", "wán"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "纹",
+        "hint": "“波纹”的“纹”",
+        "options": ["wén", "wèn", "wěn", "wěng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "恋",
+        "hint": "“恋恋不舍”的“恋”",
+        "options": ["liàn", "lián", "lǐan", "luàn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拾",
+        "hint": "“拾起一根枝条”的“拾”",
+        "options": ["shí", "shǐ", "shì", "shē"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "傲",
+        "hint": "“骄傲”的“傲”",
+        "options": ["āo", "ào", "ǎo", "áo"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǎn",
+        "sentence": "像一片柔软的绿__。",
+        "blankPlaceholder": "__",
+        "character": "毯",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "毯" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pǐ",
+        "sentence": "这是一__出色的马。",
+        "blankPlaceholder": "__",
+        "character": "匹",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "匹" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qí",
+        "sentence": "你走不动了，就__着它回家吧。",
+        "blankPlaceholder": "__",
+        "character": "骑",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "骑" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kuà",
+        "sentence": "妹妹高兴地__上“马”。",
+        "blankPlaceholder": "__",
+        "character": "跨",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "跨" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lèi",
+        "sentence": "我很__，走不动了。",
+        "blankPlaceholder": "__",
+        "character": "累",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "累" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "波纹" },
+          { "id": "l2", "text": "异常" },
+          { "id": "l3", "text": "恋恋不舍" },
+          { "id": "l4", "text": "骄傲" }
+        ],
+        "right": [
+          { "id": "r1", "text": "形容很自豪" },
+          { "id": "r2", "text": "舍不得离开" },
+          { "id": "r3", "text": "非常、很" },
+          { "id": "r4", "text": "水面上的细小波纹" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r4", "l2": "r3", "l3": "r2", "l4": "r1" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一匹出色的马”实际上是什么？",
+        "options": ["真正的马", "一根又长又细的柳条", "玩具马", "马匹的影子"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里讲的是什么季节？",
+        "options": ["春天", "夏天", "秋天", "冬天"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妹妹一开始为什么求妈妈抱？",
+        "options": ["她生病了", "她走累了走不动", "她想撒娇", "她想睡觉"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "爸爸把柳枝递给妹妹时说的话是？",
+        "options": ["“你走不动就别走了。”", "“这是一匹出色的马，你走不动了，就骑着它回家吧。”", "“走慢一点。”", "“坐下来歇一会儿。”"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妹妹拿到“马”之后表现怎样？",
+        "options": ["生气地把它扔了", "蹦蹦跳跳地奔向前去，比大家先到家", "继续要妈妈抱", "让爸爸抱她"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“路的一边是田野，葱葱绿绿的，非常可爱，像一片柔软的绿毯。”这一句把田野比作？",
+        "options": ["大海", "绿毯", "草帽", "棉被"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文告诉我们爸爸是一个怎样的人？",
+        "options": ["不爱妹妹", "聪明、有耐心，懂得用智慧鼓励妹妹", "脾气不好", "总是生气"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把故事按发生顺序排好",
+        "tokens": ["一家人到郊外散步", "妹妹走累了求抱", "爸爸递给妹妹一根柳枝", "妹妹高兴地骑“马”回家"]
+      },
+      "answer": {
+        "ordered": ["一家人到郊外散步", "妹妹走累了求抱", "爸爸递给妹妹一根柳枝", "妹妹高兴地骑“马”回家"]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "美",
+        "tokens": ["丽", "好", "妙", "梦", "丑", "苦", "硬"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“美”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["丽", "好", "妙", "梦"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "野",
+        "tokens": ["外", "花", "草", "兽", "云", "石", "硬"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“野”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["外", "花", "草", "兽"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词最能体现妹妹后来的心情？",
+        "options": ["难过", "高兴、骄傲", "失望", "生气"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    }
+  ]
+}

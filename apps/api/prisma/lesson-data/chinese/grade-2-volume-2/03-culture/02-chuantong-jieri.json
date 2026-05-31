@@ -1,0 +1,289 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "传",
+        "hint": "“传统”的“传”",
+        "options": ["chuán", "chuàn", "zhuàn", "chān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "贴",
+        "hint": "“贴窗花”的“贴”",
+        "options": ["tiē", "tiè", "tié", "diē"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "宵",
+        "hint": "“元宵”的“宵”",
+        "options": ["xiāo", "xiào", "xiǎo", "shāo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "巷",
+        "hint": "“小巷”的“巷”",
+        "options": ["xiàng", "hàng", "xiáng", "shàng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "祭",
+        "hint": "“祭扫”的“祭”",
+        "options": ["jì", "jí", "jǐ", "qí"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "艾",
+        "hint": "“艾草”的“艾”",
+        "options": ["āi", "ǎi", "ài", "yì"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "乞",
+        "hint": "“乞巧”的“乞”",
+        "options": ["qí", "qǐ", "qì", "kě"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赏",
+        "hint": "“赏菊”的“赏”",
+        "options": ["sǎng", "shǎng", "shāng", "sǎng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǒng",
+        "sentence": "传__节日。",
+        "blankPlaceholder": "__",
+        "character": "统",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "统" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiē",
+        "sentence": "大__小巷人如潮。",
+        "blankPlaceholder": "__",
+        "character": "街",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "街" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lóng",
+        "sentence": "过端午，赛__舟。",
+        "blankPlaceholder": "__",
+        "character": "龙",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "龙" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tuán",
+        "sentence": "全家__圆真热闹。",
+        "blankPlaceholder": "__",
+        "character": "团",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "团" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhēn",
+        "sentence": "全家团圆__热闹。",
+        "blankPlaceholder": "__",
+        "character": "真",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "真" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "春节" },
+          { "id": "l2", "text": "元宵节" },
+          { "id": "l3", "text": "清明节" },
+          { "id": "l4", "text": "端午节" }
+        ],
+        "right": [
+          { "id": "r1", "text": "祭扫先人" },
+          { "id": "r2", "text": "贴窗花放鞭炮" },
+          { "id": "r3", "text": "赛龙舟、吃粽子" },
+          { "id": "r4", "text": "看花灯" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "七月七" },
+          { "id": "l2", "text": "中秋节" },
+          { "id": "l3", "text": "重阳节" },
+          { "id": "l4", "text": "新春" }
+        ],
+        "right": [
+          { "id": "r1", "text": "敬老登高、赏菊" },
+          { "id": "r2", "text": "牛郎织女鹊桥相会" },
+          { "id": "r3", "text": "吃月饼、赏圆月" },
+          { "id": "r4", "text": "全家团圆、过年" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r3", "l3": "r1", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“元宵节，看花灯”，元宵节是哪一天？",
+        "options": ["农历正月初一", "农历正月十五", "农历五月初五", "农历八月十五"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“粽香艾香满堂飘”说的是哪个传统节日？",
+        "options": ["春节", "清明节", "端午节", "中秋节"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "重阳节有什么习俗？",
+        "options": ["放鞭炮", "踏秋赏菊去登高", "赛龙舟", "吃月饼"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“牛郎织女会鹊桥”这是关于哪个节日的传说？",
+        "options": ["中秋节", "七夕（七月七）", "元宵节", "重阳节"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个不是中国的传统节日？",
+        "options": ["春节", "清明节", "圣诞节", "中秋节"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“十五圆月当空照”里的“十五”是哪个节？",
+        "options": ["元宵节（正月十五）或中秋节（八月十五）", "春节", "重阳节", "端午节"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按时间先后顺序排列下列节日（春节为一年的起点）",
+        "tokens": ["春节", "元宵节", "清明节", "端午节"]
+      },
+      "answer": { "ordered": ["春节", "元宵节", "清明节", "端午节"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按一年中的时间顺序继续排列",
+        "tokens": ["七月七", "中秋节", "重阳节", "春节"]
+      },
+      "answer": { "ordered": ["七月七", "中秋节", "重阳节", "春节"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "节",
+        "tokens": ["日", "气", "省", "目", "门", "石", "海"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“节”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["日", "气", "省", "目"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "圆",
+        "tokens": ["月", "形", "满", "圈", "四", "云", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“圆”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["月", "形", "满", "圈"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

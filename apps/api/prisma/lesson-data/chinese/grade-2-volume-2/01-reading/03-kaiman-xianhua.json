@@ -1,0 +1,289 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "裹",
+        "hint": "“包裹”的“裹”",
+        "options": ["guǒ", "guō", "kuò", "huò"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "颈",
+        "hint": "“长颈鹿”的“颈”",
+        "options": ["jǐn", "jìng", "jǐng", "jīng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "粒",
+        "hint": "“一堆小颗粒”的“粒”",
+        "options": ["lí", "lì", "lǐ", "lǜ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "漏",
+        "hint": "“都漏在路上了”的“漏”",
+        "options": ["liù", "lóu", "lōu", "lòu"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "巧",
+        "hint": "“正巧”的“巧”",
+        "options": ["qiáo", "qiǎo", "qiào", "kǎo"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绚",
+        "hint": "“绚丽多彩”的“绚”",
+        "options": ["xún", "xuán", "xuàn", "shùn"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狸",
+        "hint": "“狐狸”的“狸”",
+        "options": ["lǐ", "lì", "lí", "lì"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "籽",
+        "hint": "“花籽”的“籽”",
+        "options": ["zǐ", "zì", "zǎ", "zī"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiān",
+        "sentence": "门前开着一大片__花。",
+        "blankPlaceholder": "__",
+        "character": "鲜",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "鲜" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuán",
+        "sentence": "__来，包裹破了。",
+        "blankPlaceholder": "__",
+        "character": "原",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "原" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shū",
+        "sentence": "长颈鹿大__给鼹鼠先生寄来了一个包裹。",
+        "blankPlaceholder": "__",
+        "character": "叔",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "叔" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tōng",
+        "sentence": "__往松鼠太太家的路开满了鲜花。",
+        "blankPlaceholder": "__",
+        "character": "通",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "通" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lǐ",
+        "sentence": "这是多么美好的__物啊！",
+        "blankPlaceholder": "__",
+        "character": "礼",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "礼" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "鼹鼠先生" },
+          { "id": "l2", "text": "长颈鹿大叔" },
+          { "id": "l3", "text": "松鼠太太" },
+          { "id": "l4", "text": "刺猬太太" }
+        ],
+        "right": [
+          { "id": "r1", "text": "寄来包裹的人" },
+          { "id": "r2", "text": "收到包裹的主人公" },
+          { "id": "r3", "text": "看到鲜花夸赞的人" },
+          { "id": "r4", "text": "知道花籽秘密的人" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r1", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "绚丽多彩" },
+          { "id": "l2", "text": "五颜六色" },
+          { "id": "l3", "text": "花朵簇簇" },
+          { "id": "l4", "text": "懊丧" }
+        ],
+        "right": [
+          { "id": "r1", "text": "颜色种类很多" },
+          { "id": "r2", "text": "鲜艳美丽、色彩丰富" },
+          { "id": "r3", "text": "心里不开心、失望" },
+          { "id": "r4", "text": "花成丛地开着" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r1", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鼹鼠先生收到的包裹里装的是什么？",
+        "options": ["小石头", "花籽", "巧克力", "种子图册"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么会出现“开满鲜花的小路”？",
+        "options": ["有人故意种的", "破了的包裹漏出花籽，沿路开成了花", "刮风刮来的", "下雨长出来的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么说花籽是“美好的礼物”？",
+        "options": ["花籽很贵", "花籽给大家带来了美丽和快乐", "花籽很多", "花籽很小"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词的意思和“惊奇”最接近？",
+        "options": ["生气", "高兴", "惊讶", "害怕"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“五颜六色”用在下面哪个句子最合适？",
+        "options": ["树叶飘下来。", "门前开着五颜六色的鲜花。", "他考了第一。", "今天下雨了。"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中鼹鼠先生的心情是怎样变化的？",
+        "options": ["一直很高兴", "懊丧——惊喜——明白了真相", "一直很难过", "一直很生气"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子按合理顺序排好",
+        "tokens": ["鼹鼠先生", "打开", "包裹", "看见一堆小颗粒"]
+      },
+      "answer": { "ordered": ["鼹鼠先生", "打开", "包裹", "看见一堆小颗粒"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鲜",
+        "tokens": ["花", "美", "艳", "果", "黑", "暗", "苦"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“鲜”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["花", "美", "艳", "果"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "礼",
+        "tokens": ["物", "貌", "节", "服", "毛", "牙", "口"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“礼”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["物", "貌", "节", "服"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里写到几位邻居夸赞鲜花，他们用的形容词分别是什么？",
+        "options": ["“多美啊”和“真美啊”", "“真好”和“真好看”", "“漂亮”和“可爱”", "“鲜艳”和“好看”"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "梦",
+        "hint": "“彩色的梦”的“梦”",
+        "options": ["mèng", "méng", "měng", "mēng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "躺",
+        "hint": "“躺在铅笔盒里”的“躺”",
+        "options": ["tǎng", "tāng", "tàng", "shǎng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蹦",
+        "hint": "“跳蹦”的“蹦”",
+        "options": ["bēng", "bēng", "bèng", "péng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "郁",
+        "hint": "“葱郁”的“郁”",
+        "options": ["yù", "yú", "yǔ", "rù"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "精",
+        "hint": "“精灵”的“精”",
+        "options": ["jīn", "jǐng", "jīng", "qīng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "境",
+        "hint": "“梦境”的“境”",
+        "options": ["jǐng", "jìng", "jīng", "qìng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叮",
+        "hint": "“叮咛”的“叮”",
+        "options": ["dīng", "dǐng", "tīng", "dìng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "咛",
+        "hint": "“叮咛”的“咛”",
+        "options": ["níng", "nǐng", "nìng", "lìng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qiān",
+        "sentence": "他们躺在__笔盒里聊天。",
+        "blankPlaceholder": "__",
+        "character": "铅",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "铅" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sēn",
+        "sentence": "在葱郁的__林里。",
+        "blankPlaceholder": "__",
+        "character": "森",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "森" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "píng",
+        "sentence": "结一个__果般的太阳。",
+        "blankPlaceholder": "__",
+        "character": "苹",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "苹" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yìng",
+        "sentence": "我有一大把彩色的梦，有的长，有的圆，有的__。",
+        "blankPlaceholder": "__",
+        "character": "硬",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "硬" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jié",
+        "sentence": "__一个苹果般的太阳。",
+        "blankPlaceholder": "__",
+        "character": "结",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "结" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "liú",
+        "sentence": "在溪水里__动。",
+        "blankPlaceholder": "__",
+        "character": "流",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "流" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "草坪" },
+          { "id": "l2", "text": "野花" },
+          { "id": "l3", "text": "天空" },
+          { "id": "l4", "text": "太阳" }
+        ],
+        "right": [
+          { "id": "r1", "text": "蓝得透明" },
+          { "id": "r2", "text": "绿了" },
+          { "id": "r3", "text": "苹果般又大又红" },
+          { "id": "r4", "text": "红了" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r1", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "葱郁" },
+          { "id": "l2", "text": "精灵" },
+          { "id": "l3", "text": "梦境" },
+          { "id": "l4", "text": "叮咛" }
+        ],
+        "right": [
+          { "id": "r1", "text": "再三嘱咐" },
+          { "id": "r2", "text": "草木茂盛、深绿" },
+          { "id": "r3", "text": "梦中所见的情景" },
+          { "id": "r4", "text": "传说中聪明灵活的小神仙" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r3", "l4": "r1" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一大把彩色的梦”指的是？",
+        "options": ["真的梦", "一束花", "一把彩色铅笔", "一些玩具"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里的“他们”是指？",
+        "options": ["小朋友们", "彩色铅笔", "小鸟们", "雪松们"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“结一个苹果般的太阳，又大——又红！”这句话用了什么修辞手法？",
+        "options": ["比喻", "夸张", "反问", "排比"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雪松们拉着手”这一句把雪松写得像？",
+        "options": ["小动物", "小朋友（把树拟人化）", "雪人", "云朵"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“紫葡萄的叮咛，在溪水里流动……”里的“叮咛”最接近？",
+        "options": ["叮咬", "叮叮当当的声音", "嘱咐、关切的话", "声音"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种感受最符合课文表达？",
+        "options": ["凄凉", "对彩色梦境的喜爱与想象", "害怕", "失望"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把诗句排好",
+        "tokens": ["大块的", "草坪", "绿了"]
+      },
+      "answer": { "ordered": ["大块的", "草坪", "绿了"] },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "彩",
+        "tokens": ["色", "虹", "旗", "云", "苦", "石", "苦"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“彩”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["色", "虹", "旗", "云"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "梦",
+        "tokens": ["想", "境", "幻", "见", "苦", "硬", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“梦”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["想", "境", "幻", "见"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

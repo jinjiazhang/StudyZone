@@ -1,0 +1,293 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弱",
+        "hint": "“最弱小”的“弱”",
+        "options": ["ruò", "yào", "luò", "ròu"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "末",
+        "hint": "“一个周末”的“末”",
+        "options": ["mò", "wèi", "mèi", "mǔ"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "簇",
+        "hint": "“一丛簇拥”的“簇”",
+        "options": ["zú", "cù", "zǔ", "shù"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "芬",
+        "hint": "“芬芳扑鼻”的“芬”",
+        "options": ["fèn", "fén", "fēn", "fěn"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "递",
+        "hint": "“递给身边的托利亚”的“递”",
+        "options": ["dī", "dǐ", "dì", "tì"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "娇",
+        "hint": "“显得更加娇弱”的“娇”",
+        "options": ["jiāo", "jiào", "jiǎo", "qiáo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "掀",
+        "hint": "“掀起雨衣”的“掀”",
+        "options": ["xiān", "xián", "qiān", "shān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ruò",
+        "sentence": "我不是最__小的。",
+        "blankPlaceholder": "__",
+        "character": "弱",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "弱" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhōu",
+        "sentence": "夏天的一个__末。",
+        "blankPlaceholder": "__",
+        "character": "周",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "周" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mǔ",
+        "sentence": "萨沙和哥哥跟父__一起到森林中去玩。",
+        "blankPlaceholder": "__",
+        "character": "母",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "母" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fāng",
+        "sentence": "芬__扑鼻。",
+        "blankPlaceholder": "__",
+        "character": "芳",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "芳" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǒng",
+        "sentence": "你是__敢的孩子！",
+        "blankPlaceholder": "__",
+        "character": "勇",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "勇" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gǎn",
+        "sentence": "你是勇__的孩子。",
+        "blankPlaceholder": "__",
+        "character": "敢",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "敢" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "盛开" },
+          { "id": "l2", "text": "簇拥" },
+          { "id": "l3", "text": "芬芳" },
+          { "id": "l4", "text": "娇弱" }
+        ],
+        "right": [
+          { "id": "r1", "text": "紧紧地围在一起" },
+          { "id": "r2", "text": "花开得正茂盛" },
+          { "id": "r3", "text": "柔嫩、不强壮" },
+          { "id": "r4", "text": "香气四溢" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r1", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "野蔷薇" },
+          { "id": "l2", "text": "铃兰花" },
+          { "id": "l3", "text": "雨衣" },
+          { "id": "l4", "text": "露珠" }
+        ],
+        "right": [
+          { "id": "r1", "text": "围在野蔷薇旁的小白花" },
+          { "id": "r2", "text": "下雨时穿在身上挡雨的衣服" },
+          { "id": "r3", "text": "粉红色的花，开了第一朵" },
+          { "id": "r4", "text": "花瓣或叶子上的水珠" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r1", "l3": "r2", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事中萨沙今年几岁？",
+        "options": ["四岁", "五岁", "七岁", "十岁"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈把雨衣给了谁？",
+        "options": ["萨沙", "托利亚", "爸爸", "陌生人"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雨衣最后到了萨沙手里，托利亚把雨衣给萨沙的原因是？",
+        "options": ["托利亚不喜欢", "萨沙比托利亚弱小，应该被保护", "妈妈让的", "爸爸让的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈为什么说应该把雨衣给萨沙？",
+        "options": ["萨沙最聪明", "萨沙最弱小", "我们应该保护比自己弱小的", "萨沙最可爱"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "萨沙为什么把雨衣盖在野蔷薇花上？",
+        "options": ["想证明自己也能保护更弱小的", "雨衣太小不想穿", "怕被妈妈骂", "想拿野蔷薇做礼物"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最后妈妈说萨沙是“勇敢的孩子”，因为？",
+        "options": ["萨沙跑得快", "萨沙能保护更弱小的事物", "萨沙不怕雷", "萨沙学会了游泳"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪个句子用了比喻？",
+        "options": [
+          "突然，雷声大作。",
+          "雨水已经打掉了两片野蔷薇花瓣，花儿无力地垂着头。",
+          "“我不是最弱小的”就是说我能保护更弱小的。",
+          "“你能保护更弱小的，你是勇敢的孩子啦！”"
+        ]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把雨衣传递的顺序排出来",
+        "tokens": ["妈妈", "托利亚", "萨沙", "野蔷薇"]
+      },
+      "answer": { "ordered": ["妈妈", "托利亚", "萨沙", "野蔷薇"] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "勇",
+        "tokens": ["敢", "气", "猛", "士", "弱", "怕", "懒"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“勇”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["敢", "气", "猛", "士"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“显得更加娇弱”里的“显得”最接近下面哪个意思？",
+        "options": ["看起来", "希望", "听起来", "想得"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    }
+  ]
+}
