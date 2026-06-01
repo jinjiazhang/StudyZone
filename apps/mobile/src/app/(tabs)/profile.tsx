@@ -2,9 +2,8 @@ import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
-import { Flame, Gem, Heart, LogOut, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
+import { Flame, Gem, Heart, Settings, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
 import { api } from '@/lib/api';
-import { useAuthStore } from '@/lib/auth-store';
 import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
@@ -13,7 +12,6 @@ import { xpToLevel } from '@studyzone/shared-logic';
 export default function Profile() {
   const router = useRouter();
   useTabFocusGuard([['me'], ['quests']]);
-  const clear = useAuthStore((s) => s.clear);
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
   const { data: quests } = useQuery({ queryKey: ['quests'], queryFn: () => api.dailyQuests() });
 
@@ -38,10 +36,10 @@ export default function Profile() {
               <Text style={styles.email}>{me?.email}</Text>
             </View>
             <Pressable
-              onPress={() => { clear(); router.replace('/login'); }}
+              onPress={() => router.push('/settings')}
               style={styles.logoutBtn}
             >
-              <LogOut size={20} color={colors.inkSoft} />
+              <Settings size={20} color={colors.inkSoft} />
             </Pressable>
           </View>
 

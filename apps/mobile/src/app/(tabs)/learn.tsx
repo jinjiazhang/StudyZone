@@ -45,6 +45,12 @@ export default function Learn() {
       .filter((g) => g.subjectCourses.length > 0);
   }, [subjects, courses, currentBySubject]);
 
+  // Hero: the first subject the learner is mid-way through ("继续上次").
+  const heroGroup = useMemo(
+    () => subjectGroups.find((g) => g.current) ?? null,
+    [subjectGroups],
+  );
+
   return (
     <SafeAreaView style={styles.container}>
       {/* Top stats bar */}
@@ -61,11 +67,34 @@ export default function Learn() {
       </View>
 
       <ScrollView contentContainerStyle={styles.scroll}>
-        {/* Mascot guidance */}
-        <View style={styles.mascotRow}>
-          <Mascot size={100} mood="cheer" />
-          <SpeechBubble>选一门课开始学习吧！同时学多门完全没问题，进度互不影响。</SpeechBubble>
-        </View>
+        {/* Hero: continue last course */}
+        {heroGroup?.current ? (
+          <Pressable
+            style={styles.hero}
+            onPress={() => router.push(`/course/${heroGroup.current!.id}`)}
+          >
+            <View style={styles.heroChips}>
+              <View style={styles.heroChip}>
+                <Text style={styles.heroChipText}>继续上次</Text>
+              </View>
+              <View style={[styles.heroChip, { backgroundColor: heroGroup.subject.color }]}>
+                <Text style={styles.heroChipText}>{heroGroup.subject.name}</Text>
+              </View>
+            </View>
+            <Text style={styles.heroTitle} numberOfLines={2}>{heroGroup.current.name}</Text>
+            <Text style={styles.heroDesc} numberOfLines={1}>咱们继续往前走，冲呀！</Text>
+            <View style={styles.heroBtn}>
+              <BookOpen size={16} color={colors.greenDark} />
+              <Text style={styles.heroBtnText}>继续学习</Text>
+            </View>
+          </Pressable>
+        ) : (
+          /* Mascot guidance (no course in progress yet) */
+          <View style={styles.mascotRow}>
+            <Mascot size={100} mood="cheer" />
+            <SpeechBubble>选一门课开始学习吧！同时学多门完全没问题，进度互不影响。</SpeechBubble>
+          </View>
+        )}
 
         <Text style={styles.title}>我的课程</Text>
 
@@ -168,6 +197,39 @@ const styles = StyleSheet.create({
   scroll: { padding: 16, paddingBottom: 32, gap: 12 },
   mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   title: { fontSize: 22, fontFamily: fonts.heavy, color: colors.ink, marginBottom: 4 },
+
+  hero: {
+    backgroundColor: colors.green,
+    borderRadius: radius.xl,
+    borderBottomWidth: 6,
+    borderColor: colors.greenDark,
+    padding: 18,
+    marginBottom: 8,
+  },
+  heroChips: { flexDirection: 'row', gap: 6, marginBottom: 10 },
+  heroChip: {
+    backgroundColor: 'rgba(255,255,255,0.22)',
+    paddingHorizontal: 9,
+    paddingVertical: 4,
+    borderRadius: 999,
+  },
+  heroChipText: { fontFamily: fonts.heavy, fontSize: 11, color: colors.white },
+  heroTitle: { fontFamily: fonts.heavy, fontSize: 21, color: colors.white, lineHeight: 27 },
+  heroDesc: { fontFamily: fonts.sansBold, fontSize: 13, color: 'rgba(255,255,255,0.94)', marginTop: 4 },
+  heroBtn: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: colors.white,
+    borderRadius: radius.md,
+    borderBottomWidth: 4,
+    borderColor: 'rgba(0,0,0,0.12)',
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    marginTop: 14,
+  },
+  heroBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.greenDark },
 
   subjectSection: { gap: 8, marginBottom: 8 },
   subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 10 },

@@ -74,20 +74,27 @@ export default function LessonComplete() {
           坚持就是胜利，明天也来呀！
         </Animated.Text>
 
-        {/* Stats */}
-        <Animated.View entering={FadeIn.delay(500)} style={styles.statsRow}>
-          <StatCard
-            icon={<Sparkles size={24} color={colors.goldDark} />}
-            label="XP" value={xpNum} borderColor={colors.gold} bg="#FFFBEB"
-          />
-          <StatCard
-            icon={<Gem size={24} color={colors.skyDark} />}
-            label="宝石" value={gemsNum} borderColor={colors.sky} bg="#EFF6FF"
-          />
-          <StatCard
-            icon={<Flame size={24} color={colors.orangeDark} />}
-            label="连胜" value={streakNum} borderColor={colors.orange} bg="#FFF7ED"
-          />
+        {/* Rewards — XP is the hero, gems + streak are secondary */}
+        <Animated.View entering={FadeIn.delay(500)} style={styles.rewards}>
+          <View style={styles.xpHero}>
+            <View style={styles.xpHeroIcon}>
+              <Sparkles size={30} color={colors.goldDark} />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.xpHeroLabel}>本次获得经验</Text>
+              <Text style={styles.xpHeroValue}>+{xpNum} XP</Text>
+            </View>
+          </View>
+          <View style={styles.statsRow}>
+            <StatCard
+              icon={<Gem size={24} color={colors.skyDark} />}
+              label="宝石" value={gemsNum} borderColor={colors.sky} bg={colors.mist}
+            />
+            <StatCard
+              icon={<Flame size={24} color={colors.orangeDark} />}
+              label="连胜" value={streakNum} borderColor={colors.orange} bg={colors.mist}
+            />
+          </View>
         </Animated.View>
 
         {/* Buttons */}
@@ -198,10 +205,31 @@ const styles = StyleSheet.create({
     fontFamily: fonts.heavy,
     color: colors.inkSoft,
   },
+  rewards: { width: '100%', marginTop: 16, gap: 12 },
+  xpHero: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 16,
+    backgroundColor: colors.white,
+    borderRadius: radius.lg,
+    borderWidth: 2,
+    borderBottomWidth: 6,
+    borderColor: colors.gold,
+    padding: 18,
+  },
+  xpHeroIcon: {
+    width: 54,
+    height: 54,
+    borderRadius: radius.lg,
+    backgroundColor: '#FFF6D6',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  xpHeroLabel: { fontFamily: fonts.heavy, fontSize: 12, color: colors.inkSoft, letterSpacing: 0.4 },
+  xpHeroValue: { fontFamily: fonts.heavy, fontSize: 34, color: colors.goldDark, lineHeight: 38 },
   statsRow: {
     flexDirection: 'row',
     gap: 10,
-    marginTop: 16,
     width: '100%',
   },
   statCard: {
