@@ -1,0 +1,294 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《绝句》的作者是哪位唐代诗人？",
+        "options": ["李白", "杜甫", "贺知章", "王安石"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《晓出净慈寺送林子方》是哪个朝代的诗？",
+        "options": ["唐代", "宋代", "元代", "明代"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《晓出净慈寺送林子方》的作者是？",
+        "options": ["杨万里", "苏轼", "白居易", "杜牧"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鹂",
+        "hint": "“黄鹂”的“鹂”",
+        "options": ["lì", "lí", "lǐ", "lǘ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鸣",
+        "hint": "“黄鹂鸣翠柳”的“鸣”",
+        "options": ["míng", "mìng", "mǐng", "níng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鹭",
+        "hint": "“白鹭上青天”的“鹭”",
+        "options": ["lǔ", "lù", "luò", "lǚ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "含",
+        "hint": "“窗含西岭千秋雪”的“含”",
+        "options": ["hán", "hǎn", "hàn", "qián"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "岭",
+        "hint": "“西岭千秋雪”的“岭”",
+        "options": ["lín", "lǐng", "líng", "lìng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "泊",
+        "hint": "“门泊东吴万里船”的“泊”",
+        "options": ["pō", "bó", "bǎi", "pò"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晓",
+        "hint": "“晓出净慈寺”的“晓”",
+        "options": ["xiǎo", "xiào", "xiāo", "shǎo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "毕",
+        "hint": "“毕竟西湖六月中”的“毕”",
+        "options": ["pì", "bí", "bì", "bǐ"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuāng",
+        "sentence": "__含西岭千秋雪。",
+        "blankPlaceholder": "__",
+        "character": "窗",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "窗" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wú",
+        "sentence": "门泊东__万里船。",
+        "blankPlaceholder": "__",
+        "character": "吴",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "吴" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lián",
+        "sentence": "接天__叶无穷碧。",
+        "blankPlaceholder": "__",
+        "character": "莲",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "莲" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yìng",
+        "sentence": "__日荷花别样红。",
+        "blankPlaceholder": "__",
+        "character": "映",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "映" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "黄鹂" },
+          { "id": "l2", "text": "白鹭" },
+          { "id": "l3", "text": "西岭" },
+          { "id": "l4", "text": "东吴" }
+        ],
+        "right": [
+          { "id": "r1", "text": "古代东吴地区，今江浙一带" },
+          { "id": "r2", "text": "西边的山" },
+          { "id": "r3", "text": "一种黄色羽毛的小鸟" },
+          { "id": "r4", "text": "白色的水鸟" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r4", "l3": "r2", "l4": "r1" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两个黄鹂鸣翠柳”里的“翠”是什么意思？",
+        "options": ["翠玉", "深绿色", "易碎", "鸣叫"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一行白鹭上青天”描写了什么样的画面？",
+        "options": ["白鹭在水里游", "一行白鹭飞向蓝天", "白鹭吃鱼", "白鹭睡觉"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“接天莲叶无穷碧”形容的是？",
+        "options": ["远远望去莲叶一直连到天边，绿得无边无际", "天上的云", "湖中的小鱼", "下雨"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“映日荷花别样红”里的“别样红”是？",
+        "options": ["特别红，与众不同", "一般红", "略红", "暗红"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《晓出净慈寺送林子方》写的是哪个季节、哪个地方的景色？",
+        "options": ["春天，南山", "六月，西湖", "秋天，黄山", "冬天，长江"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          ["两个", null, "鸣翠柳，"],
+          ["一行", null, "上青天。"],
+          ["窗含西岭千秋", null, "，"],
+          ["门泊东吴万里", null, "。"]
+        ],
+        "blanks": [
+          { "options": ["黄鹂", "黄莺", "白鹤", "麻雀"] },
+          { "options": ["白鹭", "白鸽", "海鸥", "孔雀"] },
+          { "options": ["雪", "雨", "云", "风"] },
+          { "options": ["船", "马", "树", "山"] }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0, 0, 0] },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          ["毕竟西湖六月", null, "，"],
+          ["风光不与四时", null, "。"],
+          ["接天莲叶无穷", null, "，"],
+          ["映日荷花别样", null, "。"]
+        ],
+        "blanks": [
+          { "options": ["中", "里", "前", "外"] },
+          { "options": ["同", "通", "童", "等"] },
+          { "options": ["碧", "绿", "翠", "青"] },
+          { "options": ["红", "粉", "黄", "紫"] }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0, 0, 0] },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把《绝句》第一句排好",
+        "tokens": ["两个", "黄鹂", "鸣翠柳", "白鹭", "青天"]
+      },
+      "answer": { "ordered": ["两个", "黄鹂", "鸣翠柳"] },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句使用了对偶（句子前后两部分对仗）的写法？",
+        "options": [
+          "两个黄鹂鸣翠柳，一行白鹭上青天。",
+          "毕竟西湖六月中。",
+          "风光不与四时同。",
+          "接天莲叶无穷碧。"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 3
+    }
+  ]
+}

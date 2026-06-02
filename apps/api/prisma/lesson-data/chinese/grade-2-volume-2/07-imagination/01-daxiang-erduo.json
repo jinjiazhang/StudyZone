@@ -1,0 +1,295 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扇",
+        "hint": "“像扇子似的”的“扇”",
+        "options": ["shàn", "shān", "shǎn", "xiān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "耷",
+        "hint": "“耷拉”的“耷”",
+        "options": ["dā", "dá", "dǎ", "tā"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "遇",
+        "hint": "“遇到了”的“遇”",
+        "options": ["yù", "yǔ", "yú", "rù"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竖",
+        "hint": "“耳朵竖着”的“竖”",
+        "options": ["shù", "shǔ", "sù", "zhù"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竿",
+        "hint": "“竹竿”的“竿”",
+        "options": ["gǎn", "gān", "gàn", "kān"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舞",
+        "hint": "“跳舞”的“舞”",
+        "options": ["wū", "wǔ", "wù", "fǔ"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "痛",
+        "hint": "“头痛”的“痛”",
+        "options": ["tóng", "tǒng", "tòng", "dòng"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "烦",
+        "hint": "“心烦”的“烦”",
+        "options": ["fán", "fǎn", "fàn", "pán"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ěr",
+        "sentence": "大象的__朵。",
+        "blankPlaceholder": "__",
+        "character": "耳",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "耳" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tù",
+        "sentence": "大象遇到了小__子。",
+        "blankPlaceholder": "__",
+        "character": "兔",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "兔" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yáng",
+        "sentence": "后来大象又遇到了小__。",
+        "blankPlaceholder": "__",
+        "character": "羊",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "羊" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lù",
+        "sentence": "小__、小马，还有小老鼠都说他的耳朵。",
+        "blankPlaceholder": "__",
+        "character": "鹿",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "鹿" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bìng",
+        "sentence": "你的耳朵一定是出毛__了。",
+        "blankPlaceholder": "__",
+        "character": "病",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "病" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "耷拉" },
+          { "id": "l2", "text": "自言自语" },
+          { "id": "l3", "text": "不安" },
+          { "id": "l4", "text": "心烦" }
+        ],
+        "right": [
+          { "id": "r1", "text": "心里着急、不舒服" },
+          { "id": "r2", "text": "下垂的样子" },
+          { "id": "r3", "text": "自己跟自己说话" },
+          { "id": "r4", "text": "心里不平静、不踏实" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r3", "l3": "r4", "l4": "r1" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象的耳朵原本是什么样的？",
+        "options": ["竖着的", "像扇子一样耷拉着", "圆圆的", "尖尖的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小动物们见到大象都说什么？",
+        "options": ["夸大象耳朵漂亮", "都问大象耳朵怎么耷拉着", "都不理大象", "邀请大象去玩"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象想出什么办法让自己的耳朵竖起来？",
+        "options": ["用胶水粘", "用两根竹竿撑起来", "请医生", "天天锻炼"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "耳朵竖起来后，大象碰到什么问题？",
+        "options": ["小虫子飞进耳朵眼，吵得他头痛心烦", "听不见声音", "走路不稳", "睡不着"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最重要的道理是？",
+        "options": [
+          "别人怎么说就怎么做",
+          "别人是别人，我是我；适合自己的才是最好的",
+          "竖着耳朵更聪明",
+          "耳朵越大越好"
+        ]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“他们都这么说，是不是我的耳朵真的有毛病啦？”这一句体现了大象的什么心理？",
+        "options": ["很自信", "怀疑、不安", "高兴", "生气"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“像扇子似的”是什么修辞？",
+        "options": ["拟人", "比喻", "夸张", "反问"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把故事顺序排好",
+        "tokens": ["小动物们说大象耳朵耷拉着", "大象不安想让耳朵竖起来", "用竹竿把耳朵撑起来", "小虫子飞进耳朵让他烦", "大象不再让耳朵竖起来"]
+      },
+      "answer": {
+        "ordered": [
+          "小动物们说大象耳朵耷拉着",
+          "大象不安想让耳朵竖起来",
+          "用竹竿把耳朵撑起来",
+          "小虫子飞进耳朵让他烦",
+          "大象不再让耳朵竖起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "耳",
+        "tokens": ["朵", "目", "环", "机", "苦", "硬", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“耳”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["朵", "目", "环", "机"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "病",
+        "tokens": ["人", "房", "毒", "情", "石", "硬", "苦"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“病”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["人", "房", "毒", "情"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句话最像是大象最后明白了的话？",
+        "options": [
+          "“人家是人家，我是我！”",
+          "“我不要耳朵了！”",
+          "“我得去找医生！”",
+          "“我以后不见小动物了！”"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "压",
+        "hint": "“黑沉沉地压下来”的“压”",
+        "options": ["yā", "yá", "yǎ", "yà"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蝉",
+        "hint": "“蝉一声也不出”的“蝉”",
+        "options": ["chán", "shàn", "chàn", "dān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蜘",
+        "hint": "“蜘蛛”的“蜘”",
+        "options": ["zhī", "zhí", "zhǐ", "chī"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蛛",
+        "hint": "“蜘蛛”的“蛛”",
+        "options": ["zhū", "zhǔ", "zhù", "shū"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "垂",
+        "hint": "“从网上垂下来”的“垂”",
+        "options": ["chuí", "chuǐ", "duǒ", "zhuì"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "响",
+        "hint": "“雷声越来越响”的“响”",
+        "options": ["xiāng", "xiǎng", "shǎng", "xiàng"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "渐",
+        "hint": "“渐渐地”的“渐”",
+        "options": ["jiān", "jiǎn", "jiàn", "qiàn"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扑",
+        "hint": "“迎面扑来”的“扑”",
+        "options": ["pū", "pú", "pǔ", "fū"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wū",
+        "sentence": "满天的__云。",
+        "blankPlaceholder": "__",
+        "character": "乌",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "乌" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chén",
+        "sentence": "黑__沉地压下来。",
+        "blankPlaceholder": "__",
+        "character": "沉",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "沉" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yā",
+        "sentence": "黑沉沉地__下来。",
+        "blankPlaceholder": "__",
+        "character": "压",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "压" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yíng",
+        "sentence": "清新的空气__面扑来。",
+        "blankPlaceholder": "__",
+        "character": "迎",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "迎" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xīn",
+        "sentence": "__鲜的空气迎面扑来。",
+        "blankPlaceholder": "__",
+        "character": "新",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "新" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "毛毛雨" },
+          { "id": "l2", "text": "阵雨" },
+          { "id": "l3", "text": "雷雨" },
+          { "id": "l4", "text": "暴雨" }
+        ],
+        "right": [
+          { "id": "r1", "text": "雨量很大、来得猛" },
+          { "id": "r2", "text": "下一阵停一阵" },
+          { "id": "r3", "text": "细细密密的小雨" },
+          { "id": "r4", "text": "伴有雷电的大雨" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r2", "l3": "r4", "l4": "r1" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "雷雨前" },
+          { "id": "l2", "text": "雷雨中" },
+          { "id": "l3", "text": "雷雨后" },
+          { "id": "l4", "text": "彩虹" }
+        ],
+        "right": [
+          { "id": "r1", "text": "天亮起来，空气清新，太阳出来" },
+          { "id": "r2", "text": "乌云压下来，蝉不叫，蜘蛛逃走" },
+          { "id": "r3", "text": "下大雨、雷电交加" },
+          { "id": "r4", "text": "雨过天晴时挂在天空" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r3", "l3": "r1", "l4": "r4" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文按什么顺序写雷雨？",
+        "options": ["从早到晚", "雷雨前→雷雨中→雷雨后", "从远到近", "由内到外"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“满天的乌云，黑沉沉地压下来。”这句中“压”字写出了什么？",
+        "options": ["乌云很轻", "乌云厚重，仿佛要把人压住，气氛沉闷", "乌云慢慢散开", "乌云在唱歌"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一只蜘蛛从网上垂下来，逃走了。”这一句让你感觉到？",
+        "options": ["蜘蛛喜欢下雨", "蜘蛛要打架", "雷雨快来了，连蜘蛛都怕", "蜘蛛在散步"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“哗，哗，哗，雨下起来了。”这句话用的是什么修辞或写法？",
+        "options": ["排比", "拟声（模仿声音）", "夸张", "比喻"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷雨过后，课文里写了哪些景物？",
+        "options": ["乌云、闪电、雷声", "太阳、彩虹、蝉、蜘蛛、青蛙", "蝙蝠、星星", "雪、风"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一条彩虹挂在天空”里的“挂”字最贴近下列哪种感觉？",
+        "options": ["彩虹真的被绳子挂住", "彩虹像被人挂上去一样横在空中（拟人/形象）", "彩虹很重", "彩虹是用钩子挂的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把雷雨过程的景物按时间顺序排好",
+        "tokens": ["乌云压下来", "大风吹起、蜘蛛逃走", "闪电雷声大作、下大雨", "太阳出来挂彩虹"]
+      },
+      "answer": {
+        "ordered": ["乌云压下来", "大风吹起、蜘蛛逃走", "闪电雷声大作、下大雨", "太阳出来挂彩虹"]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雨",
+        "tokens": ["水", "天", "伞", "点", "苦", "石", "黑"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“雨”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["水", "天", "伞", "点"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "新",
+        "tokens": ["鲜", "年", "闻", "旧", "苦", "硬", "石"],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“新”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["鲜", "年", "闻"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列对课文理解最贴切的是？",
+        "options": ["写雷雨，让我们感受夏天大自然的变化", "教我们如何躲雨", "教我们认识乌云", "讲蜘蛛的故事"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    }
+  ]
+}

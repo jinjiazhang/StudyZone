@@ -1,0 +1,297 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蛙",
+        "hint": "“青蛙”的“蛙”",
+        "options": ["wā", "wá", "wǎ", "guā"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "卖",
+        "hint": "“卖泥塘”的“卖”",
+        "options": ["mài", "mǎi", "mai", "mèi"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "塘",
+        "hint": "“泥塘”的“塘”",
+        "options": ["táng", "tāng", "tàng", "tǎng"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搬",
+        "hint": "“搬到城里”的“搬”",
+        "options": ["bān", "bàn", "bǎn", "fān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "吆",
+        "hint": "“吆喝”的“吆”",
+        "options": ["yāo", "yáo", "yào", "yǎo"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舒",
+        "hint": "“舒服”的“舒”",
+        "options": ["shū", "shù", "shǔ", "sū"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "栽",
+        "hint": "“栽树”的“栽”",
+        "options": ["zāi", "zǎi", "zài", "cái"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "愣",
+        "hint": "“愣住了”的“愣”",
+        "options": ["léng", "lèng", "lěng", "lèn"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ní",
+        "sentence": "青蛙卖__塘。",
+        "blankPlaceholder": "__",
+        "character": "泥",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "泥" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cǎo",
+        "sentence": "要是周围有些__就更好了。",
+        "blankPlaceholder": "__",
+        "character": "草",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "草" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shù",
+        "sentence": "栽了__、种了花。",
+        "blankPlaceholder": "__",
+        "character": "树",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "树" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huā",
+        "sentence": "蝴蝶在__丛中飞舞。",
+        "blankPlaceholder": "__",
+        "character": "花",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "花" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lù",
+        "sentence": "这儿还有道__通到城里。",
+        "blankPlaceholder": "__",
+        "character": "路",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "路" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "老牛" },
+          { "id": "l2", "text": "野鸭" },
+          { "id": "l3", "text": "小鸟" },
+          { "id": "l4", "text": "蝴蝶" }
+        ],
+        "right": [
+          { "id": "r1", "text": "在花丛中飞舞" },
+          { "id": "r2", "text": "建议周围要有些草" },
+          { "id": "r3", "text": "在树上唱歌" },
+          { "id": "r4", "text": "建议水多一些" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r2", "l2": "r4", "l3": "r3", "l4": "r1" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙为什么要卖泥塘？",
+        "options": ["他没钱", "他觉得这里不怎么样，想换些钱搬到城里住", "泥塘要拆", "他想换大一点的"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛建议泥塘改善什么？",
+        "options": ["周围多些草", "水多一点", "盖房子", "栽树种花"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "野鸭觉得泥塘缺什么？",
+        "options": ["少水", "少草", "少树", "少花"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙最后为什么不卖泥塘了？",
+        "options": [
+          "他找不到买家",
+          "他改造之后发现泥塘已经变成多么好的地方了，自己住挺好",
+          "泥塘卖不出价",
+          "妈妈不同意"
+        ]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最重要的道理是？",
+        "options": [
+          "听了大家的建议，把泥塘建得越来越好；改造和努力能让生活变得更美好",
+          "卖泥塘是浪费",
+          "动物的话不能听",
+          "搬到城里是最好的"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“吆喝”最接近下面哪个意思？",
+        "options": ["大声招呼，叫喊招揽顾客", "唱歌", "讲悄悄话", "聊天"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把故事顺序排好",
+        "tokens": [
+          "青蛙觉得泥塘不好，想卖掉",
+          "听老牛建议种草",
+          "听野鸭建议引水",
+          "栽树种花修路盖房子",
+          "发现泥塘很好，不再卖了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙觉得泥塘不好，想卖掉",
+          "听老牛建议种草",
+          "听野鸭建议引水",
+          "栽树种花修路盖房子",
+          "发现泥塘很好，不再卖了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "卖",
+        "tokens": ["买", "出", "主", "场", "云", "苦", "硬"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“卖”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["买", "出", "主", "场"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "草",
+        "tokens": ["地", "原", "坪", "丛", "石", "硬", "黑"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“草”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["地", "原", "坪", "丛"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "改造后的泥塘里有？",
+        "options": [
+          "树、花、草、水塘、道路、房子",
+          "只有水",
+          "只有泥",
+          "什么都没有"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    }
+  ]
+}

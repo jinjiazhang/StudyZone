@@ -1,0 +1,307 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "毛",
+        "hint": "“小毛虫”的“毛”",
+        "options": ["máo", "mào", "mǒu", "mán"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "昆",
+        "hint": "“昆虫”的“昆”",
+        "options": ["kūn", "kǔn", "kùn", "qūn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "怜",
+        "hint": "“可怜”的“怜”",
+        "options": ["lián", "lǐn", "liǎn", "liàn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挪",
+        "hint": "“挪动”的“挪”",
+        "options": ["nuò", "nuó", "nǔ", "nuō"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茧",
+        "hint": "“茧屋”的“茧”",
+        "options": ["jiǎn", "jiān", "jiàn", "qiǎn"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "悲",
+        "hint": "“悲观”的“悲”",
+        "options": ["bēi", "běi", "bèi", "pēi"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "羡",
+        "hint": "“羡慕”的“羡”",
+        "options": ["xiàn", "xiān", "xián", "shān"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "律",
+        "hint": "“规律”的“律”",
+        "options": ["lǜ", "lì", "lú", "lǔ"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chóng",
+        "sentence": "小毛__趴在叶子上。",
+        "blankPlaceholder": "__",
+        "character": "虫",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "虫" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yè",
+        "sentence": "趴在一片__子上。",
+        "blankPlaceholder": "__",
+        "character": "叶",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "叶" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "biàn",
+        "sentence": "时辰到了，它__成了一只飞蛾。",
+        "blankPlaceholder": "__",
+        "character": "变",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "变" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhī",
+        "sentence": "学会抽丝纺__。",
+        "blankPlaceholder": "__",
+        "character": "织",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "织" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guī",
+        "sentence": "万事万物都有自己的__律。",
+        "blankPlaceholder": "__",
+        "character": "规",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "规" },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "děng",
+        "sentence": "你要耐心__待。",
+        "blankPlaceholder": "__",
+        "character": "等",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "等" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "九牛二虎之力" },
+          { "id": "l2", "text": "笨手笨脚" },
+          { "id": "l3", "text": "色彩斑斓" },
+          { "id": "l4", "text": "生机勃勃" }
+        ],
+        "right": [
+          { "id": "r1", "text": "形容很大的力气" },
+          { "id": "r2", "text": "动作不灵活" },
+          { "id": "r3", "text": "形容富有生命力" },
+          { "id": "r4", "text": "颜色多而美丽" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r1", "l2": "r2", "l3": "r4", "l4": "r3" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "悲观" },
+          { "id": "l2", "text": "羡慕" },
+          { "id": "l3", "text": "耐心" },
+          { "id": "l4", "text": "规律" }
+        ],
+        "right": [
+          { "id": "r1", "text": "事物发展遵循的法则" },
+          { "id": "r2", "text": "看到别人的好处希望自己也有" },
+          { "id": "r3", "text": "心情低落、对前途没信心" },
+          { "id": "r4", "text": "不急躁，慢慢等待" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r3", "l2": "r2", "l3": "r4", "l4": "r1" }
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小毛虫开始时和别的昆虫相比？",
+        "options": ["跑得最快", "唱得最好", "既不会唱、不会跑、也不会飞", "最聪明"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小毛虫面对自己的“弱小”态度是？",
+        "options": ["很伤心", "很生气，要去打别人", "不悲观、不羡慕，做好自己该做的事", "天天哭"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小毛虫眼前最要紧的事是？",
+        "options": ["学唱歌", "学走路", "学抽丝纺织，给自己织一间牢固的茧屋", "学画画"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "声音对小毛虫说什么？",
+        "options": [
+          "“万事万物都有自己的规律，你要耐心等待，以后会明白的。”",
+          "“别等了，赶紧出去！”",
+          "“你太弱小了。”",
+          "“你不会变成飞蛾的。”"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "时辰到了，小毛虫变成了什么？",
+        "options": ["一只小鸟", "一只飞蛾", "一条大虫", "一只蜜蜂"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最重要的道理是？",
+        "options": [
+          "万事万物都有自己的规律，要耐心等待、踏实做好自己的事",
+          "毛虫一定会变飞蛾",
+          "懒惰最重要",
+          "羡慕别人就能成功"
+        ]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把小毛虫的成长过程排好",
+        "tokens": ["小毛虫只能挪动", "学抽丝纺织", "把自己裹进茧屋", "耐心等待", "变成飞蛾飞走"]
+      },
+      "answer": {
+        "ordered": [
+          "小毛虫只能挪动",
+          "学抽丝纺织",
+          "把自己裹进茧屋",
+          "耐心等待",
+          "变成飞蛾飞走"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "织",
+        "tokens": ["布", "网", "线", "毛", "苦", "硬", "石"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“织”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["布", "网", "线", "毛"]]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“尽心竭力”最接近哪种态度？",
+        "options": ["敷衍", "用尽全部心思和力气", "悲观", "羡慕"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    }
+  ]
+}
