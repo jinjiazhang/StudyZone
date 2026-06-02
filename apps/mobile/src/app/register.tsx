@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import { View, Text, TextInput, Pressable, StyleSheet, Alert } from 'react-native';
+import { View, Text, Pressable, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { ChevronLeft, User, Mail, Lock } from 'lucide-react-native';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
+import { AuthField } from '@/components/AuthField';
 
 export default function Register() {
   const router = useRouter();
@@ -45,120 +47,101 @@ export default function Register() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <View style={styles.mascotRow}>
-          <Mascot size={104} mood="cheer" />
-          <SpeechBubble>嘿！加入 StudyZone，第一天就能解锁连胜 🔥</SpeechBubble>
+        <Pressable style={styles.backBtn} onPress={() => router.replace('/login')} hitSlop={8}>
+          <ChevronLeft size={20} color={colors.inkSoft} />
+          <Text style={styles.backText}>返回</Text>
+        </Pressable>
+
+        <View style={styles.mascotCol}>
+          <Mascot size={96} mood="cheer" />
+          <View style={styles.bubbleWrap}>
+            <SpeechBubble tail="bottom">太好啦，咱们一起开始吧！🌱</SpeechBubble>
+          </View>
         </View>
 
-        <Text style={styles.title}>创建账号</Text>
+        <View style={styles.form}>
+          <AuthField
+            label="昵称"
+            icon={User}
+            placeholder="给自己起个名字"
+            value={nickname}
+            onChangeText={setNickname}
+            maxLength={30}
+          />
+          <AuthField
+            label="邮箱"
+            icon={Mail}
+            placeholder="you@studyzone.cn"
+            value={email}
+            onChangeText={setEmail}
+            keyboardType="email-address"
+          />
+          <AuthField
+            label="密码"
+            icon={Lock}
+            placeholder="至少 8 位"
+            value={password}
+            onChangeText={setPassword}
+            secure
+          />
 
-        <TextInput
-          value={nickname}
-          onChangeText={setNickname}
-          placeholder="昵称"
-          autoCapitalize="none"
-          maxLength={30}
-          style={styles.input}
-          placeholderTextColor={colors.inkSoft}
-        />
-        <TextInput
-          value={email}
-          onChangeText={setEmail}
-          placeholder="邮箱"
-          autoCapitalize="none"
-          keyboardType="email-address"
-          style={styles.input}
-          placeholderTextColor={colors.inkSoft}
-        />
-        <TextInput
-          value={password}
-          onChangeText={setPassword}
-          placeholder="密码（至少 8 位）"
-          secureTextEntry
-          style={styles.input}
-          placeholderTextColor={colors.inkSoft}
-        />
+          <Text style={styles.terms}>注册即表示同意《用户协议》与《隐私政策》</Text>
 
-        <Pressable
-          onPress={onRegister}
-          disabled={loading}
-          onPressIn={() => setPressed(true)}
-          onPressOut={() => setPressed(false)}
-          style={[
-            styles.button,
-            pressed && styles.buttonPressed,
-            loading && { opacity: 0.5 },
-          ]}
-        >
-          <Text style={styles.buttonText}>{loading ? '注册中…' : '注 册'}</Text>
-        </Pressable>
+          <Pressable
+            onPress={onRegister}
+            disabled={loading}
+            onPressIn={() => setPressed(true)}
+            onPressOut={() => setPressed(false)}
+            style={[styles.button, pressed && styles.buttonPressed, loading && { opacity: 0.5 }]}
+          >
+            <Text style={styles.buttonText}>{loading ? '注册中…' : '创建账号'}</Text>
+          </Pressable>
+        </View>
 
-        <Pressable onPress={() => router.replace('/login')}>
-          <Text style={styles.link}>已有账号？去登录</Text>
-        </Pressable>
+        <Text style={styles.bottomText}>
+          已有账号？
+          <Text style={styles.bottomLink} onPress={() => router.replace('/login')}>
+            {' '}登录
+          </Text>
+        </Text>
       </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  content: {
-    flex: 1,
-    padding: 24,
-    paddingTop: 40,
-    gap: 12,
-  },
-  mascotRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 28,
-    fontFamily: fonts.heavy,
-    color: colors.ink,
-    marginBottom: 8,
-  },
-  input: {
-    backgroundColor: colors.mist,
-    borderRadius: radius.lg,
-    borderWidth: 2,
-    borderColor: colors.line,
-    padding: 14,
-    fontSize: 16,
+  container: { flex: 1, backgroundColor: colors.white },
+  content: { flex: 1, paddingHorizontal: 26, paddingTop: 8, paddingBottom: 24 },
+  backBtn: { flexDirection: 'row', alignItems: 'center', gap: 2, alignSelf: 'flex-start', paddingVertical: 6 },
+  backText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.inkSoft },
+  mascotCol: { alignItems: 'center', marginBottom: 10 },
+  bubbleWrap: { marginTop: 8 },
+  form: { flex: 1, marginTop: 12 },
+  terms: {
     fontFamily: fonts.sansBold,
-    color: colors.ink,
+    fontSize: 11.5,
+    color: colors.inkFaint,
+    lineHeight: 17,
+    marginVertical: 14,
+    marginHorizontal: 4,
   },
   button: {
     backgroundColor: colors.green,
-    padding: 16,
+    paddingVertical: 16,
     borderRadius: radius.lg,
     borderWidth: 2,
-    borderBottomWidth: 4,
+    borderBottomWidth: 5,
     borderColor: colors.greenDark,
     alignItems: 'center',
-    marginTop: 8,
   },
-  buttonPressed: {
-    borderBottomWidth: 2,
-    transform: [{ translateY: 2 }],
-  },
+  buttonPressed: { borderBottomWidth: 2, transform: [{ translateY: 3 }] },
   buttonText: {
     color: colors.white,
     fontFamily: fonts.heavy,
-    fontSize: 16,
+    fontSize: 17,
     textTransform: 'uppercase',
     letterSpacing: 0.8,
   },
-  link: {
-    textAlign: 'center',
-    fontSize: 13,
-    fontFamily: fonts.heavy,
-    color: colors.inkSoft,
-    marginTop: 8,
-  },
+  bottomText: { textAlign: 'center', fontFamily: fonts.sansBold, fontSize: 14, color: colors.inkSoft },
+  bottomLink: { fontFamily: fonts.heavy, color: colors.greenDark },
 });

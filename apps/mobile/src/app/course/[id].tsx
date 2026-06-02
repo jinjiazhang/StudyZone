@@ -3,10 +3,20 @@ import { ScrollView, View, Text, Pressable, StyleSheet } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  withRepeat,
+  withTiming,
+  withSequence,
+  Easing,
+} from 'react-native-reanimated';
 import { BookOpen, Check, ChevronLeft, Lock, Star } from 'lucide-react-native';
+import type { LessonNodeDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
-import { colors, fonts, radius } from '@/lib/theme';
+import { colors, fonts, radius, shade } from '@/lib/theme';
+import { Mascot } from '@/components/Mascot';
 
 const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
 const OFFSET_PX = 36;
@@ -51,40 +61,14 @@ export default function Course() {
             <View style={styles.lessonPath}>
               {unit.lessons.map((lesson, idx) => {
                 const offset = OFFSET_PATTERN[idx % OFFSET_PATTERN.length] * OFFSET_PX;
-                const isLocked = !lesson.unlocked;
-                const isCurrent = lesson.unlocked && !lesson.completed;
-
                 return (
-                  <View key={lesson.lessonId} style={[styles.lessonNodeWrap, { marginLeft: offset + OFFSET_PX * 2 }]}>
-                    {isCurrent && (
-                      <View style={styles.startBubble}>
-                        <Text style={styles.startText}>开始</Text>
-                        <View style={styles.startBubbleArrow} />
-                      </View>
-                    )}
-                    <Pressable
-                      disabled={isLocked}
-                      onPress={() => router.push(`/lesson/${lesson.lessonId}`)}
-                      style={[
-                        styles.lessonNode,
-                        isLocked && styles.lessonNodeLocked,
-                        isCurrent && styles.lessonNodeCurrent,
-                      ]}
-                    >
-                      <View style={styles.nodeShine} />
-                      {isLocked ? (
-                        <Lock size={30} color="#B5B5B5" />
-                      ) : lesson.completed ? (
-                        <Check size={38} color={colors.white} strokeWidth={4} />
-                      ) : isCurrent ? (
-                        <Star size={38} color={colors.white} fill={colors.white} />
-                      ) : (
-                        <BookOpen size={34} color={colors.white} />
-                      )}
-                    </Pressable>
-                    <Text style={[styles.lessonName, isLocked && { opacity: 0.4 }]}>{lesson.name}</Text>
-                    <Text style={styles.lessonState}>{lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}</Text>
-                  </View>
+                  <LessonNode
+                    key={lesson.lessonId}
+                    lesson={lesson}
+                    color={unit.themeColor}
+                    offset={offset}
+                    onPress={() => router.push(`/lesson/${lesson.lessonId}`)}
+                  />
                 );
               })}
             </View>
@@ -102,6 +86,96 @@ export default function Course() {
 function getErrorMessage(error: unknown): string {
   if (error instanceof Error && error.message) return error.message;
   return '请确认已登录，并检查网络或后端服务状态。';
+}
+
+/** Serpentine lesson node: colour-tinted to its unit, with a pulse ring,
+ *  bobbing "开始" bubble and a path-side mascot on the current node. */
+function LessonNode({
+  lesson,
+  color,
+  offset,
+  onPress,
+}: {
+  lesson: LessonNodeDto;
+  color: string;
+  offset: number;
+  onPress: () => void;
+}) {
+  const isLocked = !lesson.unlocked;
+  const isCurrent = lesson.unlocked && !lesson.completed;
+  const base = isLocked ? '#D9DAD3' : color;
+  const bottom = isLocked ? '#C2C3BC' : shade(color, -18);
+
+  // animations
+  const ring = useSharedValue(0);
+  const bob = useSharedValue(0);
+  useEffect(() => {
+    if (!isCurrent) return;
+    ring.value = withRepeat(withTiming(1, { duration: 1600, easing: Easing.out(Easing.ease) }), -1, false);
+    bob.value = withRepeat(
+      withSequence(
+        withTiming(-5, { duration: 900, easing: Easing.inOut(Easing.ease) }),
+        withTiming(0, { duration: 900, easing: Easing.inOut(Easing.ease) }),
+      ),
+      -1,
+      true,
+    );
+  }, [isCurrent, ring, bob]);
+
+  const ringStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: 0.92 + ring.value * 0.33 }],
+    opacity: 0.85 * (1 - ring.value),
+  }));
+  const bobStyle = useAnimatedStyle(() => ({ transform: [{ translateY: bob.value }] }));
+
+  return (
+    <View style={[styles.lessonNodeWrap, { marginLeft: offset + OFFSET_PX * 2 }]}>
+      {/* path-side mascot on the current step */}
+      {isCurrent && (
+        <View style={[styles.nodeMascot, offset >= 0 ? { left: -86 } : { right: -86 }]}>
+          <Mascot size={76} mood="happy" />
+        </View>
+      )}
+      {isCurrent && (
+        <Animated.View style={[styles.startBubble, bobStyle]}>
+          <Text style={[styles.startText, { color }]}>开始</Text>
+          <View style={styles.startBubbleArrow} />
+        </Animated.View>
+      )}
+      <View>
+        {isCurrent && (
+          <Animated.View style={[styles.pulseRing, { borderColor: color }, ringStyle]} pointerEvents="none" />
+        )}
+        <Pressable
+          disabled={isLocked}
+          onPress={onPress}
+          style={[
+            styles.lessonNode,
+            { backgroundColor: base, borderBottomColor: bottom },
+            isCurrent && styles.lessonNodeCurrent,
+          ]}
+        >
+          <View style={styles.nodeShine} />
+          {isLocked ? (
+            <Lock size={28} color={colors.white} />
+          ) : lesson.completed ? (
+            <Check size={36} color={colors.white} strokeWidth={4} />
+          ) : isCurrent ? (
+            <Star size={36} color={colors.white} fill={colors.white} />
+          ) : (
+            <BookOpen size={32} color={colors.white} />
+          )}
+        </Pressable>
+      </View>
+      {!isLocked && (
+        <Text style={[styles.lessonName, { color: lesson.completed ? colors.inkFaint : color }]}>
+          {lesson.name}
+        </Text>
+      )}
+      {isLocked && <Text style={[styles.lessonName, { opacity: 0.4 }]}>{lesson.name}</Text>}
+      <Text style={styles.lessonState}>{lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}</Text>
+    </View>
+  );
 }
 
 function darken(hex: string): string {
@@ -126,7 +200,17 @@ const styles = StyleSheet.create({
   unitTitle: { fontFamily: fonts.heavy, fontSize: 20, color: colors.white, marginTop: 4 },
   unitProgress: { fontFamily: fonts.heavy, fontSize: 13, color: 'rgba(255,255,255,0.9)', marginTop: 8 },
   lessonPath: { alignItems: 'flex-start', paddingVertical: 24, gap: 30 },
-  lessonNodeWrap: { alignItems: 'center', gap: 6 },
+  lessonNodeWrap: { alignItems: 'center', gap: 6, position: 'relative' },
+  nodeMascot: { position: 'absolute', bottom: 0, zIndex: 1, alignItems: 'center' },
+  pulseRing: {
+    position: 'absolute',
+    top: -9,
+    left: -9,
+    right: -9,
+    bottom: -9,
+    borderRadius: 999,
+    borderWidth: 4,
+  },
   lessonNode: {
     width: 88,
     height: 88,
@@ -144,14 +228,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   lessonNodeCurrent: {
-    borderWidth: 8,
-    borderColor: colors.line,
-    borderBottomColor: colors.skyDark,
-  },
-  lessonNodeLocked: {
-    backgroundColor: colors.line,
-    borderBottomColor: '#C7C7C7',
-    opacity: 0.9,
+    borderWidth: 5,
+    borderColor: colors.white,
   },
   nodeShine: {
     position: 'absolute',

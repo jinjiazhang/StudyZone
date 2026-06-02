@@ -9,11 +9,16 @@ import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { resolveAssetUrl } from '@/lib/assets';
 import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
-import { colors, fonts, radius } from '@/lib/theme';
+import { colors, fonts, radius, withAlpha, SUBJECT_COLORS } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { StatPill } from '@/components/StatPill';
 import { SubjectPickerSheet } from '@/components/SubjectPickerSheet';
+
+/** Short glyph for a subject cover/badge — uses the canonical map, else 1st char. */
+function subjectGlyph(code: string, name: string): string {
+  return SUBJECT_COLORS[code]?.glyph ?? name.slice(0, 1);
+}
 
 export default function Learn() {
   const router = useRouter();
@@ -98,45 +103,63 @@ export default function Learn() {
 
         <Text style={styles.title}>我的课程</Text>
 
-        {subjectGroups.map(({ subject, current }) => (
+        {subjectGroups.map(({ subject, current }) => {
+          const glyph = subjectGlyph(subject.code, subject.name);
+          return (
           <View key={subject.id} style={styles.subjectSection}>
             <View style={styles.subjectHeader}>
-              <View style={[styles.colorDot, { backgroundColor: subject.color }]} />
+              <View style={[styles.subjectGlyph, { backgroundColor: withAlpha(subject.color, 0.14) }]}>
+                <Text style={[styles.subjectGlyphText, { color: subject.color }]}>{glyph}</Text>
+              </View>
               <Text style={styles.subjectName}>{subject.name}</Text>
               <View style={styles.divider} />
             </View>
 
             {current ? (
-              <View style={styles.cardWrap}>
+              <View style={styles.card}>
                 <Pressable
-                  style={styles.card}
+                  style={styles.cardTop}
                   onPress={() => router.push(`/course/${current.id}`)}
                 >
-                  <View style={[styles.cardCover, { borderColor: subject.color }]}>
+                  <View style={[styles.cardCover, { backgroundColor: subject.color }]}>
                     {resolveAssetUrl(current.coverImageUrl) ? (
                       <Image
                         source={{ uri: resolveAssetUrl(current.coverImageUrl) }}
                         style={styles.cardCoverImage}
                       />
-                    ) : null}
+                    ) : (
+                      <Text style={styles.cardCoverGlyph}>{glyph}</Text>
+                    )}
+                    <View style={styles.cardCoverBand}>
+                      <Text style={styles.cardCoverBandText} numberOfLines={1}>{subject.name}</Text>
+                    </View>
                   </View>
                   <View style={styles.cardBody}>
-                    <Text style={styles.cardTitle}>{current.name}</Text>
+                    <Text style={styles.cardTitle} numberOfLines={1}>{current.name}</Text>
                     <Text style={styles.cardDesc} numberOfLines={2}>{current.description}</Text>
                     <View style={styles.currentBadge}>
+                      <View style={[styles.currentDot, { backgroundColor: subject.color }]} />
                       <Text style={styles.currentBadgeText}>正在学习</Text>
                     </View>
                   </View>
-                  <ChevronRight size={20} color={colors.inkSoft} />
                 </Pressable>
-                <Pressable
-                  style={styles.switchBtn}
-                  onPress={() => setPickerSubject(subject)}
-                  hitSlop={6}
-                >
-                  <Repeat size={12} color={colors.inkSoft} />
-                  <Text style={styles.switchBtnText}>切换</Text>
-                </Pressable>
+                <View style={styles.cardFooter}>
+                  <Pressable
+                    style={styles.footerBtn}
+                    onPress={() => router.push(`/course/${current.id}`)}
+                  >
+                    <Text style={[styles.footerBtnText, { color: subject.color }]}>继续学习</Text>
+                    <ChevronRight size={16} color={subject.color} />
+                  </Pressable>
+                  <View style={styles.footerSep} />
+                  <Pressable
+                    style={styles.footerBtnNarrow}
+                    onPress={() => setPickerSubject(subject)}
+                  >
+                    <Repeat size={14} color={colors.inkSoft} />
+                    <Text style={styles.footerBtnTextMuted}>切换</Text>
+                  </Pressable>
+                </View>
               </View>
             ) : (
               <Pressable
@@ -159,7 +182,8 @@ export default function Learn() {
               </Pressable>
             )}
           </View>
-        ))}
+          );
+        })}
 
         {subjectGroups.length === 0 && (
           <View style={styles.emptyCard}>
@@ -232,33 +256,68 @@ const styles = StyleSheet.create({
   heroBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.greenDark },
 
   subjectSection: { gap: 8, marginBottom: 8 },
-  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  colorDot: { width: 14, height: 14, borderRadius: 999 },
-  subjectName: { fontFamily: fonts.heavy, fontSize: 16, color: colors.ink },
+  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  subjectGlyph: {
+    width: 26,
+    height: 26,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  subjectGlyphText: { fontFamily: fonts.heavy, fontSize: 13 },
+  subjectName: { fontFamily: fonts.heavy, fontSize: 15, color: colors.ink },
   divider: { flex: 1, height: 2, backgroundColor: colors.line, borderRadius: 999 },
 
-  cardWrap: { position: 'relative' },
   card: {
     backgroundColor: colors.white,
     borderRadius: radius.lg,
     borderWidth: 2,
-    borderColor: colors.line,
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 16,
-    gap: 14,
-  },
-  cardCover: {
-    width: 76,
-    height: 104,
-    borderRadius: radius.md,
-    borderWidth: 2,
-    backgroundColor: colors.white,
+    borderColor: colors.cardLine,
     overflow: 'hidden',
   },
+  cardTop: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 13,
+    gap: 13,
+  },
+  cardCover: {
+    width: 60,
+    height: 82,
+    borderRadius: radius.md,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    shadowColor: '#34322E',
+    shadowOpacity: 0.14,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 3,
+  },
+  cardCoverGlyph: {
+    position: 'absolute',
+    top: 11,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    fontFamily: fonts.heavy,
+    fontSize: 25,
+    color: colors.white,
+  },
+  cardCoverBand: {
+    width: '100%',
+    paddingVertical: 4,
+    backgroundColor: 'rgba(0,0,0,0.14)',
+  },
+  cardCoverBandText: {
+    textAlign: 'center',
+    fontFamily: fonts.heavy,
+    fontSize: 9.5,
+    color: 'rgba(255,255,255,0.92)',
+  },
   cardCoverEmpty: {
-    width: 76,
-    height: 104,
+    width: 60,
+    height: 82,
     borderRadius: radius.md,
     borderWidth: 2,
     borderStyle: 'dashed',
@@ -266,26 +325,48 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cardCoverImage: { width: '100%', height: '100%', resizeMode: 'contain' },
+  cardCoverImage: { width: '100%', height: '100%', resizeMode: 'cover' },
   cardBody: { flex: 1 },
-  cardTitle: { fontFamily: fonts.heavy, fontSize: 16, color: colors.ink },
-  cardDesc: { fontFamily: fonts.regular, fontSize: 13, color: colors.inkSoft, marginTop: 2 },
+  cardTitle: { fontFamily: fonts.heavy, fontSize: 15.5, color: colors.ink },
+  cardDesc: { fontFamily: fonts.regular, fontSize: 12.5, color: colors.inkSoft, marginTop: 2 },
 
   currentBadge: {
-    marginTop: 6,
+    marginTop: 8,
     alignSelf: 'flex-start',
-    backgroundColor: colors.mist,
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-    borderRadius: 999,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
   },
+  currentDot: { width: 7, height: 7, borderRadius: 999 },
   currentBadgeText: {
     fontFamily: fonts.heavy,
-    fontSize: 10,
+    fontSize: 11,
     color: colors.inkSoft,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
   },
+  cardFooter: {
+    flexDirection: 'row',
+    borderTopWidth: 2,
+    borderTopColor: colors.line,
+  },
+  footerBtn: {
+    flex: 1,
+    height: 42,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  footerBtnText: { fontFamily: fonts.heavy, fontSize: 13.5 },
+  footerSep: { width: 2, backgroundColor: colors.line },
+  footerBtnNarrow: {
+    width: 96,
+    height: 42,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  footerBtnTextMuted: { fontFamily: fonts.heavy, fontSize: 13.5, color: colors.inkSoft },
   chooseBadge: {
     marginTop: 8,
     alignSelf: 'flex-start',
@@ -301,26 +382,6 @@ const styles = StyleSheet.create({
     fontFamily: fonts.heavy,
     fontSize: 11,
     color: colors.white,
-  },
-
-  switchBtn: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    backgroundColor: colors.white,
-    borderWidth: 2,
-    borderColor: colors.line,
-    borderRadius: 999,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  switchBtnText: {
-    fontFamily: fonts.heavy,
-    fontSize: 11,
-    color: colors.inkSoft,
   },
 
   emptyCardCTA: {

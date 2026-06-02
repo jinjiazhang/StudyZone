@@ -191,19 +191,19 @@ export default function Lesson() {
                 </Text>
               )}
             </View>
-            <Pressable
-              onPress={next}
-              style={[
-                styles.feedbackBtn,
-                {
-                  backgroundColor: feedback.result === 'correct' ? colors.green : colors.rose,
-                  borderColor: feedback.result === 'correct' ? colors.greenDark : colors.roseDark,
-                },
-              ]}
-            >
-              <Text style={styles.feedbackBtnText}>{cursor + 1 < total ? '继 续' : '完 成'}</Text>
-            </Pressable>
           </View>
+          <Pressable
+            onPress={next}
+            style={[
+              styles.feedbackBtn,
+              {
+                backgroundColor: feedback.result === 'correct' ? colors.green : colors.rose,
+                borderColor: feedback.result === 'correct' ? colors.greenDark : colors.roseDark,
+              },
+            ]}
+          >
+            <Text style={styles.feedbackBtnText}>{cursor + 1 < total ? '继 续' : '完 成'}</Text>
+          </Pressable>
         </Animated.View>
       )}
     </SafeAreaView>
@@ -403,17 +403,19 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   feedbackBtn: {
+    marginTop: 14,
     borderRadius: radius.lg,
     borderWidth: 2,
     borderBottomWidth: 4,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    paddingVertical: 15,
+    alignItems: 'center',
   },
   feedbackBtnText: {
     fontFamily: fonts.heavy,
-    fontSize: 14,
+    fontSize: 16,
     color: colors.white,
     textTransform: 'uppercase',
+    letterSpacing: 0.8,
   },
 
   unsupported: {
