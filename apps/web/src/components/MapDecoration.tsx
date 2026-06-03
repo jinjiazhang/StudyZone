@@ -8,7 +8,7 @@ const decorationLayout = new Layout({
   alignment: Alignment.Center,
 });
 
-export function CourseMapRiveDecoration({ decoration }: { decoration: UnitMapDecorationDto }) {
+export function MapDecoration({ decoration }: { decoration: UnitMapDecorationDto }) {
   return (
     <Rive
       src={decoration.src}

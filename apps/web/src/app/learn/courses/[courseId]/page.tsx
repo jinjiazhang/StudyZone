@@ -9,7 +9,7 @@ import { BookOpen, Check, Lock, PlayCircle, Star } from 'lucide-react';
 import type { UnitMapDecorationDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
-import { CourseMapRiveDecoration } from '@/components/CourseMapRiveDecoration';
+import { MapDecoration } from '@/components/MapDecoration';
 
 export default function CoursePage() {
   const params = useParams<{ courseId: string }>();
@@ -188,7 +188,7 @@ function LessonDecoration({
         }px))`,
       }}
     >
-      <CourseMapRiveDecoration decoration={decoration} />
+      <MapDecoration decoration={decoration} />
     </div>
   );
 }

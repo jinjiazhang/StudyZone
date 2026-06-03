@@ -13,7 +13,7 @@ import Animated, {
 import { BookOpen, Check, ChevronLeft, Lock, PlayCircle, Star } from 'lucide-react-native';
 import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-types';
 
-import { CourseMapRiveDecoration } from '@/components/CourseMapRiveDecoration';
+import { MapDecoration } from '@/components/MapDecoration';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { colors, fonts, radius, shade, withAlpha } from '@/lib/theme';
@@ -263,7 +263,7 @@ function LessonDecoration({
         },
       ]}
     >
-      <CourseMapRiveDecoration decoration={decoration} size={size} />
+      <MapDecoration decoration={decoration} size={size} />
     </View>
   );
 }

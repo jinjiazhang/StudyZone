@@ -17,7 +17,7 @@ type NativeRiveViewProps = {
 
 const NativeRiveView = RiveView as unknown as (props: NativeRiveViewProps) => ReactElement;
 
-export const CourseMapRiveDecoration = memo(function CourseMapRiveDecoration({
+export const MapDecoration = memo(function MapDecoration({
   decoration,
   size,
 }: {
