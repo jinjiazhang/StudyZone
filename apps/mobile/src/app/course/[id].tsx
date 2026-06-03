@@ -16,7 +16,6 @@ import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-type
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { colors, fonts, radius, shade } from '@/lib/theme';
-import { Mascot } from '@/components/Mascot';
 import { CourseMapRiveDecoration } from '@/components/CourseMapRiveDecoration';
 
 const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
@@ -123,8 +122,7 @@ function getErrorMessage(error: unknown): string {
   return '请确认已登录，并检查网络或后端服务状态。';
 }
 
-/** Serpentine lesson node: colour-tinted to its unit, with a pulse ring,
- *  bobbing "开始" bubble and a path-side mascot on the current node. */
+/** Serpentine lesson node: colour-tinted to its unit, with a pulse ring and bobbing "开始" bubble. */
 function LessonNode({
   lesson,
   color,
@@ -198,12 +196,6 @@ function LessonNode({
           </View>
         );
       })}
-      {/* path-side mascot on the current step */}
-      {isCurrent && (
-        <View style={[styles.nodeMascot, offset >= 0 ? { left: -86 } : { right: -86 }]}>
-          <Mascot size={76} mood="happy" />
-        </View>
-      )}
       {isCurrent && (
         <Animated.View style={[styles.startBubble, bobStyle]}>
           <Text style={[styles.startText, { color }]}>开始</Text>
@@ -311,7 +303,6 @@ const styles = StyleSheet.create({
   riveDecorationRight: {
     left: 104,
   },
-  nodeMascot: { position: 'absolute', bottom: 0, zIndex: 1, alignItems: 'center' },
   pulseRing: {
     position: 'absolute',
     top: -9,
