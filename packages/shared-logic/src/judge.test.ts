@@ -81,6 +81,151 @@ describe('judge', () => {
     ).toBe(true);
   });
 
+  it('judges expression input against accepted normalized expressions', () => {
+    expect(
+      judge(
+        {
+          type: ExerciseType.EXPRESSION_INPUT,
+          statement: '看图列式',
+        },
+        { accepted: ['3+4', '4+3'] },
+        { accepted: ['4 + 3'] },
+      ),
+    ).toEqual({ correct: true, canonicalAnswer: '3+4' });
+  });
+
+  it('judges multi numeric input by blank order and tolerance', () => {
+    expect(
+      judge(
+        {
+          type: ExerciseType.MULTI_NUMERIC_INPUT,
+          statement: '17 ÷ 5 = __ ... __',
+          blanks: [{ id: 'quotient' }, { id: 'remainder' }],
+        },
+        { values: [3, 2], tolerances: [0, 0] },
+        { values: [3, 2] },
+      ),
+    ).toEqual({ correct: true, canonicalAnswer: '3 / 2' });
+  });
+
+  it('judges sequence ordering by item ids', () => {
+    expect(
+      judge(
+        {
+          type: ExerciseType.ORDER_SEQUENCE,
+          instruction: '从小到大排列',
+          items: [
+            { id: 'n12', text: '12' },
+            { id: 'n7', text: '7' },
+            { id: 'n30', text: '30' },
+          ],
+        },
+        { orderedIds: ['n7', 'n12', 'n30'] },
+        { orderedIds: ['n7', 'n12', 'n30'] },
+      ).correct,
+    ).toBe(true);
+  });
+
+  it('judges compare, drag-fill, clock, unit, fraction, table, and number-line math', () => {
+    expect(
+      judge(
+        { type: ExerciseType.COMPARE_INPUT, left: '3+4', right: '8' },
+        { operator: '<' },
+        { operator: '<' },
+      ).correct,
+    ).toBe(true);
+
+    expect(
+      judge(
+        {
+          type: ExerciseType.MATH_DRAG_FILL,
+          statement: ['3', null, '4', null, '7'],
+          tokens: ['+', '='],
+        },
+        { fills: ['+', '='] },
+        { fills: ['+', '='] },
+      ).correct,
+    ).toBe(true);
+
+    expect(
+      judge(
+        { type: ExerciseType.CLOCK_INPUT, statement: '钟面是几点？' },
+        { hour: 15, minute: 30 },
+        { hour: 3, minute: 30 },
+      ).correct,
+    ).toBe(true);
+
+    expect(
+      judge(
+        {
+          type: ExerciseType.UNIT_CONVERSION,
+          statement: '2米 = ?厘米',
+          fromUnit: '米',
+          toUnit: '厘米',
+        },
+        { value: 200, unit: '厘米' },
+        { value: 200, unit: '厘米' },
+      ).canonicalAnswer,
+    ).toBe('200厘米');
+
+    expect(
+      judge(
+        { type: ExerciseType.FRACTION_INPUT, statement: '涂色部分是多少？' },
+        { numerator: 1, denominator: 2, allowEquivalent: true },
+        { numerator: 2, denominator: 4 },
+      ).correct,
+    ).toBe(true);
+
+    expect(
+      judge(
+        {
+          type: ExerciseType.TABLE_READ,
+          question: '二班有多少人？',
+          columns: ['班级', '人数'],
+          rows: [{ 班级: '二班', 人数: 38 }],
+        },
+        { value: 38 },
+        { value: 38 },
+      ).correct,
+    ).toBe(true);
+
+    expect(
+      judge(
+        { type: ExerciseType.NUMBER_LINE, statement: '标出 0.5', min: 0, max: 1 },
+        { value: 0.5, tolerance: 0.01 },
+        { value: 0.49 },
+      ).correct,
+    ).toBe(true);
+  });
+
+  it('judges geometry choice and simple geometry drawing payloads', () => {
+    expect(
+      judge(
+        {
+          type: ExerciseType.GEOMETRY_CHOICE,
+          question: '哪个是直角？',
+          options: [
+            { id: 'a', label: '锐角' },
+            { id: 'b', label: '直角' },
+          ],
+        },
+        { correctOptionId: 'b' },
+        { correctOptionId: 'b' },
+      ),
+    ).toEqual({ correct: true, canonicalAnswer: '直角' });
+
+    expect(
+      judge(
+        {
+          type: ExerciseType.GEOMETRY_DRAW,
+          instruction: '连接 A、B 两点',
+        },
+        { expected: { lines: [{ from: 'A', to: 'B' }] } },
+        { drawing: { lines: [{ to: 'B', from: 'A' }] } },
+      ).correct,
+    ).toBe(true);
+  });
+
   it('judges pinyin-to-word by completion + mistake budget', () => {
     const prompt: ExercisePrompt = {
       type: ExerciseType.PINYIN_TO_WORD,

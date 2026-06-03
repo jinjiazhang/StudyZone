@@ -30,6 +30,30 @@ export enum ExerciseType {
   NUMERIC_INPUT = 'numeric_input',
   /** Single-choice multiple choice (math). */
   SINGLE_CHOICE = 'single_choice',
+  /** Type a mathematical expression, such as a formula or equation. */
+  EXPRESSION_INPUT = 'expression_input',
+  /** Fill several numeric blanks in one exercise. */
+  MULTI_NUMERIC_INPUT = 'multi_numeric_input',
+  /** Arrange numbers, times, lengths, or other math items in order. */
+  ORDER_SEQUENCE = 'order_sequence',
+  /** Fill in a comparison operator: <, >, or =. */
+  COMPARE_INPUT = 'compare_input',
+  /** Drag numbers, units, or symbols into math blanks. */
+  MATH_DRAG_FILL = 'math_drag_fill',
+  /** Choose from visual geometry options. */
+  GEOMETRY_CHOICE = 'geometry_choice',
+  /** Read or set a clock time. */
+  CLOCK_INPUT = 'clock_input',
+  /** Convert a value into another measurement unit. */
+  UNIT_CONVERSION = 'unit_conversion',
+  /** Enter a fraction as numerator and denominator. */
+  FRACTION_INPUT = 'fraction_input',
+  /** Answer a question by reading a table. */
+  TABLE_READ = 'table_read',
+  /** Locate a number on a number line. */
+  NUMBER_LINE = 'number_line',
+  /** Draw or mark geometry elements. */
+  GEOMETRY_DRAW = 'geometry_draw',
   /** Pick the correct pinyin for a Chinese character (Chinese subject). */
   PINYIN_CHOICE = 'pinyin_choice',
   /** Fill in the blank of a classical poem line (Chinese subject). */

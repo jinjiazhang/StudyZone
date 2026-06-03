@@ -19,11 +19,23 @@
 | 6 | `word_bank` | 词块组句 | 英语 / 语文 | 2 |
 | 7 | `single_choice` | 单选题 | 语文 / 数学 / 英语 | 1–3 |
 | 8 | `numeric_input` | 数字输入 | 数学 | 1–2 |
-| 9 | `pinyin_choice` | 拼音选择 | 语文 | 1–2 |
-| 10 | `pinyin_to_word` | 看拼音写字 | 语文 | 2–3 |
-| 11 | `poem_complete` | 古诗填空（单空）| 语文 | 2 |
-| 12 | `poem_multi_blank` | 古诗填空（多空）| 语文 | 3 |
-| 13 | `word_build` | 组词 | 语文 | 2 |
+| 9 | `expression_input` | 算式输入 | 数学 | 2 |
+| 10 | `multi_numeric_input` | 多空数字输入 | 数学 | 2 |
+| 11 | `order_sequence` | 排序题 | 数学 | 1–2 |
+| 12 | `compare_input` | 比较符号填空 | 数学 | 1–2 |
+| 13 | `math_drag_fill` | 数学拖拽填空 | 数学 | 2 |
+| 14 | `geometry_choice` | 几何图形选择 | 数学 | 1–2 |
+| 15 | `clock_input` | 钟表读写 | 数学 | 1–2 |
+| 16 | `unit_conversion` | 单位换算 | 数学 | 2 |
+| 17 | `fraction_input` | 分数输入 | 数学 | 2 |
+| 18 | `table_read` | 读表题 | 数学 | 2 |
+| 19 | `number_line` | 数轴定位 | 数学 | 2–3 |
+| 20 | `geometry_draw` | 几何作图/标记 | 数学 | 3 |
+| 21 | `pinyin_choice` | 拼音选择 | 语文 | 1–2 |
+| 22 | `pinyin_to_word` | 看拼音写字 | 语文 | 2–3 |
+| 23 | `poem_complete` | 古诗填空（单空）| 语文 | 2 |
+| 24 | `poem_multi_blank` | 古诗填空（多空）| 语文 | 3 |
+| 25 | `word_build` | 组词 | 语文 | 2 |
 
 ---
 
@@ -549,7 +561,494 @@
 
 ---
 
-## 九、`pinyin_choice` 拼音选择
+## 九、`expression_input` 算式输入
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"expression_input"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 题干，如"看图列式" |
+| `placeholder` | string | ❌ | 输入框占位提示 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `accepted` | string[] | 可接受的算式列表，判分时忽略空白 |
+
+### 判分规则
+
+用户提交的第一个表达式去除空白后，匹配 `accepted` 中任一表达式即正确。等价但形式不同的算式需要显式写入 `accepted`，例如 `["3+4", "4+3"]`。
+
+### 效果示例 — 数学（看图列式，难度 2）
+
+```json
+{
+  "type": "expression_input",
+  "prompt": {
+    "type": "expression_input",
+    "statement": "左边有3个苹果，右边有4个苹果，请列式表示一共有多少个。",
+    "placeholder": "例如：3+4"
+  },
+  "answer": { "accepted": ["3+4", "4+3"] },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十、`multi_numeric_input` 多空数字输入
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"multi_numeric_input"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 带多个空的题干 |
+| `blanks` | `{id, label?, suffix?}[]` | ✅ | 每个空的元数据，按显示顺序排列 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `values` | number[] | 每个空的正确数字 |
+| `tolerances` | number[] | 每个空的误差，省略则按 `0` 处理 |
+
+### 判分规则
+
+用户提交的 `values` 长度和顺序必须与答案一致，每一项都在对应误差范围内才正确。
+
+### 效果示例 — 数学（带余除法，难度 2）
+
+```json
+{
+  "type": "multi_numeric_input",
+  "prompt": {
+    "type": "multi_numeric_input",
+    "statement": "17 ÷ 5 = __ ... __",
+    "blanks": [
+      { "id": "quotient", "label": "商" },
+      { "id": "remainder", "label": "余数" }
+    ]
+  },
+  "answer": { "values": [3, 2], "tolerances": [0, 0] },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十一、`order_sequence` 排序题
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"order_sequence"` | ✅ | 固定值 |
+| `instruction` | string | ✅ | 排序要求，如"从小到大排列" |
+| `items` | `{id, text}[]` | ✅ | 候选项，客户端乱序展示 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `orderedIds` | string[] | 正确顺序的 item id 列表 |
+
+### 判分规则
+
+用户提交的 `orderedIds` 与答案完全一致即正确。
+
+### 效果示例 — 数学（数的大小排序，难度 1）
+
+```json
+{
+  "type": "order_sequence",
+  "prompt": {
+    "type": "order_sequence",
+    "instruction": "从小到大排列",
+    "items": [
+      { "id": "n12", "text": "12" },
+      { "id": "n7", "text": "7" },
+      { "id": "n30", "text": "30" }
+    ]
+  },
+  "answer": { "orderedIds": ["n7", "n12", "n30"] },
+  "difficulty": 1
+}
+```
+
+---
+
+## 十二、`compare_input` 比较符号填空
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"compare_input"` | ✅ | 固定值 |
+| `left` | string | ✅ | 左侧表达式 |
+| `right` | string | ✅ | 右侧表达式 |
+| `operators` | `("<" \| ">" \| "=")[]` | ❌ | 可选符号，默认 `<`、`>`、`=` |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `operator` | `"<" \| ">" \| "="` | 正确比较符号 |
+
+### 判分规则
+
+用户提交的符号与 `answer.operator` 完全一致即正确。
+
+### 效果示例 — 数学（算式比较，难度 1）
+
+```json
+{
+  "type": "compare_input",
+  "prompt": {
+    "type": "compare_input",
+    "left": "3 + 4",
+    "right": "8"
+  },
+  "answer": { "operator": "<" },
+  "difficulty": 1
+}
+```
+
+---
+
+## 十三、`math_drag_fill` 数学拖拽填空
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"math_drag_fill"` | ✅ | 固定值 |
+| `statement` | `Array<string \| null>` | ✅ | 题干片段，`null` 表示空 |
+| `tokens` | string[] | ✅ | 可拖拽的数字、单位或符号 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `fills` | string[] | 每个空的正确 token，按 `null` 出现顺序排列 |
+
+### 判分规则
+
+用户填入的 token 序列与 `fills` 完全一致即正确。
+
+### 效果示例 — 数学（补全算式，难度 2）
+
+```json
+{
+  "type": "math_drag_fill",
+  "prompt": {
+    "type": "math_drag_fill",
+    "statement": ["3", null, "4", null, "7"],
+    "tokens": ["+", "-", "=", ">"]
+  },
+  "answer": { "fills": ["+", "="] },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十四、`geometry_choice` 几何图形选择
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"geometry_choice"` | ✅ | 固定值 |
+| `question` | string | ✅ | 题干 |
+| `options` | `{id, label?, imageUrl?, svg?}[]` | ✅ | 图形选项，可用图片或 SVG |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `correctOptionId` | string | 正确图形选项 id |
+
+### 判分规则
+
+用户选择的 option id 与 `correctOptionId` 一致即正确。
+
+### 效果示例 — 数学（识别直角，难度 1）
+
+```json
+{
+  "type": "geometry_choice",
+  "prompt": {
+    "type": "geometry_choice",
+    "question": "下面哪个角是直角？",
+    "options": [
+      { "id": "a", "label": "锐角", "svg": "<svg></svg>" },
+      { "id": "b", "label": "直角", "svg": "<svg></svg>" }
+    ]
+  },
+  "answer": { "correctOptionId": "b" },
+  "difficulty": 1
+}
+```
+
+---
+
+## 十五、`clock_input` 钟表读写
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"clock_input"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 题干 |
+| `clock` | `{hour, minute}` | ❌ | 读钟题的钟面时间 |
+| `mode` | string | ❌ | UI 模式，如 `"read"` 或 `"set"` |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `hour` | number | 正确小时 |
+| `minute` | number | 正确分钟 |
+
+### 判分规则
+
+小时按 12 小时制归一化比较，分钟必须一致。
+
+### 效果示例 — 数学（读钟面，难度 1）
+
+```json
+{
+  "type": "clock_input",
+  "prompt": {
+    "type": "clock_input",
+    "statement": "钟面表示几点？",
+    "clock": { "hour": 3, "minute": 30 },
+    "mode": "read"
+  },
+  "answer": { "hour": 3, "minute": 30 },
+  "difficulty": 1
+}
+```
+
+---
+
+## 十六、`unit_conversion` 单位换算
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"unit_conversion"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 题干 |
+| `fromUnit` | string | ✅ | 原单位 |
+| `toUnit` | string | ✅ | 目标单位 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `value` | number | 正确数值 |
+| `unit` | string | 正确单位 |
+| `tolerance` | number | 允许误差，省略为 `0` |
+
+### 判分规则
+
+数值在误差范围内，且单位去掉首尾空格后一致，即正确。
+
+### 效果示例 — 数学（长度换算，难度 2）
+
+```json
+{
+  "type": "unit_conversion",
+  "prompt": {
+    "type": "unit_conversion",
+    "statement": "2米 = ?厘米",
+    "fromUnit": "米",
+    "toUnit": "厘米"
+  },
+  "answer": { "value": 200, "unit": "厘米" },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十七、`fraction_input` 分数输入
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"fraction_input"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 题干 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `numerator` | number | 分子 |
+| `denominator` | number | 分母 |
+| `allowEquivalent` | boolean | 是否接受等值分数 |
+
+### 判分规则
+
+默认要求分子分母完全一致；`allowEquivalent: true` 时接受等值分数，如 `2/4` 等于 `1/2`。
+
+### 效果示例 — 数学（认识几分之几，难度 2）
+
+```json
+{
+  "type": "fraction_input",
+  "prompt": {
+    "type": "fraction_input",
+    "statement": "把一个长方形平均分成4份，涂色2份，涂色部分是多少？"
+  },
+  "answer": { "numerator": 1, "denominator": 2, "allowEquivalent": true },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十八、`table_read` 读表题
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"table_read"` | ✅ | 固定值 |
+| `question` | string | ✅ | 题干 |
+| `columns` | string[] | ✅ | 表头 |
+| `rows` | `Record<string, string \| number>[]` | ✅ | 表格数据 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `accepted` | string[] | 文本答案列表 |
+| `value` | number | 数字答案 |
+| `tolerance` | number | 数字答案允许误差 |
+
+### 判分规则
+
+若 `answer.value` 存在，则按数字误差判分；否则按 `accepted` 文本忽略大小写和首尾空格判分。
+
+### 效果示例 — 数学（统计表读数，难度 2）
+
+```json
+{
+  "type": "table_read",
+  "prompt": {
+    "type": "table_read",
+    "question": "二班有多少人？",
+    "columns": ["班级", "人数"],
+    "rows": [
+      { "班级": "一班", "人数": 36 },
+      { "班级": "二班", "人数": 38 }
+    ]
+  },
+  "answer": { "value": 38 },
+  "difficulty": 2
+}
+```
+
+---
+
+## 十九、`number_line` 数轴定位
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"number_line"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 题干 |
+| `min` | number | ✅ | 数轴最小值 |
+| `max` | number | ✅ | 数轴最大值 |
+| `step` | number | ❌ | 刻度间隔 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `value` | number | 正确位置对应的数 |
+| `tolerance` | number | 允许误差 |
+
+### 判分规则
+
+用户提交的数值与 `value` 的差在 `tolerance` 内即正确。
+
+### 效果示例 — 数学（小数定位，难度 2）
+
+```json
+{
+  "type": "number_line",
+  "prompt": {
+    "type": "number_line",
+    "statement": "在数轴上标出 0.5",
+    "min": 0,
+    "max": 1,
+    "step": 0.1
+  },
+  "answer": { "value": 0.5, "tolerance": 0.01 },
+  "difficulty": 2
+}
+```
+
+---
+
+## 二十、`geometry_draw` 几何作图/标记
+
+### 字段说明
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"geometry_draw"` | ✅ | 固定值 |
+| `instruction` | string | ✅ | 作图或标记要求 |
+| `canvas` | `{width, height, backgroundImageUrl?}` | ❌ | 画布配置 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `expected` | unknown | 简单作图题的标准 payload |
+
+**用户提交**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `drawing` | unknown | 客户端提交的作图 payload |
+
+### 判分规则
+
+当前版本按结构化 payload 的稳定 JSON 结果精确比较。复杂作图题后续可扩展客户端几何识别或服务端专用 evaluator。
+
+### 效果示例 — 数学（连线，难度 3）
+
+```json
+{
+  "type": "geometry_draw",
+  "prompt": {
+    "type": "geometry_draw",
+    "instruction": "连接 A、B 两点画一条线段",
+    "canvas": { "width": 320, "height": 240 }
+  },
+  "answer": {
+    "expected": { "lines": [{ "from": "A", "to": "B" }] }
+  },
+  "difficulty": 3
+}
+```
+
+---
+
+## 二十一、`pinyin_choice` 拼音选择
 
 > **仅语文科目使用。**
 
@@ -609,7 +1108,7 @@
 
 ---
 
-## 十、`pinyin_to_word` 看拼音写字
+## 二十二、`pinyin_to_word` 看拼音写字
 
 > **仅语文科目使用。** 需要客户端集成 **HanziWriter** 笔画识别库。
 
@@ -676,7 +1175,7 @@
 
 ---
 
-## 十一、`poem_complete` 古诗填空（单空）
+## 二十三、`poem_complete` 古诗填空（单空）
 
 > **仅语文科目使用。**
 
@@ -722,7 +1221,7 @@
 
 ---
 
-## 十二、`poem_multi_blank` 古诗填空（多空）
+## 二十四、`poem_multi_blank` 古诗填空（多空）
 
 > **仅语文科目使用。** 是 `poem_complete` 的多空泛化版本，每个空有独立选项组。
 
@@ -775,7 +1274,7 @@
 
 ---
 
-## 十三、`word_build` 组词
+## 二十五、`word_build` 组词
 
 > **仅语文科目使用。**
 
@@ -879,8 +1378,20 @@
 ### 数学
 
 1. `numeric_input`（难度 1）— 直接计算，大量刷题
-2. `match_pairs`（难度 2）— 算式与结果配对，检验计算准确性
-3. `single_choice`（难度 2–3）— 应用题，考察建模与选择
+2. `compare_input`（难度 1）— 比较大小，建立数感
+3. `order_sequence`（难度 1–2）— 数、时间、长度排序
+4. `match_pairs`（难度 2）— 算式与结果、单位与含义配对
+5. `multi_numeric_input`（难度 2）— 竖式、带余除法、时间分段等多空题
+6. `expression_input`（难度 2）— 看图列式、根据题意写算式
+7. `math_drag_fill`（难度 2）— 拖拽数字、单位或符号补全关系
+8. `geometry_choice`（难度 1–2）— 识别角、图形、观察物体
+9. `clock_input`（难度 1–2）— 钟表读写
+10. `unit_conversion`（难度 2）— 长度、质量、人民币、面积单位换算
+11. `fraction_input`（难度 2）— 分数认识和等值分数
+12. `table_read`（难度 2）— 统计表、里程表、课程表读数
+13. `number_line`（难度 2–3）— 小数、分数、近似数定位
+14. `single_choice`（难度 2–3）— 应用题，考察建模与选择
+15. `geometry_draw`（难度 3）— 作图、标点、连线等综合操作
 
 ---
 
@@ -888,9 +1399,9 @@
 
 | 值 | 含义 | 典型题型 |
 |---|---|---|
-| 1 | 基础认知 | 单词选择、识字注音、直接计算 |
-| 2 | 理解运用 | 句子翻译、配对、组词、单空填诗 |
-| 3 | 综合产出 | 拼写输入、看拼音写字、多空填诗 |
+| 1 | 基础认知 | 单词选择、识字注音、直接计算、比较符号 |
+| 2 | 理解运用 | 句子翻译、配对、组词、单空填诗、多空数字、单位换算、读表 |
+| 3 | 综合产出 | 拼写输入、看拼音写字、多空填诗、数轴定位、几何作图 |
 
 `difficulty` 影响 SRS 权重和组卷时的难度分布，同一 lesson 内建议以 1→2→3 梯度排布。
 

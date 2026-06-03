@@ -109,6 +109,206 @@ export interface SingleChoiceAnswer {
 }
 
 // -----------------------------------------------------------------------------
+// Math (数学) — structured math-specific types
+// -----------------------------------------------------------------------------
+
+export interface ExpressionInputPrompt {
+  type: ExerciseType.EXPRESSION_INPUT;
+  /** Question statement, e.g. "看图列式" or "长方形面积怎么算？". */
+  statement: string;
+  /** Optional placeholder displayed in the expression input. */
+  placeholder?: string;
+}
+
+export interface ExpressionInputAnswer {
+  /**
+   * Accepted expression strings. Whitespace is ignored by the judge; include
+   * every equivalent form that should be accepted, e.g. ["3+4", "4+3"].
+   */
+  accepted: string[];
+}
+
+export type ExpressionInputAttemptPayload = ExpressionInputAnswer;
+
+export interface MultiNumericInputPrompt {
+  type: ExerciseType.MULTI_NUMERIC_INPUT;
+  statement: string;
+  /** One entry per blank, in display order. */
+  blanks: Array<{ id: string; label?: string; suffix?: string }>;
+}
+
+export interface MultiNumericInputAnswer {
+  values: number[];
+  /** One tolerance per blank; defaults to 0 when omitted. */
+  tolerances?: number[];
+}
+
+export type MultiNumericInputAttemptPayload = Pick<MultiNumericInputAnswer, 'values'>;
+
+export interface OrderSequencePrompt {
+  type: ExerciseType.ORDER_SEQUENCE;
+  instruction: string;
+  /** Candidate items shown to the learner in shuffled order. */
+  items: Array<{ id: string; text: string }>;
+}
+
+export interface OrderSequenceAnswer {
+  /** Ordered list of item ids. */
+  orderedIds: string[];
+}
+
+export type OrderSequenceAttemptPayload = OrderSequenceAnswer;
+
+export interface CompareInputPrompt {
+  type: ExerciseType.COMPARE_INPUT;
+  left: string;
+  right: string;
+  /** Allowed operators; defaults to ["<", ">", "="]. */
+  operators?: Array<'<' | '>' | '='>;
+}
+
+export interface CompareInputAnswer {
+  operator: '<' | '>' | '=';
+}
+
+export type CompareInputAttemptPayload = CompareInputAnswer;
+
+export interface MathDragFillPrompt {
+  type: ExerciseType.MATH_DRAG_FILL;
+  statement: Array<string | null>;
+  tokens: string[];
+}
+
+export interface MathDragFillAnswer {
+  /** Correct tokens for blanks, in the order the nulls appear in statement. */
+  fills: string[];
+}
+
+export type MathDragFillAttemptPayload = MathDragFillAnswer;
+
+export interface GeometryChoicePrompt {
+  type: ExerciseType.GEOMETRY_CHOICE;
+  question: string;
+  options: Array<{
+    id: string;
+    label?: string;
+    imageUrl?: string;
+    svg?: string;
+  }>;
+}
+
+export interface GeometryChoiceAnswer {
+  correctOptionId: string;
+}
+
+export type GeometryChoiceAttemptPayload = GeometryChoiceAnswer;
+
+export interface ClockInputPrompt {
+  type: ExerciseType.CLOCK_INPUT;
+  statement: string;
+  /** Optional source time for read-the-clock exercises. */
+  clock?: { hour: number; minute: number };
+  /** Usually "read" or "set"; kept open for future UI variants. */
+  mode?: string;
+}
+
+export interface ClockInputAnswer {
+  hour: number;
+  minute: number;
+}
+
+export type ClockInputAttemptPayload = ClockInputAnswer;
+
+export interface UnitConversionPrompt {
+  type: ExerciseType.UNIT_CONVERSION;
+  statement: string;
+  fromUnit: string;
+  toUnit: string;
+}
+
+export interface UnitConversionAnswer {
+  value: number;
+  unit: string;
+  tolerance?: number;
+}
+
+export type UnitConversionAttemptPayload = UnitConversionAnswer;
+
+export interface FractionInputPrompt {
+  type: ExerciseType.FRACTION_INPUT;
+  statement: string;
+}
+
+export interface FractionInputAnswer {
+  numerator: number;
+  denominator: number;
+  /** When true, equivalent fractions such as 2/4 and 1/2 are accepted. */
+  allowEquivalent?: boolean;
+}
+
+export type FractionInputAttemptPayload = Pick<
+  FractionInputAnswer,
+  'numerator' | 'denominator'
+>;
+
+export interface TableReadPrompt {
+  type: ExerciseType.TABLE_READ;
+  question: string;
+  columns: string[];
+  rows: Array<Record<string, string | number>>;
+}
+
+export interface TableReadAnswer {
+  /** Accepted text answers, compared after trimming and lowercasing. */
+  accepted?: string[];
+  /** Numeric answer for table calculations. */
+  value?: number;
+  tolerance?: number;
+}
+
+export interface TableReadAttemptPayload {
+  accepted?: string[];
+  value?: number;
+}
+
+export interface NumberLinePrompt {
+  type: ExerciseType.NUMBER_LINE;
+  statement: string;
+  min: number;
+  max: number;
+  step?: number;
+}
+
+export interface NumberLineAnswer {
+  value: number;
+  tolerance?: number;
+}
+
+export type NumberLineAttemptPayload = Pick<NumberLineAnswer, 'value'>;
+
+export interface GeometryDrawPrompt {
+  type: ExerciseType.GEOMETRY_DRAW;
+  instruction: string;
+  canvas?: {
+    width: number;
+    height: number;
+    backgroundImageUrl?: string;
+  };
+}
+
+export interface GeometryDrawAnswer {
+  /**
+   * Exact expected drawing/marking payload for simple cases. Rich geometric
+   * grading can evolve by adding a client-side evaluator later.
+   */
+  expected: unknown;
+}
+
+export interface GeometryDrawAttemptPayload {
+  drawing: unknown;
+}
+
+// -----------------------------------------------------------------------------
 // Chinese (语文) — pinyin & poem types
 // -----------------------------------------------------------------------------
 
@@ -300,6 +500,18 @@ export type ExercisePrompt =
   | WordBankPrompt
   | NumericInputPrompt
   | SingleChoicePrompt
+  | ExpressionInputPrompt
+  | MultiNumericInputPrompt
+  | OrderSequencePrompt
+  | CompareInputPrompt
+  | MathDragFillPrompt
+  | GeometryChoicePrompt
+  | ClockInputPrompt
+  | UnitConversionPrompt
+  | FractionInputPrompt
+  | TableReadPrompt
+  | NumberLinePrompt
+  | GeometryDrawPrompt
   | PinyinChoicePrompt
   | PoemCompletePrompt
   | PinyinToWordPrompt
@@ -315,6 +527,18 @@ export type ExerciseAnswer =
   | WordBankAnswer
   | NumericInputAnswer
   | SingleChoiceAnswer
+  | ExpressionInputAnswer
+  | MultiNumericInputAnswer
+  | OrderSequenceAnswer
+  | CompareInputAnswer
+  | MathDragFillAnswer
+  | GeometryChoiceAnswer
+  | ClockInputAnswer
+  | UnitConversionAnswer
+  | FractionInputAnswer
+  | TableReadAnswer
+  | NumberLineAnswer
+  | GeometryDrawAnswer
   | PinyinChoiceAnswer
   | PoemCompleteAnswer
   | PinyinToWordAnswer
@@ -336,6 +560,18 @@ export type UserAttemptPayload =
   | ImageChoiceAttemptPayload
   | WordBankAttemptPayload
   | NumericInputAttemptPayload
+  | ExpressionInputAttemptPayload
+  | MultiNumericInputAttemptPayload
+  | OrderSequenceAttemptPayload
+  | CompareInputAttemptPayload
+  | MathDragFillAttemptPayload
+  | GeometryChoiceAttemptPayload
+  | ClockInputAttemptPayload
+  | UnitConversionAttemptPayload
+  | FractionInputAttemptPayload
+  | TableReadAttemptPayload
+  | NumberLineAttemptPayload
+  | GeometryDrawAttemptPayload
   | PinyinToWordAttemptPayload
   | PoemMultiBlankAttemptPayload
   | WordBuildAttemptPayload;

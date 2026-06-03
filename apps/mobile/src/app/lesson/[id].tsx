@@ -24,6 +24,18 @@ import {
   PinyinToWordExercise,
   PoemMultiBlankExercise,
   WordBuildExercise,
+  ClockInputExercise,
+  CompareInputExercise,
+  ExpressionInputExercise,
+  FractionInputExercise,
+  GeometryChoiceExercise,
+  GeometryDrawExercise,
+  MathDragFillExercise,
+  MultiNumericInputExercise,
+  NumberLineExercise,
+  OrderSequenceExercise,
+  TableReadExercise,
+  UnitConversionExercise,
 } from '@/components/exercises';
 
 type Feedback = { result: 'correct' | 'wrong'; canonical?: string };
@@ -277,6 +289,102 @@ function ExerciseSwitch({
     case ExerciseType.NUMERIC_INPUT:
       return (
         <NumericInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.EXPRESSION_INPUT:
+      return (
+        <ExpressionInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.MULTI_NUMERIC_INPUT:
+      return (
+        <MultiNumericInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.ORDER_SEQUENCE:
+      return (
+        <OrderSequenceExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.COMPARE_INPUT:
+      return (
+        <CompareInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.MATH_DRAG_FILL:
+      return (
+        <MathDragFillExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.GEOMETRY_CHOICE:
+      return (
+        <GeometryChoiceExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.CLOCK_INPUT:
+      return (
+        <ClockInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.UNIT_CONVERSION:
+      return (
+        <UnitConversionExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.FRACTION_INPUT:
+      return (
+        <FractionInputExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.TABLE_READ:
+      return (
+        <TableReadExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.NUMBER_LINE:
+      return (
+        <NumberLineExercise
+          prompt={exercise.prompt as any}
+          onSubmit={onSubmit}
+          disabled={disabled}
+        />
+      );
+    case ExerciseType.GEOMETRY_DRAW:
+      return (
+        <GeometryDrawExercise
           prompt={exercise.prompt as any}
           onSubmit={onSubmit}
           disabled={disabled}
