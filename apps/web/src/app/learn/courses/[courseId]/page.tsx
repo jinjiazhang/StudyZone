@@ -127,22 +127,7 @@ function LessonNode({
     >
       <div className="relative h-24 w-24">
         {visibleDecorations.map((decoration) => (
-          <div
-            key={decoration.id}
-            className={clsx(
-              'pointer-events-none absolute top-1/2 z-0 hidden -translate-y-1/2 sm:block',
-              decoration.side === 'left' ? 'right-[calc(100%+26px)]' : 'left-[calc(100%+26px)]',
-            )}
-            style={{
-              width: decoration.size ?? 112,
-              height: decoration.size ?? 112,
-              transform: `translate(${decoration.offsetX ?? 0}px, calc(-50% + ${
-                decoration.offsetY ?? 0
-              }px))`,
-            }}
-          >
-            <CourseMapRiveDecoration decoration={decoration} />
-          </div>
+          <LessonDecoration key={decoration.id} decoration={decoration} offset={offset} />
         ))}
         <Link
           href={lesson.unlocked ? `/learn/lessons/${lesson.lessonId}` : '#'}
@@ -177,4 +162,42 @@ function LessonNode({
       </div>
     </li>
   );
+}
+
+function LessonDecoration({
+  decoration,
+  offset,
+}: {
+  decoration: UnitMapDecorationDto;
+  offset: number;
+}) {
+  const side = getDecorationSide(decoration, offset);
+
+  return (
+    <div
+      data-rive-decoration={decoration.id}
+      className={clsx(
+        'pointer-events-none absolute top-1/2 z-0 -translate-y-1/2 opacity-95',
+        side === 'left' ? 'right-[calc(100%+34px)]' : 'left-[calc(100%+34px)]',
+      )}
+      style={{
+        width: decoration.size ?? 112,
+        height: decoration.size ?? 112,
+        transform: `translate(${decoration.offsetX ?? 0}px, calc(-50% + ${
+          decoration.offsetY ?? 0
+        }px))`,
+      }}
+    >
+      <CourseMapRiveDecoration decoration={decoration} />
+    </div>
+  );
+}
+
+function getDecorationSide(
+  decoration: UnitMapDecorationDto,
+  offset: number,
+): UnitMapDecorationDto['side'] {
+  if (decoration.side === 'left' && offset <= 0) return 'right';
+  if (decoration.side === 'right' && offset >= 2) return 'left';
+  return decoration.side;
 }

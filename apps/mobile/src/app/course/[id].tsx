@@ -176,7 +176,7 @@ function LessonNode({
     <View style={[styles.lessonNodeWrap, { marginLeft: offset + OFFSET_PX * 2 }]}>
       {visibleDecorations.map((decoration) => {
         const side = getMobileDecorationSide(decoration, offset);
-        const size = Math.round((decoration.size ?? 112) * 0.74);
+        const size = Math.round((decoration.size ?? 128) * 0.66);
         return (
           <View
             key={decoration.id}
@@ -306,10 +306,10 @@ const styles = StyleSheet.create({
     zIndex: 0,
   },
   riveDecorationLeft: {
-    right: 96,
+    right: 104,
   },
   riveDecorationRight: {
-    left: 96,
+    left: 104,
   },
   nodeMascot: { position: 'absolute', bottom: 0, zIndex: 1, alignItems: 'center' },
   pulseRing: {
