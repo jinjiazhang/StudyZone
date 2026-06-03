@@ -19,7 +19,21 @@ export interface LessonDataUnit {
   orderIndex: number;
   title: string;
   themeColor: string;
+  mapDecorations: LessonDataMapDecoration[];
   lessons: LessonDataLesson[];
+}
+
+export interface LessonDataMapDecoration {
+  id: string;
+  src: string;
+  side: 'left' | 'right';
+  anchorLessonOrder: number;
+  stateMachine?: string;
+  animation?: string;
+  size?: number;
+  offsetX?: number;
+  offsetY?: number;
+  hiddenWhenLocked?: boolean;
 }
 
 export interface LessonDataCourse {
@@ -76,6 +90,7 @@ interface UnitsIndex {
     orderIndex: number;
     title: string;
     themeColor: string;
+    mapDecorations?: unknown;
   }>;
 }
 
@@ -194,10 +209,68 @@ function loadUnit(
       `${coursePath}/units.json`,
       `${unit.title}.themeColor`,
     ),
+    mapDecorations: normalizeMapDecorations(
+      unit.mapDecorations,
+      `${coursePath}/units.json`,
+      `${unit.title}.mapDecorations`,
+    ),
     lessons: lessonsIndex.lessons.map((lesson) =>
       loadLesson(unitDir, `${coursePath}/${unit.dir}`, lesson),
     ),
   };
+}
+
+function normalizeMapDecorations(
+  value: unknown,
+  filePath: string,
+  field: string,
+): LessonDataMapDecoration[] {
+  if (value === undefined) return [];
+  assertArray(value, filePath, field);
+
+  return value.map((decoration, index) => {
+    const itemField = `${field}[${index}]`;
+    assertPlainObject(decoration, filePath, itemField);
+
+    const side = requiredString(decoration.side, filePath, `${itemField}.side`);
+    if (side !== 'left' && side !== 'right') {
+      throw new Error(`Invalid lesson data: ${filePath} ${itemField}.side must be left or right`);
+    }
+
+    const normalized: LessonDataMapDecoration = {
+      id: requiredString(decoration.id, filePath, `${itemField}.id`),
+      src: requiredString(decoration.src, filePath, `${itemField}.src`),
+      side,
+      anchorLessonOrder: requiredNumber(
+        decoration.anchorLessonOrder,
+        filePath,
+        `${itemField}.anchorLessonOrder`,
+      ),
+    };
+    const stateMachine = optionalString(
+      decoration.stateMachine,
+      filePath,
+      `${itemField}.stateMachine`,
+    );
+    const animation = optionalString(decoration.animation, filePath, `${itemField}.animation`);
+    const size = optionalNumber(decoration.size, filePath, `${itemField}.size`);
+    const offsetX = optionalNumber(decoration.offsetX, filePath, `${itemField}.offsetX`);
+    const offsetY = optionalNumber(decoration.offsetY, filePath, `${itemField}.offsetY`);
+    const hiddenWhenLocked = optionalBoolean(
+      decoration.hiddenWhenLocked,
+      filePath,
+      `${itemField}.hiddenWhenLocked`,
+    );
+
+    if (stateMachine !== undefined) normalized.stateMachine = stateMachine;
+    if (animation !== undefined) normalized.animation = animation;
+    if (size !== undefined) normalized.size = size;
+    if (offsetX !== undefined) normalized.offsetX = offsetX;
+    if (offsetY !== undefined) normalized.offsetY = offsetY;
+    if (hiddenWhenLocked !== undefined) normalized.hiddenWhenLocked = hiddenWhenLocked;
+
+    return normalized;
+  });
 }
 
 function loadLesson(
@@ -282,9 +355,28 @@ function requiredString(value: unknown, filePath: string, field: string): string
   return value;
 }
 
+function optionalString(value: unknown, filePath: string, field: string): string | undefined {
+  if (value === undefined) return undefined;
+  assertString(value, filePath, field);
+  return value;
+}
+
 function requiredNumber(value: unknown, filePath: string, field: string): number {
   if (!Number.isInteger(value)) {
     throw new Error(`Invalid lesson data: ${filePath} ${field} must be an integer`);
+  }
+  return value;
+}
+
+function optionalNumber(value: unknown, filePath: string, field: string): number | undefined {
+  if (value === undefined) return undefined;
+  return requiredNumber(value, filePath, field);
+}
+
+function optionalBoolean(value: unknown, filePath: string, field: string): boolean | undefined {
+  if (value === undefined) return undefined;
+  if (typeof value !== 'boolean') {
+    throw new Error(`Invalid lesson data: ${filePath} ${field} must be a boolean`);
   }
   return value;
 }

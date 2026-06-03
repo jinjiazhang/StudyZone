@@ -25,9 +25,7 @@ describe('ContentService admin content', () => {
           orderIndex: 1,
           title: 'Next',
           themeColor: '#58CC02',
-          lessons: [
-            { id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 },
-          ],
+          lessons: [{ id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 }],
         },
       ],
     });
@@ -62,9 +60,7 @@ describe('ContentService admin content', () => {
           orderIndex: 1,
           title: 'Next',
           themeColor: '#58CC02',
-          lessons: [
-            { id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 },
-          ],
+          lessons: [{ id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 }],
         },
       ],
     });
@@ -77,6 +73,43 @@ describe('ContentService admin content', () => {
     const tree = await service.getCourseTree('user-1', 'course-1');
 
     expect(tree[1].lessons[0].unlocked).toBe(true);
+  });
+
+  it('returns unit map decorations in the course tree', async () => {
+    const prisma = createPrismaMock();
+    prisma.course.findUnique.mockResolvedValue({
+      id: 'course-1',
+      units: [
+        {
+          id: 'unit-1',
+          orderIndex: 0,
+          title: 'Basics',
+          themeColor: '#1CB0F6',
+          mapDecorations: [
+            {
+              id: 'duo-clock',
+              src: '/assets/rive/math/duo-clock.riv',
+              side: 'left',
+              anchorLessonOrder: 0,
+            },
+          ],
+          lessons: [{ id: 'lesson-1', orderIndex: 0, title: 'One', icon: '1', exerciseCount: 1 }],
+        },
+      ],
+    });
+    prisma.userLessonProgress.findMany.mockResolvedValue([]);
+
+    const service = new ContentService(prisma as unknown as PrismaService);
+    const tree = await service.getCourseTree('user-1', 'course-1');
+
+    expect(tree[0].mapDecorations).toEqual([
+      {
+        id: 'duo-clock',
+        src: '/assets/rive/math/duo-clock.riv',
+        side: 'left',
+        anchorLessonOrder: 0,
+      },
+    ]);
   });
 
   it('returns nested course content including exercise answers for CMS editing', async () => {

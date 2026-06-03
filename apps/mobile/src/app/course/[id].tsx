@@ -12,11 +12,12 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 import { BookOpen, Check, ChevronLeft, Lock, Star } from 'lucide-react-native';
-import type { LessonNodeDto } from '@studyzone/shared-types';
+import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { colors, fonts, radius, shade } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
+import { CourseMapRiveDecoration } from '@/components/CourseMapRiveDecoration';
 
 const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
 const OFFSET_PX = 36;
@@ -32,7 +33,14 @@ export default function Course() {
     if (id && accessToken) enroll.mutate();
   }, [id, accessToken]);
 
-  const { data: tree, error, isError, isLoading, isFetching, refetch } = useQuery({
+  const {
+    data: tree,
+    error,
+    isError,
+    isLoading,
+    isFetching,
+    refetch,
+  } = useQuery({
     queryKey: ['tree', id],
     queryFn: () => api.getCourseTree(id!),
     enabled: !!id && !!accessToken,
@@ -50,23 +58,33 @@ export default function Course() {
       <ScrollView contentContainerStyle={styles.scroll}>
         {tree?.map((unit) => (
           <View key={unit.unitId} style={styles.unitBlock}>
-            <View style={[styles.unitHeader, { backgroundColor: unit.themeColor, borderBottomColor: darken(unit.themeColor) }]}>
+            <View
+              style={[
+                styles.unitHeader,
+                { backgroundColor: unit.themeColor, borderBottomColor: darken(unit.themeColor) },
+              ]}
+            >
               <Text style={styles.unitSub}>第 {unit.unitOrder + 1} 单元</Text>
               <Text style={styles.unitTitle}>{unit.unitTitle}</Text>
               <Text style={styles.unitProgress}>
-                {unit.lessons.filter((lesson) => lesson.completed).length}/{unit.lessons.length} 关完成
+                {unit.lessons.filter((lesson) => lesson.completed).length}/{unit.lessons.length}{' '}
+                关完成
               </Text>
             </View>
 
             <View style={styles.lessonPath}>
               {unit.lessons.map((lesson, idx) => {
                 const offset = OFFSET_PATTERN[idx % OFFSET_PATTERN.length] * OFFSET_PX;
+                const decorations = (unit.mapDecorations ?? []).filter(
+                  (decoration) => decoration.anchorLessonOrder === lesson.order,
+                );
                 return (
                   <LessonNode
                     key={lesson.lessonId}
                     lesson={lesson}
                     color={unit.themeColor}
                     offset={offset}
+                    decorations={decorations}
                     onPress={() => router.push(`/lesson/${lesson.lessonId}`)}
                   />
                 );
@@ -75,9 +93,26 @@ export default function Course() {
           </View>
         ))}
 
-        {showLoading && <View style={styles.loading}><Text style={styles.loadingText}>加载课程地图中…</Text></View>}
-        {authHydrated && !accessToken && <View style={styles.stateCard}><Text style={styles.stateTitle}>需要先登录</Text><Text style={styles.stateText}>登录后才能加载你的课程地图和学习进度。</Text></View>}
-        {isError && accessToken && <View style={styles.stateCard}><Text style={styles.stateTitle}>课程地图加载失败</Text><Text style={styles.stateText}>{getErrorMessage(error)}</Text><Pressable onPress={() => refetch()} style={styles.primaryButton}><Text style={styles.primaryButtonText}>重试</Text></Pressable></View>}
+        {showLoading && (
+          <View style={styles.loading}>
+            <Text style={styles.loadingText}>加载课程地图中…</Text>
+          </View>
+        )}
+        {authHydrated && !accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>需要先登录</Text>
+            <Text style={styles.stateText}>登录后才能加载你的课程地图和学习进度。</Text>
+          </View>
+        )}
+        {isError && accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>课程地图加载失败</Text>
+            <Text style={styles.stateText}>{getErrorMessage(error)}</Text>
+            <Pressable onPress={() => refetch()} style={styles.primaryButton}>
+              <Text style={styles.primaryButtonText}>重试</Text>
+            </Pressable>
+          </View>
+        )}
       </ScrollView>
     </SafeAreaView>
   );
@@ -94,24 +129,33 @@ function LessonNode({
   lesson,
   color,
   offset,
+  decorations,
   onPress,
 }: {
   lesson: LessonNodeDto;
   color: string;
   offset: number;
+  decorations: UnitMapDecorationDto[];
   onPress: () => void;
 }) {
   const isLocked = !lesson.unlocked;
   const isCurrent = lesson.unlocked && !lesson.completed;
   const base = isLocked ? '#D9DAD3' : color;
   const bottom = isLocked ? '#C2C3BC' : shade(color, -18);
+  const visibleDecorations = decorations.filter(
+    (decoration) => lesson.unlocked || !decoration.hiddenWhenLocked,
+  );
 
   // animations
   const ring = useSharedValue(0);
   const bob = useSharedValue(0);
   useEffect(() => {
     if (!isCurrent) return;
-    ring.value = withRepeat(withTiming(1, { duration: 1600, easing: Easing.out(Easing.ease) }), -1, false);
+    ring.value = withRepeat(
+      withTiming(1, { duration: 1600, easing: Easing.out(Easing.ease) }),
+      -1,
+      false,
+    );
     bob.value = withRepeat(
       withSequence(
         withTiming(-5, { duration: 900, easing: Easing.inOut(Easing.ease) }),
@@ -130,6 +174,30 @@ function LessonNode({
 
   return (
     <View style={[styles.lessonNodeWrap, { marginLeft: offset + OFFSET_PX * 2 }]}>
+      {visibleDecorations.map((decoration) => {
+        const side = getMobileDecorationSide(decoration, offset);
+        const size = Math.round((decoration.size ?? 112) * 0.74);
+        return (
+          <View
+            key={decoration.id}
+            pointerEvents="none"
+            style={[
+              styles.riveDecoration,
+              side === 'left' ? styles.riveDecorationLeft : styles.riveDecorationRight,
+              {
+                width: size,
+                height: size,
+                transform: [
+                  { translateX: decoration.offsetX ?? 0 },
+                  { translateY: decoration.offsetY ?? 0 },
+                ],
+              },
+            ]}
+          >
+            <CourseMapRiveDecoration decoration={decoration} size={size} />
+          </View>
+        );
+      })}
       {/* path-side mascot on the current step */}
       {isCurrent && (
         <View style={[styles.nodeMascot, offset >= 0 ? { left: -86 } : { right: -86 }]}>
@@ -144,7 +212,10 @@ function LessonNode({
       )}
       <View>
         {isCurrent && (
-          <Animated.View style={[styles.pulseRing, { borderColor: color }, ringStyle]} pointerEvents="none" />
+          <Animated.View
+            style={[styles.pulseRing, { borderColor: color }, ringStyle]}
+            pointerEvents="none"
+          />
         )}
         <Pressable
           disabled={isLocked}
@@ -173,9 +244,20 @@ function LessonNode({
         </Text>
       )}
       {isLocked && <Text style={[styles.lessonName, { opacity: 0.4 }]}>{lesson.name}</Text>}
-      <Text style={styles.lessonState}>{lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}</Text>
+      <Text style={styles.lessonState}>
+        {lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}
+      </Text>
     </View>
   );
+}
+
+function getMobileDecorationSide(
+  decoration: UnitMapDecorationDto,
+  offset: number,
+): UnitMapDecorationDto['side'] {
+  if (decoration.side === 'left' && offset <= 0) return 'right';
+  if (decoration.side === 'right' && offset >= OFFSET_PX * 2) return 'left';
+  return decoration.side;
 }
 
 function darken(hex: string): string {
@@ -191,16 +273,44 @@ function darken(hex: string): string {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.white },
-  backBtn: { flexDirection: 'row', alignItems: 'center', gap: 4, paddingHorizontal: 16, paddingVertical: 10 },
+  backBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+  },
   backText: { fontFamily: fonts.heavy, color: colors.inkSoft, fontSize: 14 },
   scroll: { padding: 16, paddingBottom: 48, gap: 32 },
   unitBlock: {},
   unitHeader: { borderRadius: radius.lg, padding: 16, borderBottomWidth: 6 },
-  unitSub: { fontFamily: fonts.heavy, fontSize: 10, color: 'rgba(255,255,255,0.8)', textTransform: 'uppercase', letterSpacing: 1 },
+  unitSub: {
+    fontFamily: fonts.heavy,
+    fontSize: 10,
+    color: 'rgba(255,255,255,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
   unitTitle: { fontFamily: fonts.heavy, fontSize: 20, color: colors.white, marginTop: 4 },
-  unitProgress: { fontFamily: fonts.heavy, fontSize: 13, color: 'rgba(255,255,255,0.9)', marginTop: 8 },
+  unitProgress: {
+    fontFamily: fonts.heavy,
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.9)',
+    marginTop: 8,
+  },
   lessonPath: { alignItems: 'flex-start', paddingVertical: 24, gap: 30 },
   lessonNodeWrap: { alignItems: 'center', gap: 6, position: 'relative' },
+  riveDecoration: {
+    position: 'absolute',
+    top: 18,
+    zIndex: 0,
+  },
+  riveDecorationLeft: {
+    right: 96,
+  },
+  riveDecorationRight: {
+    left: 96,
+  },
   nodeMascot: { position: 'absolute', bottom: 0, zIndex: 1, alignItems: 'center' },
   pulseRing: {
     position: 'absolute',
@@ -264,13 +374,24 @@ const styles = StyleSheet.create({
     borderColor: colors.line,
     transform: [{ rotate: '45deg' }],
   },
-  lessonName: { fontFamily: fonts.heavy, fontSize: 12, color: colors.ink, textAlign: 'center', maxWidth: 100 },
+  lessonName: {
+    fontFamily: fonts.heavy,
+    fontSize: 12,
+    color: colors.ink,
+    textAlign: 'center',
+    maxWidth: 100,
+  },
   lessonState: { fontFamily: fonts.sansBold, fontSize: 10, color: colors.inkSoft },
   loading: { alignItems: 'center', paddingVertical: 40 },
   loadingText: { fontFamily: fonts.heavy, color: colors.inkSoft },
   stateCard: { backgroundColor: '#F8FAFC', borderRadius: radius.lg, padding: 16, gap: 10 },
   stateTitle: { fontFamily: fonts.heavy, fontSize: 18, color: colors.ink },
   stateText: { fontFamily: fonts.sans, color: colors.inkSoft, lineHeight: 20 },
-  primaryButton: { backgroundColor: colors.green, borderRadius: radius.lg, paddingVertical: 14, alignItems: 'center' },
+  primaryButton: {
+    backgroundColor: colors.green,
+    borderRadius: radius.lg,
+    paddingVertical: 14,
+    alignItems: 'center',
+  },
   primaryButtonText: { fontFamily: fonts.heavy, color: colors.white, fontSize: 14 },
 });

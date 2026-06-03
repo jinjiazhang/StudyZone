@@ -102,7 +102,21 @@ export interface CourseTreeNode {
   unitTitle: string;
   unitOrder: number;
   themeColor: string;
+  mapDecorations: UnitMapDecorationDto[];
   lessons: LessonNodeDto[];
+}
+
+export interface UnitMapDecorationDto {
+  id: string;
+  src: string;
+  side: 'left' | 'right';
+  anchorLessonOrder: number;
+  stateMachine?: string;
+  animation?: string;
+  size?: number;
+  offsetX?: number;
+  offsetY?: number;
+  hiddenWhenLocked?: boolean;
 }
 
 export interface LessonNodeDto {
@@ -127,6 +141,7 @@ export interface AdminUnitDto {
   orderIndex: number;
   title: string;
   themeColor: string;
+  mapDecorations: UnitMapDecorationDto[];
   lessons: AdminLessonDto[];
 }
 

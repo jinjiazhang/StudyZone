@@ -128,12 +128,13 @@ model Course {
 }
 
 model Unit {
-  id         String @id @default(cuid())
-  course     Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  courseId   String
-  orderIndex Int
-  title      String
-  themeColor String @default("#3FB984")
+  id             String @id @default(cuid())
+  course         Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  courseId       String
+  orderIndex     Int
+  title          String
+  themeColor     String @default("#3FB984")
+  mapDecorations Json?
 
   lessons Lesson[]
 

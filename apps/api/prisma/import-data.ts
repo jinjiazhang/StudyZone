@@ -7,7 +7,7 @@
  *   • Reset-and-reimport behavior for curriculum content.
  *   • A demo user (demo@studyzone.dev / studyzone).
  */
-import { PrismaClient } from '@prisma/client';
+import { Prisma, PrismaClient } from '@prisma/client';
 import * as argon2 from 'argon2';
 
 import {
@@ -164,6 +164,7 @@ async function buildCourseContent(courseId: string, content: LessonDataCourse) {
       unitData.orderIndex,
       unitData.title,
       unitData.themeColor,
+      unitData.mapDecorations,
     );
     for (const lessonData of unitData.lessons) {
       await buildLesson(unit.id, lessonData);
@@ -171,9 +172,21 @@ async function buildCourseContent(courseId: string, content: LessonDataCourse) {
   }
 }
 
-async function upsertUnit(courseId: string, orderIndex: number, title: string, themeColor: string) {
+async function upsertUnit(
+  courseId: string,
+  orderIndex: number,
+  title: string,
+  themeColor: string,
+  mapDecorations: LessonDataCourse['units'][number]['mapDecorations'],
+) {
   return prisma.unit.create({
-    data: { courseId, orderIndex, title, themeColor },
+    data: {
+      courseId,
+      orderIndex,
+      title,
+      themeColor,
+      mapDecorations: mapDecorations as Prisma.InputJsonValue,
+    },
   });
 }
 

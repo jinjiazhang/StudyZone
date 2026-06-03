@@ -20,11 +20,11 @@ export function GeometryChoiceExercise({
             key={option.id}
             disabled={disabled}
             onPress={() => setPick(option.id)}
-            style={[s.optionTile, mathStyles.geometryTile, pick === option.id && s.optionTileActive]}
+            style={[s.optionTile, mathStyles.geometryChoiceTile, pick === option.id && s.optionTileActive]}
           >
             {option.imageUrl && <Image source={{ uri: option.imageUrl }} style={mathStyles.geometryImage} resizeMode="contain" />}
             {option.svg && <SvgXml xml={option.svg} width="100%" height={80} />}
-            <Text style={s.optionText}>{option.label ?? option.id}</Text>
+            {!option.imageUrl && !option.svg && <Text style={[s.optionText, mathStyles.geometryChoiceText]}>{option.label ?? option.id}</Text>}
           </Pressable>
         ))}
       </View>

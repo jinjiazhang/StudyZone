@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Prisma } from '@prisma/client';
-import type { ExerciseAnswer, ExercisePrompt } from '@studyzone/shared-types';
+import type { ExerciseAnswer, ExercisePrompt, UnitMapDecorationDto } from '@studyzone/shared-types';
 
 import { PrismaService } from '../../infra/prisma.service';
 import { UpdateExerciseDto } from './content.dto';
@@ -114,6 +114,7 @@ export class ContentService {
         unitTitle: unit.title,
         unitOrder: unit.orderIndex,
         themeColor: unit.themeColor,
+        mapDecorations: normalizeMapDecorations(unit.mapDecorations),
         lessons,
       };
     });
@@ -150,6 +151,7 @@ export class ContentService {
         orderIndex: unit.orderIndex,
         title: unit.title,
         themeColor: unit.themeColor,
+        mapDecorations: normalizeMapDecorations(unit.mapDecorations),
         lessons: unit.lessons.map((lesson) => ({
           id: lesson.id,
           orderIndex: lesson.orderIndex,
@@ -171,7 +173,8 @@ export class ContentService {
 
   async updateExercise(exerciseId: string, dto: UpdateExerciseDto) {
     const existing = await this.prisma.exercise.findUnique({ where: { id: exerciseId } });
-    if (!existing) throw new NotFoundException({ code: 'exercise_not_found', message: '题目不存在' });
+    if (!existing)
+      throw new NotFoundException({ code: 'exercise_not_found', message: '题目不存在' });
 
     const updated = await this.prisma.exercise.update({
       where: { id: exerciseId },
@@ -197,4 +200,8 @@ export class ContentService {
       orderIndex: lessonLink?.orderIndex ?? 0,
     };
   }
+}
+
+function normalizeMapDecorations(value: Prisma.JsonValue): UnitMapDecorationDto[] {
+  return Array.isArray(value) ? (value as unknown as UnitMapDecorationDto[]) : [];
 }

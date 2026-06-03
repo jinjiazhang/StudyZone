@@ -21,9 +21,9 @@ export function GeometryChoiceExercise({
             onClick={() => setPick(option.id)}
             className={clsx('option-tile flex min-h-36 flex-col items-center justify-center gap-3 text-center', pick === option.id && 'option-tile-active')}
           >
-            {option.imageUrl && <img src={option.imageUrl} alt={option.label ?? option.id} className="max-h-24 object-contain" />}
-            {option.svg && <div className="max-h-24 max-w-full" dangerouslySetInnerHTML={{ __html: option.svg }} />}
-            <span>{option.label ?? option.id}</span>
+            {option.imageUrl && <img src={option.imageUrl} alt={option.label ?? option.id} className="h-24 w-full object-contain" />}
+            {option.svg && <div className="grid h-24 w-full place-items-center [&>svg]:h-full [&>svg]:w-full" dangerouslySetInnerHTML={{ __html: option.svg }} />}
+            {!option.imageUrl && !option.svg && <span>{option.label ?? option.id}</span>}
           </button>
         ))}
       </div>
