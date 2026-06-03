@@ -2,10 +2,10 @@ import Link from 'next/link';
 import {
   ChevronDown,
   Flame,
-  GraduationCap,
   ShieldCheck,
   Star,
 } from 'lucide-react';
+import { HeroRive } from '@/components/HeroRive';
 
 const footerColumns = [
   ['关于我们', '课程体系', '学习方法', '帮助中心'],
@@ -75,9 +75,9 @@ function HeroIllustration() {
   return (
     <div className="relative mx-auto h-[360px] w-full max-w-[560px] md:h-[430px]" aria-hidden>
       <div className="absolute left-1/2 top-[34px] h-[286px] w-[286px] -translate-x-1/2 rounded-full bg-[#d7ffb8]" />
-      <div className="absolute left-1/2 top-[72px] h-[210px] w-[210px] -translate-x-1/2 rounded-full bg-[#58cc02]" />
-      <div className="absolute left-1/2 top-[102px] grid h-[150px] w-[150px] -translate-x-1/2 place-items-center rounded-full bg-white text-[#58cc02] shadow-[0_6px_0_#58a700] animate-[studyPulse_3.5s_ease-in-out_infinite]">
-        <GraduationCap size={82} strokeWidth={2.7} />
+      <div className="absolute left-1/2 top-[66px] h-[226px] w-[226px] -translate-x-1/2 rounded-full bg-[#58cc02]" />
+      <div className="absolute left-1/2 top-[88px] grid h-[190px] w-[190px] -translate-x-1/2 place-items-center rounded-full bg-white shadow-[0_6px_0_#58a700] animate-[studyPulse_3.5s_ease-in-out_infinite]">
+        <HeroRive className="h-[176px] w-[176px]" />
       </div>
       <div className="absolute left-[35px] top-[52px] animate-[floatCard_5s_ease-in-out_infinite]">
         <MiniBadge icon={<Flame size={21} fill="currentColor" />} label="12 天" color="orange" />
