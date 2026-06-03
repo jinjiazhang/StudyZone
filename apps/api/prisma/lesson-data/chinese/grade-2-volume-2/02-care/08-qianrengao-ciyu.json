@@ -1,0 +1,278 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "糕",
+        "tokens": [
+          "蛋",
+          "点",
+          "买",
+          "桌",
+          "弱",
+          "雪"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“糕”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "点",
+            "蛋",
+            "雪"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "粉",
+        "tokens": [
+          "面",
+          "递",
+          "米",
+          "昨",
+          "丝",
+          "雷"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“粉”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "米",
+            "面",
+            "丝"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "尝",
+        "tokens": [
+          "鲜",
+          "背",
+          "泞",
+          "冒",
+          "味",
+          "试"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“尝”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "试",
+            "鲜",
+            "味"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "确",
+        "tokens": [
+          "汁",
+          "切",
+          "菜",
+          "实",
+          "棘",
+          "定"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“确”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "定",
+            "实",
+            "切"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "雪糕"
+          },
+          {
+            "id": "l3",
+            "text": "米粉"
+          },
+          {
+            "id": "l4",
+            "text": "面粉"
+          },
+          {
+            "id": "l1",
+            "text": "蛋糕"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "用面磨成的粉"
+          },
+          {
+            "id": "r3",
+            "text": "冰凉的糕点"
+          },
+          {
+            "id": "r2",
+            "text": "用大米磨成的粉"
+          },
+          {
+            "id": "r4",
+            "text": "常见甜点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "正确"
+          },
+          {
+            "id": "l1",
+            "text": "品尝"
+          },
+          {
+            "id": "l2",
+            "text": "尝鲜"
+          },
+          {
+            "id": "l3",
+            "text": "确实"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "尝新东西"
+          },
+          {
+            "id": "r4",
+            "text": "仔细尝味道"
+          },
+          {
+            "id": "r1",
+            "text": "真的、的确"
+          },
+          {
+            "id": "r3",
+            "text": "对、不错"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“的确”意思最接近哪个词？",
+        "options": [
+          "突然",
+          "大概",
+          "确实",
+          "也许"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“销售”指什么？",
+        "options": [
+          "下雨",
+          "种稻子",
+          "卖出去",
+          "磨成粉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "的糕",
+          "一块",
+          "平平常常"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一块",
+          "平平常常",
+          "的糕"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "很多很多人",
+          "劳动",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "很多很多人",
+          "的",
+          "劳动"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

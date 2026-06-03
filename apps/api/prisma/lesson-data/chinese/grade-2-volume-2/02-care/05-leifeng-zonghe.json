@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "需",
+        "hint": "“需要”的“需”",
+        "options": [
+          "xǔ",
+          "rú",
+          "xū",
+          "xù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "献",
+        "hint": "“献出爱心”的“献”",
+        "options": [
+          "xiàn",
+          "zhàn",
+          "xiān",
+          "yàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bèi",
+        "sentence": "雷锋叔叔__着年迈的大娘。",
+        "blankPlaceholder": "__",
+        "character": "背",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "背"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sǎ",
+        "sentence": "花瓣上的露珠像他__下的汗滴。",
+        "blankPlaceholder": "__",
+        "character": "洒",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "洒"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪件事最像“献出爱心”？",
+        "options": [
+          "上课说话",
+          "抢别人的铅笔",
+          "乱扔垃圾",
+          "扶摔倒的同学起来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“年迈的大娘”中的“年迈”意思是？",
+        "options": [
+          "个子小",
+          "年纪大",
+          "声音响",
+          "跑得快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "踏着荆棘"
+          },
+          {
+            "id": "l4",
+            "text": "四处寻觅"
+          },
+          {
+            "id": "l1",
+            "text": "冒着细雨"
+          },
+          {
+            "id": "l3",
+            "text": "献出爱心"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "雨中前行"
+          },
+          {
+            "id": "r2",
+            "text": "把爱给需要的人"
+          },
+          {
+            "id": "r4",
+            "text": "走过带刺小路"
+          },
+          {
+            "id": "r1",
+            "text": "寻找各处"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "需要",
+          "哪里",
+          "献出爱心"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "哪里",
+          "需要",
+          "献出爱心"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "就出现",
+          "雷锋叔叔",
+          "在哪里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雷锋叔叔",
+          "就出现",
+          "在哪里"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雷锋精神可以概括为？",
+        "options": [
+          "只爱吃糕",
+          "喜欢躲雨",
+          "乐于助人",
+          "不关心别人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读“瞧，那泥泞路上的脚窝”时，应想象什么？",
+        "options": [
+          "爸爸讲故事",
+          "演员在舞台上",
+          "米糕摆在桌上",
+          "雷锋冒雨帮助别人留下脚印"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

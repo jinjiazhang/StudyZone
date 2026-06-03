@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "锋",
+        "tokens": [
+          "雨",
+          "弱",
+          "糕",
+          "芒",
+          "雷",
+          "利"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“锋”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "利",
+            "芒",
+            "雷"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "暖",
+        "tokens": [
+          "和",
+          "菜",
+          "粉",
+          "心",
+          "流",
+          "桌"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“暖”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "和",
+            "流",
+            "心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "献",
+        "tokens": [
+          "糕",
+          "买",
+          "桌",
+          "爱",
+          "出",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“献”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "爱",
+            "花",
+            "出"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "晶莹"
+          },
+          {
+            "id": "l1",
+            "text": "足迹"
+          },
+          {
+            "id": "l4",
+            "text": "寻觅"
+          },
+          {
+            "id": "l2",
+            "text": "泥泞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "光亮透明"
+          },
+          {
+            "id": "r1",
+            "text": "寻找"
+          },
+          {
+            "id": "r3",
+            "text": "烂泥地"
+          },
+          {
+            "id": "r4",
+            "text": "脚印"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "荆棘"
+          },
+          {
+            "id": "l4",
+            "text": "汗滴"
+          },
+          {
+            "id": "l1",
+            "text": "脚窝"
+          },
+          {
+            "id": "l3",
+            "text": "年迈"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "年纪很大"
+          },
+          {
+            "id": "r4",
+            "text": "脚踩出的小坑"
+          },
+          {
+            "id": "r1",
+            "text": "带刺的小灌木"
+          },
+          {
+            "id": "r3",
+            "text": "汗水一滴一滴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“泥泞”最可能出现在什么情景？",
+        "options": [
+          "下雨后的小路",
+          "晴朗的天空",
+          "干净的桌面",
+          "雪白的米糕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“晶莹的露珠”中的“晶莹”写出了露珠怎样？",
+        "options": [
+          "透明发亮",
+          "又黑又重",
+          "非常粗糙",
+          "很吵闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“寻觅”的意思是？",
+        "options": [
+          "购买",
+          "寻找",
+          "休息",
+          "保护"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "细雨",
+          "蒙蒙的",
+          "冒着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "冒着",
+          "蒙蒙的",
+          "细雨"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "荆棘",
+          "路上的",
+          "踏着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "踏着",
+          "路上的",
+          "荆棘"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

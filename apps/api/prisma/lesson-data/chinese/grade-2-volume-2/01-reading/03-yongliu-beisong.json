@@ -1,0 +1,297 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          [
+            "碧玉",
+            null,
+            "一树高，"
+          ],
+          [
+            "万条垂下绿丝绦。"
+          ]
+        ],
+        "options": [
+          "妆成",
+          "栽成",
+          "长成",
+          "画成"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          [
+            "碧玉妆成一树高，"
+          ],
+          [
+            "万条垂下",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "绿衣裳",
+          "绿丝绦",
+          "青丝线",
+          "柳叶儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          [
+            "不知细叶谁",
+            null,
+            "出，"
+          ],
+          [
+            "二月春风似剪刀。"
+          ]
+        ],
+        "options": [
+          "裁",
+          "猜",
+          "采",
+          "栽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          [
+            "不知细叶谁裁出，"
+          ],
+          [
+            "二月春风似",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "丝绦",
+          "碧玉",
+          "东风",
+          "剪刀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "咏柳",
+        "author": "贺知章",
+        "lines": [
+          [
+            "碧玉",
+            null,
+            "一树高，"
+          ],
+          [
+            "万条垂下",
+            null,
+            "。"
+          ],
+          [
+            "不知细叶谁",
+            null,
+            "出，"
+          ],
+          [
+            "二月春风似",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "妆成",
+              "长成",
+              "装成",
+              "栽成"
+            ]
+          },
+          {
+            "options": [
+              "绿丝线",
+              "柳枝条",
+              "绿丝绦",
+              "青丝带"
+            ]
+          },
+          {
+            "options": [
+              "采",
+              "栽",
+              "裁",
+              "猜"
+            ]
+          },
+          {
+            "options": [
+              "剪刀",
+              "春烟",
+              "小刀",
+              "东风"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《咏柳》第一句",
+        "tokens": [
+          "春风",
+          "碧玉",
+          "妆成",
+          "万条",
+          "一树高"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "碧玉",
+          "妆成",
+          "一树高"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《咏柳》第三句",
+        "tokens": [
+          "谁",
+          "裁出",
+          "细叶",
+          "不知",
+          "东风"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不知",
+          "细叶",
+          "谁",
+          "裁出"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《咏柳》第四句",
+        "tokens": [
+          "似",
+          "春风",
+          "二月",
+          "剪刀",
+          "纸鸢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "二月",
+          "春风",
+          "似",
+          "剪刀"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“二月春风似剪刀”把春风比作什么？",
+        "options": [
+          "剪刀",
+          "碧玉",
+          "纸鸢",
+          "丝绦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“万条垂下绿丝绦”写的是柳树的什么？",
+        "options": [
+          "垂下来的柳枝",
+          "树根",
+          "果实",
+          "花朵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《咏柳》主要赞美了什么？",
+        "options": [
+          "夏天荷花",
+          "冬天雪景",
+          "秋天落叶",
+          "春天柳树的美"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

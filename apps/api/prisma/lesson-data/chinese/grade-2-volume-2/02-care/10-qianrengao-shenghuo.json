@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后题让我们举例说明什么？",
+        "options": [
+          "雷锋在哪里",
+          "蔷薇花怎样开放",
+          "衣服、文具等也经过很多人的劳动",
+          "怎么查部首"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一件衣服背后可能有哪些劳动？",
+        "options": [
+          "只要一个人画一下",
+          "种棉、纺线、织布、裁剪、缝制、销售",
+          "只需要下雨",
+          "只需要查字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一本作业本背后可能有哪些劳动？",
+        "options": [
+          "背大娘",
+          "种蔷薇",
+          "熬糖",
+          "造纸、印刷、运输、销售"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "明白“千人糕”的道理后，我们应该怎样？",
+        "options": [
+          "珍惜物品，尊重劳动",
+          "不吃米糕",
+          "随便浪费",
+          "只看包装"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "雨衣"
+          },
+          {
+            "id": "l3",
+            "text": "米糕"
+          },
+          {
+            "id": "l1",
+            "text": "衣服"
+          },
+          {
+            "id": "l2",
+            "text": "文具"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "课文中的食品"
+          },
+          {
+            "id": "r1",
+            "text": "可能由布料加工成"
+          },
+          {
+            "id": "r4",
+            "text": "下雨时穿"
+          },
+          {
+            "id": "r2",
+            "text": "学习用品"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "劳动",
+          "我们",
+          "尊重",
+          "要"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "要",
+          "尊重",
+          "劳动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "也凝结着",
+          "很多人的劳动",
+          "普通物品"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "普通物品",
+          "也凝结着",
+          "很多人的劳动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“劳动成果”应该怎样对待？",
+        "options": [
+          "嘲笑",
+          "浪费",
+          "珍惜",
+          "丢弃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "láo",
+        "sentence": "我们要尊重__动。",
+        "blankPlaceholder": "__",
+        "character": "劳",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "劳"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jù",
+        "sentence": "文__也经过很多人的劳动。",
+        "blankPlaceholder": "__",
+        "character": "具",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "具"
+      },
+      "difficulty": 2
+    }
+  ]
+}

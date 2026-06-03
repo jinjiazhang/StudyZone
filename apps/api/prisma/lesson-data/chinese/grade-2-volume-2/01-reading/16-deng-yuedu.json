@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文写的是哪一天？",
+        "options": [
+          "1987年4月5日",
+          "清明前一天",
+          "1987年4月6日",
+          "2026年6月3日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "邓小平爷爷在哪里植树？",
+        "options": [
+          "北京天坛公园",
+          "松鼠太太家",
+          "村居田野",
+          "邮局门口"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "邓爷爷植树时多少岁？",
+        "options": [
+          "8岁",
+          "83岁",
+          "100岁",
+          "38岁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "邓爷爷先怎样挑树苗？",
+        "options": [
+          "精心挑选茁壮的柏树苗",
+          "只看花朵",
+          "让别人选",
+          "随便拿一棵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "他觉得树苗不直时怎么做？",
+        "options": [
+          "走上前把树苗扶正",
+          "放弃不种了",
+          "跑回家",
+          "把树苗剪掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "树栽好后像什么？",
+        "options": [
+          "剪刀",
+          "战士一样笔直",
+          "纸鸢",
+          "害羞的小姑娘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "今天这棵柏树成了什么？",
+        "options": [
+          "空包裹",
+          "一条小路",
+          "天坛公园一处美丽的风景",
+          "导览图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "填土"
+          },
+          {
+            "id": "l4",
+            "text": "扶正"
+          },
+          {
+            "id": "l1",
+            "text": "挖树坑"
+          },
+          {
+            "id": "l2",
+            "text": "移树苗"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "把树苗放进坑里"
+          },
+          {
+            "id": "r1",
+            "text": "让树苗站直"
+          },
+          {
+            "id": "r3",
+            "text": "把土填回去"
+          },
+          {
+            "id": "r2",
+            "text": "把坑挖好"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按植树步骤排一排",
+        "tokens": [
+          "挖坑",
+          "扶正",
+          "填土",
+          "移苗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "挖坑",
+          "移苗",
+          "填土",
+          "扶正"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "笔直地",
+          "小柏树",
+          "像战士一样",
+          "站在那里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小柏树",
+          "像战士一样",
+          "笔直地",
+          "站在那里"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从“满是汗珠，仍不肯休息”可以看出邓爷爷怎样？",
+        "options": [
+          "粗心",
+          "认真、坚持",
+          "害怕",
+          "懒惰"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找一找：哪张图是邓小平爷爷植树？",
+        "options": [
+          {
+            "id": "tree",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-014.jpg",
+            "label": "邓小平爷爷植树"
+          },
+          {
+            "id": "spring",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-009.jpg",
+            "label": "孩子找春天"
+          },
+          {
+            "id": "road",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-011.jpg",
+            "label": "开满鲜花的小路"
+          },
+          {
+            "id": "gushi",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-006.jpg",
+            "label": "柳树与古诗"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tree"
+      },
+      "difficulty": 1
+    }
+  ]
+}

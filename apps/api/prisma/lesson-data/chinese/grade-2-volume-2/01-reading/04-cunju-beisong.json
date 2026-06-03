@@ -1,0 +1,289 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          [
+            "草长",
+            null,
+            "二月天，"
+          ],
+          [
+            "拂堤杨柳醉春烟。"
+          ]
+        ],
+        "options": [
+          "风起",
+          "莺飞",
+          "花开",
+          "燕回"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          [
+            "草长莺飞二月天，"
+          ],
+          [
+            null,
+            "杨柳醉春烟。"
+          ]
+        ],
+        "options": [
+          "吹树",
+          "绿丝",
+          "拂堤",
+          "摇岸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          [
+            "儿童散学",
+            null,
+            "早，"
+          ],
+          [
+            "忙趁东风放纸鸢。"
+          ]
+        ],
+        "options": [
+          "走来",
+          "飞来",
+          "归来",
+          "回来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          [
+            "儿童散学归来早，"
+          ],
+          [
+            "忙趁东风放",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "剪刀",
+          "柳枝",
+          "春烟",
+          "纸鸢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "村居",
+        "author": "高鼎",
+        "lines": [
+          [
+            "草长",
+            null,
+            "二月天，"
+          ],
+          [
+            null,
+            "杨柳醉春烟。"
+          ],
+          [
+            "儿童散学",
+            null,
+            "早，"
+          ],
+          [
+            "忙趁东风放",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "鹰飞",
+              "鸟鸣",
+              "燕舞",
+              "莺飞"
+            ]
+          },
+          {
+            "options": [
+              "拂岸",
+              "拂堤",
+              "吹河",
+              "过堤"
+            ]
+          },
+          {
+            "options": [
+              "走来",
+              "归来",
+              "跑来",
+              "回来"
+            ]
+          },
+          {
+            "options": [
+              "纸伞",
+              "纸船",
+              "纸花",
+              "纸鸢"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1,
+          1,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请排出《村居》第一句",
+        "tokens": [
+          "儿童",
+          "草长",
+          "东风",
+          "二月天",
+          "莺飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "草长",
+          "莺飞",
+          "二月天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请排出《村居》第四句",
+        "tokens": [
+          "纸鸢",
+          "归来",
+          "东风",
+          "放",
+          "忙趁"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "忙趁",
+          "东风",
+          "放",
+          "纸鸢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《村居》中的“散学”意思是？",
+        "options": [
+          "上学",
+          "散步",
+          "开会",
+          "放学"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“纸鸢”指的是什么？",
+        "options": [
+          "丝带",
+          "纸船",
+          "风筝",
+          "小鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《村居》描写儿童在春天做什么？",
+        "options": [
+          "堆雪人",
+          "采蘑菇",
+          "看星星",
+          "放风筝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“醉春烟”写出了杨柳怎样的样子？",
+        "options": [
+          "喝醉了酒",
+          "没有叶子",
+          "被剪掉了",
+          "在春雾中轻柔迷人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

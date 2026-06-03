@@ -1,0 +1,334 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鲜",
+        "tokens": [
+          "艳",
+          "果",
+          "旧",
+          "美",
+          "暗",
+          "花"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“鲜”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "美",
+            "艳",
+            "果"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "原",
+        "tokens": [
+          "因",
+          "野",
+          "来",
+          "剧",
+          "谅",
+          "厕"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“原”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "来",
+            "因",
+            "野",
+            "谅"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "礼",
+        "tokens": [
+          "品",
+          "柳",
+          "节",
+          "堤",
+          "貌",
+          "物"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“礼”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "物",
+            "貌",
+            "节",
+            "品"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "寄",
+        "tokens": [
+          "花",
+          "树",
+          "给",
+          "信",
+          "出",
+          "包"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“寄”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "信",
+            "出",
+            "给",
+            "包"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "花籽"
+          },
+          {
+            "id": "l2",
+            "text": "懊丧"
+          },
+          {
+            "id": "l3",
+            "text": "绚丽多彩"
+          },
+          {
+            "id": "l1",
+            "text": "包裹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "邮寄的东西"
+          },
+          {
+            "id": "r3",
+            "text": "花的种子"
+          },
+          {
+            "id": "r1",
+            "text": "颜色多而美丽"
+          },
+          {
+            "id": "r4",
+            "text": "心里很失望、难过"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "五颜六色"
+          },
+          {
+            "id": "l4",
+            "text": "美好的礼物"
+          },
+          {
+            "id": "l2",
+            "text": "花朵簇簇"
+          },
+          {
+            "id": "l3",
+            "text": "快活"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "让人感到幸福的赠予"
+          },
+          {
+            "id": "r2",
+            "text": "许多花聚在一起"
+          },
+          {
+            "id": "r3",
+            "text": "颜色很多"
+          },
+          {
+            "id": "r1",
+            "text": "非常开心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“绚丽多彩”和哪个词意思最接近？",
+        "options": [
+          "难忘",
+          "格外",
+          "空空如也",
+          "五颜六色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鼹鼠先生为什么懊丧？",
+        "options": [
+          "包裹破了，东西不见了",
+          "他骑车太快",
+          "他不想做客",
+          "花太美了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“花朵簇簇”说明花怎样？",
+        "options": [
+          "全都枯了",
+          "开得很多很密",
+          "只有一朵",
+          "看不见"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "多彩",
+          "鲜花",
+          "的",
+          "绚丽"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "绚丽",
+          "多彩",
+          "的",
+          "鲜花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "一条",
+          "鲜花",
+          "开满",
+          "的小路"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一条",
+          "开满",
+          "鲜花",
+          "的小路"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找一找：哪张图表现“开满鲜花的小路”？",
+        "options": [
+          {
+            "id": "gushi",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-006.jpg",
+            "label": "柳树与古诗"
+          },
+          {
+            "id": "road",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-011.jpg",
+            "label": "开满鲜花的小路"
+          },
+          {
+            "id": "tree",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-014.jpg",
+            "label": "邓小平爷爷植树"
+          },
+          {
+            "id": "spring",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-009.jpg",
+            "label": "孩子找春天"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "road"
+      },
+      "difficulty": 1
+    }
+  ]
+}

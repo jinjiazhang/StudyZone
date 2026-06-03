@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小草从地下探出头来，那是春天的眉毛吧？”用了什么修辞？",
+        "options": [
+          "夸张",
+          "比喻",
+          "反问",
+          "排比"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "仿写“野花一朵两朵，那是春天的眼睛吧？”最合适的是？",
+        "options": [
+          "我今天迟到了。",
+          "书包很重，真累啊。",
+          "铅笔掉在地上。",
+          "柳枝摆来摆去，那是春天的辫子吧？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我们看到了她，我们听到了她，我们闻到了她，我们触到了她。”写出了什么？",
+        "options": [
+          "只在教室里学习",
+          "只用眼睛看春天",
+          "春天不见了",
+          "用多种感官感受春天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出仿写句",
+        "tokens": [
+          "红红的",
+          "桃花",
+          "那是",
+          "春天的笑脸吧"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "桃花",
+          "红红的",
+          "那是",
+          "春天的笑脸吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出仿写句",
+        "tokens": [
+          "那是",
+          "春天的辫子吧",
+          "柳条",
+          "长长的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "柳条",
+          "长长的",
+          "那是",
+          "春天的辫子吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出感官句",
+        "tokens": [
+          "花香",
+          "闻到了",
+          "触到了微风",
+          "我们"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "闻到了",
+          "花香"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "看到"
+          },
+          {
+            "id": "l4",
+            "text": "触到"
+          },
+          {
+            "id": "l3",
+            "text": "闻到"
+          },
+          {
+            "id": "l2",
+            "text": "听到"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "淡淡花香"
+          },
+          {
+            "id": "r1",
+            "text": "小溪叮咚"
+          },
+          {
+            "id": "r2",
+            "text": "桃花开放"
+          },
+          {
+            "id": "r3",
+            "text": "暖暖微风"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补充“____的天空”，哪个词最合适？",
+        "options": [
+          "沉沉睡觉",
+          "跑跑",
+          "蓝蓝",
+          "吵吵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补充“____的阳光”，哪个词最合适？",
+        "options": [
+          "空空",
+          "尖尖",
+          "暖暖",
+          "破破"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补充“____的柳条”，哪个词最合适？",
+        "options": [
+          "苦苦",
+          "长长",
+          "圆圆",
+          "沉沉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "仿照课文说春天，句末常用“吧？”能表达什么？",
+        "options": [
+          "已经生气",
+          "命令别人",
+          "猜想和发现的语气",
+          "完全否定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wén",
+        "sentence": "我们__到了花香。",
+        "blankPlaceholder": "__",
+        "character": "闻",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "闻"
+      },
+      "difficulty": 2
+    }
+  ]
+}

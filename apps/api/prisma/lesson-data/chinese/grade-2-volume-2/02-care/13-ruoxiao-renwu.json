@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雨下起来时，妈妈先把雨衣递给谁？",
+        "options": [
+          "野蔷薇",
+          "萨沙",
+          "爸爸",
+          "托利亚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "托利亚又把雨衣给了谁？",
+        "options": [
+          "蔷薇花",
+          "萨沙",
+          "爸爸",
+          "妈妈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "萨沙最后把雨衣遮在了哪里？",
+        "options": [
+          "自己身上",
+          "野蔷薇花上",
+          "书包上",
+          "爸爸身上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈说我们应该保护怎样的人或物？",
+        "options": [
+          "比自己强大的",
+          "只保护自己",
+          "比自己弱小的",
+          "只保护雨衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "萨沙问“我是最弱小的吗？”说明他心里怎样？",
+        "options": [
+          "很想睡觉",
+          "觉得米糕好吃",
+          "想查字典",
+          "不想只被别人保护，也想保护别人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "野蔷薇"
+          },
+          {
+            "id": "l1",
+            "text": "妈妈"
+          },
+          {
+            "id": "l2",
+            "text": "托利亚"
+          },
+          {
+            "id": "l3",
+            "text": "萨沙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "把雨衣遮在花上"
+          },
+          {
+            "id": "r4",
+            "text": "把雨衣递给弟弟"
+          },
+          {
+            "id": "r1",
+            "text": "把雨衣递给哥哥"
+          },
+          {
+            "id": "r3",
+            "text": "被雨打得娇弱"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按故事顺序排一排",
+        "tokens": [
+          "哥哥给萨沙",
+          "妈妈给哥哥",
+          "萨沙遮花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "妈妈给哥哥",
+          "哥哥给萨沙",
+          "萨沙遮花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "保护",
+          "我们应该",
+          "比自己弱小的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们应该",
+          "保护",
+          "比自己弱小的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "萨沙最后得到妈妈怎样的评价？",
+        "options": [
+          "勇敢的孩子",
+          "最弱小的孩子",
+          "最懒的孩子",
+          "不懂事的孩子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪张图对应《我不是最弱小的》？",
+        "options": [
+          {
+            "id": "job",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-029.jpg",
+            "label": "语文园地职业词"
+          },
+          {
+            "id": "rose",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-027.jpg",
+            "label": "雨中的野蔷薇"
+          },
+          {
+            "id": "gao",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-023.jpg",
+            "label": "千人糕的制作"
+          },
+          {
+            "id": "leifeng",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-020.jpg",
+            "label": "雷锋叔叔雕像"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "rose"
+      },
+      "difficulty": 1
+    }
+  ]
+}

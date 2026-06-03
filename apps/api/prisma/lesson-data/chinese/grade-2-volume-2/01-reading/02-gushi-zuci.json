@@ -1,0 +1,324 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "诗",
+        "tokens": [
+          "树",
+          "句",
+          "河",
+          "人",
+          "画",
+          "歌"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“诗”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "歌",
+            "句"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "妆",
+        "tokens": [
+          "化",
+          "树",
+          "扮",
+          "容",
+          "鸟",
+          "河"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“妆”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "化",
+            "容",
+            "扮"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "丝",
+        "tokens": [
+          "带",
+          "绸",
+          "风",
+          "土",
+          "线",
+          "草"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“丝”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "绸",
+            "线",
+            "带"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "剪",
+        "tokens": [
+          "刀",
+          "裁",
+          "纸",
+          "月",
+          "云",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“剪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "刀",
+            "纸",
+            "裁"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "童",
+        "tokens": [
+          "烟",
+          "柳",
+          "话",
+          "心",
+          "年",
+          "堤"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“童”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "年",
+            "话",
+            "心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "碧",
+        "tokens": [
+          "纸",
+          "客",
+          "空",
+          "花",
+          "绿",
+          "玉"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“碧”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "玉",
+            "绿",
+            "空"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "吹拂"
+          },
+          {
+            "id": "l4",
+            "text": "河堤"
+          },
+          {
+            "id": "l2",
+            "text": "丝绦"
+          },
+          {
+            "id": "l1",
+            "text": "祝贺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "河边挡水的土埂"
+          },
+          {
+            "id": "r3",
+            "text": "向别人道喜"
+          },
+          {
+            "id": "r2",
+            "text": "风轻轻吹过"
+          },
+          {
+            "id": "r1",
+            "text": "绿色的丝带"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纸鸢"
+          },
+          {
+            "id": "l3",
+            "text": "东风"
+          },
+          {
+            "id": "l4",
+            "text": "春烟"
+          },
+          {
+            "id": "l2",
+            "text": "散学"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "春天水泽、草木间的雾气"
+          },
+          {
+            "id": "r2",
+            "text": "放学"
+          },
+          {
+            "id": "r1",
+            "text": "春天的风"
+          },
+          {
+            "id": "r3",
+            "text": "风筝"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“可喜可贺”中的“贺”是什么意思？",
+        "options": [
+          "道喜、祝贺",
+          "剪开",
+          "回家",
+          "害怕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蚕丝”和哪个词意思关系最密切？",
+        "options": [
+          "河堤",
+          "东风",
+          "儿童",
+          "丝绸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“春风拂面”让人感觉怎样？",
+        "options": [
+          "路很远",
+          "风轻轻吹在脸上",
+          "天很黑",
+          "雨很大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“堤岸”通常在哪里？",
+        "options": [
+          "书包里",
+          "河边或湖边",
+          "天空中",
+          "教室里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

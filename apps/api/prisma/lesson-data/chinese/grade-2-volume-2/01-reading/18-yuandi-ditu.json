@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "游览公园时，想知道路线可以看什么？",
+        "options": [
+          "包裹单",
+          "导览图",
+          "古诗",
+          "树苗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图上“北”的箭头能帮助我们知道什么？",
+        "options": [
+          "天气",
+          "诗人姓名",
+          "方向",
+          "人物心情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想问路或了解信息，可以去哪里？",
+        "options": [
+          "咨询处",
+          "宝塔",
+          "厕所",
+          "柳枝上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想吃饭，可以去哪里？",
+        "options": [
+          "树坑",
+          "邮局",
+          "湖心亭",
+          "餐厅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想看户外演出，可以去哪里？",
+        "options": [
+          "露天剧场",
+          "松鼠太太家",
+          "厕所",
+          "咨询处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“湖心亭”从词语看，大概在哪里？",
+        "options": [
+          "湖的中间",
+          "教室里",
+          "厕所旁边",
+          "山坡上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "到餐厅"
+          },
+          {
+            "id": "l4",
+            "text": "找厕所"
+          },
+          {
+            "id": "l1",
+            "text": "看导览图"
+          },
+          {
+            "id": "l2",
+            "text": "去咨询处"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "问问题"
+          },
+          {
+            "id": "r2",
+            "text": "吃饭"
+          },
+          {
+            "id": "r3",
+            "text": "了解游览路线"
+          },
+          {
+            "id": "r4",
+            "text": "方便"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "导览图",
+          "我会",
+          "游览公园时",
+          "看"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "游览公园时",
+          "我会",
+          "看",
+          "导览图"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "剧场",
+          "亭",
+          "露天",
+          "湖心"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "露天",
+          "剧场"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“咨询”的意思最接近哪一个？",
+        "options": [
+          "询问、了解",
+          "背诵",
+          "植树",
+          "唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个地方名不在语文园地导览图里？",
+        "options": [
+          "湖心亭",
+          "宝塔",
+          "邮局",
+          "餐厅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tíng",
+        "sentence": "湖心__在湖中。",
+        "blankPlaceholder": "__",
+        "character": "亭",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "亭"
+      },
+      "difficulty": 2
+    }
+  ]
+}

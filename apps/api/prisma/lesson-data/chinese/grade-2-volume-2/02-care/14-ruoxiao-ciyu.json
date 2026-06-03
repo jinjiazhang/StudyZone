@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "娇弱"
+          },
+          {
+            "id": "l4",
+            "text": "随风舞动"
+          },
+          {
+            "id": "l1",
+            "text": "簇拥"
+          },
+          {
+            "id": "l2",
+            "text": "芬芳扑鼻"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "跟着风摆动"
+          },
+          {
+            "id": "r3",
+            "text": "围在一起"
+          },
+          {
+            "id": "r2",
+            "text": "柔弱、经不起伤害"
+          },
+          {
+            "id": "r1",
+            "text": "香味迎面而来"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "递给"
+          },
+          {
+            "id": "l2",
+            "text": "倾盆大雨"
+          },
+          {
+            "id": "l4",
+            "text": "掀起"
+          },
+          {
+            "id": "l1",
+            "text": "雷声大作"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "雨非常大"
+          },
+          {
+            "id": "r3",
+            "text": "雷声很响"
+          },
+          {
+            "id": "r4",
+            "text": "向上揭起"
+          },
+          {
+            "id": "r2",
+            "text": "把东西交给别人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "弱",
+        "tokens": [
+          "者",
+          "粉",
+          "点",
+          "糕",
+          "小",
+          "桌"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“弱”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "点",
+            "者"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "勇",
+        "tokens": [
+          "敢",
+          "糖",
+          "气",
+          "芬",
+          "汁",
+          "士"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“勇”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "敢",
+            "气",
+            "士"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“芬芳扑鼻”写的是哪种感受？",
+        "options": [
+          "摸到雨衣",
+          "闻到香味",
+          "听到雷声",
+          "看到颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“倾盆大雨”说明雨怎样？",
+        "options": [
+          "很甜",
+          "很大",
+          "很香",
+          "很小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“娇弱”的野蔷薇需要什么？",
+        "options": [
+          "磨粉",
+          "销售",
+          "查目录",
+          "保护"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "的",
+          "芬芳",
+          "扑鼻",
+          "野蔷薇"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "芬芳",
+          "扑鼻",
+          "的",
+          "野蔷薇"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "的花朵",
+          "带着露珠",
+          "随风舞动"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "带着露珠",
+          "的花朵",
+          "随风舞动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“簇拥”让人想到野蔷薇怎样开放？",
+        "options": [
+          "花全被折断",
+          "只有一朵花",
+          "花在桌上",
+          "一丛花挤在一起"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

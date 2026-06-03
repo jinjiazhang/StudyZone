@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“您的包裹单！”应该读出什么语气？",
+        "options": [
+          "生气责备",
+          "害怕",
+          "很伤心",
+          "提醒、告诉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这是谁在我家门前种的花？多美啊！”应该读出什么心情？",
+        "options": [
+          "害怕",
+          "惊奇、赞美",
+          "懊丧",
+          "不耐烦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我不知道！”鼹鼠先生回答时可能是什么心情？",
+        "options": [
+          "非常生气",
+          "诚实又疑惑",
+          "得意洋洋",
+          "想睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“真美啊！”句末感叹号表达什么？",
+        "options": [
+          "赞美",
+          "命令",
+          "疑问",
+          "否定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "懊丧"
+          },
+          {
+            "id": "l3",
+            "text": "快活"
+          },
+          {
+            "id": "l1",
+            "text": "惊奇"
+          },
+          {
+            "id": "l4",
+            "text": "美好"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "让人喜爱、舒服"
+          },
+          {
+            "id": "r4",
+            "text": "感到奇怪又新鲜"
+          },
+          {
+            "id": "r2",
+            "text": "失望难过"
+          },
+          {
+            "id": "r1",
+            "text": "开心自在"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出惊奇句",
+        "tokens": [
+          "多美啊",
+          "在我家门前",
+          "种的花",
+          "这是谁"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这是谁",
+          "在我家门前",
+          "种的花",
+          "多美啊"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出赞美句",
+        "tokens": [
+          "多么美好",
+          "这是",
+          "的礼物啊"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这是",
+          "多么美好",
+          "的礼物啊"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句适合读得轻快高兴？",
+        "options": [
+          "包裹破了。",
+          "鼹鼠先生很懊丧。",
+          "门前的小路上花朵簇簇。",
+          "什么也没有。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“啊，通往松鼠太太家的路，成了一条开满鲜花的小路。”中的“啊”表达了什么？",
+        "options": [
+          "讨厌",
+          "抱怨",
+          "惊喜发现",
+          "命令"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "分角色朗读时，读“松鼠太太”的话要注意什么？",
+        "options": [
+          "读成命令",
+          "读出明白原因后的高兴",
+          "读得像古诗",
+          "一直小声哭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jīng",
+        "sentence": "她__奇地说：“多美啊！”",
+        "blankPlaceholder": "__",
+        "character": "惊",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "惊"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lǐ",
+        "sentence": "这是美好的__物。",
+        "blankPlaceholder": "__",
+        "character": "礼",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "礼"
+      },
+      "difficulty": 2
+    }
+  ]
+}

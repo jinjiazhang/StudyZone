@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "米糕的主要原料是什么？",
+        "options": [
+          "荆棘",
+          "雨衣",
+          "蔷薇花",
+          "大米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "农民种稻子需要什么？",
+        "options": [
+          "雨衣、野花、露珠",
+          "演员、魔术师",
+          "种子、农具、肥料、水",
+          "目录、页码、铅笔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "糖可以用什么熬出来？",
+        "options": [
+          "花瓣露珠",
+          "泥泞的水",
+          "甘蔗汁或甜菜汁",
+          "墨水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "米糕做好后，还需要哪些劳动？",
+        "options": [
+          "背大娘",
+          "查部首",
+          "包装、送货、销售",
+          "遮花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子最后为什么同意叫“千人糕”？",
+        "options": [
+          "因为它经过很多人的劳动",
+          "因为它只能一千人吃",
+          "因为它有一千层",
+          "因为它比桌子大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "农民"
+          },
+          {
+            "id": "l2",
+            "text": "工人"
+          },
+          {
+            "id": "l4",
+            "text": "销售员"
+          },
+          {
+            "id": "l3",
+            "text": "送货的人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "加工制作米糕"
+          },
+          {
+            "id": "r3",
+            "text": "种稻子和甘蔗"
+          },
+          {
+            "id": "r2",
+            "text": "运送米糕"
+          },
+          {
+            "id": "r1",
+            "text": "把米糕卖给大家"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按制作过程排一排",
+        "tokens": [
+          "种稻子",
+          "磨成粉",
+          "包装销售",
+          "做米糕"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "种稻子",
+          "磨成粉",
+          "做米糕",
+          "包装销售"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "的劳动",
+          "很多很多人",
+          "要经过"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要经过",
+          "很多很多人",
+          "的劳动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“平平常常的糕”说明这块糕怎样？",
+        "options": [
+          "普通常见",
+          "只在雨天有",
+          "很神奇巨大",
+          "不能吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪张图表现《千人糕》的制作过程？",
+        "options": [
+          {
+            "id": "job",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-029.jpg",
+            "label": "语文园地职业词"
+          },
+          {
+            "id": "rose",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-027.jpg",
+            "label": "雨中的野蔷薇"
+          },
+          {
+            "id": "leifeng",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-020.jpg",
+            "label": "雷锋叔叔雕像"
+          },
+          {
+            "id": "gao",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-023.jpg",
+            "label": "千人糕的制作"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "gao"
+      },
+      "difficulty": 1
+    }
+  ]
+}

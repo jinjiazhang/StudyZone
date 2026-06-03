@@ -1,0 +1,277 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《咏柳》的作者是？",
+        "options": [
+          "杜甫",
+          "高鼎",
+          "李白",
+          "贺知章"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《村居》的作者是？",
+        "options": [
+          "白居易",
+          "高鼎",
+          "孟浩然",
+          "贺知章"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两首古诗都描写哪个季节？",
+        "options": [
+          "秋天",
+          "夏天",
+          "春天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "高鼎"
+          },
+          {
+            "id": "l3",
+            "text": "贺知章"
+          },
+          {
+            "id": "l1",
+            "text": "咏柳"
+          },
+          {
+            "id": "l2",
+            "text": "村居"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "写柳树的古诗"
+          },
+          {
+            "id": "r2",
+            "text": "清代诗人"
+          },
+          {
+            "id": "r1",
+            "text": "唐代诗人"
+          },
+          {
+            "id": "r4",
+            "text": "写乡村儿童放风筝的古诗"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "绿丝绦"
+          },
+          {
+            "id": "l1",
+            "text": "碧玉"
+          },
+          {
+            "id": "l4",
+            "text": "散学"
+          },
+          {
+            "id": "l3",
+            "text": "纸鸢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "绿色丝带"
+          },
+          {
+            "id": "r1",
+            "text": "放学"
+          },
+          {
+            "id": "r2",
+            "text": "风筝"
+          },
+          {
+            "id": "r3",
+            "text": "绿色美玉"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写出了孩子们放风筝？",
+        "options": [
+          "忙趁东风放纸鸢",
+          "二月春风似剪刀",
+          "不知细叶谁裁出",
+          "碧玉妆成一树高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写出了柳叶像被剪出来？",
+        "options": [
+          "不知细叶谁裁出",
+          "万里无云",
+          "儿童散学归来早",
+          "草长莺飞二月天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子补成诗句",
+        "tokens": [
+          "裁出",
+          "谁",
+          "归来",
+          "不知",
+          "细叶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不知",
+          "细叶",
+          "谁",
+          "裁出"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子补成诗句",
+        "tokens": [
+          "儿童",
+          "剪刀",
+          "早",
+          "归来",
+          "散学"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "儿童",
+          "散学",
+          "归来",
+          "早"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鸢",
+        "hint": "“纸鸢”的“鸢”",
+        "options": [
+          "yuán",
+          "yún",
+          "yān",
+          "yuān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "碧",
+        "hint": "“碧玉”的“碧”",
+        "options": [
+          "bí",
+          "pì",
+          "bì",
+          "bǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎn",
+        "sentence": "二月春风似__刀。",
+        "blankPlaceholder": "__",
+        "character": "剪",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "剪"
+      },
+      "difficulty": 2
+    }
+  ]
+}

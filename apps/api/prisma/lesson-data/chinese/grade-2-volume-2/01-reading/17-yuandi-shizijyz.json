@@ -1,0 +1,270 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "亭",
+        "hint": "“湖心亭”的“亭”",
+        "options": [
+          "tǐng",
+          "tīn",
+          "tíng",
+          "dīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "咨",
+        "hint": "“咨询处”的“咨”",
+        "options": [
+          "cī",
+          "zī",
+          "zǐ",
+          "zhī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "询",
+        "hint": "“咨询处”的“询”",
+        "options": [
+          "xùn",
+          "xūn",
+          "xún",
+          "shún"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "剧",
+        "hint": "“露天剧场”的“剧”",
+        "options": [
+          "jǔ",
+          "jū",
+          "jǜ",
+          "jù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "塔",
+        "hint": "“宝塔”的“塔”",
+        "options": [
+          "tǎ",
+          "tà",
+          "dā",
+          "tā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "餐",
+        "hint": "“餐厅”的“餐”",
+        "options": [
+          "cān",
+          "cǎn",
+          "chān",
+          "cēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "厅",
+        "hint": "“餐厅”的“厅”",
+        "options": [
+          "tǐng",
+          "tīng",
+          "dīng",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "厕",
+        "hint": "“厕所”的“厕”",
+        "options": [
+          "cǎi",
+          "chè",
+          "zé",
+          "cè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jù",
+        "sentence": "露天__场在地图中间。",
+        "blankPlaceholder": "__",
+        "character": "剧",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "剧"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chǎng",
+        "sentence": "我在剧__看演出。",
+        "blankPlaceholder": "__",
+        "character": "场",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "场"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "露天剧场"
+          },
+          {
+            "id": "l2",
+            "text": "咨询处"
+          },
+          {
+            "id": "l4",
+            "text": "餐厅"
+          },
+          {
+            "id": "l1",
+            "text": "湖心亭"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "在湖中的亭子"
+          },
+          {
+            "id": "r4",
+            "text": "户外看演出的地方"
+          },
+          {
+            "id": "r1",
+            "text": "询问问题的地方"
+          },
+          {
+            "id": "r3",
+            "text": "吃饭的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "北"
+          },
+          {
+            "id": "l1",
+            "text": "宝塔"
+          },
+          {
+            "id": "l3",
+            "text": "导览图"
+          },
+          {
+            "id": "l2",
+            "text": "厕所"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "地图上的方向"
+          },
+          {
+            "id": "r3",
+            "text": "供人方便的地方"
+          },
+          {
+            "id": "r4",
+            "text": "高高的塔"
+          },
+          {
+            "id": "r2",
+            "text": "游览时看的地图"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

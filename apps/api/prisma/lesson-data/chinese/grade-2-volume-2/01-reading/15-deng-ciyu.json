@@ -1,0 +1,314 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "植",
+        "tokens": [
+          "物",
+          "鸟",
+          "苗",
+          "树",
+          "被",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“植”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "树",
+            "物",
+            "苗"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "格",
+        "tokens": [
+          "花",
+          "局",
+          "柳",
+          "子",
+          "外",
+          "桃"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“格”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "外",
+            "子",
+            "局"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "引",
+        "tokens": [
+          "满",
+          "人",
+          "堤",
+          "导",
+          "鸢",
+          "路"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“引”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "路",
+            "导"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "满",
+        "tokens": [
+          "足",
+          "意",
+          "漏",
+          "破",
+          "分",
+          "空"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“满”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "意",
+            "分",
+            "足"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "兴致勃勃"
+          },
+          {
+            "id": "l3",
+            "text": "引人注目"
+          },
+          {
+            "id": "l1",
+            "text": "碧空如洗"
+          },
+          {
+            "id": "l2",
+            "text": "万里无云"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "吸引大家注意"
+          },
+          {
+            "id": "r1",
+            "text": "天空很蓝，像洗过一样"
+          },
+          {
+            "id": "r2",
+            "text": "非常有兴趣"
+          },
+          {
+            "id": "r4",
+            "text": "天空没有云"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "茁壮"
+          },
+          {
+            "id": "l2",
+            "text": "扶正"
+          },
+          {
+            "id": "l3",
+            "text": "挑选"
+          },
+          {
+            "id": "l4",
+            "text": "仔细"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "帮助弄直"
+          },
+          {
+            "id": "r1",
+            "text": "认真细心"
+          },
+          {
+            "id": "r2",
+            "text": "选出合适的"
+          },
+          {
+            "id": "r4",
+            "text": "健康有力地成长"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碧空如洗，万里无云”写出了天气怎样？",
+        "options": [
+          "晴朗",
+          "暴雨",
+          "大雪",
+          "刮沙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“兴致勃勃”说明邓爷爷植树时怎样？",
+        "options": [
+          "很困",
+          "很害怕",
+          "很有兴趣、很认真",
+          "很懊丧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“格外引人注目”中的“格外”意思是？",
+        "options": [
+          "普通",
+          "悄悄",
+          "马上",
+          "特别"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“茁壮的柏树苗”说明树苗怎样？",
+        "options": [
+          "健康有力",
+          "已经倒下",
+          "没有根",
+          "枯黄弱小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "勃勃",
+          "地",
+          "兴致",
+          "挖树坑"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "兴致",
+          "勃勃",
+          "地",
+          "挖树坑"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "一棵",
+          "柏树苗",
+          "茁壮",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一棵",
+          "茁壮",
+          "的",
+          "柏树苗"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

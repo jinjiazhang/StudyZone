@@ -1,0 +1,314 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "寻",
+        "tokens": [
+          "人",
+          "找",
+          "路",
+          "火",
+          "问",
+          "常"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“寻”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "找",
+            "人",
+            "路"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "柳",
+        "tokens": [
+          "树",
+          "条",
+          "花",
+          "餐",
+          "枝",
+          "剧"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“柳”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "枝",
+            "条",
+            "树"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "桃",
+        "tokens": [
+          "树",
+          "厅",
+          "子",
+          "塔",
+          "花",
+          "剧"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“桃”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "树",
+            "子"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "荡",
+        "tokens": [
+          "堤",
+          "漾",
+          "秋",
+          "袄",
+          "剪",
+          "开"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“荡”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "秋",
+            "漾",
+            "开"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "冲"
+          },
+          {
+            "id": "l4",
+            "text": "寻"
+          },
+          {
+            "id": "l1",
+            "text": "脱"
+          },
+          {
+            "id": "l3",
+            "text": "奔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "寻找"
+          },
+          {
+            "id": "r2",
+            "text": "向前快跑"
+          },
+          {
+            "id": "r4",
+            "text": "急急地跑过去"
+          },
+          {
+            "id": "r3",
+            "text": "脱去"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "害羞"
+          },
+          {
+            "id": "l1",
+            "text": "遮遮掩掩"
+          },
+          {
+            "id": "l2",
+            "text": "躲躲藏藏"
+          },
+          {
+            "id": "l4",
+            "text": "仔细"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "认真细心"
+          },
+          {
+            "id": "r2",
+            "text": "不好意思"
+          },
+          {
+            "id": "r3",
+            "text": "藏起来不让人看见"
+          },
+          {
+            "id": "r4",
+            "text": "遮住、掩住"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小草从地下探出头来”中的“探”写出了什么？",
+        "options": [
+          "小草被拔出来",
+          "小草小心、好奇地冒出来",
+          "小草很高",
+          "小草睡着了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“遮遮掩掩，躲躲藏藏”写春天像谁？",
+        "options": [
+          "忙碌的邮递员",
+          "害羞的小姑娘",
+          "勇敢的战士",
+          "严厉的老师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“奔向田野”的“奔”表示动作怎样？",
+        "options": [
+          "慢慢散步",
+          "站着不动",
+          "急切、快速",
+          "低声说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的动作顺序",
+        "tokens": [
+          "脱掉",
+          "冲出",
+          "家门",
+          "睡觉",
+          "棉袄"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "脱掉",
+          "棉袄",
+          "冲出",
+          "家门"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的短语",
+        "tokens": [
+          "遮遮掩掩",
+          "小姑娘",
+          "碧玉",
+          "害羞",
+          "躲躲藏藏"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "遮遮掩掩",
+          "躲躲藏藏"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词最适合形容春天刚露面的样子？",
+        "options": [
+          "遮遮掩掩",
+          "一动不动",
+          "怒气冲冲",
+          "冰天雪地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

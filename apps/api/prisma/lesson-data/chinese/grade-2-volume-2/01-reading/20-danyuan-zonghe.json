@@ -1,0 +1,288 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妆",
+        "hint": "选出正确拼音",
+        "options": [
+          "zuāng",
+          "chuāng",
+          "zhāng",
+          "zhuāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嫩",
+        "hint": "选出正确拼音",
+        "options": [
+          "lèn",
+          "nén",
+          "rèn",
+          "nèn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "裹",
+        "hint": "选出正确拼音",
+        "options": [
+          "guō",
+          "gǔ",
+          "gè",
+          "guǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "龄",
+        "hint": "选出正确拼音",
+        "options": [
+          "lín",
+          "lìng",
+          "líng",
+          "lǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shī",
+        "sentence": "古__二首。",
+        "blankPlaceholder": "__",
+        "character": "诗",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "诗"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xún",
+        "sentence": "我们去__找春天。",
+        "blankPlaceholder": "__",
+        "character": "寻",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "寻"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lǐ",
+        "sentence": "花籽是美好的__物。",
+        "blankPlaceholder": "__",
+        "character": "礼",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "礼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhí",
+        "sentence": "邓小平爷爷__树。",
+        "blankPlaceholder": "__",
+        "character": "植",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "植"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "美好的礼物"
+          },
+          {
+            "id": "l4",
+            "text": "兴致勃勃"
+          },
+          {
+            "id": "l2",
+            "text": "春天的眼睛"
+          },
+          {
+            "id": "l1",
+            "text": "绿丝绦"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "柳枝"
+          },
+          {
+            "id": "r1",
+            "text": "野花"
+          },
+          {
+            "id": "r4",
+            "text": "花籽带来的鲜花"
+          },
+          {
+            "id": "r2",
+            "text": "很有兴趣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第一单元四篇课文共同围绕什么？",
+        "options": [
+          "传统节日",
+          "神话故事",
+          "夏天雷雨",
+          "春天里的发现和美好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一课最适合练习背诵古诗？",
+        "options": [
+          "邓小平爷爷植树",
+          "开满鲜花的小路",
+          "古诗二首",
+          "语文园地一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一课让我们学习按插图讲故事？",
+        "options": [
+          "咏柳",
+          "开满鲜花的小路",
+          "村居",
+          "语文园地一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "纸鸢",
+          "放",
+          "东风",
+          "忙趁"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "忙趁",
+          "东风",
+          "放",
+          "纸鸢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "听到了她",
+          "闻到了她",
+          "看到了她",
+          "我们"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "看到了她",
+          "听到了她",
+          "闻到了她"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小柏树像战士一样笔直地站在那里”把小柏树比作什么？",
+        "options": [
+          "风筝",
+          "剪刀",
+          "战士",
+          "小姑娘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}
