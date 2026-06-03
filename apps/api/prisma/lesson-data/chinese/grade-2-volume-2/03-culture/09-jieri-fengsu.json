@@ -1,0 +1,247 @@
+{
+  "id": "09-jieri-fengsu",
+  "title": "节日习俗理解",
+  "description": "用节日习俗帮助理解课文内容，积累传统文化知识。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春节常见的习俗是哪一项？",
+        "options": [
+          "贴窗花、放鞭炮",
+          "赏菊登高",
+          "赛龙舟",
+          "祭扫先人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "清明节课文中写到的活动是什么？",
+        "options": [
+          "吃月饼",
+          "看花灯",
+          "祭扫",
+          "乞巧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "端午节课文中写到哪些香味？",
+        "options": [
+          "花香、果香",
+          "墨香、书香",
+          "粽香、艾香",
+          "米香、茶香"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "重阳节要怎样做？",
+        "options": [
+          "敬老、赏菊、登高",
+          "贴窗花",
+          "赛龙舟",
+          "看花灯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "龙舟"
+          },
+          {
+            "id": "l2",
+            "text": "花灯"
+          },
+          {
+            "id": "l3",
+            "text": "窗花"
+          },
+          {
+            "id": "l4",
+            "text": "月饼"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "春节"
+          },
+          {
+            "id": "r2",
+            "text": "端午节"
+          },
+          {
+            "id": "r3",
+            "text": "元宵节"
+          },
+          {
+            "id": "r4",
+            "text": "中秋节"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l4",
+            "r4"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "重阳节，要敬老",
+        "tokens": [
+          "要",
+          "敬老",
+          "重阳节"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "重阳节",
+          "要",
+          "敬老"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "踏秋赏菊去登高",
+        "tokens": [
+          "去",
+          "登高",
+          "赏菊",
+          "踏秋"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "踏秋",
+          "赏菊",
+          "去",
+          "登高"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "堂",
+        "hint": "满堂飘",
+        "options": [
+          "táng",
+          "dáng",
+          "cháng",
+          "tǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bǐng",
+        "sentence": "过中秋，吃月__。",
+        "blankPlaceholder": "__",
+        "character": "饼",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "饼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jú",
+        "sentence": "踏秋赏__去登高。",
+        "blankPlaceholder": "__",
+        "character": "菊",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "菊"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "传统节日课文页",
+        "options": [
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-040.jpg",
+            "alt": "中国美食图片"
+          },
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-036.jpg",
+            "alt": "传统节日课文上半部分"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-038.jpg",
+            "alt": "贝的故事课文"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    }
+  ]
+}

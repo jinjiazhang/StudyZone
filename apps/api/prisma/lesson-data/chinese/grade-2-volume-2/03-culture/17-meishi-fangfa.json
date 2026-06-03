@@ -1,0 +1,282 @@
+{
+  "id": "17-meishi-fangfa",
+  "title": "烹饪方法配对",
+  "description": "认识炒、烤、烧、爆、炖、炸、煎、蒸、煮等做法。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "凉拌菠菜"
+          },
+          {
+            "id": "l2",
+            "text": "烤鸭"
+          },
+          {
+            "id": "l3",
+            "text": "红烧茄子"
+          },
+          {
+            "id": "l4",
+            "text": "香煎豆腐"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "煎"
+          },
+          {
+            "id": "r2",
+            "text": "拌"
+          },
+          {
+            "id": "r3",
+            "text": "烤"
+          },
+          {
+            "id": "r4",
+            "text": "烧"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l1",
+            "r2"
+          ],
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l3",
+            "r4"
+          ],
+          [
+            "l2",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小鸡炖蘑菇"
+          },
+          {
+            "id": "l2",
+            "text": "葱爆羊肉"
+          },
+          {
+            "id": "l3",
+            "text": "水煮鱼"
+          },
+          {
+            "id": "l4",
+            "text": "蛋炒饭"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "煮"
+          },
+          {
+            "id": "r2",
+            "text": "爆"
+          },
+          {
+            "id": "r3",
+            "text": "炒"
+          },
+          {
+            "id": "r4",
+            "text": "炖"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蒸饺”主要用了哪种方法？",
+        "options": [
+          "蒸",
+          "炸",
+          "爆",
+          "烤"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“炸酱面”里的“炸”表示什么？",
+        "options": [
+          "用手写",
+          "用水洗",
+          "用针缝",
+          "用油加热制作"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪组字多和“火”有关？",
+        "options": [
+          "想、感、怒",
+          "炒、烤、烧",
+          "赔、购、财",
+          "刺、刮、剑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "火",
+        "tokens": [
+          "炒",
+          "购",
+          "想",
+          "煎",
+          "烤",
+          "烧"
+        ],
+        "targetCount": 4,
+        "instruction": "选出多与火或加热有关的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "炒",
+            "烤",
+            "烧",
+            "煎"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "酱",
+        "hint": "炸酱面",
+        "options": [
+          "jiāng",
+          "jiǎng",
+          "qiáng",
+          "jiàng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhà",
+        "sentence": "__酱面是中国美食。",
+        "blankPlaceholder": "__",
+        "character": "炸",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "炸"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "炒 烤 烧 爆 炖 炸",
+        "tokens": [
+          "炖",
+          "炸",
+          "烧",
+          "爆",
+          "烤",
+          "炒"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "炒",
+          "烤",
+          "烧",
+          "爆",
+          "炖",
+          "炸"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "煎 蒸 煮",
+        "tokens": [
+          "煎",
+          "煮",
+          "蒸"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "煎",
+          "蒸",
+          "煮"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

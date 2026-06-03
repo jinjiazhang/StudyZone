@@ -1,0 +1,249 @@
+{
+  "id": "05-shenzhou-zonghe",
+  "title": "神州山河综合",
+  "description": "结合课文插图和句子，巩固《神州谣》的字词与理解。",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "神州谣课文页",
+        "options": [
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-040.jpg",
+            "alt": "中国美食图片"
+          },
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-036.jpg",
+            "alt": "传统节日课文插图"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-034.jpg",
+            "alt": "神州谣课文插图"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "神州谣课后页",
+        "options": [
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-035.jpg",
+            "alt": "神州谣课后"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-041.jpg",
+            "alt": "中国美食课后"
+          },
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-039.jpg",
+            "alt": "贝的故事课后"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "海峡"
+          },
+          {
+            "id": "l2",
+            "text": "情谊"
+          },
+          {
+            "id": "l3",
+            "text": "中华"
+          },
+          {
+            "id": "l4",
+            "text": "神州"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中国"
+          },
+          {
+            "id": "r2",
+            "text": "华夏"
+          },
+          {
+            "id": "r3",
+            "text": "海两边相通的窄水道"
+          },
+          {
+            "id": "r4",
+            "text": "深厚感情"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l4",
+            "r1"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l1",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“各民族，情谊浓”中的“浓”说明什么？",
+        "options": [
+          "声音很小",
+          "颜色很淡",
+          "感情深厚",
+          "水很浅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写出了祖国山河很壮美？",
+        "options": [
+          "山川美，可入画",
+          "全家团圆真热闹",
+          "蒸饺很好吃",
+          "贝壳很漂亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "陆",
+        "hint": "大陆、陆地",
+        "options": [
+          "lǔ",
+          "liù",
+          "lǜ",
+          "lù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiá",
+        "sentence": "台湾岛，隔海__。",
+        "blankPlaceholder": "__",
+        "character": "峡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "峡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yì",
+        "sentence": "各民族，情__浓。",
+        "blankPlaceholder": "__",
+        "character": "谊",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "谊"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "华",
+        "tokens": [
+          "中华",
+          "神华",
+          "华丽",
+          "华情",
+          "华夏",
+          "华州"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“华”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "中华",
+            "华夏",
+            "华丽"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "长城长，珠峰耸",
+        "tokens": [
+          "长",
+          "长城",
+          "珠峰",
+          "耸"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长城",
+          "长",
+          "珠峰",
+          "耸"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

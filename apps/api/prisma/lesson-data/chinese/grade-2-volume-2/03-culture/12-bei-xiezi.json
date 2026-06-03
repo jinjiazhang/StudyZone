@@ -1,0 +1,215 @@
+{
+  "id": "12-bei-xiezi",
+  "title": "贝字写字练习",
+  "description": "练习课后会写字，区分字形并组成课文词语。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎ",
+        "sentence": "__骨文中的“贝”字很像海贝。",
+        "blankPlaceholder": "__",
+        "character": "甲",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "甲"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gǔ",
+        "sentence": "甲__文中的“贝”字像海贝。",
+        "blankPlaceholder": "__",
+        "character": "骨",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "骨"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jué",
+        "sentence": "人们__得贝壳很漂亮。",
+        "blankPlaceholder": "__",
+        "character": "觉",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "觉"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pǐn",
+        "sentence": "饰__戴在身上。",
+        "blankPlaceholder": "__",
+        "character": "品",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "品"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bì",
+        "sentence": "贝壳也能当钱__。",
+        "blankPlaceholder": "__",
+        "character": "币",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "币"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cái",
+        "sentence": "钱__、财富都和贝有关。",
+        "blankPlaceholder": "__",
+        "character": "财",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "财"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "钱",
+        "hint": "钱币、金钱",
+        "options": [
+          "qiǎn",
+          "qián",
+          "jiàn",
+          "qán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "财",
+        "hint": "钱财、财产",
+        "options": [
+          "cāi",
+          "zāi",
+          "chái",
+          "cái"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "贝",
+        "tokens": [
+          "贝街",
+          "宝贝",
+          "贝壳",
+          "海贝",
+          "贝火",
+          "贝饭"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“贝”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "贝壳",
+            "宝贝",
+            "海贝"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "钱",
+        "tokens": [
+          "零钱",
+          "钱香",
+          "金钱",
+          "钱币",
+          "钱街",
+          "钱团"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“钱”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "钱币",
+            "金钱",
+            "零钱"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“骨”时，字形上方要注意什么？",
+        "options": [
+          "左边是三点水",
+          "右边是言字旁",
+          "下面是火字底",
+          "里面不是两个“口”"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“财”的偏旁是贝字旁，意思多和什么有关？",
+        "options": [
+          "钱财",
+          "天气",
+          "脚步",
+          "鸟类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

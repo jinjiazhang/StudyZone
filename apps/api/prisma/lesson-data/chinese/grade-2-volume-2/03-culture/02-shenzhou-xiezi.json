@@ -1,0 +1,217 @@
+{
+  "id": "02-shenzhou-xiezi",
+  "title": "神州写字练习",
+  "description": "练习课后要求会写的字，巩固笔画、结构和常用词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shén",
+        "sentence": "__州大地很美。",
+        "blankPlaceholder": "__",
+        "character": "神",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "神"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huá",
+        "sentence": "中华儿女爱中__。",
+        "blankPlaceholder": "__",
+        "character": "华",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "华"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gè",
+        "sentence": "__民族情谊浓。",
+        "blankPlaceholder": "__",
+        "character": "各",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "各"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zú",
+        "sentence": "民__团结是一家。",
+        "blankPlaceholder": "__",
+        "character": "族",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "族"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qí",
+        "sentence": "__奋发，共繁荣。",
+        "blankPlaceholder": "__",
+        "character": "齐",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "齐"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "情",
+        "hint": "情谊、感情",
+        "options": [
+          "jīng",
+          "qíng",
+          "qīng",
+          "qí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "族",
+        "hint": "民族、家族",
+        "options": [
+          "cú",
+          "zhú",
+          "zǔ",
+          "zú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "各",
+        "hint": "各地、各族",
+        "options": [
+          "gè",
+          "kè",
+          "gé",
+          "gě"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "神",
+        "tokens": [
+          "神奇",
+          "神气",
+          "神人",
+          "认真",
+          "州神",
+          "神州"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“神”组成常用词的词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "神州",
+            "神奇",
+            "神气"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "情",
+        "tokens": [
+          "情况",
+          "青情",
+          "情谊",
+          "感情",
+          "友情",
+          "情州"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含有“情”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "情谊",
+            "感情",
+            "情况"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“族”字时，右边容易和哪个字区分？",
+        "options": [
+          "放",
+          "旗",
+          "方",
+          "旅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“谊”是言字旁，通常和什么有关？",
+        "options": [
+          "水流",
+          "说话、语言",
+          "火光",
+          "食物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

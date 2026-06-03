@@ -1,0 +1,215 @@
+{
+  "id": "16-meishi-xiezi",
+  "title": "美食写字练习",
+  "description": "练习美食课后会写字，巩固字形和组词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shí",
+        "sentence": "中国美__多种多样。",
+        "blankPlaceholder": "__",
+        "character": "食",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "食"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kǎo",
+        "sentence": "__鸭是有名的美食。",
+        "blankPlaceholder": "__",
+        "character": "烤",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "烤"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǔ",
+        "sentence": "水__鱼味道鲜。",
+        "blankPlaceholder": "__",
+        "character": "煮",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "煮"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dàn",
+        "sentence": "__炒饭香喷喷。",
+        "blankPlaceholder": "__",
+        "character": "蛋",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "蛋"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qié",
+        "sentence": "红烧__子很好吃。",
+        "blankPlaceholder": "__",
+        "character": "茄",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "茄"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jī",
+        "sentence": "小__炖蘑菇。",
+        "blankPlaceholder": "__",
+        "character": "鸡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "鸡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饭",
+        "hint": "蛋炒饭、米饭",
+        "options": [
+          "fǎn",
+          "fàn",
+          "bǎn",
+          "fēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鸭",
+        "hint": "烤鸭",
+        "options": [
+          "niǎo",
+          "yā",
+          "yǎ",
+          "yá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "食",
+        "tokens": [
+          "食扫",
+          "美食",
+          "食贝",
+          "食街",
+          "食物",
+          "食品"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“食”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "美食",
+            "食物",
+            "食品"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鸡",
+        "tokens": [
+          "鸡蛋",
+          "小鸡",
+          "鸡谊",
+          "鸡钱",
+          "鸡峡",
+          "公鸡"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“鸡”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小鸡",
+            "公鸡",
+            "鸡蛋"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“烤、煮”都有四点底或火相关部件，意思多和什么有关？",
+        "options": [
+          "和说话有关",
+          "和钱财有关",
+          "用火做食物",
+          "和玉石有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“蛋”时，下面是什么部件？",
+        "options": [
+          "贝",
+          "心",
+          "虫",
+          "火"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

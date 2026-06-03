@@ -1,0 +1,268 @@
+{
+  "id": "08-jieri-shijian",
+  "title": "节日时间排序",
+  "description": "按照课文顺序认识传统节日，理解时间先后。",
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "春节 元宵节 清明节 端午节",
+        "tokens": [
+          "元宵节",
+          "清明节",
+          "端午节",
+          "春节"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春节",
+          "元宵节",
+          "清明节",
+          "端午节"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "七夕 中秋节 重阳节 新春",
+        "tokens": [
+          "七夕",
+          "中秋节",
+          "新春",
+          "重阳节"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "七夕",
+          "中秋节",
+          "重阳节",
+          "新春"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "元宵节"
+          },
+          {
+            "id": "l2",
+            "text": "端午节"
+          },
+          {
+            "id": "l3",
+            "text": "清明节"
+          },
+          {
+            "id": "l4",
+            "text": "春节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "祭扫"
+          },
+          {
+            "id": "r2",
+            "text": "贴窗花、放鞭炮"
+          },
+          {
+            "id": "r3",
+            "text": "赛龙舟、吃粽子"
+          },
+          {
+            "id": "r4",
+            "text": "看花灯"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l4",
+            "r2"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l2",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "重阳节"
+          },
+          {
+            "id": "l2",
+            "text": "七夕"
+          },
+          {
+            "id": "l3",
+            "text": "新春"
+          },
+          {
+            "id": "l4",
+            "text": "中秋节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "乞巧"
+          },
+          {
+            "id": "r2",
+            "text": "吃月饼"
+          },
+          {
+            "id": "r3",
+            "text": "全家团圆"
+          },
+          {
+            "id": "r4",
+            "text": "敬老、登高"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l3",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中哪个节日最早出现？",
+        "options": [
+          "端午节",
+          "春节",
+          "中秋节",
+          "重阳节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“十五圆月当空照”对应哪个节日？",
+        "options": [
+          "春节",
+          "中秋节",
+          "清明节",
+          "元宵节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“七月七，来乞巧”说的是哪个传统节日？",
+        "options": [
+          "重阳节",
+          "春节",
+          "端午节",
+          "七夕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赏",
+        "hint": "赏菊、欣赏",
+        "options": [
+          "cháng",
+          "sǎng",
+          "shǎng",
+          "xiǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dēng",
+        "sentence": "踏秋赏菊去__高。",
+        "blankPlaceholder": "__",
+        "character": "登",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "登"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuán",
+        "sentence": "全家团__真热闹。",
+        "blankPlaceholder": "__",
+        "character": "圆",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "圆"
+      },
+      "difficulty": 2
+    }
+  ]
+}

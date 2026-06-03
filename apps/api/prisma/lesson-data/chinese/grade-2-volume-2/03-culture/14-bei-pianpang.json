@@ -1,0 +1,275 @@
+{
+  "id": "14-bei-pianpang",
+  "title": "偏旁与字义",
+  "description": "借助偏旁猜字义，理解“贝”、金字旁、王字旁等和字义的关系。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "赔"
+          },
+          {
+            "id": "l2",
+            "text": "购"
+          },
+          {
+            "id": "l3",
+            "text": "赚"
+          },
+          {
+            "id": "l4",
+            "text": "贫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "购买"
+          },
+          {
+            "id": "r2",
+            "text": "赚钱"
+          },
+          {
+            "id": "r3",
+            "text": "贫穷"
+          },
+          {
+            "id": "r4",
+            "text": "赔本"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "珠宝"
+          },
+          {
+            "id": "l2",
+            "text": "灶"
+          },
+          {
+            "id": "l3",
+            "text": "铜镜"
+          },
+          {
+            "id": "l4",
+            "text": "焰"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "火有关"
+          },
+          {
+            "id": "r2",
+            "text": "火苗有关"
+          },
+          {
+            "id": "r3",
+            "text": "金属有关"
+          },
+          {
+            "id": "r4",
+            "text": "玉石珍宝有关"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l3",
+            "r3"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l2",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ]
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“赚、赔、购、贫”都有哪个偏旁？",
+        "options": [
+          "木字旁",
+          "贝字旁",
+          "言字旁",
+          "三点水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“铜镜”的“铜”为什么有金字旁？",
+        "options": [
+          "和衣服有关",
+          "和金属有关",
+          "和水有关",
+          "和心情有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“珠宝”的“珠”为什么有王字旁？",
+        "options": [
+          "表示天气",
+          "表示声音",
+          "表示动作",
+          "古代王字旁常和玉石有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "贝",
+        "tokens": [
+          "财产",
+          "惊慌",
+          "购买",
+          "财富",
+          "火焰",
+          "灶台"
+        ],
+        "targetCount": 3,
+        "instruction": "选出意思多和“贝”有关的词"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "财富",
+            "财产",
+            "购买"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "贫",
+        "hint": "贫穷",
+        "options": [
+          "bīn",
+          "píng",
+          "pín",
+          "pǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "货",
+        "hint": "货物",
+        "options": [
+          "huǒ",
+          "kuò",
+          "huò",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gòu",
+        "sentence": "妈妈去商店采__食品。",
+        "blankPlaceholder": "__",
+        "character": "购",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "购"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "珍贵 贵重 损坏 破损",
+        "tokens": [
+          "破损",
+          "损坏",
+          "贵重",
+          "珍贵"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "珍贵",
+          "贵重",
+          "损坏",
+          "破损"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

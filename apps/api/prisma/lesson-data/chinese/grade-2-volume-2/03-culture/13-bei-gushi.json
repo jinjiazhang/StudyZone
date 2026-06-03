@@ -1,0 +1,234 @@
+{
+  "id": "13-bei-gushi",
+  "title": "贝的故事理解",
+  "description": "理解课文怎样介绍“贝”的由来和贝字旁的意义。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贝壳可以怎样保护动物？",
+        "options": [
+          "做成纸张",
+          "点燃火光",
+          "保护身体",
+          "种出庄稼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古人为什么喜欢把贝壳戴在身上？",
+        "options": [
+          "因为能唱歌",
+          "因为会发光照明",
+          "觉得漂亮、珍贵",
+          "因为很辣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古人为什么把贝壳当钱币？",
+        "options": [
+          "便于携带，不容易损坏",
+          "能飞到远方",
+          "颜色都是红色",
+          "只能用来煮饭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用“贝”作偏旁的字大多和什么有关？",
+        "options": [
+          "心情",
+          "火",
+          "刀剪",
+          "钱财"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "贝壳保护自己的身体",
+        "tokens": [
+          "贝壳",
+          "身体",
+          "自己的",
+          "保护"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贝壳",
+          "保护",
+          "自己的",
+          "身体"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "贝壳可以随身携带",
+        "tokens": [
+          "携带",
+          "随身",
+          "可以",
+          "贝壳"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贝壳",
+          "可以",
+          "随身",
+          "携带"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "损坏"
+          },
+          {
+            "id": "l2",
+            "text": "珍贵"
+          },
+          {
+            "id": "l3",
+            "text": "硬币"
+          },
+          {
+            "id": "l4",
+            "text": "购买"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "破损"
+          },
+          {
+            "id": "r2",
+            "text": "纸币"
+          },
+          {
+            "id": "r3",
+            "text": "采购"
+          },
+          {
+            "id": "r4",
+            "text": "贵重"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l3",
+            "r2"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赔",
+        "hint": "赔本、赔礼",
+        "options": [
+          "péi",
+          "pī",
+          "péng",
+          "bèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "péi",
+        "sentence": "用贝作偏旁的字有赚、__、购。",
+        "blankPlaceholder": "__",
+        "character": "赔",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "赔"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "“贝”的故事课文页",
+        "options": [
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-037.jpg",
+            "alt": "传统节日课后"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-038.jpg",
+            "alt": "贝的故事课文页"
+          },
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-035.jpg",
+            "alt": "神州谣课后"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    }
+  ]
+}

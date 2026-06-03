@@ -1,0 +1,215 @@
+{
+  "id": "07-jieri-xiezi",
+  "title": "节日写字练习",
+  "description": "练习传统节日课后的会写字，并组成课文中的词语。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuán",
+        "sentence": "__统节日真有趣。",
+        "blankPlaceholder": "__",
+        "character": "传",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "传"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǒng",
+        "sentence": "传__节日代代相传。",
+        "blankPlaceholder": "__",
+        "character": "统",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "统"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiē",
+        "sentence": "大__小巷人如潮。",
+        "blankPlaceholder": "__",
+        "character": "街",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "街"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sǎo",
+        "sentence": "清明节去祭__。",
+        "blankPlaceholder": "__",
+        "character": "扫",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "扫"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tuán",
+        "sentence": "全家__圆真热闹。",
+        "blankPlaceholder": "__",
+        "character": "团",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "团"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "quán",
+        "sentence": "__家团圆。",
+        "blankPlaceholder": "__",
+        "character": "全",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "全"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhēn",
+        "sentence": "全家团圆__热闹。",
+        "blankPlaceholder": "__",
+        "character": "真",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "真"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "街",
+        "hint": "大街小巷",
+        "options": [
+          "jié",
+          "jiā",
+          "gāi",
+          "jiē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扫",
+        "hint": "祭扫、打扫",
+        "options": [
+          "sǎo",
+          "sāo",
+          "shǎo",
+          "sào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "团",
+        "hint": "团圆、团结",
+        "options": [
+          "quán",
+          "tán",
+          "tuán",
+          "duán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "龙",
+        "tokens": [
+          "扫龙",
+          "龙全",
+          "龙街",
+          "龙灯",
+          "龙舟",
+          "飞龙"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“龙”组成词的词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "龙舟",
+            "龙灯",
+            "飞龙"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "贴",
+        "tokens": [
+          "统贴",
+          "贴窗花",
+          "贴心",
+          "扫贴",
+          "贴龙",
+          "张贴"
+        ],
+        "targetCount": 3,
+        "instruction": "选出含“贴”的正确词语"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "贴窗花",
+            "张贴",
+            "贴心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

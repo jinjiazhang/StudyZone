@@ -1,0 +1,286 @@
+{
+  "id": "03-shenzhou-ciyu",
+  "title": "神州词语积累",
+  "description": "理解课文里的山河词语和课后四字词语。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "黄河"
+          },
+          {
+            "id": "l2",
+            "text": "长城"
+          },
+          {
+            "id": "l3",
+            "text": "珠峰"
+          },
+          {
+            "id": "l4",
+            "text": "长江"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "奔"
+          },
+          {
+            "id": "r2",
+            "text": "涌"
+          },
+          {
+            "id": "r3",
+            "text": "长"
+          },
+          {
+            "id": "r4",
+            "text": "耸"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l4",
+            "r2"
+          ],
+          [
+            "l2",
+            "r3"
+          ],
+          [
+            "l3",
+            "r4"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "民族团结"
+          },
+          {
+            "id": "l2",
+            "text": "华夏儿女"
+          },
+          {
+            "id": "l3",
+            "text": "炎黄子孙"
+          },
+          {
+            "id": "l4",
+            "text": "繁荣昌盛"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "中华民族的后代"
+          },
+          {
+            "id": "r2",
+            "text": "中华民族的儿女"
+          },
+          {
+            "id": "r3",
+            "text": "国家兴旺发达"
+          },
+          {
+            "id": "r4",
+            "text": "各民族和睦相处"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l2",
+            "r2"
+          ],
+          [
+            "l3",
+            "r1"
+          ],
+          [
+            "l1",
+            "r4"
+          ],
+          [
+            "l4",
+            "r3"
+          ]
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "华夏儿女 炎黄子孙",
+        "tokens": [
+          "儿女",
+          "子孙",
+          "华夏",
+          "炎黄"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "华夏",
+          "儿女",
+          "炎黄",
+          "子孙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "民族团结 世界大同",
+        "tokens": [
+          "世界",
+          "团结",
+          "民族",
+          "大同"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "民族",
+          "团结",
+          "世界",
+          "大同"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黄河奔”里的“奔”写出了黄河怎样的样子？",
+        "options": [
+          "静静不动",
+          "水流向前、气势很大",
+          "颜色很浅",
+          "特别窄小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一组都是课后要求积累的词语？",
+        "options": [
+          "软绵绵、脆生生",
+          "小米粥、蛋炒饭",
+          "赔本、赔礼",
+          "神州大地、巍巍中华"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荣",
+        "hint": "繁荣昌盛",
+        "options": [
+          "ròng",
+          "yóng",
+          "róng",
+          "lóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "巍",
+        "hint": "巍巍中华",
+        "options": [
+          "wěi",
+          "wéi",
+          "wēi",
+          "guī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "昌",
+        "hint": "昌盛",
+        "options": [
+          "chāng",
+          "cháng",
+          "zhāng",
+          "cāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "róng",
+        "sentence": "齐奋发，共繁__。",
+        "blankPlaceholder": "__",
+        "character": "荣",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "荣"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nóng",
+        "sentence": "各民族，情谊__。",
+        "blankPlaceholder": "__",
+        "character": "浓",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "浓"
+      },
+      "difficulty": 2
+    }
+  ]
+}

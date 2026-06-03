@@ -1,0 +1,240 @@
+{
+  "id": "18-meishi-caidan",
+  "title": "中国美食综合",
+  "description": "结合课本图片识别美食，理解菜名里的做法和食材。",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "中国美食课文页",
+        "options": [
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-034.jpg",
+            "alt": "神州谣课文页"
+          },
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-043.jpg",
+            "alt": "语文园地三"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-040.jpg",
+            "alt": "中国美食课文页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "中国美食课后页",
+        "options": [
+          {
+            "id": "c",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-041.jpg",
+            "alt": "中国美食课后"
+          },
+          {
+            "id": "b",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-039.jpg",
+            "alt": "贝的故事课后"
+          },
+          {
+            "id": "a",
+            "image": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-037.jpg",
+            "alt": "传统节日课后"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "菠菜"
+          },
+          {
+            "id": "l2",
+            "text": "茄子"
+          },
+          {
+            "id": "l3",
+            "text": "羊肉"
+          },
+          {
+            "id": "l4",
+            "text": "豆腐"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "凉拌菠菜"
+          },
+          {
+            "id": "r2",
+            "text": "葱爆羊肉"
+          },
+          {
+            "id": "r3",
+            "text": "香煎豆腐"
+          },
+          {
+            "id": "r4",
+            "text": "红烧茄子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": [
+          [
+            "l1",
+            "r1"
+          ],
+          [
+            "l4",
+            "r3"
+          ],
+          [
+            "l2",
+            "r4"
+          ],
+          [
+            "l3",
+            "r2"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小米粥”属于哪一类？",
+        "options": [
+          "节日名称",
+          "主食或粥类",
+          "钱财词语",
+          "山河名称"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“香喷喷”可以形容什么？",
+        "options": [
+          "海峡很窄",
+          "山峰很高",
+          "字写错了",
+          "食物气味很香"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "喷",
+        "hint": "香喷喷",
+        "options": [
+          "pēn",
+          "bēn",
+          "pēng",
+          "pèn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mó",
+        "sentence": "小鸡炖__菇。",
+        "blankPlaceholder": "__",
+        "character": "蘑",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "蘑"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gū",
+        "sentence": "小鸡炖蘑__。",
+        "blankPlaceholder": "__",
+        "character": "菇",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "菇"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "小鸡炖蘑菇",
+        "tokens": [
+          "小鸡",
+          "蘑菇",
+          "炖"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鸡",
+          "炖",
+          "蘑菇"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "蛋炒饭",
+        "tokens": [
+          "饭",
+          "蛋",
+          "炒"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蛋",
+          "炒",
+          "饭"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
