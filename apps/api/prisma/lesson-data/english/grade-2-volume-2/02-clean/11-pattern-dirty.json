@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：你的爪子脏了。",
+        "tokens": [
+          "Your",
+          "paws",
+          "are",
+          ".",
+          "clean",
+          "dirty"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Your",
+          "paws",
+          "are",
+          "dirty",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：让我洗洗你的爪子。",
+        "tokens": [
+          "Let",
+          "wash",
+          ".",
+          "your",
+          "face",
+          "me",
+          "paws"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Let",
+          "me",
+          "wash",
+          "your",
+          "paws",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：现在你的牙齿干净了。",
+        "tokens": [
+          ".",
+          "are",
+          "teeth",
+          "dirty",
+          "clean",
+          "your",
+          "Now"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Now",
+          "your",
+          "teeth",
+          "are",
+          "clean",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Your paws are ___. Let's wash.",
+        "options": [
+          "clean",
+          "happy",
+          "nine",
+          "dirty"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Let me ___ your paws.",
+        "options": [
+          "wash",
+          "eat",
+          "read",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Now your teeth are ___.",
+        "options": [
+          "dirty",
+          "clean",
+          "red",
+          "ten"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Dirty hands are clean."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Brushing your teeth makes them dirty."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Paws are a dog's feet."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Washing makes dirty hands clean."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "hands",
+        "sourceLocale": "en-US",
+        "options": [
+          "脏的",
+          "手",
+          "干净的",
+          "脸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "teeth",
+        "sourceLocale": "en-US",
+        "options": [
+          "脸",
+          "刷",
+          "牙齿",
+          "爪子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "face",
+        "sourceLocale": "en-US",
+        "options": [
+          "爪子",
+          "睡觉时间",
+          "脏的",
+          "脸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "paws",
+        "sourceLocale": "en-US",
+        "options": [
+          "爪子",
+          "洗",
+          "干净的",
+          "刷"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "pet",
+        "sourceLocale": "en-US",
+        "options": [
+          "刷",
+          "宠物",
+          "保持干净",
+          "洗手"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "bedtime",
+        "sourceLocale": "en-US",
+        "options": [
+          "洗手",
+          "洗",
+          "睡觉时间",
+          "刷牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "hands"
+          },
+          {
+            "id": "l1",
+            "text": "teeth"
+          },
+          {
+            "id": "l2",
+            "text": "face"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "脸"
+          },
+          {
+            "id": "r1",
+            "text": "手"
+          },
+          {
+            "id": "r2",
+            "text": "牙齿"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l0": "r1",
+          "l1": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "paws"
+          },
+          {
+            "id": "l1",
+            "text": "pet"
+          },
+          {
+            "id": "l2",
+            "text": "bedtime"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "睡觉时间"
+          },
+          {
+            "id": "r1",
+            "text": "爪子"
+          },
+          {
+            "id": "r2",
+            "text": "宠物"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l0": "r1",
+          "l1": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"teeth\" 的意思是 牙齿。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"face\" 的意思是 手。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Paws are a dog's feet."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

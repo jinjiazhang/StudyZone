@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我每天刷牙。",
+        "tokens": [
+          "teeth",
+          "wash",
+          "my",
+          "brush",
+          "day",
+          "I",
+          "every",
+          "."
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "brush",
+          "my",
+          "teeth",
+          "every",
+          "day",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：早上，我刷牙。",
+        "tokens": [
+          "I",
+          "night",
+          "brush",
+          ",",
+          "my",
+          "teeth",
+          "In",
+          "the",
+          ".",
+          "morning"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "In",
+          "the",
+          "morning",
+          ",",
+          "I",
+          "brush",
+          "my",
+          "teeth",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我们需要每天保持干净。",
+        "tokens": [
+          "keep",
+          "every",
+          ".",
+          "We",
+          "dirty",
+          "day",
+          "to",
+          "need",
+          "clean"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "need",
+          "to",
+          "keep",
+          "clean",
+          "every",
+          "day",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Teacher",
+            "text": "What do you do in the morning?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's a dog.",
+          "I brush my teeth.",
+          "Yes, I do.",
+          "I'm ten."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What can you do?"
+          },
+          {
+            "speaker": "Sam",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm nine.",
+          "I can wash my hands.",
+          "Yes, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Sam",
+            "text": "Do you keep clean every day?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's sunny.",
+          "I'm a bear.",
+          "It's a face.",
+          "Yes, I do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "How can we keep clean?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "We wash our hands every day.",
+          "It's Monday.",
+          "I'm fine.",
+          "Yes, I am."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "Can you wash your face?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "Yes, I can.",
+          "It's a pet.",
+          "I'm a bear."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We keep clean every day."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our hands after we play."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

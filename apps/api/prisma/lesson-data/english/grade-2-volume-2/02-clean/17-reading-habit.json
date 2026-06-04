@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "Keep clean",
+        "passage": "We keep clean every day.\nAfter we play, we wash our hands.\nBefore meals, we wash our hands.\nIn the morning, we brush our teeth and wash our face.\nClean hands keep us healthy.",
+        "questions": [
+          {
+            "question": "When do we wash our hands?",
+            "options": [
+              "At bedtime only",
+              "Never",
+              "After we play"
+            ]
+          },
+          {
+            "question": "What do we do in the morning?",
+            "options": [
+              "Brush our teeth and wash our face",
+              "Go to bed",
+              "Play games"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "Keep clean",
+        "passage": "We keep clean every day.\nAfter we play, we wash our hands.\nBefore meals, we wash our hands.\nIn the morning, we brush our teeth and wash our face.\nClean hands keep us healthy.",
+        "questions": [
+          {
+            "question": "Do we wash our hands before meals?",
+            "options": [
+              "No",
+              "Yes",
+              "We don't know"
+            ]
+          },
+          {
+            "question": "What keeps us healthy?",
+            "options": [
+              "Dirty hands",
+              "No water",
+              "Clean hands"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "Keep clean",
+        "passage": "We keep clean every day.\nAfter we play, we wash our hands.\nBefore meals, we wash our hands.\nIn the morning, we brush our teeth and wash our face.\nClean hands keep us healthy.",
+        "questions": [
+          {
+            "question": "When do we wash our hands?",
+            "options": [
+              "After we play",
+              "At bedtime only",
+              "Never"
+            ]
+          },
+          {
+            "question": "What do we do in the morning?",
+            "options": [
+              "Go to bed",
+              "Brush our teeth and wash our face",
+              "Play games"
+            ]
+          },
+          {
+            "question": "What keeps us healthy?",
+            "options": [
+              "Dirty hands",
+              "No water",
+              "Clean hands"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "wash my hands"
+          },
+          {
+            "id": "l1",
+            "text": "brush my teeth"
+          },
+          {
+            "id": "l2",
+            "text": "wash my face"
+          },
+          {
+            "id": "l3",
+            "text": "wash my paws"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "洗手"
+          },
+          {
+            "id": "r1",
+            "text": "洗脸"
+          },
+          {
+            "id": "r2",
+            "text": "洗爪子"
+          },
+          {
+            "id": "r3",
+            "text": "刷牙"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l2": "r1",
+          "l3": "r2",
+          "l1": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our hands before meals."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our hands after we play."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our face with water."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We brush our teeth to keep them clean."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Dirty hands are clean."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Washing makes dirty hands clean."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

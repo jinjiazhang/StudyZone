@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：饭前要洗手。",
+        "tokens": [
+          "wash",
+          ".",
+          "hands",
+          "after",
+          "Before",
+          ",",
+          "meals",
+          "your"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Before",
+          "meals",
+          ",",
+          "wash",
+          "your",
+          "hands",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：玩耍后要洗手。",
+        "tokens": [
+          "before",
+          "wash",
+          "After",
+          "hands",
+          "you",
+          "play",
+          ".",
+          ",",
+          "your"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "After",
+          "you",
+          "play",
+          ",",
+          "wash",
+          "your",
+          "hands",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我们需要每天保持干净。",
+        "tokens": [
+          "dirty",
+          "every",
+          "clean",
+          "We",
+          "keep",
+          "need",
+          ".",
+          "day",
+          "to"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "need",
+          "to",
+          "keep",
+          "clean",
+          "every",
+          "day",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "How can we keep clean?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm fine.",
+          "We wash our hands every day.",
+          "Yes, I am."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Girl",
+            "text": "When do you wash your hands?"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's red.",
+          "I'm a pet.",
+          "Yes, I am.",
+          "Before meals and after I play."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "We need to ___ clean every day.",
+        "options": [
+          "keep",
+          "play",
+          "eat",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Before meals, ___ your hands.",
+        "options": [
+          "eat",
+          "wash",
+          "read",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "After you ___, wash your hands.",
+        "options": [
+          "sleep",
+          "wash",
+          "play",
+          "clean"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our hands before meals."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our face with water."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

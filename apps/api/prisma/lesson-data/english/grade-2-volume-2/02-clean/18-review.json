@@ -1,0 +1,280 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "wash my hands",
+        "sourceLocale": "en-US",
+        "options": [
+          "干的",
+          "洗手",
+          "手",
+          "脸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "brush my teeth",
+        "sourceLocale": "en-US",
+        "options": [
+          "干净的",
+          "宠物",
+          "刷牙",
+          "洗手"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "dirty",
+        "sourceLocale": "en-US",
+        "options": [
+          "牙齿",
+          "保持干净",
+          "干净的",
+          "脏的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“干净的”用英语怎么说？",
+        "options": [
+          "clean",
+          "wash my hands",
+          "dry",
+          "pet"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“爪子”用英语怎么说？",
+        "options": [
+          "wash my paws",
+          "paws",
+          "bedtime",
+          "keep clean"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我能洗手。",
+        "tokens": [
+          "hands",
+          "my",
+          "brush",
+          "wash",
+          ".",
+          "I",
+          "can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "can",
+          "wash",
+          "my",
+          "hands",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我们需要每天保持干净。",
+        "tokens": [
+          "We",
+          "clean",
+          "need",
+          "every",
+          ".",
+          "keep",
+          "day",
+          "to",
+          "dirty"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "need",
+          "to",
+          "keep",
+          "clean",
+          "every",
+          "day",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What can you do?"
+          },
+          {
+            "speaker": "Sam",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm nine.",
+          "I can wash my hands.",
+          "Yes, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "How can we keep clean?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm fine.",
+          "Yes, I am.",
+          "We wash our hands every day."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We wash our hands before meals."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"face\" 的意思是 手。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "A new family member",
+        "passage": "Leo has a new pet. It is a dog. Its name is Sam.\nMum says, \"Take good care of Sam.\"\nSam's paws are dirty, so Leo washes Sam's paws.\nAt bedtime, Leo brushes his teeth.\nLeo says, \"We need to keep clean every day.\"",
+        "questions": [
+          {
+            "question": "What is Leo's new pet?",
+            "options": [
+              "A cat",
+              "A dog",
+              "A bird"
+            ]
+          },
+          {
+            "question": "What does Leo do at bedtime?",
+            "options": [
+              "Washes the floor",
+              "Plays games",
+              "Brushes his teeth"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "把下面的对话按合理的顺序排好。",
+        "items": [
+          {
+            "id": "c1",
+            "text": "Let's brush our teeth."
+          },
+          {
+            "id": "c2",
+            "text": "OK!"
+          },
+          {
+            "id": "c0",
+            "text": "It's bedtime."
+          },
+          {
+            "id": "c3",
+            "text": "Now my teeth are clean."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "wash"
+          },
+          {
+            "id": "l1",
+            "text": "brush"
+          },
+          {
+            "id": "l2",
+            "text": "clean"
+          },
+          {
+            "id": "l3",
+            "text": "dirty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "脏的"
+          },
+          {
+            "id": "r1",
+            "text": "干净的"
+          },
+          {
+            "id": "r2",
+            "text": "洗"
+          },
+          {
+            "id": "r3",
+            "text": "刷"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l3": "r0",
+          "l2": "r1",
+          "l0": "r2",
+          "l1": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "hands"
+          },
+          {
+            "id": "l1",
+            "text": "teeth"
+          },
+          {
+            "id": "l2",
+            "text": "face"
+          },
+          {
+            "id": "l3",
+            "text": "paws"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "爪子"
+          },
+          {
+            "id": "r1",
+            "text": "手"
+          },
+          {
+            "id": "r2",
+            "text": "牙齿"
+          },
+          {
+            "id": "r3",
+            "text": "脸"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l3": "r0",
+          "l0": "r1",
+          "l1": "r2",
+          "l2": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "wash my hands"
+          },
+          {
+            "id": "l1",
+            "text": "brush my teeth"
+          },
+          {
+            "id": "l2",
+            "text": "wash my face"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "洗脸"
+          },
+          {
+            "id": "r1",
+            "text": "刷牙"
+          },
+          {
+            "id": "r2",
+            "text": "洗手"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l1": "r1",
+          "l0": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "wash my paws"
+          },
+          {
+            "id": "l1",
+            "text": "keep clean"
+          },
+          {
+            "id": "l2",
+            "text": "pet"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "宠物"
+          },
+          {
+            "id": "r1",
+            "text": "保持干净"
+          },
+          {
+            "id": "r2",
+            "text": "洗爪子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l1": "r1",
+          "l0": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "dry"
+          },
+          {
+            "id": "l1",
+            "text": "rub"
+          },
+          {
+            "id": "l2",
+            "text": "bedtime"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "睡觉时间"
+          },
+          {
+            "id": "r1",
+            "text": "搓"
+          },
+          {
+            "id": "r2",
+            "text": "干的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l1": "r1",
+          "l0": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“干净的”用英语怎么说？",
+        "options": [
+          "paws",
+          "dry",
+          "bedtime",
+          "clean"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“脏的”用英语怎么说？",
+        "options": [
+          "dirty",
+          "wash my hands",
+          "pet",
+          "teeth"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“爪子”用英语怎么说？",
+        "options": [
+          "brush",
+          "paws",
+          "wash my hands",
+          "bedtime"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“宠物”用英语怎么说？",
+        "options": [
+          "brush my teeth",
+          "wash my face",
+          "pet",
+          "wash my paws"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“牙齿”用英语怎么说？",
+        "options": [
+          "dry",
+          "wash my hands",
+          "paws",
+          "teeth"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}
