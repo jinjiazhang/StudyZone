@@ -8,7 +8,7 @@ import { X, Heart, CheckCircle2, XCircle } from 'lucide-react-native';
 import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 
 import { api } from '@/lib/api';
-import { useAnswerSounds } from '@/lib/answer-sounds';
+import { useAnswerAudio } from '@/lib/audio';
 import { colors, fonts, radius } from '@/lib/theme';
 import {
   TranslateChoiceExercise,
@@ -52,7 +52,7 @@ export default function Lesson() {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [hearts, setHearts] = useState(5);
   const [start] = useState(Date.now());
-  const { playAnswerSound } = useAnswerSounds();
+  const { playAnswerSound } = useAnswerAudio();
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
   useEffect(() => {

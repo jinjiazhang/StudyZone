@@ -7,9 +7,37 @@ import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { Mascot, SpeechBubble } from '@/components/Mascot';
 
+const LAST_LOGIN_KEY = 'studyzone-last-login';
+const DEFAULT_LOGIN = {
+  email: 'demo@studyzone.dev',
+  password: 'studyzone',
+};
+
+function readLastLogin() {
+  if (typeof window === 'undefined') return DEFAULT_LOGIN;
+
+  try {
+    const raw = window.localStorage.getItem(LAST_LOGIN_KEY);
+    if (!raw) return DEFAULT_LOGIN;
+
+    const parsed = JSON.parse(raw) as Partial<typeof DEFAULT_LOGIN>;
+    return {
+      email: parsed.email || DEFAULT_LOGIN.email,
+      password: parsed.password || DEFAULT_LOGIN.password,
+    };
+  } catch {
+    return DEFAULT_LOGIN;
+  }
+}
+
+function saveLastLogin(email: string, password: string) {
+  window.localStorage.setItem(LAST_LOGIN_KEY, JSON.stringify({ email, password }));
+}
+
 export default function LoginPage() {
-  const [email, setEmail] = useState('demo@studyzone.dev');
-  const [password, setPassword] = useState('studyzone');
+  const initialLogin = readLastLogin();
+  const [email, setEmail] = useState(initialLogin.email);
+  const [password, setPassword] = useState(initialLogin.password);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const setAuth = useAuthStore((s) => s.setAuth);
@@ -26,6 +54,7 @@ export default function LoginPage() {
         refreshToken: res.tokens.refreshToken,
         user: res.user,
       });
+      saveLastLogin(email, password);
       router.push('/learn');
     } catch (err: any) {
       setError(err?.body?.message ?? '登录失败');

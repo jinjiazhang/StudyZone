@@ -8,7 +8,7 @@ import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
 import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { resolveAssetUrl } from '@/lib/assets';
-import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
+import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius, subjectTints, SUBJECT_COLORS } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
@@ -22,7 +22,7 @@ function subjectGlyph(code: string, name: string): string {
 
 export default function Learn() {
   const router = useRouter();
-  useTabFocusGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
+  useTabGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
 
   const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
   const { data: subjects } = useQuery({

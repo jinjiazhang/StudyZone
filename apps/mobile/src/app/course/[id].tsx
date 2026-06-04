@@ -15,7 +15,7 @@ import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-type
 
 import { MapDecoration } from '@/components/MapDecoration';
 import { api } from '@/lib/api';
-import { useAuthStore } from '@/lib/auth-store';
+import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius, shade, withAlpha } from '@/lib/theme';
 
 const OFFSET_PATTERN = [-1, 1, 2, 1, -1, -2];
@@ -27,8 +27,8 @@ const UNIT_EMOJI = ['🌱', '🌳', '🌟', '🚀', '🏔️'];
 export default function Course() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
-  const accessToken = useAuthStore((s) => s.accessToken);
-  const authHydrated = useAuthStore((s) => s.hydrated);
+  const accessToken = useAuth((s) => s.accessToken);
+  const authHydrated = useAuth((s) => s.hydrated);
 
   const enroll = useMutation({ mutationFn: () => api.enrollCourse(id!) });
   useEffect(() => {

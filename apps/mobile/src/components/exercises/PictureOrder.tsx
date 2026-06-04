@@ -4,7 +4,7 @@ import { Volume2 } from 'lucide-react-native';
 import type { PictureOrderPrompt } from '@studyzone/shared-types';
 import { colors, fonts, radius } from '@/lib/theme';
 import { resolveAssetUrl } from '@/lib/assets';
-import { useAudioPlayer } from '@/lib/use-audio-player';
+import { useAudio } from '@/lib/audio';
 import { exerciseStyles as s } from './styles';
 import { SubmitButton } from './SubmitButton';
 
@@ -18,7 +18,7 @@ export function PictureOrderExercise({
   disabled?: boolean;
 }) {
   const [picked, setPicked] = useState<number[]>([]);
-  const { play } = useAudioPlayer();
+  const { play } = useAudio();
   const remaining = useMemo(
     () => prompt.items.map((_, index) => index).filter((index) => !picked.includes(index)),
     [picked, prompt.items],

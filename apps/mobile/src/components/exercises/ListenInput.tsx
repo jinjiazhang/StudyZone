@@ -3,7 +3,7 @@ import { Pressable, Text, TextInput, View } from 'react-native';
 import { Volume2 } from 'lucide-react-native';
 import type { ListenInputPrompt } from '@studyzone/shared-types';
 import { colors } from '@/lib/theme';
-import { useAudioPlayer } from '@/lib/use-audio-player';
+import { useAudio } from '@/lib/audio';
 import { exerciseStyles as s } from './styles';
 import { SubmitButton } from './SubmitButton';
 
@@ -17,7 +17,7 @@ export function ListenInputExercise({
   disabled?: boolean;
 }) {
   const [text, setText] = useState('');
-  const { play, playingUrl } = useAudioPlayer();
+  const { play, playingUrl } = useAudio();
 
   return (
     <View style={s.container}>

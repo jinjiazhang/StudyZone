@@ -1,22 +1,52 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { View, Text, Pressable, StyleSheet, Alert } from 'react-native';
+import * as SecureStore from 'expo-secure-store';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Mail, Lock, Sparkles } from 'lucide-react-native';
 import { api } from '@/lib/api';
-import { useAuthStore } from '@/lib/auth-store';
+import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { AuthField } from '@/components/AuthField';
 
+const LAST_LOGIN_KEY = 'studyzone-last-login';
+const DEFAULT_LOGIN = {
+  email: 'demo@studyzone.dev',
+  password: 'studyzone',
+};
+
 export default function Login() {
   const router = useRouter();
-  const [email, setEmail] = useState('demo@studyzone.dev');
-  const [password, setPassword] = useState('studyzone');
-  const setAuth = useAuthStore((s) => s.setAuth);
+  const [email, setEmail] = useState(DEFAULT_LOGIN.email);
+  const [password, setPassword] = useState(DEFAULT_LOGIN.password);
+  const setAuth = useAuth((s) => s.setAuth);
   const [loading, setLoading] = useState(false);
   const [pressed, setPressed] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+
+    async function loadLastLogin() {
+      try {
+        const raw = await SecureStore.getItemAsync(LAST_LOGIN_KEY);
+        if (!raw || !mounted) return;
+
+        const parsed = JSON.parse(raw) as Partial<typeof DEFAULT_LOGIN>;
+        setEmail(parsed.email || DEFAULT_LOGIN.email);
+        setPassword(parsed.password || DEFAULT_LOGIN.password);
+      } catch {
+        // Keep the demo credentials if stored data is unreadable.
+      }
+    }
+
+    loadLastLogin();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   async function onLogin() {
     try {
@@ -27,6 +57,7 @@ export default function Login() {
         refreshToken: res.tokens.refreshToken,
         user: res.user,
       });
+      await SecureStore.setItemAsync(LAST_LOGIN_KEY, JSON.stringify({ email, password }));
       router.replace('/(tabs)/learn');
     } catch (e: any) {
       Alert.alert('登录失败', e?.body?.message ?? '请重试');

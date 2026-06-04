@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChevronLeft, User, Mail, Lock } from 'lucide-react-native';
 import { api } from '@/lib/api';
-import { useAuthStore } from '@/lib/auth-store';
+import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
@@ -15,7 +15,7 @@ export default function Register() {
   const [nickname, setNickname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const setAuth = useAuthStore((s) => s.setAuth);
+  const setAuth = useAuth((s) => s.setAuth);
   const [loading, setLoading] = useState(false);
   const [pressed, setPressed] = useState(false);
 

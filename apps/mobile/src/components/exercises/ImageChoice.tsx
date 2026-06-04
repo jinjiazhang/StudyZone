@@ -4,7 +4,7 @@ import { Volume2 } from 'lucide-react-native';
 import type { ImageChoicePrompt } from '@studyzone/shared-types';
 import { colors, fonts, radius } from '@/lib/theme';
 import { resolveAssetUrl } from '@/lib/assets';
-import { useAudioPlayer } from '@/lib/use-audio-player';
+import { useAudio } from '@/lib/audio';
 import { exerciseStyles as s } from './styles';
 import { SubmitButton } from './SubmitButton';
 
@@ -18,7 +18,7 @@ export function ImageChoiceExercise({
   disabled?: boolean;
 }) {
   const [pick, setPick] = useState<string | null>(null);
-  const { play, playingUrl } = useAudioPlayer();
+  const { play, playingUrl } = useAudio();
 
   return (
     <View style={s.container}>

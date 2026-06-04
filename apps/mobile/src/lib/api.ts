@@ -1,6 +1,6 @@
 import { StudyZoneClient } from '@studyzone/api-client';
 import Constants from 'expo-constants';
-import { useAuthStore } from './auth-store';
+import { useAuth } from './auth';
 
 const baseUrl =
   process.env.EXPO_PUBLIC_API_URL ??
@@ -9,6 +9,6 @@ const baseUrl =
 
 export const api = new StudyZoneClient({
   baseUrl,
-  getAccessToken: () => useAuthStore.getState().accessToken,
-  onUnauthorized: () => useAuthStore.getState().clear(),
+  getAccessToken: () => useAuth.getState().accessToken,
+  onUnauthorized: () => useAuth.getState().clear(),
 });

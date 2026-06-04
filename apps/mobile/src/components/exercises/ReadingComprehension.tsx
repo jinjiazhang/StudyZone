@@ -4,7 +4,7 @@ import { Volume2 } from 'lucide-react-native';
 import type { ReadingComprehensionPrompt } from '@studyzone/shared-types';
 import { colors, fonts, radius } from '@/lib/theme';
 import { resolveAssetUrl } from '@/lib/assets';
-import { useAudioPlayer } from '@/lib/use-audio-player';
+import { useAudio } from '@/lib/audio';
 import { exerciseStyles as s } from './styles';
 import { OptionList } from './OptionList';
 import { SubmitButton } from './SubmitButton';
@@ -19,7 +19,7 @@ export function ReadingComprehensionExercise({
   disabled?: boolean;
 }) {
   const [picks, setPicks] = useState<(number | null)[]>(() => prompt.questions.map(() => null));
-  const { play, playingUrl } = useAudioPlayer();
+  const { play, playingUrl } = useAudio();
   const allAnswered = picks.every((p) => p !== null);
 
   function setPick(qIdx: number, optIdx: number) {

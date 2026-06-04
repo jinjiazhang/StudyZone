@@ -19,7 +19,7 @@ const secureStorage = {
   removeItem: (name: string) => SecureStore.deleteItemAsync(name),
 };
 
-export const useAuthStore = create<AuthState>()(
+export const useAuth = create<AuthState>()(
   persist(
     (set) => ({
       accessToken: null,

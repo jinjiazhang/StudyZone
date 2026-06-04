@@ -15,7 +15,7 @@ import {
   LifeBuoy,
   LogOut,
 } from 'lucide-react-native';
-import { useAuthStore } from '@/lib/auth-store';
+import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 
@@ -29,7 +29,7 @@ type Row = {
 
 export default function Settings() {
   const router = useRouter();
-  const clear = useAuthStore((s) => s.clear);
+  const clear = useAuth((s) => s.clear);
   const [confirm, setConfirm] = useState(false);
   const [toggles, setToggles] = useState<Record<string, boolean>>({ 音效: true });
 
