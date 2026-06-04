@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Can birds fly?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, they can.",
+          "They are birds.",
+          "No, they can’t."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Can people fly?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, they can.",
+          "No, they can’t.",
+          "They can walk."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Can you climb?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it can.",
+          "I am climb.",
+          "Yes, I can."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Can a horse run?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it can.",
+          "Yes, they are.",
+          "No, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "swim?",
+          "chameleons",
+          "Can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Can",
+          "chameleons",
+          "swim?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "birds",
+          "fly?",
+          "Can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Can",
+          "birds",
+          "fly?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which is a question?",
+        "options": [
+          "Birds can fly.",
+          "Can birds fly?",
+          "Birds cannot fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Answer “Can you walk?”",
+        "options": [
+          "Yes, it can.",
+          "I walk can.",
+          "Yes, I can."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can it fly?” 可以回答 “Yes, it can.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can they run?” 应回答 “Yes, it is.”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

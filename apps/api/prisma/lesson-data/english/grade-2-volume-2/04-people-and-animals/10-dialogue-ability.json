@@ -1,0 +1,194 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Can you run?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it can.",
+          "I am run.",
+          "Yes, I can."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Can this bird fly?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it can.",
+          "They can fly.",
+          "Yes, I can."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What can horses do?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, they are.",
+          "They can run.",
+          "It can fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Can chameleons fly?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, it isn’t.",
+          "Yes, they do.",
+          "No, they can’t."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What can a cat do?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It can climb.",
+          "They can climb.",
+          "Yes, it can."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Can birds fly?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, they aren’t.",
+          "Yes, they can.",
+          "Yes, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can you run?” 可以回答 “Yes, I can.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can it fly?” 可以回答 “Yes, they can.”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“What can horses do?” 可以回答 “They can run.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can chameleons fly?” 可以回答 “No, they can’t.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": null
+          },
+          {
+            "speaker": "Farmer",
+            "text": "We can help you."
+          }
+        ],
+        "blankIndex": 0,
+        "options": [
+          "I want to sleep.",
+          "There's no wolf.",
+          "Don't tell a lie.",
+          "Wolf! Wolf! I see a wolf! Help!"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Farmer",
+            "text": "Where's the wolf?"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "There's no wolf.",
+          "We can help you.",
+          "I'm watching the sheep.",
+          "The farm is big."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "I see a wolf!"
+          },
+          {
+            "speaker": "Farmer",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I want to sleep.",
+          "Where's the wolf?",
+          "There are two farmers.",
+          "The sheep is white."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I see a wolf!",
+        "sourceLocale": "en-US",
+        "options": [
+          "我看着绵羊。",
+          "我是一名农民。",
+          "我看见一只狼！",
+          "我想睡觉。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "There's no wolf.",
+        "sourceLocale": "en-US",
+        "options": [
+          "这里有一只狼。",
+          "狼在树林里。",
+          "狼很饿。",
+          "这里没有狼。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我看见一只狼！",
+        "tokens": [
+          "wolf!",
+          "I",
+          "a",
+          "see"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I",
+          "see",
+          "a",
+          "wolf!"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：这里没有狼。",
+        "tokens": [
+          "wolf.",
+          "There's",
+          "no"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "There's",
+          "no",
+          "wolf."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I see a wolf!” 表示说话人发现了狼。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“There's no wolf.” 表示真的有一只狼。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence is an alert?",
+        "options": [
+          "I see a wolf!",
+          "How boring!",
+          "I want to sleep.",
+          "There's a farm."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

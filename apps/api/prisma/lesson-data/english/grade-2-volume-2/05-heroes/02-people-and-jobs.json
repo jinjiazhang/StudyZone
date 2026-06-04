@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "teacher",
+        "sourceLocale": "en-US",
+        "options": [
+          "医生",
+          "工人",
+          "老师",
+          "英雄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "doctor",
+        "sourceLocale": "en-US",
+        "options": [
+          "老师",
+          "英雄",
+          "学生",
+          "医生"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "workman",
+        "sourceLocale": "en-US",
+        "options": [
+          "工人",
+          "医生",
+          "老师",
+          "英雄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "hero",
+        "sourceLocale": "en-US",
+        "options": [
+          "老师",
+          "英雄",
+          "工人",
+          "学生"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "老师",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "doctor",
+          "hero",
+          "teacher",
+          "workman"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "医生",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "teacher",
+          "workman",
+          "hero",
+          "doctor"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "工人",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "workman",
+          "hero",
+          "teacher",
+          "doctor"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "英雄",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "doctor",
+          "hero",
+          "workman",
+          "teacher"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "teacher"
+          },
+          {
+            "id": "l1",
+            "text": "doctor"
+          },
+          {
+            "id": "l2",
+            "text": "workman"
+          },
+          {
+            "id": "l3",
+            "text": "hero"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "医生"
+          },
+          {
+            "id": "r2",
+            "text": "工人"
+          },
+          {
+            "id": "r3",
+            "text": "英雄"
+          },
+          {
+            "id": "r0",
+            "text": "老师"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "workman"
+          },
+          {
+            "id": "l1",
+            "text": "teacher"
+          },
+          {
+            "id": "l2",
+            "text": "hero"
+          },
+          {
+            "id": "l3",
+            "text": "doctor"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "英雄"
+          },
+          {
+            "id": "r3",
+            "text": "医生"
+          },
+          {
+            "id": "r0",
+            "text": "工人"
+          },
+          {
+            "id": "r1",
+            "text": "老师"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

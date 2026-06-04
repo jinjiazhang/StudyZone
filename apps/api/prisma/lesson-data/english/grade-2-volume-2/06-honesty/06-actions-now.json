@@ -1,0 +1,167 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I'm sitting on the grass.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我正躺在草地上。",
+          "我正坐在草地上。",
+          "我正在帮助农民。",
+          "我正在树林里跑。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I'm watching the sheep.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我正在看狼。",
+          "我正在吃肉。",
+          "我正在看绵羊。",
+          "我正在睡觉。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I'm lying on the grass.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我正坐在农场上。",
+          "我正在树林里。",
+          "我正看着男孩。",
+          "我正躺在草地上。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: I'm ___ the sheep.",
+        "options": [
+          "watching",
+          "watch",
+          "watches",
+          "watched"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: I'm ___ on the grass.",
+        "options": [
+          "sit",
+          "sitting",
+          "sits",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我正在看绵羊。",
+        "tokens": [
+          "sheep.",
+          "I'm",
+          "the",
+          "watching"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I'm",
+          "watching",
+          "the",
+          "sheep."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我正躺在草地上。",
+        "tokens": [
+          "grass.",
+          "on",
+          "I'm",
+          "lying",
+          "the"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I'm",
+          "lying",
+          "on",
+          "the",
+          "grass."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I'm watching the sheep.” 描述正在进行的动作。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I'm sitting on the grass.” 表示“我正在树林里跑”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence tells what the boy is doing now?",
+        "options": [
+          "The boy is little.",
+          "There is a farm.",
+          "I'm watching the sheep.",
+          "The wolf is hungry."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

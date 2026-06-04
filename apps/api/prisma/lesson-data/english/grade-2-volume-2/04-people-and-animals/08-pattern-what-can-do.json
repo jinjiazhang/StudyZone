@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "What can a horse do?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it can.",
+          "It can run.",
+          "They can fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "What can birds do?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, they can’t.",
+          "It can climb.",
+          "They can fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "What can you do?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I can walk.",
+          "It can walk.",
+          "Yes, I do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "What can chameleons do?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, they don’t.",
+          "They can change colour.",
+          "It is green."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "it",
+          "do?",
+          "What",
+          "can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "What",
+          "can",
+          "it",
+          "do?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "do?",
+          "they",
+          "can",
+          "What"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "What",
+          "can",
+          "they",
+          "do?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "fly.",
+          "can",
+          "They"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "They",
+          "can",
+          "fly."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“What can it do?” asks about:",
+        "options": [
+          "ability",
+          "name",
+          "colour"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“What can they do?” 可以回答 “They can run.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“What can it do?” 应回答 “It is a bird.”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

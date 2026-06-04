@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "What can birds do?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It can run.",
+          "No, they aren’t.",
+          "They can fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "A",
+            "text": "Can chameleons fly?"
+          },
+          {
+            "speaker": "B",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, they can’t.",
+          "They are green.",
+          "Yes, they do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "change",
+          "Chameleons",
+          "colour.",
+          "can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Chameleons",
+          "can",
+          "change",
+          "colour."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "wings.",
+          "have",
+          "Birds"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Birds",
+          "have",
+          "wings."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence is correct?",
+        "options": [
+          "A horse can fly.",
+          "A horse cannot walk.",
+          "A horse can run."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word has the same pattern as “name”?",
+        "options": [
+          "run",
+          "cake",
+          "sea",
+          "bee"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "People and animals",
+        "passage": "Birds can fly because they have wings. Horses can run. Chameleons can climb and change colour. People can walk and run, but people cannot fly without wings.",
+        "questions": [
+          {
+            "question": "What can chameleons do?",
+            "options": [
+              "Fly with wings",
+              "Climb and change colour",
+              "Sleep for 20 hours"
+            ]
+          },
+          {
+            "question": "Can people fly without wings?",
+            "options": [
+              "The passage does not say.",
+              "Yes, they can.",
+              "No, they can’t."
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Birds have wings."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Chameleons can change colour."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "People can fly without wings."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

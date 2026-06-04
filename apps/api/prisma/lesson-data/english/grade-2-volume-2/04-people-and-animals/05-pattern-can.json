@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "run.",
+          "Horses",
+          "can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Horses",
+          "can",
+          "run."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "can",
+          "fly.",
+          "Birds"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Birds",
+          "can",
+          "fly."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "climb.",
+          "can",
+          "Cats"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Cats",
+          "can",
+          "climb."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "walk.",
+          "People",
+          "can"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "People",
+          "can",
+          "walk."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Choose the correct sentence.",
+        "options": [
+          "Can birds fly.",
+          "Birds fly can.",
+          "Birds can fly."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Choose the correct sentence.",
+        "options": [
+          "Cats can climb.",
+          "Cats climb can.",
+          "Can cats climb."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Horses can run.",
+        "sourceLocale": "en-US",
+        "options": [
+          "马能爬树。",
+          "马不会跑。",
+          "马会跑。",
+          "马会飞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Birds can fly.",
+        "sourceLocale": "en-US",
+        "options": [
+          "鸟会走。",
+          "鸟不会飞。",
+          "鸟会游泳。",
+          "鸟会飞。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Cats can climb.” 表示“猫会爬”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Fish can run.” 表示“鱼会游泳”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

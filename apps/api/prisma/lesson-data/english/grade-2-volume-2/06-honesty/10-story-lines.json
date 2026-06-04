@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "How boring!"
+          },
+          {
+            "id": "l1",
+            "text": "Help! Help!"
+          },
+          {
+            "id": "l2",
+            "text": "Where's the wolf?"
+          },
+          {
+            "id": "l3",
+            "text": "There's no wolf."
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "狼在哪里？"
+          },
+          {
+            "id": "r1",
+            "text": "没有狼。"
+          },
+          {
+            "id": "r2",
+            "text": "真无聊！"
+          },
+          {
+            "id": "r3",
+            "text": "救命！救命！"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "We can help you."
+          },
+          {
+            "id": "l1",
+            "text": "You fooled us."
+          },
+          {
+            "id": "l2",
+            "text": "We don't trust you."
+          },
+          {
+            "id": "l3",
+            "text": "Don't tell a lie."
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "我们不相信你。"
+          },
+          {
+            "id": "r1",
+            "text": "不要说谎。"
+          },
+          {
+            "id": "r2",
+            "text": "我们可以帮助你。"
+          },
+          {
+            "id": "r3",
+            "text": "你欺骗了我们。"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "I'm so hungry!",
+        "sourceLocale": "en-US",
+        "options": [
+          "我很生气！",
+          "我很无聊！",
+          "我很诚实！",
+          "我很饿！"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "It's time to eat.",
+        "sourceLocale": "en-US",
+        "options": [
+          "到了吃饭的时间。",
+          "到了睡觉的时间。",
+          "到了帮助的时间。",
+          "到了看绵羊的时间。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "But no one comes.",
+        "sourceLocale": "en-US",
+        "options": [
+          "但是狼来了。",
+          "但是没有人来。",
+          "但是农民来了。",
+          "但是男孩睡了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "The wolf eats the sheep.",
+        "sourceLocale": "en-US",
+        "options": [
+          "狼看着绵羊。",
+          "男孩帮助绵羊。",
+          "狼吃了绵羊。",
+          "农民赶走狼。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Who says “I'm so hungry” in the story language?",
+        "options": [
+          "The boy",
+          "The farmer",
+          "The narrator",
+          "The wolf"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which line gives the lesson of the story?",
+        "options": [
+          "Don't tell a lie.",
+          "How boring!",
+          "Where's the wolf?",
+          "It's time to eat."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“You fooled us.” 表示对方曾经欺骗别人。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“We don't trust you.” 表示大家完全相信你。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

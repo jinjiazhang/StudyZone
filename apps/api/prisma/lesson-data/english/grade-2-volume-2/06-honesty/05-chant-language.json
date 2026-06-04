@@ -1,0 +1,175 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "One is tall and wants to sleep.",
+        "sourceLocale": "en-US",
+        "options": [
+          "一个人很高，想睡觉。",
+          "一个男孩正在看绵羊。",
+          "一只狼从树林里来了。",
+          "两个农民在农场上。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "One is short and angry.",
+        "sourceLocale": "en-US",
+        "options": [
+          "一个人很高兴。",
+          "一个人很矮并且生气。",
+          "一个人很饿。",
+          "一个人很诚实。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "He watches his sheep.",
+        "sourceLocale": "en-US",
+        "options": [
+          "他帮助农民。",
+          "他看见一只狼。",
+          "他看着他的绵羊。",
+          "他想睡觉。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Watching them is boring.",
+        "sourceLocale": "en-US",
+        "options": [
+          "帮助他们很开心。",
+          "狼正在吃肉。",
+          "男孩正在草地上。",
+          "看着它们很无聊。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "A wolf comes by.",
+        "sourceLocale": "en-US",
+        "options": [
+          "一只狼经过。",
+          "一个男孩来了。",
+          "农民去睡觉。",
+          "绵羊帮助狼。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：他看着他的绵羊。",
+        "tokens": [
+          "sheep.",
+          "his",
+          "He",
+          "watches"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "He",
+          "watches",
+          "his",
+          "sheep."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：他经常想睡觉。",
+        "tokens": [
+          "sleep.",
+          "He",
+          "to",
+          "often",
+          "wants"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "He",
+          "often",
+          "wants",
+          "to",
+          "sleep."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Who watches the sheep?",
+        "options": [
+          "The wolf",
+          "The farm",
+          "The woods",
+          "The boy"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word means “无聊的”?",
+        "options": [
+          "boring",
+          "angry",
+          "sunny",
+          "honest"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“A sunny day” 表示“晴朗的一天”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

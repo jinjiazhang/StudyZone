@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Here you are."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Let me try.",
+          "Thank you.",
+          "He is clever.",
+          "Can you help me?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Thank you."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Here you are.",
+          "Don’t worry.",
+          "You’re welcome.",
+          "She is our teacher."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Let me help you."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "He is helpful.",
+          "Can you help me?",
+          "Your team plays well.",
+          "Thank you."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Your team plays well."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Thanks. Your team plays well, too.",
+          "Let me help you.",
+          "Here you are.",
+          "She is warm."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Can you help me?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "You’re our hero.",
+          "Yes. Let me try.",
+          "This is Mrs Li.",
+          "Don’t worry."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "别人说“Thank you.”时，可以回答“You’re welcome.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "递给别人东西时，可以说“Here you are.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Let me help you.” 的自然回应是“Thank you.”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can you help me?” 的意思是“我能帮助你吗？”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Here you are.” 的意思是“你是一位英雄”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

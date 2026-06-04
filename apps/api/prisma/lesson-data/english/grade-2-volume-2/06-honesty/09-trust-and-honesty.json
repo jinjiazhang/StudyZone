@@ -1,0 +1,159 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "You fooled us.",
+        "sourceLocale": "en-US",
+        "options": [
+          "你欺骗了我们。",
+          "你帮助了我们。",
+          "你相信我们。",
+          "你看见了我们。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "We don't trust you.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我们不能帮助你。",
+          "我们不相信你。",
+          "我们不认识你。",
+          "我们没有看见你。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Don't tell a lie.",
+        "sourceLocale": "en-US",
+        "options": [
+          "不要睡觉。",
+          "不要看绵羊。",
+          "不要说谎。",
+          "不要去农场。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which action is honest?",
+        "options": [
+          "Tell a lie.",
+          "Fool others.",
+          "Say there is a wolf when there is no wolf.",
+          "Tell the truth."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "If you often tell lies, people may not ___ you.",
+        "options": [
+          "trust",
+          "sleep",
+          "eat",
+          "watch"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：不要说谎。",
+        "tokens": [
+          "lie.",
+          "Don't",
+          "a",
+          "tell"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Don't",
+          "tell",
+          "a",
+          "lie."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我们不相信你。",
+        "tokens": [
+          "trust",
+          "you.",
+          "We",
+          "don't"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "don't",
+          "trust",
+          "you."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Don't tell a lie.” 是劝人诚实。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Fooling others helps people trust you."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Telling the truth is honest."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "I have many books."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Let me help you.",
+          "Here you are.",
+          "You’re welcome.",
+          "He is warm."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "My ball is in the tree. Can you help me?"
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "This is my teacher.",
+          "Let me try.",
+          "Your team plays well.",
+          "She is kind."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Let me help you."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Can you help me?",
+          "He is a doctor.",
+          "Thank you.",
+          "Don’t climb the tree."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Thank you."
+          },
+          {
+            "speaker": "Ben",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Let me help you.",
+          "Here you are.",
+          "She can learn.",
+          "You’re welcome."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "help",
+          "you.",
+          "Let",
+          "me"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Let",
+          "me",
+          "help",
+          "you."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "help",
+          "me?",
+          "Can",
+          "you"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Can",
+          "you",
+          "help",
+          "me?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "try.",
+          "me",
+          "Let"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Let",
+          "me",
+          "try."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence offers help?",
+        "options": [
+          "Let me help you.",
+          "Can you help me?",
+          "This is my hero.",
+          "She is warm."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Let me help you.” 是主动提出帮助。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Can you help me?” 是拒绝帮助。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

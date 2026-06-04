@@ -1,0 +1,288 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "helpful"
+          },
+          {
+            "id": "l1",
+            "text": "kind"
+          },
+          {
+            "id": "l2",
+            "text": "warm"
+          },
+          {
+            "id": "l3",
+            "text": "nice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "友善的"
+          },
+          {
+            "id": "r2",
+            "text": "热情的"
+          },
+          {
+            "id": "r3",
+            "text": "友好的"
+          },
+          {
+            "id": "r0",
+            "text": "乐于助人的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "clever"
+          },
+          {
+            "id": "l1",
+            "text": "warm"
+          },
+          {
+            "id": "l2",
+            "text": "helpful"
+          },
+          {
+            "id": "l3",
+            "text": "kind"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "乐于助人的"
+          },
+          {
+            "id": "r3",
+            "text": "友善的"
+          },
+          {
+            "id": "r0",
+            "text": "聪明的"
+          },
+          {
+            "id": "r1",
+            "text": "热情的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "teacher"
+          },
+          {
+            "id": "l1",
+            "text": "doctor"
+          },
+          {
+            "id": "l2",
+            "text": "workman"
+          },
+          {
+            "id": "l3",
+            "text": "hero"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "医生"
+          },
+          {
+            "id": "r2",
+            "text": "工人"
+          },
+          {
+            "id": "r3",
+            "text": "英雄"
+          },
+          {
+            "id": "r0",
+            "text": "老师"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "help"
+          },
+          {
+            "id": "l1",
+            "text": "learn"
+          },
+          {
+            "id": "l2",
+            "text": "fix things"
+          },
+          {
+            "id": "l3",
+            "text": "take care of sick people"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "修理东西"
+          },
+          {
+            "id": "r3",
+            "text": "照顾病人"
+          },
+          {
+            "id": "r0",
+            "text": "帮助"
+          },
+          {
+            "id": "r1",
+            "text": "学习"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word describes a person who likes to help?",
+        "options": [
+          "doctor",
+          "learn",
+          "helpful",
+          "hero"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word is a job?",
+        "options": [
+          "warm",
+          "helpful",
+          "clever",
+          "workman"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which phrase tells what a doctor does?",
+        "options": [
+          "take care of sick people",
+          "fix things",
+          "play well",
+          "help us learn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which phrase tells what a workman can do?",
+        "options": [
+          "take care of sick people",
+          "fix things",
+          "learn",
+          "be warm"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“kind” 可以用来形容一个友善的人。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“doctor” 的意思是“老师”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

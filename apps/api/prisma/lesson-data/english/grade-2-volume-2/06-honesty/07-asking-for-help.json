@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "Wolf! Wolf! I see a wolf!"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Good night.",
+          "Thank you.",
+          "Help! Help!",
+          "I'm a farmer."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "Help! Help!"
+          },
+          {
+            "speaker": "Farmer",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I want to sleep.",
+          "There's no farm.",
+          "I'm so hungry.",
+          "We can help you."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Farmer",
+            "text": null
+          },
+          {
+            "speaker": "Boy",
+            "text": "There's no wolf."
+          }
+        ],
+        "blankIndex": 0,
+        "options": [
+          "Where's the wolf?",
+          "Where's the farm?",
+          "Who is the boy?",
+          "What is meat?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "We can help you.",
+        "sourceLocale": "en-US",
+        "options": [
+          "我们不相信你。",
+          "我们可以帮助你。",
+          "我们看见一只狼。",
+          "我们想睡觉。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "Where's the wolf?",
+        "sourceLocale": "en-US",
+        "options": [
+          "男孩在哪里？",
+          "农场在哪里？",
+          "狼在哪里？",
+          "绵羊在哪里？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成呼救句。",
+        "tokens": [
+          "Help!",
+          "Wolf!",
+          "Help!",
+          "Sleep!"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "Help!",
+          "Help!"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我们可以帮助你。",
+        "tokens": [
+          "help",
+          "you.",
+          "We",
+          "can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "We",
+          "can",
+          "help",
+          "you."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "遇到危险时可以说 “Help! Help!”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“We can help you.” 表示拒绝帮助。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which reply best follows “Help! Help!”?",
+        "options": [
+          "There's no wolf.",
+          "I want to sleep.",
+          "How boring!",
+          "We can help you."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "wolf"
+          },
+          {
+            "id": "l1",
+            "text": "farmer"
+          },
+          {
+            "id": "l2",
+            "text": "farm"
+          },
+          {
+            "id": "l3",
+            "text": "boy"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "农场"
+          },
+          {
+            "id": "r1",
+            "text": "男孩"
+          },
+          {
+            "id": "r2",
+            "text": "狼"
+          },
+          {
+            "id": "r3",
+            "text": "农民"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "sleep"
+          },
+          {
+            "id": "l1",
+            "text": "watch"
+          },
+          {
+            "id": "l2",
+            "text": "help"
+          },
+          {
+            "id": "l3",
+            "text": "eat"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "帮助"
+          },
+          {
+            "id": "r1",
+            "text": "吃"
+          },
+          {
+            "id": "r2",
+            "text": "睡觉"
+          },
+          {
+            "id": "r3",
+            "text": "观看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "sheep"
+          },
+          {
+            "id": "l1",
+            "text": "grass"
+          },
+          {
+            "id": "l2",
+            "text": "woods"
+          },
+          {
+            "id": "l3",
+            "text": "meat"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "树林"
+          },
+          {
+            "id": "r1",
+            "text": "肉"
+          },
+          {
+            "id": "r2",
+            "text": "绵羊"
+          },
+          {
+            "id": "r3",
+            "text": "草地"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "sheep",
+        "sourceLocale": "en-US",
+        "options": [
+          "绵羊",
+          "狼",
+          "农民",
+          "草地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "grass",
+        "sourceLocale": "en-US",
+        "options": [
+          "树林",
+          "草地",
+          "农场",
+          "肉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "woods",
+        "sourceLocale": "en-US",
+        "options": [
+          "男孩",
+          "绵羊",
+          "树林",
+          "草地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "watch",
+        "sourceLocale": "en-US",
+        "options": [
+          "帮助",
+          "睡觉",
+          "吃",
+          "观看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "help",
+        "sourceLocale": "en-US",
+        "options": [
+          "帮助",
+          "吃",
+          "观看",
+          "睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "meat",
+        "sourceLocale": "en-US",
+        "options": [
+          "草地",
+          "肉",
+          "农场",
+          "树林"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word names a place?",
+        "options": [
+          "wolf",
+          "boy",
+          "farm",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

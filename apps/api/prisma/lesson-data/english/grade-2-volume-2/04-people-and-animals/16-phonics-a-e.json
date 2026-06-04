@@ -1,0 +1,158 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word has the -a_e pattern?",
+        "options": [
+          "run",
+          "name",
+          "see",
+          "tea"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which word has the -a_e pattern?",
+        "options": [
+          "walk",
+          "fly",
+          "cake",
+          "sleep"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which pair has the same -a_e pattern?",
+        "options": [
+          "name - tea",
+          "cake - see",
+          "sea - cake",
+          "name - cake"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: My ___ is Kate.",
+        "options": [
+          "name",
+          "sea",
+          "bee",
+          "run"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: Mum bakes me a ___.",
+        "options": [
+          "name",
+          "cake",
+          "tea",
+          "bee"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "name",
+        "sourceLocale": "en-US",
+        "options": [
+          "名字",
+          "蛋糕",
+          "大海",
+          "茶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "cake",
+        "sourceLocale": "en-US",
+        "options": [
+          "茶",
+          "蛋糕",
+          "名字",
+          "蜜蜂"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "名字",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: n___"
+      },
+      "answer": {
+        "accepted": [
+          "name"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_input",
+      "prompt": {
+        "source": "蛋糕",
+        "sourceLocale": "zh-CN",
+        "hint": "拼写提示: c___"
+      },
+      "answer": {
+        "accepted": [
+          "cake"
+        ],
+        "tolerance": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“name” 和 “cake” 都有 -a_e 拼读模式。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

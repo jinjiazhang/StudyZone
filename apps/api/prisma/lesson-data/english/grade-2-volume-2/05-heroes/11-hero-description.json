@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "is",
+          "Li.",
+          "My",
+          "Mrs",
+          "hero"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "My",
+          "hero",
+          "is",
+          "Mrs",
+          "Li."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "our",
+          "teacher.",
+          "She",
+          "is"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "She",
+          "is",
+          "our",
+          "teacher."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "help",
+          "learn.",
+          "She",
+          "us",
+          "can"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "She",
+          "can",
+          "help",
+          "us",
+          "learn."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成正确的英语句子。",
+        "tokens": [
+          "warm",
+          "nice.",
+          "She",
+          "and",
+          "is"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "She",
+          "is",
+          "warm",
+          "and",
+          "nice."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: My ___ is Mrs Li.",
+        "options": [
+          "help",
+          "learn",
+          "hero",
+          "warm"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete: She is ___ teacher.",
+        "options": [
+          "we",
+          "us",
+          "she",
+          "our"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence says why a teacher is helpful?",
+        "options": [
+          "She can help us learn.",
+          "She is Mrs Li.",
+          "This is a teacher.",
+          "She can fix things."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "My hero is Mrs Li.",
+        "sourceLocale": "en-US",
+        "options": [
+          "李老师是一名医生。",
+          "我心中的英雄是李老师。",
+          "我的英雄能修理东西。",
+          "李老师需要帮助。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "描述身边英雄时，可以说“My hero is ...”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“She can help us learn.” 描述的是修理东西。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

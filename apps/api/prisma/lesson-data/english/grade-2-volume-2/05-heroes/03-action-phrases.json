@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "help",
+        "sourceLocale": "en-US",
+        "options": [
+          "学习",
+          "修理",
+          "帮助",
+          "照顾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "learn",
+        "sourceLocale": "en-US",
+        "options": [
+          "帮助",
+          "修理东西",
+          "英雄",
+          "学习"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "fix things",
+        "sourceLocale": "en-US",
+        "options": [
+          "修理东西",
+          "帮助学习",
+          "照顾病人",
+          "成为老师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "take care of sick people",
+        "sourceLocale": "en-US",
+        "options": [
+          "修理东西",
+          "照顾病人",
+          "帮助学习",
+          "踢足球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "帮助",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "learn",
+          "fix things",
+          "help",
+          "hero"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "学习",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "help",
+          "doctor",
+          "warm",
+          "learn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "修理东西",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "fix things",
+          "help us learn",
+          "take care of sick people",
+          "play well"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "照顾病人",
+        "sourceLocale": "zh-CN",
+        "options": [
+          "fix things",
+          "take care of sick people",
+          "help us learn",
+          "play football"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "help"
+          },
+          {
+            "id": "l1",
+            "text": "learn"
+          },
+          {
+            "id": "l2",
+            "text": "fix things"
+          },
+          {
+            "id": "l3",
+            "text": "take care of sick people"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "学习"
+          },
+          {
+            "id": "r2",
+            "text": "修理东西"
+          },
+          {
+            "id": "r3",
+            "text": "照顾病人"
+          },
+          {
+            "id": "r0",
+            "text": "帮助"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "take care of sick people"
+          },
+          {
+            "id": "l1",
+            "text": "learn"
+          },
+          {
+            "id": "l2",
+            "text": "help"
+          },
+          {
+            "id": "l3",
+            "text": "fix things"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "帮助"
+          },
+          {
+            "id": "r3",
+            "text": "修理东西"
+          },
+          {
+            "id": "r0",
+            "text": "照顾病人"
+          },
+          {
+            "id": "r1",
+            "text": "学习"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "There ___ a big farm near the woods.",
+        "options": [
+          "are",
+          "am",
+          "can",
+          "is"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "On the farm there ___ two farmers.",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "can"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "There is a little ___.",
+        "options": [
+          "farmers",
+          "boy",
+          "woods",
+          "sheep are"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：树林附近有一个大农场。",
+        "tokens": [
+          "farm",
+          "There",
+          "woods.",
+          "a",
+          "near",
+          "is",
+          "the",
+          "big"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "There",
+          "is",
+          "a",
+          "big",
+          "farm",
+          "near",
+          "the",
+          "woods."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：农场上有两个农民。",
+        "tokens": [
+          "farmers.",
+          "there",
+          "On",
+          "two",
+          "farm",
+          "are",
+          "the"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "On",
+          "the",
+          "farm",
+          "there",
+          "are",
+          "two",
+          "farmers."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "There is a big farm near the woods.",
+        "sourceLocale": "en-US",
+        "options": [
+          "树林附近有一个大农场。",
+          "农场上有两个男孩。",
+          "狼在树林里睡觉。",
+          "农民帮助小男孩。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "On the farm there are two farmers.",
+        "sourceLocale": "en-US",
+        "options": [
+          "树林里有两只狼。",
+          "农场上有两个农民。",
+          "男孩在看绵羊。",
+          "农民想睡觉。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“There is a boy.” 表示“有一个男孩”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“There are two farmers.” 表示“有一个农民”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence is correct?",
+        "options": [
+          "There is a wolf.",
+          "There are a farm.",
+          "There is two boys.",
+          "There are a sleep."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}
