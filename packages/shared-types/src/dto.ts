@@ -336,6 +336,22 @@ export interface AdminLeagueWeekDto {
   totalPlayers: number;
 }
 
+export interface AdminLeagueGroupEntryDto {
+  rank: number;
+  user: UserPublic & { email: string };
+  weeklyXp: number;
+  joinedAt: string;
+  result: LeagueResultType;
+  nextTier: LeagueTier;
+  gemsAwarded: number;
+}
+
+export interface AdminLeagueGroupDetailDto extends AdminLeagueGroupDto {
+  promoteCount: number;
+  demoteCount: number;
+  entries: AdminLeagueGroupEntryDto[];
+}
+
 export interface AdminSettleLeaguesDto {
   /** ISO week-start (Monday UTC) to settle. Defaults to the most recent completed week. */
   weekStart?: string;

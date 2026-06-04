@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
 import { api } from '../state';
+
+const RouterLink = Link as unknown as React.ComponentType<any>;
 
 const TIER_LABEL: Record<string, string> = {
   bronze: '青铜',
@@ -78,9 +81,8 @@ export function Leagues() {
 
       {settle.data && (
         <div style={resultBox}>
-          已结算 <b>{settle.data.groupsSettled}</b> 个分组 ·{' '}
-          <b>{settle.data.playersSettled}</b> 名玩家 · 晋级{' '}
-          <b style={{ color: '#16a34a' }}>{settle.data.promoted}</b> · 降级{' '}
+          已结算 <b>{settle.data.groupsSettled}</b> 个分组 · <b>{settle.data.playersSettled}</b>{' '}
+          名玩家 · 晋级 <b style={{ color: '#16a34a' }}>{settle.data.promoted}</b> · 降级{' '}
           <b style={{ color: '#dc2626' }}>{settle.data.demoted}</b>（
           {fmtDate(settle.data.weekStart)} 周）
         </div>
@@ -98,8 +100,8 @@ export function Leagues() {
       ) : (
         <>
           <div style={{ fontSize: 13, color: '#6b7280', marginBottom: 12 }}>
-            {fmtDate(data.weekStart)} 周 · 共 {data.groups.length} 个分组 ·{' '}
-            {data.totalPlayers} 名玩家
+            {fmtDate(data.weekStart)} 周 · 共 {data.groups.length} 个分组 · {data.totalPlayers}{' '}
+            名玩家
           </div>
           <table style={{ width: '100%', borderCollapse: 'collapse', background: 'white' }}>
             <thead>
@@ -115,7 +117,11 @@ export function Leagues() {
               {data.groups.map((g) => (
                 <tr key={g.id} style={{ borderTop: '1px solid #e5e7eb' }}>
                   <td style={td}>{TIER_LABEL[g.tier] ?? g.tier}</td>
-                  <td style={{ ...td, fontFamily: 'monospace', fontSize: 12 }}>{g.id}</td>
+                  <td style={{ ...td, fontFamily: 'monospace', fontSize: 12 }}>
+                    <RouterLink to={`/leagues/${g.id}`} style={link}>
+                      {g.id}
+                    </RouterLink>
+                  </td>
                   <td style={td}>
                     {g.memberCount} / {g.capacity}
                   </td>
@@ -147,6 +153,11 @@ export function Leagues() {
 
 const th: React.CSSProperties = { padding: '8px 12px', fontWeight: 600 };
 const td: React.CSSProperties = { padding: '10px 12px' };
+const link: React.CSSProperties = {
+  color: '#2563eb',
+  textDecoration: 'none',
+  fontWeight: 700,
+};
 const btnPrimary: React.CSSProperties = {
   padding: '8px 16px',
   background: '#3FB984',

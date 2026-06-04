@@ -14,6 +14,7 @@ import type {
   FriendRequestDto,
   LeagueStandingDto,
   LeagueHistoryItemDto,
+  AdminLeagueGroupDetailDto,
   AdminLeagueWeekDto,
   AdminSettleLeaguesResult,
   AdminUserListItemDto,
@@ -54,10 +55,7 @@ export class StudyZoneClient {
     this.fetchImpl = opts.fetchImpl ?? globalThis.fetch.bind(globalThis);
   }
 
-  private async request<T>(
-    path: string,
-    init: RequestInit & { auth?: boolean } = {},
-  ): Promise<T> {
+  private async request<T>(path: string, init: RequestInit & { auth?: boolean } = {}): Promise<T> {
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
       ...(init.headers as Record<string, string> | undefined),
@@ -219,6 +217,10 @@ export class StudyZoneClient {
     return this.request<AdminLeagueWeekDto>(`/api/v1/admin/leagues${q}`);
   }
 
+  getAdminLeagueGroup(id: string) {
+    return this.request<AdminLeagueGroupDetailDto>(`/api/v1/admin/leagues/${id}`);
+  }
+
   settleAdminLeagues(weekStart?: string) {
     return this.request<AdminSettleLeaguesResult>('/api/v1/admin/leagues/settle', {
       method: 'POST',
@@ -233,9 +235,7 @@ export class StudyZoneClient {
     if (query.cursor) params.set('cursor', query.cursor);
     if (query.limit) params.set('limit', String(query.limit));
     const q = params.toString();
-    return this.request<Paginated<AdminUserListItemDto>>(
-      `/api/v1/admin/users${q ? `?${q}` : ''}`,
-    );
+    return this.request<Paginated<AdminUserListItemDto>>(`/api/v1/admin/users${q ? `?${q}` : ''}`);
   }
 
   getAdminUser(id: string) {

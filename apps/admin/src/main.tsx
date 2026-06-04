@@ -8,6 +8,7 @@ import { Courses } from './pages/Courses';
 import { CourseDetail } from './pages/CourseDetail';
 import { Users } from './pages/Users';
 import { Leagues } from './pages/Leagues';
+import { LeagueGroupDetail } from './pages/LeagueGroupDetail';
 import { useAuth } from './state';
 
 const client = new QueryClient();
@@ -40,6 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <RouterRoute path="courses" element={<Courses />} />
             <RouterRoute path="courses/:id" element={<CourseDetail />} />
             <RouterRoute path="leagues" element={<Leagues />} />
+            <RouterRoute path="leagues/:id" element={<LeagueGroupDetail />} />
             <RouterRoute path="users" element={<Users />} />
           </RouterRoute>
         </RouterRoutes>

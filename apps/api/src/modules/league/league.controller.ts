@@ -1,11 +1,23 @@
-import { Body, Controller, Get, Post, Query, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  NotFoundException,
+  Param,
+  Post,
+  Query,
+  UseGuards,
+} from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { IsDateString, IsOptional } from 'class-validator';
 
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
 import { LeagueService } from './league.service';
 
 class SettleLeaguesBody {
+  @IsOptional()
+  @IsDateString()
   weekStart?: string;
 }
 
@@ -31,6 +43,15 @@ export class LeagueController {
   @Get('admin/leagues')
   adminListWeek(@Query('weekStart') weekStart?: string) {
     return this.service.adminListWeek(weekStart);
+  }
+
+  @Get('admin/leagues/:id')
+  async adminGetGroup(@Param('id') id: string) {
+    const group = await this.service.adminGetGroup(id);
+    if (!group) {
+      throw new NotFoundException({ code: 'league_group_not_found', message: '联赛分组不存在' });
+    }
+    return group;
   }
 
   @Post('admin/leagues/settle')

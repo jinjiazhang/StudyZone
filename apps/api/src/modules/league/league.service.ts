@@ -332,4 +332,53 @@ export class LeagueService {
       })),
     };
   }
+
+  async adminGetGroup(groupId: string) {
+    const group = await this.prisma.leagueGroup.findUnique({
+      where: { id: groupId },
+      include: {
+        entries: {
+          include: { user: true },
+          orderBy: [{ weeklyXp: 'desc' }, { joinedAt: 'asc' }],
+        },
+      },
+    });
+    if (!group) return null;
+
+    const tier = group.tier as LeagueTier;
+    const groupSize = group.entries.length;
+    const { promoteCount, demoteCount } = zoneCounts(tier, groupSize);
+
+    return {
+      id: group.id,
+      tier,
+      weekStart: group.weekStart.toISOString(),
+      capacity: group.capacity,
+      status: group.status as 'active' | 'settled',
+      settledAt: group.settledAt ? group.settledAt.toISOString() : null,
+      memberCount: groupSize,
+      promoteCount,
+      demoteCount,
+      entries: group.entries.map((entry, idx) => {
+        const rank = idx + 1;
+        const result = classifyResult(tier, rank, groupSize, entry.weeklyXp);
+        return {
+          rank,
+          user: {
+            id: entry.user.id,
+            email: entry.user.email,
+            nickname: entry.user.nickname,
+            avatarUrl: entry.user.avatarUrl,
+            locale: entry.user.locale,
+            createdAt: entry.user.createdAt.toISOString(),
+          },
+          weeklyXp: entry.weeklyXp,
+          joinedAt: entry.joinedAt.toISOString(),
+          result,
+          nextTier: resolveNextTier(tier, result),
+          gemsAwarded: settlementGemReward(tier, rank, result),
+        };
+      }),
+    };
+  }
 }
