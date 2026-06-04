@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Leader",
+            "text": "What do you want to do in the club?"
+          },
+          {
+            "speaker": "Kate",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it is.",
+          "No, I don’t.",
+          "I like drama. I can make masks.",
+          "It is Friday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Leader",
+            "text": "What do you want to do in the Drama Club?"
+          },
+          {
+            "speaker": "Billy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I want to play football.",
+          "It is a lion.",
+          "No, it isn’t.",
+          "I want to make masks."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Leader",
+            "text": "Do you like drama?"
+          },
+          {
+            "speaker": "Kate",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes. I want to join the Drama Club.",
+          "It is a secret club.",
+          "I kick a shuttlecock.",
+          "No, it isn’t."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which answer fits “What do you want to do?”",
+        "options": [
+          "I want to make masks.",
+          "It is a club.",
+          "Yes, it is.",
+          "No, I can’t."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Choose the sentence about wanting to join.",
+        "options": [
+          "I have a club.",
+          "I want to join the club.",
+          "I make a club.",
+          "I am a club."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "club.",
+          "join",
+          "want",
+          "the",
+          "I",
+          "to"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "I",
+          "want",
+          "to",
+          "join",
+          "the",
+          "club."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成问句。",
+        "tokens": [
+          "do",
+          "want",
+          "What",
+          "to",
+          "you",
+          "do?"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "What",
+          "do",
+          "you",
+          "want",
+          "to",
+          "do?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I want to make masks.” 表示“我想制作面具”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“What do you want to do?” 询问对方会不会做某事。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I like drama. I can make masks.” 可以用于介绍自己适合戏剧社。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Leader",
+            "text": "What do you want to do in the Drama Club?"
+          },
+          {
+            "speaker": "Kate",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, it isn’t.",
+          "I want to put paper-cuts on the clothes.",
+          "I play football every day.",
+          "It is a bin."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "clothes.",
+          "paper-cuts",
+          "want",
+          "put",
+          "the",
+          "on",
+          "I",
+          "to"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "I",
+          "want",
+          "to",
+          "put",
+          "paper-cuts",
+          "on",
+          "the",
+          "clothes."
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

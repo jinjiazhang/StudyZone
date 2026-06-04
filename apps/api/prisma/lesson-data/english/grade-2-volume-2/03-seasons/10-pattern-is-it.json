@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Billy",
+            "text": "Is it a paper-cutting club?"
+          },
+          {
+            "speaker": "Kate",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, it isn’t.",
+          "Yes, I can.",
+          "I like football.",
+          "It is fun."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Kate",
+            "text": "Is this a Drama Club?"
+          },
+          {
+            "speaker": "Billy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I make masks.",
+          "Yes, it is. Come in!",
+          "No, I don’t.",
+          "It is Friday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Billy",
+            "text": "Is it a football club?"
+          },
+          {
+            "speaker": "Kate",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I can play football.",
+          "Welcome!",
+          "No, it isn’t.",
+          "I like clubs."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Kate",
+            "text": "Is this the Lion Dance Club?"
+          },
+          {
+            "speaker": "Helen",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I do paper-cutting.",
+          "No, I can’t.",
+          "It’s a mask.",
+          "Yes, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which question asks whether it is a drama club?",
+        "options": [
+          "What do you do?",
+          "Can you make masks?",
+          "Is it a drama club?",
+          "Do you like drama?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Choose the natural reply: Is it a club?",
+        "options": [
+          "I can run.",
+          "It is red.",
+          "I make masks.",
+          "Yes, it is."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Choose the natural reply: Is it the football club?",
+        "options": [
+          "No, it isn’t.",
+          "No, I can’t.",
+          "Yes, I do.",
+          "I like it."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Yes, it is.” 可以回答 “Is it a Drama Club?”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“No, I don’t.” 可以回答 “Is it a club?”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Is this a Drama Club?” 是在询问这是不是戏剧社。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Billy",
+            "text": "Is it a lion dance club?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, it isn’t.",
+          "No, I don’t.",
+          "I do the lion dance.",
+          "What’s in it?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“No, it isn’t.” 可以回答 “Do you like drama?”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

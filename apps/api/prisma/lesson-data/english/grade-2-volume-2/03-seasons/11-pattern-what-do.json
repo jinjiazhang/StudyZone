@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Billy",
+            "text": "What do you do in the club?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It is Friday.",
+          "I do paper-cutting.",
+          "Yes, it is.",
+          "No, I can’t."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Kate",
+            "text": "What do you do in the football club?"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I make masks.",
+          "It is a club.",
+          "I play football.",
+          "Yes, please."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Teacher",
+            "text": "What do you do in the Drama Club?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I kick a shuttlecock.",
+          "I play football.",
+          "It is secret.",
+          "I make masks."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "What do you do in the Lion Dance Club?"
+          },
+          {
+            "speaker": "Helen",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I do the lion dance.",
+          "I do paper-cutting.",
+          "I am a lion.",
+          "Yes, I do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which answer fits “What do you do in the club?”",
+        "options": [
+          "Yes, it is.",
+          "I play football.",
+          "No, I don’t.",
+          "It is new."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which question fits “I kick a shuttlecock.”",
+        "options": [
+          "Is it a club?",
+          "Do you like it?",
+          "What do you do in the club?",
+          "Can lions dance?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成问句。",
+        "tokens": [
+          "club?",
+          "the",
+          "do",
+          "in",
+          "you",
+          "What",
+          "do"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "What",
+          "do",
+          "you",
+          "do",
+          "in",
+          "the",
+          "club?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“What do you do in the club?” 询问你在社团里做什么。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“I do paper-cutting.” 可以回答 “What do you do in the club?”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Yes, it is.” 是回答 “What do you do in the club?” 的合适答案。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Billy",
+            "text": "Do you kick a shuttlecock in the club?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "No, it isn’t.",
+          "No, I don’t.",
+          "It is a shuttlecock.",
+          "I am in the club."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which question asks whether someone kicks a shuttlecock?",
+        "options": [
+          "Is it a shuttlecock club?",
+          "What is a shuttlecock?",
+          "Where is the club?",
+          "Do you kick a shuttlecock in the club?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“No, I don’t.” 可以回答 “Is it a shuttlecock club?”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}
