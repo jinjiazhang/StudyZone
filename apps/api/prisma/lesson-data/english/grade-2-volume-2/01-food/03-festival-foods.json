@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "zongzi",
+        "sourceLocale": "en-US",
+        "options": [
+          "盆菜",
+          "粽子",
+          "面包",
+          "粥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "mooncakes",
+        "sourceLocale": "en-US",
+        "options": [
+          "饺子",
+          "鱼丸",
+          "月饼",
+          "姜饼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "pumpkin pies",
+        "sourceLocale": "en-US",
+        "options": [
+          "米饭",
+          "饺子",
+          "包子",
+          "南瓜派"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "gingerbread",
+        "sourceLocale": "en-US",
+        "options": [
+          "姜饼",
+          "饺子",
+          "盆菜",
+          "蛋糕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "rice",
+        "sourceLocale": "en-US",
+        "options": [
+          "点心",
+          "米饭",
+          "面条",
+          "包子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "noodles",
+        "sourceLocale": "en-US",
+        "options": [
+          "饺子",
+          "粽子",
+          "面条",
+          "月饼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "zongzi"
+          },
+          {
+            "id": "l1",
+            "text": "mooncakes"
+          },
+          {
+            "id": "l2",
+            "text": "pumpkin pies"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "南瓜派"
+          },
+          {
+            "id": "r1",
+            "text": "粽子"
+          },
+          {
+            "id": "r2",
+            "text": "月饼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l0": "r1",
+          "l1": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "gingerbread"
+          },
+          {
+            "id": "l1",
+            "text": "rice"
+          },
+          {
+            "id": "l2",
+            "text": "congee"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "粥"
+          },
+          {
+            "id": "r1",
+            "text": "米饭"
+          },
+          {
+            "id": "r2",
+            "text": "姜饼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l2": "r0",
+          "l1": "r1",
+          "l0": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat zongzi at the Dragon Boat Festival."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat mooncakes at Christmas."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat pumpkin pies at Thanksgiving."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

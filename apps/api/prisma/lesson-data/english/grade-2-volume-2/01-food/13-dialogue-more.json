@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "I'm hungry!"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Good night.",
+          "Me too. Let's try it!",
+          "It's sunny.",
+          "No, thanks."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Teacher",
+            "text": "What is it, Amy?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's a clue.",
+          "I'm Amy.",
+          "It's congee! I like it!",
+          "Let's go."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "Would you like some cake?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm nine.",
+          "Good night.",
+          "Yes, please!"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What is it?"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's congee.",
+          "I'm fine.",
+          "It's red.",
+          "Thank you."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Sam",
+            "text": "Do you like congee?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's over there.",
+          "Yes, I like it!",
+          "I'm hungry.",
+          "It's a clue."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: I'm hungry! B: ___",
+        "options": [
+          "It's sunny.",
+          "Good night.",
+          "Me too. Let's eat!",
+          "No, thanks."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: What is it? B: ___",
+        "options": [
+          "I'm nine.",
+          "Let's go home.",
+          "It's blue.",
+          "It's congee."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: Do you like dim sum? B: ___",
+        "options": [
+          "Yes, I like it!",
+          "It's Monday.",
+          "I'm full now.",
+          "It's a cake."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"noodles\" 的意思是 面条。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"bread\" 的意思是 米饭。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

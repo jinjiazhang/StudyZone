@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What is it?"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's congee.",
+          "I'm fine.",
+          "It's red.",
+          "Thank you."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Teacher",
+            "text": "What is it, Amy?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's a clue.",
+          "It's congee! I like it!",
+          "I'm Amy.",
+          "Let's go."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "Would you like some cake?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm nine.",
+          "Yes, please!",
+          "Good night."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: What is it? B: ___",
+        "options": [
+          "I'm fine.",
+          "It's Monday.",
+          "Yes, I am.",
+          "It's congee."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: What's this? B: It's ___.",
+        "options": [
+          "a baozi",
+          "sunny",
+          "Monday",
+          "nine"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: Would you like some rice? B: ___",
+        "options": [
+          "It's green.",
+          "Yes, please.",
+          "I'm ten.",
+          "It's Monday."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：这是什么？",
+        "tokens": [
+          "it",
+          "like",
+          "What",
+          "?",
+          "is"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "is",
+          "it",
+          "?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：它是粥。",
+        "tokens": [
+          "It's",
+          ".",
+          "noodles",
+          "congee"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "It's",
+          "congee",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"What is it?\" 是在问“这是什么？”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "\"It's congee.\" 的意思是“它是面包。”。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

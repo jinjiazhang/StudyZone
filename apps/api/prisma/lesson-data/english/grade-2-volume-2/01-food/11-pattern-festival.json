@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：在端午节，我们吃粽子。",
+        "tokens": [
+          ",",
+          "At",
+          "eat",
+          "Dragon",
+          "the",
+          "we",
+          "rice",
+          "Festival",
+          "Boat",
+          ".",
+          "zongzi"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "At",
+          "the",
+          "Dragon",
+          "Boat",
+          "Festival",
+          ",",
+          "we",
+          "eat",
+          "zongzi",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：在中秋节，我们吃月饼。",
+        "tokens": [
+          ",",
+          "cake",
+          "we",
+          "the",
+          "Mid-Autumn",
+          "At",
+          "mooncakes",
+          "eat",
+          "Festival",
+          "."
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "At",
+          "the",
+          "Mid-Autumn",
+          "Festival",
+          ",",
+          "we",
+          "eat",
+          "mooncakes",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：在圣诞节，我们吃姜饼。",
+        "tokens": [
+          ".",
+          "we",
+          "At",
+          "zongzi",
+          "Christmas",
+          "gingerbread",
+          "eat",
+          ","
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "At",
+          "Christmas",
+          ",",
+          "we",
+          "eat",
+          "gingerbread",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "At the Dragon Boat Festival, we eat ___.",
+        "options": [
+          "gingerbread",
+          "mooncakes",
+          "zongzi",
+          "pumpkin pies"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "At ___, we eat gingerbread.",
+        "options": [
+          "the Dragon Boat Festival",
+          "the Mid-Autumn Festival",
+          "Thanksgiving",
+          "Christmas"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "At Thanksgiving, we eat ___.",
+        "options": [
+          "pumpkin pies",
+          "zongzi",
+          "mooncakes",
+          "gingerbread"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat mooncakes at the Mid-Autumn Festival."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat gingerbread at the Dragon Boat Festival."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat zongzi at the Dragon Boat Festival."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat mooncakes at Thanksgiving."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat gingerbread at Christmas."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

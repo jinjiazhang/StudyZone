@@ -1,0 +1,284 @@
+{
+  "exercises": [
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "congee",
+        "sourceLocale": "en-US",
+        "options": [
+          "蛋糕",
+          "面条",
+          "粥",
+          "月饼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "gingerbread",
+        "sourceLocale": "en-US",
+        "options": [
+          "月饼",
+          "粥",
+          "面包",
+          "姜饼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "baozi",
+        "sourceLocale": "en-US",
+        "options": [
+          "包子",
+          "盆菜",
+          "蛋糕",
+          "米饭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“月饼”用英语怎么说？",
+        "options": [
+          "cake",
+          "mooncakes",
+          "noodles",
+          "Pen Cai"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“面条”用英语怎么说？",
+        "options": [
+          "congee",
+          "gingerbread",
+          "noodles",
+          "cake"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我想要一些点心。",
+        "tokens": [
+          "I'd",
+          ".",
+          "rice",
+          "sum",
+          "dim",
+          "some",
+          "like"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I'd",
+          "like",
+          "some",
+          "dim",
+          "sum",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：在端午节，我们吃粽子。",
+        "tokens": [
+          "At",
+          "Dragon",
+          "Festival",
+          "the",
+          "rice",
+          "eat",
+          "zongzi",
+          ".",
+          ",",
+          "Boat",
+          "we"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "At",
+          "the",
+          "Dragon",
+          "Boat",
+          "Festival",
+          ",",
+          "we",
+          "eat",
+          "zongzi",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What would you like?"
+          },
+          {
+            "speaker": "Sam",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm ten.",
+          "Yes, I do.",
+          "I'd like some dim sum."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What do we eat at the Dragon Boat Festival?"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "We eat zongzi.",
+          "We eat gingerbread.",
+          "It's a cake.",
+          "Yes, we do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat zongzi at the Dragon Boat Festival."
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We eat mooncakes at Christmas."
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "A tasting test",
+        "passage": "It is a food festival. Amy and Jenny are hungry.\nThere is a tasting test. Amy tastes congee. She likes it.\nJenny tastes noodles. Then there is no food.\nA little dog brings a clue. Amy and Jenny find the last dish. It is Pen Cai.\nAmy and Jenny are the winners. They choose dim sum and baozi.",
+        "questions": [
+          {
+            "question": "Where are Amy and Jenny?",
+            "options": [
+              "At school",
+              "At home",
+              "At a food festival"
+            ]
+          },
+          {
+            "question": "What is the last dish?",
+            "options": [
+              "Pen Cai",
+              "Pizza",
+              "Bread"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "把下面的对话按合理的顺序排好。",
+        "items": [
+          {
+            "id": "c2",
+            "text": "What would you like?"
+          },
+          {
+            "id": "c0",
+            "text": "Congratulations! You're the winners!"
+          },
+          {
+            "id": "c3",
+            "text": "I'd like some baozi."
+          },
+          {
+            "id": "c1",
+            "text": "Thank you!"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

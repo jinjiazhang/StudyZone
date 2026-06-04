@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：你想要什么？",
+        "tokens": [
+          "you",
+          "would",
+          "What",
+          "is",
+          "?",
+          "like"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "would",
+          "you",
+          "like",
+          "?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我想要一些点心。",
+        "tokens": [
+          "sum",
+          "some",
+          "like",
+          "I'd",
+          "rice",
+          ".",
+          "dim"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I'd",
+          "like",
+          "some",
+          "dim",
+          "sum",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：我想要一些包子。",
+        "tokens": [
+          "baozi",
+          ".",
+          "like",
+          "cake",
+          "I'd",
+          "some"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "I'd",
+          "like",
+          "some",
+          "baozi",
+          "."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子：你喜欢哪道菜？",
+        "tokens": [
+          "eat",
+          "like",
+          "do",
+          "you",
+          "?",
+          "dish",
+          "What"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "What",
+          "dish",
+          "do",
+          "you",
+          "like",
+          "?"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What would you like?"
+          },
+          {
+            "speaker": "Sam",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's Monday.",
+          "I'm ten.",
+          "I'd like some dim sum.",
+          "Yes, I do."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Teacher",
+            "text": "Congratulations! You're the winners. What would you like?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's a dog.",
+          "See you.",
+          "I'm nine.",
+          "I'd like some baozi."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Boy",
+            "text": "What would you like at a food festival?"
+          },
+          {
+            "speaker": "Girl",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I'd like some congee. It's yummy.",
+          "I'd like to swim.",
+          "It's winter.",
+          "I'm a winner."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Sam",
+            "text": "What dish do you like?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I'm hungry.",
+          "I like Pen Cai.",
+          "It's Sunday.",
+          "Yes, please."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "I'm hungry!"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Good night.",
+          "It's sunny.",
+          "Me too. Let's try it!",
+          "No, thanks."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Sam",
+            "text": "Do you like congee?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It's over there.",
+          "I'm hungry.",
+          "It's a clue.",
+          "Yes, I like it!"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}
