@@ -15,8 +15,9 @@ from pathlib import Path
 from typing import Any
 
 
-INDEX_TYPES = {"translate_choice", "single_choice", "pinyin_choice", "poem_complete"}
+INDEX_TYPES = {"translate_choice", "single_choice", "pinyin_choice", "poem_complete", "dialogue_complete"}
 MATH_DIR_NAME = "math"
+ENGLISH_DIR_NAME = "english"
 MATH_EXPRESSION_RE = re.compile(r"^\s*(.+?)\s*=\s*\?\s*$")
 REMAINDER_NUMERIC_RE = re.compile(
     r"^\s*(-?\d+)\s*[÷/]\s*(-?\d+)\s*=\s*(-?\d+)\s*(?:\.{3,}|…+)\s*\?\s*$"
@@ -301,6 +302,97 @@ def audit_math_exercise(
         issues.append(f"{label}: geometry_draw answer.expected is required")
 
 
+def audit_english_exercise(
+    lesson_name: str,
+    index: int,
+    ex_type: Any,
+    prompt: dict[str, Any],
+    answer: dict[str, Any],
+    stats: dict[str, Any],
+    issues: list[str],
+) -> None:
+    label = f"{lesson_name}#{index}"
+
+    if ex_type == "listen_choice":
+        options = prompt.get("options")
+        if not isinstance(options, list) or len(options) < 2:
+            issues.append(f"{label}: listen_choice requires at least two options")
+            options = options if isinstance(options, list) else []
+        if not prompt.get("audioUrl"):
+            issues.append(f"{label}: listen_choice requires prompt.audioUrl")
+        for option_index, option in enumerate(options, start=1):
+            if not isinstance(option, dict) or not any(option.get(field) for field in ("text", "label", "imageUrl")):
+                issues.append(f"{label}: listen_choice option {option_index} has no visible content")
+        correct_id = answer.get("correctOptionId")
+        position = next(
+            (i for i, option in enumerate(options) if isinstance(option, dict) and option.get("id") == correct_id),
+            -1,
+        )
+        stats["listen_correct_positions"].append(position)
+        if position < 0:
+            issues.append(f"{label}: listen_choice correctOptionId not found")
+
+    if ex_type == "true_false":
+        value = answer.get("value")
+        if not isinstance(value, bool):
+            issues.append(f"{label}: true_false answer.value must be a boolean")
+        else:
+            stats["true_false_values"]["true" if value else "false"] += 1
+        if not isinstance(prompt.get("statement"), str) or not prompt.get("statement"):
+            issues.append(f"{label}: true_false requires a non-empty statement")
+
+    if ex_type == "dialogue_complete":
+        turns = prompt.get("turns")
+        blank_index = prompt.get("blankIndex")
+        options = prompt.get("options")
+        if not isinstance(turns, list) or not turns:
+            issues.append(f"{label}: dialogue_complete requires a non-empty turns array")
+        elif not isinstance(blank_index, int) or not 0 <= blank_index < len(turns):
+            issues.append(f"{label}: dialogue_complete blankIndex out of range")
+        elif turns[blank_index].get("text") not in (None, ""):
+            issues.append(f"{label}: dialogue_complete turn at blankIndex must have null/empty text")
+        if not isinstance(options, list) or len(options) < 2:
+            issues.append(f"{label}: dialogue_complete requires at least two options")
+
+    if ex_type == "picture_order":
+        ids = item_ids(prompt.get("items"))
+        ordered_ids = answer.get("orderedIds")
+        if len(ids) < 2:
+            issues.append(f"{label}: picture_order requires at least two items")
+        if len(ids) != len(set(ids)):
+            issues.append(f"{label}: picture_order item ids must be unique")
+        if not isinstance(ordered_ids, list) or Counter(ids) != Counter(ordered_ids):
+            issues.append(f"{label}: picture_order orderedIds must be a permutation of item ids")
+        elif ids == ordered_ids:
+            issues.append(f"{label}: picture_order prompt items are already in answer order")
+
+    if ex_type == "reading_comprehension":
+        passage = prompt.get("passage")
+        questions = prompt.get("questions")
+        correct_indices = answer.get("correctIndices")
+        if not isinstance(passage, str) or not passage.strip():
+            issues.append(f"{label}: reading_comprehension requires a non-empty passage")
+        if not isinstance(questions, list) or not questions:
+            issues.append(f"{label}: reading_comprehension requires a non-empty questions array")
+            return
+        if not isinstance(correct_indices, list) or len(correct_indices) != len(questions):
+            issues.append(f"{label}: reading_comprehension questions and correctIndices length mismatch")
+            return
+        for q_index, question in enumerate(questions):
+            q_options = question.get("options", []) if isinstance(question, dict) else []
+            if not isinstance(q_options, list) or len(q_options) < 2:
+                issues.append(f"{label}: reading_comprehension question {q_index + 1} needs at least two options")
+                continue
+            duplicates = duplicate_values(q_options)
+            if duplicates:
+                issues.append(f"{label}: duplicate reading_comprehension options {duplicates}")
+            correct_index = correct_indices[q_index]
+            if not isinstance(correct_index, int) or not 0 <= correct_index < len(q_options):
+                issues.append(f"{label}: reading_comprehension correctIndex out of range")
+            else:
+                stats["index_answer_positions"]["reading_comprehension"][correct_index] += 1
+
+
 def audit(unit_dir: Path) -> tuple[dict[str, Any], list[str], list[str]]:
     issues: list[str] = []
     warnings: list[str] = []
@@ -324,6 +416,8 @@ def audit(unit_dir: Path) -> tuple[dict[str, Any], list[str], list[str]]:
         "word_build_grouped_answer": 0,
         "match_pairs_total": 0,
         "match_pairs_too_aligned": 0,
+        "listen_correct_positions": [],
+        "true_false_values": Counter(),
     }
 
     if not 18 <= len(lessons) <= 20:
@@ -490,8 +584,11 @@ def audit(unit_dir: Path) -> tuple[dict[str, Any], list[str], list[str]]:
 
             if subject == MATH_DIR_NAME:
                 audit_math_exercise(lesson_file.name, index, ex_type, prompt, answer, issues)
+            if subject == ENGLISH_DIR_NAME:
+                audit_english_exercise(lesson_file.name, index, ex_type, prompt, answer, stats, issues)
 
     stats["type_counts"] = dict(stats["type_counts"])
+    stats["true_false_values"] = dict(stats["true_false_values"])
     stats["index_answer_positions"] = {
         key: dict(value) for key, value in stats["index_answer_positions"].items()
     }

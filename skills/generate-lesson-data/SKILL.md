@@ -14,26 +14,32 @@ description: Create or regenerate textbook-aligned StudyZone lesson-data for Chi
    - `apps/api/prisma/lesson-data/loader.ts`
 2. Inspect existing lesson-data in the target subject/grade only to learn local naming, unit index, JSON style, and file conventions. Do not treat old lesson files as the source of textbook content.
 3. Read the textbook assets from `apps/web/public/assets/textbooks/<subject>/<grade-volume>/`.
-   - Read `manifest.json` and `resource.json`.
-   - Use multimodal/vision inspection of relevant `pages/page-*.jpg` before planning or writing exercises.
+   - All subjects (Chinese, math, English) use the same image-based page format: read `manifest.json` and `resource.json`, then use multimodal/vision inspection of relevant `pages/page-*.jpg` before planning or writing exercises.
    - Locate the unit boundaries from the textbook pages; confirm page numbers and lesson titles from the images.
-   - Crop or zoom pages when needed to read tables, pinyin, footnotes,课后练习, and 园地 sections accurately.
+   - Crop or zoom pages when needed to read tables, pinyin, footnotes,课后练习,园地, English word lists, picture dictionaries, and story pages accurately.
+   - The repository's existing course metadata and lesson-data may reflect a different edition than the page images. When they conflict, follow the page images in `apps/web/public/assets/textbooks/<subject>/<grade-volume>/pages/` and flag the mismatch.
 4. Extract the unit's learning targets from the textbook:
    - Required texts, new characters, writing characters from the textbook writing grid, vocabulary, exercises after the lesson, oral/reading tasks, and unit garden pages.
    - For Chinese, cover recognition, pinyin, word building, meaning, text comprehension, dictation/writing, recitation, sentence imitation, and integrated review.
-   - For math, make a knowledge-point inventory before writing exercises: concepts, representations, calculation methods, worked examples, common mistakes, application models, required units, diagrams/tables, and textbook practice variants.
+   - For English, inventory each unit's strands before writing exercises: target vocabulary (with the unit's pictures), core sentence patterns / target structures (e.g. "What would you like?" / "I'd like…"), listening points, dialogue and oral-communication functions, the story / reading passage, phonics or "sounds" focus, and the spelling/writing words from the word list. Keep language, tenses, and vocabulary within the unit and grade; do not introduce structures from later units or grades.
    - Record the valid number range, operations, notation, units, and expected solution method for every math knowledge point. Do not introduce content from later grades or unrelated units.
    - When textbook images conflict with existing lesson-data or memory of another edition, follow the images in the repository.
 5. Plan 18-20 lessons for the unit.
    - Do not create lessons named as preview/self-study/review phases.
    - Use skill-focused names such as "生字认读", "词语积累", "背诵拼图", "故事顺序", "句子仿照", "口算基础", "方法理解", "应用辨析", and "综合运用".
    - For math, split each textbook topic into meaningful learning steps rather than repeating one worksheet: concept/representation, direct calculation, method reasoning, comparison or classification, error diagnosis, application modeling, and integrated use.
-   - Keep prerequisites before applications and arrange difficulty from concrete to abstract. If the textbook unit genuinely cannot support 18 distinct lessons, create fewer high-quality lessons and explain the exception; never add unrelated content or duplicate exercises merely to reach the target.
+   - For English, split each unit into skill strands rather than one big "vocabulary/sentences/story" trio. Use skill-focused names such as "单词认读" (word recognition), "听音辨义" (listening), "句型操练" (sentence patterns), "情景对话" (dialogue), "看图排序" (story ordering), "阅读理解" (reading), "拼写产出" (spelling), and "自然拼读" (phonics) when the unit supports it. Order them receptive→productive (recognize → listen → use → produce).
+   - Keep prerequisites before applications and arrange difficulty from concrete to abstract. If the textbook unit genuinely cannot support 18 distinct lessons, create fewer high-quality lessons and explain the exception; never add unrelated content or duplicate exercises merely to reach the target. English units are typically lighter and picture-based, so they usually support fewer lessons than Chinese/math units — prefer a smaller number of distinct skill-strand lessons over padding, and let the audit's lesson-count warning stand as an accepted exception.
    - Keep each lesson at 10-15 exercises.
 6. Clear and regenerate only the requested unit directory.
    - Preserve unrelated units and course metadata.
    - Write `lessons.json` plus one JSON file per lesson.
 7. Use diverse exercise types supported by the docs and shared types.
+   - English vocabulary and meaning: `translate_choice`, `translate_input`, `image_choice` (when textbook pictures help), and `match_pairs` for word↔meaning or word↔picture.
+   - English listening: `listen_input` (dictation) and `listen_choice` (listen and pick the matching word/picture). Only use audio-backed types when audio assets exist or are clearly planned; otherwise prefer reading-based equivalents.
+   - English sentences and communication: `word_bank` (sentence assembly), `dialogue_complete` (fill the missing dialogue line), and `single_choice` for grammar/usage.
+   - English reading and sequencing: `reading_comprehension` (story/passage + sub-questions), `picture_order` (order story panels or "Listen and number" cards), and `true_false` for "Read and check" judgments.
+   - Select English types by the lesson's strand: word-recognition lessons lean on `translate_choice`/`image_choice`/`match_pairs`; dialogue lessons on `dialogue_complete`; story lessons on `picture_order`/`reading_comprehension`. Do not force every type into every unit.
    - Chinese: `pinyin_choice`, `pinyin_to_word`, `word_build`, `match_pairs`, `single_choice`, `word_bank`, `poem_complete`, `poem_multi_blank`, and `image_choice` when textbook images help.
    - Math calculation and number sense: `numeric_input`, `multi_numeric_input`, `compare_input`, `order_sequence`, and `math_drag_fill`.
    - Math modeling and reasoning: `expression_input`, `single_choice`, `match_pairs`, and `table_read`.
@@ -47,8 +53,12 @@ description: Create or regenerate textbook-aligned StudyZone lesson-data for Chi
    - For `match_pairs`, shuffle both columns and prevent many same-row matches.
    - For `image_choice`, vary the correct image position.
    - For `geometry_choice`, vary the correct option position and keep option ids stable after shuffling.
-   - For `order_sequence`, do not store `prompt.items` in the correct order.
+   - For `order_sequence` and `picture_order`, do not store `prompt.items` in the correct `orderedIds` order.
    - For `math_drag_fill`, shuffle tokens and include only plausible distractors.
+   - For `listen_choice`, vary the correct option position and keep option ids stable after shuffling.
+   - For `dialogue_complete`, distribute the correct `correctIndex` across option positions; do not let the right answer sit in the same slot every time.
+   - For `reading_comprehension`, vary `correctIndices` across questions and across the unit; avoid all-true or all-first answer keys.
+   - For `true_false`, keep roughly half true and half false within a lesson, and avoid long runs of the same answer.
 9. Validate with the loader and the audit script.
 
 ## Quality Rules
@@ -82,19 +92,42 @@ description: Create or regenerate textbook-aligned StudyZone lesson-data for Chi
 - For geometry, tables, images, and diagrams, inspect the rendered or source asset and confirm that the visual evidence uniquely supports the answer.
 - Include a useful difficulty progression inside each lesson: mostly level 1-2 practice, followed by a small number of level 2-3 reasoning or application exercises.
 
+## English Quality Rules
+
+- Keep every prompt and option inside the unit's vocabulary, sentence patterns, and grade level. Do not use words, tenses, or structures the unit has not taught.
+- For translation types, make the source unambiguous so exactly one option is a correct translation. Avoid near-synonym distractors that are also defensible answers.
+- Keep `translate_input` / `listen_input` answers short and provide a sensible `tolerance` (single word: 1; short sentence: 2-3). List all acceptable surface forms (e.g. lowercase variant) in `accepted`.
+- Only use audio-backed types (`listen_input`, `listen_choice`) when the referenced `audioUrl` assets exist or are explicitly planned; never invent audio URLs that will 404. Provide `audioUrlSlow` when a slow replay is expected.
+- For `image_choice` and image-based `listen_choice`, reference real local asset paths under `/assets/...`; confirm the image actually depicts the target word and that distractor images are clearly different.
+- For `dialogue_complete`, make the surrounding turns establish exactly one natural reply; the missing line must be the unique appropriate response, and distractors must be grammatical but contextually wrong. Set `blankIndex` to the `null`-text turn.
+- For `reading_comprehension`, keep the passage grade-appropriate and short (a few sentences for grade 1-2). Every sub-question must be answerable from the passage with one correct option, and the whole exercise is graded all-or-nothing.
+- For `picture_order`, give the cards a single correct sequence (a story or a logical/temporal order). Use stable ids and reference real card images when using `imageUrl`.
+- For `true_false`, base the statement on the textbook page so its truth value is verifiable; keep statements unambiguous (avoid "sometimes/usually" wording that could be argued either way).
+- Keep distractors plausible for the grade, and avoid repeating identical options within an option group or identical visible labels within a `match_pairs` column.
+
 ## Validation
 
 Run the unit audit after writing lesson files:
 
 ```bash
+# Chinese unit
 python3 skills/generate-lesson-data/scripts/audit_lesson_data.py \
   apps/api/prisma/lesson-data/chinese/grade-2-volume-2/01-reading
+
+# English unit
+python3 skills/generate-lesson-data/scripts/audit_lesson_data.py \
+  apps/api/prisma/lesson-data/english/grade-2-volume-2/01-playtime
 ```
 
 The audit infers the subject from the directory path. For a math unit it also
 checks math-specific structure, references, basic arithmetic, comparisons, and
-answer constraints. Warnings such as a lesson count outside the preferred
-18-20 range require review but do not fail the command; issues must be fixed.
+answer constraints. For an English unit it additionally validates the
+listening/dialogue/reading/ordering/true-false types (`listen_choice`,
+`dialogue_complete`, `reading_comprehension`, `picture_order`, `true_false`):
+option/answer integrity, `correctIndices` alignment, `picture_order` permutation
+and non-ordered storage, and true/false answer balance. Warnings such as a lesson
+count outside the preferred 18-20 range require review but do not fail the
+command (English units are often legitimately shorter); issues must be fixed.
 
 Run the StudyZone loader against the course:
 
