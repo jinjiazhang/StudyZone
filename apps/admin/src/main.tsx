@@ -12,10 +12,13 @@ import { useAuth } from './state';
 
 const client = new QueryClient();
 const adminBase = ((import.meta as any).env?.VITE_ADMIN_BASE ?? '/admin').replace(/\/$/, '');
+const RouterRoutes = Routes as unknown as React.ComponentType<{ children?: React.ReactNode }>;
+const RouterRoute = Route as unknown as React.ComponentType<any>;
+const RouterNavigate = Navigate as unknown as React.ComponentType<any>;
 
 function Protected({ children }: { children: React.ReactNode }) {
   const token = useAuth((s) => s.accessToken);
-  if (!token) return <Navigate to="/login" replace />;
+  if (!token) return <RouterNavigate to="/login" replace />;
   return <>{children}</>;
 }
 
@@ -23,9 +26,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <QueryClientProvider client={client}>
       <BrowserRouter basename={adminBase}>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route
+        <RouterRoutes>
+          <RouterRoute path="/login" element={<Login />} />
+          <RouterRoute
             path="/"
             element={
               <Protected>
@@ -33,13 +36,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               </Protected>
             }
           >
-            <Route index element={<Navigate to="/courses" replace />} />
-            <Route path="courses" element={<Courses />} />
-            <Route path="courses/:id" element={<CourseDetail />} />
-            <Route path="leagues" element={<Leagues />} />
-            <Route path="users" element={<Users />} />
-          </Route>
-        </Routes>
+            <RouterRoute index element={<RouterNavigate to="/courses" replace />} />
+            <RouterRoute path="courses" element={<Courses />} />
+            <RouterRoute path="courses/:id" element={<CourseDetail />} />
+            <RouterRoute path="leagues" element={<Leagues />} />
+            <RouterRoute path="users" element={<Users />} />
+          </RouterRoute>
+        </RouterRoutes>
       </BrowserRouter>
     </QueryClientProvider>
   </React.StrictMode>,

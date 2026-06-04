@@ -2,6 +2,8 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { api } from '../state';
 
+const RouterLink = Link as unknown as React.ComponentType<any>;
+
 export function Courses() {
   const { data: courses } = useQuery({
     queryKey: ['admin-courses'],
@@ -38,7 +40,7 @@ export function Courses() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               {subjectCourses.map((c) => (
-                <Link
+                <RouterLink
                   to={`/courses/${c.id}`}
                   key={c.id}
                   style={{
@@ -64,7 +66,7 @@ export function Courses() {
                   />
                   <div style={{ fontWeight: 700, marginTop: 8 }}>{c.name}</div>
                   <div style={{ fontSize: 12, color: '#6b7280', marginTop: 4 }}>{c.description}</div>
-                </Link>
+                </RouterLink>
               ))}
             </div>
           </section>
@@ -84,7 +86,7 @@ export function Courses() {
           </div>
         )}
         {!subjects && courses?.map((c) => (
-          <Link
+          <RouterLink
             to={`/courses/${c.id}`}
             key={c.id}
             style={{
@@ -110,7 +112,7 @@ export function Courses() {
             />
             <div style={{ fontWeight: 700, marginTop: 8 }}>{c.name}</div>
             <div style={{ fontSize: 12, color: '#6b7280', marginTop: 4 }}>{c.description}</div>
-          </Link>
+          </RouterLink>
         ))}
       </div>
     </div>

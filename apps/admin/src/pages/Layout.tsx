@@ -1,6 +1,9 @@
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../state';
 
+const RouterLink = Link as unknown as React.ComponentType<any>;
+const RouterOutlet = Outlet as unknown as React.ComponentType<any>;
+
 export function Layout() {
   const navigate = useNavigate();
   const email = useAuth((s) => s.email);
@@ -22,9 +25,9 @@ export function Layout() {
           🦊 StudyZone
         </div>
         <div style={{ fontSize: 12, color: '#6b7280', marginBottom: 12 }}>{email}</div>
-        <Link to="/courses" style={nav}>课程管理</Link>
-        <Link to="/leagues" style={nav}>联赛管理</Link>
-        <Link to="/users" style={nav}>用户管理</Link>
+        <RouterLink to="/courses" style={nav}>课程管理</RouterLink>
+        <RouterLink to="/leagues" style={nav}>联赛管理</RouterLink>
+        <RouterLink to="/users" style={nav}>用户管理</RouterLink>
         <button
           onClick={() => {
             clear();
@@ -44,7 +47,7 @@ export function Layout() {
         </button>
       </aside>
       <main style={{ padding: 32 }}>
-        <Outlet />
+        <RouterOutlet />
       </main>
     </div>
   );

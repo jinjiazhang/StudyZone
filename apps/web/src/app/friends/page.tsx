@@ -1,5 +1,6 @@
 'use client';
 
+import type { JSX } from 'react';
 import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react';
@@ -15,7 +16,7 @@ const ERROR_LABEL: Record<string, string> = {
   request_not_found: '请求不存在或已处理',
 };
 
-export default function FriendsPage() {
+export default function FriendsPage(): JSX.Element {
   const qc = useQueryClient();
   const [email, setEmail] = useState('');
   const [feedback, setFeedback] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
