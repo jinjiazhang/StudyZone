@@ -1,0 +1,232 @@
+{
+  "id": "14-xiaoma-gushi-shunxu",
+  "title": "小马故事顺序",
+  "description": "按起因、经过、结果梳理《小马过河》的故事顺序。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事一开始，小马要帮妈妈做什么？",
+        "options": [
+          "修羊圈",
+          "画杨桃",
+          "借图书",
+          "把半口袋麦子驮到磨坊去"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马为什么在河边停住了？",
+        "options": [
+          "羊圈破了",
+          "一条小河挡住了去路",
+          "老师让他坐下",
+          "禾苗枯死了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛说完后，小马准备怎样？",
+        "options": [
+          "马上回家",
+          "立刻跑到河边，准备蹚过去",
+          "不再送麦子",
+          "去找老师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "松鼠拦住小马，说河水怎样？",
+        "options": [
+          "浅得很",
+          "没有水",
+          "结冰了",
+          "深得很"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马第一次回家问妈妈，妈妈让他明白什么？",
+        "options": [
+          "不能光听别人说，要自己动脑筋试一试",
+          "河水永远很深",
+          "麦子不用送了",
+          "老牛和松鼠都错了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "飞快地",
+          "口袋",
+          "小马",
+          "磨坊",
+          "驮起",
+          "往磨坊跑去",
+          "松鼠"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小马",
+          "驮起",
+          "口袋",
+          "飞快地",
+          "往磨坊跑去"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "对岸",
+          "他",
+          "蹚到了",
+          "下了河",
+          "小心地",
+          "麦子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "下了河",
+          "小心地",
+          "蹚到了",
+          "对岸"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "起因"
+          },
+          {
+            "id": "l2",
+            "text": "第一次遇到"
+          },
+          {
+            "id": "l3",
+            "text": "回家请教"
+          },
+          {
+            "id": "l4",
+            "text": "结果"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "小马亲自试过河"
+          },
+          {
+            "id": "r2",
+            "text": "小马驮麦子去磨坊"
+          },
+          {
+            "id": "r3",
+            "text": "小马问妈妈该怎么办"
+          },
+          {
+            "id": "r4",
+            "text": "老牛和松鼠说法不同"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马最后发现河水怎样？",
+        "options": [
+          "比松鼠说的还深",
+          "完全没有水",
+          "既不像老牛说的那样浅，也不像松鼠说的那样深",
+          "像羊圈一样结实"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挡",
+        "hint": "挡住去路的挡",
+        "options": [
+          "dàng",
+          "dāng",
+          "dǎng",
+          "tǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mài",
+        "sentence": "小马驮着半口袋__子。",
+        "blankPlaceholder": "__",
+        "character": "麦",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "麦"
+      },
+      "difficulty": 2
+    }
+  ]
+}

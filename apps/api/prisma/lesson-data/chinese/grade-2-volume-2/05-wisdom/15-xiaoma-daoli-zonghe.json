@@ -1,0 +1,244 @@
+{
+  "id": "15-xiaoma-daoli-zonghe",
+  "title": "小马道理综合",
+  "description": "综合复习《小马过河》的字词、人物说法和故事道理。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《小马过河》告诉我们什么？",
+        "options": [
+          "别人说什么都完全一样",
+          "做事越急越好",
+          "遇事要动脑筋，也要亲自试一试",
+          "画东西不用看实物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么老牛和松鼠的说法不同？",
+        "options": [
+          "他们身体高矮不同，经历不同",
+          "他们都没有看见河",
+          "他们都想骗小马",
+          "他们都不会说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈的话中，最关键的做法是？",
+        "options": [
+          "马上放弃",
+          "只听松鼠的",
+          "只听老牛的",
+          "自己试一试"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "老牛"
+          },
+          {
+            "id": "l2",
+            "text": "松鼠"
+          },
+          {
+            "id": "l3",
+            "text": "小马"
+          },
+          {
+            "id": "l4",
+            "text": "妈妈"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "提醒要动脑筋、亲自尝试"
+          },
+          {
+            "id": "r2",
+            "text": "根据自己的身高说水浅"
+          },
+          {
+            "id": "r3",
+            "text": "先犹豫，后来自己试"
+          },
+          {
+            "id": "r4",
+            "text": "根据伙伴的遭遇说水深"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "还是浅",
+          "到底",
+          "河水",
+          "是深",
+          "老牛",
+          "松鼠"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "河水",
+          "到底",
+          "是深",
+          "还是浅"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "别人说",
+          "光听",
+          "不能",
+          "试试",
+          "麦子",
+          "磨坊"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不能",
+          "光听",
+          "别人说"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "既",
+        "hint": "既然的既",
+        "options": [
+          "jí",
+          "jì",
+          "jǐ",
+          "qí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "试",
+        "hint": "试一试的试",
+        "options": [
+          "sì",
+          "shǐ",
+          "shí",
+          "shì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "rán",
+        "sentence": "既__这样，就自己试试吧。",
+        "blankPlaceholder": "__",
+        "character": "然",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "然"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuàn",
+        "sentence": "小马很__意帮妈妈做事。",
+        "blankPlaceholder": "__",
+        "character": "愿",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "愿"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "小马过河",
+        "options": [
+          {
+            "id": "p70",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-070.jpg",
+            "label": "语文园地"
+          },
+          {
+            "id": "p63",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-063.jpg",
+            "label": "杨桃"
+          },
+          {
+            "id": "p60",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-060.jpg",
+            "label": "寓言二则"
+          },
+          {
+            "id": "p67",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-067.jpg",
+            "label": "小马遇见松鼠"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p67"
+      },
+      "difficulty": 1
+    }
+  ]
+}

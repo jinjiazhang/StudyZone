@@ -1,0 +1,248 @@
+{
+  "id": "13-xiaoma-juese-yuqi",
+  "title": "小马角色语气",
+  "description": "按角色理解老牛、松鼠、妈妈和小马的话，练习读出语气。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "老牛"
+          },
+          {
+            "id": "l2",
+            "text": "松鼠"
+          },
+          {
+            "id": "l3",
+            "text": "妈妈"
+          },
+          {
+            "id": "l4",
+            "text": "小马"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "鼓励孩子自己试一试"
+          },
+          {
+            "id": "r2",
+            "text": "说河水很浅"
+          },
+          {
+            "id": "r3",
+            "text": "不知道怎么办，跑回家问妈妈"
+          },
+          {
+            "id": "r4",
+            "text": "说河水很深"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛为什么说河水很浅？",
+        "options": [
+          "因为水只没过他的小腿",
+          "因为他不会游泳",
+          "因为河里没有水",
+          "因为松鼠告诉他的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "松鼠为什么说河水很深？",
+        "options": [
+          "因为老牛说很深",
+          "因为妈妈不让他说话",
+          "因为昨天他的一个伙伴掉进河里淹死了",
+          "因为河水没过小马小腿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小马吃惊地问”应该读出什么语气？",
+        "options": [
+          "高兴、轻松",
+          "严肃、批评",
+          "惊讶、担心",
+          "得意、骄傲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“唉！还是回家问问妈妈吧！”表现小马怎样？",
+        "options": [
+          "拿不定主意",
+          "已经过河了",
+          "很想笑",
+          "很生气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "脚步",
+          "连忙",
+          "小马",
+          "磨坊",
+          "收住",
+          "浅"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小马",
+          "连忙",
+          "收住",
+          "脚步"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "小马",
+          "对",
+          "妈妈",
+          "亲切地",
+          "说",
+          "河水",
+          "伙伴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "妈妈",
+          "亲切地",
+          "对",
+          "小马",
+          "说"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "伯",
+        "hint": "牛伯伯的伯",
+        "options": [
+          "bǎi",
+          "bó",
+          "pó",
+          "bé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蹄",
+        "hint": "马蹄的蹄",
+        "options": [
+          "tí",
+          "dí",
+          "tī",
+          "tǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "你去__一试就知道了。",
+        "blankPlaceholder": "__",
+        "character": "试",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "试"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "小马过河角色",
+        "options": [
+          {
+            "id": "p66",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-066.jpg",
+            "label": "小马问老牛"
+          },
+          {
+            "id": "p63",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-063.jpg",
+            "label": "画杨桃"
+          },
+          {
+            "id": "p60",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-060.jpg",
+            "label": "羊圈"
+          },
+          {
+            "id": "p72",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-072.jpg",
+            "label": "日积月累"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p66"
+      },
+      "difficulty": 1
+    }
+  ]
+}

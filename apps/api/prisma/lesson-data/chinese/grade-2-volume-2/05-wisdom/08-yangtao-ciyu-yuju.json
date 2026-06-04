@@ -1,0 +1,251 @@
+{
+  "id": "08-yangtao-ciyu-yuju",
+  "title": "杨桃词语句子",
+  "description": "理解课文词语，练习用词块还原课文重点句。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "教室"
+          },
+          {
+            "id": "l2",
+            "text": "讲桌"
+          },
+          {
+            "id": "l3",
+            "text": "座位"
+          },
+          {
+            "id": "l4",
+            "text": "审视"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "学生坐的地方"
+          },
+          {
+            "id": "r2",
+            "text": "上课的屋子"
+          },
+          {
+            "id": "r3",
+            "text": "仔细看"
+          },
+          {
+            "id": "r4",
+            "text": "老师放教具的桌子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "严肃"
+          },
+          {
+            "id": "l2",
+            "text": "和颜悦色"
+          },
+          {
+            "id": "l3",
+            "text": "半晌"
+          },
+          {
+            "id": "l4",
+            "text": "教诲"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "态度温和亲切"
+          },
+          {
+            "id": "r2",
+            "text": "很长一会儿"
+          },
+          {
+            "id": "r3",
+            "text": "郑重、不随便"
+          },
+          {
+            "id": "r4",
+            "text": "教导"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“他对我的要求很严格”中的“严格”意思接近？",
+        "options": [
+          "非常可笑",
+          "要求高，不马虎",
+          "颜色鲜艳",
+          "跑得很快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“老师的神情变得严肃了”说明老师怎样？",
+        "options": [
+          "非常想笑",
+          "准备画画",
+          "马上离开教室",
+          "认真郑重地对待这件事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "自己的座位上",
+          "老师",
+          "这几个同学",
+          "让",
+          "回到",
+          "讲桌",
+          "哈哈"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老师",
+          "让",
+          "这几个同学",
+          "回到",
+          "自己的座位上"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "也就不一样",
+          "角度",
+          "看的",
+          "杨桃的样子",
+          "不同",
+          "严肃",
+          "审视"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "看的",
+          "角度",
+          "不同",
+          "杨桃的样子",
+          "也就不一样"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "肃",
+        "hint": "严肃的肃",
+        "options": [
+          "sù",
+          "shù",
+          "sǔ",
+          "sū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "悦",
+        "hint": "和颜悦色的悦",
+        "options": [
+          "yuē",
+          "ruì",
+          "yào",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yè",
+        "sentence": "纸上画着一__杨桃。",
+        "blankPlaceholder": "__",
+        "character": "页",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "页"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qiǎng",
+        "sentence": "同学们__着回答。",
+        "blankPlaceholder": "__",
+        "character": "抢",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "抢"
+      },
+      "difficulty": 2
+    }
+  ]
+}
