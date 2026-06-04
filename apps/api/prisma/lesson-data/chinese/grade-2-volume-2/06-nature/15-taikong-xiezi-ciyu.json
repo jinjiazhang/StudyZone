@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "háng",
+        "sentence": "__天员乘坐宇宙飞船。",
+        "character": "航",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "航"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǔ",
+        "sentence": "航天员乘坐__宙飞船。",
+        "character": "宇",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "宇"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǒng",
+        "sentence": "科学人员设计了密封浴__。",
+        "character": "桶",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "桶"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "航",
+        "tokens": [
+          "班",
+          "空",
+          "天",
+          "向",
+          "行",
+          "船"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "天",
+            "行",
+            "班"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "宇",
+        "tokens": [
+          "内",
+          "间",
+          "宙",
+          "空",
+          "航",
+          "外"
+        ],
+        "targetCount": 2
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "宙",
+            "航"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "桶",
+        "tokens": [
+          "木",
+          "盖",
+          "水",
+          "花",
+          "浴",
+          "饭"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "浴",
+            "木"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "平稳"
+          },
+          {
+            "id": "b",
+            "text": "牢固"
+          },
+          {
+            "id": "c",
+            "text": "姿态"
+          },
+          {
+            "id": "d",
+            "text": "使劲"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "千姿百态"
+          },
+          {
+            "id": "r0",
+            "text": "四平八稳"
+          },
+          {
+            "id": "r3",
+            "text": "使用"
+          },
+          {
+            "id": "r1",
+            "text": "稳固"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“必须”的“须”可以组哪个词？",
+        "options": [
+          "需要",
+          "须要错写",
+          "须水",
+          "胡须"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“普通”的反义感觉更接近哪个词？",
+        "options": [
+          "特别",
+          "平常",
+          "一般",
+          "普通"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词组：带吸管的饮水袋",
+        "tokens": [
+          "饮水袋",
+          "带",
+          "普通的",
+          "吸管的",
+          "杯子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "带",
+          "吸管的",
+          "饮水袋"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

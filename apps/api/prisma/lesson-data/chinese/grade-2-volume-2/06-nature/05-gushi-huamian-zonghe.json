@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "黄鹂"
+          },
+          {
+            "id": "b",
+            "text": "白鹭"
+          },
+          {
+            "id": "c",
+            "text": "莲叶"
+          },
+          {
+            "id": "d",
+            "text": "荷花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "无穷碧"
+          },
+          {
+            "id": "r0",
+            "text": "鸣翠柳"
+          },
+          {
+            "id": "r3",
+            "text": "别样红"
+          },
+          {
+            "id": "r1",
+            "text": "上青天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两个黄鹂鸣翠柳”让人想到的画面是？",
+        "options": [
+          "雪山下有船停着",
+          "荷花映着太阳",
+          "柳树间有黄鹂在叫",
+          "雨后挂着彩虹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“接天莲叶无穷碧”让人想到的画面是？",
+        "options": [
+          "白鹭飞上青天",
+          "莲叶连天一片碧绿",
+          "雷雨越下越大",
+          "北极星挂在北方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：两个黄鹂鸣翠柳",
+        "tokens": [
+          "鸣",
+          "两个",
+          "翠柳",
+          "黄鹂",
+          "荷花",
+          "莲叶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "两个",
+          "黄鹂",
+          "鸣",
+          "翠柳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：接天莲叶无穷碧",
+        "tokens": [
+          "无穷碧",
+          "接天",
+          "映日",
+          "莲叶",
+          "黄鹂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "接天",
+          "莲叶",
+          "无穷碧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "毕",
+        "hint": "“毕竟”的“毕”",
+        "options": [
+          "bǐ",
+          "pì",
+          "bī",
+          "bì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竟",
+        "hint": "“毕竟”的“竟”",
+        "options": [
+          "jìng",
+          "jīn",
+          "jǐng",
+          "qìng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "莲",
+        "tokens": [
+          "子",
+          "根",
+          "花",
+          "灯",
+          "叶",
+          "船"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "叶",
+            "子"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求读诗句后做什么？",
+        "options": [
+          "数一数笔画",
+          "写一封信",
+          "说说想到的画面",
+          "查天气预报"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两首古诗都要求做到哪一项？",
+        "options": [
+          "只读题目",
+          "朗读并背诵课文",
+          "默写作者介绍",
+          "画航天员"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

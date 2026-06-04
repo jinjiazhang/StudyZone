@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "枝叶稠"
+          },
+          {
+            "id": "b",
+            "text": "枝叶稀"
+          },
+          {
+            "id": "c",
+            "text": "积雪化得快"
+          },
+          {
+            "id": "d",
+            "text": "北极星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "北方"
+          },
+          {
+            "id": "r0",
+            "text": "南方"
+          },
+          {
+            "id": "r3",
+            "text": "北方"
+          },
+          {
+            "id": "r1",
+            "text": "北方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "南",
+        "tokens": [
+          "边",
+          "针",
+          "方",
+          "飞",
+          "北",
+          "瓜"
+        ],
+        "targetCount": 2
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "方",
+            "边"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "北",
+        "tokens": [
+          "风",
+          "边",
+          "方",
+          "斗",
+          "极",
+          "星"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "方",
+            "极",
+            "风"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：枝叶稠的一面是南方",
+        "tokens": [
+          "是",
+          "枝叶稠的",
+          "南方",
+          "一面",
+          "积雪",
+          "北方"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "枝叶稠的",
+          "一面",
+          "是",
+          "南方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：枝叶稀的一面是北方",
+        "tokens": [
+          "是",
+          "枝叶稀的",
+          "北方",
+          "一面",
+          "太阳",
+          "南方"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "枝叶稀的",
+          "一面",
+          "是",
+          "北方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“沟渠”的“渠”读音是？",
+        "options": [
+          "qú",
+          "qū",
+          "jù",
+          "qǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碰上阴雨天”中“碰”读音是？",
+        "options": [
+          "pēng",
+          "bèng",
+          "pèng",
+          "pěng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“慌张”和哪个词意思相近？",
+        "options": [
+          "平稳",
+          "惊慌",
+          "普通",
+          "稳固"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“辨别”和哪个词意思相近？",
+        "options": [
+          "分别离开",
+          "帮助",
+          "使用",
+          "分辨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后“读一读，记一记”里哪组是近义词？",
+        "options": [
+          "忠实、忠诚",
+          "向导、永久",
+          "慌张、辨别",
+          "稠、稀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

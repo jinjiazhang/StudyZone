@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "sentence": "大自然有很多天然的__南针。",
+        "character": "指",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "指"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nán",
+        "sentence": "中午太阳在__边。",
+        "character": "南",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "南"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bāng",
+        "sentence": "大树也会来__忙。",
+        "character": "帮",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "帮"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jī",
+        "sentence": "沟渠里的__雪会指点方向。",
+        "character": "积",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "积"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "指",
+        "tokens": [
+          "路",
+          "针",
+          "南",
+          "导",
+          "点",
+          "手"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "南",
+            "点",
+            "路"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "导",
+        "tokens": [
+          "弹",
+          "南",
+          "向",
+          "路",
+          "游",
+          "师"
+        ],
+        "targetCount": 2
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "向",
+            "游"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "忠",
+        "tokens": [
+          "诚",
+          "厚",
+          "实",
+          "山",
+          "心",
+          "告"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "实",
+            "心",
+            "诚"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "永",
+        "tokens": [
+          "别",
+          "夜",
+          "远",
+          "住",
+          "久",
+          "恒"
+        ],
+        "targetCount": 2
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "远",
+            "久"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "慌张"
+          },
+          {
+            "id": "b",
+            "text": "辨别"
+          },
+          {
+            "id": "c",
+            "text": "忠实"
+          },
+          {
+            "id": "d",
+            "text": "向导"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "忠诚"
+          },
+          {
+            "id": "r0",
+            "text": "惊慌"
+          },
+          {
+            "id": "r3",
+            "text": "导游"
+          },
+          {
+            "id": "r1",
+            "text": "分辨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“指南针”的“针”是什么结构？",
+        "options": [
+          "左右结构",
+          "上下结构",
+          "全包围结构",
+          "独体字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

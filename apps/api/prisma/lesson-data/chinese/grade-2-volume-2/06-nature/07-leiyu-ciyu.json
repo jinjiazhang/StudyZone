@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "乌云"
+          },
+          {
+            "id": "b",
+            "text": "雷声"
+          },
+          {
+            "id": "c",
+            "text": "空气"
+          },
+          {
+            "id": "d",
+            "text": "彩虹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "清新"
+          },
+          {
+            "id": "r0",
+            "text": "黑沉沉"
+          },
+          {
+            "id": "r3",
+            "text": "挂在天空"
+          },
+          {
+            "id": "r1",
+            "text": "越来越响"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "沉",
+        "tokens": [
+          "着",
+          "香",
+          "重",
+          "默",
+          "没",
+          "静"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "重",
+            "没",
+            "着"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "响",
+        "tokens": [
+          "动",
+          "应",
+          "亮",
+          "面",
+          "声",
+          "起"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "亮",
+            "声",
+            "动"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "扑",
+        "tokens": [
+          "倒",
+          "空",
+          "来",
+          "水",
+          "面",
+          "火"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "来",
+            "面",
+            "倒"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黑沉沉”写出了乌云的什么样子？",
+        "options": [
+          "又轻又白",
+          "又黑又厚",
+          "又香又甜",
+          "又高又远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“渐渐地”表示什么？",
+        "options": [
+          "突然发生",
+          "完全不变",
+          "马上停止",
+          "慢慢变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：清新的空气迎面扑来",
+        "tokens": [
+          "迎面",
+          "清新的",
+          "扑来",
+          "空气",
+          "彩虹",
+          "雷声"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "清新的",
+          "空气",
+          "迎面",
+          "扑来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：闪电越来越亮",
+        "tokens": [
+          "亮",
+          "闪电",
+          "雷声",
+          "越来越",
+          "小了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "闪电",
+          "越来越",
+          "亮"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“哗，哗，哗”模拟的是哪种声音？",
+        "options": [
+          "雨声",
+          "鸟鸣声",
+          "读书声",
+          "脚步声"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "垂",
+        "hint": "“从网上垂下来”的“垂”",
+        "options": [
+          "chuǐ",
+          "zhuì",
+          "chuí",
+          "duǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          [
+            null,
+            "西湖六月中，"
+          ],
+          [
+            "风光不与四时同。"
+          ]
+        ],
+        "options": [
+          "忽然",
+          "毕竟",
+          "已经",
+          "到底"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          [
+            "毕竟西湖六月中，"
+          ],
+          [
+            "风光不与",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "三月春",
+          "千秋雪",
+          "万里船",
+          "四时同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          [
+            "接天莲叶",
+            null,
+            "，"
+          ],
+          [
+            "映日荷花别样红。"
+          ]
+        ],
+        "options": [
+          "无穷碧",
+          "别样红",
+          "千秋雪",
+          "四时同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          [
+            "接天莲叶无穷碧，"
+          ],
+          [
+            "映日荷花",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "无穷碧",
+          "六月中",
+          "别样红",
+          "上青天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "晓出净慈寺送林子方",
+        "author": "杨万里",
+        "lines": [
+          [
+            "接天",
+            null,
+            "无穷碧，"
+          ],
+          [
+            "映日",
+            null,
+            "别样红。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "莲叶",
+              "荷花",
+              "白鹭",
+              "黄鹂"
+            ]
+          },
+          {
+            "options": [
+              "莲叶",
+              "荷花",
+              "翠柳",
+              "西岭"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：风光不与四时同",
+        "tokens": [
+          "四时",
+          "风光",
+          "同",
+          "不与",
+          "六月",
+          "西湖"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "风光",
+          "不与",
+          "四时",
+          "同"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：映日荷花别样红",
+        "tokens": [
+          "别样红",
+          "映日",
+          "接天",
+          "荷花",
+          "莲叶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "映日",
+          "荷花",
+          "别样红"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首诗主要写哪个季节的西湖？",
+        "options": [
+          "春天",
+          "夏天",
+          "秋天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“无穷碧”写出了莲叶什么特点？",
+        "options": [
+          "非常寒冷",
+          "声音很响",
+          "十分危险",
+          "一望无边、碧绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句和荷花颜色有关？",
+        "options": [
+          "映日荷花别样红",
+          "毕竟西湖六月中",
+          "风光不与四时同",
+          "接天莲叶无穷碧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

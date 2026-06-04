@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuāng",
+        "sentence": "__含西岭千秋雪。",
+        "character": "窗",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "窗"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hán",
+        "sentence": "窗__西岭千秋雪。",
+        "character": "含",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "含"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lián",
+        "sentence": "接天__叶无穷碧。",
+        "character": "莲",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "莲"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yìng",
+        "sentence": "__日荷花别样红。",
+        "character": "映",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "映"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "窗",
+        "tokens": [
+          "外",
+          "口",
+          "户",
+          "明",
+          "花",
+          "帘"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "户",
+            "花",
+            "外"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "含",
+        "tokens": [
+          "笑",
+          "包",
+          "有",
+          "泪",
+          "义",
+          "住"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "有",
+            "义",
+            "笑"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "净",
+        "tokens": [
+          "干",
+          "清",
+          "水",
+          "寺",
+          "慈",
+          "土"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "清",
+            "干"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "泊",
+        "tokens": [
+          "位",
+          "水",
+          "船",
+          "鸟",
+          "车",
+          "停"
+        ],
+        "targetCount": 2
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "船",
+            "停"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "窗"
+          },
+          {
+            "id": "b",
+            "text": "含"
+          },
+          {
+            "id": "c",
+            "text": "莲"
+          },
+          {
+            "id": "d",
+            "text": "映"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "莲叶"
+          },
+          {
+            "id": "r0",
+            "text": "窗户"
+          },
+          {
+            "id": "r3",
+            "text": "映日"
+          },
+          {
+            "id": "r1",
+            "text": "含有"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“含”时要注意什么？",
+        "options": [
+          "上下结构写成左右结构",
+          "不要多写或少写笔画",
+          "把口写到外面",
+          "少写一点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

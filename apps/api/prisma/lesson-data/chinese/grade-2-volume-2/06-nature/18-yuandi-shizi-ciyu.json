@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "博物馆",
+        "hint": "读准场馆名“博物馆”",
+        "options": [
+          "bǒ wù guǎn",
+          "bó wù gǎn",
+          "pó wù guǎn",
+          "bó wù guǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "展览馆",
+        "hint": "读准场馆名“展览馆”",
+        "options": [
+          "zhǎn lǎn guǎn",
+          "zhān lǎn guǎn",
+          "zhǎn nǎn guǎn",
+          "zhǎn lǎng guǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "科技馆",
+        "hint": "读准场馆名“科技馆”",
+        "options": [
+          "kě jì guǎn",
+          "kē jí guǎn",
+          "kē jì guǎn",
+          "kē jì gǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "体育馆",
+        "hint": "读准场馆名“体育馆”",
+        "options": [
+          "tí yù guǎn",
+          "tǐ yù guǎn",
+          "tǐ yǔ guǎn",
+          "tǐ yù gǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "诊所",
+        "hint": "读准地点名“诊所”",
+        "options": [
+          "zhēn suǒ",
+          "zhěn shuǒ",
+          "chěn suǒ",
+          "zhěn suǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "律师事务所",
+        "hint": "读准“律师事务所”",
+        "options": [
+          "lǜ shī shì wù suǒ",
+          "lǔ shī shì wù suǒ",
+          "lǜ sī shì wù suǒ",
+          "lǜ shī shì wǔ suǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "博物馆"
+          },
+          {
+            "id": "b",
+            "text": "科技馆"
+          },
+          {
+            "id": "c",
+            "text": "体育馆"
+          },
+          {
+            "id": "d",
+            "text": "诊所"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "运动比赛"
+          },
+          {
+            "id": "r0",
+            "text": "了解文物"
+          },
+          {
+            "id": "r3",
+            "text": "看病"
+          },
+          {
+            "id": "r1",
+            "text": "体验科学"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guǎn",
+        "sentence": "我们去科技__参观。",
+        "character": "馆",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "馆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "suǒ",
+        "sentence": "妈妈带我去诊__。",
+        "character": "所",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "所"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "馆",
+        "tokens": [
+          "图书",
+          "体育",
+          "博",
+          "律师",
+          "饭",
+          "展览"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "博",
+            "饭",
+            "展览"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

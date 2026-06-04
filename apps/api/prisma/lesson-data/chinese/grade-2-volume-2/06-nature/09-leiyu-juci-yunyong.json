@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：满天的乌云黑沉沉地压下来",
+        "tokens": [
+          "黑沉沉地",
+          "满天的",
+          "压下来",
+          "乌云",
+          "空气",
+          "清新"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "满天的",
+          "乌云",
+          "黑沉沉地",
+          "压下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：一只蜘蛛从网上垂下来",
+        "tokens": [
+          "从网上",
+          "一只",
+          "垂下来",
+          "蜘蛛",
+          "彩虹",
+          "蝉"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一只",
+          "蜘蛛",
+          "从网上",
+          "垂下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：一条彩虹挂在天空",
+        "tokens": [
+          "挂在",
+          "一条",
+          "天空",
+          "彩虹",
+          "乌云",
+          "雷声"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一条",
+          "彩虹",
+          "挂在",
+          "天空"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词适合形容小雨？",
+        "options": [
+          "暴雨",
+          "雷雨",
+          "毛毛雨",
+          "阵雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词表示雨来得急、下得大？",
+        "options": [
+          "毛毛雨",
+          "暴雨",
+          "小雪",
+          "春雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "毛毛雨"
+          },
+          {
+            "id": "b",
+            "text": "阵雨"
+          },
+          {
+            "id": "c",
+            "text": "雷雨"
+          },
+          {
+            "id": "d",
+            "text": "暴雨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "带雷声的雨"
+          },
+          {
+            "id": "r0",
+            "text": "细小的雨"
+          },
+          {
+            "id": "r3",
+            "text": "很大的雨"
+          },
+          {
+            "id": "r1",
+            "text": "一阵一阵的雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "r0",
+          "b": "r1",
+          "c": "r2",
+          "d": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扑",
+        "hint": "“迎面扑来”的“扑”",
+        "options": [
+          "pú",
+          "pǔ",
+          "fū",
+          "pū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wū",
+        "sentence": "满天的__云压下来。",
+        "character": "乌",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "乌"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“清新的空气迎面扑来”说明雷雨后空气怎样？",
+        "options": [
+          "新鲜舒服",
+          "闷热难受",
+          "又黑又沉",
+          "越来越响"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求抄写哪类句子？",
+        "options": [
+          "作者简介",
+          "全部课文",
+          "带点词的句子",
+          "目录页"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

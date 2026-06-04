@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "两个黄鹂",
+            null,
+            "，"
+          ],
+          [
+            "一行白鹭上青天。"
+          ]
+        ],
+        "options": [
+          "映荷花",
+          "上青天",
+          "含西岭",
+          "鸣翠柳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "两个黄鹂鸣翠柳，"
+          ],
+          [
+            "一行白鹭",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "上青天",
+          "下江南",
+          "入云间",
+          "别样红"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "窗含西岭",
+            null,
+            "，"
+          ],
+          [
+            "门泊东吴万里船。"
+          ]
+        ],
+        "options": [
+          "六月中",
+          "四时同",
+          "千秋雪",
+          "无穷碧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "窗含西岭千秋雪，"
+          ],
+          [
+            "门泊东吴",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "一行鹭",
+          "万里船",
+          "千秋雪",
+          "别样红"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "两个",
+            null,
+            "鸣翠柳，"
+          ],
+          [
+            "一行",
+            null,
+            "上青天。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "黄鹂",
+              "白鹭",
+              "荷花",
+              "莲叶"
+            ]
+          },
+          {
+            "options": [
+              "莲叶",
+              "白鹭",
+              "黄鹂",
+              "彩虹"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：两个黄鹂鸣翠柳",
+        "tokens": [
+          "鸣",
+          "两个",
+          "翠柳",
+          "黄鹂",
+          "青天",
+          "白鹭"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "两个",
+          "黄鹂",
+          "鸣",
+          "翠柳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：门泊东吴万里船",
+        "tokens": [
+          "万里船",
+          "门泊",
+          "窗含",
+          "东吴",
+          "千秋雪"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "门泊",
+          "东吴",
+          "万里船"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两个黄鹂鸣翠柳”写到了哪种声音？",
+        "options": [
+          "雷声",
+          "雨声",
+          "水声",
+          "鸟鸣声"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“门泊东吴万里船”中的“泊”意思更接近哪一个？",
+        "options": [
+          "停船靠岸",
+          "奔跑",
+          "飞上天",
+          "唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《绝句》中哪一句写远处的雪山？",
+        "options": [
+          "两个黄鹂鸣翠柳",
+          "一行白鹭上青天",
+          "窗含西岭千秋雪",
+          "门泊东吴万里船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}
