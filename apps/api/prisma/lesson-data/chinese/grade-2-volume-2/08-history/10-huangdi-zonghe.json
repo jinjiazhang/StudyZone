@@ -1,0 +1,236 @@
+{
+  "id": "10-huangdi-zonghe",
+  "title": "黄帝传说综合",
+  "description": "黄帝传说综合练习",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "黄帝的传说",
+        "options": [
+          {
+            "id": "b",
+            "label": "羿射九日",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-108.jpg"
+          },
+          {
+            "id": "a",
+            "label": "黄帝造车造船",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-108.jpg"
+          },
+          {
+            "id": "c",
+            "label": "大禹治水",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-108.jpg"
+          },
+          {
+            "id": "d",
+            "label": "语文园地",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-108.jpg"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "善",
+        "hint": "改善生活",
+        "options": [
+          "sàn",
+          "shǎn",
+          "shàn",
+          "zhàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "互",
+        "hint": "相互往来",
+        "options": [
+          "hù",
+          "fù",
+          "wù",
+          "hǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhòng",
+        "sentence": "部落民__一起试做。",
+        "blankPlaceholder": "__",
+        "character": "众",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "众"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gōng",
+        "sentence": "为人们提__便利。",
+        "blankPlaceholder": "__",
+        "character": "供",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "供"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "造车"
+          },
+          {
+            "id": "l2",
+            "text": "造船"
+          },
+          {
+            "id": "l3",
+            "text": "草帽"
+          },
+          {
+            "id": "l4",
+            "text": "树叶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "启发做船"
+          },
+          {
+            "id": "r2",
+            "text": "启发做车"
+          },
+          {
+            "id": "r3",
+            "text": "方便陆上运输"
+          },
+          {
+            "id": "r4",
+            "text": "方便水上行动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《黄帝的传说》中黄帝的特点是？",
+        "options": [
+          "害怕太阳",
+          "善于观察，勇于创造",
+          "只会治水",
+          "不听大家意见"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后提示讲故事，最后应讲？",
+        "options": [
+          "看到什么",
+          "想到什么",
+          "结果怎样",
+          "怎样做的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "交通",
+          "得到",
+          "发展",
+          "水陆",
+          "了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水陆",
+          "交通",
+          "得到",
+          "了",
+          "发展"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选出《黄帝的传说》写字表中的字。",
+        "tokens": [
+          "洪",
+          "忽",
+          "射",
+          "启",
+          "众",
+          "供",
+          "召",
+          "完"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "忽",
+            "启",
+            "众",
+            "供",
+            "召",
+            "完"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

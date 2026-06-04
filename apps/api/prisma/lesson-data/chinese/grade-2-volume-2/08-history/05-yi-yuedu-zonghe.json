@@ -1,0 +1,255 @@
+{
+  "id": "05-yi-yuedu-zonghe",
+  "title": "羿射九日综合",
+  "description": "羿射九日综合练习",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "羿射九日",
+        "options": [
+          {
+            "id": "b",
+            "label": "黄帝造车",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-105.jpg"
+          },
+          {
+            "id": "c",
+            "label": "大禹开渠",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-105.jpg"
+          },
+          {
+            "id": "a",
+            "label": "射箭救人",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-105.jpg"
+          },
+          {
+            "id": "d",
+            "label": "江上渔者",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-105.jpg"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文根据哪些古书相关内容改写？",
+        "options": [
+          "《江雪》《悯农》",
+          "《帝王世纪》",
+          "《山海经》《淮南子》",
+          "《史记》"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "润",
+        "hint": "滋润起来",
+        "options": [
+          "yùn",
+          "rǔn",
+          "rùn",
+          "lùn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "腾",
+        "hint": "江河奔腾欢唱",
+        "options": [
+          "tēng",
+          "děng",
+          "téng",
+          "tíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cǐ",
+        "sentence": "从__太阳每天东方升起。",
+        "blankPlaceholder": "__",
+        "character": "此",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "此"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yán",
+        "sentence": "天气十分__热。",
+        "blankPlaceholder": "__",
+        "character": "炎",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "炎"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "晒枯"
+          },
+          {
+            "id": "l2",
+            "text": "烤焦"
+          },
+          {
+            "id": "l3",
+            "text": "蒸干"
+          },
+          {
+            "id": "l4",
+            "text": "熔化"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "土地被火热烤坏"
+          },
+          {
+            "id": "r2",
+            "text": "沙石像要变成液体"
+          },
+          {
+            "id": "r3",
+            "text": "禾苗因太阳晒而枯"
+          },
+          {
+            "id": "r4",
+            "text": "水快没有了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "没有",
+          "光明",
+          "太阳",
+          "就",
+          "和",
+          "温暖",
+          "了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "没有",
+          "太阳",
+          "就",
+          "没有",
+          "光明",
+          "和",
+          "温暖"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "羿留下最后一个太阳后，太阳每天怎样？",
+        "options": [
+          "一直躲在海里",
+          "十个一起出现",
+          "只在夜里出来",
+          "从东方升起，到西方落下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选出《羿射九日》写字表中的字。",
+        "tokens": [
+          "启",
+          "射",
+          "供",
+          "炎",
+          "续",
+          "始",
+          "换",
+          "此"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "射",
+            "炎",
+            "始",
+            "换",
+            "此"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "复述这个故事时，最适合先讲？",
+        "options": [
+          "十个太阳炙烤大地",
+          "大地重现生机",
+          "羿留下太阳",
+          "江上往来人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

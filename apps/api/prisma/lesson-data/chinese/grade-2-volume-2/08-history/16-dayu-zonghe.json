@@ -1,0 +1,238 @@
+{
+  "id": "16-dayu-zonghe",
+  "title": "大禹治水综合",
+  "description": "大禹治水综合练习",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "大禹治水",
+        "options": [
+          {
+            "id": "b",
+            "label": "射箭救太阳",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-112.jpg"
+          },
+          {
+            "id": "c",
+            "label": "观察草帽造车",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-112.jpg"
+          },
+          {
+            "id": "d",
+            "label": "江上渔者",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-112.jpg"
+          },
+          {
+            "id": "a",
+            "label": "开山凿石疏通河道",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-112.jpg"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绩",
+        "hint": "功绩",
+        "options": [
+          "jì",
+          "jī",
+          "jí",
+          "zé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "恢",
+        "hint": "恢复",
+        "options": [
+          "huí",
+          "kuī",
+          "hùi",
+          "huī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hóng",
+        "sentence": "__水给百姓带来灾难。",
+        "blankPlaceholder": "__",
+        "character": "洪",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "洪"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bì",
+        "sentence": "洪水必__治好。",
+        "blankPlaceholder": "__",
+        "character": "须",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "须"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "洪水带来灾难"
+          },
+          {
+            "id": "l2",
+            "text": "鲧筑坝挡水"
+          },
+          {
+            "id": "l3",
+            "text": "禹疏导治水"
+          },
+          {
+            "id": "l4",
+            "text": "百姓安居乐业"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "结果"
+          },
+          {
+            "id": "r2",
+            "text": "起因"
+          },
+          {
+            "id": "r3",
+            "text": "成功经过"
+          },
+          {
+            "id": "r4",
+            "text": "失败经过"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "复述《大禹治水》时，课后提示的第一句是？",
+        "options": [
+          "禹用疏导办法",
+          "洪水带来了灾难",
+          "百姓恢复生产",
+          "鲧没有治好洪水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "百姓",
+          "了",
+          "幸福",
+          "重新",
+          "生活",
+          "过上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "百姓",
+          "重新",
+          "过上",
+          "了",
+          "幸福",
+          "生活"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选出《大禹治水》写字表中的字。",
+        "tokens": [
+          "启",
+          "治",
+          "供",
+          "洪",
+          "姓",
+          "带",
+          "须",
+          "业"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "治",
+            "洪",
+            "姓",
+            "带",
+            "须",
+            "业"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大禹治水的故事告诉我们？",
+        "options": [
+          "只要用旧办法",
+          "有太阳就行",
+          "遇到困难要想办法，坚持努力",
+          "出门只能步行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}
