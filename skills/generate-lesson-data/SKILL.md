@@ -1,6 +1,6 @@
 ---
 name: generate-lesson-data
-description: Create or regenerate StudyZone lesson-data from textbook assets and docs. Use when Codex needs to read textbook images/resources, understand curriculum goals, design 18-20 lessons per unit with 10-15 exercises each, use varied exercise types, clear old unit lesson-data, write JSON files under apps/api/prisma/lesson-data, and audit answer-order randomness/schema validity.
+description: Create or regenerate StudyZone lesson-data by using multimodal/vision understanding of textbook page images plus repo docs. Use when Codex needs to inspect textbook assets under apps/web/public/assets/textbooks, read relevant pages visually rather than relying on old lesson-data, extract curriculum goals, design 18-20 lessons per unit with 10-15 exercises each, use varied exercise types, clear only the target unit lesson-data, write JSON files under apps/api/prisma/lesson-data, and audit schema plus answer-order randomness.
 ---
 
 # Generate Lesson Data
@@ -12,13 +12,16 @@ description: Create or regenerate StudyZone lesson-data from textbook assets and
    - `docs/architecture/04-learning-engine.md`
    - `docs/architecture/02-data-model.md`
    - `apps/api/prisma/lesson-data/loader.ts`
-2. Inspect existing lesson-data in the target subject/grade to learn local naming, unit index, and JSON style.
+2. Inspect existing lesson-data in the target subject/grade only to learn local naming, unit index, JSON style, and file conventions. Do not treat old lesson files as the source of textbook content.
 3. Read the textbook assets from `apps/web/public/assets/textbooks/<subject>/<grade-volume>/`.
    - Read `manifest.json` and `resource.json`.
-   - Use visual inspection for relevant `pages/page-*.jpg`; do not rely only on old lesson files.
+   - Use multimodal/vision inspection of relevant `pages/page-*.jpg` before planning or writing exercises.
+   - Locate the unit boundaries from the textbook pages; confirm page numbers and lesson titles from the images.
+   - Crop or zoom pages when needed to read tables, pinyin, footnotes,课后练习, and 园地 sections accurately.
 4. Extract the unit's learning targets from the textbook:
-   - Required texts, new characters, writing characters, vocabulary, exercises after the lesson, oral/reading tasks, and unit garden pages.
+   - Required texts, new characters, writing characters from the textbook writing grid, vocabulary, exercises after the lesson, oral/reading tasks, and unit garden pages.
    - For Chinese, cover recognition, pinyin, word building, meaning, text comprehension, dictation/writing, recitation, sentence imitation, and integrated review.
+   - When textbook images conflict with existing lesson-data or memory of another edition, follow the images in the repository.
 5. Plan 18-20 lessons for the unit.
    - Do not create lessons named as preview/self-study/review phases.
    - Use skill-focused names such as "生字认读", "词语积累", "背诵拼图", "故事顺序", "句子仿照", "综合".
@@ -40,6 +43,8 @@ description: Create or regenerate StudyZone lesson-data from textbook assets and
 ## Quality Rules
 
 - Align every exercise with the textbook page,课后练习, or unit garden goal.
+- Base content on direct textbook image understanding; use old lesson-data only as a style reference.
+- Verify writing-character exercises against the textbook writing grid for the exact edition in `apps/web/public/assets/textbooks`.
 - Prefer concrete textbook wording for prompts, but avoid overlong passages.
 - Keep distractors plausible for the grade level.
 - Avoid repeated identical options in any option group.

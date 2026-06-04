@@ -1,0 +1,249 @@
+{
+  "id": "17-xique-zonghe",
+  "title": "喜鹊综合",
+  "description": "综合复习《枫树上的喜鹊》的字词、内容和想象表达。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "渡"
+          },
+          {
+            "id": "l2",
+            "text": "荫"
+          },
+          {
+            "id": "l3",
+            "text": "便"
+          },
+          {
+            "id": "l4",
+            "text": "案"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "yīn"
+          },
+          {
+            "id": "r4",
+            "text": "biàn"
+          },
+          {
+            "id": "r1",
+            "text": "dù"
+          },
+          {
+            "id": "r2",
+            "text": "àn"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "páng",
+        "sentence": "渡口__有一棵枫树。",
+        "blankPlaceholder": "__",
+        "character": "旁",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "旁"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pīn",
+        "sentence": "喜鹊阿姨教弟弟学__音字母。",
+        "blankPlaceholder": "__",
+        "character": "拼",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "拼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我一有空，便来到渡口边”说明作者怎样？",
+        "options": [
+          "怕过河",
+          "很喜欢看喜鹊",
+          "想去商店",
+          "不喜欢枫树"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊阿姨一会儿教唱歌，一会儿教做游戏，一会儿教什么？",
+        "options": [
+          "骑马",
+          "画太阳",
+          "写作文",
+          "拼音字母"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文短语。",
+        "tokens": [
+          "渡口",
+          "遮蔽",
+          "绿荫",
+          "山冈"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "绿荫",
+          "遮蔽",
+          "渡口"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句。",
+        "tokens": [
+          "啊",
+          "我",
+          "真高兴",
+          "渡口"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "真高兴",
+          "啊"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "阿姨"
+          },
+          {
+            "id": "l2",
+            "text": "弟弟"
+          },
+          {
+            "id": "l3",
+            "text": "妈妈"
+          },
+          {
+            "id": "l4",
+            "text": "太阳"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "dì"
+          },
+          {
+            "id": "r3",
+            "text": "mā"
+          },
+          {
+            "id": "r4",
+            "text": "tài yáng"
+          },
+          {
+            "id": "r1",
+            "text": "yí"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选出课文中的自然事物。",
+        "tokens": [
+          "枫树",
+          "铅笔盒",
+          "玩具枪",
+          "喜鹊",
+          "绿毯",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "枫树",
+            "喜鹊",
+            "太阳"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文最突出的特点是什么？",
+        "options": [
+          "把喜鹊语言想象成有意思的话",
+          "只介绍渡船",
+          "只写春游累了",
+          "只讲玩具名字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

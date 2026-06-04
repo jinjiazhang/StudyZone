@@ -1,0 +1,224 @@
+{
+  "id": "16-xique-yuyan-caixiang",
+  "title": "喜鹊语言猜想",
+  "description": "根据情景猜想喜鹊语言，理解“鹊！鹊！鹊！”的意思。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊阿姨教喜鹊弟弟“鹊！鹊！鹊！”时，作者懂得这是在教什么？",
+        "options": [
+          "数数字",
+          "a、o、e",
+          "画画",
+          "骑马"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "太阳升起时，喜鹊阿姨问“鹊！鹊鹊鹊？”作者懂得意思是？",
+        "options": [
+          "快回家吧",
+          "你累了吗",
+          "这是什么字",
+          "看！那是什么？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "喜鹊弟弟回答“鹊！鹊鹊！鹊鹊鹊！”意思是？",
+        "options": [
+          "妈妈，那是太阳！太阳升上来了！",
+          "我们去散步吧",
+          "我不喜欢太阳",
+          "这是一匹马"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后看图写句中，喜鹊弟弟叫“鹊！鹊！鹊鹊鹊！”可理解为？",
+        "options": [
+          "天黑了",
+          "我要睡觉",
+          "虫子来了",
+          "铅笔盒开了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出喜鹊阿姨的意思。",
+        "tokens": [
+          "是什么",
+          "那",
+          "看",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "看",
+          "那",
+          "是什么"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出喜鹊弟弟的答案。",
+        "tokens": [
+          "太阳",
+          "那是",
+          "虫子",
+          "妈妈"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "那是",
+          "太阳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文学习内容。",
+        "tokens": [
+          "o",
+          "a",
+          "e",
+          "b"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "a",
+          "o",
+          "e"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文情景。",
+        "tokens": [
+          "了",
+          "太阳",
+          "升上来",
+          "山冈"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳",
+          "升上来",
+          "了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "鹊！鹊！鹊！"
+          },
+          {
+            "id": "l2",
+            "text": "鹊！鹊鹊鹊？"
+          },
+          {
+            "id": "l3",
+            "text": "鹊鹊鹊！"
+          },
+          {
+            "id": "l4",
+            "text": "答案"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "看！那是什么？"
+          },
+          {
+            "id": "r3",
+            "text": "太阳升上来了"
+          },
+          {
+            "id": "r4",
+            "text": "回答问题的结果"
+          },
+          {
+            "id": "r1",
+            "text": "a、o、e"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选出喜鹊阿姨会教喜鹊弟弟做的事。",
+        "tokens": [
+          "唱歌",
+          "骑马",
+          "画画",
+          "游戏",
+          "散步",
+          "拼音字母"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "唱歌",
+            "游戏",
+            "拼音字母"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
