@@ -36,6 +36,11 @@
 | 23 | `poem_complete` | 古诗填空（单空）| 语文 | 2 |
 | 24 | `poem_multi_blank` | 古诗填空（多空）| 语文 | 3 |
 | 25 | `word_build` | 组词 | 语文 | 2 |
+| 26 | `listen_choice` | 听力选择 | 英语 | 1–2 |
+| 27 | `true_false` | 判断正误 | 英语 / 语文 / 数学 | 1–2 |
+| 28 | `dialogue_complete` | 情景对话补全 | 英语 | 2 |
+| 29 | `reading_comprehension` | 阅读理解 | 英语 / 语文 | 2–3 |
+| 30 | `picture_order` | 看图/听音排序 | 英语 | 2 |
 
 ---
 
@@ -1350,6 +1355,257 @@
 
 ---
 
+## 二十六、`listen_choice` 听力选择
+
+> **主要用于英语科目。** 对应教材 "Listen, then point and say"、"Listen and tick" 等听音选择活动。
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"listen_choice"` | ✅ | 固定值 |
+| `audioUrl` | string | ✅ | 标准语速音频 URL |
+| `audioUrlSlow` | string | ❌ | 慢速音频 URL，用于"慢速重播"按钮 |
+| `question` | string | ❌ | 选项上方的题干/提示文字 |
+| `options` | `{id, text?, imageUrl?, label?}[]` | ✅ | 2–4 个候选项；每项可为文字、图片或两者 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `correctOptionId` | string | 正确选项的 `id` |
+
+### 判分规则
+
+用户提交的 `correctOptionId` 与答案一致即正确（与 `image_choice` 同源）。`canonicalAnswer` 取正确项的 `text`（无则 `label`，再无则 `id`）。
+
+### 效果示例 — 英语（听音选图，难度 1）
+
+```json
+{
+  "type": "listen_choice",
+  "prompt": {
+    "type": "listen_choice",
+    "audioUrl": "https://cdn.studyzone.app/audio/en/whats_for_breakfast.mp3",
+    "question": "What does she want for breakfast?",
+    "options": [
+      { "id": "a", "imageUrl": "https://cdn.studyzone.app/img/dumplings.png" },
+      { "id": "b", "imageUrl": "https://cdn.studyzone.app/img/noodles.png" },
+      { "id": "c", "imageUrl": "https://cdn.studyzone.app/img/bread.png" },
+      { "id": "d", "imageUrl": "https://cdn.studyzone.app/img/egg.png" }
+    ]
+  },
+  "answer": { "correctOptionId": "a" },
+  "difficulty": 1
+}
+```
+
+> 界面效果：顶部"播放/慢速"按钮，下方 2×2 图片（或文字）选项；纯文字选项时自动改为竖排列表。
+
+---
+
+## 二十七、`true_false` 判断正误
+
+> 通用题型；英语用于 "Read and check / tick" 判断，语文/数学亦可用于陈述判断。
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"true_false"` | ✅ | 固定值 |
+| `statement` | string | ✅ | 待判断的陈述句 |
+| `imageUrl` | string | ❌ | 陈述所配插图 |
+| `audioUrl` | string | ❌ | 陈述句音频 |
+| `trueLabel` | string | ❌ | "对"按钮文案，默认 `对` |
+| `falseLabel` | string | ❌ | "错"按钮文案，默认 `错` |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `value` | boolean | 陈述是否为真 |
+
+### 判分规则
+
+用户提交的 `value` 与答案布尔值一致即正确。`canonicalAnswer` 取对应的 `trueLabel`/`falseLabel`（默认 对/错）。
+
+### 效果示例 — 英语（看图判断，难度 1）
+
+```json
+{
+  "type": "true_false",
+  "prompt": {
+    "type": "true_false",
+    "statement": "The boy washes his hands before lunch.",
+    "imageUrl": "https://cdn.studyzone.app/img/wash_hands.png"
+  },
+  "answer": { "value": true },
+  "difficulty": 1
+}
+```
+
+> 界面效果：可选插图/音频 + 陈述句，下方"✓ 对 / ✗ 错"两个大按钮。
+
+---
+
+## 二十八、`dialogue_complete` 情景对话补全
+
+> **主要用于英语科目。** 对应教材 "Look and talk"、"Role-play" 情景对话活动。
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"dialogue_complete"` | ✅ | 固定值 |
+| `turns` | `{speaker, text, audioUrl?}[]` | ✅ | 对话轮次；空缺轮次 `text` 设为 `null` |
+| `blankIndex` | number | ✅ | `turns` 中需要补全的轮次下标 |
+| `options` | string[] | ✅ | 空缺处的候选句子 |
+| `imageUrl` | string | ❌ | 场景插图 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `correctIndex` | number | `options` 中正确句子的下标 |
+
+### 判分规则
+
+下标精确匹配（与 `single_choice` 同源）。`canonicalAnswer` 为 `options[correctIndex]`。
+
+### 效果示例 — 英语（补全应答，难度 2）
+
+```json
+{
+  "type": "dialogue_complete",
+  "prompt": {
+    "type": "dialogue_complete",
+    "turns": [
+      { "speaker": "Amy", "text": "What would you like for lunch?" },
+      { "speaker": "Sam", "text": null }
+    ],
+    "blankIndex": 1,
+    "options": ["I'd like some noodles.", "It's Monday today.", "I'm nine years old.", "It's on the desk."]
+  },
+  "answer": { "correctIndex": 0 },
+  "difficulty": 2
+}
+```
+
+> 界面效果：对话以左右气泡排版展示，空缺气泡为虚线高亮；选中选项后实时填入气泡预览。
+
+---
+
+## 二十九、`reading_comprehension` 阅读理解
+
+> **主要用于英语科目**（语文亦可）。对应教材故事篇（如 *The boy and the wolf*）+ "Read and choose" 读后题。
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"reading_comprehension"` | ✅ | 固定值 |
+| `title` | string | ❌ | 短文标题 |
+| `passage` | string | ✅ | 阅读短文，`\n` 分段 |
+| `imageUrl` | string | ❌ | 配图 |
+| `audioUrl` | string | ❌ | 短文朗读音频 |
+| `questions` | `{question, options}[]` | ✅ | 一个或多个小题，每题独立选项组 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `correctIndices` | number[] | 与 `questions` 等长，每题正确选项下标 |
+
+### 判分规则
+
+全部小题答对才算正确（all-or-nothing，与 `poem_multi_blank` 同源）。`canonicalAnswer` 为各题正确选项文本拼接。
+
+### 效果示例 — 英语（故事阅读，难度 2）
+
+```json
+{
+  "type": "reading_comprehension",
+  "prompt": {
+    "type": "reading_comprehension",
+    "title": "The boy and the wolf",
+    "passage": "A boy looks after sheep on a hill.\nHe shouts \"Wolf! Wolf!\" but there is no wolf. The men run up, but they see no wolf.\nOne day a wolf really comes. The boy shouts, but no one comes to help.",
+    "questions": [
+      {
+        "question": "Is there a wolf the first time the boy shouts?",
+        "options": ["Yes, there is.", "No, there isn't."]
+      },
+      {
+        "question": "Why does no one help at the end?",
+        "options": ["They are too far away.", "They don't believe the boy.", "They are afraid."]
+      }
+    ]
+  },
+  "answer": { "correctIndices": [1, 1] },
+  "difficulty": 2
+}
+```
+
+> 界面效果：短文卡片（可带配图/朗读按钮）+ 逐题选择，最后一并提交。任一小题错误即整题不得分。
+
+---
+
+## 三十、`picture_order` 看图/听音排序
+
+> **主要用于英语科目。** 对应教材 "Read and order"（故事图片排序）、"Listen and number"（听音标号）。
+
+### 字段说明
+
+**prompt**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `type` | `"picture_order"` | ✅ | 固定值 |
+| `instruction` | string | ✅ | 排序要求 |
+| `items` | `{id, text?, imageUrl?, audioUrl?}[]` | ✅ | 卡片（图片/文字/音频），客户端乱序展示 |
+| `audioUrl` | string | ❌ | 驱动"听音排序"变体的整体音频 |
+
+**answer**
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `orderedIds` | string[] | 正确顺序的 item id 列表 |
+
+### 判分规则
+
+用户排出的 `orderedIds` 与答案完全一致即正确（与 `order_sequence` 同源）。
+
+### 效果示例 — 英语（故事图片排序，难度 2）
+
+```json
+{
+  "type": "picture_order",
+  "prompt": {
+    "type": "picture_order",
+    "instruction": "Put the story pictures in the correct order.",
+    "items": [
+      { "id": "p1", "imageUrl": "https://cdn.studyzone.app/img/wolf_story_1.png" },
+      { "id": "p2", "imageUrl": "https://cdn.studyzone.app/img/wolf_story_2.png" },
+      { "id": "p3", "imageUrl": "https://cdn.studyzone.app/img/wolf_story_3.png" },
+      { "id": "p4", "imageUrl": "https://cdn.studyzone.app/img/wolf_story_4.png" }
+    ]
+  },
+  "answer": { "orderedIds": ["p1", "p2", "p3", "p4"] },
+  "difficulty": 2
+}
+```
+
+> 界面效果：上方虚线答题区 + 下方图片卡片池；点击卡片依次进入答题区并标注序号，再次点击移回。卡片含 `audioUrl` 时显示小喇叭，可单独播放。
+
+---
+
 ## 附录 A：各科目题型搭配建议
 
 ### 英语
@@ -1357,12 +1613,17 @@
 一节 lesson 的典型题型顺序（从易到难）：
 
 1. `translate_choice`（难度 1）— 单词认知，先建立理解
-2. `translate_choice`（难度 2）— 句子翻译（含反向中→英）
-3. `word_bank`（难度 2）— 句子组装，强化语序
-4. `match_pairs`（难度 2）— 中英句子配对，巩固记忆
-5. `translate_input`（难度 2–3）— 单词/句子拼写，输出产出
+2. `listen_choice`（难度 1–2）— 听音选图/选词，强化音义对应（"Listen and tick"）
+3. `translate_choice`（难度 2）— 句子翻译（含反向中→英）
+4. `word_bank`（难度 2）— 句子组装，强化语序
+5. `dialogue_complete`（难度 2）— 情景对话补全（"Look and talk"）
+6. `match_pairs`（难度 2）— 中英句子配对，巩固记忆
+7. `picture_order`（难度 2）— 故事图片/句子排序（"Read and order"）
+8. `true_false`（难度 1–2）— 课文/插图判断（"Read and check"）
+9. `reading_comprehension`（难度 2–3）— 故事篇 + 读后题
+10. `translate_input`（难度 2–3）— 单词/句子拼写，输出产出
 
-> 听力资源就绪后可在步骤 1–2 之间插入 `listen_input`。
+> 听力资源就绪后，`listen_input`（单词听写）与 `listen_choice`、`picture_order`（听音排序变体）可灵活穿插。
 
 ### 语文
 
@@ -1399,9 +1660,9 @@
 
 | 值 | 含义 | 典型题型 |
 |---|---|---|
-| 1 | 基础认知 | 单词选择、识字注音、直接计算、比较符号 |
-| 2 | 理解运用 | 句子翻译、配对、组词、单空填诗、多空数字、单位换算、读表 |
-| 3 | 综合产出 | 拼写输入、看拼音写字、多空填诗、数轴定位、几何作图 |
+| 1 | 基础认知 | 单词选择、听音选择、判断正误、识字注音、直接计算、比较符号 |
+| 2 | 理解运用 | 句子翻译、配对、组词、对话补全、图片排序、单空填诗、多空数字、单位换算、读表 |
+| 3 | 综合产出 | 拼写输入、阅读理解、看拼音写字、多空填诗、数轴定位、几何作图 |
 
 `difficulty` 影响 SRS 权重和组卷时的难度分布，同一 lesson 内建议以 1→2→3 梯度排布。
 
@@ -1410,12 +1671,14 @@
 ## 附录 C：新增题型 Checklist
 
 1. `enums.ts` — 添加 `ExerciseType.<NEW>`
-2. `exercise.ts` — 定义 `<New>Prompt` / `<New>Answer` / `<New>AttemptPayload`（可选）
-3. `judge.ts` — 添加判分分支，并补 `judge.test.ts` 单测
-4. 客户端 Web — `apps/web/src/components/exercises/<NewExercise>.tsx`
-5. 客户端 Mobile — `apps/mobile/src/components/exercises/<NewExercise>.tsx`
-6. 管理后台 — `apps/admin/src/pages/exercises/<new-exercise>/` 编辑表单
+2. `exercise.ts` — 定义 `<New>Prompt` / `<New>Answer` / `<New>AttemptPayload`（可选），并加入 `ExercisePrompt` / `ExerciseAnswer` / `UserAttemptPayload` 三个联合类型
+3. `judge.ts` — 添加判分分支（可复用同源 case），并补 `judge.test.ts` 单测
+4. 客户端 Web — `apps/web/src/components/exercises/<NewExercise>.tsx`，在 `components/exercises/index.ts` 导出并在 `app/learn/lessons/[lessonId]/page.tsx` 的 `ExerciseSwitch` 注册
+5. 客户端 Mobile — `apps/mobile/src/components/exercises/<NewExercise>.tsx`，在 `index.ts` 导出并在 `app/lesson/[id].tsx` 的 `ExerciseSwitch` 注册
+6. 管理后台 — 无需新增专用表单：`apps/admin/src/pages/CourseDetail.tsx` 使用通用 Prompt/Answer JSON 编辑器，任何新题型自动可编辑（如需更友好的列表摘要，可在 `summary()` 中识别新的 prompt 字段）
 7. 本文档 — 补充题型说明和示例
+
+> 后端无按题型的白名单/校验：API 将 `prompt`/`answer` 以 JSONB 存储并统一调用 `judge()`，因此新增题型只要 `judge.ts` 覆盖即可在服务端生效。
 
 ---
 

@@ -25,7 +25,8 @@ export function judge(
     case ExerciseType.TRANSLATE_CHOICE:
     case ExerciseType.SINGLE_CHOICE:
     case ExerciseType.PINYIN_CHOICE:
-    case ExerciseType.POEM_COMPLETE: {
+    case ExerciseType.POEM_COMPLETE:
+    case ExerciseType.DIALOGUE_COMPLETE: {
       const a = answer as { correctIndex: number };
       const u = attempt as { correctIndex: number };
       const correct = u.correctIndex === a.correctIndex;
@@ -114,7 +115,8 @@ export function judge(
       return { correct, canonicalAnswer: a.values.join(' / ') };
     }
 
-    case ExerciseType.ORDER_SEQUENCE: {
+    case ExerciseType.ORDER_SEQUENCE:
+    case ExerciseType.PICTURE_ORDER: {
       const a = answer as { orderedIds: string[] };
       const u = attempt as { orderedIds: string[] };
       const correct =
@@ -245,6 +247,46 @@ export function judge(
         return setSorted.every((t, i) => t === userSorted[i]);
       });
       const canonicalAnswer = a.acceptedSets[0]?.join('、');
+      return { correct, canonicalAnswer };
+    }
+
+    case ExerciseType.LISTEN_CHOICE: {
+      const a = answer as { correctOptionId: string };
+      const u = attempt as { correctOptionId: string };
+      const p = prompt as {
+        options: Array<{ id: string; text?: string; label?: string }>;
+      };
+      const correct = a.correctOptionId === u.correctOptionId;
+      const chosen = p.options.find((option) => option.id === a.correctOptionId);
+      return {
+        correct,
+        canonicalAnswer: chosen?.text ?? chosen?.label ?? a.correctOptionId,
+      };
+    }
+
+    case ExerciseType.TRUE_FALSE: {
+      const a = answer as { value: boolean };
+      const u = attempt as { value: boolean };
+      const p = prompt as { trueLabel?: string; falseLabel?: string };
+      return {
+        correct: a.value === u.value,
+        canonicalAnswer: a.value ? p.trueLabel ?? '对' : p.falseLabel ?? '错',
+      };
+    }
+
+    case ExerciseType.READING_COMPREHENSION: {
+      // All-or-nothing: every comprehension sub-question must match.
+      const p = prompt as { questions: Array<{ options: string[] }> };
+      const a = answer as { correctIndices: number[] };
+      const u = attempt as { correctIndices: number[] };
+      const correct =
+        Array.isArray(u.correctIndices) &&
+        a.correctIndices.length === u.correctIndices.length &&
+        a.correctIndices.every((idx, i) => idx === u.correctIndices[i]);
+      const canonicalAnswer = a.correctIndices
+        .map((idx, i) => p.questions[i]?.options[idx])
+        .filter((s): s is string => typeof s === 'string')
+        .join(' / ');
       return { correct, canonicalAnswer };
     }
 

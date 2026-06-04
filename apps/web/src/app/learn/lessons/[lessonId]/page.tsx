@@ -35,6 +35,11 @@ import {
   OrderSequenceExercise,
   TableReadExercise,
   UnitConversionExercise,
+  ListenChoiceExercise,
+  TrueFalseExercise,
+  DialogueCompleteExercise,
+  ReadingComprehensionExercise,
+  PictureOrderExercise,
 } from '@/components/exercises';
 
 interface AttemptState {
@@ -282,6 +287,16 @@ function ExerciseSwitch({
       return <PoemMultiBlankExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     case ExerciseType.WORD_BUILD:
       return <WordBuildExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.LISTEN_CHOICE:
+      return <ListenChoiceExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.TRUE_FALSE:
+      return <TrueFalseExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.DIALOGUE_COMPLETE:
+      return <DialogueCompleteExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.READING_COMPREHENSION:
+      return <ReadingComprehensionExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
+    case ExerciseType.PICTURE_ORDER:
+      return <PictureOrderExercise prompt={exercise.prompt as any} onSubmit={onSubmit} disabled={disabled} />;
     default:
       return <div className="card font-heavy">暂不支持该题型：{exercise.type}</div>;
   }

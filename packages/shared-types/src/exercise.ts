@@ -492,6 +492,145 @@ export interface WordBuildAttemptPayload {
   selected: string[];
 }
 
+// -----------------------------------------------------------------------------
+// English (英语) — listening, judgment, dialogue, reading & sequencing
+// -----------------------------------------------------------------------------
+
+/**
+ * 听力选择 — play audio and pick the matching option. Options may be plain text
+ * or images (set `imageUrl`), so this covers both "Listen and choose the word"
+ * and "Listen and tick the picture" textbook activities.
+ *
+ * Example:
+ *   audioUrl: ".../whats_for_breakfast.mp3",
+ *   question: "What does she want?",
+ *   options: [
+ *     { id: "a", imageUrl: ".../dumplings.png" },
+ *     { id: "b", imageUrl: ".../noodles.png" },
+ *   ],
+ *   answer.correctOptionId: "a"
+ */
+export interface ListenChoicePrompt {
+  type: ExerciseType.LISTEN_CHOICE;
+  /** Standard-speed audio URL. */
+  audioUrl: string;
+  /** Optional slower audio for a replay button. */
+  audioUrlSlow?: string;
+  /** Optional question / instruction shown above the options. */
+  question?: string;
+  /** 2–4 candidate options; provide `text` and/or `imageUrl` per option. */
+  options: Array<{ id: string; text?: string; imageUrl?: string; label?: string }>;
+}
+
+export interface ListenChoiceAnswer {
+  correctOptionId: string;
+}
+
+export type ListenChoiceAttemptPayload = ListenChoiceAnswer;
+
+/**
+ * 判断正误 — show a statement (optionally illustrated by an image or backed by
+ * audio) and ask the learner to mark it true or false. Covers "Read and check"
+ * tick-the-box judgment activities.
+ */
+export interface TrueFalsePrompt {
+  type: ExerciseType.TRUE_FALSE;
+  /** The statement to judge, e.g. "The boy washes his hands before lunch.". */
+  statement: string;
+  /** Optional illustration the statement refers to. */
+  imageUrl?: string;
+  /** Optional audio of the statement. */
+  audioUrl?: string;
+  /** Optional custom labels for the two buttons; defaults to 对/错. */
+  trueLabel?: string;
+  falseLabel?: string;
+}
+
+export interface TrueFalseAnswer {
+  value: boolean;
+}
+
+export type TrueFalseAttemptPayload = TrueFalseAnswer;
+
+/**
+ * 情景对话补全 — a short dialogue with one missing line. The learner reads the
+ * surrounding turns and chooses the line that best fills `blankIndex`. Covers
+ * "Look and talk" / "Role-play" conversational activities.
+ *
+ * Example:
+ *   turns: [
+ *     { speaker: "A", text: "What would you like?" },
+ *     { speaker: "B", text: null },   // the blank (also marked by blankIndex)
+ *   ],
+ *   blankIndex: 1,
+ *   options: ["I'd like some noodles.", "It's Monday.", "I'm nine."],
+ *   answer.correctIndex: 0
+ */
+export interface DialogueCompletePrompt {
+  type: ExerciseType.DIALOGUE_COMPLETE;
+  /** The dialogue turns; the blank turn has `text: null`. */
+  turns: Array<{ speaker: string; text: string | null; audioUrl?: string }>;
+  /** Index into `turns` of the blank turn the learner must fill. */
+  blankIndex: number;
+  /** Candidate lines for the blank. */
+  options: string[];
+  /** Optional illustration / scene image. */
+  imageUrl?: string;
+}
+
+export interface DialogueCompleteAnswer {
+  correctIndex: number;
+}
+
+export type DialogueCompleteAttemptPayload = DialogueCompleteAnswer;
+
+/**
+ * 阅读理解 — read (or listen to) a passage / short story and answer one or more
+ * multiple-choice sub-questions. Graded all-or-nothing: every sub-question must
+ * be correct. Covers the story sections + "Read and choose" comprehension.
+ */
+export interface ReadingComprehensionPrompt {
+  type: ExerciseType.READING_COMPREHENSION;
+  /** Optional passage title, e.g. "The boy and the wolf". */
+  title?: string;
+  /** The reading passage. Newlines separate paragraphs. */
+  passage: string;
+  /** Optional illustration shown alongside the passage. */
+  imageUrl?: string;
+  /** Optional audio narration of the passage. */
+  audioUrl?: string;
+  /** One or more comprehension questions, each with its own option set. */
+  questions: Array<{ question: string; options: string[] }>;
+}
+
+export interface ReadingComprehensionAnswer {
+  /** Same length as prompt.questions; the correct option index per question. */
+  correctIndices: number[];
+}
+
+export type ReadingComprehensionAttemptPayload = ReadingComprehensionAnswer;
+
+/**
+ * 看图/听音排序 — order cards (pictures, text, or audio clips) into the correct
+ * sequence. Generalizes ORDER_SEQUENCE to non-numeric English content so it can
+ * back "Read and order" (story panels) and "Listen and number" activities.
+ */
+export interface PictureOrderPrompt {
+  type: ExerciseType.PICTURE_ORDER;
+  instruction: string;
+  /** Cards shown to the learner in shuffled order; provide text and/or image. */
+  items: Array<{ id: string; text?: string; imageUrl?: string; audioUrl?: string }>;
+  /** Optional audio that drives a "Listen and number" variant. */
+  audioUrl?: string;
+}
+
+export interface PictureOrderAnswer {
+  /** Ordered list of item ids. */
+  orderedIds: string[];
+}
+
+export type PictureOrderAttemptPayload = PictureOrderAnswer;
+
 export type ExercisePrompt =
   | TranslateChoicePrompt
   | TranslateInputPrompt
@@ -517,7 +656,12 @@ export type ExercisePrompt =
   | PoemCompletePrompt
   | PinyinToWordPrompt
   | PoemMultiBlankPrompt
-  | WordBuildPrompt;
+  | WordBuildPrompt
+  | ListenChoicePrompt
+  | TrueFalsePrompt
+  | DialogueCompletePrompt
+  | ReadingComprehensionPrompt
+  | PictureOrderPrompt;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer
@@ -544,7 +688,12 @@ export type ExerciseAnswer =
   | PoemCompleteAnswer
   | PinyinToWordAnswer
   | PoemMultiBlankAnswer
-  | WordBuildAnswer;
+  | WordBuildAnswer
+  | ListenChoiceAnswer
+  | TrueFalseAnswer
+  | DialogueCompleteAnswer
+  | ReadingComprehensionAnswer
+  | PictureOrderAnswer;
 
 export type ChoiceAttemptPayload = Pick<TranslateChoiceAnswer, 'correctIndex'>;
 export type TextAttemptPayload = Pick<TranslateInputAnswer, 'accepted'>;
@@ -575,4 +724,9 @@ export type UserAttemptPayload =
   | GeometryDrawAttemptPayload
   | PinyinToWordAttemptPayload
   | PoemMultiBlankAttemptPayload
-  | WordBuildAttemptPayload;
+  | WordBuildAttemptPayload
+  | ListenChoiceAttemptPayload
+  | TrueFalseAttemptPayload
+  | DialogueCompleteAttemptPayload
+  | ReadingComprehensionAttemptPayload
+  | PictureOrderAttemptPayload;

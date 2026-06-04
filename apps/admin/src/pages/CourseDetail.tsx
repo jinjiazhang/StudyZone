@@ -139,7 +139,17 @@ export function CourseDetail() {
 function summary(prompt: unknown) {
   if (!prompt || typeof prompt !== 'object') return '未命名题目';
   const p = prompt as Record<string, unknown>;
-  return String(p.source ?? p.question ?? p.statement ?? p.word ?? p.title ?? p.type ?? '未命名题目');
+  return String(
+    p.source ??
+      p.question ??
+      p.statement ??
+      p.word ??
+      p.title ??
+      p.instruction ??
+      p.passage ??
+      p.type ??
+      '未命名题目',
+  );
 }
 
 const muted: React.CSSProperties = { color: '#6b7280', fontSize: 13 };

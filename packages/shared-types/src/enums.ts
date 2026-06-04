@@ -75,6 +75,35 @@ export enum ExerciseType {
    * Unordered selection; multiple accepted answer sets are allowed.
    */
   WORD_BUILD = 'word_build',
+
+  // ---------------------------------------------------------------------------
+  // English (英语) — listening, judgment, dialogue, reading & sequencing
+  // ---------------------------------------------------------------------------
+  /**
+   * Listen to audio and pick the matching option (picture or text).
+   * Covers textbook "Listen and tick / Listen, then point" activities.
+   */
+  LISTEN_CHOICE = 'listen_choice',
+  /**
+   * Decide whether a statement (optionally with an image/audio) is true or
+   * false. Covers textbook "Read and check / tick" judgment activities.
+   */
+  TRUE_FALSE = 'true_false',
+  /**
+   * Complete a short dialogue by choosing the appropriate missing line.
+   * Covers textbook "Look and talk / Role-play" conversational activities.
+   */
+  DIALOGUE_COMPLETE = 'dialogue_complete',
+  /**
+   * Read (or listen to) a passage / short story and answer one or more
+   * multiple-choice sub-questions. All sub-questions must be correct.
+   */
+  READING_COMPREHENSION = 'reading_comprehension',
+  /**
+   * Order picture / text / audio cards into the correct sequence. Covers
+   * textbook "Read and order" and "Listen and number" story sequencing.
+   */
+  PICTURE_ORDER = 'picture_order',
 }
 
 export enum LessonOutcome {

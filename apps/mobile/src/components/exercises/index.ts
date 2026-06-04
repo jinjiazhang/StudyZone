@@ -23,3 +23,8 @@ export { NumberLineExercise } from './NumberLine';
 export { OrderSequenceExercise } from './OrderSequence';
 export { TableReadExercise } from './TableRead';
 export { UnitConversionExercise } from './UnitConversion';
+export { ListenChoiceExercise } from './ListenChoice';
+export { TrueFalseExercise } from './TrueFalse';
+export { DialogueCompleteExercise } from './DialogueComplete';
+export { ReadingComprehensionExercise } from './ReadingComprehension';
+export { PictureOrderExercise } from './PictureOrder';

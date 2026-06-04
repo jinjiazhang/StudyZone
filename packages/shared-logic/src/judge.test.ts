@@ -349,6 +349,91 @@ describe('judge', () => {
       judge(prompt, answer, { selected: ['白', '天', '星'] }).correct,
     ).toBe(false);
   });
+
+  it('judges listen-choice by option id and reveals the option text', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.LISTEN_CHOICE,
+      audioUrl: 'a.mp3',
+      question: 'What does she want?',
+      options: [
+        { id: 'a', text: 'noodles' },
+        { id: 'b', text: 'dumplings' },
+      ],
+    };
+    expect(judge(prompt, { correctOptionId: 'b' }, { correctOptionId: 'b' })).toEqual({
+      correct: true,
+      canonicalAnswer: 'dumplings',
+    });
+    expect(judge(prompt, { correctOptionId: 'b' }, { correctOptionId: 'a' }).correct).toBe(false);
+  });
+
+  it('judges true/false with custom or default labels', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.TRUE_FALSE,
+      statement: 'The boy washes his hands.',
+    };
+    expect(judge(prompt, { value: true }, { value: true })).toEqual({
+      correct: true,
+      canonicalAnswer: '对',
+    });
+    expect(judge(prompt, { value: false }, { value: true })).toEqual({
+      correct: false,
+      canonicalAnswer: '错',
+    });
+  });
+
+  it('judges dialogue completion by chosen line index', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.DIALOGUE_COMPLETE,
+      turns: [
+        { speaker: 'A', text: 'What would you like?' },
+        { speaker: 'B', text: null },
+      ],
+      blankIndex: 1,
+      options: ["I'd like some noodles.", "It's Monday.", "I'm nine."],
+    };
+    expect(judge(prompt, { correctIndex: 0 }, { correctIndex: 0 })).toEqual({
+      correct: true,
+      canonicalAnswer: "I'd like some noodles.",
+    });
+    expect(judge(prompt, { correctIndex: 0 }, { correctIndex: 2 }).correct).toBe(false);
+  });
+
+  it('judges reading comprehension all-or-nothing across sub-questions', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.READING_COMPREHENSION,
+      passage: 'A boy cried "Wolf!" but there was no wolf...',
+      questions: [
+        { question: 'Was there a wolf at first?', options: ['Yes', 'No'] },
+        { question: 'Did the villagers believe him in the end?', options: ['Yes', 'No'] },
+      ],
+    };
+    const answer = { correctIndices: [1, 1] };
+    expect(judge(prompt, answer, { correctIndices: [1, 1] })).toEqual({
+      correct: true,
+      canonicalAnswer: 'No / No',
+    });
+    // one wrong → whole exercise wrong
+    expect(judge(prompt, answer, { correctIndices: [1, 0] }).correct).toBe(false);
+  });
+
+  it('judges picture ordering by item id sequence', () => {
+    const prompt: ExercisePrompt = {
+      type: ExerciseType.PICTURE_ORDER,
+      instruction: 'Put the story in order',
+      items: [
+        { id: 'p1', imageUrl: '1.png' },
+        { id: 'p2', imageUrl: '2.png' },
+        { id: 'p3', imageUrl: '3.png' },
+      ],
+    };
+    const answer = { orderedIds: ['p2', 'p1', 'p3'] };
+    expect(judge(prompt, answer, { orderedIds: ['p2', 'p1', 'p3'] })).toEqual({
+      correct: true,
+      canonicalAnswer: 'p2 / p1 / p3',
+    });
+    expect(judge(prompt, answer, { orderedIds: ['p1', 'p2', 'p3'] }).correct).toBe(false);
+  });
 });
 
 describe('levenshtein', () => {
