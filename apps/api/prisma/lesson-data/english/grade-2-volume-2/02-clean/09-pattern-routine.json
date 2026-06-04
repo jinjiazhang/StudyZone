@@ -105,14 +105,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's a dog.",
           "I brush my teeth.",
+          "It's a dog.",
           "Yes, I do.",
           "I'm ten."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -132,13 +132,13 @@
         "blankIndex": 1,
         "options": [
           "It's Monday.",
-          "I'm nine.",
           "I can wash my hands.",
+          "I'm nine.",
           "Yes, it is."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -159,12 +159,12 @@
         "options": [
           "It's sunny.",
           "I'm a bear.",
-          "It's a face.",
-          "Yes, I do."
+          "Yes, I do.",
+          "It's a face."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -183,14 +183,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "We wash our hands every day.",
           "It's Monday.",
           "I'm fine.",
-          "Yes, I am."
+          "Yes, I am.",
+          "We wash our hands every day."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -209,14 +209,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's Monday.",
           "Yes, I can.",
+          "It's Monday.",
           "It's a pet.",
           "I'm a bear."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -239,6 +239,49 @@
         "value": true
       },
       "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "face.",
+          "wash",
+          "morning,",
+          "the",
+          "I",
+          "my",
+          "In"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "In",
+          "the",
+          "morning,",
+          "I",
+          "wash",
+          "my",
+          "face."
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which sentence tells a morning routine?",
+        "options": [
+          "At Christmas, I eat gingerbread.",
+          "I play football in the club.",
+          "It is a hot pot.",
+          "In the morning, I brush my teeth."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
     }
   ]
 }

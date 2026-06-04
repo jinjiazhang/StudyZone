@@ -115,14 +115,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "I'd like some dim sum.",
           "It's Monday.",
           "I'm ten.",
-          "I'd like some dim sum.",
           "Yes, I do."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -142,13 +142,13 @@
         "blankIndex": 1,
         "options": [
           "It's a dog.",
+          "I'd like some baozi.",
           "See you.",
-          "I'm nine.",
-          "I'd like some baozi."
+          "I'm nine."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -167,14 +167,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "I'd like some congee. It's yummy.",
           "I'd like to swim.",
           "It's winter.",
+          "I'd like some congee. It's yummy.",
           "I'm a winner."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -194,13 +194,13 @@
         "blankIndex": 1,
         "options": [
           "I'm hungry.",
-          "I like Pen Cai.",
           "It's Sunday.",
-          "Yes, please."
+          "Yes, please.",
+          "I like Pen Cai."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -219,14 +219,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "Me too. Let's try it!",
           "Good night.",
           "It's sunny.",
-          "Me too. Let's try it!",
           "No, thanks."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -246,13 +246,70 @@
         "blankIndex": 1,
         "options": [
           "It's over there.",
+          "Yes, I like it!",
           "I'm hungry.",
-          "It's a clue.",
-          "Yes, I like it!"
+          "It's a clue."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Chef",
+            "text": "What would you like?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          },
+          {
+            "speaker": "Chef",
+            "text": "Here you are."
+          },
+          {
+            "speaker": "Amy",
+            "text": "Thank you."
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "It is a clue.",
+          "Me too.",
+          "I'd like some baozi.",
+          "There is no food."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成点餐句子。",
+        "tokens": [
+          "some",
+          "like",
+          "dim",
+          "I’d",
+          "sum."
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "I’d",
+          "like",
+          "some",
+          "dim",
+          "sum."
+        ]
       },
       "difficulty": 2
     }

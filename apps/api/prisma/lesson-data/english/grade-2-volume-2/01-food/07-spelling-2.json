@@ -150,6 +150,89 @@
         "tolerance": 1
       },
       "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "frog",
+        "sourceLocale": "en-US",
+        "options": [
+          "小狗",
+          "木头",
+          "商店",
+          "青蛙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "log",
+        "sourceLocale": "en-US",
+        "options": [
+          "木头",
+          "拖把",
+          "青蛙",
+          "跳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "hop",
+        "sourceLocale": "en-US",
+        "options": [
+          "购买",
+          "跳",
+          "看",
+          "喜欢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which pair has the same ending sound?",
+        "options": [
+          "dog - hop",
+          "frog - shop",
+          "dog - frog",
+          "log - mop"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which pair ends with -op?",
+        "options": [
+          "dog - frog",
+          "log - dog",
+          "frog - mop",
+          "hop - shop"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
     }
   ]
 }

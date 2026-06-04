@@ -9,8 +9,8 @@
           {
             "question": "What do we eat at the Dragon Boat Festival?",
             "options": [
-              "Zongzi",
               "Mooncakes",
+              "Zongzi",
               "Gingerbread"
             ]
           },
@@ -18,7 +18,39 @@
             "question": "What do we eat at the Mid-Autumn Festival?",
             "options": [
               "Pumpkin pies",
+              "Zongzi",
+              "Mooncakes"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "Food at different festivals",
+        "passage": "People eat special food at festivals.\nAt the Dragon Boat Festival, we eat zongzi.\nAt the Mid-Autumn Festival, we eat mooncakes.\nAt Thanksgiving, we eat pumpkin pies.\nAt Christmas, we eat gingerbread.",
+        "questions": [
+          {
+            "question": "When do we eat pumpkin pies?",
+            "options": [
+              "At Thanksgiving",
+              "At Christmas",
+              "At the Dragon Boat Festival"
+            ]
+          },
+          {
+            "question": "What do we eat at Christmas?",
+            "options": [
               "Mooncakes",
+              "Gingerbread",
               "Zongzi"
             ]
           }
@@ -39,58 +71,26 @@
         "passage": "People eat special food at festivals.\nAt the Dragon Boat Festival, we eat zongzi.\nAt the Mid-Autumn Festival, we eat mooncakes.\nAt Thanksgiving, we eat pumpkin pies.\nAt Christmas, we eat gingerbread.",
         "questions": [
           {
-            "question": "When do we eat pumpkin pies?",
-            "options": [
-              "At Christmas",
-              "At the Dragon Boat Festival",
-              "At Thanksgiving"
-            ]
-          },
-          {
-            "question": "What do we eat at Christmas?",
-            "options": [
-              "Gingerbread",
-              "Mooncakes",
-              "Zongzi"
-            ]
-          }
-        ]
-      },
-      "answer": {
-        "correctIndices": [
-          2,
-          0
-        ]
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "reading_comprehension",
-      "prompt": {
-        "title": "Food at different festivals",
-        "passage": "People eat special food at festivals.\nAt the Dragon Boat Festival, we eat zongzi.\nAt the Mid-Autumn Festival, we eat mooncakes.\nAt Thanksgiving, we eat pumpkin pies.\nAt Christmas, we eat gingerbread.",
-        "questions": [
-          {
             "question": "Do people eat special food at festivals?",
             "options": [
               "No, they don't.",
-              "Yes, they do.",
-              "We don't know."
+              "We don't know.",
+              "Yes, they do."
             ]
           },
           {
             "question": "What do we eat at the Dragon Boat Festival?",
             "options": [
+              "Zongzi",
               "Mooncakes",
-              "Gingerbread",
-              "Zongzi"
+              "Gingerbread"
             ]
           },
           {
             "question": "What do we eat at Christmas?",
             "options": [
-              "Gingerbread",
               "Mooncakes",
+              "Gingerbread",
               "Zongzi"
             ]
           }
@@ -98,9 +98,9 @@
       },
       "answer": {
         "correctIndices": [
-          1,
           2,
-          0
+          0,
+          1
         ]
       },
       "difficulty": 3
@@ -212,6 +212,48 @@
       },
       "answer": {
         "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "Food at festivals",
+        "passage": "At the Dragon Boat Festival, we eat zongzi. At the Mid-Autumn Festival, we eat mooncakes. At Thanksgiving, we eat pumpkin pies. At Christmas, we eat gingerbread.",
+        "questions": [
+          {
+            "question": "Which food is for Christmas?",
+            "options": [
+              "Zongzi",
+              "Mooncakes",
+              "Gingerbread"
+            ]
+          },
+          {
+            "question": "Which festival has pumpkin pies?",
+            "options": [
+              "Thanksgiving",
+              "Christmas",
+              "Dragon Boat Festival"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "Mooncakes are special food for the Mid-Autumn Festival."
+      },
+      "answer": {
+        "value": true
       },
       "difficulty": 1
     }

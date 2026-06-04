@@ -194,13 +194,13 @@
         "question": "“洗脸”用英语怎么说？",
         "options": [
           "wash my paws",
-          "wash my face",
           "keep clean",
-          "wash my hands"
+          "wash my hands",
+          "wash my face"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -209,14 +209,14 @@
       "prompt": {
         "question": "“刷牙”用英语怎么说？",
         "options": [
+          "brush my teeth",
           "teeth",
           "paws",
-          "brush my teeth",
           "keep clean"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -226,13 +226,13 @@
         "question": "In the morning, I ___ my teeth.",
         "options": [
           "eat",
+          "brush",
           "read",
-          "sleep",
-          "brush"
+          "sleep"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -241,16 +241,54 @@
       "prompt": {
         "question": "A: How can we keep clean? B: ___",
         "options": [
-          "We wash our hands every day.",
           "It's Monday.",
           "I'm nine.",
+          "We wash our hands every day.",
           "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "按睡前清洁活动的合理顺序排序。",
+        "items": [
+          {
+            "id": "c",
+            "text": "Go to bed."
+          },
+          {
+            "id": "a",
+            "text": "It is bedtime."
+          },
+          {
+            "id": "b",
+            "text": "Brush your teeth."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Now your teeth are clean.” 应在刷牙之前说。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
     }
   ]
 }

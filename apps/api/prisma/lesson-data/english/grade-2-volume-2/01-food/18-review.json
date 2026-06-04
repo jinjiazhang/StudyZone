@@ -57,13 +57,13 @@
         "question": "“月饼”用英语怎么说？",
         "options": [
           "cake",
-          "mooncakes",
           "noodles",
+          "mooncakes",
           "Pen Cai"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -74,12 +74,12 @@
         "options": [
           "congee",
           "gingerbread",
-          "noodles",
-          "cake"
+          "cake",
+          "noodles"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -158,14 +158,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "I'd like some dim sum.",
           "It's Monday.",
           "I'm ten.",
-          "Yes, I do.",
-          "I'd like some dim sum."
+          "Yes, I do."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -184,14 +184,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "We eat zongzi.",
           "We eat gingerbread.",
+          "We eat zongzi.",
           "It's a cake.",
           "Yes, we do."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -225,24 +225,24 @@
             "question": "Where are Amy and Jenny?",
             "options": [
               "At school",
-              "At home",
-              "At a food festival"
+              "At a food festival",
+              "At home"
             ]
           },
           {
             "question": "What is the last dish?",
             "options": [
-              "Pen Cai",
               "Pizza",
-              "Bread"
+              "Bread",
+              "Pen Cai"
             ]
           }
         ]
       },
       "answer": {
         "correctIndices": [
-          2,
-          0
+          1,
+          2
         ]
       },
       "difficulty": 2
@@ -277,6 +277,38 @@
           "c2",
           "c3"
         ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete the rhyme: The frog is on the ___.",
+        "options": [
+          "log",
+          "shop",
+          "mop",
+          "hop"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete the rhyme: She hops to the ___.",
+        "options": [
+          "frog",
+          "shop",
+          "dog",
+          "log"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
       },
       "difficulty": 2
     }

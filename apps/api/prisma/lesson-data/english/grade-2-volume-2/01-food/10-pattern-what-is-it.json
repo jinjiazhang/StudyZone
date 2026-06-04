@@ -15,14 +15,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's congee.",
           "I'm fine.",
           "It's red.",
-          "Thank you."
+          "Thank you.",
+          "It's congee."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -41,14 +41,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's a clue.",
           "It's congee! I like it!",
+          "It's a clue.",
           "I'm Amy.",
           "Let's go."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -68,9 +68,41 @@
         "blankIndex": 1,
         "options": [
           "It's Monday.",
-          "I'm nine.",
           "Yes, please!",
+          "I'm nine.",
           "Good night."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: What is it? B: ___",
+        "options": [
+          "I'm fine.",
+          "It's congee.",
+          "It's Monday.",
+          "Yes, I am."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A: What's this? B: It's ___.",
+        "options": [
+          "sunny",
+          "Monday",
+          "a baozi",
+          "nine"
         ]
       },
       "answer": {
@@ -81,48 +113,16 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "A: What is it? B: ___",
+        "question": "A: Would you like some rice? B: ___",
         "options": [
-          "I'm fine.",
+          "It's green.",
+          "I'm ten.",
           "It's Monday.",
-          "Yes, I am.",
-          "It's congee."
+          "Yes, please."
         ]
       },
       "answer": {
         "correctIndex": 3
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "A: What's this? B: It's ___.",
-        "options": [
-          "a baozi",
-          "sunny",
-          "Monday",
-          "nine"
-        ]
-      },
-      "answer": {
-        "correctIndex": 0
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "A: Would you like some rice? B: ___",
-        "options": [
-          "It's green.",
-          "Yes, please.",
-          "I'm ten.",
-          "It's Monday."
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -187,6 +187,58 @@
         "value": false
       },
       "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Jenny",
+            "text": "What is it?"
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I am hungry.",
+          "Here you are.",
+          "It’s congee. I like it!",
+          "At Christmas."
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What is it, Jenny?"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Me too.",
+          "It is a festival.",
+          "No food.",
+          "Hmm ... noodles!"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
     }
   ]
 }

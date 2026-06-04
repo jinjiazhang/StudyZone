@@ -149,6 +149,89 @@
         "tolerance": 1
       },
       "difficulty": 2
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "pot",
+        "sourceLocale": "en-US",
+        "options": [
+          "太阳",
+          "小圆面包",
+          "跑步",
+          "锅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "bun",
+        "sourceLocale": "en-US",
+        "options": [
+          "小圆面包",
+          "锅",
+          "热的",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "translate_choice",
+      "prompt": {
+        "source": "run",
+        "sourceLocale": "en-US",
+        "options": [
+          "触摸",
+          "跑步",
+          "清洁",
+          "刷牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which pair ends with -ot?",
+        "options": [
+          "bun - run",
+          "hot - sun",
+          "pot - bun",
+          "pot - hot"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Which pair ends with -un?",
+        "options": [
+          "bun - run",
+          "pot - hot",
+          "run - pot",
+          "hot - bun"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
     }
   ]
 }

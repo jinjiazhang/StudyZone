@@ -16,13 +16,13 @@
         "blankIndex": 1,
         "options": [
           "Good night.",
-          "Me too. Let's try it!",
           "It's sunny.",
+          "Me too. Let's try it!",
           "No, thanks."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -43,12 +43,12 @@
         "options": [
           "It's a clue.",
           "I'm Amy.",
-          "It's congee! I like it!",
-          "Let's go."
+          "Let's go.",
+          "It's congee! I like it!"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -67,14 +67,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "Yes, please!",
           "It's Monday.",
           "I'm nine.",
-          "Good night.",
-          "Yes, please!"
+          "Good night."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -93,14 +93,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's congee.",
           "I'm fine.",
+          "It's congee.",
           "It's red.",
           "Thank you."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -120,25 +120,9 @@
         "blankIndex": 1,
         "options": [
           "It's over there.",
-          "Yes, I like it!",
           "I'm hungry.",
+          "Yes, I like it!",
           "It's a clue."
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 2
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "A: I'm hungry! B: ___",
-        "options": [
-          "It's sunny.",
-          "Good night.",
-          "Me too. Let's eat!",
-          "No, thanks."
         ]
       },
       "answer": {
@@ -149,12 +133,12 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "A: What is it? B: ___",
+        "question": "A: I'm hungry! B: ___",
         "options": [
-          "I'm nine.",
-          "Let's go home.",
-          "It's blue.",
-          "It's congee."
+          "It's sunny.",
+          "Good night.",
+          "No, thanks.",
+          "Me too. Let's eat!"
         ]
       },
       "answer": {
@@ -165,16 +149,32 @@
     {
       "type": "single_choice",
       "prompt": {
+        "question": "A: What is it? B: ___",
+        "options": [
+          "It's congee.",
+          "I'm nine.",
+          "Let's go home.",
+          "It's blue."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
         "question": "A: Do you like dim sum? B: ___",
         "options": [
-          "Yes, I like it!",
           "It's Monday.",
+          "Yes, I like it!",
           "I'm full now.",
           "It's a cake."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -195,6 +195,42 @@
       },
       "answer": {
         "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "Wait! Here’s a clue!"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I’d like cake.",
+          "It is Christmas.",
+          "Me too.",
+          "What’s over there?"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“There isn’t any food.” 表示“没有食物了”。"
+      },
+      "answer": {
+        "value": true
       },
       "difficulty": 1
     }

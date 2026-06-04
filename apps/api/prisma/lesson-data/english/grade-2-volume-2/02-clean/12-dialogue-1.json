@@ -15,14 +15,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "I can wash my hands.",
           "It's Monday.",
           "I'm nine.",
-          "I can wash my hands.",
           "Yes, it is."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -42,13 +42,13 @@
         "blankIndex": 1,
         "options": [
           "It's bedtime.",
+          "No. Let me wash them.",
           "I'm fine.",
-          "It's sunny.",
-          "No. Let me wash them."
+          "It's sunny."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -67,14 +67,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "Yes, I can.",
           "It's Monday.",
           "It's a pet.",
+          "Yes, I can.",
           "I'm a bear."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -94,13 +94,13 @@
         "blankIndex": 1,
         "options": [
           "I'm nine.",
-          "Yes, they're clean.",
           "It's bedtime.",
-          "No, thank you."
+          "No, thank you.",
+          "Yes, they're clean."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -119,14 +119,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "We wash our hands every day.",
           "It's Monday.",
           "I'm fine.",
-          "We wash our hands every day.",
           "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -146,13 +146,13 @@
         "blankIndex": 1,
         "options": [
           "It's a dog.",
+          "Yes, please.",
           "I'm ten.",
-          "Good night.",
-          "Yes, please."
+          "Good night."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -171,14 +171,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "Before meals and after I play.",
           "It's red.",
           "I'm a pet.",
+          "Before meals and after I play.",
           "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -211,6 +211,58 @@
         "value": true
       },
       "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Mum",
+            "text": "Are your hands soapy?"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, it is.",
+          "I brush my teeth.",
+          "No, I can’t.",
+          "Yes, they are."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Mum",
+            "text": "Are they dry yet?"
+          },
+          {
+            "speaker": "Boy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Yes, they are dry.",
+          "It is bedtime.",
+          "I can wash.",
+          "They are paws."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
     }
   ]
 }

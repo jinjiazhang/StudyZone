@@ -82,13 +82,13 @@
         "question": "Your paws are ___. Let's wash.",
         "options": [
           "clean",
+          "dirty",
           "happy",
-          "nine",
-          "dirty"
+          "nine"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -97,14 +97,14 @@
       "prompt": {
         "question": "Let me ___ your paws.",
         "options": [
-          "wash",
           "eat",
           "read",
+          "wash",
           "sleep"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -114,13 +114,13 @@
         "question": "Now your teeth are ___.",
         "options": [
           "dirty",
-          "clean",
           "red",
-          "ten"
+          "ten",
+          "clean"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -163,6 +163,55 @@
         "value": true
       },
       "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Leo",
+            "text": "Sam, your paws are dirty."
+          },
+          {
+            "speaker": "Leo",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "I eat a bun.",
+          "It is a frog.",
+          "Good night.",
+          "Let’s go and wash."
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "组成句子。",
+        "tokens": [
+          "paws.",
+          "wash",
+          "me",
+          "Let",
+          "your"
+        ]
+      },
+      "answer": {
+        "tokens": [
+          "Let",
+          "me",
+          "wash",
+          "your",
+          "paws."
+        ]
+      },
+      "difficulty": 2
     }
   ]
 }

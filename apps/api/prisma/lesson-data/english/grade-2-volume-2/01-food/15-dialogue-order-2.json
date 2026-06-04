@@ -194,25 +194,9 @@
         "question": "“姜饼”用英语怎么说？",
         "options": [
           "mooncakes",
-          "gingerbread",
           "rice",
+          "gingerbread",
           "baozi"
-        ]
-      },
-      "answer": {
-        "correctIndex": 1
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "“盆菜”用英语怎么说？",
-        "options": [
-          "fish ball",
-          "noodles",
-          "Pen Cai",
-          "zongzi"
         ]
       },
       "answer": {
@@ -223,16 +207,32 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "At Christmas, we eat ___.",
+        "question": "“盆菜”用英语怎么说？",
         "options": [
+          "fish ball",
+          "noodles",
           "zongzi",
-          "mooncakes",
-          "pumpkin pies",
-          "gingerbread"
+          "Pen Cai"
         ]
       },
       "answer": {
         "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "At Christmas, we eat ___.",
+        "options": [
+          "gingerbread",
+          "zongzi",
+          "mooncakes",
+          "pumpkin pies"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -241,16 +241,54 @@
       "prompt": {
         "question": "A: What would you like? B: ___",
         "options": [
-          "I'd like some noodles.",
           "It's Monday.",
+          "I'd like some noodles.",
           "I'm nine.",
           "Yes, I do."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 2
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "按线索发现过程排序。",
+        "items": [
+          {
+            "id": "b",
+            "text": "What’s over there?"
+          },
+          {
+            "id": "a",
+            "text": "Here’s a clue!"
+          },
+          {
+            "id": "c",
+            "text": "Aha! That’s ours."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“Aha! That’s ours.” 表示发现了属于自己的东西。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
     }
   ]
 }

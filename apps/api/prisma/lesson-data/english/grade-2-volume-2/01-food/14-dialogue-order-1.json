@@ -227,6 +227,62 @@
         "value": false
       },
       "difficulty": 1
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "按品尝挑战的合理顺序排序。",
+        "items": [
+          {
+            "id": "c",
+            "text": "Oh! There isn’t any food!"
+          },
+          {
+            "id": "a",
+            "text": "What’s next?"
+          },
+          {
+            "id": "b",
+            "text": "Let’s look for a clue."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "c",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "按对话的合理顺序排序。",
+        "items": [
+          {
+            "id": "b",
+            "text": "Here you are."
+          },
+          {
+            "id": "c",
+            "text": "Thank you."
+          },
+          {
+            "id": "a",
+            "text": "I’d like some baozi."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
     }
   ]
 }

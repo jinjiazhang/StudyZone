@@ -7,13 +7,13 @@
         "sourceLocale": "en-US",
         "options": [
           "干的",
-          "洗手",
           "手",
+          "洗手",
           "脸"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -25,12 +25,12 @@
         "options": [
           "干净的",
           "宠物",
-          "刷牙",
-          "洗手"
+          "洗手",
+          "刷牙"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -40,26 +40,10 @@
         "source": "dirty",
         "sourceLocale": "en-US",
         "options": [
+          "脏的",
           "牙齿",
           "保持干净",
-          "干净的",
-          "脏的"
-        ]
-      },
-      "answer": {
-        "correctIndex": 3
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "single_choice",
-      "prompt": {
-        "question": "“干净的”用英语怎么说？",
-        "options": [
-          "clean",
-          "wash my hands",
-          "dry",
-          "pet"
+          "干净的"
         ]
       },
       "answer": {
@@ -70,16 +54,32 @@
     {
       "type": "single_choice",
       "prompt": {
+        "question": "“干净的”用英语怎么说？",
+        "options": [
+          "wash my hands",
+          "dry",
+          "pet",
+          "clean"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
         "question": "“爪子”用英语怎么说？",
         "options": [
-          "wash my paws",
           "paws",
+          "wash my paws",
           "bedtime",
           "keep clean"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -154,14 +154,14 @@
         ],
         "blankIndex": 1,
         "options": [
+          "I can wash my hands.",
           "It's Monday.",
           "I'm nine.",
-          "I can wash my hands.",
           "Yes, it is."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -181,13 +181,13 @@
         "blankIndex": 1,
         "options": [
           "It's Monday.",
+          "We wash our hands every day.",
           "I'm fine.",
-          "Yes, I am.",
-          "We wash our hands every day."
+          "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -220,8 +220,8 @@
           {
             "question": "What is Leo's new pet?",
             "options": [
-              "A cat",
               "A dog",
+              "A cat",
               "A bird"
             ]
           },
@@ -229,16 +229,16 @@
             "question": "What does Leo do at bedtime?",
             "options": [
               "Washes the floor",
-              "Plays games",
-              "Brushes his teeth"
+              "Brushes his teeth",
+              "Plays games"
             ]
           }
         ]
       },
       "answer": {
         "correctIndices": [
-          1,
-          2
+          0,
+          1
         ]
       },
       "difficulty": 2
@@ -273,6 +273,38 @@
           "c2",
           "c3"
         ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete the rhyme: The soup is ___.",
+        "options": [
+          "bun",
+          "hot",
+          "run",
+          "sun"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "Complete the rhyme: Sam eats a ___.",
+        "options": [
+          "pot",
+          "hot",
+          "bun",
+          "mop"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
       },
       "difficulty": 2
     }

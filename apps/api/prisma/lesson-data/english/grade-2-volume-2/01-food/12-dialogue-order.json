@@ -15,14 +15,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "It's Monday.",
           "I'd like some dim sum.",
+          "It's Monday.",
           "I'm ten.",
           "Yes, I do."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -42,13 +42,13 @@
         "blankIndex": 1,
         "options": [
           "It's a dog.",
-          "See you.",
           "I'd like some baozi.",
+          "See you.",
           "I'm nine."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -69,12 +69,12 @@
         "options": [
           "I'd like to swim.",
           "It's winter.",
-          "I'm a winner.",
-          "I'd like some congee. It's yummy."
+          "I'd like some congee. It's yummy.",
+          "I'm a winner."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -93,14 +93,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "I like Pen Cai.",
           "I'm hungry.",
           "It's Sunday.",
-          "Yes, please."
+          "Yes, please.",
+          "I like Pen Cai."
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -119,14 +119,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "We eat gingerbread.",
           "We eat zongzi.",
+          "We eat gingerbread.",
           "It's a cake.",
           "Yes, we do."
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -146,13 +146,13 @@
         "blankIndex": 1,
         "options": [
           "We eat zongzi.",
-          "We eat mooncakes.",
           "We eat gingerbread.",
+          "We eat mooncakes.",
           "No, we can't."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -173,12 +173,12 @@
         "options": [
           "We eat pumpkin pies.",
           "It's a festival.",
-          "No, thanks.",
-          "We eat mooncakes."
+          "We eat mooncakes.",
+          "No, thanks."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -197,14 +197,14 @@
         ],
         "blankIndex": 1,
         "options": [
-          "Yes, I like it!",
           "It's over there.",
           "I'm hungry.",
-          "It's a clue."
+          "It's a clue.",
+          "Yes, I like it!"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -227,6 +227,58 @@
         "value": false
       },
       "difficulty": 1
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Amy",
+            "text": "What’s next?"
+          },
+          {
+            "speaker": "Jenny",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "Oh! There isn’t any food!",
+          "I’d like some rice.",
+          "At the Mid-Autumn Festival.",
+          "It is yummy."
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "dialogue_complete",
+      "prompt": {
+        "turns": [
+          {
+            "speaker": "Jenny",
+            "text": "Here you are."
+          },
+          {
+            "speaker": "Amy",
+            "text": null
+          }
+        ],
+        "blankIndex": 1,
+        "options": [
+          "What is it?",
+          "Thank you.",
+          "Me too.",
+          "No food."
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
     }
   ]
 }

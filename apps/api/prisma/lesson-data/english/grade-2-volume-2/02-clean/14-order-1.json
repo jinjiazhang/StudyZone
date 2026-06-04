@@ -227,6 +227,44 @@
         "value": false
       },
       "difficulty": 1
+    },
+    {
+      "type": "picture_order",
+      "prompt": {
+        "instruction": "按洗手步骤的合理顺序排序。",
+        "items": [
+          {
+            "id": "c",
+            "text": "Dry your hands."
+          },
+          {
+            "id": "a",
+            "text": "Wash your hands."
+          },
+          {
+            "id": "b",
+            "text": "Rub your hands."
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "洗手时应先擦干手，再用水清洗。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
     }
   ]
 }

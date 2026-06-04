@@ -104,13 +104,13 @@
         "blankIndex": 1,
         "options": [
           "It's Monday.",
-          "I'm fine.",
           "We wash our hands every day.",
+          "I'm fine.",
           "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -131,12 +131,12 @@
         "options": [
           "It's red.",
           "I'm a pet.",
-          "Yes, I am.",
-          "Before meals and after I play."
+          "Before meals and after I play.",
+          "Yes, I am."
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 2
     },
@@ -205,6 +205,48 @@
       },
       "answer": {
         "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "When should we wash our hands?",
+        "options": [
+          "Only at bedtime",
+          "Only on Sunday",
+          "After brushing teeth only",
+          "Before meals"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "What do we do after we play?",
+        "options": [
+          "Wash our hands",
+          "Eat a mooncake",
+          "Make a mask",
+          "Kick a shuttlecock"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "We do not rub our hands when we wash them."
+      },
+      "answer": {
+        "value": false
       },
       "difficulty": 1
     }
