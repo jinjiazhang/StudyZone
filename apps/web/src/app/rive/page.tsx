@@ -28,6 +28,29 @@ type RiveMetadata = {
   stateMachines: string[];
 };
 
+type RiveInputType = 'number' | 'boolean' | 'trigger' | 'unknown';
+
+type RiveInput = {
+  name: string;
+  type: RiveInputType;
+  value?: number | boolean;
+};
+
+type RiveRuntime = {
+  play?: (name?: string) => void;
+  pause?: (name?: string) => void;
+  stop?: (name?: string) => void;
+  reset?: () => void;
+  stateMachineInputs?: (name: string) => RuntimeInput[];
+};
+
+type RuntimeInput = {
+  name: string;
+  type?: number | string;
+  value?: number | boolean;
+  fire?: () => void;
+};
+
 const previewLayout = new Layout({
   fit: Fit.Contain,
   alignment: Alignment.Center,
@@ -35,6 +58,36 @@ const previewLayout = new Layout({
 
 function fileLabel(path: string) {
   return path.split('/').pop()?.replace(/\.riv$/, '') ?? path;
+}
+
+function normalizeInputType(input: RuntimeInput): RiveInputType {
+  const type = String(input.type ?? '').toLowerCase();
+  if (type.includes('number') || type === '56') return 'number';
+  if (type.includes('trigger') || type === '58') return 'trigger';
+  if (type.includes('boolean') || type.includes('bool') || type === '59') return 'boolean';
+  if (typeof input.value === 'boolean') return 'boolean';
+  if (typeof input.value === 'number') return 'number';
+  return 'unknown';
+}
+
+function readInputs(rive: unknown, stateMachineName: string): RiveInput[] {
+  const runtime = rive as RiveRuntime | null;
+  if (!runtime?.stateMachineInputs || !stateMachineName) return [];
+
+  try {
+    const inputs = runtime.stateMachineInputs(stateMachineName);
+    if (!Array.isArray(inputs)) return [];
+
+    return inputs
+      .filter((input): input is RuntimeInput => Boolean(input?.name))
+      .map((input) => ({
+        name: input.name,
+        type: normalizeInputType(input),
+        value: input.value,
+      }));
+  } catch {
+    return [];
+  }
 }
 
 function RivePreviewStage({
@@ -106,6 +159,7 @@ export default function RivePreviewPage() {
     stateMachines: [],
   });
   const [runtime, setRuntime] = useState<unknown>(null);
+  const [stateMachineInputs, setStateMachineInputs] = useState<RiveInput[]>([]);
   const [reloadToken, setReloadToken] = useState(0);
   const [loadError, setLoadError] = useState('');
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
@@ -180,6 +234,7 @@ export default function RivePreviewPage() {
     setSelectedAnimation('');
     setSelectedStateMachine('');
     setRuntime(null);
+    setStateMachineInputs([]);
     setReloadToken((value) => value + 1);
   }, [selectedPath]);
 
@@ -192,13 +247,12 @@ export default function RivePreviewPage() {
     }
   }, [metadata, mode, selectedAnimation, selectedStateMachine]);
 
+  useEffect(() => {
+    setStateMachineInputs(readInputs(runtime, selectedStateMachine));
+  }, [runtime, selectedStateMachine, reloadToken]);
+
   function control(action: 'play' | 'pause' | 'stop' | 'reset') {
-    const rive = runtime as {
-      play?: (name?: string) => void;
-      pause?: (name?: string) => void;
-      stop?: (name?: string) => void;
-      reset?: () => void;
-    } | null;
+    const rive = runtime as RiveRuntime | null;
 
     if (!rive) return;
     const activeName = mode === 'animation' ? selectedAnimation : selectedStateMachine;
@@ -210,6 +264,37 @@ export default function RivePreviewPage() {
     }
 
     rive[action]?.(activeName || undefined);
+  }
+
+  function updateInput(inputName: string, nextValue?: number | boolean) {
+    const rive = runtime as RiveRuntime | null;
+    let input: RuntimeInput | undefined;
+
+    try {
+      input = rive
+        ?.stateMachineInputs?.(selectedStateMachine)
+        ?.find((candidate) => candidate.name === inputName);
+    } catch {
+      input = undefined;
+    }
+
+    if (!input) return;
+
+    if (typeof nextValue === 'undefined') {
+      input.fire?.();
+      return;
+    }
+
+    try {
+      input.value = nextValue;
+    } catch {
+      return;
+    }
+    setStateMachineInputs((current) =>
+      current.map((candidate) =>
+        candidate.name === inputName ? { ...candidate, value: nextValue } : candidate,
+      ),
+    );
   }
 
   function toggleGroup(group: string) {
@@ -383,7 +468,7 @@ export default function RivePreviewPage() {
             </div>
           </div>
 
-          <div className="grid flex-1 grid-rows-[1fr_auto] gap-4 p-4">
+          <div className="grid flex-1 grid-rows-[auto_auto_auto] gap-4 p-4">
             <div className="flex min-h-[460px] items-start justify-center rounded-lg border-2 border-dashed border-[#d7d7d7] bg-[#fbfbfb] p-4">
               <div className="h-[420px] w-full max-w-[640px] overflow-hidden rounded-md bg-white shadow-[inset_0_0_0_2px_#eeeeee]">
                 <RivePreviewStage
@@ -397,6 +482,77 @@ export default function RivePreviewPage() {
                   onReady={setRuntime}
                 />
               </div>
+            </div>
+
+            <div className="rounded-lg bg-[#f7f7f7] p-3">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <div>
+                  <div className="text-xs font-black uppercase text-[#777]">State Machine Inputs</div>
+                  <div className="text-sm font-bold text-[#4b4b4b]">
+                    {selectedStateMachine || 'No state machine selected'}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setStateMachineInputs(readInputs(runtime, selectedStateMachine))}
+                  className="h-9 rounded-md border-2 border-[#e5e5e5] bg-white px-3 text-xs font-black text-[#4b4b4b]"
+                >
+                  Refresh
+                </button>
+              </div>
+
+              {mode !== 'stateMachine' ? (
+                <div className="text-sm font-bold text-[#777]">Switch to State Machines to inspect inputs.</div>
+              ) : stateMachineInputs.length ? (
+                <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+                  {stateMachineInputs.map((input) => (
+                    <div
+                      key={`${selectedStateMachine}-${input.name}`}
+                      className="flex min-h-12 items-center gap-3 rounded-md border-2 border-[#e5e5e5] bg-white px-3 py-2"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <div className="truncate text-sm font-black text-[#3c3c3c]">{input.name}</div>
+                        <div className="text-xs font-bold uppercase text-[#999]">{input.type}</div>
+                      </div>
+
+                      {input.type === 'trigger' ? (
+                        <button
+                          type="button"
+                          onClick={() => updateInput(input.name)}
+                          className="h-9 rounded-md border-2 border-[#58a700] bg-[#58cc02] px-3 text-xs font-black text-white"
+                        >
+                          Fire
+                        </button>
+                      ) : null}
+
+                      {input.type === 'boolean' ? (
+                        <button
+                          type="button"
+                          onClick={() => updateInput(input.name, !input.value)}
+                          className={`h-9 min-w-16 rounded-md border-2 px-3 text-xs font-black ${
+                            input.value
+                              ? 'border-[#58a700] bg-[#58cc02] text-white'
+                              : 'border-[#e5e5e5] bg-white text-[#4b4b4b]'
+                          }`}
+                        >
+                          {input.value ? 'On' : 'Off'}
+                        </button>
+                      ) : null}
+
+                      {input.type === 'number' ? (
+                        <input
+                          type="number"
+                          value={typeof input.value === 'number' ? input.value : 0}
+                          onChange={(event) => updateInput(input.name, Number(event.target.value))}
+                          className="h-9 w-24 rounded-md border-2 border-[#e5e5e5] px-2 text-sm font-bold outline-none"
+                        />
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-sm font-bold text-[#777]">No inputs found for this state machine.</div>
+              )}
             </div>
 
             <div className="grid gap-3 text-sm font-bold text-[#4b4b4b] md:grid-cols-3">
