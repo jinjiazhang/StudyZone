@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "55÷8的商是？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40÷7的商是？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46÷9的商是？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52÷8的商是？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求55÷8的商，应找哪个乘法事实？",
+        "options": [
+          "8×8=64，所以商是8",
+          "6×8=48，7×8=56比55大",
+          "7×8=56，所以商是7",
+          "5×8=40，所以商是5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求40÷7的商，哪一步合理？",
+        "options": [
+          "5×7=35，6×7=42比40大",
+          "6×7=42，所以商是6",
+          "7×7=49，所以商是7",
+          "4×7=28，所以商是4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用乘法想46÷9：5×9=__，再用46减去它，余数是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘积"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          45,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用乘法想52÷8：6×8=__，再用52减去它，余数是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘积"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          48,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7 × 8",
+        "right": "55"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 8",
+        "right": "55"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

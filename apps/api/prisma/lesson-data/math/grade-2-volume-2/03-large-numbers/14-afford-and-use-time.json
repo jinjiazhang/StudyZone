@@ -1,0 +1,159 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30元租船，每小时9元，最多划几小时？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50元买每本7元的书，最多买几本？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70厘米彩带，每颗星用9厘米，最多折几颗？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46元买每个8元的球，最多买几个？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65元买每盒9元的笔，最多买几盒？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 9 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最多小时"
+          },
+          {
+            "id": "b2",
+            "label": "剩余元"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "50 ÷ 7 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最多本数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余元"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "30÷9=3……3，剩下3元为什么不能再租1小时？",
+        "options": [
+          "3元不足9元",
+          "3元等于9元",
+          "已经没有船",
+          "余数不能使用"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "问“最多可以买几本”，答案取什么？",
+        "options": [
+          "余数",
+          "商加1",
+          "被除数",
+          "商"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有58元，每个玩具9元，列式求最多买几个。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "58÷9",
+          "58/9"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

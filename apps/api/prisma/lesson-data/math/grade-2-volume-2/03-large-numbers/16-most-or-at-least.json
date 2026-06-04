@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "27个蛋糕，每盒5个，问最多装满几盒，答案是？",
+        "options": [
+          "6盒",
+          "2盒",
+          "7盒",
+          "5盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "27个蛋糕，每盒最多装5个，问至少需要几盒，答案是？",
+        "options": [
+          "2盒",
+          "7盒",
+          "6盒",
+          "5盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "40只蚂蚁，每片叶子最多乘7只，至少需要几片？",
+        "options": [
+          "4片",
+          "6片",
+          "5片",
+          "7片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "40只蚂蚁，每片叶子放7只，最多放满几片？",
+        "options": [
+          "5片",
+          "6片",
+          "7片",
+          "4片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "58本书，每层放9本，最多放满几层？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "58本书，每层最多放9本，至少需要几层？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "34 ÷ 6 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "商"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "34人坐车，每车限乘6人，至少几辆？",
+        "options": [
+          "5辆",
+          "4辆",
+          "7辆",
+          "6辆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "34个球每盒6个，最多装满几盒？",
+        "options": [
+          "4盒",
+          "7盒",
+          "5盒",
+          "6盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "最多买几本"
+          },
+          {
+            "id": "l2",
+            "text": "最多装满几盒"
+          },
+          {
+            "id": "l3",
+            "text": "至少需要几辆"
+          },
+          {
+            "id": "l4",
+            "text": "至少需要几壶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "有余数时车辆数为商加1"
+          },
+          {
+            "id": "r1",
+            "text": "商表示可购买的本数"
+          },
+          {
+            "id": "r4",
+            "text": "有余数时水壶数为商加1"
+          },
+          {
+            "id": "r2",
+            "text": "商表示装满的盒数"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

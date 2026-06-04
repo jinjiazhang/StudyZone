@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "珠子按“2白3蓝”重复，第18颗是第几个周期中的第几颗？只填周期数。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "珠子按“2白3蓝”重复，第18颗是什么颜色？",
+        "options": [
+          "无法确定",
+          "蓝色",
+          "白色",
+          "红色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "珠子按“2白3蓝”重复，第25颗是什么颜色？",
+        "options": [
+          "蓝色",
+          "白色",
+          "红色",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "珠子按“2白3蓝”重复，第37颗是什么颜色？",
+        "options": [
+          "蓝色",
+          "红色",
+          "无法确定",
+          "白色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 5 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "完整周期"
+          },
+          {
+            "id": "b2",
+            "label": "余下位置"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "25 ÷ 5 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "完整周期"
+          },
+          {
+            "id": "b2",
+            "label": "余下位置"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          0
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "37 ÷ 5 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "完整周期"
+          },
+          {
+            "id": "b2",
+            "label": "余下位置"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "周期是5，第25个为什么看余数0？",
+        "options": [
+          "它不在周期中",
+          "余数0表示白色",
+          "它正好是第5个位置",
+          "它是第1个位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按“红、黄、蓝”重复，第20个是什么颜色？",
+        "options": [
+          "绿色",
+          "黄色",
+          "红色",
+          "蓝色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "20 ÷ 3 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "完整周期"
+          },
+          {
+            "id": "b2",
+            "label": "余下位置"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40只蚂蚁，每片叶子最多乘7只，至少需要几片叶子？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "38位家长，每壶水可以倒9杯，至少需要几壶水？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "19只小雪豹，每辆小雪车限乘3只，至少需要几辆？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25人乘小车，每辆限乘4人，至少需要几辆？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22人租船，每条船限乘4人，至少需要几条？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22÷4=5……2，为什么至少要6条船？",
+        "options": [
+          "余数2就是船数",
+          "5条船能坐22人",
+          "商要减1",
+          "剩下2人也需要1条船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“至少需要几辆车”，有余数时应怎样处理商？",
+        "options": [
+          "商减1",
+          "把余数当答案",
+          "商加1",
+          "只写商"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "43人乘车，每辆限乘8人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "坐满车辆"
+          },
+          {
+            "id": "b2",
+            "label": "至少车辆"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "31个球，每盒最多装6个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "装满盒数"
+          },
+          {
+            "id": "b2",
+            "label": "至少盒数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪类问题通常需要商加1？",
+        "options": [
+          "平均每人分多少",
+          "装下全部物品至少需要多少容器",
+          "最多买多少本书",
+          "最多装满多少盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "22枝花平均插在3个花瓶中 请列除法算式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "22÷3",
+          "22/3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "22 ÷ 3 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每瓶枝数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余枝数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "22枝花每5枝插一个花瓶 请列除法算式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "22÷5",
+          "22/5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "22 ÷ 5 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "花瓶数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余枝数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22÷3=7……1中，7表示什么？",
+        "options": [
+          "每个花瓶插7枝",
+          "需要7个花瓶",
+          "还剩7枝",
+          "一共有7枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22÷5=4……2中，4表示什么？",
+        "options": [
+          "每瓶4枝",
+          "还剩4枝",
+          "一共有4枝",
+          "可以装满4个花瓶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "19张福字，每5张装一袋。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "装满袋数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余张数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "21张卡片平均分给4人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每人张数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余张数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平均分给4人"
+          },
+          {
+            "id": "l2",
+            "text": "每5个装一袋"
+          },
+          {
+            "id": "l3",
+            "text": "余数"
+          },
+          {
+            "id": "l4",
+            "text": "除数"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "分完或装完后剩下多少"
+          },
+          {
+            "id": "r1",
+            "text": "商表示每人分到多少"
+          },
+          {
+            "id": "r4",
+            "text": "每份数或份数"
+          },
+          {
+            "id": "r2",
+            "text": "商表示装满多少袋"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样是22÷5=4……2，“每5枝插一瓶”时余数2表示什么？",
+        "options": [
+          "每瓶插2枝",
+          "装满2瓶",
+          "剩下2枝花",
+          "还要2个花瓶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

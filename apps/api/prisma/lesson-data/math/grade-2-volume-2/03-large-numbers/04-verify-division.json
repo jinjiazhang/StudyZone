@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "17 ÷ 5 = 3 ... 2，验证：5×3=__，再加余数得__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘积"
+          },
+          {
+            "id": "b2",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          17
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "22 ÷ 6 = 3 ... 4，验证：6×3=__，再加余数得__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘积"
+          },
+          {
+            "id": "b2",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          22
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 × 4 + 3 = ?"
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 × 6 + 5 = ?"
+      },
+      "answer": {
+        "value": 53,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "验证29÷6=4……5，正确算式是？",
+        "options": [
+          "4×5+6=26",
+          "6×4+5=29",
+          "6×5+4=34",
+          "29-4=25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一道计算正确？",
+        "options": [
+          "35÷8=4……3",
+          "35÷8=3……11",
+          "35÷8=5……5",
+          "35÷8=4……4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 5 + 2",
+        "right": "32"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7 × 6 + 4",
+        "right": "45"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "19÷4=4……3"
+          },
+          {
+            "id": "l2",
+            "text": "26÷5=5……1"
+          },
+          {
+            "id": "l3",
+            "text": "31÷7=4……3"
+          },
+          {
+            "id": "l4",
+            "text": "38÷6=6……2"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "7×4+3=31"
+          },
+          {
+            "id": "r1",
+            "text": "4×4+3=19"
+          },
+          {
+            "id": "r4",
+            "text": "6×6+2=38"
+          },
+          {
+            "id": "r2",
+            "text": "5×5+1=26"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有余数除法中，被除数等于什么？",
+        "options": [
+          "除数+商+余数",
+          "除数×余数+商",
+          "商×余数+除数",
+          "除数×商+余数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "折圆筒型纸飞机的第一步是什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "先粘成圆筒"
+          },
+          {
+            "id": "o2",
+            "label": "先剪掉一半"
+          },
+          {
+            "id": "o3",
+            "label": "A4纸对折"
+          },
+          {
+            "id": "o4",
+            "label": "先画一个圆"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "A4纸对折后，教材接着怎样折？",
+        "options": [
+          "直接揉成团",
+          "剪成圆形",
+          "完全不再折",
+          "展开后把半边对折"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "纸飞机首尾重合约多少厘米？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "5厘米"
+          },
+          {
+            "id": "o2",
+            "label": "1厘米"
+          },
+          {
+            "id": "o3",
+            "label": "20厘米"
+          },
+          {
+            "id": "o4",
+            "label": "完全不重合"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "完成首尾重合后，最后要做什么？",
+        "options": [
+          "全部展开",
+          "整理成圆柱并粘好",
+          "剪断圆柱",
+          "折成正方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "按步骤操作最重要的好处是什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "能让纸自动变大"
+          },
+          {
+            "id": "o2",
+            "label": "不需要检查"
+          },
+          {
+            "id": "o3",
+            "label": "不容易漏掉关键折法"
+          },
+          {
+            "id": "o4",
+            "label": "任何顺序都一样"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“折圆筒型纸飞机的第一步是什么”时，哪句话可以作为正确结论？",
+        "options": [
+          "A4纸对折",
+          "先粘成圆筒",
+          "先剪掉一半",
+          "先画一个圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“A4纸对折后，教材接着怎样折”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "直接揉成团"
+          },
+          {
+            "id": "o2",
+            "label": "展开后把半边对折"
+          },
+          {
+            "id": "o3",
+            "label": "剪成圆形"
+          },
+          {
+            "id": "o4",
+            "label": "完全不再折"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“纸飞机首尾重合约多少厘米”时，哪句话可以作为正确结论？",
+        "options": [
+          "1厘米",
+          "20厘米",
+          "5厘米",
+          "完全不重合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“完成首尾重合后，最后要做什么”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "全部展开"
+          },
+          {
+            "id": "o2",
+            "label": "剪断圆柱"
+          },
+          {
+            "id": "o3",
+            "label": "折成正方体"
+          },
+          {
+            "id": "o4",
+            "label": "整理成圆柱并粘好"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序完成：按步骤折圆筒型纸飞机",
+        "items": [
+          {
+            "id": "s2",
+            "text": "展开后半边对折并继续对折"
+          },
+          {
+            "id": "s1",
+            "text": "A4纸对折"
+          },
+          {
+            "id": "s4",
+            "text": "整理成圆柱并粘好"
+          },
+          {
+            "id": "s3",
+            "text": "让首尾重合约5厘米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9999 + 1 = ?"
+      },
+      "answer": {
+        "value": 10000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 个一千是多少？"
+      },
+      "answer": {
+        "value": 10000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10000 里面有多少个一千？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 9800 一百一百地数到 10000，还要数几次？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 7000 一千一千地数，下一个数是？"
+      },
+      "answer": {
+        "value": 8000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比 10000 少 1 的数是？"
+      },
+      "answer": {
+        "value": 9999,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一千、二千、三千、四千，接着填两个数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5000,
+          6000
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "万位上的 1 表示多少？",
+        "options": [
+          "1个千",
+          "1个万",
+          "1个百",
+          "1个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组正好合成一万？",
+        "options": [
+          "10个一百",
+          "100个十",
+          "10个一千",
+          "9个一千"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "9999再添1是",
+          null,
+          "，它读作",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "一千",
+          "一万",
+          "10000",
+          "1000"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "10000",
+          "一万"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

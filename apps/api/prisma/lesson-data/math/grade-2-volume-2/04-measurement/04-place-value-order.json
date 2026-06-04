@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从右边起，第一位是什么位？",
+        "options": [
+          "个位",
+          "十位",
+          "百位",
+          "千位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从右边起，第四位是什么位？",
+        "options": [
+          "个位",
+          "百位",
+          "千位",
+          "万位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "万位的右边紧挨着哪一位？",
+        "options": [
+          "个位",
+          "千位",
+          "十位",
+          "百位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "十位左边紧挨着哪一位？",
+        "options": [
+          "个位",
+          "千位",
+          "万位",
+          "百位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在数 374 中，百位上的数字是？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在数 6072 中，十位上的数字是？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在数 9205 中，千位上的数字是？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "在数 10000 中，万位上的数字是？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数位从高到低依次是：万位、千位、___、___、个位。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "百位代表数值"
+          },
+          {
+            "id": "b2",
+            "label": "十位代表数值"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          100,
+          10
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从右往左，个位、",
+          null,
+          "、百位、",
+          null,
+          "、万位。"
+        ],
+        "tokens": [
+          "万位",
+          "千位",
+          "十位",
+          "个位"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "十位",
+          "千位"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

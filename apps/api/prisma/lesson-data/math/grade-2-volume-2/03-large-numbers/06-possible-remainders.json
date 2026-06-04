@@ -1,0 +1,171 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "除数是4，余数可能是？",
+        "options": [
+          "1、2、3",
+          "0、1、2、3、4",
+          "4、5、6",
+          "只有3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "除数是6，有余数时余数可能是？",
+        "options": [
+          "0、1、2、3、4、5、6",
+          "6、7、8",
+          "只有5",
+          "1、2、3、4、5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "除数是7，有余数时一共有几种可能的余数？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "除数是9，有余数时一共有几种可能的余数？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "余数可能是1、2、3，除数最可能是？",
+        "options": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "余数最大是7，除数是？",
+        "options": [
+          "9",
+          "8",
+          "7",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5",
+        "right": "除数6时的最大余数"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "29 ÷ 6 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "商"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "37 ÷ 8 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "商"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个算式的除数是5，下面哪个余数合法？",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

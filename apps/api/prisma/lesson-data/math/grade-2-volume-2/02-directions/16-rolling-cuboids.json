@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体盒子沿一个方向滚动时，纸上会留下什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "一个圆形轨迹"
+          },
+          {
+            "id": "o2",
+            "label": "依次接触纸面的图形"
+          },
+          {
+            "id": "o3",
+            "label": "只有一个点"
+          },
+          {
+            "id": "o4",
+            "label": "盒子的内部"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体每滚动一次，哪个面会印在纸上？",
+        "options": [
+          "永远是同一个面",
+          "没有任何面",
+          "新接触纸面的面",
+          "盒子内部的面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "换一个方向滚动，印出的面序列可能怎样？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "一定完全相同"
+          },
+          {
+            "id": "o2",
+            "label": "全部变成圆形"
+          },
+          {
+            "id": "o3",
+            "label": "只剩一个面"
+          },
+          {
+            "id": "o4",
+            "label": "发生变化"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材让学生实际滚一滚，主要是为了什么？",
+        "options": [
+          "验证自己的想法",
+          "改变盒子颜色",
+          "把盒子拆开",
+          "测量盒子重量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "预测滚动印面时，最重要的是关注什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "盒子上的文字"
+          },
+          {
+            "id": "o2",
+            "label": "盒子滚动方向和接触面"
+          },
+          {
+            "id": "o3",
+            "label": "纸的颜色"
+          },
+          {
+            "id": "o4",
+            "label": "谁在滚盒子"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“长方体盒子沿一个方向滚动时，纸上会留下什么”时，哪句话可以作为正确结论？",
+        "options": [
+          "一个圆形轨迹",
+          "依次接触纸面的图形",
+          "只有一个点",
+          "盒子的内部"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“长方体每滚动一次，哪个面会印在纸上”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "永远是同一个面"
+          },
+          {
+            "id": "o2",
+            "label": "没有任何面"
+          },
+          {
+            "id": "o3",
+            "label": "新接触纸面的面"
+          },
+          {
+            "id": "o4",
+            "label": "盒子内部的面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“换一个方向滚动，印出的面序列可能怎样”时，哪句话可以作为正确结论？",
+        "options": [
+          "一定完全相同",
+          "全部变成圆形",
+          "只剩一个面",
+          "发生变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“教材让学生实际滚一滚，主要是为了什么”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "验证自己的想法"
+          },
+          {
+            "id": "o2",
+            "label": "改变盒子颜色"
+          },
+          {
+            "id": "o3",
+            "label": "把盒子拆开"
+          },
+          {
+            "id": "o4",
+            "label": "测量盒子重量"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序完成：判断长方体滚动留下的面",
+        "items": [
+          {
+            "id": "s2",
+            "text": "预测下一个接触面"
+          },
+          {
+            "id": "s1",
+            "text": "选定滚动方向"
+          },
+          {
+            "id": "s4",
+            "text": "记录并验证面序列"
+          },
+          {
+            "id": "s3",
+            "text": "让盒子滚动并观察"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

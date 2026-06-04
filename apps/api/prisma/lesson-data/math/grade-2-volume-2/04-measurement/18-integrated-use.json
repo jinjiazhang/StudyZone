@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "写出：八千八百四十八。"
+      },
+      "answer": {
+        "value": 8848,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "6070 读作什么？",
+        "options": [
+          "六千零七十",
+          "六千七十",
+          "六百零七十",
+          "六千零七"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5102 由几个千、几个百、几个十、几个一组成？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "千"
+          },
+          {
+            "id": "b2",
+            "label": "百"
+          },
+          {
+            "id": "b3",
+            "label": "十"
+          },
+          {
+            "id": "b4",
+            "label": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          1,
+          0,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7593 中的“7”表示多少？"
+      },
+      "answer": {
+        "value": 7000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3952",
+        "right": "3920"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从小到大排列",
+        "items": [
+          {
+            "id": "n1503",
+            "text": "1503"
+          },
+          {
+            "id": "n740",
+            "text": "740"
+          },
+          {
+            "id": "n3650",
+            "text": "3650"
+          },
+          {
+            "id": "n1468",
+            "text": "1468"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n740",
+          "n1468",
+          "n1503",
+          "n3650"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "找规律：3260，3270，___，3290，___",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3280,
+          3300
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个数最接近 4000？",
+        "options": [
+          "3408",
+          "2980",
+          "3952",
+          "5102"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每本书约50张纸，20本大约有多少张纸？"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "8848 = ",
+          null,
+          " + ",
+          null,
+          " + ",
+          null,
+          " + ",
+          null
+        ],
+        "tokens": [
+          "40",
+          "8000",
+          "8",
+          "800"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "8000",
+          "800",
+          "40",
+          "8"
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

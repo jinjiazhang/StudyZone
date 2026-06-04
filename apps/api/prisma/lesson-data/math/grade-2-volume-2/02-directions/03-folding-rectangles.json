@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "把长方形纸平均分成3份再摆一摆，可能做出什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "完整正方体"
+          },
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "有三个面的立体纸架"
+          },
+          {
+            "id": "o4",
+            "label": "圆片"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "折叠前画出的虚线主要表示什么？",
+        "options": [
+          "剪断位置",
+          "涂色位置",
+          "测量起点",
+          "折痕位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "想让折出的三部分宽度相同，应怎样分？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "平均分成3份"
+          },
+          {
+            "id": "o2",
+            "label": "随意折两次"
+          },
+          {
+            "id": "o3",
+            "label": "只折一次"
+          },
+          {
+            "id": "o4",
+            "label": "剪成圆形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把长方形纸平均分成4份，折叠后最可能形成什么？",
+        "options": [
+          "球",
+          "四面围成的纸筒",
+          "圆片",
+          "三角形纸片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "折纸时纸面歪斜，最可能是哪一步出了问题？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "纸是长方形"
+          },
+          {
+            "id": "o2",
+            "label": "观察了作品"
+          },
+          {
+            "id": "o3",
+            "label": "没有沿折痕折齐"
+          },
+          {
+            "id": "o4",
+            "label": "把纸展开了"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“把长方形纸平均分成3份再摆一摆，可能做出什么”时，哪句话可以作为正确结论？",
+        "options": [
+          "有三个面的立体纸架",
+          "完整正方体",
+          "球",
+          "圆片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“折叠前画出的虚线主要表示什么”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "剪断位置"
+          },
+          {
+            "id": "o2",
+            "label": "折痕位置"
+          },
+          {
+            "id": "o3",
+            "label": "涂色位置"
+          },
+          {
+            "id": "o4",
+            "label": "测量起点"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“想让折出的三部分宽度相同，应怎样分”时，哪句话可以作为正确结论？",
+        "options": [
+          "随意折两次",
+          "只折一次",
+          "平均分成3份",
+          "剪成圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“把长方形纸平均分成4份，折叠后最可能形成什么”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o2",
+            "label": "圆片"
+          },
+          {
+            "id": "o3",
+            "label": "三角形纸片"
+          },
+          {
+            "id": "o4",
+            "label": "四面围成的纸筒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序完成：用长方形纸折成立体",
+        "items": [
+          {
+            "id": "s1",
+            "text": "把长方形纸平均分份"
+          },
+          {
+            "id": "s4",
+            "text": "检查各部分是否整齐"
+          },
+          {
+            "id": "s3",
+            "text": "按折痕摆成立体"
+          },
+          {
+            "id": "s2",
+            "text": "沿分界线折出折痕"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2个千、4个百、3个十、6个一组成的数是？"
+      },
+      "answer": {
+        "value": 2436,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1个千、9个百、4个十、9个一组成的数是？"
+      },
+      "answer": {
+        "value": 1949,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6个千、0个百、7个十、2个一组成的数是？"
+      },
+      "answer": {
+        "value": 6072,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "374 由几个百、几个十、几个一组成？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "百"
+          },
+          {
+            "id": "b2",
+            "label": "十"
+          },
+          {
+            "id": "b3",
+            "label": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          7,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5006 由几个千、几个百、几个十、几个一组成？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "千"
+          },
+          {
+            "id": "b2",
+            "label": "百"
+          },
+          {
+            "id": "b3",
+            "label": "十"
+          },
+          {
+            "id": "b4",
+            "label": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          0,
+          0,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "9600 由几个千、几个百、几个十、几个一组成？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "千"
+          },
+          {
+            "id": "b2",
+            "label": "百"
+          },
+          {
+            "id": "b3",
+            "label": "十"
+          },
+          {
+            "id": "b4",
+            "label": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          6,
+          0,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "2436 = ",
+          null,
+          " + ",
+          null,
+          " + ",
+          null,
+          " + ",
+          null
+        ],
+        "tokens": [
+          "30",
+          "6",
+          "2000",
+          "400"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "2000",
+          "400",
+          "30",
+          "6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "6072 = ",
+          null,
+          " + ",
+          null,
+          " + ",
+          null
+        ],
+        "tokens": [
+          "2",
+          "6000",
+          "70",
+          "700"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6000",
+          "70",
+          "2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种分解正确？",
+        "options": [
+          "1057=100+50+7",
+          "1057=1000+500+7",
+          "1057=1000+50+7",
+          "1057=1000+57+10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“4个千和7个一”组成哪个数？",
+        "options": [
+          "4007",
+          "4070",
+          "4700",
+          "40007"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "55个松果每8个放一盘，最多放满几盘 请列除法算式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "55÷8",
+          "55/8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "55 ÷ 8 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "满盘数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余个数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "50元买每本7元的书，最多买几本 请列除法算式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "50÷7",
+          "50/7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "50 ÷ 7 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "本数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余元数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70厘米彩带，每9厘米折一颗星，最多折几颗？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "27个蛋糕，每盒5个，最多装满几盒？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46颗糖，每袋8颗，最多装满几袋？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "题目问“最多装满几盒”，余下的不满一盒怎么办？",
+        "options": [
+          "一定没有余数",
+          "不计入装满的盒数",
+          "再算一盒",
+          "把余数当盒数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "40只蚂蚁，每片叶子最多乘7只，若只问装满的叶子数，答案是？",
+        "options": [
+          "5片",
+          "6片",
+          "7片",
+          "4片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "68元买每个9元的玩具。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最多买的个数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余元数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

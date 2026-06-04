@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 198 一个一个地数，下一个数是？"
+      },
+      "answer": {
+        "value": 199,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 299 一个一个地数，下一个数是？"
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 480 十个十个地数，下一个数是？"
+      },
+      "answer": {
+        "value": 490,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 700 一百一百地数，下一个数是？"
+      },
+      "answer": {
+        "value": 800,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比 215 多 1 的数是？"
+      },
+      "answer": {
+        "value": 216,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "比 400 少 1 的数是？"
+      },
+      "answer": {
+        "value": 399,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从 298 数到 302，中间依次填哪三个数？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1个"
+          },
+          {
+            "id": "b2",
+            "label": "第2个"
+          },
+          {
+            "id": "b3",
+            "label": "第3个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          299,
+          300,
+          301
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "十个十个地数：260，270，___，___，300",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          280,
+          290
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从 390 十个十个地数，下一次应数到多少？",
+        "options": [
+          "391",
+          "399",
+          "400",
+          "490"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从 500 一百一百地往后数，第三个数是多少？",
+        "options": [
+          "501",
+          "700",
+          "600",
+          "800"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

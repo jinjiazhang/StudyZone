@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "13÷4的余数不可能是几？",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "除数是6，余数最大是几？",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "余数是7，除数最小可能是几？",
+        "options": [
+          "8",
+          "7",
+          "6",
+          "1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "除数是9，余数最大是？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "余数是5，除数最小是？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "55÷6的商是几？",
+        "options": [
+          "8",
+          "7",
+          "6",
+          "9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "55÷6=9……1为什么正确？",
+        "options": [
+          "余数可以等于除数",
+          "6×9正好等于55",
+          "余数1比除数6小，且6×9+1=55",
+          "商9比除数6大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道算式一定错误？",
+        "options": [
+          "17÷5=3……2",
+          "33÷4=7……5",
+          "33÷4=8……1",
+          "20÷6=3……2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "除数4"
+          },
+          {
+            "id": "l2",
+            "text": "除数6"
+          },
+          {
+            "id": "l3",
+            "text": "除数8"
+          },
+          {
+            "id": "l4",
+            "text": "除数9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "余数最大7"
+          },
+          {
+            "id": "r1",
+            "text": "余数最大3"
+          },
+          {
+            "id": "r4",
+            "text": "余数最大8"
+          },
+          {
+            "id": "r2",
+            "text": "余数最大5"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个除法算式的余数最大是6，除数是？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

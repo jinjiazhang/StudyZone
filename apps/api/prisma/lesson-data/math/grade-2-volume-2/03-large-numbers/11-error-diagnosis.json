@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "55÷6=8……7错在哪里？",
+        "options": [
+          "商太大",
+          "没有余数",
+          "除数应是7",
+          "余数7比除数6大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "55÷6=9……1为什么正确？",
+        "options": [
+          "余数可以等于除数",
+          "6×9=55",
+          "6×9+1=55，且1<6",
+          "9<6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "33÷4=7……5应改成什么？",
+        "options": [
+          "33÷4=8……4",
+          "33÷4=8……1",
+          "33÷4=7……4",
+          "33÷4=9……1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22÷5=3……7应改成什么？",
+        "options": [
+          "22÷5=4……2",
+          "22÷5=3……5",
+          "22÷5=5……2",
+          "22÷5=4……5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一道计算错误？",
+        "options": [
+          "41÷6=6……5",
+          "28÷9=3……1",
+          "24÷7=3……3",
+          "41÷6=5……11"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "修正：38 ÷ 7 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "商"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "修正：47 ÷ 8 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "商"
+          },
+          {
+            "id": "b2",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 6 + 5",
+        "right": "41"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8 × 5 + 7",
+        "right": "47"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "检查有余数除法，最重要的两点是？",
+        "options": [
+          "只看商是否大",
+          "只看余数是否为0",
+          "除数×商+余数=被除数，余数<除数",
+          "商<余数，余数=除数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

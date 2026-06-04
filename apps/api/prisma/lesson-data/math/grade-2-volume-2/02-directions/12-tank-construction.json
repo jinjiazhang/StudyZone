@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "制作坦克下半部分，先要准备什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "一个球"
+          },
+          {
+            "id": "o2",
+            "label": "多个圆柱形纸筒"
+          },
+          {
+            "id": "o3",
+            "label": "六个三角形"
+          },
+          {
+            "id": "o4",
+            "label": "一张圆片"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "制作坦克上半部分，哪种作品最合适？",
+        "options": [
+          "圆片",
+          "球",
+          "盒状长方体",
+          "单独一条线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "把炮管接到车身上，最重要的是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "颜色必须相同"
+          },
+          {
+            "id": "o2",
+            "label": "炮管必须是正方体"
+          },
+          {
+            "id": "o3",
+            "label": "车身必须拆开"
+          },
+          {
+            "id": "o4",
+            "label": "连接牢固且位置合适"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "组合制作前先画草图有什么作用？",
+        "options": [
+          "帮助规划各部分的位置和形状",
+          "让纸自动粘好",
+          "代替所有制作",
+          "只为了涂颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "作品容易散开，应该改进什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "观察角度"
+          },
+          {
+            "id": "o2",
+            "label": "各部分的连接方式"
+          },
+          {
+            "id": "o3",
+            "label": "作品名称"
+          },
+          {
+            "id": "o4",
+            "label": "纸上文字"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“制作坦克下半部分，先要准备什么”时，哪句话可以作为正确结论？",
+        "options": [
+          "一个球",
+          "多个圆柱形纸筒",
+          "六个三角形",
+          "一张圆片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“制作坦克上半部分，哪种作品最合适”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "圆片"
+          },
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "盒状长方体"
+          },
+          {
+            "id": "o4",
+            "label": "单独一条线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小组交流“把炮管接到车身上，最重要的是”时，哪句话可以作为正确结论？",
+        "options": [
+          "颜色必须相同",
+          "炮管必须是正方体",
+          "车身必须拆开",
+          "连接牢固且位置合适"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小组交流“组合制作前先画草图有什么作用”时，哪句话可以作为正确结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "帮助规划各部分的位置和形状"
+          },
+          {
+            "id": "o2",
+            "label": "让纸自动粘好"
+          },
+          {
+            "id": "o3",
+            "label": "代替所有制作"
+          },
+          {
+            "id": "o4",
+            "label": "只为了涂颜色"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序完成：规划组合立体作品的制作",
+        "items": [
+          {
+            "id": "s1",
+            "text": "观察坦克并分解结构"
+          },
+          {
+            "id": "s4",
+            "text": "从不同角度检查并改进"
+          },
+          {
+            "id": "s3",
+            "text": "把各部分连接"
+          },
+          {
+            "id": "s2",
+            "text": "分别制作履带、车身和炮管"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

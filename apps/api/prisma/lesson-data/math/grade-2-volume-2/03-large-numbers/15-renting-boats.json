@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22人，每条船限乘4人，至少租几条船？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31人，每条船限乘6人，至少租几条船？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25人，每条船限乘7人，至少租几条船？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "22 ÷ 4 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "坐满船数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "31 ÷ 6 = __ ... __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "坐满船数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22人租限乘4人的船，租5条够吗？",
+        "options": [
+          "够，还空2人位置",
+          "不够，还差4条",
+          "不够，还剩2人没船坐",
+          "够，正好坐满"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "31÷6=5……1，至少租几条船？",
+        "options": [
+          "7条",
+          "6条",
+          "5条",
+          "1条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "25人乘船，每条限乘7人，列式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "25÷7",
+          "25/7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“限乘4人”的意思是？",
+        "options": [
+          "每条船最多坐4人",
+          "每条船必须坐满4人",
+          "一共只能坐4人",
+          "至少坐4人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "37人租船，每条限乘8人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "坐满船数"
+          },
+          {
+            "id": "b2",
+            "label": "至少船数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
