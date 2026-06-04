@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "淘气前两轮24次、30次，总成绩90次，第三轮多少次？",
+        "columns": [
+          "姓名",
+          "第一轮",
+          "第二轮",
+          "总成绩"
+        ],
+        "rows": [
+          {
+            "姓名": "淘气",
+            "第一轮": 24,
+            "第二轮": 30,
+            "总成绩": 90
+          }
+        ]
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "笑笑前两轮各29次，总成绩94次，第三轮多少次？",
+        "columns": [
+          "姓名",
+          "第一轮",
+          "第二轮",
+          "总成绩"
+        ],
+        "rows": [
+          {
+            "姓名": "笑笑",
+            "第一轮": 29,
+            "第二轮": 29,
+            "总成绩": 94
+          }
+        ]
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "奇思三轮分别26次、30次、31次，总成绩多少次？",
+        "columns": [
+          "姓名",
+          "第一轮",
+          "第二轮",
+          "第三轮"
+        ],
+        "rows": [
+          {
+            "姓名": "奇思",
+            "第一轮": 26,
+            "第二轮": 30,
+            "第三轮": 31
+          }
+        ]
+      },
+      "answer": {
+        "value": 87,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "总成绩90次，前两轮24次、30次，列式求第三轮。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "90-24-30",
+          "90-(24+30)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 - 24 - 30 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "总成绩94次，前两轮各29次，列式求第三轮。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "94-29-29",
+          "94-(29+29)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "94 - 29 - 29 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "已知总成绩和前两轮成绩，求第三轮用什么方法？",
+        "options": [
+          "把三个数相加",
+          "只减去第一轮",
+          "从总成绩中依次减去前两轮成绩",
+          "只看总成绩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "90 - 24 - 30",
+        "right": "94 - 29 - 29"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "奇思三轮26次、30次、31次：先求前两轮，再求总成绩。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两轮"
+          },
+          {
+            "id": "b2",
+            "label": "总成绩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          56,
+          87
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

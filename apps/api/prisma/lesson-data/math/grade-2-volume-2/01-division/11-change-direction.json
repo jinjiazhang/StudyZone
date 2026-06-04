@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "原来52人，离开9人，加入15人。现在比原来怎样？",
+        "options": [
+          "多6人",
+          "少6人",
+          "多24人",
+          "少24人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "原来56人，下来27人，上来19人。现在比原来怎样？",
+        "options": [
+          "多8人",
+          "少8人",
+          "少46人",
+          "多46人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "原有75本，借出46本，还回12本。现在比原来怎样？",
+        "options": [
+          "多34本",
+          "少58本",
+          "少34本",
+          "多58本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "27 - 19 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 - 12 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "61 - 18 + 24",
+        "right": "61"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "56 - 27 + 19",
+        "right": "56"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "84 - 57 + 16",
+        "right": "84"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "离开9人，加入15人"
+          },
+          {
+            "id": "l2",
+            "text": "下来27人，上来19人"
+          },
+          {
+            "id": "l3",
+            "text": "借出46本，还回12本"
+          },
+          {
+            "id": "l4",
+            "text": "毕业8人，加入8人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "比原来少34本"
+          },
+          {
+            "id": "r1",
+            "text": "比原来多6人"
+          },
+          {
+            "id": "r4",
+            "text": "和原来一样多"
+          },
+          {
+            "id": "r2",
+            "text": "比原来少8人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

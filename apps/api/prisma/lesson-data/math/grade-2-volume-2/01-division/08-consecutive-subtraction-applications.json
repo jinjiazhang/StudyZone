@@ -1,0 +1,149 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有100元，买故事书18元、手工书32元，应找回多少元？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "100-18-32",
+          "100-(18+32)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 18 - 32 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "70名学生乘车，第一辆38人，第二辆24人，还有多少人没上车？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "70-38-24",
+          "70-(38+24)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70 - 38 - 24 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "78个易拉罐，做灯笼用31个，做向日葵用26个，还剩多少个？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "78-31-26",
+          "78-(31+26)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "78 - 31 - 26 = ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“还剩多少”，通常选择什么运算？",
+        "options": [
+          "把所有数量相加",
+          "只减去较小的数",
+          "从总数里依次减去用掉的数量",
+          "把总数加上用掉的数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100 - 18 - 32",
+        "right": "70 - 38 - 24"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "100元买18元和32元的书：先算花了多少元，再算找回多少元。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "花费"
+          },
+          {
+            "id": "b2",
+            "label": "找回"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          50,
+          50
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "70-38-24的结果8表示什么？",
+        "options": [
+          "两辆车一共38人",
+          "第二辆车有8人",
+          "一共有8辆车",
+          "还有8人没上车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "56 + 21 + 18 = ?"
+      },
+      "answer": {
+        "value": 95,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 + 33 - 18 = ?"
+      },
+      "answer": {
+        "value": 61,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "68 - 24 + 31 = ?"
+      },
+      "answer": {
+        "value": 75,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "94 - 28 - 37 = ?"
+      },
+      "answer": {
+        "value": 29,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "64 + 25 - 39 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 58 + 27 = ?"
+      },
+      "answer": {
+        "value": 69,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "81 - 36 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "62 - 47 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "56 + 21 + 18",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列得数",
+        "items": [
+          {
+            "id": "i3",
+            "text": "100-69+25"
+          },
+          {
+            "id": "i1",
+            "text": "96-34-35"
+          },
+          {
+            "id": "i2",
+            "text": "57+22-45"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

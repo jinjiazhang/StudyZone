@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "90 - 45 - 25 = __ - 25 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          45,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "77 - 33 - 25 = __ - 25 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          44,
+          19
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "96 - 39 - 45 = __ - 45 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          57,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "100 - 91 - 8 = __ - 8 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "75 - 35 = ",
+          null,
+          "，再减 28 得 ",
+          null
+        ],
+        "tokens": [
+          "40",
+          "47",
+          "12",
+          "18"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "40",
+          "12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "96 - 34 = ",
+          null,
+          "，再减 35 得 ",
+          null
+        ],
+        "tokens": [
+          "62",
+          "61",
+          "27",
+          "26"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "62",
+          "27"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "90 - 45 - 25",
+        "right": "90 - 25 - 45"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "连减算式中，每一步得到的数表示什么？",
+        "options": [
+          "加起来的总数",
+          "两个数的乘积",
+          "平均分的份数",
+          "减去一部分后剩下的数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列得数",
+        "items": [
+          {
+            "id": "i3",
+            "text": "77-33-25"
+          },
+          {
+            "id": "i1",
+            "text": "100-91-8"
+          },
+          {
+            "id": "i2",
+            "text": "96-39-45"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "88 - 26 - 32 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

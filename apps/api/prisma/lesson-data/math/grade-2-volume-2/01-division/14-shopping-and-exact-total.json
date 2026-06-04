@@ -1,0 +1,135 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "玩具价格有45、32、23、85、40、15元。哪两件正好100元？",
+        "options": [
+          "45元和32元",
+          "32元和40元",
+          "23元和45元",
+          "85元和15元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪三件玩具正好100元？",
+        "options": [
+          "45元、40元和15元",
+          "45元、32元和15元",
+          "32元、23元和40元",
+          "23元、40元和15元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "85 + 15 = ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 + 40 + 15 = ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有100元，买45元和32元的玩具，列式求剩余。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "100-45-32",
+          "100-(45+32)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 45 - 32 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有100元，买23元和40元的玩具，列式求剩余。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "100-23-40",
+          "100-(23+40)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 23 - 40 = ?"
+      },
+      "answer": {
+        "value": 37,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45 + 32 + 23",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "挑选价格正好100元的玩具时，应检查什么？",
+        "options": [
+          "价格是否都小于20",
+          "所选价格相加是否等于100",
+          "玩具数量是否最多",
+          "是否只选一件"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

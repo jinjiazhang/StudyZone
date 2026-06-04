@@ -1,0 +1,132 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "船最多坐90人，一队45人、二队25人。按“依次减去两队人数”列式求空座位。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "90-45-25"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "船最多坐90人，一队45人、二队25人。按“先求两队总人数”列式求空座位。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "90-(45+25)",
+          "90-45-25"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "88 - 32 - 24 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 + 25 = ?"
+      },
+      "answer": {
+        "value": 70,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 - 70 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "90 - 45 - 25",
+        "right": "90 - (45 + 25)"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "90-45-25中的45和25表示什么？",
+        "options": [
+          "两队的人数",
+          "空座位数",
+          "船的总座位数",
+          "上船后的总人数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先算45+25是在求什么？",
+        "options": [
+          "船上还有多少座位",
+          "两队一共有多少人",
+          "第一队比第二队多多少人",
+          "船最多坐多少人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "仓库有86箱货，运走32箱和24箱，列式求剩余。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "86-32-24",
+          "86-(32+24)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "86 - 32 - 24 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

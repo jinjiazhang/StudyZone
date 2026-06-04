@@ -1,0 +1,265 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "24 + 30 + 41 = __ + 41 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          54,
+          95
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "23 + 44 + 29 = __ + 29 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          67,
+          96
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "32 + 24 + 30 = __ + 30 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          56,
+          86
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "40 + 26 + 18 = __ + 18 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          66,
+          84
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "49 + 17 = ",
+          null,
+          "，再加 32 得 ",
+          null
+        ],
+        "tokens": [
+          "98",
+          "66",
+          "64",
+          "96"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "66",
+          "98"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "15 + 26 = ",
+          null,
+          "，再加 44 得 ",
+          null
+        ],
+        "tokens": [
+          "85",
+          "39",
+          "41",
+          "87"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "41",
+          "85"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算 24+30+41，第一步可以先算什么？",
+        "options": [
+          "30+41+24",
+          "24+30",
+          "95-41",
+          "24-30"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "49 + 17 + 32",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列得数",
+        "items": [
+          {
+            "id": "i3",
+            "text": "49+17+32"
+          },
+          {
+            "id": "i1",
+            "text": "15+26+44"
+          },
+          {
+            "id": "i2",
+            "text": "32+24+30"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "24+30+41"
+          },
+          {
+            "id": "l2",
+            "text": "23+44+29"
+          },
+          {
+            "id": "l3",
+            "text": "32+24+30"
+          },
+          {
+            "id": "l4",
+            "text": "40+26+18"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "86"
+          },
+          {
+            "id": "r1",
+            "text": "95"
+          },
+          {
+            "id": "r4",
+            "text": "84"
+          },
+          {
+            "id": "r2",
+            "text": "96"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

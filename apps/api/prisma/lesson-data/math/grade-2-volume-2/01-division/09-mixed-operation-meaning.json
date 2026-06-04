@@ -1,0 +1,133 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "原来52人，毕业9人，又加入15人。人数会怎样变化？",
+        "options": [
+          "先变少，再变多",
+          "先变多，再变少",
+          "一直变多",
+          "一直变少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "合唱队原有52人，毕业9人，又加入15人，列式求现在人数。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "52-9+15"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 9 + 15 = ?"
+      },
+      "answer": {
+        "value": 58,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "车上原有56人，下来27人，上来19人。列式正确的是？",
+        "options": [
+          "56+27-19",
+          "56-27+19",
+          "56-27-19",
+          "56+27+19"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "56 - 27 + 19 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“借出46本，还回12本”对图书数量的影响是？",
+        "options": [
+          "先增加，再减少",
+          "只增加",
+          "先减少，再增加",
+          "没有变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "图书角原有75本，借出46本，还回12本，列式求现在有多少本。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "75-46+12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "75 - 46 + 12 = ?"
+      },
+      "answer": {
+        "value": 41,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "52 - 9 + 15",
+        "right": "52"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "75 - 46 + 12",
+        "right": "75"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

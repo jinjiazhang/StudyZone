@@ -1,0 +1,146 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "63 - 36 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72 - 27 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 - 45 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察63-36=27、72-27=45、54-45=9，可以发现后一个算式怎样得到？",
+        "options": [
+          "把前一个被减数作为得数",
+          "把前一个算式的得数作为新的减数",
+          "每次都加9",
+          "每次都加27"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "82个易拉罐，用34个和27个，列式求剩余。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "82-34-27",
+          "82-(34+27)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "82 - 34 - 27 = ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三轮成绩分别26次、30次、31次，总成绩多少次？",
+        "columns": [
+          "第一轮",
+          "第二轮",
+          "第三轮"
+        ],
+        "rows": [
+          {
+            "第一轮": 26,
+            "第二轮": 30,
+            "第三轮": 31
+          }
+        ]
+      },
+      "answer": {
+        "value": 87,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "奇思总成绩要获得第二名，且笑笑是94次、淘气是90次，奇思可能是多少次？",
+        "options": [
+          "95次",
+          "89次",
+          "92次",
+          "80次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "奇思前两轮26次、30次，第三轮31次，列式求总成绩。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "26+30+31"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "解决两步应用题时，最重要的是？",
+        "options": [
+          "只看最后一个数",
+          "看到数字就相加",
+          "总是先减后加",
+          "弄清每个数量之间的关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

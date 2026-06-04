@@ -1,0 +1,135 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 + 30 + 41 = ?"
+      },
+      "answer": {
+        "value": 95,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23 + 44 + 29 = ?"
+      },
+      "answer": {
+        "value": 96,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "32 + 24 + 30 = ?"
+      },
+      "answer": {
+        "value": 86,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 + 26 + 18 = ?"
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "49 + 17 + 32 = ?"
+      },
+      "answer": {
+        "value": 98,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 + 26 + 44 = ?"
+      },
+      "answer": {
+        "value": 85,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "33 + 29 + 25 = ?"
+      },
+      "answer": {
+        "value": 87,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算 24 + 30，再加 41。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          54,
+          95
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 + 30 + 41",
+        "right": "23 + 44 + 29"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算连加算式时，正确的方法是？",
+        "options": [
+          "按从左到右的顺序计算",
+          "只算前两个数",
+          "只算后两个数",
+          "把加号改成减号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

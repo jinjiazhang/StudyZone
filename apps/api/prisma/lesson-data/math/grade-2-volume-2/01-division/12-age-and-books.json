@@ -1,0 +1,165 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气8岁，叔叔比淘气大29岁，阿姨比叔叔小5岁。列式求阿姨年龄。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "8+29-5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 29 - 5 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先求叔叔年龄，再求阿姨年龄。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "叔叔"
+          },
+          {
+            "id": "b2",
+            "label": "阿姨"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          37,
+          32
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "叔叔比淘气大29岁，求叔叔年龄用什么运算？",
+        "options": [
+          "减法",
+          "乘法",
+          "除法",
+          "加法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "阿姨比叔叔小5岁，求阿姨年龄用什么运算？",
+        "options": [
+          "减法",
+          "加法",
+          "乘法",
+          "除法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "书架原有68本，借出37本，还回15本，列式求现有本数。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "68-37+15"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "68 - 37 + 15 = ?"
+      },
+      "answer": {
+        "value": 46,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "书架先借出37本，再还回15本。先求借出后本数，再求现有本数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "借出后"
+          },
+          {
+            "id": "b2",
+            "label": "现有"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          31,
+          46
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“还回15本”应当怎样计算？",
+        "options": [
+          "减去15",
+          "加上15",
+          "不计算",
+          "加上37"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8 + 29 - 5",
+        "right": "68 - 37 + 15"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

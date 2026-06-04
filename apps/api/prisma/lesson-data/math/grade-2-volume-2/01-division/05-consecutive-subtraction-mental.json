@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 - 45 - 25 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "77 - 33 - 25 = ?"
+      },
+      "answer": {
+        "value": 19,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 - 39 - 45 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 91 - 8 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 - 34 - 35 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "75 - 35 - 28 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算 90 - 45，再减 25。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          45,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "77 - 33 - 25",
+        "right": "96 - 39 - 45"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算90-45-25，正确顺序是？",
+        "options": [
+          "先算45-25，再用90减",
+          "先算90-25，再加45",
+          "先算90-45，再减25",
+          "把两个减号改成加号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "90-45-25"
+          },
+          {
+            "id": "l2",
+            "text": "77-33-25"
+          },
+          {
+            "id": "l3",
+            "text": "96-39-45"
+          },
+          {
+            "id": "l4",
+            "text": "100-91-8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "12"
+          },
+          {
+            "id": "r1",
+            "text": "20"
+          },
+          {
+            "id": "r4",
+            "text": "1"
+          },
+          {
+            "id": "r2",
+            "text": "19"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

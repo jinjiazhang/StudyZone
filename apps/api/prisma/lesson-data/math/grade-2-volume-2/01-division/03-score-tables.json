@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "淘气三次共得多少分？",
+        "columns": [
+          "姓名",
+          "第一次",
+          "第二次",
+          "第三次"
+        ],
+        "rows": [
+          {
+            "姓名": "淘气",
+            "第一次": 24,
+            "第二次": 30,
+            "第三次": 41
+          }
+        ]
+      },
+      "answer": {
+        "value": 95,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "笑笑三次共得多少分？",
+        "columns": [
+          "姓名",
+          "第一次",
+          "第二次",
+          "第三次"
+        ],
+        "rows": [
+          {
+            "姓名": "笑笑",
+            "第一次": 23,
+            "第二次": 44,
+            "第三次": 29
+          }
+        ]
+      },
+      "answer": {
+        "value": 96,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "奇思三次共得多少分？",
+        "columns": [
+          "姓名",
+          "第一次",
+          "第二次",
+          "第三次"
+        ],
+        "rows": [
+          {
+            "姓名": "奇思",
+            "第一次": 32,
+            "第二次": 24,
+            "第三次": 30
+          }
+        ]
+      },
+      "answer": {
+        "value": 86,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "妙想三次共得多少分？",
+        "columns": [
+          "姓名",
+          "第一次",
+          "第二次",
+          "第三次"
+        ],
+        "rows": [
+          {
+            "姓名": "妙想",
+            "第一次": 40,
+            "第二次": 26,
+            "第三次": 18
+          }
+        ]
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气95分，笑笑96分，谁的总分高？",
+        "options": [
+          "淘气",
+          "两人一样高",
+          "笑笑",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "32 + 24 + 30",
+        "right": "40 + 26 + 18"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "奇思三次得分是32分、24分、30分，列式求总分。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "32+24+30"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "妙想三次得分是40分、26分、18分，列式求总分。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "40+26+18"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "笑笑前两次共得多少分？三次共得多少分？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两次"
+          },
+          {
+            "id": "b2",
+            "label": "三次"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          67,
+          96
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较多次比赛的总成绩，应当先做什么？",
+        "options": [
+          "只看第一次",
+          "只看最高的一次",
+          "只看最后一次",
+          "分别算出每个人的总分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

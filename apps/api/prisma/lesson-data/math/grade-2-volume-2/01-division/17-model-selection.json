@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求三次比赛总分，应选择哪个算式？",
+        "options": [
+          "90-24-30",
+          "52-9+15",
+          "75-35-28",
+          "24+30+41"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求两队上船后剩余座位，应选择哪个算式？",
+        "options": [
+          "90-45-25",
+          "45+25+90",
+          "90+45-25",
+          "90-45+25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求合唱队现有人数，应选择哪个算式？",
+        "options": [
+          "52+9-15",
+          "52-9+15",
+          "52-9-15",
+          "52+9+15"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求100元买两本书后找回多少，应选择哪个算式？",
+        "options": [
+          "100+18+32",
+          "100-18+32",
+          "100-18-32",
+          "18+32-100"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "原有80粒种子，西瓜子比葵花子少25粒，南瓜子比西瓜子少39粒，列式求南瓜子数量。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "80-25-39"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80 - 25 - 39 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "题目中出现“又加入”，通常应当怎样计算？",
+        "options": [
+          "减去加入的数量",
+          "忽略加入的数量",
+          "把原数变成0",
+          "加上加入的数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "题目中出现“还剩”，通常是在求什么？",
+        "options": [
+          "总数经过减少后的数量",
+          "几个数量的总和",
+          "增加后的数量",
+          "两个数中较大的数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "一共、总分"
+          },
+          {
+            "id": "l2",
+            "text": "还剩、找回"
+          },
+          {
+            "id": "l3",
+            "text": "离开后又加入"
+          },
+          {
+            "id": "l4",
+            "text": "加入后又离开"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "先减后加"
+          },
+          {
+            "id": "r1",
+            "text": "连加"
+          },
+          {
+            "id": "r4",
+            "text": "先加后减"
+          },
+          {
+            "id": "r2",
+            "text": "连减"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "80 - 25 - 39",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

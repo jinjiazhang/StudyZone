@@ -1,0 +1,127 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "车上原有63人，到站下去28人，又上来17人，现有多少人？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "63-28+17"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "63 - 28 + 17 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "商店有46个球，卖出19个，又进货25个，现有多少个？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "46-19+25"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 - 19 + 25 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "阅览室有38人，来了24人，离开17人，现有多少人？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "38+24-17"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "38 + 24 - 17 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "仓库有72箱，运来18箱，运走35箱，现有多少箱？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "72+18-35"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72 + 18 - 35 = ?"
+      },
+      "answer": {
+        "value": 55,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“原有、卖出、又进货”对应的运算顺序是？",
+        "options": [
+          "加后再减",
+          "连续相加",
+          "减后再加",
+          "连续相减"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "63 - 28 + 17",
+        "right": "46 - 19 + 25"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    }
+  ]
+}
