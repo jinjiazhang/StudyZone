@@ -134,28 +134,23 @@
     {
       "type": "word_build",
       "prompt": {
-        "source": "给“扇”组词，选出可以组成词语的字。",
+        "character": "扇",
         "tokens": [
           "快",
           "风",
           "子",
           "门",
           "根"
-        ]
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“扇”组成词语的字。"
       },
       "answer": {
         "acceptedSets": [
           [
-            "扇",
-            "子"
-          ],
-          [
-            "扇",
-            "风"
-          ],
-          [
-            "门",
-            "扇"
+            "子",
+            "风",
+            "门"
           ]
         ]
       },
@@ -164,28 +159,23 @@
     {
       "type": "word_build",
       "prompt": {
-        "source": "给“痛”组词，选出可以组成词语的字。",
+        "character": "痛",
         "tokens": [
           "头",
           "根",
           "疼",
           "心",
           "快"
-        ]
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“痛”组成词语的字。"
       },
       "answer": {
         "acceptedSets": [
           [
             "头",
-            "痛"
-          ],
-          [
             "疼",
-            "痛"
-          ],
-          [
-            "心",
-            "痛"
+            "心"
           ]
         ]
       },
