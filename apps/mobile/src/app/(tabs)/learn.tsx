@@ -3,13 +3,13 @@ import { Image, ScrollView, Text, View, StyleSheet, Pressable } from 'react-nati
 import { useRouter } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Flame, Gem, Heart, ChevronRight, BookOpen, Repeat } from 'lucide-react-native';
+import { Flame, Gem, Heart, BookOpen, Repeat } from 'lucide-react-native';
 import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
 import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { resolveAssetUrl } from '@/lib/assets';
 import { useTabFocusGuard } from '@/lib/use-tab-focus-guard';
-import { colors, fonts, radius, withAlpha, SUBJECT_COLORS } from '@/lib/theme';
+import { colors, fonts, radius, subjectTints, SUBJECT_COLORS } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { StatPill } from '@/components/StatPill';
@@ -25,7 +25,10 @@ export default function Learn() {
   useTabFocusGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
 
   const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
-  const { data: subjects } = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
+  const { data: subjects } = useQuery({
+    queryKey: ['subjects'],
+    queryFn: () => api.listSubjects(),
+  });
   const { data: enrollments } = useQuery({
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
@@ -51,10 +54,7 @@ export default function Learn() {
   }, [subjects, courses, currentBySubject]);
 
   // Hero: the first subject the learner is mid-way through ("继续上次").
-  const heroGroup = useMemo(
-    () => subjectGroups.find((g) => g.current) ?? null,
-    [subjectGroups],
-  );
+  const heroGroup = useMemo(() => subjectGroups.find((g) => g.current) ?? null, [subjectGroups]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -65,9 +65,17 @@ export default function Learn() {
           <Text style={styles.logoText}>StudyZone</Text>
         </View>
         <View style={styles.statsRow}>
-          <StatPill icon={<Flame size={18} color={colors.orange} />} value={me?.currentStreak ?? 0} tint="orange" />
+          <StatPill
+            icon={<Flame size={18} color={colors.orange} />}
+            value={me?.currentStreak ?? 0}
+            tint="orange"
+          />
           <StatPill icon={<Gem size={18} color={colors.sky} />} value={me?.gems ?? 0} tint="sky" />
-          <StatPill icon={<Heart size={18} color={colors.rose} />} value={me?.hearts ?? 0} tint="rose" />
+          <StatPill
+            icon={<Heart size={18} color={colors.rose} />}
+            value={me?.hearts ?? 0}
+            tint="rose"
+          />
         </View>
       </View>
 
@@ -86,8 +94,12 @@ export default function Learn() {
                 <Text style={styles.heroChipText}>{heroGroup.subject.name}</Text>
               </View>
             </View>
-            <Text style={styles.heroTitle} numberOfLines={2}>{heroGroup.current.name}</Text>
-            <Text style={styles.heroDesc} numberOfLines={1}>咱们继续往前走，冲呀！</Text>
+            <Text style={styles.heroTitle} numberOfLines={2}>
+              {heroGroup.current.name}
+            </Text>
+            <Text style={styles.heroDesc} numberOfLines={1}>
+              咱们继续往前走，冲呀！
+            </Text>
             <View style={styles.heroBtn}>
               <BookOpen size={16} color={colors.greenDark} />
               <Text style={styles.heroBtnText}>继续学习</Text>
@@ -101,87 +113,81 @@ export default function Learn() {
           </View>
         )}
 
-        <Text style={styles.title}>我的课程</Text>
-
         {subjectGroups.map(({ subject, current }) => {
           const glyph = subjectGlyph(subject.code, subject.name);
+          const tints = subjectTints(subject.color);
           return (
-          <View key={subject.id} style={styles.subjectSection}>
-            <View style={styles.subjectHeader}>
-              <View style={[styles.subjectGlyph, { backgroundColor: withAlpha(subject.color, 0.14) }]}>
-                <Text style={[styles.subjectGlyphText, { color: subject.color }]}>{glyph}</Text>
+            <View key={subject.id} style={styles.subjectSection}>
+              <View style={styles.subjectHeader}>
+                <View style={[styles.subjectGlyph, { backgroundColor: tints.soft }]}>
+                  <Text style={[styles.subjectGlyphText, { color: subject.color }]}>{glyph}</Text>
+                </View>
+                <Text style={styles.subjectName}>{subject.name}</Text>
+                <View style={styles.divider} />
               </View>
-              <Text style={styles.subjectName}>{subject.name}</Text>
-              <View style={styles.divider} />
-            </View>
 
-            {current ? (
-              <View style={styles.card}>
-                <Pressable
-                  style={styles.cardTop}
-                  onPress={() => router.push(`/course/${current.id}`)}
-                >
-                  <View style={[styles.cardCover, { backgroundColor: subject.color }]}>
-                    {resolveAssetUrl(current.coverImageUrl) ? (
-                      <Image
-                        source={{ uri: resolveAssetUrl(current.coverImageUrl) }}
-                        style={styles.cardCoverImage}
-                      />
-                    ) : (
-                      <Text style={styles.cardCoverGlyph}>{glyph}</Text>
-                    )}
-                    <View style={styles.cardCoverBand}>
-                      <Text style={styles.cardCoverBandText} numberOfLines={1}>{subject.name}</Text>
+              {current ? (
+                <View style={styles.card}>
+                  <Pressable
+                    style={styles.switchBtn}
+                    onPress={() => setPickerSubject(subject)}
+                    hitSlop={10}
+                  >
+                    <Repeat size={18} color={colors.inkSoft} />
+                  </Pressable>
+                  <Pressable
+                    style={styles.cardTop}
+                    onPress={() => router.push(`/course/${current.id}`)}
+                  >
+                    <View style={[styles.cardCoverFrame, { borderColor: subject.color }]}>
+                      <View style={[styles.cardCover, { backgroundColor: tints.soft }]}>
+                        {resolveAssetUrl(current.coverImageUrl) ? (
+                          <Image
+                            source={{ uri: resolveAssetUrl(current.coverImageUrl) }}
+                            style={styles.cardCoverImage}
+                          />
+                        ) : (
+                          <Text style={[styles.cardCoverGlyph, { color: subject.color }]}>
+                            {glyph}
+                          </Text>
+                        )}
+                      </View>
                     </View>
+                    <View style={styles.cardBody}>
+                      <View style={styles.cardTitleRow}>
+                        <Text style={styles.cardTitle} numberOfLines={2}>
+                          {current.name}
+                        </Text>
+                      </View>
+                      <Text style={styles.cardDesc} numberOfLines={2}>
+                        {current.description}
+                      </Text>
+                    </View>
+                  </Pressable>
+                </View>
+              ) : (
+                <Pressable style={styles.emptyCardCTA} onPress={() => setPickerSubject(subject)}>
+                  <View
+                    style={[
+                      styles.cardCoverEmpty,
+                      { borderColor: subject.color, backgroundColor: tints.soft },
+                    ]}
+                  >
+                    <BookOpen size={34} color={subject.color} />
                   </View>
                   <View style={styles.cardBody}>
-                    <Text style={styles.cardTitle} numberOfLines={1}>{current.name}</Text>
-                    <Text style={styles.cardDesc} numberOfLines={2}>{current.description}</Text>
-                    <View style={styles.currentBadge}>
-                      <View style={[styles.currentDot, { backgroundColor: subject.color }]} />
-                      <Text style={styles.currentBadgeText}>正在学习</Text>
+                    <Text style={styles.cardTitle}>还没选课本</Text>
+                    <Text style={styles.cardDesc} numberOfLines={2}>
+                      点击选择一本{subject.name}课本开始学习。
+                    </Text>
+                    <View style={styles.chooseBadge}>
+                      <BookOpen size={12} color={colors.white} />
+                      <Text style={styles.chooseBadgeText}>选择课本</Text>
                     </View>
                   </View>
                 </Pressable>
-                <View style={styles.cardFooter}>
-                  <Pressable
-                    style={styles.footerBtn}
-                    onPress={() => router.push(`/course/${current.id}`)}
-                  >
-                    <Text style={[styles.footerBtnText, { color: subject.color }]}>继续学习</Text>
-                    <ChevronRight size={16} color={subject.color} />
-                  </Pressable>
-                  <View style={styles.footerSep} />
-                  <Pressable
-                    style={styles.footerBtnNarrow}
-                    onPress={() => setPickerSubject(subject)}
-                  >
-                    <Repeat size={14} color={colors.inkSoft} />
-                    <Text style={styles.footerBtnTextMuted}>切换</Text>
-                  </Pressable>
-                </View>
-              </View>
-            ) : (
-              <Pressable
-                style={styles.emptyCardCTA}
-                onPress={() => setPickerSubject(subject)}
-              >
-                <View style={[styles.cardCoverEmpty, { borderColor: subject.color }]}>
-                  <BookOpen size={32} color={colors.inkSoft} />
-                </View>
-                <View style={styles.cardBody}>
-                  <Text style={styles.cardTitle}>还没选课本</Text>
-                  <Text style={styles.cardDesc} numberOfLines={2}>
-                    点击选择一本{subject.name}课本开始学习。
-                  </Text>
-                  <View style={styles.chooseBadge}>
-                    <BookOpen size={12} color={colors.white} />
-                    <Text style={styles.chooseBadgeText}>选择课本</Text>
-                  </View>
-                </View>
-              </Pressable>
-            )}
-          </View>
+              )}
+            </View>
           );
         })}
 
@@ -195,7 +201,9 @@ export default function Learn() {
       <SubjectPickerSheet
         visible={pickerSubject !== null}
         subject={pickerSubject}
-        courses={pickerSubject ? (courses ?? []).filter((c) => c.subjectId === pickerSubject.id) : []}
+        courses={
+          pickerSubject ? (courses ?? []).filter((c) => c.subjectId === pickerSubject.id) : []
+        }
         currentCourseId={pickerSubject ? currentBySubject.get(pickerSubject.id)?.id : undefined}
         onClose={() => setPickerSubject(null)}
       />
@@ -218,10 +226,8 @@ const styles = StyleSheet.create({
   logoRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   logoText: { fontFamily: fonts.heavy, fontSize: 20, color: colors.green },
   statsRow: { flexDirection: 'row', gap: 6 },
-  scroll: { padding: 16, paddingBottom: 32, gap: 12 },
+  scroll: { padding: 16, paddingBottom: 34, gap: 18 },
   mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
-  title: { fontSize: 22, fontFamily: fonts.heavy, color: colors.ink, marginBottom: 4 },
-
   hero: {
     backgroundColor: colors.green,
     borderRadius: radius.xl,
@@ -239,7 +245,12 @@ const styles = StyleSheet.create({
   },
   heroChipText: { fontFamily: fonts.heavy, fontSize: 11, color: colors.white },
   heroTitle: { fontFamily: fonts.heavy, fontSize: 21, color: colors.white, lineHeight: 27 },
-  heroDesc: { fontFamily: fonts.sansBold, fontSize: 13, color: 'rgba(255,255,255,0.94)', marginTop: 4 },
+  heroDesc: {
+    fontFamily: fonts.sansBold,
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.94)',
+    marginTop: 4,
+  },
   heroBtn: {
     alignSelf: 'flex-start',
     flexDirection: 'row',
@@ -255,8 +266,8 @@ const styles = StyleSheet.create({
   },
   heroBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.greenDark },
 
-  subjectSection: { gap: 8, marginBottom: 8 },
-  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  subjectSection: { gap: 10 },
+  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   subjectGlyph: {
     width: 26,
     height: 26,
@@ -265,108 +276,93 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   subjectGlyphText: { fontFamily: fonts.heavy, fontSize: 13 },
-  subjectName: { fontFamily: fonts.heavy, fontSize: 15, color: colors.ink },
+  subjectName: { fontFamily: fonts.heavy, fontSize: 18, color: colors.ink },
   divider: { flex: 1, height: 2, backgroundColor: colors.line, borderRadius: 999 },
 
   card: {
+    position: 'relative',
     backgroundColor: colors.white,
-    borderRadius: radius.lg,
+    borderRadius: radius.xl,
     borderWidth: 2,
+    borderBottomWidth: 6,
     borderColor: colors.cardLine,
-    overflow: 'hidden',
+    shadowColor: '#34322E',
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 5 },
+    elevation: 2,
   },
   cardTop: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 13,
-    gap: 13,
+    padding: 16,
+    gap: 15,
   },
-  cardCover: {
-    width: 60,
-    height: 82,
-    borderRadius: radius.md,
-    overflow: 'hidden',
+  switchBtn: {
+    position: 'absolute',
+    right: 12,
+    top: 12,
+    zIndex: 2,
+    width: 44,
+    height: 44,
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
+    backgroundColor: colors.white,
+    borderRadius: radius.full,
+    borderWidth: 2,
+    borderBottomWidth: 3,
+    borderColor: colors.line,
+  },
+  cardCoverFrame: {
+    width: 98,
+    height: 126,
+    borderRadius: radius.md,
+    borderWidth: 2,
+    backgroundColor: colors.white,
+    padding: 4,
     shadowColor: '#34322E',
-    shadowOpacity: 0.14,
+    shadowOpacity: 0.12,
     shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
+    shadowOffset: { width: 0, height: 5 },
     elevation: 3,
   },
+  cardCover: {
+    flex: 1,
+    borderRadius: radius.sm,
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   cardCoverGlyph: {
-    position: 'absolute',
-    top: 11,
-    left: 0,
-    right: 0,
     textAlign: 'center',
     fontFamily: fonts.heavy,
-    fontSize: 25,
-    color: colors.white,
-  },
-  cardCoverBand: {
-    width: '100%',
-    paddingVertical: 4,
-    backgroundColor: 'rgba(0,0,0,0.14)',
-  },
-  cardCoverBandText: {
-    textAlign: 'center',
-    fontFamily: fonts.heavy,
-    fontSize: 9.5,
-    color: 'rgba(255,255,255,0.92)',
+    fontSize: 34,
   },
   cardCoverEmpty: {
-    width: 60,
-    height: 82,
+    width: 98,
+    height: 126,
     borderRadius: radius.md,
     borderWidth: 2,
     borderStyle: 'dashed',
-    backgroundColor: colors.mist,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  cardCoverImage: { width: '100%', height: '100%', resizeMode: 'cover' },
-  cardBody: { flex: 1 },
-  cardTitle: { fontFamily: fonts.heavy, fontSize: 15.5, color: colors.ink },
-  cardDesc: { fontFamily: fonts.regular, fontSize: 12.5, color: colors.inkSoft, marginTop: 2 },
-
-  currentBadge: {
-    marginTop: 8,
-    alignSelf: 'flex-start',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 5,
+  cardCoverImage: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'contain',
+    backgroundColor: colors.white,
   },
-  currentDot: { width: 7, height: 7, borderRadius: 999 },
-  currentBadgeText: {
-    fontFamily: fonts.heavy,
-    fontSize: 11,
+  cardBody: { flex: 1, minHeight: 126, justifyContent: 'center', paddingRight: 2 },
+  cardTitleRow: { paddingRight: 58 },
+  cardTitle: { fontFamily: fonts.heavy, fontSize: 17, lineHeight: 22, color: colors.ink },
+  cardDesc: {
+    fontFamily: fonts.sansBold,
+    fontSize: 13,
+    lineHeight: 18,
     color: colors.inkSoft,
+    marginTop: 4,
   },
-  cardFooter: {
-    flexDirection: 'row',
-    borderTopWidth: 2,
-    borderTopColor: colors.line,
-  },
-  footerBtn: {
-    flex: 1,
-    height: 42,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
-  },
-  footerBtnText: { fontFamily: fonts.heavy, fontSize: 13.5 },
-  footerSep: { width: 2, backgroundColor: colors.line },
-  footerBtnNarrow: {
-    width: 96,
-    height: 42,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
-  },
-  footerBtnTextMuted: { fontFamily: fonts.heavy, fontSize: 13.5, color: colors.inkSoft },
   chooseBadge: {
     marginTop: 8,
     alignSelf: 'flex-start',
@@ -386,19 +382,21 @@ const styles = StyleSheet.create({
 
   emptyCardCTA: {
     backgroundColor: colors.white,
-    borderRadius: radius.lg,
+    borderRadius: radius.xl,
     borderWidth: 2,
+    borderBottomWidth: 6,
     borderStyle: 'dashed',
     borderColor: colors.line,
     flexDirection: 'row',
     alignItems: 'center',
     padding: 16,
-    gap: 14,
+    gap: 15,
   },
   emptyCard: {
     backgroundColor: colors.white,
-    borderRadius: radius.lg,
+    borderRadius: radius.xl,
     borderWidth: 2,
+    borderBottomWidth: 6,
     borderColor: colors.line,
     padding: 24,
     alignItems: 'center',
