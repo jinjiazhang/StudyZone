@@ -1,0 +1,229 @@
+{
+  "id": "15-qingwa-zonghe",
+  "title": "青蛙综合运用",
+  "description": "综合练习《青蛙卖泥塘》的字词、内容和表达。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "播",
+        "hint": "播撒",
+        "options": [
+          "pō",
+          "bò",
+          "bō",
+          "bó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǒng",
+        "character": "泳",
+        "word": "游泳",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "accepted": [
+          "泳"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选字组成“采集”。",
+        "tokens": [
+          "采",
+          "彩",
+          "集",
+          "急",
+          "草"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "采",
+            "集"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“绿茵茵”常用来形容什么？",
+        "options": [
+          "天空很蓝",
+          "月亮很圆",
+          "商店很热闹",
+          "小草绿而茂盛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙最后吆喝时说这里可以做什么？",
+        "options": [
+          "看蝴蝶飞舞，听小鸟唱歌，在水里游泳",
+          "买口罩，织围巾，穿袜子",
+          "撑耳朵，赶虫子，睡觉",
+          "做衣裳，量尺寸，扣扣子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词块组成句子。",
+        "tokens": [
+          "多好的",
+          "地方",
+          "泥塘",
+          "变成了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "泥塘",
+          "变成了",
+          "多好的",
+          "地方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "草籽",
+            "text": "草籽"
+          },
+          {
+            "id": "泉水",
+            "text": "泉水"
+          },
+          {
+            "id": "竹子",
+            "text": "竹子"
+          },
+          {
+            "id": "牌子",
+            "text": "牌子"
+          }
+        ],
+        "right": [
+          {
+            "id": "牌子",
+            "text": "写着“卖泥塘”"
+          },
+          {
+            "id": "竹子",
+            "text": "破开后接起来引水"
+          },
+          {
+            "id": "草籽",
+            "text": "撒在泥塘周围"
+          },
+          {
+            "id": "泉水",
+            "text": "从山里找到"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "草籽": "草籽",
+          "泉水": "泉水",
+          "竹子": "竹子",
+          "牌子": "牌子"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这么好的地方，自己住挺好的，为什么要卖掉呢？”表现青蛙怎样想？",
+        "options": [
+          "想涨价卖泥塘",
+          "舍不得卖泥塘了",
+          "准备搬走",
+          "害怕老牛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择最适合“有树，有花，有草，有水塘”的图片。",
+        "options": [
+          {
+            "id": "pond",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-097.jpg",
+            "label": "改好的泥塘"
+          },
+          {
+            "id": "shop",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-093.jpg",
+            "label": "蜘蛛商店"
+          },
+          {
+            "id": "elephant",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-091.jpg",
+            "label": "大象耳朵"
+          },
+          {
+            "id": "poem",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-103.jpg",
+            "label": "悯农"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "pond"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文适合分角色表演，是因为文中有很多什么？",
+        "options": [
+          "古诗句",
+          "谜语",
+          "不同小动物的话",
+          "数字计算"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

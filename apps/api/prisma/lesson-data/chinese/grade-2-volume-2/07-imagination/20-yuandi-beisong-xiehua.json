@@ -1,0 +1,263 @@
+{
+  "id": "20-yuandi-beisong-xiehua",
+  "title": "园地背诵写话",
+  "description": "背诵《悯农（其一）》，练习写“我想养小动物”。",
+  "exercises": [
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "line": "春种一粒粟，____。",
+        "blanks": [
+          {
+            "options": [
+              "秋收万颗子",
+              "农夫犹饿死",
+              "四海无闲田",
+              "春风吹又生"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "line": "____，农夫犹饿死。",
+        "blanks": [
+          {
+            "options": [
+              "秋收万颗子",
+              "四海无闲田",
+              "春种一粒粟",
+              "谁知盘中餐"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "line": "春种一粒粟，____。四海无闲田，____。",
+        "blanks": [
+          {
+            "options": [
+              "万事万物都有规律",
+              "有树有花有草",
+              "秋收万颗子"
+            ]
+          },
+          {
+            "options": [
+              "农夫犹饿死",
+              "小毛虫变飞蛾",
+              "人家是人家"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《悯农（其一）》的作者是谁？",
+        "options": [
+          "李绅",
+          "杜甫",
+          "白居易",
+          "王维"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“春种一粒粟，秋收万颗子”写出了什么？",
+        "options": [
+          "春天扫地，秋天开店",
+          "春天播种，秋天收获很多粮食",
+          "月亮每天变胖",
+          "大象耳朵会扇风"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“我想养小动物”时，教材提示要写什么？",
+        "options": [
+          "只写动物的价格",
+          "只写动物住哪里",
+          "想养什么和理由",
+          "只写古诗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把写话题目补完整。",
+        "tokens": [
+          "小动物",
+          "我",
+          "养",
+          "想"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "想",
+          "养",
+          "小动物"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "喜欢",
+            "text": "我喜欢它"
+          },
+          {
+            "id": "照顾",
+            "text": "我会照顾它"
+          },
+          {
+            "id": "理由",
+            "text": "我的理由"
+          },
+          {
+            "id": "观察",
+            "text": "我观察到"
+          }
+        ],
+        "right": [
+          {
+            "id": "观察",
+            "text": "它的样子或习性"
+          },
+          {
+            "id": "理由",
+            "text": "为什么想养"
+          },
+          {
+            "id": "喜欢",
+            "text": "表达自己的喜爱"
+          },
+          {
+            "id": "照顾",
+            "text": "说明怎样负责"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "喜欢": "喜欢",
+          "照顾": "照顾",
+          "理由": "理由",
+          "观察": "观察"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《悯农（其一）》所在页面。",
+        "options": [
+          {
+            "id": "moon",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-104.jpg",
+            "label": "月亮姑娘做衣裳"
+          },
+          {
+            "id": "clean",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-102.jpg",
+            "label": "识字加油站"
+          },
+          {
+            "id": "poem",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-103.jpg",
+            "label": "悯农（其一）"
+          },
+          {
+            "id": "frog",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-097.jpg",
+            "label": "青蛙卖泥塘"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "poem"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《月亮姑娘做衣裳》中，衣裳总不合身的原因是什么？",
+        "options": [
+          "裁缝师傅不会量尺寸",
+          "衣裳被风吹走了",
+          "月亮姑娘不喜欢衣裳",
+          "月亮姑娘每天都在变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读《月亮姑娘做衣裳》后，可以知道月亮形状会怎样？",
+        "options": [
+          "由细弯慢慢变圆，再继续变化",
+          "一直像眉毛",
+          "一直像圆盘",
+          "每天都变成太阳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "id": "05-daxiang-zonghe",
+  "title": "大象综合运用",
+  "description": "综合练习《大象的耳朵》的字词、内容和表达。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竿",
+        "hint": "竹竿",
+        "options": [
+          "gān",
+          "gǎn",
+          "gàn",
+          "kān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gēn",
+        "character": "根",
+        "word": "一根",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "accepted": [
+          "根"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "选字组成课文词语“竹竿”。",
+        "tokens": [
+          "竹",
+          "赶",
+          "竿",
+          "干",
+          "杆"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "竹",
+            "竿"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象用什么把耳朵撑起来？",
+        "options": [
+          "两根竹竿",
+          "一条围巾",
+          "一块牌子",
+          "一把扫帚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大象放下耳朵以后，虫子为什么飞不进去了？",
+        "options": [
+          "虫子不喜欢大象",
+          "耳朵一扇就能把虫子赶跑",
+          "小兔挡住了虫子",
+          "大象跑得更快了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词块组成通顺句。",
+        "tokens": [
+          "大耳朵",
+          "一对",
+          "有",
+          "大象"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大象",
+          "有",
+          "一对",
+          "大耳朵"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "rabbit",
+            "text": "小兔子"
+          },
+          {
+            "id": "elephant",
+            "text": "大象"
+          },
+          {
+            "id": "insect",
+            "text": "小虫子"
+          },
+          {
+            "id": "bamboo",
+            "text": "竹竿"
+          }
+        ],
+        "right": [
+          {
+            "id": "elephant",
+            "text": "最后说“我是我”"
+          },
+          {
+            "id": "bamboo",
+            "text": "用来撑耳朵"
+          },
+          {
+            "id": "rabbit",
+            "text": "先提出疑问"
+          },
+          {
+            "id": "insect",
+            "text": "飞进耳朵里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "rabbit": "rabbit",
+          "elephant": "elephant",
+          "insect": "insect",
+          "bamboo": "bamboo"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文最主要想告诉我们什么？",
+        "options": [
+          "耳朵都要竖起来",
+          "竹竿很有用",
+          "要接纳自己的特点",
+          "大家说的一定对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找出《大象的耳朵》的课文页。",
+        "options": [
+          {
+            "id": "frog",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-095.jpg",
+            "label": "青蛙卖泥塘"
+          },
+          {
+            "id": "elephant",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-089.jpg",
+            "label": "大象的耳朵"
+          },
+          {
+            "id": "spider",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-092.jpg",
+            "label": "蜘蛛开店"
+          },
+          {
+            "id": "worm",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-099.jpg",
+            "label": "小毛虫"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "elephant"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一扇”中的“扇”读什么？",
+        "options": [
+          "shān",
+          "sān",
+          "shǎn",
+          "shàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

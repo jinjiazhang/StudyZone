@@ -1,0 +1,222 @@
+{
+  "id": "08-zhizhu-kaidian-shunxu",
+  "title": "蜘蛛开店顺序",
+  "description": "按照示意图讲《蜘蛛开店》的故事。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜘蛛为什么决定开店？",
+        "options": [
+          "想帮助小兔",
+          "每天等小飞虫，好寂寞无聊",
+          "想搬到城里",
+          "想学青蛙卖泥塘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜘蛛第一次卖什么？",
+        "options": [
+          "围巾",
+          "袜子",
+          "口罩",
+          "衣裳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第一个顾客是谁？",
+        "options": [
+          "长颈鹿",
+          "蜈蚣",
+          "小毛虫",
+          "河马"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜘蛛第二次把招牌换成卖什么？",
+        "options": [
+          "围巾",
+          "口罩",
+          "袜子",
+          "泥塘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第二个顾客是谁？",
+        "options": [
+          "河马",
+          "长颈鹿",
+          "老牛",
+          "小鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第三次蜘蛛想卖什么？",
+        "options": [
+          "围巾",
+          "口罩",
+          "袜子",
+          "扫帚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第三个顾客是谁？",
+        "options": [
+          "河马",
+          "小兔",
+          "飞蛾",
+          "蜈蚣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按故事顺序排列。",
+        "tokens": [
+          "卖袜子",
+          "卖口罩",
+          "看到蜈蚣",
+          "卖围巾"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "卖口罩",
+          "卖围巾",
+          "卖袜子",
+          "看到蜈蚣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "mask",
+            "text": "卖口罩"
+          },
+          {
+            "id": "scarf",
+            "text": "卖围巾"
+          },
+          {
+            "id": "sock",
+            "text": "卖袜子"
+          },
+          {
+            "id": "web",
+            "text": "跑回网上"
+          }
+        ],
+        "right": [
+          {
+            "id": "sock",
+            "text": "遇到四十二只脚的蜈蚣"
+          },
+          {
+            "id": "web",
+            "text": "因为很难织"
+          },
+          {
+            "id": "mask",
+            "text": "来了嘴巴大的河马"
+          },
+          {
+            "id": "scarf",
+            "text": "来了脖子长的长颈鹿"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "mask": "mask",
+          "scarf": "scarf",
+          "sock": "sock",
+          "web": "web"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找到《蜘蛛开店》的示意图页。",
+        "options": [
+          {
+            "id": "elephant-ear",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-091.jpg",
+            "label": "大象耳朵生字"
+          },
+          {
+            "id": "frog-sign",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-095.jpg",
+            "label": "青蛙卖泥塘"
+          },
+          {
+            "id": "spider-map",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-094.jpg",
+            "label": "蜘蛛开店示意图"
+          },
+          {
+            "id": "worm-cocoon",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-2/pages/page-101.jpg",
+            "label": "小毛虫"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "spider-map"
+      },
+      "difficulty": 1
+    }
+  ]
+}
