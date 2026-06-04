@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "奶奶的扣子先按形状分类，圆形两孔有多少个？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "方形两孔",
+            "数量": 5
+          },
+          {
+            "类别": "方形四孔",
+            "数量": 2
+          },
+          {
+            "类别": "圆形两孔",
+            "数量": 3
+          },
+          {
+            "类别": "圆形四孔",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "奶奶的扣子先按形状分类，数量最多的是哪一类？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "方形两孔",
+            "数量": 5
+          },
+          {
+            "类别": "方形四孔",
+            "数量": 2
+          },
+          {
+            "类别": "圆形两孔",
+            "数量": 3
+          },
+          {
+            "类别": "圆形四孔",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "方形两孔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "奶奶的扣子先按形状分类，四类一共有多少个？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5",
+        "right": "2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“奶奶的扣子先按形状分类”分类，最合适的分类标准是什么？",
+        "options": [
+          "随便摆放",
+          "物品价格",
+          "先形状后扣眼数",
+          "记录人的心情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关于“奶奶的扣子先按形状分类”的分类，说法正确的是哪一项？",
+        "options": [
+          "分类后总数一定变少。",
+          "同一个对象可以同时重复记很多次。",
+          "分类时可以故意漏掉一部分。",
+          "扣子可先按形状分，再在每一类中按扣眼数继续分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "奶奶的扣子先按形状分类：先填前两类合计，再填全部合计。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两类合计"
+          },
+          {
+            "id": "b2",
+            "label": "全部合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          14
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数量从少到多排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "圆形四孔：4"
+          },
+          {
+            "id": "i0",
+            "text": "方形两孔：5"
+          },
+          {
+            "id": "i1",
+            "text": "方形四孔：2"
+          },
+          {
+            "id": "i2",
+            "text": "圆形两孔：3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i0"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "方形两孔"
+          },
+          {
+            "id": "l1",
+            "text": "方形四孔"
+          },
+          {
+            "id": "l2",
+            "text": "圆形两孔"
+          },
+          {
+            "id": "l3",
+            "text": "圆形四孔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "记录3：3个"
+          },
+          {
+            "id": "r3",
+            "text": "记录4：4个"
+          },
+          {
+            "id": "r0",
+            "text": "记录1：5个"
+          },
+          {
+            "id": "r1",
+            "text": "记录2：2个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "奶奶的扣子先按形状分类中，数量最少且不是0的是哪一类？",
+        "options": [
+          "方形四孔",
+          "方形两孔",
+          "圆形两孔",
+          "圆形四孔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

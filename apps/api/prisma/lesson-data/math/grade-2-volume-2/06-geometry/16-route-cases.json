@@ -1,0 +1,172 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "乐乐家和学校在书店两侧，家到书店264米，书店到学校360米，家到学校多少米？"
+      },
+      "answer": {
+        "value": 624,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "乐乐家和学校在书店同一侧，书店到学校360米，书店到家264米，家到学校多少米？"
+      },
+      "answer": {
+        "value": 96,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "两地在书店两侧，分别距书店264米和360米，列式求两地距离。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "264+360",
+          "360+264"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "两地在书店同一侧，分别距书店264米和360米，列式求两地距离。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "360-264"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "264 + 360",
+        "right": "360 - 264"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "624",
+        "right": "96"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个地点在参照点两侧，求两地距离通常用什么？",
+        "options": [
+          "大数减小数",
+          "只用较长一段",
+          "两段相加",
+          "无法计算"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个地点在参照点同一侧，求两地距离通常用什么？",
+        "options": [
+          "两段相加",
+          "两段相乘",
+          "只用较短一段",
+          "大数减小数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "两侧情况：264 + 360 = ___；同侧情况：360 - 264 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "两侧距离"
+          },
+          {
+            "id": "b2",
+            "label": "同侧距离"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          624,
+          96
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "甲、乙在公园两侧，距公园分别185米和327米，两地相距多少米？"
+      },
+      "answer": {
+        "value": 512,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "甲、乙在公园同一侧，距公园分别185米和327米，两地相距多少米？"
+      },
+      "answer": {
+        "value": 142,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一组距离为什么可能有两个答案？",
+        "options": [
+          "地点位置关系可能不同",
+          "加法没有答案",
+          "单位不同",
+          "数字会改变"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

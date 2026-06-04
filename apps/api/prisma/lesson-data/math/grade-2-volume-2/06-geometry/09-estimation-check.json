@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "367 + 254 的结果最接近哪个数？",
+        "options": [
+          "400",
+          "500",
+          "600",
+          "900"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "900 - 632 的结果最接近哪个数？",
+        "options": [
+          "100",
+          "500",
+          "700",
+          "300"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "234 + 256 的正确结果可能是？",
+        "options": [
+          "490",
+          "380",
+          "480",
+          "580"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "515 - 49 的正确结果可能是？",
+        "options": [
+          "464",
+          "466",
+          "474",
+          "564"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "367 + 254",
+        "right": "600"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "732 - 186",
+        "right": "600"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "458 + 376",
+        "right": "900"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "900 - 632",
+        "right": "300"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "先估一估再计算：398 + 201 = ?"
+      },
+      "answer": {
+        "value": 599,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "先估一估再计算：803 - 397 = ?"
+      },
+      "answer": {
+        "value": 406,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现 234 + 256 = 480，最可能漏掉了什么？",
+        "options": [
+          "十位退位的1",
+          "百位数字2",
+          "个位进位的1",
+          "加号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断 900 - 632 = 368 是否合理，最直接的估算是？",
+        "options": [
+          "900+600约等于1500",
+          "600-900约等于-300",
+          "只看个位",
+          "900-600约等于300"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

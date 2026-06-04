@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材两组方格图中，哪组表示向右拉动长方形的过程？",
+        "options": [
+          "两组都不是",
+          "无法观察",
+          "图（1）",
+          "图（2）"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么正确过程中的边长要保持不变？",
+        "options": [
+          "图形必须竖直",
+          "小棒没有伸长或缩短",
+          "颜色一样",
+          "方格一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "若拉动后某一条边明显变长，这能表示小棒拉动过程吗？",
+        "options": [
+          "不能",
+          "能",
+          "一定正确",
+          "与长度无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断拉动过程时，应比较操作前后的什么？",
+        "options": [
+          "图形颜色",
+          "页码",
+          "人物数量",
+          "对应边的长度和连接"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "向左拉和向右拉，得到的平行四边形方向怎样？",
+        "options": [
+          "都会变圆",
+          "都会少一条边",
+          "倾斜方向可能不同",
+          "一定完全相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拉动过程中，四根小棒仍然怎样？",
+        "options": [
+          "变成曲线",
+          "首尾相接",
+          "全部分开",
+          "重叠成一根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "验证猜想最合适的方法是什么？",
+        "options": [
+          "亲手拉动并观察",
+          "只凭颜色猜",
+          "不看图直接选",
+          "改动小棒长度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪项是正确的拉动结果？",
+        "options": [
+          {
+            "id": "g6-0",
+            "label": "边长随意变化的图形"
+          },
+          {
+            "id": "g6-1",
+            "label": "圆形"
+          },
+          {
+            "id": "g6-2",
+            "label": "边长不变的斜四边形"
+          },
+          {
+            "id": "g6-3",
+            "label": "少一条边的图形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g6-2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正确拉动"
+          },
+          {
+            "id": "l2",
+            "text": "错误示意"
+          },
+          {
+            "id": "l3",
+            "text": "向左拉"
+          },
+          {
+            "id": "l4",
+            "text": "向右拉"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "对应边长度改变"
+          },
+          {
+            "id": "r2",
+            "text": "图形向左倾斜"
+          },
+          {
+            "id": "r3",
+            "text": "图形向右倾斜"
+          },
+          {
+            "id": "r4",
+            "text": "边长保持不变"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "判断拉动过程是否正确，要看对应边的 ",
+          null,
+          " 是否不变，还要看边是否继续 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "数量增加",
+          "首尾相接",
+          "长度",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长度",
+          "首尾相接"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

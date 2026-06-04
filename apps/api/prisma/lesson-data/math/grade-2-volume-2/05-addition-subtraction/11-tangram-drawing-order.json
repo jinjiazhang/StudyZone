@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照着七巧板画图前，先观察什么？",
+        "options": [
+          "只看编号顺序",
+          "只看纸张大小",
+          "哪些图形相连、哪些大、哪些小",
+          "只看颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材建议先找哪些板之间相连的边？",
+        "options": [
+          "不找连接边",
+          "3号和4号、5号和6号之间",
+          "只找1号和2号",
+          "只找最外边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先画在边上的3号、6号、7号，有什么好处？",
+        "options": [
+          "便于确定外框和位置",
+          "让颜色更深",
+          "减少板块数量",
+          "改变板块大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照样画七巧板时，哪种做法容易出错？",
+        "options": [
+          "先观察连接",
+          "先定外框",
+          "画后检查",
+          "不比较大小直接画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "画完后怎样检查？",
+        "options": [
+          "只看页码",
+          "只数铅笔",
+          "看7块是否都出现且连接合理",
+          "只看一种颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板图中板块可以重叠吗？",
+        "options": [
+          "只大三角形重叠",
+          "不应重叠",
+          "必须重叠",
+          "全部叠在一起"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "画连接边时，线段端点应怎样？",
+        "options": [
+          "与相邻板边界对应",
+          "随意伸出外框",
+          "全部画成曲线",
+          "全部擦掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出合理的七巧板画图步骤",
+        "options": [
+          {
+            "id": "g10-0",
+            "label": "只画一种板"
+          },
+          {
+            "id": "g10-1",
+            "label": "让板块互相重叠"
+          },
+          {
+            "id": "g10-2",
+            "label": "观察连接后先定外框"
+          },
+          {
+            "id": "g10-3",
+            "label": "随便画7个圆"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g10-2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "观察大小"
+          },
+          {
+            "id": "l2",
+            "text": "观察连接"
+          },
+          {
+            "id": "l3",
+            "text": "先画边上板块"
+          },
+          {
+            "id": "l4",
+            "text": "画后检查"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "帮助确定外框"
+          },
+          {
+            "id": "r2",
+            "text": "确认7块完整"
+          },
+          {
+            "id": "r3",
+            "text": "避免把板画大或画小"
+          },
+          {
+            "id": "r4",
+            "text": "确定相邻边"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "照样画七巧板时，先观察板块的 ",
+          null,
+          " 和大小，再确定相连的 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "价格",
+          "连接",
+          "颜色",
+          "边"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "连接",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

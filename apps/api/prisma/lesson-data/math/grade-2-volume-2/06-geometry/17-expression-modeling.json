@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 237 - 128 解决的是哪个问题？",
+        "options": [
+          "两次一共有多少只",
+          "第二次比第一次少多少只",
+          "第三次比第二次多多少只",
+          "第四次有多少只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 109 + 164 解决的是哪个问题？",
+        "options": [
+          "第一次调查数量",
+          "第四次调查数量",
+          "第三次调查数量",
+          "第二次减少数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 345 - 237 解决的是哪个问题？",
+        "options": [
+          "第四次和第一次共多少只",
+          "第二次有多少只",
+          "第三次有多少只",
+          "第四次比第一次多多少只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "第一次有237只，第二次比第一次少128只，求第二次数量，列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "237-128"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "第二次有109只，第三次比第二次多164只，求第三次数量，列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "109+164",
+          "164+109"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "第四次有345只，第一次有237只，求第四次比第一次多多少只，列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "345-237"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "237 - 128 = ?"
+      },
+      "answer": {
+        "value": 109,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "109 + 164 = ?"
+      },
+      "answer": {
+        "value": 273,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "345 - 237 = ?"
+      },
+      "answer": {
+        "value": 108,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "109 + 164",
+        "right": "345 - 237"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“比原来减少128”表示怎样列式？",
+        "options": [
+          "原来数量-128",
+          "原来数量+128",
+          "128-原来数量",
+          "只写128"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选择算式前，最重要的是先弄清什么？",
+        "options": [
+          "数字写得是否漂亮",
+          "数量之间的关系",
+          "题目有几句话",
+          "答案有几位数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

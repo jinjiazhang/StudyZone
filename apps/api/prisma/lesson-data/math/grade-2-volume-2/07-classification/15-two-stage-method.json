@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "纽扣先按形状分，再按扣眼数分，这叫做什么？",
+        "options": [
+          "按两个标准逐级分类",
+          "只按一个标准分类",
+          "没有标准分类",
+          "随机分组"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先按扣眼数分，再按形状分，最终得到的四类会怎样？",
+        "options": [
+          "一定完全不同",
+          "只剩两类",
+          "与先按形状再按扣眼数相同",
+          "总数增加"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两级分类时，第二个标准用在哪里？",
+        "options": [
+          "只分最大的一类",
+          "在第一步得到的每一类中继续分",
+          "只数总数",
+          "改变第一步标准"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先按颜色分，再按形状分，可以得到哪类名称？",
+        "options": [
+          "红色和圆形",
+          "最大的",
+          "第一类",
+          "红色圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先按性别分，再按是否戴眼镜分，可能得到哪一类？",
+        "options": [
+          "戴眼镜的女生",
+          "女生和眼镜",
+          "高个子",
+          "8月出生"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "方形2孔"
+          },
+          {
+            "id": "l2",
+            "text": "方形4孔"
+          },
+          {
+            "id": "l3",
+            "text": "圆形2孔"
+          },
+          {
+            "id": "l4",
+            "text": "圆形4孔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "圆形→2孔"
+          },
+          {
+            "id": "r2",
+            "text": "方形→4孔"
+          },
+          {
+            "id": "r3",
+            "text": "圆形→4孔"
+          },
+          {
+            "id": "r4",
+            "text": "方形→2孔"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两级分类中，交换两个标准的先后顺序，什么不变？",
+        "options": [
+          "第一步类别名称",
+          "每一步的分法",
+          "最终各小类中的对象",
+          "记录顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么要进行两级分类？",
+        "options": [
+          "让对象数量变多",
+          "能更细致地整理对象",
+          "让每类数量相同",
+          "省去计数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蓝色圆形”这个类别用了几个特征？",
+        "options": [
+          "1个",
+          "3个",
+          "0个",
+          "2个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一个是两级分类结果？",
+        "options": [
+          "圆形4孔纽扣",
+          "圆形纽扣",
+          "4孔纽扣",
+          "所有纽扣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

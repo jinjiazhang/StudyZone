@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "纽扣分类结果：方形2孔5个、方形4孔2个、圆形2孔3个、圆形4孔4个。填写各类数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "方形2孔"
+          },
+          {
+            "id": "b2",
+            "label": "方形4孔"
+          },
+          {
+            "id": "b3",
+            "label": "圆形2孔"
+          },
+          {
+            "id": "b4",
+            "label": "圆形4孔"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          2,
+          3,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "方形2孔5个、方形4孔2个，方形纽扣共有几个？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "圆形2孔3个、圆形4孔4个，圆形纽扣共有几个？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "方形2孔5个、圆形2孔3个，2孔纽扣共有几个？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "方形4孔2个、圆形4孔4个，4孔纽扣共有几个？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四个小类一共有多少个纽扣？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪一个小类最多？",
+        "columns": [
+          "小类",
+          "数量"
+        ],
+        "rows": [
+          {
+            "小类": "方形2孔",
+            "数量": 5
+          },
+          {
+            "小类": "方形4孔",
+            "数量": 2
+          },
+          {
+            "小类": "圆形2孔",
+            "数量": 3
+          },
+          {
+            "小类": "圆形4孔",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "方形2孔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "最多的小类比最少的小类多几个纽扣？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状汇总得到7和7，按扣眼数汇总得到8和6，两种汇总的总数是？",
+        "options": [
+          "分别是14和12",
+          "都是7",
+          "都是14",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "已知方形共7个，其中方形2孔5个；圆形共7个，其中圆形2孔3个。填写方形4孔和圆形4孔数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "方形4孔"
+          },
+          {
+            "id": "b2",
+            "label": "圆形4孔"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

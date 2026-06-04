@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "402 - 89 = ?"
+      },
+      "answer": {
+        "value": 313,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "482 - 178 = ?"
+      },
+      "answer": {
+        "value": 304,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "732 - 186 = ?"
+      },
+      "answer": {
+        "value": 546,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "615 - 247 = ?"
+      },
+      "answer": {
+        "value": 368,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "900 - 632 = ?"
+      },
+      "answer": {
+        "value": 268,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "704 - 358 = ?"
+      },
+      "answer": {
+        "value": 346,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 402 - 89：先算 402 - 80 = ___，再减 9 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          322,
+          313
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 900 - 632：个位借位后是___减2，结果是___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位被减数"
+          },
+          {
+            "id": "b2",
+            "label": "最后结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          268
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "减法竖式中，某一位不够减时应该怎样做？",
+        "options": [
+          "向前一位借1当10",
+          "直接交换两个数",
+          "这一位写0",
+          "向后一位借1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "482 - 178 中，个位 2 不够减 8，借位后算什么？",
+        "options": [
+          "8-2",
+          "12-8",
+          "10-8",
+          "18-2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "732 - 186",
+        "right": "550"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "704 - 358",
+        "right": "340"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

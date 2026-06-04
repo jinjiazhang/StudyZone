@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "蓝色上衣有7人，绿色上衣有3人，一共有多少人？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "星星头饰有6人，爱心头饰有4人，一共有多少人？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "10名同学按上衣颜色分，蓝色7人。填写蓝色和绿色人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "蓝色"
+          },
+          {
+            "id": "b2",
+            "label": "绿色"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "10名同学按头饰分，星星6人。填写星星和爱心人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "星星"
+          },
+          {
+            "id": "b2",
+            "label": "爱心"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样的10名同学，按上衣颜色和按头饰分类，总人数会怎样？",
+        "options": [
+          "都是10人",
+          "按上衣分更多",
+          "按头饰分更多",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "故事书8本，科普书5本，绘本7本，一共有多少本书？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "圆纽扣7个，方纽扣7个，一共有多少个纽扣？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "分类后各类数量相加，应当等于什么？",
+        "options": [
+          "类别数",
+          "最多一类的数量",
+          "对象总数",
+          "最少一类的数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "表中三类水果一共有多少个？",
+        "columns": [
+          "水果",
+          "数量"
+        ],
+        "rows": [
+          {
+            "水果": "苹果",
+            "数量": 5
+          },
+          {
+            "水果": "梨",
+            "数量": 4
+          },
+          {
+            "水果": "橘子",
+            "数量": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15个水果中苹果5个、梨4个，橘子有多少个？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

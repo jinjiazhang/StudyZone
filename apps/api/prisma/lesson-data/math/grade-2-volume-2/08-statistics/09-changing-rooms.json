@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "入园游客按更衣室分类，男成人有多少个？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "男成人",
+            "数量": 2
+          },
+          {
+            "类别": "男儿童",
+            "数量": 3
+          },
+          {
+            "类别": "女成人",
+            "数量": 2
+          },
+          {
+            "类别": "女儿童",
+            "数量": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "入园游客按更衣室分类，数量最多的是哪一类？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "男成人",
+            "数量": 2
+          },
+          {
+            "类别": "男儿童",
+            "数量": 3
+          },
+          {
+            "类别": "女成人",
+            "数量": 2
+          },
+          {
+            "类别": "女儿童",
+            "数量": 3
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "男儿童"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "入园游客按更衣室分类，四类一共有多少个？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2",
+        "right": "3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“入园游客按更衣室分类”分类，最合适的分类标准是什么？",
+        "options": [
+          "性别和年龄",
+          "随便摆放",
+          "物品价格",
+          "记录人的心情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关于“入园游客按更衣室分类”的分类，说法正确的是哪一项？",
+        "options": [
+          "分类后总数一定变少。",
+          "选择更衣室要按性别分；还可以继续按成人、儿童分类。",
+          "同一个对象可以同时重复记很多次。",
+          "分类时可以故意漏掉一部分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "入园游客按更衣室分类：先填前两类合计，再填全部合计。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两类合计"
+          },
+          {
+            "id": "b2",
+            "label": "全部合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          10
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数量从少到多排列",
+        "items": [
+          {
+            "id": "i1",
+            "text": "男儿童：3"
+          },
+          {
+            "id": "i2",
+            "text": "女成人：2"
+          },
+          {
+            "id": "i3",
+            "text": "女儿童：3"
+          },
+          {
+            "id": "i0",
+            "text": "男成人：2"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i2",
+          "i1",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "男成人"
+          },
+          {
+            "id": "l1",
+            "text": "男儿童"
+          },
+          {
+            "id": "l2",
+            "text": "女成人"
+          },
+          {
+            "id": "l3",
+            "text": "女儿童"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "记录3：2个"
+          },
+          {
+            "id": "r3",
+            "text": "记录4：3个"
+          },
+          {
+            "id": "r0",
+            "text": "记录1：2个"
+          },
+          {
+            "id": "r1",
+            "text": "记录2：3个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "入园游客按更衣室分类中，数量最少且不是0的是哪一类？",
+        "options": [
+          "男儿童",
+          "女成人",
+          "男成人",
+          "女儿童"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

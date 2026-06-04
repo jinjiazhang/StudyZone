@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "400 + 300 = ?"
+      },
+      "answer": {
+        "value": 700,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "900 - 500 = ?"
+      },
+      "answer": {
+        "value": 400,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "200 + 600 = ?"
+      },
+      "answer": {
+        "value": 800,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "700 - 200 = ?"
+      },
+      "answer": {
+        "value": 500,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "500 + 400 = ?"
+      },
+      "answer": {
+        "value": 900,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1000 - 300 = ?"
+      },
+      "answer": {
+        "value": 700,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "300 + 400",
+        "right": "800"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "900 - 300",
+        "right": "500"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 400 + 300 时，可以先算什么？",
+        "options": [
+          "4个百加3个百",
+          "4个十加3个十",
+          "4加30",
+          "400加3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "300 - 200 = 100，表示什么？",
+        "options": [
+          "3个十减2个十",
+          "3个百减2个百",
+          "30减20",
+          "300减2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "第一批种了400棵白菜和300棵生菜，一共多少棵？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "400+300",
+          "300+400"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "第二批有340条草鱼，第一批有200条，第二批比第一批多多少条？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "340-200"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

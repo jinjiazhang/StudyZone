@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把小棒长方形向右拉，图形会怎样？",
+        "options": [
+          "变成圆形",
+          "少一条边",
+          "小棒消失",
+          "逐渐变斜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拉动小棒长方形时，什么没有变？",
+        "options": [
+          "倾斜程度",
+          "角的样子",
+          "每根小棒的长度",
+          "图形的样子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拉动后，小棒根数会怎样？",
+        "options": [
+          "变成0根",
+          "不变",
+          "增加1根",
+          "减少2根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形拉斜后，仍然有几条边？",
+        "options": [
+          "4条",
+          "3条",
+          "5条",
+          "6条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拉斜后的图形最可能是什么？",
+        "options": [
+          "圆形",
+          "三角形",
+          "线段",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“越拉越斜”描述的是哪一项变化？",
+        "options": [
+          "小棒数量",
+          "小棒颜色",
+          "图形形状",
+          "小棒长度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "操作后要判断什么变、什么没变，较好的方法是什么？",
+        "options": [
+          "不观察",
+          "操作前后逐项比较",
+          "只看一次",
+          "只听别人说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方形向右拉后最像哪种图形？",
+        "options": [
+          {
+            "id": "g5-0",
+            "label": "圆形"
+          },
+          {
+            "id": "g5-1",
+            "label": "三角形"
+          },
+          {
+            "id": "g5-2",
+            "label": "五边形"
+          },
+          {
+            "id": "g5-3",
+            "label": "平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g5-3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小棒长度"
+          },
+          {
+            "id": "l2",
+            "text": "小棒根数"
+          },
+          {
+            "id": "l3",
+            "text": "倾斜程度"
+          },
+          {
+            "id": "l4",
+            "text": "图形样子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "由长方形变为斜四边形"
+          },
+          {
+            "id": "r2",
+            "text": "保持原来的长度"
+          },
+          {
+            "id": "r3",
+            "text": "仍然是4根"
+          },
+          {
+            "id": "r4",
+            "text": "变得更斜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "拉动小棒长方形后，图形变 ",
+          null,
+          "，但每根小棒的 ",
+          null,
+          " 没变。"
+        ],
+        "tokens": [
+          "数量增加",
+          "颜色",
+          "长度",
+          "斜"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "斜",
+          "长度"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

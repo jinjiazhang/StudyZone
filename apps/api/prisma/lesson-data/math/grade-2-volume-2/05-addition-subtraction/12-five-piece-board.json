@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一副五巧板一共有几块？",
+        "options": [
+          "15块",
+          "5块",
+          "4块",
+          "7块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材五巧板中的1号是什么图形？",
+        "options": [
+          "正方形",
+          "三角形",
+          "平行四边形",
+          "圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材五巧板中的2号是什么图形？",
+        "options": [
+          "正方形",
+          "圆形",
+          "长方形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材五巧板中的3号是什么图形？",
+        "options": [
+          "正方形",
+          "圆形",
+          "三角形",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材五巧板中的4号是什么图形？",
+        "options": [
+          "线段",
+          "四边形",
+          "圆形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察五巧板时，怎样找到5号？",
+        "options": [
+          "看其余板块围出的部分和相连边",
+          "只看颜色",
+          "只看编号字体",
+          "随便猜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把五巧板分一分再画出来，重点是什么？",
+        "options": [
+          "改变每块大小",
+          "少画一块",
+          "把板块重叠",
+          "保持各板块位置和连接关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出五巧板中明确出现的图形",
+        "options": [
+          {
+            "id": "g11-0",
+            "label": "圆柱"
+          },
+          {
+            "id": "g11-1",
+            "label": "正方形"
+          },
+          {
+            "id": "g11-2",
+            "label": "圆形"
+          },
+          {
+            "id": "g11-3",
+            "label": "球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g11-1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1号"
+          },
+          {
+            "id": "l2",
+            "text": "2号"
+          },
+          {
+            "id": "l3",
+            "text": "3号"
+          },
+          {
+            "id": "l4",
+            "text": "整副五巧板"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "共有5块板"
+          },
+          {
+            "id": "r2",
+            "text": "左上角的正方形"
+          },
+          {
+            "id": "r3",
+            "text": "右上方的大三角形"
+          },
+          {
+            "id": "r4",
+            "text": "下方的小三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "五巧板共有 ",
+          null,
+          " 块，观察时要看每块的形状、大小和 ",
+          null,
+          " 关系。"
+        ],
+        "tokens": [
+          "连接",
+          "5",
+          "7",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "连接"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理一批物品时，正确的顺序是？",
+        "options": [
+          "计数→丢弃→分类",
+          "随便分→改变总数→记录",
+          "只记录不分类",
+          "确定标准→分类→计数记录"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要比较班里男生和女生人数，应按什么分类？",
+        "options": [
+          "性别",
+          "生日",
+          "是否戴眼镜",
+          "座位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要统计每种交通标志有多少个，先要做什么？",
+        "options": [
+          "只数圆形",
+          "改变标志形状",
+          "明确分类标准",
+          "把标志拿走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18本书按种类分：故事书7本、科普书5本。绘本有几本？填写三类数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "故事书"
+          },
+          {
+            "id": "b2",
+            "label": "科普书"
+          },
+          {
+            "id": "b3",
+            "label": "绘本"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "故事书7本比科普书5本多几本？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪一类人数最少？",
+        "columns": [
+          "类别",
+          "人数"
+        ],
+        "rows": [
+          {
+            "类别": "步行上学",
+            "人数": 8
+          },
+          {
+            "类别": "乘车上学",
+            "人数": 10
+          },
+          {
+            "类别": "骑车上学",
+            "人数": 4
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "骑车上学"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "步行8人、乘车10人、骑车4人，全班有多少人？"
+      },
+      "answer": {
+        "value": 22,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一批22人改按性别分类，男生12人，女生应有多少人？",
+        "options": [
+          "12人",
+          "10人",
+          "22人",
+          "8人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话正确？",
+        "options": [
+          "分类后对象总数一定改变",
+          "分类必须分成两类",
+          "分类标准越多越好",
+          "分类能帮助整理和发现信息"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两位同学分类顺序不同，但最终四个小类完全相同，这可能吗？",
+        "options": [
+          "可能，两个标准先后可交换",
+          "不可能",
+          "只有总数为0才可能",
+          "说明没有分类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

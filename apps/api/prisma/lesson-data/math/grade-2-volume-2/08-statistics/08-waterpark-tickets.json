@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "两家人购买水上乐园门票，未入园有多少个？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "成人票",
+            "数量": 4
+          },
+          {
+            "类别": "儿童票",
+            "数量": 4
+          },
+          {
+            "类别": "免票",
+            "数量": 0
+          },
+          {
+            "类别": "未入园",
+            "数量": 0
+          }
+        ]
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "两家人购买水上乐园门票，数量最多的是哪一类？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "成人票",
+            "数量": 4
+          },
+          {
+            "类别": "儿童票",
+            "数量": 4
+          },
+          {
+            "类别": "免票",
+            "数量": 0
+          },
+          {
+            "类别": "未入园",
+            "数量": 0
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "成人票"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "两家人购买水上乐园门票，四类一共有多少个？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4",
+        "right": "4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“两家人购买水上乐园门票”分类，最合适的分类标准是什么？",
+        "options": [
+          "随便摆放",
+          "物品价格",
+          "记录人的心情",
+          "年龄和票种"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关于“两家人购买水上乐园门票”的分类，说法正确的是哪一项？",
+        "options": [
+          "买票时要按成人和儿童分类，分别记录人数。",
+          "分类后总数一定变少。",
+          "同一个对象可以同时重复记很多次。",
+          "分类时可以故意漏掉一部分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "两家人购买水上乐园门票：先填前两类合计，再填全部合计。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两类合计"
+          },
+          {
+            "id": "b2",
+            "label": "全部合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数量从少到多排列",
+        "items": [
+          {
+            "id": "i0",
+            "text": "成人票：4"
+          },
+          {
+            "id": "i1",
+            "text": "儿童票：4"
+          },
+          {
+            "id": "i2",
+            "text": "免票：0"
+          },
+          {
+            "id": "i3",
+            "text": "未入园：0"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i2",
+          "i3",
+          "i0",
+          "i1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "成人票"
+          },
+          {
+            "id": "l1",
+            "text": "儿童票"
+          },
+          {
+            "id": "l2",
+            "text": "免票"
+          },
+          {
+            "id": "l3",
+            "text": "未入园"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "记录3：0个"
+          },
+          {
+            "id": "r3",
+            "text": "记录4：0个"
+          },
+          {
+            "id": "r0",
+            "text": "记录1：4个"
+          },
+          {
+            "id": "r1",
+            "text": "记录2：4个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两家人购买水上乐园门票中，数量最少且不是0的是哪一类？",
+        "options": [
+          "儿童票",
+          "成人票",
+          "免票",
+          "未入园"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

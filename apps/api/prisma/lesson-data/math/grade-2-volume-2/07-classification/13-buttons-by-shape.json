@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "14个纽扣中，方形7个、圆形7个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "方形"
+          },
+          {
+            "id": "b2",
+            "label": "圆形"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "方形7个、圆形7个，一共有多少个纽扣？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分纽扣，需要先观察什么？",
+        "options": [
+          "纽扣外形",
+          "扣眼数",
+          "颜色",
+          "价格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "方形纽扣和圆形纽扣的数量关系是？",
+        "options": [
+          "方形多",
+          "圆形多",
+          "一样多",
+          "无法比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从14个纽扣中拿走2个圆形纽扣，还剩多少个圆形纽扣？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "拿走2个圆形纽扣后，还剩多少个纽扣？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拿走2个圆形纽扣后，哪类更多？",
+        "options": [
+          "圆形纽扣",
+          "方形纽扣",
+          "一样多",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "方形纽扣有几个？",
+        "columns": [
+          "形状",
+          "数量"
+        ],
+        "rows": [
+          {
+            "形状": "方形",
+            "数量": 7
+          },
+          {
+            "形状": "圆形",
+            "数量": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "方形2孔"
+          },
+          {
+            "id": "l2",
+            "text": "方形4孔"
+          },
+          {
+            "id": "l3",
+            "text": "圆形2孔"
+          },
+          {
+            "id": "l4",
+            "text": "圆形4孔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "方形纽扣（4孔）"
+          },
+          {
+            "id": "r2",
+            "text": "方形纽扣（2孔）"
+          },
+          {
+            "id": "r3",
+            "text": "圆形纽扣（4孔）"
+          },
+          {
+            "id": "r4",
+            "text": "圆形纽扣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分完后，还能继续按什么标准细分？",
+        "options": [
+          "是否是纽扣",
+          "总数量",
+          "摆放位置",
+          "扣眼数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

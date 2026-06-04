@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "有红球4个、蓝球3个、黄球2个。按颜色分类，填写各类数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "红球"
+          },
+          {
+            "id": "b2",
+            "label": "蓝球"
+          },
+          {
+            "id": "b3",
+            "label": "黄球"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "有红球4个、蓝球3个、黄球2个，一共有多少个球？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "有圆形积木5块、方形积木4块。按形状分类，填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "圆形"
+          },
+          {
+            "id": "b2",
+            "label": "方形"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "圆形积木5块、方形积木4块，一共有多少块？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "铅笔盒里有木杆铅笔和自动铅笔。按种类分，应分成？",
+        "options": [
+          "长铅笔、红铅笔",
+          "木杆铅笔、自动铅笔",
+          "新铅笔、木杆铅笔",
+          "粗铅笔、自动铅笔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "班里有男生12人、女生14人。按性别分类，填写人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "男生"
+          },
+          {
+            "id": "b2",
+            "label": "女生"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          14
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "班里有男生12人、女生14人，全班有多少人？"
+      },
+      "answer": {
+        "value": 26,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按是否戴帽子分类，戴帽子6人，不戴帽子8人。哪类人数多？",
+        "options": [
+          "戴帽子",
+          "一样多",
+          "不能比较",
+          "不戴帽子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "戴帽子6人，不戴帽子8人。不戴帽子的比戴帽子的多几人？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪一类最多？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "故事书",
+            "数量": 8
+          },
+          {
+            "类别": "科普书",
+            "数量": 5
+          },
+          {
+            "类别": "绘本",
+            "数量": 7
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "故事书"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

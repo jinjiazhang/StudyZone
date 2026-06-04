@@ -1,0 +1,210 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“桃、李、杏”分为一类，最合适的理由是？",
+        "options": [
+          "都是左右结构",
+          "都含有“木”字部件",
+          "都是表示时间",
+          "都是上下结构"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“暖、时、昨、明”分为一类，最合适的理由是？",
+        "options": [
+          "都含有“木”字部件",
+          "都是上下结构",
+          "都是地名",
+          "都含有“日”字部件"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“景、星、杏、李”分为一类，可以按什么标准？",
+        "options": [
+          "上下结构",
+          "左右结构",
+          "木字旁",
+          "日字旁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“桃、枝、暖、时、昨、旺、明”分为一类，可以按什么标准？",
+        "options": [
+          "上下结构",
+          "都是树木",
+          "左右结构",
+          "都是日期"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "13个汉字按所含部件分：含“木”6个、含“日”7个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "含木"
+          },
+          {
+            "id": "b2",
+            "label": "含日"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "含“木”部件6个、含“日”部件7个，一共有多少个汉字？"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "13个汉字按结构分：上下结构4个、左右结构9个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "上下结构"
+          },
+          {
+            "id": "b2",
+            "label": "左右结构"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "上下结构4个、左右结构9个，一共有多少个汉字？"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按所含部件分和按结构分，哪一点相同？",
+        "options": [
+          "每类数量相同",
+          "统计的汉字总数相同",
+          "分类标准相同",
+          "类别名称相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "桃"
+          },
+          {
+            "id": "l2",
+            "text": "景"
+          },
+          {
+            "id": "l3",
+            "text": "暖"
+          },
+          {
+            "id": "l4",
+            "text": "李"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "含木且上下结构"
+          },
+          {
+            "id": "r2",
+            "text": "含木且左右结构"
+          },
+          {
+            "id": "r3",
+            "text": "含日且上下结构"
+          },
+          {
+            "id": "r4",
+            "text": "含日且左右结构"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 3
+    }
+  ]
+}

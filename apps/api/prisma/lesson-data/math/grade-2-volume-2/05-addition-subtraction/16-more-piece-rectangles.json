@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中从3块长方形拼图继续增加1块后，仍可得到什么？",
+        "options": [
+          "线段",
+          "长方形",
+          "圆形",
+          "未封闭图形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在另一边再增加2块，外框仍可以是什么？",
+        "options": [
+          "长方形",
+          "圆形",
+          "三角形",
+          "五边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "多块拼长方形时，每增加一块都要检查什么？",
+        "options": [
+          "颜色是否一样",
+          "编号是否连续",
+          "板块是否重叠更多",
+          "外框是否仍长长方方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "多块板拼图时允许板块重叠吗？",
+        "options": [
+          "只允许大板重叠",
+          "重叠越多越好",
+          "不允许",
+          "允许全部重叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "多块板拼图时允许板块之间留空隙吗？",
+        "options": [
+          "只中间留空",
+          "不允许",
+          "允许很大空隙",
+          "必须留空隙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "增加板块后外框仍是长方形，内部图形数量会怎样？",
+        "options": [
+          "增加",
+          "一定减少",
+          "变成0",
+          "与板块无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "多块拼组最有效的检查顺序是什么？",
+        "options": [
+          "全部乱放后不检查",
+          "先改板块大小",
+          "只数颜色",
+          "放一块、对齐边、看外框"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出多块拼长方形的正确要求",
+        "options": [
+          {
+            "id": "g15-0",
+            "label": "只接一个点"
+          },
+          {
+            "id": "g15-1",
+            "label": "板块不重叠、无空隙、外框为长方形"
+          },
+          {
+            "id": "g15-2",
+            "label": "板块全部重叠"
+          },
+          {
+            "id": "g15-3",
+            "label": "外框可以打开"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g15-1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "增加1块"
+          },
+          {
+            "id": "l2",
+            "text": "边对齐"
+          },
+          {
+            "id": "l3",
+            "text": "无空隙"
+          },
+          {
+            "id": "l4",
+            "text": "看外框"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "减少凹凸"
+          },
+          {
+            "id": "r2",
+            "text": "拼图完整"
+          },
+          {
+            "id": "r3",
+            "text": "判断长方形"
+          },
+          {
+            "id": "r4",
+            "text": "继续扩展外框"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "多块拼长方形时，板块之间不能重叠，也不能留 ",
+          null,
+          "；每次增加板块都要检查 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "外框",
+          "空隙",
+          "颜色",
+          "编号"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "空隙",
+          "外框"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

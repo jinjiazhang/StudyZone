@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材明确指出：两块板只能拼成什么？",
+        "options": [
+          "长方形",
+          "圆形",
+          "五边形",
+          "正方形、平行四边形或三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两块板能直接拼成长方形吗？",
+        "options": [
+          "一定能拼两个",
+          "只用圆形能",
+          "不能",
+          "能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断拼成的是不是长方形，应看什么？",
+        "options": [
+          "纸张方向",
+          "外框是否长长方方",
+          "内部有几种颜色",
+          "板块编号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两块板拼图时只接一个点，能形成完整长方形吗？",
+        "options": [
+          "不能",
+          "能",
+          "一定能",
+          "与连接无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两块板拼出的平行四边形和长方形有什么区别？",
+        "options": [
+          "板块数量不同",
+          "颜色一定不同",
+          "都不是四边形",
+          "外框倾斜情况不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼图后内部有斜线，外框仍可能是什么？",
+        "options": [
+          "线段",
+          "未封闭图形",
+          "正方形",
+          "圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "验证“两块不能拼成长方形”时，应怎样做？",
+        "options": [
+          "剪开板块",
+          "尝试不同两块和不同摆法",
+          "只试一次就结束",
+          "改变板块大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出两块板可以拼成的图形",
+        "options": [
+          {
+            "id": "g13-0",
+            "label": "圆形"
+          },
+          {
+            "id": "g13-1",
+            "label": "球"
+          },
+          {
+            "id": "g13-2",
+            "label": "圆柱"
+          },
+          {
+            "id": "g13-3",
+            "label": "平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g13-3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "两块板"
+          },
+          {
+            "id": "l2",
+            "text": "两块板换摆法"
+          },
+          {
+            "id": "l3",
+            "text": "两块板另一摆法"
+          },
+          {
+            "id": "l4",
+            "text": "长方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "可拼三角形"
+          },
+          {
+            "id": "r2",
+            "text": "两块板不能直接拼成"
+          },
+          {
+            "id": "r3",
+            "text": "可拼正方形"
+          },
+          {
+            "id": "r4",
+            "text": "可拼平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "用两块板可以拼成正方形、三角形或 ",
+          null,
+          "，但不能直接拼成 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆形",
+          "球",
+          "长方形",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "平行四边形",
+          "长方形"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

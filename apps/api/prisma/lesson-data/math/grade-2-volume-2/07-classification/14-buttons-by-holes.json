@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "14个纽扣中，2孔纽扣8个、4孔纽扣6个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2孔"
+          },
+          {
+            "id": "b2",
+            "label": "4孔"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2孔8个、4孔6个，一共有多少个纽扣？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2孔纽扣比4孔纽扣多几个？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按扣眼数分类，需要关注什么？",
+        "options": [
+          "每个纽扣有几个孔",
+          "纽扣形状",
+          "纽扣颜色",
+          "纽扣大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪类纽扣更多？",
+        "columns": [
+          "扣眼数",
+          "数量"
+        ],
+        "rows": [
+          {
+            "扣眼数": "2孔",
+            "数量": 8
+          },
+          {
+            "扣眼数": "4孔",
+            "数量": 6
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "2孔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样14个纽扣，按形状分是7和7，按扣眼数分是8和6。说明什么？",
+        "options": [
+          "总数变了",
+          "分类错误",
+          "标准不同，结果可能不同",
+          "不能按扣眼数分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从8个2孔纽扣中取出3个，还剩几个？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "取出3个2孔纽扣后，填写2孔、4孔和总数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2孔"
+          },
+          {
+            "id": "b2",
+            "label": "4孔"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          6,
+          11
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "取出3个2孔纽扣后，哪类更多？",
+        "options": [
+          "2孔纽扣",
+          "4孔纽扣",
+          "一样多",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要找出所有4孔纽扣，最直接的分类标准是？",
+        "options": [
+          "形状",
+          "材料",
+          "新旧",
+          "扣眼数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

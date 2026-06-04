@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水上乐园把“未满12周岁”与其他游客分开，是按什么标准？",
+        "options": [
+          "性别",
+          "衣服",
+          "年龄",
+          "家庭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "快速滑道禁止未满12周岁进入，分类的目的是什么？",
+        "options": [
+          "让人数相同",
+          "保障安全",
+          "方便拍照",
+          "区分衣服"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12名游客中，未满12周岁5人，满12周岁及以上有几人？填写两类人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "未满12周岁"
+          },
+          {
+            "id": "b2",
+            "label": "满12周岁及以上"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "满12周岁及以上比未满12周岁的多几人？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "家庭划船项目按什么分组最合适？",
+        "options": [
+          "年龄大小",
+          "鞋子颜色",
+          "到达先后",
+          "家庭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一名儿童购票时属于“儿童”，更衣时还要按什么判断？",
+        "options": [
+          "性别",
+          "票价",
+          "家庭人数",
+          "头饰"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "可以进入快速滑道的有几人？",
+        "columns": [
+          "年龄类别",
+          "人数"
+        ],
+        "rows": [
+          {
+            "年龄类别": "未满12周岁",
+            "人数": 5
+          },
+          {
+            "年龄类别": "满12周岁及以上",
+            "人数": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "共有12人，5人不能进入快速滑道，能进入的有几人？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种场景和分类标准搭配合理？",
+        "options": [
+          "更衣—票价",
+          "快速滑道—衣服颜色",
+          "购票—成人儿童",
+          "家庭划船—发型"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "购买门票"
+          },
+          {
+            "id": "l2",
+            "text": "更换泳衣"
+          },
+          {
+            "id": "l3",
+            "text": "快速滑道"
+          },
+          {
+            "id": "l4",
+            "text": "家庭划船"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "按年龄"
+          },
+          {
+            "id": "r2",
+            "text": "按成人儿童"
+          },
+          {
+            "id": "r3",
+            "text": "按性别"
+          },
+          {
+            "id": "r4",
+            "text": "按家庭"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r1",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

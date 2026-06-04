@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中小狗身体、耳朵和尾巴里的斜四边形叫什么？",
+        "options": [
+          "三角形",
+          "圆形",
+          "正方形",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形有几条边？",
+        "options": [
+          "6条",
+          "3条",
+          "4条",
+          "5条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个平行四边形斜着放，还是平行四边形吗？",
+        "options": [
+          "是",
+          "不是",
+          "变成长方形",
+          "变成三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把平行四边形转一个方向，它的图形名称会怎样？",
+        "options": [
+          "变成圆形",
+          "变成三角形",
+          "无法判断",
+          "不变"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材搭小棒时，怎样更容易搭成平行四边形？",
+        "options": [
+          "把四根都叠起来",
+          "摆成不封闭图形",
+          "长度相等的边对着放",
+          "随便少放一根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项不能单独说明图形是平行四边形？",
+        "options": [
+          "相等长度的边对着",
+          "只是颜色相同",
+          "有4条边",
+          "形状斜斜的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格图中辨认平行四边形时，应重点观察什么？",
+        "options": [
+          "边的位置和连接",
+          "数字大小",
+          "格子颜色",
+          "纸张方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出平行四边形",
+        "options": [
+          {
+            "id": "g2-0",
+            "label": "斜四边形"
+          },
+          {
+            "id": "g2-1",
+            "label": "三角形"
+          },
+          {
+            "id": "g2-2",
+            "label": "圆形"
+          },
+          {
+            "id": "g2-3",
+            "label": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2-0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "长方形"
+          },
+          {
+            "id": "l3",
+            "text": "正方形"
+          },
+          {
+            "id": "l4",
+            "text": "三角形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "有3条边"
+          },
+          {
+            "id": "r2",
+            "text": "斜斜的四边形"
+          },
+          {
+            "id": "r3",
+            "text": "长长方方的四边形"
+          },
+          {
+            "id": "r4",
+            "text": "四条边一样长的方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "搭平行四边形时，可以让长度相等的边 ",
+          null,
+          " 放，搭好后仍有 ",
+          null,
+          " 条边。"
+        ],
+        "tokens": [
+          "重叠",
+          "4",
+          "对着",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对着",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "458 + 376 = ?"
+      },
+      "answer": {
+        "value": 834,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "704 - 358 = ?"
+      },
+      "answer": {
+        "value": 346,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "398 + 201 = ?"
+      },
+      "answer": {
+        "value": 599,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "803 - 397 = ?"
+      },
+      "answer": {
+        "value": 406,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "367 + 254",
+        "right": "732 - 186"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "900 - 632",
+        "right": "99 + 86"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算并验算：286 + 495 = ___，交换加数后结果是___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "计算"
+          },
+          {
+            "id": "b2",
+            "label": "验算"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          781,
+          781
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算并验算：702 - 186 = ___，差加减数等于___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "差"
+          },
+          {
+            "id": "b2",
+            "label": "被减数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          516,
+          702
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "图书馆上午借出245本，下午借出378本，一共借出多少本？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "245+378",
+          "378+245"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "仓库有900箱货物，运走632箱，还剩多少箱？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "900-632"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 704 - 358 时，哪条规则正确？",
+        "options": [
+          "各数位可以不对齐",
+          "先把减数变大",
+          "不够减要向前一位借1当10",
+          "答案一定大于704"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "解决“同一路线可能有两种距离”问题时，应该先做什么？",
+        "options": [
+          "一律相加",
+          "一律相减",
+          "忽略示意图",
+          "判断地点的位置关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

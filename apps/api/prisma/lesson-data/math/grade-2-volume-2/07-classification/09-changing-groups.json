@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "更换泳衣时，最适合按什么分类？",
+        "options": [
+          "票价",
+          "衣服颜色",
+          "性别",
+          "家庭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "8人中女性3人、男性5人。填写更衣分组人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "女性"
+          },
+          {
+            "id": "b2",
+            "label": "男性"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "女性3人、男性5人，一共有多少人？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "男性比女性多几人？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "购票按成人儿童分，更衣按男女分，说明什么？",
+        "options": [
+          "分类标准必须相同",
+          "实际需要不同，分类标准可以不同",
+          "人数发生变化",
+          "分类没有作用"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪组人数多？",
+        "columns": [
+          "更衣组",
+          "人数"
+        ],
+        "rows": [
+          {
+            "更衣组": "女",
+            "人数": 3
+          },
+          {
+            "更衣组": "男",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "男"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "8人按性别分后，两组人数相加是多少？",
+        "options": [
+          "5人",
+          "3人",
+          "2人",
+          "8人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "又来1名女性后，填写女性、男性和总人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "女性"
+          },
+          {
+            "id": "b2",
+            "label": "男性"
+          },
+          {
+            "id": "b3",
+            "label": "总人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5,
+          9
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "又来1名女性后，男性比女性多几人？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选择分类标准时，最重要的是考虑什么？",
+        "options": [
+          "分类目的",
+          "随手选择",
+          "类别名称长短",
+          "必须分得一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

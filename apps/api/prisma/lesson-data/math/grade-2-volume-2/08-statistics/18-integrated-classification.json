@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "图书角书籍按内容分类，科普有多少个？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "童话",
+            "数量": 9
+          },
+          {
+            "类别": "科普",
+            "数量": 7
+          },
+          {
+            "类别": "历史",
+            "数量": 5
+          },
+          {
+            "类别": "绘本",
+            "数量": 11
+          }
+        ]
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "图书角书籍按内容分类，数量最多的是哪一类？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "童话",
+            "数量": 9
+          },
+          {
+            "类别": "科普",
+            "数量": 7
+          },
+          {
+            "类别": "历史",
+            "数量": 5
+          },
+          {
+            "类别": "绘本",
+            "数量": 11
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "绘本"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "图书角书籍按内容分类，四类一共有多少个？"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9",
+        "right": "7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“图书角书籍按内容分类”分类，最合适的分类标准是什么？",
+        "options": [
+          "随便摆放",
+          "内容",
+          "物品价格",
+          "记录人的心情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关于“图书角书籍按内容分类”的分类，说法正确的是哪一项？",
+        "options": [
+          "分类后总数一定变少。",
+          "同一个对象可以同时重复记很多次。",
+          "分类、记录、比较可以帮助我们整理物品并发现数量关系。",
+          "分类时可以故意漏掉一部分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图书角书籍按内容分类：先填前两类合计，再填全部合计。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两类合计"
+          },
+          {
+            "id": "b2",
+            "label": "全部合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          32
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数量从少到多排列",
+        "items": [
+          {
+            "id": "i2",
+            "text": "历史：5"
+          },
+          {
+            "id": "i3",
+            "text": "绘本：11"
+          },
+          {
+            "id": "i0",
+            "text": "童话：9"
+          },
+          {
+            "id": "i1",
+            "text": "科普：7"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i2",
+          "i1",
+          "i0",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "童话"
+          },
+          {
+            "id": "l1",
+            "text": "科普"
+          },
+          {
+            "id": "l2",
+            "text": "历史"
+          },
+          {
+            "id": "l3",
+            "text": "绘本"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "记录3：5个"
+          },
+          {
+            "id": "r3",
+            "text": "记录4：11个"
+          },
+          {
+            "id": "r0",
+            "text": "记录1：9个"
+          },
+          {
+            "id": "r1",
+            "text": "记录2：7个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图书角书籍按内容分类中，数量最少且不是0的是哪一类？",
+        "options": [
+          "童话",
+          "科普",
+          "绘本",
+          "历史"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

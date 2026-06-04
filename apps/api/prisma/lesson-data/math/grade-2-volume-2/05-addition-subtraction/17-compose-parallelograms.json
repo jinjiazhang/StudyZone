@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材最后要求尝试用板块拼出什么图形？",
+        "options": [
+          "平行四边形",
+          "圆形",
+          "球",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼平行四边形时，外框通常呈现什么样子？",
+        "options": [
+          "圆圆的",
+          "只有3条边",
+          "没有封闭",
+          "斜斜的四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼出的平行四边形可以由几块板组成？",
+        "options": [
+          "只能7块",
+          "不能拼成",
+          "可以由多块板组成",
+          "只能1块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼平行四边形时板块之间应怎样？",
+        "options": [
+          "只接一个点",
+          "边贴边且无空隙",
+          "全部重叠",
+          "彼此分开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样的板块换一种摆法，外框可能怎样？",
+        "options": [
+          "变成不同图形",
+          "板块变大",
+          "板块变小",
+          "板块消失"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼成后怎样判断目标完成？",
+        "options": [
+          "只看内部颜色",
+          "只看板块编号",
+          "只数桌子",
+          "观察整体外框是否为平行四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼图遇到困难时，哪种办法合适？",
+        "options": [
+          "把板块叠起来",
+          "放弃观察",
+          "转动、移动或换一块板",
+          "剪小板块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出拼平行四边形的目标外框",
+        "options": [
+          {
+            "id": "g16-0",
+            "label": "斜斜的封闭四边形"
+          },
+          {
+            "id": "g16-1",
+            "label": "圆形"
+          },
+          {
+            "id": "g16-2",
+            "label": "未封闭折线"
+          },
+          {
+            "id": "g16-3",
+            "label": "三角形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g16-0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "转动板块"
+          },
+          {
+            "id": "l2",
+            "text": "移动板块"
+          },
+          {
+            "id": "l3",
+            "text": "边贴边"
+          },
+          {
+            "id": "l4",
+            "text": "看整体外框"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "消除空隙"
+          },
+          {
+            "id": "r2",
+            "text": "判断目标图形"
+          },
+          {
+            "id": "r3",
+            "text": "改变方向"
+          },
+          {
+            "id": "r4",
+            "text": "改变位置"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "拼平行四边形时，可以转动或 ",
+          null,
+          " 板块，让它们边贴边，最后观察整体 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "移动",
+          "剪小",
+          "重叠",
+          "外框"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "移动",
+          "外框"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

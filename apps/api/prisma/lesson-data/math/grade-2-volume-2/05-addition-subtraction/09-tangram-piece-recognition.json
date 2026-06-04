@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一副七巧板一共有几块板？",
+        "options": [
+          "7块",
+          "5块",
+          "4块",
+          "8块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材七巧板中，1号是什么图形？",
+        "options": [
+          "正方形",
+          "平行四边形",
+          "圆形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材七巧板中，5号是什么图形？",
+        "options": [
+          "平行四边形",
+          "圆形",
+          "正方形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材七巧板中，3号是什么图形？",
+        "options": [
+          "长方形",
+          "平行四边形",
+          "正方形",
+          "圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材七巧板中，4号是什么图形？",
+        "options": [
+          "三角形",
+          "圆形",
+          "长方形",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材七巧板中，6号是什么图形？",
+        "options": [
+          "正方形",
+          "平行四边形",
+          "圆形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板中数量最多的是哪类图形？",
+        "options": [
+          "平行四边形",
+          "圆形",
+          "三角形",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出七巧板里没有的单块图形",
+        "options": [
+          {
+            "id": "g8-0",
+            "label": "三角形"
+          },
+          {
+            "id": "g8-1",
+            "label": "正方形"
+          },
+          {
+            "id": "g8-2",
+            "label": "平行四边形"
+          },
+          {
+            "id": "g8-3",
+            "label": "圆形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g8-3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1号"
+          },
+          {
+            "id": "l2",
+            "text": "3号"
+          },
+          {
+            "id": "l3",
+            "text": "4号"
+          },
+          {
+            "id": "l4",
+            "text": "5号"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "正方形"
+          },
+          {
+            "id": "r2",
+            "text": "大三角形"
+          },
+          {
+            "id": "r3",
+            "text": "平行四边形"
+          },
+          {
+            "id": "r4",
+            "text": "小三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "七巧板共有 ",
+          null,
+          " 块，其中有三角形、正方形和 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "7",
+          "5",
+          "圆形",
+          "平行四边形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "平行四边形"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

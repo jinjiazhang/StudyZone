@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "一级保护动物有多少种？",
+        "columns": [
+          "保护级别",
+          "种数"
+        ],
+        "rows": [
+          {
+            "保护级别": "一级保护",
+            "种数": 234
+          },
+          {
+            "保护级别": "二级保护",
+            "种数": 746
+          }
+        ]
+      },
+      "answer": {
+        "value": 234,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "二级保护动物有多少种？",
+        "columns": [
+          "保护级别",
+          "种数"
+        ],
+        "rows": [
+          {
+            "保护级别": "一级保护",
+            "种数": 234
+          },
+          {
+            "保护级别": "二级保护",
+            "种数": 746
+          }
+        ]
+      },
+      "answer": {
+        "value": 746,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一级保护234种，二级保护746种，共有多少种？"
+      },
+      "answer": {
+        "value": 980,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "二级保护动物比一级保护动物多多少种？"
+      },
+      "answer": {
+        "value": 512,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "陆生野生动物有多少种？",
+        "columns": [
+          "生活环境",
+          "种数"
+        ],
+        "rows": [
+          {
+            "生活环境": "陆生",
+            "种数": 686
+          },
+          {
+            "生活环境": "水生",
+            "种数": 294
+          }
+        ]
+      },
+      "answer": {
+        "value": 686,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "水生野生动物有多少种？",
+        "columns": [
+          "生活环境",
+          "种数"
+        ],
+        "rows": [
+          {
+            "生活环境": "陆生",
+            "种数": 686
+          },
+          {
+            "生活环境": "水生",
+            "种数": 294
+          }
+        ]
+      },
+      "answer": {
+        "value": 294,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "陆生686种，水生294种，共有多少种？"
+      },
+      "answer": {
+        "value": 980,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "陆生野生动物比水生野生动物多多少种？"
+      },
+      "answer": {
+        "value": 392,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一个名录的两个表格为什么不同？",
+        "options": [
+          "动物总数不同",
+          "分类标准不同",
+          "年份不同",
+          "记录错误"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个表格中各类数量相加都得到980，说明什么？",
+        "options": [
+          "分类标准相同",
+          "每类数量相同",
+          "表格没有用",
+          "统计的是同一批动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

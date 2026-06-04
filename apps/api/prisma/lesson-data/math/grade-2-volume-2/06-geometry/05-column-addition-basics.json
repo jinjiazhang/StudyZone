@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72 + 90 = ?"
+      },
+      "answer": {
+        "value": 162,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "145 + 232 = ?"
+      },
+      "answer": {
+        "value": 377,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "306 + 481 = ?"
+      },
+      "answer": {
+        "value": 787,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "523 + 246 = ?"
+      },
+      "answer": {
+        "value": 769,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "410 + 389 = ?"
+      },
+      "answer": {
+        "value": 799,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "208 + 571 = ?"
+      },
+      "answer": {
+        "value": 779,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "竖式计算 145 + 232：个位、十位、百位的和分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "百位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          7,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "竖式计算 306 + 481：个位、十位、百位的和分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "百位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          8,
+          7
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用竖式计算加法时，首先要做到什么？",
+        "options": [
+          "从百位开始写",
+          "只算个位",
+          "相同数位对齐",
+          "把加号写在右边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "竖式计算 208 + 571，个位应算什么？",
+        "options": [
+          "2+5",
+          "0+7",
+          "20+57",
+          "8+1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "145 + 232",
+        "right": "400"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "306 + 481",
+        "right": "780"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

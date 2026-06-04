@@ -1,0 +1,191 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "家里有成人鞋5双、儿童鞋3双。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "成人鞋"
+          },
+          {
+            "id": "b2",
+            "label": "儿童鞋"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "成人鞋5双、儿童鞋3双，一共有多少双鞋？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "成人鞋比儿童鞋多多少双？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "同样8双鞋中，运动鞋4双、皮鞋2双、拖鞋2双。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "运动鞋"
+          },
+          {
+            "id": "b2",
+            "label": "皮鞋"
+          },
+          {
+            "id": "b3",
+            "label": "拖鞋"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "运动鞋、皮鞋、拖鞋一共有多少双？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按成人鞋和儿童鞋分，标准是？",
+        "options": [
+          "穿鞋人的年龄",
+          "鞋的种类",
+          "鞋的颜色",
+          "鞋的价格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按运动鞋、皮鞋、拖鞋分，标准是？",
+        "options": [
+          "穿鞋人的年龄",
+          "鞋的大小",
+          "鞋的种类",
+          "鞋的摆放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪类鞋最多？",
+        "columns": [
+          "鞋的种类",
+          "双数"
+        ],
+        "rows": [
+          {
+            "鞋的种类": "运动鞋",
+            "双数": 4
+          },
+          {
+            "鞋的种类": "皮鞋",
+            "双数": 2
+          },
+          {
+            "鞋的种类": "拖鞋",
+            "双数": 2
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "运动鞋"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两次分类的各类数量相加都等于8，原因是？",
+        "options": [
+          "每类一样多",
+          "都是同样的8双鞋",
+          "标准一样",
+          "鞋子增加了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "调查家里每种鞋各有多少双，最适合按什么分？",
+        "options": [
+          "穿鞋人的年龄",
+          "购买时间",
+          "鞋柜层数",
+          "鞋的种类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

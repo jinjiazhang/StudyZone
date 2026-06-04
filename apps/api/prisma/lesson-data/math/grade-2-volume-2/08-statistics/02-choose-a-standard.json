@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同学按上学方式分类，乘公交车有多少个？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "步行",
+            "数量": 8
+          },
+          {
+            "类别": "乘公交车",
+            "数量": 5
+          },
+          {
+            "类别": "骑车",
+            "数量": 4
+          },
+          {
+            "类别": "家长接送",
+            "数量": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同学按上学方式分类，数量最多的是哪一类？",
+        "columns": [
+          "类别",
+          "数量"
+        ],
+        "rows": [
+          {
+            "类别": "步行",
+            "数量": 8
+          },
+          {
+            "类别": "乘公交车",
+            "数量": 5
+          },
+          {
+            "类别": "骑车",
+            "数量": 4
+          },
+          {
+            "类别": "家长接送",
+            "数量": 3
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "步行"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "同学按上学方式分类，四类一共有多少个？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8",
+        "right": "5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“同学按上学方式分类”分类，最合适的分类标准是什么？",
+        "options": [
+          "随便摆放",
+          "上学方式",
+          "物品价格",
+          "记录人的心情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关于“同学按上学方式分类”的分类，说法正确的是哪一项？",
+        "options": [
+          "分类后总数一定变少。",
+          "同一个对象可以同时重复记很多次。",
+          "分类前先确定一个清楚、统一的标准。",
+          "分类时可以故意漏掉一部分。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "同学按上学方式分类：先填前两类合计，再填全部合计。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "前两类合计"
+          },
+          {
+            "id": "b2",
+            "label": "全部合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数量从少到多排列",
+        "items": [
+          {
+            "id": "i2",
+            "text": "骑车：4"
+          },
+          {
+            "id": "i3",
+            "text": "家长接送：3"
+          },
+          {
+            "id": "i0",
+            "text": "步行：8"
+          },
+          {
+            "id": "i1",
+            "text": "乘公交车：5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i3",
+          "i2",
+          "i1",
+          "i0"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "步行"
+          },
+          {
+            "id": "l1",
+            "text": "乘公交车"
+          },
+          {
+            "id": "l2",
+            "text": "骑车"
+          },
+          {
+            "id": "l3",
+            "text": "家长接送"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "记录3：4个"
+          },
+          {
+            "id": "r3",
+            "text": "记录4：3个"
+          },
+          {
+            "id": "r0",
+            "text": "记录1：8个"
+          },
+          {
+            "id": "r1",
+            "text": "记录2：5个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同学按上学方式分类中，数量最少且不是0的是哪一类？",
+        "options": [
+          "步行",
+          "乘公交车",
+          "骑车",
+          "家长接送"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "732 - 186 = ?"
+      },
+      "answer": {
+        "value": 546,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "546 + 186 = ?"
+      },
+      "answer": {
+        "value": 732,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "900 - 632 = ?"
+      },
+      "answer": {
+        "value": 268,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "268 + 632 = ?"
+      },
+      "answer": {
+        "value": 900,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "704 - 358 = ?"
+      },
+      "answer": {
+        "value": 346,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "346 + 358 = ?"
+      },
+      "answer": {
+        "value": 704,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "732 - 186 + 186",
+        "right": "732"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "900 - 632 + 632",
+        "right": "900"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "验算 732 - 186 = 546，可以计算什么？",
+        "options": [
+          "732+186",
+          "546-186",
+          "546+186",
+          "732+546"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "减法验算时，“差 + 减数”应该等于什么？",
+        "options": [
+          "减数",
+          "差",
+          "0",
+          "被减数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "732 - 186 = ___，用差加减数验算：___ + 186 = 732。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "差"
+          },
+          {
+            "id": "b2",
+            "label": "验算中的差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          546,
+          546
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "900 - 632 = ___，验算：___ + 632 = 900。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "差"
+          },
+          {
+            "id": "b2",
+            "label": "验算中的差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          268,
+          268
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断一个图形是不是四边形，最先要数什么？",
+        "options": [
+          "边的条数",
+          "大小",
+          "摆放方向",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "四边形一定有几条直边？",
+        "options": [
+          "4条",
+          "5条",
+          "2条",
+          "3条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形是不是四边形？",
+        "options": [
+          "无法判断",
+          "是",
+          "不是",
+          "只有斜着时是"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形是不是四边形？",
+        "options": [
+          "不是",
+          "是",
+          "只有竖着时是",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形是不是四边形？",
+        "options": [
+          "不是",
+          "只有红色时是",
+          "无法判断",
+          "是"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个图形有4条边，但边界没有封闭，它是四边形吗？",
+        "options": [
+          "一定是正方形",
+          "一定是长方形",
+          "是",
+          "不是"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面说法正确的是哪一个？",
+        "options": [
+          "四边形都有圆弧",
+          "四边形都有4条边",
+          "四边形都有3条边",
+          "四边形都是正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出不是四边形的图形",
+        "options": [
+          {
+            "id": "g1-0",
+            "label": "三角形"
+          },
+          {
+            "id": "g1-1",
+            "label": "正方形"
+          },
+          {
+            "id": "g1-2",
+            "label": "平行四边形"
+          },
+          {
+            "id": "g1-3",
+            "label": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1-0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三角形"
+          },
+          {
+            "id": "l2",
+            "text": "四边形"
+          },
+          {
+            "id": "l3",
+            "text": "圆形"
+          },
+          {
+            "id": "l4",
+            "text": "未封闭折线"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "没有直边组成的角"
+          },
+          {
+            "id": "r2",
+            "text": "不是封闭图形"
+          },
+          {
+            "id": "r3",
+            "text": "3条边"
+          },
+          {
+            "id": "r4",
+            "text": "4条边"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方形、正方形和平行四边形都有 ",
+          null,
+          " 条边，都是 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "3",
+          "三角形",
+          "四边形",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "四边形"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“234 + 256 = 480”错在哪里？",
+        "options": [
+          "十位忘记加进位的1",
+          "个位忘记进位",
+          "百位忘记对齐",
+          "不该写加号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“296 + 135 = 449”错在哪里？",
+        "options": [
+          "个位算错",
+          "十位进位后计算错",
+          "百位不应相加",
+          "答案应小于296"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“515 - 49 = 474”错在哪里？",
+        "options": [
+          "百位退位错",
+          "不应该退位",
+          "个位退位后十位忘记减1",
+          "结果应大于515"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“900 - 632 = 368”错在哪里？",
+        "options": [
+          "个位算错",
+          "数位没有对齐",
+          "减号应改加号",
+          "连续退位处理错误"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "改正：234 + 256 = ?"
+      },
+      "answer": {
+        "value": 490,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "改正：296 + 135 = ?"
+      },
+      "answer": {
+        "value": 431,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "改正：515 - 49 = ?"
+      },
+      "answer": {
+        "value": 466,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "改正：900 - 632 = ?"
+      },
+      "answer": {
+        "value": 268,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "234 + 256",
+        "right": "480"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "515 - 49",
+        "right": "474"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "减少计算错误的好方法是？",
+        "options": [
+          "计算后验算",
+          "不写竖式",
+          "只看答案末位",
+          "跳过进退位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "竖式抄数时最应注意什么？",
+        "options": [
+          "字写得越大越好",
+          "相同数位对齐且不抄错数",
+          "先写答案",
+          "不用写运算符号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

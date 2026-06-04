@@ -1,0 +1,181 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "394 - 244 = ?"
+      },
+      "answer": {
+        "value": 150,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "453 - 42 = ?"
+      },
+      "answer": {
+        "value": 411,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "166 - 45 = ?"
+      },
+      "answer": {
+        "value": 121,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "275 - 263 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "786 - 154 = ?"
+      },
+      "answer": {
+        "value": 632,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "968 - 327 = ?"
+      },
+      "answer": {
+        "value": 641,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "394 - 244",
+        "right": "160"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "786 - 154",
+        "right": "630"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 394 - 244 分步计算：394 - 200 = ___，再减 40 = ___，再减 4 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "第二步"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          194,
+          154,
+          150
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 453 - 42 分步计算：453 - 40 = ___，再减 2 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          413,
+          411
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 968 - 327 时，百位先算什么？",
+        "options": [
+          "6-2",
+          "8-7",
+          "96-32",
+          "9-3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "今年有435棵大树，去年有314棵，今年比去年多多少棵？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "435-314"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

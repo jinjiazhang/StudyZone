@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "99 + 86 = ?"
+      },
+      "answer": {
+        "value": 185,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "367 + 254 = ?"
+      },
+      "answer": {
+        "value": 621,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "286 + 135 = ?"
+      },
+      "answer": {
+        "value": 421,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "458 + 376 = ?"
+      },
+      "answer": {
+        "value": 834,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "579 + 248 = ?"
+      },
+      "answer": {
+        "value": 827,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "648 + 275 = ?"
+      },
+      "answer": {
+        "value": 923,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 367 + 254：个位和、十位和、最后结果分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "十位和（含进位）"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          11,
+          12,
+          621
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 99 + 86：个位 9+6=___，十位 9+8+1=___，结果___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "十位和"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          18,
+          185
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "加法竖式中，哪一位相加满十，就要怎样做？",
+        "options": [
+          "向前一位进1",
+          "向后一位退1",
+          "把10直接写下",
+          "不处理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "367 + 254 的十位计算是？",
+        "options": [
+          "6+5",
+          "6+5+1",
+          "3+2+1",
+          "7+4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "367 + 254",
+        "right": "620"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "579 + 248",
+        "right": "830"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

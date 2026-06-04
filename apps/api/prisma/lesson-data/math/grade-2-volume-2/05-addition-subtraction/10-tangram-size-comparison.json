@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板中1号和2号有什么关系？",
+        "options": [
+          "形状相同但大小不同",
+          "大小相同但形状不同",
+          "完全无关",
+          "形状、大小相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板中4号和6号有什么关系？",
+        "options": [
+          "一个是圆形",
+          "大小不同",
+          "形状、大小相同",
+          "只有颜色相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材图①中的3号和图②中的3号，哪个画得对？",
+        "options": [
+          "都不对",
+          "图②",
+          "图①",
+          "都对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么图①中的3号画得不对？",
+        "options": [
+          "大小不对",
+          "颜色不对",
+          "编号不对",
+          "纸张不对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图③和图④中的6号都是什么图形？",
+        "options": [
+          "正方形",
+          "平行四边形",
+          "圆形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一块七巧板转动后，什么不变？",
+        "options": [
+          "位置",
+          "与相邻板的关系",
+          "形状和大小",
+          "方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较两块板是否相同，最好同时比较什么？",
+        "options": [
+          "方向和位置",
+          "形状和大小",
+          "颜色和页码",
+          "编号和纸张"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出判断同一块板的可靠依据",
+        "options": [
+          {
+            "id": "g9-0",
+            "label": "颜色相同"
+          },
+          {
+            "id": "g9-1",
+            "label": "方向相同"
+          },
+          {
+            "id": "g9-2",
+            "label": "位置相同"
+          },
+          {
+            "id": "g9-3",
+            "label": "形状和大小相同"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g9-3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1号和2号"
+          },
+          {
+            "id": "l2",
+            "text": "4号和6号"
+          },
+          {
+            "id": "l3",
+            "text": "3号"
+          },
+          {
+            "id": "l4",
+            "text": "5号"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "同样大的小三角形"
+          },
+          {
+            "id": "r2",
+            "text": "平行四边形"
+          },
+          {
+            "id": "r3",
+            "text": "正方形"
+          },
+          {
+            "id": "r4",
+            "text": "同样大的大三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "同一块七巧板转动后，方向可能改变，但 ",
+          null,
+          " 和 ",
+          null,
+          " 不变。"
+        ],
+        "tokens": [
+          "形状",
+          "邻居",
+          "大小",
+          "位置"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "形状",
+          "大小"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

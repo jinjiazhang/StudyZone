@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中用两块怎样的三角形可以拼成一个正方形？",
+        "options": [
+          "两块合适且同样大的三角形",
+          "任意两块圆形",
+          "一块三角形",
+          "两块不同大小的圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用两块三角形拼正方形时，通常要把哪条边对在一起？",
+        "options": [
+          "任意一个点",
+          "两条不相接的边",
+          "圆弧",
+          "合适的斜边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼好后怎样判断是正方形？",
+        "options": [
+          "只数内部线",
+          "看编号",
+          "看外框是否方方正正",
+          "只看颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼图时板块之间应怎样？",
+        "options": [
+          "只接一个点",
+          "边贴边且不重叠",
+          "全部重叠",
+          "留很大空隙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样两块三角形能不能拼出不同图形？",
+        "options": [
+          "能",
+          "不能",
+          "只能拼圆",
+          "只能拼线段"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼图时改变板块方向，但不剪板块，什么不变？",
+        "options": [
+          "外框形状",
+          "板块位置",
+          "相邻关系",
+          "每块板的形状和大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼正方形失败时，先尝试什么？",
+        "options": [
+          "丢掉板块",
+          "把边画弯",
+          "转动或翻换板块位置",
+          "改变板块大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种拼法最可能得到正方形？",
+        "options": [
+          {
+            "id": "g12-0",
+            "label": "两块合适三角形沿斜边贴合"
+          },
+          {
+            "id": "g12-1",
+            "label": "两块分开放"
+          },
+          {
+            "id": "g12-2",
+            "label": "三块全部重叠"
+          },
+          {
+            "id": "g12-3",
+            "label": "一块圆形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g12-0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "两块三角形沿合适边贴合"
+          },
+          {
+            "id": "l2",
+            "text": "板块重叠"
+          },
+          {
+            "id": "l3",
+            "text": "板块间留空隙"
+          },
+          {
+            "id": "l4",
+            "text": "转动板块"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "拼法不合要求"
+          },
+          {
+            "id": "r2",
+            "text": "外框不完整"
+          },
+          {
+            "id": "r3",
+            "text": "可尝试新拼法"
+          },
+          {
+            "id": "r4",
+            "text": "可拼正方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "拼正方形时，板块要边贴边，不能 ",
+          null,
+          "，拼好后检查外框是否 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "重叠",
+          "变色",
+          "编号",
+          "方方正正"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "重叠",
+          "方方正正"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“斜着的四边形一定是平行四边形。”这句话怎样？",
+        "options": [
+          "一定正确",
+          "只看颜色即可",
+          "四边形都不是平行四边形",
+          "不一定，要观察完整形状"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拉动长方形后，小棒长度变了。”这句话怎样？",
+        "options": [
+          "只有红棒变长",
+          "无法观察",
+          "错误，长度不变",
+          "正确"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“七巧板中有长方形单块。”这句话怎样？",
+        "options": [
+          "教材没有七巧板",
+          "错误",
+          "正确",
+          "只有两块长方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两块板能直接拼成长方形。”按教材探索结果怎样？",
+        "options": [
+          "错误",
+          "正确",
+          "一定拼成两个",
+          "只能拼圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拼图只看内部线，不看外框。”这句话怎样？",
+        "options": [
+          "正确",
+          "只看颜色更好",
+          "外框没有用",
+          "错误，应看整体外框"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“同一块七巧板转动后，大小不变。”这句话怎样？",
+        "options": [
+          "一定变大",
+          "一定变小",
+          "正确",
+          "错误"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "综合完成拼图任务，合理顺序是什么？",
+        "options": [
+          "只看颜色、不检查",
+          "观察目标、选板、拼摆、检查外框",
+          "先剪板、再猜目标",
+          "全部重叠、结束"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出正确说法",
+        "options": [
+          {
+            "id": "g17-0",
+            "label": "平行四边形有3条边"
+          },
+          {
+            "id": "g17-1",
+            "label": "七巧板有5块"
+          },
+          {
+            "id": "g17-2",
+            "label": "拉动后小棒变长"
+          },
+          {
+            "id": "g17-3",
+            "label": "平行四边形是四边形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g17-3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "平行四边形"
+          },
+          {
+            "id": "l2",
+            "text": "拉动长方形"
+          },
+          {
+            "id": "l3",
+            "text": "七巧板"
+          },
+          {
+            "id": "l4",
+            "text": "五巧板"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "共有5块"
+          },
+          {
+            "id": "r2",
+            "text": "有4条边"
+          },
+          {
+            "id": "r3",
+            "text": "边长不变"
+          },
+          {
+            "id": "r4",
+            "text": "共有7块"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "完成拼图任务时，先观察目标，再选择板块并拼摆，最后检查整体 ",
+          null,
+          "，同时保证板块不重叠、无 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "颜色",
+          "编号",
+          "空隙",
+          "外框"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "外框",
+          "空隙"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

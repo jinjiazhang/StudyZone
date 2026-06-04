@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在教材方格图中描平行四边形，顶点应落在哪里？",
+        "options": [
+          "方格交点上",
+          "任意空白处",
+          "数字上",
+          "纸外面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在同一方格图中，可以描出几个不同的平行四边形？",
+        "options": [
+          "只能1个",
+          "一个也不能",
+          "必须正好10个",
+          "可以描出多个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "描图时怎样保证图形封闭？",
+        "options": [
+          "只画两个点",
+          "擦掉所有边",
+          "最后一条边连回起点",
+          "少画一条边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "方格中的平行四边形改变大小后，名称会改变吗？",
+        "options": [
+          "一定变三角形",
+          "不会",
+          "会变圆形",
+          "会变线段"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平行四边形换一个方向画，还是平行四边形吗？",
+        "options": [
+          "是",
+          "不是",
+          "只有横着才是",
+          "只有红色才是"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "检查方格图中的四边形时，先做什么？",
+        "options": [
+          "数颜色",
+          "量纸张",
+          "看页码",
+          "数边并看连接方式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材要求在方格图中描出几个平行四边形？",
+        "options": [
+          "5个",
+          "10个",
+          "2个",
+          "1个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出适合在方格中描平行四边形的方法",
+        "options": [
+          {
+            "id": "g4-0",
+            "label": "连接4个合适交点并封闭"
+          },
+          {
+            "id": "g4-1",
+            "label": "只画3条边"
+          },
+          {
+            "id": "g4-2",
+            "label": "画一个圆"
+          },
+          {
+            "id": "g4-3",
+            "label": "涂满整页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4-0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "顶点"
+          },
+          {
+            "id": "l2",
+            "text": "边"
+          },
+          {
+            "id": "l3",
+            "text": "最后一条边"
+          },
+          {
+            "id": "l4",
+            "text": "两个不同图形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "连回起点"
+          },
+          {
+            "id": "r2",
+            "text": "大小或方向可以不同"
+          },
+          {
+            "id": "r3",
+            "text": "可选方格交点"
+          },
+          {
+            "id": "r4",
+            "text": "连接相邻顶点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "在方格中描图，先选 ",
+          null,
+          "，再依次连边，最后让图形 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "交点",
+          "颜色",
+          "打开",
+          "封闭"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "交点",
+          "封闭"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

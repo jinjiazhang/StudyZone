@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从 245 出发，先向右跳 50，再向右跳 2，依次到达哪里？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一站"
+          },
+          {
+            "id": "b2",
+            "label": "终点"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          295,
+          297
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从 394 出发，先向左跳 200，再向左跳 40，再向左跳 4，依次到达哪里？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一站"
+          },
+          {
+            "id": "b2",
+            "label": "第二站"
+          },
+          {
+            "id": "b3",
+            "label": "终点"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          194,
+          154,
+          150
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 662 向右跳 20，再向右跳 7，终点是？"
+      },
+      "answer": {
+        "value": 689,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 453 向左跳 40，再向左跳 2，终点是？"
+      },
+      "answer": {
+        "value": 411,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 720 向左跳 300，再向左跳 8，终点是？"
+      },
+      "answer": {
+        "value": 412,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从 306 向右跳 400，再向右跳 31，终点是？"
+      },
+      "answer": {
+        "value": 737,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "245 + 52",
+        "right": "245 + 50 + 2"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "394 - 244",
+        "right": "394 - 200 - 40 - 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在数线上表示“加 60”，应该怎样跳？",
+        "options": [
+          "向右跳60",
+          "向左跳60",
+          "先回到0",
+          "方向不确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在数线上表示“减 203”，可以怎样分步跳？",
+        "options": [
+          "向右跳200再跳3",
+          "向左跳200再跳3",
+          "向左跳20再跳3",
+          "只向左跳203个百"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用分步方法表示 326 + 54。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "326+50+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用分步方法表示 675 - 132。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "675-100-30-2"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

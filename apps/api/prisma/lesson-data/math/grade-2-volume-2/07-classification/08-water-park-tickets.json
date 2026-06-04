@@ -1,0 +1,159 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "购买水上乐园门票时，最需要按什么分类？",
+        "options": [
+          "衣服颜色",
+          "成人和儿童",
+          "发型",
+          "站的位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "两家共有成人4人、儿童4人。填写购票人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "成人票人数"
+          },
+          {
+            "id": "b2",
+            "label": "儿童票人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "成人4人、儿童4人，一共有多少人？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "成人票35元，4张成人票一共多少元？"
+      },
+      "answer": {
+        "value": 140,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "儿童票15元，4张儿童票一共多少元？"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4张成人票和4张儿童票一共多少元？"
+      },
+      "answer": {
+        "value": 200,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "购票时为什么要按成人和儿童分类？",
+        "options": [
+          "衣服不同",
+          "身高一定相同",
+          "人数必须相同",
+          "票价不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "成人票比儿童票贵多少元？",
+        "columns": [
+          "票种",
+          "价格"
+        ],
+        "rows": [
+          {
+            "票种": "成人票",
+            "价格": 35
+          },
+          {
+            "票种": "儿童票",
+            "价格": 15
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果又来1名儿童，需要增加哪种票？",
+        "options": [
+          "儿童票",
+          "成人票",
+          "两种票都要",
+          "不用买票"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "原有儿童4人，又来1名儿童，现在儿童有几人？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

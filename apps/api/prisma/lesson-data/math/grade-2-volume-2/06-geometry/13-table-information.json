@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "鱼菜共生表中，第一批白菜和生菜一共多少棵？",
+        "columns": [
+          "品种",
+          "第一批",
+          "第二批"
+        ],
+        "rows": [
+          {
+            "品种": "白菜",
+            "第一批": 400,
+            "第二批": 460
+          },
+          {
+            "品种": "生菜",
+            "第一批": 300,
+            "第二批": 500
+          }
+        ]
+      },
+      "answer": {
+        "value": 700,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "鱼菜共生表中，第二批草鱼比第一批多多少条？",
+        "columns": [
+          "品种",
+          "第一批",
+          "第二批"
+        ],
+        "rows": [
+          {
+            "品种": "草鱼",
+            "第一批": 200,
+            "第二批": 340
+          },
+          {
+            "品种": "泥鳅",
+            "第一批": 130,
+            "第二批": 100
+          }
+        ]
+      },
+      "answer": {
+        "value": 140,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "保护野生哺乳动物表中，1989年一、二级保护动物共有多少种？",
+        "columns": [
+          "保护级别",
+          "1989年",
+          "2021年"
+        ],
+        "rows": [
+          {
+            "保护级别": "一级",
+            "1989年": 72,
+            "2021年": 99
+          },
+          {
+            "保护级别": "二级",
+            "1989年": 90,
+            "2021年": 86
+          }
+        ]
+      },
+      "answer": {
+        "value": 162,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "保护野生哺乳动物表中，2021年一、二级保护动物共有多少种？",
+        "columns": [
+          "保护级别",
+          "1989年",
+          "2021年"
+        ],
+        "rows": [
+          {
+            "保护级别": "一级",
+            "1989年": 72,
+            "2021年": 99
+          },
+          {
+            "保护级别": "二级",
+            "1989年": 90,
+            "2021年": 86
+          }
+        ]
+      },
+      "answer": {
+        "value": 185,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "植树表中，今年一共植树多少棵？",
+        "columns": [
+          "树种",
+          "去年",
+          "今年"
+        ],
+        "rows": [
+          {
+            "树种": "松树",
+            "去年": 112,
+            "今年": 223
+          },
+          {
+            "树种": "大树",
+            "去年": 314,
+            "今年": 435
+          }
+        ]
+      },
+      "answer": {
+        "value": 658,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "植树表中，今年比去年多种多少棵松树？",
+        "columns": [
+          "树种",
+          "去年",
+          "今年"
+        ],
+        "rows": [
+          {
+            "树种": "松树",
+            "去年": 112,
+            "今年": 223
+          },
+          {
+            "树种": "大树",
+            "去年": 314,
+            "今年": 435
+          }
+        ]
+      },
+      "answer": {
+        "value": 111,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "根据表格，求第二批白菜和生菜一共多少棵，列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "460+500",
+          "500+460"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "根据表格，求2021年一级保护动物比1989年增加多少种，列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "99-72"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "340 - 200 = ?"
+      },
+      "answer": {
+        "value": 140,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "435 - 314 = ?"
+      },
+      "answer": {
+        "value": 121,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "99 + 86",
+        "right": "72 + 90"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "223 + 435",
+        "right": "112 + 314"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

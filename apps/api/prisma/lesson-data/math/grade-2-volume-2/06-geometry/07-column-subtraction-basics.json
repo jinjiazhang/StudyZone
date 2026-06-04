@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "526 - 410 = ?"
+      },
+      "answer": {
+        "value": 116,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "875 - 243 = ?"
+      },
+      "answer": {
+        "value": 632,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "764 - 321 = ?"
+      },
+      "answer": {
+        "value": 443,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "990 - 650 = ?"
+      },
+      "answer": {
+        "value": 340,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "638 - 217 = ?"
+      },
+      "answer": {
+        "value": 421,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "549 - 128 = ?"
+      },
+      "answer": {
+        "value": 421,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "竖式计算 875 - 243：个位、十位、百位的差分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "百位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          3,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "竖式计算 764 - 321：个位、十位、百位的差分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "百位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          4,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用竖式计算减法时，首先要做到什么？",
+        "options": [
+          "从百位随便减",
+          "把减号写在右边",
+          "相同数位对齐",
+          "只看数字大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "875 - 243 的十位应算什么？",
+        "options": [
+          "8-2",
+          "5-3",
+          "87-24",
+          "7-4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "526 - 410",
+        "right": "120"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "990 - 650",
+        "right": "300"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

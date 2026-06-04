@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "245 + 52 = ?"
+      },
+      "answer": {
+        "value": 297,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31 + 158 = ?"
+      },
+      "answer": {
+        "value": 189,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "662 + 27 = ?"
+      },
+      "answer": {
+        "value": 689,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "423 + 165 = ?"
+      },
+      "answer": {
+        "value": 588,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "506 + 283 = ?"
+      },
+      "answer": {
+        "value": 789,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "240 + 359 = ?"
+      },
+      "answer": {
+        "value": 599,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "245 + 52",
+        "right": "300"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "423 + 165",
+        "right": "580"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 245 + 52 分步计算：245 + 50 = ___，再加 2 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          295,
+          297
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 31 + 158 分步计算：158 + 30 = ___，再加 1 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          188,
+          189
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "不进位加法 423 + 165 的个位先算什么？",
+        "options": [
+          "4+1",
+          "2+6",
+          "3+5",
+          "42+16"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "去年植树112棵，今年植树223棵，两年一共植树多少棵？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "112+223",
+          "223+112"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

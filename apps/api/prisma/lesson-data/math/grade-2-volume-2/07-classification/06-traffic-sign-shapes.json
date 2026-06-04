@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6个交通标志中，圆形3个、三角形2个、倒三角形1个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "圆形"
+          },
+          {
+            "id": "b2",
+            "label": "三角形"
+          },
+          {
+            "id": "b3",
+            "label": "倒三角形"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "圆形3个、三角形2个、倒三角形1个，一共有多少个标志？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分类，“限速60”标志应和哪类放一起？",
+        "options": [
+          "圆形标志",
+          "三角形标志",
+          "倒三角形标志",
+          "所有标志"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分类，“注意信号灯”标志属于？",
+        "options": [
+          "圆形标志",
+          "长方形标志",
+          "三角形标志",
+          "正方形标志"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分类，“让”标志属于？",
+        "options": [
+          "圆形标志",
+          "倒三角形标志",
+          "正方形标志",
+          "五边形标志"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪种形状的交通标志最多？",
+        "columns": [
+          "形状",
+          "数量"
+        ],
+        "rows": [
+          {
+            "形状": "圆形",
+            "数量": 3
+          },
+          {
+            "形状": "三角形",
+            "数量": 2
+          },
+          {
+            "形状": "倒三角形",
+            "数量": 1
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "圆形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "圆形交通标志比三角形交通标志多几个？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "三角形和倒三角形交通标志合起来有几个？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按形状分类时，需要关注交通标志的什么？",
+        "options": [
+          "文字意思",
+          "摆放位置",
+          "新旧程度",
+          "外轮廓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆形3个，非圆形3个。按是否为圆形分，两类数量关系是？",
+        "options": [
+          "一样多",
+          "圆形多",
+          "非圆形多",
+          "不能比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

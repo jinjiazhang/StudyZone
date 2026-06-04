@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材怎样用3块板拼成长方形？",
+        "options": [
+          "只用1块",
+          "摆成不封闭图形",
+          "给拼好的正方形加1块合适板",
+          "把3块全部重叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给正方形加1块板时，应把新板放在哪里？",
+        "options": [
+          "只接一个点",
+          "外框一侧使边对齐",
+          "正方形中央重叠",
+          "远离正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用3块拼成长方形后，外框有几条边？",
+        "options": [
+          "4条",
+          "3条",
+          "5条",
+          "6条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼成长方形时，内部可以有斜线吗？",
+        "options": [
+          "不可以",
+          "有斜线就一定是三角形",
+          "有斜线就未封闭",
+          "可以"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断拼图结果，主要看内部线还是外框？",
+        "options": [
+          "只看颜色",
+          "只看编号",
+          "外框",
+          "只看内部线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "新加板块后外框凸出一角，不是长方形，应怎样调整？",
+        "options": [
+          "剪去凸出部分",
+          "转动或更换板块位置",
+          "继续不管",
+          "把板块重叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从2块拼成的正方形继续拼长方形，至少再加几块？",
+        "options": [
+          "1块",
+          "2块",
+          "3块",
+          "4块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种策略适合用3块拼长方形？",
+        "options": [
+          {
+            "id": "g14-0",
+            "label": "全部叠在一起"
+          },
+          {
+            "id": "g14-1",
+            "label": "只连一个点"
+          },
+          {
+            "id": "g14-2",
+            "label": "在正方形一侧加合适板块并对齐"
+          },
+          {
+            "id": "g14-3",
+            "label": "三块分开放"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g14-2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "先拼正方形"
+          },
+          {
+            "id": "l2",
+            "text": "再加1块"
+          },
+          {
+            "id": "l3",
+            "text": "边对齐"
+          },
+          {
+            "id": "l4",
+            "text": "检查外框"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "判断是否长方形"
+          },
+          {
+            "id": "r2",
+            "text": "建立整齐外框"
+          },
+          {
+            "id": "r3",
+            "text": "扩展成长方形"
+          },
+          {
+            "id": "r4",
+            "text": "避免外框凹凸"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "用3块拼长方形，可以先用2块拼成 ",
+          null,
+          "，再在一侧增加 ",
+          null,
+          " 块。"
+        ],
+        "tokens": [
+          "2",
+          "1",
+          "正方形",
+          "圆形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "正方形",
+          "1"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

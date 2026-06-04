@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一批同学按性别分和按生日日期分，哪句话正确？",
+        "options": [
+          "总人数会改变",
+          "分类标准不同，总人数不变",
+          "只能按性别分",
+          "只能按生日分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "10人按衣服颜色分：蓝色7人、绿色3人；按头饰分：星星6人、爱心4人。填写两次分类的总人数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "按衣服颜色"
+          },
+          {
+            "id": "b2",
+            "label": "按头饰"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          10
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给交通标志分类，除了按形状，还可以按什么分？",
+        "options": [
+          "摆放顺序",
+          "看到的先后",
+          "书页位置",
+          "表示的作用"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给鞋分类，除了按穿鞋人的年龄，还可以按什么分？",
+        "options": [
+          "鞋的种类",
+          "鞋柜位置",
+          "数鞋速度",
+          "照片大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给纽扣分类，教材先用了哪两个标准？",
+        "options": [
+          "颜色和价格",
+          "大小和材料",
+          "形状和扣眼数",
+          "新旧和厚薄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同一批12个图形按颜色分类，总数是多少？",
+        "columns": [
+          "颜色",
+          "数量"
+        ],
+        "rows": [
+          {
+            "颜色": "红色",
+            "数量": 5
+          },
+          {
+            "颜色": "蓝色",
+            "数量": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同一批12个图形按形状分类，圆形8个，方形有几个？",
+        "columns": [
+          "形状",
+          "数量"
+        ],
+        "rows": [
+          {
+            "形状": "圆形",
+            "数量": 8
+          },
+          {
+            "形状": "方形",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按不同标准分类，为什么结果可能不同？",
+        "options": [
+          "对象总数改变了",
+          "每个标准关注的特征不同",
+          "有些对象消失了",
+          "计数不用准确"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "鞋子"
+          },
+          {
+            "id": "l2",
+            "text": "交通标志"
+          },
+          {
+            "id": "l3",
+            "text": "纽扣"
+          },
+          {
+            "id": "l4",
+            "text": "同学"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "性别或出生日期"
+          },
+          {
+            "id": "r2",
+            "text": "年龄或种类"
+          },
+          {
+            "id": "r3",
+            "text": "形状或作用"
+          },
+          {
+            "id": "r4",
+            "text": "形状或扣眼数"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话最准确？",
+        "options": [
+          "分类后总数一定变少",
+          "分类只能分成两类",
+          "每次分类结果都相同",
+          "分类标准不同，类别和各类数量可能不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

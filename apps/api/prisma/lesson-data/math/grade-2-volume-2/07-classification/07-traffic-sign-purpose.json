@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“禁止鸣笛”和“禁止直行”可按作用分为哪一类？",
+        "options": [
+          "警告标志",
+          "指路标志",
+          "禁令标志",
+          "旅游标志"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“注意信号灯”和“注意儿童”可按作用分为哪一类？",
+        "options": [
+          "禁令标志",
+          "警告标志",
+          "收费标志",
+          "停车标志"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一个交通标志按形状和按作用分类，可能进入怎样的类别？",
+        "options": [
+          "一定同名类别",
+          "没有类别",
+          "总数不同",
+          "不同类别"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6个标志按作用分：禁令3个、警告2个、让行1个。填写数量。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "禁令"
+          },
+          {
+            "id": "b2",
+            "label": "警告"
+          },
+          {
+            "id": "b3",
+            "label": "让行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "禁令3个、警告2个、让行1个，一共有多少个标志？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "禁令标志比让行标志多几个？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪类标志最少？",
+        "columns": [
+          "作用",
+          "数量"
+        ],
+        "rows": [
+          {
+            "作用": "禁令",
+            "数量": 3
+          },
+          {
+            "作用": "警告",
+            "数量": 2
+          },
+          {
+            "作用": "让行",
+            "数量": 1
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "让行"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要了解每个标志提醒人们做什么，最适合按什么分类？",
+        "options": [
+          "作用",
+          "形状",
+          "大小",
+          "颜色深浅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "禁止鸣笛"
+          },
+          {
+            "id": "l2",
+            "text": "注意儿童"
+          },
+          {
+            "id": "l3",
+            "text": "让"
+          },
+          {
+            "id": "l4",
+            "text": "禁止直行"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "警告标志"
+          },
+          {
+            "id": "r2",
+            "text": "禁令：禁止鸣笛"
+          },
+          {
+            "id": "r3",
+            "text": "禁令：禁止直行"
+          },
+          {
+            "id": "r4",
+            "text": "让行标志"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按作用分类后，各类数量相加为什么仍是6？",
+        "options": [
+          "多了新的标志",
+          "少数不用统计",
+          "对象还是原来的6个标志",
+          "作用和形状相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

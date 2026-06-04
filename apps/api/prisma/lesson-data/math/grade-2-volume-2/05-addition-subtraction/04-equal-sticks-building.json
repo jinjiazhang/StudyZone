@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用4根小棒搭封闭图形，至少要让每根小棒怎样？",
+        "options": [
+          "彼此分开",
+          "首尾相接",
+          "全部重叠",
+          "只接一端"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两根长棒和两根短棒搭平行四边形，怎样摆较合适？",
+        "options": [
+          "两根长棒对着、两根短棒对着",
+          "长棒都放一边",
+          "短棒全部重叠",
+          "少用一根长棒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妙想搭不成平行四边形，教材给出的建议是什么？",
+        "options": [
+          "换成圆片",
+          "去掉一根小棒",
+          "把图形打开",
+          "让长度相等的边对着"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用3根小棒首尾相接，通常能搭成什么？",
+        "options": [
+          "圆形",
+          "五边形",
+          "三角形",
+          "四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用4根小棒搭出的图形没有封闭，它是四边形吗？",
+        "options": [
+          "一定是平行四边形",
+          "不是",
+          "是",
+          "一定是正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小棒长度不变，只改变摆放方向，什么会改变？",
+        "options": [
+          "图形的样子",
+          "小棒根数",
+          "每根小棒长度",
+          "小棒材料"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭完图形后，怎样检查是否搭对？",
+        "options": [
+          "只看颜色",
+          "只数桌子",
+          "马上拆掉",
+          "观察边是否首尾相接并符合目标形状"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪组小棒最可能搭成平行四边形？",
+        "options": [
+          {
+            "id": "g3-0",
+            "label": "2根小棒"
+          },
+          {
+            "id": "g3-1",
+            "label": "3根小棒"
+          },
+          {
+            "id": "g3-2",
+            "label": "2长2短且相等长度对放"
+          },
+          {
+            "id": "g3-3",
+            "label": "4根全部重叠"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3-2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3根首尾相接"
+          },
+          {
+            "id": "l2",
+            "text": "4根首尾相接"
+          },
+          {
+            "id": "l3",
+            "text": "相等长度边对放"
+          },
+          {
+            "id": "l4",
+            "text": "小棒没有相接"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "可搭四边形"
+          },
+          {
+            "id": "r2",
+            "text": "便于搭平行四边形"
+          },
+          {
+            "id": "r3",
+            "text": "图形未封闭"
+          },
+          {
+            "id": "r4",
+            "text": "可搭三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r2",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "搭封闭图形时，小棒要 ",
+          null,
+          "；搭平行四边形时，相等长度的边可 ",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "对着放",
+          "首尾相接",
+          "分开放",
+          "重叠"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "首尾相接",
+          "对着放"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

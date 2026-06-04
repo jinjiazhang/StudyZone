@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "367 + 254 = ?"
+      },
+      "answer": {
+        "value": 621,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "254 + 367 = ?"
+      },
+      "answer": {
+        "value": 621,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "458 + 376 = ?"
+      },
+      "answer": {
+        "value": 834,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "376 + 458 = ?"
+      },
+      "answer": {
+        "value": 834,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "286 + 135 = ?"
+      },
+      "answer": {
+        "value": 421,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "135 + 286 = ?"
+      },
+      "answer": {
+        "value": 421,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "367 + 254",
+        "right": "254 + 367"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "458 + 376",
+        "right": "376 + 458"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "验算加法 367 + 254，可以怎样做？",
+        "options": [
+          "交换两个加数再算",
+          "把和再加一次",
+          "只看个位",
+          "改成367-254"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 286 + 135 后，用 135 + 286 验算，依据是什么？",
+        "options": [
+          "被减数不变",
+          "加数交换，和不变",
+          "差不变",
+          "数位可以不对齐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "367 + 254 = ___，交换加数后 254 + 367 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "原算式"
+          },
+          {
+            "id": "b2",
+            "label": "验算"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          621,
+          621
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "458 + 376 = ___，交换加数后 376 + 458 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "原算式"
+          },
+          {
+            "id": "b2",
+            "label": "验算"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          834,
+          834
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
