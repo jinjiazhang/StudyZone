@@ -9,7 +9,7 @@ import { RewardsService } from '../rewards/rewards.service';
 describe('LearningService', () => {
   let prisma: MockPrisma;
   let events: Pick<EventEmitter2, 'emit'>;
-  let rewards: Pick<RewardsService, 'awardXpAndGemsWithClient'>;
+  let rewards: Pick<RewardsService, 'awardXpAndGemsWithClient' | 'syncHearts'>;
   let service: LearningService;
 
   beforeEach(() => {
@@ -17,7 +17,10 @@ describe('LearningService', () => {
     vi.setSystemTime(new Date('2026-05-26T10:00:00Z'));
     prisma = createPrismaMock();
     events = { emit: vi.fn() };
-    rewards = { awardXpAndGemsWithClient: vi.fn().mockResolvedValue(undefined) };
+    rewards = {
+      awardXpAndGemsWithClient: vi.fn().mockResolvedValue(undefined),
+      syncHearts: vi.fn().mockResolvedValue({ hearts: 5, maxHearts: 5 }),
+    };
     service = new LearningService(
       prisma as unknown as PrismaService,
       events as EventEmitter2,
@@ -140,7 +143,7 @@ describe('LearningService', () => {
   });
 
   it('rejects starting a lesson when the user is out of hearts', async () => {
-    prisma.userWallet.findUnique.mockResolvedValue({ hearts: 0 });
+    (rewards.syncHearts as ReturnType<typeof vi.fn>).mockResolvedValue({ hearts: 0, maxHearts: 5 });
 
     await expect(service.startLesson('user-1', 'lesson-1')).rejects.toMatchObject({
       response: expect.objectContaining({ code: 'out_of_hearts' }),

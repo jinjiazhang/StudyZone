@@ -1,15 +1,16 @@
 # systemd 服务管理
 
-> 生产环境使用 systemd 管理 `studyzone-api` 与 `studyzone-web` 两个常驻进程。
+> 生产环境使用 systemd 管理 `studyzone-api`、`studyzone-web`、`studyzone-worker` 三个常驻进程。
 
 ---
 
 ## 一、模板文件
 
-仓库保存了两个模板：
+仓库保存了三个模板：
 
 - [`deploy/studyzone-api.service.template`](../../deploy/studyzone-api.service.template)
 - [`deploy/studyzone-web.service.template`](../../deploy/studyzone-web.service.template)
+- [`deploy/studyzone-worker.service.template`](../../deploy/studyzone-worker.service.template)
 
 模板使用 `{{KEY}}` 占位，由 [`scripts/deploy/install-systemd.mjs`](../../scripts/deploy/install-systemd.mjs) 渲染并写入 `/etc/systemd/system/`。
 
@@ -34,7 +35,7 @@ sudo node scripts/deploy/install-systemd.mjs --restart
 
 ```
 systemctl daemon-reload
-systemctl enable studyzone-api studyzone-web
+systemctl enable studyzone-api studyzone-web studyzone-worker
 ```
 
 ---
@@ -91,22 +92,25 @@ WantedBy=multi-user.target
 
 ```bash
 # 启停
-sudo systemctl start    studyzone-api studyzone-web
-sudo systemctl stop     studyzone-api studyzone-web
-sudo systemctl restart  studyzone-api studyzone-web
-sudo systemctl reload-or-restart  studyzone-api studyzone-web
+sudo systemctl start    studyzone-api studyzone-web studyzone-worker
+sudo systemctl stop     studyzone-api studyzone-web studyzone-worker
+sudo systemctl restart  studyzone-api studyzone-web studyzone-worker
+sudo systemctl reload-or-restart  studyzone-api studyzone-web studyzone-worker
 
 # 状态
 systemctl status studyzone-api
 systemctl status studyzone-web
+systemctl status studyzone-worker
 
 # 日志（systemd journal）
 journalctl -u studyzone-api -f
+journalctl -u studyzone-worker -f
 journalctl -u studyzone-api --since "1 hour ago"
 
 # 文件日志（项目自带）
 tail -f /opt/studyzone/.studyzone-prod/logs/api.log
 tail -f /opt/studyzone/.studyzone-prod/logs/web.log
+tail -f /opt/studyzone/.studyzone-prod/logs/worker.log
 ```
 
 ---
@@ -120,24 +124,11 @@ tail -f /opt/studyzone/.studyzone-prod/logs/web.log
 
 ---
 
-## 六、添加 Worker 服务（可选）
+## 六、Worker 服务
 
-仓库目前没有为 worker 提供模板，但很简单。复制 `studyzone-api.service.template` 改两处：
+Worker 已随 API / Web 一同由 [`deploy/studyzone-worker.service.template`](../../deploy/studyzone-worker.service.template) 提供并被 `install-systemd.mjs` 自动安装 / enable，无需手动建文件。它跑 BullMQ 重复任务（联赛结算、心数恢复），依赖 Redis 与 Postgres。详见 [`apps/worker`](../apps/worker.md)。
 
-```ini
-Description=StudyZone Worker
-ExecStart={{PNPM_BIN}} --filter @studyzone/worker start
-WorkingDirectory={{ROOT_DIR}}/apps/worker
-StandardOutput=append:{{ROOT_DIR}}/.studyzone-prod/logs/worker.log
-StandardError=append:{{ROOT_DIR}}/.studyzone-prod/logs/worker.log
-```
-
-放到 `/etc/systemd/system/studyzone-worker.service`，然后：
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now studyzone-worker
-```
+> 调度器只应运行单实例（重复任务用稳定 jobId 去重）。
 
 ---
 

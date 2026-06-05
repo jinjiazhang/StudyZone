@@ -20,9 +20,9 @@ pnpm --filter @studyzone/worker start    # 生产模式（直接 tsx）
 ## 二、职责
 
 - **联赛结算（League settle）**：每周一 UTC `00:05`（cron `5 0 * * 1`，可用 `LEAGUE_SETTLE_CRON` 覆盖）扫描 `LeagueGroup.status='active' && weekStart < now()`，按规则升 / 留 / 降，写 `LeagueHistory`，把 group 标记 `settled`，发奖励。
+- **心数恢复（Hearts recover）**：周期任务（cron `HEART_RECOVERY_CRON`，默认 `*/5 * * * *`）调用 `RewardsService.recoverAllHearts()`，对 `hearts < maxHearts` 的钱包按 `recoverHearts` 纯函数补算（每 `HEART_RECOVERY_MINUTES` 分钟回 1 颗，默认 3）。API 侧读取时也会惰性补算（`syncHearts`），cron 仅兜底防止久挂。
 - **SRS 调度（计划）**：每天扫 `SrsCard` 中 `dueAt <= now`，推送复习提醒，并在用户开关时优先抽这些题。
 - **推送（计划）**：发送 APNs / FCM 通知。
-- **心数恢复（计划）**：每 X 分钟回 1 颗，直到 `maxHearts`。
 
 ---
 
@@ -30,54 +30,49 @@ pnpm --filter @studyzone/worker start    # 生产模式（直接 tsx）
 
 ```
 apps/worker/src/
-├─ main.ts              # 入口，启动 BullMQ workers
+├─ main.ts                 # 入口，注册并消费 BullMQ 重复任务
 ├─ worker.module.ts
-└─ settle-now.ts        # 单次执行：手动触发联赛结算（用于回滚 / 调试）
+├─ settle-now.ts           # 单次执行：手动触发联赛结算（回滚 / 调试）
+└─ recover-hearts-now.ts   # 单次执行：手动触发一次心数恢复扫描
 ```
+
+> **不是系统 crontab**：`main.ts` 里的 cron 表达式是 BullMQ `repeat.pattern`，由这个常驻进程内部按 Redis 中的 schedule 触发。进程必须长期运行，且依赖 Redis（`REDIS_URL`）与 Postgres（`DATABASE_URL`）。
 
 ---
 
 ## 四、常用命令
 
 ```bash
-# 启动后台 worker
+# 本地：worker 已纳入一键启动（随 api/web/admin + docker 一起后台运行）
+pnpm services:start
+# 单独前台启动（热重载）
+pnpm dev:worker
+# 单独后台普通启动
 pnpm --filter @studyzone/worker start
 
-# 立刻结算一次联赛（不等定时）
-pnpm --filter @studyzone/worker settle:now
+# 一次性手动触发（不等定时）
+pnpm --filter @studyzone/worker settle:now            # 立刻结算上周联赛
+pnpm --filter @studyzone/worker recover-hearts:now    # 立刻跑一次心数恢复
 ```
+
+> 心数日常无需手动触发：API 读取（`GET /me` / `startLesson`）会惰性补算，worker 周期任务兜底。
 
 ---
 
 ## 五、生产部署
 
-仓库目前未为 worker 提供 systemd 模板，但可参考 API 模板自定义：
-
-```ini
-# /etc/systemd/system/studyzone-worker.service
-[Unit]
-Description=StudyZone Worker
-After=network.target
-
-[Service]
-Type=simple
-WorkingDirectory=/opt/studyzone/apps/worker
-EnvironmentFile=/opt/studyzone/.env
-ExecStart=/usr/local/bin/pnpm --filter @studyzone/worker start
-Restart=always
-RestartSec=5
-StandardOutput=append:/opt/studyzone/.studyzone-prod/logs/worker.log
-StandardError=append:/opt/studyzone/.studyzone-prod/logs/worker.log
-
-[Install]
-WantedBy=multi-user.target
-```
+systemd 模板已随仓库提供：[`deploy/studyzone-worker.service.template`](../../deploy/studyzone-worker.service.template)，与 api / web 一同由 `pnpm deploy:install-systemd` 渲染并 `enable`：
 
 ```bash
-sudo systemctl daemon-reload
+pnpm deploy:install-systemd            # 写入 /etc/systemd/system 并 enable 三个服务
+pnpm deploy:install-systemd --restart  # 顺带重启
+
+# 或手动管理
 sudo systemctl enable --now studyzone-worker
 journalctl -u studyzone-worker -f
 ```
+
+> ⚠️ **调度器只跑单实例**：重复任务用稳定 `jobId`（`settle-weekly` / `recover-hearts`）去重，但仍应只运行一个 worker 实例承担调度。将来要扩并发，应拆为「1 个调度器 + N 个纯 processor」。
 
 ---
 

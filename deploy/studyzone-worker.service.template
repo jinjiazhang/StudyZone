@@ -1,0 +1,17 @@
+[Unit]
+Description=StudyZone Worker
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+WorkingDirectory={{ROOT_DIR}}/apps/worker
+EnvironmentFile={{ROOT_DIR}}/.env
+ExecStart={{PNPM_BIN}} --filter @studyzone/worker start
+Restart=always
+RestartSec=5
+StandardOutput=append:{{ROOT_DIR}}/.studyzone-prod/logs/worker.log
+StandardError=append:{{ROOT_DIR}}/.studyzone-prod/logs/worker.log
+
+[Install]
+WantedBy=multi-user.target

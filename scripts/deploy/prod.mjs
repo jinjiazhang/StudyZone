@@ -23,6 +23,6 @@ run('pnpm', ['build']);
 run('node', ['scripts/deploy/publish-admin.mjs']);
 
 if (!process.argv.includes('--skip-restart')) {
-  run('systemctl', ['restart', 'studyzone-api', 'studyzone-web']);
+  run('systemctl', ['restart', 'studyzone-api', 'studyzone-web', 'studyzone-worker']);
   run('systemctl', ['reload', 'nginx']);
 }

@@ -55,6 +55,8 @@ export interface UserProfile extends UserPublic {
   gems: number;
   hearts: number;
   maxHearts: number;
+  /** ISO time the next heart regenerates, or null when at max. */
+  nextHeartAt: string | null;
   currentStreak: number;
   longestStreak: number;
   leagueTier: LeagueTier | null;

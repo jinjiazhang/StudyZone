@@ -25,7 +25,9 @@
   studyzone-api   /var/www/admin     studyzone-web
   (systemd)       (Vite build 产物)  (systemd, Next.js)
        │
-       └─────► PostgreSQL · Redis · S3/OSS
+       │     studyzone-worker (systemd, BullMQ 重复任务：联赛结算 / 心数恢复)
+       │               │
+       └───────────────┴─► PostgreSQL · Redis · S3/OSS
 ```
 
 ---
@@ -112,7 +114,7 @@ pnpm deploy:prod
 2. `pnpm db:import`（首次运行；如果已经导过想跳过：加 `--skip-db`）
 3. `pnpm build`（API + Web + Admin 全量）
 4. `node scripts/deploy/publish-admin.mjs`（把 Admin 静态文件复制到 `ADMIN_DIST_DIR`，默认 `/var/www/studyzone-admin`）
-5. （首次部署）`systemctl restart studyzone-api studyzone-web && systemctl reload nginx` —— 还没装服务时会失败，可加 `--skip-restart` 跳过。
+5. （首次部署）`systemctl restart studyzone-api studyzone-web studyzone-worker && systemctl reload nginx` —— 还没装服务时会失败，可加 `--skip-restart` 跳过。
 
 > 推荐**首次**这样跑：`pnpm deploy:prod --skip-restart`，把服务装好后再正式启动。
 
@@ -127,14 +129,15 @@ sudo node scripts/deploy/install-systemd.mjs --restart
 ```
 /etc/systemd/system/studyzone-api.service
 /etc/systemd/system/studyzone-web.service
+/etc/systemd/system/studyzone-worker.service
 ```
 
 并执行：
 
 ```
 systemctl daemon-reload
-systemctl enable studyzone-api studyzone-web
-systemctl restart studyzone-api studyzone-web   # --restart 才执行
+systemctl enable studyzone-api studyzone-web studyzone-worker
+systemctl restart studyzone-api studyzone-web studyzone-worker   # --restart 才执行
 ```
 
 可选参数：

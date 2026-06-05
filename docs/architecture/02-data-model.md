@@ -124,7 +124,7 @@
 ## 五、Gamification
 
 ### `UserWallet`
-单行钱包：宝石 / 心数 / 心数上限 / 连胜冻结 / 总 XP。`xpTotal` 是冗余字段，便于排行榜直接 ORDER BY；写入由 `RewardsService` 统一负责，不允许其他模块直接修改。
+单行钱包：宝石 / 心数 / 心数上限 / 连胜冻结 / 总 XP。`xpTotal` 是冗余字段，便于排行榜直接 ORDER BY；xp/gems 写入由 `RewardsService` 统一负责。`heartsUpdatedAt` 是心数定时恢复的锚点：心数从满变少时（spend）刷新，恢复时按 `recoverHearts` 推进，详见 [`04-learning-engine.md`](./04-learning-engine.md) §六。
 
 ### `StreakRecord`
 - `lastActiveLocalDate` 是 `YYYY-MM-DD` 字符串，按用户时区切日，和服务器 UTC 解耦。

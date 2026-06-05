@@ -99,7 +99,7 @@ pnpm services:stop --keep-docker
 |---|---|
 | `pnpm dev` | 并行启动所有 app 的 dev 模式（前台） |
 | `pnpm dev:api` / `dev:web` / `dev:mobile` / `dev:admin` | 单独启动某个 app |
-| `pnpm services:start` | 后台启动 docker + api + web + admin（推荐） |
+| `pnpm services:start` | 后台启动 docker + api + web + admin + worker（推荐） |
 | `pnpm services:stop` | 关闭后台服务 |
 | `pnpm build` | 全量构建 |
 | `pnpm lint` / `pnpm typecheck` / `pnpm test` | 全量校验 |

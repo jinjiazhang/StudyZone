@@ -52,6 +52,14 @@
 | `API_HOST` | 监听地址（生产请用 `127.0.0.1`，由 Nginx 反代） | `0.0.0.0` |
 | `API_PUBLIC_URL` | 公网可访问 URL（用于回调 / 邮件链接） | `http://localhost:4000` |
 
+### Worker / 游戏化定时任务
+
+| 变量 | 说明 | 默认值 |
+|---|---|---|
+| `LEAGUE_SETTLE_CRON` | 联赛结算 cron（UTC） | `5 0 * * 1` |
+| `HEART_RECOVERY_CRON` | 心数恢复扫描 cron | `*/5 * * * *` |
+| `HEART_RECOVERY_MINUTES` | 每恢复 1 颗心的分钟数（API + Worker 共用） | `3` |
+
 ### 客户端公开变量
 
 | 变量 | 应用 | 说明 |

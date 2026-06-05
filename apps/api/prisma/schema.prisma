@@ -270,14 +270,16 @@ model SrsCard {
 // =============================================================================
 
 model UserWallet {
-  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId        String   @id
-  gems          Int      @default(50)
-  hearts        Int      @default(5)
-  maxHearts     Int      @default(5)
-  streakFreezes Int      @default(0)
-  xpTotal       Int      @default(0)
-  updatedAt     DateTime @updatedAt
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId          String   @id
+  gems            Int      @default(50)
+  hearts          Int      @default(5)
+  maxHearts       Int      @default(5)
+  // Anchor for timed heart regeneration; advanced when hearts recover or spend.
+  heartsUpdatedAt DateTime @default(now())
+  streakFreezes   Int      @default(0)
+  xpTotal         Int      @default(0)
+  updatedAt       DateTime @updatedAt
 }
 
 model StreakRecord {

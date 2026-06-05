@@ -24,7 +24,11 @@ const values = {
 
 mkdirSync(resolve(rootDir, '.studyzone-prod/logs'), { recursive: true });
 
-for (const name of ['studyzone-api.service', 'studyzone-web.service']) {
+for (const name of [
+  'studyzone-api.service',
+  'studyzone-web.service',
+  'studyzone-worker.service',
+]) {
   const templatePath = resolve(rootDir, 'deploy', `${name}.template`);
   const outputPath = resolve(systemdDir, name);
   const rendered = renderTemplate(readFileSync(templatePath, 'utf8'), values);
@@ -33,8 +37,8 @@ for (const name of ['studyzone-api.service', 'studyzone-web.service']) {
 }
 
 run('systemctl', ['daemon-reload']);
-run('systemctl', ['enable', 'studyzone-api', 'studyzone-web']);
+run('systemctl', ['enable', 'studyzone-api', 'studyzone-web', 'studyzone-worker']);
 
 if (process.argv.includes('--restart')) {
-  run('systemctl', ['restart', 'studyzone-api', 'studyzone-web']);
+  run('systemctl', ['restart', 'studyzone-api', 'studyzone-web', 'studyzone-worker']);
 }

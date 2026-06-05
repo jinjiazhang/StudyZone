@@ -14,6 +14,7 @@ const services = [
   { name: 'api', script: 'dev:api', url: 'http://localhost:4000' },
   { name: 'web', script: 'dev:web', url: 'http://localhost:3000' },
   { name: 'admin', script: 'dev:admin', url: 'http://localhost:3001' },
+  { name: 'worker', script: 'dev:worker', url: 'BullMQ scheduler (no HTTP port)' },
 ];
 
 const args = new Set(process.argv.slice(2));
@@ -23,9 +24,10 @@ if (args.has('--help') || args.has('-h')) {
 
 Starts local StudyZone services in the background:
   - Docker infra: Postgres, Redis, MinIO
-  - API:   http://localhost:4000
-  - Web:   http://localhost:3000
-  - Admin: http://localhost:3001
+  - API:    http://localhost:4000
+  - Web:    http://localhost:3000
+  - Admin:  http://localhost:3001
+  - Worker: BullMQ scheduler (league settle + heart recovery)
 
 Logs and process ids are written to .studyzone-dev/.
 Stop them with: pnpm services:stop`);

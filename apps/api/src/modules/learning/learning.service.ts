@@ -33,8 +33,8 @@ export class LearningService {
   ) {}
 
   async startLesson(userId: string, lessonId: string) {
-    // Hearts gate: out of hearts → can't start a new lesson until they recover.
-    const wallet = await this.prisma.userWallet.findUnique({ where: { userId } });
+    // Hearts gate: apply any pending regeneration first, then block if still 0.
+    const wallet = await this.rewards.syncHearts(userId);
     if (wallet && wallet.hearts <= 0) {
       throw new BadRequestException({
         code: 'out_of_hearts',
@@ -107,12 +107,18 @@ export class LearningService {
 
     if (!result.correct && session.user.wallet) {
       heartLost = true;
-      heartsRemaining = Math.max(0, session.user.wallet.hearts - 1);
+      const wallet = session.user.wallet;
+      // Start the regeneration clock the moment we drop below full.
+      const wasFull = wallet.hearts >= wallet.maxHearts;
+      heartsRemaining = Math.max(0, wallet.hearts - 1);
       // Hearts exhausted → lock & fail the lesson on this attempt.
       lessonFailed = heartsRemaining === 0;
       await this.prisma.userWallet.update({
         where: { userId },
-        data: { hearts: heartsRemaining },
+        data: {
+          hearts: heartsRemaining,
+          ...(wasFull ? { heartsUpdatedAt: new Date() } : {}),
+        },
       });
     }
 
