@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
     borderColor: colors.greenDark,
     alignItems: 'center',
   },
-  buttonPressed: { borderBottomWidth: 2, transform: [{ translateY: 3 }] },
+  buttonPressed: { borderBottomWidth: 0, transform: [{ translateY: 5 }] },
   errorBox: {
     backgroundColor: '#FFF1F2',
     borderWidth: 2,

@@ -102,7 +102,7 @@ export const exerciseStyles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 8,
   },
-  submitBtnPressed: { borderBottomWidth: 2, transform: [{ translateY: 2 }] },
+  submitBtnPressed: { borderBottomWidth: 0, transform: [{ translateY: 4 }] },
   submitBtnDisabled: { opacity: 0.5 },
   submitBtnText: {
     fontFamily: fonts.heavy,

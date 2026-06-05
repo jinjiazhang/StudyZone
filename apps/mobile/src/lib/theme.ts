@@ -17,44 +17,45 @@
 // ── Colour palette ───────────────────────────────────────────────────────────
 export const colors = {
   // Brand / system / "correct"
-  green: '#58CC02',
-  greenDark: '#46A302',
-  greenSoft: '#E7F9D6',
-  greenTint: '#F2FBE8',
+  // Aligned to Duolingo's palette (and the web app) for cross-platform parity.
+  green: '#58CC02', // feather green – primary CTA
+  greenDark: '#58A700', // mask green – pressed / 3D bottom border
+  greenSoft: '#D7FFB8',
+  greenTint: '#E5F8D0',
   mint: '#A8E6CF',
 
   // Gamification accents
-  orange: '#FF9D00', // streak 连胜
+  orange: '#FF9600', // streak 连胜 (fox)
   orangeDark: '#CC7900',
 
-  gold: '#FFC400', // XP
+  gold: '#FFC800', // XP (bee)
   goldDark: '#E5A500',
 
-  rose: '#FF4B4B', // life 生命 / error
+  rose: '#FF4B4B', // life 生命 / error (cardinal)
   roseDark: '#E63946',
 
-  sky: '#1CB0F6', // gem 钻石 / interactive accent
+  sky: '#1CB0F6', // gem 钻石 / interactive accent (macaw)
   skyDark: '#0E8FCC',
 
-  purple: '#9B6DFF',
-  purpleDark: '#7A4ED6',
+  purple: '#CE82FF',
+  purpleDark: '#A560E6',
 
-  // Warm neutrals (avoid >0.02 saturation per art direction)
-  ink: '#34322E',
-  inkSoft: '#7C7A74',
-  inkFaint: '#AEACA4',
+  // Neutrals (Duolingo eel / wolf / hare / swan / polar)
+  ink: '#3C3C3C',
+  inkSoft: '#777777',
+  inkFaint: '#AFAFAF',
 
-  mist: '#F5F6F1',
+  mist: '#F7F7F7',
   cream: '#FFF9E5',
-  line: '#E8E9E3',
-  cardLine: '#E2E3DB',
+  line: '#E5E5E5',
+  cardLine: '#E5E5E5',
 
   white: '#FFFFFF',
   black: '#000000',
 
   // Semantic aliases
   bg: '#FFFFFF',
-  bgSoft: '#F5F6F1',
+  bgSoft: '#F7F7F7',
 } as const;
 
 // ── Multi-subject accent system ──────────────────────────────────────────────
@@ -148,8 +149,10 @@ export const elevation = {
     borderBottomWidth: 4,
   },
   buttonPressed: {
-    borderBottomWidth: 2,
-    transform: [{ translateY: 2 }],
+    // Duolingo "full sink": the 3D bottom border collapses and the cap drops by
+    // its full height, so the button looks pressed flat.
+    borderBottomWidth: 0,
+    transform: [{ translateY: 4 }],
   },
   /** Content card: hairline + soft neutral shadow (lighter than the CTA). */
   card: {

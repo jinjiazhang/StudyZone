@@ -32,29 +32,29 @@ body {
   /* All buttons share the same outer box (border-2 + border-b-[4px]) so primary,
      secondary, danger, sky, gold, purple line up perfectly when placed side by side. */
   .btn-primary {
-    @apply btn-base border-2 border-b-[4px] border-sz-green-dark bg-sz-green text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50 disabled:active:translate-y-0 disabled:active:border-b-[4px];
+    @apply btn-base border-2 border-b-[4px] border-sz-green-dark bg-sz-green text-white hover:brightness-105 active:translate-y-[4px] active:border-b-0 disabled:opacity-50 disabled:active:translate-y-0 disabled:active:border-b-[4px];
   }
   .btn-secondary {
-    @apply btn-base border-2 border-b-[4px] border-sz-line bg-white text-sz-ink-soft hover:bg-sz-mist active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply btn-base border-2 border-b-[4px] border-sz-line bg-white text-sz-ink-soft hover:bg-sz-mist active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .btn-danger {
-    @apply btn-base border-2 border-b-[4px] border-sz-rose-dark bg-sz-rose text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply btn-base border-2 border-b-[4px] border-sz-rose-dark bg-sz-rose text-white hover:brightness-105 active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .btn-sky {
-    @apply btn-base border-2 border-b-[4px] border-sz-sky-dark bg-sz-sky text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply btn-base border-2 border-b-[4px] border-sz-sky-dark bg-sz-sky text-white hover:brightness-105 active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .btn-gold {
-    @apply btn-base border-2 border-b-[4px] border-sz-gold-dark bg-sz-gold text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply btn-base border-2 border-b-[4px] border-sz-gold-dark bg-sz-gold text-white hover:brightness-105 active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .btn-purple {
-    @apply btn-base border-2 border-b-[4px] border-sz-purple-dark bg-sz-purple text-white hover:brightness-105 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply btn-base border-2 border-b-[4px] border-sz-purple-dark bg-sz-purple text-white hover:brightness-105 active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .btn-ghost {
     @apply btn-base bg-transparent text-sz-ink-soft hover:bg-sz-mist;
   }
 
   .duo-home-button {
-    @apply inline-flex h-[62px] w-full select-none items-center justify-center rounded-2xl border-2 border-b-[5px] px-5 text-[18px] font-heavy uppercase tracking-[0.8px] transition-transform duration-100 active:translate-y-[2px] active:border-b-2;
+    @apply inline-flex h-[62px] w-full select-none items-center justify-center rounded-2xl border-2 border-b-[5px] px-5 text-[18px] font-heavy uppercase tracking-[0.8px] transition-transform duration-100 active:translate-y-[4px] active:border-b-0;
   }
   .duo-home-button-primary {
     @apply border-[#58a700] bg-[#58cc02] text-white hover:brightness-105;
@@ -63,7 +63,7 @@ body {
     @apply border-[#e5e5e5] bg-white text-[#1cb0f6] hover:bg-[#f7f7f7];
   }
   .duo-store-button {
-    @apply inline-flex h-[58px] min-w-[170px] select-none items-center justify-center gap-3 rounded-2xl border-2 border-b-[4px] border-[#e5e5e5] bg-white px-5 text-[15px] font-heavy uppercase tracking-[0.8px] text-[#4b4b4b] transition-transform duration-100 hover:bg-[#f7f7f7] active:translate-y-[2px] active:border-b-2;
+    @apply inline-flex h-[58px] min-w-[170px] select-none items-center justify-center gap-3 rounded-2xl border-2 border-b-[4px] border-[#e5e5e5] bg-white px-5 text-[15px] font-heavy uppercase tracking-[0.8px] text-[#4b4b4b] transition-transform duration-100 hover:bg-[#f7f7f7] active:translate-y-[4px] active:border-b-0;
   }
   .brand-logo {
     @apply inline-flex select-none items-center text-[42px] font-heavy leading-none text-[#58cc02] transition-transform duration-150 hover:-translate-y-0.5 sm:text-[48px];
@@ -117,7 +117,7 @@ body {
 
   /* Option / answer button – the rectangular "puffy" tile used in lessons */
   .option-tile {
-    @apply w-full select-none rounded-2xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-4 text-left text-lg font-heavy text-sz-ink transition-transform duration-100 hover:bg-sz-mist active:translate-y-[2px] active:border-b-2 disabled:opacity-60;
+    @apply w-full select-none rounded-2xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-4 text-left text-lg font-heavy text-sz-ink transition-transform duration-100 hover:bg-sz-mist active:translate-y-[4px] active:border-b-0 disabled:opacity-60;
   }
   .option-tile-active {
     @apply border-sz-sky bg-sky-50 text-sz-sky-dark;
@@ -131,7 +131,7 @@ body {
 
   /* Word-bank chips */
   .token-chip {
-    @apply select-none rounded-xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-2 font-heavy text-sz-ink transition-transform duration-100 active:translate-y-[2px] active:border-b-2 disabled:opacity-50;
+    @apply select-none rounded-xl border-2 border-b-[4px] border-sz-line bg-white px-4 py-2 font-heavy text-sz-ink transition-transform duration-100 active:translate-y-[4px] active:border-b-0 disabled:opacity-50;
   }
   .token-chip-picked {
     @apply border-sz-sky bg-white text-sz-sky-dark;
