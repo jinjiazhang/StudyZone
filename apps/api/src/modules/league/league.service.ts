@@ -1,6 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma.service';
+import { RewardsService } from '../rewards/rewards.service';
 import {
   LeagueTier,
   type LeagueStandingDto,
@@ -21,7 +22,10 @@ import { startOfWeek, startOfPreviousWeek, addDays } from './league.util';
 export class LeagueService {
   private readonly logger = new Logger('LeagueService');
 
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly rewards: RewardsService,
+  ) {}
 
   // ===========================================================================
   // Placement & live XP
@@ -249,32 +253,42 @@ export class LeagueService {
             data: { rank },
           });
 
-          await tx.leagueHistory.upsert({
+          const existingHistory = await tx.leagueHistory.findUnique({
             where: { userId_weekStart: { userId: entry.userId, weekStart } },
-            create: {
-              userId: entry.userId,
-              weekStart,
-              tier,
-              finalRank: rank,
-              weeklyXp: entry.weeklyXp,
-              result,
-              nextTier,
-              gemsAwarded: gems,
-            },
-            update: {
-              tier,
-              finalRank: rank,
-              weeklyXp: entry.weeklyXp,
-              result,
-              nextTier,
-              gemsAwarded: gems,
-            },
           });
 
-          if (gems > 0) {
-            await tx.userWallet.update({
-              where: { userId: entry.userId },
-              data: { gems: { increment: gems } },
+          const history = existingHistory
+            ? await tx.leagueHistory.update({
+                where: { userId_weekStart: { userId: entry.userId, weekStart } },
+                data: {
+                  tier,
+                  finalRank: rank,
+                  weeklyXp: entry.weeklyXp,
+                  result,
+                  nextTier,
+                  gemsAwarded: gems,
+                },
+              })
+            : await tx.leagueHistory.create({
+                data: {
+                  userId: entry.userId,
+                  weekStart,
+                  tier,
+                  finalRank: rank,
+                  weeklyXp: entry.weeklyXp,
+                  result,
+                  nextTier,
+                  gemsAwarded: gems,
+                },
+              });
+
+          if (!existingHistory && gems > 0) {
+            await this.rewards.awardXpAndGemsWithClient(tx, {
+              userId: entry.userId,
+              xp: 0,
+              gems,
+              reason: 'league_reward',
+              refId: history.id,
             });
           }
 

@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma.service';
 
 /**
@@ -11,8 +12,8 @@ export class RewardsService {
   constructor(private readonly prisma: PrismaService) {}
 
   /**
-   * Atomically credit XP + gems to a user's wallet and append an XP ledger row.
-   * `reason` is a short machine code (e.g. "daily_quest", "lesson_complete").
+   * Atomically credit XP + gems to a user's wallet and append a reward ledger row.
+   * `reason` is a short machine code (e.g. "daily_quest", "league_reward").
    */
   async awardXpAndGems(params: {
     userId: string;
@@ -24,21 +25,34 @@ export class RewardsService {
     const { userId, xp, gems, reason, refId = null } = params;
     if (xp === 0 && gems === 0) return;
 
-    await this.prisma.$transaction([
-      this.prisma.userWallet.update({
-        where: { userId },
-        data: {
-          ...(xp ? { xpTotal: { increment: xp } } : {}),
-          ...(gems ? { gems: { increment: gems } } : {}),
-        },
-      }),
-      ...(xp
-        ? [
-            this.prisma.xPLedger.create({
-              data: { userId, delta: xp, reason, refId },
-            }),
-          ]
-        : []),
-    ]);
+    await this.prisma.$transaction((tx) =>
+      this.awardXpAndGemsWithClient(tx, { userId, xp, gems, reason, refId }),
+    );
+  }
+
+  async awardXpAndGemsWithClient(
+    client: Prisma.TransactionClient,
+    params: {
+      userId: string;
+      xp: number;
+      gems: number;
+      reason: string;
+      refId?: string | null;
+    },
+  ) {
+    const { userId, xp, gems, reason, refId = null } = params;
+    if (xp === 0 && gems === 0) return;
+
+    await client.userWallet.update({
+      where: { userId },
+      data: {
+        ...(xp ? { xpTotal: { increment: xp } } : {}),
+        ...(gems ? { gems: { increment: gems } } : {}),
+      },
+    });
+
+    await client.xPLedger.create({
+      data: { userId, delta: xp, reason, refId },
+    });
   }
 }

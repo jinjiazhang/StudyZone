@@ -142,6 +142,7 @@ export enum XPReason {
   LESSON_COMPLETED = 'lesson_completed',
   PERFECT_LESSON_BONUS = 'perfect_lesson_bonus',
   DAILY_QUEST = 'daily_quest',
+  LEAGUE_REWARD = 'league_reward',
   STREAK_BONUS = 'streak_bonus',
   PRACTICE = 'practice',
 }
