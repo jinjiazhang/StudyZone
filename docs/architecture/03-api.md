@@ -195,7 +195,8 @@ Web / Mobile / Admin 的网络层都基于它。
 
 | 事件 | Payload | 消费者 |
 |---|---|---|
-| `learning.lesson.completed` | `{ userId, lessonId, sessionId, xp, isPerfect, ... }` | Quests（进度+1）/ Rewards（钱包记账）/ League（weeklyXp）/ 未来 Notification |
+| `learning.lesson.completed` | `{ userId, sessionId, lessonId, outcome, correctCount, totalCount, xpGained, timeSpentMs }` | Quests（进度+1）/ Rewards（钱包记账）/ League（weeklyXp）/ 未来 Notification |
+| `learning.lesson.failed` | `{ userId, sessionId, lessonId, reason, correctCount, timeSpentMs }` | 数据分析（心数耗尽锁关；不触发奖励/任务/联赛） |
 | `auth.user.registered` | `{ userId }` | 初始化 Wallet / Streak / Quests |
 | `social.friendship.accepted` | `{ userId, friendId }` | 通知模块（待） |
 

@@ -25,20 +25,33 @@ POST /api/v1/lessons/:id/start
 [ 客户端逐题答题 ]
         │
         ▼
+POST /api/v1/lessons/:id/start
+  ├─ 校验：心数是否 > 0（耗尽则 out_of_hearts 拒绝开关）
+  └─ ……（组卷见下）
+        │
+        ▼
 POST /api/v1/sessions/:id/attempts  (循环)
   ├─ 服务端用 shared-logic/judge.ts 判分（权威）
-  ├─ 写入 ExerciseAttempt
+  ├─ 写入 ExerciseAttempt（同一题可多次提交，用于错题重做）
+  ├─ 答错扣 1 颗心；扣到 0 则当场锁关：标记 finishedAt + outcome=fail
   ├─ 更新 SrsCard（更新 ease / interval / dueAt）
-  └─ 返回：{ isCorrect, feedback }
+  └─ 返回：{ correct, canonicalAnswer, heartLost, heartsRemaining, lessonFailed }
         │
         ▼
 POST /api/v1/sessions/:id/complete
-  ├─ 计算 XP、心数消耗、streak
+  ├─ 校验错题重做：所有题目都必须"最近一次提交正确"，否则返回 redo_required
+  ├─ 计算 XP（基础分必给 + 按首次正确数算加成）、streak
   ├─ 写入 UserLessonProgress（completed=true, bestScore）
-  ├─ 通过 RewardsService 写入钱包 + XPLedger
+  ├─ 经 RewardsService 增量 UserWallet（xp/gems）+ XPLedger；单独更新 streakFreezes
   ├─ 发布事件 learning.lesson.completed
   └─ 返回结算面板数据
 ```
+
+> **错题重做（redo）**：每道题可重复提交，`complete` 时会按 `exerciseQueue` 逐题取「最近一次提交结果」，只要还有题目最近一次不正确，就以 `redo_required` 拒绝结算并返回 `pendingExerciseIds`，由客户端把这些题重新插入答题队列。正常走完（最终全对）的关卡 `outcome = pass`。
+>
+> **心数耗尽锁关**：每答错一题扣 1 颗心（心数为钱包全局资源），扣到 0 的那次提交会立即把会话标记 `finishedAt + outcome=fail`、`lessonFailed=true`，本关失败、无奖励；后续 `attempts` / `complete` 因 `session_finished` 被拒。客户端据 `lessonFailed` 跳失败页。心数耗尽时 `start` 也会以 `out_of_hearts` 拒绝开新关。
+>
+> **结算计分口径**：基础 XP 在关卡完成（最终全对）时**必给**；满分加成只看**每题首次提交**是否全对（`firstPassCorrectCount`），重做不补加成。详见 §五。
 
 ---
 
@@ -68,15 +81,19 @@ POST /api/v1/sessions/:id/complete
 
 ## 三、组卷算法
 
-`learning.service.ts` 的 `pickExercises(lessonId, userId)`：
+**当前实现**（`learning.service.ts` 的 `startLesson(userId, lessonId)`）：
 
-1. **基础题集**：从 `LessonExercise` 按 `orderIndex` 取 `Lesson.exerciseCount` 道。
-2. **SRS 加权**：查询 `SrsCard` 中 `dueAt <= now` 且对应 exercise 属于当前课程的卡片，按权重抽样替换。
-3. **错题强化**：如该用户最近一次同关卡 session `outcome = fail`，提升其错题权重。
-4. **新手保护**：用户首次开关该 lesson，不混入 SRS，让基础题先建立信心。
-5. **写入 `LearningSession.exerciseQueue`**：保证整条会话顺序固定（断线重连可恢复）。
+1. 取该 lesson 的全部 `LessonExercise`（按 `orderIndex` 加载）作为候选池。
+2. `pickAndShuffle(pool, Lesson.exerciseCount)`：Fisher–Yates 随机洗牌后取前 `exerciseCount` 道。
+3. 写入 `LearningSession.exerciseQueue`，保证整条会话顺序固定（断线重连可恢复）。
 
-> 当前实现以「顺序抽题 + 错题加权」为主，正式 SRS 排程在 Worker 模块完整接入后开放。
+> 现状即「随机抽题」，**尚未**接入下面的 SRS 加权 / 错题强化 / 新手保护——这些仍是规划项。注意：虽然每次 `attempts` 都会更新 `SrsCard`（见 §八），但 `startLesson` 目前并不读取 `SrsCard` 来影响选题。
+
+**规划中的加权策略**（待 Worker / SRS 完整接入后开放）：
+
+- **SRS 加权**：查询 `SrsCard` 中 `dueAt <= now` 且属于当前课程的卡片，按权重抽样替换。
+- **错题强化**：提升该用户历史答错题目的权重。
+- **新手保护**：用户首次开该 lesson 时不混入 SRS，让基础题先建立信心。
 
 ---
 
@@ -85,21 +102,20 @@ POST /api/v1/sessions/:id/complete
 `packages/shared-logic/src/judge.ts` 是判分的唯一入口（**前后端共用**）：
 
 ```ts
-import { judgeExercise } from '@studyzone/shared-logic';
+import { judge } from '@studyzone/shared-logic';
 
-const result = judgeExercise({
-  type: ExerciseType.TRANSLATE_INPUT,
-  prompt: { ... },
-  answer: { ... },
-  userAnswer: { text: 'I like apples.' }
-});
-// → { isCorrect: true, normalizedAnswer: 'I like apples.', feedback?: ... }
+const result = judge(
+  prompt,   // ExercisePrompt（含 type 判别字段）
+  answer,   // ExerciseAnswer
+  payload,  // UserAttemptPayload，如 { text: 'I like apples.' }
+);
+// → { correct: true, canonicalAnswer?: 'I like apples.' }
 ```
 
 设计原则：
 
 - **纯函数**：无副作用、无 IO，方便测试 + 端到端复用。
-- **服务端权威**：客户端可以预判用于动效，但 `attempts` 接口的 `isCorrect` **以服务端结果为准**。
+- **服务端权威**：客户端可以预判用于动效，但 `attempts` 接口的 `correct` **以服务端结果为准**。
 - **容错**：
   - 输入题：忽略大小写、首尾空格、标点，按 `tolerance` 计算 Levenshtein 距离。
   - 数字题：`abs(user - expected) <= tolerance`。
@@ -109,26 +125,34 @@ const result = judgeExercise({
 
 ## 五、XP 计算
 
-`packages/shared-logic/src/xp.ts`：
+`packages/shared-logic/src/xp.ts` 的 `calculateLessonScore({ totalExercises, correctCount, timeSpentMs, currentStreak, isSubscriber })`：
 
-| 加分项 | 公式 |
+| 项 | 规则（常量见 `xp.ts`） |
 |---|---|
-| 基础 XP | `Lesson.exerciseCount * 1` |
-| 满分加成 | `correct == total → +5` |
-| 速度加成 | `平均响应 < 5s → +3` |
-| Streak 加成 | `currentStreak ≥ 7 → ×1.1`，`≥ 30 → ×1.2` |
+| 基础 XP | 固定 `10`（`BASE_XP_PER_LESSON`），关卡完成（最终全对）必给 |
+| 满分加成 | 首次提交即全对 `correctCount == totalExercises → +5` |
+| 速度加成 | 整局耗时 `timeSpentMs ≤ 90s → +5` |
+| Streak 加成 | `floor(currentStreak / 7) * 2`（每满 7 天连胜 +2） |
+| 订阅加成 | `isSubscriber → 总 XP ×1.2`（四舍五入） |
+| Gems | 基础 `1`，满分再 `+2` |
 | 任务奖励 | 完成每日任务时由 Quests 模块单独发放 |
 
+> `correctCount` 传入的是**首次提交正确数**（`firstPassCorrectCount`）。由于错题必须重做到对才能结算（最终全对），基础 XP 一定发放；首次正确率只影响满分加成与 Gems。失败（心数耗尽）的关卡走 §一 的锁关分支，不会进入计分，零奖励。
+
 写入路径：
-1. `LearningService.completeSession` 算出 `xpGained`，写入 `LearningSession`。
-2. 调 `RewardsService.grantXp({ userId, delta, reason: 'lesson_complete', refId: sessionId })`，由它落 `XPLedger` 并增量 `UserWallet.xpTotal`。
+1. `LearningService.completeSession` 调 `calculateLessonScore` 算出 `score`，把 `xpGained` 写入 `LearningSession`。
+2. 在同一事务内调用 `RewardsService.awardXpAndGemsWithClient(tx, …)` 增量 `UserWallet.xpTotal` / `gems` 并写入不可变的 `XPLedger`（`reason: 'lesson_completed'`, `refId: sessionId`）；`streakFreezes` 在同事务内单独更新。
 3. 发出 `learning.lesson.completed` 事件，League 模块同步增加 `LeaderboardEntry.weeklyXp`。
+
+> 钱包的 xp/gems 写入已统一收口到 `RewardsService`，与 Quests / League 结算共用同一入口，保证 `UserWallet` 与 `XPLedger` 一致。
 
 ---
 
 ## 六、心数（Hearts）
 
-- 每次答错扣 1 颗心，扣到 0 关卡判 `outcome = fail`。
+- 心数是 `UserWallet.hearts` 上的**全局**资源（跨关卡共享），默认上限 5。
+- 每次答错扣 1 颗心（`heartsRemaining` 在 attempts 响应里回传），最低扣到 0。
+- **耗尽锁关（硬约束，已启用）**：扣到 0 的那次提交立即把会话标记 `finishedAt + outcome=fail`，返回 `lessonFailed=true`，本关失败、无奖励；之后该会话的 `attempts` / `complete` 都因 `session_finished` 被拒。`startLesson` 在 `hearts <= 0` 时以 `out_of_hearts` 拒绝开新关。
 - 每 X 分钟回 1 颗心（待 Worker 接入），上限 `maxHearts`（默认 5）。
 - 未来：宝石可购买无限心数（订阅会员默认开启）。
 
@@ -164,8 +188,8 @@ dueAt = now + interval days
 
 | 事件 | 谁发 | 谁收 | 作用 |
 |---|---|---|---|
-| `learning.lesson.completed` | `LearningService` | Rewards / Quests / League / Notification | 主结算事件 |
-| `learning.attempt.failed` | `LearningService` | （预留）数据分析 | 错题分析 |
+| `learning.lesson.completed` | `LearningService` | Rewards / Quests / League / Notification | 主结算事件（关卡通过） |
+| `learning.lesson.failed` | `LearningService` | （数据分析） | 心数耗尽锁关时发出，`reason='out_of_hearts'`；不触发奖励/任务/联赛 |
 
 > Payload 类型在 `packages/shared-types/src/events.ts`。
 

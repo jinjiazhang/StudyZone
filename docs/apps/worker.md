@@ -19,7 +19,7 @@ pnpm --filter @studyzone/worker start    # 生产模式（直接 tsx）
 
 ## 二、职责
 
-- **联赛结算（League settle）**：每周一 UTC `00:01` 扫描 `LeagueGroup.status='active' && weekStart < now()`，按规则升 / 留 / 降，写 `LeagueHistory`，把 group 标记 `settled`，发奖励。
+- **联赛结算（League settle）**：每周一 UTC `00:05`（cron `5 0 * * 1`，可用 `LEAGUE_SETTLE_CRON` 覆盖）扫描 `LeagueGroup.status='active' && weekStart < now()`，按规则升 / 留 / 降，写 `LeagueHistory`，把 group 标记 `settled`，发奖励。
 - **SRS 调度（计划）**：每天扫 `SrsCard` 中 `dueAt <= now`，推送复习提醒，并在用户开关时优先抽这些题。
 - **推送（计划）**：发送 APNs / FCM 通知。
 - **心数恢复（计划）**：每 X 分钟回 1 颗，直到 `maxHearts`。

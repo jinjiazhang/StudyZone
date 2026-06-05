@@ -200,6 +200,8 @@ export interface AttemptResult {
   canonicalAnswer?: string;
   heartLost: boolean;
   heartsRemaining: number;
+  /** True when this wrong answer drained the last heart and the lesson is now failed/locked. */
+  lessonFailed: boolean;
 }
 
 export interface CompleteSessionDto {

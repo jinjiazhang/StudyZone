@@ -57,6 +57,7 @@ export default function LessonPage() {
   const [hearts, setHearts] = useState<number>(5);
   const [exerciseQueue, setExerciseQueue] = useState<QueuedExercise[]>([]);
   const [pendingRedoQueue, setPendingRedoQueue] = useState<QueuedExercise[]>([]);
+  const [defeated, setDefeated] = useState(false);
   const [startTs] = useState(() => Date.now());
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
@@ -68,16 +69,18 @@ export default function LessonPage() {
     preloadAnswerSounds();
   }, []);
 
-  const { data: session, isLoading } = useQuery({
+  const { data: session, isLoading, error: startError } = useQuery({
     queryKey: ['lesson-start', params.lessonId],
     queryFn: () => api.startLesson(params.lessonId),
     refetchOnMount: false,
+    retry: false,
   });
 
   useEffect(() => {
     if (!session) return;
     setCursor(0);
     setFeedback(null);
+    setDefeated(false);
     setPendingRedoQueue([]);
     setExerciseQueue(
       session.exercises.map((exercise, index) => ({
@@ -112,12 +115,20 @@ export default function LessonPage() {
       responseMs,
     });
     playAnswerSound(res.correct ? 'correct' : 'wrong');
+    if (!res.correct) {
+      setHearts(res.heartsRemaining);
+      // Last heart spent → lesson is locked/failed server-side; show defeat screen.
+      if (res.lessonFailed) {
+        setFeedback(null);
+        setDefeated(true);
+        return;
+      }
+    }
     setFeedback({
       result: res.correct ? 'correct' : 'wrong',
       canonical: res.canonicalAnswer,
     });
     if (!res.correct) {
-      setHearts((h: number) => Math.max(0, h - 1));
       setPendingRedoQueue((queue) => {
         const retryIndex = queue.length;
         return [
@@ -183,6 +194,42 @@ export default function LessonPage() {
       }
     }
   }
+
+  if (startError) {
+    const outOfHearts = (startError as any)?.body?.code === 'out_of_hearts';
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center gap-5 px-6 text-center">
+        <Heart className="h-16 w-16 fill-sz-rose text-sz-rose" />
+        <h1 className="text-2xl font-heavy text-sz-ink">
+          {outOfHearts ? '心数已耗尽' : '关卡加载失败'}
+        </h1>
+        <p className="max-w-xs font-bold text-sz-ink-soft">
+          {outOfHearts
+            ? '休息一下，等心数恢复或补充后再来挑战吧。'
+            : (startError as any)?.body?.message ?? '请稍后再试。'}
+        </p>
+        <button onClick={() => router.back()} className="btn-primary px-8">
+          返回
+        </button>
+      </main>
+    );
+  }
+
+  if (defeated)
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center gap-5 px-6 text-center">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-sz-rose">
+          <XCircle className="h-12 w-12 text-white" />
+        </div>
+        <h1 className="text-2xl font-heavy text-sz-ink">心数耗尽，本关失败</h1>
+        <p className="max-w-xs font-bold text-sz-ink-soft">
+          别灰心！等心数恢复后回来，把这关重新拿下。
+        </p>
+        <button onClick={() => router.back()} className="btn-primary px-8">
+          返回
+        </button>
+      </main>
+    );
 
   if (isLoading || !session || (session.exercises.length > 0 && exerciseQueue.length === 0))
     return (

@@ -239,7 +239,7 @@ Client                            API (NestJS)              EventBus
 ### 6.2 联赛周期（Worker）
 
 - **加入**：用户首次产出 weekly XP 时，由 `LeagueService` 找到 / 创建合适分组（30 人一组）。
-- **结算**：每周一 UTC 00:00，Worker 触发 `settle.ts`，将 `LeagueGroup` 标为 settled，写入 `LeagueHistory`，按规则升 / 降 / 留；下周首次加入时迁移。
+- **结算**：每周一 UTC `00:05`（cron `5 0 * * 1`），Worker 触发 `settlePreviousWeek()`，将 `LeagueGroup` 标为 settled，写入 `LeagueHistory`，按规则升 / 降 / 留；下周首次加入时迁移。
 - **手动结算**：`pnpm --filter @studyzone/worker settle:now`（开发与回滚用）。
 
 详见 [`05-gamification.md`](./05-gamification.md)。

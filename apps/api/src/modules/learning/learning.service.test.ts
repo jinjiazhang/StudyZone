@@ -4,10 +4,12 @@ import { ExerciseType } from '@studyzone/shared-types';
 
 import { LearningService } from './learning.service';
 import { PrismaService } from '../../infra/prisma.service';
+import { RewardsService } from '../rewards/rewards.service';
 
 describe('LearningService', () => {
   let prisma: MockPrisma;
   let events: Pick<EventEmitter2, 'emit'>;
+  let rewards: Pick<RewardsService, 'awardXpAndGemsWithClient'>;
   let service: LearningService;
 
   beforeEach(() => {
@@ -15,7 +17,12 @@ describe('LearningService', () => {
     vi.setSystemTime(new Date('2026-05-26T10:00:00Z'));
     prisma = createPrismaMock();
     events = { emit: vi.fn() };
-    service = new LearningService(prisma as unknown as PrismaService, events as EventEmitter2);
+    rewards = { awardXpAndGemsWithClient: vi.fn().mockResolvedValue(undefined) };
+    service = new LearningService(
+      prisma as unknown as PrismaService,
+      events as EventEmitter2,
+      rewards as RewardsService,
+    );
   });
 
   it('starts a lesson by persisting an exercise queue without answers', async () => {
@@ -68,7 +75,9 @@ describe('LearningService', () => {
     prisma.learningSession.update.mockReturnValue({ op: 'session-update' });
     prisma.srsCard.findUnique.mockResolvedValue(null);
     prisma.srsCard.upsert.mockResolvedValue({});
-    prisma.$transaction.mockImplementation(async (ops) => ops);
+    prisma.$transaction.mockImplementation(async (arg) =>
+      typeof arg === 'function' ? arg(prisma) : arg,
+    );
 
     const result = await service.submitAttempt('user-1', 'session-1', {
       exerciseId: 'exercise-1',
@@ -81,7 +90,62 @@ describe('LearningService', () => {
       canonicalAnswer: 'B',
       heartLost: true,
       heartsRemaining: 2,
+      lessonFailed: false,
     });
+  });
+
+  it('fails and locks the lesson when the last heart is spent on a wrong answer', async () => {
+    prisma.learningSession.findUnique.mockResolvedValue({
+      id: 'session-1',
+      userId: 'user-1',
+      lessonId: 'lesson-1',
+      finishedAt: null,
+      startedAt: new Date('2026-05-26T09:59:00Z'),
+      correctCount: 0,
+      exerciseQueue: ['exercise-1'],
+      user: { wallet: { hearts: 1 } },
+    });
+    prisma.exercise.findUnique.mockResolvedValue(choiceExercise('exercise-1', 1));
+    prisma.userWallet.update.mockResolvedValue({ hearts: 0 });
+    prisma.exerciseAttempt.create.mockReturnValue({ op: 'attempt-create' });
+    prisma.learningSession.update.mockReturnValue({ op: 'session-update' });
+    prisma.srsCard.findUnique.mockResolvedValue(null);
+    prisma.srsCard.upsert.mockResolvedValue({});
+    prisma.$transaction.mockImplementation(async (arg) =>
+      typeof arg === 'function' ? arg(prisma) : arg,
+    );
+
+    const result = await service.submitAttempt('user-1', 'session-1', {
+      exerciseId: 'exercise-1',
+      payload: { correctIndex: 0 },
+      responseMs: 12_000,
+    });
+
+    expect(result).toMatchObject({ correct: false, heartsRemaining: 0, lessonFailed: true });
+    expect(prisma.learningSession.update).toHaveBeenCalledWith(
+      expect.objectContaining({
+        data: expect.objectContaining({ finishedAt: expect.any(Date), outcome: 'fail' }),
+      }),
+    );
+    expect(events.emit).toHaveBeenCalledWith(
+      'learning.lesson.failed',
+      expect.objectContaining({
+        payload: expect.objectContaining({
+          userId: 'user-1',
+          lessonId: 'lesson-1',
+          reason: 'out_of_hearts',
+        }),
+      }),
+    );
+  });
+
+  it('rejects starting a lesson when the user is out of hearts', async () => {
+    prisma.userWallet.findUnique.mockResolvedValue({ hearts: 0 });
+
+    await expect(service.startLesson('user-1', 'lesson-1')).rejects.toMatchObject({
+      response: expect.objectContaining({ code: 'out_of_hearts' }),
+    });
+    expect(prisma.lesson.findUnique).not.toHaveBeenCalled();
   });
 
   it('completes a passing session with rewards, lesson progress, and domain event', async () => {
@@ -119,7 +183,9 @@ describe('LearningService', () => {
     prisma.streakRecord.upsert.mockReturnValue({ op: 'streak-upsert' });
     prisma.xPLedger.create.mockReturnValue({ op: 'xp-ledger-create' });
     prisma.enrollment.updateMany.mockReturnValue({ op: 'enrollment-update' });
-    prisma.$transaction.mockImplementation(async (ops) => ops);
+    prisma.$transaction.mockImplementation(async (arg) =>
+      typeof arg === 'function' ? arg(prisma) : arg,
+    );
 
     const result = await service.completeSession('user-1', 'session-1', {});
 
@@ -210,7 +276,9 @@ describe('LearningService', () => {
     prisma.streakRecord.upsert.mockReturnValue({ op: 'streak-upsert' });
     prisma.xPLedger.create.mockReturnValue({ op: 'xp-ledger-create' });
     prisma.enrollment.updateMany.mockReturnValue({ op: 'enrollment-update' });
-    prisma.$transaction.mockImplementation(async (ops) => ops);
+    prisma.$transaction.mockImplementation(async (arg) =>
+      typeof arg === 'function' ? arg(prisma) : arg,
+    );
 
     const result = await service.completeSession('user-1', 'session-1', {});
 
@@ -255,6 +323,7 @@ function createPrismaMock() {
       findUnique: vi.fn(),
     },
     userWallet: {
+      findUnique: vi.fn().mockResolvedValue({ hearts: 5 }),
       update: vi.fn(),
     },
     exerciseAttempt: {

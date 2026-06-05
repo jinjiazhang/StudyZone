@@ -27,11 +27,11 @@
         └────────────────────────────┘
 
         ┌─────── 心数 (Hearts) ─────┐
-        │  错题扣，恢复时间限制      │
+        │  错题扣，耗尽锁关，定时恢复 │
         └────────────────────────────┘
 ```
 
-所有写操作必须经 `RewardsService`（位于 `apps/api/src/modules/rewards/`），确保 `UserWallet` 与 `XPLedger` 保持一致。
+钱包的 xp/gems 写操作统一收口到 `RewardsService`（位于 `apps/api/src/modules/rewards/`，提供 `awardXpAndGems` / `awardXpAndGemsWithClient`），Quests、League 结算与 Learning 关卡结算均走此入口，确保 `UserWallet` 与 `XPLedger` 一致。
 
 ---
 
@@ -81,9 +81,9 @@ levelFromXp(xp): { level, xpInLevel, xpToNextLevel }
 - 同样过 `RewardsService.grantGems` 单点写入。
 
 ### 心数（Hearts）
-- 默认上限 5。
-- 错题扣 1，扣到 0 关卡 fail。
-- 恢复：每 X 分钟回 1 颗（Worker 周期任务）；订阅会员无限心数。
+- 全局资源（`UserWallet.hearts`，跨关卡共享），默认上限 5。
+- 错题扣 1，扣到 0 **当场锁关判负**（`outcome=fail`、无奖励），且心数为 0 时禁止开新关（`out_of_hearts`）。详见 [`04-learning-engine.md`](./04-learning-engine.md) §一 / §六。
+- 恢复：每 X 分钟回 1 颗（Worker 周期任务，待接入）；订阅会员无限心数（待）。
 
 ---
 
@@ -150,7 +150,7 @@ levelFromXp(xp): { level, xpInLevel, xpToNextLevel }
 
 ### 七.4 结算
 
-由 Worker 进程定时触发（生产周一 UTC 0:01）或手动 `pnpm --filter @studyzone/worker settle:now` 触发：
+由 Worker 进程定时触发（生产周一 UTC `00:05`，cron `5 0 * * 1`，可用 `LEAGUE_SETTLE_CRON` 覆盖）或手动 `pnpm --filter @studyzone/worker settle:now` 触发：
 
 ```
 对每个 status=active 且 weekStart 已过的 LeagueGroup：

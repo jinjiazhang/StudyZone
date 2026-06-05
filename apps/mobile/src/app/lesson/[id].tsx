@@ -54,6 +54,7 @@ export default function Lesson() {
   const [hearts, setHearts] = useState(5);
   const [exerciseQueue, setExerciseQueue] = useState<QueuedExercise[]>([]);
   const [pendingRedoQueue, setPendingRedoQueue] = useState<QueuedExercise[]>([]);
+  const [defeated, setDefeated] = useState(false);
   const [start] = useState(Date.now());
   const { playAnswerSound } = useAnswerAudio();
 
@@ -62,17 +63,19 @@ export default function Lesson() {
     if (typeof me?.hearts === 'number') setHearts(me.hearts);
   }, [me?.hearts]);
 
-  const { data: session } = useQuery({
+  const { data: session, error: startError } = useQuery({
     queryKey: ['lesson-start-m', id],
     queryFn: () => api.startLesson(id!),
     enabled: !!id,
     refetchOnMount: false,
+    retry: false,
   });
 
   useEffect(() => {
     if (!session) return;
     setCursor(0);
     setFeedback(null);
+    setDefeated(false);
     setPendingRedoQueue([]);
     setExerciseQueue(
       session.exercises.map((exercise, index) => ({
@@ -89,6 +92,43 @@ export default function Lesson() {
   });
 
   const complete = useMutation({ mutationFn: () => api.completeSession(session!.sessionId) });
+
+  if (startError) {
+    const outOfHearts = (startError as any)?.body?.code === 'out_of_hearts';
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.centeredScreen}>
+          <Heart size={64} color={colors.rose} fill={colors.rose} />
+          <Text style={styles.screenTitle}>{outOfHearts ? '心数已耗尽' : '关卡加载失败'}</Text>
+          <Text style={styles.screenSubtitle}>
+            {outOfHearts
+              ? '休息一下，等心数恢复或补充后再来挑战吧。'
+              : (startError as any)?.body?.message ?? '请稍后再试。'}
+          </Text>
+          <Pressable onPress={() => router.back()} style={styles.screenBtn}>
+            <Text style={styles.feedbackBtnText}>返 回</Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (defeated) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={styles.centeredScreen}>
+          <View style={[styles.feedbackIcon, { width: 80, height: 80, borderRadius: 40, backgroundColor: colors.rose }]}>
+            <XCircle size={44} color={colors.white} />
+          </View>
+          <Text style={styles.screenTitle}>心数耗尽，本关失败</Text>
+          <Text style={styles.screenSubtitle}>别灰心！等心数恢复后回来，把这关重新拿下。</Text>
+          <Pressable onPress={() => router.back()} style={styles.screenBtn}>
+            <Text style={styles.feedbackBtnText}>返 回</Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
+    );
+  }
 
   if (!session) {
     return (
@@ -140,9 +180,17 @@ export default function Lesson() {
     const responseMs = Date.now() - start;
     const r = await submit.mutateAsync({ exerciseId: current.id, payload, responseMs });
     void playAnswerSound(r.correct ? 'correct' : 'wrong');
+    if (!r.correct) {
+      setHearts(r.heartsRemaining);
+      // Last heart spent → lesson is locked/failed server-side; show defeat screen.
+      if (r.lessonFailed) {
+        setFeedback(null);
+        setDefeated(true);
+        return;
+      }
+    }
     setFeedback({ result: r.correct ? 'correct' : 'wrong', canonical: r.canonicalAnswer });
     if (!r.correct) {
-      setHearts((h) => Math.max(0, h - 1));
       setPendingRedoQueue((queue) => {
         const retryIndex = queue.length;
         return [
@@ -661,4 +709,32 @@ const styles = StyleSheet.create({
     backgroundColor: colors.mist,
   },
   unsupportedText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.inkSoft },
+
+  // Full-screen states (out of hearts / defeat)
+  centeredScreen: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 16,
+    paddingHorizontal: 32,
+  },
+  screenTitle: { fontFamily: fonts.heavy, fontSize: 22, color: colors.ink, textAlign: 'center' },
+  screenSubtitle: {
+    fontFamily: fonts.sansBold,
+    fontSize: 14,
+    color: colors.inkSoft,
+    textAlign: 'center',
+    lineHeight: 20,
+  },
+  screenBtn: {
+    marginTop: 8,
+    borderRadius: radius.lg,
+    borderWidth: 2,
+    borderBottomWidth: 4,
+    borderColor: colors.greenDark,
+    backgroundColor: colors.green,
+    paddingVertical: 14,
+    paddingHorizontal: 40,
+    alignItems: 'center',
+  },
 });

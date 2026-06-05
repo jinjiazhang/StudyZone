@@ -21,6 +21,7 @@ import type {
 } from '@studyzone/shared-types';
 
 import { PrismaService } from '../../infra/prisma.service';
+import { RewardsService } from '../rewards/rewards.service';
 import { SubmitAttemptDto, CompleteSessionDto } from './learning.dto';
 
 @Injectable()
@@ -28,9 +29,19 @@ export class LearningService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly events: EventEmitter2,
+    private readonly rewards: RewardsService,
   ) {}
 
   async startLesson(userId: string, lessonId: string) {
+    // Hearts gate: out of hearts → can't start a new lesson until they recover.
+    const wallet = await this.prisma.userWallet.findUnique({ where: { userId } });
+    if (wallet && wallet.hearts <= 0) {
+      throw new BadRequestException({
+        code: 'out_of_hearts',
+        message: '心数已耗尽，先等待恢复或补充后再来挑战',
+      });
+    }
+
     const lesson = await this.prisma.lesson.findUnique({
       where: { id: lessonId },
       include: {
@@ -92,10 +103,13 @@ export class LearningService {
 
     let heartLost = false;
     let heartsRemaining = session.user.wallet?.hearts ?? 5;
+    let lessonFailed = false;
 
     if (!result.correct && session.user.wallet) {
       heartLost = true;
       heartsRemaining = Math.max(0, session.user.wallet.hearts - 1);
+      // Hearts exhausted → lock & fail the lesson on this attempt.
+      lessonFailed = heartsRemaining === 0;
       await this.prisma.userWallet.update({
         where: { userId },
         data: { hearts: heartsRemaining },
@@ -117,6 +131,7 @@ export class LearningService {
         data: {
           correctCount: { increment: result.correct ? 1 : 0 },
           heartsUsed: { increment: heartLost ? 1 : 0 },
+          ...(lessonFailed ? { finishedAt: new Date(), outcome: 'fail', xpGained: 0 } : {}),
         },
       }),
     ]);
@@ -148,11 +163,28 @@ export class LearningService {
       },
     });
 
+    if (lessonFailed) {
+      this.events.emit('learning.lesson.failed', {
+        type: 'learning.lesson.failed',
+        occurredAt: new Date().toISOString(),
+        source: 'learning',
+        payload: {
+          userId,
+          sessionId,
+          lessonId: session.lessonId,
+          reason: 'out_of_hearts',
+          correctCount: session.correctCount + (result.correct ? 1 : 0),
+          timeSpentMs: Date.now() - session.startedAt.getTime(),
+        },
+      });
+    }
+
     return {
       correct: result.correct,
       canonicalAnswer: result.canonicalAnswer,
       heartLost,
       heartsRemaining,
+      lessonFailed,
     };
   }
 
@@ -214,24 +246,30 @@ export class LearningService {
         : 0,
     );
 
-    await this.prisma.$transaction([
-      this.prisma.learningSession.update({
+    const courseIds = await this.courseIdsForLesson(session.lesson.id);
+
+    await this.prisma.$transaction(async (tx) => {
+      await tx.learningSession.update({
         where: { id: sessionId },
         data: {
           finishedAt: new Date(),
           xpGained: score.totalXp,
           outcome,
         },
-      }),
-      this.prisma.userWallet.update({
+      });
+      // Centralized wallet + ledger write (xp/gems) so all reward paths agree.
+      await this.rewards.awardXpAndGemsWithClient(tx, {
+        userId,
+        xp: score.totalXp,
+        gems: score.gems,
+        reason: 'lesson_completed',
+        refId: sessionId,
+      });
+      await tx.userWallet.update({
         where: { userId },
-        data: {
-          xpTotal: { increment: score.totalXp },
-          gems: { increment: score.gems },
-          streakFreezes: streak.newStreakFreezes,
-        },
-      }),
-      this.prisma.streakRecord.upsert({
+        data: { streakFreezes: streak.newStreakFreezes },
+      });
+      await tx.streakRecord.upsert({
         where: { userId },
         create: {
           userId,
@@ -244,20 +282,12 @@ export class LearningService {
           longestStreak: Math.max(streak.newStreak, session.user.streak?.longestStreak ?? 0),
           lastActiveLocalDate: streak.newLastActiveLocalDate,
         },
-      }),
-      this.prisma.xPLedger.create({
-        data: {
-          userId,
-          delta: score.totalXp,
-          reason: 'lesson_completed',
-          refId: sessionId,
-        },
-      }),
-      this.prisma.enrollment.updateMany({
-        where: { userId, courseId: { in: await this.courseIdsForLesson(session.lesson.id) } },
+      });
+      await tx.enrollment.updateMany({
+        where: { userId, courseId: { in: courseIds } },
         data: { currentLessonId: session.lesson.id, lastActiveAt: new Date() },
-      }),
-    ]);
+      });
+    });
 
     this.events.emit('learning.lesson.completed', {
       type: 'learning.lesson.completed',

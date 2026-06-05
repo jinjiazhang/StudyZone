@@ -28,6 +28,20 @@ export interface LessonCompletedEvent extends BaseEvent {
   };
 }
 
+export interface LessonFailedEvent extends BaseEvent {
+  type: 'learning.lesson.failed';
+  payload: {
+    userId: string;
+    sessionId: string;
+    lessonId: string;
+    /** Why the lesson failed; currently only hearts exhaustion. */
+    reason: 'out_of_hearts';
+    /** Correct answers accumulated before the lesson was locked. */
+    correctCount: number;
+    timeSpentMs: number;
+  };
+}
+
 export interface XPAwardedEvent extends BaseEvent {
   type: 'rewards.xp.awarded';
   payload: {
@@ -59,6 +73,7 @@ export interface UserRegisteredEvent extends BaseEvent {
 
 export type DomainEvent =
   | LessonCompletedEvent
+  | LessonFailedEvent
   | XPAwardedEvent
   | StreakChangedEvent
   | UserRegisteredEvent;

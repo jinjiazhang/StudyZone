@@ -32,22 +32,13 @@ const STREAK_BONUS_PER_7 = 2; // every 7 days of streak adds 2 XP
 const SUBSCRIBER_MULT = 1.2;
 
 export function calculateLessonScore(input: LessonScoreInput): LessonScoreOutput {
-  const accuracy = input.totalExercises > 0 ? input.correctCount / input.totalExercises : 0;
-  const passed = accuracy >= 0.6;
-
-  if (!passed) {
-    return {
-      baseXp: 0,
-      perfectBonus: 0,
-      speedBonus: 0,
-      streakBonus: 0,
-      totalXp: 0,
-      gems: 0,
-    };
-  }
-
+  // A completed lesson always earns base XP: the redo flow guarantees every
+  // exercise is eventually answered correctly ("最终全对"), so finishing is
+  // rewarded regardless of how many tries it took. Bonuses still reflect
+  // first-pass performance via `correctCount` (= firstPassCorrectCount).
   const baseXp = BASE_XP_PER_LESSON;
-  const perfectBonus = input.correctCount === input.totalExercises ? PERFECT_BONUS : 0;
+  const perfectBonus =
+    input.totalExercises > 0 && input.correctCount === input.totalExercises ? PERFECT_BONUS : 0;
   const speedBonus = input.timeSpentMs <= SPEED_THRESHOLD_MS ? SPEED_BONUS : 0;
   const streakBonus = Math.floor(input.currentStreak / 7) * STREAK_BONUS_PER_7;
 

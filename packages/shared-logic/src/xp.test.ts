@@ -4,7 +4,9 @@ import { calculateLessonScore } from './xp';
 import { xpToLevel } from './level';
 
 describe('calculateLessonScore', () => {
-  it('awards no XP or gems for failed lessons', () => {
+  it('still awards base XP when the lesson is finished without a first-pass perfect', () => {
+    // Redo guarantees every exercise ends correct, so completing always earns
+    // base XP; only the perfect bonus is withheld for first-pass mistakes.
     expect(
       calculateLessonScore({
         totalExercises: 10,
@@ -12,7 +14,14 @@ describe('calculateLessonScore', () => {
         timeSpentMs: 60_000,
         currentStreak: 0,
       }),
-    ).toMatchObject({ totalXp: 0, gems: 0 });
+    ).toEqual({
+      baseXp: 10,
+      perfectBonus: 0,
+      speedBonus: 5,
+      streakBonus: 0,
+      totalXp: 15,
+      gems: 1,
+    });
   });
 
   it('includes perfect, speed, and streak bonuses for strong lessons', () => {
