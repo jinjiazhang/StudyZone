@@ -54,9 +54,7 @@ export default function League() {
                 <View style={{ flex: 1 }}>
                   <Text style={styles.tierSub}>本周联赛</Text>
                   <Text style={styles.tierTitle}>{TIER_LABEL[tier] ?? '联赛'}</Text>
-                  <Text style={styles.tierInfo}>
-                    共 {entries.length} 名选手 · 每周一结算
-                  </Text>
+                  <Text style={styles.tierInfo}>共 {entries.length} 名选手 · 每周一结算</Text>
                 </View>
               </View>
               <View style={styles.tierBadges}>
@@ -83,7 +81,9 @@ export default function League() {
             {entries.length === 0 ? (
               <View style={styles.emptyRow}>
                 <Mascot size={96} mood="sad" />
-                <SpeechBubble>本周还没有排名记录。完成一节关卡就会自动进入青铜联赛！</SpeechBubble>
+                <SpeechBubble>
+                  本周还没有排名记录。完成一节关卡就会自动进入{TIER_LABEL[tier] ?? '当前联赛'}！
+                </SpeechBubble>
               </View>
             ) : (
               <>
@@ -147,9 +147,14 @@ export default function League() {
                     </Text>
                   </View>
                   <View
-                    style={[styles.historyBadge, { backgroundColor: RESULT_COLOR[h.result] ?? '#AFAFAF' }]}
+                    style={[
+                      styles.historyBadge,
+                      { backgroundColor: RESULT_COLOR[h.result] ?? '#AFAFAF' },
+                    ]}
                   >
-                    <Text style={styles.historyBadgeText}>{RESULT_LABEL[h.result] ?? h.result}</Text>
+                    <Text style={styles.historyBadgeText}>
+                      {RESULT_LABEL[h.result] ?? h.result}
+                    </Text>
                   </View>
                 </View>
               ))}
@@ -169,7 +174,11 @@ function ZoneDivider({ kind }: { kind: 'promote' | 'demote' }) {
     <View style={styles.zoneDivider}>
       <View style={[styles.zoneLine, { backgroundColor: color }]} />
       <View style={styles.zoneLabel}>
-        {isPromote ? <ChevronUp size={12} color={color} /> : <ChevronDown size={12} color={color} />}
+        {isPromote ? (
+          <ChevronUp size={12} color={color} />
+        ) : (
+          <ChevronDown size={12} color={color} />
+        )}
         <Text style={[styles.zoneText, { color }]}>{isPromote ? '晋级区' : '降级区'}</Text>
       </View>
       <View style={[styles.zoneLine, { backgroundColor: color }]} />
@@ -242,7 +251,9 @@ function PodiumCard({
           )}
         </View>
       </View>
-      <Text style={styles.podiumName} numberOfLines={1}>{entry.user.nickname}</Text>
+      <Text style={styles.podiumName} numberOfLines={1}>
+        {entry.user.nickname}
+      </Text>
       <Text style={styles.podiumXp}>{entry.weeklyXp} XP</Text>
       <View style={[styles.podiumBar, { backgroundColor: baseColor, height }]}>
         <Text style={styles.podiumPlace}>{place}</Text>
@@ -269,9 +280,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  tierSub: { fontSize: 10, fontFamily: fonts.heavy, color: 'rgba(255,255,255,0.8)', textTransform: 'uppercase', letterSpacing: 1 },
+  tierSub: {
+    fontSize: 10,
+    fontFamily: fonts.heavy,
+    color: 'rgba(255,255,255,0.8)',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
   tierTitle: { fontSize: 22, fontFamily: fonts.heavy, color: colors.white },
-  tierInfo: { fontSize: 12, fontFamily: fonts.sansBold, color: 'rgba(255,255,255,0.9)', marginTop: 2 },
+  tierInfo: {
+    fontSize: 12,
+    fontFamily: fonts.sansBold,
+    color: 'rgba(255,255,255,0.9)',
+    marginTop: 2,
+  },
   tierBadges: { flexDirection: 'row', gap: 8, marginTop: 12 },
   badge: {
     flexDirection: 'row',
@@ -329,7 +351,13 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: colors.line,
   },
-  rank: { width: 28, textAlign: 'center', fontFamily: fonts.heavy, fontSize: 16, color: colors.inkSoft },
+  rank: {
+    width: 28,
+    textAlign: 'center',
+    fontFamily: fonts.heavy,
+    fontSize: 16,
+    color: colors.inkSoft,
+  },
   avatar: {
     width: 40,
     height: 40,

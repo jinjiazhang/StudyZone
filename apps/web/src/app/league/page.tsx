@@ -80,7 +80,9 @@ export default function LeaguePage() {
               {TIER_EMOJI[tier] ?? '🏆'}
             </div>
             <div className="flex-1">
-              <div className="text-xs font-heavy uppercase tracking-widest opacity-80">本周联赛</div>
+              <div className="text-xs font-heavy uppercase tracking-widest opacity-80">
+                本周联赛
+              </div>
               <div className="text-2xl font-heavy">{TIER_LABEL[tier] ?? '联赛'}</div>
               <div className="mt-1 text-sm font-bold opacity-90">
                 共 {entries.length} 名选手 · 每周一结算
@@ -110,7 +112,7 @@ export default function LeaguePage() {
           <div className="flex items-end gap-3">
             <Mascot size={96} mood="sad" />
             <SpeechBubble>
-              本周还没有排名记录。完成一节关卡就会自动进入青铜联赛！
+              本周还没有排名记录。完成一节关卡就会自动进入{TIER_LABEL[tier] ?? '当前联赛'}！
             </SpeechBubble>
           </div>
         ) : (
@@ -135,8 +137,7 @@ export default function LeaguePage() {
                 // Insert a "promotion line" right after the last promoting rank.
                 const showPromoteLine = promoteCount > 3 && rank === promoteCount;
                 // Insert a "demotion line" right before the first demoting rank.
-                const showDemoteLine =
-                  demoteCount > 0 && rank === groupSize - demoteCount + 1;
+                const showDemoteLine = demoteCount > 0 && rank === groupSize - demoteCount + 1;
                 return (
                   <div key={entry.user.id} className="flex flex-col gap-2">
                     {showDemoteLine && <ZoneDivider kind="demote" />}
@@ -245,10 +246,13 @@ function PodiumCard({
   if (!entry) return <div />;
   const ringColor =
     place === 1 ? 'border-sz-gold' : place === 2 ? 'border-[#B8B8B8]' : 'border-[#CD7F32]';
-  const baseColor =
-    place === 1 ? 'bg-sz-gold' : place === 2 ? 'bg-[#B8B8B8]' : 'bg-[#CD7F32]';
+  const baseColor = place === 1 ? 'bg-sz-gold' : place === 2 ? 'bg-[#B8B8B8]' : 'bg-[#CD7F32]';
   const icon =
-    place === 1 ? <Crown className="h-6 w-6 fill-white text-white" /> : <Medal className="h-6 w-6 text-white" />;
+    place === 1 ? (
+      <Crown className="h-6 w-6 fill-white text-white" />
+    ) : (
+      <Medal className="h-6 w-6 text-white" />
+    );
 
   return (
     <div className={clsx('flex flex-col items-center gap-2', active && 'animate-bounceIn')}>
@@ -271,10 +275,18 @@ function PodiumCard({
         </span>
       </div>
       <div className="text-center">
-        <div className="line-clamp-1 max-w-[8rem] font-heavy text-sz-ink">{entry.user.nickname}</div>
+        <div className="line-clamp-1 max-w-[8rem] font-heavy text-sz-ink">
+          {entry.user.nickname}
+        </div>
         <div className="text-xs font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
       </div>
-      <div className={clsx('w-full rounded-t-2xl text-center font-heavy text-white', baseColor, height)}>
+      <div
+        className={clsx(
+          'w-full rounded-t-2xl text-center font-heavy text-white',
+          baseColor,
+          height,
+        )}
+      >
         <div className="pt-3 text-3xl">{place}</div>
       </div>
     </div>

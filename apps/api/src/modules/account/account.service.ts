@@ -8,11 +8,25 @@ export class AccountService {
   async getProfile(userId: string) {
     const user = await this.prisma.user.findUnique({
       where: { id: userId },
-      include: { wallet: true, streak: true, leagueMemberships: { include: { group: true }, take: 1, orderBy: { group: { weekStart: 'desc' } } } },
+      include: {
+        wallet: true,
+        streak: true,
+        leagueMemberships: {
+          include: { group: true },
+          take: 1,
+          orderBy: { group: { weekStart: 'desc' } },
+        },
+        leagueHistory: { take: 1, orderBy: { weekStart: 'desc' } },
+      },
     });
     if (!user) throw new NotFoundException({ code: 'user_not_found', message: '用户不存在' });
 
     const currentLeague = user.leagueMemberships[0];
+    const lastHistory = user.leagueHistory[0];
+    const leagueTier =
+      currentLeague && (!lastHistory || currentLeague.group.weekStart > lastHistory.weekStart)
+        ? currentLeague.group.tier
+        : (lastHistory?.nextTier ?? currentLeague?.group.tier ?? null);
 
     return {
       id: user.id,
@@ -28,11 +42,14 @@ export class AccountService {
       maxHearts: user.wallet?.maxHearts ?? 5,
       currentStreak: user.streak?.currentStreak ?? 0,
       longestStreak: user.streak?.longestStreak ?? 0,
-      leagueTier: currentLeague?.group.tier ?? null,
+      leagueTier,
     };
   }
 
-  async updateProfile(userId: string, patch: { nickname?: string; dailyGoalMinutes?: number; avatarUrl?: string }) {
+  async updateProfile(
+    userId: string,
+    patch: { nickname?: string; dailyGoalMinutes?: number; avatarUrl?: string },
+  ) {
     return this.prisma.user.update({
       where: { id: userId },
       data: patch,

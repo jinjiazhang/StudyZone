@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
+import type { Prisma } from '@prisma/client';
 import { PrismaService } from '../../infra/prisma.service';
 import {
   LeagueTier,
@@ -138,9 +139,10 @@ export class LeagueService {
     });
 
     if (!myEntry) {
+      const tier = await this.resolvePlacementTier(userId);
       return {
         leagueId: '',
-        tier: LeagueTier.BRONZE,
+        tier,
         weekStart: weekStart.toISOString(),
         weekEnd: weekEnd.toISOString(),
         selfIndex: -1,
@@ -228,6 +230,7 @@ export class LeagueService {
     let playersSettled = 0;
     let promoted = 0;
     let demoted = 0;
+    const groupsToRefresh = new Set<string>();
 
     for (const group of groups) {
       const tier = group.tier as LeagueTier;
@@ -287,9 +290,18 @@ export class LeagueService {
       });
     }
 
+    const migratedEntries = await this.migrateNextWeekEntriesForHistoryWeek(
+      weekStart,
+      groupsToRefresh,
+    );
+
+    for (const groupId of groupsToRefresh) {
+      await this.recomputeRanks(groupId);
+    }
+
     this.logger.log(
       `Settled ${groups.length} group(s) for week ${weekStart.toISOString()}: ` +
-        `${playersSettled} players, +${promoted}/-${demoted}`,
+        `${playersSettled} players, +${promoted}/-${demoted}, migrated ${migratedEntries} next-week entries`,
     );
 
     return {
@@ -298,6 +310,75 @@ export class LeagueService {
       playersSettled,
       promoted,
       demoted,
+    };
+  }
+
+  private async migrateNextWeekEntriesForHistoryWeek(
+    weekStart: Date,
+    groupsToRefresh: Set<string>,
+  ): Promise<number> {
+    const nextWeekStart = addDays(weekStart, 7);
+    const histories = await this.prisma.leagueHistory.findMany({
+      where: { weekStart },
+      select: { userId: true, nextTier: true },
+    });
+
+    let migratedEntries = 0;
+    for (const history of histories) {
+      const movedGroupIds = await this.prisma.$transaction((tx) =>
+        this.migrateNextWeekEntryIfNeeded(
+          tx,
+          history.userId,
+          nextWeekStart,
+          history.nextTier as LeagueTier,
+        ),
+      );
+      if (movedGroupIds.length > 0) migratedEntries++;
+      for (const groupId of movedGroupIds) groupsToRefresh.add(groupId);
+    }
+
+    return migratedEntries;
+  }
+
+  private async migrateNextWeekEntryIfNeeded(
+    tx: Prisma.TransactionClient,
+    userId: string,
+    weekStart: Date,
+    targetTier: LeagueTier,
+  ): Promise<string[]> {
+    const currentEntry = await tx.leaderboardEntry.findFirst({
+      where: { userId, group: { weekStart } },
+      include: { group: true },
+    });
+    if (!currentEntry || currentEntry.group.tier === targetTier) return [];
+
+    const targetGroup = await this.findOrCreateActiveGroup(tx, targetTier, weekStart);
+    await tx.leaderboardEntry.update({
+      where: { groupId_userId: { groupId: currentEntry.groupId, userId } },
+      data: { groupId: targetGroup.id },
+    });
+
+    return [currentEntry.groupId, targetGroup.id];
+  }
+
+  private async findOrCreateActiveGroup(
+    tx: Prisma.TransactionClient,
+    tier: LeagueTier,
+    weekStart: Date,
+  ) {
+    const candidates = await tx.leagueGroup.findMany({
+      where: { tier, weekStart, status: 'active' },
+      include: { _count: { select: { entries: true } } },
+      orderBy: { id: 'asc' },
+    });
+    const group = candidates.find((g) => g._count.entries < g.capacity);
+    if (group) return group;
+
+    return {
+      ...(await tx.leagueGroup.create({
+        data: { tier, weekStart, capacity: LEAGUE_GROUP_CAPACITY, status: 'active' },
+      })),
+      _count: { entries: 0 },
     };
   }
 

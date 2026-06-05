@@ -61,10 +61,18 @@ export class AdminUsersService {
           take: 1,
           orderBy: { group: { weekStart: 'desc' } },
         },
+        leagueHistory: { take: 1, orderBy: { weekStart: 'desc' } },
         _count: { select: { enrollments: true } },
       },
     });
     if (!user) throw new NotFoundException({ code: 'user_not_found', message: '用户不存在' });
+
+    const currentLeague = user.leagueMemberships[0];
+    const lastHistory = user.leagueHistory[0];
+    const leagueTier =
+      currentLeague && (!lastHistory || currentLeague.group.weekStart > lastHistory.weekStart)
+        ? currentLeague.group.tier
+        : (lastHistory?.nextTier ?? currentLeague?.group.tier ?? null);
 
     const lessonsCompleted = await this.prisma.userLessonProgress.count({
       where: { userId: id, completed: true },
@@ -85,7 +93,7 @@ export class AdminUsersService {
       maxHearts: user.wallet?.maxHearts ?? 5,
       currentStreak: user.streak?.currentStreak ?? 0,
       longestStreak: user.streak?.longestStreak ?? 0,
-      leagueTier: user.leagueMemberships[0]?.group.tier ?? null,
+      leagueTier,
       enrolledCourses: user._count.enrollments,
       lessonsCompleted,
       createdAt: user.createdAt.toISOString(),
@@ -100,9 +108,7 @@ export class AdminUsersService {
       data: {
         ...(dto.nickname !== undefined ? { nickname: dto.nickname } : {}),
         ...(dto.status !== undefined ? { status: dto.status } : {}),
-        ...(dto.dailyGoalMinutes !== undefined
-          ? { dailyGoalMinutes: dto.dailyGoalMinutes }
-          : {}),
+        ...(dto.dailyGoalMinutes !== undefined ? { dailyGoalMinutes: dto.dailyGoalMinutes } : {}),
       },
     });
     return this.detail(id);
@@ -119,9 +125,7 @@ export class AdminUsersService {
       where: { userId: id },
       data: {
         gems: nextGems,
-        ...(dto.hearts !== undefined
-          ? { hearts: Math.min(dto.hearts, wallet.maxHearts) }
-          : {}),
+        ...(dto.hearts !== undefined ? { hearts: Math.min(dto.hearts, wallet.maxHearts) } : {}),
       },
     });
     return this.detail(id);
