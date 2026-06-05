@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import { Flame, Gem, Heart, LogOut, Sparkles, Target, CheckCircle2 } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
 import { Mascot } from '@/components/Mascot';
+import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { xpToLevel } from '@studyzone/shared-logic';
@@ -12,8 +14,10 @@ import { xpToLevel } from '@studyzone/shared-logic';
 export default function ProfilePage() {
   const router = useRouter();
   const clear = useAuthStore((s) => s.clear);
-  const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
-  const { data: quests } = useQuery({ queryKey: ['quests'], queryFn: () => api.dailyQuests() });
+  const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+  const questsQuery = useQuery({ queryKey: ['quests'], queryFn: () => api.dailyQuests() });
+  const me = meQuery.data;
+  const quests = questsQuery.data;
 
   const level = me ? xpToLevel(me.xpTotal) : null;
 
@@ -21,6 +25,9 @@ export default function ProfilePage() {
     <AppShell>
       <div className="flex flex-col gap-8">
         {/* Hero / profile card */}
+        {meQuery.isLoading ? (
+          <ProfileHeroSkeleton />
+        ) : (
         <section className="rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-6">
           <div className="flex items-center gap-4">
             <div className="relative">
@@ -71,6 +78,7 @@ export default function ProfilePage() {
             <Mini icon={<Heart className="h-6 w-6 text-sz-rose-dark" />} label="心数" value={me?.hearts ?? 0} tint="rose" />
           </div>
         </section>
+        )}
 
         {/* Daily quests */}
         <section>
@@ -81,7 +89,9 @@ export default function ProfilePage() {
             </span>
           </div>
           <div className="mt-3 flex flex-col gap-3">
-            {quests?.map((q) => {
+            {questsQuery.isLoading && <SkeletonRows rows={3} />}
+            {!questsQuery.isLoading &&
+              quests?.map((q) => {
               const pct = Math.min(100, (q.currentValue / q.targetValue) * 100);
               return (
                 <div
@@ -121,15 +131,37 @@ export default function ProfilePage() {
                 </div>
               );
             })}
-            {(!quests || quests.length === 0) && (
-              <div className="card text-center font-bold text-sz-ink-soft">
-                今天还没有任务，过会儿再来看看。
-              </div>
+            {!questsQuery.isLoading && (!quests || quests.length === 0) && (
+              <EmptyState
+                title="今天还没有任务"
+                description="过会儿再来看看，新任务马上就到。"
+                mood="wink"
+              />
             )}
           </div>
         </section>
       </div>
     </AppShell>
+  );
+}
+
+function ProfileHeroSkeleton() {
+  return (
+    <section className="rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-6">
+      <div className="flex items-center gap-4">
+        <Skeleton className="h-[104px] w-[104px] rounded-full" />
+        <div className="flex-1 space-y-2">
+          <Skeleton className="h-7 w-36" />
+          <Skeleton className="h-4 w-48" />
+        </div>
+      </div>
+      <Skeleton className="mt-6 h-4 w-full" />
+      <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <Skeleton key={i} className="h-[88px] rounded-2xl" />
+        ))}
+      </div>
+    </section>
   );
 }
 

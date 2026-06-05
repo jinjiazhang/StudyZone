@@ -5,7 +5,9 @@ import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
-import { Mascot, SpeechBubble } from '@/components/Mascot';
+import { SkeletonRows } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { ApiClientError } from '@studyzone/api-client';
 import { api } from '@/lib/api';
 
@@ -179,12 +181,18 @@ export default function FriendsPage(): JSX.Element {
 
         {/* Friend list */}
         <section className="flex flex-col gap-2">
-          <h2 className="text-lg font-heavy text-sz-ink">我的好友 ({friends.length})</h2>
-          {friends.length === 0 ? (
-            <div className="flex items-end gap-3 py-2">
-              <Mascot size={88} mood="happy" />
-              <SpeechBubble>还没有好友。用上面的邮箱邀请框加一个一起学习的伙伴吧！</SpeechBubble>
-            </div>
+          <h2 className="text-lg font-heavy text-sz-ink">
+            我的好友{!friendsQuery.isLoading && !friendsQuery.isError ? ` (${friends.length})` : ''}
+          </h2>
+          {friendsQuery.isLoading ? (
+            <SkeletonRows rows={4} />
+          ) : friendsQuery.isError ? (
+            <ErrorState onRetry={() => friendsQuery.refetch()} />
+          ) : friends.length === 0 ? (
+            <EmptyState
+              title="还没有好友"
+              description="用上面的邮箱邀请框，加一个一起学习的伙伴吧！"
+            />
           ) : (
             <ul className="flex flex-col gap-2">
               {friends.map((f) => (

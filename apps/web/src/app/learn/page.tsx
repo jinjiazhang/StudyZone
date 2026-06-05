@@ -11,14 +11,29 @@ import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
 import { Mascot, SpeechBubble } from '@/components/Mascot';
 import { SubjectPickerDialog } from '@/components/SubjectPickerDialog';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 export default function LearnPage() {
-  const { data: subjects } = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
-  const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
-  const { data: enrollments } = useQuery({
+  const subjectsQuery = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
+  const coursesQuery = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
+  const enrollmentsQuery = useQuery({
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
   });
+
+  const subjects = subjectsQuery.data;
+  const courses = coursesQuery.data;
+  const enrollments = enrollmentsQuery.data;
+
+  const isLoading = subjectsQuery.isLoading || coursesQuery.isLoading || enrollmentsQuery.isLoading;
+  const isError = subjectsQuery.isError || coursesQuery.isError || enrollmentsQuery.isError;
+  const retry = () => {
+    subjectsQuery.refetch();
+    coursesQuery.refetch();
+    enrollmentsQuery.refetch();
+  };
 
   const [pickerSubject, setPickerSubject] = useState<SubjectDto | null>(null);
 
@@ -56,6 +71,16 @@ export default function LearnPage() {
           <p className="mt-1 text-sm font-bold text-sz-ink-soft">每个学科只显示你正在学的那本，可以随时切换。</p>
         </section>
 
+        {isLoading ? (
+          <LearnSkeleton />
+        ) : isError ? (
+          <ErrorState onRetry={retry} />
+        ) : subjectGroups.length === 0 ? (
+          <EmptyState
+            title="还没有课程"
+            description="课程正在路上，过会儿再来看看吧。"
+          />
+        ) : (
         <div className="flex flex-col gap-8">
           {subjectGroups.map(({ subject, subjectCourses, current }) => (
             <section key={subject.id} className="flex flex-col gap-4">
@@ -133,13 +158,11 @@ export default function LearnPage() {
               )}
             </section>
           ))}
-
-          {subjectGroups.length === 0 && (
-            <div className="card text-center font-bold text-sz-ink-soft">还没有课程，过会儿再来看看。</div>
-          )}
         </div>
+        )}
       </div>
 
+      {/* picker */}
       {pickerSubject && (
         <SubjectPickerDialog
           open
@@ -150,5 +173,29 @@ export default function LearnPage() {
         />
       )}
     </AppShell>
+  );
+}
+
+function LearnSkeleton() {
+  return (
+    <div className="flex flex-col gap-8">
+      {Array.from({ length: 2 }).map((_, i) => (
+        <section key={i} className="flex flex-col gap-4">
+          <div className="flex items-center gap-3">
+            <Skeleton className="h-4 w-4 rounded-full" />
+            <Skeleton className="h-5 w-24" />
+            <div className="h-0.5 flex-1 rounded-full bg-sz-line" />
+          </div>
+          <div className="flex items-center gap-5 rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-5">
+            <Skeleton className="h-36 w-28 shrink-0 rounded-2xl" />
+            <div className="flex-1 space-y-2">
+              <Skeleton className="h-5 w-40" />
+              <Skeleton className="h-4 w-56" />
+              <Skeleton className="h-5 w-20 rounded-full" />
+            </div>
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }

@@ -20,7 +20,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     if (!accessToken) router.replace('/login');
   }, [accessToken, router]);
 
-  const { data: me } = useQuery({
+  const { data: me, isLoading: meLoading } = useQuery({
     queryKey: ['me'],
     queryFn: () => api.me(),
     enabled: !!accessToken,
@@ -40,10 +40,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-3">
-            <Stat icon={<Flame className="h-5 w-5 text-sz-orange" />} value={me?.currentStreak ?? 0} tint="orange" />
-            <Stat icon={<Gem className="h-5 w-5 text-sz-sky" />} value={me?.gems ?? 0} tint="sky" />
-            <Stat icon={<Heart className="h-5 w-5 text-sz-rose" />} value={me?.hearts ?? 0} tint="rose" />
-            <Stat icon={<Sparkles className="h-5 w-5 text-sz-gold" />} value={me?.xpTotal ?? 0} tint="gold" hideOnMobile />
+            {meLoading ? (
+              <>
+                <StatSkeleton />
+                <StatSkeleton />
+                <StatSkeleton />
+                <StatSkeleton hideOnMobile />
+              </>
+            ) : (
+              <>
+                <Stat icon={<Flame className="h-5 w-5 text-sz-orange" />} value={me?.currentStreak ?? 0} tint="orange" />
+                <Stat icon={<Gem className="h-5 w-5 text-sz-sky" />} value={me?.gems ?? 0} tint="sky" />
+                <Stat icon={<Heart className="h-5 w-5 text-sz-rose" />} value={me?.hearts ?? 0} tint="rose" />
+                <Stat icon={<Sparkles className="h-5 w-5 text-sz-gold" />} value={me?.xpTotal ?? 0} tint="gold" hideOnMobile />
+              </>
+            )}
           </div>
         </div>
       </header>
@@ -78,6 +89,19 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <BottomTab href="/profile" current={pathname} icon={<User className="h-6 w-6" />} label="档案" />
         </ul>
       </nav>
+    </div>
+  );
+}
+
+function StatSkeleton({ hideOnMobile }: { hideOnMobile?: boolean }) {
+  return (
+    <div
+      className={clsx(
+        'h-[34px] w-[64px] rounded-full border-2 border-sz-line bg-white px-3 py-1',
+        hideOnMobile && 'hidden sm:block',
+      )}
+    >
+      <div className="skeleton h-full w-full rounded-full" />
     </div>
   );
 }

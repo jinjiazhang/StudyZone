@@ -10,6 +10,9 @@ import type { UnitMapDecorationDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
 import { MapDecoration } from '@/components/MapDecoration';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 export default function CoursePage() {
   const params = useParams<{ courseId: string }>();
@@ -20,22 +23,30 @@ export default function CoursePage() {
     enroll.mutate();
   }, [courseId]);
 
-  const { data: tree, isLoading } = useQuery({
+  const treeQuery = useQuery({
     queryKey: ['tree', courseId],
     queryFn: () => api.getCourseTree(courseId),
   });
+  const tree = treeQuery.data;
 
-  if (isLoading) {
+  if (treeQuery.isLoading) {
     return (
       <AppShell>
-        <div className="font-bold text-sz-ink-soft">加载课程地图中…</div>
+        <CourseMapSkeleton />
       </AppShell>
     );
   }
-  if (!tree) {
+  if (treeQuery.isError) {
     return (
       <AppShell>
-        <div className="card font-heavy">课程未找到</div>
+        <ErrorState onRetry={() => treeQuery.refetch()} />
+      </AppShell>
+    );
+  }
+  if (!tree || tree.length === 0) {
+    return (
+      <AppShell>
+        <EmptyState title="课程还没有内容" description="这门课的关卡正在制作中，敬请期待。" />
       </AppShell>
     );
   }
@@ -200,4 +211,25 @@ function getDecorationSide(
   if (decoration.side === 'left' && offset <= 0) return 'right';
   if (decoration.side === 'right' && offset >= 2) return 'left';
   return decoration.side;
+}
+
+function CourseMapSkeleton() {
+  return (
+    <div className="mx-auto flex max-w-3xl flex-col gap-12">
+      {Array.from({ length: 2 }).map((_, u) => (
+        <section key={u}>
+          <Skeleton className="h-24 w-full rounded-3xl" />
+          <div className="mt-8 flex flex-col items-center gap-6">
+            {Array.from({ length: 4 }).map((_, n) => (
+              <Skeleton
+                key={n}
+                className="h-16 w-16 rounded-full"
+                /* zig-zag like the real lesson nodes */
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }

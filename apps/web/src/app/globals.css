@@ -83,6 +83,28 @@ body {
     @apply rounded-2xl bg-sz-mist p-5;
   }
 
+  /* Skeleton placeholder block – shimmering grey while data loads */
+  .skeleton {
+    @apply relative overflow-hidden rounded-xl bg-sz-mist;
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.65),
+      transparent
+    );
+    transform: translateX(-100%);
+    animation: szShimmer 1.5s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .skeleton::after {
+      animation: none;
+    }
+  }
+
   /* Capsule chips for stats / nav */
   .pill {
     @apply inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-sm font-extrabold text-sz-ink;
@@ -196,6 +218,12 @@ body {
   border-radius: 2px;
   top: -20px;
   animation: confetti 2.4s ease-in forwards;
+}
+
+@keyframes szShimmer {
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes szMascotFloat {

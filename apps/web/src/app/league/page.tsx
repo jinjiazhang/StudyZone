@@ -5,6 +5,8 @@ import clsx from 'clsx';
 import { Trophy, Crown, Medal, ChevronUp, ChevronDown } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
 import { Mascot, SpeechBubble } from '@/components/Mascot';
+import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
+import { ErrorState } from '@/components/ui/ErrorState';
 import { api } from '@/lib/api';
 
 const TIER_LABEL: Record<string, string> = {
@@ -49,11 +51,28 @@ const RESULT_COLOR: Record<string, string> = {
 };
 
 export default function LeaguePage() {
-  const { data: league } = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
-  const { data: history } = useQuery({
+  const leagueQuery = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
+  const historyQuery = useQuery({
     queryKey: ['league-history'],
     queryFn: () => api.leagueHistory(),
   });
+  const league = leagueQuery.data;
+  const history = historyQuery.data;
+
+  if (leagueQuery.isLoading) {
+    return (
+      <AppShell>
+        <LeagueSkeleton />
+      </AppShell>
+    );
+  }
+  if (leagueQuery.isError) {
+    return (
+      <AppShell>
+        <ErrorState onRetry={() => leagueQuery.refetch()} />
+      </AppShell>
+    );
+  }
 
   const tier = league?.tier ?? 'bronze';
   const tierColor = TIER_COLOR[tier] ?? '#58CC02';
@@ -207,6 +226,27 @@ export default function LeaguePage() {
         )}
       </div>
     </AppShell>
+  );
+}
+
+function LeagueSkeleton() {
+  return (
+    <div className="flex flex-col gap-6">
+      <div className="flex items-center gap-4 rounded-3xl border-2 border-sz-line bg-white p-6">
+        <Skeleton className="h-16 w-16 rounded-2xl" />
+        <div className="flex-1 space-y-2">
+          <Skeleton className="h-3 w-16" />
+          <Skeleton className="h-6 w-32" />
+          <Skeleton className="h-4 w-40" />
+        </div>
+      </div>
+      <div className="grid grid-cols-3 items-end gap-3">
+        <Skeleton className="h-24 rounded-t-2xl" />
+        <Skeleton className="h-32 rounded-t-2xl" />
+        <Skeleton className="h-20 rounded-t-2xl" />
+      </div>
+      <SkeletonRows rows={6} />
+    </div>
   );
 }
 
