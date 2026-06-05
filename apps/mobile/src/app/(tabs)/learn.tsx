@@ -116,7 +116,7 @@ export default function Learn() {
         {/* Hero: continue last course */}
         {heroGroup?.current ? (
           <Pressable
-            style={styles.hero}
+            style={({ pressed }) => [styles.hero, pressed && styles.heroPressed]}
             onPress={() => router.push(`/course/${heroGroup.current!.id}`)}
           >
             <View style={styles.heroChips}>
@@ -169,7 +169,7 @@ export default function Learn() {
                     <Repeat size={18} color={colors.inkSoft} />
                   </Pressable>
                   <Pressable
-                    style={styles.cardTop}
+                    style={({ pressed }) => [styles.cardTop, pressed && styles.cardTopPressed]}
                     onPress={() => router.push(`/course/${current.id}`)}
                   >
                     <View style={[styles.cardCoverFrame, { borderColor: subject.color }]}>
@@ -199,7 +199,10 @@ export default function Learn() {
                   </Pressable>
                 </View>
               ) : (
-                <Pressable style={styles.emptyCardCTA} onPress={() => setPickerSubject(subject)}>
+                <Pressable
+                  style={({ pressed }) => [styles.emptyCardCTA, pressed && styles.cardTopPressed]}
+                  onPress={() => setPickerSubject(subject)}
+                >
                   <View
                     style={[
                       styles.cardCoverEmpty,
@@ -305,6 +308,7 @@ const styles = StyleSheet.create({
     padding: 18,
     marginBottom: 8,
   },
+  heroPressed: { borderBottomWidth: 2, transform: [{ translateY: 4 }] },
   heroChips: { flexDirection: 'row', gap: 6, marginBottom: 10 },
   heroChip: {
     backgroundColor: 'rgba(255,255,255,0.22)',
@@ -367,6 +371,7 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 15,
   },
+  cardTopPressed: { opacity: 0.92, transform: [{ scale: 0.99 }] },
   switchBtn: {
     position: 'absolute',
     right: 12,

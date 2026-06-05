@@ -27,7 +27,7 @@ export default function TabsLayout() {
           backgroundColor: colors.white,
           borderTopWidth: 2,
           borderTopColor: colors.line,
-          paddingTop: 4,
+          paddingTop: 6,
         },
         tabBarItemStyle: {
           paddingVertical: 2,

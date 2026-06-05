@@ -30,7 +30,11 @@ export function OptionList({
               hapticSelect();
               onPick(i);
             }}
-            style={[s.optionTile, selected && s.optionTileActive]}
+            style={({ pressed }) => [
+              s.optionTile,
+              selected && s.optionTileActive,
+              pressed && !disabled && s.optionTilePressed,
+            ]}
           >
             <View style={[s.optionBadge, selected && s.optionBadgeActive]}>
               <Text style={[s.optionBadgeText, selected && s.optionBadgeTextActive]}>

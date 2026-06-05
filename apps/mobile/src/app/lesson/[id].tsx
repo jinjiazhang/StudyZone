@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -13,6 +13,12 @@ import { NarrateButton } from '@/components/NarrateButton';
 import { colors, fonts, radius } from '@/lib/theme';
 import { hapticCorrect, hapticWrong, hapticDefeat, hapticPress } from '@/lib/haptics';
 import { Skeleton } from '@/components/ui/Skeleton';
+import { exerciseStyles } from '@/components/exercises/styles';
+import {
+  SubmitFooterContext,
+  type FooterConfig,
+  type SubmitFooterApi,
+} from '@/components/exercises/SubmitFooter';
 import {
   TranslateChoiceExercise,
   TranslateInputExercise,
@@ -59,7 +65,14 @@ export default function Lesson() {
   const [pendingRedoQueue, setPendingRedoQueue] = useState<QueuedExercise[]>([]);
   const [defeated, setDefeated] = useState(false);
   const [start] = useState(Date.now());
+  const [footer, setFooter] = useState<FooterConfig | null>(null);
   const { playAnswerSound } = useAnswerAudio();
+
+  // Stable API the active exercise's SubmitButton registers its CTA into.
+  const footerApi = useMemo<SubmitFooterApi>(
+    () => ({ set: setFooter, clear: () => setFooter(null) }),
+    [],
+  );
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
   useEffect(() => {
@@ -281,21 +294,55 @@ export default function Lesson() {
         </View>
       </View>
 
-      <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-        <Text style={styles.counter}>
-          {current.retry ? '错题重做' : '本轮练习'} · 第 {cursor + 1} 题 / 共 {total} 题
-          {redoCount > 0 ? ` · 待重做 ${redoCount} 题` : ''}
-        </Text>
+      <SubmitFooterContext.Provider value={footerApi}>
+        <ScrollView
+          style={styles.scrollView}
+          contentContainerStyle={styles.scroll}
+          keyboardShouldPersistTaps="handled"
+        >
+          <Text style={styles.counter}>
+            {current.retry ? '错题重做' : '本轮练习'} · 第 {cursor + 1} 题 / 共 {total} 题
+            {redoCount > 0 ? ` · 待重做 ${redoCount} 题` : ''}
+          </Text>
 
-        <NarrateButton key={`narrate-${current.queueKey}`} prompt={current.prompt} />
+          <NarrateButton key={`narrate-${current.queueKey}`} prompt={current.prompt} />
 
-        <ExerciseSwitch
-          key={current.queueKey}
-          exercise={current}
-          disabled={!!feedback}
-          onSubmit={handleSubmit}
-        />
-      </ScrollView>
+          <ExerciseSwitch
+            key={current.queueKey}
+            exercise={current}
+            disabled={!!feedback}
+            onSubmit={handleSubmit}
+          />
+        </ScrollView>
+
+        {/* Docked CTA bar — the active exercise's SubmitButton registers here. */}
+        {!feedback && footer && (
+          <View style={styles.footerBar}>
+            <Pressable
+              onPress={() => {
+                hapticPress();
+                footer.press();
+              }}
+              disabled={footer.disabled}
+              style={({ pressed }) => [
+                exerciseStyles.submitBtn,
+                styles.footerBtn,
+                pressed && !footer.disabled && exerciseStyles.submitBtnPressed,
+                footer.disabled && exerciseStyles.submitBtnDisabled,
+              ]}
+            >
+              <Text
+                style={[
+                  exerciseStyles.submitBtnText,
+                  footer.disabled && exerciseStyles.submitBtnTextDisabled,
+                ]}
+              >
+                {footer.label}
+              </Text>
+            </Pressable>
+          </View>
+        )}
+      </SubmitFooterContext.Provider>
 
       {/* Feedback drawer */}
       {feedback && (
@@ -681,7 +728,19 @@ const styles = StyleSheet.create({
   heartsWrap: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   heartsText: { fontFamily: fonts.display, fontSize: 17, color: colors.roseDark },
 
+  scrollView: { flex: 1 },
   scroll: { padding: 16, paddingBottom: 24 },
+
+  // Docked CTA bar (Duolingo keeps "检查" pinned to the screen bottom).
+  footerBar: {
+    paddingHorizontal: 16,
+    paddingTop: 12,
+    paddingBottom: 16,
+    borderTopWidth: 2,
+    borderTopColor: colors.line,
+    backgroundColor: colors.white,
+  },
+  footerBtn: { marginTop: 0 },
   counter: {
     fontFamily: fonts.heavy,
     fontSize: 10,
@@ -692,7 +751,14 @@ const styles = StyleSheet.create({
   },
 
   // Feedback drawer
-  feedbackDrawer: { borderTopWidth: 4, paddingHorizontal: 16, paddingVertical: 16 },
+  feedbackDrawer: {
+    borderTopWidth: 2,
+    borderTopLeftRadius: radius.xl,
+    borderTopRightRadius: radius.xl,
+    paddingHorizontal: 16,
+    paddingTop: 18,
+    paddingBottom: 20,
+  },
   feedbackRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   feedbackIcon: {
     width: 48,

@@ -44,8 +44,10 @@ export const exerciseStyles = StyleSheet.create({
   },
   optionTileActive: {
     borderColor: colors.sky,
-    backgroundColor: '#EFF6FF',
+    backgroundColor: '#DDF4FF', // Duolingo "iguana" selected tint
   },
+  // Duolingo tiles sink flat on touch (the 3D bottom border collapses).
+  optionTilePressed: { borderBottomWidth: 2, transform: [{ translateY: 2 }] },
   optionBadge: {
     width: 28,
     height: 28,
@@ -103,7 +105,12 @@ export const exerciseStyles = StyleSheet.create({
     marginTop: 8,
   },
   submitBtnPressed: { borderBottomWidth: 0, transform: [{ translateY: 4 }] },
-  submitBtnDisabled: { opacity: 0.5 },
+  // Duolingo disabled CTA: flat grey slab, no 3D border, muted label.
+  submitBtnDisabled: {
+    backgroundColor: colors.line,
+    borderColor: colors.line,
+    borderBottomWidth: 2,
+  },
   submitBtnText: {
     fontFamily: fonts.heavy,
     fontSize: 16,
@@ -111,4 +118,5 @@ export const exerciseStyles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 0.8,
   },
+  submitBtnTextDisabled: { color: colors.inkFaint },
 });
