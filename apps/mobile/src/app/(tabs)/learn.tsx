@@ -14,6 +14,9 @@ import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { StatPill } from '@/components/StatPill';
 import { SubjectPickerSheet } from '@/components/SubjectPickerSheet';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 /** Short glyph for a subject cover/badge — uses the canonical map, else 1st char. */
 function subjectGlyph(code: string, name: string): string {
@@ -24,16 +27,29 @@ export default function Learn() {
   const router = useRouter();
   useTabGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
 
-  const { data: courses } = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
-  const { data: subjects } = useQuery({
+  const coursesQuery = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
+  const subjectsQuery = useQuery({
     queryKey: ['subjects'],
     queryFn: () => api.listSubjects(),
   });
-  const { data: enrollments } = useQuery({
+  const enrollmentsQuery = useQuery({
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
   });
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+
+  const courses = coursesQuery.data;
+  const subjects = subjectsQuery.data;
+  const enrollments = enrollmentsQuery.data;
+
+  const contentLoading =
+    coursesQuery.isLoading || subjectsQuery.isLoading || enrollmentsQuery.isLoading;
+  const contentError = coursesQuery.isError || subjectsQuery.isError || enrollmentsQuery.isError;
+  const retryContent = () => {
+    coursesQuery.refetch();
+    subjectsQuery.refetch();
+    enrollmentsQuery.refetch();
+  };
 
   const [pickerSubject, setPickerSubject] = useState<SubjectDto | null>(null);
 
@@ -80,6 +96,12 @@ export default function Learn() {
       </View>
 
       <ScrollView contentContainerStyle={styles.scroll}>
+        {contentLoading ? (
+          <LearnSkeleton />
+        ) : contentError ? (
+          <ErrorState onRetry={retryContent} />
+        ) : (
+          <>
         {/* Hero: continue last course */}
         {heroGroup?.current ? (
           <Pressable
@@ -192,9 +214,9 @@ export default function Learn() {
         })}
 
         {subjectGroups.length === 0 && (
-          <View style={styles.emptyCard}>
-            <Text style={styles.emptyText}>还没有课程，过会儿再来看看。</Text>
-          </View>
+          <EmptyState title="还没有课程" description="课程正在路上，过会儿再来看看吧。" />
+        )}
+          </>
         )}
       </ScrollView>
 
@@ -208,6 +230,41 @@ export default function Learn() {
         onClose={() => setPickerSubject(null)}
       />
     </SafeAreaView>
+  );
+}
+
+function LearnSkeleton() {
+  return (
+    <>
+      <Skeleton style={{ height: 150, borderRadius: radius.xl }} />
+      {[0, 1].map((i) => (
+        <View key={i} style={{ gap: 10 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
+            <Skeleton style={{ width: 26, height: 26, borderRadius: 8 }} />
+            <Skeleton style={{ width: 80, height: 18 }} />
+            <View style={{ flex: 1, height: 2, backgroundColor: colors.line }} />
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              gap: 15,
+              backgroundColor: colors.white,
+              borderWidth: 2,
+              borderColor: colors.cardLine,
+              borderRadius: radius.xl,
+              padding: 16,
+            }}
+          >
+            <Skeleton style={{ width: 98, height: 126, borderRadius: radius.md }} />
+            <View style={{ flex: 1, justifyContent: 'center', gap: 8 }}>
+              <Skeleton style={{ height: 18, width: '70%' }} />
+              <Skeleton style={{ height: 14, width: '90%' }} />
+              <Skeleton style={{ height: 14, width: '55%' }} />
+            </View>
+          </View>
+        </View>
+      ))}
+    </>
   );
 }
 

@@ -7,6 +7,8 @@ import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius, TIER_LABEL, TIER_COLOR, TIER_EMOJI } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
+import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 const RESULT_LABEL: Record<string, string> = {
   promoted: '晋级',
@@ -21,11 +23,31 @@ const RESULT_COLOR: Record<string, string> = {
 
 export default function League() {
   useTabGuard([['league'], ['league-history']]);
-  const { data } = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
+  const leagueQuery = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
   const { data: history } = useQuery({
     queryKey: ['league-history'],
     queryFn: () => api.leagueHistory(),
   });
+  const data = leagueQuery.data;
+
+  if (leagueQuery.isLoading) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={{ padding: 16, gap: 16 }}>
+          <LeagueSkeleton />
+        </View>
+      </SafeAreaView>
+    );
+  }
+  if (leagueQuery.isError) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <View style={{ padding: 16 }}>
+          <ErrorState onRetry={() => leagueQuery.refetch()} />
+        </View>
+      </SafeAreaView>
+    );
+  }
 
   const tier = data?.tier ?? 'bronze';
   const tierColor = TIER_COLOR[tier] ?? colors.green;
@@ -164,6 +186,20 @@ export default function League() {
         ListEmptyComponent={entries.length > 0 ? null : undefined}
       />
     </SafeAreaView>
+  );
+}
+
+function LeagueSkeleton() {
+  return (
+    <>
+      <Skeleton style={{ height: 130, borderRadius: radius.xl }} />
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 12 }}>
+        <Skeleton style={{ flex: 1, height: 96, borderRadius: radius.lg }} />
+        <Skeleton style={{ flex: 1, height: 128, borderRadius: radius.lg }} />
+        <Skeleton style={{ flex: 1, height: 80, borderRadius: radius.lg }} />
+      </View>
+      <SkeletonRows rows={6} />
+    </>
   );
 }
 

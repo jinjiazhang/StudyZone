@@ -17,8 +17,9 @@ import { ApiClientError } from '@studyzone/api-client';
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius } from '@/lib/theme';
-import { Mascot } from '@/components/Mascot';
-import { SpeechBubble } from '@/components/SpeechBubble';
+import { SkeletonRows } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
 
 const ERROR_LABEL: Record<string, string> = {
   user_not_found: '找不到这个邮箱对应的用户',
@@ -175,14 +176,18 @@ export default function Friends() {
 
         {/* Friends */}
         <View style={{ gap: 8 }}>
-          <Text style={styles.sectionTitle}>我的好友 ({friends.length})</Text>
-          {friends.length === 0 ? (
-            <View style={styles.emptyRow}>
-              <Mascot size={80} mood="happy" />
-              <View style={{ flex: 1 }}>
-                <SpeechBubble>还没有好友。用上面的邮箱邀请一个一起学习的伙伴吧！</SpeechBubble>
-              </View>
-            </View>
+          <Text style={styles.sectionTitle}>
+            我的好友{!friendsQuery.isLoading && !friendsQuery.isError ? ` (${friends.length})` : ''}
+          </Text>
+          {friendsQuery.isLoading ? (
+            <SkeletonRows rows={4} />
+          ) : friendsQuery.isError ? (
+            <ErrorState onRetry={() => friendsQuery.refetch()} />
+          ) : friends.length === 0 ? (
+            <EmptyState
+              title="还没有好友"
+              description="用上面的邮箱邀请框，加一个一起学习的伙伴吧！"
+            />
           ) : (
             friends.map((f) => (
               <View key={f.user.id} style={styles.row}>

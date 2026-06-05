@@ -7,13 +7,17 @@ import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
+import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
+import { EmptyState } from '@/components/ui/EmptyState';
 import { xpToLevel } from '@studyzone/shared-logic';
 
 export default function Profile() {
   const router = useRouter();
   useTabGuard([['me'], ['quests']]);
-  const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
-  const { data: quests } = useQuery({ queryKey: ['quests'], queryFn: () => api.dailyQuests() });
+  const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+  const questsQuery = useQuery({ queryKey: ['quests'], queryFn: () => api.dailyQuests() });
+  const me = meQuery.data;
+  const quests = questsQuery.data;
 
   const level = me ? xpToLevel(me.xpTotal) : null;
 
@@ -21,6 +25,9 @@ export default function Profile() {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scroll}>
         {/* Profile card */}
+        {meQuery.isLoading ? (
+          <ProfileHeroSkeleton />
+        ) : (
         <View style={styles.profileCard}>
           <View style={styles.profileRow}>
             <View style={styles.mascotWrap}>
@@ -85,6 +92,7 @@ export default function Profile() {
             />
           </View>
         </View>
+        )}
 
         {/* Daily quests */}
         <View style={styles.questSection}>
@@ -92,7 +100,9 @@ export default function Profile() {
             <Text style={styles.questTitle}>每日任务</Text>
             <Text style={styles.questSub}>今日刷新</Text>
           </View>
-          {quests?.map((q) => {
+          {questsQuery.isLoading && <SkeletonRows rows={3} />}
+          {!questsQuery.isLoading &&
+            quests?.map((q) => {
             const pct = Math.min(100, (q.currentValue / q.targetValue) * 100);
             return (
               <View
@@ -130,14 +140,36 @@ export default function Profile() {
               </View>
             );
           })}
-          {(!quests || quests.length === 0) && (
-            <View style={styles.emptyQuest}>
-              <Text style={styles.emptyQuestText}>今天还没有任务，过会儿再来看看。</Text>
-            </View>
+          {!questsQuery.isLoading && (!quests || quests.length === 0) && (
+            <EmptyState
+              title="今天还没有任务"
+              description="过会儿再来看看，新任务马上就到。"
+              mood="wink"
+            />
           )}
         </View>
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+function ProfileHeroSkeleton() {
+  return (
+    <View style={styles.profileCard}>
+      <View style={styles.profileRow}>
+        <Skeleton style={{ width: 104, height: 104, borderRadius: radius.full }} />
+        <View style={{ flex: 1, gap: 8 }}>
+          <Skeleton style={{ height: 24, width: '60%' }} />
+          <Skeleton style={{ height: 16, width: '80%' }} />
+        </View>
+      </View>
+      <Skeleton style={{ height: 16, marginTop: 20, borderRadius: radius.full }} />
+      <View style={{ flexDirection: 'row', gap: 10, marginTop: 20 }}>
+        {[0, 1, 2, 3].map((i) => (
+          <Skeleton key={i} style={{ flex: 1, height: 76, borderRadius: radius.lg }} />
+        ))}
+      </View>
+    </View>
   );
 }
 
