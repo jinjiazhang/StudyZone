@@ -1,27 +1,23 @@
 import * as Haptics from 'expo-haptics';
+import { usePrefs } from './prefs';
 
 /**
  * Semantic haptics wrapper. Screens call intent-named helpers (not raw
  * impact/notification styles) so the feel stays consistent and can be globally
  * tuned or muted in one place.
  *
- * All calls are fire-and-forget and swallow errors — haptics must never block
- * or crash UI, and they no-op on devices/simulators without a haptics engine.
+ * The on/off state is the persisted `haptics` pref (Settings → 震动反馈), read
+ * live so the toggle takes effect immediately. All calls are fire-and-forget
+ * and swallow errors — haptics must never block or crash UI, and they no-op on
+ * devices/simulators without a haptics engine.
  */
 
-let enabled = true;
-
-/** Toggle all haptics (wire to a settings switch later). */
-export function setHapticsEnabled(value: boolean) {
-  enabled = value;
-}
-
-export function hapticsEnabled() {
-  return enabled;
+function enabled() {
+  return usePrefs.getState().haptics;
 }
 
 function run(fn: () => Promise<unknown>) {
-  if (!enabled) return;
+  if (!enabled()) return;
   void fn().catch(() => {});
 }
 
@@ -52,7 +48,7 @@ export function hapticHeartLost() {
 
 /** Lesson finished — a small celebratory double-tap of success. */
 export function hapticLessonComplete() {
-  if (!enabled) return;
+  if (!enabled()) return;
   void (async () => {
     try {
       await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -66,7 +62,7 @@ export function hapticLessonComplete() {
 
 /** Lesson failed (out of hearts). */
 export function hapticDefeat() {
-  if (!enabled) return;
+  if (!enabled()) return;
   void (async () => {
     try {
       await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);

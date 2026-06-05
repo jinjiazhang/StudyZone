@@ -10,6 +10,7 @@ import {
   Bell,
   Target,
   Volume2,
+  Vibrate,
   Heart,
   Sparkles,
   LifeBuoy,
@@ -17,8 +18,11 @@ import {
 } from 'lucide-react-native';
 import { useAuth } from '@/lib/auth';
 import { usePrefs } from '@/lib/prefs';
+import { hapticPress } from '@/lib/haptics';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
+
+type PrefKey = 'autoNarrate' | 'haptics';
 
 type Row = {
   icon: React.ReactNode;
@@ -27,7 +31,7 @@ type Row = {
   toggle?: boolean;
   defaultOn?: boolean;
   /** When set, this toggle is backed by the persisted prefs store. */
-  pref?: 'autoNarrate';
+  pref?: PrefKey;
 };
 
 export default function Settings() {
@@ -35,8 +39,16 @@ export default function Settings() {
   const clear = useAuth((s) => s.clear);
   const autoNarrate = usePrefs((s) => s.autoNarrate);
   const setAutoNarrate = usePrefs((s) => s.setAutoNarrate);
+  const haptics = usePrefs((s) => s.haptics);
+  const setHaptics = usePrefs((s) => s.setHaptics);
   const [confirm, setConfirm] = useState(false);
   const [toggles, setToggles] = useState<Record<string, boolean>>({ 音效: true });
+
+  const prefValue: Record<PrefKey, boolean> = { autoNarrate, haptics };
+  const setPref: Record<PrefKey, (on: boolean) => void> = {
+    autoNarrate: setAutoNarrate,
+    haptics: setHaptics,
+  };
 
   const groups: { group: string; rows: Row[] }[] = [
     {
@@ -52,6 +64,7 @@ export default function Settings() {
       rows: [
         { icon: <Target size={18} color={colors.inkSoft} />, name: '每日目标', detail: '40 经验' },
         { icon: <Volume2 size={18} color={colors.inkSoft} />, name: '音效', toggle: true, defaultOn: true },
+        { icon: <Vibrate size={18} color={colors.inkSoft} />, name: '震动反馈', toggle: true, pref: 'haptics' },
         { icon: <Volume2 size={18} color={colors.inkSoft} />, name: '进题自动念题', toggle: true, pref: 'autoNarrate' },
         { icon: <Heart size={18} color={colors.inkSoft} />, name: '无限生命', detail: '订阅' },
       ],
@@ -82,8 +95,8 @@ export default function Settings() {
             <View style={styles.card}>
               {grp.rows.map((r, ri) => {
                 const on = r.toggle
-                  ? r.pref === 'autoNarrate'
-                    ? autoNarrate
+                  ? r.pref
+                    ? prefValue[r.pref]
                     : toggles[r.name] ?? r.defaultOn ?? false
                   : false;
                 return (
@@ -99,11 +112,15 @@ export default function Settings() {
                     {r.detail && <Text style={styles.rowDetail}>{r.detail}</Text>}
                     {r.toggle ? (
                       <Pressable
-                        onPress={() =>
-                          r.pref === 'autoNarrate'
-                            ? setAutoNarrate(!on)
-                            : setToggles((t) => ({ ...t, [r.name]: !on }))
-                        }
+                        onPress={() => {
+                          if (r.pref) {
+                            setPref[r.pref](!on);
+                            // Buzz when turning haptics ON so the change is felt.
+                            if (r.pref === 'haptics' && !on) hapticPress();
+                          } else {
+                            setToggles((t) => ({ ...t, [r.name]: !on }));
+                          }
+                        }}
                         style={[styles.switch, { backgroundColor: on ? colors.green : colors.line }]}
                       >
                         <View style={[styles.knob, { left: on ? 23 : 3 }]} />
