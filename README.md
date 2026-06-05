@@ -129,6 +129,7 @@ pnpm services:stop --keep-docker
 - 🧪 [测试指南](docs/development/testing.md)
 
 ### 部署运维
+- 🧾 [部署 / 更新 / 导入数据命令](docs/deployment/operations.md) —— 运维执行清单
 - 🚢 [生产部署](docs/deployment/production.md) —— systemd + Nginx 一键部署
 - 🐳 [Docker 与本地基础设施](docs/deployment/docker.md)
 - ⚙️ [systemd 服务管理](docs/deployment/systemd.md)

@@ -23,6 +23,7 @@ docs/
 │  └─ testing.md                   # 单测与端到端测试
 │
 ├─ deployment/                     # 部署与运维
+│  ├─ operations.md                # 服务部署 / 更新 / 导入数据命令清单
 │  ├─ production.md                # 生产环境一键部署流程
 │  ├─ docker.md                    # 本地基础设施容器
 │  ├─ systemd.md                   # studyzone-api / studyzone-web 服务管理
@@ -46,7 +47,7 @@ docs/
 - **新人入职**：`development/getting-started.md` → `architecture/01-overview.md` → 选择负责的 `apps/<x>.md`。
 - **后端开发**：`architecture/02-data-model.md` + `architecture/04-learning-engine.md` + `apps/api.md`。
 - **前端开发**：`apps/web.md` 或 `apps/mobile.md` + `architecture/03-api.md`。
-- **运维上线**：`deployment/production.md` 一篇就够，需要时再翻 `systemd.md` / `nginx.md`。
+- **运维执行命令**：先看 `deployment/operations.md`；需要了解完整背景再看 `production.md` / `systemd.md` / `nginx.md`。
 
 ## 文档约定
 
