@@ -45,6 +45,11 @@ export class LeagueController {
     return this.service.adminListWeek(weekStart);
   }
 
+  @Get('admin/leagues/weeks')
+  adminListWeeks() {
+    return this.service.adminListWeeks();
+  }
+
   @Get('admin/leagues/:id')
   async adminGetGroup(@Param('id') id: string) {
     const group = await this.service.adminGetGroup(id);

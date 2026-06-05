@@ -15,6 +15,7 @@ import type {
   LeagueStandingDto,
   LeagueHistoryItemDto,
   AdminLeagueGroupDetailDto,
+  AdminLeagueWeekOptionDto,
   AdminLeagueWeekDto,
   AdminSettleLeaguesResult,
   AdminUserListItemDto,
@@ -215,6 +216,10 @@ export class StudyZoneClient {
   getAdminLeagues(weekStart?: string) {
     const q = weekStart ? `?weekStart=${encodeURIComponent(weekStart)}` : '';
     return this.request<AdminLeagueWeekDto>(`/api/v1/admin/leagues${q}`);
+  }
+
+  getAdminLeagueWeeks() {
+    return this.request<AdminLeagueWeekOptionDto[]>('/api/v1/admin/leagues/weeks');
   }
 
   getAdminLeagueGroup(id: string) {

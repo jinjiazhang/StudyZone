@@ -414,6 +414,27 @@ export class LeagueService {
     };
   }
 
+  async adminListWeeks() {
+    const groups = await this.prisma.leagueGroup.findMany({
+      include: { _count: { select: { entries: true } } },
+      orderBy: { weekStart: 'desc' },
+    });
+
+    const byWeek = new Map<
+      string,
+      { weekStart: string; groupCount: number; totalPlayers: number }
+    >();
+    for (const group of groups) {
+      const weekStart = group.weekStart.toISOString();
+      const item = byWeek.get(weekStart) ?? { weekStart, groupCount: 0, totalPlayers: 0 };
+      item.groupCount++;
+      item.totalPlayers += group._count.entries;
+      byWeek.set(weekStart, item);
+    }
+
+    return [...byWeek.values()];
+  }
+
   async adminGetGroup(groupId: string) {
     const group = await this.prisma.leagueGroup.findUnique({
       where: { id: groupId },

@@ -22,16 +22,28 @@ function fmtDate(iso: string) {
 export function Leagues() {
   const qc = useQueryClient();
   const [weekStart, setWeekStart] = useState<string>('');
+  const isViewingCurrentWeek = !weekStart;
+
+  const { data: weeks } = useQuery({
+    queryKey: ['admin-league-weeks'],
+    queryFn: () => api.getAdminLeagueWeeks(),
+  });
 
   const { data, isLoading } = useQuery({
     queryKey: ['admin-leagues', weekStart],
     queryFn: () => api.getAdminLeagues(weekStart || undefined),
   });
 
+  const currentWeekStart = data?.weekStart ?? weekStart;
+  const previousAvailableWeek = weeks?.find((w) => {
+    return currentWeekStart ? w.weekStart < currentWeekStart : false;
+  });
+
   const settle = useMutation({
     mutationFn: (ws?: string) => api.settleAdminLeagues(ws),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['admin-leagues'] });
+      qc.invalidateQueries({ queryKey: ['admin-league-weeks'] });
     },
   });
 
@@ -64,7 +76,18 @@ export function Leagues() {
             }}
           />
         </label>
-        {weekStart && (
+        {isViewingCurrentWeek ? (
+          <button
+            onClick={() => previousAvailableWeek && setWeekStart(previousAvailableWeek.weekStart)}
+            disabled={!previousAvailableWeek}
+            style={{
+              ...btnGhost,
+              ...(!previousAvailableWeek ? { opacity: 0.5, cursor: 'not-allowed' } : {}),
+            }}
+          >
+            上周
+          </button>
+        ) : (
           <button onClick={() => setWeekStart('')} style={btnGhost}>
             本周
           </button>

@@ -336,6 +336,12 @@ export interface AdminLeagueWeekDto {
   totalPlayers: number;
 }
 
+export interface AdminLeagueWeekOptionDto {
+  weekStart: string;
+  groupCount: number;
+  totalPlayers: number;
+}
+
 export interface AdminLeagueGroupEntryDto {
   rank: number;
   user: UserPublic & { email: string };
