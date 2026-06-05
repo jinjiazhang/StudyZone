@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, XCircle, Heart } from 'lucide-react';
 
 import { api } from '@/lib/api';
+import { Skeleton } from '@/components/ui/Skeleton';
 import { playAnswerSound, preloadAnswerSounds } from '@/lib/answer-sounds';
 import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 import {
@@ -232,11 +233,7 @@ export default function LessonPage() {
     );
 
   if (isLoading || !session || (session.exercises.length > 0 && exerciseQueue.length === 0))
-    return (
-      <main className="flex min-h-screen items-center justify-center text-base font-heavy text-sz-ink-soft">
-        载入关卡中…
-      </main>
-    );
+    return <LessonSkeleton />;
 
   return (
     <main className="flex min-h-screen flex-col bg-white">
@@ -345,6 +342,29 @@ export default function LessonPage() {
           </motion.div>
         )}
       </AnimatePresence>
+    </main>
+  );
+}
+
+function LessonSkeleton() {
+  return (
+    <main className="flex min-h-screen flex-col bg-white">
+      <header className="sticky top-0 z-20 border-b-2 border-sz-line bg-white">
+        <div className="mx-auto flex max-w-3xl items-center gap-4 px-4 py-3 md:px-6">
+          <Skeleton className="h-8 w-8 rounded-full" />
+          <Skeleton className="h-4 flex-1 rounded-full" />
+          <Skeleton className="h-6 w-12 rounded-full" />
+        </div>
+      </header>
+      <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-4 py-8 md:px-6">
+        <Skeleton className="h-4 w-40" />
+        <Skeleton className="h-10 w-3/4" />
+        <div className="mt-4 flex flex-col gap-3">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <Skeleton key={i} className="h-16 w-full rounded-2xl" />
+          ))}
+        </div>
+      </div>
     </main>
   );
 }

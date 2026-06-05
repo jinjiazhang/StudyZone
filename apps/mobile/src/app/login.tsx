@@ -24,6 +24,7 @@ export default function Login() {
   const setAuth = useAuth((s) => s.setAuth);
   const [loading, setLoading] = useState(false);
   const [pressed, setPressed] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -51,6 +52,7 @@ export default function Login() {
   async function onLogin() {
     try {
       setLoading(true);
+      setError(null);
       const res = await api.login({ email, password });
       setAuth({
         accessToken: res.tokens.accessToken,
@@ -60,7 +62,7 @@ export default function Login() {
       await SecureStore.setItemAsync(LAST_LOGIN_KEY, JSON.stringify({ email, password }));
       router.replace('/(tabs)/learn');
     } catch (e: any) {
-      Alert.alert('登录失败', e?.body?.message ?? '请重试');
+      setError(e?.body?.message ?? '登录失败，请重试');
     } finally {
       setLoading(false);
     }
@@ -98,6 +100,12 @@ export default function Login() {
           <Pressable onPress={() => Alert.alert('忘记密码', '请联系老师或客服重置密码。')}>
             <Text style={styles.forgot}>忘记密码？</Text>
           </Pressable>
+
+          {error && (
+            <View style={styles.errorBox}>
+              <Text style={styles.errorText}>⚠️ {error}</Text>
+            </View>
+          )}
 
           {/* 3D puffy login button */}
           <Pressable
@@ -159,6 +167,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonPressed: { borderBottomWidth: 2, transform: [{ translateY: 3 }] },
+  errorBox: {
+    backgroundColor: '#FFF1F2',
+    borderWidth: 2,
+    borderColor: colors.rose,
+    borderRadius: radius.md,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    marginBottom: 14,
+  },
+  errorText: { fontFamily: fonts.heavy, fontSize: 13, color: colors.roseDark },
   buttonText: {
     color: colors.white,
     fontFamily: fonts.heavy,

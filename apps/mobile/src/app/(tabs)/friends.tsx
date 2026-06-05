@@ -321,5 +321,4 @@ const styles = StyleSheet.create({
   stats: { flexDirection: 'row', gap: 12, marginTop: 2 },
   stat: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   statText: { fontFamily: fonts.sansBold, fontSize: 12, color: colors.inkSoft },
-  emptyRow: { flexDirection: 'row', alignItems: 'flex-end', gap: 12, paddingVertical: 8 },
 });

@@ -36,7 +36,8 @@ export default function Learn() {
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
   });
-  const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+  const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+  const me = meQuery.data;
 
   const courses = coursesQuery.data;
   const subjects = subjectsQuery.data;
@@ -81,17 +82,27 @@ export default function Learn() {
           <Text style={styles.logoText}>StudyZone</Text>
         </View>
         <View style={styles.statsRow}>
-          <StatPill
-            icon={<Flame size={18} color={colors.orange} />}
-            value={me?.currentStreak ?? 0}
-            tint="orange"
-          />
-          <StatPill icon={<Gem size={18} color={colors.sky} />} value={me?.gems ?? 0} tint="sky" />
-          <StatPill
-            icon={<Heart size={18} color={colors.rose} />}
-            value={me?.hearts ?? 0}
-            tint="rose"
-          />
+          {meQuery.isLoading ? (
+            <>
+              <Skeleton style={styles.statSkeleton} />
+              <Skeleton style={styles.statSkeleton} />
+              <Skeleton style={styles.statSkeleton} />
+            </>
+          ) : (
+            <>
+              <StatPill
+                icon={<Flame size={18} color={colors.orange} />}
+                value={me?.currentStreak ?? 0}
+                tint="orange"
+              />
+              <StatPill icon={<Gem size={18} color={colors.sky} />} value={me?.gems ?? 0} tint="sky" />
+              <StatPill
+                icon={<Heart size={18} color={colors.rose} />}
+                value={me?.hearts ?? 0}
+                tint="rose"
+              />
+            </>
+          )}
         </View>
       </View>
 
@@ -283,6 +294,7 @@ const styles = StyleSheet.create({
   logoRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   logoText: { fontFamily: fonts.heavy, fontSize: 20, color: colors.green },
   statsRow: { flexDirection: 'row', gap: 6 },
+  statSkeleton: { width: 44, height: 24, borderRadius: 999 },
   scroll: { padding: 16, paddingBottom: 34, gap: 18 },
   mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   hero: {
@@ -449,14 +461,4 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 15,
   },
-  emptyCard: {
-    backgroundColor: colors.white,
-    borderRadius: radius.xl,
-    borderWidth: 2,
-    borderBottomWidth: 6,
-    borderColor: colors.line,
-    padding: 24,
-    alignItems: 'center',
-  },
-  emptyText: { fontFamily: fonts.sansBold, color: colors.inkSoft },
 });

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, Pressable, StyleSheet, Alert } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ChevronLeft, User, Mail, Lock } from 'lucide-react-native';
@@ -18,18 +18,20 @@ export default function Register() {
   const setAuth = useAuth((s) => s.setAuth);
   const [loading, setLoading] = useState(false);
   const [pressed, setPressed] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   async function onRegister() {
     if (nickname.trim().length < 2) {
-      Alert.alert('注册失败', '昵称至少需要 2 个字符');
+      setError('昵称至少需要 2 个字符');
       return;
     }
     if (password.length < 8) {
-      Alert.alert('注册失败', '密码至少需要 8 位');
+      setError('密码至少需要 8 位');
       return;
     }
     try {
       setLoading(true);
+      setError(null);
       const res = await api.register({ email: email.trim(), nickname: nickname.trim(), password });
       setAuth({
         accessToken: res.tokens.accessToken,
@@ -38,7 +40,7 @@ export default function Register() {
       });
       router.replace('/(tabs)/learn');
     } catch (e: any) {
-      Alert.alert('注册失败', e?.body?.message ?? '请重试');
+      setError(e?.body?.message ?? '注册失败，请重试');
     } finally {
       setLoading(false);
     }
@@ -86,6 +88,12 @@ export default function Register() {
           />
 
           <Text style={styles.terms}>注册即表示同意《用户协议》与《隐私政策》</Text>
+
+          {error && (
+            <View style={styles.errorBox}>
+              <Text style={styles.errorText}>⚠️ {error}</Text>
+            </View>
+          )}
 
           <Pressable
             onPress={onRegister}
@@ -135,6 +143,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonPressed: { borderBottomWidth: 2, transform: [{ translateY: 3 }] },
+  errorBox: {
+    backgroundColor: '#FFF1F2',
+    borderWidth: 2,
+    borderColor: colors.rose,
+    borderRadius: radius.md,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    marginBottom: 14,
+  },
+  errorText: { fontFamily: fonts.heavy, fontSize: 13, color: colors.roseDark },
   buttonText: {
     color: colors.white,
     fontFamily: fonts.heavy,

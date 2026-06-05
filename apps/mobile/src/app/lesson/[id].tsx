@@ -10,6 +10,7 @@ import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { useAnswerAudio } from '@/lib/audio';
 import { colors, fonts, radius } from '@/lib/theme';
+import { Skeleton } from '@/components/ui/Skeleton';
 import {
   TranslateChoiceExercise,
   TranslateInputExercise,
@@ -130,18 +131,10 @@ export default function Lesson() {
     );
   }
 
-  if (!session) {
+  if (!session || (session.exercises.length > 0 && exerciseQueue.length === 0)) {
     return (
       <SafeAreaView style={styles.container}>
-        <Text style={styles.loadingText}>载入关卡中…</Text>
-      </SafeAreaView>
-    );
-  }
-
-  if (session.exercises.length > 0 && exerciseQueue.length === 0) {
-    return (
-      <SafeAreaView style={styles.container}>
-        <Text style={styles.loadingText}>载入关卡中…</Text>
+        <LessonSkeleton />
       </SafeAreaView>
     );
   }
@@ -354,6 +347,27 @@ export default function Lesson() {
         </Animated.View>
       )}
     </SafeAreaView>
+  );
+}
+
+/* ─── Loading skeleton ─── */
+
+function LessonSkeleton() {
+  return (
+    <>
+      <View style={styles.topBar}>
+        <Skeleton style={{ width: 32, height: 32, borderRadius: radius.full }} />
+        <Skeleton style={{ flex: 1, height: 16, borderRadius: radius.full }} />
+        <Skeleton style={{ width: 44, height: 24, borderRadius: radius.full }} />
+      </View>
+      <View style={{ padding: 16, gap: 16 }}>
+        <Skeleton style={{ height: 14, width: 160 }} />
+        <Skeleton style={{ height: 40, width: '75%' }} />
+        {[0, 1, 2, 3].map((i) => (
+          <Skeleton key={i} style={{ height: 60, borderRadius: radius.lg }} />
+        ))}
+      </View>
+    </>
   );
 }
 

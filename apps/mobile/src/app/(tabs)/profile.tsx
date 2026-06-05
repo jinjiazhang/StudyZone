@@ -294,13 +294,4 @@ const styles = StyleSheet.create({
   questRewards: { flexDirection: 'row', gap: 8 },
   questReward: { flexDirection: 'row', alignItems: 'center', gap: 2 },
   questRewardText: { fontFamily: fonts.heavy, fontSize: 10 },
-  emptyQuest: {
-    borderRadius: radius.lg,
-    borderWidth: 2,
-    borderColor: colors.line,
-    backgroundColor: colors.white,
-    padding: 20,
-    alignItems: 'center',
-  },
-  emptyQuestText: { fontFamily: fonts.sansBold, color: colors.inkSoft },
 });
