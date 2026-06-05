@@ -172,7 +172,7 @@ export default function LeaguePage() {
                               : 'border-sz-line',
                       )}
                     >
-                      <div className="w-7 text-center text-lg font-heavy text-sz-ink-soft">
+                      <div className="w-7 text-center font-display text-lg font-heavy text-sz-ink-soft">
                         {rank}
                       </div>
                       <Avatar url={entry.user.avatarUrl} />
@@ -183,7 +183,7 @@ export default function LeaguePage() {
                       {entry.zone === 'demoted' && (
                         <ChevronDown className="h-4 w-4 text-[#FF4B4B]" />
                       )}
-                      <div className="font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
+                      <div className="font-display font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
                     </li>
                     {showPromoteLine && <ZoneDivider kind="promote" />}
                   </div>
@@ -318,7 +318,7 @@ function PodiumCard({
         <div className="line-clamp-1 max-w-[8rem] font-heavy text-sz-ink">
           {entry.user.nickname}
         </div>
-        <div className="text-xs font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
+        <div className="font-display text-xs font-heavy text-sz-green-dark">{entry.weeklyXp} XP</div>
       </div>
       <div
         className={clsx(

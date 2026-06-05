@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------- Fonts (Duolingo uses Feather Bold; Nunito is the closest free match) ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+/* ---------- Fonts ----------
+   Nunito = body/Chinese (Feather's closest free match).
+   Fredoka = rounded display face for numbers / Latin / brand, à la Duolingo. */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka:wght@500;600;700&display=swap');
 
 :root {
   --sz-bg: #ffffff;
@@ -65,8 +67,8 @@ body {
   }
   .brand-logo {
     @apply inline-flex select-none items-center text-[42px] font-heavy leading-none text-[#58cc02] transition-transform duration-150 hover:-translate-y-0.5 sm:text-[48px];
-    font-family: 'Nunito', 'Inter', 'PingFang SC', system-ui, sans-serif;
-    letter-spacing: -0.04em;
+    font-family: 'Fredoka', 'Nunito', 'Inter', 'PingFang SC', system-ui, sans-serif;
+    letter-spacing: -0.02em;
     text-shadow:
       0 3px 0 #58a700,
       0 6px 0 rgba(0, 0, 0, 0.08);

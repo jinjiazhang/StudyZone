@@ -368,7 +368,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   podiumName: { fontFamily: fonts.heavy, fontSize: 12, color: colors.ink, maxWidth: 90 },
-  podiumXp: { fontFamily: fonts.heavy, fontSize: 11, color: colors.greenDark },
+  podiumXp: { fontFamily: fonts.display, fontSize: 12, color: colors.greenDark },
   podiumBar: {
     width: '100%',
     borderTopLeftRadius: radius.lg,
@@ -390,8 +390,8 @@ const styles = StyleSheet.create({
   rank: {
     width: 28,
     textAlign: 'center',
-    fontFamily: fonts.heavy,
-    fontSize: 16,
+    fontFamily: fonts.display,
+    fontSize: 17,
     color: colors.inkSoft,
   },
   avatar: {
@@ -403,7 +403,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   name: { flex: 1, fontFamily: fonts.heavy, color: colors.ink },
-  xp: { fontFamily: fonts.heavy, color: colors.greenDark },
+  xp: { fontFamily: fonts.display, fontSize: 15, color: colors.greenDark },
   zoneDivider: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 4 },
   zoneLine: { flex: 1, height: 2, borderRadius: 1 },
   zoneLabel: { flexDirection: 'row', alignItems: 'center', gap: 2 },

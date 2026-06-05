@@ -125,8 +125,10 @@ export const fonts = {
   heavy: 'Nunito_900Black',
   regular: 'Nunito_400Regular',
   semiBold: 'Nunito_600SemiBold',
-  // Display alias — swap to a bundled 'Baloo2_800ExtraBold' to upgrade later.
-  display: 'Nunito_900Black',
+  // Rounded display face (Duolingo-style) for numbers / Latin / brand. Chinese
+  // glyphs fall back to the system CJK heavy face automatically.
+  display: 'Fredoka_700Bold',
+  displaySemi: 'Fredoka_600SemiBold',
 } as const;
 
 // ── Spacing / Radius ─────────────────────────────────────────────────────────

@@ -33,7 +33,7 @@ export default function ProfilePage() {
             <div className="relative">
               <Mascot size={104} mood="wink" />
               {level && (
-                <span className="absolute -bottom-1 -right-1 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 text-xs font-heavy text-white shadow-pop">
+                <span className="absolute -bottom-1 -right-1 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 font-display text-xs font-heavy text-white shadow-pop">
                   Lv {level.level}
                 </span>
               )}
@@ -185,7 +185,7 @@ function Mini({
   return (
     <div className={`rounded-2xl border-2 border-b-[4px] ${bg} p-3 text-center`}>
       <div className="flex justify-center">{icon}</div>
-      <div className="mt-1 text-2xl font-heavy text-sz-ink">{value}</div>
+      <div className="mt-1 font-display text-2xl font-heavy text-sz-ink">{value}</div>
       <div className="text-[11px] font-heavy uppercase tracking-wider text-sz-ink-soft">{label}</div>
     </div>
   );

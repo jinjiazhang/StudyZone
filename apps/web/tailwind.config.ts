@@ -37,7 +37,16 @@ const config: Config = {
           'system-ui',
           'sans-serif',
         ],
-        display: ['"Nunito"', '"Inter"', 'system-ui', 'sans-serif'],
+        // Rounded display face for numbers / Latin / brand. Chinese glyphs
+        // fall back to the CJK heavy faces automatically.
+        display: [
+          '"Fredoka"',
+          '"Nunito"',
+          '"Noto Sans SC"',
+          '"PingFang SC"',
+          'system-ui',
+          'sans-serif',
+        ],
       },
       fontWeight: {
         heavy: '900',

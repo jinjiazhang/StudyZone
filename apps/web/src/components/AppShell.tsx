@@ -35,7 +35,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-[84rem] items-center justify-between px-6 py-3 md:justify-end md:px-8">
           <Link href="/learn" className="flex items-center gap-2 md:hidden">
             <Mascot size={36} />
-            <span className="hidden text-2xl font-heavy text-sz-green sm:inline">
+            <span className="hidden font-display text-2xl font-heavy text-sz-green sm:inline">
               StudyZone
             </span>
           </Link>
@@ -65,7 +65,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <div className="sticky top-24 flex flex-col gap-7">
             <Link href="/learn" className="flex items-center gap-3 px-4">
               <Mascot size={42} />
-              <span className="text-[1.65rem] font-heavy leading-none text-sz-green">
+              <span className="font-display text-[1.65rem] font-heavy leading-none text-sz-green">
                 StudyZone
               </span>
             </Link>
@@ -132,7 +132,7 @@ function Stat({
       )}
     >
       {icon}
-      <span>{value}</span>
+      <span className="font-display">{value}</span>
     </div>
   );
 }

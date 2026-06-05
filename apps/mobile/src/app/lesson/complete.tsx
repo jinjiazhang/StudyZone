@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   xpHeroLabel: { fontFamily: fonts.heavy, fontSize: 12, color: colors.inkSoft, letterSpacing: 0.4 },
-  xpHeroValue: { fontFamily: fonts.heavy, fontSize: 34, color: colors.goldDark, lineHeight: 38 },
+  xpHeroValue: { fontFamily: fonts.display, fontSize: 36, color: colors.goldDark, lineHeight: 40 },
   statsRow: {
     flexDirection: 'row',
     gap: 10,
@@ -252,7 +252,7 @@ const styles = StyleSheet.create({
     padding: 12,
     alignItems: 'center',
   },
-  statValue: { fontFamily: fonts.heavy, fontSize: 22, color: colors.ink, marginTop: 4 },
+  statValue: { fontFamily: fonts.display, fontSize: 23, color: colors.ink, marginTop: 4 },
   statLabel: { fontFamily: fonts.heavy, fontSize: 10, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1 },
   buttons: { width: '100%', gap: 10, marginTop: 20 },
   btnPrimary: {

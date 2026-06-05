@@ -292,7 +292,7 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
   },
   logoRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  logoText: { fontFamily: fonts.heavy, fontSize: 20, color: colors.green },
+  logoText: { fontFamily: fonts.display, fontSize: 22, color: colors.green },
   statsRow: { flexDirection: 'row', gap: 6 },
   statSkeleton: { width: 44, height: 24, borderRadius: 999 },
   scroll: { padding: 16, paddingBottom: 34, gap: 18 },

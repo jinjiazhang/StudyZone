@@ -679,7 +679,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.5)',
   },
   heartsWrap: { flexDirection: 'row', alignItems: 'center', gap: 4 },
-  heartsText: { fontFamily: fonts.heavy, fontSize: 16, color: colors.roseDark },
+  heartsText: { fontFamily: fonts.display, fontSize: 17, color: colors.roseDark },
 
   scroll: { padding: 16, paddingBottom: 24 },
   counter: {

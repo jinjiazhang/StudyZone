@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 2,
   },
-  lvText: { fontFamily: fonts.heavy, fontSize: 11, color: colors.white },
+  lvText: { fontFamily: fonts.display, fontSize: 11, color: colors.white },
   nickname: { fontSize: 22, fontFamily: fonts.heavy, color: colors.ink },
   email: { fontSize: 13, fontFamily: fonts.sansBold, color: colors.inkSoft },
   logoutBtn: {
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     padding: 12,
     alignItems: 'center',
   },
-  miniValue: { fontFamily: fonts.heavy, fontSize: 22, color: colors.ink, marginTop: 4 },
+  miniValue: { fontFamily: fonts.display, fontSize: 23, color: colors.ink, marginTop: 4 },
   miniLabel: { fontFamily: fonts.heavy, fontSize: 10, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1 },
   questSection: {},
   questHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },

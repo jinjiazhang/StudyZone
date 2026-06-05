@@ -117,7 +117,7 @@ function Stat({
       className={`rounded-2xl border-2 border-b-[6px] ${bg} p-4`}
     >
       <div className="flex justify-center">{icon}</div>
-      <div className="mt-2 text-2xl font-heavy text-sz-ink">+{value}</div>
+      <div className="mt-2 font-display text-2xl font-heavy text-sz-ink">+{value}</div>
       <div className="text-xs font-heavy uppercase tracking-wider text-sz-ink-soft">{label}</div>
     </motion.div>
   );

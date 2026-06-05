@@ -257,7 +257,7 @@ export default function LessonPage() {
               />
             </div>
           </div>
-          <div className="flex items-center gap-1.5 font-heavy text-sz-rose-dark">
+          <div className="flex items-center gap-1.5 font-display font-heavy text-sz-rose-dark">
             <Heart className="h-6 w-6 fill-sz-rose text-sz-rose" />
             <span>{hearts}</span>
           </div>
