@@ -11,6 +11,7 @@ import { api } from '@/lib/api';
 import { useAnswerAudio } from '@/lib/audio';
 import { NarrateButton } from '@/components/NarrateButton';
 import { colors, fonts, radius } from '@/lib/theme';
+import { hapticCorrect, hapticWrong, hapticDefeat, hapticPress } from '@/lib/haptics';
 import { Skeleton } from '@/components/ui/Skeleton';
 import {
   TranslateChoiceExercise,
@@ -174,14 +175,18 @@ export default function Lesson() {
     const responseMs = Date.now() - start;
     const r = await submit.mutateAsync({ exerciseId: current.id, payload, responseMs });
     void playAnswerSound(r.correct ? 'correct' : 'wrong');
-    if (!r.correct) {
+    if (r.correct) {
+      hapticCorrect();
+    } else {
       setHearts(r.heartsRemaining);
       // Last heart spent → lesson is locked/failed server-side; show defeat screen.
       if (r.lessonFailed) {
+        hapticDefeat();
         setFeedback(null);
         setDefeated(true);
         return;
       }
+      hapticWrong();
     }
     setFeedback({ result: r.correct ? 'correct' : 'wrong', canonical: r.canonicalAnswer });
     if (!r.correct) {
@@ -217,6 +222,7 @@ export default function Lesson() {
   }
 
   async function next() {
+    hapticPress();
     setFeedback(null);
     if (cursor + 1 < total) {
       setCursor(cursor + 1);

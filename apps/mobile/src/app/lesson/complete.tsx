@@ -15,6 +15,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { Flame, Gem, Sparkles } from 'lucide-react-native';
 import { colors, fonts, radius } from '@/lib/theme';
+import { hapticLessonComplete, hapticPress } from '@/lib/haptics';
 import { Mascot } from '@/components/Mascot';
 
 const CONFETTI_COLORS = [colors.green, colors.sky, colors.gold, colors.rose, colors.purple, colors.orange];
@@ -31,6 +32,11 @@ export default function LessonComplete() {
   const xpNum = Number(xp ?? 0);
   const gemsNum = Number(gems ?? 0);
   const streakNum = Number(streak ?? 0);
+
+  // Celebratory haptic on arrival.
+  useEffect(() => {
+    hapticLessonComplete();
+  }, []);
 
   // Mascot spring-in
   const mascotScale = useSharedValue(0);
@@ -100,13 +106,19 @@ export default function LessonComplete() {
         {/* Buttons */}
         <View style={styles.buttons}>
           <Pressable
-            onPress={() => router.replace(courseId ? `/course/${courseId}` : '/(tabs)/learn')}
+            onPress={() => {
+              hapticPress();
+              router.replace(courseId ? `/course/${courseId}` : '/(tabs)/learn');
+            }}
             style={styles.btnPrimary}
           >
             <Text style={styles.btnPrimaryText}>继续学习</Text>
           </Pressable>
           <Pressable
-            onPress={() => router.back()}
+            onPress={() => {
+              hapticPress();
+              router.back();
+            }}
             style={styles.btnSecondary}
           >
             <Text style={styles.btnSecondaryText}>再练一次</Text>

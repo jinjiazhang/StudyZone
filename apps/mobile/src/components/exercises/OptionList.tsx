@@ -1,5 +1,6 @@
 import { Pressable, Text, View } from 'react-native';
 import { exerciseStyles as s } from './styles';
+import { hapticSelect } from '@/lib/haptics';
 
 /**
  * Reusable A/B/C/D option list rendered by every choice-style exercise
@@ -24,7 +25,11 @@ export function OptionList({
         return (
           <Pressable
             key={i}
-            onPress={() => !disabled && onPick(i)}
+            onPress={() => {
+              if (disabled) return;
+              hapticSelect();
+              onPick(i);
+            }}
             style={[s.optionTile, selected && s.optionTileActive]}
           >
             <View style={[s.optionBadge, selected && s.optionBadgeActive]}>

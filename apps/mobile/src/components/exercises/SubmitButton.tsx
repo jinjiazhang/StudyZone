@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Pressable, Text } from 'react-native';
 import { exerciseStyles as s } from './styles';
+import { hapticPress } from '@/lib/haptics';
 
 /**
  * Per-exercise primary "检 查" CTA. Mirrors the web `btn-primary` button each
@@ -18,7 +19,10 @@ export function SubmitButton({
   const [pressed, setPressed] = useState(false);
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => {
+        hapticPress();
+        onPress();
+      }}
       disabled={disabled}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
