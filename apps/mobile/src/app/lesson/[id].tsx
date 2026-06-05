@@ -9,6 +9,7 @@ import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 
 import { api } from '@/lib/api';
 import { useAnswerAudio } from '@/lib/audio';
+import { NarrateButton } from '@/components/NarrateButton';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Skeleton } from '@/components/ui/Skeleton';
 import {
@@ -279,6 +280,8 @@ export default function Lesson() {
           {current.retry ? '错题重做' : '本轮练习'} · 第 {cursor + 1} 题 / 共 {total} 题
           {redoCount > 0 ? ` · 待重做 ${redoCount} 题` : ''}
         </Text>
+
+        <NarrateButton key={`narrate-${current.queueKey}`} prompt={current.prompt} />
 
         <ExerciseSwitch
           key={current.queueKey}

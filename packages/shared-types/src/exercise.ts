@@ -631,7 +631,20 @@ export interface PictureOrderAnswer {
 
 export type PictureOrderAttemptPayload = PictureOrderAnswer;
 
-export type ExercisePrompt =
+/**
+ * Optional "念题" (read-aloud) data shared by every prompt type. Lets a learner
+ * who can't yet read the characters/words hear the prompt:
+ *  - `narrationUrl`: a pre-recorded clip of the prompt, played directly.
+ *  - `narrationText`: prompt text spoken via on-device TTS when no clip exists.
+ * These are distinct from any listening-test `audioUrl` (which carries the
+ * answer content); narration must never reveal the answer.
+ */
+export interface PromptNarration {
+  narrationUrl?: string;
+  narrationText?: string;
+}
+
+export type ExercisePrompt = (
   | TranslateChoicePrompt
   | TranslateInputPrompt
   | ListenInputPrompt
@@ -661,7 +674,9 @@ export type ExercisePrompt =
   | TrueFalsePrompt
   | DialogueCompletePrompt
   | ReadingComprehensionPrompt
-  | PictureOrderPrompt;
+  | PictureOrderPrompt
+) &
+  PromptNarration;
 
 export type ExerciseAnswer =
   | TranslateChoiceAnswer

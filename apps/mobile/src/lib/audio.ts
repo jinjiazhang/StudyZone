@@ -57,7 +57,16 @@ export function useAudio() {
     }
   }, []);
 
-  return { play, playingUrl };
+  const stop = useCallback(async () => {
+    setPlayingUrl(null);
+    try {
+      await soundRef.current?.stopAsync();
+    } catch {
+      // Stopping a sound that's already unloaded/finished is a no-op.
+    }
+  }, []);
+
+  return { play, stop, playingUrl };
 }
 
 export function useAnswerAudio() {

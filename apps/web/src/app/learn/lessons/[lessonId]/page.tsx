@@ -8,6 +8,7 @@ import { X, CheckCircle2, XCircle, Heart } from 'lucide-react';
 
 import { api } from '@/lib/api';
 import { Skeleton } from '@/components/ui/Skeleton';
+import { NarrateButton } from '@/components/NarrateButton';
 import { playAnswerSound, preloadAnswerSounds } from '@/lib/answer-sounds';
 import { ExerciseType, type SessionExerciseDto } from '@studyzone/shared-types';
 import {
@@ -280,6 +281,7 @@ export default function LessonPage() {
               transition={{ duration: 0.2 }}
               className="flex-1"
             >
+              <NarrateButton prompt={current.prompt} />
               <ExerciseSwitch
                 exercise={current}
                 disabled={!!feedback}

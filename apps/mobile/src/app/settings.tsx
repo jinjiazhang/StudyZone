@@ -16,6 +16,7 @@ import {
   LogOut,
 } from 'lucide-react-native';
 import { useAuth } from '@/lib/auth';
+import { usePrefs } from '@/lib/prefs';
 import { colors, fonts, radius } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 
@@ -25,11 +26,15 @@ type Row = {
   detail?: string;
   toggle?: boolean;
   defaultOn?: boolean;
+  /** When set, this toggle is backed by the persisted prefs store. */
+  pref?: 'autoNarrate';
 };
 
 export default function Settings() {
   const router = useRouter();
   const clear = useAuth((s) => s.clear);
+  const autoNarrate = usePrefs((s) => s.autoNarrate);
+  const setAutoNarrate = usePrefs((s) => s.setAutoNarrate);
   const [confirm, setConfirm] = useState(false);
   const [toggles, setToggles] = useState<Record<string, boolean>>({ 音效: true });
 
@@ -47,6 +52,7 @@ export default function Settings() {
       rows: [
         { icon: <Target size={18} color={colors.inkSoft} />, name: '每日目标', detail: '40 经验' },
         { icon: <Volume2 size={18} color={colors.inkSoft} />, name: '音效', toggle: true, defaultOn: true },
+        { icon: <Volume2 size={18} color={colors.inkSoft} />, name: '进题自动念题', toggle: true, pref: 'autoNarrate' },
         { icon: <Heart size={18} color={colors.inkSoft} />, name: '无限生命', detail: '订阅' },
       ],
     },
@@ -76,7 +82,9 @@ export default function Settings() {
             <View style={styles.card}>
               {grp.rows.map((r, ri) => {
                 const on = r.toggle
-                  ? toggles[r.name] ?? r.defaultOn ?? false
+                  ? r.pref === 'autoNarrate'
+                    ? autoNarrate
+                    : toggles[r.name] ?? r.defaultOn ?? false
                   : false;
                 return (
                   <View
@@ -91,7 +99,11 @@ export default function Settings() {
                     {r.detail && <Text style={styles.rowDetail}>{r.detail}</Text>}
                     {r.toggle ? (
                       <Pressable
-                        onPress={() => setToggles((t) => ({ ...t, [r.name]: !on }))}
+                        onPress={() =>
+                          r.pref === 'autoNarrate'
+                            ? setAutoNarrate(!on)
+                            : setToggles((t) => ({ ...t, [r.name]: !on }))
+                        }
                         style={[styles.switch, { backgroundColor: on ? colors.green : colors.line }]}
                       >
                         <View style={[styles.knob, { left: on ? 23 : 3 }]} />
