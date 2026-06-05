@@ -56,7 +56,7 @@ export default function LessonPage() {
   const [feedback, setFeedback] = useState<AttemptState | null>(null);
   const [hearts, setHearts] = useState<number>(5);
   const [exerciseQueue, setExerciseQueue] = useState<QueuedExercise[]>([]);
-  const [redoCount, setRedoCount] = useState(0);
+  const [pendingRedoQueue, setPendingRedoQueue] = useState<QueuedExercise[]>([]);
   const [startTs] = useState(() => Date.now());
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
@@ -78,7 +78,7 @@ export default function LessonPage() {
     if (!session) return;
     setCursor(0);
     setFeedback(null);
-    setRedoCount(0);
+    setPendingRedoQueue([]);
     setExerciseQueue(
       session.exercises.map((exercise, index) => ({
         ...exercise,
@@ -100,6 +100,7 @@ export default function LessonPage() {
   const current: QueuedExercise | undefined = exerciseQueue[cursor];
   const total = exerciseQueue.length;
   const progress = total > 0 ? (cursor / total) * 100 : 0;
+  const redoCount = pendingRedoQueue.length;
 
   async function handleSubmit(payload: any) {
     if (!current || !session) return;
@@ -117,29 +118,69 @@ export default function LessonPage() {
     });
     if (!res.correct) {
       setHearts((h: number) => Math.max(0, h - 1));
-      if (!current.retry) setRedoCount((count) => count + 1);
-      setExerciseQueue((queue) => [
-        ...queue,
-        {
-          ...current,
-          queueKey: `${current.id}:retry:${Date.now()}:${queue.length}`,
-          retry: true,
-        },
-      ]);
-    } else if (current.retry) {
-      setRedoCount((count) => Math.max(0, count - 1));
+      setPendingRedoQueue((queue) => {
+        const retryIndex = queue.length;
+        return [
+          ...queue,
+          {
+            ...current,
+            queueKey: `${current.id}:retry:${Date.now()}:${retryIndex}`,
+            retry: true,
+          },
+        ];
+      });
     }
+  }
+
+  function startRedoRound(redoQueue = pendingRedoQueue) {
+    const redoItems = redoQueue.map((exercise, index) => ({
+      ...exercise,
+      queueKey: `${exercise.id}:retry:${Date.now()}:${index}`,
+      retry: true,
+    }));
+    setPendingRedoQueue([]);
+    setExerciseQueue((queue) => [
+      ...queue,
+      ...redoItems.map((exercise, index) => ({
+        ...exercise,
+        queueKey: `${exercise.queueKey}:round:${queue.length + index}`,
+      })),
+    ]);
+    setCursor(exerciseQueue.length);
   }
 
   async function next() {
     setFeedback(null);
     if (cursor + 1 < total) {
       setCursor(cursor + 1);
+    } else if (redoCount > 0) {
+      startRedoRound();
     } else if (session) {
-      const r = await complete.mutateAsync();
-      router.push(
-        `/learn/lessons/${params.lessonId}/complete?xp=${r.xpGained}&gems=${r.gemsGained}&streak=${r.newStreak}&courseId=${session.courseId}`,
-      );
+      try {
+        const r = await complete.mutateAsync();
+        router.push(
+          `/learn/lessons/${params.lessonId}/complete?xp=${r.xpGained}&gems=${r.gemsGained}&streak=${r.newStreak}&courseId=${session.courseId}`,
+        );
+      } catch (err: any) {
+        const pendingExerciseIds = err?.body?.pendingExerciseIds ?? err?.pendingExerciseIds;
+        if (Array.isArray(pendingExerciseIds) && pendingExerciseIds.length > 0) {
+          const lookup = new Map(session.exercises.map((exercise) => [exercise.id, exercise]));
+          const redoItems = pendingExerciseIds
+            .map((exerciseId, index) => {
+              const exercise = lookup.get(exerciseId);
+              if (!exercise) return null;
+              return {
+                ...exercise,
+                queueKey: `${exercise.id}:server-retry:${Date.now()}:${index}`,
+                retry: true,
+              };
+            })
+            .filter((exercise): exercise is QueuedExercise => !!exercise);
+          startRedoRound(redoItems);
+        } else {
+          throw err;
+        }
+      }
     }
   }
 
@@ -251,7 +292,7 @@ export default function LessonPage() {
                   feedback.result === 'correct' ? 'btn-primary px-8' : 'btn-danger px-8'
                 }
               >
-                {cursor + 1 < total ? (redoCount > 0 ? '去重做' : '继 续') : '完 成'}
+                {cursor + 1 < total ? '继 续' : redoCount > 0 ? '去重做' : '完 成'}
               </button>
             </div>
           </motion.div>
