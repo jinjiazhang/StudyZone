@@ -208,6 +208,7 @@ export interface CompleteSessionDto {
 
 export interface CompleteSessionResponse {
   outcome: LessonOutcome;
+  readyToComplete: boolean;
   xpGained: number;
   perfectBonus: number;
   gemsGained: number;

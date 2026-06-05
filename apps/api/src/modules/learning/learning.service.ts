@@ -161,6 +161,7 @@ export class LearningService {
       where: { id: sessionId },
       include: {
         lesson: true,
+        attempts: { orderBy: { createdAt: 'asc' } },
         user: { include: { wallet: true, streak: true } },
       },
     });
@@ -169,15 +170,29 @@ export class LearningService {
     if (session.finishedAt) throw new ConflictException({ code: 'session_finished' });
 
     const timeSpentMs = Date.now() - session.startedAt.getTime();
+    const completion = summarizeCompletion(
+      session.exerciseQueue as string[],
+      session.attempts.map((attempt) => ({
+        exerciseId: attempt.exerciseId,
+        isCorrect: attempt.isCorrect,
+      })),
+    );
+    if (!completion.readyToComplete) {
+      throw new BadRequestException({
+        code: 'redo_required',
+        message: '请先把本关错题重做正确',
+        pendingExerciseIds: completion.pendingExerciseIds,
+      });
+    }
 
     const score = calculateLessonScore({
       totalExercises: session.totalCount,
-      correctCount: session.correctCount,
+      correctCount: completion.firstPassCorrectCount,
       timeSpentMs,
       currentStreak: session.user.streak?.currentStreak ?? 0,
     });
 
-    const outcome = score.totalXp > 0 ? 'pass' : 'fail';
+    const outcome = 'pass';
     const todayLocalDate = new Date().toISOString().slice(0, 10);
     const streak = updateStreak({
       todayLocalDate,
@@ -193,8 +208,10 @@ export class LearningService {
     const lessonProgress = await this.updateLessonProgress(
       userId,
       session.lesson.id,
-      outcome === 'pass',
-      session.totalCount > 0 ? Math.round((session.correctCount / session.totalCount) * 100) : 0,
+      true,
+      session.totalCount > 0
+        ? Math.round((completion.firstPassCorrectCount / session.totalCount) * 100)
+        : 0,
     );
 
     await this.prisma.$transaction([
@@ -251,7 +268,7 @@ export class LearningService {
         sessionId,
         lessonId: session.lessonId,
         outcome,
-        correctCount: session.correctCount,
+        correctCount: completion.firstPassCorrectCount,
         totalCount: session.totalCount,
         xpGained: score.totalXp,
         timeSpentMs,
@@ -260,6 +277,7 @@ export class LearningService {
 
     return {
       outcome,
+      readyToComplete: true,
       xpGained: score.totalXp,
       perfectBonus: score.perfectBonus,
       gemsGained: score.gems,
@@ -313,4 +331,33 @@ function pickAndShuffle<T>(arr: T[], n: number): T[] {
     [a[i], a[j]!] = [a[j]!, a[i]!];
   }
   return a.slice(0, n);
+}
+
+function summarizeCompletion(
+  queue: string[],
+  attempts: Array<{ exerciseId: string; isCorrect: boolean }>,
+) {
+  const requiredExerciseIds = Array.from(new Set(queue));
+  const firstByExercise = new Map<string, boolean>();
+  const latestByExercise = new Map<string, boolean>();
+
+  for (const attempt of attempts) {
+    if (!requiredExerciseIds.includes(attempt.exerciseId)) continue;
+    if (!firstByExercise.has(attempt.exerciseId)) {
+      firstByExercise.set(attempt.exerciseId, attempt.isCorrect);
+    }
+    latestByExercise.set(attempt.exerciseId, attempt.isCorrect);
+  }
+
+  const pendingExerciseIds = requiredExerciseIds.filter(
+    (exerciseId) => latestByExercise.get(exerciseId) !== true,
+  );
+
+  return {
+    readyToComplete: pendingExerciseIds.length === 0,
+    pendingExerciseIds,
+    firstPassCorrectCount: requiredExerciseIds.filter(
+      (exerciseId) => firstByExercise.get(exerciseId) === true,
+    ).length,
+  };
 }

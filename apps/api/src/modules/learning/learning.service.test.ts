@@ -94,6 +94,14 @@ describe('LearningService', () => {
       finishedAt: null,
       correctCount: 5,
       totalCount: 5,
+      exerciseQueue: ['exercise-1', 'exercise-2', 'exercise-3', 'exercise-4', 'exercise-5'],
+      attempts: [
+        attempt('exercise-1', true),
+        attempt('exercise-2', true),
+        attempt('exercise-3', true),
+        attempt('exercise-4', true),
+        attempt('exercise-5', true),
+      ],
       user: {
         wallet: { xpTotal: 90, streakFreezes: 1 },
         streak: { currentStreak: 6, lastActiveLocalDate: '2026-05-25', longestStreak: 6 },
@@ -117,6 +125,7 @@ describe('LearningService', () => {
 
     expect(result).toMatchObject({
       outcome: 'pass',
+      readyToComplete: true,
       xpGained: 20,
       perfectBonus: 5,
       gemsGained: 3,
@@ -138,6 +147,80 @@ describe('LearningService', () => {
       }),
     );
   });
+
+  it('blocks completion until every wrong exercise is redone correctly', async () => {
+    prisma.learningSession.findUnique.mockResolvedValue({
+      id: 'session-1',
+      userId: 'user-1',
+      lessonId: 'lesson-1',
+      lesson: { id: 'lesson-1' },
+      startedAt: new Date('2026-05-26T09:59:00Z'),
+      finishedAt: null,
+      correctCount: 1,
+      totalCount: 2,
+      exerciseQueue: ['exercise-1', 'exercise-2'],
+      attempts: [attempt('exercise-1', true), attempt('exercise-2', false)],
+      user: {
+        wallet: { xpTotal: 90, streakFreezes: 1 },
+        streak: { currentStreak: 6, lastActiveLocalDate: '2026-05-25', longestStreak: 6 },
+      },
+    });
+
+    await expect(service.completeSession('user-1', 'session-1', {})).rejects.toMatchObject({
+      response: expect.objectContaining({
+        code: 'redo_required',
+        pendingExerciseIds: ['exercise-2'],
+      }),
+    });
+
+    expect(prisma.learningSession.update).not.toHaveBeenCalled();
+    expect(events.emit).not.toHaveBeenCalled();
+  });
+
+  it('allows completion after a redo but scores by first-pass correctness', async () => {
+    prisma.learningSession.findUnique.mockResolvedValue({
+      id: 'session-1',
+      userId: 'user-1',
+      lessonId: 'lesson-1',
+      lesson: { id: 'lesson-1' },
+      startedAt: new Date('2026-05-26T09:59:00Z'),
+      finishedAt: null,
+      correctCount: 2,
+      totalCount: 2,
+      exerciseQueue: ['exercise-1', 'exercise-2'],
+      attempts: [
+        attempt('exercise-1', true),
+        attempt('exercise-2', false),
+        attempt('exercise-2', true),
+      ],
+      user: {
+        wallet: { xpTotal: 90, streakFreezes: 1 },
+        streak: { currentStreak: 6, lastActiveLocalDate: '2026-05-25', longestStreak: 6 },
+      },
+    });
+    prisma.userLessonProgress.findUnique.mockResolvedValue(null);
+    prisma.userLessonProgress.create.mockResolvedValue({
+      lessonId: 'lesson-1',
+      completed: true,
+      bestScore: 50,
+    });
+    prisma.lesson.findUnique.mockResolvedValue({ id: 'lesson-1', unit: { courseId: 'course-1' } });
+    prisma.learningSession.update.mockReturnValue({ op: 'session-update' });
+    prisma.userWallet.update.mockReturnValue({ op: 'wallet-update' });
+    prisma.streakRecord.upsert.mockReturnValue({ op: 'streak-upsert' });
+    prisma.xPLedger.create.mockReturnValue({ op: 'xp-ledger-create' });
+    prisma.enrollment.updateMany.mockReturnValue({ op: 'enrollment-update' });
+    prisma.$transaction.mockImplementation(async (ops) => ops);
+
+    const result = await service.completeSession('user-1', 'session-1', {});
+
+    expect(result).toMatchObject({
+      outcome: 'pass',
+      readyToComplete: true,
+      perfectBonus: 0,
+      lessonProgress: { completed: true, bestScore: 50 },
+    });
+  });
 });
 
 function choiceExercise(id: string, correctIndex: number) {
@@ -152,6 +235,10 @@ function choiceExercise(id: string, correctIndex: number) {
     answer: { correctIndex },
     difficulty: 1,
   };
+}
+
+function attempt(exerciseId: string, isCorrect: boolean) {
+  return { exerciseId, isCorrect };
 }
 
 function createPrismaMock() {

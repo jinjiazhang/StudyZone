@@ -47,12 +47,16 @@ interface AttemptState {
   canonical?: string;
 }
 
+type QueuedExercise = SessionExerciseDto & { queueKey: string; retry: boolean };
+
 export default function LessonPage() {
   const params = useParams<{ lessonId: string }>();
   const router = useRouter();
   const [cursor, setCursor] = useState(0);
   const [feedback, setFeedback] = useState<AttemptState | null>(null);
   const [hearts, setHearts] = useState<number>(5);
+  const [exerciseQueue, setExerciseQueue] = useState<QueuedExercise[]>([]);
+  const [redoCount, setRedoCount] = useState(0);
   const [startTs] = useState(() => Date.now());
 
   const { data: me } = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
@@ -70,6 +74,20 @@ export default function LessonPage() {
     refetchOnMount: false,
   });
 
+  useEffect(() => {
+    if (!session) return;
+    setCursor(0);
+    setFeedback(null);
+    setRedoCount(0);
+    setExerciseQueue(
+      session.exercises.map((exercise, index) => ({
+        ...exercise,
+        queueKey: `${exercise.id}:initial:${index}`,
+        retry: false,
+      })),
+    );
+  }, [session?.sessionId]);
+
   const submit = useMutation({
     mutationFn: (args: { exerciseId: string; payload: any; responseMs: number }) =>
       api.submitAttempt(session!.sessionId, args),
@@ -79,8 +97,8 @@ export default function LessonPage() {
     mutationFn: () => api.completeSession(session!.sessionId),
   });
 
-  const current: SessionExerciseDto | undefined = session?.exercises[cursor];
-  const total = session?.exercises.length ?? 0;
+  const current: QueuedExercise | undefined = exerciseQueue[cursor];
+  const total = exerciseQueue.length;
   const progress = total > 0 ? (cursor / total) * 100 : 0;
 
   async function handleSubmit(payload: any) {
@@ -97,7 +115,20 @@ export default function LessonPage() {
       result: res.correct ? 'correct' : 'wrong',
       canonical: res.canonicalAnswer,
     });
-    if (!res.correct) setHearts((h: number) => Math.max(0, h - 1));
+    if (!res.correct) {
+      setHearts((h: number) => Math.max(0, h - 1));
+      if (!current.retry) setRedoCount((count) => count + 1);
+      setExerciseQueue((queue) => [
+        ...queue,
+        {
+          ...current,
+          queueKey: `${current.id}:retry:${Date.now()}:${queue.length}`,
+          retry: true,
+        },
+      ]);
+    } else if (current.retry) {
+      setRedoCount((count) => Math.max(0, count - 1));
+    }
   }
 
   async function next() {
@@ -112,7 +143,7 @@ export default function LessonPage() {
     }
   }
 
-  if (isLoading || !session)
+  if (isLoading || !session || (session.exercises.length > 0 && exerciseQueue.length === 0))
     return (
       <main className="flex min-h-screen items-center justify-center text-base font-heavy text-sz-ink-soft">
         载入关卡中…
@@ -149,12 +180,15 @@ export default function LessonPage() {
 
       <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col px-4 py-8 md:px-6">
         <div className="mb-3 text-xs font-heavy uppercase tracking-widest text-sz-ink-soft">
-          第 {cursor + 1} 题 / 共 {total} 题
+          {current?.retry ? '错题重做' : '本轮练习'} · 第 {cursor + 1} 题 / 共 {total} 题
+          {redoCount > 0 && (
+            <span className="ml-2 text-sz-rose-dark">待重做 {redoCount} 题</span>
+          )}
         </div>
         {current && (
           <AnimatePresence mode="wait">
             <motion.div
-              key={current.id}
+              key={current.queueKey}
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -30, opacity: 0 }}
@@ -217,7 +251,7 @@ export default function LessonPage() {
                   feedback.result === 'correct' ? 'btn-primary px-8' : 'btn-danger px-8'
                 }
               >
-                {cursor + 1 < total ? '继 续' : '完 成'}
+                {cursor + 1 < total ? (redoCount > 0 ? '去重做' : '继 续') : '完 成'}
               </button>
             </div>
           </motion.div>

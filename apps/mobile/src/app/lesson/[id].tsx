@@ -44,6 +44,7 @@ import {
 } from '@/components/exercises';
 
 type Feedback = { result: 'correct' | 'wrong'; canonical?: string };
+type QueuedExercise = SessionExerciseDto & { queueKey: string; retry: boolean };
 
 export default function Lesson() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -51,6 +52,8 @@ export default function Lesson() {
   const [cursor, setCursor] = useState(0);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [hearts, setHearts] = useState(5);
+  const [exerciseQueue, setExerciseQueue] = useState<QueuedExercise[]>([]);
+  const [redoCount, setRedoCount] = useState(0);
   const [start] = useState(Date.now());
   const { playAnswerSound } = useAnswerAudio();
 
@@ -65,6 +68,20 @@ export default function Lesson() {
     enabled: !!id,
     refetchOnMount: false,
   });
+
+  useEffect(() => {
+    if (!session) return;
+    setCursor(0);
+    setFeedback(null);
+    setRedoCount(0);
+    setExerciseQueue(
+      session.exercises.map((exercise, index) => ({
+        ...exercise,
+        queueKey: `${exercise.id}:initial:${index}`,
+        retry: false,
+      })),
+    );
+  }, [session?.sessionId]);
 
   const submit = useMutation({
     mutationFn: (args: { exerciseId: string; payload: any; responseMs: number }) =>
@@ -81,7 +98,15 @@ export default function Lesson() {
     );
   }
 
-  const current: SessionExerciseDto | undefined = session.exercises[cursor];
+  if (session.exercises.length > 0 && exerciseQueue.length === 0) {
+    return (
+      <SafeAreaView style={styles.container}>
+        <Text style={styles.loadingText}>载入关卡中…</Text>
+      </SafeAreaView>
+    );
+  }
+
+  const current: QueuedExercise | undefined = exerciseQueue[cursor];
   if (!current) {
     return (
       <SafeAreaView style={styles.container}>
@@ -90,7 +115,7 @@ export default function Lesson() {
     );
   }
 
-  const total = session.exercises.length;
+  const total = exerciseQueue.length;
   const courseId = session.courseId;
   const progress = total > 0 ? (cursor / total) * 100 : 0;
 
@@ -115,7 +140,20 @@ export default function Lesson() {
     const r = await submit.mutateAsync({ exerciseId: current.id, payload, responseMs });
     void playAnswerSound(r.correct ? 'correct' : 'wrong');
     setFeedback({ result: r.correct ? 'correct' : 'wrong', canonical: r.canonicalAnswer });
-    if (!r.correct) setHearts((h) => Math.max(0, h - 1));
+    if (!r.correct) {
+      setHearts((h) => Math.max(0, h - 1));
+      if (!current.retry) setRedoCount((count) => count + 1);
+      setExerciseQueue((queue) => [
+        ...queue,
+        {
+          ...current,
+          queueKey: `${current.id}:retry:${Date.now()}:${queue.length}`,
+          retry: true,
+        },
+      ]);
+    } else if (current.retry) {
+      setRedoCount((count) => Math.max(0, count - 1));
+    }
   }
 
   async function next() {
@@ -156,11 +194,12 @@ export default function Lesson() {
 
       <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <Text style={styles.counter}>
-          第 {cursor + 1} 题 / 共 {total} 题
+          {current.retry ? '错题重做' : '本轮练习'} · 第 {cursor + 1} 题 / 共 {total} 题
+          {redoCount > 0 ? ` · 待重做 ${redoCount} 题` : ''}
         </Text>
 
         <ExerciseSwitch
-          key={current.id}
+          key={current.queueKey}
           exercise={current}
           disabled={!!feedback}
           onSubmit={handleSubmit}
@@ -219,7 +258,9 @@ export default function Lesson() {
               },
             ]}
           >
-            <Text style={styles.feedbackBtnText}>{cursor + 1 < total ? '继 续' : '完 成'}</Text>
+            <Text style={styles.feedbackBtnText}>
+              {cursor + 1 < total ? (redoCount > 0 ? '去重做' : '继 续') : '完 成'}
+            </Text>
           </Pressable>
         </Animated.View>
       )}
