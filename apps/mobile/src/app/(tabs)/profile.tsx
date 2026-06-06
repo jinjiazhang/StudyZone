@@ -1,15 +1,21 @@
-import { View, Text, StyleSheet, Pressable, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ScrollView, Image, type ImageSourcePropType } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
-import { Flame, Gem, Heart, Settings, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
+import { Gem, Settings, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius } from '@/lib/theme';
-import { Mascot } from '@/components/Mascot';
+import { LocalSvg } from '@/components/TopStatsBar';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { xpToLevel } from '@studyzone/shared-logic';
+
+const STREAK_ICON = require('../../../assets/icons/streak.svg') as ImageSourcePropType;
+const XP_ICON = require('../../../assets/icons/xp.svg') as ImageSourcePropType;
+const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
+const HEART_ICON = require('../../../assets/icons/heart.svg') as ImageSourcePropType;
+const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 export default function Profile() {
   const router = useRouter();
@@ -30,8 +36,13 @@ export default function Profile() {
         ) : (
         <View style={styles.profileCard}>
           <View style={styles.profileRow}>
-            <View style={styles.mascotWrap}>
-              <Mascot size={104} mood="wink" />
+            <View style={styles.avatarWrap}>
+              <ProfileAvatar
+                id={me?.id ?? 'profile'}
+                nickname={me?.nickname ?? '学习者'}
+                size={104}
+                url={me?.avatarUrl}
+              />
               {level && (
                 <View style={styles.lvBadge}>
                   <Text style={styles.lvText}>Lv {level.level}</Text>
@@ -75,20 +86,28 @@ export default function Profile() {
           {/* 4 stat mini cards */}
           <View style={styles.statsGrid}>
             <MiniStat
-              icon={<Flame size={22} color={colors.orangeDark} />}
-              label="连胜" value={me?.currentStreak ?? 0} tint="orange"
+              icon={STREAK_ICON}
+              iconHeight={30}
+              iconWidth={25}
+              value={me?.currentStreak ?? 0} tint="orange"
             />
             <MiniStat
-              icon={<Sparkles size={22} color={colors.goldDark} />}
-              label="总 XP" value={me?.xpTotal ?? 0} tint="gold"
+              icon={XP_ICON}
+              iconHeight={34}
+              iconWidth={34}
+              value={me?.xpTotal ?? 0} tint="gold"
             />
             <MiniStat
-              icon={<Gem size={22} color={colors.skyDark} />}
-              label="宝石" value={me?.gems ?? 0} tint="sky"
+              icon={DIAMOND_ICON}
+              iconHeight={30}
+              iconWidth={24}
+              value={me?.gems ?? 0} tint="sky"
             />
             <MiniStat
-              icon={<Heart size={22} color={colors.roseDark} />}
-              label="心数" value={me?.hearts ?? 0} tint="rose"
+              icon={HEART_ICON}
+              iconHeight={34}
+              iconWidth={34}
+              value={me?.hearts ?? 0} tint="rose"
             />
           </View>
         </View>
@@ -173,20 +192,88 @@ function ProfileHeroSkeleton() {
   );
 }
 
-const TINT_STYLES: Record<string, { border: string; bg: string }> = {
-  orange: { border: colors.orange, bg: '#FFF7ED' },
-  gold: { border: colors.gold, bg: '#FFFBEB' },
-  sky: { border: colors.sky, bg: '#EFF6FF' },
-  rose: { border: colors.rose, bg: '#FFF1F2' },
+function ProfileAvatar({
+  id,
+  nickname,
+  size,
+  url,
+}: {
+  id: string;
+  nickname: string;
+  size: number;
+  url?: string | null;
+}) {
+  if (url) {
+    return (
+      <Image
+        source={{ uri: url }}
+        style={{
+          width: size,
+          height: size,
+          borderRadius: size / 2,
+          backgroundColor: colors.mist,
+        }}
+        resizeMode="cover"
+      />
+    );
+  }
+
+  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
+  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
+
+  return (
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        backgroundColor: color,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Text style={styles.avatarInitial}>{initial}</Text>
+    </View>
+  );
+}
+
+function hashString(value: string): number {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+const TINT_STYLES: Record<string, { border: string; value: string }> = {
+  orange: { border: colors.orange, value: colors.orange },
+  gold: { border: colors.gold, value: colors.gold },
+  sky: { border: colors.sky, value: colors.sky },
+  rose: { border: colors.rose, value: colors.rose },
 };
 
-function MiniStat({ icon, label, value, tint }: { icon: React.ReactNode; label: string; value: number; tint: string }) {
+function MiniStat({
+  icon,
+  iconHeight,
+  iconWidth,
+  value,
+  tint,
+}: {
+  icon: ImageSourcePropType;
+  iconHeight: number;
+  iconWidth: number;
+  value: number;
+  tint: string;
+}) {
   const s = TINT_STYLES[tint] ?? TINT_STYLES.gold;
   return (
-    <View style={[styles.miniCard, { borderColor: s.border, backgroundColor: s.bg }]}>
-      {icon}
-      <Text style={styles.miniValue}>{value}</Text>
-      <Text style={styles.miniLabel}>{label}</Text>
+    <View style={[styles.miniCard, { borderColor: s.border }]}>
+      <View style={styles.miniMain}>
+        <View style={styles.miniIcon}>
+          <LocalSvg height={iconHeight} source={icon} width={iconWidth} />
+        </View>
+        <Text style={[styles.miniValue, { color: s.value }]}>{value}</Text>
+      </View>
     </View>
   );
 }
@@ -203,7 +290,12 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   profileRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  mascotWrap: { position: 'relative' },
+  avatarWrap: { position: 'relative' },
+  avatarInitial: {
+    color: colors.white,
+    fontFamily: fonts.heavy,
+    fontSize: 54,
+  },
   lvBadge: {
     position: 'absolute',
     bottom: -4,
@@ -251,17 +343,32 @@ const styles = StyleSheet.create({
     borderRadius: radius.full,
     backgroundColor: 'rgba(255,255,255,0.5)',
   },
-  statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 20 },
+  statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 18 },
   miniCard: {
     width: '47%',
     borderRadius: radius.lg,
     borderWidth: 2,
     borderBottomWidth: 4,
-    padding: 12,
+    backgroundColor: colors.white,
+    minHeight: 64,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  miniValue: { fontFamily: fonts.display, fontSize: 23, color: colors.ink, marginTop: 4 },
-  miniLabel: { fontFamily: fonts.heavy, fontSize: 10, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1 },
+  miniMain: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 8,
+    justifyContent: 'center',
+  },
+  miniIcon: {
+    alignItems: 'center',
+    height: 34,
+    justifyContent: 'center',
+    width: 36,
+  },
+  miniValue: { fontFamily: fonts.display, fontSize: 22, lineHeight: 27 },
   questSection: {},
   questHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
   questTitle: { fontFamily: fonts.heavy, fontSize: 20, color: colors.ink },
