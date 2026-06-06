@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Image,
@@ -33,11 +33,12 @@ interface ShelfBook {
 }
 
 const SEARCH_REVEAL_HEIGHT = 72;
-const INITIAL_SEARCH_OFFSET = { x: 0, y: SEARCH_REVEAL_HEIGHT };
 
 export default function Learn() {
   const router = useRouter();
   const queryClient = useQueryClient();
+  const shelfScrollRef = useRef<ScrollView>(null);
+  const searchInitiallyHidden = useRef(false);
   useTabGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
 
   const coursesQuery = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
@@ -50,6 +51,18 @@ export default function Learn() {
 
   const [pickerVisible, setPickerVisible] = useState(false);
   const [search, setSearch] = useState('');
+  const [scrollViewportHeight, setScrollViewportHeight] = useState(0);
+
+  useEffect(() => {
+    if (scrollViewportHeight === 0 || searchInitiallyHidden.current) return;
+
+    const frame = requestAnimationFrame(() => {
+      shelfScrollRef.current?.scrollTo({ y: SEARCH_REVEAL_HEIGHT, animated: false });
+      searchInitiallyHidden.current = true;
+    });
+
+    return () => cancelAnimationFrame(frame);
+  }, [scrollViewportHeight]);
 
   const courses = coursesQuery.data ?? [];
   const subjects = subjectsQuery.data ?? [];
@@ -122,8 +135,14 @@ export default function Learn() {
 
       <ScrollView
         alwaysBounceVertical
-        contentOffset={INITIAL_SEARCH_OFFSET}
         keyboardShouldPersistTaps="handled"
+        onContentSizeChange={() => {
+          if (searchInitiallyHidden.current || scrollViewportHeight === 0) return;
+          shelfScrollRef.current?.scrollTo({ y: SEARCH_REVEAL_HEIGHT, animated: false });
+          searchInitiallyHidden.current = true;
+        }}
+        onLayout={(event) => setScrollViewportHeight(event.nativeEvent.layout.height)}
+        ref={shelfScrollRef}
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
@@ -142,7 +161,7 @@ export default function Learn() {
           </View>
         </View>
 
-        <View style={styles.shelfContent}>
+        <View style={[styles.shelfContent, { minHeight: scrollViewportHeight }]}>
           {contentLoading ? (
             <ShelfSkeleton />
           ) : contentError ? (

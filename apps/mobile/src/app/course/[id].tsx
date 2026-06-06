@@ -8,7 +8,7 @@ import {
   type ImageSourcePropType,
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useMutation, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, {
   Easing,
@@ -38,11 +38,6 @@ export default function Course() {
   const router = useRouter();
   const accessToken = useAuth((s) => s.accessToken);
   const authHydrated = useAuth((s) => s.hydrated);
-
-  const enroll = useMutation({ mutationFn: () => api.enrollCourse(id!) });
-  useEffect(() => {
-    if (id && accessToken) enroll.mutate();
-  }, [accessToken, id]);
 
   const {
     data: tree,

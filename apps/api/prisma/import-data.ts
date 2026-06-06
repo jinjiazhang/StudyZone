@@ -24,7 +24,6 @@ async function main() {
   console.log('Upserting curriculum content while preserving learning progress...');
 
   const lessonData = loadLessonData();
-  const courseIds: string[] = [];
 
   for (const subjectData of lessonData.subjects) {
     const subject = await prisma.subject.upsert({
@@ -72,7 +71,6 @@ async function main() {
         },
       });
 
-      courseIds.push(course.id);
       await buildCourseContent(course.id, courseData);
     }
   }
@@ -135,7 +133,7 @@ async function main() {
   }
 
   const passwordHash = await argon2.hash('studyzone');
-  const demo = await prisma.user.upsert({
+  await prisma.user.upsert({
     where: { email: 'demo@studyzone.dev' },
     create: {
       email: 'demo@studyzone.dev',
@@ -146,16 +144,7 @@ async function main() {
       streak: { create: {} },
     },
     update: {},
-    include: { wallet: true, streak: true },
   });
-
-  for (const courseId of courseIds) {
-    await prisma.enrollment.upsert({
-      where: { userId_courseId: { userId: demo.id, courseId } },
-      create: { userId: demo.id, courseId },
-      update: {},
-    });
-  }
 
   console.log('Import complete.');
   console.log('Learning progress, enrollments, sessions, attempts, and SRS cards were preserved.');
