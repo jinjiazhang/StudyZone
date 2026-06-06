@@ -8,6 +8,7 @@ import {
   Text,
   TextInput,
   View,
+  type ImageSourcePropType,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
@@ -17,10 +18,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
-import { Mascot } from '@/components/Mascot';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { TextbookPickerSheet } from '@/components/TextbookPickerSheet';
-import { TopStatsBar } from '@/components/TopStatsBar';
+import { LocalSvg, TopStatsBar } from '@/components/TopStatsBar';
 import { api } from '@/lib/api';
 import { resolveAssetUrl } from '@/lib/assets';
 import { useTabGuard } from '@/lib/guard';
@@ -33,6 +33,7 @@ interface ShelfBook {
 }
 
 const SEARCH_REVEAL_HEIGHT = 72;
+const QUESTS_ICON = require('../../../assets/icons/quests.svg') as ImageSourcePropType;
 
 export default function Learn() {
   const router = useRouter();
@@ -128,7 +129,7 @@ export default function Learn() {
       <TopStatsBar
         gems={me?.gems ?? 0}
         hearts={me?.hearts ?? 0}
-        leading={<Mascot size={40} />}
+        leading={<LocalSvg height={42} source={QUESTS_ICON} width={42} />}
         loading={meQuery.isLoading}
         streak={me?.currentStreak ?? 0}
       />
