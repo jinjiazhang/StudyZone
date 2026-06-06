@@ -65,6 +65,7 @@
 | 变量 | 应用 | 说明 |
 |---|---|---|
 | `NEXT_PUBLIC_API_URL` | Web | 浏览器请求的 API base URL |
+| `EXPO_PUBLIC_API_URL` | Mobile | Expo 客户端请求的 API base URL |
 | `EXPO_PUBLIC_ASSET_BASE_URL` | Mobile | 题目 / 头像等媒体的根 URL |
 | `VITE_API_URL` | Admin | Admin 后台请求的 API base URL |
 | `VITE_ADMIN_BASE` | Admin | Admin 静态资源 path（默认 `/admin`） |
@@ -107,6 +108,7 @@
 | `API_HOST` | `0.0.0.0` | `127.0.0.1` |
 | `API_PUBLIC_URL` | `http://localhost:4000` | `https://study.example.com` |
 | `NEXT_PUBLIC_API_URL` | `http://localhost:4000` | `https://study.example.com`（同 origin，Nginx 代理 `/api/`） |
+| `EXPO_PUBLIC_API_URL` | `http://localhost:4000`，真机调试时改为电脑局域网 IP 或 HTTPS 域名 | `https://study.example.com` |
 | `S3_ENDPOINT` | `http://localhost:9000` | 云对象存储 endpoint |
 | `JWT_*_SECRET` | 任意 | 必须随机长串 |
 

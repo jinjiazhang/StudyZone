@@ -181,6 +181,55 @@ pnpm db:import
 
 ## 4. 常用查看命令
 
+## 4. Expo / Mobile 开发服务
+
+Expo Dev Server 用于移动端本地调试，不属于生产 `systemd + Nginx` 部署链路；生产发布移动端时后续走 EAS Build / App Store / 应用商店。
+
+启动前先确保 API 可被手机访问：
+
+```bash
+pnpm services:start
+```
+
+同一局域网真机或模拟器：
+
+```bash
+pnpm dev:mobile
+```
+
+跨网络或扫码连接不稳定时：
+
+```bash
+pnpm --filter @studyzone/mobile dev:tunnel
+```
+
+iOS / Android 模拟器：
+
+```bash
+pnpm --filter @studyzone/mobile ios
+pnpm --filter @studyzone/mobile android
+```
+
+浏览器调试 RN-Web：
+
+```bash
+pnpm --filter @studyzone/mobile web
+```
+
+常用操作：
+
+```text
+r  reload
+i  open iOS simulator
+a  open Android emulator
+w  open web
+q  quit
+```
+
+> 手机访问本机 API 时，`NEXT_PUBLIC_API_URL` / `VITE_API_URL` 可继续指向 `localhost`，但移动端需要使用手机可访问的地址。必要时把 `.env` 中 `EXPO_PUBLIC_API_URL` / `EXPO_PUBLIC_ASSET_BASE_URL` 改成电脑局域网 IP 或 HTTPS 域名。
+
+## 5. 常用查看命令
+
 查看服务状态：
 
 ```bash
@@ -212,7 +261,7 @@ pnpm docker:logs
 docker ps
 ```
 
-## 5. 回滚
+## 6. 回滚
 
 代码回滚到上一个稳定提交：
 
@@ -231,10 +280,11 @@ pnpm db:import
 sudo systemctl restart studyzone-api studyzone-web studyzone-worker
 ```
 
-## 6. 相关详细文档
+## 7. 相关详细文档
 
 - `docs/deployment/production.md`：完整生产部署说明
 - `docs/deployment/systemd.md`：systemd 服务模板和参数
 - `docs/deployment/nginx.md`：Nginx 与 HTTPS 配置
 - `docs/deployment/docker.md`：本地 Postgres / Redis / MinIO
+- `docs/apps/mobile.md`：Expo 移动端启动、调试、构建说明
 - `apps/api/prisma/lesson-data/README.md`：课程数据目录结构

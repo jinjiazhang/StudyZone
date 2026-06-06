@@ -92,12 +92,12 @@ pnpm db:studio      # 打开 Prisma Studio（默认 http://localhost:5555）
 ### 选项 A：一键后台启动（推荐）
 
 ```bash
-pnpm services:start          # 后台启动 docker + api + web + admin
+pnpm services:start          # 后台启动 docker + api + web + admin + worker
 pnpm services:stop           # 关闭（同时关 docker）
 pnpm services:stop --keep-docker
 ```
 
-启动后日志在 `.studyzone-dev/logs/{api,web,admin}.log`，PID 文件在 `.studyzone-dev/services.json`。
+启动后日志在 `.studyzone-dev/logs/{api,web,admin,worker}.log`，PID 文件在 `.studyzone-dev/services.json`。
 
 ### 选项 B：逐个前台启动（调试单个服务用）
 
@@ -107,6 +107,17 @@ pnpm dev:web     # Next.js Web @ :3000
 pnpm dev:admin   # Vite Admin @ :3001
 pnpm dev:mobile  # Expo Dev Server（自动起 Metro）
 ```
+
+Expo 真机调试常用命令：
+
+```bash
+pnpm --filter @studyzone/mobile dev:tunnel  # 跨网络扫码
+pnpm --filter @studyzone/mobile ios         # iOS 模拟器
+pnpm --filter @studyzone/mobile android     # Android 模拟器
+pnpm --filter @studyzone/mobile web         # RN-Web 浏览器调试
+```
+
+> Expo 需要终端交互和扫码，不会随 `pnpm services:start` 后台启动。真机访问本机 API 时，按需把 `.env` 的 `EXPO_PUBLIC_API_URL` 改成电脑局域网 IP，例如 `http://192.168.1.10:4000`。
 
 或一次性并行起所有 dev：
 

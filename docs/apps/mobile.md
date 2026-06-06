@@ -58,7 +58,14 @@ apps/mobile/src/
 - 题目类型 / DTO 复用 `@studyzone/shared-types`。
 - 业务规则（XP / Streak 预测）调用 `@studyzone/shared-logic`，与后端权威结果保持一致。
 
-> `EXPO_PUBLIC_ASSET_BASE_URL` 控制媒体资源（题目音频、头像）的根 URL。
+环境变量：
+
+```bash
+EXPO_PUBLIC_API_URL=http://localhost:4000
+EXPO_PUBLIC_ASSET_BASE_URL=http://localhost:3000
+```
+
+> 真机调试时，`EXPO_PUBLIC_API_URL` 需要使用手机可访问的地址，例如电脑局域网 IP `http://192.168.1.10:4000`，或使用 HTTPS 测试域名。
 
 ---
 
