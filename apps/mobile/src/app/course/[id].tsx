@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import {
-  Image,
   ScrollView,
   View,
   Text,
@@ -11,7 +10,6 @@ import {
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { SvgUri } from 'react-native-svg';
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -23,6 +21,7 @@ import { BookOpen, Check, Lock, PlayCircle, Star } from 'lucide-react-native';
 import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-types';
 
 import { MapDecoration } from '@/components/MapDecoration';
+import { LocalSvg, TopStatsBar } from '@/components/TopStatsBar';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius, shade, withAlpha } from '@/lib/theme';
@@ -33,9 +32,6 @@ const NODE_SIZE = 96;
 const DECORATION_GAP = 34;
 const UNIT_EMOJI = ['🌱', '🌳', '🌟', '🚀', '🏔️'];
 const LEARN_ICON = require('../../../assets/icons/learn.svg') as ImageSourcePropType;
-const STREAK_ICON = require('../../../assets/icons/streak.svg') as ImageSourcePropType;
-const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
-const HEART_ICON = require('../../../assets/icons/heart.svg') as ImageSourcePropType;
 
 export default function Course() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -70,41 +66,15 @@ export default function Course() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.topBar}>
-        <Pressable
-          accessibilityLabel="返回学习主页"
-          accessibilityRole="button"
-          hitSlop={8}
-          onPress={() => router.replace('/(tabs)/learn')}
-          style={({ pressed }) => [styles.homeButton, pressed && styles.statPressed]}
-        >
-          <LocalSvg source={LEARN_ICON} width={34} height={34} />
-        </Pressable>
-        <TopStat
-          icon={STREAK_ICON}
-          iconHeight={32}
-          iconWidth={27}
-          loading={meLoading}
-          tint={colors.orange}
-          value={me?.currentStreak ?? 0}
-        />
-        <TopStat
-          icon={DIAMOND_ICON}
-          iconHeight={32}
-          iconWidth={26}
-          loading={meLoading}
-          tint={colors.sky}
-          value={me?.gems ?? 0}
-        />
-        <TopStat
-          icon={HEART_ICON}
-          iconHeight={34}
-          iconWidth={34}
-          loading={meLoading}
-          tint={colors.rose}
-          value={me?.hearts ?? 0}
-        />
-      </View>
+      <TopStatsBar
+        gems={me?.gems ?? 0}
+        hearts={me?.hearts ?? 0}
+        leading={<LocalSvg source={LEARN_ICON} width={34} height={34} />}
+        leadingAccessibilityLabel="返回学习主页"
+        loading={meLoading}
+        onLeadingPress={() => router.replace('/(tabs)/learn')}
+        streak={me?.currentStreak ?? 0}
+      />
 
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -190,43 +160,6 @@ export default function Course() {
         )}
       </ScrollView>
     </SafeAreaView>
-  );
-}
-
-function LocalSvg({
-  height,
-  source,
-  width,
-}: {
-  height: number;
-  source: ImageSourcePropType;
-  width: number;
-}) {
-  return <SvgUri height={height} uri={Image.resolveAssetSource(source).uri} width={width} />;
-}
-
-function TopStat({
-  icon,
-  iconHeight,
-  iconWidth,
-  loading,
-  tint,
-  value,
-}: {
-  icon: ImageSourcePropType;
-  iconHeight: number;
-  iconWidth: number;
-  loading: boolean;
-  tint: string;
-  value: number;
-}) {
-  return (
-    <View style={styles.statItem}>
-      <LocalSvg height={iconHeight} source={icon} width={iconWidth} />
-      <Text style={[styles.statValue, { color: tint }, loading && styles.statValueLoading]}>
-        {loading ? '00' : value}
-      </Text>
-    </View>
   );
 }
 
@@ -366,40 +299,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
-  },
-  topBar: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    minHeight: 72,
-    paddingHorizontal: 16,
-    paddingBottom: 12,
-    paddingTop: 10,
-  },
-  homeButton: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
-    minHeight: 48,
-  },
-  statItem: {
-    alignItems: 'center',
-    flex: 1,
-    flexDirection: 'row',
-    gap: 7,
-    justifyContent: 'center',
-    minHeight: 48,
-  },
-  statPressed: {
-    opacity: 0.65,
-  },
-  statValue: {
-    fontFamily: fonts.display,
-    fontSize: 19,
-    lineHeight: 24,
-  },
-  statValueLoading: {
-    opacity: 0,
   },
   scroll: {
     paddingHorizontal: 16,

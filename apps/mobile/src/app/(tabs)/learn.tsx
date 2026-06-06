@@ -3,7 +3,7 @@ import { Image, ScrollView, Text, View, StyleSheet, Pressable } from 'react-nati
 import { useRouter } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Flame, Gem, Heart, BookOpen, Repeat } from 'lucide-react-native';
+import { BookOpen, Repeat } from 'lucide-react-native';
 import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
 import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
@@ -12,8 +12,8 @@ import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius, subjectTints, SUBJECT_COLORS } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
-import { StatPill } from '@/components/StatPill';
 import { SubjectPickerSheet } from '@/components/SubjectPickerSheet';
+import { TopStatsBar } from '@/components/TopStatsBar';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -75,36 +75,13 @@ export default function Learn() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Top stats bar */}
-      <View style={styles.topBar}>
-        <View style={styles.logoRow}>
-          <Mascot size={36} />
-          <Text style={styles.logoText}>StudyZone</Text>
-        </View>
-        <View style={styles.statsRow}>
-          {meQuery.isLoading ? (
-            <>
-              <Skeleton style={styles.statSkeleton} />
-              <Skeleton style={styles.statSkeleton} />
-              <Skeleton style={styles.statSkeleton} />
-            </>
-          ) : (
-            <>
-              <StatPill
-                icon={<Flame size={18} color={colors.orange} />}
-                value={me?.currentStreak ?? 0}
-                tint="orange"
-              />
-              <StatPill icon={<Gem size={18} color={colors.sky} />} value={me?.gems ?? 0} tint="sky" />
-              <StatPill
-                icon={<Heart size={18} color={colors.rose} />}
-                value={me?.hearts ?? 0}
-                tint="rose"
-              />
-            </>
-          )}
-        </View>
-      </View>
+      <TopStatsBar
+        gems={me?.gems ?? 0}
+        hearts={me?.hearts ?? 0}
+        leading={<Mascot size={40} />}
+        loading={meQuery.isLoading}
+        streak={me?.currentStreak ?? 0}
+      />
 
       <ScrollView contentContainerStyle={styles.scroll}>
         {contentLoading ? (
@@ -284,20 +261,6 @@ function LearnSkeleton() {
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.white },
-  topBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderBottomWidth: 2,
-    borderBottomColor: colors.line,
-    backgroundColor: colors.white,
-  },
-  logoRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  logoText: { fontFamily: fonts.display, fontSize: 22, color: colors.green },
-  statsRow: { flexDirection: 'row', gap: 6 },
-  statSkeleton: { width: 44, height: 24, borderRadius: 999 },
   scroll: { padding: 16, paddingBottom: 34, gap: 18 },
   mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
   hero: {
