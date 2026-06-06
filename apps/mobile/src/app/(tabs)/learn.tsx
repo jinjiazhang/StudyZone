@@ -1,77 +1,114 @@
 import { useMemo, useState } from 'react';
-import { Image, ScrollView, Text, View, StyleSheet, Pressable } from 'react-native';
+import {
+  Alert,
+  Image,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
 import { useRouter } from 'expo-router';
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { BookOpen, Plus, Search } from 'lucide-react-native';
+import type { CourseDto, EnrollmentDto, SubjectDto } from '@studyzone/shared-types';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { BookOpen, Repeat } from 'lucide-react-native';
-import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
-import type { SubjectDto } from '@studyzone/shared-types';
+
+import { EmptyState } from '@/components/ui/EmptyState';
+import { ErrorState } from '@/components/ui/ErrorState';
+import { Mascot } from '@/components/Mascot';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { TextbookPickerSheet } from '@/components/TextbookPickerSheet';
+import { TopStatsBar } from '@/components/TopStatsBar';
 import { api } from '@/lib/api';
 import { resolveAssetUrl } from '@/lib/assets';
 import { useTabGuard } from '@/lib/guard';
-import { colors, fonts, radius, subjectTints, SUBJECT_COLORS } from '@/lib/theme';
-import { Mascot } from '@/components/Mascot';
-import { SpeechBubble } from '@/components/SpeechBubble';
-import { SubjectPickerSheet } from '@/components/SubjectPickerSheet';
-import { TopStatsBar } from '@/components/TopStatsBar';
-import { Skeleton } from '@/components/ui/Skeleton';
-import { EmptyState } from '@/components/ui/EmptyState';
-import { ErrorState } from '@/components/ui/ErrorState';
+import { colors, fonts, radius, subjectTints } from '@/lib/theme';
 
-/** Short glyph for a subject cover/badge — uses the canonical map, else 1st char. */
-function subjectGlyph(code: string, name: string): string {
-  return SUBJECT_COLORS[code]?.glyph ?? name.slice(0, 1);
+interface ShelfBook {
+  course: CourseDto;
+  enrollment: EnrollmentDto;
+  subject: SubjectDto;
 }
+
+const SEARCH_REVEAL_HEIGHT = 72;
+const INITIAL_SEARCH_OFFSET = { x: 0, y: SEARCH_REVEAL_HEIGHT };
 
 export default function Learn() {
   const router = useRouter();
+  const queryClient = useQueryClient();
   useTabGuard([['courses'], ['me'], ['subjects'], ['enrollments']]);
 
   const coursesQuery = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
-  const subjectsQuery = useQuery({
-    queryKey: ['subjects'],
-    queryFn: () => api.listSubjects(),
-  });
+  const subjectsQuery = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
   const enrollmentsQuery = useQuery({
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
   });
   const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+
+  const [pickerVisible, setPickerVisible] = useState(false);
+  const [search, setSearch] = useState('');
+
+  const courses = coursesQuery.data ?? [];
+  const subjects = subjectsQuery.data ?? [];
+  const enrollments = enrollmentsQuery.data ?? [];
   const me = meQuery.data;
 
-  const courses = coursesQuery.data;
-  const subjects = subjectsQuery.data;
-  const enrollments = enrollmentsQuery.data;
+  const shelfBooks = useMemo(
+    () => buildShelfBooks(enrollments, courses, subjects),
+    [courses, enrollments, subjects],
+  );
+  const normalizedSearch = search.trim().toLocaleLowerCase();
+  const filteredBooks = useMemo(
+    () =>
+      normalizedSearch
+        ? shelfBooks.filter(({ course, subject }) =>
+            `${course.name} ${subject.name}`.toLocaleLowerCase().includes(normalizedSearch),
+          )
+        : shelfBooks,
+    [normalizedSearch, shelfBooks],
+  );
+  const enrolledCourseIds = useMemo(
+    () => new Set(enrollments.map((enrollment) => enrollment.courseId)),
+    [enrollments],
+  );
+
+  const unenroll = useMutation({
+    mutationFn: (courseId: string) => api.unenrollCourse(courseId),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({ queryKey: ['enrollments'] });
+    },
+    onError: () => {
+      Alert.alert('移除失败', '暂时无法移除这本课本，请稍后重试。');
+    },
+  });
 
   const contentLoading =
     coursesQuery.isLoading || subjectsQuery.isLoading || enrollmentsQuery.isLoading;
   const contentError = coursesQuery.isError || subjectsQuery.isError || enrollmentsQuery.isError;
+
   const retryContent = () => {
     coursesQuery.refetch();
     subjectsQuery.refetch();
     enrollmentsQuery.refetch();
   };
 
-  const [pickerSubject, setPickerSubject] = useState<SubjectDto | null>(null);
-
-  const currentBySubject = useMemo(
-    () => pickCurrentCourseBySubject(enrollments ?? [], courses ?? []),
-    [enrollments, courses],
-  );
-
-  const subjectGroups = useMemo(() => {
-    if (!subjects || !courses) return [];
-    return subjects
-      .map((subject) => ({
-        subject,
-        subjectCourses: courses.filter((c) => c.subjectId === subject.id),
-        current: currentBySubject.get(subject.id),
-      }))
-      .filter((g) => g.subjectCourses.length > 0);
-  }, [subjects, courses, currentBySubject]);
-
-  // Hero: the first subject the learner is mid-way through ("继续上次").
-  const heroGroup = useMemo(() => subjectGroups.find((g) => g.current) ?? null, [subjectGroups]);
+  const confirmRemove = (book: ShelfBook) => {
+    Alert.alert(
+      '移除课本',
+      `确定将《${book.course.name}》从书架移除吗？学习进度会保留。`,
+      [
+        { text: '取消', style: 'cancel' },
+        {
+          text: '移除',
+          style: 'destructive',
+          onPress: () => unenroll.mutate(book.course.id),
+        },
+      ],
+    );
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -83,350 +120,339 @@ export default function Learn() {
         streak={me?.currentStreak ?? 0}
       />
 
-      <ScrollView contentContainerStyle={styles.scroll}>
-        {contentLoading ? (
-          <LearnSkeleton />
-        ) : contentError ? (
-          <ErrorState onRetry={retryContent} />
-        ) : (
-          <>
-        {/* Hero: continue last course */}
-        {heroGroup?.current ? (
-          <Pressable
-            style={({ pressed }) => [styles.hero, pressed && styles.heroPressed]}
-            onPress={() => router.push(`/course/${heroGroup.current!.id}`)}
-          >
-            <View style={styles.heroChips}>
-              <View style={styles.heroChip}>
-                <Text style={styles.heroChipText}>继续上次</Text>
-              </View>
-              <View style={[styles.heroChip, { backgroundColor: heroGroup.subject.color }]}>
-                <Text style={styles.heroChipText}>{heroGroup.subject.name}</Text>
-              </View>
-            </View>
-            <Text style={styles.heroTitle} numberOfLines={2}>
-              {heroGroup.current.name}
-            </Text>
-            <Text style={styles.heroDesc} numberOfLines={1}>
-              咱们继续往前走，冲呀！
-            </Text>
-            <View style={styles.heroBtn}>
-              <BookOpen size={16} color={colors.greenDark} />
-              <Text style={styles.heroBtnText}>继续学习</Text>
-            </View>
-          </Pressable>
-        ) : (
-          /* Mascot guidance (no course in progress yet) */
-          <View style={styles.mascotRow}>
-            <Mascot size={100} mood="cheer" />
-            <SpeechBubble>选一门课开始学习吧！同时学多门完全没问题，进度互不影响。</SpeechBubble>
+      <ScrollView
+        alwaysBounceVertical
+        contentOffset={INITIAL_SEARCH_OFFSET}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+        style={styles.scroll}
+      >
+        <View style={styles.searchReveal}>
+          <View style={styles.searchBox}>
+            <Search color={colors.inkFaint} size={20} />
+            <TextInput
+              clearButtonMode="while-editing"
+              onChangeText={setSearch}
+              placeholder="搜索课本或学科"
+              placeholderTextColor={colors.inkFaint}
+              returnKeyType="search"
+              style={styles.searchInput}
+              value={search}
+            />
           </View>
-        )}
+        </View>
 
-        {subjectGroups.map(({ subject, current }) => {
-          const glyph = subjectGlyph(subject.code, subject.name);
-          const tints = subjectTints(subject.color);
-          return (
-            <View key={subject.id} style={styles.subjectSection}>
-              <View style={styles.subjectHeader}>
-                <View style={[styles.subjectGlyph, { backgroundColor: tints.soft }]}>
-                  <Text style={[styles.subjectGlyphText, { color: subject.color }]}>{glyph}</Text>
-                </View>
-                <Text style={styles.subjectName}>{subject.name}</Text>
-                <View style={styles.divider} />
+        <View style={styles.shelfContent}>
+          {contentLoading ? (
+            <ShelfSkeleton />
+          ) : contentError ? (
+            <ErrorState onRetry={retryContent} />
+          ) : shelfBooks.length === 0 ? (
+            <>
+              <EmptyState
+                action={<AddTextbookButton onPress={() => setPickerVisible(true)} />}
+                description="把正在学习的课本添加到书架，之后可以随时继续。"
+                title="书架还是空的"
+              />
+              <View style={styles.grid}>
+                <AddCard onPress={() => setPickerVisible(true)} />
               </View>
-
-              {current ? (
-                <View style={styles.card}>
-                  <Pressable
-                    style={styles.switchBtn}
-                    onPress={() => setPickerSubject(subject)}
-                    hitSlop={10}
-                  >
-                    <Repeat size={18} color={colors.inkSoft} />
-                  </Pressable>
-                  <Pressable
-                    style={({ pressed }) => [styles.cardTop, pressed && styles.cardTopPressed]}
-                    onPress={() => router.push(`/course/${current.id}`)}
-                  >
-                    <View style={[styles.cardCoverFrame, { borderColor: subject.color }]}>
-                      <View style={[styles.cardCover, { backgroundColor: tints.soft }]}>
-                        {resolveAssetUrl(current.coverImageUrl) ? (
-                          <Image
-                            source={{ uri: resolveAssetUrl(current.coverImageUrl) }}
-                            style={styles.cardCoverImage}
-                          />
-                        ) : (
-                          <Text style={[styles.cardCoverGlyph, { color: subject.color }]}>
-                            {glyph}
-                          </Text>
-                        )}
-                      </View>
-                    </View>
-                    <View style={styles.cardBody}>
-                      <View style={styles.cardTitleRow}>
-                        <Text style={styles.cardTitle} numberOfLines={2}>
-                          {current.name}
-                        </Text>
-                      </View>
-                      <Text style={styles.cardDesc} numberOfLines={2}>
-                        {current.description}
-                      </Text>
-                    </View>
-                  </Pressable>
+            </>
+          ) : (
+            <>
+              {filteredBooks.length === 0 && (
+                <View style={styles.noResults}>
+                  <Search color={colors.inkFaint} size={34} />
+                  <Text style={styles.noResultsTitle}>没有找到相关课本</Text>
+                  <Text style={styles.noResultsText}>试试课本名称或“语文、数学、英语”。</Text>
                 </View>
-              ) : (
-                <Pressable
-                  style={({ pressed }) => [styles.emptyCardCTA, pressed && styles.cardTopPressed]}
-                  onPress={() => setPickerSubject(subject)}
-                >
-                  <View
-                    style={[
-                      styles.cardCoverEmpty,
-                      { borderColor: subject.color, backgroundColor: tints.soft },
-                    ]}
-                  >
-                    <BookOpen size={34} color={subject.color} />
-                  </View>
-                  <View style={styles.cardBody}>
-                    <Text style={styles.cardTitle}>还没选课本</Text>
-                    <Text style={styles.cardDesc} numberOfLines={2}>
-                      点击选择一本{subject.name}课本开始学习。
-                    </Text>
-                    <View style={styles.chooseBadge}>
-                      <BookOpen size={12} color={colors.white} />
-                      <Text style={styles.chooseBadgeText}>选择课本</Text>
-                    </View>
-                  </View>
-                </Pressable>
               )}
-            </View>
-          );
-        })}
-
-        {subjectGroups.length === 0 && (
-          <EmptyState title="还没有课程" description="课程正在路上，过会儿再来看看吧。" />
-        )}
-          </>
-        )}
+              <View style={styles.grid}>
+                {filteredBooks.map((book) => (
+                  <ShelfCard
+                    key={book.course.id}
+                    book={book}
+                    disabled={unenroll.isPending}
+                    onLongPress={() => confirmRemove(book)}
+                    onPress={() => router.push(`/course/${book.course.id}`)}
+                  />
+                ))}
+                <AddCard onPress={() => setPickerVisible(true)} />
+              </View>
+            </>
+          )}
+        </View>
       </ScrollView>
 
-      <SubjectPickerSheet
-        visible={pickerSubject !== null}
-        subject={pickerSubject}
-        courses={
-          pickerSubject ? (courses ?? []).filter((c) => c.subjectId === pickerSubject.id) : []
-        }
-        currentCourseId={pickerSubject ? currentBySubject.get(pickerSubject.id)?.id : undefined}
-        onClose={() => setPickerSubject(null)}
+      <TextbookPickerSheet
+        courses={courses}
+        enrolledCourseIds={enrolledCourseIds}
+        onClose={() => setPickerVisible(false)}
+        subjects={subjects}
+        visible={pickerVisible}
       />
     </SafeAreaView>
   );
 }
 
-function LearnSkeleton() {
+function buildShelfBooks(
+  enrollments: EnrollmentDto[],
+  courses: CourseDto[],
+  subjects: SubjectDto[],
+): ShelfBook[] {
+  const courseById = new Map(courses.map((course) => [course.id, course]));
+  const subjectById = new Map(subjects.map((subject) => [subject.id, subject]));
+
+  return [...enrollments]
+    .sort((a, b) => b.lastActiveAt.localeCompare(a.lastActiveAt))
+    .flatMap((enrollment) => {
+      const course = courseById.get(enrollment.courseId);
+      const subject = subjectById.get(enrollment.subjectId);
+      return course && subject ? [{ course, enrollment, subject }] : [];
+    });
+}
+
+function ShelfCard({
+  book,
+  disabled,
+  onLongPress,
+  onPress,
+}: {
+  book: ShelfBook;
+  disabled: boolean;
+  onLongPress: () => void;
+  onPress: () => void;
+}) {
+  const coverUrl = resolveAssetUrl(book.course.coverImageUrl);
+  const tint = subjectTints(book.subject.color).soft;
+
   return (
-    <>
-      <Skeleton style={{ height: 150, borderRadius: radius.xl }} />
-      {[0, 1].map((i) => (
-        <View key={i} style={{ gap: 10 }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 9 }}>
-            <Skeleton style={{ width: 26, height: 26, borderRadius: 8 }} />
-            <Skeleton style={{ width: 80, height: 18 }} />
-            <View style={{ flex: 1, height: 2, backgroundColor: colors.line }} />
+    <Pressable
+      delayLongPress={450}
+      disabled={disabled}
+      onLongPress={onLongPress}
+      onPress={onPress}
+      style={({ pressed }) => [styles.book, (pressed || disabled) && styles.pressed]}
+    >
+      <View style={[styles.bookCover, { backgroundColor: tint }]}>
+        {coverUrl ? (
+          <Image source={{ uri: coverUrl }} style={styles.bookCoverImage} />
+        ) : (
+          <View style={styles.fallbackCover}>
+            <BookOpen color={book.subject.color} size={42} />
+            <Text style={[styles.fallbackText, { color: book.subject.color }]}>
+              {book.subject.name}
+            </Text>
           </View>
-          <View
-            style={{
-              flexDirection: 'row',
-              gap: 15,
-              backgroundColor: colors.white,
-              borderWidth: 2,
-              borderColor: colors.cardLine,
-              borderRadius: radius.xl,
-              padding: 16,
-            }}
-          >
-            <Skeleton style={{ width: 98, height: 126, borderRadius: radius.md }} />
-            <View style={{ flex: 1, justifyContent: 'center', gap: 8 }}>
-              <Skeleton style={{ height: 18, width: '70%' }} />
-              <Skeleton style={{ height: 14, width: '90%' }} />
-              <Skeleton style={{ height: 14, width: '55%' }} />
-            </View>
-          </View>
+        )}
+      </View>
+      <Text numberOfLines={2} style={styles.bookTitle}>
+        {book.course.name}
+      </Text>
+    </Pressable>
+  );
+}
+
+function AddCard({ onPress }: { onPress: () => void }) {
+  return (
+    <Pressable onPress={onPress} style={({ pressed }) => [styles.book, pressed && styles.pressed]}>
+      <View style={styles.addCover}>
+        <View style={styles.addIcon}>
+          <Plus color={colors.inkFaint} size={34} strokeWidth={2.5} />
+        </View>
+        <Text style={styles.addCoverText}>添加课本</Text>
+      </View>
+      <Text style={styles.bookTitle}>添加课本</Text>
+      <Text style={styles.addHint}>从课本库中选择</Text>
+    </Pressable>
+  );
+}
+
+function AddTextbookButton({ onPress }: { onPress: () => void }) {
+  return (
+    <Pressable onPress={onPress} style={({ pressed }) => [styles.emptyButton, pressed && styles.pressed]}>
+      <Plus color={colors.white} size={18} strokeWidth={3} />
+      <Text style={styles.emptyButtonText}>添加课本</Text>
+    </Pressable>
+  );
+}
+
+function ShelfSkeleton() {
+  return (
+    <View style={styles.grid}>
+      {[0, 1, 2, 3].map((item) => (
+        <View key={item} style={styles.book}>
+          <Skeleton style={styles.skeletonCover} />
+          <Skeleton style={styles.skeletonTitle} />
+          <Skeleton style={styles.skeletonSubject} />
         </View>
       ))}
-    </>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: colors.white },
-  scroll: { padding: 16, paddingBottom: 34, gap: 18 },
-  mascotRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
-  hero: {
-    backgroundColor: colors.green,
-    borderRadius: radius.xl,
-    borderBottomWidth: 6,
-    borderColor: colors.greenDark,
-    padding: 18,
-    marginBottom: 8,
-  },
-  heroPressed: { borderBottomWidth: 2, transform: [{ translateY: 4 }] },
-  heroChips: { flexDirection: 'row', gap: 6, marginBottom: 10 },
-  heroChip: {
-    backgroundColor: 'rgba(255,255,255,0.22)',
-    paddingHorizontal: 9,
-    paddingVertical: 4,
-    borderRadius: 999,
-  },
-  heroChipText: { fontFamily: fonts.heavy, fontSize: 11, color: colors.white },
-  heroTitle: { fontFamily: fonts.heavy, fontSize: 21, color: colors.white, lineHeight: 27 },
-  heroDesc: {
-    fontFamily: fonts.sansBold,
-    fontSize: 13,
-    color: 'rgba(255,255,255,0.94)',
-    marginTop: 4,
-  },
-  heroBtn: {
-    alignSelf: 'flex-start',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
+  container: {
     backgroundColor: colors.white,
-    borderRadius: radius.md,
-    borderBottomWidth: 4,
-    borderColor: 'rgba(0,0,0,0.12)',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    marginTop: 14,
+    flex: 1,
   },
-  heroBtnText: { fontFamily: fonts.heavy, fontSize: 14, color: colors.greenDark },
-
-  subjectSection: { gap: 10 },
-  subjectHeader: { flexDirection: 'row', alignItems: 'center', gap: 9 },
-  subjectGlyph: {
-    width: 26,
-    height: 26,
-    borderRadius: 8,
+  searchBox: {
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-  subjectGlyphText: { fontFamily: fonts.heavy, fontSize: 13 },
-  subjectName: { fontFamily: fonts.heavy, fontSize: 18, color: colors.ink },
-  divider: { flex: 1, height: 2, backgroundColor: colors.line, borderRadius: 999 },
-
-  card: {
-    position: 'relative',
-    backgroundColor: colors.white,
-    borderRadius: radius.xl,
-    borderWidth: 2,
-    borderBottomWidth: 6,
-    borderColor: colors.cardLine,
-    shadowColor: '#34322E',
-    shadowOpacity: 0.05,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 5 },
-    elevation: 2,
-  },
-  cardTop: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    padding: 16,
-    gap: 15,
-  },
-  cardTopPressed: { opacity: 0.92, transform: [{ scale: 0.99 }] },
-  switchBtn: {
-    position: 'absolute',
-    right: 12,
-    top: 12,
-    zIndex: 2,
-    width: 44,
-    height: 44,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.white,
+    backgroundColor: colors.mist,
     borderRadius: radius.full,
-    borderWidth: 2,
-    borderBottomWidth: 3,
-    borderColor: colors.line,
+    flexDirection: 'row',
+    gap: 8,
+    minHeight: 46,
+    paddingHorizontal: 15,
   },
-  cardCoverFrame: {
-    width: 98,
-    height: 126,
-    borderRadius: radius.md,
-    borderWidth: 2,
+  searchReveal: {
     backgroundColor: colors.white,
-    padding: 4,
-    shadowColor: '#34322E',
+    height: SEARCH_REVEAL_HEIGHT,
+    justifyContent: 'center',
+    paddingHorizontal: 18,
+  },
+  searchInput: {
+    color: colors.ink,
+    flex: 1,
+    fontFamily: fonts.sansBold,
+    fontSize: 15,
+    paddingVertical: 0,
+  },
+  scroll: {
+    backgroundColor: colors.mist,
+  },
+  shelfContent: {
+    backgroundColor: colors.mist,
+    flexGrow: 1,
+    padding: 18,
+    paddingBottom: 40,
+  },
+  grid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    rowGap: 26,
+  },
+  book: {
+    width: '47.5%',
+  },
+  bookCover: {
+    aspectRatio: 0.76,
+    backgroundColor: colors.white,
+    borderColor: colors.line,
+    borderRadius: radius.sm,
+    borderWidth: 1,
+    overflow: 'hidden',
+    shadowColor: colors.black,
+    shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.12,
     shadowRadius: 8,
-    shadowOffset: { width: 0, height: 5 },
-    elevation: 3,
   },
-  cardCover: {
-    flex: 1,
-    borderRadius: radius.sm,
-    overflow: 'hidden',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  cardCoverGlyph: {
-    textAlign: 'center',
-    fontFamily: fonts.heavy,
-    fontSize: 34,
-  },
-  cardCoverEmpty: {
-    width: 98,
-    height: 126,
-    borderRadius: radius.md,
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  cardCoverImage: {
-    width: '100%',
+  bookCoverImage: {
+    backgroundColor: colors.white,
     height: '100%',
     resizeMode: 'contain',
-    backgroundColor: colors.white,
+    width: '100%',
   },
-  cardBody: { flex: 1, minHeight: 126, justifyContent: 'center', paddingRight: 2 },
-  cardTitleRow: { paddingRight: 58 },
-  cardTitle: { fontFamily: fonts.heavy, fontSize: 17, lineHeight: 22, color: colors.ink },
-  cardDesc: {
+  fallbackCover: {
+    alignItems: 'center',
+    flex: 1,
+    gap: 10,
+    justifyContent: 'center',
+    padding: 16,
+  },
+  fallbackText: {
+    fontFamily: fonts.heavy,
+    fontSize: 18,
+  },
+  bookTitle: {
+    color: colors.ink,
+    fontFamily: fonts.heavy,
+    fontSize: 15,
+    lineHeight: 19,
+    marginTop: 9,
+    minHeight: 38,
+  },
+  addCover: {
+    alignItems: 'center',
+    aspectRatio: 0.76,
+    backgroundColor: colors.white,
+    borderColor: colors.line,
+    borderRadius: radius.sm,
+    borderStyle: 'dashed',
+    borderWidth: 2,
+    gap: 12,
+    justifyContent: 'center',
+  },
+  addIcon: {
+    alignItems: 'center',
+    borderColor: colors.line,
+    borderRadius: radius.full,
+    borderWidth: 2,
+    height: 64,
+    justifyContent: 'center',
+    width: 64,
+  },
+  addCoverText: {
+    color: colors.inkSoft,
+    fontFamily: fonts.heavy,
+    fontSize: 14,
+  },
+  addHint: {
+    color: colors.inkSoft,
+    fontFamily: fonts.sansBold,
+    fontSize: 12,
+    marginTop: 2,
+  },
+  noResults: {
+    alignItems: 'center',
+    gap: 6,
+    paddingBottom: 24,
+    paddingTop: 12,
+  },
+  noResultsTitle: {
+    color: colors.ink,
+    fontFamily: fonts.heavy,
+    fontSize: 17,
+  },
+  noResultsText: {
+    color: colors.inkSoft,
     fontFamily: fonts.sansBold,
     fontSize: 13,
-    lineHeight: 18,
-    color: colors.inkSoft,
-    marginTop: 4,
+    textAlign: 'center',
   },
-  chooseBadge: {
-    marginTop: 8,
-    alignSelf: 'flex-start',
-    flexDirection: 'row',
+  emptyButton: {
     alignItems: 'center',
-    gap: 4,
     backgroundColor: colors.green,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 999,
-  },
-  chooseBadgeText: {
-    fontFamily: fonts.heavy,
-    fontSize: 11,
-    color: colors.white,
-  },
-
-  emptyCardCTA: {
-    backgroundColor: colors.white,
-    borderRadius: radius.xl,
-    borderWidth: 2,
-    borderBottomWidth: 6,
-    borderStyle: 'dashed',
-    borderColor: colors.line,
+    borderBottomColor: colors.greenDark,
+    borderBottomWidth: 4,
+    borderRadius: radius.md,
     flexDirection: 'row',
-    alignItems: 'center',
-    padding: 16,
-    gap: 15,
+    gap: 6,
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  emptyButtonText: {
+    color: colors.white,
+    fontFamily: fonts.heavy,
+    fontSize: 14,
+  },
+  pressed: {
+    opacity: 0.65,
+  },
+  skeletonCover: {
+    aspectRatio: 0.76,
+    borderRadius: radius.sm,
+    width: '100%',
+  },
+  skeletonTitle: {
+    height: 17,
+    marginTop: 9,
+    width: '88%',
+  },
+  skeletonSubject: {
+    height: 12,
+    marginTop: 7,
+    width: '40%',
   },
 });

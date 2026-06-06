@@ -1,5 +1,6 @@
 import {
   Controller,
+  Delete,
   Get,
   HttpCode,
   Param,
@@ -37,6 +38,14 @@ export class ContentController {
   @HttpCode(204)
   async enroll(@CurrentUser() user: AuthenticatedUser, @Param('id') courseId: string) {
     await this.service.enroll(user.id, courseId);
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
+  @Delete('courses/:id/enroll')
+  @HttpCode(204)
+  async unenroll(@CurrentUser() user: AuthenticatedUser, @Param('id') courseId: string) {
+    await this.service.unenroll(user.id, courseId);
   }
 
   @ApiBearerAuth()

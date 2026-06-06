@@ -132,6 +132,12 @@ export class StudyZoneClient {
     });
   }
 
+  unenrollCourse(courseId: string) {
+    return this.request<void>(`/api/v1/courses/${courseId}/enroll`, {
+      method: 'DELETE',
+    });
+  }
+
   listMyEnrollments() {
     return this.request<EnrollmentDto[]>('/api/v1/me/enrollments');
   }

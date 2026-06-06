@@ -245,6 +245,19 @@ describe('ContentService admin content', () => {
     ]);
   });
 
+  it('removes only the requested user enrollment and keeps the operation idempotent', async () => {
+    const prisma = createPrismaMock();
+    prisma.enrollment.deleteMany.mockResolvedValue({ count: 0 });
+
+    const service = new ContentService(prisma as unknown as PrismaService);
+    await expect(service.unenroll('user-1', 'course-1')).resolves.toBeUndefined();
+
+    expect(prisma.enrollment.deleteMany).toHaveBeenCalledWith({
+      where: { userId: 'user-1', courseId: 'course-1' },
+    });
+    expect(prisma.userLessonProgress.deleteMany).not.toHaveBeenCalled();
+  });
+
   it('bumps lastActiveAt when fetching the course tree for an enrolled user', async () => {
     const prisma = createPrismaMock();
     prisma.course.findUnique.mockResolvedValue({
@@ -283,6 +296,7 @@ function createPrismaMock() {
       findUnique: vi.fn(),
     },
     userLessonProgress: {
+      deleteMany: vi.fn(),
       findMany: vi.fn(),
     },
     exercise: {
@@ -293,6 +307,7 @@ function createPrismaMock() {
       findFirst: vi.fn(),
     },
     enrollment: {
+      deleteMany: vi.fn(),
       findMany: vi.fn(),
       update: vi.fn(),
     },

@@ -51,6 +51,12 @@ export class ContentService {
     });
   }
 
+  async unenroll(userId: string, courseId: string) {
+    await this.prisma.enrollment.deleteMany({
+      where: { userId, courseId },
+    });
+  }
+
   async getCourseTree(userId: string, courseId: string) {
     const course = await this.prisma.course.findUnique({
       where: { id: courseId },
