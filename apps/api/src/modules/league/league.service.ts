@@ -15,6 +15,7 @@ import {
   resolveNextTier,
   zoneCounts,
   settlementGemReward,
+  xpToLevel,
 } from '@studyzone/shared-logic';
 import { startOfWeek, startOfPreviousWeek, addDays } from './league.util';
 
@@ -134,7 +135,7 @@ export class LeagueService {
         group: {
           include: {
             entries: {
-              include: { user: true },
+              include: { user: { include: { wallet: true } } },
               orderBy: [{ weeklyXp: 'desc' }, { joinedAt: 'asc' }],
             },
           },
@@ -173,6 +174,7 @@ export class LeagueService {
           locale: e.user.locale as LeagueEntryDto['user']['locale'],
           createdAt: e.user.createdAt.toISOString(),
         },
+        level: xpToLevel(e.user.wallet?.xpTotal ?? 0).level,
         weeklyXp: e.weeklyXp,
         zone: classifyResult(tier, rank, groupSize, e.weeklyXp),
       };

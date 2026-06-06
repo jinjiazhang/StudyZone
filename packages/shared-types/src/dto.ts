@@ -291,6 +291,8 @@ export type LeagueResultType = 'promoted' | 'stayed' | 'demoted';
 export interface LeagueEntryDto {
   rank: number;
   user: UserPublic;
+  /** User level derived from cumulative XP via xpToLevel(xpTotal).level. */
+  level: number;
   weeklyXp: number;
   /** Projected outcome at settlement given the current standing. */
   zone: LeagueResultType;

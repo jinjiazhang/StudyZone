@@ -1,48 +1,54 @@
-import { View, Text, StyleSheet, FlatList, Pressable, Image } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Image, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
-import { Crown, Medal, ChevronUp, ChevronDown } from 'lucide-react-native';
+import { Clock3 } from 'lucide-react-native';
+import type { LeagueEntryDto } from '@studyzone/shared-types';
+import Svg, { Ellipse, Path, Rect } from 'react-native-svg';
+
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
-import { colors, fonts, radius, TIER_LABEL, TIER_COLOR, TIER_EMOJI } from '@/lib/theme';
+import { colors, fonts, TIER_COLOR, TIER_LABEL } from '@/lib/theme';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { ErrorState } from '@/components/ui/ErrorState';
 
-const RESULT_LABEL: Record<string, string> = {
-  promoted: '晋级',
-  stayed: '保级',
-  demoted: '降级',
+const TIER_ORDER = ['bronze', 'silver', 'gold', 'sapphire', 'ruby', 'emerald', 'diamond'] as const;
+const TROPHY_SHADE: Record<string, { base: string; dark: string; light: string }> = {
+  bronze: { base: '#E9B17A', dark: '#C78C55', light: '#F6D0A9' },
+  silver: { base: '#C8D7E2', dark: '#9AB4C8', light: '#EDF5FA' },
+  gold: { base: '#FFC800', dark: '#E5A500', light: '#FFE889' },
+  sapphire: { base: '#1CB0F6', dark: '#0E8FCC', light: '#B8E9FF' },
+  ruby: { base: '#FF4B4B', dark: '#D83A3A', light: '#FFD0D0' },
+  emerald: { base: '#58CC02', dark: '#46A302', light: '#D7FFB8' },
+  diamond: { base: '#56C8E6', dark: '#3AA9C7', light: '#D6F6FF' },
 };
-const RESULT_COLOR: Record<string, string> = {
-  promoted: '#58CC02',
-  stayed: '#AFAFAF',
-  demoted: '#FF4B4B',
+const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
+const LOCALE_FLAG: Record<string, string> = {
+  'zh-CN': '🇨🇳',
+  'en-US': '🇺🇸',
+  'ja-JP': '🇯🇵',
 };
 
 export default function League() {
   useTabGuard([['league'], ['league-history']]);
   const leagueQuery = useQuery({ queryKey: ['league'], queryFn: () => api.myLeague() });
-  const { data: history } = useQuery({
-    queryKey: ['league-history'],
-    queryFn: () => api.leagueHistory(),
-  });
   const data = leagueQuery.data;
 
   if (leagueQuery.isLoading) {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{ padding: 16, gap: 16 }}>
+        <View style={styles.loadingWrap}>
           <LeagueSkeleton />
         </View>
       </SafeAreaView>
     );
   }
+
   if (leagueQuery.isError) {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={{ padding: 16 }}>
+        <View style={styles.errorWrap}>
           <ErrorState onRetry={() => leagueQuery.refetch()} />
         </View>
       </SafeAreaView>
@@ -50,179 +56,189 @@ export default function League() {
   }
 
   const tier = data?.tier ?? 'bronze';
-  const tierColor = TIER_COLOR[tier] ?? colors.green;
   const entries = data?.entries ?? [];
   const selfIndex = data?.selfIndex ?? -1;
-  const promoteCount = data?.promoteCount ?? 0;
   const demoteCount = data?.demoteCount ?? 0;
   const groupSize = data?.groupSize ?? entries.length;
-  const podium = entries.slice(0, 3);
-  const others = entries.slice(3);
+  const currentTierIndex = Math.max(0, TIER_ORDER.findIndex((item) => item === tier));
 
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        data={others}
+        data={entries}
         keyExtractor={(e) => e.user.id}
-        contentContainerStyle={{ padding: 16, gap: 8, paddingBottom: 32 }}
+        contentContainerStyle={styles.listContent}
+        ItemSeparatorComponent={() => <View style={styles.rowDivider} />}
         ListHeaderComponent={
-          <>
-            {/* Tier banner */}
-            <View style={[styles.tierBanner, { backgroundColor: tierColor }]}>
-              <View style={styles.tierRow}>
-                <View style={styles.tierEmojiBox}>
-                  <Text style={{ fontSize: 32 }}>{TIER_EMOJI[tier] ?? '🏆'}</Text>
-                </View>
-                <View style={{ flex: 1 }}>
-                  <Text style={styles.tierSub}>本周联赛</Text>
-                  <Text style={styles.tierTitle}>{TIER_LABEL[tier] ?? '联赛'}</Text>
-                  <Text style={styles.tierInfo}>共 {entries.length} 名选手 · 每周一结算</Text>
-                </View>
-              </View>
-              <View style={styles.tierBadges}>
-                {promoteCount > 0 && (
-                  <View style={styles.badge}>
-                    <ChevronUp size={14} color="white" />
-                    <Text style={styles.badgeText}>前 {promoteCount} 名晋级</Text>
-                  </View>
-                )}
-                {demoteCount > 0 && (
-                  <View style={styles.badge}>
-                    <ChevronDown size={14} color="white" />
-                    <Text style={styles.badgeText}>末 {demoteCount} 名降级</Text>
-                  </View>
-                )}
-                {promoteCount === 0 && (
-                  <View style={styles.badge}>
-                    <Text style={styles.badgeText}>👑 最高段位</Text>
-                  </View>
-                )}
-              </View>
-            </View>
-
-            {entries.length === 0 ? (
-              <View style={styles.emptyRow}>
-                <Mascot size={96} mood="sad" />
-                <SpeechBubble>
-                  本周还没有排名记录。完成一节关卡就会自动进入{TIER_LABEL[tier] ?? '当前联赛'}！
-                </SpeechBubble>
-              </View>
-            ) : (
-              <>
-                {/* Podium */}
-                {podium.length > 0 && (
-                  <View style={styles.podium}>
-                    <PodiumCard entry={podium[1]} place={2} active={selfIndex === 1} />
-                    <PodiumCard entry={podium[0]} place={1} active={selfIndex === 0} />
-                    <PodiumCard entry={podium[2]} place={3} active={selfIndex === 2} />
-                  </View>
-                )}
-              </>
-            )}
-          </>
+          <LeagueHeader
+            currentTierIndex={currentTierIndex}
+            tier={tier}
+            weekEnd={data?.weekEnd}
+          />
+        }
+        ListEmptyComponent={
+          <View style={styles.emptyRow}>
+            <Mascot size={96} mood="sad" />
+            <SpeechBubble>
+              本周还没有排名记录。完成一节关卡就会自动进入{levelLabel(tier)}！
+            </SpeechBubble>
+          </View>
         }
         renderItem={({ item }) => {
           const isSelf = selfIndex === item.rank - 1;
-          const showPromoteLine = promoteCount > 3 && item.rank === promoteCount;
           const showDemoteLine = demoteCount > 0 && item.rank === groupSize - demoteCount + 1;
-          const zoneBorder =
-            item.zone === 'promoted'
-              ? 'rgba(88,204,2,0.4)'
-              : item.zone === 'demoted'
-                ? 'rgba(255,75,75,0.4)'
-                : undefined;
+
           return (
             <>
-              {showDemoteLine && <ZoneDivider kind="demote" />}
-              <View
-                style={[
-                  styles.row,
-                  zoneBorder ? { borderColor: zoneBorder } : null,
-                  isSelf && { borderColor: colors.green, backgroundColor: colors.greenSoft },
-                ]}
-              >
-                <Text style={styles.rank}>{item.rank}</Text>
-                <Avatar url={item.user.avatarUrl} size={40} />
-                <Text style={styles.name}>{item.user.nickname}</Text>
-                {item.zone === 'promoted' && <ChevronUp size={14} color="#58CC02" />}
-                {item.zone === 'demoted' && <ChevronDown size={14} color="#FF4B4B" />}
-                <Text style={styles.xp}>{item.weeklyXp} XP</Text>
-              </View>
-              {showPromoteLine && <ZoneDivider kind="promote" />}
+              {showDemoteLine && <ZoneDivider />}
+              <LeaderboardRow entry={item} isSelf={isSelf} />
             </>
           );
         }}
-        ListFooterComponent={
-          history && history.length > 0 ? (
-            <View style={{ marginTop: 16, gap: 8 }}>
-              <Text style={styles.historyTitle}>历史战绩</Text>
-              {history.map((h) => (
-                <View key={h.weekStart} style={styles.historyRow}>
-                  <Text style={{ fontSize: 20 }}>{TIER_EMOJI[h.tier] ?? '🏆'}</Text>
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.historyName}>
-                      {TIER_LABEL[h.tier] ?? '联赛'} · 第 {h.finalRank} 名
-                    </Text>
-                    <Text style={styles.historySub}>
-                      {h.weekStart.slice(0, 10)} · {h.weeklyXp} XP
-                      {h.gemsAwarded > 0 ? ` · +${h.gemsAwarded} 💎` : ''}
-                    </Text>
-                  </View>
-                  <View
-                    style={[
-                      styles.historyBadge,
-                      { backgroundColor: RESULT_COLOR[h.result] ?? '#AFAFAF' },
-                    ]}
-                  >
-                    <Text style={styles.historyBadgeText}>
-                      {RESULT_LABEL[h.result] ?? h.result}
-                    </Text>
-                  </View>
-                </View>
-              ))}
-            </View>
-          ) : null
-        }
-        ListEmptyComponent={entries.length > 0 ? null : undefined}
       />
     </SafeAreaView>
   );
 }
 
-function LeagueSkeleton() {
+function LeagueHeader({
+  currentTierIndex,
+  tier,
+  weekEnd,
+}: {
+  currentTierIndex: number;
+  tier: string;
+  weekEnd?: string;
+}) {
   return (
-    <>
-      <Skeleton style={{ height: 130, borderRadius: radius.xl }} />
-      <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 12 }}>
-        <Skeleton style={{ flex: 1, height: 96, borderRadius: radius.lg }} />
-        <Skeleton style={{ flex: 1, height: 128, borderRadius: radius.lg }} />
-        <Skeleton style={{ flex: 1, height: 80, borderRadius: radius.lg }} />
+    <View style={styles.header}>
+      <View style={styles.titleBlock}>
+        <Text style={styles.tierTitle}>{levelLabel(tier)}</Text>
+        <View style={styles.timeRow}>
+          <Clock3 size={17} color={colors.inkFaint} strokeWidth={3} />
+          <Text style={styles.timeText}>{remainingLabel(weekEnd)}</Text>
+        </View>
       </View>
-      <SkeletonRows rows={6} />
-    </>
-  );
-}
 
-function ZoneDivider({ kind }: { kind: 'promote' | 'demote' }) {
-  const isPromote = kind === 'promote';
-  const color = isPromote ? '#58CC02' : '#FF4B4B';
-  return (
-    <View style={styles.zoneDivider}>
-      <View style={[styles.zoneLine, { backgroundColor: color }]} />
-      <View style={styles.zoneLabel}>
-        {isPromote ? (
-          <ChevronUp size={12} color={color} />
-        ) : (
-          <ChevronDown size={12} color={color} />
-        )}
-        <Text style={[styles.zoneText, { color }]}>{isPromote ? '晋级区' : '降级区'}</Text>
-      </View>
-      <View style={[styles.zoneLine, { backgroundColor: color }]} />
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.trophyRail}
+      >
+        {TIER_ORDER.map((item, index) => {
+          const isCurrent = item === tier;
+          const unlocked = index <= currentTierIndex;
+          return (
+            <View
+              key={item}
+              style={[
+                styles.trophySlot,
+                isCurrent ? styles.trophySlotCurrent : styles.trophySlotMuted,
+              ]}
+            >
+              <Trophy tier={item} active={isCurrent} unlocked={unlocked} />
+            </View>
+          );
+        })}
+      </ScrollView>
+
+      <View style={styles.headerDivider} />
     </View>
   );
 }
 
-function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
+function LeaderboardRow({ entry, isSelf }: { entry: LeagueEntryDto; isSelf: boolean }) {
+  const flag = LOCALE_FLAG[entry.user.locale] ?? '🌐';
+  const displayLevel = entry.level ?? 0;
+  return (
+    <View style={[styles.row, isSelf && styles.rowSelf]}>
+      <Text style={[styles.rank, isSelf && styles.selfAccent]}>{entry.rank}</Text>
+      <Avatar
+        id={entry.user.id}
+        nickname={entry.user.nickname}
+        size={56}
+        url={entry.user.avatarUrl}
+      />
+      <View style={styles.identity}>
+        <Text numberOfLines={1} style={[styles.name, isSelf && styles.selfAccent]}>
+          {entry.user.nickname}
+        </Text>
+        <View style={styles.metaRow}>
+          <Text style={styles.flag}>{flag}</Text>
+          <Text style={styles.levelText}>{displayLevel}</Text>
+        </View>
+      </View>
+      <Text style={[styles.xp, isSelf && styles.selfAccent]}>{entry.weeklyXp} 经验</Text>
+    </View>
+  );
+}
+
+function Trophy({
+  active,
+  tier,
+  unlocked,
+}: {
+  active: boolean;
+  tier: string;
+  unlocked: boolean;
+}) {
+  const palette = unlocked
+    ? (TROPHY_SHADE[tier] ?? TROPHY_SHADE.bronze)
+    : { base: '#E8E8E8', dark: '#D2D2D2', light: '#F7F7F7' };
+  const width = active ? 86 : 62;
+  const height = active ? 98 : 72;
+
+  return (
+    <Svg width={width} height={height} viewBox="0 0 120 120">
+      <Ellipse cx="60" cy="108" rx="34" ry="8" fill={palette.dark} opacity={unlocked ? 0.55 : 0.35} />
+      <Rect x="45" y="78" width="30" height="26" rx="9" fill={palette.dark} />
+      <Ellipse cx="60" cy="96" rx="30" ry="12" fill={palette.base} />
+      <Path
+        d="M28 35C16 35 10 43 10 55C10 68 20 78 34 80"
+        fill="none"
+        stroke={palette.dark}
+        strokeLinecap="round"
+        strokeWidth="9"
+      />
+      <Path
+        d="M92 35C104 35 110 43 110 55C110 68 100 78 86 80"
+        fill="none"
+        stroke={palette.dark}
+        strokeLinecap="round"
+        strokeWidth="9"
+      />
+      <Path
+        d="M34 18H86C90 18 93 21 93 25V52C93 70 79 83 60 88C41 83 27 70 27 52V25C27 21 30 18 34 18Z"
+        fill={palette.base}
+        stroke={palette.dark}
+        strokeLinejoin="round"
+        strokeWidth="7"
+      />
+      <Path d="M42 23H76L43 78C33 71 30 62 30 52V30C30 26 34 23 42 23Z" fill={palette.light} opacity="0.48" />
+      {!unlocked && <Path d="M54 50H66V68H54V50Z" fill={palette.dark} opacity="0.42" />}
+      {!unlocked && <Ellipse cx="60" cy="46" rx="10" ry="9" fill={palette.dark} opacity="0.42" />}
+    </Svg>
+  );
+}
+
+function ZoneDivider() {
+  return (
+    <View style={styles.zoneDivider}>
+      <Text style={styles.zoneText}>⬇ 滑降地带 ⬇</Text>
+    </View>
+  );
+}
+
+function Avatar({
+  id,
+  nickname,
+  size = 64,
+  url,
+}: {
+  id: string;
+  nickname: string;
+  size?: number;
+  url?: string | null;
+}) {
   if (url) {
     return (
       <Image
@@ -237,190 +253,192 @@ function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
       />
     );
   }
+
+  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
+  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
+
   return (
     <View
       style={{
         width: size,
         height: size,
         borderRadius: size / 2,
-        backgroundColor: colors.mist,
+        backgroundColor: color,
         alignItems: 'center',
         justifyContent: 'center',
-        overflow: 'hidden',
       }}
     >
-      <Image
-        source={require('../../../assets/mascot/mascot-idle.png')}
-        style={{ width: size * 0.86, height: size * 0.86 }}
-        resizeMode="contain"
-      />
+      <Text style={styles.avatarInitial}>{initial}</Text>
     </View>
   );
 }
 
-function PodiumCard({
-  entry,
-  place,
-  active,
-}: {
-  entry?: { user: { id: string; nickname: string; avatarUrl: string | null }; weeklyXp: number };
-  place: 1 | 2 | 3;
-  active: boolean;
-}) {
-  if (!entry) return <View style={{ flex: 1 }} />;
-
-  const ringColor = place === 1 ? colors.gold : place === 2 ? '#B8B8B8' : '#CD7F32';
-  const baseColor = place === 1 ? colors.gold : place === 2 ? '#B8B8B8' : '#CD7F32';
-  const height = place === 1 ? 100 : place === 2 ? 76 : 60;
-
+function LeagueSkeleton() {
   return (
-    <View style={styles.podiumCard}>
-      <View style={styles.podiumAvatarWrap}>
-        <View style={[styles.podiumAvatar, { borderColor: ringColor }]}>
-          <Avatar url={entry.user.avatarUrl} size={50} />
-        </View>
-        <View style={[styles.podiumBadge, { backgroundColor: baseColor }]}>
-          {place === 1 ? (
-            <Crown size={14} color="white" fill="white" />
-          ) : (
-            <Medal size={14} color="white" />
-          )}
-        </View>
+    <>
+      <Skeleton style={{ height: 96, borderRadius: 8 }} />
+      <View style={{ flexDirection: 'row', gap: 16 }}>
+        <Skeleton style={{ height: 110, width: 92, borderRadius: 8 }} />
+        <Skeleton style={{ height: 132, width: 108, borderRadius: 8 }} />
+        <Skeleton style={{ height: 110, width: 92, borderRadius: 8 }} />
       </View>
-      <Text style={styles.podiumName} numberOfLines={1}>
-        {entry.user.nickname}
-      </Text>
-      <Text style={styles.podiumXp}>{entry.weeklyXp} XP</Text>
-      <View style={[styles.podiumBar, { backgroundColor: baseColor, height }]}>
-        <Text style={styles.podiumPlace}>{place}</Text>
-      </View>
-    </View>
+      <SkeletonRows rows={7} />
+    </>
   );
+}
+
+function levelLabel(tier: string): string {
+  return (TIER_LABEL[tier] ?? '联赛').replace('联赛', '等级');
+}
+
+function remainingLabel(weekEnd?: string): string {
+  if (!weekEnd) return '本周结束';
+  const diffMs = new Date(weekEnd).getTime() - Date.now();
+  if (!Number.isFinite(diffMs) || diffMs <= 0) return '即将结算';
+  const hours = Math.floor(diffMs / (1000 * 60 * 60));
+  if (hours < 1) return '不到 1 小时';
+  return `${hours} 小时`;
+}
+
+function hashString(value: string): number {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.white },
-  tierBanner: {
-    borderRadius: radius.xl,
-    padding: 16,
-    marginBottom: 16,
-    borderBottomWidth: 6,
-    borderBottomColor: 'rgba(0,0,0,0.15)',
+  loadingWrap: { gap: 18, padding: 20 },
+  errorWrap: { padding: 16 },
+  listContent: {
+    paddingBottom: 18,
   },
-  tierRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  tierEmojiBox: {
-    width: 56,
-    height: 56,
-    borderRadius: radius.lg,
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    alignItems: 'center',
-    justifyContent: 'center',
+  header: {
+    backgroundColor: colors.white,
   },
-  tierSub: {
-    fontSize: 10,
+  titleBlock: {
+    paddingHorizontal: 28,
+    paddingTop: 2,
+  },
+  tierTitle: {
+    color: colors.ink,
     fontFamily: fonts.heavy,
-    color: 'rgba(255,255,255,0.8)',
-    textTransform: 'uppercase',
-    letterSpacing: 1,
+    fontSize: 31,
   },
-  tierTitle: { fontSize: 22, fontFamily: fonts.heavy, color: colors.white },
-  tierInfo: {
-    fontSize: 12,
-    fontFamily: fonts.sansBold,
-    color: 'rgba(255,255,255,0.9)',
-    marginTop: 2,
-  },
-  tierBadges: { flexDirection: 'row', gap: 8, marginTop: 12 },
-  badge: {
+  timeRow: {
+    alignItems: 'center',
     flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: radius.full,
+    gap: 6,
+    marginTop: 8,
   },
-  badgeText: { fontFamily: fonts.heavy, fontSize: 12, color: colors.white },
-  emptyRow: { flexDirection: 'row', alignItems: 'flex-end', gap: 8, marginVertical: 16 },
-  podium: { flexDirection: 'row', alignItems: 'flex-end', gap: 8, marginBottom: 16 },
-  podiumCard: { flex: 1, alignItems: 'center', gap: 4 },
-  podiumAvatarWrap: { position: 'relative' },
-  podiumAvatar: {
-    width: 56,
-    height: 56,
-    borderRadius: 28,
-    borderWidth: 3,
-    backgroundColor: colors.white,
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
+  timeText: {
+    color: colors.inkFaint,
+    fontFamily: fonts.heavy,
+    fontSize: 18,
   },
-  podiumBadge: {
-    position: 'absolute',
-    top: -6,
-    right: -6,
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    borderWidth: 2,
-    borderColor: colors.white,
-    alignItems: 'center',
-    justifyContent: 'center',
+  trophyRail: {
+    alignItems: 'flex-end',
+    gap: 30,
+    minWidth: '100%',
+    paddingBottom: 10,
+    paddingHorizontal: 34,
+    paddingTop: 12,
   },
-  podiumName: { fontFamily: fonts.heavy, fontSize: 12, color: colors.ink, maxWidth: 90 },
-  podiumXp: { fontFamily: fonts.display, fontSize: 12, color: colors.greenDark },
-  podiumBar: {
-    width: '100%',
-    borderTopLeftRadius: radius.lg,
-    borderTopRightRadius: radius.lg,
+  trophySlot: {
     alignItems: 'center',
-    paddingTop: 8,
+    height: 96,
+    justifyContent: 'flex-end',
+    width: 70,
   },
-  podiumPlace: { fontFamily: fonts.heavy, fontSize: 24, color: colors.white },
+  trophySlotCurrent: {
+    width: 112,
+  },
+  trophySlotMuted: {
+    opacity: 0.88,
+  },
+  headerDivider: {
+    backgroundColor: colors.line,
+    height: 2,
+  },
+  emptyRow: {
+    alignItems: 'flex-end',
+    flexDirection: 'row',
+    gap: 8,
+    padding: 24,
+  },
   row: {
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
-    padding: 12,
     backgroundColor: colors.white,
-    borderRadius: radius.lg,
-    borderWidth: 2,
-    borderColor: colors.line,
+    flexDirection: 'row',
+    gap: 12,
+    minHeight: 76,
+    paddingHorizontal: 6,
+    paddingVertical: 8,
+  },
+  rowSelf: {
+    backgroundColor: '#FADADB',
+  },
+  rowDivider: {
+    backgroundColor: colors.white,
+    height: 0,
   },
   rank: {
-    width: 28,
+    color: colors.inkFaint,
+    fontFamily: fonts.heavy,
+    fontSize: 16,
     textAlign: 'center',
-    fontFamily: fonts.display,
-    fontSize: 17,
-    color: colors.inkSoft,
+    width: 22,
   },
-  avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: colors.mist,
+  identity: {
+    flex: 1,
+    minWidth: 0,
+  },
+  name: {
+    color: colors.ink,
+    fontFamily: fonts.heavy,
+    fontSize: 20,
+  },
+  metaRow: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 6,
+    marginTop: 4,
+  },
+  flag: {
+    fontSize: 18,
+    lineHeight: 22,
+  },
+  levelText: {
+    color: colors.inkSoft,
+    fontFamily: fonts.heavy,
+    fontSize: 16,
+  },
+  xp: {
+    color: colors.inkFaint,
+    fontFamily: fonts.heavy,
+    fontSize: 17,
+    minWidth: 100,
+    textAlign: 'right',
+  },
+  selfAccent: {
+    color: colors.rose,
+  },
+  avatarInitial: {
+    color: colors.white,
+    fontFamily: fonts.heavy,
+    fontSize: 30,
+  },
+  zoneDivider: {
     alignItems: 'center',
     justifyContent: 'center',
+    minHeight: 64,
+    paddingVertical: 10,
   },
-  name: { flex: 1, fontFamily: fonts.heavy, color: colors.ink },
-  xp: { fontFamily: fonts.display, fontSize: 15, color: colors.greenDark },
-  zoneDivider: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 4 },
-  zoneLine: { flex: 1, height: 2, borderRadius: 1 },
-  zoneLabel: { flexDirection: 'row', alignItems: 'center', gap: 2 },
-  zoneText: { fontFamily: fonts.heavy, fontSize: 11 },
-  historyTitle: { fontFamily: fonts.heavy, fontSize: 18, color: colors.ink, marginBottom: 4 },
-  historyRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    padding: 12,
-    backgroundColor: colors.white,
-    borderRadius: radius.lg,
-    borderWidth: 2,
-    borderColor: colors.line,
+  zoneText: {
+    color: colors.rose,
+    fontFamily: fonts.heavy,
+    fontSize: 24,
   },
-  historyName: { fontFamily: fonts.heavy, color: colors.ink },
-  historySub: { fontFamily: fonts.sansBold, fontSize: 11, color: colors.inkSoft, marginTop: 2 },
-  historyBadge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: radius.full },
-  historyBadgeText: { fontFamily: fonts.heavy, fontSize: 12, color: colors.white },
 });
