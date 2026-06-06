@@ -71,7 +71,7 @@ CREATE TABLE "Course" (
     "toLocale" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "flagEmoji" TEXT NOT NULL DEFAULT '',
+    "coverImageUrl" TEXT NOT NULL DEFAULT '',
     "version" INTEGER NOT NULL DEFAULT 1,
     "status" TEXT NOT NULL DEFAULT 'published',
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -87,6 +87,7 @@ CREATE TABLE "Unit" (
     "orderIndex" INTEGER NOT NULL,
     "title" TEXT NOT NULL,
     "themeColor" TEXT NOT NULL DEFAULT '#3FB984',
+    "mapDecorations" JSONB,
 
     CONSTRAINT "Unit_pkey" PRIMARY KEY ("id")
 );
@@ -198,6 +199,7 @@ CREATE TABLE "UserWallet" (
     "gems" INTEGER NOT NULL DEFAULT 50,
     "hearts" INTEGER NOT NULL DEFAULT 5,
     "maxHearts" INTEGER NOT NULL DEFAULT 5,
+    "heartsUpdatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "streakFreezes" INTEGER NOT NULL DEFAULT 0,
     "xpTotal" INTEGER NOT NULL DEFAULT 0,
     "updatedAt" TIMESTAMP(3) NOT NULL,
@@ -290,7 +292,9 @@ CREATE TABLE "LeagueGroup" (
     "id" TEXT NOT NULL,
     "tier" TEXT NOT NULL,
     "weekStart" TIMESTAMP(3) NOT NULL,
+    "capacity" INTEGER NOT NULL DEFAULT 30,
     "status" TEXT NOT NULL DEFAULT 'active',
+    "settledAt" TIMESTAMP(3),
 
     CONSTRAINT "LeagueGroup_pkey" PRIMARY KEY ("id")
 );
@@ -301,8 +305,26 @@ CREATE TABLE "LeaderboardEntry" (
     "userId" TEXT NOT NULL,
     "weeklyXp" INTEGER NOT NULL DEFAULT 0,
     "rank" INTEGER NOT NULL DEFAULT 0,
+    "joinedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "LeaderboardEntry_pkey" PRIMARY KEY ("groupId","userId")
+);
+
+-- CreateTable
+CREATE TABLE "LeagueHistory" (
+    "id" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "weekStart" TIMESTAMP(3) NOT NULL,
+    "tier" TEXT NOT NULL,
+    "finalRank" INTEGER NOT NULL,
+    "weeklyXp" INTEGER NOT NULL,
+    "result" TEXT NOT NULL,
+    "nextTier" TEXT NOT NULL,
+    "gemsAwarded" INTEGER NOT NULL DEFAULT 0,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "LeagueHistory_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
@@ -424,13 +446,19 @@ CREATE INDEX "Friendship_friendId_idx" ON "Friendship"("friendId");
 CREATE INDEX "Friendship_status_idx" ON "Friendship"("status");
 
 -- CreateIndex
-CREATE INDEX "LeagueGroup_weekStart_tier_idx" ON "LeagueGroup"("weekStart", "tier");
-
--- CreateIndex
-CREATE UNIQUE INDEX "LeagueGroup_tier_weekStart_id_key" ON "LeagueGroup"("tier", "weekStart", "id");
+CREATE INDEX "LeagueGroup_weekStart_tier_status_idx" ON "LeagueGroup"("weekStart", "tier", "status");
 
 -- CreateIndex
 CREATE INDEX "LeaderboardEntry_groupId_weeklyXp_idx" ON "LeaderboardEntry"("groupId", "weeklyXp");
+
+-- CreateIndex
+CREATE INDEX "LeaderboardEntry_userId_idx" ON "LeaderboardEntry"("userId");
+
+-- CreateIndex
+CREATE INDEX "LeagueHistory_userId_createdAt_idx" ON "LeagueHistory"("userId", "createdAt");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "LeagueHistory_userId_weekStart_key" ON "LeagueHistory"("userId", "weekStart");
 
 -- CreateIndex
 CREATE INDEX "Subscription_userId_idx" ON "Subscription"("userId");
@@ -533,6 +561,9 @@ ALTER TABLE "LeaderboardEntry" ADD CONSTRAINT "LeaderboardEntry_groupId_fkey" FO
 
 -- AddForeignKey
 ALTER TABLE "LeaderboardEntry" ADD CONSTRAINT "LeaderboardEntry_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "LeagueHistory" ADD CONSTRAINT "LeagueHistory_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Subscription" ADD CONSTRAINT "Subscription_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
