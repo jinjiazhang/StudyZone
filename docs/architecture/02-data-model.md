@@ -85,12 +85,12 @@
 - **Locale 含义**：
   - `fromLocale` = 用户母语（UI 文案语言）
   - `toLocale` = 学习目标语言；对数学等非语言学科，约定 `toLocale = "math"`（自描述）
-- **删除级联**：`Course → Unit → Lesson` 全 `onDelete: Cascade`，重新导入课程时不会留下孤儿。
+- **删除级联**：`Course → Unit → Lesson` 全 `onDelete: Cascade`。导入脚本默认通过稳定唯一键更新内容，避免重建课程树导致学习进度丢失。
 
 ### 内容数据来源
 
 - 源数据存放在 [`apps/api/prisma/lesson-data/`](../../apps/api/prisma/lesson-data/)，按 `subject/grade/unit/lesson` 分目录。
-- 通过 `pnpm db:import` 重新导入；该命令会清空 Content + 学习相关状态（Session / Attempt / SrsCard / Progress / Enrollment）但**保留账户 / 钱包 / 任务 / XP 流水**。
+- 通过 `pnpm db:import` 重新导入；该命令会更新 Content 树并重建课时题目关联，但**保留学习进度、报名、Session、Attempt、SRS、账户、钱包、任务、XP 流水**。
 
 ---
 

@@ -77,7 +77,7 @@ pnpm db:migrate     # 运行 Prisma migrations（开发模式）
 pnpm db:import      # 导入课程内容（lesson-data/）
 ```
 
-> `db:import` 会清空内容相关表（Subject/Course/Unit/Lesson/Exercise/SrsCard/Session/...），但**保留**用户、钱包、任务、XP 流水。可以反复执行。
+> `db:import` 会更新课程内容并重建课时题目关联，但**保留**学习进度、报名、Session、Attempt、SRS、用户、钱包、任务、XP 流水。可以反复执行。
 
 可视化查看数据库：
 

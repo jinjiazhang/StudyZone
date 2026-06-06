@@ -66,7 +66,7 @@ pnpm --filter @studyzone/api prisma migrate deploy
 pnpm db:import
 ```
 
-导入脚本会重置课程、单元、课时、练习以及相关学习进度，并重新导入 `apps/api/prisma/lesson-data` 下的数据；用户账号本身会保留，同时会创建或更新演示账号：
+导入脚本会从 `apps/api/prisma/lesson-data` 更新课程、单元、课时和练习，并保留已有学习进度、报名、Session、Attempt、SRS 等用户状态；同时会创建或更新演示账号：
 
 ```text
 demo@studyzone.dev / studyzone

@@ -218,7 +218,7 @@ pnpm deploy:prod --skip-db        # 不导入数据
 pnpm deploy:prod --skip-restart   # 只 build 不重启
 ```
 
-> `db:import` 会清空课程内容并重新导入，不会清用户数据。生产改库结构时优先用 Prisma migration（`pnpm db:migrate deploy`），而不是 `db:import`。
+> `db:import` 会更新课程内容并重建课时题目关联，不会清学习进度或用户数据。生产改库结构时优先用 Prisma migration（`pnpm db:migrate deploy`），而不是 `db:import`。
 
 ---
 

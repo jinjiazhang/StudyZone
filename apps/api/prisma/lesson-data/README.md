@@ -24,9 +24,9 @@ lesson-data/
 - Each unit `lessons.json` lists lesson metadata and lesson files.
 - Lesson files contain only exercises.
 
-Running `pnpm db:import` clears curriculum content and related learning state,
-then reimports this tree. User accounts, wallets, quests, achievements, and XP
-ledger entries are preserved.
+Running `pnpm db:import` upserts the curriculum tree from this directory while
+preserving user learning progress, enrollments, sessions, attempts, SRS cards,
+wallets, quests, achievements, and XP ledger entries.
 
 ## Unit Map Rive Decorations
 

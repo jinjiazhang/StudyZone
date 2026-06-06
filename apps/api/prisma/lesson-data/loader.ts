@@ -362,7 +362,7 @@ function optionalString(value: unknown, filePath: string, field: string): string
 }
 
 function requiredNumber(value: unknown, filePath: string, field: string): number {
-  if (!Number.isInteger(value)) {
+  if (typeof value !== 'number' || !Number.isInteger(value)) {
     throw new Error(`Invalid lesson data: ${filePath} ${field} must be an integer`);
   }
   return value;
