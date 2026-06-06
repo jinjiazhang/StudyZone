@@ -1,65 +1,95 @@
-import type { ComponentType } from 'react';
 import { Tabs } from 'expo-router';
-import { View, StyleSheet } from 'react-native';
-import { BookOpen, Trophy, Users, User } from 'lucide-react-native';
-import { colors, fonts } from '@/lib/theme';
+import { Image, StyleSheet, View, type ImageSourcePropType } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { SvgUri } from 'react-native-svg';
 
-type IconCmp = ComponentType<{ size?: number; color?: string; strokeWidth?: number }>;
+import { colors } from '@/lib/theme';
 
-/** Active tab icon sits inside a soft green pill (genre convention). */
-function TabIcon({ Icon, color, focused }: { Icon: IconCmp; color: string; focused: boolean }) {
+const LEARN_ICON = require('../../../assets/icons/tab-learn.svg') as ImageSourcePropType;
+const LEAGUE_ICON = require('../../../assets/icons/tab-league.svg') as ImageSourcePropType;
+const FRIENDS_ICON = require('../../../assets/icons/tab-friends.svg') as ImageSourcePropType;
+const PROFILE_ICON = require('../../../assets/icons/tab-profile.svg') as ImageSourcePropType;
+
+function TabIcon({
+  accessibilityLabel,
+  focused,
+  source,
+}: {
+  accessibilityLabel: string;
+  focused: boolean;
+  source: ImageSourcePropType;
+}) {
   return (
-    <View style={[styles.iconPill, focused && styles.iconPillActive]}>
-      <Icon size={24} color={color} strokeWidth={focused ? 2.6 : 2.3} />
+    <View style={[styles.iconFrame, focused && styles.iconFrameActive]}>
+      <SvgUri
+        accessibilityLabel={accessibilityLabel}
+        height={40}
+        uri={Image.resolveAssetSource(source).uri}
+        width={40}
+      />
     </View>
   );
 }
 
 export default function TabsLayout() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: colors.greenDark,
-        tabBarInactiveTintColor: colors.inkFaint,
-        tabBarLabelStyle: { fontFamily: fonts.heavy, fontSize: 11, letterSpacing: 0.4 },
+        tabBarShowLabel: false,
+        tabBarHideOnKeyboard: true,
+        tabBarIconStyle: styles.tabBarIcon,
         tabBarStyle: {
           backgroundColor: colors.white,
-          borderTopWidth: 2,
+          borderTopWidth: 1.5,
           borderTopColor: colors.line,
-          paddingTop: 6,
+          height: 64 + insets.bottom,
+          paddingBottom: insets.bottom,
+          paddingTop: 5,
         },
-        tabBarItemStyle: {
-          paddingVertical: 2,
-        },
+        tabBarItemStyle: styles.tabBarItem,
       }}
     >
       <Tabs.Screen
         name="learn"
         options={{
           title: '学习',
-          tabBarIcon: ({ color, focused }) => <TabIcon Icon={BookOpen} color={color} focused={focused} />,
+          tabBarAccessibilityLabel: '学习',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon accessibilityLabel="学习" focused={focused} source={LEARN_ICON} />
+          ),
         }}
       />
       <Tabs.Screen
         name="league"
         options={{
           title: '联赛',
-          tabBarIcon: ({ color, focused }) => <TabIcon Icon={Trophy} color={color} focused={focused} />,
+          tabBarAccessibilityLabel: '联赛',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon accessibilityLabel="联赛" focused={focused} source={LEAGUE_ICON} />
+          ),
         }}
       />
       <Tabs.Screen
         name="friends"
         options={{
           title: '好友',
-          tabBarIcon: ({ color, focused }) => <TabIcon Icon={Users} color={color} focused={focused} />,
+          tabBarAccessibilityLabel: '好友',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon accessibilityLabel="好友" focused={focused} source={FRIENDS_ICON} />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
           title: '我的',
-          tabBarIcon: ({ color, focused }) => <TabIcon Icon={User} color={color} focused={focused} />,
+          tabBarAccessibilityLabel: '我的',
+          tabBarIcon: ({ focused }) => (
+            <TabIcon accessibilityLabel="我的" focused={focused} source={PROFILE_ICON} />
+          ),
         }}
       />
     </Tabs>
@@ -67,14 +97,27 @@ export default function TabsLayout() {
 }
 
 const styles = StyleSheet.create({
-  iconPill: {
-    width: 48,
-    height: 30,
-    borderRadius: 999,
+  iconFrame: {
     alignItems: 'center',
+    borderColor: 'transparent',
+    borderRadius: 14,
+    borderWidth: 3,
+    height: 54,
     justifyContent: 'center',
+    width: 58,
   },
-  iconPillActive: {
-    backgroundColor: colors.greenTint,
+  iconFrameActive: {
+    backgroundColor: '#F0FAFF',
+    borderColor: '#84D8F7',
+  },
+  tabBarIcon: {
+    height: 54,
+    width: 58,
+  },
+  tabBarItem: {
+    alignItems: 'center',
+    height: 59,
+    justifyContent: 'center',
+    padding: 0,
   },
 });

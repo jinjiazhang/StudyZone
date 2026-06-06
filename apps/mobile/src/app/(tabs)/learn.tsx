@@ -331,10 +331,10 @@ const styles = StyleSheet.create({
     paddingVertical: 0,
   },
   scroll: {
-    backgroundColor: colors.mist,
+    backgroundColor: colors.white,
   },
   shelfContent: {
-    backgroundColor: colors.mist,
+    backgroundColor: colors.white,
     flexGrow: 1,
     padding: 18,
     paddingBottom: 40,
