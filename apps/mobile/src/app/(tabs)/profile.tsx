@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Pressable, ScrollView, Image, type ImageSourceP
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
-import { Gem, Settings, Sparkles, Target, CheckCircle2 } from 'lucide-react-native';
+import { Settings, CheckCircle2 } from 'lucide-react-native';
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius } from '@/lib/theme';
@@ -15,6 +15,7 @@ const STREAK_ICON = require('../../../assets/icons/streak.svg') as ImageSourcePr
 const XP_ICON = require('../../../assets/icons/xp.svg') as ImageSourcePropType;
 const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
 const HEART_ICON = require('../../../assets/icons/heart.svg') as ImageSourcePropType;
+const TARGET_ICON = require('../../../assets/icons/target.svg') as ImageSourcePropType;
 const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 export default function Profile() {
@@ -131,10 +132,10 @@ export default function Profile() {
                   q.completed && { borderColor: colors.green, backgroundColor: colors.greenSoft },
                 ]}
               >
-                <View style={[styles.questIcon, q.completed && { backgroundColor: colors.green }]}>
+                <View style={[styles.questIcon, q.completed && styles.questIconCompleted]}>
                   {q.completed
-                    ? <CheckCircle2 size={24} color={colors.white} />
-                    : <Target size={24} color={colors.inkSoft} />
+                    ? <CheckCircle2 size={26} color={colors.white} />
+                    : <LocalSvg height={40} source={TARGET_ICON} width={40} />
                   }
                 </View>
                 <View style={{ flex: 1 }}>
@@ -146,11 +147,11 @@ export default function Profile() {
                     <Text style={styles.questCount}>{q.currentValue} / {q.targetValue}</Text>
                     <View style={styles.questRewards}>
                       <View style={styles.questReward}>
-                        <Sparkles size={12} color={colors.goldDark} />
+                        <LocalSvg height={15} source={XP_ICON} width={15} />
                         <Text style={[styles.questRewardText, { color: colors.goldDark }]}>{q.xpReward} XP</Text>
                       </View>
                       <View style={styles.questReward}>
-                        <Gem size={12} color={colors.skyDark} />
+                        <LocalSvg height={15} source={DIAMOND_ICON} width={13} />
                         <Text style={[styles.questRewardText, { color: colors.skyDark }]}>{q.gemsReward}</Text>
                       </View>
                     </View>
@@ -389,9 +390,12 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: radius.lg,
-    backgroundColor: colors.mist,
+    backgroundColor: colors.greenSoft,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  questIconCompleted: {
+    backgroundColor: colors.green,
   },
   questName: { fontFamily: fonts.heavy, color: colors.ink, fontSize: 14 },
   questProgress: { height: 12, borderRadius: radius.full, backgroundColor: colors.line, overflow: 'hidden', marginTop: 6 },
