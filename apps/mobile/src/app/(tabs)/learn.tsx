@@ -167,16 +167,11 @@ export default function Learn() {
           ) : contentError ? (
             <ErrorState onRetry={retryContent} />
           ) : shelfBooks.length === 0 ? (
-            <>
-              <EmptyState
-                action={<AddTextbookButton onPress={() => setPickerVisible(true)} />}
-                description="把正在学习的课本添加到书架，之后可以随时继续。"
-                title="书架还是空的"
-              />
-              <View style={styles.grid}>
-                <AddCard onPress={() => setPickerVisible(true)} />
-              </View>
-            </>
+            <EmptyState
+              action={<AddTextbookButton onPress={() => setPickerVisible(true)} />}
+              description="把正在学习的课本添加到书架，之后可以随时继续。"
+              title="书架还是空的"
+            />
           ) : (
             <>
               {filteredBooks.length === 0 && (
@@ -281,8 +276,6 @@ function AddCard({ onPress }: { onPress: () => void }) {
         </View>
         <Text style={styles.addCoverText}>添加课本</Text>
       </View>
-      <Text style={styles.bookTitle}>添加课本</Text>
-      <Text style={styles.addHint}>从课本库中选择</Text>
     </Pressable>
   );
 }
@@ -416,12 +409,6 @@ const styles = StyleSheet.create({
     color: colors.inkSoft,
     fontFamily: fonts.heavy,
     fontSize: 14,
-  },
-  addHint: {
-    color: colors.inkSoft,
-    fontFamily: fonts.sansBold,
-    fontSize: 12,
-    marginTop: 2,
   },
   noResults: {
     alignItems: 'center',

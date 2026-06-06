@@ -41,7 +41,6 @@ export function TextbookPickerSheet({
           <View style={styles.header}>
             <View>
               <Text style={styles.title}>添加课本</Text>
-              <Text style={styles.subtitle}>选择一本课本加入你的书架</Text>
             </View>
             <Pressable accessibilityLabel="关闭" hitSlop={8} onPress={onClose} style={styles.close}>
               <X color={colors.inkSoft} size={22} />
@@ -157,12 +156,6 @@ const styles = StyleSheet.create({
     color: colors.ink,
     fontFamily: fonts.heavy,
     fontSize: 20,
-  },
-  subtitle: {
-    color: colors.inkSoft,
-    fontFamily: fonts.sansBold,
-    fontSize: 12,
-    marginTop: 2,
   },
   close: {
     alignItems: 'center',
