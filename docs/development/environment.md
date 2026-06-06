@@ -57,8 +57,8 @@
 | 变量 | 说明 | 默认值 |
 |---|---|---|
 | `LEAGUE_SETTLE_CRON` | 联赛结算 cron（UTC） | `5 0 * * 1` |
-| `HEART_RECOVERY_CRON` | 心数恢复扫描 cron | `*/5 * * * *` |
-| `HEART_RECOVERY_MINUTES` | 每恢复 1 颗心的分钟数（API + Worker 共用） | `3` |
+| `HEART_RECOVERY_CRON` | 心数恢复扫描 cron | `* * * * *` |
+| `HEART_RECOVERY_MINUTES` | 每恢复 1 颗心的分钟数（API + Worker 共用） | `1` |
 
 ### 客户端公开变量
 

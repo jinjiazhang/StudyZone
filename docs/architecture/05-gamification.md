@@ -83,7 +83,7 @@ levelFromXp(xp): { level, xpInLevel, xpToNextLevel }
 ### 心数（Hearts）
 - 全局资源（`UserWallet.hearts`，跨关卡共享），默认上限 5。
 - 错题扣 1，扣到 0 **当场锁关判负**（`outcome=fail`、无奖励），且心数为 0 时禁止开新关（`out_of_hearts`）。详见 [`04-learning-engine.md`](./04-learning-engine.md) §一 / §六。
-- 恢复（已启用）：每 `HEART_RECOVERY_MINUTES`（默认 3）分钟回 1 颗，以 `UserWallet.heartsUpdatedAt` 为锚点（纯函数 `recoverHearts`）。Worker 周期任务批量补满 + 读取时惰性补算（`RewardsService.syncHearts`）双管齐下；`GET /me` 返回 `nextHeartAt` 供倒计时。订阅会员无限心数（待）。
+- 恢复（已启用）：每 `HEART_RECOVERY_MINUTES`（默认 1）分钟回 1 颗，以 `UserWallet.heartsUpdatedAt` 为锚点（纯函数 `recoverHearts`）。Worker 周期任务批量补满 + 读取时惰性补算（`RewardsService.syncHearts`）双管齐下；`GET /me` 返回 `nextHeartAt` 供倒计时。订阅会员无限心数（待）。
 
 ---
 

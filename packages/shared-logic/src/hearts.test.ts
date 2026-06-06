@@ -7,6 +7,10 @@ const base = new Date('2026-06-05T10:00:00Z');
 const minutesLater = (n: number) => new Date(base.getTime() + n * 60_000);
 
 describe('recoverHearts', () => {
+  it('defaults to recovering one heart per minute', () => {
+    expect(HEART_RECOVERY_INTERVAL_MINUTES).toBe(1);
+  });
+
   it('returns no change when already at max', () => {
     const r = recoverHearts({ hearts: 5, maxHearts: 5, heartsUpdatedAt: base, now: minutesLater(999) });
     expect(r).toMatchObject({ hearts: 5, recovered: 0, nextHeartAt: null });

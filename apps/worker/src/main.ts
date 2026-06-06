@@ -24,7 +24,7 @@ const SETTLE_CRON = process.env.LEAGUE_SETTLE_CRON ?? '5 0 * * 1';
  * Cron for the heart regeneration sweep. The per-heart cadence is enforced by
  * the `heartsUpdatedAt` math; this only bounds how stale hearts can get.
  */
-const HEARTS_CRON = process.env.HEART_RECOVERY_CRON ?? '*/5 * * * *';
+const HEARTS_CRON = process.env.HEART_RECOVERY_CRON ?? '* * * * *';
 
 async function bootstrap() {
   const logger = new Logger('Worker');

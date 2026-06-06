@@ -8,7 +8,7 @@
  * hearts the clock is irrelevant; it (re)starts the moment a heart is spent.
  */
 
-export const HEART_RECOVERY_INTERVAL_MINUTES = 3;
+export const HEART_RECOVERY_INTERVAL_MINUTES = 1;
 
 export interface HeartRecoveryInput {
   hearts: number;

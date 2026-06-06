@@ -153,8 +153,8 @@ const result = judge(
 - 心数是 `UserWallet.hearts` 上的**全局**资源（跨关卡共享），默认上限 5。
 - 每次答错扣 1 颗心（`heartsRemaining` 在 attempts 响应里回传），最低扣到 0。
 - **耗尽锁关（硬约束，已启用）**：扣到 0 的那次提交立即把会话标记 `finishedAt + outcome=fail`，返回 `lessonFailed=true`，本关失败、无奖励；之后该会话的 `attempts` / `complete` 都因 `session_finished` 被拒。`startLesson` 在 `hearts <= 0` 时以 `out_of_hearts` 拒绝开新关。
-- **定时恢复（已启用）**：每 `HEART_RECOVERY_MINUTES`（默认 3）分钟回 1 颗，上限 `maxHearts`（默认 5）。算法是纯函数 [`recoverHearts`](../../packages/shared-logic/src/hearts.ts)，以 `UserWallet.heartsUpdatedAt` 为锚点计算应恢复数量：
-  - Worker 周期任务（cron `HEART_RECOVERY_CRON`，默认 `*/5 * * * *`）批量补满低于上限的钱包；
+- **定时恢复（已启用）**：每 `HEART_RECOVERY_MINUTES`（默认 1）分钟回 1 颗，上限 `maxHearts`（默认 5）。算法是纯函数 [`recoverHearts`](../../packages/shared-logic/src/hearts.ts)，以 `UserWallet.heartsUpdatedAt` 为锚点计算应恢复数量：
+  - Worker 周期任务（cron `HEART_RECOVERY_CRON`，默认 `* * * * *`）批量补满低于上限的钱包；
   - 读取时惰性补算（`RewardsService.syncHearts`，在 `GET /me` 与 `startLesson` 调用），保证用户立即看到最新心数，不必等 Worker tick；
   - `GET /me` 额外返回 `nextHeartAt`（下一颗恢复的 ISO 时间，满心为 `null`），供客户端做倒计时。
 - 未来：宝石可购买无限心数（订阅会员默认开启）。

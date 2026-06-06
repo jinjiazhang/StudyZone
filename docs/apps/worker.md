@@ -20,7 +20,7 @@ pnpm --filter @studyzone/worker start    # 生产模式（直接 tsx）
 ## 二、职责
 
 - **联赛结算（League settle）**：每周一 UTC `00:05`（cron `5 0 * * 1`，可用 `LEAGUE_SETTLE_CRON` 覆盖）扫描 `LeagueGroup.status='active' && weekStart < now()`，按规则升 / 留 / 降，写 `LeagueHistory`，把 group 标记 `settled`，发奖励。
-- **心数恢复（Hearts recover）**：周期任务（cron `HEART_RECOVERY_CRON`，默认 `*/5 * * * *`）调用 `RewardsService.recoverAllHearts()`，对 `hearts < maxHearts` 的钱包按 `recoverHearts` 纯函数补算（每 `HEART_RECOVERY_MINUTES` 分钟回 1 颗，默认 3）。API 侧读取时也会惰性补算（`syncHearts`），cron 仅兜底防止久挂。
+- **心数恢复（Hearts recover）**：周期任务（cron `HEART_RECOVERY_CRON`，默认 `* * * * *`）调用 `RewardsService.recoverAllHearts()`，对 `hearts < maxHearts` 的钱包按 `recoverHearts` 纯函数补算（每 `HEART_RECOVERY_MINUTES` 分钟回 1 颗，默认 1）。API 侧读取时也会惰性补算（`syncHearts`），cron 仅兜底防止久挂。
 - **SRS 调度（计划）**：每天扫 `SrsCard` 中 `dueAt <= now`，推送复习提醒，并在用户开关时优先抽这些题。
 - **推送（计划）**：发送 APNs / FCM 通知。
 
