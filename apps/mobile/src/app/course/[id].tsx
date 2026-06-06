@@ -1,8 +1,17 @@
 import { useEffect } from 'react';
-import { ScrollView, View, Text, Pressable, StyleSheet } from 'react-native';
+import {
+  Image,
+  ScrollView,
+  View,
+  Text,
+  Pressable,
+  StyleSheet,
+  type ImageSourcePropType,
+} from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { SvgUri } from 'react-native-svg';
 import Animated, {
   Easing,
   useAnimatedStyle,
@@ -10,7 +19,7 @@ import Animated, {
   withRepeat,
   withTiming,
 } from 'react-native-reanimated';
-import { BookOpen, Check, ChevronLeft, Lock, PlayCircle, Star } from 'lucide-react-native';
+import { BookOpen, Check, Lock, PlayCircle, Star } from 'lucide-react-native';
 import type { LessonNodeDto, UnitMapDecorationDto } from '@studyzone/shared-types';
 
 import { MapDecoration } from '@/components/MapDecoration';
@@ -23,6 +32,10 @@ const OFFSET_STEP = 38;
 const NODE_SIZE = 96;
 const DECORATION_GAP = 34;
 const UNIT_EMOJI = ['🌱', '🌳', '🌟', '🚀', '🏔️'];
+const LEARN_ICON = require('../../../assets/icons/learn.svg') as ImageSourcePropType;
+const STREAK_ICON = require('../../../assets/icons/streak.svg') as ImageSourcePropType;
+const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
+const HEART_ICON = require('../../../assets/icons/heart.svg') as ImageSourcePropType;
 
 export default function Course() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -47,99 +60,173 @@ export default function Course() {
     queryFn: () => api.getCourseTree(id!),
     enabled: !!id && !!accessToken,
   });
+  const { data: me, isLoading: meLoading } = useQuery({
+    queryKey: ['me'],
+    queryFn: () => api.me(),
+    enabled: !!accessToken,
+  });
 
   const showLoading = !authHydrated || (Boolean(accessToken) && (isLoading || isFetching) && !tree);
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topBar}>
-        <Pressable onPress={() => router.back()} style={styles.backButton}>
-          <ChevronLeft size={24} color={colors.inkSoft} />
-          <Text style={styles.backText}>返回</Text>
+        <Pressable
+          accessibilityLabel="返回学习主页"
+          accessibilityRole="button"
+          hitSlop={8}
+          onPress={() => router.replace('/(tabs)/learn')}
+          style={({ pressed }) => [styles.homeButton, pressed && styles.statPressed]}
+        >
+          <LocalSvg source={LEARN_ICON} width={34} height={34} />
         </Pressable>
+        <TopStat
+          icon={STREAK_ICON}
+          iconHeight={32}
+          iconWidth={27}
+          loading={meLoading}
+          tint={colors.orange}
+          value={me?.currentStreak ?? 0}
+        />
+        <TopStat
+          icon={DIAMOND_ICON}
+          iconHeight={32}
+          iconWidth={26}
+          loading={meLoading}
+          tint={colors.sky}
+          value={me?.gems ?? 0}
+        />
+        <TopStat
+          icon={HEART_ICON}
+          iconHeight={34}
+          iconWidth={34}
+          loading={meLoading}
+          tint={colors.rose}
+          value={me?.hearts ?? 0}
+        />
       </View>
 
       <ScrollView
         showsVerticalScrollIndicator={false}
+        stickyHeaderIndices={tree?.map((_, unitIdx) => unitIdx * 2) ?? []}
         contentContainerStyle={styles.scroll}
       >
-        <View style={styles.content}>
-          {tree?.map((unit, unitIdx) => {
-            const completedCount = unit.lessons.filter((lesson) => lesson.completed).length;
-            const unitLocked = unit.lessons.every((lesson) => !lesson.unlocked);
+        {tree?.flatMap((unit, unitIdx) => {
+          const unitLocked = unit.lessons.every((lesson) => !lesson.unlocked);
 
-            return (
-              <View key={unit.unitId} style={[styles.unitSection, unitLocked && styles.unitLocked]}>
-                <View
-                  style={[
-                    styles.unitHeader,
-                    {
-                      backgroundColor: unit.themeColor,
-                      borderBottomColor: withAlpha(colors.black, 0.15),
-                    },
-                  ]}
-                >
-                  <View style={styles.unitHeaderText}>
-                    <Text style={styles.unitEyebrow}>第 {unit.unitOrder + 1} 单元</Text>
-                    <Text style={styles.unitTitle}>{unit.unitTitle}</Text>
-                    <Text style={styles.unitProgress}>
-                      {completedCount}/{unit.lessons.length} 关完成
-                    </Text>
-                  </View>
-                  <Text style={styles.unitGhost}>
-                    {UNIT_EMOJI[unitIdx % UNIT_EMOJI.length]}
-                  </Text>
+          return [
+            <View
+              key={`${unit.unitId}-header`}
+              style={[styles.stickyUnitHeader, unitLocked && styles.unitLocked]}
+            >
+              <View
+                style={[
+                  styles.unitHeader,
+                  {
+                    backgroundColor: unit.themeColor,
+                    borderBottomColor: withAlpha(colors.black, 0.15),
+                  },
+                ]}
+              >
+                <View style={styles.unitHeaderText}>
+                  <Text style={styles.unitEyebrow}>第 {unit.unitOrder + 1} 单元</Text>
+                  <Text style={styles.unitTitle}>{unit.unitTitle}</Text>
                 </View>
-
-                <View style={styles.lessonList}>
-                  {unit.lessons.map((lesson, lessonIdx) => {
-                    const offset =
-                      (OFFSET_PATTERN[lessonIdx % OFFSET_PATTERN.length] ?? 0) * OFFSET_STEP;
-                    const decorations = (unit.mapDecorations ?? []).filter(
-                      (decoration) => decoration.anchorLessonOrder === lesson.order,
-                    );
-
-                    return (
-                      <LessonNode
-                        key={lesson.lessonId}
-                        lesson={lesson}
-                        offset={offset}
-                        themeColor={unit.themeColor}
-                        decorations={decorations}
-                        onPress={() => router.push(`/lesson/${lesson.lessonId}`)}
-                      />
-                    );
-                  })}
-                </View>
+                <Text style={styles.unitGhost}>
+                  {UNIT_EMOJI[unitIdx % UNIT_EMOJI.length]}
+                </Text>
               </View>
-            );
-          })}
+            </View>,
 
-          {showLoading && (
-            <View style={styles.stateCard}>
-              <Text style={styles.stateTitle}>加载课程地图中…</Text>
-            </View>
-          )}
+            <View
+              key={`${unit.unitId}-lessons`}
+              style={[styles.unitLessons, unitLocked && styles.unitLocked]}
+            >
+              <View style={styles.lessonList}>
+                {unit.lessons.map((lesson, lessonIdx) => {
+                  const offset =
+                    (OFFSET_PATTERN[lessonIdx % OFFSET_PATTERN.length] ?? 0) * OFFSET_STEP;
+                  const decorations = (unit.mapDecorations ?? []).filter(
+                    (decoration) => decoration.anchorLessonOrder === lesson.order,
+                  );
 
-          {authHydrated && !accessToken && (
-            <View style={styles.stateCard}>
-              <Text style={styles.stateTitle}>需要先登录</Text>
-              <Text style={styles.stateText}>登录后才能加载你的课程地图和学习进度。</Text>
-            </View>
-          )}
+                  return (
+                    <LessonNode
+                      key={lesson.lessonId}
+                      lesson={lesson}
+                      offset={offset}
+                      themeColor={unit.themeColor}
+                      decorations={decorations}
+                      onPress={() => router.push(`/lesson/${lesson.lessonId}`)}
+                    />
+                  );
+                })}
+              </View>
+            </View>,
+          ];
+        })}
 
-          {isError && accessToken && (
-            <View style={styles.stateCard}>
-              <Text style={styles.stateTitle}>课程地图加载失败</Text>
-              <Text style={styles.stateText}>{getErrorMessage(error)}</Text>
-              <Pressable onPress={() => refetch()} style={styles.retryButton}>
-                <Text style={styles.retryText}>重试</Text>
-              </Pressable>
-            </View>
-          )}
-        </View>
+        {showLoading && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>加载课程地图中…</Text>
+          </View>
+        )}
+
+        {authHydrated && !accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>需要先登录</Text>
+            <Text style={styles.stateText}>登录后才能加载你的课程地图和学习进度。</Text>
+          </View>
+        )}
+
+        {isError && accessToken && (
+          <View style={styles.stateCard}>
+            <Text style={styles.stateTitle}>课程地图加载失败</Text>
+            <Text style={styles.stateText}>{getErrorMessage(error)}</Text>
+            <Pressable onPress={() => refetch()} style={styles.retryButton}>
+              <Text style={styles.retryText}>重试</Text>
+            </Pressable>
+          </View>
+        )}
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+function LocalSvg({
+  height,
+  source,
+  width,
+}: {
+  height: number;
+  source: ImageSourcePropType;
+  width: number;
+}) {
+  return <SvgUri height={height} uri={Image.resolveAssetSource(source).uri} width={width} />;
+}
+
+function TopStat({
+  icon,
+  iconHeight,
+  iconWidth,
+  loading,
+  tint,
+  value,
+}: {
+  icon: ImageSourcePropType;
+  iconHeight: number;
+  iconWidth: number;
+  loading: boolean;
+  tint: string;
+  value: number;
+}) {
+  return (
+    <View style={styles.statItem}>
+      <LocalSvg height={iconHeight} source={icon} width={iconWidth} />
+      <Text style={[styles.statValue, { color: tint }, loading && styles.statValueLoading]}>
+        {loading ? '00' : value}
+      </Text>
+    </View>
   );
 }
 
@@ -226,13 +313,6 @@ function LessonNode({
           )}
         </Pressable>
       </View>
-
-      <View style={styles.lessonCopy}>
-        <Text style={styles.lessonName}>{lesson.name}</Text>
-        <Text style={styles.lessonState}>
-          {lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}
-        </Text>
-      </View>
     </View>
   );
 }
@@ -288,43 +368,68 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
   },
   topBar: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-  },
-  backButton: {
-    alignSelf: 'flex-start',
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: 4,
-    minHeight: 40,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    minHeight: 72,
+    paddingHorizontal: 16,
+    paddingBottom: 12,
+    paddingTop: 10,
   },
-  backText: {
-    color: colors.inkSoft,
-    fontFamily: fonts.heavy,
-    fontSize: 16,
+  homeButton: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
+    minHeight: 48,
+  },
+  statItem: {
+    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'row',
+    gap: 7,
+    justifyContent: 'center',
+    minHeight: 48,
+  },
+  statPressed: {
+    opacity: 0.65,
+  },
+  statValue: {
+    fontFamily: fonts.display,
+    fontSize: 19,
+    lineHeight: 24,
+  },
+  statValueLoading: {
+    opacity: 0,
   },
   scroll: {
     paddingHorizontal: 16,
     paddingBottom: 56,
   },
-  content: {
+  stickyUnitHeader: {
+    backgroundColor: colors.white,
     alignSelf: 'center',
+    paddingBottom: 12,
     width: '100%',
     maxWidth: 768,
-    gap: 48,
+    zIndex: 10,
   },
-  unitSection: {
-    gap: 32,
+  unitLessons: {
+    alignSelf: 'center',
+    marginBottom: 48,
+    paddingTop: 64,
+    width: '100%',
+    maxWidth: 768,
   },
   unitLocked: {
     opacity: 0.7,
   },
   unitHeader: {
-    borderBottomWidth: 6,
-    borderRadius: 24,
-    minHeight: 140,
+    borderBottomWidth: 5,
+    borderRadius: 18,
+    minHeight: 92,
     overflow: 'hidden',
-    padding: 20,
+    paddingHorizontal: 18,
+    paddingVertical: 14,
   },
   unitHeaderText: {
     flex: 1,
@@ -333,29 +438,23 @@ const styles = StyleSheet.create({
   unitEyebrow: {
     color: 'rgba(255,255,255,0.82)',
     fontFamily: fonts.heavy,
-    fontSize: 12,
+    fontSize: 11,
     letterSpacing: 1,
   },
   unitTitle: {
     color: colors.white,
     fontFamily: fonts.heavy,
-    fontSize: 24,
-    lineHeight: 30,
-    marginTop: 6,
-  },
-  unitProgress: {
-    color: 'rgba(255,255,255,0.9)',
-    fontFamily: fonts.heavy,
-    fontSize: 15,
-    marginTop: 10,
+    fontSize: 20,
+    lineHeight: 25,
+    marginTop: 3,
   },
   unitGhost: {
-    bottom: -24,
+    bottom: -20,
     color: colors.white,
-    fontSize: 104,
+    fontSize: 76,
     opacity: 0.2,
     position: 'absolute',
-    right: -20,
+    right: -12,
   },
   lessonList: {
     alignItems: 'center',
@@ -363,7 +462,6 @@ const styles = StyleSheet.create({
   },
   lessonItem: {
     alignItems: 'center',
-    gap: 12,
   },
   lessonStage: {
     height: NODE_SIZE,
@@ -455,22 +553,6 @@ const styles = StyleSheet.create({
   },
   lessonDecorationRight: {
     left: NODE_SIZE + DECORATION_GAP,
-  },
-  lessonCopy: {
-    alignItems: 'center',
-    maxWidth: 150,
-  },
-  lessonName: {
-    color: colors.ink,
-    fontFamily: fonts.heavy,
-    fontSize: 15,
-    textAlign: 'center',
-  },
-  lessonState: {
-    color: colors.inkSoft,
-    fontFamily: fonts.sansBold,
-    fontSize: 12,
-    marginTop: 4,
   },
   stateCard: {
     backgroundColor: colors.mist,
