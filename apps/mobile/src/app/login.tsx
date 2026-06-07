@@ -3,7 +3,7 @@ import { View, Text, Pressable, StyleSheet, Alert } from 'react-native';
 import * as SecureStore from 'expo-secure-store';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Mail, Lock, Sparkles } from 'lucide-react-native';
+import { Mail, Lock } from 'lucide-react-native';
 import { api } from '@/lib/api';
 import { useAuth } from '@/lib/auth';
 import { colors, fonts, radius } from '@/lib/theme';
@@ -133,19 +133,6 @@ export default function Login() {
           >
             <Text style={styles.buttonText}>{loading ? '登录中…' : '登 录'}</Text>
           </Pressable>
-
-          {/* divider */}
-          <View style={styles.divider}>
-            <View style={styles.dividerLine} />
-            <Text style={styles.dividerText}>或</Text>
-            <View style={styles.dividerLine} />
-          </View>
-
-          {/* demo card */}
-          <View style={styles.demoCard}>
-            <Sparkles size={20} color={colors.greenDark} />
-            <Text style={styles.demoText}>体验账号已就绪，直接点“登录”即可逛一圈</Text>
-          </View>
         </View>
 
         <Text style={styles.bottomText}>
@@ -200,22 +187,6 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     letterSpacing: 0.8,
   },
-  divider: { flexDirection: 'row', alignItems: 'center', gap: 12, marginVertical: 20 },
-  dividerLine: { flex: 1, height: 2, backgroundColor: colors.line },
-  dividerText: { fontFamily: fonts.heavy, fontSize: 12, color: colors.inkFaint },
-  demoCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    backgroundColor: colors.greenTint,
-    borderWidth: 2,
-    borderStyle: 'dashed',
-    borderColor: colors.greenSoft,
-    borderRadius: radius.md,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-  },
-  demoText: { flex: 1, fontFamily: fonts.sansBold, fontSize: 12.5, color: colors.greenDark, lineHeight: 18 },
   bottomText: { textAlign: 'center', fontFamily: fonts.sansBold, fontSize: 14, color: colors.inkSoft },
   bottomLink: { fontFamily: fonts.heavy, color: colors.greenDark },
 });

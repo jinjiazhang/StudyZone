@@ -1,5 +1,5 @@
 import { useMemo, useEffect } from 'react';
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, StyleSheet, Pressable, type ImageSourcePropType } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, {
@@ -13,12 +13,15 @@ import Animated, {
   withRepeat,
   withSequence,
 } from 'react-native-reanimated';
-import { Flame, Gem, Sparkles } from 'lucide-react-native';
 import { colors, fonts, radius } from '@/lib/theme';
 import { hapticLessonComplete, hapticPress } from '@/lib/haptics';
 import { Mascot } from '@/components/Mascot';
+import { LocalSvg } from '@/components/TopStatsBar';
 
 const CONFETTI_COLORS = [colors.green, colors.sky, colors.gold, colors.rose, colors.purple, colors.orange];
+const XP_ICON = require('../../../assets/icons/xp.svg') as ImageSourcePropType;
+const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
+const STREAK_ICON = require('../../../assets/icons/streak.svg') as ImageSourcePropType;
 
 export default function LessonComplete() {
   const { xp, gems, streak, courseId } = useLocalSearchParams<{
@@ -84,21 +87,20 @@ export default function LessonComplete() {
         <Animated.View entering={FadeIn.delay(500)} style={styles.rewards}>
           <View style={styles.xpHero}>
             <View style={styles.xpHeroIcon}>
-              <Sparkles size={30} color={colors.goldDark} />
+              <LocalSvg height={32} source={XP_ICON} width={32} />
             </View>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.xpHeroLabel}>本次获得经验</Text>
+            <View style={styles.xpHeroValueWrap}>
               <Text style={styles.xpHeroValue}>+{xpNum} XP</Text>
             </View>
           </View>
           <View style={styles.statsRow}>
             <StatCard
-              icon={<Gem size={24} color={colors.skyDark} />}
-              label="宝石" value={gemsNum} borderColor={colors.sky} bg={colors.mist}
+              icon={<LocalSvg height={28} source={DIAMOND_ICON} width={24} />}
+              value={gemsNum} borderColor={colors.sky} bg={colors.mist}
             />
             <StatCard
-              icon={<Flame size={24} color={colors.orangeDark} />}
-              label="连胜" value={streakNum} borderColor={colors.orange} bg={colors.mist}
+              icon={<LocalSvg height={28} source={STREAK_ICON} width={24} />}
+              value={streakNum} borderColor={colors.orange} bg={colors.mist}
             />
           </View>
         </Animated.View>
@@ -178,14 +180,15 @@ function ConfettiPiece({ left, delay, color, size }: { left: number; delay: numb
   );
 }
 
-function StatCard({ icon, label, value, borderColor, bg }: {
-  icon: React.ReactNode; label: string; value: number; borderColor: string; bg: string;
+function StatCard({ icon, value, borderColor, bg }: {
+  icon: React.ReactNode; value: number; borderColor: string; bg: string;
 }) {
   return (
     <View style={[styles.statCard, { borderColor, backgroundColor: bg }]}>
-      {icon}
-      <Text style={styles.statValue}>+{value}</Text>
-      <Text style={styles.statLabel}>{label}</Text>
+      <View style={styles.statInline}>
+        {icon}
+        <Text style={styles.statValue}>+{value}</Text>
+      </View>
     </View>
   );
 }
@@ -237,7 +240,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  xpHeroLabel: { fontFamily: fonts.heavy, fontSize: 12, color: colors.inkSoft, letterSpacing: 0.4 },
+  xpHeroValueWrap: {
+    flex: 1,
+    justifyContent: 'center',
+  },
   xpHeroValue: { fontFamily: fonts.display, fontSize: 36, color: colors.goldDark, lineHeight: 40 },
   statsRow: {
     flexDirection: 'row',
@@ -246,14 +252,21 @@ const styles = StyleSheet.create({
   },
   statCard: {
     flex: 1,
+    height: 90,
     borderRadius: radius.lg,
     borderWidth: 2,
     borderBottomWidth: 6,
     padding: 12,
     alignItems: 'center',
+    justifyContent: 'center',
   },
-  statValue: { fontFamily: fonts.display, fontSize: 23, color: colors.ink, marginTop: 4 },
-  statLabel: { fontFamily: fonts.heavy, fontSize: 10, color: colors.inkSoft, textTransform: 'uppercase', letterSpacing: 1 },
+  statInline: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+  },
+  statValue: { fontFamily: fonts.display, fontSize: 23, color: colors.ink },
   buttons: { width: '100%', gap: 10, marginTop: 20 },
   btnPrimary: {
     backgroundColor: colors.green,
