@@ -9,9 +9,19 @@ import { Mascot, SpeechBubble } from '@/components/Mascot';
 
 const LAST_LOGIN_KEY = 'studyzone-last-login';
 const DEFAULT_LOGIN = {
-  email: 'demo@studyzone.dev',
-  password: 'studyzone',
+  email: 'tiantianzh@qq.com',
+  password: '00000000',
 };
+
+function normalizeLogin(login?: Partial<typeof DEFAULT_LOGIN>) {
+  const email = login?.email || DEFAULT_LOGIN.email;
+  const password =
+    email === DEFAULT_LOGIN.email
+      ? DEFAULT_LOGIN.password
+      : (login?.password || DEFAULT_LOGIN.password);
+
+  return { email, password };
+}
 
 function readLastLogin() {
   if (typeof window === 'undefined') return DEFAULT_LOGIN;
@@ -21,10 +31,13 @@ function readLastLogin() {
     if (!raw) return DEFAULT_LOGIN;
 
     const parsed = JSON.parse(raw) as Partial<typeof DEFAULT_LOGIN>;
-    return {
-      email: parsed.email || DEFAULT_LOGIN.email,
-      password: parsed.password || DEFAULT_LOGIN.password,
-    };
+    const normalized = normalizeLogin(parsed);
+
+    if (normalized.email !== parsed.email || normalized.password !== parsed.password) {
+      saveLastLogin(normalized.email, normalized.password);
+    }
+
+    return normalized;
   } catch {
     return DEFAULT_LOGIN;
   }

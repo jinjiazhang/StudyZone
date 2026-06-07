@@ -13,9 +13,19 @@ import { AuthField } from '@/components/AuthField';
 
 const LAST_LOGIN_KEY = 'studyzone-last-login';
 const DEFAULT_LOGIN = {
-  email: 'demo@studyzone.dev',
-  password: 'studyzone',
+  email: 'tiantianzh@qq.com',
+  password: '00000000',
 };
+
+function normalizeLogin(login?: Partial<typeof DEFAULT_LOGIN>) {
+  const email = login?.email || DEFAULT_LOGIN.email;
+  const password =
+    email === DEFAULT_LOGIN.email
+      ? DEFAULT_LOGIN.password
+      : (login?.password || DEFAULT_LOGIN.password);
+
+  return { email, password };
+}
 
 export default function Login() {
   const router = useRouter();
@@ -35,10 +45,16 @@ export default function Login() {
         if (!raw || !mounted) return;
 
         const parsed = JSON.parse(raw) as Partial<typeof DEFAULT_LOGIN>;
-        setEmail(parsed.email || DEFAULT_LOGIN.email);
-        setPassword(parsed.password || DEFAULT_LOGIN.password);
+        const normalized = normalizeLogin(parsed);
+
+        if (normalized.email !== parsed.email || normalized.password !== parsed.password) {
+          await SecureStore.setItemAsync(LAST_LOGIN_KEY, JSON.stringify(normalized));
+        }
+
+        setEmail(normalized.email);
+        setPassword(normalized.password);
       } catch {
-        // Keep the demo credentials if stored data is unreadable.
+        // Keep the default credentials if stored data is unreadable.
       }
     }
 

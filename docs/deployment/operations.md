@@ -69,7 +69,7 @@ pnpm db:import
 导入脚本会从 `apps/api/prisma/lesson-data` 更新课程、单元、课时和练习，并保留已有学习进度、报名、Session、Attempt、SRS 等用户状态；同时会创建或更新演示账号：
 
 ```text
-demo@studyzone.dev / studyzone
+tiantianzh@qq.com / 00000000
 ```
 
 ### 1.5 构建并发布

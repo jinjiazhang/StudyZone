@@ -5,7 +5,7 @@
  *   • 3 subjects with one course each.
  *   • Hierarchy: Subject -> Course -> Unit -> Lesson.
  *   • Reimport behavior for curriculum content while preserving user progress.
- *   • A demo user (demo@studyzone.dev / studyzone).
+ *   • A demo user (tiantianzh@qq.com / 00000000).
  */
 import { Prisma, PrismaClient } from '@prisma/client';
 import * as argon2 from 'argon2';
@@ -132,13 +132,13 @@ async function main() {
     });
   }
 
-  const passwordHash = await argon2.hash('studyzone');
+  const passwordHash = await argon2.hash('00000000');
   await prisma.user.upsert({
-    where: { email: 'demo@studyzone.dev' },
+    where: { email: 'tiantianzh@qq.com' },
     create: {
-      email: 'demo@studyzone.dev',
+      email: 'tiantianzh@qq.com',
       passwordHash,
-      nickname: '示例同学',
+      nickname: '天天',
       locale: 'zh-CN',
       wallet: { create: {} },
       streak: { create: {} },
@@ -148,7 +148,7 @@ async function main() {
 
   console.log('Import complete.');
   console.log('Learning progress, enrollments, sessions, attempts, and SRS cards were preserved.');
-  console.log('Demo login → demo@studyzone.dev / studyzone');
+  console.log('Default login → tiantianzh@qq.com / 00000000');
 }
 
 async function buildCourseContent(courseId: string, content: LessonDataCourse) {

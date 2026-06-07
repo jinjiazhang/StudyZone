@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { api, useAuth } from '../state';
 
 export function Login() {
-  const [email, setEmail] = useState('demo@studyzone.dev');
-  const [password, setPassword] = useState('studyzone');
+  const [email, setEmail] = useState('tiantianzh@qq.com');
+  const [password, setPassword] = useState('00000000');
   const [err, setErr] = useState<string | null>(null);
   const set = useAuth((s) => s.set);
   const navigate = useNavigate();
