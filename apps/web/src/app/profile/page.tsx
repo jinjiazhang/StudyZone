@@ -2,14 +2,15 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
-import { Flame, Gem, Heart, LogOut, Sparkles, Target, CheckCircle2 } from 'lucide-react';
+import { LogOut, CheckCircle2 } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
-import { Mascot } from '@/components/Mascot';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { xpToLevel } from '@studyzone/shared-logic';
+
+const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -31,7 +32,12 @@ export default function ProfilePage() {
         <section className="rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-6">
           <div className="flex items-center gap-4">
             <div className="relative">
-              <Mascot size={104} mood="wink" />
+              <ProfileAvatar
+                id={me?.id ?? 'profile'}
+                nickname={me?.nickname ?? '学习者'}
+                size={104}
+                url={me?.avatarUrl}
+              />
               {level && (
                 <span className="absolute -bottom-1 -right-1 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 font-display text-xs font-heavy text-white shadow-pop">
                   Lv {level.level}
@@ -72,10 +78,10 @@ export default function ProfilePage() {
           )}
 
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <Mini icon={<Flame className="h-6 w-6 text-sz-orange-dark" />} label="连胜" value={me?.currentStreak ?? 0} tint="orange" />
-            <Mini icon={<Sparkles className="h-6 w-6 text-sz-gold-dark" />} label="总 XP" value={me?.xpTotal ?? 0} tint="gold" />
-            <Mini icon={<Gem className="h-6 w-6 text-sz-sky-dark" />} label="宝石" value={me?.gems ?? 0} tint="sky" />
-            <Mini icon={<Heart className="h-6 w-6 text-sz-rose-dark" />} label="心数" value={me?.hearts ?? 0} tint="rose" />
+            <Mini src="/assets/icons/streak.svg" iconClass="h-[30px] w-[25px]" value={me?.currentStreak ?? 0} tint="orange" />
+            <Mini src="/assets/icons/xp.svg" iconClass="h-[34px] w-[34px]" value={me?.xpTotal ?? 0} tint="gold" />
+            <Mini src="/assets/icons/diamond.svg" iconClass="h-[30px] w-6" value={me?.gems ?? 0} tint="sky" />
+            <Mini src="/assets/icons/heart.svg" iconClass="h-[34px] w-[34px]" value={me?.hearts ?? 0} tint="rose" />
           </div>
         </section>
         )}
@@ -104,10 +110,14 @@ export default function ProfilePage() {
                 >
                   <div
                     className={`flex h-12 w-12 items-center justify-center rounded-2xl text-2xl ${
-                      q.completed ? 'bg-sz-green text-white' : 'bg-sz-mist'
+                      q.completed ? 'bg-sz-green text-white' : 'bg-sz-green-soft'
                     }`}
                   >
-                    {q.completed ? <CheckCircle2 className="h-7 w-7" /> : <Target className="h-7 w-7 text-sz-ink-soft" />}
+                    {q.completed ? (
+                      <CheckCircle2 className="h-7 w-7" />
+                    ) : (
+                      <img src="/assets/icons/target.svg" alt="" draggable={false} className="h-10 w-10" />
+                    )}
                   </div>
                   <div className="flex-1">
                     <div className="font-heavy text-sz-ink">{q.title}</div>
@@ -120,10 +130,10 @@ export default function ProfilePage() {
                       </span>
                       <span className="flex items-center gap-2">
                         <span className="inline-flex items-center gap-1 text-sz-gold-dark">
-                          <Sparkles className="h-3.5 w-3.5" /> {q.xpReward} XP
+                          <img src="/assets/icons/xp.svg" alt="" draggable={false} className="h-[15px] w-[15px]" /> {q.xpReward} XP
                         </span>
                         <span className="inline-flex items-center gap-1 text-sz-sky-dark">
-                          <Gem className="h-3.5 w-3.5" /> {q.gemsReward}
+                          <img src="/assets/icons/diamond.svg" alt="" draggable={false} className="h-[15px] w-[13px]" /> {q.gemsReward}
                         </span>
                       </span>
                     </div>
@@ -165,28 +175,79 @@ function ProfileHeroSkeleton() {
   );
 }
 
+function ProfileAvatar({
+  id,
+  nickname,
+  size,
+  url,
+}: {
+  id: string;
+  nickname: string;
+  size: number;
+  url?: string | null;
+}) {
+  if (url) {
+    return (
+      <img
+        src={url}
+        alt=""
+        draggable={false}
+        className="rounded-full bg-sz-mist object-cover"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+
+  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
+  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
+
+  return (
+    <div
+      className="flex items-center justify-center rounded-full font-display font-heavy text-white"
+      style={{ width: size, height: size, backgroundColor: color, fontSize: size * 0.5 }}
+    >
+      {initial}
+    </div>
+  );
+}
+
+function hashString(value: string): number {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
 function Mini({
-  icon,
-  label,
+  src,
+  iconClass,
   value,
   tint,
 }: {
-  icon: React.ReactNode;
-  label: string;
+  src: string;
+  iconClass: string;
   value: number;
   tint: 'orange' | 'gold' | 'sky' | 'rose';
 }) {
-  const bg = {
-    orange: 'border-sz-orange bg-orange-50',
-    gold: 'border-sz-gold bg-yellow-50',
-    sky: 'border-sz-sky bg-sky-50',
-    rose: 'border-sz-rose bg-rose-50',
+  const border = {
+    orange: 'border-sz-orange',
+    gold: 'border-sz-gold',
+    sky: 'border-sz-sky',
+    rose: 'border-sz-rose',
+  }[tint];
+  const valueColor = {
+    orange: 'text-sz-orange',
+    gold: 'text-sz-gold',
+    sky: 'text-sz-sky',
+    rose: 'text-sz-rose',
   }[tint];
   return (
-    <div className={`rounded-2xl border-2 border-b-[4px] ${bg} p-3 text-center`}>
-      <div className="flex justify-center">{icon}</div>
-      <div className="mt-1 font-display text-2xl font-heavy text-sz-ink">{value}</div>
-      <div className="text-[11px] font-heavy uppercase tracking-wider text-sz-ink-soft">{label}</div>
+    <div className={`flex min-h-[64px] items-center justify-center gap-2 rounded-2xl border-2 border-b-[4px] bg-white px-3 py-2.5 ${border}`}>
+      <span className="flex h-[34px] w-9 items-center justify-center">
+        <img src={src} alt="" draggable={false} className={iconClass} />
+      </span>
+      <span className={`font-display text-2xl font-heavy ${valueColor}`}>{value}</span>
     </div>
   );
 }

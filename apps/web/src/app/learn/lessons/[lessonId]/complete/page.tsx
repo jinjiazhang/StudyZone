@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Flame, Gem, Sparkles } from 'lucide-react';
 import { Mascot } from '@/components/Mascot';
 
 const CONFETTI_COLORS = ['#58CC02', '#1CB0F6', '#FFC800', '#FF4B4B', '#CE82FF', '#FF9600'];
@@ -74,11 +73,23 @@ export default function CompletePage() {
           坚持就是胜利，明天也来呀！
         </motion.p>
 
-        <div className="grid w-full grid-cols-3 gap-3">
-          <Stat icon={<Sparkles className="h-7 w-7 text-sz-gold-dark" />} label="XP" value={xp} tint="gold" />
-          <Stat icon={<Gem className="h-7 w-7 text-sz-sky-dark" />} label="宝石" value={gems} tint="sky" />
-          <Stat icon={<Flame className="h-7 w-7 text-sz-orange-dark" />} label="连胜" value={streak} tint="orange" />
-        </div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="flex w-full flex-col gap-3"
+        >
+          <div className="flex items-center gap-3 rounded-2xl border-2 border-b-[6px] border-sz-gold bg-yellow-50 px-5 py-4">
+            <span className="flex h-9 w-9 items-center justify-center">
+              <img src="/assets/icons/xp.svg" alt="" draggable={false} className="h-8 w-8" />
+            </span>
+            <span className="font-display text-3xl font-heavy text-sz-gold-dark">+{xp} XP</span>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <Stat src="/assets/icons/diamond.svg" iconClass="h-7 w-6" value={gems} tint="sky" />
+            <Stat src="/assets/icons/streak.svg" iconClass="h-7 w-6" value={streak} tint="orange" />
+          </div>
+        </motion.div>
 
         <div className="mt-2 flex w-full flex-col gap-3">
           <Link href={continueHref} className="btn-primary w-full px-8 py-4 text-lg">
@@ -94,31 +105,24 @@ export default function CompletePage() {
 }
 
 function Stat({
-  icon,
-  label,
+  src,
+  iconClass,
   value,
   tint,
 }: {
-  icon: React.ReactNode;
-  label: string;
+  src: string;
+  iconClass: string;
   value: number;
-  tint: 'gold' | 'sky' | 'orange';
+  tint: 'sky' | 'orange';
 }) {
-  const bg = {
-    gold: 'border-sz-gold bg-yellow-50',
-    sky: 'border-sz-sky bg-sky-50',
-    orange: 'border-sz-orange bg-orange-50',
+  const border = {
+    sky: 'border-sz-sky',
+    orange: 'border-sz-orange',
   }[tint];
   return (
-    <motion.div
-      initial={{ y: 20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.5, type: 'spring' }}
-      className={`rounded-2xl border-2 border-b-[6px] ${bg} p-4`}
-    >
-      <div className="flex justify-center">{icon}</div>
-      <div className="mt-2 font-display text-2xl font-heavy text-sz-ink">+{value}</div>
-      <div className="text-xs font-heavy uppercase tracking-wider text-sz-ink-soft">{label}</div>
-    </motion.div>
+    <div className={`flex h-[90px] items-center justify-center gap-2.5 rounded-2xl border-2 border-b-[6px] bg-sz-mist p-3 ${border}`}>
+      <img src={src} alt="" draggable={false} className={iconClass} />
+      <span className="font-display text-2xl font-heavy text-sz-ink">+{value}</span>
+    </div>
   );
 }

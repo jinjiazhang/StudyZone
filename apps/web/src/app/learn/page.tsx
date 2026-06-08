@@ -9,7 +9,7 @@ import { pickCurrentCourseBySubject } from '@studyzone/shared-types';
 import type { SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
-import { Mascot, SpeechBubble } from '@/components/Mascot';
+import { SpeechBubble } from '@/components/Mascot';
 import { SubjectPickerDialog } from '@/components/SubjectPickerDialog';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -60,7 +60,7 @@ export default function LearnPage() {
     <AppShell>
       <div className="flex flex-col gap-8">
         <section className="flex items-end gap-4">
-          <Mascot size={100} mood="cheer" />
+          <img src="/assets/icons/quests.svg" alt="" draggable={false} className="h-[88px] w-[88px] shrink-0" />
           <div className="flex-1">
             <SpeechBubble>选一门课开始学习吧！同时学多门完全没问题，进度互不影响。</SpeechBubble>
           </div>
