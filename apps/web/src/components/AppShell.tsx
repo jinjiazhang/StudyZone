@@ -3,11 +3,8 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import { Flame, Gem, Heart, Sparkles } from 'lucide-react';
 import clsx from 'clsx';
 
-import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { Mascot } from './Mascot';
 
@@ -20,49 +17,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     if (!accessToken) router.replace('/login');
   }, [accessToken, router]);
 
-  const { data: me, isLoading: meLoading } = useQuery({
-    queryKey: ['me'],
-    queryFn: () => api.me(),
-    enabled: !!accessToken,
-  });
-
   if (!accessToken) return null;
 
   return (
     <div className="min-h-screen bg-white">
-      {/* top bar */}
-      <header className="sticky top-0 z-30 border-b-2 border-sz-line bg-white">
-        <div className="mx-auto flex max-w-[84rem] items-center justify-between px-6 py-3 md:justify-end md:px-8">
-          <Link href="/learn" className="flex items-center gap-2 md:hidden">
-            <Mascot size={36} />
-            <span className="hidden font-display text-2xl font-heavy text-sz-green sm:inline">
-              StudyZone
-            </span>
-          </Link>
-          <div className="flex items-center gap-2 sm:gap-3">
-            {meLoading ? (
-              <>
-                <StatSkeleton />
-                <StatSkeleton />
-                <StatSkeleton />
-                <StatSkeleton hideOnMobile />
-              </>
-            ) : (
-              <>
-                <Stat icon={<Flame className="h-5 w-5 text-sz-orange" />} value={me?.currentStreak ?? 0} tint="orange" />
-                <Stat icon={<Gem className="h-5 w-5 text-sz-sky" />} value={me?.gems ?? 0} tint="sky" />
-                <Stat icon={<Heart className="h-5 w-5 text-sz-rose" />} value={me?.hearts ?? 0} tint="rose" />
-                <Stat icon={<Sparkles className="h-5 w-5 text-sz-gold" />} value={me?.xpTotal ?? 0} tint="gold" hideOnMobile />
-              </>
-            )}
-          </div>
-        </div>
-      </header>
-
       <div className="mx-auto grid max-w-[84rem] gap-10 px-4 py-6 md:grid-cols-[260px,1fr] md:px-8 md:py-8">
         {/* left rail (desktop) */}
         <nav className="hidden border-r-2 border-sz-line pr-5 md:block">
-          <div className="sticky top-24 flex flex-col gap-7">
+          <div className="sticky top-8 flex flex-col gap-7">
             <Link href="/learn" className="flex items-center gap-3 px-4">
               <Mascot size={42} />
               <span className="font-display text-[1.65rem] font-heavy leading-none text-sz-green">
@@ -89,50 +51,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <BottomTab href="/profile" current={pathname} icon="tab-profile" label="档案" />
         </ul>
       </nav>
-    </div>
-  );
-}
-
-function StatSkeleton({ hideOnMobile }: { hideOnMobile?: boolean }) {
-  return (
-    <div
-      className={clsx(
-        'h-[34px] w-[64px] rounded-full border-2 border-sz-line bg-white px-3 py-1',
-        hideOnMobile && 'hidden sm:block',
-      )}
-    >
-      <div className="skeleton h-full w-full rounded-full" />
-    </div>
-  );
-}
-
-function Stat({
-  icon,
-  value,
-  tint,
-  hideOnMobile,
-}: {
-  icon: React.ReactNode;
-  value: number;
-  tint: 'orange' | 'sky' | 'rose' | 'gold';
-  hideOnMobile?: boolean;
-}) {
-  const color = {
-    orange: 'text-sz-orange-dark',
-    sky: 'text-sz-sky-dark',
-    rose: 'text-sz-rose-dark',
-    gold: 'text-sz-gold-dark',
-  }[tint];
-  return (
-    <div
-      className={clsx(
-        'flex items-center gap-1.5 rounded-full border-2 border-sz-line bg-white px-3 py-1 text-sm font-heavy',
-        color,
-        hideOnMobile && 'hidden sm:flex',
-      )}
-    >
-      {icon}
-      <span className="font-display">{value}</span>
     </div>
   );
 }

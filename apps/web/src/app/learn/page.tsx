@@ -8,6 +8,7 @@ import { BookOpen, Plus, Search, X } from 'lucide-react';
 import type { CourseDto, EnrollmentDto, SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
+import { TopStatsBar } from '@/components/TopStatsBar';
 import { TextbookPickerDialog } from '@/components/TextbookPickerDialog';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -23,12 +24,15 @@ export default function LearnPage() {
   const router = useRouter();
   const queryClient = useQueryClient();
 
+  const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
   const subjectsQuery = useQuery({ queryKey: ['subjects'], queryFn: () => api.listSubjects() });
   const coursesQuery = useQuery({ queryKey: ['courses'], queryFn: () => api.listCourses() });
   const enrollmentsQuery = useQuery({
     queryKey: ['enrollments'],
     queryFn: () => api.listMyEnrollments(),
   });
+
+  const me = meQuery.data;
 
   const subjects = subjectsQuery.data ?? [];
   const courses = coursesQuery.data ?? [];
@@ -78,6 +82,16 @@ export default function LearnPage() {
   return (
     <AppShell>
       <div className="flex flex-col gap-6">
+        <TopStatsBar
+          leading={
+            <img src="/assets/icons/quests.svg" alt="" draggable={false} className="h-[42px] w-[42px]" />
+          }
+          streak={me?.currentStreak ?? 0}
+          gems={me?.gems ?? 0}
+          hearts={me?.hearts ?? 0}
+          loading={meQuery.isLoading}
+        />
+
         {/* search */}
         <div className="flex items-center gap-2 rounded-full bg-sz-mist px-4 py-2.5">
           <Search className="h-5 w-5 text-sz-ink-soft" />
