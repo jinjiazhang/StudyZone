@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { Clock3 } from 'lucide-react';
 import type { LeagueEntryDto } from '@studyzone/shared-types';
 import { AppShell } from '@/components/AppShell';
+import { Avatar } from '@/components/Avatar';
 import { Mascot, SpeechBubble } from '@/components/Mascot';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -31,8 +32,6 @@ const TROPHY_SHADE: Record<string, { base: string; dark: string; light: string }
   emerald: { base: '#58CC02', dark: '#46A302', light: '#D7FFB8' },
   diamond: { base: '#56C8E6', dark: '#3AA9C7', light: '#D6F6FF' },
 };
-
-const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 const LOCALE_FLAG: Record<string, string> = {
   'zh-CN': '🇨🇳',
@@ -140,7 +139,7 @@ function LeaderboardRow({ entry, isSelf }: { entry: LeagueEntryDto; isSelf: bool
       >
         {entry.rank}
       </span>
-      <Avatar id={entry.user.id} nickname={entry.user.nickname} url={entry.user.avatarUrl} size={56} />
+      <Avatar user={entry.user} size={56} />
       <div className="min-w-0 flex-1">
         <div className={clsx('truncate text-xl font-heavy', isSelf ? 'text-sz-rose' : 'text-sz-ink')}>
           {entry.user.nickname}
@@ -216,42 +215,6 @@ function ZoneDivider() {
   );
 }
 
-function Avatar({
-  id,
-  nickname,
-  size = 56,
-  url,
-}: {
-  id: string;
-  nickname: string;
-  size?: number;
-  url?: string | null;
-}) {
-  if (url) {
-    return (
-      <img
-        src={url}
-        alt=""
-        draggable={false}
-        className="shrink-0 rounded-full bg-sz-mist object-cover"
-        style={{ width: size, height: size }}
-      />
-    );
-  }
-
-  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
-  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
-
-  return (
-    <span
-      className="flex shrink-0 items-center justify-center rounded-full font-heavy text-white"
-      style={{ width: size, height: size, backgroundColor: color, fontSize: size * 0.5 }}
-    >
-      {initial}
-    </span>
-  );
-}
-
 function LeagueSkeleton() {
   return (
     <div className="flex flex-col gap-4">
@@ -279,10 +242,3 @@ function remainingLabel(weekEnd?: string): string {
   return `${hours} 小时`;
 }
 
-function hashString(value: string): number {
-  let hash = 0;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
-  }
-  return hash;
-}

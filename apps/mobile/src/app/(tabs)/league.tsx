@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, FlatList, Image, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { Clock3 } from 'lucide-react-native';
@@ -8,6 +8,7 @@ import Svg, { Ellipse, Path, Rect } from 'react-native-svg';
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, TIER_COLOR, TIER_LABEL } from '@/lib/theme';
+import { Avatar } from '@/components/Avatar';
 import { Mascot } from '@/components/Mascot';
 import { SpeechBubble } from '@/components/SpeechBubble';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
@@ -23,7 +24,6 @@ const TROPHY_SHADE: Record<string, { base: string; dark: string; light: string }
   emerald: { base: '#58CC02', dark: '#46A302', light: '#D7FFB8' },
   diamond: { base: '#56C8E6', dark: '#3AA9C7', light: '#D6F6FF' },
 };
-const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 const LOCALE_FLAG: Record<string, string> = {
   'zh-CN': '🇨🇳',
   'en-US': '🇺🇸',
@@ -152,12 +152,7 @@ function LeaderboardRow({ entry, isSelf }: { entry: LeagueEntryDto; isSelf: bool
   return (
     <View style={[styles.row, isSelf && styles.rowSelf]}>
       <Text style={[styles.rank, isSelf && styles.selfAccent]}>{entry.rank}</Text>
-      <Avatar
-        id={entry.user.id}
-        nickname={entry.user.nickname}
-        size={56}
-        url={entry.user.avatarUrl}
-      />
+      <Avatar user={entry.user} size={56} />
       <View style={styles.identity}>
         <Text numberOfLines={1} style={[styles.name, isSelf && styles.selfAccent]}>
           {entry.user.nickname}
@@ -228,51 +223,6 @@ function ZoneDivider() {
   );
 }
 
-function Avatar({
-  id,
-  nickname,
-  size = 64,
-  url,
-}: {
-  id: string;
-  nickname: string;
-  size?: number;
-  url?: string | null;
-}) {
-  if (url) {
-    return (
-      <Image
-        source={{ uri: url }}
-        style={{
-          width: size,
-          height: size,
-          borderRadius: size / 2,
-          backgroundColor: colors.mist,
-        }}
-        resizeMode="cover"
-      />
-    );
-  }
-
-  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
-  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
-
-  return (
-    <View
-      style={{
-        width: size,
-        height: size,
-        borderRadius: size / 2,
-        backgroundColor: color,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <Text style={styles.avatarInitial}>{initial}</Text>
-    </View>
-  );
-}
-
 function LeagueSkeleton() {
   return (
     <>
@@ -298,14 +248,6 @@ function remainingLabel(weekEnd?: string): string {
   const hours = Math.floor(diffMs / (1000 * 60 * 60));
   if (hours < 1) return '不到 1 小时';
   return `${hours} 小时`;
-}
-
-function hashString(value: string): number {
-  let hash = 0;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
-  }
-  return hash;
 }
 
 const styles = StyleSheet.create({
@@ -424,11 +366,6 @@ const styles = StyleSheet.create({
   },
   selfAccent: {
     color: colors.rose,
-  },
-  avatarInitial: {
-    color: colors.white,
-    fontFamily: fonts.heavy,
-    fontSize: 30,
   },
   zoneDivider: {
     alignItems: 'center',

@@ -4,13 +4,12 @@ import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 import { LogOut, CheckCircle2 } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
+import { Avatar } from '@/components/Avatar';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { api } from '@/lib/api';
 import { useAuthStore } from '@/lib/auth-store';
 import { xpToLevel } from '@studyzone/shared-logic';
-
-const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 export default function ProfilePage() {
   const router = useRouter();
@@ -32,11 +31,13 @@ export default function ProfilePage() {
         <section className="rounded-3xl border-2 border-b-[6px] border-sz-line bg-white p-6">
           <div className="flex items-center gap-4">
             <div className="relative">
-              <ProfileAvatar
-                id={me?.id ?? 'profile'}
-                nickname={me?.nickname ?? '学习者'}
+              <Avatar
+                user={{
+                  id: me?.id ?? 'profile',
+                  nickname: me?.nickname ?? '学习者',
+                  avatarUrl: me?.avatarUrl ?? null,
+                }}
                 size={104}
-                url={me?.avatarUrl}
               />
               {level && (
                 <span className="absolute -bottom-1 -right-1 rounded-full border-2 border-white bg-sz-green px-2 py-0.5 font-display text-xs font-heavy text-white shadow-pop">
@@ -173,50 +174,6 @@ function ProfileHeroSkeleton() {
       </div>
     </section>
   );
-}
-
-function ProfileAvatar({
-  id,
-  nickname,
-  size,
-  url,
-}: {
-  id: string;
-  nickname: string;
-  size: number;
-  url?: string | null;
-}) {
-  if (url) {
-    return (
-      <img
-        src={url}
-        alt=""
-        draggable={false}
-        className="rounded-full bg-sz-mist object-cover"
-        style={{ width: size, height: size }}
-      />
-    );
-  }
-
-  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
-  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
-
-  return (
-    <div
-      className="flex items-center justify-center rounded-full font-display font-heavy text-white"
-      style={{ width: size, height: size, backgroundColor: color, fontSize: size * 0.5 }}
-    >
-      {initial}
-    </div>
-  );
-}
-
-function hashString(value: string): number {
-  let hash = 0;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
-  }
-  return hash;
 }
 
 function Mini({

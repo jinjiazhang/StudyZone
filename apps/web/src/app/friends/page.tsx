@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react';
 import { AppShell } from '@/components/AppShell';
+import { Avatar } from '@/components/Avatar';
 import { SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -126,7 +127,7 @@ export default function FriendsPage(): JSX.Element {
                   key={r.user.id}
                   className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar url={r.user.avatarUrl} />
+                  <Avatar user={r.user} />
                   <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
                   <button
                     onClick={() => acceptMutation.mutate(r.user.id)}
@@ -160,7 +161,7 @@ export default function FriendsPage(): JSX.Element {
                   key={r.user.id}
                   className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar url={r.user.avatarUrl} />
+                  <Avatar user={r.user} />
                   <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
                   <span className="flex items-center gap-1 text-xs font-heavy text-sz-ink-soft">
                     <Clock className="h-4 w-4" /> 等待确认
@@ -200,7 +201,7 @@ export default function FriendsPage(): JSX.Element {
                   key={f.user.id}
                   className="group flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
                 >
-                  <Avatar url={f.user.avatarUrl} />
+                  <Avatar user={f.user} />
                   <div className="flex-1">
                     <div className="font-heavy text-sz-ink">{f.user.nickname}</div>
                     <div className="flex items-center gap-3 text-xs font-bold text-sz-ink-soft">
@@ -233,29 +234,3 @@ export default function FriendsPage(): JSX.Element {
   );
 }
 
-function Avatar({ url, size = 40 }: { url?: string | null; size?: number }) {
-  if (url) {
-    return (
-      <img
-        src={url}
-        alt=""
-        draggable={false}
-        className="shrink-0 rounded-full bg-sz-mist object-cover"
-        style={{ width: size, height: size }}
-      />
-    );
-  }
-  return (
-    <span
-      className="flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-sz-mist"
-      style={{ width: size, height: size }}
-    >
-      <img
-        src="/assets/mascot/mascot-idle.png"
-        alt=""
-        draggable={false}
-        className="h-[86%] w-[86%] object-contain"
-      />
-    </span>
-  );
-}

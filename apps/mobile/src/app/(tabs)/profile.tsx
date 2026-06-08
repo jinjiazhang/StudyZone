@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Pressable, ScrollView, Image, type ImageSourcePropType } from 'react-native';
+import { View, Text, StyleSheet, Pressable, ScrollView, type ImageSourcePropType } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
@@ -6,6 +6,7 @@ import { Settings, CheckCircle2 } from 'lucide-react-native';
 import { api } from '@/lib/api';
 import { useTabGuard } from '@/lib/guard';
 import { colors, fonts, radius } from '@/lib/theme';
+import { Avatar } from '@/components/Avatar';
 import { LocalSvg } from '@/components/TopStatsBar';
 import { Skeleton, SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -16,7 +17,6 @@ const XP_ICON = require('../../../assets/icons/xp.svg') as ImageSourcePropType;
 const DIAMOND_ICON = require('../../../assets/icons/diamond.svg') as ImageSourcePropType;
 const HEART_ICON = require('../../../assets/icons/heart.svg') as ImageSourcePropType;
 const TARGET_ICON = require('../../../assets/icons/target.svg') as ImageSourcePropType;
-const AVATAR_COLORS = ['#1CB0F6', '#58CC02', '#CE82FF', '#FF9600', '#FF4B4B', '#2FB36B'];
 
 export default function Profile() {
   const router = useRouter();
@@ -38,11 +38,13 @@ export default function Profile() {
         <View style={styles.profileCard}>
           <View style={styles.profileRow}>
             <View style={styles.avatarWrap}>
-              <ProfileAvatar
-                id={me?.id ?? 'profile'}
-                nickname={me?.nickname ?? '学习者'}
+              <Avatar
+                user={{
+                  id: me?.id ?? 'profile',
+                  nickname: me?.nickname ?? '学习者',
+                  avatarUrl: me?.avatarUrl ?? null,
+                }}
                 size={104}
-                url={me?.avatarUrl}
               />
               {level && (
                 <View style={styles.lvBadge}>
@@ -193,58 +195,6 @@ function ProfileHeroSkeleton() {
   );
 }
 
-function ProfileAvatar({
-  id,
-  nickname,
-  size,
-  url,
-}: {
-  id: string;
-  nickname: string;
-  size: number;
-  url?: string | null;
-}) {
-  if (url) {
-    return (
-      <Image
-        source={{ uri: url }}
-        style={{
-          width: size,
-          height: size,
-          borderRadius: size / 2,
-          backgroundColor: colors.mist,
-        }}
-        resizeMode="cover"
-      />
-    );
-  }
-
-  const color = AVATAR_COLORS[hashString(id) % AVATAR_COLORS.length];
-  const initial = (nickname.trim()[0] ?? '?').toUpperCase();
-
-  return (
-    <View
-      style={{
-        width: size,
-        height: size,
-        borderRadius: size / 2,
-        backgroundColor: color,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <Text style={styles.avatarInitial}>{initial}</Text>
-    </View>
-  );
-}
-
-function hashString(value: string): number {
-  let hash = 0;
-  for (let i = 0; i < value.length; i += 1) {
-    hash = (hash * 31 + value.charCodeAt(i)) >>> 0;
-  }
-  return hash;
-}
 
 const TINT_STYLES: Record<string, { border: string; value: string }> = {
   orange: { border: colors.orange, value: colors.orange },
@@ -292,11 +242,6 @@ const styles = StyleSheet.create({
   },
   profileRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   avatarWrap: { position: 'relative' },
-  avatarInitial: {
-    color: colors.white,
-    fontFamily: fonts.heavy,
-    fontSize: 54,
-  },
   lvBadge: {
     position: 'absolute',
     bottom: -4,
