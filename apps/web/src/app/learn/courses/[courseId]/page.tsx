@@ -60,6 +60,7 @@ export default function CoursePage() {
 
           return (
             <section key={unit.unitId} className={clsx(unitLocked && 'opacity-70')}>
+              <div className="sticky top-[57px] z-10 -mx-1 bg-white px-1 pb-3 pt-2">
               <header
                 className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"
                 style={{ background: unit.themeColor }}
@@ -77,6 +78,7 @@ export default function CoursePage() {
                   {['🌱', '🌳', '🌟', '🚀', '🏔️'][unitIdx % 5]}
                 </div>
               </header>
+              </div>
 
               <ol className="mt-8 flex flex-col items-center gap-8">
                 {unit.lessons.map((lesson, idx) => {
