@@ -1,9 +1,10 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import clsx from 'clsx';
 import { BookOpen, Plus, Search, X } from 'lucide-react';
 import type { CourseDto, EnrollmentDto, SubjectDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
@@ -40,6 +41,29 @@ export default function LearnPage() {
 
   const [pickerOpen, setPickerOpen] = useState(false);
   const [search, setSearch] = useState('');
+  const [searchVisible, setSearchVisible] = useState(false);
+  const lastScrollY = useRef(0);
+
+  // Search starts hidden; reveal on scroll up, hide on scroll down (matches mobile).
+  useEffect(() => {
+    const reveal = (up: boolean) => setSearchVisible(up);
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (y < lastScrollY.current - 4) reveal(true);
+      else if (y > lastScrollY.current + 4) reveal(false);
+      lastScrollY.current = y;
+    };
+    const onWheel = (e: WheelEvent) => {
+      if (e.deltaY < 0) reveal(true);
+      else if (e.deltaY > 0) reveal(false);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('wheel', onWheel, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('wheel', onWheel);
+    };
+  }, []);
 
   const isLoading = subjectsQuery.isLoading || coursesQuery.isLoading || enrollmentsQuery.isLoading;
   const isError = subjectsQuery.isError || coursesQuery.isError || enrollmentsQuery.isError;
@@ -81,7 +105,7 @@ export default function LearnPage() {
 
   return (
     <AppShell>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col">
         <TopStatsBar
           leading={
             <img src="/assets/icons/quests.svg" alt="" draggable={false} className="h-[42px] w-[42px]" />
@@ -92,27 +116,35 @@ export default function LearnPage() {
           loading={meQuery.isLoading}
         />
 
-        {/* search */}
-        <div className="flex items-center gap-2 rounded-full bg-sz-mist px-4 py-2.5">
-          <Search className="h-5 w-5 text-sz-ink-soft" />
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="搜索课本或学科"
-            className="flex-1 bg-transparent text-[15px] font-bold text-sz-ink outline-none placeholder:text-sz-ink-soft"
-          />
-          {search && (
-            <button
-              type="button"
-              onClick={() => setSearch('')}
-              className="text-sz-ink-soft hover:text-sz-ink"
-              aria-label="清除搜索"
-            >
-              <X className="h-4 w-4" />
-            </button>
+        {/* search — hidden by default, revealed on scroll up */}
+        <div
+          className={clsx(
+            'overflow-hidden transition-all duration-200 ease-out',
+            searchVisible ? 'mt-4 max-h-20 opacity-100' : 'max-h-0 opacity-0',
           )}
+        >
+          <div className="flex items-center gap-2 rounded-full bg-sz-mist px-4 py-2.5">
+            <Search className="h-5 w-5 text-sz-ink-soft" />
+            <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="搜索课本或学科"
+              className="flex-1 bg-transparent text-[15px] font-bold text-sz-ink outline-none placeholder:text-sz-ink-soft"
+            />
+            {search && (
+              <button
+                type="button"
+                onClick={() => setSearch('')}
+                className="text-sz-ink-soft hover:text-sz-ink"
+                aria-label="清除搜索"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            )}
+          </div>
         </div>
 
+      <div className="mt-6 flex flex-col gap-6">
         {isLoading ? (
           <ShelfSkeleton />
         ) : isError ? (
@@ -156,6 +188,7 @@ export default function LearnPage() {
             </div>
           </>
         )}
+      </div>
       </div>
 
       <TextbookPickerDialog
