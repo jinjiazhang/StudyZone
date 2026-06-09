@@ -75,10 +75,10 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="friends"
         options={{
-          title: '好友',
-          tabBarAccessibilityLabel: '好友',
+          title: '关注',
+          tabBarAccessibilityLabel: '关注',
           tabBarIcon: ({ focused }) => (
-            <TabIcon accessibilityLabel="好友" focused={focused} source={FRIENDS_ICON} />
+            <TabIcon accessibilityLabel="关注" focused={focused} source={FRIENDS_ICON} />
           ),
         }}
       />

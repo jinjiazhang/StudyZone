@@ -1,9 +1,10 @@
 import { Body, Controller, Get, Patch, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { IsInt, IsOptional, IsString, Max, Min, MaxLength } from 'class-validator';
+import { IsInt, IsOptional, IsString, Matches, Max, Min, MaxLength } from 'class-validator';
 
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
+import { USERNAME_PATTERN } from '../auth/username.util';
 import { AccountService } from './account.service';
 
 class UpdateProfileDto {
@@ -11,6 +12,13 @@ class UpdateProfileDto {
   @IsString()
   @MaxLength(30)
   nickname?: string;
+
+  @IsOptional()
+  @IsString()
+  @Matches(USERNAME_PATTERN, {
+    message: 'username must be 3-20 characters of letters, digits, or underscore',
+  })
+  username?: string;
 
   @IsOptional()
   @IsInt()

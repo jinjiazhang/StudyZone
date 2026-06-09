@@ -1,4 +1,6 @@
-import { IsEmail, IsOptional, IsString, MinLength, MaxLength } from 'class-validator';
+import { IsEmail, IsOptional, IsString, Matches, MinLength, MaxLength } from 'class-validator';
+
+import { USERNAME_PATTERN } from './username.util';
 
 export class RegisterDto {
   @IsEmail()
@@ -13,6 +15,13 @@ export class RegisterDto {
   @MinLength(2)
   @MaxLength(30)
   nickname!: string;
+
+  @IsOptional()
+  @IsString()
+  @Matches(USERNAME_PATTERN, {
+    message: 'username must be 3-20 characters of letters, digits, or underscore',
+  })
+  username?: string;
 
   @IsOptional()
   @IsString()

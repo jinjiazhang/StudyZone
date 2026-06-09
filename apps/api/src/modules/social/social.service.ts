@@ -1,172 +1,289 @@
-import { Injectable, NotFoundException, ConflictException } from '@nestjs/common';
+import { Injectable, ConflictException, NotFoundException } from '@nestjs/common';
 import type {
-  FriendSummaryDto,
-  FriendRequestDto,
+  FollowUserDto,
+  PublicProfileDto,
+  UserPublic,
+  UserSearchResultDto,
   Paginated,
+  LeagueTier,
 } from '@studyzone/shared-types';
-import { FriendshipStatus } from '@studyzone/shared-types';
 import { PrismaService } from '../../infra/prisma.service';
+import { startOfWeek } from '../league/league.util';
+
+const PAGE_SIZE = 30;
+const SEARCH_LIMIT = 20;
+
+type UserWithStats = {
+  id: string;
+  username: string;
+  nickname: string;
+  avatarUrl: string | null;
+  locale: string;
+  createdAt: Date;
+  wallet?: { xpTotal: number } | null;
+  streak?: { currentStreak: number } | null;
+};
 
 @Injectable()
 export class SocialService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async listFriends(userId: string, cursor?: string): Promise<Paginated<FriendSummaryDto>> {
-    const items = await this.prisma.friendship.findMany({
-      where: { userId, status: 'accepted' },
-      include: {
-        friend: {
-          include: { wallet: true, streak: true },
-        },
-      },
-      orderBy: { createdAt: 'desc' },
-      take: 30,
-      ...(cursor ? { cursor: { userId_friendId: { userId, friendId: cursor } }, skip: 1 } : {}),
-    });
+  // --- Mutations -------------------------------------------------------------
 
-    const weekStart = startOfWeek(new Date());
+  /** Follow a user. Idempotent; no approval step. */
+  async follow(viewerId: string, targetId: string): Promise<void> {
+    if (viewerId === targetId) throw new ConflictException({ code: 'self_follow' });
 
-    return {
-      items: await Promise.all(
-        items.map(async (f) => {
-          const entry = await this.prisma.leaderboardEntry.findFirst({
-            where: { userId: f.friendId, group: { weekStart } },
-          });
-          return {
-            user: toPublic(f.friend),
-            status: FriendshipStatus.ACCEPTED,
-            weeklyXp: entry?.weeklyXp ?? 0,
-            currentStreak: f.friend.streak?.currentStreak ?? 0,
-          };
-        }),
-      ),
-      nextCursor: items.length === 30 ? items[items.length - 1]!.friendId : null,
-    };
-  }
+    const target = await this.prisma.user.findUnique({ where: { id: targetId } });
+    if (!target) throw new NotFoundException({ code: 'user_not_found' });
 
-  /**
-   * Pending friend requests for the current user, both received (incoming —
-   * someone asked to add me) and sent (outgoing — I asked to add someone).
-   */
-  async listRequests(userId: string): Promise<{
-    incoming: FriendRequestDto[];
-    outgoing: FriendRequestDto[];
-  }> {
-    const [incoming, outgoing] = await Promise.all([
-      this.prisma.friendship.findMany({
-        where: { friendId: userId, status: 'pending' },
-        include: { user: true },
-        orderBy: { createdAt: 'desc' },
-      }),
-      this.prisma.friendship.findMany({
-        where: { userId, status: 'pending' },
-        include: { friend: true },
-        orderBy: { createdAt: 'desc' },
-      }),
-    ]);
-
-    return {
-      incoming: incoming.map((f) => ({
-        user: toPublic(f.user),
-        direction: 'incoming' as const,
-        createdAt: f.createdAt.toISOString(),
-      })),
-      outgoing: outgoing.map((f) => ({
-        user: toPublic(f.friend),
-        direction: 'outgoing' as const,
-        createdAt: f.createdAt.toISOString(),
-      })),
-    };
-  }
-
-  async sendRequest(userId: string, friendEmail: string): Promise<void> {
-    const friend = await this.prisma.user.findUnique({
-      where: { email: friendEmail.trim().toLowerCase() },
-    });
-    if (!friend) throw new NotFoundException({ code: 'user_not_found' });
-    if (friend.id === userId) throw new ConflictException({ code: 'self_friend' });
-
-    // Already friends?
-    const existing = await this.prisma.friendship.findUnique({
-      where: { userId_friendId: { userId, friendId: friend.id } },
-    });
-    if (existing?.status === 'accepted') {
-      throw new ConflictException({ code: 'already_friends' });
-    }
-
-    // If the other person already sent *me* a pending request, accept it instead
-    // of creating a duplicate in the other direction.
-    const reverse = await this.prisma.friendship.findUnique({
-      where: { userId_friendId: { userId: friend.id, friendId: userId } },
-    });
-    if (reverse?.status === 'pending') {
-      await this.accept(userId, friend.id);
-      return;
-    }
-
-    await this.prisma.friendship.upsert({
-      where: { userId_friendId: { userId, friendId: friend.id } },
-      create: { userId, friendId: friend.id, status: 'pending' },
+    await this.prisma.follow.upsert({
+      where: { followerId_followeeId: { followerId: viewerId, followeeId: targetId } },
+      create: { followerId: viewerId, followeeId: targetId },
       update: {},
     });
+
+    // Hook point: emit a 'social.user.followed' event here to drive notifications
+    // once that feature ships (mirrors auth.service's 'account.user.registered').
   }
 
-  async accept(userId: string, requesterId: string): Promise<void> {
-    const fr = await this.prisma.friendship.findUnique({
-      where: { userId_friendId: { userId: requesterId, friendId: userId } },
-    });
-    if (!fr || fr.status !== 'pending') throw new NotFoundException({ code: 'request_not_found' });
-
-    await this.prisma.$transaction([
-      this.prisma.friendship.update({
-        where: { userId_friendId: { userId: requesterId, friendId: userId } },
-        data: { status: 'accepted' },
-      }),
-      this.prisma.friendship.upsert({
-        where: { userId_friendId: { userId, friendId: requesterId } },
-        create: { userId, friendId: requesterId, status: 'accepted' },
-        update: { status: 'accepted' },
-      }),
-    ]);
-  }
-
-  /** Decline an incoming request (the requester -> me edge is removed). */
-  async decline(userId: string, requesterId: string): Promise<void> {
-    const fr = await this.prisma.friendship.findUnique({
-      where: { userId_friendId: { userId: requesterId, friendId: userId } },
-    });
-    if (!fr || fr.status !== 'pending') throw new NotFoundException({ code: 'request_not_found' });
-
-    await this.prisma.friendship.delete({
-      where: { userId_friendId: { userId: requesterId, friendId: userId } },
+  /** Unfollow a user. Idempotent (no error when the edge is absent). */
+  async unfollow(viewerId: string, targetId: string): Promise<void> {
+    await this.prisma.follow.deleteMany({
+      where: { followerId: viewerId, followeeId: targetId },
     });
   }
 
-  /**
-   * Remove a relationship in both directions. Works for confirmed friends
-   * (unfriend) and for cancelling an outgoing pending request.
-   */
-  async remove(userId: string, otherId: string): Promise<void> {
-    await this.prisma.friendship.deleteMany({
+  // --- Lists -----------------------------------------------------------------
+
+  /** Users the given user follows. */
+  async listFollowing(viewerId: string, cursor?: string): Promise<Paginated<FollowUserDto>> {
+    const rows = await this.prisma.follow.findMany({
+      where: { followerId: viewerId },
+      include: { followee: { include: { wallet: true, streak: true } } },
+      orderBy: { createdAt: 'desc' },
+      take: PAGE_SIZE,
+      ...(cursor
+        ? {
+            cursor: { followerId_followeeId: { followerId: viewerId, followeeId: cursor } },
+            skip: 1,
+          }
+        : {}),
+    });
+
+    const items = await this.buildFollowRows(
+      viewerId,
+      rows.map((r) => r.followee),
+    );
+    return {
+      items,
+      nextCursor: rows.length === PAGE_SIZE ? rows[rows.length - 1]!.followeeId : null,
+    };
+  }
+
+  /** Users who follow the given user. */
+  async listFollowers(viewerId: string, cursor?: string): Promise<Paginated<FollowUserDto>> {
+    const rows = await this.prisma.follow.findMany({
+      where: { followeeId: viewerId },
+      include: { follower: { include: { wallet: true, streak: true } } },
+      orderBy: { createdAt: 'desc' },
+      take: PAGE_SIZE,
+      ...(cursor
+        ? {
+            cursor: { followerId_followeeId: { followerId: cursor, followeeId: viewerId } },
+            skip: 1,
+          }
+        : {}),
+    });
+
+    const items = await this.buildFollowRows(
+      viewerId,
+      rows.map((r) => r.follower),
+    );
+    return {
+      items,
+      nextCursor: rows.length === PAGE_SIZE ? rows[rows.length - 1]!.followerId : null,
+    };
+  }
+
+  // --- Search ----------------------------------------------------------------
+
+  async searchUsers(
+    viewerId: string,
+    term: string,
+    cursor?: string,
+  ): Promise<Paginated<UserSearchResultDto>> {
+    const trimmed = term.trim();
+    if (!trimmed) return { items: [], nextCursor: null };
+
+    const rows = await this.prisma.user.findMany({
       where: {
+        id: { not: viewerId },
+        status: 'active',
         OR: [
-          { userId, friendId: otherId },
-          { userId: otherId, friendId: userId },
+          { username: { contains: trimmed, mode: 'insensitive' } },
+          { nickname: { contains: trimmed, mode: 'insensitive' } },
         ],
       },
+      include: { wallet: true, streak: true },
+      take: SEARCH_LIMIT + 1,
+      ...(cursor ? { cursor: { id: cursor }, skip: 1 } : {}),
+      orderBy: { createdAt: 'desc' },
     });
+
+    const hasMore = rows.length > SEARCH_LIMIT;
+    const page = hasMore ? rows.slice(0, SEARCH_LIMIT) : rows;
+    const [following, followers] = await this.followMaps(
+      viewerId,
+      page.map((u) => u.id),
+    );
+
+    return {
+      items: page.map((u) => ({
+        user: toPublic(u),
+        currentStreak: u.streak?.currentStreak ?? 0,
+        xpTotal: u.wallet?.xpTotal ?? 0,
+        isFollowing: following.has(u.id),
+        followsYou: followers.has(u.id),
+      })),
+      nextCursor: hasMore ? page[page.length - 1]!.id : null,
+    };
+  }
+
+  // --- Public profile --------------------------------------------------------
+
+  async getPublicProfile(viewerId: string, idOrUsername: string): Promise<PublicProfileDto> {
+    const user = await this.resolveUser(idOrUsername);
+    if (!user) throw new NotFoundException({ code: 'user_not_found' });
+
+    const isSelf = viewerId === user.id;
+    const [followersCount, followingCount, isFollowing, followsYou, weeklyXp] = await Promise.all([
+      this.prisma.follow.count({ where: { followeeId: user.id } }),
+      this.prisma.follow.count({ where: { followerId: user.id } }),
+      isSelf ? Promise.resolve(false) : this.hasFollow(viewerId, user.id),
+      isSelf ? Promise.resolve(false) : this.hasFollow(user.id, viewerId),
+      this.weeklyXp(user.id),
+    ]);
+
+    return {
+      user: toPublic(user),
+      xpTotal: user.wallet?.xpTotal ?? 0,
+      currentStreak: user.streak?.currentStreak ?? 0,
+      longestStreak: user.streak?.longestStreak ?? 0,
+      leagueTier: deriveLeagueTier(user.leagueMemberships[0], user.leagueHistory[0]),
+      weeklyXp,
+      followersCount,
+      followingCount,
+      isFollowing,
+      followsYou,
+      isSelf,
+      achievements: [],
+    };
+  }
+
+  async usernameAvailable(username: string): Promise<{ available: boolean }> {
+    const existing = await this.prisma.user.findFirst({
+      where: { username: { equals: username.trim(), mode: 'insensitive' } },
+      select: { id: true },
+    });
+    return { available: !existing };
+  }
+
+  // --- Helpers ---------------------------------------------------------------
+
+  /** Attach weeklyXp + viewer's isFollowing flag to a list of users (no N+1). */
+  private async buildFollowRows(
+    viewerId: string,
+    users: UserWithStats[],
+  ): Promise<FollowUserDto[]> {
+    const ids = users.map((u) => u.id);
+    const [following] = await this.followMaps(viewerId, ids);
+    const weekStart = startOfWeek(new Date());
+    const entries = await this.prisma.leaderboardEntry.findMany({
+      where: { userId: { in: ids }, group: { weekStart } },
+    });
+    const weeklyByUser = new Map(entries.map((e) => [e.userId, e.weeklyXp]));
+
+    return users.map((u) => ({
+      user: toPublic(u),
+      currentStreak: u.streak?.currentStreak ?? 0,
+      weeklyXp: weeklyByUser.get(u.id) ?? 0,
+      isFollowing: following.has(u.id),
+    }));
+  }
+
+  /** Returns [usersViewerFollows, usersFollowingViewer] as id sets, batched. */
+  private async followMaps(
+    viewerId: string,
+    ids: string[],
+  ): Promise<[Set<string>, Set<string>]> {
+    if (ids.length === 0) return [new Set(), new Set()];
+    const [following, followers] = await Promise.all([
+      this.prisma.follow.findMany({
+        where: { followerId: viewerId, followeeId: { in: ids } },
+        select: { followeeId: true },
+      }),
+      this.prisma.follow.findMany({
+        where: { followeeId: viewerId, followerId: { in: ids } },
+        select: { followerId: true },
+      }),
+    ]);
+    return [
+      new Set(following.map((f) => f.followeeId)),
+      new Set(followers.map((f) => f.followerId)),
+    ];
+  }
+
+  private hasFollow(followerId: string, followeeId: string): Promise<boolean> {
+    return this.prisma.follow
+      .findUnique({ where: { followerId_followeeId: { followerId, followeeId } } })
+      .then(Boolean);
+  }
+
+  private async weeklyXp(userId: string): Promise<number> {
+    const weekStart = startOfWeek(new Date());
+    const entry = await this.prisma.leaderboardEntry.findFirst({
+      where: { userId, group: { weekStart } },
+    });
+    return entry?.weeklyXp ?? 0;
+  }
+
+  /** Resolve a profile target by cuid id first, then by case-insensitive username. */
+  private resolveUser(idOrUsername: string) {
+    const include = {
+      wallet: true,
+      streak: true,
+      leagueMemberships: {
+        include: { group: true },
+        take: 1,
+        orderBy: { group: { weekStart: 'desc' } },
+      },
+      leagueHistory: { take: 1, orderBy: { weekStart: 'desc' } },
+    } as const;
+
+    return this.prisma.user
+      .findUnique({ where: { id: idOrUsername }, include })
+      .then((byId) =>
+        byId ??
+        this.prisma.user.findFirst({
+          where: { username: { equals: idOrUsername, mode: 'insensitive' } },
+          include,
+        }),
+      );
   }
 }
 
 function toPublic(u: {
   id: string;
+  username: string;
   nickname: string;
   avatarUrl: string | null;
   locale: string;
   createdAt: Date;
-}) {
+}): UserPublic {
   return {
     id: u.id,
+    username: u.username,
     nickname: u.nickname,
     avatarUrl: u.avatarUrl,
     locale: u.locale as never,
@@ -174,8 +291,14 @@ function toPublic(u: {
   };
 }
 
-function startOfWeek(d: Date): Date {
-  const day = d.getUTCDay();
-  const diff = (day + 6) % 7;
-  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - diff));
+/** Shared league-tier derivation (mirrors AccountService.getProfile). */
+function deriveLeagueTier(
+  currentLeague: { group: { weekStart: Date; tier: string } } | undefined,
+  lastHistory: { weekStart: Date; nextTier: string } | undefined,
+): LeagueTier | null {
+  const tier =
+    currentLeague && (!lastHistory || currentLeague.group.weekStart > lastHistory.weekStart)
+      ? currentLeague.group.tier
+      : (lastHistory?.nextTier ?? currentLeague?.group.tier ?? null);
+  return tier as LeagueTier | null;
 }

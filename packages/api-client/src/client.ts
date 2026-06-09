@@ -10,8 +10,9 @@ import type {
   CourseTreeNode,
   DailyQuestDto,
   EnrollmentDto,
-  FriendSummaryDto,
-  FriendRequestDto,
+  FollowUserDto,
+  UserSearchResultDto,
+  PublicProfileDto,
   LeagueStandingDto,
   LeagueHistoryItemDto,
   AdminLeagueGroupDetailDto,
@@ -181,34 +182,38 @@ export class StudyZoneClient {
     return this.request<DailyQuestDto[]>('/api/v1/quests/daily');
   }
 
-  friends(cursor?: string) {
+  followUser(id: string) {
+    return this.request<void>(`/api/v1/users/${id}/follow`, { method: 'POST' });
+  }
+
+  unfollowUser(id: string) {
+    return this.request<void>(`/api/v1/users/${id}/follow`, { method: 'DELETE' });
+  }
+
+  getPublicProfile(idOrUsername: string) {
+    return this.request<PublicProfileDto>(`/api/v1/users/${encodeURIComponent(idOrUsername)}`);
+  }
+
+  searchUsers(term: string, cursor?: string) {
+    const params = new URLSearchParams({ search: term });
+    if (cursor) params.set('cursor', cursor);
+    return this.request<Paginated<UserSearchResultDto>>(`/api/v1/users?${params.toString()}`);
+  }
+
+  listFollowing(cursor?: string) {
     const q = cursor ? `?cursor=${encodeURIComponent(cursor)}` : '';
-    return this.request<Paginated<FriendSummaryDto>>(`/api/v1/friends${q}`);
+    return this.request<Paginated<FollowUserDto>>(`/api/v1/me/following${q}`);
   }
 
-  friendRequests() {
-    return this.request<{ incoming: FriendRequestDto[]; outgoing: FriendRequestDto[] }>(
-      '/api/v1/friends/requests',
+  listFollowers(cursor?: string) {
+    const q = cursor ? `?cursor=${encodeURIComponent(cursor)}` : '';
+    return this.request<Paginated<FollowUserDto>>(`/api/v1/me/followers${q}`);
+  }
+
+  usernameAvailable(username: string) {
+    return this.request<{ available: boolean }>(
+      `/api/v1/users/username-available?u=${encodeURIComponent(username)}`,
     );
-  }
-
-  sendFriendRequest(email: string) {
-    return this.request<void>('/api/v1/friends/requests', {
-      method: 'POST',
-      body: JSON.stringify({ email }),
-    });
-  }
-
-  acceptFriendRequest(requesterId: string) {
-    return this.request<void>(`/api/v1/friends/${requesterId}/accept`, { method: 'POST' });
-  }
-
-  declineFriendRequest(requesterId: string) {
-    return this.request<void>(`/api/v1/friends/${requesterId}/decline`, { method: 'POST' });
-  }
-
-  removeFriend(otherId: string) {
-    return this.request<void>(`/api/v1/friends/${otherId}`, { method: 'DELETE' });
   }
 
   myLeague() {

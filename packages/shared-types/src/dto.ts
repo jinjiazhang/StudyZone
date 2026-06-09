@@ -17,6 +17,8 @@ export interface RegisterDto {
   email: string;
   password: string;
   nickname: string;
+  /** Optional desired handle; auto-generated from nickname when omitted. */
+  username?: string;
   locale?: Locale;
 }
 
@@ -42,6 +44,8 @@ export interface AuthResponse {
 
 export interface UserPublic {
   id: string;
+  /** Unique public handle (Duolingo-style @username). */
+  username: string;
   nickname: string;
   avatarUrl: string | null;
   locale: Locale;
@@ -60,6 +64,8 @@ export interface UserProfile extends UserPublic {
   currentStreak: number;
   longestStreak: number;
   leagueTier: LeagueTier | null;
+  followingCount: number;
+  followersCount: number;
 }
 
 // =============================================================================
@@ -247,6 +253,49 @@ export interface DailyQuestDto {
 // Social
 // =============================================================================
 
+/** A row in a following/followers list, with this week's competitive stats. */
+export interface FollowUserDto {
+  user: UserPublic;
+  currentStreak: number;
+  weeklyXp: number;
+  /** Whether the current viewer follows this row's user. */
+  isFollowing: boolean;
+}
+
+/** A user surfaced via search. */
+export interface UserSearchResultDto {
+  user: UserPublic;
+  currentStreak: number;
+  xpTotal: number;
+  /** Whether the viewer follows this user. */
+  isFollowing: boolean;
+  /** Whether this user follows the viewer. */
+  followsYou: boolean;
+}
+
+/** Any user's public profile, viewable by id or @username. */
+export interface PublicProfileDto {
+  user: UserPublic;
+  xpTotal: number;
+  currentStreak: number;
+  longestStreak: number;
+  leagueTier: LeagueTier | null;
+  weeklyXp: number;
+  followersCount: number;
+  followingCount: number;
+  /** Viewer -> this user. */
+  isFollowing: boolean;
+  /** This user -> viewer. */
+  followsYou: boolean;
+  /** True when viewing your own profile. */
+  isSelf: boolean;
+  /** Placeholder until the achievements feature ships. */
+  achievements: never[];
+}
+
+// --- Deprecated mutual-friendship DTOs (kept until web/mobile fully migrate) ---
+
+/** @deprecated Superseded by the follow model. */
 export interface FriendDto {
   id: string;
   nickname: string;
@@ -254,7 +303,7 @@ export interface FriendDto {
   status: FriendshipStatus;
 }
 
-/** A confirmed friend, with this week's competitive stats. */
+/** @deprecated Superseded by {@link FollowUserDto}. */
 export interface FriendSummaryDto {
   user: UserPublic;
   status: FriendshipStatus;
@@ -262,15 +311,17 @@ export interface FriendSummaryDto {
   currentStreak: number;
 }
 
+/** @deprecated */
 export type FriendRequestDirection = 'incoming' | 'outgoing';
 
-/** A pending friend request, either received or sent by the current user. */
+/** @deprecated The follow model has no request/approval step. */
 export interface FriendRequestDto {
   user: UserPublic;
   direction: FriendRequestDirection;
   createdAt: string;
 }
 
+/** @deprecated Use follow-by-id instead of request-by-email. */
 export interface SendFriendRequestDto {
   email: string;
 }

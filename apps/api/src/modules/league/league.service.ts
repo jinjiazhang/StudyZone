@@ -169,6 +169,7 @@ export class LeagueService {
         rank,
         user: {
           id: e.user.id,
+          username: e.user.username,
           nickname: e.user.nickname,
           avatarUrl: e.user.avatarUrl,
           locale: e.user.locale as LeagueEntryDto['user']['locale'],

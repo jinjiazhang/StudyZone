@@ -34,7 +34,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <ul className="flex flex-col gap-3">
               <NavLink href="/learn" current={pathname} icon="tab-learn" label="学习" />
               <NavLink href="/league" current={pathname} icon="tab-league" label="联赛" />
-              <NavLink href="/friends" current={pathname} icon="tab-friends" label="好友" />
+              <NavLink href="/friends" current={pathname} icon="tab-friends" label="关注" />
               <NavLink href="/profile" current={pathname} icon="tab-profile" label="档案" />
             </ul>
           </div>
@@ -47,7 +47,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <ul className="mx-auto grid max-w-md grid-cols-4 px-2 py-2">
           <BottomTab href="/learn" current={pathname} icon="tab-learn" label="学习" />
           <BottomTab href="/league" current={pathname} icon="tab-league" label="联赛" />
-          <BottomTab href="/friends" current={pathname} icon="tab-friends" label="好友" />
+          <BottomTab href="/friends" current={pathname} icon="tab-friends" label="关注" />
           <BottomTab href="/profile" current={pathname} icon="tab-profile" label="档案" />
         </ul>
       </nav>
