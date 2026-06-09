@@ -9,6 +9,7 @@ import { BookOpen, Check, Lock, PlayCircle, Star } from 'lucide-react';
 import type { UnitMapDecorationDto } from '@studyzone/shared-types';
 import { api } from '@/lib/api';
 import { AppShell } from '@/components/AppShell';
+import { TopStatsBar } from '@/components/TopStatsBar';
 import { MapDecoration } from '@/components/MapDecoration';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -22,6 +23,9 @@ export default function CoursePage() {
   useEffect(() => {
     enroll.mutate();
   }, [courseId]);
+
+  const meQuery = useQuery({ queryKey: ['me'], queryFn: () => api.me() });
+  const me = meQuery.data;
 
   const treeQuery = useQuery({
     queryKey: ['tree', courseId],
@@ -78,10 +82,24 @@ export default function CoursePage() {
 
   return (
     <AppShell>
-      <div className="mx-auto flex max-w-3xl flex-col gap-12">
+      <TopStatsBar
+        leading={
+          <Link href="/learn" aria-label="返回学习主页">
+            <img
+              src="/assets/icons/tab-learn.svg"
+              alt=""
+              draggable={false}
+              className="h-[34px] w-[34px]"
+            />
+          </Link>
+        }
+        streak={me?.currentStreak ?? 0}
+        gems={me?.gems ?? 0}
+        hearts={me?.hearts ?? 0}
+        loading={meQuery.isLoading}
+      />
+      <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-12">
         {tree.map((unit, unitIdx) => {
-          const completedCount = unit.lessons.filter((lesson) => lesson.completed).length;
-
           return (
             <section
               key={unit.unitId}
@@ -90,7 +108,7 @@ export default function CoursePage() {
                 else sectionRefs.current.delete(unit.unitId);
               }}
             >
-              <div className="sticky top-0 z-10 -mx-1 bg-white px-1 pb-3 pt-2">
+              <div className="sticky top-14 z-10 -mx-1 bg-white px-1 pb-3 pt-2">
               <header
                 className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"
                 style={{ background: unit.themeColor }}
@@ -100,9 +118,6 @@ export default function CoursePage() {
                     第 {unit.unitOrder + 1} 单元
                   </div>
                   <div className="mt-1 text-2xl font-heavy">{unit.unitTitle}</div>
-                  <div className="mt-2 text-sm font-heavy opacity-90">
-                    {completedCount}/{unit.lessons.length} 关完成
-                  </div>
                 </div>
                 <div className="pointer-events-none absolute -bottom-8 -right-8 text-9xl opacity-20">
                   {['🌱', '🌳', '🌟', '🚀', '🏔️'][unitIdx % 5]}
@@ -147,7 +162,6 @@ function LessonNode({
   courseId: string;
   lesson: {
     lessonId: string;
-    name: string;
     icon: string;
     order: number;
     unlocked: boolean;
@@ -165,7 +179,7 @@ function LessonNode({
 
   return (
     <li
-      className="flex flex-col items-center gap-3"
+      className="flex flex-col items-center"
       style={{ transform: `translateX(${offset * 38}px)` }}
     >
       <div className="relative h-24 w-24">
@@ -196,12 +210,6 @@ function LessonNode({
             </span>
           )}
         </Link>
-      </div>
-      <div className="text-center">
-        <div className="font-heavy text-sz-ink">{lesson.name}</div>
-        <div className="mt-1 text-xs font-bold text-sz-ink-soft">
-          {lesson.completed ? '已完成' : lesson.unlocked ? '待开始' : '未解锁'}
-        </div>
       </div>
     </li>
   );
