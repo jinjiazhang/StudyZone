@@ -47,7 +47,17 @@ export default function ProfilePage() {
             </div>
             <div className="flex-1">
               <div className="text-2xl font-heavy text-sz-ink">{me?.nickname ?? '学习者'}</div>
-              <div className="text-sm font-bold text-sz-ink-soft">{me?.email}</div>
+              {me?.username && (
+                <div className="text-sm font-bold text-sz-ink-soft">@{me.username}</div>
+              )}
+              <div className="mt-1 flex gap-4 text-sm font-bold text-sz-ink-soft">
+                <span>
+                  <span className="font-heavy text-sz-ink">{me?.followingCount ?? 0}</span> 关注
+                </span>
+                <span>
+                  <span className="font-heavy text-sz-ink">{me?.followersCount ?? 0}</span> 粉丝
+                </span>
+              </div>
             </div>
             <button
               onClick={() => {

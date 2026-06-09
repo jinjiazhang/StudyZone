@@ -1,5 +1,4 @@
 import {
-  Body,
   Controller,
   Delete,
   Get,
@@ -10,16 +9,10 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { IsEmail } from 'class-validator';
 
 import { JwtAuthGuard } from '../auth/jwt.guard';
 import { CurrentUser, AuthenticatedUser } from '../../common/current-user.decorator';
 import { SocialService } from './social.service';
-
-class FriendRequestDto {
-  @IsEmail()
-  email!: string;
-}
 
 @ApiTags('social')
 @ApiBearerAuth()
@@ -28,37 +21,46 @@ class FriendRequestDto {
 export class SocialController {
   constructor(private readonly service: SocialService) {}
 
-  @Get('friends')
-  friends(@CurrentUser() user: AuthenticatedUser, @Query('cursor') cursor?: string) {
-    return this.service.listFriends(user.id, cursor);
+  // NOTE: static `users/...` routes must precede the `users/:id` param route so
+  // they are not swallowed by it.
+  @Get('users/username-available')
+  usernameAvailable(@Query('u') username: string) {
+    return this.service.usernameAvailable(username ?? '');
   }
 
-  @Get('friends/requests')
-  requests(@CurrentUser() user: AuthenticatedUser) {
-    return this.service.listRequests(user.id);
+  @Get('users')
+  search(
+    @CurrentUser() user: AuthenticatedUser,
+    @Query('search') search?: string,
+    @Query('cursor') cursor?: string,
+  ) {
+    return this.service.searchUsers(user.id, search ?? '', cursor);
   }
 
-  @Post('friends/requests')
+  @Get('me/following')
+  following(@CurrentUser() user: AuthenticatedUser, @Query('cursor') cursor?: string) {
+    return this.service.listFollowing(user.id, cursor);
+  }
+
+  @Get('me/followers')
+  followers(@CurrentUser() user: AuthenticatedUser, @Query('cursor') cursor?: string) {
+    return this.service.listFollowers(user.id, cursor);
+  }
+
+  @Get('users/:id')
+  profile(@CurrentUser() user: AuthenticatedUser, @Param('id') id: string) {
+    return this.service.getPublicProfile(user.id, id);
+  }
+
+  @Post('users/:id/follow')
   @HttpCode(204)
-  async sendRequest(@CurrentUser() user: AuthenticatedUser, @Body() dto: FriendRequestDto) {
-    await this.service.sendRequest(user.id, dto.email);
+  async follow(@CurrentUser() user: AuthenticatedUser, @Param('id') id: string) {
+    await this.service.follow(user.id, id);
   }
 
-  @Post('friends/:requesterId/accept')
+  @Delete('users/:id/follow')
   @HttpCode(204)
-  async accept(@CurrentUser() user: AuthenticatedUser, @Param('requesterId') requesterId: string) {
-    await this.service.accept(user.id, requesterId);
-  }
-
-  @Post('friends/:requesterId/decline')
-  @HttpCode(204)
-  async decline(@CurrentUser() user: AuthenticatedUser, @Param('requesterId') requesterId: string) {
-    await this.service.decline(user.id, requesterId);
-  }
-
-  @Delete('friends/:otherId')
-  @HttpCode(204)
-  async remove(@CurrentUser() user: AuthenticatedUser, @Param('otherId') otherId: string) {
-    await this.service.remove(user.id, otherId);
+  async unfollow(@CurrentUser() user: AuthenticatedUser, @Param('id') id: string) {
+    await this.service.unfollow(user.id, id);
   }
 }

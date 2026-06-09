@@ -112,6 +112,7 @@ export enum LessonOutcome {
   ABANDONED = 'abandoned',
 }
 
+/** @deprecated The follow model has no pending/blocked states. */
 export enum FriendshipStatus {
   PENDING = 'pending',
   ACCEPTED = 'accepted',

@@ -138,6 +138,7 @@ async function main() {
     create: {
       email: 'tiantianzh@qq.com',
       passwordHash,
+      username: 'tiantian',
       nickname: '天天',
       locale: 'zh-CN',
       wallet: { create: {} },

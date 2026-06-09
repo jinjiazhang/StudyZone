@@ -54,7 +54,7 @@ export default function Profile() {
             </View>
             <View style={{ flex: 1 }}>
               <Text style={styles.nickname}>{me?.nickname ?? '学习者'}</Text>
-              <Text style={styles.email}>{me?.email}</Text>
+              <Text style={styles.email}>{me?.username ? `@${me.username}` : me?.email}</Text>
             </View>
             <Pressable
               onPress={() => router.push('/settings')}

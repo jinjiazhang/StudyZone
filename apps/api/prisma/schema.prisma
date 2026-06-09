@@ -18,6 +18,10 @@ datasource db {
 model User {
   id               String   @id @default(cuid())
   email            String   @unique
+  // Unique handle for public discovery / @mentions. Case-insensitive uniqueness
+  // is enforced by a raw `lower("username")` functional index (see migrations),
+  // NOT by Prisma's @unique — Prisma cannot express a functional index.
+  username         String
   passwordHash     String
   nickname         String
   avatarUrl        String?
@@ -39,8 +43,8 @@ model User {
   xpLedger          XPLedger[]
   achievements      UserAchievement[]
   questProgress     UserQuestProgress[]
-  friendshipsA      Friendship[]         @relation("friendshipUser")
-  friendshipsB      Friendship[]         @relation("friendshipFriend")
+  following         Follow[]             @relation("follower")
+  followers         Follow[]             @relation("followee")
   leagueMemberships LeaderboardEntry[]
   leagueHistory     LeagueHistory[]
   subscriptions     Subscription[]
@@ -355,18 +359,19 @@ model UserQuestProgress {
 // Social
 // =============================================================================
 
-model Friendship {
-  user      User     @relation("friendshipUser", fields: [userId], references: [id], onDelete: Cascade)
-  userId    String
-  friend    User     @relation("friendshipFriend", fields: [friendId], references: [id], onDelete: Cascade)
-  friendId  String
-  status    String   @default("pending") // pending | accepted | blocked
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+// Asymmetric "follow" edge (Duolingo-style): follower follows followee. No
+// approval step. Mutual follows are simply two rows. Idempotent via the
+// composite primary key.
+model Follow {
+  follower   User     @relation("follower", fields: [followerId], references: [id], onDelete: Cascade)
+  followerId String
+  followee   User     @relation("followee", fields: [followeeId], references: [id], onDelete: Cascade)
+  followeeId String
+  createdAt  DateTime @default(now())
 
-  @@id([userId, friendId])
-  @@index([friendId])
-  @@index([status])
+  @@id([followerId, followeeId])
+  @@index([followeeId]) // "who follows me" + follower counts
+  @@index([followerId]) // following list ordering
 }
 
 model LeagueGroup {

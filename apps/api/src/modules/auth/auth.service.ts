@@ -11,6 +11,7 @@ import { createHash, randomBytes } from 'crypto';
 
 import { PrismaService } from '../../infra/prisma.service';
 import { RegisterDto, LoginDto } from './auth.dto';
+import { resolveUniqueUsername } from './username.util';
 
 @Injectable()
 export class AuthService {
@@ -25,10 +26,13 @@ export class AuthService {
     const existing = await this.prisma.user.findUnique({ where: { email: dto.email } });
     if (existing) throw new ConflictException({ code: 'email_taken', message: '邮箱已注册' });
 
+    const username = await this.resolveUsername(dto.username, dto.nickname);
+
     const passwordHash = await argon2.hash(dto.password);
     const user = await this.prisma.user.create({
       data: {
         email: dto.email,
+        username,
         passwordHash,
         nickname: dto.nickname,
         locale: dto.locale ?? 'zh-CN',
@@ -84,6 +88,23 @@ export class AuthService {
     return { user: publicUser(record.user), tokens };
   }
 
+  /** Validate a requested username, or auto-generate a unique one from nickname. */
+  private async resolveUsername(requested: string | undefined, nickname: string): Promise<string> {
+    const isTaken = async (candidate: string) =>
+      !!(await this.prisma.user.findFirst({
+        where: { username: { equals: candidate, mode: 'insensitive' } },
+        select: { id: true },
+      }));
+
+    if (requested) {
+      if (await isTaken(requested)) {
+        throw new ConflictException({ code: 'username_taken', message: '该用户名已被占用' });
+      }
+      return requested;
+    }
+    return resolveUniqueUsername(nickname, isTaken);
+  }
+
   private async issueTokens(userId: string, email: string) {
     const accessTtl = Number(this.config.get('JWT_ACCESS_TTL', 900));
     const refreshTtl = Number(this.config.get('JWT_REFRESH_TTL', 2592000));
@@ -115,9 +136,17 @@ function cryptoRandomId() {
   return randomBytes(12).toString('base64url');
 }
 
-function publicUser(u: { id: string; nickname: string; avatarUrl: string | null; locale: string; createdAt: Date }) {
+function publicUser(u: {
+  id: string;
+  username: string;
+  nickname: string;
+  avatarUrl: string | null;
+  locale: string;
+  createdAt: Date;
+}) {
   return {
     id: u.id,
+    username: u.username,
     nickname: u.nickname,
     avatarUrl: u.avatarUrl,
     locale: u.locale,

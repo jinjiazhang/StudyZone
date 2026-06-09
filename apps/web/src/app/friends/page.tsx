@@ -2,229 +2,135 @@
 
 import type { JSX } from 'react';
 import { useState } from 'react';
+import Link from 'next/link';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { Flame, Sparkles, UserPlus, Check, X, Trash2, Clock } from 'lucide-react';
+import { Flame, Sparkles, Search, UserPlus, UserCheck } from 'lucide-react';
+import type { FollowUserDto, UserPublic, UserSearchResultDto } from '@studyzone/shared-types';
 import { AppShell } from '@/components/AppShell';
 import { Avatar } from '@/components/Avatar';
 import { SkeletonRows } from '@/components/ui/Skeleton';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
-import { ApiClientError } from '@studyzone/api-client';
+import { useDebouncedValue } from '@/lib/use-debounced-value';
 import { api } from '@/lib/api';
 
-const ERROR_LABEL: Record<string, string> = {
-  user_not_found: '找不到这个邮箱对应的用户',
-  self_friend: '不能添加自己为好友',
-  already_friends: '你们已经是好友啦',
-  request_not_found: '请求不存在或已处理',
-};
+type Tab = 'following' | 'followers';
 
 export default function FriendsPage(): JSX.Element {
   const qc = useQueryClient();
-  const [email, setEmail] = useState('');
-  const [feedback, setFeedback] = useState<{ kind: 'ok' | 'err'; text: string } | null>(null);
-
-  const friendsQuery = useQuery({ queryKey: ['friends'], queryFn: () => api.friends() });
-  const requestsQuery = useQuery({
-    queryKey: ['friend-requests'],
-    queryFn: () => api.friendRequests(),
-  });
+  const [term, setTerm] = useState('');
+  const [tab, setTab] = useState<Tab>('following');
+  const debounced = useDebouncedValue(term.trim(), 300);
 
   const invalidate = () => {
-    qc.invalidateQueries({ queryKey: ['friends'] });
-    qc.invalidateQueries({ queryKey: ['friend-requests'] });
+    qc.invalidateQueries({ queryKey: ['following'] });
+    qc.invalidateQueries({ queryKey: ['followers'] });
+    qc.invalidateQueries({ queryKey: ['user-search'] });
+    qc.invalidateQueries({ queryKey: ['me'] });
   };
 
-  const sendMutation = useMutation({
-    mutationFn: (e: string) => api.sendFriendRequest(e),
-    onSuccess: () => {
-      setEmail('');
-      setFeedback({ kind: 'ok', text: '已发送好友请求！' });
-      invalidate();
-    },
-    onError: (err) => {
-      const code = err instanceof ApiClientError ? (err.body as { code?: string })?.code : undefined;
-      setFeedback({ kind: 'err', text: (code && ERROR_LABEL[code]) || '发送失败，请重试' });
-    },
+  const followMutation = useMutation({
+    mutationFn: (id: string) => api.followUser(id),
+    onSuccess: invalidate,
+  });
+  const unfollowMutation = useMutation({
+    mutationFn: (id: string) => api.unfollowUser(id),
+    onSuccess: invalidate,
+  });
+  const toggle = (id: string, isFollowing: boolean) =>
+    isFollowing ? unfollowMutation.mutate(id) : followMutation.mutate(id);
+  const pending = followMutation.isPending || unfollowMutation.isPending;
+
+  const searchQuery = useQuery({
+    queryKey: ['user-search', debounced],
+    queryFn: () => api.searchUsers(debounced),
+    enabled: debounced.length > 0,
   });
 
-  const acceptMutation = useMutation({
-    mutationFn: (id: string) => api.acceptFriendRequest(id),
-    onSuccess: invalidate,
+  const followingQuery = useQuery({
+    queryKey: ['following'],
+    queryFn: () => api.listFollowing(),
   });
-  const declineMutation = useMutation({
-    mutationFn: (id: string) => api.declineFriendRequest(id),
-    onSuccess: invalidate,
-  });
-  const removeMutation = useMutation({
-    mutationFn: (id: string) => api.removeFriend(id),
-    onSuccess: invalidate,
+  const followersQuery = useQuery({
+    queryKey: ['followers'],
+    queryFn: () => api.listFollowers(),
   });
 
-  const friends = friendsQuery.data?.items ?? [];
-  const incoming = requestsQuery.data?.incoming ?? [];
-  const outgoing = requestsQuery.data?.outgoing ?? [];
+  const results = searchQuery.data?.items ?? [];
+  const activeQuery = tab === 'following' ? followingQuery : followersQuery;
+  const rows = activeQuery.data?.items ?? [];
 
   return (
     <AppShell>
       <div className="flex flex-col gap-6">
         <header className="rounded-3xl border-b-[6px] border-black/15 bg-sz-rose p-6 text-white">
           <div className="text-xs font-heavy uppercase tracking-widest opacity-80">社交</div>
-          <div className="text-2xl font-heavy">好友</div>
-          <div className="mt-1 text-sm font-bold opacity-90">
-            和朋友一起学习，互相比拼本周 XP！
-          </div>
+          <div className="text-2xl font-heavy">关注</div>
+          <div className="mt-1 text-sm font-bold opacity-90">关注一起学习的伙伴，看他们的本周 XP！</div>
         </header>
 
-        {/* Add friend */}
+        {/* Search */}
         <section className="rounded-2xl border-2 border-sz-line bg-white p-5">
           <h2 className="mb-3 flex items-center gap-2 text-lg font-heavy text-sz-ink">
-            <UserPlus className="h-5 w-5 text-sz-rose-dark" /> 添加好友
+            <Search className="h-5 w-5 text-sz-rose-dark" /> 找人
           </h2>
-          <form
-            className="flex flex-col gap-3 sm:flex-row"
-            onSubmit={(e) => {
-              e.preventDefault();
-              setFeedback(null);
-              if (email.trim()) sendMutation.mutate(email.trim());
-            }}
-          >
+          <div className="flex items-center gap-2 rounded-xl border-2 border-sz-line px-4 py-3 focus-within:border-sz-rose">
+            <Search className="h-4 w-4 text-sz-ink-soft" />
             <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="输入对方的注册邮箱"
-              className="flex-1 rounded-xl border-2 border-sz-line px-4 py-3 font-bold text-sz-ink outline-none focus:border-sz-rose"
+              value={term}
+              onChange={(e) => setTerm(e.target.value)}
+              placeholder="按用户名或昵称搜索"
+              className="flex-1 bg-transparent font-bold text-sz-ink outline-none placeholder:text-sz-ink-soft"
             />
-            <button
-              type="submit"
-              disabled={sendMutation.isPending}
-              className="rounded-xl border-b-4 border-black/15 bg-sz-rose px-6 py-3 font-heavy text-white transition active:translate-y-0.5 disabled:opacity-60"
-            >
-              {sendMutation.isPending ? '发送中…' : '发送请求'}
-            </button>
-          </form>
-          {feedback && (
-            <div
-              className={
-                'mt-3 text-sm font-bold ' +
-                (feedback.kind === 'ok' ? 'text-sz-green-dark' : 'text-sz-rose-dark')
-              }
-            >
-              {feedback.text}
+          </div>
+
+          {debounced.length > 0 && (
+            <div className="mt-3">
+              {searchQuery.isLoading ? (
+                <SkeletonRows rows={3} />
+              ) : searchQuery.isError ? (
+                <ErrorState onRetry={() => searchQuery.refetch()} />
+              ) : results.length === 0 ? (
+                <EmptyState title="没有找到用户" description="换个用户名或昵称再试试。" />
+              ) : (
+                <ul className="flex flex-col gap-2">
+                  {results.map((r) => (
+                    <SearchRow key={r.user.id} result={r} pending={pending} onToggle={toggle} />
+                  ))}
+                </ul>
+              )}
             </div>
           )}
         </section>
 
-        {/* Incoming requests */}
-        {incoming.length > 0 && (
-          <section className="flex flex-col gap-2">
-            <h2 className="text-lg font-heavy text-sz-ink">收到的请求 ({incoming.length})</h2>
-            <ul className="flex flex-col gap-2">
-              {incoming.map((r) => (
-                <li
-                  key={r.user.id}
-                  className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
-                >
-                  <Avatar user={r.user} />
-                  <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
-                  <button
-                    onClick={() => acceptMutation.mutate(r.user.id)}
-                    disabled={acceptMutation.isPending}
-                    className="flex h-9 w-9 items-center justify-center rounded-full bg-sz-green text-white transition active:scale-95"
-                    aria-label="接受"
-                  >
-                    <Check className="h-5 w-5" />
-                  </button>
-                  <button
-                    onClick={() => declineMutation.mutate(r.user.id)}
-                    disabled={declineMutation.isPending}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-sz-line text-sz-ink-soft transition active:scale-95"
-                    aria-label="拒绝"
-                  >
-                    <X className="h-5 w-5" />
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
+        {/* Following / Followers tabs */}
+        <section className="flex flex-col gap-3">
+          <div className="flex gap-2">
+            <TabButton active={tab === 'following'} onClick={() => setTab('following')}>
+              关注{followingQuery.data ? ` (${followingQuery.data.items.length})` : ''}
+            </TabButton>
+            <TabButton active={tab === 'followers'} onClick={() => setTab('followers')}>
+              粉丝{followersQuery.data ? ` (${followersQuery.data.items.length})` : ''}
+            </TabButton>
+          </div>
 
-        {/* Outgoing requests */}
-        {outgoing.length > 0 && (
-          <section className="flex flex-col gap-2">
-            <h2 className="text-lg font-heavy text-sz-ink">已发送 ({outgoing.length})</h2>
-            <ul className="flex flex-col gap-2">
-              {outgoing.map((r) => (
-                <li
-                  key={r.user.id}
-                  className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
-                >
-                  <Avatar user={r.user} />
-                  <div className="flex-1 font-heavy text-sz-ink">{r.user.nickname}</div>
-                  <span className="flex items-center gap-1 text-xs font-heavy text-sz-ink-soft">
-                    <Clock className="h-4 w-4" /> 等待确认
-                  </span>
-                  <button
-                    onClick={() => removeMutation.mutate(r.user.id)}
-                    disabled={removeMutation.isPending}
-                    className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-sz-line text-sz-ink-soft transition active:scale-95"
-                    aria-label="取消"
-                  >
-                    <X className="h-5 w-5" />
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {/* Friend list */}
-        <section className="flex flex-col gap-2">
-          <h2 className="text-lg font-heavy text-sz-ink">
-            我的好友{!friendsQuery.isLoading && !friendsQuery.isError ? ` (${friends.length})` : ''}
-          </h2>
-          {friendsQuery.isLoading ? (
+          {activeQuery.isLoading ? (
             <SkeletonRows rows={4} />
-          ) : friendsQuery.isError ? (
-            <ErrorState onRetry={() => friendsQuery.refetch()} />
-          ) : friends.length === 0 ? (
+          ) : activeQuery.isError ? (
+            <ErrorState onRetry={() => activeQuery.refetch()} />
+          ) : rows.length === 0 ? (
             <EmptyState
-              title="还没有好友"
-              description="用上面的邮箱邀请框，加一个一起学习的伙伴吧！"
+              title={tab === 'following' ? '还没有关注任何人' : '还没有粉丝'}
+              description={
+                tab === 'following'
+                  ? '用上面的搜索框，关注一个一起学习的伙伴吧！'
+                  : '多和朋友分享你的主页，让他们来关注你。'
+              }
             />
           ) : (
             <ul className="flex flex-col gap-2">
-              {friends.map((f) => (
-                <li
-                  key={f.user.id}
-                  className="group flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3"
-                >
-                  <Avatar user={f.user} />
-                  <div className="flex-1">
-                    <div className="font-heavy text-sz-ink">{f.user.nickname}</div>
-                    <div className="flex items-center gap-3 text-xs font-bold text-sz-ink-soft">
-                      <span className="flex items-center gap-1">
-                        <Flame className="h-3.5 w-3.5 text-sz-orange" /> {f.currentStreak}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Sparkles className="h-3.5 w-3.5 text-sz-gold" /> {f.weeklyXp} XP（本周）
-                      </span>
-                    </div>
-                  </div>
-                  <button
-                    onClick={() => {
-                      if (confirm(`确定删除好友「${f.user.nickname}」吗？`)) {
-                        removeMutation.mutate(f.user.id);
-                      }
-                    }}
-                    className="flex h-9 w-9 items-center justify-center rounded-full text-sz-ink-soft opacity-0 transition hover:text-sz-rose-dark group-hover:opacity-100"
-                    aria-label="删除好友"
-                  >
-                    <Trash2 className="h-4 w-4" />
-                  </button>
-                </li>
+              {rows.map((f) => (
+                <FollowRow key={f.user.id} row={f} pending={pending} onToggle={toggle} />
               ))}
             </ul>
           )}
@@ -234,3 +140,131 @@ export default function FriendsPage(): JSX.Element {
   );
 }
 
+function SearchRow({
+  result,
+  pending,
+  onToggle,
+}: {
+  result: UserSearchResultDto;
+  pending: boolean;
+  onToggle: (id: string, isFollowing: boolean) => void;
+}): JSX.Element {
+  return (
+    <li className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3">
+      <UserCell user={result.user} subtitle={`@${result.user.username}`} />
+      <FollowButton
+        isFollowing={result.isFollowing}
+        pending={pending}
+        onClick={() => onToggle(result.user.id, result.isFollowing)}
+      />
+    </li>
+  );
+}
+
+function FollowRow({
+  row,
+  pending,
+  onToggle,
+}: {
+  row: FollowUserDto;
+  pending: boolean;
+  onToggle: (id: string, isFollowing: boolean) => void;
+}): JSX.Element {
+  return (
+    <li className="flex items-center gap-3 rounded-2xl border-2 border-sz-line bg-white px-4 py-3">
+      <UserCell
+        user={row.user}
+        stats={
+          <div className="flex items-center gap-3 text-xs font-bold text-sz-ink-soft">
+            <span className="flex items-center gap-1">
+              <Flame className="h-3.5 w-3.5 text-sz-orange" /> {row.currentStreak}
+            </span>
+            <span className="flex items-center gap-1">
+              <Sparkles className="h-3.5 w-3.5 text-sz-gold" /> {row.weeklyXp} XP（本周）
+            </span>
+          </div>
+        }
+      />
+      <FollowButton
+        isFollowing={row.isFollowing}
+        pending={pending}
+        onClick={() => onToggle(row.user.id, row.isFollowing)}
+      />
+    </li>
+  );
+}
+
+function UserCell({
+  user,
+  subtitle,
+  stats,
+}: {
+  user: UserPublic;
+  subtitle?: string;
+  stats?: JSX.Element;
+}): JSX.Element {
+  return (
+    <Link href={`/users/${user.id}`} className="flex flex-1 items-center gap-3">
+      <Avatar user={user} />
+      <div className="min-w-0">
+        <div className="truncate font-heavy text-sz-ink">{user.nickname}</div>
+        {stats ?? <div className="truncate text-xs font-bold text-sz-ink-soft">{subtitle}</div>}
+      </div>
+    </Link>
+  );
+}
+
+function FollowButton({
+  isFollowing,
+  pending,
+  onClick,
+}: {
+  isFollowing: boolean;
+  pending: boolean;
+  onClick: () => void;
+}): JSX.Element {
+  return (
+    <button
+      onClick={onClick}
+      disabled={pending}
+      className={
+        'flex shrink-0 items-center gap-1.5 rounded-xl px-4 py-2 text-sm font-heavy transition active:translate-y-0.5 disabled:opacity-60 ' +
+        (isFollowing
+          ? 'border-2 border-sz-line text-sz-ink-soft'
+          : 'border-b-4 border-black/15 bg-sz-rose text-white')
+      }
+    >
+      {isFollowing ? (
+        <>
+          <UserCheck className="h-4 w-4" /> 已关注
+        </>
+      ) : (
+        <>
+          <UserPlus className="h-4 w-4" /> 关注
+        </>
+      )}
+    </button>
+  );
+}
+
+function TabButton({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}): JSX.Element {
+  return (
+    <button
+      onClick={onClick}
+      className={
+        'rounded-xl px-4 py-2 text-sm font-heavy transition ' +
+        (active ? 'bg-sz-ink text-white' : 'border-2 border-sz-line text-sz-ink-soft')
+      }
+    >
+      {children}
+    </button>
+  );
+}
