@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import {
   ScrollView,
   View,
@@ -56,6 +56,34 @@ export default function Course() {
     queryFn: () => api.me(),
     enabled: !!accessToken,
   });
+  const { data: enrollments } = useQuery({
+    queryKey: ['enrollments'],
+    queryFn: () => api.listMyEnrollments(),
+    enabled: !!accessToken,
+  });
+  const currentUnitId = enrollments?.find((e) => e.courseId === id)?.currentUnitId ?? null;
+
+  // Reopen the course at the unit the user was last studying. Falls back to the
+  // first unit that still has an incomplete lesson. Runs once per mount, after
+  // the target unit's header has reported its scroll offset via onLayout.
+  const scrollRef = useRef<ScrollView>(null);
+  const unitOffsets = useRef<Map<string, number>>(new Map());
+  const hasScrolledRef = useRef(false);
+  const maybeScrollToCurrentUnit = useCallback(() => {
+    if (hasScrolledRef.current || !tree || tree.length === 0) return;
+    const targetUnitId =
+      (currentUnitId && tree.some((u) => u.unitId === currentUnitId) ? currentUnitId : null) ??
+      tree.find((u) => u.lessons.some((l) => !l.completed))?.unitId ??
+      tree[0]?.unitId;
+    if (!targetUnitId) return;
+    const y = unitOffsets.current.get(targetUnitId);
+    if (y == null) return;
+    scrollRef.current?.scrollTo({ y: Math.max(0, y - 8), animated: false });
+    hasScrolledRef.current = true;
+  }, [tree, currentUnitId]);
+  useEffect(() => {
+    maybeScrollToCurrentUnit();
+  }, [maybeScrollToCurrentUnit]);
 
   const showLoading = !authHydrated || (Boolean(accessToken) && (isLoading || isFetching) && !tree);
 
@@ -72,17 +100,20 @@ export default function Course() {
       />
 
       <ScrollView
+        ref={scrollRef}
         showsVerticalScrollIndicator={false}
         stickyHeaderIndices={tree?.map((_, unitIdx) => unitIdx * 2) ?? []}
         contentContainerStyle={styles.scroll}
       >
         {tree?.flatMap((unit, unitIdx) => {
-          const unitLocked = unit.lessons.every((lesson) => !lesson.unlocked);
-
           return [
             <View
               key={`${unit.unitId}-header`}
-              style={[styles.stickyUnitHeader, unitLocked && styles.unitLocked]}
+              style={styles.stickyUnitHeader}
+              onLayout={(event) => {
+                unitOffsets.current.set(unit.unitId, event.nativeEvent.layout.y);
+                maybeScrollToCurrentUnit();
+              }}
             >
               <View
                 style={[
@@ -103,10 +134,7 @@ export default function Course() {
               </View>
             </View>,
 
-            <View
-              key={`${unit.unitId}-lessons`}
-              style={[styles.unitLessons, unitLocked && styles.unitLocked]}
-            >
+            <View key={`${unit.unitId}-lessons`} style={styles.unitLessons}>
               <View style={styles.lessonList}>
                 {unit.lessons.map((lesson, lessonIdx) => {
                   const offset =

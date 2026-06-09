@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
@@ -29,6 +29,31 @@ export default function CoursePage() {
   });
   const tree = treeQuery.data;
 
+  // Reopen the course at the unit the user was last studying. Falls back to the
+  // first unit that still has an incomplete lesson.
+  const enrollmentsQuery = useQuery({
+    queryKey: ['enrollments'],
+    queryFn: () => api.listMyEnrollments(),
+  });
+  const currentUnitId =
+    enrollmentsQuery.data?.find((e) => e.courseId === courseId)?.currentUnitId ?? null;
+
+  const sectionRefs = useRef<Map<string, HTMLElement>>(new Map());
+  const hasScrolledRef = useRef(false);
+  useEffect(() => {
+    if (hasScrolledRef.current) return;
+    if (!tree || tree.length === 0 || enrollmentsQuery.isLoading) return;
+    const targetUnitId =
+      (currentUnitId && tree.some((u) => u.unitId === currentUnitId) ? currentUnitId : null) ??
+      tree.find((u) => u.lessons.some((l) => !l.completed))?.unitId ??
+      tree[0]?.unitId;
+    const el = targetUnitId ? sectionRefs.current.get(targetUnitId) : null;
+    if (el) {
+      el.scrollIntoView({ block: 'start' });
+      hasScrolledRef.current = true;
+    }
+  }, [tree, currentUnitId, enrollmentsQuery.isLoading]);
+
   if (treeQuery.isLoading) {
     return (
       <AppShell>
@@ -56,10 +81,15 @@ export default function CoursePage() {
       <div className="mx-auto flex max-w-3xl flex-col gap-12">
         {tree.map((unit, unitIdx) => {
           const completedCount = unit.lessons.filter((lesson) => lesson.completed).length;
-          const unitLocked = unit.lessons.every((lesson) => !lesson.unlocked);
 
           return (
-            <section key={unit.unitId} className={clsx(unitLocked && 'opacity-70')}>
+            <section
+              key={unit.unitId}
+              ref={(el) => {
+                if (el) sectionRefs.current.set(unit.unitId, el);
+                else sectionRefs.current.delete(unit.unitId);
+              }}
+            >
               <div className="sticky top-0 z-10 -mx-1 bg-white px-1 pb-3 pt-2">
               <header
                 className="relative overflow-hidden rounded-3xl border-b-[6px] border-black/15 p-5 text-white"

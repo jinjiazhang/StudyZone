@@ -64,6 +64,12 @@ export class LearningService {
       },
     });
 
+    // Remember which unit the user is studying so the course can reopen here.
+    await this.prisma.enrollment.updateMany({
+      where: { userId, courseId: lesson.unit.courseId },
+      data: { currentUnitId: lesson.unit.id, lastActiveAt: new Date() },
+    });
+
     return {
       sessionId: session.id,
       lessonId: lesson.id,
@@ -291,7 +297,11 @@ export class LearningService {
       });
       await tx.enrollment.updateMany({
         where: { userId, courseId: { in: courseIds } },
-        data: { currentLessonId: session.lesson.id, lastActiveAt: new Date() },
+        data: {
+          currentLessonId: session.lesson.id,
+          currentUnitId: session.lesson.unitId,
+          lastActiveAt: new Date(),
+        },
       });
     });
 

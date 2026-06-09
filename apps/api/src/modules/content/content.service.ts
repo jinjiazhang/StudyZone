@@ -26,6 +26,7 @@ export class ContentService {
       where: { userId },
       select: {
         courseId: true,
+        currentUnitId: true,
         enrolledAt: true,
         lastActiveAt: true,
         course: { select: { subjectId: true } },
@@ -35,6 +36,7 @@ export class ContentService {
     return rows.map((r) => ({
       courseId: r.courseId,
       subjectId: r.course.subjectId,
+      currentUnitId: r.currentUnitId,
       enrolledAt: r.enrolledAt.toISOString(),
       lastActiveAt: r.lastActiveAt.toISOString(),
     }));
@@ -89,15 +91,15 @@ export class ContentService {
     });
     const progressMap = new Map(progress.map((p) => [p.lessonId, p]));
 
-    let previousUnitsCompleted = true;
-
+    // Each unit is its own independent chain: every unit is unlocked, and within a
+    // unit lessons unlock sequentially (first lesson always open, next unlocks once
+    // the previous one is completed). Progress in one unit never gates another.
     return course.units.map((unit) => {
-      const unitUnlocked = previousUnitsCompleted;
       let previousLessonsCompleted = true;
       const lessons = unit.lessons.map((lesson, idx) => {
         const p = progressMap.get(lesson.id);
         const completed = p?.completed ?? false;
-        const unlocked = unitUnlocked && (idx === 0 || previousLessonsCompleted);
+        const unlocked = idx === 0 || previousLessonsCompleted;
         if (!completed) previousLessonsCompleted = false;
 
         return {
@@ -110,10 +112,6 @@ export class ContentService {
           exerciseCount: lesson.exerciseCount,
         };
       });
-      const unitCompleted =
-        unit.lessons.length > 0 &&
-        unit.lessons.every((lesson) => progressMap.get(lesson.id)?.completed ?? false);
-      previousUnitsCompleted = previousUnitsCompleted && unitCompleted;
 
       return {
         unitId: unit.id,

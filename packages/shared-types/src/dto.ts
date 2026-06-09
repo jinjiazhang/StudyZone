@@ -88,13 +88,7 @@ export interface CourseDto {
 export interface EnrollmentDto {
   courseId: string;
   subjectId: string;
-  enrolledAt: string;
-  lastActiveAt: string;
-}
-
-export interface EnrollmentDto {
-  courseId: string;
-  subjectId: string;
+  currentUnitId: string | null;
   enrolledAt: string;
   lastActiveAt: string;
 }

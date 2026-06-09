@@ -5,7 +5,7 @@ import { ContentService } from './content.service';
 import { PrismaService } from '../../infra/prisma.service';
 
 describe('ContentService admin content', () => {
-  it('locks later units until all lessons in the previous unit are completed', async () => {
+  it('unlocks the first lesson of every unit regardless of other units progress', async () => {
     const prisma = createPrismaMock();
     prisma.course.findUnique.mockResolvedValue({
       id: 'course-1',
@@ -36,11 +36,13 @@ describe('ContentService admin content', () => {
     const service = new ContentService(prisma as unknown as PrismaService);
     const tree = await service.getCourseTree('user-1', 'course-1');
 
+    // unit-1: lesson-1 done so lesson-2 opens; unit-2's first lesson is always
+    // open even though unit-1 is not fully completed — units are independent.
     expect(tree[0].lessons.map((lesson) => lesson.unlocked)).toEqual([true, true]);
-    expect(tree[1].lessons.map((lesson) => lesson.unlocked)).toEqual([false]);
+    expect(tree[1].lessons.map((lesson) => lesson.unlocked)).toEqual([true]);
   });
 
-  it('unlocks the next unit after every lesson in the previous unit is completed', async () => {
+  it('keeps lessons sequential within each unit, independent of other units', async () => {
     const prisma = createPrismaMock();
     prisma.course.findUnique.mockResolvedValue({
       id: 'course-1',
@@ -60,10 +62,14 @@ describe('ContentService admin content', () => {
           orderIndex: 1,
           title: 'Next',
           themeColor: '#58CC02',
-          lessons: [{ id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 }],
+          lessons: [
+            { id: 'lesson-3', orderIndex: 0, title: 'Three', icon: '3', exerciseCount: 1 },
+            { id: 'lesson-4', orderIndex: 1, title: 'Four', icon: '4', exerciseCount: 1 },
+          ],
         },
       ],
     });
+    // unit-1 fully completed, but unit-2's own first lesson is not done yet.
     prisma.userLessonProgress.findMany.mockResolvedValue([
       { lessonId: 'lesson-1', completed: true },
       { lessonId: 'lesson-2', completed: true },
@@ -72,7 +78,9 @@ describe('ContentService admin content', () => {
     const service = new ContentService(prisma as unknown as PrismaService);
     const tree = await service.getCourseTree('user-1', 'course-1');
 
-    expect(tree[1].lessons[0].unlocked).toBe(true);
+    // unit-2's second lesson stays locked until unit-2's first lesson is done,
+    // and is unaffected by unit-1 being complete.
+    expect(tree[1].lessons.map((lesson) => lesson.unlocked)).toEqual([true, false]);
   });
 
   it('returns unit map decorations in the course tree', async () => {
@@ -208,12 +216,14 @@ describe('ContentService admin content', () => {
     prisma.enrollment.findMany.mockResolvedValue([
       {
         courseId: 'course-2',
+        currentUnitId: 'unit-2',
         enrolledAt: new Date('2024-01-02T00:00:00Z'),
         lastActiveAt: new Date('2024-01-10T00:00:00Z'),
         course: { subjectId: 'subject-math' },
       },
       {
         courseId: 'course-1',
+        currentUnitId: null,
         enrolledAt: new Date('2024-01-01T00:00:00Z'),
         lastActiveAt: new Date('2024-01-05T00:00:00Z'),
         course: { subjectId: 'subject-english' },
@@ -233,12 +243,14 @@ describe('ContentService admin content', () => {
       {
         courseId: 'course-2',
         subjectId: 'subject-math',
+        currentUnitId: 'unit-2',
         enrolledAt: '2024-01-02T00:00:00.000Z',
         lastActiveAt: '2024-01-10T00:00:00.000Z',
       },
       {
         courseId: 'course-1',
         subjectId: 'subject-english',
+        currentUnitId: null,
         enrolledAt: '2024-01-01T00:00:00.000Z',
         lastActiveAt: '2024-01-05T00:00:00.000Z',
       },
