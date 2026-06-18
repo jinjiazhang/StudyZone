@@ -111,10 +111,10 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "睡眠达到10小时及以上的人数：10小时25人、11小时3人、12小时1人，一共有多少人？"
+        "statement": "睡眠达到10小时及以上的人数：10小时23人、11小时3人、12小时1人，一共有多少人？"
       },
       "answer": {
-        "value": 29,
+        "value": 27,
         "tolerance": 0
       },
       "difficulty": 1
@@ -122,10 +122,10 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "睡眠少于10小时的人数：8小时4人、9小时9人，一共有多少人？"
+        "statement": "睡眠少于10小时的人数：8小时4人、9小时11人，一共有多少人？"
       },
       "answer": {
-        "value": 13,
+        "value": 15,
         "tolerance": 0
       },
       "difficulty": 1
@@ -133,8 +133,8 @@
     {
       "type": "compare_input",
       "prompt": {
-        "left": "达到10小时及以上29人",
-        "right": "少于10小时13人"
+        "left": "达到10小时及以上27人",
+        "right": "少于10小时15人"
       },
       "answer": {
         "operator": ">"
@@ -190,8 +190,8 @@
       },
       "answer": {
         "values": [
-          16,
-          21
+          12,
+          19
         ],
         "tolerances": [
           0,

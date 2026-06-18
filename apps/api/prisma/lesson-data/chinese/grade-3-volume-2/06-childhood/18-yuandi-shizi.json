@@ -1,0 +1,264 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "旭",
+        "hint": "“旭日”的“旭”",
+        "narrationText": "选出“旭”的正确读音。",
+        "options": [
+          "xǔ",
+          "xù",
+          "xū",
+          "yù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "屿",
+        "hint": "“岛屿”的“屿”",
+        "narrationText": "选出“屿”的正确读音。",
+        "options": [
+          "yú",
+          "yù",
+          "xǔ",
+          "yǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舰",
+        "hint": "“军舰”的“舰”",
+        "narrationText": "选出“舰”的正确读音。",
+        "options": [
+          "jiàn",
+          "jiān",
+          "xiàn",
+          "qiàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "锚",
+        "hint": "“铁锚”的“锚”",
+        "narrationText": "选出“锚”的正确读音。",
+        "options": [
+          "miáo",
+          "mǎo",
+          "máo",
+          "mào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瞭",
+        "hint": "“瞭望”的“瞭”",
+        "narrationText": "选出“瞭”的正确读音。",
+        "options": [
+          "liáo",
+          "liǎo",
+          "liào",
+          "liū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "巡",
+        "hint": "“巡航”的“巡”",
+        "narrationText": "选出“巡”的正确读音。",
+        "options": [
+          "xún",
+          "xùn",
+          "xūn",
+          "xuán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "军舰"
+          },
+          {
+            "id": "l1",
+            "text": "旭日"
+          },
+          {
+            "id": "l4",
+            "text": "铁锚"
+          },
+          {
+            "id": "l2",
+            "text": "岛屿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "海中或江湖中的陆地"
+          },
+          {
+            "id": "r4",
+            "text": "使船停稳的器具"
+          },
+          {
+            "id": "r1",
+            "text": "早晨初升的太阳"
+          },
+          {
+            "id": "r3",
+            "text": "海军使用的舰船"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "巡航"
+          },
+          {
+            "id": "l2",
+            "text": "浪花"
+          },
+          {
+            "id": "l1",
+            "text": "海岸"
+          },
+          {
+            "id": "l3",
+            "text": "瞭望"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "登高或远望观察"
+          },
+          {
+            "id": "r1",
+            "text": "海边的陆地"
+          },
+          {
+            "id": "r4",
+            "text": "按路线航行巡视"
+          },
+          {
+            "id": "r2",
+            "text": "波浪激起的水花"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "航",
+        "tokens": [
+          "花",
+          "巡",
+          "舰",
+          "远",
+          "岸",
+          "空"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“航”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "巡",
+            "远",
+            "空"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "海",
+        "tokens": [
+          "桌",
+          "岸",
+          "笔",
+          "浪",
+          "雀",
+          "岛"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“海”有关或组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "岸",
+            "浪",
+            "岛"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

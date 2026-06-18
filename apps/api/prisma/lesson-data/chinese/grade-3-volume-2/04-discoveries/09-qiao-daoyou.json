@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍赵州桥时，“世界闻名、雄伟、创举、美观”最适合用在哪里？",
+        "options": [
+          "介绍造纸流程",
+          "导游介绍赵州桥",
+          "背诵《元日》",
+          "写端午节习俗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把导游介绍句排好。",
+        "tokens": [
+          "是",
+          "石拱桥",
+          "赵州桥",
+          "世界闻名的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "赵州桥",
+          "是",
+          "世界闻名的",
+          "石拱桥"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把介绍桥美观的句子排好。",
+        "tokens": [
+          "精美的图案",
+          "栏板上",
+          "雕刻着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "栏板上",
+          "雕刻着",
+          "精美的图案"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这座桥不但坚固，而且美观。”在课文中起什么作用？",
+        "options": [
+          "写节日习俗",
+          "说明造纸流程",
+          "承上启下",
+          "点明诗人思亲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪句围绕“美观”写得最清楚？",
+        "options": [
+          "桥很长。",
+          "桥在河上。",
+          "桥是石头做的。",
+          "栏板上有龙、飞龙和双龙戏珠等图案，像活了一样。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "介绍景物时，可以先说总体特点，再用具体细节说明。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "导游介绍赵州桥时，只说“它很好”就已经很清楚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "世界闻名"
+          },
+          {
+            "id": "l_1",
+            "text": "雄伟"
+          },
+          {
+            "id": "l_2",
+            "text": "创举"
+          },
+          {
+            "id": "l_3",
+            "text": "美观"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "从前没有过的重要做法"
+          },
+          {
+            "id": "r_0",
+            "text": "名声传到世界各地"
+          },
+          {
+            "id": "r_3",
+            "text": "看起来漂亮、有艺术感"
+          },
+          {
+            "id": "r_1",
+            "text": "气势大、壮观"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "导游的话",
+        "passage": "游客们，大家好！眼前这座桥就是赵州桥，又叫安济桥。它已有一千四百多年历史，全部用石头砌成。桥面两侧的石栏上雕刻着各种姿态的龙，十分精美。赵州桥体现了劳动人民的智慧和才干。",
+        "questions": [
+          {
+            "question": "这段导游词没有介绍哪一项？",
+            "options": [
+              "赵州桥的别名",
+              "造纸原料",
+              "赵州桥的历史",
+              "石栏图案"
+            ]
+          },
+          {
+            "question": "“各种姿态的龙”表现了赵州桥的什么特点？",
+            "options": [
+              "便宜",
+              "美观",
+              "笨重",
+              "伤感"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "栏",
+        "tokens": [
+          "外",
+          "杆",
+          "年",
+          "板",
+          "纸",
+          "魂"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "杆",
+            "板",
+            "外"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -57,7 +57,7 @@
         "rows": [
           {
             "类别": "10小时",
-            "人数": 25
+            "人数": 23
           },
           {
             "类别": "11小时",
@@ -70,7 +70,7 @@
         ]
       },
       "answer": {
-        "value": 29
+        "value": 27
       },
       "difficulty": 2
     },
@@ -107,10 +107,10 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "35号鞋16人，36号鞋7人，一共多少人？"
+        "statement": "35号鞋17人，36号鞋8人，一共多少人？"
       },
       "answer": {
-        "value": 23,
+        "value": 25,
         "tolerance": 0
       },
       "difficulty": 1
@@ -118,7 +118,7 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "睡眠少于10小时13人，达到10小时及以上29人，全班一共多少人？"
+        "statement": "睡眠少于10小时15人，达到10小时及以上27人，全班一共多少人？"
       },
       "answer": {
         "value": 42,
@@ -129,8 +129,8 @@
     {
       "type": "compare_input",
       "prompt": {
-        "left": "35号鞋16人",
-        "right": "34号鞋8人"
+        "left": "35号鞋17人",
+        "right": "34号鞋7人"
       },
       "answer": {
         "operator": ">"
@@ -165,28 +165,26 @@
       "difficulty": 2
     },
     {
-      "type": "multi_numeric_input",
+      "type": "math_drag_fill",
       "prompt": {
-        "statement": "整理数据常用两步：先按类别 ___，再把结果 ___ 出来。",
-        "blanks": [
-          {
-            "id": "b1",
-            "label": "第一步"
-          },
-          {
-            "id": "b2",
-            "label": "第二步"
-          }
+        "statement": [
+          "整理数据常用两步：先按类别",
+          null,
+          "，再把结果",
+          null,
+          "出来。"
+        ],
+        "tokens": [
+          "计数",
+          "测量面积",
+          "画图或列表",
+          "背口诀"
         ]
       },
       "answer": {
-        "values": [
-          1,
-          2
-        ],
-        "tolerances": [
-          0,
-          0
+        "fills": [
+          "计数",
+          "画图或列表"
         ]
       },
       "difficulty": 2

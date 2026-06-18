@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "赵州桥又叫什么？",
+        "options": [
+          "卢沟桥",
+          "安济桥",
+          "长江大桥",
+          "清明桥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "赵州桥是谁设计并参加建造的？",
+        "options": [
+          "蔡伦",
+          "张择端",
+          "李春",
+          "杜牧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第二自然段的关键句是哪一句？",
+        "options": [
+          "这座桥不但坚固，而且美观。",
+          "所有的龙似乎都在游动。",
+          "赵州桥非常雄伟。",
+          "画上的街市可热闹了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第三自然段主要写赵州桥的什么特点？",
+        "options": [
+          "笨重",
+          "价格便宜",
+          "节日习俗",
+          "美观"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“只有一个净跨三十七米多的拱形大桥洞”说明桥的哪方面？",
+        "options": [
+          "节日来历",
+          "绘画内容",
+          "结构设计",
+          "造纸流程"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "赵州桥桥面两侧有石栏，栏板上雕刻着精美的图案。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "赵州桥下面有许多桥墩，河水不能从桥洞流过。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "非常雄伟"
+          },
+          {
+            "id": "l_1",
+            "text": "设计创举"
+          },
+          {
+            "id": "l_2",
+            "text": "不但坚固而且美观"
+          },
+          {
+            "id": "l_3",
+            "text": "历史文化遗产"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "石栏上雕刻着精美的龙"
+          },
+          {
+            "id": "r_0",
+            "text": "桥长五十多米，宽九米多"
+          },
+          {
+            "id": "r_3",
+            "text": "体现劳动人民的智慧和才干"
+          },
+          {
+            "id": "r_1",
+            "text": "大桥洞两边各有两个小桥洞"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "赵州桥的特点",
+        "passage": "赵州桥非常雄伟。它全部用石头砌成，下面没有桥墩，只有一个拱形大桥洞。大桥洞顶上的左右两边，还各有两个拱形的小桥洞。这种设计既减轻流水对桥身的冲击力，又减轻桥身重量，节省石料。",
+        "questions": [
+          {
+            "question": "这段话主要围绕哪句话写？",
+            "options": [
+              "赵州桥在北京。",
+              "清明上河图很有名。",
+              "赵州桥非常雄伟。",
+              "纸很轻便。"
+            ]
+          },
+          {
+            "question": "小桥洞的作用不包括哪一项？",
+            "options": [
+              "减轻冲击力",
+              "挂招牌",
+              "减轻重量",
+              "节省石料"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "桥",
+        "tokens": [
+          "魂",
+          "洞",
+          "符",
+          "面",
+          "酒",
+          "身"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "洞",
+            "面",
+            "身"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

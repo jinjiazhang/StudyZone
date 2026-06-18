@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "专题学习活动要求我们了解什么？",
+        "options": [
+          "昆虫观察方法",
+          "数学运算规律",
+          "我国重要传统节日及习俗",
+          "天气变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "收集节日资料时，下面哪种做法合适？",
+        "options": [
+          "随便编一个节日",
+          "只写一个字",
+          "查资料、问长辈、用表格记录",
+          "只看封面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "活动提示表格的三列是？",
+        "options": [
+          "人物、地点、天气",
+          "桥名、长度、宽度",
+          "颜色、声音、气味",
+          "节日、过节时间、节日习俗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "端午节"
+          },
+          {
+            "id": "l_1",
+            "text": "中秋节"
+          },
+          {
+            "id": "l_2",
+            "text": "元宵节"
+          },
+          {
+            "id": "l_3",
+            "text": "春节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "正月十五，看花灯、猜灯谜"
+          },
+          {
+            "id": "r_0",
+            "text": "农历五月初五，吃粽子、赛龙舟"
+          },
+          {
+            "id": "r_3",
+            "text": "农历正月初一，贴春联、拜年"
+          },
+          {
+            "id": "r_1",
+            "text": "农历八月十五，吃月饼、赏月"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "开展专题活动时，可以先小组商量，再分头查资料。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "收集资料以后不需要整理，也不用交流。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "活动提示",
+        "passage": "我国有很多传统节日，如春节、端午节、中秋节，这些节日有深厚的文化内涵和独特的习俗。小组可以先商量要了解哪些节日，再查资料、问长辈，并用表格记录节日、过节时间和节日习俗。",
+        "questions": [
+          {
+            "question": "这段话建议用什么方式记录资料？",
+            "options": [
+              "诗歌",
+              "表格",
+              "数学算式",
+              "地图"
+            ]
+          },
+          {
+            "question": "小组开展活动时，第一步可以做什么？",
+            "options": [
+              "立刻展示",
+              "把资料丢掉",
+              "先商量",
+              "只画图不写字"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "节",
+        "tokens": [
+          "桥",
+          "日",
+          "浆",
+          "气",
+          "县",
+          "庆"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "日",
+            "气",
+            "庆"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "习",
+        "tokens": [
+          "符",
+          "俗",
+          "魂",
+          "惯",
+          "桥",
+          "作"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "俗",
+            "惯",
+            "作"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项属于传统节日资料？",
+        "options": [
+          "赵州桥宽九米多",
+          "纸浆晒干后成纸",
+          "春节有贴春联、拜年的习俗",
+          "清明上河图保存于故宫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

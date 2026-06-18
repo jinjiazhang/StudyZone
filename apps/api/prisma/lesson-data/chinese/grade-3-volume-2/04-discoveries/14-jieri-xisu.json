@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "春节"
+          },
+          {
+            "id": "l_1",
+            "text": "清明节"
+          },
+          {
+            "id": "l_2",
+            "text": "端午节"
+          },
+          {
+            "id": "l_3",
+            "text": "重阳节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "吃粽子、赛龙舟、挂艾蒿"
+          },
+          {
+            "id": "r_0",
+            "text": "放爆竹、贴春联"
+          },
+          {
+            "id": "r_3",
+            "text": "登高、插茱萸"
+          },
+          {
+            "id": "r_1",
+            "text": "扫墓、踏青"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "中秋节"
+          },
+          {
+            "id": "l_1",
+            "text": "元宵节"
+          },
+          {
+            "id": "l_2",
+            "text": "七夕节"
+          },
+          {
+            "id": "l_3",
+            "text": "除夕"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "乞巧、讲牛郎织女故事"
+          },
+          {
+            "id": "r_0",
+            "text": "吃月饼、赏月"
+          },
+          {
+            "id": "r_3",
+            "text": "一家人团圆守岁"
+          },
+          {
+            "id": "r_1",
+            "text": "看花灯、猜灯谜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我们小组朗诵和中秋节有关的古诗”属于哪种展示成果？",
+        "options": [
+          "资料表格",
+          "手工制作",
+          "朗诵展示",
+          "桥梁介绍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我收集了元宵节的灯谜”可以补充到哪个节日资料？",
+        "options": [
+          "端午节",
+          "元宵节",
+          "重阳节",
+          "清明节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "传统节日常常有固定的时间和独特的习俗。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "端午节的主要习俗是登高和插茱萸。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项更适合作为“节日习俗”？",
+        "options": [
+          "赵州桥没有桥墩",
+          "吃粽子、赛龙舟",
+          "纸浆晒干成纸",
+          "画上有船工"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把一句资料介绍排好。",
+        "tokens": [
+          "有",
+          "赛龙舟",
+          "端午节",
+          "的习俗",
+          "吃粽子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "端午节",
+          "有",
+          "吃粽子",
+          "赛龙舟",
+          "的习俗"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把一句资料介绍排好。",
+        "tokens": [
+          "赏月",
+          "人们",
+          "中秋节",
+          "吃月饼"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "中秋节",
+          "人们",
+          "吃月饼",
+          "赏月"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "节日习俗",
+        "passage": "元宵节在正月十五，人们会看花灯、猜灯谜。端午节在农历五月初五，人们吃粽子、赛龙舟。中秋节在农历八月十五，人们吃月饼、赏月。",
+        "questions": [
+          {
+            "question": "看花灯、猜灯谜是哪一个节日的习俗？",
+            "options": [
+              "端午节",
+              "元宵节",
+              "中秋节",
+              "重阳节"
+            ]
+          },
+          {
+            "question": "吃月饼、赏月是哪一个节日的习俗？",
+            "options": [
+              "端午节",
+              "春节",
+              "中秋节",
+              "清明节"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

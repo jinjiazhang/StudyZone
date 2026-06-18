@@ -7,7 +7,7 @@
         "options": [
           {
             "id": "g1",
-            "label": "翻折"
+            "label": "平移"
           },
           {
             "id": "g2",
@@ -19,35 +19,7 @@
           },
           {
             "id": "g4",
-            "label": "平移"
-          }
-        ]
-      },
-      "answer": {
-        "correctOptionId": "g4"
-      },
-      "difficulty": 1
-    },
-    {
-      "type": "geometry_choice",
-      "prompt": {
-        "question": "直升机螺旋桨运动属于：",
-        "options": [
-          {
-            "id": "g1",
-            "label": "旋转"
-          },
-          {
-            "id": "g2",
-            "label": "补全"
-          },
-          {
-            "id": "g3",
-            "label": "平移"
-          },
-          {
-            "id": "g4",
-            "label": "对折"
+            "label": "翻折"
           }
         ]
       },
@@ -59,15 +31,43 @@
     {
       "type": "geometry_choice",
       "prompt": {
+        "question": "直升机螺旋桨运动属于：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "平移"
+          },
+          {
+            "id": "g2",
+            "label": "旋转"
+          },
+          {
+            "id": "g3",
+            "label": "补全"
+          },
+          {
+            "id": "g4",
+            "label": "对折"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
         "question": "自动扶梯上的人随扶梯运动，可看作：",
         "options": [
           {
             "id": "g1",
-            "label": "旋转"
+            "label": "镜像"
           },
           {
             "id": "g2",
-            "label": "镜像"
+            "label": "平移"
           },
           {
             "id": "g3",
@@ -75,12 +75,12 @@
           },
           {
             "id": "g4",
-            "label": "平移"
+            "label": "旋转"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g4"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -91,7 +91,7 @@
         "options": [
           {
             "id": "g1",
-            "label": "复原"
+            "label": "旋转"
           },
           {
             "id": "g2",
@@ -99,16 +99,16 @@
           },
           {
             "id": "g3",
-            "label": "旋转"
+            "label": "平移"
           },
           {
             "id": "g4",
-            "label": "平移"
+            "label": "复原"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g1"
       },
       "difficulty": 1
     },
@@ -117,14 +117,14 @@
       "prompt": {
         "question": "区分平移和旋转，主要看物体是否：",
         "options": [
+          "面积变大",
           "绕中心转动",
-          "颜色改变",
           "数量增加",
-          "面积变大"
+          "颜色改变"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -139,10 +139,10 @@
           "。"
         ],
         "tokens": [
-          "估算",
-          "旋转",
+          "平移",
           "轴对称",
-          "平移"
+          "旋转",
+          "估算"
         ]
       },
       "answer": {
@@ -166,12 +166,12 @@
             "text": "车轮滚动中的轮子"
           },
           {
-            "id": "l3",
-            "text": "抽屉拉出"
-          },
-          {
             "id": "l4",
             "text": "门绕合页打开"
+          },
+          {
+            "id": "l3",
+            "text": "抽屉拉出"
           }
         ],
         "right": [
@@ -189,8 +189,8 @@
         "pairs": {
           "l1": "r1",
           "l2": "r2",
-          "l3": "r1",
-          "l4": "r2"
+          "l4": "r2",
+          "l3": "r1"
         }
       },
       "difficulty": 2
@@ -202,24 +202,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "国旗升起"
-          },
-          {
-            "id": "g2",
             "label": "风扇叶片转动"
           },
           {
+            "id": "g2",
+            "label": "抽屉被拉开"
+          },
+          {
             "id": "g3",
-            "label": "滑块沿轨道移动"
+            "label": "国旗升起"
           },
           {
             "id": "g4",
-            "label": "抽屉被拉开"
+            "label": "滑块沿轨道移动"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g2"
+        "correctOptionId": "g1"
       },
       "difficulty": 1
     },
@@ -230,15 +230,15 @@
         "options": [
           {
             "id": "g1",
-            "label": "风车转动"
-          },
-          {
-            "id": "g2",
             "label": "钟表指针走动"
           },
           {
-            "id": "g3",
+            "id": "g2",
             "label": "书本沿桌面横移"
+          },
+          {
+            "id": "g3",
+            "label": "风车转动"
           },
           {
             "id": "g4",
@@ -247,7 +247,7 @@
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -256,14 +256,14 @@
       "prompt": {
         "question": "平移后的图形与原图相比，什么不变？",
         "options": [
-          "所有位置",
           "颜色一定变化",
+          "形状和大小",
           "方向一定相反",
-          "形状和大小"
+          "所有位置"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 2
     }

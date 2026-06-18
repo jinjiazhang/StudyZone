@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宋庆龄原本准备到谁家做客？",
+        "options": [
+          "同学小珍家",
+          "伯伯家",
+          "列宁家",
+          "老师家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宋庆龄为什么停住脚步？",
+        "options": [
+          "忘了带书包",
+          "外面下雪",
+          "灰雀不见了",
+          "想起和小珍约好了叠花篮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "爸爸建议她怎么做？",
+        "options": [
+          "改天再教小珍",
+          "马上去公园",
+          "去找灰雀",
+          "先吹泡泡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宋庆龄最终选择了什么？",
+        "options": [
+          "和家人出门做客",
+          "去操场跑步",
+          "留在家里等小珍",
+          "写寻物启事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小珍最后来了吗？",
+        "options": [
+          "来了",
+          "只来了妈妈",
+          "没有来",
+          "来了列宁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "宋庆龄说“我并不后悔”是因为她怎样？",
+        "options": [
+          "没有失信，守住诺言",
+          "吃到了午饭",
+          "学会了唱歌",
+          "买了新书"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出故事顺序",
+        "tokens": [
+          "想起约定",
+          "准备做客",
+          "留家等待",
+          "没有后悔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "准备做客",
+          "想起约定",
+          "留家等待",
+          "没有后悔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l2",
+            "text": "诺言"
+          },
+          {
+            "id": "l4",
+            "text": "道歉"
+          },
+          {
+            "id": "l1",
+            "text": "失信"
+          },
+          {
+            "id": "l3",
+            "text": "解释"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "说明原因"
+          },
+          {
+            "id": "r1",
+            "text": "不守信用"
+          },
+          {
+            "id": "r4",
+            "text": "表示歉意"
+          },
+          {
+            "id": "r2",
+            "text": "答应别人的话"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "宋庆龄为了守约，独自留在家里等小珍。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "宋庆龄最后后悔自己没有去伯伯家。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

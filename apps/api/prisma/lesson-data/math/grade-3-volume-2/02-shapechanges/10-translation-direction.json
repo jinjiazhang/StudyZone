@@ -7,12 +7,12 @@
         "options": [
           "对称轴和面积",
           "颜色和重量",
-          "方向和格数",
-          "单价和数量"
+          "单价和数量",
+          "方向和格数"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -91,8 +91,8 @@
         ],
         "tokens": [
           "3",
-          "2",
           "左",
+          "2",
           "右"
         ]
       },
@@ -109,14 +109,14 @@
       "prompt": {
         "question": "“向上平移 2 格，再向右平移 4 格”和哪种记录一致？",
         "options": [
-          "下2，右4",
           "上4，右2",
           "上2，右4",
+          "下2，右4",
           "左2，上4"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -154,7 +154,7 @@
           },
           {
             "id": "g2",
-            "label": "上下翻折"
+            "label": "向右平移"
           },
           {
             "id": "g3",
@@ -162,12 +162,12 @@
           },
           {
             "id": "g4",
-            "label": "向右平移"
+            "label": "上下翻折"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g4"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -176,47 +176,47 @@
       "prompt": {
         "left": [
           {
-            "id": "l1",
-            "text": "↑"
-          },
-          {
-            "id": "l2",
-            "text": "↓"
+            "id": "l4",
+            "text": "→"
           },
           {
             "id": "l3",
             "text": "←"
           },
           {
-            "id": "l4",
-            "text": "→"
+            "id": "l2",
+            "text": "↓"
+          },
+          {
+            "id": "l1",
+            "text": "↑"
           }
         ],
         "right": [
           {
-            "id": "r1",
-            "text": "向上"
-          },
-          {
-            "id": "r4",
-            "text": "向右"
+            "id": "r3",
+            "text": "向左"
           },
           {
             "id": "r2",
             "text": "向下"
           },
           {
-            "id": "r3",
-            "text": "向左"
+            "id": "r4",
+            "text": "向右"
+          },
+          {
+            "id": "r1",
+            "text": "向上"
           }
         ]
       },
       "answer": {
         "pairs": {
-          "l1": "r1",
-          "l2": "r2",
+          "l4": "r4",
           "l3": "r3",
-          "l4": "r4"
+          "l2": "r2",
+          "l1": "r1"
         }
       },
       "difficulty": 2
@@ -226,14 +226,14 @@
       "prompt": {
         "question": "只说“平移了 3 格”还不够，因为缺少：",
         "options": [
-          "颜色",
           "形状名称",
-          "题号",
-          "方向"
+          "颜色",
+          "方向",
+          "题号"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     }

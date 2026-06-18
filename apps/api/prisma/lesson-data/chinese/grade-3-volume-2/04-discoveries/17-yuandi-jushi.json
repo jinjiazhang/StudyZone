@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "园地“梳理与交流”讨论的是怎样写清楚什么？",
+        "options": [
+          "怎样计算桥的长度",
+          "怎样在一段话里把一个意思写清楚",
+          "怎样画龙",
+          "怎样背电话号码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《赵州桥》第3自然段为了写清楚“美观”，具体写了什么？",
+        "options": [
+          "蔡伦的造纸流程",
+          "石栏上各种姿态的龙",
+          "元宵节灯谜",
+          "清明的雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《一幅名扬中外的画》第3自然段为了写出“热闹”，写了什么？",
+        "options": [
+          "桥洞设计",
+          "古诗三首",
+          "店铺招牌和来来往往、形态各异的人",
+          "纸的原料"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "围绕一个意思写清楚，可以先说中心意思，再写具体例子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "一段话里所有句子都可以和中心意思无关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把中心句和细节排成一段。",
+        "tokens": [
+          "有的推着独轮车",
+          "有的骑着马",
+          "画上的街市可热闹了",
+          "有的挑着担"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "画上的街市可热闹了",
+          "有的骑着马",
+          "有的挑着担",
+          "有的推着独轮车"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把中心句和细节排成一段。",
+        "tokens": [
+          "有的刻着双龙戏珠",
+          "有的刻着飞龙",
+          "赵州桥非常美观",
+          "有的刻着吐水花的龙"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "赵州桥非常美观",
+          "有的刻着吐水花的龙",
+          "有的刻着飞龙",
+          "有的刻着双龙戏珠"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句最适合作为中心句？",
+        "options": [
+          "红色。",
+          "操场上真热闹。",
+          "我看见。",
+          "一会儿。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "写清楚一个意思",
+        "passage": "操场上真热闹。同学们有的跳绳，有的踢毽子，有的追着球跑，还有的在给伙伴加油。笑声、喊声连成一片。",
+        "questions": [
+          {
+            "question": "这段话围绕哪句话写？",
+            "options": [
+              "同学们都回家了。",
+              "操场上真热闹。",
+              "桥面有石栏。",
+              "纸很轻便。"
+            ]
+          },
+          {
+            "question": "哪一项是文中的具体例子？",
+            "options": [
+              "造纸",
+              "跳绳",
+              "赏月",
+              "登高"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "总说"
+          },
+          {
+            "id": "l_1",
+            "text": "举例"
+          },
+          {
+            "id": "l_2",
+            "text": "流程"
+          },
+          {
+            "id": "l_3",
+            "text": "交流"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "按步骤说明过程"
+          },
+          {
+            "id": "r_0",
+            "text": "先概括一个意思"
+          },
+          {
+            "id": "r_3",
+            "text": "把想法说给别人听"
+          },
+          {
+            "id": "r_1",
+            "text": "用具体事物说明"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -51,7 +51,7 @@
     {
       "type": "single_choice",
       "prompt": {
-        "question": "女生35号有8人，34号有6人。女生鞋多进哪种更合适？",
+        "question": "女生35号有9人，34号有5人。女生鞋多进哪种更合适？",
         "options": [
           "35号",
           "34号",
@@ -67,7 +67,7 @@
     {
       "type": "compare_input",
       "prompt": {
-        "left": "35号16人",
+        "left": "35号17人",
         "right": "32号1人"
       },
       "answer": {
@@ -78,7 +78,7 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "如果35号准备16双，34号准备8双，一共准备多少双？"
+        "statement": "如果35号准备17双，34号准备7双，一共准备多少双？"
       },
       "answer": {
         "value": 24,
@@ -89,10 +89,10 @@
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "35号比36号多准备9双，36号准备7双，35号准备多少双？"
+        "statement": "35号比36号多准备9双，36号准备8双，35号准备多少双？"
       },
       "answer": {
-        "value": 16,
+        "value": 17,
         "tolerance": 0
       },
       "difficulty": 1
@@ -109,7 +109,7 @@
         "rows": [
           {
             "鞋号": "35号",
-            "人数": 16,
+            "人数": 17,
             "建议": "多进"
           },
           {
@@ -145,7 +145,7 @@
     {
       "type": "multi_numeric_input",
       "prompt": {
-        "statement": "全班34号8人，36号7人，共 ___ 人；35号16人，比它们少/多 ___ 人。",
+        "statement": "全班34号7人，36号8人，共 ___ 人；35号17人，比它们多 ___ 人。",
         "blanks": [
           {
             "id": "b1",
@@ -160,7 +160,7 @@
       "answer": {
         "values": [
           15,
-          1
+          2
         ],
         "tolerances": [
           0,

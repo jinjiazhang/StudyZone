@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“米饭没熟，还要再蒸一会儿”中加点的“熟”是什么意思？",
+        "options": [
+          "平时常见、了解",
+          "植物成熟",
+          "食物加热到可以吃",
+          "睡得很沉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“平时很熟的曲子，今天却总是弹不准”中“熟”是什么意思？",
+        "options": [
+          "熟练、常练习",
+          "食物煮熟",
+          "水果成熟",
+          "颜色很深"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我很喜欢苹果的味道”中“味道”指什么？",
+        "options": [
+          "意思和趣味",
+          "道路",
+          "声音",
+          "滋味"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这本书越看越有味道”中“味道”指什么？",
+        "options": [
+          "苹果滋味",
+          "趣味、意味",
+          "气味很重",
+          "饭没熟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "寻物启事里必须写清什么？",
+        "options": [
+          "故事结局",
+          "丢失物品、联系方式、时间地点",
+          "课文作者",
+          "座位安排"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出启事标题",
+        "tokens": [
+          "启事",
+          "寻物",
+          "通知"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "寻物",
+          "启事"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l4",
+            "text": "日期"
+          },
+          {
+            "id": "l2",
+            "text": "正文"
+          },
+          {
+            "id": "l1",
+            "text": "标题"
+          },
+          {
+            "id": "l3",
+            "text": "署名"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "写发布人姓名班级"
+          },
+          {
+            "id": "r1",
+            "text": "寻物启事"
+          },
+          {
+            "id": "r4",
+            "text": "写启事发布时间"
+          },
+          {
+            "id": "r2",
+            "text": "写清丢失物品和联系方法"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "日积月累“见善则迁，有过则改”的意思是？",
+        "options": [
+          "只看见别人的错",
+          "有错也不改",
+          "善良的人会搬家",
+          "见到好的就学习，有错就改"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“过而不改，是谓过矣”强调什么？",
+        "options": [
+          "有错不改才是真正的过错",
+          "米饭要蒸熟",
+          "灰雀会飞",
+          "泡泡会碎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "寻物启事要让捡到物品的人知道怎样联系失主。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

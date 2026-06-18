@@ -5,14 +5,14 @@
       "prompt": {
         "question": "物体沿直线方向移动，形状和方向不变，这种运动叫作：",
         "options": [
-          "平移",
-          "折叠",
+          "对称",
           "旋转",
-          "对称"
+          "折叠",
+          "平移"
         ]
       },
       "answer": {
-        "correctIndex": 0
+        "correctIndex": 3
       },
       "difficulty": 1
     },
@@ -21,14 +21,14 @@
       "prompt": {
         "question": "物体绕一个点或一条轴转动，这种运动叫作：",
         "options": [
-          "对折",
+          "旋转",
           "平移",
           "重合",
-          "旋转"
+          "对折"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 0
       },
       "difficulty": 1
     },
@@ -39,11 +39,11 @@
         "options": [
           {
             "id": "g1",
-            "label": "旋转"
+            "label": "轴对称"
           },
           {
             "id": "g2",
-            "label": "折剪"
+            "label": "旋转"
           },
           {
             "id": "g3",
@@ -51,7 +51,7 @@
           },
           {
             "id": "g4",
-            "label": "轴对称"
+            "label": "折剪"
           }
         ]
       },
@@ -67,24 +67,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "复制"
-          },
-          {
-            "id": "g2",
             "label": "平移"
           },
           {
+            "id": "g2",
+            "label": "对折"
+          },
+          {
             "id": "g3",
-            "label": "旋转"
+            "label": "复制"
           },
           {
             "id": "g4",
-            "label": "对折"
+            "label": "旋转"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g4"
       },
       "difficulty": 1
     },
@@ -99,7 +99,7 @@
           },
           {
             "id": "g2",
-            "label": "旋转"
+            "label": "折叠"
           },
           {
             "id": "g3",
@@ -107,7 +107,7 @@
           },
           {
             "id": "g4",
-            "label": "折叠"
+            "label": "旋转"
           }
         ]
       },
@@ -123,24 +123,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "平移"
+            "label": "旋转"
           },
           {
             "id": "g2",
-            "label": "镜像"
-          },
-          {
-            "id": "g3",
             "label": "剪纸"
           },
           {
+            "id": "g3",
+            "label": "平移"
+          },
+          {
             "id": "g4",
-            "label": "旋转"
+            "label": "镜像"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g4"
+        "correctOptionId": "g1"
       },
       "difficulty": 1
     },
@@ -155,10 +155,10 @@
           "。"
         ],
         "tokens": [
+          "重合",
           "对折",
-          "不变",
           "转动",
-          "重合"
+          "不变"
         ]
       },
       "answer": {
@@ -174,10 +174,6 @@
       "prompt": {
         "left": [
           {
-            "id": "l1",
-            "text": "升国旗"
-          },
-          {
             "id": "l2",
             "text": "推箱子"
           },
@@ -186,26 +182,30 @@
             "text": "风车转动"
           },
           {
+            "id": "l1",
+            "text": "升国旗"
+          },
+          {
             "id": "l4",
             "text": "钟表指针"
           }
         ],
         "right": [
           {
-            "id": "r1",
-            "text": "平移"
-          },
-          {
             "id": "r2",
             "text": "旋转"
+          },
+          {
+            "id": "r1",
+            "text": "平移"
           }
         ]
       },
       "answer": {
         "pairs": {
-          "l1": "r1",
           "l2": "r1",
           "l3": "r2",
+          "l1": "r1",
           "l4": "r2"
         }
       },
@@ -216,14 +216,14 @@
       "prompt": {
         "question": "把书本从桌子左边推到右边，书本没有转向，这是：",
         "options": [
-          "轴对称",
           "折剪",
-          "旋转",
-          "平移"
+          "轴对称",
+          "平移",
+          "旋转"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 2
       },
       "difficulty": 1
     },
@@ -232,14 +232,14 @@
       "prompt": {
         "question": "人向后转，身体方向发生变化，更接近：",
         "options": [
-          "平移",
+          "剪纸",
           "补图",
-          "旋转",
-          "剪纸"
+          "平移",
+          "旋转"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 3
       },
       "difficulty": 1
     }

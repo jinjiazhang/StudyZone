@@ -23,7 +23,7 @@
         "options": [
           {
             "id": "g1",
-            "label": "两边能重合"
+            "label": "对应点同高"
           },
           {
             "id": "g2",
@@ -31,16 +31,16 @@
           },
           {
             "id": "g3",
-            "label": "对应点离对称轴距离不相等"
+            "label": "两边能重合"
           },
           {
             "id": "g4",
-            "label": "对应点同高"
+            "label": "对应点离对称轴距离不相等"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g4"
       },
       "difficulty": 1
     },
@@ -49,14 +49,14 @@
       "prompt": {
         "question": "学生把镜像补成了“同方向复制”，常见错误是什么？",
         "options": [
-          "没有涂色",
-          "没有左右翻转",
+          "没有数数量",
           "没有旋转一周",
-          "没有数数量"
+          "没有涂色",
+          "没有左右翻转"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 3
       },
       "difficulty": 2
     },
@@ -72,9 +72,9 @@
         ],
         "tokens": [
           "相等",
+          "平移",
           "相加",
-          "镜像",
-          "平移"
+          "镜像"
         ]
       },
       "answer": {
@@ -92,11 +92,11 @@
         "options": [
           {
             "id": "g1",
-            "label": "对应点到轴距离相等"
+            "label": "有一条对称轴"
           },
           {
             "id": "g2",
-            "label": "有一条对称轴"
+            "label": "看起来左右面积差不多"
           },
           {
             "id": "g3",
@@ -104,12 +104,12 @@
           },
           {
             "id": "g4",
-            "label": "看起来左右面积差不多"
+            "label": "对应点到轴距离相等"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g4"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -119,13 +119,13 @@
         "question": "如果对称轴画在图形外面，这条线通常：",
         "options": [
           "一定是边",
-          "一定是对称轴",
           "不能作为该图形的对称轴",
-          "能让图形重合"
+          "能让图形重合",
+          "一定是对称轴"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 1
       },
       "difficulty": 2
     },
@@ -157,24 +157,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "线是直的"
+            "label": "线经过图形中间"
           },
           {
             "id": "g2",
-            "label": "图形左右都有颜色"
-          },
-          {
-            "id": "g3",
             "label": "沿线对折后两边有缺口错开"
           },
           {
+            "id": "g3",
+            "label": "图形左右都有颜色"
+          },
+          {
             "id": "g4",
-            "label": "线经过图形中间"
+            "label": "线是直的"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -183,23 +183,19 @@
       "prompt": {
         "left": [
           {
-            "id": "l1",
-            "text": "同方向复制"
-          },
-          {
             "id": "l2",
             "text": "距离不相等"
           },
           {
             "id": "l3",
             "text": "对折能重合"
+          },
+          {
+            "id": "l1",
+            "text": "同方向复制"
           }
         ],
         "right": [
-          {
-            "id": "r2",
-            "text": "应改成镜像"
-          },
           {
             "id": "r1",
             "text": "正确依据"
@@ -207,14 +203,18 @@
           {
             "id": "r3",
             "text": "应重新数格"
+          },
+          {
+            "id": "r2",
+            "text": "应改成镜像"
           }
         ]
       },
       "answer": {
         "pairs": {
-          "l1": "r2",
           "l2": "r3",
-          "l3": "r1"
+          "l3": "r1",
+          "l1": "r2"
         }
       },
       "difficulty": 2
@@ -224,14 +224,14 @@
       "prompt": {
         "question": "发现补出的另一半太宽，最可能要检查什么？",
         "options": [
+          "图案名称",
           "题号顺序",
           "对应点到对称轴的格数",
-          "图案名称",
           "纸的颜色"
         ]
       },
       "answer": {
-        "correctIndex": 1
+        "correctIndex": 2
       },
       "difficulty": 2
     }

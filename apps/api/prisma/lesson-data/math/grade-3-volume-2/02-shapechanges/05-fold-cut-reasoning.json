@@ -6,13 +6,13 @@
         "question": "把纸对折后剪出一个图案，展开后的图案通常具有什么特点？",
         "options": [
           "一定变成圆",
+          "关于折痕轴对称",
           "只会平移",
-          "一定没有对称轴",
-          "关于折痕轴对称"
+          "一定没有对称轴"
         ]
       },
       "answer": {
-        "correctIndex": 3
+        "correctIndex": 1
       },
       "difficulty": 1
     },
@@ -23,24 +23,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "只剩一个圆孔"
+            "label": "变成三角孔"
           },
           {
             "id": "g2",
-            "label": "全部消失"
-          },
-          {
-            "id": "g3",
             "label": "两边各有一个对应圆孔"
           },
           {
+            "id": "g3",
+            "label": "全部消失"
+          },
+          {
             "id": "g4",
-            "label": "变成三角孔"
+            "label": "只剩一个圆孔"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g3"
+        "correctOptionId": "g2"
       },
       "difficulty": 1
     },
@@ -51,24 +51,24 @@
         "options": [
           {
             "id": "g1",
-            "label": "两个分开的半圆"
-          },
-          {
-            "id": "g2",
             "label": "没有孔"
           },
           {
+            "id": "g2",
+            "label": "两个分开的半圆"
+          },
+          {
             "id": "g3",
-            "label": "一条斜线"
+            "label": "一个完整圆形孔"
           },
           {
             "id": "g4",
-            "label": "一个完整圆形孔"
+            "label": "一条斜线"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g4"
+        "correctOptionId": "g3"
       },
       "difficulty": 1
     },
@@ -83,10 +83,10 @@
           "出现。"
         ],
         "tokens": [
-          "直角",
           "对",
-          "折痕",
-          "平移"
+          "平移",
+          "直角",
+          "折痕"
         ]
       },
       "answer": {
@@ -102,14 +102,14 @@
       "prompt": {
         "question": "教材中“只需做出图形的一半”是因为：",
         "options": [
-          "颜色会复制",
-          "图形会旋转",
           "对折展开会得到另一半",
-          "纸会自动变大"
+          "图形会旋转",
+          "纸会自动变大",
+          "颜色会复制"
         ]
       },
       "answer": {
-        "correctIndex": 2
+        "correctIndex": 0
       },
       "difficulty": 2
     },
@@ -120,7 +120,7 @@
         "options": [
           {
             "id": "g1",
-            "label": "左上角对应位置"
+            "label": "任意位置"
           },
           {
             "id": "g2",
@@ -132,12 +132,12 @@
           },
           {
             "id": "g4",
-            "label": "任意位置"
+            "label": "左上角对应位置"
           }
         ]
       },
       "answer": {
-        "correctOptionId": "g1"
+        "correctOptionId": "g4"
       },
       "difficulty": 2
     },
@@ -204,16 +204,16 @@
       "prompt": {
         "left": [
           {
+            "id": "l3",
+            "text": "远离折痕的小孔"
+          },
+          {
             "id": "l1",
             "text": "折痕"
           },
           {
             "id": "l2",
             "text": "折痕上的半圆孔"
-          },
-          {
-            "id": "l3",
-            "text": "远离折痕的小孔"
           }
         ],
         "right": [
@@ -233,9 +233,9 @@
       },
       "answer": {
         "pairs": {
+          "l3": "r2",
           "l1": "r3",
-          "l2": "r1",
-          "l3": "r2"
+          "l2": "r1"
         }
       },
       "difficulty": 2

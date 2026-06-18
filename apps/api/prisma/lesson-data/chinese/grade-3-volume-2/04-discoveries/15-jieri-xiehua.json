@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写传统节日短文时，可以写什么？",
+        "options": [
+          "只写一串无关词语",
+          "只写桥的长度",
+          "自己家过节的情景，或节日中印象深刻的事",
+          "只写造纸流程"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我们一家围坐在桌旁吃月饼，抬头看圆圆的月亮。”适合写哪个节日？",
+        "options": [
+          "端午节",
+          "中秋节",
+          "重阳节",
+          "春节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“奶奶把粽叶卷成小漏斗，放进糯米和红枣。”适合写哪个节日？",
+        "options": [
+          "清明节",
+          "元宵节",
+          "端午节",
+          "重阳节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把节日情景句排好。",
+        "tokens": [
+          "包粽子",
+          "一起",
+          "端午节",
+          "一家人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "端午节",
+          "一家人",
+          "一起",
+          "包粽子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把节日情景句排好。",
+        "tokens": [
+          "亮起来",
+          "夜晚",
+          "元宵节",
+          "花灯"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "元宵节",
+          "夜晚",
+          "花灯",
+          "亮起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写节日情景时，可以写看到的、听到的、做过的事。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "短文里只能写节日名称，不能写具体情景。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "过中秋",
+        "passage": "中秋节晚上，爷爷把月饼切成小块。我们一家人坐在院子里，一边吃月饼，一边赏月。妹妹指着月亮说：“今晚的月亮真圆啊！”大家都笑了。",
+        "questions": [
+          {
+            "question": "这段话写了哪个节日？",
+            "options": [
+              "春节",
+              "中秋节",
+              "端午节",
+              "清明节"
+            ]
+          },
+          {
+            "question": "文中写到的习俗是什么？",
+            "options": [
+              "赛龙舟",
+              "吃月饼、赏月",
+              "登高",
+              "贴桃符"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "春节"
+          },
+          {
+            "id": "l_1",
+            "text": "端午节"
+          },
+          {
+            "id": "l_2",
+            "text": "中秋节"
+          },
+          {
+            "id": "l_3",
+            "text": "元宵节"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "赏月时月亮圆圆"
+          },
+          {
+            "id": "r_0",
+            "text": "贴春联时门口红彤彤"
+          },
+          {
+            "id": "r_3",
+            "text": "看花灯时街上亮晶晶"
+          },
+          {
+            "id": "r_1",
+            "text": "包粽子时粽叶飘香"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句把节日情景写得更具体？",
+        "options": [
+          "我过节了。",
+          "节日很好。",
+          "妈妈把热腾腾的粽子端上桌，粽叶香扑鼻而来。",
+          "大家很高兴。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

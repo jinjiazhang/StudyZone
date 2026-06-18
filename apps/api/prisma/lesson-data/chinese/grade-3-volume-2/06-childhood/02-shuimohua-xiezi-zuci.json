@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuí",
+        "sentence": "河边的__柳倒映在水里。",
+        "blankPlaceholder": "__",
+        "character": "垂",
+        "narrationText": "看拼音写字：河边的空格柳倒映在水里。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "垂"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "rǎn",
+        "sentence": "人影给溪水__绿了。",
+        "blankPlaceholder": "__",
+        "character": "染",
+        "narrationText": "看拼音写字：人影给溪水空格绿了。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "染"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "suì",
+        "sentence": "笑声里，人影__了。",
+        "blankPlaceholder": "__",
+        "character": "碎",
+        "narrationText": "看拼音写字：笑声里，人影空格了。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "碎"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bō",
+        "sentence": "一双小手__动着浪花。",
+        "blankPlaceholder": "__",
+        "character": "拨",
+        "narrationText": "看拼音写字：一双小手空格动着浪花。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "拨"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "làng",
+        "sentence": "江上翻起一排排__花。",
+        "blankPlaceholder": "__",
+        "character": "浪",
+        "narrationText": "看拼音写字：江上翻起一排排空格花。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "浪"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǒu",
+        "sentence": "雨珠从松针上__落下来。",
+        "blankPlaceholder": "__",
+        "character": "抖",
+        "narrationText": "看拼音写字：雨珠从松针上空格落下来。",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "抖"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "垂",
+        "tokens": [
+          "直",
+          "柳",
+          "落",
+          "下",
+          "头",
+          "钓"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“垂”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "柳",
+            "下",
+            "钓"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "浪",
+        "tokens": [
+          "尖",
+          "花",
+          "声",
+          "潮",
+          "朵",
+          "费"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“浪”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "潮",
+            "费"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "染",
+        "tokens": [
+          "跳",
+          "绿",
+          "水",
+          "色",
+          "亮",
+          "料"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“染”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "绿",
+            "色",
+            "料"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l3",
+            "text": "拨"
+          },
+          {
+            "id": "l1",
+            "text": "墨"
+          },
+          {
+            "id": "l4",
+            "text": "抖"
+          },
+          {
+            "id": "l2",
+            "text": "碎"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "碎片"
+          },
+          {
+            "id": "r4",
+            "text": "抖落"
+          },
+          {
+            "id": "r1",
+            "text": "水墨画"
+          },
+          {
+            "id": "r3",
+            "text": "拨动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

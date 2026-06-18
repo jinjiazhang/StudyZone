@@ -1,0 +1,291 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "元日",
+        "author": "王安石",
+        "lines": [
+          [
+            "爆竹声中",
+            null,
+            "除"
+          ],
+          [
+            "春风送暖入屠苏"
+          ]
+        ],
+        "options": [
+          "新岁",
+          "一岁",
+          "旧岁",
+          "岁月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "元日",
+        "author": "王安石",
+        "lines": [
+          [
+            "千门万户瞳瞳日"
+          ],
+          [
+            "总把",
+            null,
+            "换旧符"
+          ]
+        ],
+        "options": [
+          "桃花",
+          "春联",
+          "新桃",
+          "门神"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "清明",
+        "author": "杜牧",
+        "lines": [
+          [
+            "清明时节雨纷纷"
+          ],
+          [
+            "路上行人欲",
+            null
+          ]
+        ],
+        "options": [
+          "思亲",
+          "断魂",
+          "踏青",
+          "问路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "清明",
+        "author": "杜牧",
+        "lines": [
+          [
+            "借问酒家何处有"
+          ],
+          [
+            "牧童遥指",
+            null
+          ]
+        ],
+        "options": [
+          "桃花村",
+          "梨花村",
+          "杏花村",
+          "杨柳村"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "九月九日忆山东兄弟",
+        "author": "王维",
+        "lines": [
+          [
+            "独在异乡为异客"
+          ],
+          [
+            "每逢佳节倍",
+            null
+          ]
+        ],
+        "options": [
+          "登高",
+          "怀古",
+          "思亲",
+          "伤春"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "九月九日忆山东兄弟",
+        "author": "王维",
+        "lines": [
+          [
+            "遥知兄弟登高处"
+          ],
+          [
+            "遍插",
+            null,
+            "少一人"
+          ]
+        ],
+        "options": [
+          "菊花",
+          "艾草",
+          "桃符",
+          "茱萸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "元日",
+        "author": "王安石",
+        "lines": [
+          [
+            "爆竹声中",
+            null,
+            "除"
+          ],
+          [
+            "春风送暖入",
+            null
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "元日",
+              "一岁",
+              "一年",
+              "新春"
+            ]
+          },
+          {
+            "options": [
+              "酒家",
+              "春风",
+              "屠苏",
+              "桃符"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "清明",
+        "author": "杜牧",
+        "lines": [
+          [
+            "清明时节",
+            null
+          ],
+          [
+            "路上行人欲",
+            null
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "雪纷纷",
+              "花纷纷",
+              "雨纷纷",
+              "柳依依"
+            ]
+          },
+          {
+            "options": [
+              "回家",
+              "饮酒",
+              "踏青",
+              "断魂"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把诗句排成完整的一句。",
+        "tokens": [
+          "瞳瞳日",
+          "新桃",
+          "千门万户",
+          "换旧符",
+          "总把"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "千门万户",
+          "瞳瞳日",
+          "总把",
+          "新桃",
+          "换旧符"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把诗句排成完整的一句。",
+        "tokens": [
+          "异客",
+          "倍思亲",
+          "佳节",
+          "每逢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "每逢",
+          "佳节",
+          "倍思亲"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

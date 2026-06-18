@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把介绍句排好。",
+        "tokens": [
+          "北宋",
+          "是",
+          "张择端",
+          "画家"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "张择端",
+          "是",
+          "北宋",
+          "画家"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把介绍句排好。",
+        "tokens": [
+          "热闹场面",
+          "的",
+          "画的是",
+          "汴京"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "画的是",
+          "汴京",
+          "的",
+          "热闹场面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "向别人介绍《清明上河图》时，下面哪项最重要？",
+        "options": [
+          "今天的天气",
+          "画名、作者、年代、画面内容",
+          "自己喜欢的水果",
+          "数学计算方法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“别看画上的人小，每个人在干什么，都能看得清清楚楚。”表现画家什么特点？",
+        "options": [
+          "造纸便宜",
+          "桥很坚固",
+          "画技高超",
+          "节日很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "介绍一幅画时，可以先概括画面，再选一两个有意思的细节具体说。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《清明上河图》只画了一座桥，没有人物和街市。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "介绍名画",
+        "passage": "《清明上河图》是北宋画家张择端画的，画的是北宋都城汴京热闹的场面。画上人物众多，来来往往，形态各异。最有意思的是桥北头的情景，紧急时刻马笼头被拽住，才没让马撞上轿子。",
+        "questions": [
+          {
+            "question": "这段介绍先说了什么？",
+            "options": [
+              "端午节习俗",
+              "画名、作者和画面内容",
+              "造纸流程",
+              "赵州桥设计"
+            ]
+          },
+          {
+            "question": "桥北头情景“最有意思”是因为它怎样？",
+            "options": [
+              "很安静",
+              "只有一个人",
+              "紧张生动",
+              "没有马"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "名扬中外"
+          },
+          {
+            "id": "l_1",
+            "text": "形态各异"
+          },
+          {
+            "id": "l_2",
+            "text": "传神"
+          },
+          {
+            "id": "l_3",
+            "text": "风貌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "表现得生动逼真"
+          },
+          {
+            "id": "r_0",
+            "text": "名声传到国内外"
+          },
+          {
+            "id": "r_3",
+            "text": "一个时代或地方的面貌"
+          },
+          {
+            "id": "r_1",
+            "text": "姿态各不相同"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "择",
+        "tokens": [
+          "魂",
+          "端",
+          "桥",
+          "选",
+          "纸",
+          "日"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "端",
+            "选",
+            "日"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合作为介绍《清明上河图》的结尾？",
+        "options": [
+          "这座桥没有桥墩。",
+          "蔡伦改进了造纸术。",
+          "这幅画让我们看到了古都汴京的风貌。",
+          "牧童遥指杏花村。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

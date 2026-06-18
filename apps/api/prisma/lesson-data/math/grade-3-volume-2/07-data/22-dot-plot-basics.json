@@ -43,7 +43,7 @@
     {
       "type": "table_read",
       "prompt": {
-        "question": "点状图读数：35号上有8个×，表示多少人穿35号？",
+        "question": "点状图读数：35号上有9个×，表示女生中多少人穿35号？",
         "columns": [
           "鞋号",
           "×个数"
@@ -51,23 +51,23 @@
         "rows": [
           {
             "鞋号": "35号",
-            "×个数": 8
+            "×个数": 9
           },
           {
             "鞋号": "36号",
-            "×个数": 2
+            "×个数": 3
           }
         ]
       },
       "answer": {
-        "value": 8
+        "value": 9
       },
       "difficulty": 2
     },
     {
       "type": "numeric_input",
       "prompt": {
-        "statement": "点状图中，34号有6个×，35号有8个×，一共表示多少人？"
+        "statement": "女生点状图中，34号有5个×，35号有9个×，一共表示多少人？"
       },
       "answer": {
         "value": 14,
@@ -121,8 +121,8 @@
     {
       "type": "compare_input",
       "prompt": {
-        "left": "35号8人",
-        "right": "34号6人"
+        "left": "女生35号9人",
+        "right": "女生34号5人"
       },
       "answer": {
         "operator": ">"

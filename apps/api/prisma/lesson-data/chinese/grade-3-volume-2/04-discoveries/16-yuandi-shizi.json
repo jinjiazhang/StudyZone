@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "援",
+        "hint": "“援助”的“援”读什么？",
+        "options": [
+          "yuǎn",
+          "yuán",
+          "yán",
+          "ruán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "掷",
+        "hint": "“投掷”的“掷”读什么？",
+        "options": [
+          "tóu",
+          "zhí",
+          "zhì",
+          "zì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "捞",
+        "hint": "“打捞”的“捞”读什么？",
+        "options": [
+          "láo",
+          "lǎo",
+          "liāo",
+          "lāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拆",
+        "hint": "“拆分”的“拆”读什么？",
+        "options": [
+          "chāi",
+          "cāi",
+          "zhé",
+          "chē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搅",
+        "hint": "“搅动”的“搅”读什么？",
+        "options": [
+          "jué",
+          "jiǎo",
+          "jiāo",
+          "rǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拓",
+        "hint": "“拓展”的“拓”读什么？",
+        "options": [
+          "tà",
+          "tuō",
+          "tuò",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "援助"
+          },
+          {
+            "id": "l_1",
+            "text": "投掷"
+          },
+          {
+            "id": "l_2",
+            "text": "打捞"
+          },
+          {
+            "id": "l_3",
+            "text": "拓展"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "从水里取出"
+          },
+          {
+            "id": "r_0",
+            "text": "帮助、支援"
+          },
+          {
+            "id": "r_3",
+            "text": "扩大、开拓"
+          },
+          {
+            "id": "r_1",
+            "text": "扔出去"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "扌",
+        "tokens": [
+          "旧",
+          "援",
+          "兄",
+          "掷",
+          "佳",
+          "捞"
+        ],
+        "targetCount": 3,
+        "instruction": "选出带提手旁的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "援",
+            "掷",
+            "捞"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "扌",
+        "tokens": [
+          "魂",
+          "拆",
+          "酒",
+          "搅",
+          "桥",
+          "拓"
+        ],
+        "targetCount": 3,
+        "instruction": "选出带提手旁的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "拆",
+            "搅",
+            "拓"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“援、掷、捞、拆、搅、拓”这些字大多和什么有关？",
+        "options": [
+          "天气变化",
+          "手的动作",
+          "动物名称",
+          "节日时间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蔡伦改进的造纸方法能传承下来，主要原因之一是？",
+        "options": [
+          "只能少量制造",
+          "原料容易得到",
+          "价格很昂贵",
+          "纸浆不能晒干"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蔡伦使用了哪些原料？",
+        "options": [
+          "金子、银子、玉石",
+          "钢铁、水泥、沙子",
+          "树皮、麻头、破布、旧渔网等",
+          "桃符、茱萸、爆竹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“纸浆会在竹帘上形成一层均匀的薄片”对应哪一步？",
+        "options": [
+          "浸",
+          "捣",
+          "晒",
+          "抄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按造纸流程排列。",
+        "tokens": [
+          "抄",
+          "晒",
+          "剪碎或切断",
+          "浸",
+          "捣"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "剪碎或切断",
+          "浸",
+          "捣",
+          "抄",
+          "晒"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "剪碎或切断"
+          },
+          {
+            "id": "l_1",
+            "text": "浸"
+          },
+          {
+            "id": "l_2",
+            "text": "捣"
+          },
+          {
+            "id": "l_3",
+            "text": "抄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "把原料捣烂成浆"
+          },
+          {
+            "id": "r_0",
+            "text": "把原料处理成小块"
+          },
+          {
+            "id": "r_3",
+            "text": "用竹帘捞起纸浆"
+          },
+          {
+            "id": "r_1",
+            "text": "把原料放进水里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "蔡伦改进造纸术吸收了人们长期积累的经验。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“学富五车”说明古代书很轻便，只要一个小盒子就能带走。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话最能概括《纸的发明》的中心？",
+        "options": [
+          "赵州桥非常美观",
+          "清明上河图画了热闹街市",
+          "造纸术的发明是中国对世界文明的伟大贡献之一",
+          "重阳节要登高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "为什么能传承",
+        "passage": "蔡伦改进造纸术，用树皮、麻头、破布、旧渔网等原料造纸。这些原料容易得到，价格便宜，可以大量制造。造出的纸轻便又好用，所以这种造纸方法传承下来了。",
+        "questions": [
+          {
+            "question": "蔡伦造纸的原料有什么特点？",
+            "options": [
+              "非常稀少",
+              "只能进口",
+              "容易得到",
+              "不能切碎"
+            ]
+          },
+          {
+            "question": "这种方法能传承下来，不包括哪一项原因？",
+            "options": [
+              "纸轻便好用",
+              "价格便宜",
+              "书写很不方便",
+              "可以大量制造"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "纸",
+        "tokens": [
+          "桥",
+          "浆",
+          "节",
+          "张",
+          "片",
+          "花"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "浆",
+            "张",
+            "片"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
