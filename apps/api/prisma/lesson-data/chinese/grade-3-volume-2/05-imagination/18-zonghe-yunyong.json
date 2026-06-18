@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "馋",
+        "hint": "请选择“馋”的正确拼音",
+        "options": [
+          "cán",
+          "chán",
+          "chǎn",
+          "chāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fán",
+        "sentence": "变成树真麻__。",
+        "blankPlaceholder": "__",
+        "character": "烦",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "烦"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "胡萝卜先生"
+          },
+          {
+            "id": "l1",
+            "text": "英英"
+          },
+          {
+            "id": "l2",
+            "text": "铅笔"
+          },
+          {
+            "id": "l3",
+            "text": "尾巴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "说自己有一只猫"
+          },
+          {
+            "id": "r0",
+            "text": "长胡子派上许多用场"
+          },
+          {
+            "id": "r2",
+            "text": "拥有许多梦想"
+          },
+          {
+            "id": "r1",
+            "text": "变成一棵树"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第五单元最核心的学习任务是：",
+        "options": [
+          "学习传统节日",
+          "掌握乘除法",
+          "展开奇妙想象，写想象故事",
+          "介绍海底世界"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "想象故事既要大胆，也要让读者明白事情怎样发展。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "生字“萝、愁、希、震”都出现在本单元。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：想象让平常事物变得奇妙。",
+        "tokens": [
+          "。",
+          "事物",
+          "想象",
+          "香肠",
+          "奇妙",
+          "平常",
+          "果酱",
+          "变得",
+          "让"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "想象",
+          "让",
+          "平常",
+          "事物",
+          "变得",
+          "奇妙",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "综合片段",
+        "passage": "一只旧书包厌倦了每天装课本。夜里，它悄悄张开拉链，变成一艘小船，载着铅笔、橡皮和尺子驶向月光下的文具海。",
+        "questions": [
+          {
+            "question": "这段想象把旧书包变成了什么？",
+            "options": [
+              "小船",
+              "大树",
+              "胡子",
+              "猫"
+            ]
+          },
+          {
+            "question": "文具们驶向哪里？",
+            "options": [
+              "月光下的文具海",
+              "菜园",
+              "眼镜店",
+              "小溪边"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项最能体现“大胆想象”？",
+        "options": [
+          "我按时吃午饭",
+          "小水滴在花瓣上开了一家云朵邮局",
+          "铅笔可以写字",
+          "树上有叶子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写完想象故事后，最合适的下一步是：",
+        "options": [
+          "马上不看了",
+          "只数页码",
+          "只改成拼音",
+          "读给同学听并修改完善"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

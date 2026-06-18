@@ -1,0 +1,137 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "三年级339盆花，平均分给3个班，每班浇多少盆？"
+      },
+      "answer": {
+        "value": 113,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四年级488盆花，平均分给4个班，每班浇多少盆？"
+      },
+      "answer": {
+        "value": 122,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "第一季度按90天计算，一个星期7天，有多少个星期，还余几天？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "上海虹桥站到济南西站高铁全长约912千米，运行约3小时，平均每小时多少千米？"
+      },
+      "answer": {
+        "value": 304,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "685本书平均分给5个班，每班分到多少本？"
+      },
+      "answer": {
+        "value": 137,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "长颈鹿584厘米，小青蛙4厘米，长颈鹿身高是小青蛙的多少倍？"
+      },
+      "answer": {
+        "value": 146,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "“168个座位，每排6个座位，有多少排？”列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "168÷6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "C919有168个座位，每排6个座位，有多少排？"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "384元买4套百科全书，每套8本，平均每本多少元？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每班多少盆花”属于哪种模型？",
+        "options": [
+          "求总数",
+          "比较大小",
+          "求周长",
+          "平均分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "蜻蜓"
+          },
+          {
+            "id": "l1",
+            "text": "瓢虫"
+          },
+          {
+            "id": "l2",
+            "text": "独角仙"
+          },
+          {
+            "id": "l3",
+            "text": "蚂蚱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "头部有犀牛一样的角"
+          },
+          {
+            "id": "r3",
+            "text": "尖头绿，膜翅淡桃红色"
+          },
+          {
+            "id": "r0",
+            "text": "有复眼，视觉灵敏"
+          },
+          {
+            "id": "r1",
+            "text": "硬翅上有小圆点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "复眼"
+          },
+          {
+            "id": "l1",
+            "text": "花大姐"
+          },
+          {
+            "id": "l2",
+            "text": "挂大扁儿"
+          },
+          {
+            "id": "l3",
+            "text": "土蚂蚱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "尖头绿蚂蚱的俗称"
+          },
+          {
+            "id": "r3",
+            "text": "身体粗短、色黑如泥土"
+          },
+          {
+            "id": "r0",
+            "text": "许多小眼睛合成的大眼睛"
+          },
+          {
+            "id": "r1",
+            "text": "瓢虫的俗称"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蜻蜓和苍蝇都有复眼，说明它们什么很灵敏？",
+        "options": [
+          "嗅觉",
+          "味觉",
+          "听写能力",
+          "视觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "瓢虫身上的小圆点叫作什么？",
+        "options": [
+          "星",
+          "花",
+          "眼",
+          "斑马"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七星瓢虫、十四星瓢虫是按什么来区分的？",
+        "options": [
+          "翅膀颜色",
+          "身体大小",
+          "星点数量",
+          "叫声高低"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "独角仙头部尖端的角像什么？",
+        "options": [
+          "剪刀似的尾巴",
+          "犀牛一样的角",
+          "碧绿的大圆盘",
+          "雪白的衣裳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "尖头绿蚂蚱在河北被叫作什么？",
+        "options": [
+          "挂大扁儿",
+          "花大姐",
+          "独角仙",
+          "小圆晕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“吃马铃薯嫩叶的瓢虫”在文中被看作什么？",
+        "options": [
+          "益虫",
+          "春鸟",
+          "植物朋友",
+          "害虫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成特征句",
+        "tokens": [
+          "复眼",
+          "蜻蜓",
+          "燕子",
+          "有",
+          "荷花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜻蜓",
+          "有",
+          "复眼"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成特征句",
+        "tokens": [
+          "有小圆点",
+          "瓢虫",
+          "芦芽",
+          "硬翅上",
+          "绿阴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "瓢虫",
+          "硬翅上",
+          "有小圆点"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "昆虫备忘录",
+        "passage": "蜻蜓有复眼，视觉很灵敏。瓢虫的硬翅上有小圆点，点数不同，名称也不同。独角仙头部尖端有一只像犀牛一样的角。尖头绿蚂蚱的膜翅是淡淡的桃红色。",
+        "questions": [
+          {
+            "question": "哪种昆虫有复眼？",
+            "options": [
+              "蜻蜓",
+              "荷花",
+              "燕子",
+              "河豚"
+            ]
+          },
+          {
+            "question": "独角仙的角长在哪里？",
+            "options": [
+              "头部尖端",
+              "翅膀中间",
+              "脚底下",
+              "尾巴上"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《昆虫备忘录》的学习重点是？",
+        "options": [
+          "背诵全文",
+          "默写古诗",
+          "默读课文，说感兴趣的昆虫秘密",
+          "写数学算式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

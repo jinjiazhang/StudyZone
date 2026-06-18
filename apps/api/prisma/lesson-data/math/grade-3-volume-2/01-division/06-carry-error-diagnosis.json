@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "黑板上 29×8 写成92，主要错在哪里？",
+        "options": [
+          "把9×8算错成72",
+          "把2×8算错成20",
+          "不该写竖式",
+          "忘记把个位进上来的7加到十位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "29 × 8 = ?"
+      },
+      "answer": {
+        "value": 232,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "182×4 写成428，主要错在哪里？",
+        "options": [
+          "百位上的1×4后忘记加十位进位",
+          "个位2×4算错",
+          "十位8×4不用进位",
+          "应该先算百位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "182 × 4 = ?"
+      },
+      "answer": {
+        "value": 728,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24×5 写成1020，错误原因是？",
+        "options": [
+          "24×5本来就是1020",
+          "只少写一个0",
+          "个位进位处理和数位对齐都错了",
+          "应该用除法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 × 5 = ?"
+      },
+      "answer": {
+        "value": 120,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "做完竖式后，用估算检查结果是否合理。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "29 × 8",
+        "right": "92"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "182 × 4 的正确积是",
+          null,
+          "，不是",
+          null
+        ],
+        "tokens": [
+          "428",
+          "720",
+          "728",
+          "182"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "728",
+          "428"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "29×8"
+          },
+          {
+            "id": "l1",
+            "text": "182×4"
+          },
+          {
+            "id": "l2",
+            "text": "24×5"
+          },
+          {
+            "id": "l3",
+            "text": "73×4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "120"
+          },
+          {
+            "id": "r3",
+            "text": "292"
+          },
+          {
+            "id": "r0",
+            "text": "232"
+          },
+          {
+            "id": "r1",
+            "text": "728"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

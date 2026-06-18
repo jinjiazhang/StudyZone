@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鹿在池水中首先欣赏什么？",
+        "options": [
+          "自己的角",
+          "自己的腿",
+          "狮子的影子",
+          "树枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鹿为什么抱怨自己的腿？",
+        "options": [
+          "腿跑得太快",
+          "腿会唱歌",
+          "觉得腿太细，配不上角",
+          "腿没有影子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "狮子逼近时，真正救了鹿的是什么？",
+        "options": [
+          "美丽的角",
+          "难看的长腿",
+          "池水",
+          "树枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鹿角带来了什么麻烦？",
+        "options": [
+          "让鹿跑得更快",
+          "吓走了狮子",
+          "帮鹿找到水",
+          "被树枝挂住，差点送命"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按提示组句：美丽的角差点儿送命。",
+        "tokens": [
+          "送命",
+          "让鹿",
+          "差点儿",
+          "鹿角",
+          "美丽的",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "美丽的",
+          "鹿角",
+          "差点儿",
+          "让鹿",
+          "送命"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按提示组句：难看的腿让鹿狮口逃生。",
+        "tokens": [
+          "逃生",
+          "狮口",
+          "让鹿",
+          "鹿腿",
+          "难看的",
+          "河流"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "难看的",
+          "鹿腿",
+          "让鹿",
+          "狮口",
+          "逃生"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "角"
+          },
+          {
+            "id": "l_1",
+            "text": "腿"
+          },
+          {
+            "id": "l_2",
+            "text": "池水"
+          },
+          {
+            "id": "l_3",
+            "text": "树枝"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "像镜子一样照出倒影"
+          },
+          {
+            "id": "r_0",
+            "text": "美丽、欣赏、差点儿送命"
+          },
+          {
+            "id": "r_3",
+            "text": "挂住鹿角，带来危险"
+          },
+          {
+            "id": "r_1",
+            "text": "难看、抱怨、狮口逃生"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "鹿角和鹿腿",
+        "passage": "鹿先在池水中欣赏美丽的角，又抱怨四条腿太细。狮子追来时，长腿让鹿飞快逃跑，可美丽的角却被树枝挂住。鹿挣脱后明白：角虽美丽，差点儿害命；腿虽难看，却救了自己。",
+        "questions": [
+          {
+            "question": "鹿的心情变化是怎样的？",
+            "options": [
+              "欣赏角、抱怨腿、明白腿的用处",
+              "一直讨厌自己的角",
+              "先害怕腿再喜欢角",
+              "只关心池水"
+            ]
+          },
+          {
+            "question": "故事中真正有用的是？",
+            "options": [
+              "鹿腿",
+              "鹿角",
+              "池水",
+              "树枝"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "鹿一开始只看到了角的美丽和腿的难看。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "鹿角在逃命时帮助鹿跑得更快。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

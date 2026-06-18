@@ -1,0 +1,261 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据表格，长方形甲的周长是多少厘米？",
+        "columns": [
+          "名称",
+          "长厘米",
+          "宽厘米"
+        ],
+        "rows": [
+          {
+            "名称": "甲",
+            "长厘米": 9,
+            "宽厘米": 4
+          },
+          {
+            "名称": "乙",
+            "长厘米": 8,
+            "宽厘米": 5
+          },
+          {
+            "名称": "丙",
+            "长厘米": 7,
+            "宽厘米": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 26,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据表格，哪个长方形周长最大？",
+        "columns": [
+          "名称",
+          "周长厘米"
+        ],
+        "rows": [
+          {
+            "名称": "甲",
+            "周长厘米": 26
+          },
+          {
+            "名称": "乙",
+            "周长厘米": 26
+          },
+          {
+            "名称": "丙",
+            "周长厘米": 28
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "丙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据表格，边长 12 厘米的正方形周长是多少厘米？",
+        "columns": [
+          "图形",
+          "边长厘米"
+        ],
+        "rows": [
+          {
+            "图形": "正方形 A",
+            "边长厘米": 12
+          },
+          {
+            "图形": "正方形 B",
+            "边长厘米": 9
+          },
+          {
+            "图形": "正方形 C",
+            "边长厘米": 15
+          }
+        ]
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据表格，哪个正方形周长是 36 厘米？",
+        "columns": [
+          "名称",
+          "边长厘米",
+          "周长厘米"
+        ],
+        "rows": [
+          {
+            "名称": "A",
+            "边长厘米": 8,
+            "周长厘米": 32
+          },
+          {
+            "名称": "B",
+            "边长厘米": 9,
+            "周长厘米": 36
+          },
+          {
+            "名称": "C",
+            "边长厘米": 10,
+            "周长厘米": 40
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "B"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "表中长方形长 14 厘米、宽 6 厘米，它的周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "表中正方形边长 16 厘米，它的周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 64,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(9+4)",
+        "right": "2*(8+5)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "读表求周长时，长方形需要用到哪两列？",
+        "options": [
+          "名称和颜色",
+          "数量和单价",
+          "日期和天气",
+          "长和宽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "表中一个长方形长 18 厘米、宽 7 厘米。填长宽和、周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          25,
+          50
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪块菜地需要围栏最长？",
+        "columns": [
+          "菜地",
+          "长米",
+          "宽米",
+          "周长米"
+        ],
+        "rows": [
+          {
+            "菜地": "东园",
+            "长米": 20,
+            "宽米": 12,
+            "周长米": 64
+          },
+          {
+            "菜地": "西园",
+            "长米": 18,
+            "宽米": 15,
+            "周长米": 66
+          },
+          {
+            "菜地": "南园",
+            "长米": 22,
+            "宽米": 10,
+            "周长米": 64
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "西园"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

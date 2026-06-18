@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形周长可以怎样计算？",
+        "options": [
+          "长+宽",
+          "长×宽",
+          "(长+宽)×2",
+          "长×2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "长方形长 5 厘米、宽 3 厘米，列式求周长。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "5+3+5+3",
+          "5*2+3*2",
+          "2*(5+3)",
+          "(5+3)*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 5 厘米、宽 3 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "长方形长 8 厘米、宽 4 厘米。填长+宽和周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          24
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "type": "math_drag_fill",
+        "statement": [
+          "长方形周长 = (",
+          null,
+          "+",
+          null,
+          ") × 2"
+        ],
+        "tokens": [
+          "宽",
+          "边长",
+          "高",
+          "长"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长",
+          "宽"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "为什么长方形周长可以用 (长+宽)×2？",
+        "options": [
+          "有 4 个长",
+          "只有长需要加",
+          "宽不用算",
+          "有 2 个长和 2 个宽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "5+3+5+3",
+        "right": "(5+3)*2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 12 米、宽 7 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "长方形长 9 分米、宽 6 分米，用“先求长宽和再乘 2”的方法列式。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "(9+6)*2",
+          "2*(9+6)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "下面哪个算式不能表示长 6、宽 4 的长方形周长？",
+        "options": [
+          "6+4+6+4",
+          "6×4",
+          "(6+4)×2",
+          "6×2+4×2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

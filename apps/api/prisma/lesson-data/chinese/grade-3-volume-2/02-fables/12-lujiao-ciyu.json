@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hē",
+        "sentence": "鹿口渴了，到池塘边__水。",
+        "blankPlaceholder": "__",
+        "character": "喝",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "喝"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yún",
+        "sentence": "鹿觉得自己的身段很__称。",
+        "blankPlaceholder": "__",
+        "character": "匀",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "匀"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chèn",
+        "sentence": "鹿角精美别致，好像珊瑚。",
+        "blankPlaceholder": "__",
+        "character": "称",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "称"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pèi",
+        "sentence": "难看的腿怎么__得上美丽的角呢？",
+        "blankPlaceholder": "__",
+        "character": "配",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "配"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhuī",
+        "sentence": "狮子在后面猛__。",
+        "blankPlaceholder": "__",
+        "character": "追",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "追"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "táo",
+        "sentence": "鹿靠长腿狮口__生。",
+        "blankPlaceholder": "__",
+        "character": "逃",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "逃"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tàn",
+        "sentence": "鹿停下来端气，发出感__。",
+        "blankPlaceholder": "__",
+        "character": "叹",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "叹"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhì",
+        "sentence": "这对角精美别__。",
+        "blankPlaceholder": "__",
+        "character": "致",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "致"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "匀称"
+          },
+          {
+            "id": "l_1",
+            "text": "精美别致"
+          },
+          {
+            "id": "l_2",
+            "text": "抱怨"
+          },
+          {
+            "id": "l_3",
+            "text": "狮口逃生"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "心中不满而责怪"
+          },
+          {
+            "id": "r_0",
+            "text": "均匀而协调"
+          },
+          {
+            "id": "r_3",
+            "text": "从危险中逃脱"
+          },
+          {
+            "id": "r_1",
+            "text": "精巧漂亮，与众不同"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "配",
+        "tokens": [
+          "鹿",
+          "皱",
+          "对",
+          "得",
+          "合",
+          "撒"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和中间字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "合",
+            "得",
+            "对"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

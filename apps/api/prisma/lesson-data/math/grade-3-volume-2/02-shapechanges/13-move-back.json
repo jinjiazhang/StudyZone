@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个拼图片向下平移 4 格，要移回原位应怎样移动？",
+        "options": [
+          "向右平移4格",
+          "旋转4格",
+          "向上平移4格",
+          "向下平移4格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图形向右平移 3 格后，要回到原位，应：",
+        "options": [
+          "向右平移3格",
+          "对折一次",
+          "向左平移3格",
+          "向上平移3格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图形先向上平移 2 格，要移回原位需向下平移几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图形先向左平移 5 格，要移回原位需向右平移几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "移回原位要用",
+          null,
+          "方向，格数保持",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "任意",
+          "相同",
+          "相反",
+          "更大"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相反",
+          "相同"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“已向右4格、向上2格，现在移回原位”的路线排列。",
+        "items": [
+          {
+            "id": "s2",
+            "text": "向左平移4格"
+          },
+          {
+            "id": "s1",
+            "text": "向下平移2格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从(3,6)移到(7,4)，要回到原位，应先向左几格、再向下几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "左移格数"
+          },
+          {
+            "id": "b2",
+            "label": "下移格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "右3"
+          },
+          {
+            "id": "l2",
+            "text": "左2"
+          },
+          {
+            "id": "l3",
+            "text": "上4"
+          },
+          {
+            "id": "l4",
+            "text": "下5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "下4"
+          },
+          {
+            "id": "r3",
+            "text": "上5"
+          },
+          {
+            "id": "r1",
+            "text": "右2"
+          },
+          {
+            "id": "r2",
+            "text": "左3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“移回去”的路线和“移出去”的路线相比，方向应：",
+        "options": [
+          "相反",
+          "全部向上",
+          "全部向右",
+          "完全相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项能把“上2，右4”的移动移回原位？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "上4，右2"
+          },
+          {
+            "id": "g2",
+            "label": "右4，上2"
+          },
+          {
+            "id": "g3",
+            "label": "左2，下4"
+          },
+          {
+            "id": "g4",
+            "label": "左4，下2"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 3
+    }
+  ]
+}

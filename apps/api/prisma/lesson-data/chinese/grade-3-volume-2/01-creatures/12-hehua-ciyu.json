@@ -1,0 +1,293 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "挨挨挤挤"
+          },
+          {
+            "id": "l1",
+            "text": "冒出来"
+          },
+          {
+            "id": "l2",
+            "text": "饱胀"
+          },
+          {
+            "id": "l3",
+            "text": "翩翩起舞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "胀得很满"
+          },
+          {
+            "id": "r3",
+            "text": "轻快地跳舞"
+          },
+          {
+            "id": "r0",
+            "text": "一个紧靠一个"
+          },
+          {
+            "id": "r1",
+            "text": "向上露出来"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "花瓣儿"
+          },
+          {
+            "id": "l1",
+            "text": "花骨朵儿"
+          },
+          {
+            "id": "l2",
+            "text": "莲蓬"
+          },
+          {
+            "id": "l3",
+            "text": "衣裳"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "荷花中间的部分"
+          },
+          {
+            "id": "r3",
+            "text": "穿在身上的衣服"
+          },
+          {
+            "id": "r0",
+            "text": "花的一片片组成部分"
+          },
+          {
+            "id": "r1",
+            "text": "还没开放的花蕾"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“挨挨挤挤”写出了荷叶怎样？",
+        "options": [
+          "多而密",
+          "少而稀",
+          "又高又尖",
+          "颜色雪白"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“冒”字写出了白荷花怎样出现？",
+        "options": [
+          "慢慢沉到水底",
+          "从荷叶间努力探出来",
+          "被风吹走了",
+          "完全不动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“饱胀得马上要破裂似的”写的是哪种荷花？",
+        "options": [
+          "全展开的花瓣儿",
+          "荷叶",
+          "小鱼",
+          "花骨朵儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成词语",
+        "tokens": [
+          "雪白",
+          "挤挤",
+          "挨挨",
+          "清香"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "挨挨",
+          "挤挤"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成词语",
+        "tokens": [
+          "花瓣",
+          "起舞",
+          "翩翩",
+          "莲蓬"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "翩翩",
+          "起舞"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文短语",
+        "tokens": [
+          "花骨朵儿",
+          "衣裳",
+          "雪白的",
+          "碧绿"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪白的",
+          "衣裳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "荷",
+        "tokens": [
+          "花",
+          "燕",
+          "叶",
+          "鹿",
+          "池",
+          "香"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“荷”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "叶",
+            "池"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "舞",
+        "tokens": [
+          "蹈",
+          "梅",
+          "姿",
+          "芽",
+          "台",
+          "步"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“舞”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "蹈",
+            "姿",
+            "台"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪个词最能表现荷花的香味？",
+        "options": [
+          "喧闹",
+          "灵敏",
+          "清香",
+          "纤细"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碧绿的大圆盘”指的是什么？",
+        "options": [
+          "莲蓬",
+          "荷叶",
+          "花瓣儿",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

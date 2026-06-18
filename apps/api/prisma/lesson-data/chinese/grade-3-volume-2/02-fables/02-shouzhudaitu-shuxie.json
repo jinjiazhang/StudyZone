@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shǒu",
+        "sentence": "农夫不去耕田，只__在树桩旁。",
+        "blankPlaceholder": "__",
+        "character": "守",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "守"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhū",
+        "sentence": "兔子撞到树__上。",
+        "blankPlaceholder": "__",
+        "character": "株",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "株"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dài",
+        "sentence": "他整天等__兔子再来。",
+        "blankPlaceholder": "__",
+        "character": "待",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "待"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gēng",
+        "sentence": "宋人有__者。",
+        "blankPlaceholder": "__",
+        "character": "耕",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "耕"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhé",
+        "sentence": "兔走触株，__颈而死。",
+        "blankPlaceholder": "__",
+        "character": "折",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "折"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "因__其耒而守株。",
+        "blankPlaceholder": "__",
+        "character": "释",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "释"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qí",
+        "sentence": "__人弗能应也。",
+        "blankPlaceholder": "__",
+        "character": "其",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "其"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fù",
+        "sentence": "冀__得兔。",
+        "blankPlaceholder": "__",
+        "character": "复",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "复"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "守",
+        "tokens": [
+          "株",
+          "耕",
+          "候",
+          "卫",
+          "护",
+          "颈"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和中间字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "护",
+            "卫",
+            "候"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "复",
+        "tokens": [
+          "释",
+          "颈",
+          "述",
+          "原",
+          "习",
+          "宋"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和中间字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "习",
+            "原",
+            "述"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

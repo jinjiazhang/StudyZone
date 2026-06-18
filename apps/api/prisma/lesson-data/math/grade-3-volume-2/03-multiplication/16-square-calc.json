@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 6 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 11 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 15 分米，周长是 ? 分米"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 28 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 112,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形花坛边长 18 米，围一圈需要 ? 米栏杆"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形手帕边长 25 厘米，缝一圈花边需要 ? 厘米"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "边长 4"
+          },
+          {
+            "id": "l2",
+            "text": "边长 9"
+          },
+          {
+            "id": "l3",
+            "text": "边长 13"
+          },
+          {
+            "id": "l4",
+            "text": "边长 20"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "52"
+          },
+          {
+            "id": "r1",
+            "text": "16"
+          },
+          {
+            "id": "r4",
+            "text": "80"
+          },
+          {
+            "id": "r2",
+            "text": "36"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪块正方形地周长是 96 米？",
+        "columns": [
+          "名称",
+          "边长米",
+          "周长米"
+        ],
+        "rows": [
+          {
+            "名称": "甲",
+            "边长米": 20,
+            "周长米": 80
+          },
+          {
+            "名称": "乙",
+            "边长米": 24,
+            "周长米": 96
+          },
+          {
+            "名称": "丙",
+            "边长米": 26,
+            "周长米": 104
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "乙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "18*4",
+        "right": "2*(30+6)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "边长扩大到原来的 2 倍，正方形周长会怎样？",
+        "options": [
+          "不变",
+          "扩大到原来的 2 倍",
+          "扩大到原来的 4 倍",
+          "减少一半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

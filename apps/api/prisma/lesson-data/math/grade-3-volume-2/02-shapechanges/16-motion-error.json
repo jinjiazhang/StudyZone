@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“风车转动”归为平移，错误在哪里？",
+        "options": [
+          "风车位置太高",
+          "风车有颜色",
+          "风车绕中心转动",
+          "风车是纸做的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“抽屉拉出”归为旋转，错误在哪里？",
+        "options": [
+          "抽屉能装东西",
+          "抽屉是长方形",
+          "抽屉有把手",
+          "抽屉沿直线移动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种说法是错误的？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "钟表指针是平移现象"
+          },
+          {
+            "id": "g2",
+            "label": "方向盘转动是旋转现象"
+          },
+          {
+            "id": "g3",
+            "label": "推拉窗是平移现象"
+          },
+          {
+            "id": "g4",
+            "label": "升国旗是平移现象"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "旋转的关键是绕中心",
+          null,
+          "；平移的关键是沿方向",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "对折",
+          "镜像",
+          "移动",
+          "转动"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "转动",
+          "移动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图形向右移动后方向也改变了，不能只说它：",
+        "options": [
+          "可能旋转了",
+          "方向变了",
+          "位置变了",
+          "发生了平移"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项不是“描述清楚平移”的表达？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "向右平移4格"
+          },
+          {
+            "id": "g2",
+            "label": "向上平移1格"
+          },
+          {
+            "id": "g3",
+            "label": "移过去一点"
+          },
+          {
+            "id": "g4",
+            "label": "向左平移5格"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "学生把“向左平移 5 格”写成“向右平移 5 格”，方向错了几种相反关系中的一组？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "组数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "缺少格数"
+          },
+          {
+            "id": "l2",
+            "text": "方向写反"
+          },
+          {
+            "id": "l3",
+            "text": "把旋转当平移"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "“右3”写成“左3”"
+          },
+          {
+            "id": "r1",
+            "text": "“向上移动”"
+          },
+          {
+            "id": "r3",
+            "text": "“车轮平移”"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记录“上2，右4”时写成“上4，右2”，主要错在：",
+        "options": [
+          "方向完全没写",
+          "图形变大了",
+          "格数对应错了",
+          "变成轴对称"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一种纠错最合理？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "把“抽屉平移”改成“抽屉对折”"
+          },
+          {
+            "id": "g2",
+            "label": "把“电梯平移”改成“电梯旋转”"
+          },
+          {
+            "id": "g3",
+            "label": "把“钟针旋转”改成“钟针平移”"
+          },
+          {
+            "id": "g4",
+            "label": "把“风扇平移”改成“风扇旋转”"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    }
+  ]
+}

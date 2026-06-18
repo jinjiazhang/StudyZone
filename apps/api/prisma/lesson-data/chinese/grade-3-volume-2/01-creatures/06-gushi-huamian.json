@@ -1,0 +1,265 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“迟日江山丽，春风花草香”主要调动了哪些感受？",
+        "options": [
+          "听觉和味觉",
+          "触觉和味觉",
+          "只写听觉",
+          "视觉和嗅觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“沙暖睡鸳鸯”中的“暖”让人想到什么？",
+        "options": [
+          "冬天冰冷的河岸",
+          "春天阳光下沙滩温暖",
+          "夜晚的大风",
+          "秋天落叶满地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《惠崇春江晚景》是苏轼为谁的画写的题画诗？",
+        "options": [
+          "惠崇",
+          "杜甫",
+          "曾几",
+          "白居易"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《三衢道中》写的是诗人在路上的什么见闻？",
+        "options": [
+          "冬夜读书",
+          "秋天打猎",
+          "海边捕鱼",
+          "初夏山行所见所闻"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "燕子飞"
+          },
+          {
+            "id": "l1",
+            "text": "鸳鸯睡"
+          },
+          {
+            "id": "l2",
+            "text": "鸭先知"
+          },
+          {
+            "id": "l3",
+            "text": "黄鹂鸣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "春江水暖"
+          },
+          {
+            "id": "r3",
+            "text": "归途鸟声"
+          },
+          {
+            "id": "r0",
+            "text": "动态的春景"
+          },
+          {
+            "id": "r1",
+            "text": "安静温暖的春景"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "江山丽"
+          },
+          {
+            "id": "l1",
+            "text": "花草香"
+          },
+          {
+            "id": "l2",
+            "text": "芦芽短"
+          },
+          {
+            "id": "l3",
+            "text": "绿阴不减"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "植物刚刚发芽"
+          },
+          {
+            "id": "r3",
+            "text": "树荫仍然浓密"
+          },
+          {
+            "id": "r0",
+            "text": "春日景色明丽"
+          },
+          {
+            "id": "r1",
+            "text": "春风里有香气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成画面描述",
+        "tokens": [
+          "飞来飞去",
+          "燕子",
+          "睡觉",
+          "在湿软的泥土上",
+          "河豚"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "燕子",
+          "在湿软的泥土上",
+          "飞来飞去"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成画面描述",
+        "tokens": [
+          "春江水暖",
+          "鸭子",
+          "梅子",
+          "最先知道",
+          "黄鹂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸭子",
+          "最先知道",
+          "春江水暖"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成画面描述",
+        "tokens": [
+          "叫了几声",
+          "黄鹂",
+          "沙暖",
+          "在绿阴里",
+          "鸳鸯"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄鹂",
+          "在绿阴里",
+          "叫了几声"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "古诗画面",
+        "passage": "春风吹来，花草散发清香。燕子衔泥飞过，鸳鸯睡在温暖的沙滩上。江边桃花刚开，鸭子在水中游动。山路上绿阴浓密，黄鹂的叫声让旅途更有生趣。",
+        "questions": [
+          {
+            "question": "这段话中写到哪种鸟在沙滩上睡觉？",
+            "options": [
+              "鸳鸯",
+              "黄鹂",
+              "燕子",
+              "鸭子"
+            ]
+          },
+          {
+            "question": "“黄鹂的叫声”对应哪首诗的画面？",
+            "options": [
+              "《三衢道中》",
+              "《绝句》",
+              "《惠崇春江晚景》",
+              "《忆江南》"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "只给出轴对称图形的一半，要复原整体，应该把这一半怎样处理？",
+        "options": [
+          "向右平移3格",
+          "随意放大",
+          "沿对称轴翻折到另一边",
+          "顺时针旋转一圈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "竖直对称轴右边有半个花瓶，完整图形应在左边出现什么？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "左右相反的半个花瓶"
+          },
+          {
+            "id": "g2",
+            "label": "更小的花瓶"
+          },
+          {
+            "id": "g3",
+            "label": "横放的花瓶"
+          },
+          {
+            "id": "g4",
+            "label": "一模一样方向的半个花瓶"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "竖直对称轴左边有半个数字 1，右边应补成：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "随机缺口"
+          },
+          {
+            "id": "g2",
+            "label": "镜像的另一半"
+          },
+          {
+            "id": "g3",
+            "label": "旋转后的底边"
+          },
+          {
+            "id": "g4",
+            "label": "同方向的一半"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "复原轴对称图形时，对称轴两边的对应点到轴的距离要",
+          null,
+          "，方向要",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "相反",
+          "相等",
+          "更远",
+          "相同"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相等",
+          "相反"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "右半边图形上点 A 离竖直对称轴 3 格，镜像点 A′ 在左边离轴几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "左半边图形上点 B 离对称轴 5 格，右边对应点离轴几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全轴对称图形时，如果左边点比右边点离轴更远，会怎样？",
+        "options": [
+          "变成平移",
+          "一定更美观",
+          "仍然完全重合",
+          "不能完全重合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "半张脸谱在竖直轴左侧，右侧应该补成：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "向右平移的脸谱"
+          },
+          {
+            "id": "g2",
+            "label": "同样方向的半张脸谱"
+          },
+          {
+            "id": "g3",
+            "label": "上下倒置的脸谱"
+          },
+          {
+            "id": "g4",
+            "label": "左右镜像的半张脸谱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "点离轴 2 格"
+          },
+          {
+            "id": "l2",
+            "text": "点离轴 4 格"
+          },
+          {
+            "id": "l3",
+            "text": "点在对称轴上"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "对应点仍在轴上"
+          },
+          {
+            "id": "r3",
+            "text": "对应点离轴 4 格"
+          },
+          {
+            "id": "r2",
+            "text": "对应点离轴 2 格"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一步不属于复原轴对称图形？",
+        "options": [
+          "画出镜像部分",
+          "找对应点",
+          "确定对称轴",
+          "把半个图形随意旋转"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

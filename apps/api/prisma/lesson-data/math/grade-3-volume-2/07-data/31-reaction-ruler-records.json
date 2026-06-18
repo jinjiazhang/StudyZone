@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "抓反应速度尺游戏中，没有抓住时记为多少？",
+        "options": [
+          "2",
+          "0",
+          "8",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中的反应尺标出了哪些位置？",
+        "options": [
+          "1、2、3、4、5、6",
+          "0、2、4、6、8、10",
+          "32、33、34",
+          "130、135、140"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "抓到的位置数越大，表示这次记录怎样？",
+        "options": [
+          "鞋号更大",
+          "睡得更久",
+          "身高更矮",
+          "抓到的位置更高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "反应尺记录：小组4人每人5次，一共记录多少次？",
+        "columns": [
+          "人数",
+          "每人次数",
+          "总次数"
+        ],
+        "rows": [
+          {
+            "人数": 4,
+            "每人次数": 5,
+            "总次数": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 20
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4人轮流做游戏，每人抓5次，一共抓多少次？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一次小组游戏有4人，每人5次，表格应有 ___ 行学生记录和 ___ 列次数记录。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "学生行数"
+          },
+          {
+            "id": "b2",
+            "label": "次数列数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记录反应尺数据时，表格第一列通常写什么？",
+        "options": [
+          "姓名",
+          "鞋号",
+          "单位",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把反应尺数据整理到0、2、4、6、8、10的数线上，是为了看什么？",
+        "options": [
+          "每人姓名笔画",
+          "鞋号大小",
+          "各位置出现次数",
+          "身高范围"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "抓到10",
+        "right": "抓到4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在反应尺数线上标出 8。",
+        "min": 0,
+        "max": 10,
+        "step": 2
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "一支铅笔的梦想",
+        "passage": "老憋在抽屉里的铅笔有许多梦想：溜出教室，跳进荷塘，躲到菜园，来到小溪边，跑到运动场。它在每个地方都想变成和自己细长特点有关的事物。",
+        "questions": [
+          {
+            "question": "铅笔的梦想有什么共同特点？",
+            "options": [
+              "都和铅笔细长的样子有关",
+              "都在介绍铅笔价格",
+              "都没有地点",
+              "都写真实新闻"
+            ]
+          },
+          {
+            "question": "铅笔在荷塘想为什么做事？",
+            "options": [
+              "为小鱼虾撑伞",
+              "给鸟太太晾尿布",
+              "给妈妈装食物",
+              "给星星唱歌"
+            ]
+          },
+          {
+            "question": "例文结尾说铅笔的梦想像什么？",
+            "options": [
+              "纸上的字发芽、开花、结童话",
+              "石桥上的栏板",
+              "一根胡子不再长",
+              "树上的水珠"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "山坡"
+          },
+          {
+            "id": "l1",
+            "text": "荷塘"
+          },
+          {
+            "id": "l2",
+            "text": "菜园"
+          },
+          {
+            "id": "l3",
+            "text": "运动场"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "当撑杆或标枪"
+          },
+          {
+            "id": "r0",
+            "text": "萌出芽儿、开花"
+          },
+          {
+            "id": "r2",
+            "text": "长成豆角或装成丝瓜"
+          },
+          {
+            "id": "r1",
+            "text": "为小鱼虾撑伞"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "旁批说“豆角、丝瓜和铅笔一样，都是细长的”，这是在提醒：",
+        "options": [
+          "只能写蔬菜",
+          "想象要自然、合理",
+          "不能写梦想",
+          "必须写五段"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "例文用“第一个梦想、第二个梦想……”让结构很清楚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "铅笔的梦想和它的形状完全没有关系。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：铅笔的梦想一个接一个。",
+        "tokens": [
+          "。",
+          "一个",
+          "铅笔",
+          "鸟窝",
+          "一个",
+          "梦想",
+          "果酱",
+          "接",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "铅笔",
+          "的",
+          "梦想",
+          "一个",
+          "接",
+          "一个",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "仿写“一支铅笔的梦想”时，可以学习它：",
+        "options": [
+          "只写一句话",
+          "只列生字",
+          "只写真实用途",
+          "按多个地点写连续梦想"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“会有多少梦想？”这个问题能引出后面的多个想象。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "第一个梦想"
+          },
+          {
+            "id": "l1",
+            "text": "第二个梦想"
+          },
+          {
+            "id": "l2",
+            "text": "第三个梦想"
+          },
+          {
+            "id": "l3",
+            "text": "第五个梦想"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "躲到菜园"
+          },
+          {
+            "id": "r0",
+            "text": "溜出教室"
+          },
+          {
+            "id": "r3",
+            "text": "跑到运动场"
+          },
+          {
+            "id": "r1",
+            "text": "跳进荷塘"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《一支铅笔的梦想》用多个“梦想”串起全文。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

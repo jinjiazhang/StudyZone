@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 5 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 × 3 = ?"
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 × 5 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 × 4 = ?"
+      },
+      "answer": {
+        "value": 144,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "47 × 2 = ?"
+      },
+      "answer": {
+        "value": 94,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "29 × 3 = ?"
+      },
+      "answer": {
+        "value": 87,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 × 5：个位 2×5=10，写 __ 进 __，十位 1×5 加进位得 __",
+        "blanks": [
+          {
+            "id": "write"
+          },
+          {
+            "id": "carry"
+          },
+          {
+            "id": "tens"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          1,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12×5 的积是60，竖式中个位写0、向十位进1，原因是？",
+        "options": [
+          "1×5=5",
+          "2×5=10",
+          "10×5=50",
+          "5×2=10但不用进位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "28 × 3",
+        "right": "80"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "16 × 5：先算 6×5=30，个位写",
+          null,
+          "，向十位进",
+          null
+        ],
+        "tokens": [
+          "3",
+          "30",
+          "0",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "有进位时，下一位相乘后要加上进位数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

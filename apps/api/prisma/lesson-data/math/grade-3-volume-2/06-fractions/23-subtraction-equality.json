@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "14 - 10 = __",
+        "blanks": [
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "104 - 100 = __",
+        "blanks": [
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "40 - 36 = __",
+        "blanks": [
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "36 - __ = 26 - __",
+        "blanks": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          17,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "58 - __ = 48 - __",
+        "blanks": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          22,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "90 - __ = 70 - __",
+        "blanks": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          55,
+          35
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36 - □ = 26 - ☆，如果 □=9，☆ 应填：",
+        "options": [
+          "1",
+          "19",
+          "9",
+          "-1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 36 - □ = 26 - ☆ 中，要保持相等，□ 通常比 ☆：",
+        "options": [
+          "大10",
+          "小10",
+          "相等",
+          "大26"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "54 - 20",
+        "right": "44 - 20"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "82 - 35",
+        "right": "92 - 45"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "气球按“蓝、蓝、红、红、黄”重复，第 9 个是什么颜色？",
+        "options": [
+          "蓝",
+          "黄",
+          "红",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "气球按“蓝、蓝、红、红、黄”重复，第 14 个是什么颜色？",
+        "options": [
+          "红",
+          "蓝",
+          "黄",
+          "紫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "气球按“蓝、蓝、红、红、黄”重复，第 20 个是什么颜色？",
+        "options": [
+          "蓝",
+          "红",
+          "绿",
+          "黄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每 5 个一组，第 27 个在第 __ 组的第 __ 个。",
+        "blanks": [
+          {
+            "id": "group"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每 5 个一组，第 35 个在第 __ 组的第 __ 个。",
+        "blanks": [
+          {
+            "id": "group"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果第 1、2 个是蓝色，第 3、4 个是红色，第 5 个是黄色，那么第 17 个是：",
+        "options": [
+          "红",
+          "蓝",
+          "黄",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "按“蓝、蓝、红、红、黄”重复，第 23 个气球的颜色是什么？",
+        "columns": [
+          "位置",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "rows": [
+          {
+            "1": "蓝",
+            "2": "蓝",
+            "3": "红",
+            "4": "红",
+            "5": "黄",
+            "位置": "颜色"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "红"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 5 的余数是 ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个气球规律里余数 0 对应什么颜色？",
+        "options": [
+          "蓝",
+          "红",
+          "黄",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个气球规律里余数 1 或 2 对应什么颜色？",
+        "options": [
+          "蓝",
+          "红",
+          "黄",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

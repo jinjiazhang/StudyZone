@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "奇思班睡眠 8 小时的有多少人？",
+        "columns": [
+          "睡眠时间",
+          "8小时",
+          "9小时",
+          "10小时",
+          "11小时",
+          "12小时"
+        ],
+        "rows": [
+          {
+            "睡眠时间": "人数",
+            "8小时": 5,
+            "9小时": 9,
+            "10小时": 24,
+            "11小时": 3,
+            "12小时": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠 10 小时的有多少人？",
+        "columns": [
+          "睡眠时间",
+          "8小时",
+          "9小时",
+          "10小时",
+          "11小时",
+          "12小时"
+        ],
+        "rows": [
+          {
+            "睡眠时间": "人数",
+            "8小时": 5,
+            "9小时": 9,
+            "10小时": 24,
+            "11小时": 3,
+            "12小时": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠不足 10 小时的一共有多少人？",
+        "columns": [
+          "项目",
+          "8小时",
+          "9小时"
+        ],
+        "rows": [
+          {
+            "项目": "人数",
+            "8小时": 5,
+            "9小时": 9
+          }
+        ]
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小学生每天睡眠时间应该达到：",
+        "options": [
+          "8小时",
+          "10小时",
+          "6小时",
+          "12小时以上才行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24",
+        "right": "9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5",
+        "right": "3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 9 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 - 9 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把睡眠数据画在数线上，最容易看出：",
+        "options": [
+          "哪个时间段人数多",
+          "每个人姓名",
+          "今天星期几",
+          "座位顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠达到 10 小时及以上的一共有多少人？",
+        "columns": [
+          "项目",
+          "10小时",
+          "11小时",
+          "12小时"
+        ],
+        "rows": [
+          {
+            "项目": "人数",
+            "10小时": 24,
+            "11小时": 3,
+            "12小时": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

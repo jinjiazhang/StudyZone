@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "38 + 45",
+        "right": "45 + 26"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 + __ = __ + 8",
+        "blanks": [
+          {
+            "id": "box"
+          },
+          {
+            "id": "circle"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          13
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "84 - __ = 74 - __",
+        "blanks": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "right"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按“红、红、蓝、黄”重复，第 30 面旗是什么颜色？",
+        "options": [
+          "蓝",
+          "黄",
+          "红",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每 4 个一组，第 30 个在第 __ 组的第 __ 个。",
+        "blanks": [
+          {
+            "id": "group"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 个洗车位循环，第 42 辆车在：",
+        "options": [
+          "2号位",
+          "1号位",
+          "3号位",
+          "4号位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "统计表中人数最多的是哪一项？",
+        "columns": [
+          "项目",
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "rows": [
+          {
+            "项目": "人数",
+            "A": 6,
+            "B": 12,
+            "C": 9,
+            "D": 4
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "B"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "等式 25 + □ = ○ + 30 中，如果 □ 增加 1，○ 应该：",
+        "options": [
+          "减少1",
+          "也增加1",
+          "不变",
+          "增加5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "63 + 27 - (60 + 30) = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "解决周期问题最常用的方法是：",
+        "options": [
+          "每次都从头数",
+          "只看最后一个图形",
+          "先计算面积",
+          "先确定一组有几个，再看余数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

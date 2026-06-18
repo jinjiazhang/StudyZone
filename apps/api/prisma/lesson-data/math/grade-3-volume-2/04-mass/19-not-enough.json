@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "285 ÷ 5 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          57,
+          0
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "285 ÷ 7 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          40,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "168 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "125 ÷ 8 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "520 ÷ 6 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          86,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "458 ÷ 4 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          114,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "285 ÷ 7 中，百位2不够除以7，应先看什么？",
+        "options": [
+          "只看个位5",
+          "前两位28",
+          "直接商7",
+          "把2去掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果当前位不够商1，且后面还要继续算，这一位通常写什么占位？",
+        "options": [
+          "1",
+          "除数",
+          "0",
+          "余数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "285 ÷ 7 = ",
+          null,
+          " …… ",
+          null
+        ],
+        "tokens": [
+          "5",
+          "40",
+          "7",
+          "57",
+          "0"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "40",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "285 ÷ 5",
+        "right": "285 ÷ 7",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

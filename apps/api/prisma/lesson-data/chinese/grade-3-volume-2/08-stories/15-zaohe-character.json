@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词最适合评价枣核？",
+        "options": [
+          "懒惰胆小",
+          "粗心大意",
+          "机智勇敢",
+          "骄傲自满"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "枣核“也不争辩，只是说：不信，你们就等着看。”表现他怎样？",
+        "options": [
+          "非常害怕",
+          "不会说话",
+          "已经放弃",
+          "胸有成竹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "枣核救回牲口，说明他关心谁？",
+        "options": [
+          "庄稼人",
+          "县官",
+          "裁缝",
+          "老虎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "人物小和本领大形成对比，让故事更有趣。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "枣核只会说大话，最后没有行动。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "聪明"
+          },
+          {
+            "id": "l_0",
+            "text": "个子小"
+          },
+          {
+            "id": "l_3",
+            "text": "勇敢"
+          },
+          {
+            "id": "l_1",
+            "text": "勤快"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "天天干活"
+          },
+          {
+            "id": "r_3",
+            "text": "敢面对县官和衙役"
+          },
+          {
+            "id": "r_0",
+            "text": "像枣核一样大"
+          },
+          {
+            "id": "r_2",
+            "text": "想办法救回牲口"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "因为",
+          "虽然",
+          "棉袄",
+          "个子小",
+          "所以",
+          "但是",
+          "漏雨",
+          "本领大"
+        ],
+        "source": "枣核虽然个子小，但是本领大。"
+      },
+      "answer": {
+        "ordered": [
+          "虽然",
+          "个子小",
+          "但是",
+          "本领大"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "急性",
+          "聪明",
+          "顾客",
+          "办法",
+          "裁缝",
+          "帮助",
+          "棉袄",
+          "庄稼人"
+        ],
+        "source": "枣核用聪明办法帮助庄稼人。"
+      },
+      "answer": {
+        "ordered": [
+          "聪明",
+          "办法",
+          "帮助",
+          "庄稼人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "枣核没有强壮的身体，却能凭机智救回牲口。他不怕县官和衙役，也不乱争辩，而是用行动证明自己。这样的反差让人物更鲜明。",
+        "questions": [
+          {
+            "question": "枣核靠什么救回牲口？",
+            "options": [
+              "力气最大",
+              "别人背他去",
+              "机智",
+              "县官帮忙"
+            ]
+          },
+          {
+            "question": "这段话说枣核用什么证明自己？",
+            "options": [
+              "颜色",
+              "价钱",
+              "天气",
+              "行动"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果续编《枣核》，最应保留哪种特点？",
+        "options": [
+          "讲裁缝改衣服",
+          "小个子做出大事情",
+          "老虎害怕漏雨",
+          "写暴风雨天气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

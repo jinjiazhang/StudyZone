@@ -1,0 +1,153 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估计一个看台人数，可以先做什么？",
+        "options": [
+          "逐个精确数完整体育场",
+          "只看颜色猜",
+          "先算票价",
+          "估一排约有多少人，再数有几排"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "180 × 5 = ?"
+      },
+      "answer": {
+        "value": 900,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "160 × 5 = ?"
+      },
+      "answer": {
+        "value": 800,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "180 × 5",
+        "right": "160 × 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果1个看台约180人，5个看台大约多少人？",
+        "options": [
+          "900人",
+          "800人",
+          "185人",
+          "360人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果1个看台约160人，5个看台大约多少人？",
+        "options": [
+          "900人",
+          "165人",
+          "800人",
+          "500人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按估计人数从少到多排列",
+        "items": [
+          {
+            "id": "i0_900",
+            "text": "900"
+          },
+          {
+            "id": "i1_800",
+            "text": "800"
+          },
+          {
+            "id": "i2_480",
+            "text": "480"
+          },
+          {
+            "id": "i3_1000",
+            "text": "1000"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i2_480",
+          "i1_800",
+          "i0_900",
+          "i3_1000"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "估计时要选择比较容易计算、又接近实际的数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一盒糖分成4块区域，每块约40块，列式估计总数。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "40×4",
+          "4×40"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 × 4 = ?"
+      },
+      "answer": {
+        "value": 160,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

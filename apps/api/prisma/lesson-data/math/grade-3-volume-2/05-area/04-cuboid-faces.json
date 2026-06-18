@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体盒子一共有几个面？",
+        "options": [
+          "4个",
+          "6个",
+          "8个",
+          "12个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "普通长方体纸盒的展开图通常由什么面组成？",
+        "options": [
+          {
+            "id": "a",
+            "label": "6个圆"
+          },
+          {
+            "id": "b",
+            "label": "4个三角形"
+          },
+          {
+            "id": "c",
+            "label": "6个长方形或其中有正方形"
+          },
+          {
+            "id": "d",
+            "label": "1个长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体相对的两个面通常有什么关系？",
+        "options": [
+          "一定只在角上相碰",
+          "一定是圆形",
+          "一定不能折叠",
+          "大小和形状相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个完整长方体展开图，面数少于6个会怎样？",
+        "options": [
+          {
+            "id": "a",
+            "label": "通常不能围成长方体"
+          },
+          {
+            "id": "b",
+            "label": "一定能围成正方体"
+          },
+          {
+            "id": "c",
+            "label": "会变成圆柱"
+          },
+          {
+            "id": "d",
+            "label": "没有影响"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "前面"
+          },
+          {
+            "id": "l2",
+            "text": "上面"
+          },
+          {
+            "id": "l3",
+            "text": "左面"
+          },
+          {
+            "id": "l4",
+            "text": "所有面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "有一个相对的右面"
+          },
+          {
+            "id": "r1",
+            "text": "有一个相对的后面"
+          },
+          {
+            "id": "r4",
+            "text": "一共6个"
+          },
+          {
+            "id": "r2",
+            "text": "有一个相对的下面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "检查长方体展开图的步骤",
+        "items": [
+          {
+            "id": "s2",
+            "text": "找出三组相对面"
+          },
+          {
+            "id": "s4",
+            "text": "想象折成盒子"
+          },
+          {
+            "id": "s1",
+            "text": "数出6个面"
+          },
+          {
+            "id": "s3",
+            "text": "看相邻面是否沿边连接"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方体有",
+          null,
+          "个面，相对的面大小和形状通常",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "相同",
+          "4",
+          "6",
+          "不同"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "相同"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一项不是长方体展开图判断重点？",
+        "options": [
+          "面数是否为6",
+          "纸片颜色必须一样",
+          "相邻面连接是否合理",
+          "能否折回盒子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体展开图中，中间一排常见的4个面表示：",
+        "options": [
+          {
+            "id": "a",
+            "label": "两个圆形底面"
+          },
+          {
+            "id": "b",
+            "label": "四个尖角"
+          },
+          {
+            "id": "c",
+            "label": "围成盒身的侧面"
+          },
+          {
+            "id": "d",
+            "label": "完全无关的纸片"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果长方体展开图有6个面，但其中一个面离开整体，结果是：",
+        "options": [
+          "一定可以折成盒子",
+          "会变成球",
+          "面数变成7个",
+          "不能直接折成连在一起的盒子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

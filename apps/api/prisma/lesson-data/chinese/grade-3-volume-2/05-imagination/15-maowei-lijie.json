@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "尾巴它有一只猫",
+        "passage": "有一条尾巴得意地说自己拥有一只猫。它觉得猫无论做什么都听自己的话、跟在自己身边，所以说“我有一只猫”。这种说法把通常的关系倒过来了，很新奇。",
+        "questions": [
+          {
+            "question": "这篇例文最有趣的地方是：",
+            "options": [
+              "把“猫有尾巴”倒过来说成“尾巴有猫”",
+              "介绍猫的真实品种",
+              "说明尾巴长度",
+              "记录养猫方法"
+            ]
+          },
+          {
+            "question": "“自豪”说明尾巴的心情是：",
+            "options": [
+              "得意、骄傲",
+              "害怕",
+              "难过",
+              "无聊"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "旁批“猫有尾巴，尾巴怎么能有一只猫呢？”引导我们关注：",
+        "options": [
+          "反向想象的新奇",
+          "错别字",
+          "标点数量",
+          "古诗作者"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "通常说法"
+          },
+          {
+            "id": "l1",
+            "text": "新奇说法"
+          },
+          {
+            "id": "l2",
+            "text": "得意"
+          },
+          {
+            "id": "l3",
+            "text": "自豪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "为自己感到骄傲"
+          },
+          {
+            "id": "r0",
+            "text": "猫有尾巴"
+          },
+          {
+            "id": "r2",
+            "text": "觉得自己很了不起"
+          },
+          {
+            "id": "r1",
+            "text": "尾巴有一只猫"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "例文把普通关系倒过来，产生了奇妙的效果。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“尾巴有一只猫”是一本正经的科学说明。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：反过来想也很有趣。",
+        "tokens": [
+          "香肠",
+          "很",
+          "反过来",
+          "。",
+          "也",
+          "树枝",
+          "有趣",
+          "想"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "反过来",
+          "想",
+          "也",
+          "很",
+          "有趣",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句也用了“反过来想”？",
+        "options": [
+          "我今天去上学。",
+          "这支笔是蓝色的。",
+          "书包说：“我每天背着小主人上学。”",
+          "妈妈做了饭。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写类似故事时，要让谁像人一样说话、想事？",
+        "options": [
+          "被想象的事物",
+          "只有作者本人",
+          "只能是老师",
+          "只能是动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "让物品开口说话，是想象故事常用的方法。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“影子有一个人”这个题目适合学习哪篇例文的方法？",
+        "options": [
+          "《绝句》",
+          "《赵州桥》",
+          "《燕子》",
+          "《尾巴它有一只猫》"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

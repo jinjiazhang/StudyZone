@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_1",
+            "text": "聪明"
+          },
+          {
+            "id": "l_3",
+            "text": "善罢甘休"
+          },
+          {
+            "id": "l_0",
+            "text": "勤快"
+          },
+          {
+            "id": "l_2",
+            "text": "争辩"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "各说各的理由争论"
+          },
+          {
+            "id": "r_0",
+            "text": "做事勤劳、不偷懒"
+          },
+          {
+            "id": "r_3",
+            "text": "轻易罢休"
+          },
+          {
+            "id": "r_1",
+            "text": "头脑灵活"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "官粮"
+          },
+          {
+            "id": "l_0",
+            "text": "扶犁"
+          },
+          {
+            "id": "l_3",
+            "text": "惊堂木"
+          },
+          {
+            "id": "l_1",
+            "text": "衙役"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "旧时官府里的差役"
+          },
+          {
+            "id": "r_3",
+            "text": "旧时官员拍桌的木块"
+          },
+          {
+            "id": "r_0",
+            "text": "扶着犁耕地"
+          },
+          {
+            "id": "r_2",
+            "text": "交给官府的粮食"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "核",
+        "tokens": [
+          "桃",
+          "妻",
+          "袖",
+          "枣",
+          "胶",
+          "心"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“核”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "桃",
+            "枣",
+            "心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "聪",
+        "tokens": [
+          "明",
+          "驴",
+          "箱",
+          "慧",
+          "漏",
+          "颖"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“聪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "明",
+            "慧",
+            "颖"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“枣核一点儿也不见长”说明什么？",
+        "options": [
+          "他很懒",
+          "他变成老虎",
+          "他不会说话",
+          "他个子很小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“县衙门”指什么地方？",
+        "options": [
+          "旧时官府办事的地方",
+          "裁缝做衣服的地方",
+          "老虎住的山洞",
+          "孩子上学的地方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“勤快”是夸人爱劳动。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“聪明”表示人很糊涂。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "恼怒",
+          "勤快",
+          "泄气",
+          "聪明"
+        ],
+        "source": "枣核很勤快，也很聪明。"
+      },
+      "answer": {
+        "ordered": [
+          "勤快",
+          "聪明"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "裁缝",
+          "衙役",
+          "顾客",
+          "庄稼人",
+          "棉袄",
+          "官粮"
+        ],
+        "source": "县衙门派衙役向庄稼人要官粮。"
+      },
+      "answer": {
+        "ordered": [
+          "衙役",
+          "庄稼人",
+          "官粮"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

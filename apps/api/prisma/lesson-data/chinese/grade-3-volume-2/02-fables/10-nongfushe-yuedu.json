@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "农夫为什么把蛇放在怀里？",
+        "options": [
+          "可怜冻僵的蛇，想救它",
+          "想和蛇比赛",
+          "害怕蛇逃走",
+          "想把蛇卖掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蛇醒来后做了什么？",
+        "options": [
+          "感谢农夫",
+          "帮助农夫耕田",
+          "咬了农夫一口",
+          "变成朋友"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "农夫临死前明白了什么？",
+        "options": [
+          "蛇最喜欢冬天",
+          "对恶人发善心可能害了自己",
+          "衣服不能太厚",
+          "路上不能停下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "冻僵"
+          },
+          {
+            "id": "l_1",
+            "text": "苏醒"
+          },
+          {
+            "id": "l_2",
+            "text": "怜悯"
+          },
+          {
+            "id": "l_3",
+            "text": "中毒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "同情可怜"
+          },
+          {
+            "id": "r_0",
+            "text": "冷得僵硬"
+          },
+          {
+            "id": "r_3",
+            "text": "毒进入身体造成伤害"
+          },
+          {
+            "id": "r_1",
+            "text": "醒过来"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：善良不能没有判断。",
+        "tokens": [
+          "判断",
+          "没有",
+          "不能",
+          "善良",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "善良",
+          "不能",
+          "没有",
+          "判断"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：蛇苏醒后咬了农夫。",
+        "tokens": [
+          "农夫",
+          "咬了",
+          "苏醒后",
+          "蛇",
+          "尾巴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蛇",
+          "苏醒后",
+          "咬了",
+          "农夫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "农夫与蛇",
+        "passage": "一个寒冷的冬天，农夫看见一条冻僵的蛇，就把它放进怀里。蛇得到温暖后苏醒了，却咬了农夫一口。农夫中毒后说：“蛇是害人的东西，我不该怜悯它。”",
+        "questions": [
+          {
+            "question": "农夫救蛇的原因是什么？",
+            "options": [
+              "可怜蛇被冻僵",
+              "想让蛇看家",
+              "想听蛇唱歌",
+              "要和蛇比赛"
+            ]
+          },
+          {
+            "question": "故事给人的启示是？",
+            "options": [
+              "善良也要分清对象",
+              "冬天不要出门",
+              "蛇都不会咬人",
+              "救人一定错"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《农夫与蛇》和《会摇尾巴的狼》的共同点是？",
+        "options": [
+          "都写农夫耕田",
+          "都赞美蛇和狼",
+          "都发生在河边",
+          "都提醒人们辨别危险和伪装"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "农夫的好心没有得到蛇的善意回报。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "这个故事告诉我们永远不要善良。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

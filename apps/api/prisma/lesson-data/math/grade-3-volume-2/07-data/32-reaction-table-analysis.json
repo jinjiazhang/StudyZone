@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "反应尺统计：0出现2次，2出现3次，4出现5次，6出现4次，8出现4次，10出现2次。哪个位置最多？",
+        "columns": [
+          "位置",
+          "次数"
+        ],
+        "rows": [
+          {
+            "位置": 0,
+            "次数": 2
+          },
+          {
+            "位置": 2,
+            "次数": 3
+          },
+          {
+            "位置": 4,
+            "次数": 5
+          },
+          {
+            "位置": 6,
+            "次数": 4
+          },
+          {
+            "位置": 8,
+            "次数": 4
+          },
+          {
+            "位置": 10,
+            "次数": 2
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "反应尺统计：位置4出现多少次？",
+        "columns": [
+          "位置",
+          "次数"
+        ],
+        "rows": [
+          {
+            "位置": 0,
+            "次数": 2
+          },
+          {
+            "位置": 2,
+            "次数": 3
+          },
+          {
+            "位置": 4,
+            "次数": 5
+          },
+          {
+            "位置": 6,
+            "次数": 4
+          },
+          {
+            "位置": 8,
+            "次数": 4
+          },
+          {
+            "位置": 10,
+            "次数": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 5
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "位置6出现4次，位置8出现4次，合起来出现多少次？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "位置4出现5次，位置10出现2次，相差多少次？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "位置4出现5次",
+        "right": "位置6出现4次"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "位置0出现2次",
+        "right": "位置10出现2次"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果全班抓住次数最多的位置是4，可以怎样说？",
+        "options": [
+          "全班都抓到10",
+          "没人抓到4",
+          "全班抓住次数最多的位置是4",
+          "4是鞋号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "反应尺统计中，0出现 ___ 次，10出现 ___ 次。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "0"
+          },
+          {
+            "id": "b2",
+            "label": "10"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在反应尺数线上标出出现次数最多的位置 4。",
+        "min": 0,
+        "max": 10,
+        "step": 2
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "分析反应尺数据时，下面哪句话依据数据？",
+        "options": [
+          "4出现5次，比10多3次",
+          "10出现最多",
+          "0没有出现",
+          "所有位置一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上描述平移，通常要说清楚哪两件事？",
+        "options": [
+          "对称轴和面积",
+          "颜色和重量",
+          "方向和格数",
+          "单价和数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "棋子向下平移 4 格，需要记录的格数是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "铅笔向右平移 3 格，需要记录的格数是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "三角板向左平移 2 格，需要记录的格数是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "把铅笔向右平移 3 格，应记录方向为",
+          null,
+          "，格数为",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "3",
+          "2",
+          "左",
+          "右"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "右",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“向上平移 2 格，再向右平移 4 格”和哪种记录一致？",
+        "options": [
+          "下2，右4",
+          "上4，右2",
+          "上2，右4",
+          "左2，上4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“先向上平移 2 格，再向右平移 4 格”的操作顺序排列。",
+        "items": [
+          {
+            "id": "s2",
+            "text": "向右平移4格"
+          },
+          {
+            "id": "s1",
+            "text": "向上平移2格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果图形平移后在原位置正右方，应描述为：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "向左平移"
+          },
+          {
+            "id": "g2",
+            "label": "上下翻折"
+          },
+          {
+            "id": "g3",
+            "label": "旋转"
+          },
+          {
+            "id": "g4",
+            "label": "向右平移"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "↑"
+          },
+          {
+            "id": "l2",
+            "text": "↓"
+          },
+          {
+            "id": "l3",
+            "text": "←"
+          },
+          {
+            "id": "l4",
+            "text": "→"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "向上"
+          },
+          {
+            "id": "r4",
+            "text": "向右"
+          },
+          {
+            "id": "r2",
+            "text": "向下"
+          },
+          {
+            "id": "r3",
+            "text": "向左"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "只说“平移了 3 格”还不够，因为缺少：",
+        "options": [
+          "颜色",
+          "形状名称",
+          "题号",
+          "方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

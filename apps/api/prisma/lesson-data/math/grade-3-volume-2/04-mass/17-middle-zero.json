@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "306 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 102,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "309 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 103,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "607 ÷ 3 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          202,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "804 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 201,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "612 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 204,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "906 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 302,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "505 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 101,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "727 ÷ 7 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          103,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "306 ÷ 3 竖式中十位上不够商1时，十位商应写什么？",
+        "options": [
+          "1",
+          "0",
+          "3",
+          "空着不写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "商中间的0有什么作用？",
+        "options": [
+          "表示算错了",
+          "可以随意省略",
+          "占位，表示这一位没有分到十",
+          "表示余数是0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

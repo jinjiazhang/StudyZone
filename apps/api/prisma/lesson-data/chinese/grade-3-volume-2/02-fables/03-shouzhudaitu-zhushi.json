@@ -1,0 +1,266 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "走"
+          },
+          {
+            "id": "l_1",
+            "text": "释"
+          },
+          {
+            "id": "l_2",
+            "text": "耒"
+          },
+          {
+            "id": "l_3",
+            "text": "冀"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "古代用来耕田的农具"
+          },
+          {
+            "id": "r_0",
+            "text": "跑"
+          },
+          {
+            "id": "r_3",
+            "text": "希望"
+          },
+          {
+            "id": "r_1",
+            "text": "放下"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "因"
+          },
+          {
+            "id": "l_1",
+            "text": "株"
+          },
+          {
+            "id": "l_2",
+            "text": "身"
+          },
+          {
+            "id": "l_3",
+            "text": "为宋国笑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "自己"
+          },
+          {
+            "id": "r_0",
+            "text": "于是"
+          },
+          {
+            "id": "r_3",
+            "text": "被宋国人笑话"
+          },
+          {
+            "id": "r_1",
+            "text": "树桩"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“兔走触株”中的“走”是什么意思？",
+        "options": [
+          "跑",
+          "行走",
+          "离开",
+          "赶走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“因释其耒而守株”中的“释”是什么意思？",
+        "options": [
+          "解释",
+          "释放别人",
+          "放下",
+          "喜欢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "农夫“冀复得兔”，他希望什么？",
+        "options": [
+          "卖掉耒",
+          "再得到兔子",
+          "砍掉树桩",
+          "搬到宋国"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：兔子撞到树桩上死了。",
+        "tokens": [
+          "死了",
+          "折断脖子",
+          "树桩",
+          "撞到",
+          "兔子",
+          "农具"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "兔子",
+          "撞到",
+          "树桩",
+          "折断脖子",
+          "死了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：农夫放下农具守着树桩。",
+        "tokens": [
+          "树桩",
+          "守着",
+          "农具",
+          "放下",
+          "农夫",
+          "兔子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "农夫",
+          "放下",
+          "农具",
+          "守着",
+          "树桩"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句最接近“兔不可复得”？",
+        "options": [
+          "兔子又跑来了",
+          "兔子可以复活",
+          "兔子被别人拿走了",
+          "兔子不会再得到了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“身为宋国笑”说明农夫最后怎样？",
+        "options": [
+          "成了笑话",
+          "很受尊敬",
+          "种田丰收",
+          "买了新农具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "守株待兔",
+        "passage": "宋人有耕者，田中有株。兔走触株，折颈而死。农夫放下农具，天天守着树桩，希望再得到兔子。结果兔子没有再来，他也荒废了田地。",
+        "questions": [
+          {
+            "question": "兔子为什么死了？",
+            "options": [
+              "撞到树桩折断脖子",
+              "被农夫追上",
+              "掉进河里",
+              "吃了坏草"
+            ]
+          },
+          {
+            "question": "农夫错在哪里？",
+            "options": [
+              "只等偶然的好运",
+              "每天认真耕田",
+              "把兔子放走",
+              "帮助别人种地"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

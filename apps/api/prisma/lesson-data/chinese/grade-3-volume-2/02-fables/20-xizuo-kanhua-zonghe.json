@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看图写话前，首先要做什么？",
+        "options": [
+          "仔细观察画面，想想有哪些人和事",
+          "直接写结尾",
+          "只写天气",
+          "先背课文"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍图画内容时，哪一项最重要？",
+        "options": [
+          "只写一个词",
+          "故意漏掉人物",
+          "把人物、动作、可能说的话写清楚",
+          "只写页码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写完后交换读一读，主要检查什么？",
+        "options": [
+          "纸张是否最大",
+          "内容是否清楚，有没有错别字",
+          "字数是否越少越好",
+          "是否全部用拼音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "人物"
+          },
+          {
+            "id": "l_1",
+            "text": "动作"
+          },
+          {
+            "id": "l_2",
+            "text": "语言"
+          },
+          {
+            "id": "l_3",
+            "text": "修改"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "可能说了哪些话"
+          },
+          {
+            "id": "r_0",
+            "text": "图画上有哪些人"
+          },
+          {
+            "id": "r_3",
+            "text": "根据意见把习作改好"
+          },
+          {
+            "id": "r_1",
+            "text": "他们在干什么"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：写之前先仔细观察图画。",
+        "tokens": [
+          "图画",
+          "观察",
+          "仔细",
+          "先",
+          "写之前",
+          "寓言"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "写之前",
+          "先",
+          "仔细",
+          "观察",
+          "图画"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：写完后要认真修改。",
+        "tokens": [
+          "修改",
+          "认真",
+          "要",
+          "写完后",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "写完后",
+          "要",
+          "认真",
+          "修改"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "看图写话提示",
+        "passage": "写图画内容时，先观察图上有哪些人，他们在干什么，动作分别怎样，可能说了哪些话。写的时候，把自己看到的、想到的写清楚。写完后读一读，再根据同学的意见修改。",
+        "questions": [
+          {
+            "question": "写图画前要先做什么？",
+            "options": [
+              "观察图画",
+              "背诵古诗",
+              "查字典找成语",
+              "画地图"
+            ]
+          },
+          {
+            "question": "修改习作时可以参考谁的意见？",
+            "options": [
+              "同学的意见",
+              "树桩的意见",
+              "池子的意见",
+              "狮子的意见"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元四篇课文共同属于哪一类？",
+        "options": [
+          "神话传说",
+          "说明文",
+          "古诗",
+          "寓言故事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "理解寓言时，除了读懂故事，还要读懂什么？",
+        "options": [
+          "故事中的道理",
+          "作者的住址",
+          "每页的颜色",
+          "插图的大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "寓言故事一般比较短，却常常藏着道理。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

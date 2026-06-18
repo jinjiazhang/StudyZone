@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "红",
+        "tokens": [
+          "沉",
+          "彤",
+          "庙",
+          "润",
+          "剑",
+          "色"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“红”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "彤",
+            "润"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "金",
+        "tokens": [
+          "闷",
+          "灿",
+          "蔓",
+          "黄",
+          "柱",
+          "色"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“金”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "灿",
+            "黄"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "半",
+        "tokens": [
+          "昏",
+          "紫",
+          "镇",
+          "灰",
+          "烧",
+          "百"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“半”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "紫",
+            "灰"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "红彤彤"
+          },
+          {
+            "id": "l2",
+            "text": "金灿灿"
+          },
+          {
+            "id": "l3",
+            "text": "葡萄灰"
+          },
+          {
+            "id": "l4",
+            "text": "半紫半黄"
+          },
+          {
+            "id": "l5",
+            "text": "茄子紫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "像葡萄一样的灰紫色"
+          },
+          {
+            "id": "r4",
+            "text": "紫色和黄色交杂"
+          },
+          {
+            "id": "r5",
+            "text": "像茄子一样的紫色"
+          },
+          {
+            "id": "r1",
+            "text": "形容很红"
+          },
+          {
+            "id": "r2",
+            "text": "形容金光耀眼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一会儿红彤彤的，一会儿金灿灿的”写出了火烧云的什么特点？",
+        "options": [
+          "形状一点不变",
+          "声音很响",
+          "颜色变化快而多",
+          "下雨很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语不是表示颜色？",
+        "options": [
+          "揉一揉",
+          "红彤彤",
+          "金灿灿",
+          "葡萄灰"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "色",
+          "多",
+          "啊",
+          "极",
+          "颜",
+          "呢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "颜",
+          "色",
+          "极",
+          "多"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "化",
+          "快",
+          "云",
+          "极",
+          "变",
+          "光"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "变",
+          "化",
+          "极",
+          "快"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“半灰半百合色”中的“半……半……”表示什么？",
+        "options": [
+          "一半人在看云",
+          "两种颜色交杂在一起",
+          "云只在半空",
+          "时间只过了一半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读颜色词时，最适合想到哪类画面？",
+        "options": [
+          "海底动物的声音",
+          "大熊猫的分布",
+          "裁缝店的顾客",
+          "天空云彩的颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

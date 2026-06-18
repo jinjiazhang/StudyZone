@@ -1,0 +1,294 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "凑成"
+          },
+          {
+            "id": "l1",
+            "text": "伶俐"
+          },
+          {
+            "id": "l2",
+            "text": "光彩夺目"
+          },
+          {
+            "id": "l3",
+            "text": "波光粼粼"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "颜色光泽十分耀眼"
+          },
+          {
+            "id": "r3",
+            "text": "水面闪着细碎光亮"
+          },
+          {
+            "id": "r0",
+            "text": "拼合成"
+          },
+          {
+            "id": "r1",
+            "text": "聪明灵活"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "剪刀似的尾巴"
+          },
+          {
+            "id": "l1",
+            "text": "旷亮无比的天空"
+          },
+          {
+            "id": "l2",
+            "text": "烂漫无比的春天"
+          },
+          {
+            "id": "l3",
+            "text": "闲散地休憩"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "写春天绚丽热闹"
+          },
+          {
+            "id": "r3",
+            "text": "写燕子停歇的样子"
+          },
+          {
+            "id": "r0",
+            "text": "写尾巴形状"
+          },
+          {
+            "id": "r1",
+            "text": "写天空开阔明亮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“赶集似的聚拢来”写出了花草怎样的状态？",
+        "options": [
+          "稀少安静",
+          "很多很热闹",
+          "整齐排队",
+          "全部枯萎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小圆晕便一圈一圈地荡漾开去”说明燕子动作怎样？",
+        "options": [
+          "笨重缓慢",
+          "非常粗鲁",
+          "一动不动",
+          "轻盈敏捷"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“几痕细线”指的是什么？",
+        "options": [
+          "柳条",
+          "小溪",
+          "电线",
+          "燕尾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“闲散地在纤细的电线上休憩”写燕子在做什么？",
+        "options": [
+          "停着休息",
+          "追赶昆虫",
+          "衔泥筑巢",
+          "在水面游泳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文短语",
+        "tokens": [
+          "翅膀",
+          "剪刀似的",
+          "春天",
+          "尾巴",
+          "羽毛"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "剪刀似的",
+          "尾巴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文短语",
+        "tokens": [
+          "水面",
+          "的图画",
+          "光彩夺目",
+          "小燕子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "光彩夺目",
+          "的图画"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文短语",
+        "tokens": [
+          "湖面",
+          "的天空",
+          "旷亮无比",
+          "烂漫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "旷亮无比",
+          "的天空"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "燕",
+        "tokens": [
+          "子",
+          "荷",
+          "窝",
+          "鹿",
+          "尾",
+          "飞"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“燕”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "窝",
+            "尾"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "聚",
+        "tokens": [
+          "拢",
+          "落",
+          "集",
+          "散",
+          "会",
+          "跑"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“聚”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "拢",
+            "集",
+            "会"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪个词最适合形容小燕子？",
+        "options": [
+          "笨重迟缓",
+          "伶俐可爱",
+          "凶猛可怕",
+          "枯黄干瘦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

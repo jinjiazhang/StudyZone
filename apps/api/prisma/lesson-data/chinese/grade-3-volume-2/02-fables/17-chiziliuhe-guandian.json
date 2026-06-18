@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "池子的观点可以概括为？",
+        "options": [
+          "安逸清闲最重要",
+          "奔流奉献最重要",
+          "遵循规律最重要",
+          "才能要利用"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "河流的观点可以概括为？",
+        "options": [
+          "躺在泥土里最好",
+          "不被提起才光荣",
+          "奔流不息、给人利益才有价值",
+          "只要安静就清洁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事结局中，池子怎样了？",
+        "options": [
+          "变成大河",
+          "一年年淤塞，最终枯干",
+          "受到尊敬",
+          "流向大海"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "河流为什么长流不断？",
+        "options": [
+          "总在睡梦中推究哲理",
+          "有贵妇人的垫子",
+          "躲在青苔下",
+          "遵循自然规律，不顾安逸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "池子"
+          },
+          {
+            "id": "l_1",
+            "text": "河流"
+          },
+          {
+            "id": "l_2",
+            "text": "淤塞"
+          },
+          {
+            "id": "l_3",
+            "text": "贡献"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "泥沙堵塞"
+          },
+          {
+            "id": "r_0",
+            "text": "追求安逸，最终荒废"
+          },
+          {
+            "id": "r_3",
+            "text": "对别人有益的作用"
+          },
+          {
+            "id": "r_1",
+            "text": "奔流不息，带来利益"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：人要发挥自己的才能。",
+        "tokens": [
+          "才能",
+          "自己的",
+          "发挥",
+          "要",
+          "人",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人",
+          "要",
+          "发挥",
+          "自己的",
+          "才能"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：贪图安逸会让才能衰退。",
+        "tokens": [
+          "衰退",
+          "才能",
+          "会让",
+          "安逸",
+          "贪图",
+          "河流"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贪图",
+          "安逸",
+          "会让",
+          "才能",
+          "衰退"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "池子与河流",
+        "passage": "池子喜欢清闲，觉得不必像河流那样忙碌。河流说，水要流动才清洁，才能不用就会衰退。后来河流长流不断，而池子一年年淤塞，最后枯干。",
+        "questions": [
+          {
+            "question": "河流赞成哪种生活？",
+            "options": [
+              "奔流不息，发挥作用",
+              "躺着不动",
+              "什么也不做",
+              "只顾自己舒服"
+            ]
+          },
+          {
+            "question": "池子的结局说明什么？",
+            "options": [
+              "才能不利用会衰退",
+              "安逸一定带来光荣",
+              "河流没有道理",
+              "泥土最柔软"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "这篇寓言可以联系生活中的懒惰和勤奋来理解。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "池子最后比河流更受人尊敬。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形长 6、宽 4。小明算 6+4=10，他错在哪里？",
+        "options": [
+          "只算了一个长和一个宽",
+          "把单位写错",
+          "多乘了 2",
+          "答案太大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "正方形边长 8。小红算 8×2=16，她错在哪里？",
+        "options": [
+          "正方形只有 1 条边",
+          "应该除以 2",
+          "正方形有 4 条相等的边",
+          "不该用乘法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "纠正：长方形长 6 厘米、宽 4 厘米，正确周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "纠正：正方形边长 8 厘米，正确周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "求三角形周长时，小刚只加了两条边。应该怎样改？",
+        "options": [
+          "把结果乘 4",
+          "只看最长边",
+          "改成求面积",
+          "把第三条边也加上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "6+4",
+        "right": "2*(6+4)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形长 10、宽 5，下面哪个答案明显是面积不是周长？",
+        "options": [
+          "50",
+          "30",
+          "15",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "三角形边长 7 厘米、9 厘米、11 厘米，正确周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "type": "math_drag_fill",
+        "statement": [
+          "长方形长 12 米、宽 5 米，周长 = (",
+          null,
+          "+",
+          null,
+          ") × 2"
+        ],
+        "tokens": [
+          "5",
+          "2",
+          "12",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "12",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "检查周长答案时，哪种想法有帮助？",
+        "options": [
+          "看图形颜色",
+          "看是否把所有边都算到",
+          "只看第一个数字",
+          "答案越大越好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

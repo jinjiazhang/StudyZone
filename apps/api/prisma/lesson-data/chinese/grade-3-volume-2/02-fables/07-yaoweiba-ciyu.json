@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhuāng",
+        "sentence": "狼__出可怜的模样。",
+        "blankPlaceholder": "__",
+        "character": "装",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "装"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xùn",
+        "sentence": "它说自己又忠诚又__良。",
+        "blankPlaceholder": "__",
+        "character": "训",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "训"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "liáng",
+        "sentence": "老山羊看出它并不善__。",
+        "blankPlaceholder": "__",
+        "character": "良",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "良"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shēn",
+        "sentence": "狼让老山羊__出一条腿。",
+        "blankPlaceholder": "__",
+        "character": "伸",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "伸"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiè",
+        "sentence": "狼假装要好好感__。",
+        "blankPlaceholder": "__",
+        "character": "谢",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "谢"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chén",
+        "sentence": "尾巴扬起了陷阱里的__土。",
+        "blankPlaceholder": "__",
+        "character": "尘",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "尘"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiōng",
+        "sentence": "狼最后露出了__相。",
+        "blankPlaceholder": "__",
+        "character": "凶",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "凶"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "è",
+        "sentence": "它还是凶__的狼。",
+        "blankPlaceholder": "__",
+        "character": "恶",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "恶"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "毫不犹豫"
+          },
+          {
+            "id": "l_1",
+            "text": "狡猾"
+          },
+          {
+            "id": "l_2",
+            "text": "凶恶"
+          },
+          {
+            "id": "l_3",
+            "text": "可怜"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "凶狠恶毒"
+          },
+          {
+            "id": "r_0",
+            "text": "一点儿也不迟疑"
+          },
+          {
+            "id": "r_3",
+            "text": "值得同情"
+          },
+          {
+            "id": "r_1",
+            "text": "诡计多端，不可信"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "善",
+        "tokens": [
+          "凶",
+          "猎",
+          "心",
+          "意",
+          "良",
+          "尘"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和中间字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "良",
+            "意",
+            "心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

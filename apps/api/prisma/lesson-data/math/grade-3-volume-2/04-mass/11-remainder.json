@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "17个苹果平均分给5人，每人几个，还剩几个？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "29朵花平均插在4个花瓶里，每瓶几朵，还剩几朵？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "46本练习本平均分给6组，每组几本，还剩几本？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "58个球平均放进7个筐，每筐几个，还剩几个？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "83张卡片每9张一组，可以分成几组，还剩几张？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "125页书每天看8页，可以看满几天，还剩几页？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有余数除法中，余数必须怎样？",
+        "options": [
+          "比除数大",
+          "比除数小",
+          "和除数相等",
+          "一定是0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45 ÷ 6 的余数",
+        "right": "45 ÷ 7 的余数",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "116 ÷ 3 = ",
+          null,
+          " …… ",
+          null
+        ],
+        "tokens": [
+          "38",
+          "4",
+          "2",
+          "39",
+          "1"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "38",
+          "2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“每页放7张，285张可以放满多少页，还剩多少张”列成除法算式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "285÷7"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

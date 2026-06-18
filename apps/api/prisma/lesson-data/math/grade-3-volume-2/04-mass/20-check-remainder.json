@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "116 ÷ 3 = 38 …… 2，验算：38 × ",
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "2",
+          "3",
+          "116",
+          "114",
+          "38"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "2",
+          "116"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "432 ÷ 5 = 86 …… 2，验算：86 × ",
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "5",
+          "430",
+          "2",
+          "86",
+          "432"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "2",
+          "432"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "814 ÷ 6 = 135 …… 4，验算：135 × ",
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "4",
+          "814",
+          "6",
+          "810",
+          "135"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "4",
+          "814"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有余数除法验算的正确关系是：",
+        "options": [
+          "商×除数=被除数",
+          "被除数×除数=商",
+          "余数×除数=被除数",
+          "商×除数+余数=被除数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "39 × 3 + 1 可以验算哪道题？",
+        "options": [
+          "116 ÷ 3 = 38……2",
+          "116 ÷ 3 = 39……1",
+          "502 ÷ 2 = 251",
+          "90 ÷ 6 = 15"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "621 ÷ 3 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          207,
+          0
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "432 ÷ 5 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          86,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "814 ÷ 6 = 商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          135,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "96 ÷ 8",
+        "right": "96 ÷ 6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "156 ÷ 3",
+        "right": "745 ÷ 5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    }
+  ]
+}

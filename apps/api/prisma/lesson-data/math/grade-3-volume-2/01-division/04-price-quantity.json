@@ -1,0 +1,140 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "夹克每件124元，买2件夹克，列式求总价。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "124×2",
+          "2×124"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "124 × 2 = ?"
+      },
+      "answer": {
+        "value": 248,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "毛衣每件212元，买3件毛衣，列式求总价。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "212×3",
+          "3×212"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "212 × 3 = ?"
+      },
+      "answer": {
+        "value": 636,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "买4件单价为112元的运动服，一共多少元？",
+        "columns": [
+          "物品",
+          "单价/元",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "运动服",
+            "单价/元": 112,
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 448,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每箱有22筐、22筐、22筐、23筐，货车能装90筐，能一次运走吗？",
+        "options": [
+          "不能，因为共90筐",
+          "能，因为共89筐",
+          "不能，因为共91筐",
+          "能，因为共88筐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22 + 22 + 22 + 23 = ?"
+      },
+      "answer": {
+        "value": 89,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4亩油菜，每亩补贴20元，列式求补贴。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "20×4",
+          "4×20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 × 4 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "124 × 2 + 212",
+        "right": "500"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

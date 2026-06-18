@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《池子与河流》采用了什么形式讲寓言？",
+        "options": [
+          "诗的形式",
+          "通知的形式",
+          "日记的形式",
+          "谜语的形式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "池子认为自己的生活怎样？",
+        "options": [
+          "忙碌却有意义",
+          "危险而光荣",
+          "清闲、安逸、无忧无虑",
+          "奔流不息"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "河流认为水怎样才能保持清洁？",
+        "options": [
+          "要静止",
+          "要流动",
+          "要遮掩",
+          "要睡梦中推究哲理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "无忧无虑"
+          },
+          {
+            "id": "l_1",
+            "text": "源源不断"
+          },
+          {
+            "id": "l_2",
+            "text": "遵循"
+          },
+          {
+            "id": "l_3",
+            "text": "衰退"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "按照规律去做"
+          },
+          {
+            "id": "r_0",
+            "text": "没有一点忧愁和顾虑"
+          },
+          {
+            "id": "r_3",
+            "text": "逐渐变弱、退落"
+          },
+          {
+            "id": "r_1",
+            "text": "连续不断"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：水要流动才能保持清洁。",
+        "tokens": [
+          "保持清洁",
+          "才能",
+          "流动",
+          "要",
+          "水",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水",
+          "要",
+          "流动",
+          "才能",
+          "保持清洁"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：才能不用就会衰退。",
+        "tokens": [
+          "衰退",
+          "就会",
+          "不用",
+          "才能",
+          "河流"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "才能",
+          "不用",
+          "就会",
+          "衰退"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "池子与河流",
+        "author": "克雷洛夫",
+        "lines": [
+          [
+            "水要",
+            null,
+            "才能保持清洁，"
+          ],
+          [
+            "这个自然",
+            null,
+            "，难道你已经忘掉？"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "流动",
+              "睡梦",
+              "遮掩",
+              "清闲"
+            ]
+          },
+          {
+            "options": [
+              "规律",
+              "地图",
+              "琴声",
+              "生活"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "池子与河流",
+        "author": "克雷洛夫",
+        "lines": [
+          [
+            "才能不利用",
+            null,
+            "，"
+          ],
+          [
+            "它会逐渐",
+            null,
+            "；"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "就要衰退",
+              "就会发光",
+              "就能奔流",
+              "就会休息"
+            ]
+          },
+          {
+            "options": [
+              "磨灭",
+              "清澈",
+              "尊敬",
+              "忙碌"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "池子向往清闲，河流强调奔流和贡献。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "河流认为自己受尊敬是因为不流动。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "（1）班一共有多少人？",
+        "columns": [
+          "班级",
+          "男生",
+          "女生"
+        ],
+        "rows": [
+          {
+            "班级": "（1）班",
+            "男生": 23,
+            "女生": 20
+          },
+          {
+            "班级": "（2）班",
+            "男生": 24,
+            "女生": 23
+          }
+        ]
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "（2）班一共有多少人？",
+        "columns": [
+          "班级",
+          "男生",
+          "女生"
+        ],
+        "rows": [
+          {
+            "班级": "（1）班",
+            "男生": 23,
+            "女生": 20
+          },
+          {
+            "班级": "（2）班",
+            "男生": 24,
+            "女生": 23
+          }
+        ]
+      },
+      "answer": {
+        "value": 47,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "23 + 20",
+        "right": "24 + 23"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "不计算判断两个班人数多少，两个项目都多的班是：",
+        "options": [
+          "（1）班",
+          "（2）班",
+          "一样多",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "甲组一共收集多少枚贴纸？",
+        "columns": [
+          "小组",
+          "上午",
+          "下午"
+        ],
+        "rows": [
+          {
+            "小组": "甲组",
+            "上午": 36,
+            "下午": 28
+          },
+          {
+            "小组": "乙组",
+            "上午": 36,
+            "下午": 31
+          }
+        ]
+      },
+      "answer": {
+        "value": 64,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36 + 28",
+        "right": "36 + 31"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "乙组比甲组下午多收集多少枚？",
+        "columns": [
+          "小组",
+          "上午",
+          "下午"
+        ],
+        "rows": [
+          {
+            "小组": "甲组",
+            "上午": 36,
+            "下午": 28
+          },
+          {
+            "小组": "乙组",
+            "上午": 36,
+            "下午": 31
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 + 42",
+        "right": "18 + 39"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "75 + 16",
+        "right": "70 + 22"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较表中两类数量的合计时，最好先看：",
+        "options": [
+          "表格颜色",
+          "数字写得大不大",
+          "相同项和变化项",
+          "有没有插图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

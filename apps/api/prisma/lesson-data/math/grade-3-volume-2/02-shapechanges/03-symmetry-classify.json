@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪一个生活图案常见为轴对称图形？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "京剧脸谱"
+          },
+          {
+            "id": "g2",
+            "label": "单向箭头"
+          },
+          {
+            "id": "g3",
+            "label": "普通数字 2"
+          },
+          {
+            "id": "g4",
+            "label": "字母 R"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪一个常见为轴对称图形？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "雪花"
+          },
+          {
+            "id": "g2",
+            "label": "不规则石头"
+          },
+          {
+            "id": "g3",
+            "label": "风车"
+          },
+          {
+            "id": "g4",
+            "label": "字母 F"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蝴蝶左右翅膀形状相同，身体所在直线可以看作：",
+        "options": [
+          "旋转中心",
+          "对称轴",
+          "格线终点",
+          "平移方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断风车是否轴对称时，不能只看颜色，还要看什么？",
+        "options": [
+          "形状沿某条线是否能完全重合",
+          "叶片是否会转",
+          "面积是否相等",
+          "图案是否漂亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个选项最适合归入“不是轴对称图形”？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "倾斜音符"
+          },
+          {
+            "id": "g2",
+            "label": "等腰三角形"
+          },
+          {
+            "id": "g3",
+            "label": "圆"
+          },
+          {
+            "id": "g4",
+            "label": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "轴对称判断要看",
+          null,
+          "，不是只看",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "速度",
+          "重量",
+          "颜色",
+          "形状重合"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "形状重合",
+          "颜色"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有的图形左右两边面积相等，但对折不能重合，它：",
+        "options": [
+          "不是轴对称图形",
+          "一定是轴对称图形",
+          "一定是正方形",
+          "一定有4条对称轴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪一个图形有无数条对称轴？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "长方形"
+          },
+          {
+            "id": "g2",
+            "label": "圆"
+          },
+          {
+            "id": "g3",
+            "label": "等边三角形"
+          },
+          {
+            "id": "g4",
+            "label": "等腰梯形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "圆"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形"
+          },
+          {
+            "id": "l4",
+            "text": "等腰三角形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "1条常见对称轴"
+          },
+          {
+            "id": "r2",
+            "text": "2条对称轴"
+          },
+          {
+            "id": "r3",
+            "text": "4条对称轴"
+          },
+          {
+            "id": "r4",
+            "text": "无数条对称轴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“对称轴两边的对应点到对称轴距离相等”这句话是：",
+        "options": [
+          "只对平移成立",
+          "正确的",
+          "错误的",
+          "只对旋转成立"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

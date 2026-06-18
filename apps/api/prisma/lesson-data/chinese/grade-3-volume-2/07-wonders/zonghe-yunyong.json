@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盈",
+        "hint": "火烧云中的“盈”",
+        "options": [
+          "yín",
+          "yìng",
+          "yíng",
+          "yǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "隆",
+        "hint": "雷声“隆隆”的“隆”",
+        "options": [
+          "lōng",
+          "nóng",
+          "lóng",
+          "lǒng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "烁",
+        "hint": "群星“闪烁”的“烁”",
+        "options": [
+          "shuò",
+          "lè",
+          "shuō",
+          "luò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "máng",
+        "sentence": "道路上像洒满了光__。",
+        "blankPlaceholder": "__",
+        "character": "芒",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "芒"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "火烧云"
+          },
+          {
+            "id": "l2",
+            "text": "暴风雨来临之前"
+          },
+          {
+            "id": "l3",
+            "text": "我们奇妙的世界"
+          },
+          {
+            "id": "l4",
+            "text": "国宝大熊猫"
+          },
+          {
+            "id": "l5",
+            "text": "语文园地"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "天空和大地都有珍藏"
+          },
+          {
+            "id": "r4",
+            "text": "围绕资料介绍动物"
+          },
+          {
+            "id": "r5",
+            "text": "积累词句和古诗"
+          },
+          {
+            "id": "r1",
+            "text": "颜色和形状变化多"
+          },
+          {
+            "id": "r2",
+            "text": "风雨前自然景象变化"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项最能概括本单元的学习重点？",
+        "options": [
+          "只学习计算",
+          "只学习对话",
+          "只学习标点",
+          "观察自然与事物，感受奇妙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写自然发现时，教材鼓励我们怎样做？",
+        "options": [
+          "不用观察直接猜",
+          "仔细观察并仿照例句表达",
+          "只写生字表",
+          "只写拼音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "细",
+          "察",
+          "能",
+          "现",
+          "呀",
+          "美",
+          "发",
+          "才",
+          "观",
+          "仔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "仔",
+          "细",
+          "观",
+          "察",
+          "才",
+          "能",
+          "发",
+          "现",
+          "美"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "综合阅读",
+        "passage": "清晨，太阳升起，天空呈粉红色。雨后，地上有水洼，像一面面小镜子。傍晚，火烧云上来了，颜色一会儿红彤彤，一会儿金灿灿。只要仔细观察，普通的景物也会变得奇妙。",
+        "questions": [
+          {
+            "question": "这段写了哪些景物？",
+            "options": [
+              "太阳、水洼、火烧云",
+              "熊猫、竹叶、裁缝",
+              "桃花、山寺、顾客"
+            ]
+          },
+          {
+            "question": "水洼被比作什么？",
+            "options": [
+              "小镜子",
+              "刀剑",
+              "蜡烛"
+            ]
+          },
+          {
+            "question": "这段告诉我们怎样发现奇妙？",
+            "options": [
+              "仔细观察",
+              "闭上眼睛",
+              "只看题目"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“百花齐放、莺歌燕舞”适合描写哪个季节的景象？",
+        "options": [
+          "春天",
+          "冬天",
+          "深夜",
+          "海底"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

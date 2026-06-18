@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "用彩绳量树叶周长，第一步适合怎么做？",
+        "options": [
+          "把彩绳沿树叶边线围一圈",
+          "只量叶子中间",
+          "把叶子折起来",
+          "只看叶柄长度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一根彩绳围住书签边线后拉直，量得 18 厘米。书签周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "绕杯垫一周的线拉直后是 32 厘米，杯垫周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "量数学书封面的周长，下面哪种方法合理？",
+        "options": [
+          "只量封面宽",
+          "量一本书的厚度",
+          "量四条边再相加",
+          "数书页"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "长方形卡片长 9 厘米、宽 5 厘米。先填一个长和一个宽的和，再填周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          14,
+          28
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "相框四条边分别是 12 厘米、8 厘米、12 厘米、8 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "估测和实测周长后，发现估计值不同，应该以哪个为准？",
+        "options": [
+          "估计值",
+          "较大的值",
+          "较小的值",
+          "实测值"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据测量表，哪件物品周长最长？",
+        "columns": [
+          "物品",
+          "周长厘米"
+        ],
+        "rows": [
+          {
+            "物品": "作业本封面",
+            "周长厘米": 84
+          },
+          {
+            "物品": "文具盒面",
+            "周长厘米": 46
+          },
+          {
+            "物品": "橡皮盒面",
+            "周长厘米": 30
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "作业本封面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "84",
+        "right": "46",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "测不规则树叶的周长，为什么常用软绳？",
+        "options": [
+          "软绳能沿弯曲边线围一圈",
+          "软绳能变长",
+          "软绳不用读数",
+          "软绳只能量直线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

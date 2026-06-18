@@ -1,0 +1,138 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 × 4 = ?"
+      },
+      "answer": {
+        "value": 216,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "91 × 9 = ?"
+      },
+      "answer": {
+        "value": 819,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "102 × 7 = ?"
+      },
+      "answer": {
+        "value": 714,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "54 × 4 可分成 50×4=__，4×4=__，合起来 __",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          200,
+          16,
+          216
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一个书架4层，分别有48本、52本、47本、51本，4个这样的书架约有多少本，列式先求一个书架。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "48+52+47+51"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 + 52 + 47 + 51 = ?"
+      },
+      "answer": {
+        "value": 198,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "198 × 4 = ?"
+      },
+      "answer": {
+        "value": 792,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5名教师和88名学生去游园，成人票8元，学生票5元，列式求实际花费。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "5×8+88×5",
+          "8×5+5×88"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 8 + 88 × 5 = ?"
+      },
+      "answer": {
+        "value": 480,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 × 8 + 88 × 5",
+        "right": "500"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气算 502 ÷ 2 得206。用乘法验算206×2=412，说明什么？",
+        "options": [
+          "淘气算对了",
+          "商不对",
+          "商太小",
+          "除数错了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "奇思算 116 ÷ 3 时把26当成27减，问题在哪里？",
+        "options": [
+          "余数可以大于除数",
+          "商应该写0",
+          "27比26大，不能减",
+          "被除数应改成117"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "116 ÷ 3 算到余26时，正确下一步应商几？",
+        "options": [
+          "6",
+          "7",
+          "9",
+          "8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "502 ÷ 2 中百位余1表示什么？",
+        "options": [
+          "1个百换成10个十",
+          "1个一",
+          "1个十",
+          "10个十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "502 ÷ 2 的正确商是多少？"
+      },
+      "answer": {
+        "value": 251,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "116 ÷ 3 的正确结果是商几余几？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          38,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现有余数时，怎样检查最稳妥？",
+        "options": [
+          "只看商大小",
+          "用商×除数+余数验算",
+          "把余数丢掉",
+          "把商加1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "余数和除数相比，下面哪种情况一定错误？",
+        "options": [
+          "余数小于除数",
+          "余数等于0",
+          "余数等于除数",
+          "余数是2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "38 × 3 + 2",
+        "right": "116",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "39 × 3 + 1",
+        "right": "116",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

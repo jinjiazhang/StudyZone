@@ -1,0 +1,153 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "身高最高154厘米，最矮130厘米，相差多少厘米？"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "150厘米比149厘米高多少厘米？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "143厘米比142厘米高多少厘米？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "142厘米",
+        "right": "143厘米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "149厘米",
+        "right": "150厘米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "154厘米",
+        "right": "130厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一组身高差最小？",
+        "options": [
+          "149厘米和150厘米",
+          "130厘米和154厘米",
+          "131厘米和152厘米",
+          "136厘米和148厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“接近”在护旗手问题中更强调什么？",
+        "options": [
+          "人数越少越好",
+          "鞋号相同",
+          "睡眠时间相同",
+          "身高差小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "身高差表：149厘米和150厘米相差多少？",
+        "columns": [
+          "身高组",
+          "相差"
+        ],
+        "rows": [
+          {
+            "身高组": "149和150厘米",
+            "相差": 1
+          },
+          {
+            "身高组": "142和147厘米",
+            "相差": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "130厘米到154厘米的范围是 ___ 厘米；149厘米到150厘米的范围是 ___ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "全班范围"
+          },
+          {
+            "id": "b2",
+            "label": "方案范围"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "澎湃",
+        "hint": "请选择词语【澎湃】的正确拼音",
+        "options": ["péng bài", "pēng pài", "péng pài", "páng pài"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "窃窃私语",
+        "hint": "请选择词语【窃窃私语】中“窃”的读音",
+        "options": ["qiē", "qì", "jié", "qiè"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wēi",
+        "sentence": "遇到危__时，海底动物会发出警报。",
+        "blankPlaceholder": "__",
+        "character": "险",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "险" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "窃窃私语" },
+          { "id": "l2", "text": "蕴藏" },
+          { "id": "l3", "text": "警报" },
+          { "id": "l4", "text": "景色奇异" }
+        ],
+        "right": [
+          { "id": "r3", "text": "遇到危险时发出的提醒信号" },
+          { "id": "r1", "text": "声音很轻地小声说话" },
+          { "id": "r4", "text": "景象特别、少见而有趣" },
+          { "id": "r2", "text": "蓄积而未显露出来" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r1", "l2": "r2", "l3": "r3", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《海底世界》主要从哪几个方面介绍海底？",
+        "options": ["天气、节日、桥梁", "声音、动物、植物、矿产", "人物、地点、时间", "花朵开放、昆虫活动"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文说“海底依然很宁静”，这是在说明什么？",
+        "options": ["海底没有任何动物", "海底比陆地更明亮", "海面波涛澎湃时，海底深处仍很安静", "海底只有风浪的声音"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语连成课文中的句子",
+        "tokens": ["真是", "物产丰富", "、", "海底", "景色奇异", "的", "世界", "一个"]
+      },
+      "answer": {
+        "ordered": ["海底", "真是", "一个", "景色奇异", "、", "物产丰富", "的", "世界"]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文中写到，海底动物吃东西、行进、遇到危险时会发出声音。"
+      },
+      "answer": { "value": true },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文说最大的海藻只有几厘米长。"
+      },
+      "answer": { "value": false },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“还有些贝类自己不动，却能巴在轮船底下作免费的长途旅行。”这句话运用了什么表达？",
+        "options": ["把贝类写得像人一样有趣", "只是在说明船底很干净", "说明贝类会驾驶轮船", "证明贝类没有生命"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 3
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "海底的声音",
+        "passage": "海底并不是一点儿声音也没有。动物们常常在窃窃私语。它们吃东西、行进、遇到危险时，都会发出不同的声音。",
+        "questions": [
+          {
+            "question": "这段话围绕哪一点来写？",
+            "options": ["海底有声音", "海底没有植物", "海底很炎热", "海面很平静"]
+          },
+          {
+            "question": "“窃窃私语”说明声音怎样？",
+            "options": ["非常轻", "很刺耳", "像雷声", "完全听不见"]
+          }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "海",
+        "tokens": ["藻", "灯", "底", "桌", "面", "笔", "参"],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“海”组成课文相关词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["底", "面", "藻", "参"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

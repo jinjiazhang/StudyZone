@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "男生 35 号鞋有多少人？",
+        "columns": [
+          "鞋号",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38"
+        ],
+        "rows": [
+          {
+            "33": 2,
+            "34": 2,
+            "35": 6,
+            "36": 6,
+            "37": 2,
+            "38": 1,
+            "鞋号": "男生人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "男生最大鞋号是多少？",
+        "columns": [
+          "鞋号",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37",
+          "38"
+        ],
+        "rows": [
+          {
+            "33": 2,
+            "34": 2,
+            "35": 6,
+            "36": 6,
+            "37": 2,
+            "38": 1,
+            "鞋号": "男生人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "女生 32 号鞋有多少人？",
+        "columns": [
+          "鞋号",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37"
+        ],
+        "rows": [
+          {
+            "32": 1,
+            "33": 4,
+            "34": 5,
+            "35": 8,
+            "36": 3,
+            "37": 1,
+            "鞋号": "女生人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "女生人数最多的是几号鞋？",
+        "columns": [
+          "鞋号",
+          "32",
+          "33",
+          "34",
+          "35",
+          "36",
+          "37"
+        ],
+        "rows": [
+          {
+            "32": 1,
+            "33": 4,
+            "34": 5,
+            "35": 8,
+            "36": 3,
+            "37": 1,
+            "鞋号": "女生人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据鞋号统计，进货时应多准备哪类鞋号？",
+        "options": [
+          "没人穿的鞋号",
+          "最大鞋号",
+          "人数多的鞋号",
+          "最小鞋号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理调查数据时，把相同鞋号放在一起是为了：",
+        "options": [
+          "更容易看出每种鞋号有多少",
+          "让表格更长",
+          "改变数据大小",
+          "省略不喜欢的数据"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "男生 33 号和 37 号一共有多少人？",
+        "columns": [
+          "鞋号",
+          "33",
+          "37"
+        ],
+        "rows": [
+          {
+            "33": 2,
+            "37": 2,
+            "鞋号": "人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "女生 34 号比 36 号多多少人？",
+        "columns": [
+          "鞋号",
+          "34",
+          "36"
+        ],
+        "rows": [
+          {
+            "34": 5,
+            "36": 3,
+            "鞋号": "人数"
+          }
+        ]
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6",
+        "right": "1"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8",
+        "right": "5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

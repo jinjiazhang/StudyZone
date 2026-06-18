@@ -1,0 +1,173 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "男生鞋号35号有8人。如果统计表写成7人，可能是什么错误？",
+        "options": [
+          "单位写错",
+          "鞋号范围太大",
+          "少数了一个35号",
+          "题目无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "女生鞋号32号有1人。如果点状图在32号上画2个×，错误在哪里？",
+        "options": [
+          "少画了1个×",
+          "鞋号应该变成33",
+          "多画了1个×",
+          "不用画×"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "睡眠时间10小时有25人。如果说9小时人数最多，错在哪里？",
+        "options": [
+          "没有比较整理后的次数",
+          "单位应是厘米",
+          "10比9小",
+          "人数不能统计"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "护旗手方案“130厘米和154厘米接近”不合理，主要因为？",
+        "options": [
+          "人数太多",
+          "130不是身高",
+          "154小于130",
+          "相差24厘米，不接近"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "错误表35号7人",
+        "right": "正确35号16人"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "正确35号16人，错误写成15人，少写了多少人？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "位置4正确出现5次，错误写成3次，少记了多少次？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "错误诊断表：哪一项需要改成16人？",
+        "columns": [
+          "项目",
+          "错误人数",
+          "正确人数"
+        ],
+        "rows": [
+          {
+            "项目": "35号",
+            "错误人数": 15,
+            "正确人数": 16
+          },
+          {
+            "项目": "36号",
+            "错误人数": 7,
+            "正确人数": 7
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "35号"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "女生鞋号34号正确有 ___ 人，35号正确有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "34号"
+          },
+          {
+            "id": "b2",
+            "label": "35号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理数据时，为了减少漏数和重复数，下面做法最合适的是？",
+        "options": [
+          "只凭感觉估计",
+          "边数边做记号",
+          "跳着看数据",
+          "只看第一行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

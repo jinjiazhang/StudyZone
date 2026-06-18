@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形蔬菜园长 6 米、宽 4 米，四周都围栏，需要 ? 米围栏"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "靠墙围一个长方形菜园，长边靠墙，长 6 米、宽 4 米，只围三边，需要 ? 米围栏"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形菜园长边靠墙时，围栏可以少围哪条边？",
+        "options": [
+          "两条宽边",
+          "所有边",
+          "对面的长边也不用围",
+          "靠墙的一条长边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "靠墙围长方形菜地，宽 5 米、离墙的长边 12 米，需要围三边，围栏长 ? 米"
+      },
+      "answer": {
+        "value": 22,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形鸡舍边长 9 米，四周围栏需要 ? 米"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形鸡舍一边靠墙，边长 9 米，只围三边需要 ? 米"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "长 10 米、宽 4 米的长方形菜地，长边靠墙，只围三边，列式。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "10+4+4",
+          "10+4*2",
+          "4+10+4"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "10+4+4",
+        "right": "2*(10+4)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪种围法需要围栏最少？",
+        "columns": [
+          "围法",
+          "围栏米"
+        ],
+        "rows": [
+          {
+            "围法": "四周都围",
+            "围栏米": 32
+          },
+          {
+            "围法": "长边靠墙",
+            "围栏米": 22
+          },
+          {
+            "围法": "宽边靠墙",
+            "围栏米": 26
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "长边靠墙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "应用题中看到“靠墙”，要特别注意什么？",
+        "options": [
+          "可能少围一条边",
+          "一定要乘 4",
+          "周长一定不变",
+          "只能求面积"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

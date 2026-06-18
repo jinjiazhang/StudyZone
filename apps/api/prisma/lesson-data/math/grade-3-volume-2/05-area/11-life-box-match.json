@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "牙膏盒最接近哪种立体图形？",
+        "options": [
+          "圆柱",
+          "三角锥",
+          "长方体",
+          "球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "饮料罐最可能对应的展开图是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "6个正方形"
+          },
+          {
+            "id": "b",
+            "label": "4个三角形"
+          },
+          {
+            "id": "c",
+            "label": "1个长方形"
+          },
+          {
+            "id": "d",
+            "label": "2个圆和1个长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "方形礼品盒若各边一样长，最接近：",
+        "options": [
+          "正方体",
+          "圆柱",
+          "三棱柱",
+          "三角锥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "牛奶盒盒身常接近：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱"
+          },
+          {
+            "id": "b",
+            "label": "长方体"
+          },
+          {
+            "id": "c",
+            "label": "球"
+          },
+          {
+            "id": "d",
+            "label": "线段"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "牙膏盒"
+          },
+          {
+            "id": "l2",
+            "text": "方糖盒"
+          },
+          {
+            "id": "l3",
+            "text": "饮料罐"
+          },
+          {
+            "id": "l4",
+            "text": "三角包装盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "圆柱"
+          },
+          {
+            "id": "r1",
+            "text": "长方体"
+          },
+          {
+            "id": "r4",
+            "text": "三棱柱"
+          },
+          {
+            "id": "r2",
+            "text": "正方体"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "研究生活盒子的展开图",
+        "items": [
+          {
+            "id": "s2",
+            "text": "观察它像哪种立体图形"
+          },
+          {
+            "id": "s4",
+            "text": "拆开或画图验证"
+          },
+          {
+            "id": "s1",
+            "text": "选一个生活盒子"
+          },
+          {
+            "id": "s3",
+            "text": "估计展开后的面"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "生活中的盒子可以先判断像哪种",
+          null,
+          "，再想它的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "展开图",
+          "颜色",
+          "立体图形",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "立体图形",
+          "展开图"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个圆柱形薯片桶展开后，最不可能出现：",
+        "options": [
+          "两个圆",
+          "一个长方形侧面",
+          "6个相同正方形",
+          "能围成侧面的纸片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个方方正正的小盒子六个面都一样，可能对应：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱展开图"
+          },
+          {
+            "id": "b",
+            "label": "三角锥展开图"
+          },
+          {
+            "id": "c",
+            "label": "一张圆纸"
+          },
+          {
+            "id": "d",
+            "label": "正方体展开图"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "研究生活盒子时，最能帮助验证想法的是：",
+        "options": [
+          "拆一拆、折一折",
+          "只看商标",
+          "只看颜色",
+          "只听别人说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "贪玩的小水滴"
+          },
+          {
+            "id": "l1",
+            "text": "水果们的音乐会"
+          },
+          {
+            "id": "l2",
+            "text": "手罢工啦"
+          },
+          {
+            "id": "l3",
+            "text": "躲在草丛里的星星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "星星来到地面藏起来"
+          },
+          {
+            "id": "r0",
+            "text": "小水滴离开云朵去旅行"
+          },
+          {
+            "id": "r2",
+            "text": "手不工作后带来麻烦"
+          },
+          {
+            "id": "r1",
+            "text": "水果发出不同声音合奏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“手罢工啦”这个题目最适合写：",
+        "options": [
+          "介绍手的骨骼名称",
+          "背诵一首古诗",
+          "手不愿工作后生活发生变化",
+          "计算一只手有几根手指"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“水果们的音乐会”要把水果想象成：",
+        "options": [
+          "会演奏或唱歌的角色",
+          "普通水果价格表",
+          "真实植物标本",
+          "桥上的石狮子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "习作可以从课本题目中选一个，也可以写其他想象故事。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "题目“躲在草丛里的星星”只能写天文学知识。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：选题要能激发想象。",
+        "tokens": [
+          "胡子",
+          "激发",
+          "选题",
+          "。",
+          "能",
+          "香肠",
+          "想象",
+          "要"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "选题",
+          "要",
+          "能",
+          "激发",
+          "想象",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "题目构思",
+        "passage": "看到“滚来滚去的小土豆”，可以想：小土豆为什么会滚？它滚到哪里？遇见了谁？这些问题能帮助我们把故事写下去。",
+        "questions": [
+          {
+            "question": "哪一个问题能帮助展开故事？",
+            "options": [
+              "它滚到哪里？",
+              "它有几克重？",
+              "它属于哪一科？",
+              "它多少钱一斤？"
+            ]
+          },
+          {
+            "question": "这段构思围绕哪个题目？",
+            "options": [
+              "滚来滚去的小土豆",
+              "水果们的音乐会",
+              "手罢工啦",
+              "假如人类可以冬眠"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“假如人类可以冬眠”更适合写：",
+        "options": [
+          "胡萝卜长胡子",
+          "人们冬眠前后生活怎样变化",
+          "铅笔去菜园",
+          "猫有一条尾巴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "好题目常常自带一个“如果……会怎样”的问题。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个题目最像想象故事题？",
+        "options": [
+          "我的真实早晨",
+          "一张课程表",
+          "会说话的书包",
+          "今天的天气记录"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

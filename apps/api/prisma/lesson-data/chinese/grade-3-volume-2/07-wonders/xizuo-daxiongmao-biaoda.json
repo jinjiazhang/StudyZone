@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "熊",
+          "爱",
+          "竹",
+          "和",
+          "笋",
+          "呢",
+          "竹",
+          "叶",
+          "吃",
+          "猫",
+          "大"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大",
+          "熊",
+          "猫",
+          "爱",
+          "吃",
+          "竹",
+          "叶",
+          "和",
+          "竹",
+          "笋"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "熊",
+          "生",
+          "在",
+          "川",
+          "地",
+          "呀",
+          "等",
+          "四",
+          "活",
+          "猫",
+          "大"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大",
+          "熊",
+          "猫",
+          "生",
+          "活",
+          "在",
+          "四",
+          "川",
+          "等",
+          "地"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "是",
+          "国",
+          "国",
+          "啊",
+          "宝",
+          "的",
+          "我",
+          "它"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "是",
+          "我",
+          "国",
+          "的",
+          "国",
+          "宝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍大熊猫时，下面哪种顺序最清楚？",
+        "options": [
+          "名称、类别、食物、分布、原因",
+          "结尾、标点、题目、开头",
+          "颜色、火烧云、雷声、桃花",
+          "先写无关故事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话适合作为介绍开头？",
+        "options": [
+          "今天的火烧云真红。",
+          "大熊猫人见人爱，是我国的国宝。",
+          "暴风雨马上来了。",
+          "山寺桃花开得晚。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话表达最准确？",
+        "options": [
+          "大熊猫是鸟类。",
+          "大熊猫只吃石头。",
+          "大熊猫生活在海底。",
+          "大熊猫是哺乳动物。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "外形"
+          },
+          {
+            "id": "l2",
+            "text": "食物"
+          },
+          {
+            "id": "l3",
+            "text": "分布"
+          },
+          {
+            "id": "l4",
+            "text": "类别"
+          },
+          {
+            "id": "l5",
+            "text": "地位"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "四川、陕西、甘肃等地"
+          },
+          {
+            "id": "r4",
+            "text": "哺乳动物"
+          },
+          {
+            "id": "r5",
+            "text": "中国的国宝"
+          },
+          {
+            "id": "r1",
+            "text": "黑白相间，样子可爱"
+          },
+          {
+            "id": "r2",
+            "text": "爱吃竹叶、竹笋"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "修改介绍文时，哪一项最需要检查？",
+        "options": [
+          "选项是否最多",
+          "内容是否准确，表达是否通顺",
+          "是否用了拼音",
+          "是否写了算式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍“为什么被视为国宝”时，可以写什么？",
+        "options": [
+          "颜色像火烧云",
+          "雷声很响",
+          "桃花开在四月",
+          "数量珍贵，深受人们喜爱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项不适合放入大熊猫介绍？",
+        "options": [
+          "火烧云一会儿红彤彤",
+          "爱吃竹笋",
+          "生活地区",
+          "哺乳动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

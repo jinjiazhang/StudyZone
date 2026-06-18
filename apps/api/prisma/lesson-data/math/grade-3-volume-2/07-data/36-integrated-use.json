@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "全班鞋号统计：人数最多的是哪种鞋号？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "人数": 1
+          },
+          {
+            "鞋号": "33号",
+            "人数": 5
+          },
+          {
+            "鞋号": "34号",
+            "人数": 7
+          },
+          {
+            "鞋号": "35号",
+            "人数": 17
+          },
+          {
+            "鞋号": "36号",
+            "人数": 8
+          },
+          {
+            "鞋号": "37号",
+            "人数": 3
+          },
+          {
+            "鞋号": "38号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "35号"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠时间统计：达到10小时及以上共有多少人？",
+        "columns": [
+          "类别",
+          "人数"
+        ],
+        "rows": [
+          {
+            "类别": "10小时",
+            "人数": 25
+          },
+          {
+            "类别": "11小时",
+            "人数": 3
+          },
+          {
+            "类别": "12小时",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 29
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "身高统计：哪两种相邻身高正好合计6人？",
+        "columns": [
+          "身高组",
+          "人数"
+        ],
+        "rows": [
+          {
+            "身高组": "142和143厘米",
+            "人数": 7
+          },
+          {
+            "身高组": "149和150厘米",
+            "人数": 6
+          },
+          {
+            "身高组": "136和137厘米",
+            "人数": 3
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "149和150厘米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35号鞋16人，36号鞋7人，一共多少人？"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "睡眠少于10小时13人，达到10小时及以上29人，全班一共多少人？"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35号鞋16人",
+        "right": "34号鞋8人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "149和150厘米合计6人",
+        "right": "护旗手需要6人"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话是依据统计结果作出的合理判断？",
+        "options": [
+          "最大鞋号一定最多",
+          "睡8小时的人最多",
+          "35号鞋人数最多，应多准备",
+          "130厘米和154厘米最接近"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "整理数据常用两步：先按类别 ___，再把结果 ___ 出来。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "第二步"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元“数据的整理与表示”的关键收获是？",
+        "options": [
+          "收集、整理、表示数据，并用数据说明问题",
+          "只会背乘法口诀",
+          "只会画长方形",
+          "只看最大数字不比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

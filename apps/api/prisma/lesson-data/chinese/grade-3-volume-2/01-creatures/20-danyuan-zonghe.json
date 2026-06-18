@@ -1,0 +1,288 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "惠",
+        "hint": "选出正确拼音",
+        "options": [
+          "huì",
+          "huī",
+          "huí",
+          "huǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "纤",
+        "hint": "选出正确拼音",
+        "options": [
+          "qiān",
+          "xiàn",
+          "jiān",
+          "xiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓬",
+        "hint": "选出正确拼音",
+        "options": [
+          "pén",
+          "féng",
+          "péng",
+          "pěng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蚂",
+        "hint": "“蚂蚱”的“蚂”",
+        "options": [
+          "mà",
+          "mǎ",
+          "má",
+          "mā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "róng",
+        "sentence": "泥__飞燕子。",
+        "blankPlaceholder": "__",
+        "character": "融",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "融"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jù",
+        "sentence": "花草__拢来。",
+        "blankPlaceholder": "__",
+        "character": "聚",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "聚"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "__叶挨挨挤挤。",
+        "blankPlaceholder": "__",
+        "character": "荷",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "荷"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yì",
+        "sentence": "回__江南。",
+        "blankPlaceholder": "__",
+        "character": "忆",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "忆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "剪刀似的尾巴"
+          },
+          {
+            "id": "l1",
+            "text": "碧绿的大圆盘"
+          },
+          {
+            "id": "l2",
+            "text": "花大姐"
+          },
+          {
+            "id": "l3",
+            "text": "水面荡漾"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "瓢虫"
+          },
+          {
+            "id": "r3",
+            "text": "小圆晕"
+          },
+          {
+            "id": "r0",
+            "text": "燕子"
+          },
+          {
+            "id": "r1",
+            "text": "荷叶"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第一单元的主题最接近哪一项？",
+        "options": [
+          "学习寓言道理",
+          "亲近动物植物，热爱自然与生命",
+          "了解传统节日",
+          "研究造纸术"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "鸭先知",
+          "春江",
+          "荷花",
+          "水暖",
+          "燕子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春江",
+          "水暖",
+          "鸭先知"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "复眼",
+          "的天空",
+          "旷亮无比",
+          "花骨朵儿"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "旷亮无比",
+          "的天空"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "可爱生灵",
+        "passage": "春天里，燕子为春光添了生趣，荷花在池中展开不同的姿态，蜻蜓和瓢虫也藏着有趣的秘密。阅读这些课文时，我们可以一边读一边想象画面，积累优美生动的语句。",
+        "questions": [
+          {
+            "question": "这段话中没有提到哪一种生灵？",
+            "options": [
+              "熊猫",
+              "燕子",
+              "荷花",
+              "蜻蜓"
+            ]
+          },
+          {
+            "question": "阅读本单元课文时，可以怎样学习？",
+            "options": [
+              "一边读一边想象画面",
+              "只记页码",
+              "只看目录",
+              "不交流体会"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一句是优美生动的观察表达？",
+        "options": [
+          "这是一只动物。",
+          "我看到了植物。",
+          "小燕子的翼尖偶尔沾了一下水面。",
+          "那里有东西。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

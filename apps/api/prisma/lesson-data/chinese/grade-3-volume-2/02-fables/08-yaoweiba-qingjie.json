@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "狼一开始处在什么困境里？",
+        "options": [
+          "掉进陷阱爬不上来",
+          "迷路找不到家",
+          "被猎人抓住",
+          "掉进河里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "狼先把自己装成什么样子？",
+        "options": [
+          "又强壮又威风",
+          "又高兴又骄傲",
+          "又老实又可怜",
+          "又安静又害羞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老山羊第一次怎样判断狼？",
+        "options": [
+          "立刻相信它是狗",
+          "不像狗，倒很像狼",
+          "送它很多食物",
+          "跳进陷阱救它"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按情节组句：狼假装善良求救。",
+        "tokens": [
+          "求救",
+          "向老山羊",
+          "善良",
+          "假装",
+          "狼",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "狼",
+          "假装",
+          "善良",
+          "向老山羊",
+          "求救"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按情节组句：老山羊识破了骗局。",
+        "tokens": [
+          "骗局",
+          "狼的",
+          "识破了",
+          "老山羊",
+          "鹿角"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老山羊",
+          "识破了",
+          "狼的",
+          "骗局"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "掉进陷阱"
+          },
+          {
+            "id": "l_1",
+            "text": "摇尾巴"
+          },
+          {
+            "id": "l_2",
+            "text": "扬起尘土"
+          },
+          {
+            "id": "l_3",
+            "text": "露出凶相"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "尾巴暴露了真相"
+          },
+          {
+            "id": "r_0",
+            "text": "狼需要别人帮忙"
+          },
+          {
+            "id": "r_3",
+            "text": "狼不再伪装"
+          },
+          {
+            "id": "r_1",
+            "text": "狼想证明自己像狗"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "会摇尾巴的狼",
+        "passage": "狼掉进陷阱，装成老实可怜的狗，请老山羊救它。老山羊发现它不像狗。狼着急地摇尾巴，尘土扬起，硬尾巴露出来，老山羊明白它还是凶恶的狼。",
+        "questions": [
+          {
+            "question": "狼为什么摇尾巴？",
+            "options": [
+              "想骗老山羊相信它是狗",
+              "向老山羊道谢",
+              "赶走猎人",
+              "把陷阱填平"
+            ]
+          },
+          {
+            "question": "老山羊为什么没有救狼？",
+            "options": [
+              "看出狼在骗人",
+              "不认识路",
+              "害怕小鸡",
+              "想要狼的尾巴"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项表现了狼的狡猾？",
+        "options": [
+          "认真感谢老山羊",
+          "主动承认错误",
+          "帮助小鸡脱险",
+          "装成忠诚驯良的狗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "老山羊一步步发现狼在骗人。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "狼最后真的改成善良的狗了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "湿润"
+          },
+          {
+            "id": "l1",
+            "text": "荒野"
+          },
+          {
+            "id": "l2",
+            "text": "狂欢"
+          },
+          {
+            "id": "l3",
+            "text": "放假"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "荒凉的野外"
+          },
+          {
+            "id": "r2",
+            "text": "纵情欢乐"
+          },
+          {
+            "id": "r3",
+            "text": "暂时停止上课或工作"
+          },
+          {
+            "id": "r0",
+            "text": "潮湿滋润"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "碰触"
+          },
+          {
+            "id": "l1",
+            "text": "簌簌"
+          },
+          {
+            "id": "l2",
+            "text": "急急忙忙"
+          },
+          {
+            "id": "l3",
+            "text": "扬起双臂"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "形容风吹叶动的声音"
+          },
+          {
+            "id": "r2",
+            "text": "非常匆忙"
+          },
+          {
+            "id": "r3",
+            "text": "把两只胳膊举起来"
+          },
+          {
+            "id": "r0",
+            "text": "接触、碰到"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "荒",
+        "tokens": [
+          "野",
+          "读",
+          "凉",
+          "洁",
+          "地",
+          "球",
+          "原"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【荒】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "野",
+            "凉",
+            "地",
+            "原"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "湿",
+        "tokens": [
+          "润",
+          "罚",
+          "气",
+          "招",
+          "地",
+          "墙",
+          "透"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【湿】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "润",
+            "气",
+            "地",
+            "透"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "舞",
+        "tokens": [
+          "跳",
+          "粗",
+          "蹈",
+          "猜",
+          "会",
+          "坡",
+          "台"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【舞】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "跳",
+            "蹈",
+            "会",
+            "台"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“湿润的东风走过荒野”把东风写得像什么？",
+        "options": [
+          "一只小鸟",
+          "会走路的人",
+          "一座学校",
+          "一件衣服"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雷云拍着大手”运用了什么表达？",
+        "options": [
+          "列数字",
+          "作比较",
+          "拟人的写法",
+          "引用名言"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“簌簌地响”写出了绿叶在风中的声音。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“花孩子穿了紫的、黄的、白的衣裳”写出了花的颜色。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“功课”在文中是花孩子在地下学校里做的事。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

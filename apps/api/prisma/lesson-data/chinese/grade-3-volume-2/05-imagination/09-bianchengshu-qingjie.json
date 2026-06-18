@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "我变成了一棵树",
+        "passage": "英英不想吃饭，希望变成一棵树。她真的变成了树，树上长满各种形状的鸟窝，小动物们和妈妈住进鸟窝。妈妈拿出许多好吃的，英英肚子咕噜噜叫，最后发现最了解她的人还是妈妈。",
+        "questions": [
+          {
+            "question": "英英为什么希望变成树？",
+            "options": [
+              "不想吃饭，想继续玩",
+              "想开音乐会",
+              "想做铅笔",
+              "想放风筝"
+            ]
+          },
+          {
+            "question": "树上长出的是什么？",
+            "options": [
+              "各种形状的鸟窝",
+              "一串灯笼",
+              "很多果酱面包",
+              "许多桥洞"
+            ]
+          },
+          {
+            "question": "谁最了解英英？",
+            "options": [
+              "妈妈",
+              "小男孩",
+              "白菜小姐",
+              "鸟太太"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "英英变成树后，谁住进了鸟窝？",
+        "options": [
+          "赵州桥上的石匠",
+          "小白兔、小松鼠、小鸭子等小动物和妈妈",
+          "放风筝的小男孩",
+          "卖眼镜的白菜小姐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "英英肚子里的声音越来越响，是因为她：",
+        "options": [
+          "正在唱歌",
+          "开始打雷",
+          "饿了，想念饭菜",
+          "想写作业"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "妈妈知道英英的秘密，说明妈妈很了解她。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文中的鸟窝只有一种正方形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "三角形鸟窝"
+          },
+          {
+            "id": "l1",
+            "text": "小动物们"
+          },
+          {
+            "id": "l2",
+            "text": "咕噜噜"
+          },
+          {
+            "id": "l3",
+            "text": "水珠"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "英英流出的口水"
+          },
+          {
+            "id": "r0",
+            "text": "妈妈想住进去"
+          },
+          {
+            "id": "r2",
+            "text": "肚子发出的声音"
+          },
+          {
+            "id": "r1",
+            "text": "津津有味吃东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：最了解英英的人是妈妈。",
+        "tokens": [
+          "香肠",
+          "妈妈",
+          "的",
+          "最",
+          "鸟窝",
+          "是",
+          "英英",
+          "。",
+          "人",
+          "了解"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "最",
+          "了解",
+          "英英",
+          "的",
+          "人",
+          "是",
+          "妈妈",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文的想象最奇妙的是：",
+        "options": [
+          "大家一起吃饭",
+          "人变成树，树上长出鸟窝",
+          "妈妈背着包",
+          "小动物会饿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "默读课文时，可以找出让自己觉得新奇有趣的想象。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "英英最后说“最了解我的人到底还是妈妈”，表现了她对妈妈的：",
+        "options": [
+          "害怕和讨厌",
+          "完全陌生",
+          "毫不在意",
+          "亲近和理解"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "213 × 3 = ?"
+      },
+      "answer": {
+        "value": 639,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "124 × 2 = ?"
+      },
+      "answer": {
+        "value": 248,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "312 × 3 = ?"
+      },
+      "answer": {
+        "value": 936,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "213 × 3：200 × 3 = __，10 × 3 = __，3 × 3 = __，总数 __",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          },
+          {
+            "id": "ones"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          600,
+          30,
+          9,
+          639
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "214 × 2：200 × 2 = __，10 × 2 = __，4 × 2 = __，总数 __",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          },
+          {
+            "id": "ones"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          400,
+          20,
+          8,
+          428
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "364 × 2 可以分成",
+          null,
+          "+",
+          null,
+          "+",
+          null
+        ],
+        "tokens": [
+          "8",
+          "600",
+          "2",
+          "120",
+          "728"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "600",
+          "120",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 123×3 时，百位上的 1 要乘几？",
+        "options": [
+          "3",
+          "1",
+          "2",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "213 × 3",
+        "right": "600 + 30 + 9"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "123×3"
+          },
+          {
+            "id": "l1",
+            "text": "214×2"
+          },
+          {
+            "id": "l2",
+            "text": "312×3"
+          },
+          {
+            "id": "l3",
+            "text": "122×4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "936"
+          },
+          {
+            "id": "r3",
+            "text": "488"
+          },
+          {
+            "id": "r0",
+            "text": "369"
+          },
+          {
+            "id": "r1",
+            "text": "428"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "三位数乘一位数时，可以按百位、十位、个位分别乘，再相加。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "验证",
+        "hint": "请选择词语【验证】的正确拼音",
+        "options": ["yán zhèng", "yàn zèng", "yíng zhèng", "yàn zhèng"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "阻力",
+        "hint": "请选择词语【阻力】中“阻”的读音",
+        "options": ["zhù", "zǔ", "zú", "zǔn"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gài",
+        "sentence": "石蜂飞得很低，大__这样可以减少阻力。",
+        "blankPlaceholder": "__",
+        "character": "概",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "概" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "验证" },
+          { "id": "l2", "text": "阻力" },
+          { "id": "l3", "text": "逆风" },
+          { "id": "l4", "text": "特殊" }
+        ],
+        "right": [
+          { "id": "r4", "text": "不同于一般情况的" },
+          { "id": "r2", "text": "妨碍物体运动的力量" },
+          { "id": "r1", "text": "通过事实证明是否正确" },
+          { "id": "r3", "text": "迎着风的方向" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r1", "l2": "r2", "l3": "r3", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”做实验的目的是什么？",
+        "options": ["验证石蜂是不是靠记忆力辨认方向", "观察石蜂会不会采花粉", "证明石蜂飞得比火车快", "比较不同昆虫的颜色"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中，小女儿为什么很激动？",
+        "options": ["她看见所有石蜂都迷路了", "她发现有两只石蜂飞回蜂窝", "她把石蜂关进纸袋里", "她知道石蜂会说话"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语连成课文中的意思",
+        "tokens": ["辨认", "石蜂", "方向", "记忆力", "靠", "不是"]
+      },
+      "answer": {
+        "ordered": ["石蜂", "不是", "靠", "记忆力", "辨认", "方向"]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "实验中，“我”把石蜂带到四公里外从未去过的地方，再放走它们。"
+      },
+      "answer": { "value": true },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "刮狂风时，石蜂飞得很高，远远离开地面。"
+      },
+      "answer": { "value": false },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后图表里，“实验过程”应该填写哪一项更合适？",
+        "options": ["把石蜂捉住，带到四公里外做记号后放飞", "给石蜂唱歌，再观察它们睡觉", "把石蜂放进水里，看它们游多远", "给石蜂换蜂窝，比较颜色"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "石蜂回家",
+        "passage": "“我”把石蜂带到四公里外，做上白色记号后放飞。傍晚时，两只石蜂回到了蜂窝；第二天检查时，又发现了十五只带记号的石蜂。",
+        "questions": [
+          {
+            "question": "这段话说明实验观察到了什么结果？",
+            "options": ["有石蜂能回到蜂窝", "所有石蜂都不会飞", "石蜂只在水里生活", "石蜂没有做记号"]
+          },
+          {
+            "question": "第二天发现了多少只有白色记号的石蜂？",
+            "options": ["十五只", "两只", "二十只", "四只"]
+          }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0] },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "验",
+        "tokens": ["证", "花", "收", "水", "算", "唱", "查"],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“验”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["证", "收", "算"], ["证", "查", "算"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

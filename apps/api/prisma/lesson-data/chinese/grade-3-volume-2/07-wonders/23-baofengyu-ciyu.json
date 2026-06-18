@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "沉",
+        "tokens": [
+          "红",
+          "闷",
+          "李",
+          "静",
+          "剑",
+          "重"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“沉”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "闷",
+            "静"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "昏",
+        "tokens": [
+          "盈",
+          "暗",
+          "柱",
+          "沉",
+          "寿",
+          "花"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“昏”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "暗",
+            "沉"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "暴",
+        "tokens": [
+          "蔚",
+          "风",
+          "洼",
+          "雨",
+          "烛",
+          "躁"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“暴”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "风",
+            "雨"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "沉闷"
+          },
+          {
+            "id": "l2",
+            "text": "蔓延"
+          },
+          {
+            "id": "l3",
+            "text": "汹汹"
+          },
+          {
+            "id": "l4",
+            "text": "报信者"
+          },
+          {
+            "id": "l5",
+            "text": "沉寂"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "气势很盛的样子"
+          },
+          {
+            "id": "r4",
+            "text": "传递消息的人或事物"
+          },
+          {
+            "id": "r5",
+            "text": "十分安静"
+          },
+          {
+            "id": "r1",
+            "text": "空气不流通，使人不舒服"
+          },
+          {
+            "id": "r2",
+            "text": "像蔓草一样向四周扩展"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“空气越来越沉闷”中的“沉闷”最接近哪种感觉？",
+        "options": [
+          "明亮、轻快",
+          "香甜、可口",
+          "清脆、悦耳",
+          "压抑、不透气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“乌云从西边的天空蔓延过来”中的“蔓延”说明乌云怎样？",
+        "options": [
+          "一下消失",
+          "范围逐渐扩大",
+          "静止不动",
+          "颜色变浅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词更适合写暴风雨前的景象？",
+        "options": [
+          "昏暗",
+          "金灿灿",
+          "红彤彤",
+          "百花齐放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "云",
+          "延",
+          "来",
+          "了",
+          "过",
+          "蔓",
+          "乌",
+          "呀"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "乌",
+          "云",
+          "蔓",
+          "延",
+          "过",
+          "来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "声",
+          "响",
+          "空",
+          "中",
+          "天",
+          "震",
+          "雷",
+          "云"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雷",
+          "声",
+          "震",
+          "响",
+          "天",
+          "空"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“报信者”在文中指什么？",
+        "options": [
+          "大石狮子",
+          "山寺桃花",
+          "新鲜的微风",
+          "国宝熊猫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

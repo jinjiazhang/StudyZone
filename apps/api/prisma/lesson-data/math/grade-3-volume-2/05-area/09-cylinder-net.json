@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱展开后通常包含哪些面？",
+        "options": [
+          "2个圆和1个长方形",
+          "6个正方形",
+          "4个三角形",
+          "1个圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "图①有两个圆和一个长方形，它最可能折叠成：",
+        "options": [
+          {
+            "id": "a",
+            "label": "正方体"
+          },
+          {
+            "id": "b",
+            "label": "圆柱"
+          },
+          {
+            "id": "c",
+            "label": "三角锥"
+          },
+          {
+            "id": "d",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱的两个圆形面在展开图中对应什么？",
+        "options": [
+          "四个侧面",
+          "两个尖角",
+          "上、下底面",
+          "一条棱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "圆柱侧面展开后常见形状是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆形"
+          },
+          {
+            "id": "b",
+            "label": "三角形"
+          },
+          {
+            "id": "c",
+            "label": "五边形"
+          },
+          {
+            "id": "d",
+            "label": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "两个圆"
+          },
+          {
+            "id": "l2",
+            "text": "长方形"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "缺少一个圆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "能滚动的立体"
+          },
+          {
+            "id": "r1",
+            "text": "上下底面"
+          },
+          {
+            "id": "r4",
+            "text": "不能封住两端"
+          },
+          {
+            "id": "r2",
+            "text": "侧面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断圆柱展开图",
+        "items": [
+          {
+            "id": "s2",
+            "text": "找一个长方形侧面"
+          },
+          {
+            "id": "s4",
+            "text": "想象围成圆柱"
+          },
+          {
+            "id": "s1",
+            "text": "找两个圆"
+          },
+          {
+            "id": "s3",
+            "text": "看三个面是否能配合"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "圆柱展开图通常有两个",
+          null,
+          "和一个",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "长方形",
+          "正方形",
+          "圆",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "圆",
+          "长方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "只有一个圆和一个长方形，通常不能做成封闭圆柱，因为：",
+        "options": [
+          "少了一个底面",
+          "面太多了",
+          "颜色不一样",
+          "长方形不能弯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材中“图①有两个圆，它能折叠回圆柱”这句话说明：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱不需要底面"
+          },
+          {
+            "id": "b",
+            "label": "展开图要和立体图形对应"
+          },
+          {
+            "id": "c",
+            "label": "圆不能出现在展开图"
+          },
+          {
+            "id": "d",
+            "label": "长方形越多越好"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断圆柱展开图时，不需要重点检查的是：",
+        "options": [
+          "有没有两个圆",
+          "有没有侧面",
+          "纸片是不是蓝色",
+          "能否围合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 4 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 × 3 = ?"
+      },
+      "answer": {
+        "value": 39,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "21 × 4 = ?"
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "32 × 2 = ?"
+      },
+      "answer": {
+        "value": 64,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 × 4：10 × 4 = __，2 × 4 = __，合起来 __",
+        "blanks": [
+          {
+            "id": "tens"
+          },
+          {
+            "id": "ones"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          40,
+          8,
+          48
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "23 × 3：20 × 3 = __，3 × 3 = __，合起来 __",
+        "blanks": [
+          {
+            "id": "tens"
+          },
+          {
+            "id": "ones"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          60,
+          9,
+          69
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把 4 行、每行 12 人表示成乘法算式。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "12×4",
+          "4×12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "点子图分成 10×5 和 2×5，表示的算式是？",
+        "options": [
+          "10×5",
+          "2×5",
+          "12×5",
+          "15×2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12 × 4",
+        "right": "10 × 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按积从小到大排列",
+        "items": [
+          {
+            "id": "i0_60",
+            "text": "60"
+          },
+          {
+            "id": "i1_48",
+            "text": "48"
+          },
+          {
+            "id": "i2_36",
+            "text": "36"
+          },
+          {
+            "id": "i3_24",
+            "text": "24"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i3_24",
+          "i2_36",
+          "i1_48",
+          "i0_60"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

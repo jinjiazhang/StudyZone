@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断一个未知盒子的展开图，最完整的一组依据是：",
+        "options": [
+          "颜色、价格、大小、页码",
+          "只看面数",
+          "只看图案",
+          "面数、面形、连接、折叠结果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个图有2个圆和1个长方形，折回后最可能是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱"
+          },
+          {
+            "id": "b",
+            "label": "正方体"
+          },
+          {
+            "id": "c",
+            "label": "三角锥"
+          },
+          {
+            "id": "d",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个图有6个正方形，但折起来有两个面重叠，应判断：",
+        "options": [
+          "一定正确",
+          "不能作为这个正方体展开图",
+          "是圆柱展开图",
+          "少了圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "生活中的长方体纸盒拆开后，最可能得到：",
+        "options": [
+          {
+            "id": "a",
+            "label": "两个圆和一个长方形"
+          },
+          {
+            "id": "b",
+            "label": "4个三角形"
+          },
+          {
+            "id": "c",
+            "label": "6个面连成的展开图"
+          },
+          {
+            "id": "d",
+            "label": "一个圆"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "6个相同正方形"
+          },
+          {
+            "id": "l2",
+            "text": "2个圆和1个长方形"
+          },
+          {
+            "id": "l3",
+            "text": "2个三角形和3个长方形"
+          },
+          {
+            "id": "l4",
+            "text": "6个长方形类面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "三棱柱"
+          },
+          {
+            "id": "r1",
+            "text": "正方体"
+          },
+          {
+            "id": "r4",
+            "text": "长方体"
+          },
+          {
+            "id": "r2",
+            "text": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "综合解决拆盒子问题",
+        "items": [
+          {
+            "id": "s3",
+            "text": "检查给出的图形"
+          },
+          {
+            "id": "s1",
+            "text": "观察立体图形"
+          },
+          {
+            "id": "s4",
+            "text": "折叠想象并下结论"
+          },
+          {
+            "id": "s2",
+            "text": "预测展开图特征"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "综合判断时，既要会",
+          null,
+          "盒子，也要会把展开图",
+          null,
+          "想象。"
+        ],
+        "tokens": [
+          "折回",
+          "拆",
+          "涂色",
+          "排序"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "拆",
+          "折回"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项最符合本单元“动手做”的学习方式？",
+        "options": [
+          "只抄公式",
+          "只做口算",
+          "只背单位换算",
+          "想一想、剪一剪、折一折、说一说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果一个展开图整体不连通，最合理的处理是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "重新设计剪开的边"
+          },
+          {
+            "id": "b",
+            "label": "直接判为正确"
+          },
+          {
+            "id": "c",
+            "label": "删掉所有面"
+          },
+          {
+            "id": "d",
+            "label": "改成圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "完成综合判断后，哪句话最适合总结？",
+        "options": [
+          "只要图大就可靠",
+          "能折回原立体且没有重叠，判断才更可靠",
+          "只要颜色相同就可靠",
+          "不用说明理由"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "源源不断"
+          },
+          {
+            "id": "l_1",
+            "text": "津津有味"
+          },
+          {
+            "id": "l_2",
+            "text": "无忧无虑"
+          },
+          {
+            "id": "l_3",
+            "text": "无边无际"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "“无忧无虑”的结构特点"
+          },
+          {
+            "id": "r_0",
+            "text": "“源源不断”的结构特点"
+          },
+          {
+            "id": "r_3",
+            "text": "“无边无际”的结构特点"
+          },
+          {
+            "id": "r_1",
+            "text": "“津津有味”的结构特点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语和“源源不断”结构相同？",
+        "options": [
+          "无忧无虑",
+          "津津有味",
+          "自由自在",
+          "一心一意"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语和“无边无际”结构相同？",
+        "options": [
+          "无忧无虑",
+          "源源不断",
+          "津津有味",
+          "井底之蛙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鹿忽然看到了自己的腿，不禁噘起了嘴，皱起了眉头”加点部分主要写什么？",
+        "options": [
+          "时间和地点",
+          "天气变化",
+          "动作和神态",
+          "声音大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "仿照例句补完整：他皱着眉头说：“你真是急死我了！”",
+        "tokens": [
+          "你真是急死我了",
+          "说",
+          "皱着眉头",
+          "他",
+          "源源"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "皱着眉头",
+          "说",
+          "你真是急死我了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "仿照例句补完整：妹妹拍着手说：“这次终于可以玩了！”",
+        "tokens": [
+          "这次终于可以玩了",
+          "说",
+          "拍着手",
+          "妹妹",
+          "无边"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "妹妹",
+          "拍着手",
+          "说",
+          "这次终于可以玩了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给“可是真龙来了”补动作神态，最合适的是？",
+        "options": [
+          "叶公高兴地跳舞",
+          "叶公安静地睡着",
+          "叶公认真地写字",
+          "叶公吓得脸色发白，连忙跑走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“掩耳盗铃”告诉我们的道理是？",
+        "options": [
+          "自欺欺人是没用的",
+          "耳朵越大越好",
+          "铃声不会响",
+          "盗铃值得学习"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "掩耳盗铃"
+          },
+          {
+            "id": "l_1",
+            "text": "自相矛盾"
+          },
+          {
+            "id": "l_2",
+            "text": "井底之蛙"
+          },
+          {
+            "id": "l_3",
+            "text": "画蛇添足"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "见识狭窄"
+          },
+          {
+            "id": "r_0",
+            "text": "自欺欺人"
+          },
+          {
+            "id": "r_3",
+            "text": "多此一举，反而坏事"
+          },
+          {
+            "id": "r_1",
+            "text": "说法前后冲突"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“源源不断”和“津津有味”都是AABC式词语。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

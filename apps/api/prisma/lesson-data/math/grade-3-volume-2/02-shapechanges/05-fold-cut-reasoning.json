@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把纸对折后剪出一个图案，展开后的图案通常具有什么特点？",
+        "options": [
+          "一定变成圆",
+          "只会平移",
+          "一定没有对称轴",
+          "关于折痕轴对称"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "对折纸的一侧剪了一个小圆孔，展开后圆孔会怎样出现？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "只剩一个圆孔"
+          },
+          {
+            "id": "g2",
+            "label": "全部消失"
+          },
+          {
+            "id": "g3",
+            "label": "两边各有一个对应圆孔"
+          },
+          {
+            "id": "g4",
+            "label": "变成三角孔"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "对折后在折痕上剪一个半圆，展开后折痕处通常出现：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "两个分开的半圆"
+          },
+          {
+            "id": "g2",
+            "label": "没有孔"
+          },
+          {
+            "id": "g3",
+            "label": "一条斜线"
+          },
+          {
+            "id": "g4",
+            "label": "一个完整圆形孔"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "剪纸展开后的图案，以",
+          null,
+          "为对称轴，剪出的孔会成",
+          null,
+          "出现。"
+        ],
+        "tokens": [
+          "直角",
+          "对",
+          "折痕",
+          "平移"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "折痕",
+          "对"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中“只需做出图形的一半”是因为：",
+        "options": [
+          "颜色会复制",
+          "图形会旋转",
+          "对折展开会得到另一半",
+          "纸会自动变大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "对折后右上角剪去一个小三角，展开后另一个小三角会在：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "左上角对应位置"
+          },
+          {
+            "id": "g2",
+            "label": "中心点"
+          },
+          {
+            "id": "g3",
+            "label": "右下角"
+          },
+          {
+            "id": "g4",
+            "label": "任意位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果两个孔展开后到折痕距离不相等，说明原来的判断：",
+        "options": [
+          "只少了颜色",
+          "一定正确",
+          "不符合轴对称",
+          "和折痕无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "对折后剪 2 个不在折痕上的小孔，展开后共有几个小孔？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小孔数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "对折后在折痕上剪 1 个半圆，展开后形成几个完整圆孔？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "圆孔数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "折痕"
+          },
+          {
+            "id": "l2",
+            "text": "折痕上的半圆孔"
+          },
+          {
+            "id": "l3",
+            "text": "远离折痕的小孔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "展开成1个完整孔"
+          },
+          {
+            "id": "r2",
+            "text": "展开成一对孔"
+          },
+          {
+            "id": "r3",
+            "text": "对称轴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

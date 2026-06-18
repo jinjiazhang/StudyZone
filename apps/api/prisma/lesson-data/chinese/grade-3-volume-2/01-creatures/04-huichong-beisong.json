@@ -1,0 +1,284 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "惠崇春江晚景",
+        "author": "苏轼",
+        "lines": [
+          [
+            "竹外桃花",
+            null,
+            "，"
+          ],
+          [
+            "春江水暖鸭先知。"
+          ]
+        ],
+        "options": [
+          "千万朵",
+          "三两枝",
+          "一两行",
+          "几片叶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "惠崇春江晚景",
+        "author": "苏轼",
+        "lines": [
+          [
+            "竹外桃花三两枝，"
+          ],
+          [
+            "春江水暖",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "燕先知",
+          "鱼先知",
+          "人先知",
+          "鸭先知"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "惠崇春江晚景",
+        "author": "苏轼",
+        "lines": [
+          [
+            "蒌蒿满地",
+            null,
+            "，"
+          ],
+          [
+            "正是河豚欲上时。"
+          ]
+        ],
+        "options": [
+          "桃花红",
+          "柳叶长",
+          "芦芽短",
+          "竹叶青"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "惠崇春江晚景",
+        "author": "苏轼",
+        "lines": [
+          [
+            "蒌蒿满地芦芽短，"
+          ],
+          [
+            "正是",
+            null,
+            "欲上时。"
+          ]
+        ],
+        "options": [
+          "鸳鸯",
+          "河豚",
+          "鸭子",
+          "燕子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "三两枝",
+          "竹外",
+          "蒌蒿",
+          "桃花",
+          "河豚"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "竹外",
+          "桃花",
+          "三两枝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "鸭先知",
+          "春江",
+          "桃花",
+          "水暖",
+          "芦芽"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春江",
+          "水暖",
+          "鸭先知"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "芦芽短",
+          "蒌蒿",
+          "春江",
+          "满地",
+          "竹外"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蒌蒿",
+          "满地",
+          "芦芽短"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "欲上时",
+          "正是",
+          "先知",
+          "河豚",
+          "鸭"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "正是",
+          "河豚",
+          "欲上时"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "惠崇春江晚景",
+        "author": "苏轼",
+        "lines": [
+          [
+            "竹外桃花",
+            null,
+            "，"
+          ],
+          [
+            "春江水暖",
+            null,
+            "。"
+          ],
+          [
+            "蒌蒿满地",
+            null,
+            "，"
+          ],
+          [
+            "正是",
+            null,
+            "欲上时。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "三两枝",
+              "一两枝",
+              "千万枝",
+              "三两只"
+            ]
+          },
+          {
+            "options": [
+              "鸭先知",
+              "鱼先知",
+              "燕先知",
+              "人先知"
+            ]
+          },
+          {
+            "options": [
+              "芦芽短",
+              "柳芽短",
+              "桃花短",
+              "竹叶短"
+            ]
+          },
+          {
+            "options": [
+              "河豚",
+              "鸳鸯",
+              "燕子",
+              "黄鹂"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首题画诗中，最能表现春江变暖的是哪一句？",
+        "options": [
+          "春江水暖鸭先知",
+          "竹外桃花三两枝",
+          "蒌蒿满地芦芽短",
+          "正是河豚欲上时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

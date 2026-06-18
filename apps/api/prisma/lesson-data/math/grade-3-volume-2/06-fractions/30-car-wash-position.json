@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 个洗车位从 1、2、3、4 号循环，第 9 辆车在几号位？",
+        "options": [
+          "1号",
+          "2号",
+          "3号",
+          "4号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第 14 辆车在哪个位置洗车？",
+        "options": [
+          "1号",
+          "2号",
+          "3号",
+          "4号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第 24 辆车在哪个位置洗车？",
+        "options": [
+          "1号",
+          "2号",
+          "3号",
+          "4号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4 个位置循环，第 31 辆车在第 __ 轮第 __ 个位置。",
+        "blanks": [
+          {
+            "id": "round"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 ÷ 4 的余数是 ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 个位置循环，余数是 0 时在：",
+        "options": [
+          "1号位",
+          "2号位",
+          "4号位",
+          "3号位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第 50 辆车在哪个位置？",
+        "options": [
+          "2号",
+          "1号",
+          "3号",
+          "4号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第 63 辆车在哪个位置？",
+        "options": [
+          "1号",
+          "3号",
+          "2号",
+          "4号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在序号线上标出第 24 辆车的位置序号。",
+        "min": 1,
+        "max": 32,
+        "step": 1
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在序号线上标出第 31 辆车的位置序号。",
+        "min": 1,
+        "max": 32,
+        "step": 1
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

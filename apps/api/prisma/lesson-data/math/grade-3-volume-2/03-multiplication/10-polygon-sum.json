@@ -1,0 +1,201 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "三角形三条边是 15 分米、17 分米、8 分米，周长是 ? 分米"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "四边形四条边是 18 米、22 米、26 米、36 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 102,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "五边形五条边是 8 厘米、8 厘米、5 厘米、9 厘米、5 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "三角形三条边分别是 9、12、15 厘米，列式求周长。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "9+12+15",
+          "9+15+12",
+          "12+9+15"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "6+7+8"
+          },
+          {
+            "id": "l2",
+            "text": "10+12+10"
+          },
+          {
+            "id": "l3",
+            "text": "4+5+6+7"
+          },
+          {
+            "id": "l4",
+            "text": "8+8+5+9+5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "22"
+          },
+          {
+            "id": "r1",
+            "text": "21"
+          },
+          {
+            "id": "r4",
+            "text": "35"
+          },
+          {
+            "id": "r2",
+            "text": "32"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "15+17+8",
+        "right": "18+22",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "求一般多边形的周长，应该怎么做？",
+        "options": [
+          "只量最长边",
+          "把所有边长加起来",
+          "边长乘边数一定可以",
+          "只看角的个数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "小路一圈分成 140 米、230 米、160 米、200 米、170 米，笑笑走一圈是 ? 米"
+      },
+      "answer": {
+        "value": 900,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据边长表，哪条路线一圈最长？",
+        "columns": [
+          "路线",
+          "周长米"
+        ],
+        "rows": [
+          {
+            "路线": "甲",
+            "周长米": 320
+          },
+          {
+            "路线": "乙",
+            "周长米": 405
+          },
+          {
+            "路线": "丙",
+            "周长米": 390
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "乙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "如果漏加一条边，算出的周长会怎样？",
+        "options": [
+          "偏大",
+          "不变",
+          "偏小",
+          "一定是 0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

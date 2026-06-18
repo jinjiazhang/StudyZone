@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事开始时，顾客想做什么衣服？",
+        "options": [
+          "棉袄",
+          "夹袄",
+          "短袖衬衫",
+          "春装"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "裁缝一开始说什么时候能取衣服？",
+        "options": [
+          "今年冬天",
+          "明年冬天",
+          "明年春天",
+          "第二天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第二天，顾客提出把棉袄改成什么？",
+        "options": [
+          "长袍",
+          "帽子",
+          "夹袄",
+          "手套"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第三天，顾客又提出什么要求？",
+        "options": [
+          "把布料换成皮革",
+          "给衣服染成红色",
+          "马上拿走成衣",
+          "剪去袖子改成短袖衬衫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后顾客为什么恼怒？",
+        "options": [
+          "裁缝还没有开始裁料",
+          "裁缝把布料弄丢了",
+          "衣服已经做好却太小",
+          "裁缝不肯说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "急性子顾客每天都改变一次要求。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "慢性子裁缝第一天就把棉袄做好了。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "春装",
+          "棉袄",
+          "帽子",
+          "夹袄",
+          "围巾",
+          "短袖衬衫"
+        ],
+        "source": "顾客的要求从棉袄变成夹袄，再变成短袖衬衫。"
+      },
+      "answer": {
+        "ordered": [
+          "棉袄",
+          "夹袄",
+          "短袖衬衫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "老虎",
+          "顾客",
+          "快",
+          "急",
+          "枣核",
+          "裁缝",
+          "小",
+          "慢"
+        ],
+        "source": "顾客急，裁缝慢。"
+      },
+      "answer": {
+        "ordered": [
+          "顾客",
+          "急",
+          "裁缝",
+          "慢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "第一天，急性子顾客想尽快穿上棉袄。裁缝却说要到明年冬天，因为他是个慢性子裁缝。顾客嫌太慢，裁缝又解释慢也有慢的好处。",
+        "questions": [
+          {
+            "question": "顾客的性子怎样？",
+            "options": [
+              "很慢",
+              "很懒",
+              "很急",
+              "很怕"
+            ]
+          },
+          {
+            "question": "裁缝说自己是什么性子？",
+            "options": [
+              "急性子",
+              "胆小",
+              "粗心",
+              "慢性子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

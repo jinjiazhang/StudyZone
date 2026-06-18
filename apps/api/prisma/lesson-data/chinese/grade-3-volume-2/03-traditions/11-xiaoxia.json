@@ -1,0 +1,144 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "空隙",
+        "hint": "请选择词语【空隙】中“隙”的读音",
+        "options": ["xī", "jì", "xì", "qì"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搏斗",
+        "hint": "请选择词语【搏斗】的正确拼音",
+        "options": ["bó dǒu", "pó dòu", "bǔ dòu", "bó dòu"]
+      },
+      "answer": { "correctIndex": 3 },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎn",
+        "sentence": "后来，我和阿成哥__了些石块放在缸里。",
+        "blankPlaceholder": "__",
+        "character": "捡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": { "character": "捡" },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          { "id": "l1", "text": "通体透明" },
+          { "id": "l2", "text": "互相追逐" },
+          { "id": "l3", "text": "紧贴" },
+          { "id": "l4", "text": "搏斗激烈" }
+        ],
+        "right": [
+          { "id": "r2", "text": "彼此追赶" },
+          { "id": "r4", "text": "争斗得很厉害" },
+          { "id": "r1", "text": "全身都能透过光" },
+          { "id": "r3", "text": "靠得很近地贴住" }
+        ]
+      },
+      "answer": {
+        "pairs": { "l1": "r1", "l2": "r2", "l3": "r3", "l4": "r4" }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第 3 自然段主要写了什么？",
+        "options": ["小虾的种类和名字", "小虾的活动很有趣", "小虾怎样筑巢", "葡萄架的样子"]
+      },
+      "answer": { "correctIndex": 1 },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文写老的小虾“稍带灰黑色”“背上、尾巴上还积着泥”，这是在写小虾的什么？",
+        "options": ["声音", "动作", "外形", "气味"]
+      },
+      "answer": { "correctIndex": 2 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语连成课文中的句子",
+        "tokens": ["有趣", "缸里", "小虾", "十分", "的"]
+      },
+      "answer": {
+        "ordered": ["缸里", "的", "小虾", "十分", "有趣"]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文中，小虾有的通体透明，有的稍带灰黑色。"
+      },
+      "answer": { "value": true },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小虾都安静不动，从来不会互相追逐。"
+      },
+      "answer": { "value": false },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "小虾的样子",
+        "passage": "这些小虾，有的通体透明，像玻璃似的，这是才长大的；有的稍带灰黑色，甚至背上、尾巴上还积着泥，这是老的，大家叫它千年虾。",
+        "questions": [
+          {
+            "question": "通体透明的小虾像什么？",
+            "options": ["玻璃", "石头", "木筏", "煤块"]
+          },
+          {
+            "question": "老的小虾有什么特点？",
+            "options": ["背上、尾巴上还积着泥", "全身都是红色", "不会活动", "没有长腿"]
+          }
+        ]
+      },
+      "answer": { "correctIndices": [0, 0] },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“它们会立即向别的安静的角落蹦去”中的“立即”表现了小虾怎样的特点？",
+        "options": ["反应快", "颜色多", "声音大", "身体重"]
+      },
+      "answer": { "correctIndex": 0 },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "虾",
+        "tokens": ["米", "缸", "仁", "桥", "皮", "火", "云"],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“虾”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [["米", "仁", "皮"]]
+      },
+      "difficulty": 2
+    }
+  ]
+}

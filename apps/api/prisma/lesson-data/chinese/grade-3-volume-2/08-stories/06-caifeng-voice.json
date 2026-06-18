@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这么慢啊！”最适合读出顾客怎样的语气？",
+        "options": [
+          "着急、不满",
+          "平静、赞美",
+          "害怕、发抖",
+          "骄傲、自夸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我和别的裁缝不一样，我是个性子最慢的裁缝啊。”适合读出裁缝怎样的特点？",
+        "options": [
+          "惊慌失措",
+          "不慌不忙",
+          "怒气冲冲",
+          "急得跳脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“为您服务，没说的！”表现裁缝怎样？",
+        "options": [
+          "完全拒绝",
+          "十分害怕",
+          "答应得爽快",
+          "偷偷离开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“您可别忘了，我是个慢性子裁缝啊。”这句话的幽默点在哪里？",
+        "options": [
+          "顾客突然变慢了",
+          "衣服已经做好了",
+          "季节变成冬天了",
+          "裁缝一直强调自己慢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分角色朗读时，应读出顾客和裁缝不同的语气。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "顾客所有话都应该读得慢吞吞。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "老虎",
+          "顾客",
+          "害怕",
+          "着急",
+          "枣核",
+          "裁缝",
+          "淘气",
+          "从容"
+        ],
+        "source": "顾客的话要读出着急，裁缝的话要读出从容。"
+      },
+      "answer": {
+        "ordered": [
+          "顾客",
+          "着急",
+          "裁缝",
+          "从容"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "我",
+          "他",
+          "棉袄",
+          "和",
+          "马上",
+          "别的裁缝",
+          "做好",
+          "不一样"
+        ],
+        "source": "裁缝说，他和别的裁缝不一样，他是个性子最慢的裁缝。"
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "和",
+          "别的裁缝",
+          "不一样"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“我可等不及”转述为第三人称，正确的是？",
+        "options": [
+          "他说他实在等不及了。",
+          "他说我可等不及。",
+          "他说裁缝等不及。",
+          "他说衣服等不及。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "顾客一次次催改衣服，裁缝却始终慢悠悠地应对。一个急，一个慢，人物性格形成了鲜明对比，故事因此显得有趣。",
+        "questions": [
+          {
+            "question": "故事有趣的重要原因是什么？",
+            "options": [
+              "所有人都不说话",
+              "没有时间变化",
+              "人物性格形成对比",
+              "只写天气"
+            ]
+          },
+          {
+            "question": "顾客和裁缝的性格分别是？",
+            "options": [
+              "慢和急",
+              "勇敢和胆小",
+              "认真和懒惰",
+              "急和慢"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

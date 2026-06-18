@@ -1,0 +1,296 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "迟日"
+          },
+          {
+            "id": "l1",
+            "text": "泥融"
+          },
+          {
+            "id": "l2",
+            "text": "芦芽"
+          },
+          {
+            "id": "l3",
+            "text": "河豚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "芦苇嫩芽"
+          },
+          {
+            "id": "r3",
+            "text": "一种鱼"
+          },
+          {
+            "id": "r0",
+            "text": "春日"
+          },
+          {
+            "id": "r1",
+            "text": "泥土变湿软"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "三衢"
+          },
+          {
+            "id": "l1",
+            "text": "小溪泛尽"
+          },
+          {
+            "id": "l2",
+            "text": "却山行"
+          },
+          {
+            "id": "l3",
+            "text": "绿阴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "再走山路"
+          },
+          {
+            "id": "r3",
+            "text": "树荫"
+          },
+          {
+            "id": "r0",
+            "text": "地名"
+          },
+          {
+            "id": "r1",
+            "text": "乘小船到小溪尽头"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《绝句》中“迟日江山丽”的“迟日”指什么？",
+        "options": [
+          "落日",
+          "迟到的太阳",
+          "秋日",
+          "春日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“泥融飞燕子”说明春天的泥土怎样了？",
+        "options": [
+          "结成冰",
+          "很干硬",
+          "变得湿软",
+          "变成石头"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“芦芽短”中的“芦芽”是什么？",
+        "options": [
+          "芦苇的嫩芽",
+          "桃花的花瓣",
+          "竹子的叶子",
+          "河豚的尾巴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小溪泛尽却山行”中“却”的意思是？",
+        "options": [
+          "但是",
+          "再，又",
+          "退却",
+          "忘记"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“绿阴不减来时路”写出了什么？",
+        "options": [
+          "太阳更热了",
+          "小溪没有水了",
+          "归途中树荫仍然浓密",
+          "梅子变红了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "鸭",
+          "春江",
+          "桃花",
+          "水暖",
+          "先知",
+          "三两枝"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春江",
+          "水暖",
+          "鸭",
+          "先知"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语",
+        "tokens": [
+          "日日晴",
+          "梅子",
+          "燕子",
+          "黄时",
+          "绿阴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "梅子",
+          "黄时",
+          "日日晴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "春",
+        "tokens": [
+          "风",
+          "日",
+          "天",
+          "雪",
+          "江",
+          "晚"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“春”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "风",
+            "天",
+            "江"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "溪",
+        "tokens": [
+          "小",
+          "山",
+          "水",
+          "花",
+          "流",
+          "鸟"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“溪”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "水",
+            "流"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三首古诗共同描写的季节是？",
+        "options": [
+          "夏天",
+          "秋天",
+          "冬天",
+          "春天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

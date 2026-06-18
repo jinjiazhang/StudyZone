@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "4亩油菜每亩补贴20元，补贴多少元？",
+        "columns": [
+          "作物",
+          "亩数",
+          "每亩补贴/元"
+        ],
+        "rows": [
+          {
+            "作物": "油菜",
+            "亩数": 4,
+            "每亩补贴/元": 20
+          },
+          {
+            "作物": "小麦",
+            "亩数": 5,
+            "每亩补贴/元": 18
+          },
+          {
+            "作物": "玉米",
+            "亩数": 6,
+            "每亩补贴/元": 29
+          }
+        ]
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "5亩小麦每亩补贴18元，补贴多少元？",
+        "columns": [
+          "作物",
+          "亩数",
+          "每亩补贴/元"
+        ],
+        "rows": [
+          {
+            "作物": "油菜",
+            "亩数": 4,
+            "每亩补贴/元": 20
+          },
+          {
+            "作物": "小麦",
+            "亩数": 5,
+            "每亩补贴/元": 18
+          },
+          {
+            "作物": "玉米",
+            "亩数": 6,
+            "每亩补贴/元": 29
+          }
+        ]
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "6亩玉米每亩补贴29元，补贴多少元？",
+        "columns": [
+          "作物",
+          "亩数",
+          "每亩补贴/元"
+        ],
+        "rows": [
+          {
+            "作物": "油菜",
+            "亩数": 4,
+            "每亩补贴/元": 20
+          },
+          {
+            "作物": "小麦",
+            "亩数": 5,
+            "每亩补贴/元": 18
+          },
+          {
+            "作物": "玉米",
+            "亩数": 6,
+            "每亩补贴/元": 29
+          }
+        ]
+      },
+      "answer": {
+        "value": 174,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "29 × 6 = ?"
+      },
+      "answer": {
+        "value": 174,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "成人票15元，学生票8元，14名学生和1名老师买动物园门票，列式求总价。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "14×8+15",
+          "8×14+15",
+          "15+14×8",
+          "15+8×14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 × 14 + 15 = ?"
+      },
+      "answer": {
+        "value": 127,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "15名学生和1名老师买票，买10张学生票赠1张学生票，列式求总价。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "14×8+15",
+          "8×14+15",
+          "15+14×8",
+          "15+8×14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 × 8 + 15 = ?"
+      },
+      "answer": {
+        "value": 127,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 29",
+        "right": "5 × 18"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买10张学生票赠1张学生票，15名学生需要买几张学生票？",
+        "options": [
+          "14张",
+          "15张",
+          "13张",
+          "10张"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

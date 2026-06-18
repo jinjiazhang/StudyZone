@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "暴风雨前的变化",
+        "passage": "暴风雨来临之前，空气越来越沉闷，太阳被云遮住了。乌云慢慢蔓延过来，树木和草全都变得昏暗了。一切显得很不安。微风吹过树梢，尘土轻轻飞起。后来，雷声震响天空，告诉人们暴风雨来了。",
+        "questions": [
+          {
+            "question": "暴风雨来临之前，空气有什么变化？",
+            "options": [
+              "越来越沉闷",
+              "越来越清甜",
+              "越来越明亮"
+            ]
+          },
+          {
+            "question": "乌云蔓延后，树木和草变得怎样？",
+            "options": [
+              "昏暗",
+              "金黄",
+              "透明"
+            ]
+          },
+          {
+            "question": "哪一项像是在“报信”？",
+            "options": [
+              "微风和雷声的变化",
+              "大熊猫吃竹子",
+              "桃花盛开"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文重点写的是哪个时间段？",
+        "options": [
+          "暴风雨结束以后",
+          "暴风雨来临之前",
+          "晴天的清晨",
+          "冬天的夜晚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“什么东西都躲起来了，一点儿动静都没有”写出了什么气氛？",
+        "options": [
+          "热闹、欢快",
+          "明亮、轻松",
+          "香甜、诱人",
+          "紧张、安静"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "起风前和起风后，景象的不同主要在哪里？",
+        "options": [
+          "由黑夜到清晨",
+          "由海底到陆地",
+          "由沉静到有了风的动静",
+          "由动物到植物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "空气"
+          },
+          {
+            "id": "l2",
+            "text": "乌云"
+          },
+          {
+            "id": "l3",
+            "text": "树木和草"
+          },
+          {
+            "id": "l4",
+            "text": "微风"
+          },
+          {
+            "id": "l5",
+            "text": "雷声"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "昏暗"
+          },
+          {
+            "id": "r4",
+            "text": "报信"
+          },
+          {
+            "id": "r5",
+            "text": "震响"
+          },
+          {
+            "id": "r1",
+            "text": "沉闷"
+          },
+          {
+            "id": "r2",
+            "text": "蔓延"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读这篇课文时，最适合想象哪种画面？",
+        "options": [
+          "风雨来前自然界的变化",
+          "熊猫资料表",
+          "裁缝店对话",
+          "山寺桃花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "风",
+          "来",
+          "快",
+          "了",
+          "雨",
+          "暴",
+          "呀"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "暴",
+          "风",
+          "雨",
+          "来",
+          "了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "作者按照什么线索写暴风雨前的景象？",
+        "options": [
+          "人物年龄大小",
+          "天气变化的过程",
+          "动物种类多少",
+          "颜色深浅排列"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“暴风雨来了”前面通常会出现哪种提示？",
+        "options": [
+          "雷声震响天空",
+          "山寺桃花开",
+          "大熊猫吃竹叶",
+          "天空一直晴朗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文写景时，先写沉闷，再写起风和雷声，说明写作有怎样的顺序？",
+        "options": [
+          "按变化过程写",
+          "按动物大小写",
+          "按人物年龄写",
+          "按颜色深浅写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

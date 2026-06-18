@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中护旗手需要挑选几名身高接近的同学？",
+        "options": [
+          "4名",
+          "6名",
+          "5名",
+          "8名"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "142厘米有5人，143厘米有2人，能否从中选出6人？",
+        "options": [
+          "不能，因为只有5人",
+          "不能，因为差太大",
+          "无法判断",
+          "能，因为共有7人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "149厘米有3人，150厘米有3人，能否正好选出6人？",
+        "options": [
+          "能，正好6人",
+          "不能，只有3人",
+          "不能，超过10人",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "142厘米5人，143厘米2人，选6人后还剩多少人？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "149厘米3人，150厘米3人，选6人后还剩多少人？"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "142和143厘米合计7人",
+        "right": "149和150厘米合计6人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果要求“身高尽量接近”，下面哪组更合适？",
+        "options": [
+          "130厘米和154厘米",
+          "131厘米和152厘米",
+          "149厘米和150厘米",
+          "136厘米和150厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "方案A：142厘米5人、143厘米2人，共 ___ 人；如果选6人，剩 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "合计"
+          },
+          {
+            "id": "b2",
+            "label": "剩余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "护旗手方案表中，哪组正好6人？",
+        "columns": [
+          "方案",
+          "人数"
+        ],
+        "rows": [
+          {
+            "方案": "142厘米和143厘米",
+            "人数": 7
+          },
+          {
+            "方案": "149厘米和150厘米",
+            "人数": 6
+          },
+          {
+            "方案": "140厘米和141厘米",
+            "人数": 4
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "149厘米和150厘米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "提出护旗手方案时，除了人数够6人，还应关注什么？",
+        "options": [
+          "鞋号是否最大",
+          "睡眠是否最多",
+          "身高是否接近",
+          "座位是否靠前"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

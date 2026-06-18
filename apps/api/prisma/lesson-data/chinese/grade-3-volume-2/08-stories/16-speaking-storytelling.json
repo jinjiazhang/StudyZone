@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "趣味故事会前，第一步应该做什么？",
+        "options": [
+          "直接上台随便说",
+          "只背生字表",
+          "选一个故事，多读几遍",
+          "抄写所有课文"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "讲故事时怎样更吸引人？",
+        "options": [
+          "声音越小越好",
+          "一直低头看地",
+          "只说最后一句",
+          "注意语气和表情变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "听别人讲故事时应该怎样？",
+        "options": [
+          "集中注意力，认真听",
+          "随便插话",
+          "故意打断",
+          "只看窗外"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "讲故事时可以配合恰当的语气和表情。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "听故事时不需要记主要内容。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "漏雨",
+          "自然",
+          "棉袄",
+          "大方",
+          "县官",
+          "认真"
+        ],
+        "source": "讲故事要自然、大方，听故事要认真。"
+      },
+      "answer": {
+        "ordered": [
+          "自然",
+          "大方",
+          "认真"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "写生字",
+          "选故事",
+          "剪袖子",
+          "多读",
+          "漏雨声",
+          "主要内容"
+        ],
+        "source": "先选故事，再多读几遍，记住主要内容。"
+      },
+      "answer": {
+        "ordered": [
+          "选故事",
+          "多读",
+          "主要内容"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "准备"
+          },
+          {
+            "id": "l_0",
+            "text": "讲述者"
+          },
+          {
+            "id": "l_3",
+            "text": "交流"
+          },
+          {
+            "id": "l_1",
+            "text": "听众"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "集中注意力"
+          },
+          {
+            "id": "r_3",
+            "text": "说说哪里最有趣"
+          },
+          {
+            "id": "r_0",
+            "text": "语气、表情恰当"
+          },
+          {
+            "id": "r_2",
+            "text": "多读几遍"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合评价同学讲故事？",
+        "options": [
+          "你今天穿蓝色衣服。",
+          "你讲到老虎害怕时语气很有趣。",
+          "这支铅笔很长。",
+          "我不想听任何故事。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "趣味故事会要先选好故事，熟悉主要内容。讲的时候要自然、大方，配合恰当的语气和表情。听的时候要认真，听后可以说说故事中哪里最有趣。",
+        "questions": [
+          {
+            "question": "讲故事前要熟悉什么？",
+            "options": [
+              "主要内容",
+              "所有页码",
+              "每个标点的位置",
+              "课本封面"
+            ]
+          },
+          {
+            "question": "听后可以交流什么？",
+            "options": [
+              "谁的衣服最好看",
+              "哪里最有趣",
+              "天气如何",
+              "铅笔长短"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

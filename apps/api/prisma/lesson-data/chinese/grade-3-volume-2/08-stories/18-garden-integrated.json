@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "语文园地中说，复述故事不是什么？",
+        "options": [
+          "理解故事",
+          "用自己的话讲",
+          "梳理主要内容",
+          "背诵文章"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "借助表格、示意图复述的好处是什么？",
+        "options": [
+          "按顺序复述，重要情节不遗漏",
+          "可以不用理解故事",
+          "能替代所有阅读",
+          "只能背生字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "咳嗽",
+        "hint": "请选择“咳嗽”的正确读音",
+        "options": [
+          "kě sù",
+          "ké shù",
+          "ké sòu",
+          "hāi sōu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "唠叨",
+        "hint": "请选择“唠叨”的正确读音",
+        "options": [
+          "lāo dāo",
+          "lào dao",
+          "náo dāo",
+          "láo dāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "吆喝",
+        "hint": "请选择“吆喝”的正确读音",
+        "options": [
+          "yāo he",
+          "yāo hè",
+          "yào hē",
+          "yā hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "辩论",
+        "hint": "请选择“辩论”的正确读音",
+        "options": [
+          "biǎn lùn",
+          "biàn lùn",
+          "bàn lùn",
+          "biàn nùn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "眼见为实，耳听为虚"
+          },
+          {
+            "id": "l_0",
+            "text": "兵来将挡"
+          },
+          {
+            "id": "l_3",
+            "text": "近朱者赤，近墨者黑"
+          },
+          {
+            "id": "l_1",
+            "text": "不入虎穴，焉得虎子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "不冒险难以取得成功"
+          },
+          {
+            "id": "r_3",
+            "text": "环境会影响人"
+          },
+          {
+            "id": "r_0",
+            "text": "针对具体情况采取对策"
+          },
+          {
+            "id": "r_2",
+            "text": "亲眼看见更可靠"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "我",
+          "她",
+          "棉袄",
+          "什么",
+          "明年",
+          "都不怕",
+          "冬天",
+          "就怕漏"
+        ],
+        "source": "老婆婆说，她什么都不怕，就怕漏。"
+      },
+      "answer": {
+        "ordered": [
+          "她",
+          "什么",
+          "都不怕",
+          "就怕漏"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“顾客噌的一下子跳起来”中加点部分表现什么？",
+        "options": [
+          "顾客慢慢坐下",
+          "跳起来很突然、很快",
+          "顾客很安静",
+          "顾客在睡觉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "语文园地提醒我们：复述故事不是背诵文章，而是用自己的话把故事内容讲出来。借助表格、示意图等，可以按顺序复述，重要情节也不容易遗漏。",
+        "questions": [
+          {
+            "question": "复述故事应用谁的话讲？",
+            "options": [
+              "自己的话",
+              "只用原文",
+              "只用拼音",
+              "不用说话"
+            ]
+          },
+          {
+            "question": "表格和示意图能帮助什么？",
+            "options": [
+              "画得更漂亮",
+              "按顺序复述",
+              "代替阅读",
+              "减少生字"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

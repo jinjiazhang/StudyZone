@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(8+3)",
+        "right": "5*4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(6+4)",
+        "right": "2*(7+3)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "12+9+10",
+        "right": "8*4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(15+5)",
+        "right": "18*2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长 8 宽 3 的长方形和边长 5 的正方形，哪个周长更长？",
+        "options": [
+          "正方形",
+          "一样长",
+          "无法判断",
+          "长方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长 6 宽 4 与长 7 宽 3 的两个长方形周长关系是？",
+        "options": [
+          "前者长",
+          "相等",
+          "后者长",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长 9、宽 4 的长方形比边长 6 的正方形周长多 ? 厘米"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪一个图形周长最大？",
+        "columns": [
+          "图形",
+          "周长"
+        ],
+        "rows": [
+          {
+            "图形": "长 8 宽 2",
+            "周长": 20
+          },
+          {
+            "图形": "边长 6",
+            "周长": 24
+          },
+          {
+            "图形": "长 7 宽 4",
+            "周长": 22
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "边长 6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×(8+3)"
+          },
+          {
+            "id": "l2",
+            "text": "5×4"
+          },
+          {
+            "id": "l3",
+            "text": "12+9+10"
+          },
+          {
+            "id": "l4",
+            "text": "2×(15+5)"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "31"
+          },
+          {
+            "id": "r1",
+            "text": "22"
+          },
+          {
+            "id": "r4",
+            "text": "40"
+          },
+          {
+            "id": "r2",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "比较周长时，最稳妥的方法是？",
+        "options": [
+          "只比较最长边",
+          "只比较边数",
+          "先分别算出周长再比较",
+          "看图形名字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

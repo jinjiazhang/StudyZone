@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "喧闹"
+          },
+          {
+            "id": "l1",
+            "text": "痒痒"
+          },
+          {
+            "id": "l2",
+            "text": "椭圆形"
+          },
+          {
+            "id": "l3",
+            "text": "津津有味"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "吃得或读得很有滋味"
+          },
+          {
+            "id": "r0",
+            "text": "声音大而杂乱"
+          },
+          {
+            "id": "r2",
+            "text": "像压扁的圆形"
+          },
+          {
+            "id": "r1",
+            "text": "皮肤不舒服想挠"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "香肠"
+          },
+          {
+            "id": "l1",
+            "text": "糖醋排骨"
+          },
+          {
+            "id": "l2",
+            "text": "秘密"
+          },
+          {
+            "id": "l3",
+            "text": "失望"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "希望落空而不高兴"
+          },
+          {
+            "id": "r0",
+            "text": "一种肉制食品"
+          },
+          {
+            "id": "r2",
+            "text": "不让别人知道的事情"
+          },
+          {
+            "id": "r1",
+            "text": "酸甜味的排骨菜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "形",
+        "tokens": [
+          "伞",
+          "馋",
+          "成",
+          "尿",
+          "状",
+          "醋"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“形”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "状",
+            "成"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "麻",
+        "tokens": [
+          "段",
+          "希",
+          "木",
+          "够",
+          "烦",
+          "姐"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“麻”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "烦",
+            "木"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "香",
+        "tokens": [
+          "鳄",
+          "零",
+          "喷",
+          "椭",
+          "肠",
+          "震"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“香”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "肠",
+            "喷"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我有点儿高兴，又有些失望”中“失望”是因为：",
+        "options": [
+          "妈妈做了好吃的",
+          "鸟窝太多了",
+          "妈妈不知道“我”变成了树",
+          "天空下雨了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“津津有味地吃起来”说明小动物们吃得：",
+        "options": [
+          "很有滋味",
+          "很害怕",
+          "很匆忙",
+          "很生气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“椭圆形”是一种形状。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“喧闹”表示非常安静。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：鸟窝有各种形状。",
+        "tokens": [
+          "担心",
+          "形状",
+          "鸟窝",
+          "香肠",
+          "各种",
+          "。",
+          "有"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟窝",
+          "有",
+          "各种",
+          "形状",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

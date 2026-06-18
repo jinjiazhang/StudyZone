@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生鞋号中，33号有 ___ 人，34号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "33号"
+          },
+          {
+            "id": "b2",
+            "label": "34号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生鞋号中，35号有 ___ 人，36号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "35号"
+          },
+          {
+            "id": "b2",
+            "label": "36号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生鞋号中，37号有 ___ 人，38号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "37号"
+          },
+          {
+            "id": "b2",
+            "label": "38号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "女生鞋号中，32号有 ___ 人，33号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "32号"
+          },
+          {
+            "id": "b2",
+            "label": "33号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "女生鞋号中，34号有 ___ 人，35号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "34号"
+          },
+          {
+            "id": "b2",
+            "label": "35号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "女生鞋号中，36号有 ___ 人，37号有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "36号"
+          },
+          {
+            "id": "b2",
+            "label": "37号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "男生鞋号统计：35号有多少人？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "33号",
+            "人数": 2
+          },
+          {
+            "鞋号": "34号",
+            "人数": 2
+          },
+          {
+            "鞋号": "35号",
+            "人数": 8
+          },
+          {
+            "鞋号": "36号",
+            "人数": 5
+          },
+          {
+            "鞋号": "37号",
+            "人数": 2
+          },
+          {
+            "鞋号": "38号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 8
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "女生鞋号统计：34号有多少人？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "人数": 1
+          },
+          {
+            "鞋号": "33号",
+            "人数": 3
+          },
+          {
+            "鞋号": "34号",
+            "人数": 5
+          },
+          {
+            "鞋号": "35号",
+            "人数": 9
+          },
+          {
+            "鞋号": "36号",
+            "人数": 3
+          },
+          {
+            "鞋号": "37号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 6
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "男生35号人数8",
+        "right": "男生36号人数5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "女生36号人数2",
+        "right": "女生37号人数1"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

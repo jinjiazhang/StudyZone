@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "还原拼图时，每一块的移动应记录什么？",
+        "options": [
+          "重量和高度",
+          "颜色和价格",
+          "方向和格数",
+          "面积和周长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "篮球拼图缺块在右上方，目标位置在左下方，应主要判断：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "向左、向下各几格"
+          },
+          {
+            "id": "g2",
+            "label": "绕中心旋转几圈"
+          },
+          {
+            "id": "g3",
+            "label": "是否轴对称"
+          },
+          {
+            "id": "g4",
+            "label": "能不能涂色"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拼图片从(6,2)移回(3,5)，需要向左几格、向下几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "左移格数"
+          },
+          {
+            "id": "b2",
+            "label": "下移格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拼图片从(2,6)移回(5,3)，需要向右几格、向上几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "右移格数"
+          },
+          {
+            "id": "b2",
+            "label": "上移格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "还原拼图时，先比较",
+          null,
+          "变化，再比较",
+          null,
+          "变化。"
+        ],
+        "tokens": [
+          "大小",
+          "颜色",
+          "行",
+          "列"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "列",
+          "行"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“先向上2格，再向右4格”还原拼图的步骤排列。",
+        "items": [
+          {
+            "id": "s2",
+            "text": "向右平移4格"
+          },
+          {
+            "id": "s1",
+            "text": "向上平移2格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "从(1,1)到(4,1)"
+          },
+          {
+            "id": "l2",
+            "text": "从(5,5)到(5,2)"
+          },
+          {
+            "id": "l3",
+            "text": "从(6,3)到(2,3)"
+          },
+          {
+            "id": "l4",
+            "text": "从(2,4)到(2,7)"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "下3"
+          },
+          {
+            "id": "r1",
+            "text": "右3"
+          },
+          {
+            "id": "r2",
+            "text": "上3"
+          },
+          {
+            "id": "r3",
+            "text": "左4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "拼图还原中，图形本身的方向通常：",
+        "options": [
+          "不改变",
+          "一定缩小",
+          "一定镜像",
+          "一定转动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项属于平移还原？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "把拼图剪开"
+          },
+          {
+            "id": "g2",
+            "label": "把拼图绕角旋转"
+          },
+          {
+            "id": "g3",
+            "label": "把拼图翻到背面"
+          },
+          {
+            "id": "g4",
+            "label": "整块拼图沿方格移动到空位"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "读表：哪块拼图应“左2，下1”？",
+        "columns": [
+          "拼图",
+          "当前位置",
+          "原位置",
+          "路线"
+        ],
+        "rows": [
+          {
+            "拼图": "A",
+            "当前位置": "(5,3)",
+            "原位置": "(3,4)",
+            "路线": "左2，下1"
+          },
+          {
+            "拼图": "B",
+            "当前位置": "(2,6)",
+            "原位置": "(4,6)",
+            "路线": "右2"
+          },
+          {
+            "拼图": "C",
+            "当前位置": "(7,5)",
+            "原位置": "(7,2)",
+            "路线": "上3"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "A",
+          "拼图A"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

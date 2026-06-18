@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果要统计班级午餐最喜欢的主食，第一步应做什么？",
+        "options": [
+          "直接买最多的",
+          "确定调查对象和选项",
+          "先画结论",
+          "测量身高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组数据适合按“项目”分类计数？",
+        "options": [
+          "138、142、150",
+          "8、9、10小时",
+          "32号、35号",
+          "篮球、跳绳、足球、篮球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "运动项目统计：篮球8人，跳绳6人，足球10人，哪项最多？",
+        "columns": [
+          "项目",
+          "人数"
+        ],
+        "rows": [
+          {
+            "项目": "篮球",
+            "人数": 8
+          },
+          {
+            "项目": "跳绳",
+            "人数": 6
+          },
+          {
+            "项目": "足球",
+            "人数": 10
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "足球"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "篮球8人，跳绳6人，足球10人，一共调查了多少人？"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "足球10人",
+        "right": "篮球8人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图书借阅统计：故事书12本，科普书9本，一共 ___ 本，相差 ___ 本。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "合计"
+          },
+          {
+            "id": "b2",
+            "label": "相差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          21,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要为图书角补书，故事书12票、科普书9票，较合理的建议是？",
+        "options": [
+          "故事书可多补一些",
+          "科普书一定多补",
+          "两类都不用补",
+          "只看书的颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在0到20的数线上标出足球人数10。",
+        "min": 0,
+        "max": 20,
+        "step": 1
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "收集数据后，要先",
+          null,
+          "，再用",
+          null,
+          "表示结果。"
+        ],
+        "tokens": [
+          "分类计数",
+          "写作文",
+          "统计表",
+          "量角器"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "分类计数",
+          "统计表"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "做调查应用题时，结论应该来自哪里？",
+        "options": [
+          "随口猜测",
+          "题目插图颜色",
+          "整理后的数据",
+          "页码大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

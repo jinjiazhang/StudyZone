@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "每个小方格边长 1 厘米，一个 4 格长、2 格宽的长方形周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "每个小方格边长 1 厘米，一个 5 格长、3 格宽的长方形周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "每个小方格边长 1 厘米，一个 3 格长、3 格宽的正方形周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "在方格纸上数周长，应该数什么？",
+        "options": [
+          "图形里面的小方格个数",
+          "图形外边线包含的小格边数",
+          "图形颜色的块数",
+          "图形所在的行数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一个由方格组成的图形外边线共有 18 条小格边，每条 1 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(6+2)",
+        "right": "2*(4+4)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把这些长方形按周长从短到长排列。",
+        "items": [
+          {
+            "id": "a",
+            "text": "3×2 方格"
+          },
+          {
+            "id": "b",
+            "text": "6×1 方格"
+          },
+          {
+            "id": "c",
+            "text": "4×4 方格"
+          },
+          {
+            "id": "d",
+            "text": "5×2 方格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "d",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "两个图形都由 8 个小方格组成，它们周长一定相等吗？",
+        "options": [
+          "一定相等",
+          "一定不相等",
+          "都等于 8 厘米",
+          "不一定相等"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "一个长方形在方格纸上长 7 格、宽 2 格。填长+宽和周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          18
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "方格边长是 1 厘米时，数出外边线 20 段，周长是多少？",
+        "options": [
+          "20 厘米",
+          "10 厘米",
+          "40 厘米",
+          "无法确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

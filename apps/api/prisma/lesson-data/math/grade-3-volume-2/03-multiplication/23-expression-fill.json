@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形周长 = (长 + 宽) × ？",
+        "options": [
+          "4",
+          "1",
+          "3",
+          "2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "正方形周长 = 边长 × ？",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "type": "math_drag_fill",
+        "statement": [
+          "长 7、宽 3 的长方形周长 = (",
+          null,
+          "+",
+          null,
+          ") × 2"
+        ],
+        "tokens": [
+          "3",
+          "2",
+          "7",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "type": "math_drag_fill",
+        "statement": [
+          "边长 9 的正方形周长 = ",
+          null,
+          " × ",
+          null
+        ],
+        "tokens": [
+          "4",
+          "9",
+          "18",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "长方形长 11、宽 6，用两种边分别乘 2 的方法列式。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "11*2+6*2",
+          "6*2+11*2",
+          "2*11+2*6",
+          "2*6+2*11"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "长方形长 11、宽 6，用长宽和乘 2 的方法列式。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "(11+6)*2",
+          "2*(11+6)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "11×2+6×2 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "(11+6)×2 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "11×2+6×2 和 (11+6)×2 表示的周长关系是？",
+        "options": [
+          "前者大",
+          "相等",
+          "后者大",
+          "无法比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "长方形长 13、宽 7。填长×2、宽×2、周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长×2"
+          },
+          {
+            "id": "b2",
+            "label": "宽×2"
+          },
+          {
+            "id": "b3",
+            "label": "周长"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          26,
+          14,
+          40
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

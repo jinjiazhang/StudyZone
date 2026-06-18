@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同学说“有6个正方形就一定能折成正方体”，这句话的问题是：",
+        "options": [
+          "6个正方形太少",
+          "正方体没有正方形面",
+          "还要看位置和折叠后是否重叠",
+          "不用考虑连接"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种错误最常见？",
+        "options": [
+          {
+            "id": "a",
+            "label": "检查面是否相连"
+          },
+          {
+            "id": "b",
+            "label": "动手折一折"
+          },
+          {
+            "id": "c",
+            "label": "说明理由"
+          },
+          {
+            "id": "d",
+            "label": "只数面，不想象折叠"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把圆柱展开图画成只有一个圆和一个长方形，错在：",
+        "options": [
+          "少了一个圆形底面",
+          "多了一个底面",
+          "侧面不需要",
+          "圆柱没有底面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "展开图里两个面只在角上相碰，却说相连，错在：",
+        "options": [
+          {
+            "id": "a",
+            "label": "角相碰一定正确"
+          },
+          {
+            "id": "b",
+            "label": "角相碰不等于沿边相连"
+          },
+          {
+            "id": "c",
+            "label": "面数太多"
+          },
+          {
+            "id": "d",
+            "label": "颜色太浅"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "少一个面"
+          },
+          {
+            "id": "l2",
+            "text": "面只靠角接触"
+          },
+          {
+            "id": "l3",
+            "text": "折叠会重叠"
+          },
+          {
+            "id": "l4",
+            "text": "圆柱少一个圆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "调整面的位置"
+          },
+          {
+            "id": "r1",
+            "text": "补足对应的面"
+          },
+          {
+            "id": "r4",
+            "text": "补上另一个底面"
+          },
+          {
+            "id": "r2",
+            "text": "改成沿边连接"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "诊断一个展开图错误",
+        "items": [
+          {
+            "id": "s3",
+            "text": "查连接方式"
+          },
+          {
+            "id": "s1",
+            "text": "数面"
+          },
+          {
+            "id": "s4",
+            "text": "想象折叠并说明错因"
+          },
+          {
+            "id": "s2",
+            "text": "看面形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "诊断展开图时，如果面只靠",
+          null,
+          "相碰，就不能说它们沿",
+          null,
+          "相连。"
+        ],
+        "tokens": [
+          "边",
+          "角",
+          "面",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "角",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现展开图里有两个面折起来会重叠，应判断为：",
+        "options": [
+          "一定正确",
+          "只是颜色问题",
+          "这个展开图不合理",
+          "面数不重要"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断错误时，最有说服力的理由是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "说我不喜欢这个图"
+          },
+          {
+            "id": "b",
+            "label": "说它不像教材颜色"
+          },
+          {
+            "id": "c",
+            "label": "只写错了"
+          },
+          {
+            "id": "d",
+            "label": "说明哪一步不能折回原盒子"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个展开图面数够、面形对，但整体分成两块，问题是：",
+        "options": [
+          "没有连成一片",
+          "面数太少",
+          "面形一定错",
+          "不能剪开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

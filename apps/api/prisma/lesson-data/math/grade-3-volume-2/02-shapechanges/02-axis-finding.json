@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "找对称轴时，最直接的方法是想象把图形怎样操作？",
+        "options": [
+          "对折",
+          "平移",
+          "涂色",
+          "放大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个标准红心图案的对称轴通常是哪条？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "右斜线"
+          },
+          {
+            "id": "g2",
+            "label": "左斜线"
+          },
+          {
+            "id": "g3",
+            "label": "竖直中线"
+          },
+          {
+            "id": "g4",
+            "label": "水平中线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个左右完全一样的亭子图案，对称轴一般是：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "任意横线"
+          },
+          {
+            "id": "g2",
+            "label": "底边所在直线"
+          },
+          {
+            "id": "g3",
+            "label": "竖直中线"
+          },
+          {
+            "id": "g4",
+            "label": "屋檐斜边"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果图形沿一条线对折后左右两边错开，这条线：",
+        "options": [
+          "一定是对称轴",
+          "一定是半径",
+          "一定是边",
+          "不是对称轴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "找到对称轴，可以先想象沿这条线",
+          null,
+          "，再看两边是否",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "完全重合",
+          "旋转",
+          "变色",
+          "对折"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对折",
+          "完全重合"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪条线最可能是正方形的一条对称轴？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "只经过一个顶点的短线"
+          },
+          {
+            "id": "g2",
+            "label": "经过中心的竖直线"
+          },
+          {
+            "id": "g3",
+            "label": "任意曲线"
+          },
+          {
+            "id": "g4",
+            "label": "正方形外面的直线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个长方形至少有几条对称轴？",
+        "options": [
+          "1条",
+          "3条",
+          "2条",
+          "5条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形的对称轴有几条？",
+        "options": [
+          "2条",
+          "3条",
+          "1条",
+          "4条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "红心"
+          },
+          {
+            "id": "l2",
+            "text": "长方形"
+          },
+          {
+            "id": "l3",
+            "text": "正方形"
+          },
+          {
+            "id": "l4",
+            "text": "一般平行四边形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "通常没有对称轴"
+          },
+          {
+            "id": "r3",
+            "text": "2条对称轴"
+          },
+          {
+            "id": "r2",
+            "text": "1条对称轴"
+          },
+          {
+            "id": "r4",
+            "text": "4条对称轴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一种说法能帮助验证“这条线是对称轴”？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "绕线转一圈"
+          },
+          {
+            "id": "g2",
+            "label": "沿线剪开后面积变小"
+          },
+          {
+            "id": "g3",
+            "label": "沿线平移 1 格"
+          },
+          {
+            "id": "g4",
+            "label": "把图形沿线折，两边完全重合"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪只蝴蝶能通过平移与图形 A 重合？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "方向相同、大小相同的蝴蝶"
+          },
+          {
+            "id": "g2",
+            "label": "方向相反的蝴蝶"
+          },
+          {
+            "id": "g3",
+            "label": "旋转后的蝴蝶"
+          },
+          {
+            "id": "g4",
+            "label": "变大的蝴蝶"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断两个图形能否通过平移重合，要看它们的什么不变？",
+        "options": [
+          "颜色必须不同",
+          "位置必须相同",
+          "编号必须相同",
+          "形状、大小、方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种情况不能只靠平移重合？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "向上移动了"
+          },
+          {
+            "id": "g2",
+            "label": "向左移动了"
+          },
+          {
+            "id": "g3",
+            "label": "向右移动了"
+          },
+          {
+            "id": "g4",
+            "label": "图形方向变了"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "平移重合要求图形的大小",
+          null,
+          "，方向",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "翻折",
+          "变大",
+          "不变",
+          "相同"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相同",
+          "不变"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一个三角板平移后尖角方向仍向上，说明它：",
+        "options": [
+          "可能通过平移重合",
+          "一定变小了",
+          "一定旋转了",
+          "一定对折了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "图形 A 是朝上的三角形，哪一个不能平移到 A？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "下方同样朝上的三角形"
+          },
+          {
+            "id": "g2",
+            "label": "左边同样朝上的三角形"
+          },
+          {
+            "id": "g3",
+            "label": "右边同样朝上的三角形"
+          },
+          {
+            "id": "g4",
+            "label": "朝下的三角形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "大小相同方向相同"
+          },
+          {
+            "id": "l2",
+            "text": "大小相同方向相反"
+          },
+          {
+            "id": "l3",
+            "text": "大小变大方向相同"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "不能只靠平移重合"
+          },
+          {
+            "id": "r1",
+            "text": "可以平移重合"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个图形之间只改变位置，没有改变方向，这是：",
+        "options": [
+          "轴对称",
+          "平移",
+          "旋转",
+          "折剪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪一项最像教材“蝴蝶平移重合”的判断？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "选择离得最近但倒着的蝴蝶"
+          },
+          {
+            "id": "g2",
+            "label": "选择同方向同大小的蝴蝶"
+          },
+          {
+            "id": "g3",
+            "label": "选择颜色最深的蝴蝶"
+          },
+          {
+            "id": "g4",
+            "label": "选择任意蝴蝶"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平移后图形上的每个点移动的方向和距离：",
+        "options": [
+          "都相同",
+          "只看颜色相同",
+          "都不同",
+          "只有中心点相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

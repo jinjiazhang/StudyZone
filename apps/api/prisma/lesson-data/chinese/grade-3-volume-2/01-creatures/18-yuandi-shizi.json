@@ -1,0 +1,266 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "匕",
+        "hint": "“匕首”的“匕”",
+        "options": [
+          "bì",
+          "pǐ",
+          "bǎ",
+          "bǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "忆",
+        "hint": "“回忆”的“忆”",
+        "options": [
+          "yì",
+          "yí",
+          "yǐ",
+          "yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "冗",
+        "hint": "“冗长”的“冗”",
+        "options": [
+          "róng",
+          "rǒng",
+          "ròng",
+          "yǒng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "犬",
+        "hint": "“军犬”的“犬”",
+        "options": [
+          "qǎn",
+          "quán",
+          "juǎn",
+          "quǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "税",
+        "hint": "“兑换”变偏旁成“税”",
+        "options": [
+          "suì",
+          "duì",
+          "shuì",
+          "ruì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "执",
+        "hint": "“争执”的“执”",
+        "options": [
+          "zhǐ",
+          "zhí",
+          "zhì",
+          "zì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "此"
+          },
+          {
+            "id": "l1",
+            "text": "忆"
+          },
+          {
+            "id": "l2",
+            "text": "沉"
+          },
+          {
+            "id": "l3",
+            "text": "突"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "冗（冗长）"
+          },
+          {
+            "id": "r3",
+            "text": "犬（军犬）"
+          },
+          {
+            "id": "r0",
+            "text": "匕（匕首）"
+          },
+          {
+            "id": "r1",
+            "text": "乙（乙方）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "说"
+          },
+          {
+            "id": "l1",
+            "text": "税"
+          },
+          {
+            "id": "l2",
+            "text": "忆"
+          },
+          {
+            "id": "l3",
+            "text": "艺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "竖心旁加乙"
+          },
+          {
+            "id": "r3",
+            "text": "草字头加乙"
+          },
+          {
+            "id": "r0",
+            "text": "兑换"
+          },
+          {
+            "id": "r1",
+            "text": "禾字旁加兑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yì",
+        "sentence": "回__江南。",
+        "blankPlaceholder": "__",
+        "character": "忆",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "忆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǐ",
+        "sentence": "__方。",
+        "blankPlaceholder": "__",
+        "character": "乙",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "乙"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "quǎn",
+        "sentence": "军__。",
+        "blankPlaceholder": "__",
+        "character": "犬",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "犬"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhí",
+        "sentence": "争__。",
+        "blankPlaceholder": "__",
+        "character": "执",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "执"
+      },
+      "difficulty": 2
+    }
+  ]
+}

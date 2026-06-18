@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "0 × 3 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 × 0 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "200 × 0 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "0 × 9 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "0乘任何数都等于？",
+        "options": [
+          "这个数",
+          "1",
+          "不能计算",
+          "0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3个0相加得0，所以0×3=0。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "8×0表示8个0相加，结果是8。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0 × 126",
+        "right": "126 - 126"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "0 ×",
+          null,
+          "=",
+          null
+        ],
+        "tokens": [
+          "0",
+          "1",
+          "7",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "0"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "0×5"
+          },
+          {
+            "id": "l1",
+            "text": "9×0"
+          },
+          {
+            "id": "l2",
+            "text": "0+50"
+          },
+          {
+            "id": "l3",
+            "text": "25-0"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "50"
+          },
+          {
+            "id": "r3",
+            "text": "25"
+          },
+          {
+            "id": "r0",
+            "text": "0"
+          },
+          {
+            "id": "r1",
+            "text": "0的9倍"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

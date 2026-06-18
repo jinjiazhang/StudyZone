@@ -1,0 +1,162 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22 × 4 = ?"
+      },
+      "answer": {
+        "value": 88,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31 × 3 = ?"
+      },
+      "answer": {
+        "value": 93,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "123 × 3 = ?"
+      },
+      "answer": {
+        "value": 369,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "214 × 2 = ?"
+      },
+      "answer": {
+        "value": 428,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "312 × 2 = ?"
+      },
+      "answer": {
+        "value": 624,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "421 × 2 = ?"
+      },
+      "answer": {
+        "value": 842,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "竖式 214 × 2 的个位、十位、百位结果分别是 __、__、__",
+        "blanks": [
+          {
+            "id": "ones"
+          },
+          {
+            "id": "tens"
+          },
+          {
+            "id": "hundreds"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          2,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "31×3 的竖式积应写成？",
+        "options": [
+          "39",
+          "63",
+          "903",
+          "93"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "214 × 2",
+        "right": "123 × 3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "22",
+          null,
+          "4",
+          null,
+          "88"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "×",
+          "88"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "×",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "计算 31×3 时，十位上的 3 表示 30。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

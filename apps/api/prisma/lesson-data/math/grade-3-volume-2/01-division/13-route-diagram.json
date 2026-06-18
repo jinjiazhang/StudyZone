@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "光明镇到新城，汽车每小时55千米，3小时行多少千米？",
+        "columns": [
+          "路段",
+          "交通工具",
+          "速度/千米每时",
+          "时间/时"
+        ],
+        "rows": [
+          {
+            "路段": "光明镇-新城",
+            "交通工具": "汽车",
+            "速度/千米每时": 55,
+            "时间/时": 3
+          },
+          {
+            "路段": "新城-古城",
+            "交通工具": "火车",
+            "速度/千米每时": 120,
+            "时间/时": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 165,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "新城到古城，火车每小时120千米，5小时行多少千米？",
+        "columns": [
+          "路段",
+          "交通工具",
+          "速度/千米每时",
+          "时间/时"
+        ],
+        "rows": [
+          {
+            "路段": "光明镇-新城",
+            "交通工具": "汽车",
+            "速度/千米每时": 55,
+            "时间/时": 3
+          },
+          {
+            "路段": "新城-古城",
+            "交通工具": "火车",
+            "速度/千米每时": 120,
+            "时间/时": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 600,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "55 × 3 + 120 × 5 = ?"
+      },
+      "answer": {
+        "value": 765,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "北京到青岛的路程是多少千米？",
+        "columns": [
+          "路段",
+          "路程/千米"
+        ],
+        "rows": [
+          {
+            "路段": "北京-天津",
+            "路程/千米": 122
+          },
+          {
+            "路段": "天津-济南",
+            "路程/千米": 304
+          },
+          {
+            "路段": "济南-青岛",
+            "路程/千米": 393
+          }
+        ]
+      },
+      "answer": {
+        "value": 819,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "122 + 304 + 393 = ?"
+      },
+      "answer": {
+        "value": 819,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "火车平均每小时152千米，3小时大约行到哪里，先列式求3小时路程。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "152×3",
+          "3×152"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "152 × 3 = ?"
+      },
+      "answer": {
+        "value": 456,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "152 × 3",
+        "right": "122 + 304"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从北京出发，3小时行456千米，大约超过哪个城市？",
+        "options": [
+          "济南附近",
+          "天津之前",
+          "刚到天津",
+          "已经到青岛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "路线图题要先找清每一段的路程或速度时间。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

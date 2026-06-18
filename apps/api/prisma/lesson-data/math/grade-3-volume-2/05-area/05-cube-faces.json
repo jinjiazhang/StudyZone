@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方体展开后，通常有几个正方形连在一起？",
+        "options": [
+          "6个",
+          "4个",
+          "8个",
+          "12个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "正方体盒子每个面的形状是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "长方形"
+          },
+          {
+            "id": "b",
+            "label": "正方形"
+          },
+          {
+            "id": "c",
+            "label": "圆形"
+          },
+          {
+            "id": "d",
+            "label": "三角形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话符合正方体展开图？",
+        "options": [
+          "2个圆和1个长方形",
+          "只有4个三角形",
+          "6个相同的正方形连成一片",
+          "任意6个图形都可以"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "正方体展开图中，少了一个正方形会怎样？",
+        "options": [
+          {
+            "id": "a",
+            "label": "仍能围成完整正方体"
+          },
+          {
+            "id": "b",
+            "label": "变成长方体"
+          },
+          {
+            "id": "c",
+            "label": "变成圆柱"
+          },
+          {
+            "id": "d",
+            "label": "不能围成完整正方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "面数"
+          },
+          {
+            "id": "l2",
+            "text": "每个面"
+          },
+          {
+            "id": "l3",
+            "text": "棱长"
+          },
+          {
+            "id": "l4",
+            "text": "展开图"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "都相等"
+          },
+          {
+            "id": "r1",
+            "text": "6个"
+          },
+          {
+            "id": "r4",
+            "text": "6个正方形连成一片"
+          },
+          {
+            "id": "r2",
+            "text": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断正方体展开图",
+        "items": [
+          {
+            "id": "s2",
+            "text": "看每个面是否是正方形"
+          },
+          {
+            "id": "s4",
+            "text": "想象折叠后是否重叠"
+          },
+          {
+            "id": "s1",
+            "text": "看是否有6个面"
+          },
+          {
+            "id": "s3",
+            "text": "看面是否沿边连成一片"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "正方体展开图需要",
+          null,
+          "个相同的",
+          null,
+          "连成一片。"
+        ],
+        "tokens": [
+          "正方形",
+          "长方形",
+          "6",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "6个正方形如果排成一条直线，通常不能折成正方体，原因是：",
+        "options": [
+          "折叠时会缺少围合方向",
+          "正方形数量不够",
+          "它不是平面图形",
+          "它一定是圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断正方体展开图时，最容易出错的是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "先数面"
+          },
+          {
+            "id": "b",
+            "label": "只数6个正方形，不想象折叠"
+          },
+          {
+            "id": "c",
+            "label": "看是否连在一起"
+          },
+          {
+            "id": "d",
+            "label": "检查有没有重叠"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材说正方体盒子剪开后“形状有很多种”，说明：",
+        "options": [
+          "只有一种展开图正确",
+          "只要有圆就正确",
+          "不同展开图都可能折成正方体",
+          "不能动手验证"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

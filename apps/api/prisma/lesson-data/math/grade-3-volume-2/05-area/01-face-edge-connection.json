@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "盒子拆开后，每个面至少要怎样和其他面保持关系？",
+        "options": [
+          "至少有1条边与其他面连在一起",
+          "只要有一个点碰到就行",
+          "每个面都必须分开",
+          "所有面可以重叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种情况更像教材中要求的“展开图”？",
+        "options": [
+          {
+            "id": "a",
+            "label": "几个面只在角上相碰"
+          },
+          {
+            "id": "b",
+            "label": "几个面靠边连成一片"
+          },
+          {
+            "id": "c",
+            "label": "每个面都单独剪下"
+          },
+          {
+            "id": "d",
+            "label": "把面叠在一起"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断展开图时，“相连”主要看什么？",
+        "options": [
+          "颜色是不是一样",
+          "图形大小是不是最大",
+          "有没有公共边",
+          "有没有写编号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "两个正方形只在一个顶点相碰，它们算靠边相连吗？",
+        "options": [
+          {
+            "id": "a",
+            "label": "算"
+          },
+          {
+            "id": "b",
+            "label": "一定能折成盒子"
+          },
+          {
+            "id": "c",
+            "label": "只能折成圆柱"
+          },
+          {
+            "id": "d",
+            "label": "不算"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个面被完全剪下来，和其他面没有公共边，这样通常会造成什么问题？",
+        "options": [
+          "不能作为连在一起的展开图",
+          "一定更容易折回盒子",
+          "面数会自动增加",
+          "会变成圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下列说法符合“盒子展开图”的是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "面与面只靠角连接"
+          },
+          {
+            "id": "b",
+            "label": "面与面沿边连接"
+          },
+          {
+            "id": "c",
+            "label": "所有面互相覆盖"
+          },
+          {
+            "id": "d",
+            "label": "只留下一个面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "沿一条边接触"
+          },
+          {
+            "id": "l2",
+            "text": "只在角上接触"
+          },
+          {
+            "id": "l3",
+            "text": "完全分开"
+          },
+          {
+            "id": "l4",
+            "text": "重叠放置"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "不是连通展开图"
+          },
+          {
+            "id": "r1",
+            "text": "相连"
+          },
+          {
+            "id": "r4",
+            "text": "看不清真实展开"
+          },
+          {
+            "id": "r2",
+            "text": "不算相连"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序检查一个盒子展开图",
+        "items": [
+          {
+            "id": "s3",
+            "text": "想象能否折回盒子"
+          },
+          {
+            "id": "s1",
+            "text": "先数面是否够"
+          },
+          {
+            "id": "s4",
+            "text": "说出判断理由"
+          },
+          {
+            "id": "s2",
+            "text": "再看每个面是否沿边相连"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "展开图中的面要沿",
+          null,
+          "连在一起，不能只靠",
+          null,
+          "相碰。"
+        ],
+        "tokens": [
+          "角",
+          "颜色",
+          "边",
+          "面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "边",
+          "角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“拆盒子”活动强调不要怎样？",
+        "options": [
+          "不要观察盒子",
+          "不要数面",
+          "不要把应该连着的边剪断",
+          "不要动手验证"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

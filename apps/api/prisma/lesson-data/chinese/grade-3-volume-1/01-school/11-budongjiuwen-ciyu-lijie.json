@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "私塾"
+          },
+          {
+            "id": "l1",
+            "text": "照例"
+          },
+          {
+            "id": "l2",
+            "text": "流利"
+          },
+          {
+            "id": "l3",
+            "text": "糊里糊涂"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "按照惯例"
+          },
+          {
+            "id": "r2",
+            "text": "说话或朗读顺畅"
+          },
+          {
+            "id": "r3",
+            "text": "不明白、不清楚"
+          },
+          {
+            "id": "r0",
+            "text": "旧时私人设立的教学处所"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "鸦雀无声"
+          },
+          {
+            "id": "l1",
+            "text": "戒尺"
+          },
+          {
+            "id": "l2",
+            "text": "厉声"
+          },
+          {
+            "id": "l3",
+            "text": "挨打"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "旧时教师用来责罚学生的尺子"
+          },
+          {
+            "id": "r2",
+            "text": "严厉的声音"
+          },
+          {
+            "id": "r3",
+            "text": "受到打"
+          },
+          {
+            "id": "r0",
+            "text": "非常安静"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "诵",
+        "tokens": [
+          "背",
+          "墙",
+          "朗",
+          "花",
+          "吟",
+          "球",
+          "读"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【诵】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "背",
+            "朗",
+            "吟",
+            "读"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "例",
+        "tokens": [
+          "照",
+          "湿",
+          "举",
+          "荒",
+          "惯",
+          "笛",
+          "事"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【例】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "照",
+            "举",
+            "惯",
+            "事"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "问",
+        "tokens": [
+          "提",
+          "坡",
+          "请",
+          "臂",
+          "学",
+          "洁",
+          "追"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【问】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "提",
+            "请",
+            "学",
+            "追"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鸦雀无声”在课文中形容什么？",
+        "options": [
+          "课堂一下子非常安静",
+          "操场十分热闹",
+          "小鸟叫得响亮",
+          "雨下得很大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孙中山为什么站起来问先生？",
+        "options": [
+          "他想离开座位玩耍",
+          "他不懂书里的意思，想弄清楚",
+          "他故意打断先生",
+          "他忘了带书"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“照例”表示和平常一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“糊里糊涂地背”说明孙中山已经完全理解了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“不懂就要问”强调学习要主动弄明白。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

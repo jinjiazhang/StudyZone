@@ -1,0 +1,158 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "火车每小时行115千米，行4小时，列式求路程。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "115×4",
+          "4×115"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "115 × 4 = ?"
+      },
+      "answer": {
+        "value": 460,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "汽车每小时行45千米，行2小时，列式求路程。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "45×2",
+          "2×45"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 × 2 = ?"
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "115 × 4 + 45 × 2 = ?"
+      },
+      "answer": {
+        "value": 550,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每小时行115千米，行4小时”求的是？",
+        "options": [
+          "汽车行驶的路程",
+          "一共用时",
+          "火车行驶的路程",
+          "速度差"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "115 × 4",
+        "right": "45 × 2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "火车每小时115千米，4小时行多少千米？",
+        "columns": [
+          "交通工具",
+          "速度/千米每时",
+          "时间/时"
+        ],
+        "rows": [
+          {
+            "交通工具": "火车",
+            "速度/千米每时": 115,
+            "时间/时": 4
+          },
+          {
+            "交通工具": "汽车",
+            "速度/千米每时": 45,
+            "时间/时": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 460,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "淘气家到奶奶家一共多少千米？",
+        "columns": [
+          "路段",
+          "速度/千米每时",
+          "时间/时"
+        ],
+        "rows": [
+          {
+            "路段": "淘气家-新站",
+            "速度/千米每时": 115,
+            "时间/时": 4
+          },
+          {
+            "路段": "新站-奶奶家",
+            "速度/千米每时": 45,
+            "时间/时": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 550,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "求路程时，可以用速度乘时间。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

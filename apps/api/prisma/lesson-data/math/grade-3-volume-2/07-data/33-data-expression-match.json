@@ -1,0 +1,261 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "鞋号数据"
+          },
+          {
+            "id": "l2",
+            "text": "睡眠数据"
+          },
+          {
+            "id": "l3",
+            "text": "身高数据"
+          },
+          {
+            "id": "l4",
+            "text": "反应尺数据"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "0、2、4、6、8、10"
+          },
+          {
+            "id": "r2",
+            "text": "32号到38号"
+          },
+          {
+            "id": "r3",
+            "text": "8小时到12小时"
+          },
+          {
+            "id": "r4",
+            "text": "130厘米到154厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "调查问题"
+          },
+          {
+            "id": "l2",
+            "text": "原始数据"
+          },
+          {
+            "id": "l3",
+            "text": "分类整理"
+          },
+          {
+            "id": "l4",
+            "text": "统计建议"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "根据人数多少提出做法"
+          },
+          {
+            "id": "r2",
+            "text": "想知道什么"
+          },
+          {
+            "id": "r3",
+            "text": "逐个记录的结果"
+          },
+          {
+            "id": "r4",
+            "text": "把相同项目归在一起"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种表示最适合展示鞋号人数多少？",
+        "options": [
+          "只写一个最大数",
+          "只画一双鞋",
+          "写同学座位",
+          "点状图或统计表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种表示最适合看身高是否接近？",
+        "options": [
+          "乘法口诀表",
+          "数线上的点或按序排列",
+          "钟面",
+          "面积图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "统计表中的“人数”一列表示什么？",
+        "options": [
+          "单位名称",
+          "每类出现的次数",
+          "最大数据",
+          "调查时间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "表示方式表：点状图的优点是什么？",
+        "columns": [
+          "表示方式",
+          "优点"
+        ],
+        "rows": [
+          {
+            "表示方式": "点状图",
+            "优点": "直观看出多少"
+          },
+          {
+            "表示方式": "原始表",
+            "优点": "保存每个数据"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "直观看出多少"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "表示方式表：原始表的优点是什么？",
+        "columns": [
+          "表示方式",
+          "优点"
+        ],
+        "rows": [
+          {
+            "表示方式": "点状图",
+            "优点": "直观看出多少"
+          },
+          {
+            "表示方式": "原始表",
+            "优点": "保存每个数据"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "保存每个数据"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果要比较35号和36号人数，最方便查看什么？",
+        "options": [
+          "没有整理的随意记录",
+          "目录页",
+          "封面",
+          "整理后的统计表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "先",
+          null,
+          "，再",
+          null,
+          "，最后根据结果提出建议。"
+        ],
+        "tokens": [
+          "调查",
+          "计算面积",
+          "整理表示",
+          "背口诀"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "调查",
+          "整理表示"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元把数据整理和表示出来，最终常常是为了什么？",
+        "options": [
+          "发现信息并解决问题",
+          "让数字变多",
+          "改变原始数据",
+          "不用调查"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

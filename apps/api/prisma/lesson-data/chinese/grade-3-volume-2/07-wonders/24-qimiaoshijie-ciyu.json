@@ -1,0 +1,277 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "奇",
+        "tokens": [
+          "闷",
+          "妙",
+          "庙",
+          "特",
+          "偏",
+          "异"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“奇”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "妙",
+            "特"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "光",
+        "tokens": [
+          "猪",
+          "芒",
+          "隆",
+          "辉",
+          "蔓",
+          "亮"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“光”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "芒",
+            "辉"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "闪",
+        "tokens": [
+          "昏",
+          "烁",
+          "稍",
+          "耀",
+          "报",
+          "光"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“闪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "烁",
+            "耀"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "呈现"
+          },
+          {
+            "id": "l2",
+            "text": "蔚蓝"
+          },
+          {
+            "id": "l3",
+            "text": "雕饰"
+          },
+          {
+            "id": "l4",
+            "text": "余晖"
+          },
+          {
+            "id": "l5",
+            "text": "光芒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "雕刻装饰"
+          },
+          {
+            "id": "r4",
+            "text": "傍晚剩下的阳光"
+          },
+          {
+            "id": "r5",
+            "text": "向四周放射的光线"
+          },
+          {
+            "id": "r1",
+            "text": "显出、露出"
+          },
+          {
+            "id": "r2",
+            "text": "像晴朗天空那样的蓝色"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这是一个奇妙的世界”在文中起什么作用？",
+        "options": [
+          "写人物对话",
+          "说明写作时间",
+          "提出数学问题",
+          "总起全文"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我们能看到植物生长的奇迹”中的“奇迹”指什么？",
+        "options": [
+          "天空变黑",
+          "风吹树梢",
+          "种子生根发芽开花",
+          "熊猫吃竹叶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "切",
+          "上",
+          "都",
+          "有",
+          "命",
+          "呀",
+          "的",
+          "生",
+          "是",
+          "去",
+          "看",
+          "一",
+          "呢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一",
+          "切",
+          "看",
+          "上",
+          "去",
+          "都",
+          "是",
+          "有",
+          "生",
+          "命",
+          "的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "instruction": "把词块连成教材中的通顺短句",
+        "tokens": [
+          "界",
+          "奇",
+          "的",
+          "物",
+          "无",
+          "的",
+          "啊",
+          "穷",
+          "是",
+          "事",
+          "妙",
+          "上",
+          "世"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "世",
+          "界",
+          "上",
+          "奇",
+          "妙",
+          "的",
+          "事",
+          "物",
+          "是",
+          "无",
+          "穷",
+          "的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“极普通的事物”告诉我们应该怎样发现美？",
+        "options": [
+          "仔细观察、寻找",
+          "只看远处",
+          "不看身边",
+          "只查资料"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项属于文中“大地的珍藏”？",
+        "options": [
+          "裁缝店布料",
+          "植物生长和水果颜色",
+          "大熊猫分布",
+          "寺中桃花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

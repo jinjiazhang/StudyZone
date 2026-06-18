@@ -1,0 +1,159 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每箱12瓶，每瓶2元，买3箱矿泉水，列式求总价。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "12×2×3",
+          "2×12×3",
+          "3×12×2",
+          "12×3×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 2 × 3 = ?"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 × 2 × 3：先算一箱 __ 元，再算3箱 __ 元",
+        "blanks": [
+          {
+            "id": "oneBox"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          72
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "45瓶汽水，酸奶是汽水的4倍，矿泉水是酸奶的2倍，列式求矿泉水瓶数。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "45×4×2",
+          "4×45×2",
+          "45×(4×2)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 × 4 × 2 = ?"
+      },
+      "answer": {
+        "value": 360,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "45×4表示什么？",
+        "options": [
+          "矿泉水有多少瓶",
+          "汽水和酸奶一共多少瓶",
+          "每箱多少瓶",
+          "酸奶有多少瓶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "180×2表示什么？",
+        "options": [
+          "汽水有多少瓶",
+          "矿泉水有多少瓶",
+          "每瓶多少元",
+          "酸奶比汽水多多少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45 × 4 × 2",
+        "right": "45 × 8"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "45 × 4 × 2 =",
+          null,
+          "× 2 =",
+          null
+        ],
+        "tokens": [
+          "360",
+          "45",
+          "2",
+          "180"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "180",
+          "360"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "连乘题可以先算前两个数的积，再乘第三个数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

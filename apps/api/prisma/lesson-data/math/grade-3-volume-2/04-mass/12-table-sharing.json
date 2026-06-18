@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "87个松果分给2只松鼠。第一次每只分40个后，还剩多少个松果？",
+        "columns": [
+          "步骤",
+          "松鼠1",
+          "松鼠2",
+          "剩余"
+        ],
+        "rows": [
+          {
+            "步骤": "开始",
+            "松鼠1": 0,
+            "松鼠2": 0,
+            "剩余": 87
+          },
+          {
+            "步骤": "第1次",
+            "松鼠1": 40,
+            "松鼠2": 40,
+            "剩余": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "849个松果分给4只松鼠。两次每只各分100个后，还剩多少个？",
+        "columns": [
+          "步骤",
+          "每只分到",
+          "共分掉",
+          "剩余"
+        ],
+        "rows": [
+          {
+            "步骤": "第1次",
+            "每只分到": 100,
+            "共分掉": 400,
+            "剩余": 449
+          },
+          {
+            "步骤": "第2次",
+            "每只分到": 200,
+            "共分掉": 800,
+            "剩余": 49
+          }
+        ]
+      },
+      "answer": {
+        "value": 49,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把49个继续平均分给4只松鼠，每只还能分到几个？只填商。"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "849个松果平均分给4只松鼠，最后每只分到多少个，还剩多少个？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          212,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "98颗星分进3个盒。每盒先放20颗，共放掉多少颗？",
+        "columns": [
+          "盒数",
+          "每盒先放",
+          "共放掉",
+          "剩余"
+        ],
+        "rows": [
+          {
+            "盒数": 3,
+            "每盒先放": 20,
+            "共放掉": 60,
+            "剩余": 38
+          }
+        ]
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "38颗星继续平均分进3个盒，每盒还能放几颗？只填商。"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "98颗星平均装在3个盒里，每盒多少颗，还剩多少颗？",
+        "blanks": [
+          {
+            "id": "q",
+            "label": "商"
+          },
+          {
+            "id": "r",
+            "label": "余数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用表格分一分时，哪一步适合先做？",
+        "options": [
+          "先随便写商",
+          "先把余数写成除数",
+          "先估每份能分几十或几百",
+          "先比较答案大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "849 ÷ 4",
+        "right": "98 ÷ 3",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "849 ÷ 4 = ",
+          null,
+          " …… ",
+          null
+        ],
+        "tokens": [
+          "212",
+          "3",
+          "1",
+          "211",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "212",
+          "1"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

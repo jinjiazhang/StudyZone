@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22 ÷ 4 = 5 ... ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31 ÷ 4 = 7 ... ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 4 = 9 ... ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每 4 个一组，第 36 个的余数是 0，说明它是这一组的：",
+        "options": [
+          "第1个",
+          "第2个",
+          "第3个",
+          "第4个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每 5 个一组，第 23 个在第 __ 组的第 __ 个。",
+        "blanks": [
+          {
+            "id": "group"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每 3 个一组，第 20 个在第 __ 组的第 __ 个。",
+        "blanks": [
+          {
+            "id": "group"
+          },
+          {
+            "id": "pos"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按“蓝、黄、红”重复，第 20 个颜色是：",
+        "options": [
+          "蓝",
+          "黄",
+          "红",
+          "绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按“笑脸、星、圆、方、三角”重复，第 18 个是：",
+        "options": [
+          "笑脸",
+          "星",
+          "圆",
+          "方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在 1 到 24 的序号线上标出每 4 个一组时第 15 个的位置。",
+        "min": 1,
+        "max": 24,
+        "step": 1
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在 1 到 30 的序号线上标出每 5 个一组时第 22 个的位置。",
+        "min": 1,
+        "max": 30,
+        "step": 1
+      },
+      "answer": {
+        "value": 22,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

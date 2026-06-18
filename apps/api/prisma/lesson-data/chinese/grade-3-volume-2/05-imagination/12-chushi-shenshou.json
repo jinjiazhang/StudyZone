@@ -1,0 +1,213 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把手指印画成想象中的事物，训练的是：",
+        "options": [
+          "计算周长",
+          "查找反义词",
+          "背诵古诗",
+          "从普通事物联想到新形象"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "圆圆指印"
+          },
+          {
+            "id": "l1",
+            "text": "长长指印"
+          },
+          {
+            "id": "l2",
+            "text": "几个指印排队"
+          },
+          {
+            "id": "l3",
+            "text": "彩色指印"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "小水滴家族"
+          },
+          {
+            "id": "r0",
+            "text": "小猫脸"
+          },
+          {
+            "id": "r2",
+            "text": "一串小脚印"
+          },
+          {
+            "id": "r1",
+            "text": "小象鼻子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "接龙编故事时，下一位同学应接着前面的情节往下说。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "接龙故事每个人都必须重新开头。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：虫子王国一片沸腾。",
+        "tokens": [
+          "眼镜",
+          "沸腾",
+          "虫子",
+          "胡子",
+          "一片",
+          "。",
+          "王国"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "虫子",
+          "王国",
+          "一片",
+          "沸腾",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“夏天到了，虫子王国一片沸腾”后面最适合接：",
+        "options": [
+          "虫子们纷纷飞出洞口寻找朋友",
+          "我开始背乘法口诀",
+          "赵州桥非常坚固",
+          "古诗押韵很好听"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一阵大风过后，小牧童被吹到了颠倒村”最适合继续写：",
+        "options": [
+          "小牧童去买果酱",
+          "胡萝卜先生剪胡子",
+          "颠倒村里树枝和树叶长进土里",
+          "妈妈打开背包"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "接龙片段",
+        "passage": "小树的心思可多了。它想把枝条伸到云朵旁，听云朵讲旅行故事；又想把根伸进地底，和蚯蚓一起寻找秘密通道。",
+        "questions": [
+          {
+            "question": "这个片段围绕什么展开？",
+            "options": [
+              "小树的心思",
+              "小男孩的风筝",
+              "白菜小姐的眼镜",
+              "英英的午饭"
+            ]
+          },
+          {
+            "question": "片段用了哪种想象？",
+            "options": [
+              "让小树有人的愿望",
+              "介绍真实树种",
+              "说明写字方法",
+              "复述目录"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "接龙时怎样让故事连贯？",
+        "options": [
+          "每句都换主题",
+          "只说一个词",
+          "不管前文",
+          "听清前一句，再接着同一人物或线索写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“树根张牙舞爪地伸向天空”体现了颠倒村的奇特。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪开策略时，第一步通常应先检查什么？",
+        "options": [
+          "面数是否合适",
+          "颜色是否鲜艳",
+          "纸片是否很厚",
+          "编号是否连续"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "盒子的合理展开图应接近哪种描述？",
+        "options": [
+          {
+            "id": "a",
+            "label": "把所有边剪断"
+          },
+          {
+            "id": "b",
+            "label": "剪一些边但保留面连成一片"
+          },
+          {
+            "id": "c",
+            "label": "只剪面中心"
+          },
+          {
+            "id": "d",
+            "label": "不看连接关系"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果盒子展开图面数不够，通常会怎样？",
+        "options": [
+          "一定更容易折叠",
+          "会自动补出一个面",
+          "不能围成完整盒子",
+          "只影响颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "剪开策略时，哪种连接更可靠？",
+        "options": [
+          {
+            "id": "a",
+            "label": "只靠角接触"
+          },
+          {
+            "id": "b",
+            "label": "完全分开"
+          },
+          {
+            "id": "c",
+            "label": "上下重叠"
+          },
+          {
+            "id": "d",
+            "label": "沿边连接"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "面数合适"
+          },
+          {
+            "id": "l2",
+            "text": "只靠角相碰"
+          },
+          {
+            "id": "l3",
+            "text": "有面重叠"
+          },
+          {
+            "id": "l4",
+            "text": "能折回原形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "折叠会冲突"
+          },
+          {
+            "id": "r1",
+            "text": "继续检查连接"
+          },
+          {
+            "id": "r4",
+            "text": "判断合理"
+          },
+          {
+            "id": "r2",
+            "text": "不能算相连"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按顺序完成剪开策略",
+        "items": [
+          {
+            "id": "s3",
+            "text": "看连接"
+          },
+          {
+            "id": "s1",
+            "text": "数面"
+          },
+          {
+            "id": "s4",
+            "text": "想象折叠"
+          },
+          {
+            "id": "s2",
+            "text": "看面形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "盒子",
+          "展开图要先看",
+          null,
+          "，再看",
+          null,
+          "是否合理。"
+        ],
+        "tokens": [
+          "连接",
+          "颜色",
+          "面数",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "面数",
+          "连接"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪开策略中，下面哪种说法正确？",
+        "options": [
+          "能折回原来的盒子才合理",
+          "只要图形漂亮就合理",
+          "面越多越好",
+          "分开的面也算展开图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "盒子展开图中出现完全分离的面，说明：",
+        "options": [
+          {
+            "id": "a",
+            "label": "一定正确"
+          },
+          {
+            "id": "b",
+            "label": "需要重新检查剪法"
+          },
+          {
+            "id": "c",
+            "label": "可以忽略"
+          },
+          {
+            "id": "d",
+            "label": "变成正方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "完成剪开策略后，最好的验证方式是：",
+        "options": [
+          "只背答案",
+          "只看页码",
+          "想一想并动手折一折",
+          "只比较颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

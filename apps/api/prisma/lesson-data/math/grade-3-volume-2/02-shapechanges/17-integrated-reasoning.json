@@ -1,0 +1,257 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "轴对称、平移、旋转都属于本单元研究的什么内容？",
+        "options": [
+          "图形的运动与变化",
+          "质量单位",
+          "面积计算",
+          "整数除法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "红心沿中线对折重合，属于哪一类判断？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "轴对称"
+          },
+          {
+            "id": "g2",
+            "label": "估算"
+          },
+          {
+            "id": "g3",
+            "label": "平移"
+          },
+          {
+            "id": "g4",
+            "label": "旋转"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "图形从左边移到右边，方向不变，属于：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "分数"
+          },
+          {
+            "id": "g2",
+            "label": "轴对称"
+          },
+          {
+            "id": "g3",
+            "label": "平移"
+          },
+          {
+            "id": "g4",
+            "label": "剪纸"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "指针绕钟面中心运动，属于：",
+        "options": [
+          {
+            "id": "g1",
+            "label": "补全"
+          },
+          {
+            "id": "g2",
+            "label": "旋转"
+          },
+          {
+            "id": "g3",
+            "label": "对折"
+          },
+          {
+            "id": "g4",
+            "label": "平移"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "轴对称看能否",
+          null,
+          "重合；平移看方向和",
+          null,
+          "；旋转看是否绕中心转动。"
+        ],
+        "tokens": [
+          "格数",
+          "重量",
+          "商",
+          "对折"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对折",
+          "格数"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "对折后重合"
+          },
+          {
+            "id": "l2",
+            "text": "沿直线移动"
+          },
+          {
+            "id": "l3",
+            "text": "绕中心转动"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "平移"
+          },
+          {
+            "id": "r3",
+            "text": "旋转"
+          },
+          {
+            "id": "r1",
+            "text": "轴对称"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点从(2,2)向右3格再向下2格，到第几列、第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          },
+          {
+            "id": "b2",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪纸展开后的图案常用于说明：",
+        "options": [
+          "平移格数",
+          "旋转角度",
+          "轴对称",
+          "除法竖式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按学习顺序排列本单元的三个重点。",
+        "items": [
+          {
+            "id": "s3",
+            "text": "在方格中记录平移路线"
+          },
+          {
+            "id": "s1",
+            "text": "认识轴对称"
+          },
+          {
+            "id": "s2",
+            "text": "判断平移和旋转"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一项说法正确？",
+        "options": [
+          "旋转一定改变大小",
+          "平移一定需要对折",
+          "轴对称只看颜色",
+          "平移不改变图形的形状和大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "240 × 2 = __ __ 0",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "130 × 5 = __ __ __",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          },
+          {
+            "id": "ones"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          5,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "203 × 3 = __ __ 9",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          0
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "208 × 4 = __ __ 2",
+        "blanks": [
+          {
+            "id": "hundreds"
+          },
+          {
+            "id": "tens"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "304 × 2 的十位是",
+          null,
+          "，积是",
+          null
+        ],
+        "tokens": [
+          "608",
+          "8",
+          "0",
+          "304"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0",
+          "608"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "304 × 2 = ?"
+      },
+      "answer": {
+        "value": 608,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "160 × 3 = ?"
+      },
+      "answer": {
+        "value": 480,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "250 × 4 = ?"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "208×4 竖式中个位 8×4=32，个位写2，向十位进几？",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "250 × 4",
+        "right": "1000"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    }
+  ]
+}

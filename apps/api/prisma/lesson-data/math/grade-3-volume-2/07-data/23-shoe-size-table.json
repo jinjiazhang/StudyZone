@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "全班鞋号统计：35号一共有多少人？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "人数": 1
+          },
+          {
+            "鞋号": "33号",
+            "人数": 5
+          },
+          {
+            "鞋号": "34号",
+            "人数": 7
+          },
+          {
+            "鞋号": "35号",
+            "人数": 17
+          },
+          {
+            "鞋号": "36号",
+            "人数": 8
+          },
+          {
+            "鞋号": "37号",
+            "人数": 3
+          },
+          {
+            "鞋号": "38号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 16
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "全班鞋号统计：36号一共有多少人？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "人数": 1
+          },
+          {
+            "鞋号": "33号",
+            "人数": 5
+          },
+          {
+            "鞋号": "34号",
+            "人数": 7
+          },
+          {
+            "鞋号": "35号",
+            "人数": 17
+          },
+          {
+            "鞋号": "36号",
+            "人数": 8
+          },
+          {
+            "鞋号": "37号",
+            "人数": 3
+          },
+          {
+            "鞋号": "38号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 7
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "全班鞋号统计：33号一共有多少人？",
+        "columns": [
+          "鞋号",
+          "人数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "人数": 1
+          },
+          {
+            "鞋号": "33号",
+            "人数": 5
+          },
+          {
+            "鞋号": "34号",
+            "人数": 7
+          },
+          {
+            "鞋号": "35号",
+            "人数": 17
+          },
+          {
+            "鞋号": "36号",
+            "人数": 8
+          },
+          {
+            "鞋号": "37号",
+            "人数": 3
+          },
+          {
+            "鞋号": "38号",
+            "人数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 6
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "全班32号1人，33号6人，合起来有多少人？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "全班34号8人，35号16人，合起来有多少人？"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "全班35号16人，36号7人，相差多少人？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "全班鞋号人数最多的是几号？",
+        "options": [
+          "34号",
+          "35号",
+          "36号",
+          "33号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "全班鞋号人数最少的是几号？",
+        "options": [
+          "37号",
+          "38号",
+          "36号",
+          "32号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "全班34号8人",
+        "right": "全班36号7人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "全班鞋号中，人数最多的是 ___ 号，有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "鞋号"
+          },
+          {
+            "id": "b2",
+            "label": "人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          35,
+          16
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

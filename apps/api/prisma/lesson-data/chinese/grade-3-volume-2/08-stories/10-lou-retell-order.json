@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "裁缝店",
+          "里屋",
+          "柜子",
+          "路上",
+          "桌上",
+          "树下",
+          "县衙",
+          "山坡"
+        ],
+        "source": "里屋之后是路上，接着到树下，再到山坡。"
+      },
+      "answer": {
+        "ordered": [
+          "里屋",
+          "路上",
+          "树下",
+          "山坡"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "树下"
+          },
+          {
+            "id": "l_0",
+            "text": "里屋"
+          },
+          {
+            "id": "l_3",
+            "text": "山坡"
+          },
+          {
+            "id": "l_1",
+            "text": "路上"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "虎驮着贼，贼骑着虎"
+          },
+          {
+            "id": "r_3",
+            "text": "虎和贼都吓昏过去"
+          },
+          {
+            "id": "r_0",
+            "text": "老公公老婆婆说“漏”"
+          },
+          {
+            "id": "r_2",
+            "text": "虎和贼相遇，滚下山坡"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后示意图提示我们按什么顺序复述？",
+        "options": [
+          "生字笔画",
+          "颜色深浅",
+          "人物年龄",
+          "地点变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老虎和贼最先在哪里听到“漏”？",
+        "options": [
+          "里屋外",
+          "县衙里",
+          "裁缝店",
+          "学堂里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“虎驮着贼，贼骑着虎”发生在哪里？",
+        "options": [
+          "柜子里",
+          "路上",
+          "井边",
+          "集市上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "虎和贼在树下相遇后怎样？",
+        "options": [
+          "回家睡觉",
+          "做起衣服",
+          "滚下山坡",
+          "认真读书"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "复述《漏》可以借助地点变化来讲。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《漏》主要按四季变化来写。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "复述《漏》时，可以抓住地点变化：先说老公公老婆婆在里屋说“漏”，再说虎驮着贼、贼骑着虎，接着说虎和贼在树下相遇，最后说他们又听到漏雨声。",
+        "questions": [
+          {
+            "question": "这段复述抓住了什么线索？",
+            "options": [
+              "地点变化",
+              "颜色变化",
+              "衣服变化",
+              "日期变化"
+            ]
+          },
+          {
+            "question": "虎和贼害怕的“漏”其实是什么？",
+            "options": [
+              "一只老虎",
+              "屋顶漏雨",
+              "一个衙役",
+              "一件棉袄"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "改成",
+          "再说",
+          "夹袄",
+          "漏",
+          "夸奖",
+          "吓昏"
+        ],
+        "source": "老公公老婆婆再说“漏”，虎和贼都吓昏了过去。"
+      },
+      "answer": {
+        "ordered": [
+          "再说",
+          "漏",
+          "吓昏"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

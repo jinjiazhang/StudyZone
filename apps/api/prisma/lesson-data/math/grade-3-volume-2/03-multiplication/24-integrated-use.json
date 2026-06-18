@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形操场长 60 米、宽 35 米，沿边跑一圈是 ? 米"
+      },
+      "answer": {
+        "value": 190,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形广场边长 45 米，绕一圈是 ? 米"
+      },
+      "answer": {
+        "value": 180,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "四边形小路四段分别是 35 米、28 米、42 米、30 米，一圈是 ? 米"
+      },
+      "answer": {
+        "value": 135,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形周长 56 厘米，长 18 厘米，宽是 ? 厘米"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形周长 84 分米，边长是 ? 分米"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(60+35)",
+        "right": "45*4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形和正方形求周长的共同点是？",
+        "options": [
+          "都只算一条边",
+          "都必须用除法",
+          "都要沿边线算一周",
+          "都和边长无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "综合表中，哪一个图形周长是 64？",
+        "columns": [
+          "图形",
+          "周长"
+        ],
+        "rows": [
+          {
+            "图形": "长 18 宽 14",
+            "周长": 64
+          },
+          {
+            "图形": "边长 15",
+            "周长": 60
+          },
+          {
+            "图形": "长 20 宽 10",
+            "周长": 60
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "长 18 宽 14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "长 60，宽 35"
+          },
+          {
+            "id": "l2",
+            "text": "边长 45"
+          },
+          {
+            "id": "l3",
+            "text": "周长 56，长 18，宽"
+          },
+          {
+            "id": "l4",
+            "text": "周长 84 的正方形边长"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "10"
+          },
+          {
+            "id": "r1",
+            "text": "190"
+          },
+          {
+            "id": "r4",
+            "text": "21"
+          },
+          {
+            "id": "r2",
+            "text": "180"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "遇到周长应用题，第一步最好先做什么？",
+        "options": [
+          "弄清要围或走的是哪些边",
+          "直接把所有数字相乘",
+          "只找最大的数",
+          "先求面积"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "男生鞋号数据一共有 20 个，女生鞋号数据一共有 22 个，全班一共有多少人？"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "男生鞋号中，33 号出现 2 次，37 号出现 2 次，合起来有多少人？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "女生鞋号中，32 号出现 1 次，37 号出现 1 次，合起来有多少人？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "男生鞋号表中，第 1 行第 3 个数据是多少号？",
+        "columns": [
+          "位置",
+          "鞋号"
+        ],
+        "rows": [
+          {
+            "位置": "第1行第3个",
+            "鞋号": 34
+          },
+          {
+            "位置": "第2行第1个",
+            "鞋号": 36
+          }
+        ]
+      },
+      "answer": {
+        "value": 34
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "女生鞋号表中，第 4 行第 4 个数据是多少号？",
+        "columns": [
+          "位置",
+          "鞋号"
+        ],
+        "rows": [
+          {
+            "位置": "第4行第4个",
+            "鞋号": 35
+          },
+          {
+            "位置": "第3行第5个",
+            "鞋号": 32
+          }
+        ]
+      },
+      "answer": {
+        "value": 35
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察男生鞋号原始数据，最大鞋号是几号？",
+        "options": [
+          "38号",
+          "37号",
+          "36号",
+          "35号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察女生鞋号原始数据，最小鞋号是几号？",
+        "options": [
+          "33号",
+          "34号",
+          "32号",
+          "35号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "男生人数20",
+        "right": "女生人数22"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生鞋号范围：最小号是 ___，最大号是 ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最小号"
+          },
+          {
+            "id": "b2",
+            "label": "最大号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          33,
+          38
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "女生鞋号范围：最小号是 ___，最大号是 ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最小号"
+          },
+          {
+            "id": "b2",
+            "label": "最大号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32,
+          37
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

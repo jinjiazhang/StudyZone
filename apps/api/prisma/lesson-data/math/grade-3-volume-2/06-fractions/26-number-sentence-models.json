@@ -1,0 +1,157 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气选 38 + 45，要和门上 45 + 26 比较，请写出先比较的两个数。用减法表示差。",
+        "placeholder": "例如：12+8"
+      },
+      "answer": {
+        "accepted": [
+          "38-26",
+          "38−26"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "48 + 25 比 45 + 26 多多少？列式。",
+        "placeholder": "例如：12+8"
+      },
+      "answer": {
+        "accepted": [
+          "48+25-(45+26)",
+          "48+25-45-26"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 + 25 - (45 + 26) = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "74 + 19 - (70 + 25) = ?"
+      },
+      "answer": {
+        "value": -2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "125 + 48 - (128 + 44) = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较 63 + 27 和 60 + 30，最简便的判断是：",
+        "options": [
+          "一个多3，另一个少3，和相等",
+          "先分别竖式计算",
+          "只比较63和60",
+          "只比较27和30"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "如果 A + 18 = 30 + 18，那么 A = __",
+        "blanks": [
+          {
+            "id": "a"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "如果 25 + B = 25 + 41，那么 B = __",
+        "blanks": [
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          41
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "如果 60 + C = 55 + 20，那么 C = __",
+        "blanks": [
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "等式两边都加同一个数，大小关系会：",
+        "options": [
+          "变大",
+          "变小",
+          "不变",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

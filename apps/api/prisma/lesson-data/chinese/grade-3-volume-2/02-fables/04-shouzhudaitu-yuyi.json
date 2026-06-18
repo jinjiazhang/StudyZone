@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《守株待兔》告诉我们什么道理？",
+        "options": [
+          "树桩旁总会有兔子",
+          "做事要靠自己的努力，不能只等侥幸",
+          "农具没有用处",
+          "兔子跑得太快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个行为最像“守株待兔”？",
+        "options": [
+          "不复习，只盼考试题全会",
+          "每天按计划练字",
+          "认真观察图画",
+          "主动修改作文"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "农夫被笑话的原因是？",
+        "options": [
+          "他种田太勤快",
+          "他救了一只兔子",
+          "把偶然当成必然",
+          "他不会说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：做事不能有侥幸心理。",
+        "tokens": [
+          "心理",
+          "侥幸",
+          "有",
+          "不能",
+          "做事",
+          "树桩"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "做事",
+          "不能",
+          "有",
+          "侥幸",
+          "心理"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：机会不会总是自己送上门。",
+        "tokens": [
+          "送上门",
+          "自己",
+          "总是",
+          "不会",
+          "机会",
+          "农具"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "机会",
+          "不会",
+          "总是",
+          "自己",
+          "送上门"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "侥幸"
+          },
+          {
+            "id": "l_1",
+            "text": "努力"
+          },
+          {
+            "id": "l_2",
+            "text": "荒废"
+          },
+          {
+            "id": "l_3",
+            "text": "笑话"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "该做的事被搁下"
+          },
+          {
+            "id": "r_0",
+            "text": "偶然得到好处而心存希望"
+          },
+          {
+            "id": "r_3",
+            "text": "让人觉得可笑的事"
+          },
+          {
+            "id": "r_1",
+            "text": "用心尽力去做"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "农夫第一次得到兔子是偶然发生的。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文赞成农夫放下农具等兔子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "生活中的寓言",
+        "passage": "小明第一次蒙对了一道题，以后做题都不愿思考，只想靠运气。老师提醒他：学习不能靠侥幸，只有认真练习，才会真正进步。",
+        "questions": [
+          {
+            "question": "小明的问题是什么？",
+            "options": [
+              "想靠运气学习",
+              "每天认真练习",
+              "主动请教老师",
+              "喜欢整理错题"
+            ]
+          },
+          {
+            "question": "这个故事和哪篇课文道理相近？",
+            "options": [
+              "守株待兔",
+              "鹿角和鹿腿",
+              "池子与河流",
+              "会摇尾巴的狼"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合劝农夫？",
+        "options": [
+          "树桩很漂亮，多坐一会儿",
+          "兔子一定马上回来",
+          "把农具扔掉吧",
+          "别再空等了，还是回去耕田吧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

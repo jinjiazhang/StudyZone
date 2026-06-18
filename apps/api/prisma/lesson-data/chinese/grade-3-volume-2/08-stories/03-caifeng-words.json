@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "耐心"
+          },
+          {
+            "id": "l_0",
+            "text": "急性子"
+          },
+          {
+            "id": "l_3",
+            "text": "负责"
+          },
+          {
+            "id": "l_1",
+            "text": "慢性子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "做事不慌不忙"
+          },
+          {
+            "id": "r_3",
+            "text": "认真承担应做的事"
+          },
+          {
+            "id": "r_0",
+            "text": "做事着急、等不及"
+          },
+          {
+            "id": "r_2",
+            "text": "能坚持等待、不急躁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_1",
+            "text": "夸奖"
+          },
+          {
+            "id": "l_3",
+            "text": "惊讶"
+          },
+          {
+            "id": "l_0",
+            "text": "纳闷"
+          },
+          {
+            "id": "l_2",
+            "text": "泄气"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "失去信心或劲头"
+          },
+          {
+            "id": "r_0",
+            "text": "因为疑惑而发问"
+          },
+          {
+            "id": "r_3",
+            "text": "觉得很意外"
+          },
+          {
+            "id": "r_1",
+            "text": "称赞别人好"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "顾",
+        "tokens": [
+          "客",
+          "家",
+          "名",
+          "问",
+          "盼",
+          "虑"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“顾”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "客",
+            "问",
+            "虑"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "袖",
+        "tokens": [
+          "子",
+          "衫",
+          "珍",
+          "口",
+          "责",
+          "手"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“袖”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "口",
+            "手"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "顾客",
+          "性子",
+          "最急",
+          "最慢",
+          "棉袄",
+          "裁缝"
+        ],
+        "source": "裁缝说他是个性子最慢的裁缝。"
+      },
+      "answer": {
+        "ordered": [
+          "性子",
+          "最慢",
+          "裁缝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“纳闷”在课文中最接近哪种意思？",
+        "options": [
+          "非常高兴",
+          "心里疑惑",
+          "马上行动",
+          "大声责备"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“泄气了”说明顾客此时怎样？",
+        "options": [
+          "更加得意",
+          "十分安静",
+          "没了劲头",
+          "很会裁衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“夸奖”中的“奖”可以组成哪个词？",
+        "options": [
+          "奖忙",
+          "奖布",
+          "奖慢",
+          "奖品"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“负责”可以用来形容做事认真、不推脱。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“衬衫”的“衬”读作 cèn。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

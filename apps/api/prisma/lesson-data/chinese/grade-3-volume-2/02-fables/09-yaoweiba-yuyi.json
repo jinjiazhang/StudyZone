@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个故事提醒我们什么？",
+        "options": [
+          "会摇尾巴的一定是狗",
+          "不要轻信花言巧语，要看清本质",
+          "所有求助都不用理会",
+          "陷阱里一定有宝物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“你再会摇尾巴，也还是凶恶的狼”说明什么？",
+        "options": [
+          "伪装改变不了本性",
+          "摇尾巴能解决一切",
+          "狼比狗更温和",
+          "老山羊说错了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种做法像老山羊？",
+        "options": [
+          "别人一说就全信",
+          "看见危险就冒然跳下去",
+          "听别人求助时既善良又会判断",
+          "只听好听的话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "花言巧语"
+          },
+          {
+            "id": "l_1",
+            "text": "本质"
+          },
+          {
+            "id": "l_2",
+            "text": "识破"
+          },
+          {
+            "id": "l_3",
+            "text": "伪装"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "看穿真相"
+          },
+          {
+            "id": "r_0",
+            "text": "虚假而动听的话"
+          },
+          {
+            "id": "r_3",
+            "text": "装成另一种样子"
+          },
+          {
+            "id": "r_1",
+            "text": "事物根本的性质"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：善良也需要智慧。",
+        "tokens": [
+          "智慧",
+          "需要",
+          "也",
+          "善良",
+          "尾巴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "善良",
+          "也",
+          "需要",
+          "智慧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：看人做事不能只听好话。",
+        "tokens": [
+          "好话",
+          "只听",
+          "不能",
+          "看人做事",
+          "陷阱"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "看人做事",
+          "不能",
+          "只听",
+          "好话"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "识破骗局",
+        "passage": "有人夸口说自己最守信用，却总想占同学便宜。班长没有只听他说得好听，而是看他的行动，提醒大家要分清真诚和伪装。",
+        "questions": [
+          {
+            "question": "班长的做法像谁？",
+            "options": [
+              "老山羊",
+              "农夫",
+              "池子",
+              "叶公"
+            ]
+          },
+          {
+            "question": "这段话强调什么？",
+            "options": [
+              "看行动，不只听好话",
+              "只要会夸口就可信",
+              "不要帮助任何人",
+              "尾巴最能说明问题"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "狼说了很多好话，但目的还是骗老山羊。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "老山羊没有同情心，所以才不救狼。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果给故事换个题目，哪一个最合适？",
+        "options": [
+          "快乐的尾巴",
+          "勤劳的农夫",
+          "美丽的鹿角",
+          "狡猾的伪装"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

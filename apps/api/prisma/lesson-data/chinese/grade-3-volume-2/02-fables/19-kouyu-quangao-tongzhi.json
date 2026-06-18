@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "劝告别人时，哪种语气更容易被接受？",
+        "options": [
+          "温和、有理由",
+          "大声指责",
+          "讽刺挖苦",
+          "命令对方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同学在楼梯扶手上滑行，最合适的劝告是？",
+        "options": [
+          "你怎么这么不守纪律！",
+          "你真差劲！",
+          "这样很危险，可能撞到别人，也会摔伤。",
+          "我再也不理你了！"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "劝沉迷网络游戏的哥哥，先从哪个角度说更好？",
+        "options": [
+          "直接抢走手机",
+          "关心健康和学习，提出合理安排时间",
+          "嘲笑他没出息",
+          "说他永远改不了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "通知必须写清楚的内容不包括哪一项？",
+        "options": [
+          "通知对象",
+          "时间地点",
+          "事情内容",
+          "写通知人的爱好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "通知对象"
+          },
+          {
+            "id": "l_1",
+            "text": "时间地点"
+          },
+          {
+            "id": "l_2",
+            "text": "事情内容"
+          },
+          {
+            "id": "l_3",
+            "text": "署名日期"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "要做什么"
+          },
+          {
+            "id": "r_0",
+            "text": "告诉谁"
+          },
+          {
+            "id": "r_3",
+            "text": "谁通知、哪天发出"
+          },
+          {
+            "id": "r_1",
+            "text": "什么时候、在哪里"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成通知句：4月9日下午3点到操场集合。",
+        "tokens": [
+          "集合",
+          "操场",
+          "到",
+          "下午3点",
+          "4月9日",
+          "寓言"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "4月9日",
+          "下午3点",
+          "到",
+          "操场",
+          "集合"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成劝告句：扶手很滑，没有抓稳会摔伤。",
+        "tokens": [
+          "摔伤",
+          "会",
+          "没有抓稳",
+          "很滑",
+          "扶手",
+          "池子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "扶手",
+          "很滑",
+          "没有抓稳",
+          "会",
+          "摔伤"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "通知",
+        "passage": "通知\n全体同学：\n4月9日下午3点，请到操场集合，观看文艺表演。\n少先队大队委\n4月7日",
+        "questions": [
+          {
+            "question": "这则通知的对象是谁？",
+            "options": [
+              "全体同学",
+              "少先队大队委",
+              "老师",
+              "家长"
+            ]
+          },
+          {
+            "question": "集合时间是什么时候？",
+            "options": [
+              "4月9日下午3点",
+              "4月7日上午",
+              "每天放学后",
+              "3月9日早上"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "劝告别人时，多从对方角度着想更容易被接受。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "通知只写标题，不写时间地点也可以。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

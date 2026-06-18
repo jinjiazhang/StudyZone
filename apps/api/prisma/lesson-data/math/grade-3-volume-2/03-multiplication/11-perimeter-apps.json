@@ -1,0 +1,181 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "小公园四边分别长 410 米、200 米、190 米、560 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 1360,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "动物园小路一圈有 5 段：120 米、180 米、150 米、170 米、210 米，一圈是 ? 米"
+      },
+      "answer": {
+        "value": 830,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "操场一圈四段分别是 80、50、80、50 米，列式求一圈长度。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "80+50+80+50",
+          "80*2+50*2",
+          "2*(80+50)",
+          "(80+50)*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“沿着小路走一圈”求的是小路围成图形的什么？",
+        "options": [
+          "周长",
+          "面积",
+          "高度",
+          "速度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "一块菜地四边是 35 米、20 米、35 米、20 米。填一组长宽和周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          55,
+          110
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "给一块三角形花坛围栏，三边分别 18 米、24 米、30 米，需要 ? 米围栏"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "410+200+190+560",
+        "right": "140+230+160+200+170",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "围栏问题中，“围一圈”通常表示什么？",
+        "options": [
+          "只围一条边",
+          "围住全部边线",
+          "只围两条长边",
+          "求里面有多大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪块地需要围栏最短？",
+        "columns": [
+          "菜地",
+          "周长米"
+        ],
+        "rows": [
+          {
+            "菜地": "甲",
+            "周长米": 96
+          },
+          {
+            "菜地": "乙",
+            "周长米": 88
+          },
+          {
+            "菜地": "丙",
+            "周长米": 104
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "乙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "围一个四边形鱼池，边长依次是 26 米、18 米、22 米、14 米，需要 ? 米栏杆"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

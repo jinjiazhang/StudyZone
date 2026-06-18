@@ -1,0 +1,258 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "发愁"
+          },
+          {
+            "id": "l1",
+            "text": "浓密"
+          },
+          {
+            "id": "l2",
+            "text": "结实"
+          },
+          {
+            "id": "l3",
+            "text": "继续"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "接着做下去"
+          },
+          {
+            "id": "r0",
+            "text": "因不顺心而烦恼"
+          },
+          {
+            "id": "r2",
+            "text": "坚固不容易断"
+          },
+          {
+            "id": "r1",
+            "text": "又多又密"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "果酱"
+          },
+          {
+            "id": "l1",
+            "text": "营养品"
+          },
+          {
+            "id": "l2",
+            "text": "风筝"
+          },
+          {
+            "id": "l3",
+            "text": "街口"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "街道相交或开始的地方"
+          },
+          {
+            "id": "r0",
+            "text": "用水果加糖熬成的酱"
+          },
+          {
+            "id": "r2",
+            "text": "借风力在空中飞的玩具"
+          },
+          {
+            "id": "r1",
+            "text": "对身体有益的食品"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "浓",
+        "tokens": [
+          "纸",
+          "淡",
+          "厚",
+          "树",
+          "密",
+          "跑"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“浓”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "密",
+            "厚"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "确",
+        "tokens": [
+          "醒",
+          "奇",
+          "实",
+          "香",
+          "定",
+          "玩"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“确”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "定",
+            "实"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "结",
+        "tokens": [
+          "鳄",
+          "尿",
+          "果",
+          "醋",
+          "实",
+          "椭"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“结”组成课文词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "实",
+            "果"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“胡萝卜先生常常为胡子发愁”中“发愁”的意思是：",
+        "options": [
+          "开心大笑",
+          "安静休息",
+          "认真书写",
+          "烦恼、忧虑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这绳子够长了”中“够”的意思最接近：",
+        "options": [
+          "声音很响",
+          "颜色很深",
+          "达到需要的程度",
+          "动作很慢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“浓密”可以用来形容胡子很多很密。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“果酱”是专门用来放风筝的绳子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文相关句子：胡子沾到果酱。",
+        "tokens": [
+          "。",
+          "胡子",
+          "树枝",
+          "果酱",
+          "风筝",
+          "沾到"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "胡子",
+          "沾到",
+          "果酱",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

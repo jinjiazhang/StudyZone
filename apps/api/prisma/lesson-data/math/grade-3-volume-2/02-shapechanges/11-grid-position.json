@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点 A 从第 2 列第 3 行向右平移 4 格后，在第几列？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点 B 从第 6 列第 2 行向左平移 3 格后，在第几列？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点 C 从第 4 列第 5 行向上平移 2 格后，在第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点 D 从第 3 列第 1 行向下平移 4 格后，在第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图形从(2,3)先向右 5 格，再向下 1 格，终点是第几列、第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          },
+          {
+            "id": "b2",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图形从(8,6)先向左 2 格，再向上 3 格，终点是第几列、第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          },
+          {
+            "id": "b2",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从(4,4)向右平移 3 格，列数",
+          null,
+          "3，行数",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "不变",
+          "翻转",
+          "减",
+          "加"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "加",
+          "不变"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上向左平移时，通常哪一个数会变小？",
+        "options": [
+          "格子大小",
+          "图形面积",
+          "列数",
+          "行数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上向下平移时，通常哪一个数会变大？",
+        "options": [
+          "图形边数",
+          "行数",
+          "列数",
+          "图形颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "读表：哪一次平移后的列数是 9？",
+        "columns": [
+          "起点",
+          "操作",
+          "终点列"
+        ],
+        "rows": [
+          {
+            "起点": "(4,2)",
+            "操作": "右5",
+            "终点列": 9
+          },
+          {
+            "起点": "(7,3)",
+            "操作": "左2",
+            "终点列": 5
+          },
+          {
+            "起点": "(3,6)",
+            "操作": "右4",
+            "终点列": 7
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "起点(4,2)右5",
+          "第一行",
+          "右5"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

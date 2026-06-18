@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后两种说法中，更全面的是哪一种？",
+        "options": [
+          "美丽的鹿角不重要",
+          "鹿角和鹿腿都很重要，各有各的长处",
+          "难看的鹿腿没有用",
+          "只要外表好看就够了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“尺有所短，寸有所长”最适合说明什么？",
+        "options": [
+          "事物各有长处和短处",
+          "长的东西一定好",
+          "短的东西一定坏",
+          "外表决定一切"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果评价鹿角，最恰当的是？",
+        "options": [
+          "毫无用处",
+          "能让鹿跑得快",
+          "美丽，但逃命时可能碍事",
+          "一定比腿重要"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果评价鹿腿，最恰当的是？",
+        "options": [
+          "只会拖后腿",
+          "完全没有长处",
+          "只适合照镜子",
+          "不美，却很实用"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "长处"
+          },
+          {
+            "id": "l_1",
+            "text": "短处"
+          },
+          {
+            "id": "l_2",
+            "text": "外表"
+          },
+          {
+            "id": "l_3",
+            "text": "实用"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "表面的样子"
+          },
+          {
+            "id": "r_0",
+            "text": "优点"
+          },
+          {
+            "id": "r_3",
+            "text": "实际有用"
+          },
+          {
+            "id": "r_1",
+            "text": "不足"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：不能只凭外表判断事物。",
+        "tokens": [
+          "事物",
+          "判断",
+          "外表",
+          "只凭",
+          "不能",
+          "鹿角"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不能",
+          "只凭",
+          "外表",
+          "判断",
+          "事物"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：每样事物都有自己的价值。",
+        "tokens": [
+          "价值",
+          "自己的",
+          "都有",
+          "事物",
+          "每样",
+          "池水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "每样",
+          "事物",
+          "都有",
+          "自己的",
+          "价值"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "各有价值",
+        "passage": "一支漂亮的笔很受欢迎，可写字时总是断墨；一支普通的笔不好看，却写得又顺又稳。选择学习用具时，我们既要看外观，也要看实际用途。",
+        "questions": [
+          {
+            "question": "这段话和哪篇寓言的道理相近？",
+            "options": [
+              "鹿角和鹿腿",
+              "守株待兔",
+              "南辕北辙",
+              "叶公好龙"
+            ]
+          },
+          {
+            "question": "选择学习用具应怎样做？",
+            "options": [
+              "外观和用途都要考虑",
+              "只选最漂亮的",
+              "只看价格",
+              "随便选择"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "鹿腿虽然难看，却在危险时救了鹿。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "故事告诉我们漂亮的东西都没有价值。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

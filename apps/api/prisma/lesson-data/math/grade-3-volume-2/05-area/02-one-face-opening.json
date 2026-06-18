@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个长方体盒子只有一个面能直接打开，说明什么？",
+        "options": [
+          "这个面完全脱落",
+          "这个盒子没有其他面",
+          "它一定是圆柱",
+          "这个面和盒身有一条边相连"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "只能打开一个面的盒子，最可能留下怎样的结构？",
+        "options": [
+          {
+            "id": "a",
+            "label": "五个面围成盒身，一个面翻开"
+          },
+          {
+            "id": "b",
+            "label": "六个面全部排成一条线"
+          },
+          {
+            "id": "c",
+            "label": "两个圆和一个长方形"
+          },
+          {
+            "id": "d",
+            "label": "四个三角形围成一点"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把一面能打开的盒子继续拆开，下一步通常要做什么？",
+        "options": [
+          "把打开的面剪碎",
+          "从其他边继续剪开",
+          "只看颜色",
+          "直接写面积公式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一面打开时，打开的面与盒身的关系是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "只在顶点相连"
+          },
+          {
+            "id": "b",
+            "label": "完全分离"
+          },
+          {
+            "id": "c",
+            "label": "沿一条边连接"
+          },
+          {
+            "id": "d",
+            "label": "没有任何关系"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果盒盖打开后仍连着盒身，它在展开图中应表现为：",
+        "options": [
+          "离所有面很远",
+          "重叠在底面上",
+          "只用虚线表示没有面",
+          "与相邻面共用一条边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "盖子能翻开"
+          },
+          {
+            "id": "l2",
+            "text": "盖子掉下来"
+          },
+          {
+            "id": "l3",
+            "text": "盖子盖回原处"
+          },
+          {
+            "id": "l4",
+            "text": "盖子只碰一个角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "能沿边折叠"
+          },
+          {
+            "id": "r1",
+            "text": "有一条边没剪断"
+          },
+          {
+            "id": "r4",
+            "text": "不能算面相连"
+          },
+          {
+            "id": "r2",
+            "text": "连接边被剪断"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按顺序描述一面打开的盒子",
+        "items": [
+          {
+            "id": "s2",
+            "text": "找出它连接的边"
+          },
+          {
+            "id": "s4",
+            "text": "判断展开后的位置"
+          },
+          {
+            "id": "s1",
+            "text": "观察盒子哪个面能打开"
+          },
+          {
+            "id": "s3",
+            "text": "想象把这个面铺平"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "一个面能打开，表示它可以绕一条",
+          null,
+          "翻动，铺平后仍与盒身",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "相连",
+          "顶点",
+          "边",
+          "分开"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "边",
+          "相连"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话更适合说明一面打开？",
+        "options": [
+          {
+            "id": "a",
+            "label": "像门一样沿边翻开"
+          },
+          {
+            "id": "b",
+            "label": "像球一样滚动"
+          },
+          {
+            "id": "c",
+            "label": "像线段一样延长"
+          },
+          {
+            "id": "d",
+            "label": "像数字一样排序"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一面打开的盒子继续展开时，不能忽略什么？",
+        "options": [
+          "盒子的价格",
+          "打开面原来连在哪条边上",
+          "盒子的颜色深浅",
+          "桌子的高度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

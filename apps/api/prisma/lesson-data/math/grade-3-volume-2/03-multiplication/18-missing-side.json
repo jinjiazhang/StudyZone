@@ -1,0 +1,160 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形周长 40 厘米，边长是 ? 厘米"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形周长 72 米，边长是 ? 米"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形周长 30 厘米，长 9 厘米，宽是 ? 厘米"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形周长 48 米，宽 8 米，长是 ? 米"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "长方形周长 64 厘米，长 20 厘米。填长+宽和宽。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "宽",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "正方形周长 52 厘米，列式求边长。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "52/4",
+          "52÷4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "已知长方形周长和长，求宽，先求什么？",
+        "options": [
+          "长×宽",
+          "长+宽的和",
+          "四条边都相等",
+          "只求长的 2 倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形周长 90 米，长 28 米，宽是 ? 米"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "40/4",
+        "right": "(30/2)-9",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "正方形周长除以 4 得到什么？",
+        "options": [
+          "面积",
+          "两条边的和",
+          "边长",
+          "对角线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

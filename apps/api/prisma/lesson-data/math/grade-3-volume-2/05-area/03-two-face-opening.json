@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中“有两个面能直接打开”的长方体盒子，展开后至少会看到什么？",
+        "options": [
+          "只剩一个面",
+          "变成圆形",
+          "更多面连成一片",
+          "所有面都不相连"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "两个面都能打开，最合理的判断是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "两个面必须重叠"
+          },
+          {
+            "id": "b",
+            "label": "两个面只能变成圆"
+          },
+          {
+            "id": "c",
+            "label": "两个面不能再折回"
+          },
+          {
+            "id": "d",
+            "label": "两个面分别沿自己的边翻开"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪开盒子时，如果想保留两个能打开的面，应该怎样处理连接边？",
+        "options": [
+          "保留每个打开面的一条连接边",
+          "把所有边都剪断",
+          "只剪面中间",
+          "把两个面粘在一起"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "两个相对的面都打开后，它们在展开图中可能怎样？",
+        "options": [
+          {
+            "id": "a",
+            "label": "一定贴在同一个角上"
+          },
+          {
+            "id": "b",
+            "label": "分别连在盒身不同边上"
+          },
+          {
+            "id": "c",
+            "label": "一定变成三角形"
+          },
+          {
+            "id": "d",
+            "label": "一定没有公共边"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "保留连接边"
+          },
+          {
+            "id": "l2",
+            "text": "剪断所有边"
+          },
+          {
+            "id": "l3",
+            "text": "沿边铺平"
+          },
+          {
+            "id": "l4",
+            "text": "只看一个面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "形成展开图"
+          },
+          {
+            "id": "r1",
+            "text": "面能翻开不脱落"
+          },
+          {
+            "id": "r4",
+            "text": "无法判断整体"
+          },
+          {
+            "id": "r2",
+            "text": "面会分离"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按顺序完成两个面打开的想象",
+        "items": [
+          {
+            "id": "s3",
+            "text": "分别确定连接边"
+          },
+          {
+            "id": "s1",
+            "text": "找第一个能打开的面"
+          },
+          {
+            "id": "s4",
+            "text": "想象两个面铺平后的位置"
+          },
+          {
+            "id": "s2",
+            "text": "找第二个能打开的面"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "两个面能打开时，要分别看它们绕哪条",
+          null,
+          "翻开，再看铺平后是否仍然",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "连通",
+          "颜色",
+          "角",
+          "边"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "边",
+          "连通"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种说法错误？",
+        "options": [
+          "打开的面可以沿边折回",
+          "展开图中的面要连成一片",
+          "两个能打开的面一定互不相连才行",
+          "剪断太多边会让面分开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断两个打开面的位置，最需要关注：",
+        "options": [
+          {
+            "id": "a",
+            "label": "盒子图案是否漂亮"
+          },
+          {
+            "id": "b",
+            "label": "纸片厚不厚"
+          },
+          {
+            "id": "c",
+            "label": "剪刀大小"
+          },
+          {
+            "id": "d",
+            "label": "原来和盒身相接的边"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个面打开后的图形比一个面打开后的图形通常：",
+        "options": [
+          "多出一个铺开的面",
+          "少一个面",
+          "一定变成正方体",
+          "不能折叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

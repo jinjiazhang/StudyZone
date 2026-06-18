@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "30棵幼苗，全部买小包装，至少要买几盒？",
+        "columns": [
+          "包装",
+          "每盒棵数",
+          "每盒价格/元"
+        ],
+        "rows": [
+          {
+            "包装": "小包装",
+            "每盒棵数": 3,
+            "每盒价格/元": 4
+          },
+          {
+            "包装": "大包装",
+            "每盒棵数": 9,
+            "每盒价格/元": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "30棵幼苗，全部买大包装，至少要买几盒？",
+        "columns": [
+          "包装",
+          "每盒棵数",
+          "每盒价格/元"
+        ],
+        "rows": [
+          {
+            "包装": "小包装",
+            "每盒棵数": 3,
+            "每盒价格/元": 4
+          },
+          {
+            "包装": "大包装",
+            "每盒棵数": 9,
+            "每盒价格/元": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 × 4 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 10 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "买3盒大包装和1盒小包装，一共有多少棵？",
+        "columns": [
+          "包装",
+          "每盒棵数",
+          "每盒价格/元"
+        ],
+        "rows": [
+          {
+            "包装": "小包装",
+            "每盒棵数": 3,
+            "每盒价格/元": 4
+          },
+          {
+            "包装": "大包装",
+            "每盒棵数": 9,
+            "每盒价格/元": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 × 10 + 1 × 4 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买30棵幼苗最省钱的方案是？",
+        "options": [
+          "10盒小包装，40元",
+          "3盒大包装和1盒小包装，34元",
+          "4盒大包装，40元",
+          "2盒大包装和4盒小包装，36元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 × 10 + 4",
+        "right": "10 × 4"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "方案2盒大包装、4盒小包装的金额是多少元？",
+        "columns": [
+          "大包装/盒",
+          "小包装/盒",
+          "幼苗总数/棵",
+          "金额/元"
+        ],
+        "rows": [
+          {
+            "大包装/盒": 2,
+            "小包装/盒": 4,
+            "幼苗总数/棵": 30,
+            "金额/元": 36
+          }
+        ]
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "列出多种购买方案再比较金额，能帮助找到省钱方案。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

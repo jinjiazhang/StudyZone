@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写想象故事前，可以先列一条想象链。想象链指：",
+        "options": [
+          "把生字按笔画排列",
+          "事情按原因和变化一步步发展",
+          "把拼音按声母排列",
+          "把数字从小到大排"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "原因"
+          },
+          {
+            "id": "l1",
+            "text": "经过"
+          },
+          {
+            "id": "l2",
+            "text": "变化"
+          },
+          {
+            "id": "l3",
+            "text": "结果"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "明白回到云朵也能旅行"
+          },
+          {
+            "id": "r0",
+            "text": "小水滴贪玩离开云朵"
+          },
+          {
+            "id": "r2",
+            "text": "认识不同朋友"
+          },
+          {
+            "id": "r1",
+            "text": "滚进花瓣、小溪、河流"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：先想原因，再想经过和结果。",
+        "tokens": [
+          "。",
+          "经过",
+          "，",
+          "先",
+          "果酱",
+          "结果",
+          "想",
+          "原因",
+          "鸟窝",
+          "和",
+          "再",
+          "想"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "先",
+          "想",
+          "原因",
+          "，",
+          "再",
+          "想",
+          "经过",
+          "和",
+          "结果",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "想象链能帮助故事不散乱。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "故事越长越可以没有顺序。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "想象链示例",
+        "passage": "手罢工啦。早晨，手不肯拿牙刷，主人刷不了牙；上课时，手不肯握笔，作业本空空的；午饭时，手不肯拿筷子，主人终于明白了手的重要。",
+        "questions": [
+          {
+            "question": "这个故事的线索是什么？",
+            "options": [
+              "手一次次不肯工作",
+              "铅笔有梦想",
+              "尾巴有猫",
+              "胡子变长"
+            ]
+          },
+          {
+            "question": "最后主人明白了什么？",
+            "options": [
+              "手的重要",
+              "果酱的味道",
+              "鸟窝的形状",
+              "冬眠的方法"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组顺序更像完整故事？",
+        "options": [
+          "结果-题目-拼音",
+          "起因-经过-结果",
+          "拼音-标点-作者",
+          "颜色-页码-目录"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小树的心思”可以先写小树想什么，再写：",
+        "options": [
+          "它的真实年轮数量",
+          "课本目录页码",
+          "数学竖式",
+          "它怎样实现这些心思"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "每个奇妙情节最好都服务于同一个题目。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果题目是“水果们的音乐会”，下面哪条链最合适？",
+        "options": [
+          "水果排练-登台演奏-掌声响起",
+          "小水滴滚走-树根伸天-铅笔发芽",
+          "妈妈做饭-英英变树-尾巴说话",
+          "胡子变长-鸟太太晾尿布-铅笔去荷塘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

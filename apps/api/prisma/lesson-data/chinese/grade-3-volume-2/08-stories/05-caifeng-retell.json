@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "第三天"
+          },
+          {
+            "id": "l_0",
+            "text": "第一天"
+          },
+          {
+            "id": "l_3",
+            "text": "又过了一天"
+          },
+          {
+            "id": "l_1",
+            "text": "第二天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "改成夹袄"
+          },
+          {
+            "id": "r_3",
+            "text": "改成春装"
+          },
+          {
+            "id": "r_0",
+            "text": "做棉袄"
+          },
+          {
+            "id": "r_2",
+            "text": "改成短袖衬衫"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后表格主要帮助我们抓住什么？",
+        "options": [
+          "作者、出版社、页码",
+          "时间、要求、反应",
+          "颜色、大小、价钱",
+          "天气、地点、人数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "复述这个故事时，最适合先说哪一项？",
+        "options": [
+          "顾客最后很恼怒",
+          "裁缝还没开始裁料",
+          "第一天顾客要做棉袄",
+          "顾客想改成春装"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "借助表格复述，可以让故事顺序更清楚。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "复述故事就是逐字背诵课文。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "第三天",
+          "第一天",
+          "春装",
+          "棉袄",
+          "马上",
+          "明年冬天"
+        ],
+        "source": "第一天，顾客要做棉袄，裁缝说要到明年冬天。"
+      },
+      "answer": {
+        "ordered": [
+          "第一天",
+          "棉袄",
+          "明年冬天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "又过一天",
+          "第二天",
+          "袖子",
+          "棉袄",
+          "帽子",
+          "夹袄"
+        ],
+        "source": "第二天，顾客想把棉袄改成夹袄。"
+      },
+      "answer": {
+        "ordered": [
+          "第二天",
+          "棉袄",
+          "夹袄"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "已经",
+          "还没",
+          "缝好",
+          "开始",
+          "夸奖",
+          "裁料",
+          "高兴",
+          "恼怒"
+        ],
+        "source": "最后，裁缝说还没开始裁料，顾客恼怒了。"
+      },
+      "answer": {
+        "ordered": [
+          "还没",
+          "开始",
+          "裁料",
+          "恼怒"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合放在“慢性子裁缝的反应”一栏？",
+        "options": [
+          "我已经跑了三家裁缝店。",
+          "我可等不及。",
+          "把袖子剪去一截儿。",
+          "为您服务，没说的！"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "复述《慢性子裁缝和急性子顾客》时，可以先列出“第一天、第二天、第三天、又过了一天”，再分别写顾客的要求和裁缝的反应。这样讲起来不容易漏掉重要情节。",
+        "questions": [
+          {
+            "question": "这段话推荐用什么帮助复述？",
+            "options": [
+              "表格",
+              "古诗",
+              "拼音卡",
+              "谜语"
+            ]
+          },
+          {
+            "question": "表格能帮助避免什么？",
+            "options": [
+              "写错页码",
+              "漏掉重要情节",
+              "忘带铅笔",
+              "画错图案"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

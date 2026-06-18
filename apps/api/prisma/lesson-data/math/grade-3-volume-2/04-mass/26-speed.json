@@ -1,0 +1,127 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "850字故事5分钟讲完，平均每分钟讲多少字？"
+      },
+      "answer": {
+        "value": 170,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "按每分钟170字，3分钟能讲多少字？"
+      },
+      "answer": {
+        "value": 510,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "“850字，5分钟讲完，3分钟能讲多少字”列综合算式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "850÷5×3",
+          "(850÷5)×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "150米游了3个来回，一个来回多少米？"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "游泳池一个来回50米，来和回各一趟，泳道长多少米？"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "104页书4天看完，平均每天多少页？"
+      },
+      "answer": {
+        "value": 26,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果每天比26页少看6页，每天看多少页？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "189页书每天看9页，需要多少天看完？"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求平均每分钟讲多少字，先用哪两个量？",
+        "options": [
+          "总字数和人数",
+          "分钟数和页数",
+          "总字数和总分钟数",
+          "余数和除数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "850 ÷ 5",
+        "right": "510 ÷ 3",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    }
+  ]
+}

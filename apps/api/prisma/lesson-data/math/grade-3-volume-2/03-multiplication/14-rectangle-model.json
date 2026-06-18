@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "一个篮球场长 28 米、宽 15 米，列式求周长。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "(28+15)*2",
+          "2*(28+15)",
+          "28*2+15*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形菜地长 24 米、宽 16 米，围一圈需要 ? 米篱笆"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "画框长 35 厘米、宽 20 厘米，装一圈边框条需要 ? 厘米"
+      },
+      "answer": {
+        "value": 110,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "题目问“篮筐长多少米”，且图中是正方形边长 32 米，要求哪一部分？",
+        "options": [
+          "边长",
+          "面积",
+          "两条边",
+          "周长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一块长方形地长 40 米、宽 18 米，只围一圈，至少需要 ? 米围栏"
+      },
+      "answer": {
+        "value": 116,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "长方形花圃长 17 米、宽 13 米。填长宽和、周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长+宽",
+            "suffix": "米"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          60
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形游泳池长 50 米、宽 25 米，沿池边走一圈，应计算什么？",
+        "options": [
+          "(50+25)×2",
+          "50+25",
+          "50×25",
+          "50×2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一个长方形停车区长 32 米、宽 14 米，一圈是 ? 米"
+      },
+      "answer": {
+        "value": 92,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(24+16)",
+        "right": "2*(35+20)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "根据表格，哪个长方形周长最大？",
+        "columns": [
+          "名称",
+          "长",
+          "宽",
+          "周长"
+        ],
+        "rows": [
+          {
+            "名称": "甲",
+            "长": 16,
+            "宽": 8,
+            "周长": 48
+          },
+          {
+            "名称": "乙",
+            "长": 20,
+            "宽": 6,
+            "周长": 52
+          },
+          {
+            "名称": "丙",
+            "长": 18,
+            "宽": 9,
+            "周长": 54
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "丙"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

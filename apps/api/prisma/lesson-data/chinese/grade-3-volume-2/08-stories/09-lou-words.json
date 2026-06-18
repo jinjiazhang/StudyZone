@@ -1,0 +1,252 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_1",
+            "text": "窟窿"
+          },
+          {
+            "id": "l_3",
+            "text": "翻山越岭"
+          },
+          {
+            "id": "l_0",
+            "text": "脊背"
+          },
+          {
+            "id": "l_2",
+            "text": "厉害"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "很强或很严重"
+          },
+          {
+            "id": "r_0",
+            "text": "背部"
+          },
+          {
+            "id": "r_3",
+            "text": "翻过一座座山岭"
+          },
+          {
+            "id": "r_1",
+            "text": "洞"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_2",
+            "text": "贼手痒"
+          },
+          {
+            "id": "l_0",
+            "text": "颠得骨头架都快散了"
+          },
+          {
+            "id": "l_3",
+            "text": "管他狼哩，管他虎哩"
+          },
+          {
+            "id": "l_1",
+            "text": "偏就又漏雨了"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "偏偏又开始漏雨"
+          },
+          {
+            "id": "r_3",
+            "text": "什么都不怕"
+          },
+          {
+            "id": "r_0",
+            "text": "被颠得很难受"
+          },
+          {
+            "id": "r_2",
+            "text": "贼想偷东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "漏",
+        "tokens": [
+          "雨",
+          "斗",
+          "快",
+          "水",
+          "核",
+          "洞"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“漏”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "雨",
+            "水",
+            "洞"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "驴",
+        "tokens": [
+          "子",
+          "客",
+          "奖",
+          "叫",
+          "袖",
+          "圈"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“驴”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "叫",
+            "圈"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里的“漏”最初指什么？",
+        "options": [
+          "一只怪兽",
+          "屋顶漏雨",
+          "一件衣服",
+          "一口井"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老虎和贼为什么害怕“漏”？",
+        "options": [
+          "他们知道漏雨会淋湿",
+          "他们讨厌屋顶",
+          "他们误以为“漏”是可怕的东西",
+          "他们想找裁缝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“窟窿”就是洞。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“翻山越岭”表示一直待在屋里。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "棉袄",
+          "大气",
+          "都",
+          "都",
+          "穿好了",
+          "不敢出"
+        ],
+        "source": "老虎和贼吓得大气都不敢出。"
+      },
+      "answer": {
+        "ordered": [
+          "大气",
+          "都",
+          "不敢出"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "枣核",
+          "漏",
+          "高兴",
+          "害怕",
+          "夸奖",
+          "屋顶漏雨"
+        ],
+        "source": "“漏”让老虎和贼都害怕，其实是屋顶漏雨。"
+      },
+      "answer": {
+        "ordered": [
+          "漏",
+          "害怕",
+          "屋顶漏雨"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

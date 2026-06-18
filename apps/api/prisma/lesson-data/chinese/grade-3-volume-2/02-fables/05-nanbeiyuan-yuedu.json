@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "辕",
+        "hint": "南辕北辙的“辕”",
+        "options": [
+          "fù",
+          "yuán",
+          "yù",
+          "liè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《南辕北辙》中，乘车人要到哪里去？",
+        "options": [
+          "楚国",
+          "宋国",
+          "赵国",
+          "齐国"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "朋友提醒他什么？",
+        "options": [
+          "马太慢",
+          "盘缠太少",
+          "楚国在南边，他却往北走",
+          "车夫不认识路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乘车人认为自己能到楚国的理由不包括哪一项？",
+        "options": [
+          "马跑得快",
+          "方向走对了",
+          "车夫是好把式",
+          "盘缠带得多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "辕"
+          },
+          {
+            "id": "l_1",
+            "text": "辙"
+          },
+          {
+            "id": "l_2",
+            "text": "盘缠"
+          },
+          {
+            "id": "l_3",
+            "text": "好把式"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "路费"
+          },
+          {
+            "id": "r_0",
+            "text": "车前驾牲口的两根直木"
+          },
+          {
+            "id": "r_3",
+            "text": "本领好的人"
+          },
+          {
+            "id": "r_1",
+            "text": "车轮压出的痕迹"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“南辕北辙”常用来比喻什么？",
+        "options": [
+          "做事非常顺利",
+          "路途特别遥远",
+          "朋友很多",
+          "行动和目的相反"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：方向错了，条件再好也难到达目的。",
+        "tokens": [
+          "也难到达目的",
+          "再好",
+          "条件",
+          "错了",
+          "方向",
+          "马车"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "方向",
+          "错了",
+          "条件",
+          "再好",
+          "也难到达目的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "南辕北辙",
+        "passage": "一个人要去南边的楚国，却赶着车往北走。朋友提醒他方向错了，他却说马好、车夫好、盘缠多。其实条件再好，方向错了，也只会离目标越来越远。",
+        "questions": [
+          {
+            "question": "这个人错在哪里？",
+            "options": [
+              "方向和目的相反",
+              "没有带盘缠",
+              "没有朋友提醒",
+              "马跑得太慢"
+            ]
+          },
+          {
+            "question": "故事说明了什么？",
+            "options": [
+              "做事先要看准方向",
+              "只要马快就行",
+              "路费越多越好",
+              "朋友不用听"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“南辕北辙”和“守株待兔”都能给人启示。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "南辕北辙中的乘车人最后一定很快到达楚国。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "胡子的用途",
+        "passage": "胡萝卜先生的胡子越走越长。小男孩剪下一段用来放风筝，鸟太太剪下一段系在树枝间晾小鸟的尿布，白菜小姐用它系住眼镜。",
+        "questions": [
+          {
+            "question": "小男孩把胡子当作什么？",
+            "options": [
+              "放风筝的线",
+              "写字的铅笔",
+              "装水的杯子",
+              "睡觉的枕头"
+            ]
+          },
+          {
+            "question": "鸟太太用长胡子做什么？",
+            "options": [
+              "晾小鸟的尿布",
+              "开音乐会",
+              "搭桥过河",
+              "做果酱"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "白菜小姐把胡子系在眼镜腿上，再挂在哪里？",
+        "options": [
+          "脖子上",
+          "树枝上",
+          "风筝上",
+          "书包里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "胡子的用途不断出现，是因为它：",
+        "options": [
+          "突然消失了",
+          "一直在变长",
+          "变成铅笔了",
+          "不会动了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小男孩"
+          },
+          {
+            "id": "l1",
+            "text": "鸟太太"
+          },
+          {
+            "id": "l2",
+            "text": "白菜小姐"
+          },
+          {
+            "id": "l3",
+            "text": "胡萝卜先生"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "掏钱买眼镜"
+          },
+          {
+            "id": "r0",
+            "text": "放风筝"
+          },
+          {
+            "id": "r2",
+            "text": "系眼镜"
+          },
+          {
+            "id": "r1",
+            "text": "晾尿布"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "胡萝卜先生一开始知道自己的胡子在变长。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文里的想象和“长胡子”这一特点有关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：胡子的用途越来越多。",
+        "tokens": [
+          "眼镜",
+          "越来越",
+          "胡子",
+          "。",
+          "用途",
+          "果酱",
+          "多",
+          "的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "胡子",
+          "的",
+          "用途",
+          "越来越",
+          "多",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "梳理故事时，最关键的线索是：",
+        "options": [
+          "白菜小姐开店",
+          "小男孩搬家",
+          "胡子越来越长并被大家使用",
+          "鸟太太买面包"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "续编时可以让长胡子派上新的用场。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项最适合续写长胡子的用途？",
+        "options": [
+          "背诵古诗三首",
+          "给小松鼠当秋千绳",
+          "计算长方形面积",
+          "介绍赵州桥历史"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

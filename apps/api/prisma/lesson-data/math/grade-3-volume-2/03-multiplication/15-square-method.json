@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "正方形周长可以怎样计算？",
+        "options": [
+          "边长×2",
+          "边长+宽",
+          "边长×4",
+          "边长×边长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 3 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "正方形边长 7 分米，周长是 ? 分米"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "正方形边长 9 厘米，列式求周长。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "9*4",
+          "4*9",
+          "9+9+9+9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "type": "math_drag_fill",
+        "statement": [
+          "正方形周长 = ",
+          null,
+          " × ",
+          null
+        ],
+        "tokens": [
+          "2",
+          "边长",
+          "宽",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "边长",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "正方形为什么可以用边长乘 4 求周长？",
+        "options": [
+          "只有 2 条边",
+          "长和宽不同",
+          "周长等于面积",
+          "4 条边都相等"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "6*4",
+        "right": "2*(6+6)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "正方形边长 8 厘米。填 4 条边总数和周长。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "边数",
+            "suffix": "条"
+          },
+          {
+            "id": "b2",
+            "label": "周长",
+            "suffix": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          32
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "下面哪个算式不能表示边长 5 的正方形周长？",
+        "options": [
+          "5×5",
+          "5+5+5+5",
+          "5×4",
+          "4×5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "用一根 40 厘米长的绳子围成正方形，这个正方形周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

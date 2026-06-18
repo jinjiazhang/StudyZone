@@ -1,0 +1,284 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "三衢道中",
+        "author": "曾几",
+        "lines": [
+          [
+            "梅子黄时",
+            null,
+            "晴，"
+          ],
+          [
+            "小溪泛尽却山行。"
+          ]
+        ],
+        "options": [
+          "时时",
+          "天天",
+          "日日",
+          "处处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "三衢道中",
+        "author": "曾几",
+        "lines": [
+          [
+            "梅子黄时日日晴，"
+          ],
+          [
+            "小溪泛尽",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "又水行",
+          "向家行",
+          "过桥行",
+          "却山行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "三衢道中",
+        "author": "曾几",
+        "lines": [
+          [
+            "绿阴不减",
+            null,
+            "，"
+          ],
+          [
+            "添得黄鹂四五声。"
+          ]
+        ],
+        "options": [
+          "来时路",
+          "去时路",
+          "山中路",
+          "小溪路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "三衢道中",
+        "author": "曾几",
+        "lines": [
+          [
+            "绿阴不减来时路，"
+          ],
+          [
+            "添得",
+            null,
+            "四五声。"
+          ]
+        ],
+        "options": [
+          "燕子",
+          "黄鹂",
+          "蝉鸣",
+          "杜鹃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "日日晴",
+          "梅子",
+          "黄鹂",
+          "黄时",
+          "绿阴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "梅子",
+          "黄时",
+          "日日晴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "却山行",
+          "小溪",
+          "来时路",
+          "泛尽",
+          "梅子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小溪",
+          "泛尽",
+          "却山行"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "来时路",
+          "绿阴",
+          "日日晴",
+          "不减",
+          "黄鹂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "绿阴",
+          "不减",
+          "来时路"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句",
+        "tokens": [
+          "四五声",
+          "添得",
+          "山行",
+          "黄鹂",
+          "小溪"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "添得",
+          "黄鹂",
+          "四五声"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "三衢道中",
+        "author": "曾几",
+        "lines": [
+          [
+            "梅子黄时",
+            null,
+            "晴，"
+          ],
+          [
+            "小溪泛尽",
+            null,
+            "。"
+          ],
+          [
+            "绿阴不减",
+            null,
+            "，"
+          ],
+          [
+            "添得",
+            null,
+            "四五声。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "日日",
+              "时时",
+              "处处",
+              "天天"
+            ]
+          },
+          {
+            "options": [
+              "却山行",
+              "又水行",
+              "向家行",
+              "过桥行"
+            ]
+          },
+          {
+            "options": [
+              "来时路",
+              "去时路",
+              "山中路",
+              "小溪路"
+            ]
+          },
+          {
+            "options": [
+              "黄鹂",
+              "燕子",
+              "蝉鸣",
+              "白鹭"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“添得黄鹂四五声”让画面多了什么？",
+        "options": [
+          "河水的颜色",
+          "桃花的香味",
+          "鸟鸣的声音",
+          "泥土的松软"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

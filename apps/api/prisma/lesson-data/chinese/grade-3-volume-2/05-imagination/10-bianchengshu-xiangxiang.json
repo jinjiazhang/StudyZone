@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我变成了一棵树”的想象能成立，是因为作者接着写了：",
+        "options": [
+          "树的真实分类",
+          "桥梁的建造方法",
+          "古诗的押韵",
+          "变成树后会发生的奇妙事情"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "变成小溪"
+          },
+          {
+            "id": "l1",
+            "text": "变成云朵"
+          },
+          {
+            "id": "l2",
+            "text": "变成书包"
+          },
+          {
+            "id": "l3",
+            "text": "变成星星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "照亮夜路"
+          },
+          {
+            "id": "r0",
+            "text": "鱼儿来旅行"
+          },
+          {
+            "id": "r2",
+            "text": "文具们开会"
+          },
+          {
+            "id": "r1",
+            "text": "给花草送雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：变了以后要写奇妙的事。",
+        "tokens": [
+          "眼镜",
+          "事",
+          "写",
+          "变了",
+          "果酱",
+          "的",
+          "要",
+          "。",
+          "奇妙",
+          "以后"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "变了",
+          "以后",
+          "要",
+          "写",
+          "奇妙",
+          "的",
+          "事",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成想象句：我变成一朵云给花草送雨。",
+        "tokens": [
+          "。",
+          "给",
+          "我",
+          "香肠",
+          "送雨",
+          "一朵云",
+          "鸟窝",
+          "花草",
+          "变成"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "变成",
+          "一朵云",
+          "给",
+          "花草",
+          "送雨",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写“如果我会变”，要交代想变成什么。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只写“我变了”四个字就能把故事讲清楚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一个问题最能帮助展开想象？",
+        "options": [
+          "变成以后，会遇到谁、发生什么事？",
+          "今天星期几？",
+          "一共有几个生字？",
+          "这本书多重？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "变身片段",
+        "passage": "如果我变成一盏路灯，我会站在小巷口。夜晚放学的孩子经过时，我把光洒在他们脚边；迷路的小猫抬头看见亮光，也能找到回家的方向。",
+        "questions": [
+          {
+            "question": "片段中的“我”变成了什么？",
+            "options": [
+              "路灯",
+              "小猫",
+              "书包",
+              "铅笔"
+            ]
+          },
+          {
+            "question": "这个想象主要写路灯的什么作用？",
+            "options": [
+              "照亮和指路",
+              "吃果酱",
+              "晾尿布",
+              "开花"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "评价想象故事时，下面哪项最重要？",
+        "options": [
+          "每句都一样长",
+          "不能出现人物",
+          "新奇、有趣，并围绕一个变化展开",
+          "只写真实新闻"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "想象越大胆，越要把事情说清楚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

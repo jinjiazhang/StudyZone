@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠时间原始表中，第1行第1个数据是多少小时？",
+        "columns": [
+          "位置",
+          "睡眠时间"
+        ],
+        "rows": [
+          {
+            "位置": "第1行第1个",
+            "睡眠时间": 11
+          },
+          {
+            "位置": "第1行第2个",
+            "睡眠时间": 9
+          }
+        ]
+      },
+      "answer": {
+        "value": 11
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "睡眠时间原始表中，第1行第5个数据是多少小时？",
+        "columns": [
+          "位置",
+          "睡眠时间"
+        ],
+        "rows": [
+          {
+            "位置": "第1行第5个",
+            "睡眠时间": 8
+          },
+          {
+            "位置": "第2行第1个",
+            "睡眠时间": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 8
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "睡眠时间数据中，最少是 ___ 小时，最多是 ___ 小时。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "最少"
+          },
+          {
+            "id": "b2",
+            "label": "最多"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "睡眠时间数据共有3行，每行14个，一共有多少个数据？"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理睡眠时间时，横线下方适合写哪些类别？",
+        "options": [
+          "130厘米、135厘米",
+          "8小时、9小时、10小时、11小时、12小时",
+          "32号、33号",
+          "红、黄、蓝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“你知道吗”中提到小学生每天睡眠时间应该达到多少小时？",
+        "options": [
+          "8小时",
+          "10小时",
+          "9小时",
+          "12小时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "最少睡眠8小时",
+        "right": "标准10小时"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "最多睡眠12小时",
+        "right": "标准10小时"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "睡眠时间8小时有 ___ 人，12小时有 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "8小时"
+          },
+          {
+            "id": "b2",
+            "label": "12小时"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把原始睡眠数据整理成统计图，主要能帮助我们看出什么？",
+        "options": [
+          "同学的姓名",
+          "每人家住哪里",
+          "鞋子颜色",
+          "各睡眠时间的人数多少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

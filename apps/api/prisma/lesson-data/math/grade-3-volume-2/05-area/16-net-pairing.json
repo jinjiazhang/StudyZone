@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方体"
+          },
+          {
+            "id": "l2",
+            "text": "正方体"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "三角锥"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "2个圆和1个长方形"
+          },
+          {
+            "id": "r1",
+            "text": "6个长方形类面"
+          },
+          {
+            "id": "r4",
+            "text": "4个三角形"
+          },
+          {
+            "id": "r2",
+            "text": "6个相同正方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“2个圆和1个长方形”应配对：",
+        "options": [
+          "正方体",
+          "圆柱",
+          "三角锥",
+          "长方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "“6个相同正方形连成一片”应配对：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱"
+          },
+          {
+            "id": "b",
+            "label": "三棱柱"
+          },
+          {
+            "id": "c",
+            "label": "正方体"
+          },
+          {
+            "id": "d",
+            "label": "三角锥"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“2个三角形和3个长方形”可能配对：",
+        "options": [
+          "圆柱",
+          "正方体",
+          "球",
+          "三棱柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "“4个三角形能围成尖顶”可能配对：",
+        "options": [
+          {
+            "id": "a",
+            "label": "三角锥"
+          },
+          {
+            "id": "b",
+            "label": "长方体"
+          },
+          {
+            "id": "c",
+            "label": "圆柱"
+          },
+          {
+            "id": "d",
+            "label": "正方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "配对展开图和立体图形",
+        "items": [
+          {
+            "id": "s2",
+            "text": "数各种面的个数"
+          },
+          {
+            "id": "s4",
+            "text": "想象折叠验证"
+          },
+          {
+            "id": "s1",
+            "text": "观察展开图面形"
+          },
+          {
+            "id": "s3",
+            "text": "找对应立体图形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "配对时先看面的",
+          null,
+          "和",
+          null,
+          "，再判断立体图形。"
+        ],
+        "tokens": [
+          "个数",
+          "颜色",
+          "形状",
+          "页码"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "形状",
+          "个数"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "只有长方形没有圆的展开图，不适合配对：",
+        "options": [
+          "长方体",
+          "圆柱",
+          "纸盒",
+          "盒身"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "有圆形底面的展开图更可能和哪个物体配对？",
+        "options": [
+          {
+            "id": "a",
+            "label": "方糖盒"
+          },
+          {
+            "id": "b",
+            "label": "正方体积木"
+          },
+          {
+            "id": "c",
+            "label": "饮料罐"
+          },
+          {
+            "id": "d",
+            "label": "三角包装"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "配对完成后，仍要做什么？",
+        "options": [
+          "把答案按颜色排序",
+          "不用检查",
+          "只数页码",
+          "想象折回是否一致"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

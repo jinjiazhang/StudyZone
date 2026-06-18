@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“先向右平移 4 格，再向上平移 2 格”的路线排列。",
+        "items": [
+          {
+            "id": "s2",
+            "text": "向上平移2格"
+          },
+          {
+            "id": "s1",
+            "text": "向右平移4格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“先向上平移 2 格，再向左平移 3 格，再向下平移 1 格”的路线排列。",
+        "items": [
+          {
+            "id": "s3",
+            "text": "向下平移1格"
+          },
+          {
+            "id": "s2",
+            "text": "向左平移3格"
+          },
+          {
+            "id": "s1",
+            "text": "向上平移2格"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "路线记录“右 4，上 2”表示先向",
+          null,
+          "平移",
+          null,
+          "格，再向上平移 2 格。"
+        ],
+        "tokens": [
+          "左",
+          "4",
+          "2",
+          "右"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "右",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“上 2，右 4”和“右 4，上 2”到达同一终点吗？",
+        "options": [
+          "不能，方向相反",
+          "能，到达同一终点",
+          "一定变成旋转",
+          "不能，格数不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从(1,5)按“右4，上2”移动，终点是第几列、第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          },
+          {
+            "id": "b2",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从(6,4)按“左2，下3”移动，终点是第几列、第几行？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列"
+          },
+          {
+            "id": "b2",
+            "label": "行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "右4，上2"
+          },
+          {
+            "id": "l2",
+            "text": "左3，下1"
+          },
+          {
+            "id": "l3",
+            "text": "上5"
+          },
+          {
+            "id": "l4",
+            "text": "下2，右1"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "列-3 行+1"
+          },
+          {
+            "id": "r3",
+            "text": "列不变 行-5"
+          },
+          {
+            "id": "r1",
+            "text": "列+4 行-2"
+          },
+          {
+            "id": "r4",
+            "text": "列+1 行+2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记录平移路线时，“2→4”的记法表示什么？",
+        "options": [
+          "只移动4格",
+          "旋转2圈",
+          "把2乘4",
+          "先平移2格，再平移4格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项是清楚的路线记录？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "很好看"
+          },
+          {
+            "id": "g2",
+            "label": "上2，右4"
+          },
+          {
+            "id": "g3",
+            "label": "快一点"
+          },
+          {
+            "id": "g4",
+            "label": "移到那里"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果同伴按你的路线记录不能还原，最可能是你漏写了：",
+        "options": [
+          "方向或格数",
+          "图案颜色",
+          "纸张大小",
+          "标题"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

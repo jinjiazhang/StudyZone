@@ -1,0 +1,282 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "迟日",
+            null,
+            "丽，"
+          ],
+          [
+            "春风花草香。"
+          ]
+        ],
+        "options": [
+          "河山",
+          "江山",
+          "青山",
+          "山水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "迟日江山丽，"
+          ],
+          [
+            null,
+            "花草香。"
+          ]
+        ],
+        "options": [
+          "春风",
+          "东风",
+          "微风",
+          "清风"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "泥融飞",
+            null,
+            "，"
+          ],
+          [
+            "沙暖睡鸳鸯。"
+          ]
+        ],
+        "options": [
+          "蝴蝶",
+          "黄鹂",
+          "燕子",
+          "小鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            "泥融飞燕子，"
+          ],
+          [
+            "沙暖睡",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "河豚",
+          "鸭子",
+          "白鹭",
+          "鸳鸯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《绝句》第一句",
+        "tokens": [
+          "丽",
+          "迟日",
+          "花草",
+          "江山",
+          "春风"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "迟日",
+          "江山",
+          "丽"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《绝句》第二句",
+        "tokens": [
+          "香",
+          "春风",
+          "沙暖",
+          "花草",
+          "燕子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春风",
+          "花草",
+          "香"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《绝句》第三句",
+        "tokens": [
+          "燕子",
+          "泥融",
+          "鸳鸯",
+          "飞",
+          "江山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "泥融",
+          "飞",
+          "燕子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《绝句》第四句",
+        "tokens": [
+          "鸳鸯",
+          "沙暖",
+          "春风",
+          "睡",
+          "泥融"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "沙暖",
+          "睡",
+          "鸳鸯"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "绝句",
+        "author": "杜甫",
+        "lines": [
+          [
+            null,
+            "江山丽，"
+          ],
+          [
+            "春风",
+            null,
+            "香。"
+          ],
+          [
+            "泥融飞",
+            null,
+            "，"
+          ],
+          [
+            "沙暖睡",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "迟日",
+              "落日",
+              "春日",
+              "明日"
+            ]
+          },
+          {
+            "options": [
+              "花草",
+              "柳树",
+              "桃花",
+              "春水"
+            ]
+          },
+          {
+            "options": [
+              "黄鹂",
+              "燕子",
+              "蝴蝶",
+              "蜻蜓"
+            ]
+          },
+          {
+            "options": [
+              "鸳鸯",
+              "鸭子",
+              "河豚",
+              "白鹭"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《绝句》中哪一句写动物活动？",
+        "options": [
+          "泥融飞燕子",
+          "迟日江山丽",
+          "春风花草香",
+          "梅子黄时日日晴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

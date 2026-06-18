@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "点状图中，一个“×”通常表示什么？",
+        "options": [
+          "10 个数据",
+          "最大值",
+          "1 个数据",
+          "单位名称"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "点状图读数：32号上有1个×，表示多少人穿32号？",
+        "columns": [
+          "鞋号",
+          "×个数"
+        ],
+        "rows": [
+          {
+            "鞋号": "32号",
+            "×个数": 1
+          },
+          {
+            "鞋号": "35号",
+            "×个数": 8
+          }
+        ]
+      },
+      "answer": {
+        "value": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "点状图读数：35号上有8个×，表示多少人穿35号？",
+        "columns": [
+          "鞋号",
+          "×个数"
+        ],
+        "rows": [
+          {
+            "鞋号": "35号",
+            "×个数": 8
+          },
+          {
+            "鞋号": "36号",
+            "×个数": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 8
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "点状图中，34号有6个×，35号有8个×，一共表示多少人？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "点状图中，33号有4个×，37号有1个×，相差多少人？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "点状图的横线下面写“33号、34号、35号……”表示什么？",
+        "options": [
+          "数据分类",
+          "同学姓名",
+          "调查时间",
+          "座位号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果某鞋号没有人，点状图上这一格应该怎样表示？",
+        "options": [
+          "画10个×",
+          "写最大号",
+          "涂黑整格",
+          "不画×"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35号8人",
+        "right": "34号6人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点状图中，38号有0个×，表示 ___ 人；37号有1个×，表示 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "38号"
+          },
+          {
+            "id": "b2",
+            "label": "37号"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中把相同鞋号放在一起，再画到数线上，主要是为了什么？",
+        "options": [
+          "让鞋号变小",
+          "看出每个鞋号人数多少",
+          "改变调查结果",
+          "省略人数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

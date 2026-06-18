@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 10 厘米、宽 4 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 13 厘米、宽 5 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 18 米、宽 9 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 54,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形长 25 分米、宽 12 分米，周长是 ? 分米"
+      },
+      "answer": {
+        "value": 74,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "篮球场长 28 米、宽 15 米，周长是 ? 米"
+      },
+      "answer": {
+        "value": 86,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一张长方形桌面长 120 厘米、宽 60 厘米，桌面周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 360,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(14+6)",
+        "right": "2*(12+9)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "长 7，宽 3"
+          },
+          {
+            "id": "l2",
+            "text": "长 8，宽 6"
+          },
+          {
+            "id": "l3",
+            "text": "长 12，宽 5"
+          },
+          {
+            "id": "l4",
+            "text": "长 15，宽 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "34"
+          },
+          {
+            "id": "r1",
+            "text": "20"
+          },
+          {
+            "id": "r4",
+            "text": "48"
+          },
+          {
+            "id": "r2",
+            "text": "28"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪张卡片周长是 30 厘米？",
+        "columns": [
+          "卡片",
+          "长厘米",
+          "宽厘米",
+          "周长厘米"
+        ],
+        "rows": [
+          {
+            "卡片": "甲",
+            "长厘米": 8,
+            "宽厘米": 7,
+            "周长厘米": 30
+          },
+          {
+            "卡片": "乙",
+            "长厘米": 9,
+            "宽厘米": 5,
+            "周长厘米": 28
+          },
+          {
+            "卡片": "丙",
+            "长厘米": 10,
+            "宽厘米": 6,
+            "周长厘米": 32
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "甲"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形长和宽的单位都是厘米，周长单位应是？",
+        "options": [
+          "平方厘米",
+          "米/秒",
+          "厘米",
+          "个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三角锥展开图常见的面是什么形状？",
+        "options": [
+          "圆形",
+          "全部长方形",
+          "六个正方形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "四个三角形连在一起，最可能折成：",
+        "options": [
+          {
+            "id": "a",
+            "label": "三角锥"
+          },
+          {
+            "id": "b",
+            "label": "圆柱"
+          },
+          {
+            "id": "c",
+            "label": "正方体"
+          },
+          {
+            "id": "d",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三棱柱展开图通常会有：",
+        "options": [
+          "2个圆和1个长方形",
+          "2个三角形和3个长方形",
+          "6个正方形",
+          "只有1个三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "展开图中有2个三角形作底面，3个长方形作侧面，可能是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆柱"
+          },
+          {
+            "id": "b",
+            "label": "球"
+          },
+          {
+            "id": "c",
+            "label": "三棱柱"
+          },
+          {
+            "id": "d",
+            "label": "正方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三角锥"
+          },
+          {
+            "id": "l2",
+            "text": "三棱柱"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "正方体"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "2个圆和1个长方形"
+          },
+          {
+            "id": "r1",
+            "text": "4个三角形"
+          },
+          {
+            "id": "r4",
+            "text": "6个相同正方形"
+          },
+          {
+            "id": "r2",
+            "text": "2个三角形和3个长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断三角形盒子的展开图",
+        "items": [
+          {
+            "id": "s3",
+            "text": "检查是否沿边连接"
+          },
+          {
+            "id": "s1",
+            "text": "先看有没有三角形面"
+          },
+          {
+            "id": "s4",
+            "text": "想象能否围合"
+          },
+          {
+            "id": "s2",
+            "text": "数三角形和长方形个数"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "三棱柱常有两个",
+          null,
+          "和三个",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "长方形",
+          "圆",
+          "三角形",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三角形",
+          "长方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一个图形只有4个三角形，它不可能直接折成：",
+        "options": [
+          "三角锥",
+          "有尖顶的盒子",
+          "三角面立体",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断三角锥展开图时，哪项最关键？",
+        "options": [
+          {
+            "id": "a",
+            "label": "三角形能否围到同一个尖点"
+          },
+          {
+            "id": "b",
+            "label": "有没有两个圆"
+          },
+          {
+            "id": "c",
+            "label": "是否有6个正方形"
+          },
+          {
+            "id": "d",
+            "label": "是否全是长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把三角锥误认为圆柱，主要错在：",
+        "options": [
+          "没有数页码",
+          "没有注意面的形状不同",
+          "没有比较价格",
+          "没有写单位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

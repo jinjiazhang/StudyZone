@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "坪坝"
+          },
+          {
+            "id": "l1",
+            "text": "绒球花"
+          },
+          {
+            "id": "l2",
+            "text": "飘扬"
+          },
+          {
+            "id": "l3",
+            "text": "招引"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "花形像绒球的花"
+          },
+          {
+            "id": "r2",
+            "text": "在空中随风摆动"
+          },
+          {
+            "id": "r3",
+            "text": "吸引过来"
+          },
+          {
+            "id": "r0",
+            "text": "平坦的场地"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "安静"
+          },
+          {
+            "id": "l1",
+            "text": "绚丽"
+          },
+          {
+            "id": "l2",
+            "text": "粗壮"
+          },
+          {
+            "id": "l3",
+            "text": "洁白"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "灿烂美丽"
+          },
+          {
+            "id": "r2",
+            "text": "又粗又结实"
+          },
+          {
+            "id": "r3",
+            "text": "很白很干净"
+          },
+          {
+            "id": "r0",
+            "text": "没有声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "招",
+        "tokens": [
+          "呼",
+          "花",
+          "引",
+          "明",
+          "手",
+          "坐",
+          "待"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【招】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "呼",
+            "引",
+            "手",
+            "待"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "读",
+        "tokens": [
+          "书",
+          "球",
+          "课",
+          "墙",
+          "者",
+          "热",
+          "音"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【读】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "书",
+            "课",
+            "者",
+            "音"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "扬",
+        "tokens": [
+          "飘",
+          "闹",
+          "表",
+          "罚",
+          "飞",
+          "荒",
+          "起"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【扬】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "飘",
+            "表",
+            "飞",
+            "起"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“绚丽多彩”最适合形容什么？",
+        "options": [
+          "颜色鲜艳而丰富",
+          "非常安静",
+          "声音很大",
+          "动作很快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“坪坝”在课文中指的是哪里？",
+        "options": [
+          "竹林里的小路",
+          "山坡上较平坦的地方",
+          "教室里的讲台",
+          "高高的树枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“招引来许多小鸟”中的“招引”有吸引过来的意思。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“粗壮的枝干”说明枝干又细又软。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“洁白的墙”写出了墙的颜色和干净。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

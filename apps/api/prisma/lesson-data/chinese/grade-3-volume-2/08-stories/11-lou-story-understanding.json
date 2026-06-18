@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《漏》中最有趣的误会是什么？",
+        "options": [
+          "小胖驴会说话",
+          "屋顶突然变成山坡",
+          "老公公会变魔术",
+          "虎和贼都把“漏”当成可怕的东西"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老虎想要什么？",
+        "options": [
+          "吃小胖驴",
+          "做棉袄",
+          "找枣核",
+          "讲故事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贼想要什么？",
+        "options": [
+          "补屋顶",
+          "偷小胖驴",
+          "捉老虎",
+          "当县官"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老公公老婆婆为什么说“漏”？",
+        "options": [
+          "看见老虎",
+          "丢了枣核",
+          "屋顶漏雨",
+          "买了新衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "老虎和贼都是因为误会才越来越害怕。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "故事中的“漏”真是一只怪物。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "裁缝",
+          "老虎",
+          "缝",
+          "吃",
+          "顾客",
+          "贼",
+          "等",
+          "偷"
+        ],
+        "source": "老虎想吃驴，贼想偷驴。"
+      },
+      "answer": {
+        "ordered": [
+          "老虎",
+          "吃",
+          "贼",
+          "偷"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "漂亮",
+          "普通",
+          "棉袄",
+          "漏",
+          "夸奖",
+          "误会"
+        ],
+        "source": "一个普通的“漏”字，引出了老虎和贼的误会。"
+      },
+      "answer": {
+        "ordered": [
+          "普通",
+          "漏",
+          "误会"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "老虎听见老婆婆说“不怕狼，不怕虎，就怕漏”，以为“漏”比老虎还厉害。贼听见这话，也以为“漏”很可怕。其实，老婆婆说的是屋顶漏雨。",
+        "questions": [
+          {
+            "question": "老虎为什么害怕？",
+            "options": [
+              "被枣核绑住了",
+              "看到裁缝来了",
+              "误以为“漏”很厉害",
+              "不想淋雨"
+            ]
+          },
+          {
+            "question": "老婆婆说的“漏”实际指什么？",
+            "options": [
+              "老虎",
+              "贼",
+              "小胖驴",
+              "漏雨"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_3",
+            "text": "小胖驴"
+          },
+          {
+            "id": "l_1",
+            "text": "贼"
+          },
+          {
+            "id": "l_0",
+            "text": "老虎"
+          },
+          {
+            "id": "l_2",
+            "text": "老婆婆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "说就怕漏"
+          },
+          {
+            "id": "r_0",
+            "text": "想吃小胖驴"
+          },
+          {
+            "id": "r_3",
+            "text": "被惦记的对象"
+          },
+          {
+            "id": "r_1",
+            "text": "想偷小胖驴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个图形两边颜色一样，但形状不能重合，它是否一定轴对称？",
+        "options": [
+          "只要颜色一样就一定",
+          "不一定",
+          "只要面积一样就一定",
+          "一定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种补图是错误的？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "两边能重合"
+          },
+          {
+            "id": "g2",
+            "label": "左右形状镜像"
+          },
+          {
+            "id": "g3",
+            "label": "对应点离对称轴距离不相等"
+          },
+          {
+            "id": "g4",
+            "label": "对应点同高"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学生把镜像补成了“同方向复制”，常见错误是什么？",
+        "options": [
+          "没有涂色",
+          "没有左右翻转",
+          "没有旋转一周",
+          "没有数数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "轴对称补图不是简单复制，而是沿对称轴做",
+          null,
+          "，对应距离保持",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "相等",
+          "相加",
+          "镜像",
+          "平移"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "镜像",
+          "相等"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断“音符是轴对称图形”的理由中，哪一个是错误理由？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "对应点到轴距离相等"
+          },
+          {
+            "id": "g2",
+            "label": "有一条对称轴"
+          },
+          {
+            "id": "g3",
+            "label": "对折后左右能完全重合"
+          },
+          {
+            "id": "g4",
+            "label": "看起来左右面积差不多"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果对称轴画在图形外面，这条线通常：",
+        "options": [
+          "一定是边",
+          "一定是对称轴",
+          "不能作为该图形的对称轴",
+          "能让图形重合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点 A 在对称轴左边 2 格，学生把 A′ 画在右边 3 格，应该改为右边几格？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "格数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项最能说明“这条线不是对称轴”？",
+        "options": [
+          {
+            "id": "g1",
+            "label": "线是直的"
+          },
+          {
+            "id": "g2",
+            "label": "图形左右都有颜色"
+          },
+          {
+            "id": "g3",
+            "label": "沿线对折后两边有缺口错开"
+          },
+          {
+            "id": "g4",
+            "label": "线经过图形中间"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "同方向复制"
+          },
+          {
+            "id": "l2",
+            "text": "距离不相等"
+          },
+          {
+            "id": "l3",
+            "text": "对折能重合"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "应改成镜像"
+          },
+          {
+            "id": "r1",
+            "text": "正确依据"
+          },
+          {
+            "id": "r3",
+            "text": "应重新数格"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现补出的另一半太宽，最可能要检查什么？",
+        "options": [
+          "题号顺序",
+          "对应点到对称轴的格数",
+          "图案名称",
+          "纸的颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

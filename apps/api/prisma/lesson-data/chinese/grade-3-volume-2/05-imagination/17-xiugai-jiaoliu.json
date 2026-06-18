@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写完想象故事后，课本建议：",
+        "options": [
+          "立刻撕掉",
+          "只看字数",
+          "跟同学交换习作，说说喜欢哪里和哪里需修改",
+          "不许别人读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "内容新奇"
+          },
+          {
+            "id": "l1",
+            "text": "情节清楚"
+          },
+          {
+            "id": "l2",
+            "text": "语言通顺"
+          },
+          {
+            "id": "l3",
+            "text": "需要修改"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "指出具体地方"
+          },
+          {
+            "id": "r0",
+            "text": "想象有亮点"
+          },
+          {
+            "id": "r2",
+            "text": "句子读起来明白"
+          },
+          {
+            "id": "r1",
+            "text": "能看出事情发展"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "评价同学作品时，可以先说自己最喜欢的内容。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "修改建议越模糊越好。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我喜欢这个奇妙的开头。",
+        "tokens": [
+          "。",
+          "奇妙",
+          "我",
+          "香肠",
+          "开头",
+          "这个",
+          "胡子",
+          "的",
+          "喜欢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "喜欢",
+          "这个",
+          "奇妙",
+          "的",
+          "开头",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪条修改建议最具体？",
+        "options": [
+          "改一改。",
+          "不太好。",
+          "再写点。",
+          "第二段可以写清小水滴滚到哪里、遇见谁。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“在墙报上开辟想象岛专栏”是为了：",
+        "options": [
+          "统计考试分数",
+          "张贴课程表",
+          "展示大家的习作",
+          "抄写词语表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "修改片段",
+        "passage": "原句：手罢工啦，我很着急。修改：手罢工啦，早晨它不肯拿牙刷，中午它不肯拿筷子，晚上它连书包拉链也不愿拉，我急得直跺脚。",
+        "questions": [
+          {
+            "question": "修改后的句子好在哪里？",
+            "options": [
+              "把“着急”的原因写具体了",
+              "删掉了所有情节",
+              "只剩一个词",
+              "变成说明文"
+            ]
+          },
+          {
+            "question": "修改时增加了哪些内容？",
+            "options": [
+              "具体事情",
+              "拼音表",
+              "作者简介",
+              "页码"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "修改习作时，可以补充人物的动作、语言和心情。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现故事偏题时，最该做的是：",
+        "options": [
+          "删改无关情节，让内容回到题目",
+          "继续写更多无关内容",
+          "只改标点",
+          "把题目擦掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "交流修改能帮助想象故事更清楚、更有趣。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

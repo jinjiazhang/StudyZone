@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "两个不同的长方形，周长可能相等吗？",
+        "options": [
+          "可能",
+          "不可能",
+          "只有面积相等时才可能",
+          "只有颜色相同时才可能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形 A 长 4 厘米、宽 2 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "长方形 B 长 5 厘米、宽 1 厘米，周长是 ? 厘米"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2*(4+2)",
+        "right": "2*(5+1)",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "画一个周长 24 厘米的长方形，如果长 8 厘米，宽是 ? 厘米"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "画一个周长 24 厘米的正方形，边长是 ? 厘米"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "下面哪组图形周长都等于 24 厘米？",
+        "options": [
+          "长 8 宽 3、长 7 宽 5、边长 6 的正方形",
+          "长 8 宽 4、长 7 宽 5、边长 6 的正方形",
+          "长 8 宽 4、长 7 宽 4、边长 6 的正方形",
+          "长 10 宽 3、长 7 宽 5、边长 5 的正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "长方形周长相等，说明什么一定相等？",
+        "options": [
+          "长和宽分别相等",
+          "面积相等",
+          "长+宽的和相等",
+          "形状完全一样"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "按周长从小到大排列。",
+        "items": [
+          {
+            "id": "a",
+            "text": "长 6 宽 2"
+          },
+          {
+            "id": "b",
+            "text": "边长 5 正方形"
+          },
+          {
+            "id": "c",
+            "text": "长 7 宽 4"
+          },
+          {
+            "id": "d",
+            "text": "长 8 宽 1"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "d",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "表中哪个图形和边长 6 厘米的正方形周长相等？",
+        "columns": [
+          "图形",
+          "周长厘米"
+        ],
+        "rows": [
+          {
+            "图形": "甲",
+            "周长厘米": 22
+          },
+          {
+            "图形": "乙",
+            "周长厘米": 24
+          },
+          {
+            "图形": "丙",
+            "周长厘米": 26
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "乙"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

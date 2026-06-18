@@ -1,0 +1,173 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据全班鞋号统计，鞋店最应该多进哪种鞋号？",
+        "options": [
+          "35号",
+          "32号",
+          "38号",
+          "37号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "全班只有1人穿32号，进货时比较合理的建议是？",
+        "options": [
+          "最多进32号",
+          "不看32号人数",
+          "少进32号",
+          "只进32号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "男生35号有8人，36号有5人。男生鞋多进哪种更合适？",
+        "options": [
+          "36号",
+          "38号",
+          "35号",
+          "33号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "女生35号有8人，34号有6人。女生鞋多进哪种更合适？",
+        "options": [
+          "35号",
+          "34号",
+          "37号",
+          "32号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35号16人",
+        "right": "32号1人"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果35号准备16双，34号准备8双，一共准备多少双？"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35号比36号多准备9双，36号准备7双，35号准备多少双？"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "鞋号进货建议表中，哪种鞋号建议“多进”？",
+        "columns": [
+          "鞋号",
+          "人数",
+          "建议"
+        ],
+        "rows": [
+          {
+            "鞋号": "35号",
+            "人数": 16,
+            "建议": "多进"
+          },
+          {
+            "鞋号": "32号",
+            "人数": 1,
+            "建议": "少进"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "35号"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据统计图提出建议时，下面哪句话最合理？",
+        "options": [
+          "38号最大，所以一定最多进",
+          "32号最小，所以最多进",
+          "不用看统计结果",
+          "35号人数最多，可以多进一些"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "全班34号8人，36号7人，共 ___ 人；35号16人，比它们少/多 ___ 人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "34号和36号合计"
+          },
+          {
+            "id": "b2",
+            "label": "差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体展开辨认时，第一步通常应先检查什么？",
+        "options": [
+          "颜色是否鲜艳",
+          "纸片是否很厚",
+          "面数是否合适",
+          "编号是否连续"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体的合理展开图应接近哪种描述？",
+        "options": [
+          {
+            "id": "a",
+            "label": "2个圆和1个长方形"
+          },
+          {
+            "id": "b",
+            "label": "4个三角形"
+          },
+          {
+            "id": "c",
+            "label": "1个圆"
+          },
+          {
+            "id": "d",
+            "label": "6个长方形类面连成一片"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果长方体展开图面数不够，通常会怎样？",
+        "options": [
+          "不能围成完整盒子",
+          "一定更容易折叠",
+          "会自动补出一个面",
+          "只影响颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体展开辨认时，哪种连接更可靠？",
+        "options": [
+          {
+            "id": "a",
+            "label": "只靠角接触"
+          },
+          {
+            "id": "b",
+            "label": "沿边连接"
+          },
+          {
+            "id": "c",
+            "label": "完全分开"
+          },
+          {
+            "id": "d",
+            "label": "上下重叠"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "面数合适"
+          },
+          {
+            "id": "l2",
+            "text": "只靠角相碰"
+          },
+          {
+            "id": "l3",
+            "text": "有面重叠"
+          },
+          {
+            "id": "l4",
+            "text": "能折回原形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "折叠会冲突"
+          },
+          {
+            "id": "r1",
+            "text": "继续检查连接"
+          },
+          {
+            "id": "r4",
+            "text": "判断合理"
+          },
+          {
+            "id": "r2",
+            "text": "不能算相连"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按顺序完成长方体展开辨认",
+        "items": [
+          {
+            "id": "s3",
+            "text": "看连接"
+          },
+          {
+            "id": "s1",
+            "text": "数面"
+          },
+          {
+            "id": "s4",
+            "text": "想象折叠"
+          },
+          {
+            "id": "s2",
+            "text": "看面形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方体",
+          "展开图要先看",
+          null,
+          "，再看",
+          null,
+          "是否合理。"
+        ],
+        "tokens": [
+          "连接",
+          "颜色",
+          "面数",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "面数",
+          "连接"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体展开辨认中，下面哪种说法正确？",
+        "options": [
+          "只要图形漂亮就合理",
+          "面越多越好",
+          "能折回原来的盒子才合理",
+          "分开的面也算展开图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体展开图中出现完全分离的面，说明：",
+        "options": [
+          {
+            "id": "a",
+            "label": "一定正确"
+          },
+          {
+            "id": "b",
+            "label": "可以忽略"
+          },
+          {
+            "id": "c",
+            "label": "变成正方体"
+          },
+          {
+            "id": "d",
+            "label": "需要重新检查剪法"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "完成长方体展开辨认后，最好的验证方式是：",
+        "options": [
+          "想一想并动手折一折",
+          "只背答案",
+          "只看页码",
+          "只比较颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

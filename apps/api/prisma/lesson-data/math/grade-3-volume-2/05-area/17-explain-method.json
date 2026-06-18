@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "说明正方体展开图时，哪句话最准确？",
+        "options": [
+          "它由6个相同正方形沿边连成一片",
+          "它有很多颜色",
+          "它看起来很大",
+          "它只需要一个面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "解释“这个图不能折成盒子”的好理由是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "它不够漂亮"
+          },
+          {
+            "id": "b",
+            "label": "有一个面没有沿边连在整体上"
+          },
+          {
+            "id": "c",
+            "label": "它在左边"
+          },
+          {
+            "id": "d",
+            "label": "它没有编号"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "向同伴介绍拆盒子方法，应该先说：",
+        "options": [
+          "先剪断所有边",
+          "只说答案",
+          "先观察哪些边要保留连接",
+          "先比较颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话适合作为判断长方体展开图的理由？",
+        "options": [
+          {
+            "id": "a",
+            "label": "有2个圆"
+          },
+          {
+            "id": "b",
+            "label": "有4个三角形"
+          },
+          {
+            "id": "c",
+            "label": "面越少越好"
+          },
+          {
+            "id": "d",
+            "label": "有6个面，折起后能围成长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "我先数面"
+          },
+          {
+            "id": "l2",
+            "text": "我看连接边"
+          },
+          {
+            "id": "l3",
+            "text": "我想象折起"
+          },
+          {
+            "id": "l4",
+            "text": "我发现会重叠"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "说明验证结果"
+          },
+          {
+            "id": "r1",
+            "text": "说明检查数量"
+          },
+          {
+            "id": "r4",
+            "text": "说明图形不合理"
+          },
+          {
+            "id": "r2",
+            "text": "说明检查相邻关系"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "完整说明判断过程",
+        "items": [
+          {
+            "id": "s3",
+            "text": "说折叠想象结果"
+          },
+          {
+            "id": "s1",
+            "text": "说观察到的面数和形状"
+          },
+          {
+            "id": "s4",
+            "text": "给出结论"
+          },
+          {
+            "id": "s2",
+            "text": "说面怎样相连"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "说明理由时，可以按“先数",
+          null,
+          "，再看",
+          null,
+          "，最后想象折叠”的顺序。"
+        ],
+        "tokens": [
+          "连接",
+          "面",
+          "颜色",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "面",
+          "连接"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种表达不够准确？",
+        "options": [
+          "我觉得它对，因为好看",
+          "它有6个相同正方形",
+          "这些面沿边连成一片",
+          "折起来不会重叠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "交流时，听到同伴结论后最合适的是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "只比较谁声音大"
+          },
+          {
+            "id": "b",
+            "label": "追问他的判断理由"
+          },
+          {
+            "id": "c",
+            "label": "不看图就同意"
+          },
+          {
+            "id": "d",
+            "label": "马上换题"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材最后问“有哪些收获”，适合回答：",
+        "options": [
+          "我只会背页码",
+          "我不用动手验证",
+          "我会根据面数、面形和连接判断展开图",
+          "我只看颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}
