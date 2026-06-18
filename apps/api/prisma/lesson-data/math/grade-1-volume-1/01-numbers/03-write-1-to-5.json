@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 1 的写法像哪一个？",
+        "options": [
+          "7",
+          "4",
+          "0",
+          "1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 2 的写法是哪一个？",
+        "options": [
+          "3",
+          "5",
+          "8",
+          "2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 3 的写法是哪一个？",
+        "options": [
+          "1",
+          "4",
+          "0",
+          "3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 4 的写法是哪一个？",
+        "options": [
+          "9",
+          "6",
+          "2",
+          "4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 5 的写法是哪一个？",
+        "options": [
+          "3",
+          "8",
+          "1",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "读作三，写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "读作五，写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "一"
+          },
+          {
+            "id": "l2",
+            "text": "二"
+          },
+          {
+            "id": "l3",
+            "text": "三"
+          },
+          {
+            "id": "l4",
+            "text": "四"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "4"
+          },
+          {
+            "id": "r2",
+            "text": "2"
+          },
+          {
+            "id": "r3",
+            "text": "1"
+          },
+          {
+            "id": "r4",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "写数：桃子有 4 个，填 ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "写数：瓢虫有 2 只，填 ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

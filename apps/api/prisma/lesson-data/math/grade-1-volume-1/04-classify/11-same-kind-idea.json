@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“同类”表示什么？",
+        "options": [
+          "有相同特点的一组",
+          "摆在最左边的一组",
+          "数量最多的一组",
+          "颜色最亮的一组"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "杯子、碗、盘子可以分为一类，因为它们都常用来做什么？",
+        "options": [
+          "写字画画",
+          "穿在身上",
+          "踢着玩",
+          "吃饭喝水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小汽车、三轮车可以分为一类，因为它们都是？",
+        "options": [
+          "水果",
+          "玩具车",
+          "文具",
+          "餐具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "苹果、梨、葡萄、菠萝可以分为一类，因为它们都是？",
+        "options": [
+          "水果",
+          "文具",
+          "衣服",
+          "动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类前可以先找物品的共同特点。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只有颜色一样的东西才能分成一类。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一组里有杯子、碗、盘子、勺子，共有几件餐具？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "水果组里有苹果、梨、葡萄、菠萝，共有几种水果？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "餐具"
+          },
+          {
+            "id": "l_1",
+            "text": "水果"
+          },
+          {
+            "id": "l_2",
+            "text": "文具"
+          },
+          {
+            "id": "l_3",
+            "text": "玩具"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "铅笔、尺子"
+          },
+          {
+            "id": "r_0",
+            "text": "碗、盘子"
+          },
+          {
+            "id": "r_3",
+            "text": "球、玩具车"
+          },
+          {
+            "id": "r_1",
+            "text": "苹果、梨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“铅笔、橡皮、尺子”同属一类，分类标准是？",
+        "options": [
+          "会飞",
+          "能穿",
+          "学习文具",
+          "能吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

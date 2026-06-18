@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "手指一只手加一根"
+          },
+          {
+            "id": "l2",
+            "text": "两排五个圆"
+          },
+          {
+            "id": "l3",
+            "text": "6个三角形"
+          },
+          {
+            "id": "l4",
+            "text": "8个方块"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "10"
+          },
+          {
+            "id": "r2",
+            "text": "8"
+          },
+          {
+            "id": "r3",
+            "text": "6"
+          },
+          {
+            "id": "r4",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r1",
+          "l3": "r3",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "10 可以用哪一种表示？",
+        "options": [
+          "两只手的手指",
+          "一只手的手指",
+          "3个圆",
+          "8根小棒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6 可以用哪一种表示？",
+        "options": [
+          "六根小棒",
+          "五个圆",
+          "七个方块",
+          "九个点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "两排圆点，上排5个、下排5个，一共表示数字 ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "一只手5根手指，再伸1根，一共表示 ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "数字 ____ 可以写成两个数字 1 和 0。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "9 添上 1 个就是 ____ 个。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪组表示 8？",
+        "options": [
+          "4个圆",
+          "8个三角形",
+          "9个方块",
+          "10个点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "填空：6根小棒、8个圆、10个鸡蛋。",
+        "blanks": [
+          {
+            "id": "sticks",
+            "label": "小棒"
+          },
+          {
+            "id": "circles",
+            "label": "圆"
+          },
+          {
+            "id": "eggs",
+            "label": "鸡蛋"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "看到十个一排的珠子，写数字 ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

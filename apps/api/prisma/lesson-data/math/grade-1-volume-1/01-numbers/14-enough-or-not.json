@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "每只小狗 1 根骨头，5只小狗有4根骨头，够吗？",
+        "options": [
+          "够",
+          "不够",
+          "一样多",
+          "多1根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "每人1双筷子，4人有4双筷子，够吗？",
+        "options": [
+          "不够",
+          "够",
+          "少1双",
+          "少2双"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6只松鼠有6个盘子，盘子够吗？",
+        "options": [
+          "够",
+          "不够",
+          "少1个",
+          "多4个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6只松鼠有5把勺子，勺子怎样？",
+        "options": [
+          "多1个",
+          "少1个，不够",
+          "一样多",
+          "多2个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "4",
+        "right": "5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "4",
+        "right": "4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "6",
+        "right": "5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "7个人每人1个杯子，需要几个杯子？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "5只兔子每只1根胡萝卜，需要几根胡萝卜？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "判断“够不够”时，最适合先做什么？",
+        "options": [
+          "乱猜",
+          "一个对一个配",
+          "只看颜色",
+          "只看大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

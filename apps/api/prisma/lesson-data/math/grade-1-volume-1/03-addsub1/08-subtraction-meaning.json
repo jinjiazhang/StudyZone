@@ -1,0 +1,152 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 2 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 2 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "盘里有5条鱼，小猫吃了1条，还剩多少条？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "5-1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有4个苹果，拿走2个，还剩多少个？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "4-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5",
+          null,
+          "1",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表示“去掉、拿走、吃了”时，通常用哪个符号？",
+        "options": [
+          "+",
+          "=",
+          "<",
+          "−"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5 - 1 = 4 读作什么？",
+        "options": [
+          "5加1等于4",
+          "1减5等于4",
+          "5减1等于4",
+          "4减1等于5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5个去掉2个，还剩__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

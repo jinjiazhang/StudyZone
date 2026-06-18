@@ -1,0 +1,277 @@
+{
+  "id": "16-siji-beisong-zonghe",
+  "title": "四季背诵综合",
+  "description": "背诵《四季》，把季节、景物和话语对应起来。",
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "四季",
+        "author": "",
+        "lines": [
+          [
+            "草芽尖尖，"
+          ],
+          [
+            "他对小鸟说："
+          ],
+          [
+            "“我是",
+            null,
+            "。”"
+          ]
+        ],
+        "options": [
+          "夏天",
+          "秋天",
+          "冬天",
+          "春天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "四季",
+        "author": "",
+        "lines": [
+          [
+            "荷叶圆圆，"
+          ],
+          [
+            "他对青蛙说："
+          ],
+          [
+            "“我是",
+            null,
+            "。”"
+          ]
+        ],
+        "options": [
+          "春天",
+          "秋天",
+          "夏天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "四季",
+        "author": "",
+        "lines": [
+          [
+            "谷穗弯弯，"
+          ],
+          [
+            "他鞠着躬说："
+          ],
+          [
+            "“我是",
+            null,
+            "。”"
+          ]
+        ],
+        "options": [
+          "秋天",
+          "春天",
+          "夏天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "四季",
+        "author": "",
+        "lines": [
+          [
+            "雪人大肚子一挺，"
+          ],
+          [
+            "他顽皮地说："
+          ],
+          [
+            "“我就是",
+            null,
+            "。”"
+          ]
+        ],
+        "options": [
+          "春天",
+          "夏天",
+          "秋天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "草芽"
+          },
+          {
+            "id": "l2",
+            "text": "荷叶"
+          },
+          {
+            "id": "l3",
+            "text": "谷穗"
+          },
+          {
+            "id": "l4",
+            "text": "雪人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "夏天"
+          },
+          {
+            "id": "r4",
+            "text": "冬天"
+          },
+          {
+            "id": "r1",
+            "text": "春天"
+          },
+          {
+            "id": "r3",
+            "text": "秋天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挺",
+        "hint": "大肚子一挺",
+        "options": [
+          "tīng",
+          "tíng",
+          "tǐng",
+          "dǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鞠",
+        "hint": "鞠着躬",
+        "options": [
+          "jú",
+          "qū",
+          "jù",
+          "jū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "冬天",
+          "说",
+          "就是",
+          "我",
+          "雪人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "就是",
+          "冬天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“荷叶圆圆”让人想到夏天。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "四季",
+        "passage": "草芽尖尖，是春天。荷叶圆圆，是夏天。谷穗弯弯，是秋天。雪人大肚子，是冬天。",
+        "questions": [
+          {
+            "question": "荷叶圆圆代表哪个季节？",
+            "options": [
+              "春天",
+              "夏天",
+              "秋天",
+              "冬天"
+            ]
+          },
+          {
+            "question": "雪人大肚子代表哪个季节？",
+            "options": [
+              "春天",
+              "夏天",
+              "秋天",
+              "冬天"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          3
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

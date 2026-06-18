@@ -1,0 +1,201 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "树上有 3 只小鸟，又飞来 2 只，一共有几只？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "盘里有 1 个桃，又放上 3 个，一共有几个？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "左边 2 只小鸭，右边 2 只小鸭，一共有几只？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "看图意填数：3 支铅笔和 2 支铅笔合起来。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先有"
+          },
+          {
+            "id": "b2",
+            "label": "又有"
+          },
+          {
+            "id": "b3",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "看图意填数：1 朵黄花和 4 朵红花合起来。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "黄花"
+          },
+          {
+            "id": "b2",
+            "label": "红花"
+          },
+          {
+            "id": "b3",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一共有多少”通常表示把两部分怎样？",
+        "options": [
+          "拿走一部分",
+          "合在一起",
+          "只看左边",
+          "比较高矮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "2 只小猫和 3 只小猫合起来，一共有 5 只。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "2+3",
+          "3+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "1 个球和 4 个球合起来，一共有 5 个。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "1+4",
+          "4+1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 1 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 + 3",
+        "right": "2 + 1",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3 + 2 = 5 中，“+”读作什么？",
+        "options": [
+          "减号",
+          "等号",
+          "加号",
+          "括号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "明",
+        "hint": "“明天”的“明”",
+        "options": [
+          "wǔ",
+          "míng",
+          "xīng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晚",
+        "hint": "“晚上”的“晚”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "wǎn",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "昨",
+        "hint": "“昨天”的“昨”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "hóng",
+          "zuó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "春",
+        "hint": "“春天”的“春”",
+        "options": [
+          "chūn",
+          "wǔ",
+          "xīng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "明"
+          },
+          {
+            "id": "l1",
+            "text": "晚"
+          },
+          {
+            "id": "l2",
+            "text": "昨"
+          },
+          {
+            "id": "l3",
+            "text": "春"
+          },
+          {
+            "id": "l4",
+            "text": "妈"
+          },
+          {
+            "id": "l5",
+            "text": "奶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "昨天"
+          },
+          {
+            "id": "r0",
+            "text": "明天"
+          },
+          {
+            "id": "r3",
+            "text": "春天"
+          },
+          {
+            "id": "r1",
+            "text": "晚上"
+          },
+          {
+            "id": "r5",
+            "text": "奶奶"
+          },
+          {
+            "id": "r4",
+            "text": "妈妈"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“明、晚、昨、春”这些字的意思都和什么有关？",
+        "options": [
+          "亲属",
+          "时间",
+          "颜色",
+          "船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨面向太阳，前面是？",
+        "options": [
+          "西",
+          "南",
+          "东",
+          "北"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨面向太阳，后面是？",
+        "options": [
+          "东",
+          "南",
+          "北",
+          "西"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨面向太阳，右面是？",
+        "options": [
+          "南",
+          "北",
+          "东",
+          "西"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：前面是东，后面是西。",
+        "tokens": [
+          "是西",
+          "后面",
+          "是东",
+          "前面",
+          "左面"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "前面",
+          "是东",
+          "后面",
+          "是西"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

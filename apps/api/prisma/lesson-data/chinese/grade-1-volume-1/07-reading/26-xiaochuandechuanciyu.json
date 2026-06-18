@@ -1,0 +1,312 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "弯弯的"
+          },
+          {
+            "id": "l1",
+            "text": "小小的"
+          },
+          {
+            "id": "l2",
+            "text": "两头尖"
+          },
+          {
+            "id": "l3",
+            "text": "闪闪的"
+          },
+          {
+            "id": "l4",
+            "text": "蓝蓝的"
+          },
+          {
+            "id": "l5",
+            "text": "看见"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "船儿的样子"
+          },
+          {
+            "id": "r0",
+            "text": "月儿"
+          },
+          {
+            "id": "r3",
+            "text": "星星"
+          },
+          {
+            "id": "r1",
+            "text": "船"
+          },
+          {
+            "id": "r5",
+            "text": "用眼睛看到"
+          },
+          {
+            "id": "r4",
+            "text": "天"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "船",
+        "tokens": [
+          "小",
+          "只",
+          "儿",
+          "月",
+          "里",
+          "头",
+          "风"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“船”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "儿",
+            "里"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "月",
+        "tokens": [
+          "儿",
+          "船",
+          "亮",
+          "星",
+          "光",
+          "黑",
+          "左"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“月”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "儿",
+            "亮",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "星",
+        "tokens": [
+          "星",
+          "月",
+          "空",
+          "船",
+          "光",
+          "里",
+          "右"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“星”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "星",
+            "空",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "天",
+        "tokens": [
+          "蓝",
+          "船",
+          "上",
+          "头",
+          "空",
+          "闪",
+          "见"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“天”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "蓝",
+            "上",
+            "空"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“弯弯的月儿”像什么？",
+        "options": [
+          "小小的船",
+          "大大的太阳",
+          "圆圆的球",
+          "高高的树"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蓝蓝的天”写的是哪一种颜色？",
+        "options": [
+          "红色",
+          "蓝色",
+          "黑色",
+          "白色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“两头尖”说的是船儿的什么？",
+        "options": [
+          "声音",
+          "味道",
+          "样子",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“闪闪的星星”中的“闪闪”表示什么？",
+        "options": [
+          "跑得很快",
+          "声音很大",
+          "颜色很黑",
+          "发亮一闪一闪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "船"
+          },
+          {
+            "id": "l1",
+            "text": "月儿"
+          },
+          {
+            "id": "l2",
+            "text": "星星"
+          },
+          {
+            "id": "l3",
+            "text": "里"
+          },
+          {
+            "id": "l4",
+            "text": "头"
+          },
+          {
+            "id": "l5",
+            "text": "见"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "夜空中发亮的点"
+          },
+          {
+            "id": "r0",
+            "text": "水上交通工具"
+          },
+          {
+            "id": "r3",
+            "text": "里面"
+          },
+          {
+            "id": "r1",
+            "text": "夜空中的月亮"
+          },
+          {
+            "id": "r5",
+            "text": "看到"
+          },
+          {
+            "id": "r4",
+            "text": "一端或头部"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 2 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 + 4 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "0 + 5 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一只手里有3支铅笔，另一只手里有2支，一共有多少支？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "3+2",
+          "2+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "树下有3只熊猫，旁边又来了2只，一共有多少只？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "3+2",
+          "2+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3",
+          null,
+          "2",
+          null,
+          "5"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表示“合起来一共有多少”时，通常用哪个符号？",
+        "options": [
+          "−",
+          ">",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3 + 2 = 5 读作什么？",
+        "options": [
+          "3减2等于5",
+          "3加2等于5",
+          "5加2等于3",
+          "2减3等于5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把3和2合起来，一共有__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "liù",
+        "sentence": "__片七片八九片。",
+        "blankPlaceholder": "__",
+        "character": "六",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "六"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qī",
+        "sentence": "六__八九十。",
+        "blankPlaceholder": "__",
+        "character": "七",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "七"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bā",
+        "sentence": "七__九十。",
+        "blankPlaceholder": "__",
+        "character": "八",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "八"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shí",
+        "sentence": "九片__片无数片。",
+        "blankPlaceholder": "__",
+        "character": "十",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "十"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tián",
+        "sentence": "写__时注意坐端正。",
+        "blankPlaceholder": "__",
+        "character": "田",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "田"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "写__时注意握好笔。",
+        "blankPlaceholder": "__",
+        "character": "禾",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "禾"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写提示里说“十、田”遵守哪条笔顺规则？",
+        "options": [
+          "先撇后捺",
+          "从外到内",
+          "先横后竖",
+          "先中间后两边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写提示里说“八、禾”遵守哪条笔顺规则？",
+        "options": [
+          "先横后竖",
+          "先外后内",
+          "先下后上",
+          "先撇后捺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "十"
+          },
+          {
+            "id": "l2",
+            "text": "田"
+          },
+          {
+            "id": "l3",
+            "text": "八"
+          },
+          {
+            "id": "l4",
+            "text": "禾"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "先横后竖，外框写端正"
+          },
+          {
+            "id": "r3",
+            "text": "先撇后捺，撇捺舒展"
+          },
+          {
+            "id": "r4",
+            "text": "先撇后捺，最后写捺"
+          },
+          {
+            "id": "r1",
+            "text": "先横后竖，横平竖直"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写字时，教材提醒要怎样坐？",
+        "options": [
+          "坐端正，握好笔",
+          "趴在桌上",
+          "边跑边写",
+          "闭着眼写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

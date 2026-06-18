@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "日",
+        "hint": "太阳的象形字“日”",
+        "options": [
+          "mù",
+          "yuè",
+          "rì",
+          "tián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "月",
+        "hint": "月亮的象形字“月”",
+        "options": [
+          "rì",
+          "yǔ",
+          "mù",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "山",
+        "hint": "山峰的象形字“山”",
+        "options": [
+          "shān",
+          "sān",
+          "shuǐ",
+          "chuān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "川",
+        "hint": "河流的象形字“川”",
+        "options": [
+          "shān",
+          "chuān",
+          "cuān",
+          "shuǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "水",
+        "hint": "流水的象形字“水”",
+        "options": [
+          "suǐ",
+          "huǒ",
+          "shuǐ",
+          "mù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "火",
+        "hint": "火苗的象形字“火”",
+        "options": [
+          "hǒu",
+          "shuǐ",
+          "rì",
+          "huǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "日"
+          },
+          {
+            "id": "l2",
+            "text": "月"
+          },
+          {
+            "id": "l3",
+            "text": "山"
+          },
+          {
+            "id": "l4",
+            "text": "川"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "月亮"
+          },
+          {
+            "id": "r3",
+            "text": "山峰"
+          },
+          {
+            "id": "r4",
+            "text": "河流"
+          },
+          {
+            "id": "r1",
+            "text": "太阳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里的“日”配的图是什么？",
+        "options": [
+          "太阳",
+          "月亮",
+          "火苗",
+          "田地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里的“川”配的图是什么？",
+        "options": [
+          "高山",
+          "河流",
+          "禾苗",
+          "火苗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课题前四个字",
+        "tokens": [
+          "水",
+          "日",
+          "火",
+          "月",
+          "山",
+          "川"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "日",
+          "月",
+          "山",
+          "川"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "天"
+          },
+          {
+            "id": "l2",
+            "text": "日"
+          },
+          {
+            "id": "l3",
+            "text": "山"
+          },
+          {
+            "id": "l4",
+            "text": "水"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "月"
+          },
+          {
+            "id": "r3",
+            "text": "川"
+          },
+          {
+            "id": "r4",
+            "text": "火"
+          },
+          {
+            "id": "r1",
+            "text": "地"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "口"
+          },
+          {
+            "id": "l2",
+            "text": "耳"
+          },
+          {
+            "id": "l3",
+            "text": "目"
+          },
+          {
+            "id": "l4",
+            "text": "足"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "听声音"
+          },
+          {
+            "id": "r3",
+            "text": "看东西"
+          },
+          {
+            "id": "r4",
+            "text": "走路"
+          },
+          {
+            "id": "r1",
+            "text": "说话"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一课学习了“你、我、他”？",
+        "options": [
+          "天地人",
+          "口耳目手足",
+          "日月山川",
+          "语文园地一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一课学习了象形字“日、月、山、川”？",
+        "options": [
+          "天地人",
+          "日月山川",
+          "金木水火土",
+          "我爱学语文"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一组都是本单元要求写的字？",
+        "options": [
+          "春 夏 秋 冬",
+          "爸 妈 哥 姐",
+          "一 二 三 上",
+          "江 南 采 莲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出“五行”顺序",
+        "tokens": [
+          "口",
+          "金",
+          "耳",
+          "木",
+          "水",
+          "火",
+          "土"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "金",
+          "木",
+          "水",
+          "火",
+          "土"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出身体部位顺序",
+        "tokens": [
+          "天",
+          "口",
+          "地",
+          "耳",
+          "目",
+          "手",
+          "足"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "口",
+          "耳",
+          "目",
+          "手",
+          "足"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "日",
+        "tokens": [
+          "耳",
+          "月",
+          "足",
+          "出",
+          "云",
+          "光"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“日”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "月",
+            "出",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“田”比“口”多了什么？",
+        "options": [
+          "上面一点",
+          "下面一撇",
+          "左边一捺",
+          "里面的横和竖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏鹅",
+        "author": "骆宾王",
+        "lines": [
+          [
+            "白毛浮绿水，"
+          ],
+          [
+            "红掌拨",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "清波",
+          "青山",
+          "白云",
+          "红花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

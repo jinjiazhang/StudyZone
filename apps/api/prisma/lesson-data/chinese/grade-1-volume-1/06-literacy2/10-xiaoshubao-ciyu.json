@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "橡皮"
+          },
+          {
+            "id": "l2",
+            "text": "尺子"
+          },
+          {
+            "id": "l3",
+            "text": "作业本"
+          },
+          {
+            "id": "l4",
+            "text": "铅笔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "写作业用的本子"
+          },
+          {
+            "id": "r1",
+            "text": "擦掉铅笔字"
+          },
+          {
+            "id": "r4",
+            "text": "写字画画用"
+          },
+          {
+            "id": "r2",
+            "text": "量长度、画直线"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "笔袋"
+          },
+          {
+            "id": "l2",
+            "text": "转笔刀"
+          },
+          {
+            "id": "l3",
+            "text": "课本"
+          },
+          {
+            "id": "l4",
+            "text": "小书包"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "削铅笔用"
+          },
+          {
+            "id": "r4",
+            "text": "装学习用品"
+          },
+          {
+            "id": "r1",
+            "text": "装笔的小袋子"
+          },
+          {
+            "id": "r3",
+            "text": "上课学习用的书"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一个是学习用品？",
+        "options": [
+          "铅笔",
+          "桃红",
+          "雪人",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“尺子”主要可以用来做什么？",
+        "options": [
+          "量一量、画直线",
+          "唱国歌",
+          "种小树",
+          "看云雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要削铅笔，可以用什么？",
+        "options": [
+          "转笔刀",
+          "作业本",
+          "橡皮",
+          "课本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“宝贝真不少”中的“宝贝”指书包里的什么？",
+        "options": [
+          "学习用品",
+          "小动物",
+          "水果",
+          "山水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "笔",
+        "tokens": [
+          "铅",
+          "云",
+          "毛",
+          "雨",
+          "袋",
+          "刀"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“笔”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "铅",
+            "毛",
+            "袋",
+            "刀"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "书",
+        "tokens": [
+          "包",
+          "虫",
+          "本",
+          "红",
+          "店",
+          "桌"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“书”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "包",
+            "本",
+            "店",
+            "桌"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“课本”和“作业本”都是学习用品。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“橡皮”通常用来升国旗。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第3课学习哪四个声母？",
+        "options": [
+          "b p m f",
+          "d t n l",
+          "a o e",
+          "i u ü"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "右下半圆 b b b，说的是哪个声母？",
+        "options": [
+          "b",
+          "p",
+          "m",
+          "f"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "右上半圆 p p p，说的是哪个声母？",
+        "options": [
+          "m",
+          "p",
+          "b",
+          "f"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个门洞 m m m，说的是哪个声母？",
+        "options": [
+          "f",
+          "b",
+          "m",
+          "p"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一根拐棍 f f f，说的是哪个声母？",
+        "options": [
+          "p",
+          "m",
+          "b",
+          "f"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "b"
+          },
+          {
+            "id": "l_1",
+            "text": "p"
+          },
+          {
+            "id": "l_2",
+            "text": "m"
+          },
+          {
+            "id": "l_3",
+            "text": "f"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "拐棍形"
+          },
+          {
+            "id": "r_1",
+            "text": "右下半圆"
+          },
+          {
+            "id": "r_2",
+            "text": "两个门洞"
+          },
+          {
+            "id": "r_3",
+            "text": "右上半圆"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_2",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找出 b p m f 的课本首页",
+        "options": [
+          {
+            "id": "p31",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-031.jpg",
+            "label": "d t n l"
+          },
+          {
+            "id": "p25",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-025.jpg",
+            "label": "a o e"
+          },
+          {
+            "id": "p29",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-029.jpg",
+            "label": "b p m f"
+          },
+          {
+            "id": "p27",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-027.jpg",
+            "label": "i u ü"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p29"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "b、p、m、f 都属于什么？",
+        "options": [
+          "单韵母",
+          "声母",
+          "汉字",
+          "笔画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本顺序排出四个声母",
+        "tokens": [
+          "d",
+          "t",
+          "p",
+          "m",
+          "f",
+          "b"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "b",
+          "p",
+          "m",
+          "f"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是声母？",
+        "options": [
+          "a o e",
+          "i u ü",
+          "b p m f",
+          "ā á ǎ à"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

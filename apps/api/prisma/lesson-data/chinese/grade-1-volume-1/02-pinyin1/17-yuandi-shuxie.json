@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǔ",
+        "sentence": "数字__表示八后面的数。",
+        "character": "九",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "九"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wáng",
+        "sentence": "我的姓名里有__字。",
+        "character": "王",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "王"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "九",
+        "hint": "选择“九”的正确拼音",
+        "options": [
+          "jiǔ",
+          "jiū",
+          "jǐu",
+          "jìu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "王",
+        "hint": "选择“王”的正确拼音",
+        "options": [
+          "wǎng",
+          "wáng",
+          "wàng",
+          "wāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“九”共有几笔？",
+        "options": [
+          "一笔",
+          "两笔",
+          "三笔",
+          "四笔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“王”共有几笔？",
+        "options": [
+          "两笔",
+          "三笔",
+          "四笔",
+          "五笔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“九”时，第一笔是什么？",
+        "options": [
+          "撇",
+          "横",
+          "竖",
+          "点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“王”时，要注意三横怎样安排？",
+        "options": [
+          "一样长即可",
+          "上短下长，间距均匀",
+          "都写成竖",
+          "只写两横"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "九"
+          },
+          {
+            "id": "l_1",
+            "text": "王"
+          },
+          {
+            "id": "l_2",
+            "text": "jiǔ"
+          },
+          {
+            "id": "l_3",
+            "text": "wáng"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "王的拼音"
+          },
+          {
+            "id": "r_1",
+            "text": "数字九"
+          },
+          {
+            "id": "r_2",
+            "text": "姓氏王"
+          },
+          {
+            "id": "r_3",
+            "text": "九的拼音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：王九",
+        "tokens": [
+          "本",
+          "学",
+          "九",
+          "王"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "王",
+          "九"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

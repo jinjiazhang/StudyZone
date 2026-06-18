@@ -1,0 +1,217 @@
+{
+  "id": "11-xuedi-huajia-lijie",
+  "title": "雪地画家理解",
+  "description": "理解四种小动物画出的图案，知道青蛙为什么没参加。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《雪地里的小画家》中，小鸡画什么？",
+        "options": [
+          "竹叶",
+          "梅花",
+          "枫叶",
+          "月牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小狗画什么？",
+        "options": [
+          "竹叶",
+          "枫叶",
+          "梅花",
+          "月牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸭画什么？",
+        "options": [
+          "枫叶",
+          "竹叶",
+          "梅花",
+          "月牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小马画什么？",
+        "options": [
+          "竹叶",
+          "梅花",
+          "枫叶",
+          "月牙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙为什么没参加？",
+        "options": [
+          "它去采莲了",
+          "它在洞里睡着啦",
+          "它往南飞了",
+          "它不会画画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小鸡"
+          },
+          {
+            "id": "l2",
+            "text": "小狗"
+          },
+          {
+            "id": "l3",
+            "text": "小鸭"
+          },
+          {
+            "id": "l4",
+            "text": "小马"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "梅花"
+          },
+          {
+            "id": "r4",
+            "text": "月牙"
+          },
+          {
+            "id": "r1",
+            "text": "竹叶"
+          },
+          {
+            "id": "r3",
+            "text": "枫叶"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小鸡的脚印像竹叶。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小马画的是梅花。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "青蛙",
+          "洞里",
+          "在",
+          "啦",
+          "睡着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青蛙",
+          "在",
+          "洞里",
+          "睡着",
+          "啦"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "雪地画画",
+        "passage": "下雪啦！雪地里来了一群小画家。小鸡画竹叶，小狗画梅花，小鸭画枫叶，小马画月牙。青蛙没有参加，它在洞里睡着啦。",
+        "questions": [
+          {
+            "question": "小狗画什么？",
+            "options": [
+              "竹叶",
+              "梅花",
+              "月牙",
+              "莲叶"
+            ]
+          },
+          {
+            "question": "谁在洞里睡着啦？",
+            "options": [
+              "小马",
+              "青蛙",
+              "小鸭",
+              "小鸡"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：影子在前。",
+        "tokens": [
+          "右",
+          "好",
+          "前",
+          "在",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "在",
+          "前"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：影子在后。",
+        "tokens": [
+          "左",
+          "黑",
+          "后",
+          "在",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "在",
+          "后"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：影子常常跟着我。",
+        "tokens": [
+          "朋友",
+          "小狗",
+          "我",
+          "跟着",
+          "常常",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "常常",
+          "跟着",
+          "我"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：就像一条小黑狗。",
+        "tokens": [
+          "蓝蓝的",
+          "船",
+          "小黑狗",
+          "一条",
+          "就像"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "就像",
+          "一条",
+          "小黑狗"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：影子在左。",
+        "tokens": [
+          "前",
+          "它",
+          "左",
+          "在",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "在",
+          "左"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：影子在右。",
+        "tokens": [
+          "后",
+          "朋",
+          "右",
+          "在",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "在",
+          "右"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "影子",
+        "author": "林焕彰",
+        "lines": [
+          [
+            "影子在前，"
+          ],
+          [
+            null,
+            "，"
+          ],
+          [
+            "影子常常跟着我。"
+          ]
+        ],
+        "options": [
+          "影子在后",
+          "影子在左",
+          "它是我的好朋友",
+          "就像一条小黑狗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "影子",
+        "author": "林焕彰",
+        "lines": [
+          [
+            "影子在左，"
+          ],
+          [
+            "影子在右，"
+          ],
+          [
+            null
+          ]
+        ],
+        "options": [
+          "弯弯的月儿",
+          "它是我的好朋友。",
+          "双手会做工",
+          "蓝蓝的天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "背诵《影子》时，第一组方位词是？",
+        "options": [
+          "左、右",
+          "上、下",
+          "东、西",
+          "前、后"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "sentence": "影子常常跟着__。",
+        "character": "我",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "我"
+      },
+      "difficulty": 2
+    }
+  ]
+}

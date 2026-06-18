@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一个物品最像球？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "茶叶罐"
+          },
+          {
+            "id": "o3",
+            "label": "魔方"
+          },
+          {
+            "id": "o1",
+            "label": "篮球"
+          },
+          {
+            "id": "o4",
+            "label": "牙膏盒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "球的样子是：",
+        "options": [
+          "方方长长",
+          "圆圆的",
+          "方方正正",
+          "上下两个圆面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪组都是球？",
+        "options": [
+          "魔方、骰子",
+          "牙膏盒、文具盒",
+          "篮球、小皮球",
+          "胶棒、水杯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "篮球"
+          },
+          {
+            "id": "l2",
+            "text": "小皮球"
+          },
+          {
+            "id": "l3",
+            "text": "乒乓球"
+          },
+          {
+            "id": "l4",
+            "text": "橙色小球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "小小圆球"
+          },
+          {
+            "id": "r1",
+            "text": "大大的球"
+          },
+          {
+            "id": "r4",
+            "text": "没有平平底面"
+          },
+          {
+            "id": "r2",
+            "text": "轻轻能滚"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "球放在桌上轻轻一推会怎样？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "一直不动"
+          },
+          {
+            "id": "o3",
+            "label": "变成长方体"
+          },
+          {
+            "id": "o4",
+            "label": "只能竖着放"
+          },
+          {
+            "id": "o2",
+            "label": "容易滚动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "球不适合放在搭高作品的最下面，主要因为：",
+        "options": [
+          "颜色太亮",
+          "名字太短",
+          "一定太重",
+          "容易滚动，不稳定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "篮球像",
+          null,
+          "，它",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆柱",
+          "容易滚动",
+          "长方体",
+          "球"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "球",
+          "容易滚动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材中“圆圆的，可以滚来滚去”说的是哪种图形？",
+        "options": [
+          {
+            "id": "o3",
+            "label": "球"
+          },
+          {
+            "id": "o1",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "平面图形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个不是球的朋友？",
+        "options": [
+          "胶棒",
+          "篮球",
+          "乒乓球",
+          "小皮球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要搭得高，球更适合放在哪里？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "最下面当底座"
+          },
+          {
+            "id": "o2",
+            "label": "最上面或旁边"
+          },
+          {
+            "id": "o3",
+            "label": "两个长方体中间"
+          },
+          {
+            "id": "o4",
+            "label": "圆柱下面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

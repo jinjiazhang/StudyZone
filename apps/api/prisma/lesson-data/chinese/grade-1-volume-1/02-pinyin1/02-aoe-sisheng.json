@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一声的调号像什么？",
+        "options": [
+          "平路",
+          "上坡",
+          "拐弯",
+          "下坡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "二声的调号像什么？",
+        "options": [
+          "下坡",
+          "上坡",
+          "平路",
+          "拐弯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三声的调号像什么？",
+        "options": [
+          "平路",
+          "下坡",
+          "拐弯",
+          "上坡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "四声的调号像什么？",
+        "options": [
+          "上坡",
+          "拐弯",
+          "平路",
+          "下坡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "à",
+        "hint": "选出正确读法",
+        "options": [
+          "ā",
+          "á",
+          "ǎ",
+          "à"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ǒ",
+        "hint": "选出正确读法",
+        "options": [
+          "ó",
+          "ǒ",
+          "ò",
+          "ō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "é",
+        "hint": "选出正确读法",
+        "options": [
+          "è",
+          "ē",
+          "é",
+          "ě"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "ā"
+          },
+          {
+            "id": "l_1",
+            "text": "á"
+          },
+          {
+            "id": "l_2",
+            "text": "ǎ"
+          },
+          {
+            "id": "l_3",
+            "text": "à"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "第四声"
+          },
+          {
+            "id": "r_1",
+            "text": "第一声"
+          },
+          {
+            "id": "r_2",
+            "text": "第三声"
+          },
+          {
+            "id": "r_3",
+            "text": "第二声"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_2",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按四声顺序排出 a",
+        "tokens": [
+          "ō",
+          "ē",
+          "á",
+          "ǎ",
+          "à",
+          "ā"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ā",
+          "á",
+          "ǎ",
+          "à"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按四声顺序排出 e",
+        "tokens": [
+          "ā",
+          "ò",
+          "é",
+          "ě",
+          "è",
+          "ē"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ē",
+          "é",
+          "ě",
+          "è"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

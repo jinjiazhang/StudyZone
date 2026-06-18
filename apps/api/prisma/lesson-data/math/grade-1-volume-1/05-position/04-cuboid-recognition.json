@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一个物品最像长方体？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "篮球"
+          },
+          {
+            "id": "o3",
+            "label": "茶叶罐"
+          },
+          {
+            "id": "o2",
+            "label": "牙膏盒"
+          },
+          {
+            "id": "o4",
+            "label": "魔方"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体常见的样子是：",
+        "options": [
+          "圆圆的",
+          "方方长长",
+          "只有一个圆面",
+          "像小球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪组都是长方体？",
+        "options": [
+          "魔方、骰子",
+          "篮球、乒乓球",
+          "文具盒、纸巾盒",
+          "胶棒、茶叶罐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纸巾盒"
+          },
+          {
+            "id": "l2",
+            "text": "文具盒"
+          },
+          {
+            "id": "l3",
+            "text": "积木盒"
+          },
+          {
+            "id": "l4",
+            "text": "牙膏盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "通常不自由滚动"
+          },
+          {
+            "id": "r1",
+            "text": "方方长长"
+          },
+          {
+            "id": "r4",
+            "text": "适合平放做底座"
+          },
+          {
+            "id": "r2",
+            "text": "有平平的面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "用长方体搭高时，哪个面更适合放在下面？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "尖角"
+          },
+          {
+            "id": "o3",
+            "label": "圆边"
+          },
+          {
+            "id": "o4",
+            "label": "颜色深的面"
+          },
+          {
+            "id": "o2",
+            "label": "大的平面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体放在桌上通常为什么比较稳？",
+        "options": [
+          "会自己滚",
+          "没有角",
+          "一定很轻",
+          "有平平的面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "纸巾盒像",
+          null,
+          "，它有平平的面，通常",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆柱",
+          "滚不动",
+          "长方体",
+          "球"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方体",
+          "滚不动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材练习中，长方体的“朋友”可以是哪一个？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "蓝色长盒"
+          },
+          {
+            "id": "o1",
+            "label": "足球"
+          },
+          {
+            "id": "o3",
+            "label": "绿色球"
+          },
+          {
+            "id": "o4",
+            "label": "圆罐"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话说长方体更合适？",
+        "options": [
+          "能平放，也能叠放",
+          "能向四面八方滚",
+          "没有平面",
+          "一定是圆圆的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要搭一个稳定的底座，先选哪类更合适？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o2",
+            "label": "长方体"
+          },
+          {
+            "id": "o3",
+            "label": "圆柱"
+          },
+          {
+            "id": "o4",
+            "label": "小皮球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

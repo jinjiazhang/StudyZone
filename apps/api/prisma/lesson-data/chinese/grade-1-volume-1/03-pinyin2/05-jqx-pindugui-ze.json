@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鸡",
+        "hint": "j-ī 拼成什么？",
+        "options": [
+          "qī",
+          "xī",
+          "jī",
+          "jū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "七",
+        "hint": "q-ī 拼成什么？",
+        "options": [
+          "jī",
+          "qī",
+          "xī",
+          "qū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "西",
+        "hint": "x-ī 拼成什么？",
+        "options": [
+          "jī",
+          "qī",
+          "xū",
+          "xī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "家",
+        "hint": "j-i-ā 拼成什么？",
+        "options": [
+          "jiā",
+          "xiā",
+          "qiā",
+          "jū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "下",
+        "hint": "x-i-à 拼成什么？",
+        "options": [
+          "jià",
+          "xià",
+          "qià",
+          "xū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "菊",
+        "hint": "j 和 ü 相拼，ü 去两点，jú 写成什么？",
+        "options": [
+          "jǔ",
+          "qú",
+          "xú",
+          "jú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "j、q、x 和 ü 相拼时，书写上要怎样？",
+        "options": [
+          "ü 去掉两点",
+          "ü 加一横",
+          "ü 写成 u 并读 u",
+          "声母去掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "j-ī"
+          },
+          {
+            "id": "l1",
+            "text": "q-ī"
+          },
+          {
+            "id": "l2",
+            "text": "x-ī"
+          },
+          {
+            "id": "l3",
+            "text": "j-ü"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "qī"
+          },
+          {
+            "id": "r3",
+            "text": "ju"
+          },
+          {
+            "id": "r0",
+            "text": "jī"
+          },
+          {
+            "id": "r2",
+            "text": "xī"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把音节拆分成三拼过程：jiā。",
+        "tokens": [
+          "a",
+          "q",
+          "ā",
+          "x",
+          "j",
+          "i"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "j",
+          "i",
+          "ā"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把音节拆分成三拼过程：xià。",
+        "tokens": [
+          "a",
+          "j",
+          "à",
+          "q",
+          "x",
+          "i"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "x",
+          "i",
+          "à"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

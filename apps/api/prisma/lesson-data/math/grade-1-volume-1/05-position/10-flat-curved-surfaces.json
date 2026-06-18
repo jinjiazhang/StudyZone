@@ -1,0 +1,231 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "能稳稳放在桌上的物体，常常有：",
+        "options": [
+          "尖尖的刺",
+          "只会滚的面",
+          "平平的面",
+          "看不见的面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "球的表面给人的感觉更像：",
+        "options": [
+          "平平的",
+          "方方的",
+          "直直的",
+          "弯弯的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱的侧面给人的感觉更像：",
+        "options": [
+          "弯弯的",
+          "全是平面",
+          "尖尖的",
+          "没有面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体和正方体都有：",
+        "options": [
+          "圆圆的整体",
+          "平平的面",
+          "只能滚动",
+          "没有角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方体"
+          },
+          {
+            "id": "l2",
+            "text": "正方体"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "有圆面和弯曲侧面"
+          },
+          {
+            "id": "r1",
+            "text": "方方长长，有平面"
+          },
+          {
+            "id": "r4",
+            "text": "整体圆圆弯弯"
+          },
+          {
+            "id": "r2",
+            "text": "方方正正，有平面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方体有",
+          null,
+          "，球整体",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "弯弯的侧面",
+          "圆圆的",
+          "平平的面",
+          "上下圆面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "平平的面",
+          "圆圆的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要把一个物体稳稳叠在下面，下面最好有什么？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "尖尖的小角"
+          },
+          {
+            "id": "o1",
+            "label": "平平的大面"
+          },
+          {
+            "id": "o3",
+            "label": "会滚的球面"
+          },
+          {
+            "id": "o4",
+            "label": "很花的颜色"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“上下两个圆圆的面”更像在说哪种图形？",
+        "options": [
+          "球",
+          "正方体",
+          "圆柱",
+          "长方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“没有平平的底面，容易滚”更像在说哪种图形？",
+        "options": [
+          "长方体",
+          "正方体",
+          "纸盒",
+          "球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "想搭得稳，先选有平面的一类，下面哪组更合适？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球和皮球"
+          },
+          {
+            "id": "o3",
+            "label": "圆柱和球"
+          },
+          {
+            "id": "o2",
+            "label": "长方体和正方体"
+          },
+          {
+            "id": "o4",
+            "label": "篮球和乒乓球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

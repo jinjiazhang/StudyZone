@@ -1,0 +1,158 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5个泡泡，吹破1个，还剩__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4个泡泡，吹破2个，还剩__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3支蜡笔，拿走1支，还剩__支。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 2 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 1 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有5颗草莓，吃掉2颗，还剩多少颗？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "5-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有4本书，借走1本，还剩多少本？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "4-1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "__ - 2 = 3",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "缺数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 - 2",
+        "right": "4 - 2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

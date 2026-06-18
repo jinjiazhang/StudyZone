@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理房间、整理书包、给图形分组，都用到了什么数学方法？",
+        "options": [
+          "分类",
+          "测量长度",
+          "认识钟表",
+          "数轴定位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "分类前先想“按什么分”，这句话中的“按什么”指的是？",
+        "options": [
+          "答案位置",
+          "物品价格",
+          "分类标准",
+          "页码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果把同一类的放在一起，下一步可以怎样了解每类多少？",
+        "options": [
+          "藏起来",
+          "换名字",
+          "擦掉",
+          "数一数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种分类最合理？",
+        "options": [
+          "鞋子放书包里，书放冰箱里",
+          "书本文具放书桌，衣服放衣柜",
+          "水果放文具盒里，笔放果盘里",
+          "球放碗柜里，碗放球筐里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类可以帮助我们整理生活中的物品。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类标准说清楚后，别人更容易看懂分类结果。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类时每个物品都可以随便乱放。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "按颜色分图形时，形状不是当前主要标准。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把9个图形按形状平均分成圆形、三角形、正方形三类，每类3个，一共几个？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "先想标准"
+          },
+          {
+            "id": "l_1",
+            "text": "同类摆放"
+          },
+          {
+            "id": "l_2",
+            "text": "数一数"
+          },
+          {
+            "id": "l_3",
+            "text": "检查"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "每类多少"
+          },
+          {
+            "id": "r_0",
+            "text": "按什么分"
+          },
+          {
+            "id": "r_3",
+            "text": "有没有放错"
+          },
+          {
+            "id": "r_1",
+            "text": "放在一起"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 3
+    }
+  ]
+}

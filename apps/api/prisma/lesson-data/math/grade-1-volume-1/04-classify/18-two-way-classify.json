@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一堆图形先按颜色分，再按形状分，说明什么？",
+        "options": [
+          "图形数量变多",
+          "颜色会消失",
+          "分类标准可以改变",
+          "不能再分类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书本既可以按学科分，也可以按什么分？",
+        "options": [
+          "书和练习本",
+          "会不会飞",
+          "能不能吃",
+          "是不是水果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笔既可以按颜色分，也可以按什么分？",
+        "options": [
+          "是不是餐具",
+          "会不会跑",
+          "住在哪里",
+          "是否带橡皮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水果既可以按种类分，也可以按什么分？",
+        "options": [
+          "是不是文具",
+          "颜色",
+          "有几条腿",
+          "是不是玩具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "换一个分类标准，分类结果可能不同。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "换标准分类时，物品总数会改变。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一共有6个图形，按颜色分后仍然一共有几个图形？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4本书本按不同标准分类，物品总数仍是几本？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "按颜色分"
+          },
+          {
+            "id": "l_1",
+            "text": "按形状分"
+          },
+          {
+            "id": "l_2",
+            "text": "按学科分"
+          },
+          {
+            "id": "l_3",
+            "text": "按是否带橡皮分"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "语文、数学"
+          },
+          {
+            "id": "r_0",
+            "text": "黄色、蓝色"
+          },
+          {
+            "id": "r_3",
+            "text": "带橡皮、不带橡皮"
+          },
+          {
+            "id": "r_1",
+            "text": "圆形、三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "换标准分类时，最需要检查什么？",
+        "options": [
+          "每个物品都分到合适的类",
+          "物品是不是变贵",
+          "桌子是不是变高",
+          "颜色是不是更亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

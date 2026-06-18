@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爷",
+        "hint": "“爷爷”的“爷”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "yé",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "奶",
+        "hint": "“奶奶”的“奶”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "hóng",
+          "nǎi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叔",
+        "hint": "“叔叔”的“叔”",
+        "options": [
+          "shū",
+          "wǔ",
+          "xīng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "姐",
+        "hint": "“姐姐”的“姐”",
+        "options": [
+          "wǔ",
+          "jiě",
+          "xīng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妹",
+        "hint": "“妹妹”的“妹”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "mèi",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爸",
+        "hint": "“爸爸”的“爸”",
+        "options": [
+          "wǔ",
+          "xīng",
+          "hóng",
+          "bà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妈",
+        "hint": "“妈妈”的“妈”",
+        "options": [
+          "mā",
+          "wǔ",
+          "xīng",
+          "hóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "爷爷"
+          },
+          {
+            "id": "l1",
+            "text": "奶奶"
+          },
+          {
+            "id": "l2",
+            "text": "叔叔"
+          },
+          {
+            "id": "l3",
+            "text": "姐姐"
+          },
+          {
+            "id": "l4",
+            "text": "妹妹"
+          },
+          {
+            "id": "l5",
+            "text": "妈妈"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "爸爸的弟弟或哥哥"
+          },
+          {
+            "id": "r0",
+            "text": "爸爸的爸爸"
+          },
+          {
+            "id": "r3",
+            "text": "比自己大的女孩同辈"
+          },
+          {
+            "id": "r1",
+            "text": "爸爸的妈妈"
+          },
+          {
+            "id": "r5",
+            "text": "母亲"
+          },
+          {
+            "id": "r4",
+            "text": "比自己小的女孩同辈"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "爸",
+        "tokens": [
+          "爸",
+          "哥",
+          "妈",
+          "云",
+          "亲",
+          "才",
+          "船"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“爸”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "爸",
+            "妈",
+            "亲"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "姐",
+        "tokens": [
+          "姐",
+          "叔",
+          "妹",
+          "星",
+          "弟",
+          "头",
+          "右"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“姐”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "姐",
+            "妹",
+            "弟"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

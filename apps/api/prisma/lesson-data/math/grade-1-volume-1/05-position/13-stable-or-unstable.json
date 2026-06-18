@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种搭法更稳？",
+        "options": [
+          "球在最下",
+          "物体都放偏",
+          "大长方体在下，小正方体在上",
+          "圆柱横着当底座"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种情况更容易倒？",
+        "options": [
+          "上下对齐",
+          "底面很大",
+          "下面是平面",
+          "上面的物体放偏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要当底座，哪类最不合适？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "正方体"
+          },
+          {
+            "id": "o3",
+            "label": "球"
+          },
+          {
+            "id": "o4",
+            "label": "平放纸盒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材提醒“上下物体要对好，不要偏”，是为了：",
+        "options": [
+          "搭得稳",
+          "滚得快",
+          "颜色一致",
+          "数量变多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "搭不成"
+          },
+          {
+            "id": "l2",
+            "text": "不稳"
+          },
+          {
+            "id": "l3",
+            "text": "放偏了"
+          },
+          {
+            "id": "l4",
+            "text": "更高"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "上下没有对齐"
+          },
+          {
+            "id": "r1",
+            "text": "底座太少或形状不合适"
+          },
+          {
+            "id": "r4",
+            "text": "合理利用所有物品"
+          },
+          {
+            "id": "r2",
+            "text": "下面会滚或上面放偏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "下面放",
+          null,
+          "，上面尽量",
+          null,
+          "，更稳定。"
+        ],
+        "tokens": [
+          "滚动",
+          "对齐",
+          "平的面",
+          "偏一点"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "平的面",
+          "对齐"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果必须用圆柱做支撑，圆柱最好怎样放？",
+        "options": [
+          "躺着放",
+          "竖着放",
+          "斜着放",
+          "滚着放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "两个球上面放长方体，这样通常：",
+        "options": [
+          {
+            "id": "o1",
+            "label": "很稳定"
+          },
+          {
+            "id": "o3",
+            "label": "一定最高"
+          },
+          {
+            "id": "o4",
+            "label": "和正方体一样稳"
+          },
+          {
+            "id": "o2",
+            "label": "不稳定"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断一个搭法稳不稳",
+        "items": [
+          {
+            "id": "s3",
+            "text": "看上面是否对齐"
+          },
+          {
+            "id": "s1",
+            "text": "看最下面会不会滚"
+          },
+          {
+            "id": "s4",
+            "text": "再轻轻试一试"
+          },
+          {
+            "id": "s2",
+            "text": "看接触面是否平"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“稳”在搭图形时表示：",
+        "options": [
+          "颜色相同",
+          "能滚很远",
+          "不容易倒",
+          "只用一个物品"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    }
+  ]
+}

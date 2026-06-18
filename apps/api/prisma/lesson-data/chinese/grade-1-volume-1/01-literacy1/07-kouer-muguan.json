@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "口",
+        "hint": "身体部位“口”",
+        "options": [
+          "kōu",
+          "ěr",
+          "kǒu",
+          "mù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "耳",
+        "hint": "身体部位“耳”",
+        "options": [
+          "ér",
+          "rén",
+          "mù",
+          "ěr"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "目",
+        "hint": "身体部位“目”",
+        "options": [
+          "mù",
+          "mǔ",
+          "kǒu",
+          "ěr"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "手",
+        "hint": "身体部位“手”",
+        "options": [
+          "shōu",
+          "shǒu",
+          "zú",
+          "mù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "足",
+        "hint": "身体部位“足”",
+        "options": [
+          "zhú",
+          "shǒu",
+          "zú",
+          "ěr"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "口"
+          },
+          {
+            "id": "l2",
+            "text": "耳"
+          },
+          {
+            "id": "l3",
+            "text": "目"
+          },
+          {
+            "id": "l4",
+            "text": "手"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "听声音"
+          },
+          {
+            "id": "r3",
+            "text": "看东西"
+          },
+          {
+            "id": "r4",
+            "text": "拿东西"
+          },
+          {
+            "id": "r1",
+            "text": "说话、吃东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本图中，孩子用哪个部位听声音？",
+        "options": [
+          "口",
+          "手",
+          "足",
+          "耳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“目”在课文中表示什么？",
+        "options": [
+          "眼睛",
+          "嘴巴",
+          "耳朵",
+          "脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课题中的身体部位",
+        "tokens": [
+          "日",
+          "口",
+          "月",
+          "耳",
+          "目",
+          "手",
+          "足"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "口",
+          "耳",
+          "目",
+          "手",
+          "足"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一组都是身体部位？",
+        "options": [
+          "日 月 山",
+          "口 耳 目",
+          "金 木 水",
+          "云 雨 风"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

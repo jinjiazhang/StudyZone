@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 3 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "0 + 4 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 4 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小朋友有 3 个球，又拿来 2 个，共有 ? 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "共有"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "盘里有 5 个桃，吃了 2 个，还剩 ? 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4 只羊和 1 只羊合起来，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "4+1",
+          "1+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5 只鸟飞走 3 只，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "5-3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个算式得数是 5？",
+        "options": [
+          "4 - 1",
+          "2 + 3",
+          "5 - 2",
+          "1 + 2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个算式得数是 0？",
+        "options": [
+          "0 + 5",
+          "5 - 0",
+          "5 - 5",
+          "4 + 1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 + 3",
+        "right": "5 - 2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3+2"
+          },
+          {
+            "id": "l2",
+            "text": "5-1"
+          },
+          {
+            "id": "l3",
+            "text": "4-4"
+          },
+          {
+            "id": "l4",
+            "text": "2+1"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "0"
+          },
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r4",
+            "text": "3"
+          },
+          {
+            "id": "r2",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把得数从小到大排。",
+        "items": [
+          {
+            "id": "i3",
+            "text": "1+2"
+          },
+          {
+            "id": "i1",
+            "text": "5-5"
+          },
+          {
+            "id": "i4",
+            "text": "2+3"
+          },
+          {
+            "id": "i2",
+            "text": "2-1"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

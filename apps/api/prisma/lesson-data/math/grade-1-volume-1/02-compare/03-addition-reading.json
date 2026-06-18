@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 3 + 2 = 5 中，等号右边的数是几？",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个读法正确？",
+        "options": [
+          "1 加 4 等于 5",
+          "1 减 4 等于 5",
+          "5 加 4 等于 1",
+          "4 减 1 等于 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 0 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "0 + 5 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 + 1 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 2 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全算式：? + 2 = 5",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一个加数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全算式：1 + ? = 5",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第二个加数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3+2"
+          },
+          {
+            "id": "l2",
+            "text": "0+4"
+          },
+          {
+            "id": "l3",
+            "text": "1+1"
+          },
+          {
+            "id": "l4",
+            "text": "2+3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "4"
+          },
+          {
+            "id": "r4",
+            "text": "5个"
+          },
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r3",
+            "text": "2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 + 1",
+        "right": "2 + 2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写一个得数是 4 的加法算式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "0+4",
+          "1+3",
+          "2+2",
+          "3+1",
+          "4+0"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 0 + 3 时，可以想：",
+        "options": [
+          "没有增加，还是 3",
+          "少了 3",
+          "变成 0",
+          "一定是 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

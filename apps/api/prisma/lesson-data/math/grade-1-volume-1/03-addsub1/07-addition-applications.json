@@ -1,0 +1,153 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "桌上有2个杯子，又拿来1个，现在一共有多少个？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "2+1",
+          "1+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "池塘里有3只鸭，岸上有2只鸭，一共有多少只鸭？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "3+2",
+          "2+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "左边有4名同学，右边有1名同学，一共有多少名同学？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "4+1",
+          "1+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 2 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 1 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3只小鸡和1只小鸡合起来是__只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "0朵红花和5朵黄花合起来是__朵。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“又来了”常表示数量怎样变化？",
+        "options": [
+          "变少",
+          "不变",
+          "变多",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "问“一共有多少”，应把两部分怎样处理？",
+        "options": [
+          "相加",
+          "相减",
+          "只看左边",
+          "只看右边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

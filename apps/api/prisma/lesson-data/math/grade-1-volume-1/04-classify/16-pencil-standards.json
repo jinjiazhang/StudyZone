@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把带橡皮的铅笔分为一类，是按什么标准？",
+        "options": [
+          "颜色",
+          "长短",
+          "粗细",
+          "有没有橡皮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把彩笔一类、铅笔一类，是按什么标准？",
+        "options": [
+          "有没有橡皮",
+          "笔的种类",
+          "多少",
+          "位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把红色、黄色、绿色的笔分别放好，是按什么标准？",
+        "options": [
+          "颜色",
+          "长短",
+          "有没有橡皮",
+          "新旧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一盒彩笔还可以按什么分？",
+        "options": [
+          "能不能吃",
+          "会不会飞",
+          "颜色",
+          "是不是水果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "铅笔可以按“带橡皮”和“不带橡皮”来分。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "所有笔只能按颜色分，不能按其他标准分。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "有2支带橡皮的笔、3支不带橡皮的笔，一共有几支？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "红、黄、绿三种颜色的彩笔，共有几种颜色？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "带橡皮铅笔"
+          },
+          {
+            "id": "l_1",
+            "text": "不带橡皮铅笔"
+          },
+          {
+            "id": "l_2",
+            "text": "红彩笔"
+          },
+          {
+            "id": "l_3",
+            "text": "蓝彩笔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "红色"
+          },
+          {
+            "id": "r_0",
+            "text": "带橡皮"
+          },
+          {
+            "id": "r_3",
+            "text": "蓝色"
+          },
+          {
+            "id": "r_1",
+            "text": "不带橡皮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选择分类标准后，同类物品应该怎样放？",
+        "options": [
+          "每个都分开",
+          "随便放",
+          "藏起来",
+          "放在一起"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

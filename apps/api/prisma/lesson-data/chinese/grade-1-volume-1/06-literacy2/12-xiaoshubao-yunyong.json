@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子。",
+        "tokens": [
+          "书包",
+          "小",
+          "我的",
+          "铅笔",
+          "早"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的",
+          "小",
+          "书包"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子。",
+        "tokens": [
+          "宝贝",
+          "不少",
+          "真",
+          "尺子",
+          "小"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "宝贝",
+          "真",
+          "不少"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子。",
+        "tokens": [
+          "课本",
+          "笔",
+          "作业本",
+          "本",
+          "转笔刀"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "课本",
+          "作业本"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子。",
+        "tokens": [
+          "铅笔",
+          "早",
+          "转笔刀",
+          "尺子",
+          "包"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "铅笔",
+          "转笔刀"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子。",
+        "tokens": [
+          "天天",
+          "得",
+          "起",
+          "早",
+          "书包"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天天",
+          "起",
+          "得",
+          "早"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求“说一说你的书包里有哪些学习用品”，下面回答最合适的是？",
+        "options": [
+          "我的书包里有课本、铅笔和尺子。",
+          "山清对水秀。",
+          "五星红旗迎风飘扬。",
+          "三木森。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理书包时，哪句话最合适？",
+        "options": [
+          "我会自己整理书包。",
+          "我会把书包乱扔。",
+          "我会忘带课本。",
+          "我会把铅笔削断。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“我会把文具摆放整齐”是好习惯。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "书包里只有玩具，不需要课本。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "我的小书包",
+        "passage": "我的小书包里有课本、作业本、铅笔和尺子。每天晚上，我把文具摆放整齐，第二天带着书包去学校。",
+        "questions": [
+          {
+            "question": "小书包里没有提到哪一样？",
+            "options": [
+              "课本",
+              "铅笔",
+              "桃子",
+              "尺子"
+            ]
+          },
+          {
+            "question": "“我”每天晚上做什么？",
+            "options": [
+              "整理文具",
+              "升国旗",
+              "种小树",
+              "看电影"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

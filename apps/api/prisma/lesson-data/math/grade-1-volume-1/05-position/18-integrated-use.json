@@ -1,0 +1,275 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方体"
+          },
+          {
+            "id": "l2",
+            "text": "正方体"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "茶叶罐、胶棒"
+          },
+          {
+            "id": "r1",
+            "text": "牙膏盒、纸巾盒"
+          },
+          {
+            "id": "r4",
+            "text": "篮球、乒乓球"
+          },
+          {
+            "id": "r2",
+            "text": "魔方、骰子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：牙膏盒、纸巾盒、魔方、骰子、胶棒、茶叶罐、篮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这 7 个物品中，容易滚动的有胶棒、茶叶罐、篮球，共几个？",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要从这些物品中选一个最稳定的底座，选哪类更合适？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "长方体"
+          },
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "横放圆柱"
+          },
+          {
+            "id": "o4",
+            "label": "乒乓球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "先按",
+          null,
+          "分类，再按能不能",
+          null,
+          "比较。"
+        ],
+        "tokens": [
+          "颜色",
+          "滚动",
+          "形状",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "形状",
+          "滚动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "完成一次立体图形活动",
+        "items": [
+          {
+            "id": "s3",
+            "text": "滚一滚说特点"
+          },
+          {
+            "id": "s1",
+            "text": "认一认图形名称"
+          },
+          {
+            "id": "s4",
+            "text": "搭一搭看稳定"
+          },
+          {
+            "id": "s2",
+            "text": "分一分类找朋友"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“长方体、正方体、圆柱、球”都属于本单元学习的：",
+        "options": [
+          "平面图形",
+          "数字",
+          "立体图形",
+          "时间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一个物品又能竖着站，又能躺着滚，它最可能是：",
+        "options": [
+          "球",
+          "长方体",
+          "正方体",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "综合比较时，哪句话最准确？",
+        "options": [
+          "球容易滚，长方体更适合做底座",
+          "所有图形都一样稳",
+          "正方体一定会滚",
+          "圆柱不能站"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "本单元“有趣的立体图形”最重要的是学会：",
+        "options": [
+          {
+            "id": "o1",
+            "label": "背口诀"
+          },
+          {
+            "id": "o2",
+            "label": "认、分、滚、搭"
+          },
+          {
+            "id": "o3",
+            "label": "看钟表"
+          },
+          {
+            "id": "o4",
+            "label": "量长度"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

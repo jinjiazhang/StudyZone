@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨面向太阳，前面是东，后面是？",
+        "options": [
+          "西",
+          "北",
+          "南",
+          "上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早晨面向太阳，左面是？",
+        "options": [
+          "南",
+          "北",
+          "西",
+          "东"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我的前边是王红，我的后面是张明”是在介绍什么？",
+        "options": [
+          "天气变化",
+          "亲属关系",
+          "前后位置",
+          "笔顺规则"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "说“影子在左”时，“左”表示什么？",
+        "options": [
+          "颜色",
+          "声音",
+          "时间",
+          "方位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "前"
+          },
+          {
+            "id": "l1",
+            "text": "后"
+          },
+          {
+            "id": "l2",
+            "text": "左"
+          },
+          {
+            "id": "l3",
+            "text": "右"
+          },
+          {
+            "id": "l4",
+            "text": "东"
+          },
+          {
+            "id": "l5",
+            "text": "西"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "左边"
+          },
+          {
+            "id": "r0",
+            "text": "前面"
+          },
+          {
+            "id": "r3",
+            "text": "右边"
+          },
+          {
+            "id": "r1",
+            "text": "后面"
+          },
+          {
+            "id": "r5",
+            "text": "太阳落下的方向"
+          },
+          {
+            "id": "r4",
+            "text": "太阳升起的方向"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我的前面是王红。",
+        "tokens": [
+          "后面",
+          "张明",
+          "王红",
+          "是",
+          "前面",
+          "我的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的",
+          "前面",
+          "是",
+          "王红"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：我的后面是张明。",
+        "tokens": [
+          "前面",
+          "王红",
+          "张明",
+          "是",
+          "后面",
+          "我的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的",
+          "后面",
+          "是",
+          "张明"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zuǒ",
+        "sentence": "影子在__。",
+        "character": "左",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "左"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yòu",
+        "sentence": "影子在__。",
+        "character": "右",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "右"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hǎo",
+        "sentence": "它是我的__朋友。",
+        "character": "好",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "好"
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "弯弯的月儿像小船。我坐在小船里，看见闪闪的星星和蓝蓝的天。",
+        "questions": [
+          {
+            "question": "月儿像什么？",
+            "options": [
+              "小船",
+              "小狗",
+              "大脑",
+              "树"
+            ]
+          },
+          {
+            "question": "“我”看见了什么？",
+            "options": [
+              "老师和工人",
+              "星星和天",
+              "爷爷和奶奶",
+              "前和后"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "影子常常跟着我。有时在前，有时在后，有时在左，有时在右。它像我的好朋友。",
+        "questions": [
+          {
+            "question": "影子常常怎样？",
+            "options": [
+              "离开我",
+              "变成船",
+              "跟着我",
+              "写字"
+            ]
+          },
+          {
+            "question": "短文把影子说成什么？",
+            "options": [
+              "大脑",
+              "奶奶",
+              "春天",
+              "好朋友"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "人有两件宝：双手和大脑。双手会做工，大脑会思考。用手又用脑，才能有创造。",
+        "questions": [
+          {
+            "question": "人的两件宝是什么？",
+            "options": [
+              "双手和大脑",
+              "月儿和星星",
+              "爸爸和妈妈",
+              "前和后"
+            ]
+          },
+          {
+            "question": "怎样才能有创造？",
+            "options": [
+              "只用手",
+              "用手又用脑",
+              "只用脑",
+              "不用手脑"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《小小的船》要背诵吗？",
+        "options": [
+          "不要",
+          "只写字",
+          "只看图",
+          "要"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《影子》课后让我们说什么？",
+        "options": [
+          "前后左右都是谁",
+          "家里有哪些人",
+          "花生在哪里",
+          "古诗作者是谁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《两件宝》课后问两件宝能做什么，为什么要怎样？",
+        "options": [
+          "只背古诗",
+          "用手又用脑",
+          "只看星星",
+          "只写称谓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小小的船"
+          },
+          {
+            "id": "l1",
+            "text": "影子"
+          },
+          {
+            "id": "l2",
+            "text": "两件宝"
+          },
+          {
+            "id": "l3",
+            "text": "语文园地七"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "双手、大脑、创造"
+          },
+          {
+            "id": "r0",
+            "text": "月儿、星星、蓝天"
+          },
+          {
+            "id": "r3",
+            "text": "亲属称谓和日积月累"
+          },
+          {
+            "id": "r1",
+            "text": "前后左右、好朋友"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：用手又用脑，才能有创造。",
+        "tokens": [
+          "影子",
+          "月儿",
+          "创造",
+          "有",
+          "才能",
+          "用脑",
+          "又",
+          "用手"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用手",
+          "又",
+          "用脑",
+          "才能",
+          "有",
+          "创造"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kàn",
+        "sentence": "只__见闪闪的星星。",
+        "character": "看",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "看"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǒu",
+        "sentence": "人__两件宝。",
+        "character": "有",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "有"
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6只松鼠配6个盘子，盘子够吗？",
+        "options": [
+          "够",
+          "不够",
+          "无法数",
+          "少2个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6只松鼠配5把勺子，勺子够吗？",
+        "options": [
+          "够",
+          "不够",
+          "一样多",
+          "多3个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6只松鼠配7个杯子，杯子够吗？",
+        "options": [
+          "不够",
+          "够",
+          "没有杯子",
+          "少1个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "4只小狗每只1根骨头，需要几根骨头？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "4个小朋友每人1双筷子，需要几双筷子？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "6",
+        "right": "6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "5",
+        "right": "6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "7",
+        "right": "6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "4只小狗"
+          },
+          {
+            "id": "l2",
+            "text": "6只松鼠"
+          },
+          {
+            "id": "l3",
+            "text": "5把勺子"
+          },
+          {
+            "id": "l4",
+            "text": "7个杯子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r3",
+            "text": "4"
+          },
+          {
+            "id": "r4",
+            "text": "6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "一一对应后没有剩下，说明两边数量怎样？",
+        "options": [
+          "一样多",
+          "左边一定多",
+          "右边一定少",
+          "不能比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

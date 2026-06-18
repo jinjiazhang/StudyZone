@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "d 的竖主要写在哪两格？",
+        "options": [
+          "上中格",
+          "中下格",
+          "上格",
+          "下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "t 的竖右弯主要写在哪两格？",
+        "options": [
+          "中下格",
+          "上中格",
+          "中格",
+          "下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "n 写在哪一格？",
+        "options": [
+          "上格",
+          "下格",
+          "中格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "l 像一根小棍，主要写在哪两格？",
+        "options": [
+          "中下格",
+          "中格",
+          "下格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "d 的半圆在竖的哪一边？",
+        "options": [
+          "左边",
+          "右边",
+          "上边",
+          "下边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "d"
+          },
+          {
+            "id": "l_1",
+            "text": "t"
+          },
+          {
+            "id": "l_2",
+            "text": "n"
+          },
+          {
+            "id": "l_3",
+            "text": "l"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "一竖到底像小棍"
+          },
+          {
+            "id": "r_1",
+            "text": "左下半圆加竖"
+          },
+          {
+            "id": "r_2",
+            "text": "上中格竖右弯加横"
+          },
+          {
+            "id": "r_3",
+            "text": "中格一个门洞"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写 n 时要注意什么？",
+        "options": [
+          "写成一个门洞",
+          "写成两个门洞",
+          "上面加点",
+          "下面加尾巴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "t 比 l 多了什么？",
+        "options": [
+          "一横",
+          "两点",
+          "一个圆",
+          "一个门洞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本书写顺序排出 d t n l",
+        "tokens": [
+          "p",
+          "f",
+          "t",
+          "n",
+          "l",
+          "d"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "d",
+          "t",
+          "n",
+          "l"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有 d t n l 的书写格？",
+        "options": [
+          {
+            "id": "p31",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-031.jpg",
+            "label": "d t n l"
+          },
+          {
+            "id": "p30",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-030.jpg",
+            "label": "b p m f 书写"
+          },
+          {
+            "id": "p28",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-028.jpg",
+            "label": "i u ü 书写"
+          },
+          {
+            "id": "p33",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-033.jpg",
+            "label": "语文园地二"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p31"
+      },
+      "difficulty": 1
+    }
+  ]
+}

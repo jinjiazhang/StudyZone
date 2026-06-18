@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "月",
+        "hint": "“月儿”的“月”",
+        "options": [
+          "yè",
+          "yüè",
+          "yuè",
+          "yuē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弯",
+        "hint": "“弯弯”的“弯”",
+        "options": [
+          "wán",
+          "wǎn",
+          "guān",
+          "wān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "挂",
+        "hint": "“挂蓝天”的“挂”",
+        "options": [
+          "guà",
+          "kuà",
+          "guā",
+          "huà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓝",
+        "hint": "“蓝天”的“蓝”",
+        "options": [
+          "nán",
+          "lán",
+          "lǎn",
+          "lánɡ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "校",
+        "hint": "“校园”的“校”",
+        "options": [
+          "qiào",
+          "xiǎo",
+          "xiào",
+          "jiào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "月儿弯弯挂在哪里？",
+        "options": [
+          "小桥",
+          "白菜地",
+          "海里",
+          "蓝天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "山路弯弯到哪里？",
+        "options": [
+          "校园",
+          "台湾",
+          "果园",
+          "小河"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：",
+        "tokens": [
+          "挂",
+          "月儿",
+          "白云",
+          "弯弯",
+          "蓝天",
+          "小桥"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "月儿",
+          "弯弯",
+          "挂",
+          "蓝天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：",
+        "tokens": [
+          "出",
+          "小溪",
+          "西瓜",
+          "弯弯",
+          "青山",
+          "骑车"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小溪",
+          "弯弯",
+          "出",
+          "青山"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "月儿弯弯",
+        "passage": "月儿弯弯挂蓝天，小溪弯弯出青山。大河弯弯流入海，山路弯弯到校园。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-055.jpg",
+        "questions": [
+          {
+            "question": "月儿弯弯挂在哪里？",
+            "options": [
+              "蓝天",
+              "草原",
+              "树林",
+              "小桥"
+            ]
+          },
+          {
+            "question": "大河弯弯流入哪里？",
+            "options": [
+              "海",
+              "校园",
+              "白云",
+              "桃花"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

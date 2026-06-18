@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "擦桌子",
+        "hint": "选出“擦桌子”的拼音。",
+        "options": [
+          "cā zhuō zi",
+          "zā zhuō zi",
+          "sā zhuō zi",
+          "cā zhuō zhī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "做贺卡",
+        "hint": "选出“做贺卡”的拼音。",
+        "options": [
+          "cuò hè kǎ",
+          "suò hè kǎ",
+          "zuò hè kǎ",
+          "zuò huā kǎ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "词语",
+        "hint": "选出“词语”的拼音。",
+        "options": [
+          "zǐ yǔ",
+          "cí yǔ",
+          "sī yǔ",
+          "chí yǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "擦"
+          },
+          {
+            "id": "l1",
+            "text": "做"
+          },
+          {
+            "id": "l2",
+            "text": "贺卡"
+          },
+          {
+            "id": "l3",
+            "text": "桌子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "zuò"
+          },
+          {
+            "id": "r3",
+            "text": "zhuō zi"
+          },
+          {
+            "id": "r0",
+            "text": "cā"
+          },
+          {
+            "id": "r2",
+            "text": "hè kǎ"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：我会擦桌子。",
+        "tokens": [
+          "我",
+          "做",
+          "桌子",
+          "贺卡",
+          "会",
+          "。",
+          "擦"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "会",
+          "擦",
+          "桌子",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：他会做贺卡。",
+        "tokens": [
+          "他",
+          "擦",
+          "贺卡",
+          "桌子",
+          "会",
+          "。",
+          "做"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "会",
+          "做",
+          "贺卡",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "子",
+        "tokens": [
+          "花",
+          "儿",
+          "棋",
+          "桌",
+          "鼓",
+          "本"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能放在“子”前组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "桌",
+            "儿",
+            "本"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "过桥",
+        "passage": "数学题，三四道，一排等号像小桥。做对了，走过桥。做错了，过不了。想一想，算一算，快快乐乐过了桥。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-042.jpg",
+        "questions": [
+          {
+            "question": "儿歌里什么像小桥？",
+            "options": [
+              "一排等号",
+              "一朵荷花",
+              "一个气球",
+              "一只小鸡"
+            ]
+          },
+          {
+            "question": "做错了会怎样？",
+            "options": [
+              "过不了桥",
+              "马上唱歌",
+              "看到西瓜",
+              "去下棋"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“z c s”和“zh ch sh r”相比，z c s 是什么音？",
+        "options": [
+          "翘舌音",
+          "鼻音",
+          "边音",
+          "平舌音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "四",
+        "hint": "选出“四”的拼音。",
+        "options": [
+          "shì",
+          "cì",
+          "sì",
+          "zì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

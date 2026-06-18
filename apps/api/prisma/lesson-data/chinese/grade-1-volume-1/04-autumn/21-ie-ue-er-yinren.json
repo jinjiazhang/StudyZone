@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ie",
+        "hint": "选择 ie 的一声",
+        "options": [
+          "ei",
+          "üe",
+          "er",
+          "iē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "üe",
+        "hint": "选择 üe 的四声",
+        "options": [
+          "üè",
+          "uè",
+          "ie",
+          "ér"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "er",
+        "hint": "选择 er 的二声",
+        "options": [
+          "ěr",
+          "ér",
+          "ēn",
+          "uǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "xiě",
+        "hint": "读准音节 xiě",
+        "options": [
+          "xué",
+          "xié",
+          "xiě",
+          "jiě"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "yuè",
+        "hint": "读准整体认读 yuè",
+        "options": [
+          "yue",
+          "yüè",
+          "yè",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ěr",
+        "hint": "读准特殊韵母 er",
+        "options": [
+          "ěr",
+          "ér",
+          "èr",
+          "ěn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "y-e"
+          },
+          {
+            "id": "l_1",
+            "text": "y-ue"
+          },
+          {
+            "id": "l_2",
+            "text": "j-üe"
+          },
+          {
+            "id": "l_3",
+            "text": "x-iě"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "xiě"
+          },
+          {
+            "id": "r_2",
+            "text": "jué"
+          },
+          {
+            "id": "r_1",
+            "text": "yue"
+          },
+          {
+            "id": "r_0",
+            "text": "ye"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“月儿弯弯”的“月”读作？",
+        "options": [
+          "yè",
+          "yuè",
+          "yüè",
+          "yúe"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "j、q、x 和 üe 相拼时，ü 上两点怎样？",
+        "options": [
+          "要加圈",
+          "要变成 a",
+          "要省去",
+          "要读成 er"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼成整体认读音节：",
+        "tokens": [
+          "y",
+          "j",
+          "ue",
+          "ie"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "y",
+          "ue"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

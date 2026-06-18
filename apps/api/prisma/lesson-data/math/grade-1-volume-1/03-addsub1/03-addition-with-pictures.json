@@ -1,0 +1,145 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "停车位有3辆车，又开来1辆，一共有多少辆？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "3+1",
+          "1+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "树上有2只小鸟，飞来3只，一共有多少只？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "2+3",
+          "3+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "左边1朵花，右边3朵花，一共有多少朵？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "1+3",
+          "3+1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "盘子里有2个桃，旁边有1个桃，一共有多少个？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "2+1",
+          "1+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 3 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 + 3 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "+",
+          null,
+          "=",
+          "5"
+        ],
+        "tokens": [
+          "3",
+          "1",
+          "2",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "2",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到两部分数量合在一起，应该先找什么？",
+        "options": [
+          "总数和剩下的数",
+          "两部分分别有多少",
+          "哪个数最大",
+          "哪个数最小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

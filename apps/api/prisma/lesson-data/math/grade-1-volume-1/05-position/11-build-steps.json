@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按合理顺序摆一摆：先搭一个小平台",
+        "items": [
+          {
+            "id": "s3",
+            "text": "在长方体上面放一个正方体"
+          },
+          {
+            "id": "s1",
+            "text": "先放两个圆柱"
+          },
+          {
+            "id": "s4",
+            "text": "轻轻检查是否稳定"
+          },
+          {
+            "id": "s2",
+            "text": "在两个圆柱上面放一个长方体"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按教材“我说你做”的顺序搭",
+        "items": [
+          {
+            "id": "s2",
+            "text": "在两个正方体上面各放一个圆柱"
+          },
+          {
+            "id": "s4",
+            "text": "在长方体上面放两个球"
+          },
+          {
+            "id": "s1",
+            "text": "先放两个正方体"
+          },
+          {
+            "id": "s3",
+            "text": "在两个圆柱上面放一个长方体"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "听指令“在两个圆柱的上面放一个长方体”，应该先准备什么？",
+        "options": [
+          "两个圆柱",
+          "三个球",
+          "一张纸",
+          "四个三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭之前先听清什么最重要？",
+        "options": [
+          "颜色喜好",
+          "先后顺序和物体名称",
+          "谁说得快",
+          "物品价格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "先放两个",
+          null,
+          "，再在上面放一个",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "长方体",
+          "球",
+          "圆柱",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "圆柱",
+          "长方体"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果没听清“上面”，最可能出现什么问题？",
+        "options": [
+          "数得更快",
+          "颜色变浅",
+          "放错位置",
+          "图形变多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要把长方体架起来，下面用哪组更像教材做法？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "一个球"
+          },
+          {
+            "id": "o3",
+            "label": "一个魔方"
+          },
+          {
+            "id": "o4",
+            "label": "三个小球"
+          },
+          {
+            "id": "o2",
+            "label": "两个圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭完后轻轻检查，是为了看：",
+        "options": [
+          "颜色对不对",
+          "名字长不长",
+          "是不是新的",
+          "稳不稳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“从下到上”说一说",
+        "items": [
+          {
+            "id": "s4",
+            "text": "最上面是两个球"
+          },
+          {
+            "id": "s2",
+            "text": "中间是两个圆柱"
+          },
+          {
+            "id": "s1",
+            "text": "下面是两个正方体"
+          },
+          {
+            "id": "s3",
+            "text": "上面是一个长方体"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“先放……再放……”这种说法主要帮助我们：",
+        "options": [
+          "按顺序完成",
+          "只记颜色",
+          "比较大小",
+          "计算价钱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

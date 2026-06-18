@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "a 写在四线三格的什么位置？",
+        "options": [
+          "中格",
+          "上格",
+          "下格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "o 写在四线三格的什么位置？",
+        "options": [
+          "上格",
+          "中格",
+          "下格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "e 写在四线三格的什么位置？",
+        "options": [
+          "下格",
+          "上格",
+          "中格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写 a 时，先写什么？",
+        "options": [
+          "短竖",
+          "右半圆",
+          "长竖",
+          "点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写 o 时要注意什么？",
+        "options": [
+          "从左往右写直线",
+          "写成两个圆",
+          "一笔写成圆",
+          "写到下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写 e 时，起笔在什么位置更合适？",
+        "options": [
+          "中格中间",
+          "下格底线",
+          "上格顶线",
+          "第三线下面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "a"
+          },
+          {
+            "id": "l_1",
+            "text": "o"
+          },
+          {
+            "id": "l_2",
+            "text": "e"
+          },
+          {
+            "id": "l_3",
+            "text": "四线三格"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "练习拼音字母书写的格子"
+          },
+          {
+            "id": "r_1",
+            "text": "像圆圆的嘴形"
+          },
+          {
+            "id": "r_2",
+            "text": "先写左半圆再写竖弯"
+          },
+          {
+            "id": "r_3",
+            "text": "横折后绕成半圆"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_1",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有 a o e 的书写格？",
+        "options": [
+          {
+            "id": "p33",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-033.jpg",
+            "label": "语文园地二"
+          },
+          {
+            "id": "p26",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-026.jpg",
+            "label": "a o e 四声和书写"
+          },
+          {
+            "id": "p30",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-030.jpg",
+            "label": "b p m f 练习"
+          },
+          {
+            "id": "p32",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-032.jpg",
+            "label": "小白兔"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p26"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本顺序排出第1课三个韵母",
+        "tokens": [
+          "i",
+          "u",
+          "o",
+          "e",
+          "a"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "a",
+          "o",
+          "e"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "a、o、e 的调号应该标在哪里？",
+        "options": [
+          "字母上方",
+          "字母下方",
+          "字母左边",
+          "字母右边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

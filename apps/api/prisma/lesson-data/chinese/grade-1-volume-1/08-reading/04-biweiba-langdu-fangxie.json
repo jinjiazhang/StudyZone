@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出问句：谁的尾巴长？",
+        "tokens": [
+          "谁",
+          "长",
+          "的",
+          "尾巴",
+          "短",
+          "？"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "谁",
+          "的",
+          "尾巴",
+          "长",
+          "？"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出答句：兔子的尾巴短。",
+        "tokens": [
+          "兔子",
+          "猴子",
+          "尾巴",
+          "短",
+          "的",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "兔子",
+          "的",
+          "尾巴",
+          "短",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：松鼠的尾巴好像一把伞。",
+        "tokens": [
+          "好像",
+          "尾巴",
+          "伞",
+          "松鼠",
+          "的",
+          "一把",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "松鼠",
+          "的",
+          "尾巴",
+          "好像",
+          "一把",
+          "伞",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：孔雀的尾巴最好看。",
+        "tokens": [
+          "孔雀",
+          "最好看",
+          "公鸡",
+          "尾巴",
+          "的",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "孔雀",
+          "的",
+          "尾巴",
+          "最好看",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照样子问“谁的样子最可爱？”可以回答：",
+        "options": [
+          "兔子的样子最可爱。",
+          "谁的尾巴长？",
+          "公鸡的尾巴弯。",
+          "乌鸦喝水。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“谁的尾巴好像一把伞？”中的“好像”表示什么？",
+        "options": [
+          "很讨厌",
+          "很着急",
+          "很相似",
+          "很响亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "问长短"
+          },
+          {
+            "id": "l1",
+            "text": "问像什么"
+          },
+          {
+            "id": "l2",
+            "text": "问弯扁"
+          },
+          {
+            "id": "l3",
+            "text": "问好看"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "谁的尾巴最好看？"
+          },
+          {
+            "id": "r0",
+            "text": "谁的尾巴长？"
+          },
+          {
+            "id": "r2",
+            "text": "谁的尾巴弯？"
+          },
+          {
+            "id": "r1",
+            "text": "谁的尾巴好像一把伞？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "朗读《比尾巴》时，问句末尾可以读出提问的语气。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“兔子的尾巴短。”句末应该用问号。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "仿照问答",
+        "passage": "谁的耳朵长？兔子的耳朵长。谁的脖子长？长颈鹿的脖子长。",
+        "questions": [
+          {
+            "question": "兔子的什么长？",
+            "options": [
+              "耳朵",
+              "尾巴",
+              "脖子",
+              "翅膀"
+            ]
+          },
+          {
+            "question": "长颈鹿的脖子怎么样？",
+            "options": [
+              "短",
+              "弯",
+              "长",
+              "扁"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

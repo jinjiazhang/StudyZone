@@ -1,0 +1,253 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 可以分成 1 和 ?。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "?"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 可以分成 2 和 ?。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "?"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 可以分成 0 和 ?。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "?"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 可以分成 4 和 ?。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "?"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用 2 和 3 写一个得数是 5 的加法算式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "2+3",
+          "3+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用 1 和 4 写一个得数是 5 的加法算式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "1+4",
+          "4+1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 3 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 0 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一组可以合成 5？",
+        "options": [
+          "1 和 2",
+          "2 和 2",
+          "0 和 4",
+          "1 和 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1 和 ?"
+          },
+          {
+            "id": "l2",
+            "text": "2 和 ?"
+          },
+          {
+            "id": "l3",
+            "text": "3 和 ?"
+          },
+          {
+            "id": "l4",
+            "text": "4 和 ?"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "2"
+          },
+          {
+            "id": "r1",
+            "text": "4"
+          },
+          {
+            "id": "r4",
+            "text": "1"
+          },
+          {
+            "id": "r2",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些和 5 有关的分法按第一个数从小到大排。",
+        "items": [
+          {
+            "id": "i3",
+            "text": "2+3"
+          },
+          {
+            "id": "i1",
+            "text": "0+5"
+          },
+          {
+            "id": "i4",
+            "text": "3+2"
+          },
+          {
+            "id": "i2",
+            "text": "1+4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 + 4",
+        "right": "2 + 3",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    }
+  ]
+}

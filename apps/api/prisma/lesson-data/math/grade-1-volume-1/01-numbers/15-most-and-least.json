@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "7个杯子、5把勺子、6个盘子，哪种最多？",
+        "options": [
+          "勺子",
+          "盘子",
+          "杯子",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "7个杯子、5把勺子、6个盘子，哪种最少？",
+        "options": [
+          "杯子",
+          "盘子",
+          "勺子",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "3个羽毛球、4个足球、2个篮球，最多的是？",
+        "options": [
+          "篮球",
+          "羽毛球",
+          "足球",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "3个羽毛球、4个足球、2个篮球，最少的是？",
+        "options": [
+          "篮球",
+          "足球",
+          "羽毛球",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "3个方块、6个三角形、4个圆，最多的是？",
+        "options": [
+          "方块",
+          "圆",
+          "三角形",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "3个方块、6个三角形、4个圆，最少的是？",
+        "options": [
+          "圆",
+          "三角形",
+          "方块",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "表中哪种餐具最多？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "杯子",
+            "数量": 7
+          },
+          {
+            "物品": "勺子",
+            "数量": 5
+          },
+          {
+            "物品": "盘子",
+            "数量": 6
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "杯子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "表中哪种球最少？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "羽毛球",
+            "数量": 3
+          },
+          {
+            "物品": "足球",
+            "数量": 4
+          },
+          {
+            "物品": "篮球",
+            "数量": 2
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "篮球"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "7",
+        "right": "5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "2",
+        "right": "4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    }
+  ]
+}

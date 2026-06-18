@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 5 - 2 = 3 中，表示“拿走”的数是几？",
+        "options": [
+          "5",
+          "2",
+          "3",
+          "0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个读法正确？",
+        "options": [
+          "5 减 4 等于 1",
+          "5 加 4 等于 1",
+          "1 减 4 等于 5",
+          "4 加 1 等于 1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 0 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 0 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 3 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 - 1 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全算式：5 - ? = 4",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "减去"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全算式：? - 2 = 2",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "原来"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5-5"
+          },
+          {
+            "id": "l2",
+            "text": "4-1"
+          },
+          {
+            "id": "l3",
+            "text": "3-0"
+          },
+          {
+            "id": "l4",
+            "text": "2-2"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "3"
+          },
+          {
+            "id": "r4",
+            "text": "0个"
+          },
+          {
+            "id": "r1",
+            "text": "0"
+          },
+          {
+            "id": "r3",
+            "text": "3个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 - 5",
+        "right": "1 - 0",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写一个得数是 0 的减法算式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "1-1",
+          "2-2",
+          "3-3",
+          "4-4",
+          "5-5"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 3 - 0 时，可以想：",
+        "options": [
+          "没有拿走，还是 3",
+          "拿走全部",
+          "变成 0",
+          "一定是 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

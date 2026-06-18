@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狮子",
+        "hint": "选出“狮子”的拼音。",
+        "options": [
+          "sī zi",
+          "chī zi",
+          "shí zì",
+          "shī zi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "日出",
+        "hint": "选出“日出”的拼音。",
+        "options": [
+          "rì chū",
+          "lì chū",
+          "rì cū",
+          "shí chū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "尺子",
+        "hint": "选出“尺子”的拼音。",
+        "options": [
+          "cǐ zi",
+          "chǐ zi",
+          "shǐ zi",
+          "zhǐ zi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "书包",
+        "hint": "选出“书包”的拼音。",
+        "options": [
+          "sū bāo",
+          "chū bāo",
+          "zhū bāo",
+          "shū bāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "狮子"
+          },
+          {
+            "id": "l1",
+            "text": "日出"
+          },
+          {
+            "id": "l2",
+            "text": "尺子"
+          },
+          {
+            "id": "l3",
+            "text": "书包"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "rì chū"
+          },
+          {
+            "id": "r3",
+            "text": "shū bāo"
+          },
+          {
+            "id": "r0",
+            "text": "shī zi"
+          },
+          {
+            "id": "r2",
+            "text": "chǐ zi"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：我有一把尺子。",
+        "tokens": [
+          "我",
+          "书包",
+          "尺子",
+          "狮子",
+          "有",
+          "。",
+          "一把"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "有",
+          "一把",
+          "尺子",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：日出真美。",
+        "tokens": [
+          "日出",
+          "尺子",
+          "。",
+          "书包",
+          "真",
+          "美"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "日出",
+          "真",
+          "美",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "书",
+        "tokens": [
+          "花",
+          "本",
+          "棋",
+          "包",
+          "鼓",
+          "桌"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“书”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "包",
+            "本",
+            "桌"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "绕口令",
+        "passage": "四是四，十是十。十四是十四，四十是四十。读准四和十，平舌翘舌要分清。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-045.jpg",
+        "questions": [
+          {
+            "question": "儿歌提醒我们要分清什么？",
+            "options": [
+              "四和十",
+              "花和画",
+              "鸡和棋",
+              "瓜和过"
+            ]
+          },
+          {
+            "question": "“十”的声母是哪个？",
+            "options": [
+              "sh",
+              "s",
+              "ch",
+              "zh"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“四”和“十”发音最容易混的是哪一组？",
+        "options": [
+          "平舌音和翘舌音",
+          "前鼻音和后鼻音",
+          "一声和轻声",
+          "整体认读和韵母"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

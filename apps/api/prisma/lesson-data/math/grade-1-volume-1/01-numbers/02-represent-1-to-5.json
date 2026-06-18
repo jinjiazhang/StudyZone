@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪一种表示的是 2？",
+        "options": [
+          "一根手指",
+          "三根小棒",
+          "四个三角形",
+          "两个圆点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪一种表示的是 4？",
+        "options": [
+          "两架飞机",
+          "一个机器人",
+          "五个恐龙",
+          "四辆小汽车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "看到 ○○○，应写数字 ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "看到 |||||，应写数字 ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "填空：2架飞机、4辆汽车、5只恐龙。",
+        "blanks": [
+          {
+            "id": "plane",
+            "label": "飞机"
+          },
+          {
+            "id": "car",
+            "label": "汽车"
+          },
+          {
+            "id": "dino",
+            "label": "恐龙"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          4,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "1 个"
+          },
+          {
+            "id": "l2",
+            "text": "3 个"
+          },
+          {
+            "id": "l3",
+            "text": "5 个"
+          },
+          {
+            "id": "l4",
+            "text": "2 个"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "○○"
+          },
+          {
+            "id": "r2",
+            "text": "○○○○○"
+          },
+          {
+            "id": "r3",
+            "text": "○"
+          },
+          {
+            "id": "r4",
+            "text": "○○○"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "伸出一只手全部手指，可以表示几？",
+        "options": [
+          "3",
+          "4",
+          "1",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "有 ____ 个机器人，写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          },
+          {
+            "id": "b2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "有 ____ 架飞机，写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          },
+          {
+            "id": "b2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“4”可以表示下面哪一组？",
+        "options": [
+          "3 个杯子",
+          "5 朵花",
+          "2 只鸟",
+          "4 顶帽子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

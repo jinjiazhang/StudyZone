@@ -1,0 +1,257 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "风",
+        "hint": "读准诗题“风”",
+        "options": [
+          "fěng",
+          "fèng",
+          "fēng",
+          "fēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "风",
+        "author": "李峤",
+        "lines": [
+          [
+            "解落",
+            null,
+            "秋叶"
+          ],
+          [
+            "能开二月花"
+          ]
+        ],
+        "options": [
+          "三",
+          "二",
+          "千",
+          "万"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "风",
+        "author": "李峤",
+        "lines": [
+          [
+            "解落三秋叶"
+          ],
+          [
+            "能开",
+            null,
+            "花"
+          ]
+        ],
+        "options": [
+          "三月",
+          "二月",
+          "四月",
+          "五月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "风",
+        "author": "李峤",
+        "lines": [
+          [
+            "过江",
+            null,
+            "浪"
+          ],
+          [
+            "入竹万竿斜"
+          ]
+        ],
+        "options": [
+          "百尺",
+          "万尺",
+          "千尺",
+          "一尺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "风",
+        "author": "李峤",
+        "lines": [
+          [
+            "过江千尺浪"
+          ],
+          [
+            "入竹",
+            null,
+            "斜"
+          ]
+        ],
+        "options": [
+          "千竿",
+          "百竿",
+          "三竿",
+          "万竿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "风",
+        "author": "李峤",
+        "lines": [
+          [
+            "解落",
+            null,
+            "秋叶，"
+          ],
+          [
+            "能开",
+            null,
+            "花。"
+          ],
+          [
+            "过江",
+            null,
+            "浪，"
+          ],
+          [
+            "入竹",
+            null,
+            "斜。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "三",
+              "二",
+              "千",
+              "万"
+            ]
+          },
+          {
+            "options": [
+              "三月",
+              "四月",
+              "二月",
+              "五月"
+            ]
+          },
+          {
+            "options": [
+              "百尺",
+              "千尺",
+              "万尺",
+              "一尺"
+            ]
+          },
+          {
+            "options": [
+              "千竿",
+              "百竿",
+              "三竿",
+              "万竿"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《风》的作者是谁？",
+        "options": [
+          "李峤",
+          "李白",
+          "程宏明",
+          "金波"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“解落三秋叶”写风能做什么？",
+        "options": [
+          "喝到水",
+          "吹落秋叶",
+          "比尾巴",
+          "写祝福"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《风》中有“能开二月花”这一句。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《风》写的是乌鸦喝水的办法。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

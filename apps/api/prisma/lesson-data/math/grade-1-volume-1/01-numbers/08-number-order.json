@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 0、1、2、3、4 按从小到大排好。",
+        "items": [
+          {
+            "id": "n2",
+            "text": "2"
+          },
+          {
+            "id": "n0",
+            "text": "0"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          },
+          {
+            "id": "n1",
+            "text": "1"
+          },
+          {
+            "id": "n3",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 5、6、7、8、9、10 按从小到大排好。",
+        "items": [
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n5",
+          "n6",
+          "n7",
+          "n8",
+          "n9",
+          "n10"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 10、9、8、7、6 按倒数顺序排好。",
+        "items": [
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n10",
+          "n9",
+          "n8",
+          "n7",
+          "n6"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "0、1、2、?、4 中缺少的数是 ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "6、7、?、9、10 中缺少的数是 ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "10、9、8、?、6 中缺少的数是 ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "____、2、3、4、5",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "10、9、____、7、6",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "从 1 数到 5，3 的前一个数是？",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "从 6 数到 10，8 的后一个数是？",
+        "options": [
+          "7",
+          "10",
+          "9",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

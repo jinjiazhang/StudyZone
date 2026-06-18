@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦一开始为什么到处找水喝？",
+        "options": [
+          "口渴了",
+          "迷路了",
+          "找朋友",
+          "找石子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦看见瓶子后遇到什么困难？",
+        "options": [
+          "瓶子太高",
+          "水不多，瓶口又小",
+          "水太热",
+          "没有瓶子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦看见旁边有什么？",
+        "options": [
+          "一把伞",
+          "一只兔子",
+          "许多小石子",
+          "一片云彩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦把小石子放进瓶子后，水怎样了？",
+        "options": [
+          "越来越少",
+          "变成云",
+          "马上没有了",
+          "渐渐升高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦最后怎么样？",
+        "options": [
+          "飞走没喝",
+          "喝着水了",
+          "哭了",
+          "把瓶子打破了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出故事顺序：乌鸦找水喝",
+        "tokens": [
+          "喝着水",
+          "口渴找水",
+          "放进石子",
+          "看见瓶子",
+          "想出办法"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "口渴找水",
+          "看见瓶子",
+          "想出办法",
+          "放进石子",
+          "喝着水"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "乌鸦是把小石子一颗一颗地放进瓶子里的。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "乌鸦一开始就能直接喝到瓶子里的水。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "乌鸦的办法",
+        "passage": "一只乌鸦口渴了，看见一个瓶子。瓶子里有水，可是水不多，瓶口又小。乌鸦看见旁边有许多小石子，就把小石子一颗一颗地放进瓶子里。水升高了，乌鸦喝着水了。",
+        "questions": [
+          {
+            "question": "乌鸦遇到的困难是什么？",
+            "options": [
+              "瓶口小，水不多",
+              "没有石子",
+              "不会飞",
+              "天上下雨"
+            ]
+          },
+          {
+            "question": "乌鸦用了什么办法？",
+            "options": [
+              "放进小石子",
+              "叫朋友来",
+              "推倒瓶子",
+              "挖一个洞"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-102.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "先"
+          },
+          {
+            "id": "l1",
+            "text": "接着"
+          },
+          {
+            "id": "l2",
+            "text": "然后"
+          },
+          {
+            "id": "l3",
+            "text": "最后"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "喝着水了"
+          },
+          {
+            "id": "r0",
+            "text": "口渴找水"
+          },
+          {
+            "id": "r2",
+            "text": "放进瓶子"
+          },
+          {
+            "id": "r1",
+            "text": "看见石子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "哥哥",
+        "hint": "选出“哥哥”的拼音。",
+        "options": [
+          "gē ge",
+          "dì di",
+          "huā huā",
+          "gǔ gǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弟弟",
+        "hint": "选出“弟弟”的拼音。",
+        "options": [
+          "gē ge",
+          "dì di",
+          "huà huà",
+          "hé huā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "画画",
+        "hint": "选出“画画”的拼音。",
+        "options": [
+          "huā huā",
+          "gē ge",
+          "dì di",
+          "huà huà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荷花",
+        "hint": "选出“荷花”的拼音。",
+        "options": [
+          "hé huā",
+          "huà huà",
+          "gē ge",
+          "dǎ gǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "哥哥"
+          },
+          {
+            "id": "l1",
+            "text": "弟弟"
+          },
+          {
+            "id": "l2",
+            "text": "画画"
+          },
+          {
+            "id": "l3",
+            "text": "荷花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dì di"
+          },
+          {
+            "id": "r3",
+            "text": "hé huā"
+          },
+          {
+            "id": "r0",
+            "text": "gē ge"
+          },
+          {
+            "id": "r2",
+            "text": "huà huà"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "花",
+        "tokens": [
+          "弟",
+          "红",
+          "鼓",
+          "荷",
+          "棋",
+          "小"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“花”组成词语或短语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "荷",
+            "红",
+            "小"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：哥哥画荷花。",
+        "tokens": [
+          "哥哥",
+          "弟弟",
+          "。",
+          "打鼓",
+          "画",
+          "荷花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "哥哥",
+          "画",
+          "荷花",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：弟弟看画。",
+        "tokens": [
+          "弟弟",
+          "哥哥",
+          "。",
+          "荷花",
+          "看",
+          "画"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "弟弟",
+          "看",
+          "画",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "说话",
+        "passage": "小溪流说话，哗哗，哗哗。小雨点说话，沙沙，沙沙。小鸽子说话，咕咕，咕咕。小花猫说话，喵喵，喵喵。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-038.jpg",
+        "questions": [
+          {
+            "question": "小溪流说话是什么声音？",
+            "options": [
+              "哗哗",
+              "咕咕",
+              "喵喵",
+              "嘎嘎"
+            ]
+          },
+          {
+            "question": "文中谁“喵喵”地说话？",
+            "options": [
+              "小花猫",
+              "小鸽子",
+              "小雨点",
+              "小鸭子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“荷花”的“花”读什么？",
+        "options": [
+          "huà",
+          "guā",
+          "huā",
+          "kuā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "6 可以用哪组表示？",
+        "options": [
+          "5根小棒和1根小棒",
+          "4个圆",
+          "8个三角形",
+          "9个点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "7 可以用哪组表示？",
+        "options": [
+          "6根小棒",
+          "7个圆",
+          "9个方块",
+          "5根手指"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "8 可以用哪组表示？",
+        "options": [
+          "8个三角形",
+          "6个杯子",
+          "7根小棒",
+          "9个球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "9 可以用哪组表示？",
+        "options": [
+          "10个圆",
+          "6个方块",
+          "9块橡皮",
+          "7个点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "看到 ○○○○○○○○，写 ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "看到 |||||||||，写 ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "有 ____ 个文具盒，可以写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          },
+          {
+            "id": "b2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "有 ____ 根小棒，可以写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          },
+          {
+            "id": "b2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "六"
+          },
+          {
+            "id": "l2",
+            "text": "七"
+          },
+          {
+            "id": "l3",
+            "text": "八"
+          },
+          {
+            "id": "l4",
+            "text": "九"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "9"
+          },
+          {
+            "id": "r2",
+            "text": "6"
+          },
+          {
+            "id": "r3",
+            "text": "8"
+          },
+          {
+            "id": "r4",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "填空：6个三角形、7个圆、9个方块。",
+        "blanks": [
+          {
+            "id": "tri",
+            "label": "三角形"
+          },
+          {
+            "id": "circle",
+            "label": "圆"
+          },
+          {
+            "id": "square",
+            "label": "方块"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          7,
+          9
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

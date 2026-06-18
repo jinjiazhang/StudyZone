@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "田",
+        "hint": "田地的“田”",
+        "options": [
+          "diàn",
+          "rì",
+          "tián",
+          "mù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "禾",
+        "hint": "禾苗的“禾”",
+        "options": [
+          "hú",
+          "huǒ",
+          "mù",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "水"
+          },
+          {
+            "id": "l2",
+            "text": "火"
+          },
+          {
+            "id": "l3",
+            "text": "田"
+          },
+          {
+            "id": "l4",
+            "text": "禾"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "火苗"
+          },
+          {
+            "id": "r3",
+            "text": "田地"
+          },
+          {
+            "id": "r4",
+            "text": "禾苗"
+          },
+          {
+            "id": "r1",
+            "text": "河水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到禾苗图，可以想到哪个字？",
+        "options": [
+          "禾",
+          "田",
+          "火",
+          "川"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到一块块田地，可以想到哪个字？",
+        "options": [
+          "日",
+          "田",
+          "目",
+          "山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "日",
+        "tokens": [
+          "耳",
+          "月",
+          "田",
+          "出",
+          "水",
+          "光"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“日”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "月",
+            "出",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "山",
+        "tokens": [
+          "耳",
+          "川",
+          "火",
+          "水",
+          "你",
+          "上"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“山”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "川",
+            "水",
+            "上"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "水",
+        "tokens": [
+          "日",
+          "火",
+          "目",
+          "田",
+          "人"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“水”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "火",
+            "田"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课题后四个字",
+        "tokens": [
+          "日",
+          "水",
+          "月",
+          "火",
+          "田",
+          "禾"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水",
+          "火",
+          "田",
+          "禾"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“日”和“目”字形相近，哪一个表示太阳？",
+        "options": [
+          "目",
+          "田",
+          "日",
+          "口"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

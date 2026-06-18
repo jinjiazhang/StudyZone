@@ -1,0 +1,320 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：文具盒、魔方、茶叶罐、篮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：牙膏盒、纸巾盒、骰子、胶棒、小皮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：魔方、方积木、茶叶罐、电池、篮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：文具盒、积木盒、牙膏盒、乒乓球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "图中有：水杯、胶棒、电池、篮球、小皮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          0,
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有 2 个长方体、1 个正方体、1 个圆柱、1 个球，一共有几个物品？",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有 3 个圆柱和 2 个球，一共有几个能滚动的物品？",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "2 个正方体和 1 个球合起来是",
+          null,
+          "个，比 4 少",
+          null,
+          "个。"
+        ],
+        "tokens": [
+          "3",
+          "4",
+          "1",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "1"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一组里有魔方、骰子、方积木，它们应记在哪一类？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "圆柱"
+          },
+          {
+            "id": "o3",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计数时，已经数过的物品最好怎样做？",
+        "options": [
+          "反复数",
+          "只看最大的",
+          "只数红色的",
+          "做记号或按类放好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

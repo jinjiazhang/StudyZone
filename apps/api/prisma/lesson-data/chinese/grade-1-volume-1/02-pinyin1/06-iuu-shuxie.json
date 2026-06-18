@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "i 的竖写在哪一格？",
+        "options": [
+          "中格",
+          "上格",
+          "下格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "i 的点写在哪里？",
+        "options": [
+          "中格",
+          "上格",
+          "下格",
+          "第二线下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "u 写在哪一格？",
+        "options": [
+          "上格",
+          "下格",
+          "中格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "ü 比 u 多了什么？",
+        "options": [
+          "一横",
+          "两点",
+          "一竖",
+          "一撇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写 ü 时，两点应该写在什么位置？",
+        "options": [
+          "下格",
+          "中格",
+          "上格",
+          "格子外"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "i"
+          },
+          {
+            "id": "l_1",
+            "text": "u"
+          },
+          {
+            "id": "l_2",
+            "text": "ü"
+          },
+          {
+            "id": "l_3",
+            "text": "点"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "写在字母上方"
+          },
+          {
+            "id": "r_1",
+            "text": "中格加上格两点"
+          },
+          {
+            "id": "r_2",
+            "text": "一竖加一点"
+          },
+          {
+            "id": "r_3",
+            "text": "中格两笔成形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_3",
+          "l_2": "r_1",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有 i u ü 的书写格？",
+        "options": [
+          {
+            "id": "p28",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-028.jpg",
+            "label": "i u ü 四声和书写"
+          },
+          {
+            "id": "p26",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-026.jpg",
+            "label": "a o e 书写"
+          },
+          {
+            "id": "p31",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-031.jpg",
+            "label": "d t n l"
+          },
+          {
+            "id": "p34",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-034.jpg",
+            "label": "园地练习"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p28"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本顺序排出第2课三个韵母",
+        "tokens": [
+          "a",
+          "o",
+          "u",
+          "ü",
+          "i"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "i",
+          "u",
+          "ü"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字母不能漏掉上面的点？",
+        "options": [
+          "u",
+          "ü",
+          "o",
+          "a"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "四线三格中，i 和 ü 都会用到哪一格写点？",
+        "options": [
+          "上格",
+          "中格",
+          "下格",
+          "没有格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

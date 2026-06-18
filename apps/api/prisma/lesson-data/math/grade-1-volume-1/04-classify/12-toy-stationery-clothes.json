@@ -1,0 +1,177 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "练习第2题中，粉色上衣应放进哪一类？",
+        "options": [
+          "玩具",
+          "文具",
+          "水果",
+          "服装鞋帽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "玩具卡车应放进哪一类？",
+        "options": [
+          "文具",
+          "玩具",
+          "服装鞋帽",
+          "餐具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "铅笔应放进哪一类？",
+        "options": [
+          "玩具",
+          "文具",
+          "服装鞋帽",
+          "动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "运动鞋应放进哪一类？",
+        "options": [
+          "玩具",
+          "水果",
+          "文具",
+          "服装鞋帽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "帽子应放进哪一类？",
+        "options": [
+          "服装鞋帽",
+          "文具",
+          "玩具",
+          "餐具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把上衣、短裤、帽子、运动鞋分到“服装鞋帽”，共有几件？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把铅笔、文具盒、尺子分到“文具”，共有几件？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "玩具卡车、狮子玩偶、飞机模型，一共有几件玩具？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "上衣"
+          },
+          {
+            "id": "l_1",
+            "text": "铅笔"
+          },
+          {
+            "id": "l_2",
+            "text": "狮子玩偶"
+          },
+          {
+            "id": "l_3",
+            "text": "运动鞋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "玩具"
+          },
+          {
+            "id": "r_0",
+            "text": "服装鞋帽"
+          },
+          {
+            "id": "r_3",
+            "text": "鞋帽"
+          },
+          {
+            "id": "r_1",
+            "text": "文具"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "文具盒应放在“文具”这一类。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

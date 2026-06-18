@@ -1,0 +1,294 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把物品按形状分类时，应该主要看什么？",
+        "options": [
+          "颜色",
+          "大小",
+          "花纹",
+          "整体形状"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "牙膏盒、纸巾盒、文具盒可以放在哪一类？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o2",
+            "label": "长方体"
+          },
+          {
+            "id": "o3",
+            "label": "圆柱"
+          },
+          {
+            "id": "o4",
+            "label": "正方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "魔方、骰子、方积木可以放在哪一类？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "圆柱"
+          },
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "茶叶罐、胶棒、电池可以放在哪一类？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "长方体"
+          },
+          {
+            "id": "o3",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "球"
+          },
+          {
+            "id": "o1",
+            "label": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "篮球、乒乓球、小皮球可以放在哪一类？",
+        "options": [
+          {
+            "id": "o4",
+            "label": "球"
+          },
+          {
+            "id": "o1",
+            "label": "正方体"
+          },
+          {
+            "id": "o2",
+            "label": "圆柱"
+          },
+          {
+            "id": "o3",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方体"
+          },
+          {
+            "id": "l2",
+            "text": "正方体"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "上下圆圆"
+          },
+          {
+            "id": "r1",
+            "text": "方方长长"
+          },
+          {
+            "id": "r4",
+            "text": "圆圆的"
+          },
+          {
+            "id": "r2",
+            "text": "方方正正"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "方方长长的一类是",
+          null,
+          "，圆圆的一类是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "球",
+          "正方体",
+          "长方体",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方体",
+          "球"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一堆物品中有：牙膏盒、魔方、茶叶罐、篮球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果把“茶叶罐”放进球的一类，问题在哪里？",
+        "options": [
+          "没有按形状分类",
+          "数量太少",
+          "颜色不一样",
+          "名字太长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "同一类里的物品应该有什么相同？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "颜色相同"
+          },
+          {
+            "id": "o3",
+            "label": "形状相像"
+          },
+          {
+            "id": "o2",
+            "label": "大小相同"
+          },
+          {
+            "id": "o4",
+            "label": "都很轻"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

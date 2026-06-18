@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "力气"
+          },
+          {
+            "id": "l2",
+            "text": "尘土"
+          },
+          {
+            "id": "l3",
+            "text": "双手"
+          },
+          {
+            "id": "l4",
+            "text": "金黄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "两只手"
+          },
+          {
+            "id": "r1",
+            "text": "有力量"
+          },
+          {
+            "id": "r4",
+            "text": "像金子一样黄"
+          },
+          {
+            "id": "r2",
+            "text": "细小的土"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "树林"
+          },
+          {
+            "id": "l2",
+            "text": "森林"
+          },
+          {
+            "id": "l3",
+            "text": "关心"
+          },
+          {
+            "id": "l4",
+            "text": "开心"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "更多更密的树"
+          },
+          {
+            "id": "r4",
+            "text": "心里高兴"
+          },
+          {
+            "id": "r1",
+            "text": "很多树"
+          },
+          {
+            "id": "r3",
+            "text": "放在心上"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“读一读”中，“力气”里的“气”读什么？",
+        "options": [
+          "qì",
+          "qǐ",
+          "xì",
+          "chì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“金黄”常用来形容什么颜色？",
+        "options": [
+          "红色",
+          "黄色",
+          "蓝色",
+          "黑色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到“氵”和“目”合在一起，可以猜出哪个字？",
+        "options": [
+          "泪",
+          "苗",
+          "歪",
+          "林"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“不”和“正”合在一起，可以猜出哪个字？",
+        "options": [
+          "歪",
+          "苗",
+          "泪",
+          "众"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "林",
+        "tokens": [
+          "木",
+          "口",
+          "树",
+          "土",
+          "森",
+          "桃"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“林”组成相关词语或同类字的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "木",
+            "树",
+            "森",
+            "桃"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "心",
+        "tokens": [
+          "关",
+          "水",
+          "开",
+          "鸟",
+          "中",
+          "上"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“心”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "关",
+            "开",
+            "中"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“苗”可以由“艹”和“田”帮助猜意思。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“歪”的意思一定是“很正”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

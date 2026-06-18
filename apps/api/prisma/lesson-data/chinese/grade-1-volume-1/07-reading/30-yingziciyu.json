@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "前"
+          },
+          {
+            "id": "l1",
+            "text": "后"
+          },
+          {
+            "id": "l2",
+            "text": "左"
+          },
+          {
+            "id": "l3",
+            "text": "右"
+          },
+          {
+            "id": "l4",
+            "text": "影子"
+          },
+          {
+            "id": "l5",
+            "text": "朋友"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "左手这一边"
+          },
+          {
+            "id": "r0",
+            "text": "身体面向的一边"
+          },
+          {
+            "id": "r3",
+            "text": "右手这一边"
+          },
+          {
+            "id": "r1",
+            "text": "背后的一边"
+          },
+          {
+            "id": "r5",
+            "text": "互相亲近的人"
+          },
+          {
+            "id": "r4",
+            "text": "光照后留下的暗形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "影",
+        "tokens": [
+          "子",
+          "前",
+          "像",
+          "后",
+          "黑",
+          "月",
+          "船"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“影”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "像",
+            "黑"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "朋",
+        "tokens": [
+          "友",
+          "星",
+          "辈",
+          "右",
+          "伴",
+          "月",
+          "狗"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“朋”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "友",
+            "辈",
+            "伴"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“影子在前，影子在后”写出了影子会怎样？",
+        "options": [
+          "颜色会变红",
+          "声音很响",
+          "会吃花生",
+          "位置会变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文把影子比作什么？",
+        "options": [
+          "小黑狗",
+          "小小的船",
+          "两件宝",
+          "月儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“前、后、左、右”都是表示什么的词？",
+        "options": [
+          "颜色",
+          "方位",
+          "亲属",
+          "季节"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“影子常常跟着我”说明影子和“我”怎样？",
+        "options": [
+          "从不出现",
+          "只在水里",
+          "经常在一起",
+          "只在树上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全短句：影子在前。",
+        "tokens": [
+          "后",
+          "朋友",
+          "前",
+          "在",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "在",
+          "前"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全短句：它是我的好朋友。",
+        "tokens": [
+          "小船",
+          "蓝蓝的",
+          "好朋友",
+          "我的",
+          "是",
+          "它"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "是",
+          "我的",
+          "好朋友"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zài",
+        "sentence": "影子__前。",
+        "character": "在",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "在"
+      },
+      "difficulty": 2
+    }
+  ]
+}

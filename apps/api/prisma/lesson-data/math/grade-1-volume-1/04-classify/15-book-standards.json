@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把语文书和语文练习本放一起，是按什么分？",
+        "options": [
+          "颜色",
+          "厚薄",
+          "大小",
+          "学科"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把书放一类、练习本放一类，是按什么分？",
+        "options": [
+          "用途或种类",
+          "学科",
+          "会不会飞",
+          "能不能吃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一堆书本可以用不同标准分类吗？",
+        "options": [
+          "不可以",
+          "只能按颜色",
+          "可以",
+          "只能按大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "语文书、数学书放一类，语文练习本、数学练习本放一类，是按什么标准？",
+        "options": [
+          "语文和数学",
+          "新和旧",
+          "书和练习本",
+          "长和短"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一批书本只能有一种分类方法。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "按学科分时，数学书和数学练习本可以放在一类。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2本语文类、2本数学类，一共有几本？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "书2本，练习本2本，一共有几本？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "语文书+语文练习本"
+          },
+          {
+            "id": "l_1",
+            "text": "数学书+数学练习本"
+          },
+          {
+            "id": "l_2",
+            "text": "语文书+数学书"
+          },
+          {
+            "id": "l_3",
+            "text": "语文练习本+数学练习本"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "按“书”分"
+          },
+          {
+            "id": "r_0",
+            "text": "按“语文”分"
+          },
+          {
+            "id": "r_3",
+            "text": "按“练习本”分"
+          },
+          {
+            "id": "r_1",
+            "text": "按“数学”分"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要说明“我是怎么分的”，最重要说清什么？",
+        "options": [
+          "分类标准",
+          "谁先拿",
+          "哪本最漂亮",
+          "桌子有多大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

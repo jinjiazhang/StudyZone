@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把铅笔放进“玩具”类，错在哪里？",
+        "options": [
+          "铅笔是文具",
+          "铅笔会飞",
+          "铅笔是水果",
+          "铅笔是衣服"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把苹果放进“文具”类，应该改放到哪一类？",
+        "options": [
+          "玩具",
+          "鞋帽",
+          "水果",
+          "图形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按“会飞”分类时，把小狗涂色，错在哪里？",
+        "options": [
+          "小狗太大",
+          "小狗颜色不对",
+          "小狗不会飞",
+          "小狗数量少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按颜色分图形时，把蓝色圆形放进黄色类，应该怎样改？",
+        "options": [
+          "放进蓝色类",
+          "放进三角形类",
+          "放进文具类",
+          "删掉它"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类错误时，要回到分类标准检查。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要放满一类，放错也没关系。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5件物品中有1件放错，放对了几件？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6个图形按形状分，有2个放错，放对了几个？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "苹果放文具类"
+          },
+          {
+            "id": "l_1",
+            "text": "铅笔放文具类"
+          },
+          {
+            "id": "l_2",
+            "text": "小鸟放会飞类"
+          },
+          {
+            "id": "l_3",
+            "text": "鞋子放水果类"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "合适：小鸟会飞"
+          },
+          {
+            "id": "r_0",
+            "text": "不合适：苹果是水果"
+          },
+          {
+            "id": "r_3",
+            "text": "不合适：鞋子不是水果"
+          },
+          {
+            "id": "r_1",
+            "text": "合适：铅笔是文具"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发现一个物品可以放进两类时，最可能的原因是？",
+        "options": [
+          "物品消失了",
+          "数量变成0",
+          "不能分类",
+          "分类标准没有说清楚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

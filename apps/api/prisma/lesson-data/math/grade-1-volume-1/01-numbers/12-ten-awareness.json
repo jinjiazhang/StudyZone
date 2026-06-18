@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "盒子里有 10 个鸡蛋，填 ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“9 添上 1 是 10”说的是哪个数？",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "type": "expression_input",
+        "statement": "用算式表示：9 添上 1 是 10。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "9+1",
+          "1+9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "十个圆分成上下两排，每排 5 个，一共有 ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 10 的个位数字是哪个？",
+        "options": [
+          "1",
+          "0",
+          "2",
+          "9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数字 10 的左边数字是哪个？",
+        "options": [
+          "0",
+          "5",
+          "1",
+          "9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 6、7、8、9、10 排成从小到大。",
+        "items": [
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          },
+          {
+            "id": "n8",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n6",
+          "n7",
+          "n8",
+          "n9",
+          "n10"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "从 1 数到 10，最后一个数是 ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "1、2、3、4、5、6、7、8、9、____",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "10",
+        "right": "9",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

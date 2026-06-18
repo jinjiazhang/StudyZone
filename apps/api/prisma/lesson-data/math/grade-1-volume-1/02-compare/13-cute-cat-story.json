@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "盘里有 3 条鱼，小猫吃了 1 条，还剩 ? 条。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "还剩 2 条鱼，又吃了 1 条，还剩 ? 条。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "还剩 1 条鱼，再吃 1 条，还剩 ? 条。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还剩"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 1 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 - 1 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 - 1 = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按小猫吃鱼后的剩余数量从多到少排。",
+        "items": [
+          {
+            "id": "i3",
+            "text": "还剩1条"
+          },
+          {
+            "id": "i1",
+            "text": "还剩3条"
+          },
+          {
+            "id": "i4",
+            "text": "还剩0条"
+          },
+          {
+            "id": "i2",
+            "text": "还剩2条"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3 条鱼吃掉 1 条，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "3-1"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "2 条鱼吃掉 1 条，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "2-1"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每次吃 1 条，鱼的数量会怎样变化？",
+        "options": [
+          "每次多 1 条",
+          "每次少 1 条",
+          "一直不变",
+          "先多后少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 - 1",
+        "right": "2 - 1",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 1 - 1 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

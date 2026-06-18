@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第八单元有哪三篇课文？",
+        "options": [
+          "《秋天》《江南》《四季》",
+          "《小小的船》《影子》《两件宝》",
+          "《比尾巴》《乌鸦喝水》《雨点儿》",
+          "《对韵歌》《日月明》《升国旗》"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一把伞”出现在下面哪一课？",
+        "options": [
+          "《乌鸦喝水》",
+          "《雨点儿》",
+          "《风》",
+          "《比尾巴》"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一颗一颗地放进瓶子里”出自哪一课？",
+        "options": [
+          "《比尾巴》",
+          "《乌鸦喝水》",
+          "《雨点儿》",
+          "语文园地八"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“花更红了，草更绿了”出自哪一课？",
+        "options": [
+          "《乌鸦喝水》",
+          "《比尾巴》",
+          "《风》",
+          "《雨点儿》"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "猴子"
+          },
+          {
+            "id": "l1",
+            "text": "乌鸦"
+          },
+          {
+            "id": "l2",
+            "text": "雨点儿"
+          },
+          {
+            "id": "l3",
+            "text": "风"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "滋润花草"
+          },
+          {
+            "id": "r0",
+            "text": "尾巴长"
+          },
+          {
+            "id": "r3",
+            "text": "吹落秋叶"
+          },
+          {
+            "id": "r1",
+            "text": "想办法喝水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：乌鸦把小石子放进瓶子里",
+        "tokens": [
+          "放进",
+          "小石子",
+          "乌鸦",
+          "瓶子里",
+          "把"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "乌鸦",
+          "把",
+          "小石子",
+          "放进",
+          "瓶子里"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：小雨点儿要去有花有草的地方",
+        "tokens": [
+          "要去",
+          "小雨点儿",
+          "有花有草",
+          "的地方",
+          "尾巴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小雨点儿",
+          "要去",
+          "有花有草",
+          "的地方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "办法",
+        "hint": "读准本单元词语“办法”",
+        "options": [
+          "bǎn fǎ",
+          "bàn fá",
+          "pàn fǎ",
+          "bàn fǎ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“孔雀的尾巴最好看”是《比尾巴》中的句子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "三个小伙伴",
+        "passage": "猴子说：“我的尾巴长。”乌鸦说：“我会想办法喝水。”小雨点儿说：“我要去有花有草的地方。”风轻轻吹来，花更红了，草更绿了。",
+        "questions": [
+          {
+            "question": "谁会想办法喝水？",
+            "options": [
+              "乌鸦",
+              "猴子",
+              "小雨点儿",
+              "孔雀"
+            ]
+          },
+          {
+            "question": "小雨点儿要去哪里？",
+            "options": [
+              "有花有草的地方",
+              "井边",
+              "瓶子里",
+              "树上"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "小猫的袋子里一条鱼也没有，用数字 ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "0 可以表示什么？",
+        "options": [
+          "很多",
+          "没有",
+          "排第1",
+          "10个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪种情况可以用 0 表示？",
+        "options": [
+          "盘子里没有苹果",
+          "有5只鸭子",
+          "有2支铅笔",
+          "第3名"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "0 后面接着数是 ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "尺子最左边常从数字 ? 开始。"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "一条鱼也没有"
+          },
+          {
+            "id": "l2",
+            "text": "一个太阳"
+          },
+          {
+            "id": "l3",
+            "text": "两架飞机"
+          },
+          {
+            "id": "l4",
+            "text": "三朵云"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "2"
+          },
+          {
+            "id": "r2",
+            "text": "0"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r4",
+            "text": "1"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "袋子里没有鱼，写作 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "门牌 102 里的 0 是什么？",
+        "options": [
+          "一个数字",
+          "一个动物",
+          "一种颜色",
+          "一个符号不能读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "旋钮上看到 0、1、2、3、4，一共有几个数字？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "下面哪个数表示“没有”？",
+        "options": [
+          "5",
+          "1",
+          "0",
+          "3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

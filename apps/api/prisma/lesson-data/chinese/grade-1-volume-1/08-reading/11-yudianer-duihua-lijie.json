@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小雨点儿要去哪里？",
+        "options": [
+          "有花有草的地方",
+          "没有花没有草的地方",
+          "瓶子里",
+          "井边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大雨点儿要去哪里？",
+        "options": [
+          "有花有草的地方",
+          "没有花没有草的地方",
+          "猴子家",
+          "教室里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有花有草的地方后来怎样了？",
+        "options": [
+          "没有变化",
+          "变成井",
+          "花更红了，草更绿了",
+          "尾巴更长了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "没有花没有草的地方后来怎样了？",
+        "options": [
+          "水不多",
+          "没有太阳",
+          "变成瓶子",
+          "开出了红的花，长出了绿的草"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小雨点儿和大雨点儿在半空中说话。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "大雨点儿要去有花有草的地方。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出问句：你要到哪里去？",
+        "tokens": [
+          "哪里",
+          "要到",
+          "去",
+          "你",
+          "？"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "要到",
+          "哪里",
+          "去",
+          "？"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出答句：我要去有花有草的地方。",
+        "tokens": [
+          "有花有草",
+          "我要去",
+          "的地方",
+          "没有",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我要去",
+          "有花有草",
+          "的地方",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "雨点儿去哪儿",
+        "passage": "半空中，大雨点儿问小雨点儿：“你要到哪里去？”小雨点儿说：“我要去有花有草的地方。”大雨点儿说：“我要去没有花没有草的地方。”不久，花更红了，草更绿了。",
+        "questions": [
+          {
+            "question": "谁问“你要到哪里去”？",
+            "options": [
+              "大雨点儿",
+              "小雨点儿",
+              "乌鸦",
+              "孔雀"
+            ]
+          },
+          {
+            "question": "小雨点儿要去哪里？",
+            "options": [
+              "有花有草的地方",
+              "没有花没有草的地方",
+              "井边",
+              "瓶子里"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-104.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小雨点儿"
+          },
+          {
+            "id": "l1",
+            "text": "大雨点儿"
+          },
+          {
+            "id": "l2",
+            "text": "有花有草的地方"
+          },
+          {
+            "id": "l3",
+            "text": "没有花没有草的地方"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "花更红草更绿"
+          },
+          {
+            "id": "r0",
+            "text": "去有花有草的地方"
+          },
+          {
+            "id": "r3",
+            "text": "开花长草"
+          },
+          {
+            "id": "r1",
+            "text": "去没有花没有草的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

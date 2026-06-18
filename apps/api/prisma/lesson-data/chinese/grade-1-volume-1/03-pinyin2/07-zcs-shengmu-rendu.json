@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "z",
+        "hint": "选出声母 z。",
+        "options": [
+          "z",
+          "c",
+          "s",
+          "zh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "c",
+        "hint": "选出声母 c。",
+        "options": [
+          "z",
+          "s",
+          "c",
+          "ch"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "s",
+        "hint": "选出声母 s。",
+        "options": [
+          "z",
+          "s",
+          "c",
+          "sh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "z、c、s 都属于哪一类声母？",
+        "options": [
+          "翘舌音",
+          "韵母",
+          "整体认读音节",
+          "平舌音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "z 的读音像哪个字的开头？",
+        "options": [
+          "吃",
+          "师",
+          "字",
+          "日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "c 的读音像哪个字的开头？",
+        "options": [
+          "字",
+          "刺",
+          "丝",
+          "热"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "z"
+          },
+          {
+            "id": "l1",
+            "text": "c"
+          },
+          {
+            "id": "l2",
+            "text": "s"
+          },
+          {
+            "id": "l3",
+            "text": "平舌音"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "刺的开头声母"
+          },
+          {
+            "id": "r3",
+            "text": "舌尖平放发音"
+          },
+          {
+            "id": "r0",
+            "text": "字的开头声母"
+          },
+          {
+            "id": "r2",
+            "text": "丝的开头声母"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按教材顺序摆出三个声母。",
+        "tokens": [
+          "sh",
+          "zh",
+          "s",
+          "ch",
+          "z",
+          "c"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "z",
+          "c",
+          "s"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个是平舌音声母？",
+        "options": [
+          "sh",
+          "r",
+          "ch",
+          "s"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "字",
+        "hint": "选出“字”的拼音。",
+        "options": [
+          "zì",
+          "cì",
+          "sì",
+          "zhì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

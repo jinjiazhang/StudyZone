@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "sentence": "一__乌鸦口渴了。",
+        "character": "只",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "只"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "duō",
+        "sentence": "瓶子里的水不__。",
+        "character": "多",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "多"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bàn",
+        "sentence": "乌鸦想出__法来了。",
+        "character": "办",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "办"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shí",
+        "sentence": "乌鸦把小__子放进瓶子里。",
+        "character": "石",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "石"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chū",
+        "sentence": "水渐渐升高，乌鸦喝着水了。想__办法很重要。",
+        "character": "出",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "出"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "只",
+        "tokens": [
+          "一",
+          "石",
+          "鸟",
+          "多",
+          "有",
+          "高"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "一",
+            "鸟",
+            "有"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "多",
+        "tokens": [
+          "许",
+          "办",
+          "少",
+          "处",
+          "很",
+          "高"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "许",
+            "少",
+            "很"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "办",
+        "tokens": [
+          "法",
+          "石",
+          "事",
+          "只",
+          "好",
+          "水"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "法",
+            "事",
+            "好"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "石",
+        "tokens": [
+          "子",
+          "问",
+          "头",
+          "高",
+          "块",
+          "兔"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "头",
+            "块"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "到处"
+          },
+          {
+            "id": "l1",
+            "text": "许多"
+          },
+          {
+            "id": "l2",
+            "text": "办法"
+          },
+          {
+            "id": "l3",
+            "text": "升高"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "解决问题的方法"
+          },
+          {
+            "id": "r0",
+            "text": "各处"
+          },
+          {
+            "id": "r3",
+            "text": "一点一点变高"
+          },
+          {
+            "id": "r1",
+            "text": "很多"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

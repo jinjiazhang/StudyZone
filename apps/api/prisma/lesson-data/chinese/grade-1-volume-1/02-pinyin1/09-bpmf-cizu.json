@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爸",
+        "hint": "选择“爸”的正确拼音",
+        "options": [
+          "bā",
+          "bá",
+          "bǎ",
+          "bà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妈",
+        "hint": "选择“妈”的正确拼音",
+        "options": [
+          "mā",
+          "má",
+          "mǎ",
+          "mà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爸爸",
+        "hint": "选择“爸爸”的读音",
+        "options": [
+          "bà ba",
+          "mā ma",
+          "bā bā",
+          "pà pa"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "妈妈",
+        "hint": "选择“妈妈”的读音",
+        "options": [
+          "mǎ ma",
+          "mā ma",
+          "mà ma",
+          "bà ba"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "bà ba"
+          },
+          {
+            "id": "l_1",
+            "text": "mā ma"
+          },
+          {
+            "id": "l_2",
+            "text": "b"
+          },
+          {
+            "id": "l_3",
+            "text": "m"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "妈妈"
+          },
+          {
+            "id": "r_1",
+            "text": "声母 m"
+          },
+          {
+            "id": "r_2",
+            "text": "爸爸"
+          },
+          {
+            "id": "r_3",
+            "text": "声母 b"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_0",
+          "l_2": "r_3",
+          "l_3": "r_1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：爸爸",
+        "tokens": [
+          "mā",
+          "ma",
+          "ba",
+          "bà"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "bà",
+          "ba"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：妈妈",
+        "tokens": [
+          "bà",
+          "ba",
+          "ma",
+          "mā"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "mā",
+          "ma"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“爸爸、妈妈”中，第二个字通常读什么声调？",
+        "options": [
+          "轻声",
+          "第一声",
+          "第三声",
+          "第四声"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词来自第3课？",
+        "options": [
+          "大地",
+          "爸爸",
+          "小白兔",
+          "中国地图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“妈”的声母是什么？",
+        "options": [
+          "b",
+          "p",
+          "m",
+          "f"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

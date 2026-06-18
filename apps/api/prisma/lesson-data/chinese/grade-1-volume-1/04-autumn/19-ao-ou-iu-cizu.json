@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "小桥",
+        "hint": "选择“小桥”的拼音",
+        "options": [
+          "xiǎo qiǎo",
+          "xiǎo jiáo",
+          "xiǎo qiáo",
+          "xiāo qiáo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "流水",
+        "hint": "选择“流水”的拼音",
+        "options": [
+          "liǔ shuǐ",
+          "niú shuǐ",
+          "liú suǐ",
+          "liú shuǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "垂柳",
+        "hint": "选择“垂柳”的拼音",
+        "options": [
+          "chuí liǔ",
+          "cuí liǔ",
+          "chuí niǔ",
+          "chuī liǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "桃花",
+        "hint": "选择“桃花”的拼音",
+        "options": [
+          "tiáo huā",
+          "táo huā",
+          "táo hā",
+          "dáo huā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "小桥"
+          },
+          {
+            "id": "l_1",
+            "text": "流水"
+          },
+          {
+            "id": "l_2",
+            "text": "垂柳"
+          },
+          {
+            "id": "l_3",
+            "text": "桃花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "táo huā"
+          },
+          {
+            "id": "r_2",
+            "text": "chuí liǔ"
+          },
+          {
+            "id": "r_1",
+            "text": "liú shuǐ"
+          },
+          {
+            "id": "r_0",
+            "text": "xiǎo qiáo"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小桥、流水、垂柳、桃花”都和什么景物有关？",
+        "options": [
+          "文具",
+          "动物",
+          "春天景物",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“桃花”的“桃”读音里有哪个韵母？",
+        "options": [
+          "ou",
+          "iu",
+          "ui",
+          "ao"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：桥",
+        "options": [
+          "水",
+          "花",
+          "小",
+          "柳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：花",
+        "options": [
+          "小",
+          "流",
+          "桥",
+          "桃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补成词语：",
+        "tokens": [
+          "流",
+          "西",
+          "水",
+          "瓜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "流",
+          "水"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

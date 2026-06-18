@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第46页图形可以按什么标准分？",
+        "options": [
+          "会不会飞",
+          "颜色或形状",
+          "能不能吃",
+          "是不是文具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆形、三角形、正方形分别放一类，是按什么分？",
+        "options": [
+          "颜色",
+          "形状",
+          "大小",
+          "左右"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "黄色、蓝色、绿色分别放一类，是按什么分？",
+        "options": [
+          "形状",
+          "多少",
+          "厚薄",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "黄色圆形和黄色三角形按颜色分时应放在哪里？",
+        "options": [
+          "黄色类",
+          "圆形类",
+          "三角形类",
+          "蓝色类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一组图形可以按颜色分，也可以按形状分。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "按形状分时，圆形和三角形应放在同一类。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "图中有圆形3个、三角形3个、正方形3个，共几个图形？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "黄、蓝、绿三种颜色，共几种颜色？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "圆形"
+          },
+          {
+            "id": "l_1",
+            "text": "三角形"
+          },
+          {
+            "id": "l_2",
+            "text": "正方形"
+          },
+          {
+            "id": "l_3",
+            "text": "黄色图形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "方方正正形状"
+          },
+          {
+            "id": "r_0",
+            "text": "按形状分"
+          },
+          {
+            "id": "r_3",
+            "text": "按颜色分"
+          },
+          {
+            "id": "r_1",
+            "text": "三条边形状"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果只把蓝色图形圈出来，分类标准是？",
+        "options": [
+          "形状",
+          "大小",
+          "颜色",
+          "能不能滚动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

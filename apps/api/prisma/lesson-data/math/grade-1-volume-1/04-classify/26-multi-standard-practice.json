@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一组图形有黄圆、黄三角、蓝圆。按颜色分，黄圆和黄三角属于？",
+        "options": [
+          "圆形类",
+          "三角形类",
+          "黄色类",
+          "蓝色类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一组图形按形状分，黄圆和蓝圆属于？",
+        "options": [
+          "黄色类",
+          "蓝色类",
+          "圆形类",
+          "三角形类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一盒彩笔有红笔、蓝笔、红铅笔。按颜色分，红笔和红铅笔属于？",
+        "options": [
+          "红色类",
+          "蓝色类",
+          "铅笔类",
+          "彩笔类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一盒彩笔按种类分，蓝彩笔和红彩笔属于？",
+        "options": [
+          "红色类",
+          "蓝色类",
+          "带橡皮类",
+          "彩笔类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "按不同标准分，同一个物品可能和不同伙伴在一类。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个物品在分类时一定不能换类别。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6个图形按颜色分：黄色2个、蓝色2个、绿色2个。三个空依次填数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          },
+          {
+            "id": "b_3"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6个图形按形状分：圆形2个、三角形2个、正方形2个。三个空依次填数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          },
+          {
+            "id": "b_3"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "黄圆按颜色分"
+          },
+          {
+            "id": "l_1",
+            "text": "黄圆按形状分"
+          },
+          {
+            "id": "l_2",
+            "text": "蓝三角按颜色分"
+          },
+          {
+            "id": "l_3",
+            "text": "蓝三角按形状分"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "蓝色类"
+          },
+          {
+            "id": "r_0",
+            "text": "黄色类"
+          },
+          {
+            "id": "r_3",
+            "text": "三角形类"
+          },
+          {
+            "id": "r_1",
+            "text": "圆形类"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "多标准分类最容易出错的地方是？",
+        "options": [
+          "不会数到10",
+          "忘记当前标准",
+          "不会写名字",
+          "没有铅笔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

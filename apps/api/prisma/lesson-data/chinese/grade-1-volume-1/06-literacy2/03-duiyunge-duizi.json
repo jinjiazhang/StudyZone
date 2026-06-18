@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "云"
+          },
+          {
+            "id": "l2",
+            "text": "雪"
+          },
+          {
+            "id": "l3",
+            "text": "花"
+          },
+          {
+            "id": "l4",
+            "text": "鸟"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "树"
+          },
+          {
+            "id": "r1",
+            "text": "雨"
+          },
+          {
+            "id": "r4",
+            "text": "虫"
+          },
+          {
+            "id": "r2",
+            "text": "风"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "山清"
+          },
+          {
+            "id": "l2",
+            "text": "柳绿"
+          },
+          {
+            "id": "l3",
+            "text": "云"
+          },
+          {
+            "id": "l4",
+            "text": "雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "桃红"
+          },
+          {
+            "id": "r4",
+            "text": "风"
+          },
+          {
+            "id": "r1",
+            "text": "水秀"
+          },
+          {
+            "id": "r3",
+            "text": "雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“云对雨”中的两个词都和什么有关？",
+        "options": [
+          "天气",
+          "学习用品",
+          "颜色",
+          "动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鸟对虫”中的两个词都是什么？",
+        "options": [
+          "植物",
+          "动物",
+          "颜色",
+          "地方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出《对韵歌》句子。",
+        "tokens": [
+          "雨",
+          "云",
+          "对",
+          "雪",
+          "树"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "云",
+          "对",
+          "雨"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出《对韵歌》句子。",
+        "tokens": [
+          "对",
+          "风",
+          "花",
+          "雪",
+          "水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪",
+          "对",
+          "风"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出《对韵歌》句子。",
+        "tokens": [
+          "树",
+          "花",
+          "对",
+          "鸟",
+          "山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花",
+          "对",
+          "树"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出《对韵歌》句子。",
+        "tokens": [
+          "虫",
+          "鸟",
+          "对",
+          "雨",
+          "红"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟",
+          "对",
+          "虫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“柳绿对桃红”里有颜色词。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“山清对水秀”写的是学习用品。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

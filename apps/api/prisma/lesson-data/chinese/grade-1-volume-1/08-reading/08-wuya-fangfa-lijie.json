@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“瓶子里的水渐渐升高”中“渐渐”说明什么？",
+        "options": [
+          "突然变化",
+          "完全不变",
+          "声音很大",
+          "一点一点地变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "乌鸦能喝到水，主要因为它怎么样？",
+        "options": [
+          "爱动脑筋",
+          "声音很大",
+          "尾巴好看",
+          "飞得很快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项和“放进”意思接近？",
+        "options": [
+          "拿出来",
+          "扔远处",
+          "放到里面",
+          "挂起来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：乌鸦想出办法来了",
+        "tokens": [
+          "来了",
+          "想出",
+          "乌鸦",
+          "办法",
+          "喝水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "乌鸦",
+          "想出",
+          "办法",
+          "来了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：瓶子里的水渐渐升高",
+        "tokens": [
+          "渐渐",
+          "瓶子里",
+          "升高",
+          "小石子",
+          "的水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "瓶子里",
+          "的水",
+          "渐渐",
+          "升高"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "瓶口又小"
+          },
+          {
+            "id": "l1",
+            "text": "水不多"
+          },
+          {
+            "id": "l2",
+            "text": "许多小石子"
+          },
+          {
+            "id": "l3",
+            "text": "水升高"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "可以放进瓶子"
+          },
+          {
+            "id": "r0",
+            "text": "不好直接喝"
+          },
+          {
+            "id": "r3",
+            "text": "能喝着水"
+          },
+          {
+            "id": "r1",
+            "text": "水面低"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“怎么办呢？”说明乌鸦在想办法。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "乌鸦喝水的办法是等大雨点儿来。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "动脑筋",
+        "passage": "遇到困难时，可以先看一看周围有什么，再想办法。乌鸦看见小石子，就用小石子让水升高。",
+        "questions": [
+          {
+            "question": "遇到困难可以先做什么？",
+            "options": [
+              "看一看周围",
+              "马上放弃",
+              "大声吵闹",
+              "闭上眼睛"
+            ]
+          },
+          {
+            "question": "乌鸦用什么让水升高？",
+            "options": [
+              "小石子",
+              "尾巴",
+              "雨点儿",
+              "叶子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "渐渐",
+        "hint": "读准词语“渐渐”",
+        "options": [
+          "jiān jiān",
+          "jiàn jiàn",
+          "jiǎn jiǎn",
+          "jìn jìn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

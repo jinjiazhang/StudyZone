@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "文具盒整体最像哪种立体图形？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "正方体"
+          },
+          {
+            "id": "o3",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "圆柱"
+          },
+          {
+            "id": "o4",
+            "label": "球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "骰子整体最像哪种立体图形？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o2",
+            "label": "长方体"
+          },
+          {
+            "id": "o3",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "水杯整体最像哪种立体图形？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "长方体"
+          },
+          {
+            "id": "o4",
+            "label": "正方体"
+          },
+          {
+            "id": "o1",
+            "label": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "小皮球整体最像哪种立体图形？",
+        "options": [
+          {
+            "id": "o3",
+            "label": "球"
+          },
+          {
+            "id": "o1",
+            "label": "圆柱"
+          },
+          {
+            "id": "o2",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个物品最像圆柱？",
+        "options": [
+          "魔方",
+          "纸巾盒",
+          "足球",
+          "电池"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个物品最像正方体？",
+        "options": [
+          "魔方",
+          "纸巾盒",
+          "篮球",
+          "胶棒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个物品最像长方体？",
+        "options": [
+          "小皮球",
+          "纸巾盒",
+          "茶叶罐",
+          "乒乓球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个物品最像球？",
+        "options": [
+          "文具盒",
+          "骰子",
+          "乒乓球",
+          "胶棒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "电池"
+          },
+          {
+            "id": "l2",
+            "text": "骰子"
+          },
+          {
+            "id": "l3",
+            "text": "文具盒"
+          },
+          {
+            "id": "l4",
+            "text": "小皮球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "长方体"
+          },
+          {
+            "id": "r1",
+            "text": "圆柱"
+          },
+          {
+            "id": "r4",
+            "text": "球"
+          },
+          {
+            "id": "r2",
+            "text": "正方体"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "魔方像",
+          null,
+          "，篮球像",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆柱",
+          "球",
+          "长方体",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "正方体",
+          "球"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

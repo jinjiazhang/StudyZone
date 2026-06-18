@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笑笑的房间里，衣服、书、玩具分别放好，这样的房间可以说是怎样的？",
+        "options": [
+          "杂乱",
+          "整齐",
+          "拥挤",
+          "吵闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气的房间里，球、书、本子、衣服到处放，首先要做什么？",
+        "options": [
+          "把东西藏起来",
+          "只整理床",
+          "只数一数",
+          "分类整理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理房间时，把衣服放在一起，是按什么来分？",
+        "options": [
+          "物品用途",
+          "大小",
+          "多少",
+          "高矮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组物品适合放在一起？",
+        "options": [
+          "袜子和铅笔",
+          "足球和语文书",
+          "书和练习本",
+          "水杯和鞋子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "整理房间时，同一类物品可以放在一起。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "玩具和文具一定要混在一起才整齐。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "笑笑把3本书和2本练习本放到书架，一共整理了几件学习用品？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "淘气地上有2个球、1本书、1支笔，一共有几件物品？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "书"
+          },
+          {
+            "id": "l_1",
+            "text": "球"
+          },
+          {
+            "id": "l_2",
+            "text": "短裤"
+          },
+          {
+            "id": "l_3",
+            "text": "铅笔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "服装"
+          },
+          {
+            "id": "r_0",
+            "text": "书本"
+          },
+          {
+            "id": "r_3",
+            "text": "文具"
+          },
+          {
+            "id": "r_1",
+            "text": "玩具"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理房间最先要想一想什么？",
+        "options": [
+          "先玩哪一个",
+          "谁的东西最多",
+          "按什么标准来分",
+          "哪件最贵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

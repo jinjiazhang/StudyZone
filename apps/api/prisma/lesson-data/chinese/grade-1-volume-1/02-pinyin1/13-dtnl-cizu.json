@@ -1,0 +1,213 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "大",
+        "hint": "选择“大”的正确拼音",
+        "options": [
+          "dā",
+          "dá",
+          "dǎ",
+          "dà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "地",
+        "hint": "选择“地”的正确拼音",
+        "options": [
+          "dī",
+          "dí",
+          "dǐ",
+          "dì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "马",
+        "hint": "选择“马”的正确拼音",
+        "options": [
+          "mā",
+          "má",
+          "mǎ",
+          "mà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "路",
+        "hint": "选择“路”的正确拼音",
+        "options": [
+          "lū",
+          "lú",
+          "lǔ",
+          "lù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "泥",
+        "hint": "选择“泥”的正确拼音",
+        "options": [
+          "ní",
+          "nǐ",
+          "nì",
+          "nī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "土",
+        "hint": "选择“土”的正确拼音",
+        "options": [
+          "tū",
+          "tú",
+          "tǔ",
+          "tù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "dà dì"
+          },
+          {
+            "id": "l_1",
+            "text": "mǎ lù"
+          },
+          {
+            "id": "l_2",
+            "text": "ní tǔ"
+          },
+          {
+            "id": "l_3",
+            "text": "tǔ"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "土"
+          },
+          {
+            "id": "r_1",
+            "text": "大地"
+          },
+          {
+            "id": "r_2",
+            "text": "泥土"
+          },
+          {
+            "id": "r_3",
+            "text": "马路"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_2",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：大地",
+        "tokens": [
+          "mǎ",
+          "lù",
+          "dì",
+          "dà"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "dà",
+          "dì"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：马路",
+        "tokens": [
+          "ní",
+          "tǔ",
+          "lù",
+          "mǎ"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "mǎ",
+          "lù"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：泥土",
+        "tokens": [
+          "dà",
+          "dì",
+          "tǔ",
+          "ní"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ní",
+          "tǔ"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

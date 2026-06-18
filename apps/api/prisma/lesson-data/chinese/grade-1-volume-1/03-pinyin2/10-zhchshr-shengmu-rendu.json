@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "zh",
+        "hint": "选出声母 zh。",
+        "options": [
+          "z",
+          "zh",
+          "ch",
+          "sh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ch",
+        "hint": "选出声母 ch。",
+        "options": [
+          "c",
+          "zh",
+          "sh",
+          "ch"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "sh",
+        "hint": "选出声母 sh。",
+        "options": [
+          "sh",
+          "s",
+          "ch",
+          "r"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "r",
+        "hint": "选出声母 r。",
+        "options": [
+          "l",
+          "r",
+          "sh",
+          "zh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "zh、ch、sh、r 都属于什么？",
+        "options": [
+          "平舌音",
+          "韵母",
+          "声调",
+          "翘舌音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "sh 的读音像哪个字的开头？",
+        "options": [
+          "狮",
+          "丝",
+          "字",
+          "刺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "zh"
+          },
+          {
+            "id": "l1",
+            "text": "ch"
+          },
+          {
+            "id": "l2",
+            "text": "sh"
+          },
+          {
+            "id": "l3",
+            "text": "r"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "吃的开头声母"
+          },
+          {
+            "id": "r3",
+            "text": "日的开头声母"
+          },
+          {
+            "id": "r0",
+            "text": "织的开头声母"
+          },
+          {
+            "id": "r2",
+            "text": "狮的开头声母"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按教材顺序摆出四个声母。",
+        "tokens": [
+          "s",
+          "z",
+          "sh",
+          "c",
+          "zh",
+          "r",
+          "ch"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "zh",
+          "ch",
+          "sh",
+          "r"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个是翘舌音声母？",
+        "options": [
+          "c",
+          "s",
+          "ch",
+          "z"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "日",
+        "hint": "选出“日”的拼音。",
+        "options": [
+          "lì",
+          "shì",
+          "rì",
+          "zhì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

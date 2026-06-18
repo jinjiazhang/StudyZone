@@ -1,0 +1,149 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "盘里有5个桃，吃了2个。应列哪道算式？",
+        "options": [
+          "5+2",
+          "5-2",
+          "2+5",
+          "2-5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "左边2只羊，右边3只羊，一共有多少只。应列哪道算式？",
+        "options": [
+          "2+3",
+          "3-2",
+          "5-3",
+          "2-0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有4个球，拿走1个，还剩多少个。应列哪道算式？",
+        "options": [
+          "4+1",
+          "1+4",
+          "4-1",
+          "1-0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有0个红圆片和3个蓝圆片，一共有多少个。应列哪道算式？",
+        "options": [
+          "3-0",
+          "0+3",
+          "3-3",
+          "0-0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有3只小鸟，又飞来2只，一共有多少只？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "3+2",
+          "2+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有5只小鸟，飞走2只，还剩多少只？列式。",
+        "placeholder": "例如：3+2"
+      },
+      "answer": {
+        "accepted": [
+          "5-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 2 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 2 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一共有”常选什么方法？",
+        "options": [
+          "加法",
+          "减法",
+          "比较大小",
+          "排序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“还剩”常选什么方法？",
+        "options": [
+          "加法",
+          "减法",
+          "数位",
+          "分类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "不久",
+        "hint": "注意“不久”的读音",
+        "options": [
+          "bú jiǔ",
+          "bù jǐu",
+          "bù jiǔ",
+          "pù jiǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "不去",
+        "hint": "注意“不去”的变调",
+        "options": [
+          "bú qù",
+          "bù qù",
+          "bǔ qù",
+          "pú qù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "不用",
+        "hint": "注意“不用”的变调",
+        "options": [
+          "bù yòng",
+          "bú yòng",
+          "pú yòng",
+          "bǔ yòng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "不多",
+        "hint": "注意“不多”的读音",
+        "options": [
+          "bú duō",
+          "pù duō",
+          "bù duō",
+          "bǔ duō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“数不清的雨点儿”说明雨点儿怎么样？",
+        "options": [
+          "很少",
+          "很多",
+          "很大",
+          "很红"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“从云彩里落下来”的“落”表示什么？",
+        "options": [
+          "往上飞",
+          "左右摇",
+          "大声说",
+          "往下掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：数不清的雨点儿从云彩里落下来",
+        "tokens": [
+          "从云彩里",
+          "数不清的",
+          "落下来",
+          "雨点儿",
+          "小石子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "数不清的",
+          "雨点儿",
+          "从云彩里",
+          "落下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：没有花没有草的地方开出了红的花",
+        "tokens": [
+          "红的花",
+          "没有花没有草",
+          "开出了",
+          "的地方",
+          "绿的草"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "没有花没有草",
+          "的地方",
+          "开出了",
+          "红的花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "读雨点儿对话时，可以分角色朗读。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“花更红了，草更绿了”写的是尾巴的样子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

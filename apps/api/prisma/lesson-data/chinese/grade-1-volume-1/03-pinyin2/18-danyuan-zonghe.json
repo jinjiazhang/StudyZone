@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瓜",
+        "hint": "选出“瓜”的拼音。",
+        "options": [
+          "kuā",
+          "huā",
+          "guā",
+          "jiā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "下",
+        "hint": "选出“下”的拼音。",
+        "options": [
+          "jià",
+          "qià",
+          "xià",
+          "huà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "四",
+        "hint": "选出“四”的拼音。",
+        "options": [
+          "sì",
+          "shì",
+          "zì",
+          "chì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "十",
+        "hint": "选出“十”的拼音。",
+        "options": [
+          "sí",
+          "rì",
+          "cí",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鱼",
+        "hint": "选出“鱼”的拼音。",
+        "options": [
+          "wú",
+          "yú",
+          "yǔ",
+          "yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个音节中，ü 见到 j 后去掉了两点？",
+        "options": [
+          "ju",
+          "gu",
+          "hu",
+          "wu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "g k h"
+          },
+          {
+            "id": "l1",
+            "text": "j q x"
+          },
+          {
+            "id": "l2",
+            "text": "z c s"
+          },
+          {
+            "id": "l3",
+            "text": "zh ch sh r"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "第6课声母"
+          },
+          {
+            "id": "r3",
+            "text": "翘舌音"
+          },
+          {
+            "id": "r0",
+            "text": "第5课声母"
+          },
+          {
+            "id": "r2",
+            "text": "平舌音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：小黄鸡在一起做游戏。",
+        "tokens": [
+          "小黄鸡",
+          "荷花",
+          "做",
+          "尺子",
+          "。",
+          "在",
+          "游戏",
+          "一起"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小黄鸡",
+          "在",
+          "一起",
+          "做",
+          "游戏",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：小鱼在水里游。",
+        "tokens": [
+          "小鱼",
+          "小鸡",
+          "游",
+          "下棋",
+          "在",
+          "。",
+          "水里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鱼",
+          "在",
+          "水里",
+          "游",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "单元回顾",
+        "passage": "本单元学习了 g k h、j q x、z c s、zh ch sh r、y w。我们会读三拼音节 guā、huǒ，也会分清 zi 和 zhi、si 和 shi。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-037.jpg",
+        "questions": [
+          {
+            "question": "本单元学习了哪一组翘舌音？",
+            "options": [
+              "zh ch sh r",
+              "z c s",
+              "g k h",
+              "y w"
+            ]
+          },
+          {
+            "question": "guā 是什么音节？",
+            "options": [
+              "三拼音节",
+              "整体认读音节",
+              "只含声母",
+              "没有韵母"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

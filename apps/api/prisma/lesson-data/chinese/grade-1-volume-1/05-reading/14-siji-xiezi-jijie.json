@@ -1,0 +1,227 @@
+{
+  "id": "14-siji-xiezi-jijie",
+  "title": "四季写字季节",
+  "description": "练写《四季》的会写字，认识四季和典型景物。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sì",
+        "sentence": "__ 季 真 美。",
+        "blankPlaceholder": "__",
+        "character": "四",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "四"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiǎo",
+        "sentence": "__ 鸟 说：“我 是 春 天。”",
+        "blankPlaceholder": "__",
+        "character": "小",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "小"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "niǎo",
+        "sentence": "小 __ 说：“我 是 春 天。”",
+        "blankPlaceholder": "__",
+        "character": "鸟",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "鸟"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "我 __ 春 天。",
+        "blankPlaceholder": "__",
+        "character": "是",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "是"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tiān",
+        "sentence": "我 是 春 __。",
+        "blankPlaceholder": "__",
+        "character": "天",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "天"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "春天"
+          },
+          {
+            "id": "l2",
+            "text": "夏天"
+          },
+          {
+            "id": "l3",
+            "text": "秋天"
+          },
+          {
+            "id": "l4",
+            "text": "冬天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "荷叶圆圆"
+          },
+          {
+            "id": "r4",
+            "text": "雪人大肚子"
+          },
+          {
+            "id": "r1",
+            "text": "草芽尖尖"
+          },
+          {
+            "id": "r3",
+            "text": "谷穗弯弯"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "天",
+        "tokens": [
+          "春",
+          "马",
+          "秋",
+          "夏",
+          "鸟",
+          "冬"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“天”组成季节词的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "春",
+            "夏",
+            "秋",
+            "冬"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鸟",
+        "tokens": [
+          "雪",
+          "小",
+          "飞",
+          "用",
+          "牙",
+          "儿"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“鸟”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "飞",
+            "儿"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "是",
+        "tokens": [
+          "还",
+          "牙",
+          "不",
+          "马",
+          "叶",
+          "就"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“是”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "不",
+            "就",
+            "还"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《四季》中谁说“我是夏天”？",
+        "options": [
+          "小鸟",
+          "青蛙",
+          "谷穗",
+          "雪人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

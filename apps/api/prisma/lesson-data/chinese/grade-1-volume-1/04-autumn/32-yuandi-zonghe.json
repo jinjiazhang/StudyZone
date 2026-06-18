@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是复韵母？",
+        "options": [
+          "b、p、m",
+          "ai、ei、ui",
+          "an、en、in",
+          "zh、ch、sh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是前鼻韵母？",
+        "options": [
+          "ang、eng、ing、ong",
+          "ai、ei、ui",
+          "an、en、in、un、ün",
+          "ao、ou、iu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是后鼻韵母？",
+        "options": [
+          "an、en、in、un",
+          "ie、üe、er",
+          "ao、ou、iu",
+          "ang、eng、ing、ong"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个是整体认读音节？",
+        "options": [
+          "ying",
+          "bāng",
+          "fēng",
+          "qīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "白菜",
+        "hint": "综合：认读词语",
+        "options": [
+          "bǎi cǎi",
+          "bái cài",
+          "bái chài",
+          "pái cài"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "小桥",
+        "hint": "综合：认读词语",
+        "options": [
+          "xiǎo jiáo",
+          "xiāo qiáo",
+          "xiǎo qiáo",
+          "xiǎo qiǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓝天",
+        "hint": "综合：认读词语",
+        "options": [
+          "nán tiān",
+          "lán tin",
+          "lán tān",
+          "lán tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "自行车",
+        "hint": "综合：认读词语",
+        "options": [
+          "zì xíng chē",
+          "zì xín chē",
+          "zì qíng chē",
+          "zì xíng cē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白云"
+          },
+          {
+            "id": "l_1",
+            "text": "月儿"
+          },
+          {
+            "id": "l_2",
+            "text": "游泳"
+          },
+          {
+            "id": "l_3",
+            "text": "明亮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "míng liàng"
+          },
+          {
+            "id": "r_2",
+            "text": "yóu yǒng"
+          },
+          {
+            "id": "r_1",
+            "text": "yuè ér"
+          },
+          {
+            "id": "r_0",
+            "text": "bái yún"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "第四单元小练习",
+        "passage": "蓝天上有白云，草原上有羊。小朋友骑自行车，来到小桥边。月儿弯弯，夜色很美。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-061.jpg",
+        "questions": [
+          {
+            "question": "天上有什么？",
+            "options": [
+              "白云",
+              "西瓜",
+              "自行车",
+              "乒乓球"
+            ]
+          },
+          {
+            "question": "月儿是什么样的？",
+            "options": [
+              "弯弯的",
+              "方方的",
+              "红红的",
+              "长长的"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

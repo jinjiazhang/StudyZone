@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个作品用了：2 个圆柱、1 个球、3 个长方体、2 个正方体。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2 个圆柱、1 个球、3 个长方体、2 个正方体，一共几个物品？",
+        "options": [
+          "6",
+          "7",
+          "9",
+          "8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "塔一用了：1 个长方体、1 个正方体、2 个圆柱、0 个球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "塔二用了：2 个长方体、1 个正方体、1 个圆柱、1 个球。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果 8 个物品都用上，已经用了 5 个，还剩几个？",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "用了 2 个圆柱和 3 个长方体，一共用了",
+          null,
+          "个，比 8 少",
+          null,
+          "个。"
+        ],
+        "tokens": [
+          "4",
+          "5",
+          "6",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "3"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样 8 个物品，想搭得高，应该优先把什么放下面？",
+        "options": [
+          "小球",
+          "大的、平的物体",
+          "容易滚的物体",
+          "最轻的球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "8 个物品都用上时，哪个可以放最上面做装饰？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o1",
+            "label": "大长方体"
+          },
+          {
+            "id": "o3",
+            "label": "底座"
+          },
+          {
+            "id": "o4",
+            "label": "桌子"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭高比赛中，“都用上”表示什么？",
+        "options": [
+          "只用最高的",
+          "只用球",
+          "8 个物品一个也不剩",
+          "可以少用几个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "用 8 个物品搭高的思考顺序",
+        "items": [
+          {
+            "id": "s2",
+            "text": "选稳定的底座"
+          },
+          {
+            "id": "s4",
+            "text": "检查是否都用上"
+          },
+          {
+            "id": "s1",
+            "text": "先数清 8 个物品"
+          },
+          {
+            "id": "s3",
+            "text": "一层一层往上搭"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

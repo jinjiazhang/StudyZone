@@ -1,0 +1,270 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "dǎ"
+          },
+          {
+            "id": "l_1",
+            "text": "mō"
+          },
+          {
+            "id": "l_2",
+            "text": "bí"
+          },
+          {
+            "id": "l_3",
+            "text": "pù"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "瀑/铺的音节 pù"
+          },
+          {
+            "id": "r_1",
+            "text": "摸的音节 mō"
+          },
+          {
+            "id": "r_2",
+            "text": "打的音节 dǎ"
+          },
+          {
+            "id": "r_3",
+            "text": "鼻的音节 bí"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_1",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "là bǐ"
+          },
+          {
+            "id": "l_1",
+            "text": "dà mǐ"
+          },
+          {
+            "id": "l_2",
+            "text": "fú tī"
+          },
+          {
+            "id": "l_3",
+            "text": "dì tú"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "地图"
+          },
+          {
+            "id": "r_1",
+            "text": "蜡笔"
+          },
+          {
+            "id": "r_2",
+            "text": "扶梯"
+          },
+          {
+            "id": "r_3",
+            "text": "大米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_2",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：地图",
+        "tokens": [
+          "dà",
+          "mǐ",
+          "tú",
+          "dì"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "dì",
+          "tú"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：蜡笔",
+        "tokens": [
+          "fú",
+          "tī",
+          "bǐ",
+          "là"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "là",
+          "bǐ"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出词语：扶梯",
+        "tokens": [
+          "dì",
+          "tú",
+          "tī",
+          "fú"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "fú",
+          "tī"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“他、八、马”可以分别连到哪些韵母？",
+        "options": [
+          "a、a、a",
+          "u、a、i",
+          "i、u、a",
+          "a、i、u"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“七、地、你”可以分别连到哪个韵母？",
+        "options": [
+          "a",
+          "o",
+          "i",
+          "u"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“目、土、足”可以分别连到哪个韵母？",
+        "options": [
+          "u",
+          "a",
+          "i",
+          "e"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "画",
+        "passage": "远看山有色，近听水无声。\n春去花还在，人来鸟不惊。",
+        "questions": [
+          {
+            "question": "诗中“远看”看见什么有色？",
+            "options": [
+              "山",
+              "水",
+              "鸟",
+              "人"
+            ]
+          },
+          {
+            "question": "诗中“近听”听不到什么声音？",
+            "options": [
+              "风",
+              "水",
+              "花",
+              "马"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "画",
+        "author": "王维",
+        "lines": [
+          [
+            "远看山有色，"
+          ],
+          [
+            "近听",
+            null,
+            "无声。"
+          ]
+        ],
+        "options": [
+          "水",
+          "火",
+          "土",
+          "木"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

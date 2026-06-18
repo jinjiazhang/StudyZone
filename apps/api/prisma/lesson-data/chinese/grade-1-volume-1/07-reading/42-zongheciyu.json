@@ -1,0 +1,263 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "月儿"
+          },
+          {
+            "id": "l1",
+            "text": "星星"
+          },
+          {
+            "id": "l2",
+            "text": "影子"
+          },
+          {
+            "id": "l3",
+            "text": "双手"
+          },
+          {
+            "id": "l4",
+            "text": "大脑"
+          },
+          {
+            "id": "l5",
+            "text": "爷爷"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "小黑狗"
+          },
+          {
+            "id": "r0",
+            "text": "小小的船"
+          },
+          {
+            "id": "r3",
+            "text": "会做工"
+          },
+          {
+            "id": "r1",
+            "text": "闪闪的"
+          },
+          {
+            "id": "r5",
+            "text": "家人称谓"
+          },
+          {
+            "id": "r4",
+            "text": "会思考"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "月",
+        "tokens": [
+          "儿",
+          "船",
+          "亮",
+          "左",
+          "光",
+          "爸",
+          "脑"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“月”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "儿",
+            "亮",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "友",
+        "tokens": [
+          "朋",
+          "船",
+          "好",
+          "脑",
+          "校",
+          "又",
+          "才"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“友”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "朋",
+            "好",
+            "校"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "手",
+        "tokens": [
+          "双",
+          "右",
+          "用",
+          "月",
+          "左",
+          "影",
+          "奶"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“手”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "双",
+            "用",
+            "左"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是方位词？",
+        "options": [
+          "前、后、左、右",
+          "爷、奶、叔、姐",
+          "月、星、天、船",
+          "手、脑、件、宝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是家人称谓？",
+        "options": [
+          "影子、黑狗、朋友",
+          "爸爸、妈妈、姐姐",
+          "月儿、船儿、星星",
+          "前面、后面、左面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组来自《两件宝》？",
+        "options": [
+          "月儿、星星、蓝天",
+          "影子、小黑狗、前后",
+          "双手、大脑、创造",
+          "爷爷、奶奶、叔叔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：影子是我的好朋友。",
+        "tokens": [
+          "月儿",
+          "船",
+          "好朋友",
+          "我的",
+          "是",
+          "影子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "影子",
+          "是",
+          "我的",
+          "好朋友"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：双手和大脑是两件宝。",
+        "tokens": [
+          "星星",
+          "影子",
+          "两件宝",
+          "是",
+          "大脑",
+          "和",
+          "双手"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "双手",
+          "和",
+          "大脑",
+          "是",
+          "两件宝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiàn",
+        "sentence": "只看__闪闪的星星。",
+        "character": "见",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "见"
+      },
+      "difficulty": 2
+    }
+  ]
+}

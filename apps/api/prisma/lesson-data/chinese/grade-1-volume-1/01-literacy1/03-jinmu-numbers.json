@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "一",
+        "hint": "数字“一”",
+        "options": [
+          "èr",
+          "sān",
+          "shàng",
+          "yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "二",
+        "hint": "数字“二”",
+        "options": [
+          "èr",
+          "yī",
+          "sān",
+          "xià"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "三",
+        "hint": "数字“三”",
+        "options": [
+          "shān",
+          "sān",
+          "èr",
+          "wǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "四",
+        "hint": "数字“四”",
+        "options": [
+          "shí",
+          "wǔ",
+          "sì",
+          "sān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "五",
+        "hint": "数字“五”",
+        "options": [
+          "wǒ",
+          "sì",
+          "mù",
+          "wǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "一"
+          },
+          {
+            "id": "l2",
+            "text": "二"
+          },
+          {
+            "id": "l3",
+            "text": "三"
+          },
+          {
+            "id": "l4",
+            "text": "四"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "2"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r4",
+            "text": "4"
+          },
+          {
+            "id": "r1",
+            "text": "1"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一二三四五”中排在“三”后面的字是？",
+        "options": [
+          "四",
+          "二",
+          "五",
+          "一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一二三四五”中排在“五”前面的字是？",
+        "options": [
+          "三",
+          "四",
+          "二",
+          "一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的数字顺序",
+        "tokens": [
+          "上",
+          "一",
+          "下",
+          "二",
+          "三",
+          "四",
+          "五"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一",
+          "二",
+          "三",
+          "四",
+          "五"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪组字都是数字？",
+        "options": [
+          "天 地 人",
+          "口 耳 目",
+          "一 二 三",
+          "日 月 山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

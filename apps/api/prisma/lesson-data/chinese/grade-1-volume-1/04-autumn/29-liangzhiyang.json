@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "两",
+        "hint": "“两只羊”的“两”",
+        "options": [
+          "liáng",
+          "niǎng",
+          "liǎn",
+          "liǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "羊",
+        "hint": "“两只羊”的“羊”",
+        "options": [
+          "yáng",
+          "yán",
+          "yǎng",
+          "liáng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "桥",
+        "hint": "“小桥”的“桥”",
+        "options": [
+          "jiáo",
+          "qiáo",
+          "qiǎo",
+          "xiáo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "让",
+        "hint": "“不肯让”的“让”",
+        "options": [
+          "làng",
+          "rǎng",
+          "ràng",
+          "ràn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "央",
+        "hint": "“中央”的“央”",
+        "options": [
+          "yān",
+          "yáng",
+          "yǎng",
+          "yāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两只羊最后掉进哪里？",
+        "options": [
+          "河中央",
+          "草原上",
+          "树林里",
+          "学校里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两只羊为什么过不去？",
+        "options": [
+          "找不到桥",
+          "都不肯让",
+          "不会走路",
+          "没有白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：",
+        "tokens": [
+          "一只",
+          "桥东",
+          "白云",
+          "走来",
+          "羊",
+          "森林"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "桥东",
+          "走来",
+          "一只",
+          "羊"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：",
+        "tokens": [
+          "小桥",
+          "一起",
+          "夜色",
+          "走到",
+          "上",
+          "白菜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一起",
+          "走到",
+          "小桥",
+          "上"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "两只羊",
+        "passage": "桥东走来一只羊，桥西走来一只羊，一起走到小桥上。你也不肯让，我也不肯让，扑通掉进河中央。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-060.jpg",
+        "questions": [
+          {
+            "question": "谁走到小桥上？",
+            "options": [
+              "两只羊",
+              "两只鸟",
+              "两条鱼",
+              "两个朋友"
+            ]
+          },
+          {
+            "question": "这个故事告诉我们要怎样？",
+            "options": [
+              "互相谦让",
+              "抢着过桥",
+              "不说话",
+              "去游泳"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

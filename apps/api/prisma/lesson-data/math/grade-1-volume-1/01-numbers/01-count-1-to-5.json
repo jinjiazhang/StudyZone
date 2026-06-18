@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "美丽乡村里有 1 个太阳，填：?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "图中有 2 只小鸟，填：?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "有 3 个苹果，填：?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "花坛里有 4 朵花，填：?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "河里有 5 只鸭子，填：?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“一棵树”应该用哪个数表示？",
+        "options": [
+          "3",
+          "5",
+          "2",
+          "1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“五只鸭子”应该用哪个数表示？",
+        "options": [
+          "4",
+          "2",
+          "1",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "1个太阳"
+          },
+          {
+            "id": "l2",
+            "text": "2只小鸟"
+          },
+          {
+            "id": "l3",
+            "text": "3朵云"
+          },
+          {
+            "id": "l4",
+            "text": "4朵花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "4"
+          },
+          {
+            "id": "r2",
+            "text": "1"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r4",
+            "text": "2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "填出这些数量：1个太阳、3个苹果、5只鸭子。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "太阳"
+          },
+          {
+            "id": "b",
+            "label": "苹果"
+          },
+          {
+            "id": "c",
+            "label": "鸭子"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          3,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "数数时，1 后面接着数哪个数？",
+        "options": [
+          "5",
+          "3",
+          "4",
+          "2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "乌鸦",
+        "hint": "选出“乌鸦”的拼音。",
+        "options": [
+          "yū wā",
+          "wū yú",
+          "wū yā",
+          "yǔ yā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "小鱼",
+        "hint": "选出“小鱼”的拼音。",
+        "options": [
+          "xiǎo wú",
+          "xiǎo yǔ",
+          "xiǎo yú",
+          "xiǎo yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "雨衣",
+        "hint": "选出“雨衣”的拼音。",
+        "options": [
+          "yǔ yī",
+          "wǔ yī",
+          "yǔ wū",
+          "yú yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "娃娃",
+        "hint": "选出“娃娃”的拼音。",
+        "options": [
+          "yá ya",
+          "wū wa",
+          "yú ya",
+          "wá wa"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "乌鸦"
+          },
+          {
+            "id": "l1",
+            "text": "小鱼"
+          },
+          {
+            "id": "l2",
+            "text": "雨衣"
+          },
+          {
+            "id": "l3",
+            "text": "娃娃"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "xiǎo yú"
+          },
+          {
+            "id": "r3",
+            "text": "wá wa"
+          },
+          {
+            "id": "r0",
+            "text": "wū yā"
+          },
+          {
+            "id": "r2",
+            "text": "yǔ yī"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：小鱼在水里游。",
+        "tokens": [
+          "小鱼",
+          "乌鸦",
+          "游",
+          "雨衣",
+          "在",
+          "。",
+          "水里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鱼",
+          "在",
+          "水里",
+          "游",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：我穿雨衣。",
+        "tokens": [
+          "我",
+          "小鱼",
+          "。",
+          "娃娃",
+          "穿",
+          "雨衣"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "穿",
+          "雨衣",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鱼",
+        "tokens": [
+          "书",
+          "金",
+          "棋",
+          "小",
+          "鼓",
+          "雨"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“鱼”组成词语或短语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "金",
+            "雨"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "小鱼游",
+        "passage": "小鱼小鱼，水里游。乌鸦乌鸦，树上叫。下雨了，娃娃穿雨衣。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-046.jpg",
+        "questions": [
+          {
+            "question": "小鱼在哪里游？",
+            "options": [
+              "水里",
+              "树上",
+              "桌上",
+              "桥上"
+            ]
+          },
+          {
+            "question": "下雨了，娃娃穿什么？",
+            "options": [
+              "雨衣",
+              "书包",
+              "尺子",
+              "荷花"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雨衣”的两个音节分别含有哪两个整体认读音节？",
+        "options": [
+          "wu、yi",
+          "yu、yi",
+          "yi、wu",
+          "yu、wu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

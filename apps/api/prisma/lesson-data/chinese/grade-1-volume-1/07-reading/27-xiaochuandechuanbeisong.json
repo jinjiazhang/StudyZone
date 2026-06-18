@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：弯弯的月儿小小的船。",
+        "tokens": [
+          "蓝蓝的",
+          "星星",
+          "船",
+          "小小的",
+          "月儿",
+          "弯弯的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "弯弯的",
+          "月儿",
+          "小小的",
+          "船"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：小小的船儿两头尖。",
+        "tokens": [
+          "闪闪的",
+          "天",
+          "尖",
+          "两头",
+          "船儿",
+          "小小的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小小的",
+          "船儿",
+          "两头",
+          "尖"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：我在小小的船里坐。",
+        "tokens": [
+          "看见",
+          "星星",
+          "坐",
+          "船里",
+          "小小的",
+          "在",
+          "我"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "在",
+          "小小的",
+          "船里",
+          "坐"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全句子：只看见闪闪的星星蓝蓝的天。",
+        "tokens": [
+          "月儿",
+          "两头",
+          "天",
+          "蓝蓝的",
+          "星星",
+          "闪闪的",
+          "看见",
+          "只"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "只",
+          "看见",
+          "闪闪的",
+          "星星",
+          "蓝蓝的",
+          "天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小小的船",
+        "author": "叶圣陶",
+        "lines": [
+          [
+            "弯弯的月儿",
+            null
+          ],
+          [
+            "小小的船儿两头尖。"
+          ]
+        ],
+        "options": [
+          "蓝蓝的天",
+          "小小的船",
+          "闪闪的星星",
+          "弯弯的小河"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小小的船",
+        "author": "叶圣陶",
+        "lines": [
+          [
+            "我在小小的船里坐，"
+          ],
+          [
+            "只看见",
+            null,
+            "蓝蓝的天。"
+          ]
+        ],
+        "options": [
+          "弯弯的月儿",
+          "两头尖",
+          "闪闪的星星",
+          "小小的船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首儿歌中，“我”坐在哪里？",
+        "options": [
+          "小小的船里",
+          "大树下面",
+          "学校门口",
+          "生活超市"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里“我”看见了什么？",
+        "options": [
+          "小狗和朋友",
+          "星星和天",
+          "双手和大脑",
+          "爸爸和妈妈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《小小的船》主要写了哪个夜空事物？",
+        "options": [
+          "太阳",
+          "影子",
+          "月儿",
+          "花生"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "sentence": "弯弯的__儿小小的船。",
+        "character": "月",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "月"
+      },
+      "difficulty": 2
+    }
+  ]
+}

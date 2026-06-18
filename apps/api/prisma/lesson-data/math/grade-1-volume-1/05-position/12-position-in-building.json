@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“在圆柱的上面放正方体”，正方体应该在哪里？",
+        "options": [
+          "圆柱下面",
+          "圆柱上面",
+          "圆柱左边",
+          "离圆柱很远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“把大的、平的面放在下面”是为了：",
+        "options": [
+          "更容易滚",
+          "更好看但一定倒",
+          "更稳定",
+          "让球变方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "把",
+          null,
+          "放在下面，通常更",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "稳",
+          "圆圆球面",
+          "大的平面",
+          "偏"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "大的平面",
+          "稳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "球放最下面"
+          },
+          {
+            "id": "l2",
+            "text": "长方体平放最下面"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱竖着当柱子"
+          },
+          {
+            "id": "l4",
+            "text": "物体放偏了"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "可以支撑"
+          },
+          {
+            "id": "r1",
+            "text": "容易滚，不稳"
+          },
+          {
+            "id": "r4",
+            "text": "可能会倒"
+          },
+          {
+            "id": "r2",
+            "text": "比较稳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭高时，上下物体要怎样放？",
+        "options": [
+          "越偏越好",
+          "只放边角",
+          "不要接触",
+          "尽量对齐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种底座更稳定？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "两个正方体并排"
+          },
+          {
+            "id": "o1",
+            "label": "一个球"
+          },
+          {
+            "id": "o3",
+            "label": "一个横放胶棒"
+          },
+          {
+            "id": "o4",
+            "label": "一个小皮球"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果上面的物体放偏了，可能会：",
+        "options": [
+          "倒下来",
+          "更稳定",
+          "变成圆柱",
+          "自动变高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "让作品更稳的检查顺序",
+        "items": [
+          {
+            "id": "s2",
+            "text": "看中间是否对齐"
+          },
+          {
+            "id": "s1",
+            "text": "看下面是否平稳"
+          },
+          {
+            "id": "s4",
+            "text": "轻轻碰一下检查"
+          },
+          {
+            "id": "s3",
+            "text": "看上面是否放偏"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“上面、下面”描述的是物体的什么？",
+        "options": [
+          "颜色关系",
+          "位置关系",
+          "价格关系",
+          "名字关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体上面再放一个正方体，正方体在长方体的：",
+        "options": [
+          {
+            "id": "o1",
+            "label": "下面"
+          },
+          {
+            "id": "o2",
+            "label": "上面"
+          },
+          {
+            "id": "o3",
+            "label": "里面"
+          },
+          {
+            "id": "o4",
+            "label": "后面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    }
+  ]
+}

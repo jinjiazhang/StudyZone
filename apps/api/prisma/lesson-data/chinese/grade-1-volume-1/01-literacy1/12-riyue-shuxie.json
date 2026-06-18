@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "rì",
+        "sentence": "红__从东方升起。",
+        "blankPlaceholder": "__",
+        "character": "日",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "日"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tián",
+        "sentence": "农民伯伯在__里劳动。",
+        "blankPlaceholder": "__",
+        "character": "田",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "田"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "__苗青青。",
+        "blankPlaceholder": "__",
+        "character": "禾",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "禾"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huǒ",
+        "sentence": "小心用__。",
+        "blankPlaceholder": "__",
+        "character": "火",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "火"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“日”时，字形比“口”多了哪一笔？",
+        "options": [
+          "上面一点",
+          "左边一撇",
+          "下面一捺",
+          "中间一横"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“田”时，里面有几条交叉线？",
+        "options": [
+          "两条",
+          "一条",
+          "三条",
+          "没有"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "日"
+          },
+          {
+            "id": "l2",
+            "text": "田"
+          },
+          {
+            "id": "l3",
+            "text": "禾"
+          },
+          {
+            "id": "l4",
+            "text": "火"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "田地"
+          },
+          {
+            "id": "r3",
+            "text": "禾苗"
+          },
+          {
+            "id": "r4",
+            "text": "火苗"
+          },
+          {
+            "id": "r1",
+            "text": "太阳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "禾",
+        "hint": "写字前先会读",
+        "options": [
+          "huǒ",
+          "hé",
+          "mù",
+          "tián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "火",
+        "hint": "写字前先会读",
+        "options": [
+          "shuǐ",
+          "hǒu",
+          "huǒ",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“火”的笔顺先写哪一类笔画？",
+        "options": [
+          "横、竖",
+          "竖弯钩",
+          "横折",
+          "点、撇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

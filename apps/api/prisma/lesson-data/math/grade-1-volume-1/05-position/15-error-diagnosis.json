@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把篮球分到长方体一类，错在哪里？",
+        "options": [
+          "篮球太大不能分",
+          "长方体不能分类",
+          "数量不够",
+          "篮球应分到球一类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把茶叶罐说成正方体，错在哪里？",
+        "options": [
+          "茶叶罐更像圆柱",
+          "茶叶罐更像球",
+          "正方体会滚",
+          "圆柱没有圆面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把魔方说成圆柱，错在哪里？",
+        "options": [
+          "魔方是球",
+          "魔方方方正正，更像正方体",
+          "圆柱不能竖放",
+          "魔方没有面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把球放在最下面再搭高，常见问题是：",
+        "options": [
+          "太方了",
+          "不能数",
+          "容易滚，不稳定",
+          "没有颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数图形时把同一个魔方数了两次，会怎样？",
+        "options": [
+          "数量正好",
+          "球数量少了",
+          "图形变了",
+          "正方体数量多算了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "篮球放入长方体"
+          },
+          {
+            "id": "l2",
+            "text": "胶棒放入正方体"
+          },
+          {
+            "id": "l3",
+            "text": "魔方放入圆柱"
+          },
+          {
+            "id": "l4",
+            "text": "纸巾盒放入球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "改放入正方体"
+          },
+          {
+            "id": "r1",
+            "text": "改放入球"
+          },
+          {
+            "id": "r4",
+            "text": "改放入长方体"
+          },
+          {
+            "id": "r2",
+            "text": "改放入圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "球容易",
+          null,
+          "，不适合放在最",
+          null,
+          "当底座。"
+        ],
+        "tokens": [
+          "上面",
+          "下面",
+          "滚动",
+          "对齐"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "滚动",
+          "下面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "“圆柱一定不能滚动”这句话错在哪里？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "圆柱是球"
+          },
+          {
+            "id": "o1",
+            "label": "圆柱躺着能滚动"
+          },
+          {
+            "id": "o3",
+            "label": "圆柱没有平面"
+          },
+          {
+            "id": "o4",
+            "label": "圆柱只能放上面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“只说在第一排”为什么还不够清楚？",
+        "options": [
+          "没有说左右或前后等位置",
+          "没有说颜色",
+          "没有说价格",
+          "没有说高矮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "搭高时如果作品向一边歪，最先检查什么？",
+        "options": [
+          "名字是否好听",
+          "上下是否对齐",
+          "颜色是否一样",
+          "有没有球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "08-jiangnan-zonghe",
+  "title": "江南综合运用",
+  "description": "综合练习《江南》的字音、词语、背诵和画面理解。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鱼",
+        "hint": "鱼戏莲叶间",
+        "options": [
+          "yǔ",
+          "wú",
+          "yú",
+          "yù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "莲",
+        "hint": "采莲",
+        "options": [
+          "lián",
+          "lán",
+          "nián",
+          "liǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dōng",
+        "sentence": "鱼 戏 莲 叶 __。",
+        "blankPlaceholder": "__",
+        "character": "东",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "东"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xī",
+        "sentence": "鱼 戏 莲 叶 __。",
+        "blankPlaceholder": "__",
+        "character": "西",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "西"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鱼戏莲叶间”中“戏”的意思更接近什么？",
+        "options": [
+          "写字",
+          "睡觉",
+          "飞行",
+          "游戏、嬉戏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "江南"
+          },
+          {
+            "id": "l2",
+            "text": "莲叶"
+          },
+          {
+            "id": "l3",
+            "text": "采莲"
+          },
+          {
+            "id": "l4",
+            "text": "鱼儿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "荷叶"
+          },
+          {
+            "id": "r4",
+            "text": "水中的小动物"
+          },
+          {
+            "id": "r1",
+            "text": "长江以南一带"
+          },
+          {
+            "id": "r3",
+            "text": "采摘莲子或莲蓬"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "何",
+          "田田",
+          "可",
+          "莲叶",
+          "江南"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "莲叶",
+          "何",
+          "田田"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江南",
+        "author": "",
+        "lines": [
+          [
+            "鱼戏莲叶东，"
+          ],
+          [
+            "鱼戏莲叶",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "西",
+          "南",
+          "北",
+          "间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《江南》中写到了东、西、南、北四个方向。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "荷塘",
+        "passage": "江南可采莲。莲叶很多，鱼儿在莲叶间游来游去。它们一会儿向东，一会儿向西。",
+        "questions": [
+          {
+            "question": "鱼儿在哪里游？",
+            "options": [
+              "雪地里",
+              "莲叶间",
+              "树上",
+              "山上"
+            ]
+          },
+          {
+            "question": "短文中写鱼儿一会儿向东，一会儿向哪里？",
+            "options": [
+              "向南",
+              "向西",
+              "向上",
+              "向下"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

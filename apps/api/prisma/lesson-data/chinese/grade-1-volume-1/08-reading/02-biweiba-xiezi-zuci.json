@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bǐ",
+        "sentence": "小猴子和兔子__尾巴。",
+        "character": "比",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "比"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bā",
+        "sentence": "小松鼠的尾__好像一把伞。",
+        "character": "巴",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "巴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cháng",
+        "sentence": "猴子的尾巴很__。",
+        "character": "长",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "长"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gōng",
+        "sentence": "__鸡的尾巴弯。",
+        "character": "公",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "公"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "比",
+        "tokens": [
+          "尾",
+          "短",
+          "一",
+          "长",
+          "赛",
+          "兔"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "尾",
+            "一",
+            "赛"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "巴",
+        "tokens": [
+          "尾",
+          "长",
+          "嘴",
+          "公",
+          "下",
+          "把"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "尾",
+            "嘴",
+            "下"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "长",
+        "tokens": [
+          "尾",
+          "短",
+          "大",
+          "公",
+          "河",
+          "兔"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "尾",
+            "大",
+            "河"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "公",
+        "tokens": [
+          "鸡",
+          "兔",
+          "园",
+          "伞",
+          "正",
+          "比"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "鸡",
+            "园",
+            "正"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "猴子"
+          },
+          {
+            "id": "l1",
+            "text": "兔子"
+          },
+          {
+            "id": "l2",
+            "text": "松鼠"
+          },
+          {
+            "id": "l3",
+            "text": "公鸡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "好像一把伞"
+          },
+          {
+            "id": "r0",
+            "text": "尾巴长"
+          },
+          {
+            "id": "r3",
+            "text": "尾巴弯"
+          },
+          {
+            "id": "r1",
+            "text": "尾巴短"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：猴子的尾巴长",
+        "tokens": [
+          "尾巴",
+          "猴子",
+          "短",
+          "的",
+          "长",
+          "兔子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "猴子",
+          "的",
+          "尾巴",
+          "长"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "从左往右数，第 1 只鸭子戴红帽，红帽鸭排第 ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "从左往右数，第 2 只鸭子戴蝴蝶结，蝴蝶结鸭排第 ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "5 只大雁排队，灰色大雁排在第 4，只填数字 ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "火车上老虎在第 1 节，老虎排第 ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "火车上猴子在第 3 节，猴子排第 ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“第 3 个”表示什么？",
+        "options": [
+          "一共有3个",
+          "排在第3的位置",
+          "比3多",
+          "没有了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "“有 5 只鸭子”中的 5 表示什么？",
+        "options": [
+          "位置",
+          "颜色",
+          "大小",
+          "数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "动物排队：一共有6只，大象排第4，猫排第6。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "一共"
+          },
+          {
+            "id": "elephant",
+            "label": "大象"
+          },
+          {
+            "id": "cat",
+            "label": "猫"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          4,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 1、2、3、4、5 按从前到后的顺序排好。",
+        "items": [
+          {
+            "id": "n3",
+            "text": "3"
+          },
+          {
+            "id": "n1",
+            "text": "1"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "从左往右数，小熊排第 5，填 ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

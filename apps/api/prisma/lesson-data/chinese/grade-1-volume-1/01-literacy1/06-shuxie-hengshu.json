@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yī",
+        "sentence": "__片两片三四片。",
+        "blankPlaceholder": "__",
+        "character": "一",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "一"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "èr",
+        "sentence": "一__三四五。",
+        "blankPlaceholder": "__",
+        "character": "二",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "二"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sān",
+        "sentence": "一二__四五。",
+        "blankPlaceholder": "__",
+        "character": "三",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "三"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shàng",
+        "sentence": "天在__。",
+        "blankPlaceholder": "__",
+        "character": "上",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "上"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“一、二、三”时，主要练习哪种笔画？",
+        "options": [
+          "竖",
+          "横",
+          "撇",
+          "捺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“上”时，要注意笔画在什么格中位置？",
+        "options": [
+          "图画书",
+          "课桌上",
+          "田字格",
+          "铅笔盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "一"
+          },
+          {
+            "id": "l2",
+            "text": "二"
+          },
+          {
+            "id": "l3",
+            "text": "三"
+          },
+          {
+            "id": "l4",
+            "text": "上"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "两横"
+          },
+          {
+            "id": "r3",
+            "text": "三横"
+          },
+          {
+            "id": "r4",
+            "text": "先竖后横"
+          },
+          {
+            "id": "r1",
+            "text": "一横"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "一",
+        "hint": "写字前先会读",
+        "options": [
+          "yí",
+          "èr",
+          "sān",
+          "yī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "上",
+        "hint": "写“上”也要会读",
+        "options": [
+          "shàng",
+          "sàng",
+          "xià",
+          "shān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "朗读课文时，教材提醒要使用什么话？",
+        "options": [
+          "悄悄话",
+          "普通话",
+          "家乡话",
+          "外语"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

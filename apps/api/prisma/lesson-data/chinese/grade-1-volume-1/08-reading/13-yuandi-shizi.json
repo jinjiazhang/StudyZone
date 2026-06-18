@@ -1,0 +1,259 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "牛",
+        "hint": "读准“牛”",
+        "options": [
+          "liú",
+          "niúg",
+          "niǔ",
+          "niú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "羊",
+        "hint": "读准“羊”",
+        "options": [
+          "yǎng",
+          "yáng",
+          "yān",
+          "xiáng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "爪",
+        "hint": "“爪”在这里读 zhuǎ",
+        "options": [
+          "zhǎo",
+          "zhuā",
+          "chuǎ",
+          "zhuǎ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "元",
+        "hint": "读准“元”",
+        "options": [
+          "yuán",
+          "yún",
+          "yuǎn",
+          "yán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拼音",
+        "hint": "读准“拼音”",
+        "options": [
+          "píng yīn",
+          "bīn yīn",
+          "pīn yīn",
+          "pīn yīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "花"
+          },
+          {
+            "id": "l1",
+            "text": "回"
+          },
+          {
+            "id": "l2",
+            "text": "作"
+          },
+          {
+            "id": "l3",
+            "text": "牛"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "亻"
+          },
+          {
+            "id": "r0",
+            "text": "艹"
+          },
+          {
+            "id": "r3",
+            "text": "动物"
+          },
+          {
+            "id": "r1",
+            "text": "口"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "牛"
+          },
+          {
+            "id": "l1",
+            "text": "羊"
+          },
+          {
+            "id": "l2",
+            "text": "爪"
+          },
+          {
+            "id": "l3",
+            "text": "元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "人民币单位"
+          },
+          {
+            "id": "r0",
+            "text": "牛羊一类动物"
+          },
+          {
+            "id": "r2",
+            "text": "动物的脚趾"
+          },
+          {
+            "id": "r1",
+            "text": "羊这类动物"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "羊",
+        "tokens": [
+          "小",
+          "牛",
+          "山",
+          "水",
+          "毛",
+          "石"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "山",
+            "毛"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "牛",
+        "tokens": [
+          "水",
+          "羊",
+          "奶",
+          "比",
+          "角",
+          "只"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "奶",
+            "角"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：拼音",
+        "tokens": [
+          "音",
+          "比",
+          "拼",
+          "羊",
+          "牛"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "拼",
+          "音"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

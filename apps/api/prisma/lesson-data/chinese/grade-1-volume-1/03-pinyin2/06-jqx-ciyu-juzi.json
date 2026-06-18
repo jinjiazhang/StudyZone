@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "下棋",
+        "hint": "选出“下棋”的拼音。",
+        "options": [
+          "dǎ gǔ",
+          "jī mù",
+          "xià qí",
+          "xī guā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搭积木",
+        "hint": "选出“搭积木”的拼音。",
+        "options": [
+          "xià qí",
+          "dǎ gǔ",
+          "dā jī mù",
+          "hé huā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "小鸡",
+        "hint": "选出“小鸡”的拼音。",
+        "options": [
+          "xiǎo jī",
+          "xiǎo xī",
+          "xiǎo qì",
+          "xiǎo yú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "下棋"
+          },
+          {
+            "id": "l1",
+            "text": "搭积木"
+          },
+          {
+            "id": "l2",
+            "text": "小黄鸡"
+          },
+          {
+            "id": "l3",
+            "text": "在一起"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dā jī mù"
+          },
+          {
+            "id": "r3",
+            "text": "zài yì qǐ"
+          },
+          {
+            "id": "r0",
+            "text": "xià qí"
+          },
+          {
+            "id": "r2",
+            "text": "xiǎo huáng jī"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：小鸡在一起。",
+        "tokens": [
+          "小鸡",
+          "下棋",
+          "。",
+          "积木",
+          "在",
+          "一起"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鸡",
+          "在",
+          "一起",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：我会搭积木。",
+        "tokens": [
+          "我",
+          "下棋",
+          "积木",
+          "小鸡",
+          "会",
+          "。",
+          "搭"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "会",
+          "搭",
+          "积木",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "棋",
+        "tokens": [
+          "雨",
+          "军",
+          "花",
+          "下",
+          "水",
+          "木"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“棋”搭配的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "下",
+            "军",
+            "木"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "在一起",
+        "passage": "小黄鸡，小黑鸡，欢欢喜喜在一起。刨刨土，捉捉虫，青草地上做游戏。",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-040.jpg",
+        "questions": [
+          {
+            "question": "谁在一起做游戏？",
+            "options": [
+              "小黄鸡和小黑鸡",
+              "小鱼和小鸭",
+              "哥哥和弟弟",
+              "小猫和小狗"
+            ]
+          },
+          {
+            "question": "小鸡在青草地上做什么？",
+            "options": [
+              "做游戏",
+              "画荷花",
+              "吹气球",
+              "搭房子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“搭积木”的“积”读什么？",
+        "options": [
+          "qī",
+          "xī",
+          "zhī",
+          "jī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "一起",
+        "hint": "选出“一起”的拼音。",
+        "options": [
+          "yí qī",
+          "yì qǐ",
+          "yì xī",
+          "yì jǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

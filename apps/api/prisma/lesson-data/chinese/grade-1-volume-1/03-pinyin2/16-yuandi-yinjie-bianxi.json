@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一组都是平舌音？",
+        "options": [
+          "z c s",
+          "zh ch sh",
+          "j q x",
+          "g k h"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一组都是翘舌音？",
+        "options": [
+          "z c s",
+          "y w",
+          "zh ch sh r",
+          "g k h"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "四",
+        "hint": "选出“四”的拼音。",
+        "options": [
+          "shì",
+          "sì",
+          "zì",
+          "chì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "十",
+        "hint": "选出“十”的拼音。",
+        "options": [
+          "sí",
+          "zí",
+          "cí",
+          "shí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "只",
+        "hint": "选出“只”的拼音。",
+        "options": [
+          "zī",
+          "jī",
+          "zhī",
+          "qī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "子",
+        "hint": "选出“子”的拼音。",
+        "options": [
+          "zhǐ",
+          "zǐ",
+          "chǐ",
+          "shǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "zi"
+          },
+          {
+            "id": "l1",
+            "text": "zhi"
+          },
+          {
+            "id": "l2",
+            "text": "si"
+          },
+          {
+            "id": "l3",
+            "text": "shi"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "zhi 是翘舌整体认读"
+          },
+          {
+            "id": "r3",
+            "text": "shi 是翘舌整体认读"
+          },
+          {
+            "id": "r0",
+            "text": "zi 是平舌整体认读"
+          },
+          {
+            "id": "r2",
+            "text": "si 是平舌整体认读"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把平舌音声母排出来。",
+        "tokens": [
+          "sh",
+          "zh",
+          "s",
+          "ch",
+          "z",
+          "c"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "z",
+          "c",
+          "s"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把翘舌音声母排出来。",
+        "tokens": [
+          "s",
+          "z",
+          "sh",
+          "c",
+          "zh",
+          "r",
+          "ch"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "zh",
+          "ch",
+          "sh",
+          "r"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读“z c s”和“zh ch sh r”时，最要注意什么？",
+        "options": [
+          "都读成一声",
+          "都去掉声母",
+          "都写成整体认读",
+          "平舌和翘舌要分清"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

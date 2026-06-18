@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "number_line",
+      "prompt": {
+        "type": "number_line",
+        "statement": "尺子上 0 后面的第一个数是几？",
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "type": "number_line",
+        "statement": "尺子上 4 和 6 中间的数是几？",
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "type": "number_line",
+        "statement": "尺子上 7 后面一个数是几？",
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "type": "number_line",
+        "statement": "尺子上 2 前面一个数是几？",
+        "min": 0,
+        "max": 10,
+        "step": 1
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "尺子上从 0 到 5，一共有几个数字标记（含0和5）？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "尺子上 0 通常在 1 的哪边？",
+        "options": [
+          "右边",
+          "左边",
+          "上边",
+          "下边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "3",
+        "right": "6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "8",
+        "right": "5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把尺子上的数从左到右排好。",
+        "items": [
+          {
+            "id": "n4",
+            "text": "4"
+          },
+          {
+            "id": "n1",
+            "text": "1"
+          },
+          {
+            "id": "n3",
+            "text": "3"
+          },
+          {
+            "id": "n0",
+            "text": "0"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n0",
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "尺子上 ____ 比 4 靠右。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

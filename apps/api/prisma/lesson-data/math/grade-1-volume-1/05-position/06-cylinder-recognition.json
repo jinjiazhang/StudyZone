@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一个物品最像圆柱？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "魔方"
+          },
+          {
+            "id": "o3",
+            "label": "篮球"
+          },
+          {
+            "id": "o1",
+            "label": "茶叶罐"
+          },
+          {
+            "id": "o4",
+            "label": "纸巾盒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱常见的样子是：",
+        "options": [
+          "四四方方",
+          "上下圆圆，侧面弯弯",
+          "完全像球",
+          "只有尖角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪组都是圆柱？",
+        "options": [
+          "魔方、骰子",
+          "牙膏盒、纸巾盒",
+          "胶棒、电池",
+          "篮球、乒乓球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "茶叶罐"
+          },
+          {
+            "id": "l2",
+            "text": "胶棒"
+          },
+          {
+            "id": "l3",
+            "text": "电池"
+          },
+          {
+            "id": "l4",
+            "text": "水杯"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "细长圆柱"
+          },
+          {
+            "id": "r1",
+            "text": "上下圆圆"
+          },
+          {
+            "id": "r4",
+            "text": "竖着能站"
+          },
+          {
+            "id": "r2",
+            "text": "躺着能滚"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "圆柱怎样放时更容易滚动？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "竖着放"
+          },
+          {
+            "id": "o3",
+            "label": "倒着藏"
+          },
+          {
+            "id": "o4",
+            "label": "放进盒子"
+          },
+          {
+            "id": "o2",
+            "label": "躺着放"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱竖着放在桌上，通常：",
+        "options": [
+          "一定向前滚",
+          "没有平面",
+          "会变成球",
+          "比较稳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "胶棒像",
+          null,
+          "，躺着放时",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "球",
+          "可以滚动",
+          "正方体",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "圆柱",
+          "可以滚动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材里能前后滚动的物体可以是哪一种？",
+        "options": [
+          {
+            "id": "o3",
+            "label": "圆柱"
+          },
+          {
+            "id": "o1",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "方盒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个不是圆柱的朋友？",
+        "options": [
+          "魔方",
+          "茶叶罐",
+          "胶棒",
+          "电池"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要让圆柱当“柱子”支撑上面的长方体，应该怎样放？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "躺着放"
+          },
+          {
+            "id": "o3",
+            "label": "竖着放"
+          },
+          {
+            "id": "o2",
+            "label": "斜着放"
+          },
+          {
+            "id": "o4",
+            "label": "不停滚动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 3
+    }
+  ]
+}

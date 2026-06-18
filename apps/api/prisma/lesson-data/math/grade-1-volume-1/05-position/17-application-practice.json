@@ -1,0 +1,263 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小明想做一个能滚的玩具车轮，应选哪类物体更合适？",
+        "options": [
+          "圆柱或球",
+          "长方体或正方体",
+          "纸盒或魔方",
+          "只选长方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把两本书叠起来，它们整体更像哪类？",
+        "options": [
+          "球",
+          "长方体",
+          "圆柱",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "饮料罐竖着放能站稳，躺着放能滚动，它最像什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "长方体"
+          },
+          {
+            "id": "o2",
+            "label": "正方体"
+          },
+          {
+            "id": "o4",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给 4 类图形找朋友，发现足球应该放到哪一类？",
+        "options": [
+          "长方体",
+          "正方体",
+          "球",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "玩具区有：2 个魔方、1 个骰子、3 个皮球、2 个茶叶罐。各有几个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b2",
+            "label": "正方体",
+            "suffix": "个"
+          },
+          {
+            "id": "b3",
+            "label": "圆柱",
+            "suffix": "个"
+          },
+          {
+            "id": "b4",
+            "label": "球",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          3,
+          2,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "饮料罐像",
+          null,
+          "，足球像",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "球",
+          "长方体",
+          "圆柱",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "圆柱",
+          "球"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果想让小塔底部更稳，下面哪种最合适？",
+        "options": [
+          "皮球",
+          "横放胶棒",
+          "一个乒乓球",
+          "纸巾盒平放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "足球"
+          },
+          {
+            "id": "l2",
+            "text": "饮料罐"
+          },
+          {
+            "id": "l3",
+            "text": "礼品盒"
+          },
+          {
+            "id": "l4",
+            "text": "骰子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "长方体"
+          },
+          {
+            "id": "r1",
+            "text": "球"
+          },
+          {
+            "id": "r4",
+            "text": "正方体"
+          },
+          {
+            "id": "r2",
+            "text": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "整理玩具的步骤",
+        "items": [
+          {
+            "id": "s2",
+            "text": "把相像的放在一起"
+          },
+          {
+            "id": "s4",
+            "text": "说一说分类理由"
+          },
+          {
+            "id": "s1",
+            "text": "先看整体形状"
+          },
+          {
+            "id": "s3",
+            "text": "数一数每类有几个"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小塔倒了，下面哪句建议最有用？",
+        "options": [
+          "把大的、平的面放在下面",
+          "换成同一种颜色",
+          "闭眼再搭",
+          "先放球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

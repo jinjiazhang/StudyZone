@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "新年快到了，可以给家人写什么？",
+        "options": [
+          "一颗小石子",
+          "一条尾巴",
+          "一瓶水",
+          "一句祝福的话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合写在新年贺卡上？",
+        "options": [
+          "祝您新年快乐！",
+          "谁的尾巴长？",
+          "瓶口又小。",
+          "数不清的雨点儿。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给妈妈写祝福时，开头可以写：",
+        "options": [
+          "小石子：",
+          "尾巴：",
+          "妈妈：",
+          "瓶子："
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出祝福句：祝您新年快乐",
+        "tokens": [
+          "新年",
+          "祝您",
+          "快乐",
+          "尾巴",
+          "！"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "祝您",
+          "新年",
+          "快乐",
+          "！"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：给家人写一句祝福的话吧",
+        "tokens": [
+          "写一句",
+          "给家人",
+          "祝福的话",
+          "吧",
+          "喝水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "给家人",
+          "写一句",
+          "祝福的话",
+          "吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "爷爷"
+          },
+          {
+            "id": "l1",
+            "text": "奶奶"
+          },
+          {
+            "id": "l2",
+            "text": "妈妈"
+          },
+          {
+            "id": "l3",
+            "text": "朋友"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "祝您新年快乐！"
+          },
+          {
+            "id": "r0",
+            "text": "祝您身体健康！"
+          },
+          {
+            "id": "r3",
+            "text": "祝你学习进步！"
+          },
+          {
+            "id": "r1",
+            "text": "祝您天天开心！"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "祝福的话要表达美好的心愿。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "给别人写祝福时，可以故意写让人难过的话。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "新年",
+        "hint": "读准“新年”",
+        "options": [
+          "xīn nián",
+          "xīng nián",
+          "xīn lián",
+          "xìn nián"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "祝福",
+        "hint": "读准“祝福”",
+        "options": [
+          "zù fú",
+          "zhù fú",
+          "zhǔ hú",
+          "zhù pú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

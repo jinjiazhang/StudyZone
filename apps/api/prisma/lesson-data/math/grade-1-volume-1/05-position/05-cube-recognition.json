@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一个物品最像正方体？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "茶叶罐"
+          },
+          {
+            "id": "o2",
+            "label": "篮球"
+          },
+          {
+            "id": "o3",
+            "label": "魔方"
+          },
+          {
+            "id": "o4",
+            "label": "牙膏盒"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方体看起来怎样？",
+        "options": [
+          "又长又扁",
+          "方方正正",
+          "圆圆的",
+          "上下圆圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪组都是正方体？",
+        "options": [
+          "文具盒、牙膏盒",
+          "篮球、皮球",
+          "魔方、骰子",
+          "胶棒、水杯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "魔方"
+          },
+          {
+            "id": "l2",
+            "text": "骰子"
+          },
+          {
+            "id": "l3",
+            "text": "方积木"
+          },
+          {
+            "id": "l4",
+            "text": "小方盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "能稳稳叠放"
+          },
+          {
+            "id": "r1",
+            "text": "方方正正"
+          },
+          {
+            "id": "r4",
+            "text": "像小正方体"
+          },
+          {
+            "id": "r2",
+            "text": "每个面看起来一样大"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "正方体可以稳稳地放在桌上，是因为它也有：",
+        "options": [
+          {
+            "id": "o1",
+            "label": "尖尖的顶"
+          },
+          {
+            "id": "o3",
+            "label": "弯弯的边"
+          },
+          {
+            "id": "o4",
+            "label": "空空的洞"
+          },
+          {
+            "id": "o2",
+            "label": "平平的面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把正方体放到圆柱上面时，要注意什么？",
+        "options": [
+          "随便放",
+          "只看颜色",
+          "一定放在边上",
+          "上下对齐，不要偏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "魔方像",
+          null,
+          "，骰子也像",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "长方体",
+          "正方体",
+          "圆柱",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "正方体",
+          "正方体"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材中“方方正正的放在一起”说的是哪类？",
+        "options": [
+          {
+            "id": "o4",
+            "label": "正方体"
+          },
+          {
+            "id": "o1",
+            "label": "圆柱"
+          },
+          {
+            "id": "o2",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个不是正方体的朋友？",
+        "options": [
+          "篮球",
+          "骰子",
+          "魔方",
+          "方积木"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "搭高时，正方体适合放在长方体上面吗？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "不适合，因为一定会滚"
+          },
+          {
+            "id": "o2",
+            "label": "适合，因为有平面"
+          },
+          {
+            "id": "o3",
+            "label": "只适合放在球上"
+          },
+          {
+            "id": "o4",
+            "label": "不能和别的图形搭"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

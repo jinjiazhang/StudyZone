@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "天",
+        "hint": "“天地人”的“天”",
+        "options": [
+          "tiān",
+          "tián",
+          "dà",
+          "rén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "地",
+        "hint": "“天地人”的“地”",
+        "options": [
+          "de",
+          "dì",
+          "tǔ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "人",
+        "hint": "“天地人”的“人”",
+        "options": [
+          "rì",
+          "ér",
+          "rén",
+          "shǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "你",
+        "hint": "“你我他”的“你”",
+        "options": [
+          "ní",
+          "wǒ",
+          "tā",
+          "nǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "我",
+        "hint": "“你我他”的“我”",
+        "options": [
+          "wǒ",
+          "wò",
+          "nǐ",
+          "tā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "他",
+        "hint": "“你我他”的“他”",
+        "options": [
+          "tǔ",
+          "tā",
+          "dì",
+          "nǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个字表示“天空”？",
+        "options": [
+          "地",
+          "人",
+          "天",
+          "我"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个字表示“土地、大地”？",
+        "options": [
+          "天",
+          "你",
+          "他",
+          "地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "天"
+          },
+          {
+            "id": "l2",
+            "text": "地"
+          },
+          {
+            "id": "l3",
+            "text": "人"
+          },
+          {
+            "id": "l4",
+            "text": "我"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "大地"
+          },
+          {
+            "id": "r3",
+            "text": "人们"
+          },
+          {
+            "id": "r4",
+            "text": "自己"
+          },
+          {
+            "id": "r1",
+            "text": "天空"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语排成课文中的顺序",
+        "tokens": [
+          "你",
+          "天",
+          "我",
+          "地",
+          "人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天",
+          "地",
+          "人"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要找“篮球的朋友”，应该看它和哪类形状相像？",
+        "options": [
+          "长方体",
+          "正方体",
+          "球",
+          "圆柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要判断一个物体能不能滚，最好怎么做？",
+        "options": [
+          "只看颜色",
+          "闭眼猜",
+          "只数数量",
+          "轻轻推一推观察"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要搭得高又稳，第一步更适合：",
+        "options": [
+          "选稳定的底座",
+          "先放球",
+          "只看谁漂亮",
+          "把物品分散"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要数每类有几个，比较好的办法是：",
+        "options": [
+          "随便数",
+          "按形状分组再数",
+          "只数大的",
+          "先搭起来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "分一分类"
+          },
+          {
+            "id": "l2",
+            "text": "滚一滚"
+          },
+          {
+            "id": "l3",
+            "text": "搭一搭"
+          },
+          {
+            "id": "l4",
+            "text": "数一数"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "注意底座和对齐"
+          },
+          {
+            "id": "r1",
+            "text": "看整体形状"
+          },
+          {
+            "id": "r4",
+            "text": "按类计数"
+          },
+          {
+            "id": "r2",
+            "text": "观察能否滚动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "分类时看",
+          null,
+          "，搭高时看",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "颜色",
+          "稳不稳",
+          "整体形状",
+          "声音"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "整体形状",
+          "稳不稳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "解决“怎样搭得高”",
+        "items": [
+          {
+            "id": "s4",
+            "text": "检查稳不稳"
+          },
+          {
+            "id": "s1",
+            "text": "数清有哪些物品"
+          },
+          {
+            "id": "s3",
+            "text": "按从下到上搭"
+          },
+          {
+            "id": "s2",
+            "text": "想一想哪些适合做底座"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "遇到“滚不动呀”，应该想到哪种原因？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "颜色太浅"
+          },
+          {
+            "id": "o3",
+            "label": "名字错误"
+          },
+          {
+            "id": "o1",
+            "label": "接触面平或放法不对"
+          },
+          {
+            "id": "o4",
+            "label": "数量太多"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话是好的数学表达？",
+        "options": [
+          "这个真好看",
+          "我随便放",
+          "这个物品像圆柱，躺着能滚",
+          "它是我喜欢的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较两种搭法，应该主要比较：",
+        "options": [
+          "谁先说",
+          "颜色多少",
+          "物品贵不贵",
+          "是否更高、更稳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    }
+  ]
+}

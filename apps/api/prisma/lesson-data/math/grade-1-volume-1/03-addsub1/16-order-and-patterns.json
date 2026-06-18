@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从小到大排列",
+        "items": [
+          {
+            "id": "n3",
+            "text": "3"
+          },
+          {
+            "id": "n1",
+            "text": "1"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4",
+          "n5"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从小到大排列",
+        "items": [
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n0",
+            "text": "0"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          },
+          {
+            "id": "n1",
+            "text": "1"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n0",
+          "n1",
+          "n2",
+          "n4",
+          "n5"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "草莓数量从多到少排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "3颗"
+          },
+          {
+            "id": "s5",
+            "text": "5颗"
+          },
+          {
+            "id": "s1",
+            "text": "1颗"
+          },
+          {
+            "id": "s4",
+            "text": "4颗"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s5",
+          "s4",
+          "s3",
+          "s1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6颗草莓、4颗、2颗、1颗，每次少__颗。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每次少"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4颗樱桃、6颗、8颗、10颗，每次多__颗。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每次多"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 2 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 - 2 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 2 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材本单元主要练习的得数范围是？",
+        "options": [
+          "10以内",
+          "5以内",
+          "20以内",
+          "100以内"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5、4、3、2这列数每次怎样变化？",
+        "options": [
+          "多1",
+          "少1",
+          "多2",
+          "不变"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

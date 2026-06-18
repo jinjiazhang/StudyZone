@@ -1,0 +1,263 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏鹅",
+        "author": "骆宾王",
+        "lines": [
+          [
+            "鹅，鹅，鹅，"
+          ],
+          [
+            null,
+            "向天歌。"
+          ]
+        ],
+        "options": [
+          "曲项",
+          "白毛",
+          "红掌",
+          "绿水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏鹅",
+        "author": "骆宾王",
+        "lines": [
+          [
+            "曲项向天歌。"
+          ],
+          [
+            null,
+            "浮绿水，"
+          ]
+        ],
+        "options": [
+          "白毛",
+          "红掌",
+          "大鹅",
+          "清波"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "咏鹅",
+        "author": "骆宾王",
+        "lines": [
+          [
+            "白毛浮绿水，"
+          ],
+          [
+            null,
+            "拨清波。"
+          ]
+        ],
+        "options": [
+          "红掌",
+          "白掌",
+          "鹅毛",
+          "曲项"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "咏鹅",
+        "author": "骆宾王",
+        "lines": [
+          [
+            null,
+            "，鹅，鹅，"
+          ],
+          [
+            "曲项向天歌。"
+          ],
+          [
+            "白毛浮",
+            null,
+            "，"
+          ],
+          [
+            "红掌拨清波。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "鸟",
+              "鹅",
+              "鸡",
+              "鸭"
+            ]
+          },
+          {
+            "options": [
+              "绿水",
+              "清波",
+              "白云",
+              "红花"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《咏鹅》的作者是谁？",
+        "options": [
+          "李白",
+          "骆宾王",
+          "高鼎",
+          "贺知章"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“白毛浮绿水”写的是鹅的什么？",
+        "options": [
+          "红色手掌写字",
+          "小鸟站树枝",
+          "白色羽毛在水上浮",
+          "月亮照山川"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "白毛"
+          },
+          {
+            "id": "l2",
+            "text": "红掌"
+          },
+          {
+            "id": "l3",
+            "text": "曲项"
+          },
+          {
+            "id": "l4",
+            "text": "鹅"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "清波"
+          },
+          {
+            "id": "r3",
+            "text": "向天歌"
+          },
+          {
+            "id": "r4",
+            "text": "鹅鹅鹅"
+          },
+          {
+            "id": "r1",
+            "text": "绿水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鹅",
+        "hint": "古诗题目“咏鹅”的“鹅”",
+        "options": [
+          "wǒ",
+          "niǎo",
+          "yā",
+          "é"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "曲",
+        "hint": "“曲项向天歌”的“曲”",
+        "options": [
+          "qū",
+          "qǔ",
+          "qī",
+          "xiàng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“日积月累”要求我们做什么？",
+        "options": [
+          "只看图不读",
+          "和大人一起读古诗",
+          "只数页码",
+          "只写数字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

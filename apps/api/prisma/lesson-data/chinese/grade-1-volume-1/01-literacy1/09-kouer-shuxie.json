@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kǒu",
+        "sentence": "张开小__说普通话。",
+        "blankPlaceholder": "__",
+        "character": "口",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "口"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ěr",
+        "sentence": "用__认真听。",
+        "blankPlaceholder": "__",
+        "character": "耳",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "耳"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mù",
+        "sentence": "用双__看清楚。",
+        "blankPlaceholder": "__",
+        "character": "目",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "目"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shǒu",
+        "sentence": "举起小__回答问题。",
+        "blankPlaceholder": "__",
+        "character": "手",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "手"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“口”时，外形像什么？",
+        "options": [
+          "圆圈",
+          "方框",
+          "三角",
+          "长线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“耳”时，教材提示要注意哪一笔穿过中间？",
+        "options": [
+          "点",
+          "撇",
+          "长横",
+          "捺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "口"
+          },
+          {
+            "id": "l2",
+            "text": "耳"
+          },
+          {
+            "id": "l3",
+            "text": "目"
+          },
+          {
+            "id": "l4",
+            "text": "手"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "六笔"
+          },
+          {
+            "id": "r3",
+            "text": "五笔"
+          },
+          {
+            "id": "r4",
+            "text": "四笔"
+          },
+          {
+            "id": "r1",
+            "text": "三笔"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "口",
+        "hint": "写字前先会读",
+        "options": [
+          "rì",
+          "mù",
+          "ěr",
+          "kǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "手",
+        "hint": "写字前先会读",
+        "options": [
+          "shǒu",
+          "sǒu",
+          "zú",
+          "shù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后问题“口、耳、目、手、足能做哪些事？”主要让我们联系什么？",
+        "options": [
+          "古诗作者",
+          "生活经验",
+          "数字大小",
+          "天气变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

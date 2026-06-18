@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "饮料瓶通常可以放进哪一类垃圾桶？",
+        "options": [
+          "厨余垃圾",
+          "可回收物",
+          "有害垃圾",
+          "其他垃圾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剩饭菜通常可以放进哪一类垃圾桶？",
+        "options": [
+          "可回收物",
+          "有害垃圾",
+          "文具",
+          "厨余垃圾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "废电池通常应放进哪一类？",
+        "options": [
+          "有害垃圾",
+          "水果",
+          "玩具",
+          "餐具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用过的纸巾通常可以放进哪一类？",
+        "options": [
+          "厨余垃圾",
+          "可回收物",
+          "其他垃圾",
+          "服装鞋帽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "垃圾也可以按不同类别分类投放。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "所有垃圾都应该放进同一个桶。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "可回收物、厨余垃圾、其他垃圾、有害垃圾，一共有几类？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "有2个饮料瓶和1张旧报纸，共有几件可回收物？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "饮料瓶"
+          },
+          {
+            "id": "l_1",
+            "text": "剩饭菜"
+          },
+          {
+            "id": "l_2",
+            "text": "废电池"
+          },
+          {
+            "id": "l_3",
+            "text": "用过纸巾"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "有害垃圾"
+          },
+          {
+            "id": "r_0",
+            "text": "可回收物"
+          },
+          {
+            "id": "r_3",
+            "text": "其他垃圾"
+          },
+          {
+            "id": "r_1",
+            "text": "厨余垃圾"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给垃圾分类时，先要判断什么？",
+        "options": [
+          "它有多漂亮",
+          "它在左边还是右边",
+          "它属于哪一类",
+          "它是谁买的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

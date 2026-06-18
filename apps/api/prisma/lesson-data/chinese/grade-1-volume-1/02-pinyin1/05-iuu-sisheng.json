@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "í",
+        "hint": "选出正确读法",
+        "options": [
+          "ī",
+          "í",
+          "ǐ",
+          "ì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ǐ",
+        "hint": "选出正确读法",
+        "options": [
+          "ì",
+          "ī",
+          "ǐ",
+          "í"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ù",
+        "hint": "选出正确读法",
+        "options": [
+          "ū",
+          "ú",
+          "ǔ",
+          "ù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ǖ",
+        "hint": "选出正确读法",
+        "options": [
+          "ǖ",
+          "ǘ",
+          "ǚ",
+          "ǜ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "ū"
+          },
+          {
+            "id": "l_1",
+            "text": "ú"
+          },
+          {
+            "id": "l_2",
+            "text": "ǔ"
+          },
+          {
+            "id": "l_3",
+            "text": "ù"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "第四声 u"
+          },
+          {
+            "id": "r_1",
+            "text": "第二声 u"
+          },
+          {
+            "id": "r_2",
+            "text": "第一声 u"
+          },
+          {
+            "id": "r_3",
+            "text": "第三声 u"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_1",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按四声顺序排出 i",
+        "tokens": [
+          "ā",
+          "ǚ",
+          "í",
+          "ǐ",
+          "ì",
+          "ī"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ī",
+          "í",
+          "ǐ",
+          "ì"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按四声顺序排出 u",
+        "tokens": [
+          "é",
+          "í",
+          "ú",
+          "ǔ",
+          "ù",
+          "ū"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ū",
+          "ú",
+          "ǔ",
+          "ù"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按四声顺序排出 ü",
+        "tokens": [
+          "ō",
+          "ù",
+          "ǘ",
+          "ǚ",
+          "ǜ",
+          "ǖ"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "ǖ",
+          "ǘ",
+          "ǚ",
+          "ǜ"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给 i 标调时，i 上原来的点怎样处理？",
+        "options": [
+          "保留点再加调号",
+          "去掉点再加调号",
+          "把点写到下面",
+          "不用写调号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是 ü 的四声？",
+        "options": [
+          "ū ú ǔ ù",
+          "ī í ǐ ì",
+          "ǖ ǘ ǚ ǜ",
+          "ē é ě è"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

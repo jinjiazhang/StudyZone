@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "别人对你说话时，可以用哪个字称呼你？",
+        "options": [
+          "你",
+          "我",
+          "他",
+          "天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "说自己时，可以用哪个字？",
+        "options": [
+          "你",
+          "我",
+          "他",
+          "地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "说旁边的男同学时，可以用哪个字？",
+        "options": [
+          "我",
+          "你",
+          "他",
+          "人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "你"
+          },
+          {
+            "id": "l2",
+            "text": "我"
+          },
+          {
+            "id": "l3",
+            "text": "他"
+          },
+          {
+            "id": "l4",
+            "text": "人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "自己"
+          },
+          {
+            "id": "r3",
+            "text": "别人"
+          },
+          {
+            "id": "r4",
+            "text": "人们"
+          },
+          {
+            "id": "r1",
+            "text": "对方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成“你我他”",
+        "tokens": [
+          "天",
+          "你",
+          "地",
+          "我",
+          "他"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "我",
+          "他"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成“天地人”",
+        "tokens": [
+          "你",
+          "天",
+          "我",
+          "地",
+          "人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天",
+          "地",
+          "人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "你",
+        "hint": "读一读“你”",
+        "options": [
+          "ní",
+          "mǐ",
+          "lǐ",
+          "nǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "我",
+        "hint": "读一读“我”",
+        "options": [
+          "wǒ",
+          "wō",
+          "wò",
+          "é"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "他",
+        "hint": "读一读“他”",
+        "options": [
+          "tǔ",
+          "tā",
+          "tá",
+          "dā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“你、我、他”这三个字都和什么有关？",
+        "options": [
+          "天气",
+          "山水",
+          "人",
+          "数字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

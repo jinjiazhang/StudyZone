@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓝天",
+        "hint": "选择“蓝天”的拼音",
+        "options": [
+          "nán tiān",
+          "lán tān",
+          "lán tiān",
+          "lán tin"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "白云",
+        "hint": "选择“白云”的拼音",
+        "options": [
+          "bái yīn",
+          "pái yún",
+          "bái yǔn",
+          "bái yún"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "草原",
+        "hint": "选择“草原”的拼音",
+        "options": [
+          "cǎo yuán",
+          "chǎo yuán",
+          "cǎo yún",
+          "cǎo yán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "森林",
+        "hint": "选择“森林”的拼音",
+        "options": [
+          "shēn lín",
+          "sēn lín",
+          "sēn líng",
+          "sēng lín"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "蓝天"
+          },
+          {
+            "id": "l_1",
+            "text": "白云"
+          },
+          {
+            "id": "l_2",
+            "text": "草原"
+          },
+          {
+            "id": "l_3",
+            "text": "森林"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "sēn lín"
+          },
+          {
+            "id": "r_2",
+            "text": "cǎo yuán"
+          },
+          {
+            "id": "r_1",
+            "text": "bái yún"
+          },
+          {
+            "id": "r_0",
+            "text": "lán tiān"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“森林”的“森”含哪个韵母？",
+        "options": [
+          "an",
+          "in",
+          "en",
+          "un"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“白云”的“云”读作什么？",
+        "options": [
+          "yīn",
+          "yǔn",
+          "yuán",
+          "yún"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：云",
+        "options": [
+          "蓝",
+          "白",
+          "草",
+          "森"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：原",
+        "options": [
+          "森",
+          "蓝",
+          "草",
+          "白"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补成词语：",
+        "tokens": [
+          "蓝",
+          "白",
+          "天",
+          "菜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蓝",
+          "天"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

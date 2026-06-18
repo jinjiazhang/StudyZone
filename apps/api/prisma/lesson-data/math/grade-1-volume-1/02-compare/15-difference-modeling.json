@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "桌上有 5 个杯子，4 把勺子，杯子比勺子多几个？"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "有 3 个男生，5 个女生，女生比男生多几个？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "有 4 只羊，2 只狗，羊比狗多几只？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5 个杯子和 4 把勺子相差几个，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "5-4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4 只鸭和 2 只鹅相差几只，列式。",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "4-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“多几个、少几个”时，可以怎样想？",
+        "options": [
+          "用大数减小数",
+          "把两个数相加",
+          "只看第一个数",
+          "答案一定是 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5 个杯子，3 把勺子，缺几把勺子才能一一配对？",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 3 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 - 4",
+        "right": "4 - 2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 个杯子配 2 把勺子，还差 ? 把勺子。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "还差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5比4多"
+          },
+          {
+            "id": "l2",
+            "text": "4比2多"
+          },
+          {
+            "id": "l3",
+            "text": "3比1多"
+          },
+          {
+            "id": "l4",
+            "text": "5比2多"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "2"
+          },
+          {
+            "id": "r4",
+            "text": "3"
+          },
+          {
+            "id": "r1",
+            "text": "1"
+          },
+          {
+            "id": "r3",
+            "text": "2个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

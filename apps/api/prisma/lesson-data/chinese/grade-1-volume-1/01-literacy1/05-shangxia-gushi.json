@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "上",
+        "hint": "“上下”的“上”",
+        "options": [
+          "xià",
+          "sān",
+          "shàng",
+          "shān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "下",
+        "hint": "“上下”的“下”",
+        "options": [
+          "shàng",
+          "huǒ",
+          "rén",
+          "xià"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "今",
+        "hint": "“今古”的“今”",
+        "options": [
+          "jīn",
+          "jīng",
+          "gǔ",
+          "jǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "古",
+        "hint": "“今古”的“古”",
+        "options": [
+          "gū",
+          "gǔ",
+          "jīn",
+          "tǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "上"
+          },
+          {
+            "id": "l2",
+            "text": "下"
+          },
+          {
+            "id": "l3",
+            "text": "今"
+          },
+          {
+            "id": "l4",
+            "text": "古"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "下面"
+          },
+          {
+            "id": "r3",
+            "text": "今天"
+          },
+          {
+            "id": "r4",
+            "text": "古代"
+          },
+          {
+            "id": "r1",
+            "text": "上面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“天地分上下”告诉我们“上”和“下”是一组什么词？",
+        "options": [
+          "数字词",
+          "身体部位",
+          "意思相反的词",
+          "动物名"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“日月照今古”里，“今”可以组成哪个词？",
+        "options": [
+          "今木",
+          "今水",
+          "今耳",
+          "今天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文句子",
+        "tokens": [
+          "日",
+          "天",
+          "月",
+          "地",
+          "分",
+          "上",
+          "下"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天",
+          "地",
+          "分",
+          "上",
+          "下"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文句子",
+        "tokens": [
+          "金",
+          "日",
+          "木",
+          "月",
+          "照",
+          "今",
+          "古"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "日",
+          "月",
+          "照",
+          "今",
+          "古"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一组最适合填入“天在__，地在__”？",
+        "options": [
+          "上、下",
+          "下、上",
+          "今、古",
+          "你、我"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

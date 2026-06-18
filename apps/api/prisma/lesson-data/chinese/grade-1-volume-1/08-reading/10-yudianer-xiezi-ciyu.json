@@ -1,0 +1,230 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lái",
+        "sentence": "雨点儿从云彩里落下__。",
+        "character": "来",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "来"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bàn",
+        "sentence": "雨点儿在__空中说话。",
+        "character": "半",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "半"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nǐ",
+        "sentence": "大雨点儿问：__要到哪里去？",
+        "character": "你",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "你"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǒu",
+        "sentence": "小雨点儿要去__花有草的地方。",
+        "character": "有",
+        "allowedMistakes": 3
+      },
+      "answer": {
+        "character": "有"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "来",
+        "tokens": [
+          "回",
+          "石",
+          "下",
+          "只",
+          "到",
+          "伞"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "回",
+            "下",
+            "到"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "半",
+        "tokens": [
+          "空",
+          "多",
+          "天",
+          "公",
+          "个",
+          "比"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "空",
+            "天",
+            "个"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "你",
+        "tokens": [
+          "好",
+          "雨",
+          "们",
+          "石",
+          "的",
+          "长"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "好",
+            "们",
+            "的"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "有",
+        "tokens": [
+          "用",
+          "问",
+          "花",
+          "半",
+          "草",
+          "短"
+        ],
+        "targetCount": 3
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "用",
+            "花",
+            "草"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "数不清"
+          },
+          {
+            "id": "l1",
+            "text": "云彩"
+          },
+          {
+            "id": "l2",
+            "text": "地方"
+          },
+          {
+            "id": "l3",
+            "text": "回来"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "某一个处所"
+          },
+          {
+            "id": "r0",
+            "text": "很多很多，数不过来"
+          },
+          {
+            "id": "r3",
+            "text": "回到原处"
+          },
+          {
+            "id": "r1",
+            "text": "天上的云"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：花更红了，草更绿了",
+        "tokens": [
+          "草",
+          "花",
+          "更绿了",
+          "更红了",
+          "雨点儿",
+          "，"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花",
+          "更红了",
+          "，",
+          "草",
+          "更绿了"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

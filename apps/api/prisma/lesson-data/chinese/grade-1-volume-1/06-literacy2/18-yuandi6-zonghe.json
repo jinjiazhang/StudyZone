@@ -1,0 +1,248 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "你们"
+          },
+          {
+            "id": "l2",
+            "text": "家里"
+          },
+          {
+            "id": "l3",
+            "text": "男生"
+          },
+          {
+            "id": "l4",
+            "text": "蓝色"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "nán shēng"
+          },
+          {
+            "id": "r1",
+            "text": "nǐ men"
+          },
+          {
+            "id": "r4",
+            "text": "lán sè"
+          },
+          {
+            "id": "r2",
+            "text": "jiā lǐ"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "上山"
+          },
+          {
+            "id": "l2",
+            "text": "三年"
+          },
+          {
+            "id": "l3",
+            "text": "写字"
+          },
+          {
+            "id": "l4",
+            "text": "报纸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "sān nián"
+          },
+          {
+            "id": "r4",
+            "text": "bào zhǐ"
+          },
+          {
+            "id": "r1",
+            "text": "shàng shān"
+          },
+          {
+            "id": "r3",
+            "text": "xiě zì"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读准字音：“男生”的“男”读什么？",
+        "options": [
+          "nán",
+          "lán",
+          "nǎn",
+          "nàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读准字音：“蓝色”的“蓝”读什么？",
+        "options": [
+          "lán",
+          "nán",
+          "lǎn",
+          "làn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“看图写词语”中，天空里可以写哪个词？",
+        "options": [
+          "白云",
+          "书包",
+          "工厂",
+          "国旗"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图中有山，可以写哪个词？",
+        "options": [
+          "大山",
+          "铅笔",
+          "医院",
+          "老师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "放学路上",
+        "passage": "放学路上，小明看见蓝天上有白云，远处有大山。路边有报刊亭，也有生活超市。他读准字音，把看到的词语说给同学听。",
+        "questions": [
+          {
+            "question": "小明在天上看见了什么？",
+            "options": [
+              "白云",
+              "尺子",
+              "转笔刀",
+              "国歌"
+            ]
+          },
+          {
+            "question": "路边有什么？",
+            "options": [
+              "报刊亭",
+              "森林",
+              "国旗杆",
+              "桃红"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“男”和“蓝”的声母不同，读音要分清。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“写字”的“字”读 zǐ。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出句子。",
+        "tokens": [
+          "我",
+          "国旗",
+          "会",
+          "书包",
+          "整理"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "会",
+          "整理",
+          "书包"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

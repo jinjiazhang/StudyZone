@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第4课学习哪四个声母？",
+        "options": [
+          "b p m f",
+          "a o e",
+          "d t n l",
+          "i u ü"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "左下半圆 d d d，说的是哪个声母？",
+        "options": [
+          "d",
+          "t",
+          "n",
+          "l"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "伞柄样子 t t t，说的是哪个声母？",
+        "options": [
+          "d",
+          "t",
+          "n",
+          "l"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个门洞 n n n，说的是哪个声母？",
+        "options": [
+          "l",
+          "d",
+          "n",
+          "t"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一根小棍 l l l，说的是哪个声母？",
+        "options": [
+          "n",
+          "t",
+          "d",
+          "l"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "d"
+          },
+          {
+            "id": "l_1",
+            "text": "t"
+          },
+          {
+            "id": "l_2",
+            "text": "n"
+          },
+          {
+            "id": "l_3",
+            "text": "l"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "小棍形"
+          },
+          {
+            "id": "r_1",
+            "text": "左下半圆"
+          },
+          {
+            "id": "r_2",
+            "text": "伞柄形"
+          },
+          {
+            "id": "r_3",
+            "text": "一个门洞"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找出 d t n l 的课本首页",
+        "options": [
+          {
+            "id": "p25",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-025.jpg",
+            "label": "a o e"
+          },
+          {
+            "id": "p31",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-031.jpg",
+            "label": "d t n l"
+          },
+          {
+            "id": "p29",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-029.jpg",
+            "label": "b p m f"
+          },
+          {
+            "id": "p27",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-027.jpg",
+            "label": "i u ü"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p31"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本顺序排出四个声母",
+        "tokens": [
+          "b",
+          "m",
+          "t",
+          "n",
+          "l",
+          "d"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "d",
+          "t",
+          "n",
+          "l"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "d 和 b 的主要区别是什么？",
+        "options": [
+          "半圆在左还是右",
+          "有没有两点",
+          "是否有声调",
+          "是否写在下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "n 和 m 的主要区别是什么？",
+        "options": [
+          "n 一个门洞，m 两个门洞",
+          "n 两点，m 一点",
+          "n 是韵母，m 是声母",
+          "n 写上格，m 写下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

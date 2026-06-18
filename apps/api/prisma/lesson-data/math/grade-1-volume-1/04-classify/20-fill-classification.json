@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把6件物品分成两类：学习用品4件，玩具2件。两个空依次填学习用品、玩具的数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把5支笔分成两类：带橡皮2支，不带橡皮3支。两个空依次填数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把9个图形按形状分：圆形3个、三角形3个、正方形3个。三个空依次填数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          },
+          {
+            "id": "b_3"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把8个水果按颜色分：红色3个、黄色2个、绿色3个。三个空依次填数量。",
+        "blanks": [
+          {
+            "id": "b_1"
+          },
+          {
+            "id": "b_2"
+          },
+          {
+            "id": "b_3"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "填写分类表时，第一步通常是？",
+        "options": [
+          "随便填数字",
+          "看清每一类名称",
+          "把数字写最大",
+          "只看第一件"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表中“玩具”下面应填玩具的什么？",
+        "options": [
+          "颜色",
+          "位置",
+          "名字长度",
+          "数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类表能帮助我们看清每类有多少。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类表里的数字可以不按实际数量填写。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "分类表中水果2个、饮料3瓶，一共有几件商品？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "表中可回收物2件、厨余垃圾1件、其他垃圾1件、有害垃圾1件，共几件？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

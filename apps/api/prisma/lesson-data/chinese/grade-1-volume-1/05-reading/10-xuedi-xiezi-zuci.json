@@ -1,0 +1,236 @@
+{
+  "id": "10-xuedi-xiezi-zuci",
+  "title": "雪地写字组词",
+  "description": "练写《雪地里的小画家》的会写字，积累动物和动作词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nǐ",
+        "sentence": "__ 喜 欢 下 雪 吗？",
+        "blankPlaceholder": "__",
+        "character": "你",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "你"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mǎ",
+        "sentence": "小 __ 画 月 牙。",
+        "blankPlaceholder": "__",
+        "character": "马",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "马"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yá",
+        "sentence": "小 马 画 月 __。",
+        "blankPlaceholder": "__",
+        "character": "牙",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "牙"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yòng",
+        "sentence": "不 __ 颜 料 不 用 笔。",
+        "blankPlaceholder": "__",
+        "character": "用",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "用"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jǐ",
+        "sentence": "__ 步 就 成 一 幅 画。",
+        "blankPlaceholder": "__",
+        "character": "几",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "几"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "马",
+        "tokens": [
+          "儿",
+          "上",
+          "小",
+          "雪",
+          "用",
+          "车"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“马”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "上",
+            "儿"
+          ],
+          [
+            "小",
+            "车",
+            "上"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "牙",
+        "tokens": [
+          "刷",
+          "门",
+          "月",
+          "雪",
+          "几",
+          "你"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“牙”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "月",
+            "门",
+            "刷"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "用",
+        "tokens": [
+          "心",
+          "马",
+          "雪",
+          "不",
+          "竹",
+          "力"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“用”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "不",
+            "心",
+            "力"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "你"
+          },
+          {
+            "id": "l2",
+            "text": "马"
+          },
+          {
+            "id": "l3",
+            "text": "牙"
+          },
+          {
+            "id": "l4",
+            "text": "用"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "mǎ"
+          },
+          {
+            "id": "r4",
+            "text": "yòng"
+          },
+          {
+            "id": "r1",
+            "text": "nǐ"
+          },
+          {
+            "id": "r3",
+            "text": "yá"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "颜料",
+          "小画家",
+          "不用",
+          "不用",
+          "笔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不用",
+          "颜料",
+          "不用",
+          "笔"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

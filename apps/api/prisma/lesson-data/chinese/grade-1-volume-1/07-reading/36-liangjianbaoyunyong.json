@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪纸时既要拿剪刀，又要想怎么剪，这是？",
+        "options": [
+          "只用脑不用手",
+          "用手又用脑",
+          "只看影子",
+          "只读拼音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写字只动手不认真想笔顺，可能会怎样？",
+        "options": [
+          "一定写得快",
+          "变成诗",
+          "写不好",
+          "看到月儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想搭积木但不动手，结果是？",
+        "options": [
+          "马上完成",
+          "会飞起来",
+          "能看见星星",
+          "搭不起来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪件事最需要“用手又用脑”？",
+        "options": [
+          "做手工",
+          "睡觉",
+          "看云",
+          "听风"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "双手"
+          },
+          {
+            "id": "l1",
+            "text": "大脑"
+          },
+          {
+            "id": "l2",
+            "text": "用手又用脑"
+          },
+          {
+            "id": "l3",
+            "text": "不用脑"
+          },
+          {
+            "id": "l4",
+            "text": "不用手"
+          },
+          {
+            "id": "l5",
+            "text": "两件宝"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "有创造"
+          },
+          {
+            "id": "r0",
+            "text": "做工"
+          },
+          {
+            "id": "r3",
+            "text": "做不好"
+          },
+          {
+            "id": "r1",
+            "text": "思考"
+          },
+          {
+            "id": "r5",
+            "text": "手和脑"
+          },
+          {
+            "id": "r4",
+            "text": "办不到"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：双手会做工。",
+        "tokens": [
+          "影子",
+          "前",
+          "做工",
+          "会",
+          "双手"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "双手",
+          "会",
+          "做工"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：大脑会思考。",
+        "tokens": [
+          "月儿",
+          "蓝",
+          "思考",
+          "会",
+          "大脑"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大脑",
+          "会",
+          "思考"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cái",
+        "sentence": "__能有创造。",
+        "character": "才",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "才"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yě",
+        "sentence": "啥__办不到。",
+        "character": "也",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "也"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "néng",
+        "sentence": "才__有创造。",
+        "character": "能",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "能"
+      },
+      "difficulty": 2
+    }
+  ]
+}

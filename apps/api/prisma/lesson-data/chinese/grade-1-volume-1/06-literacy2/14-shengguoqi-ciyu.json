@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "中国"
+          },
+          {
+            "id": "l2",
+            "text": "国旗"
+          },
+          {
+            "id": "l3",
+            "text": "五星红旗"
+          },
+          {
+            "id": "l4",
+            "text": "国歌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "我国的国旗"
+          },
+          {
+            "id": "r1",
+            "text": "我们的祖国"
+          },
+          {
+            "id": "r4",
+            "text": "国家的歌曲"
+          },
+          {
+            "id": "r2",
+            "text": "国家的旗帜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "徐徐"
+          },
+          {
+            "id": "l2",
+            "text": "升起"
+          },
+          {
+            "id": "l3",
+            "text": "立正"
+          },
+          {
+            "id": "l4",
+            "text": "敬礼"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "往上升"
+          },
+          {
+            "id": "r4",
+            "text": "表示尊敬的动作"
+          },
+          {
+            "id": "r1",
+            "text": "慢慢地"
+          },
+          {
+            "id": "r3",
+            "text": "站直不动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“我们的国旗”指什么？",
+        "options": [
+          "五星红旗",
+          "桃红柳绿",
+          "小书包",
+          "作业本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“国歌声中，徐徐升起”说明国旗怎样升起？",
+        "options": [
+          "慢慢升起",
+          "马上落下",
+          "左右摇晃",
+          "放进书包"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到国旗升起，我们应该怎样？",
+        "options": [
+          "立正、敬礼",
+          "跑开玩耍",
+          "低头写字",
+          "大声吵闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“多么美丽”表达了什么感情？",
+        "options": [
+          "喜爱和赞美",
+          "害怕",
+          "生气",
+          "难过"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "国",
+        "tokens": [
+          "旗",
+          "雨",
+          "歌",
+          "虫",
+          "家",
+          "王"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“国”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "旗",
+            "歌",
+            "家"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "红",
+        "tokens": [
+          "旗",
+          "尺",
+          "花",
+          "刀",
+          "色",
+          "心"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“红”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "旗",
+            "花",
+            "色"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "五星红旗是我们的国旗。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "升国旗时可以随便打闹。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

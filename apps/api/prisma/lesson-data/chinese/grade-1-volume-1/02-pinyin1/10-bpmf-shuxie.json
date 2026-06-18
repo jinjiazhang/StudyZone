@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "b 的竖主要写在哪两格？",
+        "options": [
+          "上中格",
+          "中下格",
+          "上格",
+          "下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "p 的竖主要写在哪两格？",
+        "options": [
+          "上中格",
+          "中下格",
+          "上格",
+          "下格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "m 写在哪一格？",
+        "options": [
+          "上格",
+          "下格",
+          "中格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "f 的竖弯主要写在哪两格？",
+        "options": [
+          "中下格",
+          "中格",
+          "下格",
+          "上中格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "b 和 p 最容易混淆的是哪里？",
+        "options": [
+          "半圆方向和位置",
+          "有没有点",
+          "有没有两点",
+          "声调位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "b"
+          },
+          {
+            "id": "l_1",
+            "text": "p"
+          },
+          {
+            "id": "l_2",
+            "text": "m"
+          },
+          {
+            "id": "l_3",
+            "text": "f"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_0",
+            "text": "中格两个门洞"
+          },
+          {
+            "id": "r_1",
+            "text": "上中格竖加右下半圆"
+          },
+          {
+            "id": "r_2",
+            "text": "上中格像拐棍"
+          },
+          {
+            "id": "r_3",
+            "text": "中下格竖加右上半圆"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课本书写顺序排出 b p m f",
+        "tokens": [
+          "a",
+          "u",
+          "p",
+          "m",
+          "f",
+          "b"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "b",
+          "p",
+          "m",
+          "f"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写 m 时要注意什么？",
+        "options": [
+          "写成两个门洞",
+          "写成一个圆",
+          "写到下格",
+          "上面加两点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "f 的样子和生活中的什么相像？",
+        "options": [
+          "小车",
+          "门洞",
+          "拐棍",
+          "水波"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有 b p m f 的书写格？",
+        "options": [
+          {
+            "id": "p28",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-028.jpg",
+            "label": "i u ü 书写"
+          },
+          {
+            "id": "p30",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-030.jpg",
+            "label": "b p m f 书写"
+          },
+          {
+            "id": "p26",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-026.jpg",
+            "label": "a o e 书写"
+          },
+          {
+            "id": "p33",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-1/pages/page-033.jpg",
+            "label": "语文园地二"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p30"
+      },
+      "difficulty": 1
+    }
+  ]
+}

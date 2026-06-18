@@ -1,0 +1,245 @@
+{
+  "id": "02-qiutian-xiezi-zuci",
+  "title": "秋天写字组词",
+  "description": "练写《秋天》的会写字，并用它们组成常见词语。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "le",
+        "sentence": "天 气 凉 __。",
+        "blankPlaceholder": "__",
+        "character": "了",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "了"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zǐ",
+        "sentence": "叶 __ 从 树 上 落 下 来。",
+        "blankPlaceholder": "__",
+        "character": "子",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "子"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dà",
+        "sentence": "一 群 __ 雁 往 南 飞。",
+        "blankPlaceholder": "__",
+        "character": "大",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "大"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "rén",
+        "sentence": "一 会 儿 排 成 个“__”字。",
+        "blankPlaceholder": "__",
+        "character": "人",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "人"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "了",
+        "tokens": [
+          "子",
+          "人",
+          "开",
+          "过",
+          "飞",
+          "大"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能和“了”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "过"
+          ],
+          [
+            "子",
+            "开"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "子",
+        "tokens": [
+          "叶",
+          "儿",
+          "天",
+          "人",
+          "飞",
+          "女"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“子”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "叶",
+            "女",
+            "儿"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "大",
+        "tokens": [
+          "门",
+          "山",
+          "小",
+          "叶",
+          "东",
+          "人"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“大”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "门",
+            "山"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "人",
+        "tokens": [
+          "叶",
+          "天",
+          "们",
+          "口",
+          "大",
+          "西"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“人”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "大",
+            "口",
+            "们"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "了"
+          },
+          {
+            "id": "l2",
+            "text": "子"
+          },
+          {
+            "id": "l3",
+            "text": "大"
+          },
+          {
+            "id": "l4",
+            "text": "人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "zǐ"
+          },
+          {
+            "id": "r4",
+            "text": "rén"
+          },
+          {
+            "id": "r1",
+            "text": "le"
+          },
+          {
+            "id": "r3",
+            "text": "dà"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "大雁",
+          "飞",
+          "来了",
+          "啊",
+          "秋天",
+          "往南"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "秋天",
+          "来了",
+          "啊"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

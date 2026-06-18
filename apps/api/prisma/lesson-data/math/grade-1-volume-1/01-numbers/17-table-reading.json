@@ -1,0 +1,311 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "喜欢包子的人有几人？",
+        "columns": [
+          "食物",
+          "人数"
+        ],
+        "rows": [
+          {
+            "食物": "包子",
+            "人数": 8
+          },
+          {
+            "食物": "面条",
+            "人数": 6
+          },
+          {
+            "食物": "米饭",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "喜欢面条的人有几人？",
+        "columns": [
+          "食物",
+          "人数"
+        ],
+        "rows": [
+          {
+            "食物": "包子",
+            "人数": 8
+          },
+          {
+            "食物": "面条",
+            "人数": 6
+          },
+          {
+            "食物": "米饭",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "喜欢米饭的人有几人？",
+        "columns": [
+          "食物",
+          "人数"
+        ],
+        "rows": [
+          {
+            "食物": "包子",
+            "人数": 8
+          },
+          {
+            "食物": "面条",
+            "人数": 6
+          },
+          {
+            "食物": "米饭",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "喜欢哪种食物的人最多？",
+        "columns": [
+          "食物",
+          "人数"
+        ],
+        "rows": [
+          {
+            "食物": "包子",
+            "人数": 8
+          },
+          {
+            "食物": "面条",
+            "人数": 6
+          },
+          {
+            "食物": "米饭",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "包子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "喜欢哪种食物的人最少？",
+        "columns": [
+          "食物",
+          "人数"
+        ],
+        "rows": [
+          {
+            "食物": "包子",
+            "人数": 8
+          },
+          {
+            "食物": "面条",
+            "人数": 6
+          },
+          {
+            "食物": "米饭",
+            "人数": 5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "米饭"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "面具有几个？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "面具",
+            "数量": 7
+          },
+          {
+            "物品": "玩偶",
+            "数量": 5
+          },
+          {
+            "物品": "棋子",
+            "数量": 3
+          },
+          {
+            "物品": "布老虎",
+            "数量": 8
+          }
+        ]
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "棋子有几个？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "面具",
+            "数量": 7
+          },
+          {
+            "物品": "玩偶",
+            "数量": 5
+          },
+          {
+            "物品": "棋子",
+            "数量": 3
+          },
+          {
+            "物品": "布老虎",
+            "数量": 8
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪种玩具最多？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "面具",
+            "数量": 7
+          },
+          {
+            "物品": "玩偶",
+            "数量": 5
+          },
+          {
+            "物品": "棋子",
+            "数量": 3
+          },
+          {
+            "物品": "布老虎",
+            "数量": 8
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "布老虎"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "哪种玩具最少？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "面具",
+            "数量": 7
+          },
+          {
+            "物品": "玩偶",
+            "数量": 5
+          },
+          {
+            "物品": "棋子",
+            "数量": 3
+          },
+          {
+            "物品": "布老虎",
+            "数量": 8
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "棋子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "8",
+        "right": "5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

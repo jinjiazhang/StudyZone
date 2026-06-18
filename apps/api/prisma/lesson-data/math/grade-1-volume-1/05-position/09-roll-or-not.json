@@ -1,0 +1,231 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "球轻轻一推通常会怎样？",
+        "options": [
+          "能滚动",
+          "一定不动",
+          "只会变方",
+          "只能叠高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆柱躺着放时通常会怎样？",
+        "options": [
+          "一定不能动",
+          "能前后滚动",
+          "会变成球",
+          "只能向上跳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体平放在桌上通常：",
+        "options": [
+          "能向各个方向滚",
+          "没有平面",
+          "不容易滚动",
+          "一定会倒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方体放在桌上通常：",
+        "options": [
+          "能自由滚",
+          "只有圆面",
+          "没有角",
+          "不容易滚动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "球"
+          },
+          {
+            "id": "l2",
+            "text": "圆柱"
+          },
+          {
+            "id": "l3",
+            "text": "长方体"
+          },
+          {
+            "id": "l4",
+            "text": "正方体"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "平放比较稳"
+          },
+          {
+            "id": "r1",
+            "text": "能向各个方向滚动"
+          },
+          {
+            "id": "r4",
+            "text": "方方正正不易滚"
+          },
+          {
+            "id": "r2",
+            "text": "躺着能前后滚动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "球",
+          null,
+          "，圆柱躺着放",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "滚不动",
+          "能滚动",
+          "容易滚动",
+          "方方正正"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "容易滚动",
+          "能滚动"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材中小狗说“滚不动呀”时，桌上竖着的是哪类？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "球"
+          },
+          {
+            "id": "o3",
+            "label": "长方体"
+          },
+          {
+            "id": "o4",
+            "label": "正方体"
+          },
+          {
+            "id": "o2",
+            "label": "圆柱"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪组物品都比较容易滚动？",
+        "options": [
+          "篮球、胶棒",
+          "魔方、骰子",
+          "文具盒、纸巾盒",
+          "牙膏盒、方积木"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么球不适合当底座？",
+        "options": [
+          "太漂亮",
+          "容易滚动",
+          "没有颜色",
+          "名字短"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要做滚动游戏，优先选哪两类？",
+        "options": [
+          {
+            "id": "o2",
+            "label": "球和圆柱"
+          },
+          {
+            "id": "o1",
+            "label": "长方体和正方体"
+          },
+          {
+            "id": "o3",
+            "label": "正方体和长方体"
+          },
+          {
+            "id": "o4",
+            "label": "纸盒和方块"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "yi",
+        "hint": "i 前加 y，写成什么整体认读音节？",
+        "options": [
+          "y",
+          "wu",
+          "yu",
+          "yi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "wu",
+        "hint": "u 前加 w，写成什么整体认读音节？",
+        "options": [
+          "w",
+          "yi",
+          "wu",
+          "yu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "yu",
+        "hint": "ü 前加 y 后，去两点写成什么？",
+        "options": [
+          "ü",
+          "yu",
+          "wu",
+          "yi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "月",
+        "hint": "选出“月”的拼音。",
+        "options": [
+          "wù",
+          "yì",
+          "yǔ",
+          "yuè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "云",
+        "hint": "选出“云”的拼音。",
+        "options": [
+          "yún",
+          "wén",
+          "yīn",
+          "yǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "我",
+        "hint": "选出“我”的拼音。",
+        "options": [
+          "yǒu",
+          "wǒ",
+          "wū",
+          "yá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "ü 和 y 组成 yu 时，ü 的两点怎样？",
+        "options": [
+          "保留两点",
+          "变成一横",
+          "写在声母上",
+          "去掉两点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "yi"
+          },
+          {
+            "id": "l1",
+            "text": "wu"
+          },
+          {
+            "id": "l2",
+            "text": "yu"
+          },
+          {
+            "id": "l3",
+            "text": "yue"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "乌"
+          },
+          {
+            "id": "r3",
+            "text": "月"
+          },
+          {
+            "id": "r0",
+            "text": "衣"
+          },
+          {
+            "id": "r2",
+            "text": "鱼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按整体认读音节顺序摆一摆。",
+        "tokens": [
+          "ü",
+          "y",
+          "yu",
+          "w",
+          "yi",
+          "wu"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "yi",
+          "wu",
+          "yu"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个是整体认读音节？",
+        "options": [
+          "yu",
+          "y",
+          "w",
+          "ü"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

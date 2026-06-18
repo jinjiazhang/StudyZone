@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "苹果、梨、香蕉应放在哪一类？",
+        "options": [
+          "水果",
+          "蔬菜",
+          "饮料",
+          "文具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "白菜、胡萝卜、黄瓜应放在哪一类？",
+        "options": [
+          "水果",
+          "饮料",
+          "玩具",
+          "蔬菜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "牛奶、果汁、矿泉水应放在哪一类？",
+        "options": [
+          "水果",
+          "饮料",
+          "衣物",
+          "书本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "超市把水果和蔬菜分开摆，是按什么分？",
+        "options": [
+          "商品种类",
+          "左右位置",
+          "顾客身高",
+          "数字大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同类商品放在一起，买东西更方便。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "苹果应该放进文具区。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "水果区有苹果、梨、香蕉，共几种水果？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "饮料区有牛奶、果汁、矿泉水、酸奶，共几种饮料？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "苹果"
+          },
+          {
+            "id": "l_1",
+            "text": "胡萝卜"
+          },
+          {
+            "id": "l_2",
+            "text": "牛奶"
+          },
+          {
+            "id": "l_3",
+            "text": "铅笔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "饮料"
+          },
+          {
+            "id": "r_0",
+            "text": "水果"
+          },
+          {
+            "id": "r_3",
+            "text": "文具"
+          },
+          {
+            "id": "r_1",
+            "text": "蔬菜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果按“能吃”和“不能吃”分，铅笔应放在哪类？",
+        "options": [
+          "能吃",
+          "水果",
+          "不能吃",
+          "饮料"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

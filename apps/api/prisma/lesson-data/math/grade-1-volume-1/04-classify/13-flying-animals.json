@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种动物会飞？",
+        "options": [
+          "小狗",
+          "小猫",
+          "小鸟",
+          "小马"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种动物通常不会飞？",
+        "options": [
+          "蜻蜓",
+          "蜜蜂",
+          "兔子",
+          "蝴蝶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材练习中，“把会飞的动物涂上颜色”，分类标准是？",
+        "options": [
+          "会不会飞",
+          "大还是小",
+          "住在哪里",
+          "有几条腿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蝴蝶、蜻蜓、蜜蜂可以放在一起，因为它们都？",
+        "options": [
+          "会游泳",
+          "会写字",
+          "会穿鞋",
+          "会飞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小鸟和蜜蜂都可以归入会飞动物。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小马和小狗应涂成会飞动物。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小鸟、燕子、蜻蜓、蝴蝶、蜜蜂共5种会飞动物，答案是几？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小狗、小猫、小马、小兔共4种不会飞动物，答案是几？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "小鸟"
+          },
+          {
+            "id": "l_1",
+            "text": "小狗"
+          },
+          {
+            "id": "l_2",
+            "text": "蜻蜓"
+          },
+          {
+            "id": "l_3",
+            "text": "小兔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "飞行动物"
+          },
+          {
+            "id": "r_0",
+            "text": "会飞动物"
+          },
+          {
+            "id": "r_3",
+            "text": "陆地动物"
+          },
+          {
+            "id": "r_1",
+            "text": "不会飞动物"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果按“会飞”和“不会飞”分，小猫应放在哪里？",
+        "options": [
+          "会飞",
+          "不会飞",
+          "两类都放",
+          "不需要分类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

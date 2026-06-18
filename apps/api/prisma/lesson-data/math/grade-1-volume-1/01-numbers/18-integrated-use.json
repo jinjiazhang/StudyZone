@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "动物排队：一共有6只，熊猫排第1，大象排第4，猫排第6。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "一共"
+          },
+          {
+            "id": "panda",
+            "label": "熊猫"
+          },
+          {
+            "id": "elephant",
+            "label": "大象"
+          },
+          {
+            "id": "cat",
+            "label": "猫"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          1,
+          4,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "毛毛虫上 2、3、?、5 中缺少的数是 ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "毛毛虫上 4、5、?、?、8 中第一个缺少的数是 ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "毛毛虫上 4、5、6、?、8 中缺少的数是 ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "有 8 个包子、6 碗面、5 碗饭，最多的是？",
+        "options": [
+          "饭",
+          "面",
+          "包子",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "有 8 个包子、6 碗面、5 碗饭，最少的是？",
+        "options": [
+          "饭",
+          "包子",
+          "面",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "6",
+        "right": "8",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "type": "compare_input",
+        "left": "10",
+        "right": "7",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "type": "order_sequence",
+        "instruction": "把 0、2、4、6、8、10 从小到大排好。",
+        "items": [
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n0",
+            "text": "0"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          },
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n0",
+          "n2",
+          "n4",
+          "n6",
+          "n8",
+          "n10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "type": "table_read",
+        "question": "图形统计里圆有几个？",
+        "columns": [
+          "图形",
+          "数量"
+        ],
+        "rows": [
+          {
+            "图形": "圆",
+            "数量": 10
+          },
+          {
+            "图形": "圆柱",
+            "数量": 6
+          },
+          {
+            "图形": "三角形",
+            "数量": 8
+          },
+          {
+            "图形": "正方形",
+            "数量": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

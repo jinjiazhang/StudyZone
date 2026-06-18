@@ -1,0 +1,291 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "3支笔"
+          },
+          {
+            "id": "l2",
+            "text": "6个杯子"
+          },
+          {
+            "id": "l3",
+            "text": "8条鱼"
+          },
+          {
+            "id": "l4",
+            "text": "10把伞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "10"
+          },
+          {
+            "id": "r2",
+            "text": "8"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r4",
+            "text": "6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "2只鸟"
+          },
+          {
+            "id": "l2",
+            "text": "4个风车"
+          },
+          {
+            "id": "l3",
+            "text": "5个圆"
+          },
+          {
+            "id": "l4",
+            "text": "9只蜗牛"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r2",
+            "text": "2"
+          },
+          {
+            "id": "r3",
+            "text": "9"
+          },
+          {
+            "id": "r4",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "type": "match_pairs",
+        "left": [
+          {
+            "id": "l1",
+            "text": "0条鱼"
+          },
+          {
+            "id": "l2",
+            "text": "1个太阳"
+          },
+          {
+            "id": "l3",
+            "text": "7朵花"
+          },
+          {
+            "id": "l4",
+            "text": "6个面具"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "7"
+          },
+          {
+            "id": "r2",
+            "text": "0"
+          },
+          {
+            "id": "r3",
+            "text": "6"
+          },
+          {
+            "id": "r4",
+            "text": "1"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "数一数：4个杯子配数字 ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "type": "numeric_input",
+        "statement": "数一数：9把伞配数字 ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪组和数字 7 配对？",
+        "options": [
+          "7根小棒",
+          "6只鸟",
+          "8个圆",
+          "5个盘子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "type": "single_choice",
+        "question": "哪组和数字 0 配对？",
+        "options": [
+          "没有鱼",
+          "1个太阳",
+          "3朵云",
+          "5只鸭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "填空：2只鸟、6个杯子、9只蜗牛。",
+        "blanks": [
+          {
+            "id": "bird",
+            "label": "鸟"
+          },
+          {
+            "id": "cup",
+            "label": "杯子"
+          },
+          {
+            "id": "snail",
+            "label": "蜗牛"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          6,
+          9
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "○○○○○○○ 对应数字 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "type": "multi_numeric_input",
+        "statement": "没有物品时对应数字 ____。",
+        "blanks": [
+          {
+            "id": "b1"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

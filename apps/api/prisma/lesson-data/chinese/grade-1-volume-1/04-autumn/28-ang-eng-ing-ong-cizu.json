@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "游泳",
+        "hint": "选择“游泳”的拼音",
+        "options": [
+          "yóu yǔn",
+          "yóu yǒng",
+          "yóu yōng",
+          "liú yǒng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "滑冰",
+        "hint": "选择“滑冰”的拼音",
+        "options": [
+          "huá bīn",
+          "huá pīng",
+          "huá bīng",
+          "huā bīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "自行车",
+        "hint": "选择“自行车”的拼音",
+        "options": [
+          "zì xín chē",
+          "zì xíng cē",
+          "zì qíng chē",
+          "zì xíng chē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "乒乓球",
+        "hint": "选择“乒乓球”的拼音",
+        "options": [
+          "pīng pāng qiú",
+          "pīn pān qiú",
+          "pīng páng qiú",
+          "bīng pāng qiú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "游泳"
+          },
+          {
+            "id": "l_1",
+            "text": "滑冰"
+          },
+          {
+            "id": "l_2",
+            "text": "骑自行车"
+          },
+          {
+            "id": "l_3",
+            "text": "打乒乓球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "dǎ pīng pāng qiú"
+          },
+          {
+            "id": "r_2",
+            "text": "qí zì xíng chē"
+          },
+          {
+            "id": "r_1",
+            "text": "huá bīng"
+          },
+          {
+            "id": "r_0",
+            "text": "yóu yǒng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“滑冰”的“冰”含哪个韵母？",
+        "options": [
+          "in",
+          "ing",
+          "eng",
+          "ong"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“乒乓球”中哪个字读 pīng？",
+        "options": [
+          "乓",
+          "球",
+          "乒",
+          "打"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：冰",
+        "options": [
+          "自",
+          "行",
+          "车",
+          "滑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出能组成课本词语的字：球",
+        "options": [
+          "乒乓",
+          "游",
+          "滑",
+          "车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补成词语：",
+        "tokens": [
+          "车",
+          "自",
+          "天",
+          "行",
+          "蓝"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "自",
+          "行",
+          "车"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "zi",
+        "hint": "z 加 i 读成整体认读音节什么？",
+        "options": [
+          "z",
+          "zi",
+          "ci",
+          "si"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "ci",
+        "hint": "c 加 i 读成整体认读音节什么？",
+        "options": [
+          "c",
+          "zi",
+          "si",
+          "ci"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "si",
+        "hint": "s 加 i 读成整体认读音节什么？",
+        "options": [
+          "si",
+          "s",
+          "zi",
+          "ci"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "zi、ci、si 是什么？",
+        "options": [
+          "声母",
+          "韵母",
+          "整体认读音节",
+          "标点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "子",
+        "hint": "选出“子”的拼音。",
+        "options": [
+          "cǐ",
+          "sì",
+          "zǐ",
+          "zhǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "词",
+        "hint": "选出“词”的拼音。",
+        "options": [
+          "cí",
+          "zí",
+          "sī",
+          "chí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "四",
+        "hint": "选出“四”的拼音。",
+        "options": [
+          "zì",
+          "cì",
+          "shì",
+          "sì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "zi"
+          },
+          {
+            "id": "l1",
+            "text": "ci"
+          },
+          {
+            "id": "l2",
+            "text": "si"
+          },
+          {
+            "id": "l3",
+            "text": "sì"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "词"
+          },
+          {
+            "id": "r3",
+            "text": "四"
+          },
+          {
+            "id": "r0",
+            "text": "子"
+          },
+          {
+            "id": "r2",
+            "text": "丝"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按整体认读音节顺序摆一摆。",
+        "tokens": [
+          "s",
+          "z",
+          "si",
+          "c",
+          "zi",
+          "ci"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "zi",
+          "ci",
+          "si"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个不是整体认读音节？",
+        "options": [
+          "zi",
+          "s",
+          "ci",
+          "si"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把苹果数量按每次多 1 个排序。",
+        "items": [
+          {
+            "id": "i3",
+            "text": "4个"
+          },
+          {
+            "id": "i1",
+            "text": "2个"
+          },
+          {
+            "id": "i4",
+            "text": "5个"
+          },
+          {
+            "id": "i2",
+            "text": "3个"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把草莓数量按每次少 1 颗排序。",
+        "items": [
+          {
+            "id": "i2",
+            "text": "4颗"
+          },
+          {
+            "id": "i4",
+            "text": "2颗"
+          },
+          {
+            "id": "i1",
+            "text": "5颗"
+          },
+          {
+            "id": "i3",
+            "text": "3颗"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数列填空：1, 2, ?, 4, 5",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "缺的数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数列填空：5, 4, ?, 2, 1",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "缺的数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1 + 1 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 - 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数量从 2, 3, 4, 5 变化，每次怎样？",
+        "options": [
+          "多 1 个",
+          "少 1 个",
+          "多 2 个",
+          "不变"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数量从 5, 4, 3, 2 变化，每次怎样？",
+        "options": [
+          "多 1 个",
+          "少 1 个",
+          "少 2 个",
+          "变成 0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 + 1",
+        "right": "5 - 1",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每次少 1：4, ?, 2, 1",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "?"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

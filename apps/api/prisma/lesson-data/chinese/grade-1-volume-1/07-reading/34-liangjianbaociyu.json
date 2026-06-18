@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "两件宝"
+          },
+          {
+            "id": "l1",
+            "text": "做工"
+          },
+          {
+            "id": "l2",
+            "text": "思考"
+          },
+          {
+            "id": "l3",
+            "text": "办到"
+          },
+          {
+            "id": "l4",
+            "text": "创造"
+          },
+          {
+            "id": "l5",
+            "text": "又"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "动脑想问题"
+          },
+          {
+            "id": "r0",
+            "text": "双手和大脑"
+          },
+          {
+            "id": "r3",
+            "text": "能做到"
+          },
+          {
+            "id": "r1",
+            "text": "动手做事情"
+          },
+          {
+            "id": "r5",
+            "text": "表示两样都用上"
+          },
+          {
+            "id": "r4",
+            "text": "想出并做出新东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "手",
+        "tokens": [
+          "双",
+          "右",
+          "用",
+          "脑",
+          "左",
+          "月",
+          "船"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“手”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "双",
+            "用",
+            "左"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "脑",
+        "tokens": [
+          "大",
+          "手",
+          "用",
+          "星",
+          "思",
+          "前",
+          "后"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“脑”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "大",
+            "用",
+            "思"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "做",
+        "tokens": [
+          "工",
+          "和",
+          "事",
+          "也",
+          "到",
+          "才",
+          "能"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“做”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "工",
+            "事",
+            "到"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文说人的两件宝是什么？",
+        "options": [
+          "双手和大脑",
+          "月儿和星星",
+          "前面和后面",
+          "爸爸和妈妈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“用手不用脑”会怎样？",
+        "options": [
+          "一定最快",
+          "事情做不好",
+          "能背古诗",
+          "看见星星"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“用脑不用手”会怎样？",
+        "options": [
+          "马上成功",
+          "变成影子",
+          "啥也办不到",
+          "船儿两头尖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文认为怎样才能有创造？",
+        "options": [
+          "只看月亮",
+          "只会说话",
+          "只找影子",
+          "用手又用脑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "双手__大脑。",
+        "character": "和",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "和"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成句子：用手又用脑。",
+        "tokens": [
+          "又",
+          "用脑",
+          "用手",
+          "创造"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "用手",
+          "又",
+          "用脑"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

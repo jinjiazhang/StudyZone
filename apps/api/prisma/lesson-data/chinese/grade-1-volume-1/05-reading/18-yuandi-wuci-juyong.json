@@ -1,0 +1,229 @@
+{
+  "id": "18-yuandi-wuci-juyong",
+  "title": "园地词句运用",
+  "description": "运用四季词语和常见事物，说完整的话。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "春天"
+          },
+          {
+            "id": "l2",
+            "text": "夏天"
+          },
+          {
+            "id": "l3",
+            "text": "秋天"
+          },
+          {
+            "id": "l4",
+            "text": "冬天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "莲花"
+          },
+          {
+            "id": "r4",
+            "text": "雪人"
+          },
+          {
+            "id": "r1",
+            "text": "青草"
+          },
+          {
+            "id": "r3",
+            "text": "树叶"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“大地、树叶、青草、莲花、飞鸟、小鱼、青蛙、雪人”中，哪一个最适合冬天？",
+        "options": [
+          "莲花",
+          "雪人",
+          "青草",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话最完整？",
+        "options": [
+          "冬天，因为。",
+          "我喜欢。",
+          "我喜欢冬天，因为冬天可以堆雪人。",
+          "堆雪人可以。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "我",
+          "树叶黄了",
+          "秋天",
+          "喜欢",
+          "因为"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "喜欢",
+          "秋天",
+          "因为",
+          "树叶黄了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "青蛙",
+          "夏天",
+          "有",
+          "莲花",
+          "和"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "夏天",
+          "有",
+          "莲花",
+          "和",
+          "青蛙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "青草",
+          "绿了",
+          "来了",
+          "春天",
+          "飞鸟"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春天",
+          "青草",
+          "绿了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "说喜欢的季节时，可以说清楚原因。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“雪人”更常出现在夏天。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "青",
+        "tokens": [
+          "草",
+          "色",
+          "蛙",
+          "牙",
+          "马",
+          "西"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“青”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "草",
+            "蛙",
+            "色"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雪",
+        "tokens": [
+          "地",
+          "花",
+          "可",
+          "人",
+          "莲",
+          "东"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“雪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "地",
+            "花"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

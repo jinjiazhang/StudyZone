@@ -1,0 +1,273 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "打鼓"
+          },
+          {
+            "id": "l1",
+            "text": "下棋"
+          },
+          {
+            "id": "l2",
+            "text": "搭积木"
+          },
+          {
+            "id": "l3",
+            "text": "画画"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "xià qí"
+          },
+          {
+            "id": "r3",
+            "text": "huà huà"
+          },
+          {
+            "id": "r0",
+            "text": "dǎ gǔ"
+          },
+          {
+            "id": "r2",
+            "text": "dā jī mù"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "哥哥"
+          },
+          {
+            "id": "l1",
+            "text": "弟弟"
+          },
+          {
+            "id": "l2",
+            "text": "小鸡"
+          },
+          {
+            "id": "l3",
+            "text": "荷花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "dì di"
+          },
+          {
+            "id": "r3",
+            "text": "hé huā"
+          },
+          {
+            "id": "r0",
+            "text": "gē ge"
+          },
+          {
+            "id": "r2",
+            "text": "xiǎo jī"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "打鼓",
+        "hint": "选出“打鼓”的拼音。",
+        "options": [
+          "dǎ gǔ",
+          "dǎ qí",
+          "xià gǔ",
+          "dā gǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "下棋",
+        "hint": "选出“下棋”的拼音。",
+        "options": [
+          "xià jī",
+          "xià qí",
+          "dǎ qí",
+          "xià xí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "搭积木",
+        "hint": "选出“搭积木”的拼音。",
+        "options": [
+          "dǎ jī mù",
+          "dā qí mù",
+          "dā jī wù",
+          "dā jī mù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：哥哥和弟弟下棋。",
+        "tokens": [
+          "哥哥",
+          "画画",
+          "下棋",
+          "荷花",
+          "和",
+          "。",
+          "弟弟"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "哥哥",
+          "和",
+          "弟弟",
+          "下棋",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组合句子：我喜欢搭积木。",
+        "tokens": [
+          "我",
+          "打鼓",
+          "积木",
+          "下棋",
+          "喜欢",
+          "。",
+          "搭"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "喜欢",
+          "搭",
+          "积木",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "打",
+        "tokens": [
+          "花",
+          "球",
+          "棋",
+          "鼓",
+          "书",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“打”搭配的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "鼓",
+            "球",
+            "水"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "下",
+        "tokens": [
+          "鼓",
+          "雨",
+          "花",
+          "棋",
+          "书",
+          "课"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“下”搭配的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "棋",
+            "雨",
+            "课"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“搭积木”中，哪个字读 jī？",
+        "options": [
+          "积",
+          "搭",
+          "木",
+          "了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "日 + 月"
+          },
+          {
+            "id": "l2",
+            "text": "田 + 力"
+          },
+          {
+            "id": "l3",
+            "text": "小 + 土"
+          },
+          {
+            "id": "l4",
+            "text": "小 + 大"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "尘"
+          },
+          {
+            "id": "r1",
+            "text": "明"
+          },
+          {
+            "id": "r4",
+            "text": "尖"
+          },
+          {
+            "id": "r2",
+            "text": "男"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "二人"
+          },
+          {
+            "id": "l2",
+            "text": "三人"
+          },
+          {
+            "id": "l3",
+            "text": "双木"
+          },
+          {
+            "id": "l4",
+            "text": "三木"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "众"
+          },
+          {
+            "id": "r4",
+            "text": "森"
+          },
+          {
+            "id": "r1",
+            "text": "从"
+          },
+          {
+            "id": "r3",
+            "text": "林"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“明”字由哪两个字组成？",
+        "options": [
+          "日和月",
+          "口和木",
+          "小和土",
+          "田和力"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“尘”字由哪两个字组成？",
+        "options": [
+          "小和土",
+          "人和人",
+          "日和月",
+          "木和木"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“森”里有几个“木”？",
+        "options": [
+          "一个",
+          "两个",
+          "三个",
+          "四个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“众”表示许多人，因为它里面有几个“人”？",
+        "options": [
+          "一个",
+          "两个",
+          "三个",
+          "四个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "明",
+        "tokens": [
+          "日",
+          "火",
+          "月",
+          "山",
+          "水"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能合成“明”的两个字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "日",
+            "月"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "林",
+        "tokens": [
+          "木",
+          "人",
+          "树",
+          "土",
+          "口"
+        ],
+        "targetCount": 2,
+        "instruction": "选出和“林”有关的两个字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "木",
+            "树"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“尖”的上面是“小”，下面是“大”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“从”是三个“人”组成的。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把袜子、裤子、上衣放一起，是按什么分？",
+        "options": [
+          "文具",
+          "衣物",
+          "玩具",
+          "水果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "厨房里碗、盘、筷子适合放在一起，因为它们是？",
+        "options": [
+          "餐具",
+          "玩具",
+          "图形",
+          "书本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "运动区放跳绳、球、毽子，分类标准是？",
+        "options": [
+          "学习用品",
+          "水果",
+          "运动用品",
+          "垃圾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书架上语文书、数学书、绘本都属于？",
+        "options": [
+          "餐具",
+          "衣物",
+          "玩具",
+          "书本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "生活中整理物品常常会用到分类。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "把所有东西都堆在一起一定更容易找。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "桌上有2本书、2支笔、1块橡皮，共几件学习用品？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "衣柜里有3件上衣、2条裤子，共几件衣物？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "厨房"
+          },
+          {
+            "id": "l_1",
+            "text": "书架"
+          },
+          {
+            "id": "l_2",
+            "text": "衣柜"
+          },
+          {
+            "id": "l_3",
+            "text": "玩具箱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "衣物"
+          },
+          {
+            "id": "r_0",
+            "text": "餐具"
+          },
+          {
+            "id": "r_3",
+            "text": "玩具"
+          },
+          {
+            "id": "r_1",
+            "text": "书本"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "整理物品的好处是？",
+        "options": [
+          "物品一定变多",
+          "容易找到物品",
+          "房间一定变大",
+          "书包一定变轻"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

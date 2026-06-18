@@ -1,0 +1,270 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "果皮"
+          },
+          {
+            "id": "l1",
+            "text": "树皮"
+          },
+          {
+            "id": "l2",
+            "text": "加法"
+          },
+          {
+            "id": "l3",
+            "text": "办法"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "一种计算方法"
+          },
+          {
+            "id": "r0",
+            "text": "水果外面的皮"
+          },
+          {
+            "id": "r3",
+            "text": "解决事情的方法"
+          },
+          {
+            "id": "r1",
+            "text": "树干外面的皮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "回来"
+          },
+          {
+            "id": "l1",
+            "text": "回答"
+          },
+          {
+            "id": "l2",
+            "text": "许多"
+          },
+          {
+            "id": "l3",
+            "text": "不许"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "不允许"
+          },
+          {
+            "id": "r0",
+            "text": "回到原处"
+          },
+          {
+            "id": "r2",
+            "text": "很多"
+          },
+          {
+            "id": "r1",
+            "text": "答复问题"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "到处"
+          },
+          {
+            "id": "l1",
+            "text": "四处"
+          },
+          {
+            "id": "l2",
+            "text": "方向"
+          },
+          {
+            "id": "l3",
+            "text": "地方"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "东南西北等"
+          },
+          {
+            "id": "r0",
+            "text": "各处"
+          },
+          {
+            "id": "r3",
+            "text": "某一个处所"
+          },
+          {
+            "id": "r1",
+            "text": "各个地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语表示“很多”？",
+        "options": [
+          "不许",
+          "回来",
+          "许多",
+          "树皮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语和“到处”意思接近？",
+        "options": [
+          "回答",
+          "加法",
+          "果皮",
+          "四处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“办法”中的“法”还可以组成哪个词？",
+        "options": [
+          "树皮",
+          "加法",
+          "回来",
+          "不许"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：我有一个好办法",
+        "tokens": [
+          "一个",
+          "我",
+          "好办法",
+          "有",
+          "许多"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "有",
+          "一个",
+          "好办法"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：他到处找水喝",
+        "tokens": [
+          "找水喝",
+          "到处",
+          "他",
+          "回来",
+          "。"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "到处",
+          "找水喝",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“果皮”和“树皮”里都有“皮”，但意思不完全一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“回答”就是“回家”的意思。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

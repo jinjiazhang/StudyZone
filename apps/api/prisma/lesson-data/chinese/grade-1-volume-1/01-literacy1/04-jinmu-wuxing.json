@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "金",
+        "hint": "“金木水火土”的“金”",
+        "options": [
+          "jīng",
+          "mù",
+          "tǔ",
+          "jīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "木",
+        "hint": "“金木水火土”的“木”",
+        "options": [
+          "mù",
+          "mǔ",
+          "mó",
+          "shuǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "水",
+        "hint": "“金木水火土”的“水”",
+        "options": [
+          "suǐ",
+          "shuǐ",
+          "huǒ",
+          "shān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "火",
+        "hint": "“金木水火土”的“火”",
+        "options": [
+          "hǒu",
+          "shuǐ",
+          "huǒ",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "土",
+        "hint": "“金木水火土”的“土”",
+        "options": [
+          "tù",
+          "dì",
+          "tiān",
+          "tǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "金"
+          },
+          {
+            "id": "l2",
+            "text": "木"
+          },
+          {
+            "id": "l3",
+            "text": "水"
+          },
+          {
+            "id": "l4",
+            "text": "火"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "树木"
+          },
+          {
+            "id": "r3",
+            "text": "河水"
+          },
+          {
+            "id": "r4",
+            "text": "火苗"
+          },
+          {
+            "id": "r1",
+            "text": "金属"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“金木水火土”前一句是？",
+        "options": [
+          "一二三四五",
+          "天地分上下",
+          "日月照今古",
+          "你我他"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到火苗图，可以想到哪个字？",
+        "options": [
+          "水",
+          "火",
+          "木",
+          "金"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的五行顺序",
+        "tokens": [
+          "日",
+          "金",
+          "月",
+          "木",
+          "水",
+          "火",
+          "土"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "金",
+          "木",
+          "水",
+          "火",
+          "土"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "木",
+        "tokens": [
+          "火",
+          "头",
+          "土",
+          "门",
+          "水"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能与“木”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "头",
+            "门"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

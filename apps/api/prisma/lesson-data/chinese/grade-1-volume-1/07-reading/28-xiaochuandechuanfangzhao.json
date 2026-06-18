@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小小的船”中“小小的”表示什么？",
+        "options": [
+          "很黑",
+          "很高",
+          "很多",
+          "很小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词能照样子说“弯弯的”？",
+        "options": [
+          "小河",
+          "大脑",
+          "老师",
+          "工厂"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词能照样子说“蓝蓝的”？",
+        "options": [
+          "花生",
+          "大海",
+          "双手",
+          "影子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子组短语：弯弯的小河。",
+        "tokens": [
+          "蓝蓝的",
+          "星星",
+          "小河",
+          "弯弯的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "弯弯的",
+          "小河"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子组短语：蓝蓝的大海。",
+        "tokens": [
+          "小小的",
+          "月儿",
+          "大海",
+          "蓝蓝的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蓝蓝的",
+          "大海"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子组短语：闪闪的星星。",
+        "tokens": [
+          "弯弯的",
+          "小船",
+          "星星",
+          "闪闪的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "闪闪的",
+          "星星"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "弯弯的"
+          },
+          {
+            "id": "l1",
+            "text": "蓝蓝的"
+          },
+          {
+            "id": "l2",
+            "text": "闪闪的"
+          },
+          {
+            "id": "l3",
+            "text": "小小的"
+          },
+          {
+            "id": "l4",
+            "text": "圆圆的"
+          },
+          {
+            "id": "l5",
+            "text": "白白的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "星星"
+          },
+          {
+            "id": "r0",
+            "text": "小河"
+          },
+          {
+            "id": "r3",
+            "text": "船"
+          },
+          {
+            "id": "r1",
+            "text": "大海"
+          },
+          {
+            "id": "r5",
+            "text": "云"
+          },
+          {
+            "id": "r4",
+            "text": "月亮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4",
+          "l5": "r5"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“弯弯的、蓝蓝的、闪闪的”这类词让句子怎么样？",
+        "options": [
+          "变成数字",
+          "没有意思",
+          "更具体生动",
+          "只能写人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ér",
+        "sentence": "弯弯的月__小小的船。",
+        "character": "儿",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "儿"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tóu",
+        "sentence": "小小的船儿两__尖。",
+        "character": "头",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "头"
+      },
+      "difficulty": 2
+    }
+  ]
+}

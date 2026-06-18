@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "玩具类有卡车、狮子玩偶、飞机模型，共几件？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "文具类有铅笔、文具盒、尺子，共几件？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "服装鞋帽类有上衣、短裤、帽子、运动鞋，共几件？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "餐具类有杯子、碗、盘子、勺子，共几件？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一类数量最多？玩具3件，文具3件，服装鞋帽4件。",
+        "options": [
+          "玩具",
+          "文具",
+          "服装鞋帽",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "玩具3件，文具3件，它们的数量关系是？",
+        "options": [
+          "玩具多",
+          "文具多",
+          "无法比较",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类后可以数一数每类有几个。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分类计数时，同一个物品可以重复数很多次。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "3件"
+          },
+          {
+            "id": "l_1",
+            "text": "4件"
+          },
+          {
+            "id": "l_2",
+            "text": "2件"
+          },
+          {
+            "id": "l_3",
+            "text": "1件"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "一双鞋和一顶帽子"
+          },
+          {
+            "id": "r_0",
+            "text": "玩具卡车、玩偶、飞机"
+          },
+          {
+            "id": "r_3",
+            "text": "一支笔"
+          },
+          {
+            "id": "r_1",
+            "text": "上衣、短裤、帽子、鞋"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "分类计数后，想知道哪类多，应怎样做？",
+        "options": [
+          "只看颜色",
+          "比较每类数量",
+          "只看大小",
+          "重新画图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

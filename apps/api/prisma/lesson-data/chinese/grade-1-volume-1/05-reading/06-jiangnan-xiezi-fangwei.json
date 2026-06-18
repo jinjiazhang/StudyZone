@@ -1,0 +1,232 @@
+{
+  "id": "06-jiangnan-xiezi-fangwei",
+  "title": "江南写字方位",
+  "description": "练写《江南》会写字，理解东、西、南、北的方位词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kě",
+        "sentence": "江 南 __ 采 莲。",
+        "blankPlaceholder": "__",
+        "character": "可",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "可"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yè",
+        "sentence": "莲 __ 何 田 田。",
+        "blankPlaceholder": "__",
+        "character": "叶",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "叶"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dōng",
+        "sentence": "鱼 戏 莲 叶 __。",
+        "blankPlaceholder": "__",
+        "character": "东",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "东"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xī",
+        "sentence": "鱼 戏 莲 叶 __。",
+        "blankPlaceholder": "__",
+        "character": "西",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "西"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "东"
+          },
+          {
+            "id": "l2",
+            "text": "西"
+          },
+          {
+            "id": "l3",
+            "text": "南"
+          },
+          {
+            "id": "l4",
+            "text": "北"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "太阳落下的方向"
+          },
+          {
+            "id": "r4",
+            "text": "地图上方常表示的方向"
+          },
+          {
+            "id": "r1",
+            "text": "太阳升起的方向"
+          },
+          {
+            "id": "r3",
+            "text": "地图下方常表示的方向"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "叶",
+        "tokens": [
+          "山",
+          "荷",
+          "莲",
+          "口",
+          "树",
+          "马"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“叶”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "树",
+            "荷",
+            "莲"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "东",
+        "tokens": [
+          "边",
+          "叶",
+          "方",
+          "马",
+          "西",
+          "口"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“东”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "西",
+            "方",
+            "边"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "西",
+        "tokens": [
+          "边",
+          "鸟",
+          "口",
+          "瓜",
+          "东",
+          "叶"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“西”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "东",
+            "瓜",
+            "边"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《江南》中反复出现的方位词不包括哪一个？",
+        "options": [
+          "东",
+          "西",
+          "上",
+          "南"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "tokens": [
+          "莲叶",
+          "戏",
+          "鱼",
+          "江南",
+          "东"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鱼",
+          "戏",
+          "莲叶",
+          "东"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
