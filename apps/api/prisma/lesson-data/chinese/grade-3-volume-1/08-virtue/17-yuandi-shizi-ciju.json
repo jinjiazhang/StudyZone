@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瞪",
+        "hint": "“瞪眼”的“瞪”",
+        "options": [
+          "dèng",
+          "dēng",
+          "zhèng",
+          "tèng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "眨",
+        "hint": "“眨眼”的“眨”",
+        "options": [
+          "zhá",
+          "zhǎ",
+          "zǎ",
+          "zhà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "眶",
+        "hint": "“眼眶”的“眶”",
+        "options": [
+          "kuāng",
+          "guāng",
+          "kuàng",
+          "kuǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "睹",
+        "hint": "“耳闻目睹”的“睹”",
+        "options": [
+          "dù",
+          "zhǔ",
+          "tǔ",
+          "dǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "怒",
+        "hint": "“怒目圆睁”的“怒”",
+        "options": [
+          "nù",
+          "nǔ",
+          "lù",
+          "nú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "睁"
+          },
+          {
+            "id": "l1",
+            "text": "眨"
+          },
+          {
+            "id": "l2",
+            "text": "瞪"
+          },
+          {
+            "id": "l3",
+            "text": "瞅"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "眼睑快速合上再张开"
+          },
+          {
+            "id": "r2",
+            "text": "睁大眼睛看"
+          },
+          {
+            "id": "r3",
+            "text": "看"
+          },
+          {
+            "id": "r0",
+            "text": "睁开眼睛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“眨、瞪、睁、瞅”这些字多和什么有关？",
+        "options": [
+          "脚步",
+          "眼睛",
+          "声音",
+          "气味"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列加点词可以互换的一组是？",
+        "options": [
+          "连续工作 / 陆续工作",
+          "陆续一个人 / 连续一个人",
+          "伤员陆续抬下来 / 连续工作六十九个小时",
+          "陆续六十九小时 / 连续从火线"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成社区读书交流会物品清单。",
+        "tokens": [
+          "伤员",
+          "要提前准备",
+          "瓮",
+          "设备",
+          "文具",
+          "书籍"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "书籍",
+          "文具",
+          "设备",
+          "要提前准备"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“目”作偏旁时，很多字与眼睛或看有关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

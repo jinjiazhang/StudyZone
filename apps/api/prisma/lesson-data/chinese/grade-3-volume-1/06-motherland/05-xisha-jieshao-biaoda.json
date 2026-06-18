@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "向别人介绍西沙群岛，可以先抓住哪两个特点？",
+        "options": [
+          "风景优美、物产丰富",
+          "天气寒冷、道路宽阔",
+          "城市繁华、交通拥堵",
+          "草地平坦、花朵金黄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“随着祖国建设事业的发展……更加美丽，更加富饶”表达了作者怎样的感情？",
+        "options": [
+          "害怕和担心",
+          "厌烦和责备",
+          "热爱和祝愿",
+          "疑惑和犹豫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：那里风景优美，物产丰富，是个可爱的地方。",
+        "tokens": [
+          "海鸟",
+          "那里",
+          "威武",
+          "是个",
+          "物产丰富",
+          "可爱的地方",
+          "风景优美"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "那里",
+          "风景优美",
+          "物产丰富",
+          "是个",
+          "可爱的地方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：可爱的西沙群岛必将变得更加美丽。",
+        "tokens": [
+          "西沙群岛",
+          "懒洋洋",
+          "肥料",
+          "更加美丽",
+          "必将",
+          "变得",
+          "可爱的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "可爱的",
+          "西沙群岛",
+          "必将",
+          "变得",
+          "更加美丽"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "可以写海水"
+          },
+          {
+            "id": "l1",
+            "text": "可以写海底"
+          },
+          {
+            "id": "l2",
+            "text": "可以写鱼群"
+          },
+          {
+            "id": "l3",
+            "text": "可以写海鸟"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "样子和数量"
+          },
+          {
+            "id": "r3",
+            "text": "树林和鸟蛋"
+          },
+          {
+            "id": "r0",
+            "text": "颜色和原因"
+          },
+          {
+            "id": "r1",
+            "text": "珊瑚和海参"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "介绍景物时，可以选择自己最喜欢、最熟悉的部分。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "介绍西沙群岛时只能写海水，不能写海鸟。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "介绍西沙",
+        "passage": "我最喜欢西沙群岛的海底。海底的珊瑚有的像花朵，有的像鹿角。海参懒洋洋地蠕动，大龙虾样子挺威武。这样的介绍抓住了样子和动作。",
+        "questions": [
+          {
+            "question": "这段介绍的是哪里？",
+            "options": [
+              "海滨小城的街道",
+              "小兴安岭的冬天",
+              "香港的夜景",
+              "西沙群岛的海底"
+            ]
+          },
+          {
+            "question": "这段抓住了什么来写？",
+            "options": [
+              "声音和气味",
+              "样子和动作",
+              "时间和地点",
+              "人物语言"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍西沙群岛时，哪句话适合放在开头？",
+        "options": [
+          "西沙群岛是个可爱的地方。",
+          "我今天去上学。",
+          "这只小猫很淘气。",
+          "夜里下雨了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "介绍景物时，既可以说特点，也可以举具体例子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

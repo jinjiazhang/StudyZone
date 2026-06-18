@@ -1,0 +1,259 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "玩耍"
+          },
+          {
+            "id": "l_1",
+            "text": "蒲公英"
+          },
+          {
+            "id": "l_2",
+            "text": "哈欠"
+          },
+          {
+            "id": "l_3",
+            "text": "盛开"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "花开得繁盛"
+          },
+          {
+            "id": "r_3",
+            "text": "困倦时张口吸气"
+          },
+          {
+            "id": "r_0",
+            "text": "一种开黄花、结白色绒球的植物"
+          },
+          {
+            "id": "r_2",
+            "text": "游戏、玩乐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_0",
+          "l_2": "r_3",
+          "l_3": "r_1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "观察"
+          },
+          {
+            "id": "l_1",
+            "text": "引人注目"
+          },
+          {
+            "id": "l_2",
+            "text": "一本正经"
+          },
+          {
+            "id": "l_3",
+            "text": "合拢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "合在一起"
+          },
+          {
+            "id": "r_0",
+            "text": "很严肃认真的样子"
+          },
+          {
+            "id": "r_3",
+            "text": "仔细地看"
+          },
+          {
+            "id": "r_1",
+            "text": "吸引人的注意"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_3",
+          "l_1": "r_1",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "草",
+        "tokens": [
+          "脸",
+          "坪",
+          "钓",
+          "地",
+          "欠",
+          "丛",
+          "祖",
+          "木"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“草”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "地",
+            "坪",
+            "丛",
+            "木"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "花",
+        "tokens": [
+          "船",
+          "朵",
+          "拢",
+          "瓣",
+          "察",
+          "粉",
+          "衔",
+          "香"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“花”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "瓣",
+            "朵",
+            "粉",
+            "香"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "喜",
+        "tokens": [
+          "盛",
+          "欢",
+          "使",
+          "爱",
+          "欠",
+          "事",
+          "脸",
+          "讯"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“喜”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "爱",
+            "欢",
+            "事",
+            "讯"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一本正经”的意思是？",
+        "options": [
+          "非常快乐地笑",
+          "悄悄地走",
+          "很严肃认真的样子",
+          "用力地跑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“引人注目”说明蒲公英怎样？",
+        "options": [
+          "一点也看不见",
+          "没有颜色",
+          "长在水里",
+          "很吸引人的注意"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“合拢”的反义词最合适的是？",
+        "options": [
+          "张开",
+          "低头",
+          "钓鱼",
+          "观察"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“盛开”可以用来写花开得很多、很旺。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“观察”只是随便看一眼，不需要细致。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

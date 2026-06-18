@@ -1,0 +1,263 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "孤零零"
+          },
+          {
+            "id": "l1",
+            "text": "陌生"
+          },
+          {
+            "id": "l2",
+            "text": "缺陷"
+          },
+          {
+            "id": "l3",
+            "text": "指责"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "不熟悉"
+          },
+          {
+            "id": "r3",
+            "text": "指出过失并责备"
+          },
+          {
+            "id": "r0",
+            "text": "孤单，没有依靠"
+          },
+          {
+            "id": "r2",
+            "text": "欠缺或不完备的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "同情"
+          },
+          {
+            "id": "l1",
+            "text": "委屈"
+          },
+          {
+            "id": "l2",
+            "text": "模仿"
+          },
+          {
+            "id": "l3",
+            "text": "诧异"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "受到不公平对待而难过"
+          },
+          {
+            "id": "r3",
+            "text": "觉得奇怪"
+          },
+          {
+            "id": "r0",
+            "text": "对别人的遭遇感到难过并关心"
+          },
+          {
+            "id": "r2",
+            "text": "照着别人的样子学"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "叫",
+        "tokens": [
+          "屋",
+          "喊",
+          "典",
+          "声",
+          "蛋",
+          "唤",
+          "板",
+          "鸣"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【叫】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "喊",
+            "声",
+            "唤",
+            "鸣"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "访",
+        "tokens": [
+          "暴",
+          "问",
+          "晒",
+          "客",
+          "钻",
+          "谈",
+          "龟",
+          "友"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【访】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "问",
+            "客",
+            "谈",
+            "友"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "忍",
+        "tokens": [
+          "汪",
+          "受",
+          "局",
+          "耐",
+          "搞",
+          "心",
+          "弹",
+          "住"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【忍】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "受",
+            "耐",
+            "心",
+            "住"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“孤零零”写出了小狗怎样的处境？",
+        "options": [
+          "非常热闹",
+          "已经成功",
+          "没有伙伴，很孤单",
+          "正在过生日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“委屈”适合形容小狗被嘲笑后的心情。",
+        "options": [
+          "错误",
+          "无关",
+          "只表示高兴",
+          "正确"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“模仿”就是照着别人的样子学。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“陌生的地方”表示非常熟悉的地方。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“指责”一般带有什么语气？",
+        "options": [
+          "祝贺",
+          "责备",
+          "请求",
+          "介绍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

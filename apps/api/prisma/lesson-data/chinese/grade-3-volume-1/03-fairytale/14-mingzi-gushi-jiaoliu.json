@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "口语交际“名字里的故事”主要交流什么？",
+        "options": [
+          "怎样修房子",
+          "名字的含义或来历",
+          "怎样孵小鸡",
+          "怎样写数学式子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "听同学讲名字故事时，遇到感兴趣的内容可以？",
+        "options": [
+          "马上打断嘲笑",
+          "转身离开",
+          "只顾自己说",
+          "有礼貌地追问"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "讲述名字来历时，哪种表达更清楚？",
+        "options": [
+          "我的名字来自……意思是……",
+          "反正就是这样",
+          "你猜吧",
+          "我不说原因"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "交流后回家讲给家人听，应该注意？",
+        "options": [
+          "故意改成假的",
+          "只说一个字",
+          "把了解到的信息讲清楚",
+          "不说是谁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：讲清含义。",
+        "tokens": [
+          "家人的",
+          "猎人",
+          "我的名字",
+          "老屋",
+          "寄托着",
+          "期待"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我的名字",
+          "寄托着",
+          "家人的",
+          "期待"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：认真倾听。",
+        "tokens": [
+          "很感兴趣",
+          "暴风雨",
+          "我",
+          "打断",
+          "对同学的讲述",
+          "马上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "对同学的讲述",
+          "很感兴趣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "含义"
+          },
+          {
+            "id": "l1",
+            "text": "来历"
+          },
+          {
+            "id": "l2",
+            "text": "追问"
+          },
+          {
+            "id": "l3",
+            "text": "讲清楚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "继续提出问题"
+          },
+          {
+            "id": "r3",
+            "text": "让别人听明白"
+          },
+          {
+            "id": "r0",
+            "text": "名字表示的意思"
+          },
+          {
+            "id": "r1",
+            "text": "名字怎么来的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "名字故事只能讲自己的名字，不能讲其他人的名字。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "听别人讲时，要表现出交流的兴趣。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "名字交流片段",
+        "passage": "晨晨说：“我的名字里有‘晨’，爸爸妈妈希望我像早晨一样有朝气。”同桌听后问：“他们为什么选这个字？”晨晨补充说：“因为我出生在清晨。”",
+        "questions": [
+          {
+            "question": "晨晨名字里的“晨”寄托了什么期待？",
+            "options": [
+              "有朝气",
+              "会飞",
+              "爱吃草",
+              "住老屋"
+            ]
+          },
+          {
+            "question": "同桌的提问有什么作用？",
+            "options": [
+              "让讲述更清楚",
+              "让交流停止",
+              "让名字改变",
+              "让故事变假"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

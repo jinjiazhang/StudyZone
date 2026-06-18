@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "滨",
+        "hint": "请选择【滨】的正确读音",
+        "options": [
+          "bīn",
+          "bīng",
+          "bìn",
+          "pīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "胳",
+        "hint": "请选择【胳】的正确读音",
+        "options": [
+          "gé",
+          "gě",
+          "gē",
+          "kē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "臂",
+        "hint": "请选择【臂】的正确读音",
+        "options": [
+          "bì",
+          "pì",
+          "bei",
+          "bèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "睬",
+        "hint": "请选择【睬】的正确读音",
+        "options": [
+          "cǎi",
+          "chǎi",
+          "cài",
+          "cāi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "载",
+        "hint": "请选择【载】的正确读音",
+        "options": [
+          "zǎi",
+          "cái",
+          "zhài",
+          "zài"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bīn",
+        "sentence": "这是一座海__小城。",
+        "character": "滨",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "滨"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tǎng",
+        "sentence": "贝壳寂寞地__在那里。",
+        "character": "躺",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "躺"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chú",
+        "sentence": "__了沥青的大路，都是细沙铺成的。",
+        "character": "除",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "除"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "渔",
+        "tokens": [
+          "踩",
+          "载",
+          "榕",
+          "网",
+          "民",
+          "院",
+          "船"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“渔”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "民",
+            "船",
+            "网"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "踩",
+        "tokens": [
+          "点",
+          "躺",
+          "舰",
+          "贝",
+          "踏",
+          "水",
+          "睬"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“踩”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "踏",
+            "水",
+            "点"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "自言自语"
+          },
+          {
+            "id": "l1",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l2",
+            "text": "孵蛋"
+          },
+          {
+            "id": "l3",
+            "text": "安心"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "让蛋里的小生命成形"
+          },
+          {
+            "id": "r3",
+            "text": "心里安定、不担心"
+          },
+          {
+            "id": "r0",
+            "text": "自己跟自己说话"
+          },
+          {
+            "id": "r1",
+            "text": "又大又急的风雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "眯起眼睛"
+          },
+          {
+            "id": "l1",
+            "text": "准备"
+          },
+          {
+            "id": "l2",
+            "text": "偶尔"
+          },
+          {
+            "id": "l3",
+            "text": "漂亮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "有时候，不经常"
+          },
+          {
+            "id": "r3",
+            "text": "好看、美丽"
+          },
+          {
+            "id": "r0",
+            "text": "把眼睛半闭起来"
+          },
+          {
+            "id": "r1",
+            "text": "打算、预备"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "屋",
+        "tokens": [
+          "老",
+          "门",
+          "房",
+          "水",
+          "木",
+          "云",
+          "顶"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“屋”组成词语或相关搭配的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "老",
+            "房",
+            "木",
+            "顶"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "暴",
+        "tokens": [
+          "风",
+          "慢",
+          "雨",
+          "软",
+          "发",
+          "静",
+          "力"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“暴”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "风",
+            "雨",
+            "发",
+            "力"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“很久很久没人住了”说明老屋怎样？",
+        "options": [
+          "老屋刚盖好",
+          "老屋年久、孤单",
+          "老屋很吵闹",
+          "老屋很年轻"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“门板也破了洞”中的“破”最接近哪个意思？",
+        "options": [
+          "突然出现",
+          "特别高兴",
+          "变得整齐",
+          "损坏、不完整"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文里的意思。",
+        "tokens": [
+          "活了",
+          "漂亮",
+          "老屋",
+          "小猫",
+          "已经",
+          "一百多岁"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老屋",
+          "已经",
+          "活了",
+          "一百多岁"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文里的意思。",
+        "tokens": [
+          "织了",
+          "门板",
+          "小蜘蛛",
+          "暴风雨",
+          "在屋梁上",
+          "一张网"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小蜘蛛",
+          "在屋梁上",
+          "织了",
+          "一张网"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“偶尔有虫子撞到网上”说明虫子每时每刻都撞到网上。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“安心睡觉的地方”是小猫请求老屋帮忙的原因。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

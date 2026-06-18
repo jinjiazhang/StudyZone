@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“抽出新的枝条”中的“抽出”写出了枝条怎样？",
+        "options": [
+          "颜色很深",
+          "声音很响",
+          "长得快、有力量",
+          "味道很甜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“密密层层”写出了枝叶什么特点？",
+        "options": [
+          "又多又密",
+          "又酸又甜",
+          "又松又软",
+          "又吵又乱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“浸在乳白色的浓雾里”中的“浸”让人感到森林怎样？",
+        "options": [
+          "被阳光晒干",
+          "被风吹散",
+          "被雪盖住",
+          "被浓雾包围"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "葱葱茏茏"
+          },
+          {
+            "id": "l1",
+            "text": "乳白色"
+          },
+          {
+            "id": "l2",
+            "text": "严严实实"
+          },
+          {
+            "id": "l3",
+            "text": "又松又软"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "遮挡得很紧"
+          },
+          {
+            "id": "r3",
+            "text": "冬雪特点"
+          },
+          {
+            "id": "r0",
+            "text": "树木茂盛"
+          },
+          {
+            "id": "r1",
+            "text": "浓雾颜色"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：早晨，雾从山谷里升起来。",
+        "tokens": [
+          "从山谷里",
+          "沙滩",
+          "贝壳",
+          "雾",
+          "升起来",
+          "早晨"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "早晨",
+          "雾",
+          "从山谷里",
+          "升起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：树上积满了白雪。",
+        "tokens": [
+          "军舰",
+          "积满了",
+          "珊瑚",
+          "树上",
+          "白雪",
+          "贸易"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "树上",
+          "积满了",
+          "白雪"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“抽出”比“长出”更能表现春天枝条生长的动态。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“又松又软”写的是夏天的树叶。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "词语之妙",
+        "passage": "太阳出来了，千万缕耀眼的金光穿过树梢，照射在工人宿舍门前的草地上。句中的“穿过”“照射”让阳光有了方向，也让画面明亮起来。",
+        "questions": [
+          {
+            "question": "这段主要体会哪类词语？",
+            "options": [
+              "表示数量的词语",
+              "表示动作的词语",
+              "表示人物称呼的词语",
+              "表示否定的词语"
+            ]
+          },
+          {
+            "question": "“穿过”“照射”让画面怎样？",
+            "options": [
+              "更冷清",
+              "更有动态和光亮",
+              "更杂乱",
+              "更黑暗"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“献出了酸甜可口的山葡萄”中的“献出”表达了什么？",
+        "options": [
+          "森林物产丰富，像主动送礼物",
+          "森林没有东西",
+          "葡萄不能吃",
+          "秋天没有颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

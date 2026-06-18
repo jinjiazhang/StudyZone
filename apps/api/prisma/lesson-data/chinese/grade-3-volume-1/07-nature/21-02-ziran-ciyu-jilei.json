@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "轻轻柔柔的呢喃细语"
+          },
+          {
+            "id": "l1",
+            "text": "雄伟的乐曲"
+          },
+          {
+            "id": "l2",
+            "text": "热闹的音乐会"
+          },
+          {
+            "id": "l3",
+            "text": "波澜壮阔的海洋大合唱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "狂风吹动森林的声音"
+          },
+          {
+            "id": "r3",
+            "text": "水流汇聚入海的声音"
+          },
+          {
+            "id": "r0",
+            "text": "微风吹树叶的声音"
+          },
+          {
+            "id": "r2",
+            "text": "小雨滴敲打万物的声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语最适合形容小雨滴敲打时的声音？",
+        "options": [
+          "雄伟",
+          "空蒙",
+          "寂静",
+          "热闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文把风比作什么？",
+        "options": [
+          "音乐家",
+          "画家",
+          "舞蹈家",
+          "建筑师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文把动物比作什么？",
+        "options": [
+          "大自然的士兵",
+          "大自然的歌手",
+          "大自然的老师",
+          "大自然的船夫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“呢喃细语”适合形容轻柔的声音。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“波澜壮阔”通常用来形容很小很轻的声音。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "奏",
+        "tokens": [
+          "请",
+          "演",
+          "曲",
+          "风",
+          "合",
+          "节"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“奏”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "演",
+            "合"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "感",
+        "tokens": [
+          "觉",
+          "河",
+          "受",
+          "伞",
+          "动",
+          "鸟"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“感”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "受",
+            "动",
+            "觉"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成短语：轻轻柔柔的呢喃细语",
+        "tokens": [
+          "轻轻柔柔的",
+          "雄伟的",
+          "呢喃细语",
+          "音乐会",
+          "大合唱"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "轻轻柔柔的",
+          "呢喃细语"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成短语：波澜壮阔的海洋大合唱",
+        "tokens": [
+          "海洋",
+          "热闹的",
+          "波澜壮阔的",
+          "大合唱",
+          "山中小曲"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "波澜壮阔的",
+          "海洋",
+          "大合唱"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到题目《总也倒不了的老屋》，最合理的预测是？",
+        "options": [
+          "老屋马上被拆掉",
+          "老屋变成新学校",
+          "老屋会一次次遇到事情，暂时倒不了",
+          "老屋从不帮助别人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "插图中老屋看上去慈祥，可以帮助我们预测什么？",
+        "options": [
+          "老屋可能会答应求助",
+          "老屋一定会发火",
+          "小猫不会出现",
+          "暴风雨不会来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读到“等等，老屋！”时，应该想到什么？",
+        "options": [
+          "故事已经结束",
+          "老屋马上睡着",
+          "小动物都走光了",
+          "又有谁需要老屋帮忙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我想孵小鸡”能让我们预测老屋会站多久？",
+        "options": [
+          "一个晚上",
+          "二十几天",
+          "一百多年",
+          "一会儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "预测和原文不一样时，正确做法是？",
+        "options": [
+          "说明预测没有用",
+          "不再往下读",
+          "及时修正，再继续预测",
+          "只看最后一页"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "题目、插图、内容线索都能帮助我们预测。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "预测必须和故事实际内容完全一样才有价值。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：预测依据。",
+        "tokens": [
+          "题目和插图",
+          "马上",
+          "我",
+          "随便",
+          "根据",
+          "作预测"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "根据",
+          "题目和插图",
+          "作预测"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：修正预测。",
+        "tokens": [
+          "就",
+          "故事",
+          "发现",
+          "老屋",
+          "不一样",
+          "修正想法"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "发现",
+          "不一样",
+          "就",
+          "修正想法"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "题目线索"
+          },
+          {
+            "id": "l1",
+            "text": "插图线索"
+          },
+          {
+            "id": "l2",
+            "text": "内容线索"
+          },
+          {
+            "id": "l3",
+            "text": "生活经验"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "又有人来请求"
+          },
+          {
+            "id": "r3",
+            "text": "被打扰可能不耐烦"
+          },
+          {
+            "id": "r0",
+            "text": "总也倒不了"
+          },
+          {
+            "id": "r1",
+            "text": "老屋慈祥"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

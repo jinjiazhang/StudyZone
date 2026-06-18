@@ -1,0 +1,221 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小城的公园更美。”这句话在段落中起什么作用？",
+        "options": [
+          "说明作者姓名",
+          "写出故事结尾",
+          "解释一个生字",
+          "概括这一段主要意思"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话能概括街道一段的主要意思？",
+        "options": [
+          "远处响起了汽笛声。",
+          "小城的街道也美。",
+          "树下摆着石凳。",
+          "船上满载着鱼。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：小城的公园更美。",
+        "tokens": [
+          "海底",
+          "厚厚",
+          "更美",
+          "公园",
+          "威武",
+          "小城的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小城的",
+          "公园",
+          "更美"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：一棵棵榕树就像一顶顶撑开的绿绒大伞。",
+        "tokens": [
+          "贝壳",
+          "榕树",
+          "绿绒大伞",
+          "就像",
+          "一棵棵",
+          "沙滩",
+          "一顶顶",
+          "撑开的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一棵棵",
+          "榕树",
+          "就像",
+          "一顶顶",
+          "撑开的",
+          "绿绒大伞"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "公园更美"
+          },
+          {
+            "id": "l1",
+            "text": "街道也美"
+          },
+          {
+            "id": "l2",
+            "text": "又美丽又整洁"
+          },
+          {
+            "id": "l3",
+            "text": "寂寞地躺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "全文总结"
+          },
+          {
+            "id": "r3",
+            "text": "把贝壳写活"
+          },
+          {
+            "id": "r0",
+            "text": "后面围绕榕树写"
+          },
+          {
+            "id": "r1",
+            "text": "后面围绕整洁写"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "关键语句常常能帮助理解一段话的意思。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "关键句只能放在一段话的开头。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "公园更美",
+        "passage": "小城的公园更美。这里栽着许许多多榕树。一棵棵榕树就像一顶顶撑开的绿绒大伞，树叶密不透风，可以遮太阳，挡风雨。树下摆着石凳，每逢休息的日子，石凳上总是坐满了人。",
+        "questions": [
+          {
+            "question": "这段的关键句是哪一句？",
+            "options": [
+              "小城的公园更美。",
+              "树下摆着石凳。",
+              "可以遮太阳。",
+              "石凳上坐满了人。"
+            ]
+          },
+          {
+            "question": "榕树像绿绒大伞，写出了榕树什么特点？",
+            "options": [
+              "果实香甜",
+              "花朵鲜艳",
+              "枝叶茂密",
+              "道路干净"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这座海滨小城真是又美丽又整洁。”在全文中有什么作用？",
+        "options": [
+          "提出疑问",
+          "介绍作者",
+          "总结全文特点",
+          "描写声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "画出好句并交流，是课后练习的要求之一。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

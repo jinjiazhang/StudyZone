@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "总也倒不了的老屋片段",
+        "passage": "老屋准备倒下时，小猫请求它再站一个晚上，因为外面有暴风雨。第二天，小猫走了，老母鸡又请求老屋再站二十几天，好安心孵蛋。后来，小蜘蛛也请求老屋再站一会儿，并给老屋讲故事。",
+        "questions": [
+          {
+            "question": "小猫为什么请求老屋？",
+            "options": [
+              "想找安心睡觉的地方",
+              "想拆掉老屋",
+              "想给老屋刷漆",
+              "想找小鸡"
+            ]
+          },
+          {
+            "question": "老母鸡需要老屋帮什么忙？",
+            "options": [
+              "躲暴风雨",
+              "孵小鸡",
+              "织大网",
+              "找主人"
+            ]
+          },
+          {
+            "question": "小蜘蛛用什么陪伴老屋？",
+            "options": [
+              "唱歌",
+              "跳舞",
+              "讲故事",
+              "搬木板"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老屋一次次答应请求，表现出它怎样的特点？",
+        "options": [
+          "善良、乐于助人",
+          "贪玩、粗心",
+          "胆小、怕黑",
+          "骄傲、自私"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“老屋到现在还站在那儿”主要因为？",
+        "options": [
+          "它刚刚盖好",
+          "没人发现它",
+          "它不断帮助需要帮助的小动物",
+          "它会变魔法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "朗读小动物请求老屋的话，语气应更接近？",
+        "options": [
+          "冷淡、命令",
+          "恳切、着急",
+          "骄傲、嘲笑",
+          "随便、无所谓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小猫、老母鸡、小蜘蛛都向老屋提出过请求。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "老屋最后拒绝了小蜘蛛，所以马上倒下了。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：老屋特点。",
+        "tokens": [
+          "帮助",
+          "离开",
+          "老屋",
+          "生气",
+          "一次次",
+          "小动物"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老屋",
+          "一次次",
+          "帮助",
+          "小动物"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：故事结尾。",
+        "tokens": [
+          "还",
+          "倒下",
+          "老屋",
+          "马上",
+          "听着故事",
+          "站在那儿"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "老屋",
+          "听着故事",
+          "还",
+          "站在那儿"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小猫"
+          },
+          {
+            "id": "l1",
+            "text": "老母鸡"
+          },
+          {
+            "id": "l2",
+            "text": "小蜘蛛"
+          },
+          {
+            "id": "l3",
+            "text": "老屋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "织网讲故事"
+          },
+          {
+            "id": "r3",
+            "text": "一再站住帮忙"
+          },
+          {
+            "id": "r0",
+            "text": "躲暴风雨"
+          },
+          {
+            "id": "r1",
+            "text": "孵小鸡"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文旁批“我猜到了老屋会怎么回答”提示我们阅读时要？",
+        "options": [
+          "只背生字",
+          "只看页码",
+          "跳过题目",
+          "边读边预测"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

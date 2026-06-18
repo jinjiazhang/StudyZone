@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文中的疑问句。",
+        "tokens": [
+          "飞来的",
+          "呢",
+          "什么时候",
+          "它",
+          "捕鱼",
+          "船头"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "什么时候",
+          "飞来的",
+          "呢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文中的观察句。",
+        "tokens": [
+          "船头",
+          "停在",
+          "它",
+          "静悄悄地",
+          "雨点",
+          "漂亮"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "静悄悄地",
+          "停在",
+          "船头"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句更适合写观察中的疑问？",
+        "options": [
+          "它真美啊！",
+          "它什么时候飞来的呢？",
+          "我很高兴。",
+          "雨停了。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把“翠鸟停在船头”写具体，最好选哪句？",
+        "options": [
+          "翠鸟停着。",
+          "有翠鸟。",
+          "翠鸟静悄悄地停在船头，不知有多久了。",
+          "船头很好。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“多么美丽啊！”属于哪种语气？",
+        "options": [
+          "命令",
+          "责备",
+          "请求",
+          "赞叹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "仿照“它一下子冲进水里”，哪句写出了动作快？",
+        "options": [
+          "小狗一下子钻进草丛。",
+          "小狗在草丛旁。",
+          "小狗很可爱。",
+          "草丛绿绿的。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "一下子"
+          },
+          {
+            "id": "l_1",
+            "text": "不知有多久了"
+          },
+          {
+            "id": "l_2",
+            "text": "静悄悄地"
+          },
+          {
+            "id": "l_3",
+            "text": "多么美丽啊"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "写赞叹"
+          },
+          {
+            "id": "r_0",
+            "text": "写状态"
+          },
+          {
+            "id": "r_3",
+            "text": "写观察后的猜想"
+          },
+          {
+            "id": "r_1",
+            "text": "写速度"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "观察时产生的问题也可以写进文章。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句含有细致观察？",
+        "options": [
+          "小鸟很好看。",
+          "小鸟的背是蓝绿的，嘴尖尖的，停在竹竿上。",
+          "我走了。",
+          "那里有东西。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“它站在那里做什么呢？”能表现作者在边看边想。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成第2自然段中的句子。",
+        "tokens": [
+          "有一盒",
+          "。",
+          "秋天的雨",
+          "五彩缤纷的颜料",
+          "，",
+          "钥匙"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "秋天的雨",
+          "，",
+          "有一盒",
+          "五彩缤纷的颜料",
+          "。"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文中的比喻句。",
+        "tokens": [
+          "像",
+          "黄黄的叶子",
+          "一把把小扇子",
+          "一枚邮票"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄黄的叶子",
+          "像",
+          "一把把小扇子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文中的比喻句。",
+        "tokens": [
+          "一枚枚邮票",
+          "像",
+          "红红的枫叶",
+          "小扇子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "红红的枫叶",
+          "像",
+          "一枚枚邮票"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文中的句子。",
+        "tokens": [
+          "是给",
+          "田野的",
+          "金黄色",
+          "果树的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "金黄色",
+          "是给",
+          "田野的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "秋天的雨",
+        "author": "陶金鸿",
+        "lines": [
+          [
+            "秋天的雨，有一盒",
+            null
+          ],
+          [
+            "你看，它把黄色给了银杏树"
+          ]
+        ],
+        "options": [
+          "五颜六色的画笔",
+          "五彩缤纷的颜料",
+          "清清凉凉的钥匙",
+          "香香甜甜的气味"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第2自然段主要写秋雨带来了什么？",
+        "options": [
+          "五彩缤纷的颜色",
+          "好闻的气味",
+          "金色的小喇叭",
+          "丰收的歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黄黄的叶子像一把把小扇子”中“小扇子”写出了银杏叶的什么？",
+        "options": [
+          "声音",
+          "形状",
+          "气味",
+          "味道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“橙红色是给果树的”后面写了哪些果实？",
+        "options": [
+          "苹果、梨",
+          "葡萄、菠萝",
+          "橘子、柿子",
+          "桃子、杏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "秋雨颜色片段",
+        "passage": "秋天的雨有一盒五彩缤纷的颜料。它把黄色给了银杏树，把红色给了枫树，把金黄色给了田野，把橙红色给了果树。菊花仙子得到的颜色就更多了。",
+        "questions": [
+          {
+            "question": "这段围绕哪句话写？",
+            "options": [
+              "秋天的雨有一盒五彩缤纷的颜料。",
+              "秋天的雨藏着好闻的气味。",
+              "秋天的雨吹起小喇叭。",
+              "冬天快要来了。"
+            ]
+          },
+          {
+            "question": "金黄色给了谁？",
+            "options": [
+              "田野",
+              "枫树",
+              "银杏树",
+              "小朋友"
+            ]
+          },
+          {
+            "question": "这段主要从哪个方面写秋天？",
+            "options": [
+              "颜色",
+              "声音",
+              "日期",
+              "格式"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "背诵第2自然段时，可以抓住“黄色、红色、金黄色、橙红色”等颜色线索。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "融",
+        "hint": "请选择【融】的正确读音",
+        "options": [
+          "rǒng",
+          "yóng",
+          "róng",
+          "lóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "侧",
+        "hint": "请选择【侧】的正确读音",
+        "options": [
+          "cè",
+          "chè",
+          "zè",
+          "cèi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "欣",
+        "hint": "请选择【欣】的正确读音",
+        "options": [
+          "xīng",
+          "xǐn",
+          "qīn",
+          "xīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浸",
+        "hint": "请选择【浸】的正确读音",
+        "options": [
+          "jīng",
+          "jìn",
+          "qìn",
+          "jǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舍",
+        "hint": "请选择【舍】的正确读音",
+        "options": [
+          "shě",
+          "shè",
+          "sè",
+          "shé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fēng",
+        "sentence": "密密层层的枝叶把森林__得严严实实。",
+        "character": "封",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "封"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǎng",
+        "sentence": "枝叶__住了人们的视线。",
+        "character": "挡",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "挡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yào",
+        "sentence": "人参等名贵__材很珍贵。",
+        "character": "药",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "药"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "显",
+        "tokens": [
+          "现",
+          "封",
+          "坛",
+          "刮",
+          "得",
+          "眼",
+          "软"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“显”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "得",
+            "现",
+            "眼"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "软",
+        "tokens": [
+          "兴",
+          "舍",
+          "绵",
+          "弱",
+          "和",
+          "乳",
+          "药"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“软”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "弱",
+            "和",
+            "绵"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

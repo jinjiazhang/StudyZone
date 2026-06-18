@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yán",
+        "sentence": "海底的__石上长着珊瑚。",
+        "character": "岩",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "岩"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lù",
+        "sentence": "有的珊瑚像分枝的__角。",
+        "character": "鹿",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "鹿"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huá",
+        "sentence": "大龙虾全身披甲，__过来，__过去。",
+        "character": "划",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "划"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mì",
+        "sentence": "岛上有一片片茂__的树林。",
+        "character": "密",
+        "allowedMistakes": 3,
+        "leniency": 1.0
+      },
+      "answer": {
+        "character": "密"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "景",
+        "tokens": [
+          "区",
+          "山",
+          "色",
+          "鹿",
+          "物",
+          "浅",
+          "海"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“景”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "色",
+            "物",
+            "区"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "优",
+        "tokens": [
+          "秀",
+          "布",
+          "岩",
+          "虾",
+          "美",
+          "点",
+          "参"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“优”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "美",
+            "点",
+            "秀"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "厚",
+        "tokens": [
+          "浅",
+          "岛",
+          "优",
+          "实",
+          "蓝",
+          "道",
+          "重"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“厚”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "实",
+            "重",
+            "道"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "风景优美"
+          },
+          {
+            "id": "l1",
+            "text": "物产丰富"
+          },
+          {
+            "id": "l2",
+            "text": "五光十色"
+          },
+          {
+            "id": "l3",
+            "text": "瑰丽无比"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "色彩鲜艳繁多"
+          },
+          {
+            "id": "r3",
+            "text": "美丽得没有什么可比"
+          },
+          {
+            "id": "r0",
+            "text": "景色好看"
+          },
+          {
+            "id": "r1",
+            "text": "出产的东西很多"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“富饶”的意思最接近哪一项？",
+        "options": [
+          "地方很远",
+          "颜色很浅",
+          "物产多而丰富",
+          "天气很冷"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一半是水，一半是鱼”写出了什么？",
+        "options": [
+          "海水很少",
+          "鱼都很小",
+          "鸟很多",
+          "鱼非常多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

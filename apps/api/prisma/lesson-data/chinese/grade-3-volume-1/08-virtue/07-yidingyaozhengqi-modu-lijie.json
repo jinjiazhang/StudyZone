@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "童第周小时候家里情况怎样？",
+        "options": [
+          "不富裕",
+          "非常富裕",
+          "住在城市",
+          "从不做农活"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "童第周第一学期期末平均成绩是多少？",
+        "options": [
+          "85分",
+          "45分",
+          "100分",
+          "17分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "校长同意童第周跟班再试读一个学期，是经过了什么？",
+        "options": [
+          "同学投票",
+          "教授推荐",
+          "童第周再三恳求",
+          "家长送礼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "童第周到比利时留学时，心里为什么想“为中国人争气”？",
+        "options": [
+          "他想多睡觉",
+          "教授不让实验",
+          "他忘带课本",
+          "中国贫穷落后，被外国同学瞧不起"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙卵外膜实验的难度怎样？",
+        "options": [
+          "难度很大，多年来没人做成",
+          "非常简单",
+          "不需要技巧",
+          "只要运气好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "童第周学习基础差，但他珍惜机会，刻苦学习，成绩赶了上来。留学时，他反复实践，终于完成了别人认为很难做到的实验。",
+        "questions": [
+          {
+            "question": "童第周靠什么改变了成绩？",
+            "options": [
+              "刻苦努力",
+              "别人替考",
+              "不再学习",
+              "换了课本"
+            ]
+          },
+          {
+            "question": "这段话表现了童第周什么品质？",
+            "options": [
+              "不服输、肯钻研",
+              "爱炫耀",
+              "怕困难",
+              "粗心"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "童第周17岁"
+          },
+          {
+            "id": "l1",
+            "text": "第一学期期末"
+          },
+          {
+            "id": "l2",
+            "text": "留学比利时"
+          },
+          {
+            "id": "l3",
+            "text": "实验成功"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "平均45分"
+          },
+          {
+            "id": "r2",
+            "text": "跟随教授学习"
+          },
+          {
+            "id": "r3",
+            "text": "震惊同行"
+          },
+          {
+            "id": "r0",
+            "text": "进入中学读书"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一定要争气”在课文中反复出现，作用是什么？",
+        "options": [
+          "说明他爱吵架",
+          "表现童第周的志向和动力",
+          "表示他生气了",
+          "只为凑字数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "默读《一定要争气》时，可以边读边想童第周在什么情况下想到这句话。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "童第周取得成功主要靠等待别人帮他完成实验。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

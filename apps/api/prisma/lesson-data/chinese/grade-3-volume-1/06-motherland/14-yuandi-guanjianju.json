@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "园地“梳理与交流”提醒我们阅读时要关注什么？",
+        "options": [
+          "标点的颜色",
+          "页码的大小",
+          "插图的边框",
+          "段落中的关键语句"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "关键语句有时会在哪里出现？",
+        "options": [
+          "只能在标题里",
+          "段落开头、末尾或中间",
+          "只能在注释里",
+          "只能在生字表里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "找到关键句有什么作用？",
+        "options": [
+          "代替朗读课文",
+          "帮助理解一段话的意思",
+          "不用写字",
+          "改变课文内容"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：一段话的开头有时表达主要意思。",
+        "tokens": [
+          "有时",
+          "一段话的",
+          "开头",
+          "表达",
+          "小鹿",
+          "贝壳",
+          "主要意思"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一段话的",
+          "开头",
+          "有时",
+          "表达",
+          "主要意思"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：这样的句子也可能在一段话的末尾或中间。",
+        "tokens": [
+          "或中间",
+          "珊瑚",
+          "帆船",
+          "这样的句子",
+          "末尾",
+          "在一段话的",
+          "也可能"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这样的句子",
+          "也可能",
+          "在一段话的",
+          "末尾",
+          "或中间"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "西沙群岛也是鸟的天下"
+          },
+          {
+            "id": "l1",
+            "text": "小城的公园更美"
+          },
+          {
+            "id": "l2",
+            "text": "小城的街道也美"
+          },
+          {
+            "id": "l3",
+            "text": "小兴安岭是一座宝库"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "概括街道美"
+          },
+          {
+            "id": "r3",
+            "text": "概括物产丰富"
+          },
+          {
+            "id": "r0",
+            "text": "概括鸟多"
+          },
+          {
+            "id": "r1",
+            "text": "概括公园美"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "关键语句一定只在一段的第一句。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "阅读时关注关键语句，有助于梳理段落内容。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "关键语句",
+        "passage": "有的时候，一段话的开头就表达了这段话的主要意思，后面的内容都是围绕开头这句话来写的。这样的句子也有可能在一段话的末尾或中间。找到这样的句子，可以帮助我们更好地理解一段话的意思。",
+        "questions": [
+          {
+            "question": "这段主要讲什么？",
+            "options": [
+              "怎样写拼音",
+              "怎样数鱼",
+              "怎样画地图",
+              "关键语句的作用和位置"
+            ]
+          },
+          {
+            "question": "关键语句可能在哪里？",
+            "options": [
+              "开头、末尾或中间",
+              "只能在开头",
+              "只能在末尾",
+              "只能在题目"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断关键句时，应该看什么？",
+        "options": [
+          "它是不是最长",
+          "它是否概括了段落主要内容",
+          "它有没有拼音",
+          "它是否在页脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

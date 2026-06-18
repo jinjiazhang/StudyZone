@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "海滨小城先写了哪些地方的景象？",
+        "options": [
+          "学校、操场、教室",
+          "大海、沙滩、庭院、公园、街道",
+          "山谷、溪流、草地",
+          "市场、车站、楼房"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“天是蓝的，海也是蓝的”写出了什么特点？",
+        "options": [
+          "街道很干净",
+          "海天一色的开阔美",
+          "榕树很茂密",
+          "贝壳很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贝壳“寂寞地躺在那里”是因为什么？",
+        "options": [
+          "贝壳没有颜色",
+          "船队没有回来",
+          "海鸥飞走了",
+          "孩子见得多，不去理睬"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "早晨"
+          },
+          {
+            "id": "l1",
+            "text": "沙滩"
+          },
+          {
+            "id": "l2",
+            "text": "庭院"
+          },
+          {
+            "id": "l3",
+            "text": "街道"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "亚热带树木多"
+          },
+          {
+            "id": "r3",
+            "text": "干净整洁"
+          },
+          {
+            "id": "r0",
+            "text": "万物镀上金黄色"
+          },
+          {
+            "id": "r1",
+            "text": "贝壳多而美"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：这座海滨小城真是又美丽又整洁。",
+        "tokens": [
+          "这座",
+          "海滨小城",
+          "真是",
+          "又整洁",
+          "又美丽",
+          "懒洋洋",
+          "海参"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这座",
+          "海滨小城",
+          "真是",
+          "又美丽",
+          "又整洁"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：小城里每一个庭院都栽了很多树。",
+        "tokens": [
+          "珊瑚",
+          "很多树",
+          "都栽了",
+          "富饶",
+          "小城里",
+          "每一个庭院"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小城里",
+          "每一个庭院",
+          "都栽了",
+          "很多树"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文写海滨小城时，既写远处也写近处。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "海滨小城的街道到处是落叶，十分杂乱。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "海边景象",
+        "passage": "海边是一片沙滩，沙滩上遍地是各种颜色、各种花纹的贝壳。这里的孩子见得多了，都不去理睬这些贝壳，贝壳只好寂寞地躺在那里。",
+        "questions": [
+          {
+            "question": "这段主要写什么？",
+            "options": [
+              "沙滩上的贝壳多而美",
+              "庭院里的树多",
+              "公园里的榕树大",
+              "街道十分干净"
+            ]
+          },
+          {
+            "question": "“寂寞地躺”让贝壳显得怎样？",
+            "options": [
+              "像会飞一样",
+              "像会说话一样",
+              "像有感情一样",
+              "像很吵闹一样"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“船队一靠岸，海滩上就喧闹起来”写出了什么？",
+        "options": [
+          "公园很安静",
+          "森林起雾",
+          "捕鱼归来时热闹的场面",
+          "冬雪很厚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

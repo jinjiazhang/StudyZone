@@ -1,0 +1,276 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "黑窟窿"
+          },
+          {
+            "id": "l1",
+            "text": "自言自语"
+          },
+          {
+            "id": "l2",
+            "text": "暴风雨"
+          },
+          {
+            "id": "l3",
+            "text": "安心"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "自己跟自己说话"
+          },
+          {
+            "id": "r3",
+            "text": "心里安定"
+          },
+          {
+            "id": "r0",
+            "text": "黑黑的洞"
+          },
+          {
+            "id": "r2",
+            "text": "又猛又急的风雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "偶尔"
+          },
+          {
+            "id": "l1",
+            "text": "孵蛋"
+          },
+          {
+            "id": "l2",
+            "text": "织网"
+          },
+          {
+            "id": "l3",
+            "text": "暴晒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "让蛋里的小生命发育出来"
+          },
+          {
+            "id": "r3",
+            "text": "在强烈阳光下晒"
+          },
+          {
+            "id": "r0",
+            "text": "有时候，不经常"
+          },
+          {
+            "id": "r2",
+            "text": "用丝线结成网"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "屋",
+        "tokens": [
+          "风",
+          "老",
+          "猫",
+          "房",
+          "晒",
+          "木",
+          "蛋",
+          "小"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【屋】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "老",
+            "房",
+            "木",
+            "小"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "板",
+        "tokens": [
+          "猫",
+          "门",
+          "暴",
+          "木",
+          "喵",
+          "黑",
+          "叽",
+          "地"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【板】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "门",
+            "木",
+            "黑",
+            "地"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "等",
+        "tokens": [
+          "屋",
+          "待",
+          "蛛",
+          "一",
+          "暴",
+          "稍",
+          "晒",
+          "相"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【等】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "待",
+            "一",
+            "稍",
+            "相"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "暴",
+        "tokens": [
+          "屋",
+          "风",
+          "猫",
+          "雨",
+          "准",
+          "晒",
+          "织",
+          "露"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【暴】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "风",
+            "雨",
+            "晒",
+            "露"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黑窟窿”在课文里写出了老屋哪里破旧？",
+        "options": [
+          "屋顶很新",
+          "门铃很响",
+          "花园很美",
+          "窗户"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“自言自语”说明老屋说话时身边怎样？",
+        "options": [
+          "很多人一起回答",
+          "没有别人和它对话",
+          "小猫已经进屋",
+          "小鸡正在唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“暴晒”通常和强烈的太阳有关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“孵蛋”指把蛋打碎做饭。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

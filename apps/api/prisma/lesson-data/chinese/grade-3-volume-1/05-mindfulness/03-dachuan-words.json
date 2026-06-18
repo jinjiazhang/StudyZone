@@ -1,0 +1,299 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "船篷"
+          },
+          {
+            "id": "l_1",
+            "text": "搭船"
+          },
+          {
+            "id": "l_2",
+            "text": "船夫"
+          },
+          {
+            "id": "l_3",
+            "text": "船舱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "船里装人或货的地方"
+          },
+          {
+            "id": "r_3",
+            "text": "撑船或驾船的人"
+          },
+          {
+            "id": "r_0",
+            "text": "顺便乘船"
+          },
+          {
+            "id": "r_2",
+            "text": "船上遮蔽风雨的东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_0",
+          "l_2": "r_3",
+          "l_3": "r_1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "漂亮"
+          },
+          {
+            "id": "l_1",
+            "text": "用力"
+          },
+          {
+            "id": "l_2",
+            "text": "翠绿"
+          },
+          {
+            "id": "l_3",
+            "text": "静悄悄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "非常安静"
+          },
+          {
+            "id": "r_0",
+            "text": "像翡翠一样鲜绿"
+          },
+          {
+            "id": "r_3",
+            "text": "使出力气"
+          },
+          {
+            "id": "r_1",
+            "text": "好看，美丽"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "红色"
+          },
+          {
+            "id": "l_1",
+            "text": "船头"
+          },
+          {
+            "id": "l_2",
+            "text": "沙啦沙啦"
+          },
+          {
+            "id": "l_3",
+            "text": "长嘴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "船的前部"
+          },
+          {
+            "id": "r_3",
+            "text": "像火或血一样的颜色"
+          },
+          {
+            "id": "r_2",
+            "text": "又长又尖的嘴"
+          },
+          {
+            "id": "r_0",
+            "text": "雨点打在船篷上的声音"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_3",
+          "l_1": "r_1",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "船",
+        "tokens": [
+          "草",
+          "舱",
+          "嘴",
+          "搭",
+          "羽",
+          "篷",
+          "脸",
+          "头"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“船”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "搭",
+            "舱",
+            "篷",
+            "头"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "羽",
+        "tokens": [
+          "船",
+          "翼",
+          "蒲",
+          "毛",
+          "察",
+          "扇",
+          "钓",
+          "衣"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“羽”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "毛",
+            "翼",
+            "扇",
+            "衣"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "静",
+        "tokens": [
+          "吞",
+          "止",
+          "披",
+          "悄",
+          "衔",
+          "坐",
+          "蓝",
+          "听"
+        ],
+        "targetCount": 4,
+        "instruction": "选出能和“静”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "悄",
+            "止",
+            "坐",
+            "听"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“沙啦沙啦地响”写出了什么？",
+        "options": [
+          "雨点打在船篷上的声音",
+          "船夫说话的声音",
+          "翠鸟飞走的声音",
+          "小鱼跳水的声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“翠绿”最适合形容课文中翠鸟的什么？",
+        "options": [
+          "长嘴",
+          "羽毛",
+          "船篷",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“衔着一条小鱼”中的“衔”意思最接近哪一个？",
+        "options": [
+          "用手拿着",
+          "用脚踩着",
+          "用嘴叼着",
+          "用网捞着"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“静悄悄”可以用来写翠鸟停在船头时很安静。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

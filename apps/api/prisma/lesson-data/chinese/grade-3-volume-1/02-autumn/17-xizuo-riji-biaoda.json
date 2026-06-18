@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "日记格式",
+        "passage": "9月29日 星期一 晴\n早上起床时，我发现那颗松动的牙齿更松了。晚饭前，我忍不住又去晃动它，晃了几下，啊，终于掉了！妈妈把我的这颗牙齿洗干净，收起来了。",
+        "questions": [
+          {
+            "question": "日记开头写了哪些信息？",
+            "options": [
+              "日期、星期、天气",
+              "姓名、班级、分数",
+              "诗题、作者、注释",
+              "颜色、气味、声音"
+            ]
+          },
+          {
+            "question": "这篇日记主要写了什么事？",
+            "options": [
+              "一颗牙齿掉了",
+              "上学迟到了",
+              "秋雨下了一夜",
+              "背诵古诗"
+            ]
+          },
+          {
+            "question": "日记里的事情按什么顺序写？",
+            "options": [
+              "事情发展的顺序",
+              "从远到近的顺序",
+              "颜色变化的顺序",
+              "古诗行数顺序"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写日记时，开头一般要写什么？",
+        "options": [
+          "作者、朝代、诗名",
+          "日期、星期、天气",
+          "单位、公式、答案",
+          "题目、页码、注释"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪件事适合写进日记？",
+        "options": [
+          "字典里有很多页。",
+          "一年有十二个月。",
+          "今天我观察到院子里的桂花开了。",
+          "铅笔可以写字。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "日记最重要的是记录什么？",
+        "options": [
+          "只抄课文",
+          "只写拼音",
+          "只列生字表",
+          "自己的真实生活和感受"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成日记格式开头。",
+        "tokens": [
+          "星期三",
+          "阴",
+          "10月8日",
+          "日记"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "10月8日",
+          "星期三",
+          "阴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成一句日记里的话。",
+        "tokens": [
+          "银杏叶",
+          "我发现",
+          "放学路上",
+          "落了一地",
+          "明天考试"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "放学路上",
+          "我发现",
+          "银杏叶",
+          "落了一地"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成一句有感受的话。",
+        "tokens": [
+          "金色的毯子",
+          "像",
+          "这条小路",
+          "铺上了",
+          "一把钥匙"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这条小路",
+          "像",
+          "铺上了",
+          "金色的毯子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "日记可以写自己的发现、经历和心情。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写日记完全不需要注意标点符号。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "教材提醒写日记时要注意格式和标点符号。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

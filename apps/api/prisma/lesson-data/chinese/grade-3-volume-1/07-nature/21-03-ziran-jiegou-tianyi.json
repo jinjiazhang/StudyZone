@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "风"
+          },
+          {
+            "id": "l1",
+            "text": "水"
+          },
+          {
+            "id": "l2",
+            "text": "动物"
+          },
+          {
+            "id": "l3",
+            "text": "中心句"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "大自然有许多美妙的声音"
+          },
+          {
+            "id": "r0",
+            "text": "是大自然的音乐家"
+          },
+          {
+            "id": "r2",
+            "text": "是大自然的歌手"
+          },
+          {
+            "id": "r1",
+            "text": "也是大自然的音乐家"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文第2自然段主要写谁的声音？",
+        "options": [
+          "水",
+          "动物",
+          "风",
+          "人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文第3自然段主要写谁的声音？",
+        "options": [
+          "花草",
+          "石头",
+          "云",
+          "水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文第4自然段主要写谁的声音？",
+        "options": [
+          "动物",
+          "房子",
+          "山峰",
+          "船帆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "填表时，“水，也是大自然的音乐家”可以填在第二个分支里。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文只写了风一种声音。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小溪淙淙，流向河流；河流潺潺，流向大海”写出了水声怎样变化？",
+        "options": [
+          "一直很安静",
+          "由小到大，层层汇聚",
+          "突然消失",
+          "只在池塘边出现"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一场热闹的音乐会便开始了”中的“音乐会”指什么？",
+        "options": [
+          "同学们唱歌",
+          "乐队演出",
+          "小雨滴敲打万物发出的声音",
+          "鸟儿排队"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成中心句：大自然有许多美妙的声音",
+        "tokens": [
+          "声音",
+          "许多",
+          "大自然",
+          "美妙的",
+          "有"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大自然",
+          "有",
+          "许多",
+          "美妙的",
+          "声音"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成课文里的说法：动物是大自然的歌手",
+        "tokens": [
+          "动物",
+          "音乐家",
+          "是",
+          "大自然的",
+          "歌手"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "动物",
+          "是",
+          "大自然的",
+          "歌手"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

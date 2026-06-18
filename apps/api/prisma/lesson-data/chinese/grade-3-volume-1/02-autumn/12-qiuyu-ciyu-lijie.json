@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "五彩缤纷"
+          },
+          {
+            "id": "l1",
+            "text": "频频点头"
+          },
+          {
+            "id": "l2",
+            "text": "凉爽"
+          },
+          {
+            "id": "l3",
+            "text": "香甜"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "清凉爽快"
+          },
+          {
+            "id": "r0",
+            "text": "颜色多而美"
+          },
+          {
+            "id": "r3",
+            "text": "又香又甜"
+          },
+          {
+            "id": "r1",
+            "text": "连续不断地点头"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "香",
+        "tokens": [
+          "票",
+          "甜",
+          "洞",
+          "气",
+          "墙",
+          "味",
+          "径"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“香”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "甜",
+            "气",
+            "味"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "爽",
+        "tokens": [
+          "泥",
+          "凉",
+          "频",
+          "清",
+          "仙",
+          "快",
+          "棕"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“爽”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "凉",
+            "清",
+            "快"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "色",
+        "tokens": [
+          "洞",
+          "彩",
+          "匙",
+          "颜",
+          "争",
+          "彩",
+          "勾"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“色”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "彩",
+            "颜",
+            "彩"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“五彩缤纷”在课文中形容什么？",
+        "options": [
+          "雨下得很急",
+          "声音很响",
+          "天气很冷",
+          "秋天颜色多而美"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小朋友的脚，常被那香味勾住”说明什么？",
+        "options": [
+          "秋天果实的香味很吸引人",
+          "小朋友走不动路",
+          "地上有钩子",
+          "脚受伤了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“频频点头”的“频频”意思是？",
+        "options": [
+          "完全没有",
+          "一次又一次",
+          "慢慢地",
+          "忽然间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都是课文中写到的气味？",
+        "options": [
+          "白云、青螺、篱落",
+          "书包、铜钟、戒尺",
+          "梨香香、菠萝甜甜、苹果香甜",
+          "水洼、院墙、规则"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“秋天的雨，是一把钥匙”这句话把秋雨比作什么？",
+        "options": [
+          "颜料",
+          "喇叭",
+          "歌",
+          "钥匙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "理解词语可以联系上下文。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "查字典"
+          },
+          {
+            "id": "l1",
+            "text": "联系上下文"
+          },
+          {
+            "id": "l2",
+            "text": "请教别人"
+          },
+          {
+            "id": "l3",
+            "text": "结合生活经验"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "向老师同学询问"
+          },
+          {
+            "id": "r0",
+            "text": "借助工具书理解词语"
+          },
+          {
+            "id": "r3",
+            "text": "联系自己见过或做过的事"
+          },
+          {
+            "id": "r1",
+            "text": "根据前后句推想意思"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "理解“忐忑不安”可以联系句子中的哪处信息？",
+        "options": [
+          "打碎花瓶，害怕爸爸妈妈责备",
+          "春光明媚",
+          "活动中表现出色",
+          "道路很远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“憧憬”的意思更接近哪一项？",
+        "options": [
+          "害怕",
+          "向往、期待",
+          "责备",
+          "凌乱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语适合形容秋天？",
+        "options": [
+          "春光明媚",
+          "烈日炎炎",
+          "秋高气爽",
+          "冰天雪地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写提示中说横画和竖画应怎样？",
+        "options": [
+          "越斜越好",
+          "越小越好",
+          "不用看格子",
+          "横平竖直，字就平稳端正"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狂",
+        "hint": "书写提示中的“狂”",
+        "options": [
+          "kuáng",
+          "wáng",
+          "kuǎng",
+          "guǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "罚",
+        "hint": "书写提示中的“罚”",
+        "options": [
+          "fā",
+          "fá",
+          "fǎ",
+          "fà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "笛",
+        "hint": "书写提示中的“笛”",
+        "options": [
+          "dī",
+          "zhú",
+          "dí",
+          "dǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "霜",
+        "hint": "书写提示中的“霜”",
+        "options": [
+          "suāng",
+          "shuǎng",
+          "xiāng",
+          "shuāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "舟夜书所见",
+        "author": "查慎行",
+        "lines": [
+          [
+            "月黑见",
+            null
+          ],
+          [
+            "孤光一点萤"
+          ],
+          [
+            "微微风簇浪"
+          ],
+          [
+            "散作满河星"
+          ]
+        ],
+        "options": [
+          "渔灯",
+          "明月",
+          "秋叶",
+          "白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "舟夜书所见",
+        "author": "查慎行",
+        "lines": [
+          [
+            "月黑见渔灯"
+          ],
+          [
+            "孤光一点",
+            null
+          ],
+          [
+            "微微风簇浪"
+          ],
+          [
+            "散作满河星"
+          ]
+        ],
+        "options": [
+          "星",
+          "萤",
+          "灯",
+          "月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "舟夜书所见",
+        "author": "查慎行",
+        "lines": [
+          [
+            "月黑见渔灯"
+          ],
+          [
+            "孤光一点萤"
+          ],
+          [
+            "微微风",
+            null
+          ],
+          [
+            "散作满河星"
+          ]
+        ],
+        "options": [
+          "吹浪",
+          "起浪",
+          "簇浪",
+          "推舟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "舟夜书所见",
+        "author": "查慎行",
+        "lines": [
+          [
+            "月黑见渔灯"
+          ],
+          [
+            "孤光一点萤"
+          ],
+          [
+            "微微风簇浪"
+          ],
+          [
+            null,
+            "满河星"
+          ]
+        ],
+        "options": [
+          "吹作",
+          "化作",
+          "照作",
+          "散作"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“春、夏、秋、冬”都可以积累不同的季节词语。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

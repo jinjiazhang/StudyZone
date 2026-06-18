@@ -1,0 +1,258 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "陌生"
+          },
+          {
+            "id": "l1",
+            "text": "讨厌"
+          },
+          {
+            "id": "l2",
+            "text": "委屈"
+          },
+          {
+            "id": "l3",
+            "text": "滑稽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "受了冤枉或难过"
+          },
+          {
+            "id": "r3",
+            "text": "有趣可笑"
+          },
+          {
+            "id": "r0",
+            "text": "不熟悉"
+          },
+          {
+            "id": "r1",
+            "text": "不喜欢、厌烦"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "索性"
+          },
+          {
+            "id": "l1",
+            "text": "逼真"
+          },
+          {
+            "id": "l2",
+            "text": "来访"
+          },
+          {
+            "id": "l3",
+            "text": "搞不清"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "前来访问"
+          },
+          {
+            "id": "r3",
+            "text": "弄不明白"
+          },
+          {
+            "id": "r0",
+            "text": "干脆"
+          },
+          {
+            "id": "r1",
+            "text": "非常像真的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "叫",
+        "tokens": [
+          "声",
+          "树",
+          "喊",
+          "米",
+          "唤",
+          "云",
+          "嚷"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“叫”组成词语或相关搭配的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "声",
+            "喊",
+            "唤",
+            "嚷"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "访",
+        "tokens": [
+          "问",
+          "跑",
+          "客",
+          "蛋",
+          "友",
+          "泥",
+          "谈"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“访”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "问",
+            "客",
+            "友",
+            "谈"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“孤零零”写出了小狗怎样的处境？",
+        "options": [
+          "孤单、没有伙伴",
+          "热闹、开心",
+          "骄傲、自满",
+          "忙碌、着急"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“缺陷”在文中指小狗？",
+        "options": [
+          "不会跑",
+          "不会吃饭",
+          "不会叫",
+          "没有耳朵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：小狗处境。",
+        "tokens": [
+          "怎样才能",
+          "暴风雨",
+          "小狗",
+          "陶陶",
+          "不知道",
+          "学会叫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小狗",
+          "不知道",
+          "怎样才能",
+          "学会叫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：公鸡教小狗。",
+        "tokens": [
+          "小公鸡的样子",
+          "午餐",
+          "小狗",
+          "狐狸",
+          "照着",
+          "练习"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小狗",
+          "照着",
+          "小公鸡的样子",
+          "练习"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“来访”可以表示别人来到这里访问。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“讨厌”表示非常喜欢。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读写景文章时，下面哪种方法最有帮助？",
+        "options": [
+          "只看页码",
+          "跳过生字",
+          "只数标点",
+          "找关键语句，抓景物特点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“这儿真美”时，哪句话可以作为开头中心句？",
+        "options": [
+          "昨天我买了一支笔。",
+          "我家附近的小河真美。",
+          "这只小狗会叫。",
+          "我今天起得很早。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：湖面闪闪发光，像撒了一把金子。",
+        "tokens": [
+          "闪闪发光",
+          "撒了",
+          "湖面",
+          "像",
+          "一把金子",
+          "海参",
+          "药材"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "湖面",
+          "闪闪发光",
+          "像",
+          "撒了",
+          "一把金子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：树林里静悄悄的，只听见风吹树叶的声音。",
+        "tokens": [
+          "贝壳",
+          "贸易",
+          "声音",
+          "只听见",
+          "树林里",
+          "静悄悄的",
+          "风吹树叶的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "树林里",
+          "静悄悄的",
+          "只听见",
+          "风吹树叶的",
+          "声音"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "五光十色"
+          },
+          {
+            "id": "l1",
+            "text": "密密层层"
+          },
+          {
+            "id": "l2",
+            "text": "美不胜收"
+          },
+          {
+            "id": "l3",
+            "text": "奔流不息"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "美景很多，看不过来"
+          },
+          {
+            "id": "r3",
+            "text": "水流不停"
+          },
+          {
+            "id": "r0",
+            "text": "色彩多而鲜艳"
+          },
+          {
+            "id": "r1",
+            "text": "又多又密"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“村里的果园就像一幅色彩斑斓的图画”适合作为写景段落的开头。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“懒洋洋”适合形容人或动物精神饱满、跑得飞快。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "运用练习",
+        "passage": "校园西边的小花园真美。春天，迎春花金灿灿；夏天，荷叶挨挨挤挤；秋天，桂花散发清香；冬天，松树依然苍翠。每次经过这里，我都忍不住停下脚步。",
+        "questions": [
+          {
+            "question": "这段围绕哪句话写？",
+            "options": [
+              "每次经过这里。",
+              "校园西边的小花园真美。",
+              "松树依然苍翠。",
+              "荷叶挨挨挤挤。"
+            ]
+          },
+          {
+            "question": "这段按什么顺序写？",
+            "options": [
+              "海面到海底",
+              "从远到近",
+              "事情发展",
+              "四季顺序"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "早发白帝城",
+        "author": "李白",
+        "lines": [
+          [
+            "朝辞白帝彩云间"
+          ],
+          [
+            "千里江陵",
+            null
+          ]
+        ],
+        "options": [
+          "一日还",
+          "万重山",
+          "啼不住",
+          "水东流"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“美不胜收”适合用来形容什么？",
+        "options": [
+          "美丽景色很多，看不过来",
+          "房间很乱",
+          "动作很慢",
+          "声音很小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

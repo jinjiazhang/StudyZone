@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "井然有序"
+          },
+          {
+            "id": "l1",
+            "text": "千姿百态"
+          },
+          {
+            "id": "l2",
+            "text": "超凡脱俗"
+          },
+          {
+            "id": "l3",
+            "text": "暑寒荣枯"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "姿态多种多样"
+          },
+          {
+            "id": "r3",
+            "text": "季节变化中的茂盛与枯萎"
+          },
+          {
+            "id": "r0",
+            "text": "整齐而有次序"
+          },
+          {
+            "id": "r2",
+            "text": "超过平常，清新不俗"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文写蚂蚁搬家“井然有序”，说明蚂蚁怎样？",
+        "options": [
+          "杂乱无章",
+          "有秩序",
+          "很懒散",
+          "没有方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“花儿有红的、黄的、紫的、蓝的”主要写花的什么？",
+        "options": [
+          "声音大",
+          "气味苦",
+          "颜色多",
+          "数量少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“草的叶子各不相同，有长有短，有宽有窄”主要写草叶的什么？",
+        "options": [
+          "颜色相同",
+          "没有变化",
+          "只在水里",
+          "形状不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "态",
+        "tokens": [
+          "鸟",
+          "姿",
+          "河",
+          "状",
+          "度",
+          "灯"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“态”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "姿",
+            "状",
+            "度"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "秘",
+        "tokens": [
+          "书",
+          "奥",
+          "花",
+          "密",
+          "鱼",
+          "云"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“秘”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "奥",
+            "密"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“千姿百态”可以用来写花草形态很多。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“超凡脱俗”在课文中用来写棕榈树很俗气。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成短语：世界万物",
+        "tokens": [
+          "世界",
+          "大书",
+          "万物",
+          "读不完",
+          "奥秘"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "世界",
+          "万物"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成短语：无尽的乐趣",
+        "tokens": [
+          "无尽的",
+          "有序",
+          "奥秘",
+          "乐趣",
+          "姿态"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "无尽的",
+          "乐趣"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

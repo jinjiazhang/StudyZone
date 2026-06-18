@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "shāng yuán",
+        "hint": "看拼音写词语：我军的___陆续从火线上抬下来。"
+      },
+      "answer": {
+        "accepted": [
+          "伤员"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "lù xù",
+        "hint": "看拼音写词语：伤员___被送到小庙。"
+      },
+      "answer": {
+        "accepted": [
+          "陆续"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "qǔ chū",
+        "hint": "看拼音写词语：白求恩从伤员腹腔里___弹片。"
+      },
+      "answer": {
+        "accepted": [
+          "取出"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "xùn sù",
+        "hint": "看拼音写词语：担架队___向后方转移。"
+      },
+      "answer": {
+        "accepted": [
+          "迅速"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "duó miǎo",
+        "hint": "看拼音写词语：白求恩争分___地做手术。"
+      },
+      "answer": {
+        "accepted": [
+          "夺秒"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "给“医”组词。",
+        "tokens": [
+          "取",
+          "医",
+          "秒",
+          "生",
+          "院",
+          "棒"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "医",
+            "生"
+          ],
+          [
+            "医",
+            "院"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "给“险”组词。",
+        "tokens": [
+          "势",
+          "危",
+          "血",
+          "险",
+          "迅",
+          "速"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "危",
+            "险"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "伤员"
+          },
+          {
+            "id": "l1",
+            "text": "陆续"
+          },
+          {
+            "id": "l2",
+            "text": "迅速"
+          },
+          {
+            "id": "l3",
+            "text": "危险"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "一个接一个"
+          },
+          {
+            "id": "r3",
+            "text": "不安全"
+          },
+          {
+            "id": "r0",
+            "text": "很快"
+          },
+          {
+            "id": "r1",
+            "text": "受伤的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r2",
+          "l2": "r0",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组词语都来自《手术台就是阵地》？",
+        "options": [
+          "硝烟、弹片、担架",
+          "庭院、瓮、皆",
+          "资助、实验、欧洲",
+          "粗瓷、菜盆、通讯员"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“争分夺秒”中的“夺秒”强调什么？",
+        "options": [
+          "抢夺钟表",
+          "珍惜每一秒时间",
+          "比赛跑步",
+          "数数练习"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

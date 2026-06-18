@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "习作“续写故事”要求我们先看图想什么？",
+        "options": [
+          "图里发生了什么，接下来可能怎样",
+          "只数有几本书",
+          "只抄人物名字",
+          "只写天气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "李晓明的爸爸妈妈在外地工作，生日快到了，同学们可能？",
+        "options": [
+          "嘲笑他的名字",
+          "让他搬走",
+          "商量为他过生日",
+          "拆掉教室"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "续写故事时，最重要的是？",
+        "options": [
+          "完全换一个无关故事",
+          "只写一句话",
+          "不写人物",
+          "接着前面的情节合理发展"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "交流习作时，可以重点说？",
+        "options": [
+          "谁写得字最大",
+          "更喜欢谁写的故事和理由",
+          "谁用的纸最白",
+          "谁坐得最近"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：续写起因。",
+        "tokens": [
+          "却",
+          "乌龟",
+          "李晓明",
+          "老屋",
+          "快过生日了",
+          "有些难过"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "李晓明",
+          "快过生日了",
+          "却",
+          "有些难过"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：同学办法。",
+        "tokens": [
+          "给他",
+          "狮王",
+          "同学们",
+          "暴风雨",
+          "商量",
+          "一个惊喜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "同学们",
+          "商量",
+          "给他",
+          "一个惊喜"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "开头"
+          },
+          {
+            "id": "l1",
+            "text": "经过"
+          },
+          {
+            "id": "l2",
+            "text": "结尾"
+          },
+          {
+            "id": "l3",
+            "text": "想象"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "写出生日结果"
+          },
+          {
+            "id": "r3",
+            "text": "让故事合理有趣"
+          },
+          {
+            "id": "r0",
+            "text": "接住图中信息"
+          },
+          {
+            "id": "r1",
+            "text": "写清大家怎么做"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "续写时可以让人物行为和前面图意完全无关。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "续写故事可以先预测后面的发展，再写下来。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "续写练习",
+        "passage": "李晓明听见同学们说起生日，低下了头。因为他的爸爸妈妈在外地工作，生日那天不能回来。同学们悄悄商量，想给他准备一个温暖的生日会。",
+        "questions": [
+          {
+            "question": "李晓明为什么低下头？",
+            "options": [
+              "想起爸妈不能回来",
+              "没带铅笔",
+              "不喜欢读书",
+              "看见小狗"
+            ]
+          },
+          {
+            "question": "同学们准备怎么做？",
+            "options": [
+              "准备生日会",
+              "马上放学",
+              "去找老屋",
+              "参加婚礼"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

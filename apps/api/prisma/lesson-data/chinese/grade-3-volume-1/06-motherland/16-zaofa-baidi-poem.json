@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "早发白帝城",
+        "author": "李白",
+        "lines": [
+          [
+            "朝辞",
+            null,
+            "彩云间"
+          ],
+          [
+            "千里江陵一日还"
+          ]
+        ],
+        "options": [
+          "黄鹤楼",
+          "天门山",
+          "白帝城",
+          "小兴安岭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "早发白帝城",
+        "author": "李白",
+        "lines": [
+          [
+            "两岸猿声",
+            null
+          ],
+          [
+            "轻舟已过万重山"
+          ]
+        ],
+        "options": [
+          "听不见",
+          "看不清",
+          "啼不住",
+          "叫不停"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "早发白帝城",
+        "author": "李白",
+        "lines": [
+          [
+            "两岸猿声啼不住"
+          ],
+          [
+            null,
+            "已过万重山"
+          ]
+        ],
+        "options": [
+          "轻舟",
+          "孤帆",
+          "白云",
+          "青山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "早发白帝城",
+        "author": "李白",
+        "lines": [
+          [
+            null,
+            "白帝彩云间"
+          ],
+          [
+            "千里江陵",
+            null,
+            "还"
+          ],
+          [
+            "两岸猿声啼不住"
+          ],
+          [
+            "轻舟已过",
+            null
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "朝看",
+              "早发",
+              "夜别",
+              "朝辞"
+            ]
+          },
+          {
+            "options": [
+              "一夜",
+              "一日",
+              "三日",
+              "半日"
+            ]
+          },
+          {
+            "options": [
+              "一重水",
+              "万重山",
+              "千里江",
+              "百座城"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《早发白帝城》的作者是谁？",
+        "options": [
+          "杜甫",
+          "王维",
+          "苏轼",
+          "李白"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“千里江陵一日还”写出了船行怎样？",
+        "options": [
+          "非常快",
+          "非常慢",
+          "十分沉重",
+          "无法前行"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“万重山”让人想到什么画面？",
+        "options": [
+          "热闹的市场",
+          "海底的鱼",
+          "重重叠叠的山",
+          "小城街道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《早发白帝城》写到了白帝城、江陵、猿声和轻舟。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“轻舟已过万重山”说明船还没有出发。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把诗句排通顺：轻舟已过万重山。",
+        "tokens": [
+          "万重山",
+          "轻舟",
+          "白帝",
+          "已过",
+          "彩云"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "轻舟",
+          "已过",
+          "万重山"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

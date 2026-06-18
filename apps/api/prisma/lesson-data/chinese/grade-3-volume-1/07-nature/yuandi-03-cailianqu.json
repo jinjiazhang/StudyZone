@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "采莲曲",
+        "author": "王昌龄",
+        "lines": [
+          [
+            "荷叶罗裙一色裁，"
+          ],
+          [
+            null
+          ]
+        ],
+        "options": [
+          "闻歌始觉有人来。",
+          "芙蓉向脸两边开。",
+          "孤帆一片日边来。",
+          "复照青苔上。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "采莲曲",
+        "author": "王昌龄",
+        "lines": [
+          [
+            "乱入池中看不见，"
+          ],
+          [
+            null
+          ]
+        ],
+        "options": [
+          "淡妆浓抹总相宜。",
+          "山色空蒙雨亦奇。",
+          "闻歌始觉有人来。",
+          "但闻人语响。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "采莲曲",
+        "author": "王昌龄",
+        "lines": [
+          [
+            "荷叶罗裙",
+            null
+          ],
+          [
+            "芙蓉向脸",
+            null
+          ],
+          [
+            "乱入池中",
+            null
+          ],
+          [
+            "闻歌始觉",
+            null
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "日边来",
+              "雨亦奇",
+              "人语响",
+              "一色裁"
+            ]
+          },
+          {
+            "options": [
+              "两边开",
+              "青苔上",
+              "至此回",
+              "总相宜"
+            ]
+          },
+          {
+            "options": [
+              "不见人",
+              "看不见",
+              "楚江开",
+              "入深林"
+            ]
+          },
+          {
+            "options": [
+              "海大合唱",
+              "晴方好",
+              "有人来",
+              "相对出"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          0,
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《采莲曲》的作者是？",
+        "options": [
+          "王维",
+          "李白",
+          "苏轼",
+          "王昌龄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“芙蓉向脸两边开”中的“芙蓉”指什么？",
+        "options": [
+          "荷花",
+          "梅花",
+          "菊花",
+          "桃子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "诗中“闻歌始觉有人来”说明人们怎样发现采莲姑娘？",
+        "options": [
+          "看到帆船",
+          "听到歌声",
+          "闻到花香",
+          "摸到青苔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《采莲曲》写出了采莲姑娘与荷叶荷花融为一体的画面。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《采莲曲》是苏轼写西湖晴雨之美的诗。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成诗句：乱入池中看不见",
+        "tokens": [
+          "看不见",
+          "闻歌",
+          "乱入",
+          "池中",
+          "有人来"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "乱入",
+          "池中",
+          "看不见"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成诗句：闻歌始觉有人来",
+        "tokens": [
+          "有人来",
+          "始觉",
+          "闻歌",
+          "罗裙",
+          "荷叶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "闻歌",
+          "始觉",
+          "有人来"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

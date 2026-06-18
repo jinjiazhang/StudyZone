@@ -1,0 +1,263 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "舒适"
+          },
+          {
+            "id": "l1",
+            "text": "邀请"
+          },
+          {
+            "id": "l2",
+            "text": "庆典"
+          },
+          {
+            "id": "l3",
+            "text": "路途遥远"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "请别人到某处来或去"
+          },
+          {
+            "id": "r3",
+            "text": "路很长，离得远"
+          },
+          {
+            "id": "r0",
+            "text": "舒服安适"
+          },
+          {
+            "id": "r2",
+            "text": "隆重的庆祝仪式"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "沉思"
+          },
+          {
+            "id": "l1",
+            "text": "坚持"
+          },
+          {
+            "id": "l2",
+            "text": "障碍"
+          },
+          {
+            "id": "l3",
+            "text": "取消"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "不改变，继续做"
+          },
+          {
+            "id": "r3",
+            "text": "停止原定事情"
+          },
+          {
+            "id": "r0",
+            "text": "认真深入地想"
+          },
+          {
+            "id": "r2",
+            "text": "阻挡前进的东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "庆",
+        "tokens": [
+          "洞",
+          "祝",
+          "爬",
+          "典",
+          "晒",
+          "贺",
+          "猫",
+          "幸"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【庆】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "祝",
+            "典",
+            "贺",
+            "幸"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "途",
+        "tokens": [
+          "猫",
+          "路",
+          "屋",
+          "半",
+          "蛋",
+          "用",
+          "鸡",
+          "前"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【途】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "路",
+            "半",
+            "用",
+            "前"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "持",
+        "tokens": [
+          "宫",
+          "坚",
+          "典",
+          "保",
+          "龟",
+          "支",
+          "晒",
+          "把"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和【持】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "坚",
+            "保",
+            "支",
+            "把"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“路途遥远”说明陶陶去王宫的路怎么样？",
+        "options": [
+          "就在洞口旁边",
+          "很远，不容易到达",
+          "完全不用走路",
+          "只能坐船去"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“陶陶终于拿定主意”说明她经过了什么？",
+        "options": [
+          "马上睡着了",
+          "忘了婚礼",
+          "思考后作出决定",
+          "已经到家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“坚持”可以用来形容陶陶一步一步往前走。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“取消”表示事情照常举行。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“舒适的小洞”说明陶陶原来的住处怎样？",
+        "options": [
+          "非常危险",
+          "没有阳光",
+          "到处是水",
+          "住着舒服"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

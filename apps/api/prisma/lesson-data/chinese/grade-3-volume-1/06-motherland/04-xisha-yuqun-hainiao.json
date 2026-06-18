@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鱼成群结队地在珊瑚丛中穿来穿去”说明鱼怎样？",
+        "options": [
+          "声音很大",
+          "颜色全一样",
+          "只在岸边",
+          "数量多，活动灵活"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "树下鸟粪被称作“宝贵的肥料”，说明作者关注了什么？",
+        "options": [
+          "海水颜色",
+          "鸟多带来的物产价值",
+          "道路整洁",
+          "贝壳花纹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "全身布满彩色条纹"
+          },
+          {
+            "id": "l1",
+            "text": "头上长着红缨"
+          },
+          {
+            "id": "l2",
+            "text": "鼓起气来像皮球"
+          },
+          {
+            "id": "l3",
+            "text": "树下有厚厚鸟粪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "气鼓鼓的鱼"
+          },
+          {
+            "id": "r3",
+            "text": "岛上的海鸟"
+          },
+          {
+            "id": "r0",
+            "text": "有彩色条纹的鱼"
+          },
+          {
+            "id": "r1",
+            "text": "头上有红缨的鱼"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：各种各样的鱼多得数不清。",
+        "tokens": [
+          "数不清",
+          "多得",
+          "岩石",
+          "鱼",
+          "海鸟",
+          "各种各样的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "各种各样的",
+          "鱼",
+          "多得",
+          "数不清"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：西沙群岛也是鸟的天下。",
+        "tokens": [
+          "鸟的天下",
+          "西沙群岛",
+          "也是",
+          "瑰丽",
+          "海水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "西沙群岛",
+          "也是",
+          "鸟的天下"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文写鱼时抓住了颜色、形状和动作。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“鸟的天下”说明岛上几乎没有鸟。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "鸟的天下",
+        "passage": "西沙群岛也是鸟的天下。岛上有一片片茂密的树林，树林里栖息着各种海鸟。遍地都是鸟蛋。树下堆积着一层厚厚的鸟粪，这是非常宝贵的肥料。",
+        "questions": [
+          {
+            "question": "这段是围绕哪句话写的？",
+            "options": [
+              "岛上没有树林。",
+              "西沙群岛也是鸟的天下。",
+              "海水五光十色。",
+              "鱼多得数不清。"
+            ]
+          },
+          {
+            "question": "哪一项不能证明鸟多？",
+            "options": [
+              "树林里有海鸟",
+              "遍地都是鸟蛋",
+              "树下有鸟粪",
+              "海水有深有浅"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有的全身布满彩色的条纹”写鱼的哪一方面？",
+        "options": [
+          "数量和重量",
+          "声音和气味",
+          "时间和地点",
+          "颜色和花纹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "鱼群一段通过“有的……有的……”写出了鱼的样子多。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

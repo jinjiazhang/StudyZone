@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "习作《这儿真美》要求写什么？",
+        "options": [
+          "一次比赛",
+          "一个童话故事",
+          "一种小动物",
+          "身边美丽的地方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写之前首先要做什么？",
+        "options": [
+          "仔细观察这个地方有什么、是什么样",
+          "直接背课文",
+          "只写天气",
+          "只写人物对话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项最适合作为“这儿真美”的地点？",
+        "options": [
+          "一道算式",
+          "一支铅笔",
+          "花园、果园、田野或小河",
+          "一个拼音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "花园"
+          },
+          {
+            "id": "l1",
+            "text": "果园"
+          },
+          {
+            "id": "l2",
+            "text": "田野"
+          },
+          {
+            "id": "l3",
+            "text": "小河"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "庄稼和远山"
+          },
+          {
+            "id": "r3",
+            "text": "河水和岸边景物"
+          },
+          {
+            "id": "r0",
+            "text": "花草颜色和香味"
+          },
+          {
+            "id": "r1",
+            "text": "果树和果实"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：操场后面的小花园真美。",
+        "tokens": [
+          "操场后面",
+          "真美",
+          "威武",
+          "的小花园",
+          "鱼群"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "操场后面",
+          "的小花园",
+          "真美"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：村里的果园就像一幅色彩斑斓的图画。",
+        "tokens": [
+          "色彩斑斓的",
+          "村里的",
+          "图画",
+          "果园",
+          "一幅",
+          "海参",
+          "就像",
+          "珊瑚"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "村里的",
+          "果园",
+          "就像",
+          "一幅",
+          "色彩斑斓的",
+          "图画"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写景前要留心看这个地方有哪些景物。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写“这儿真美”时不能写自己的感受。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "习作准备",
+        "passage": "写“这儿真美”之前，我来到小河边观察。河水清清的，岸边有翠绿的柳树，还有几朵野花。傍晚，水面闪闪发光，我想把这些景色按从近到远的顺序写下来。",
+        "questions": [
+          {
+            "question": "这位同学观察了哪里？",
+            "options": [
+              "海底",
+              "公园石凳",
+              "香港夜景",
+              "小河边"
+            ]
+          },
+          {
+            "question": "他准备按什么顺序写？",
+            "options": [
+              "从冬到春",
+              "从近到远",
+              "从左到右数鱼",
+              "按人物年龄"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪项观察最具体？",
+        "options": [
+          "这里很美。",
+          "我很喜欢。",
+          "大家都来了。",
+          "荷叶圆圆的，上面滚着亮晶晶的水珠。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

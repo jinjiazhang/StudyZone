@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西沙群岛位于哪里？",
+        "options": [
+          "东海的东部",
+          "南海的西北部",
+          "黄海的北部",
+          "海南岛的南部"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "海水颜色不同，主要是因为什么？",
+        "options": [
+          "海底高低不平，海水有深有浅",
+          "天气不断变化",
+          "鱼群游来游去",
+          "珊瑚会发光"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文用“绽开的花朵、分枝的鹿角”写珊瑚，这是在写珊瑚的什么？",
+        "options": [
+          "声音响亮",
+          "颜色单一",
+          "形状多样",
+          "味道鲜美"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "深蓝的"
+          },
+          {
+            "id": "l1",
+            "text": "杏黄的"
+          },
+          {
+            "id": "l2",
+            "text": "绽开的花朵"
+          },
+          {
+            "id": "l3",
+            "text": "分枝的鹿角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "珊瑚像花朵开放"
+          },
+          {
+            "id": "r3",
+            "text": "珊瑚像鹿角分枝"
+          },
+          {
+            "id": "r0",
+            "text": "海水呈深蓝色"
+          },
+          {
+            "id": "r1",
+            "text": "海水呈杏黄色"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：海底的岩石上生长着各种各样的珊瑚。",
+        "tokens": [
+          "威武",
+          "珊瑚",
+          "海底的",
+          "生长着",
+          "各种各样的",
+          "岩石上",
+          "一半"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "海底的",
+          "岩石上",
+          "生长着",
+          "各种各样的",
+          "珊瑚"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：海水五光十色，瑰丽无比。",
+        "tokens": [
+          "海水",
+          "瑰丽无比",
+          "五光十色",
+          "肥料",
+          "鱼群",
+          "街道"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "海水",
+          "五光十色",
+          "瑰丽无比"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "西沙群岛一带海水五光十色。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "海底完全平坦，所以海水颜色一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "海水颜色",
+        "passage": "西沙群岛一带海水五光十色，有深蓝的、淡青的、浅绿的、杏黄的。因为海底高低不平，海水有深有浅，从海面看，色彩就不同了。",
+        "questions": [
+          {
+            "question": "这段话主要写什么？",
+            "options": [
+              "树林茂密",
+              "贝壳寂寞",
+              "海水色彩丰富",
+              "公园整洁"
+            ]
+          },
+          {
+            "question": "海水色彩不同的原因是什么？",
+            "options": [
+              "海底高低不平",
+              "鱼的条纹多",
+              "鸟蛋很多",
+              "阳光太弱"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有的像绽开的花朵，有的像分枝的鹿角”使用了什么写法？",
+        "options": [
+          "列数字",
+          "打比方",
+          "写声音",
+          "讲道理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

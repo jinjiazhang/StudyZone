@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "niàn shū",
+        "hint": "看拼音写词语：童第周小时候一边做农活，一边___。"
+      },
+      "answer": {
+        "accepted": [
+          "念书"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "kǎo shì",
+        "hint": "看拼音写词语：第一学期期末___，他平均成绩才45分。"
+      },
+      "answer": {
+        "accepted": [
+          "考试"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "nǔ lì",
+        "hint": "看拼音写词语：经过半年的___，成绩赶了上来。"
+      },
+      "answer": {
+        "accepted": [
+          "努力"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "zī zhù",
+        "hint": "看拼音写词语：童第周得到亲友___去留学。"
+      },
+      "answer": {
+        "accepted": [
+          "资助"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "shí yàn",
+        "hint": "看拼音写词语：教授要做一项___。"
+      },
+      "answer": {
+        "accepted": [
+          "实验"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "source": "fǎn fù",
+        "hint": "看拼音写词语：童第周刻苦钻研，___实践。"
+      },
+      "answer": {
+        "accepted": [
+          "反复"
+        ],
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "给“努”组词。",
+        "tokens": [
+          "争",
+          "努",
+          "考",
+          "力",
+          "气",
+          "奋"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "努",
+            "力"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "source": "给“留”组词。",
+        "tokens": [
+          "级",
+          "留",
+          "退",
+          "学",
+          "单",
+          "念"
+        ]
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "留",
+            "学"
+          ],
+          [
+            "留",
+            "级"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "念书"
+          },
+          {
+            "id": "l1",
+            "text": "考试"
+          },
+          {
+            "id": "l2",
+            "text": "努力"
+          },
+          {
+            "id": "l3",
+            "text": "实验"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "测验成绩"
+          },
+          {
+            "id": "r3",
+            "text": "科学操作"
+          },
+          {
+            "id": "r0",
+            "text": "刻苦用功"
+          },
+          {
+            "id": "r1",
+            "text": "读书学习"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r2",
+          "l2": "r0",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一组都是《一定要争气》写字表中的字？",
+        "options": [
+          "念、差、考、试",
+          "司、庭、登、跌",
+          "棒、血、取、盘",
+          "瓷、赵、抗、束"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

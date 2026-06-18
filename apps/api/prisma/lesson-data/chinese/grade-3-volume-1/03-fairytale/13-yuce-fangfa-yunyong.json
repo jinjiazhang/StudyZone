@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "预测时，哪一项可以作为依据？",
+        "options": [
+          "题目、插图、已读内容和生活经验",
+          "只凭页码大小",
+          "只看最后一个字",
+          "完全随便猜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "预测的内容和原文不同，说明？",
+        "options": [
+          "阅读失败了",
+          "原文一定错了",
+          "可以根据新线索修正预测",
+          "不用继续读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到书名《帽子的秘密》，较合理的预测是？",
+        "options": [
+          "一定写数学题",
+          "一定没有人物",
+          "一定写天气预报",
+          "故事可能围绕帽子里的秘密展开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读到“突然，门外传来敲门声”，可以预测？",
+        "options": [
+          "所有人都睡着",
+          "可能有新人物出现",
+          "故事没有变化",
+          "题目会消失"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "题目"
+          },
+          {
+            "id": "l1",
+            "text": "插图"
+          },
+          {
+            "id": "l2",
+            "text": "反复出现的句子"
+          },
+          {
+            "id": "l3",
+            "text": "生活经验"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "发现情节规律"
+          },
+          {
+            "id": "r3",
+            "text": "联系真实情况推想"
+          },
+          {
+            "id": "r0",
+            "text": "抓住故事核心"
+          },
+          {
+            "id": "r1",
+            "text": "观察人物和场景"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：预测方法。",
+        "tokens": [
+          "阅读",
+          "结尾",
+          "一边读",
+          "马上",
+          "一边预测",
+          "更有趣"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一边读",
+          "一边预测",
+          "阅读",
+          "更有趣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：预测修正。",
+        "tokens": [
+          "调整",
+          "生日",
+          "有新线索",
+          "老屋",
+          "就",
+          "自己的想法"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "有新线索",
+          "就",
+          "调整",
+          "自己的想法"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "预测可以让我们更主动地阅读。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "预测时不能联系生活经验。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "预测练习",
+        "passage": "小明看到故事题目《会飞的箱子》，又看到插图里一个男孩坐在箱子上，箱子旁边有翅膀。他预测这个箱子可能会带男孩去旅行。读到后面，箱子真的飞了起来，但目的地不是远方，而是学校屋顶。",
+        "questions": [
+          {
+            "question": "小明预测的依据不包括哪一项？",
+            "options": [
+              "题目",
+              "插图",
+              "已读线索",
+              "课文作者生日"
+            ]
+          },
+          {
+            "question": "他的预测和原文哪里不同？",
+            "options": [
+              "箱子不会飞",
+              "目的地不同",
+              "没有男孩",
+              "没有箱子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

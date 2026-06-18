@@ -1,0 +1,257 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "舒适"
+          },
+          {
+            "id": "l1",
+            "text": "庆典"
+          },
+          {
+            "id": "l2",
+            "text": "遥远"
+          },
+          {
+            "id": "l3",
+            "text": "障碍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "距离很远"
+          },
+          {
+            "id": "r3",
+            "text": "阻挡前进的东西"
+          },
+          {
+            "id": "r0",
+            "text": "舒服安适"
+          },
+          {
+            "id": "r1",
+            "text": "隆重的庆祝仪式"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "陷入沉思"
+          },
+          {
+            "id": "l1",
+            "text": "满怀信心"
+          },
+          {
+            "id": "l2",
+            "text": "日夜不停"
+          },
+          {
+            "id": "l3",
+            "text": "正式通知"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "白天黑夜都不停止"
+          },
+          {
+            "id": "r3",
+            "text": "郑重地告诉"
+          },
+          {
+            "id": "r0",
+            "text": "深深地思考"
+          },
+          {
+            "id": "r1",
+            "text": "心里充满相信"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "庆",
+        "tokens": [
+          "典",
+          "冷",
+          "祝",
+          "慢",
+          "贺",
+          "墙",
+          "幸"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“庆”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "典",
+            "祝",
+            "贺",
+            "幸"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "途",
+        "tokens": [
+          "路",
+          "猫",
+          "中",
+          "旧",
+          "径",
+          "汗",
+          "遥"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“途”组成词语或相关搭配的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "路",
+            "中",
+            "径",
+            "遥"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“犟龟”的“犟”在故事中主要表现为？",
+        "options": [
+          "坚持自己的决定",
+          "走得飞快",
+          "爱睡懒觉",
+          "喜欢吵架"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“满怀信心”说明陶陶出发时怎样？",
+        "options": [
+          "一点也不想去",
+          "已经迷路了",
+          "相信自己能到达",
+          "非常生气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：陶陶出发。",
+        "tokens": [
+          "向前",
+          "哈哈",
+          "陶陶",
+          "庆典",
+          "一步一步",
+          "爬去"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "陶陶",
+          "一步一步",
+          "向前",
+          "爬去"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：路途艰难。",
+        "tokens": [
+          "种种障碍",
+          "睡觉",
+          "陶陶",
+          "马上",
+          "越过",
+          "橄榄树"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "陶陶",
+          "越过",
+          "种种障碍"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“遥远”可以用来形容路途很近。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“庆典”常常和隆重、庆祝有关。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

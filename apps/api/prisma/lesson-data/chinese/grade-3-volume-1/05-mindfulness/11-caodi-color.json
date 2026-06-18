@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "早上，草地是什么颜色？",
+        "options": [
+          "金色",
+          "绿色",
+          "红色",
+          "蓝色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "中午，草地是什么颜色？",
+        "options": [
+          "绿色",
+          "黑色",
+          "金色",
+          "白色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "傍晚，草地又变成什么颜色？",
+        "options": [
+          "金色",
+          "紫色",
+          "灰色",
+          "绿色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "草地颜色变化和什么有关？",
+        "options": [
+          "蒲公英花瓣张开、合拢",
+          "弟弟跑得快慢",
+          "天空有没有云",
+          "小狗会不会叫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "中午"
+          },
+          {
+            "id": "l_1",
+            "text": "花瓣张开"
+          },
+          {
+            "id": "l_2",
+            "text": "早上"
+          },
+          {
+            "id": "l_3",
+            "text": "傍晚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "傍晚花瓣合拢，草地绿色"
+          },
+          {
+            "id": "r_0",
+            "text": "早上花瓣合拢，草地绿色"
+          },
+          {
+            "id": "r_3",
+            "text": "金色花瓣显出来"
+          },
+          {
+            "id": "r_1",
+            "text": "花瓣张开，草地金色"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_0",
+          "l_3": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "passage": "早上，蒲公英的花瓣是合拢的，草地是绿色的。中午，花瓣张开，草地变成金色。傍晚，花瓣又合拢了，草地又变绿了。",
+        "questions": [
+          {
+            "question": "中午草地变金色，是因为什么？",
+            "options": [
+              "花瓣张开",
+              "下起大雨",
+              "树叶落下",
+              "弟弟吹气"
+            ]
+          },
+          {
+            "question": "这段话按什么顺序写？",
+            "options": [
+              "时间顺序",
+              "地点顺序",
+              "人物顺序",
+              "大小顺序"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成描写中午变化的句子。",
+        "tokens": [
+          "金色的",
+          "草地",
+          "中午",
+          "是",
+          "绿色的",
+          "蒲公英"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "中午",
+          "草地",
+          "是",
+          "金色的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "作者发现草地颜色会变化，是因为他仔细观察。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文第3自然段要补充“早上，草地____，因为蒲公英____”，最合适的是？",
+        "options": [
+          "是金色的；花瓣合拢",
+          "是绿色的；花瓣合拢",
+          "是绿色的；花瓣张开",
+          "是红色的；花瓣张开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "傍晚草地变绿，是因为蒲公英花瓣怎样？",
+        "options": [
+          "张开",
+          "脱落",
+          "合拢",
+          "变红"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

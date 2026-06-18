@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“操场后面的小花园真美……”后面应该围绕什么写？",
+        "options": [
+          "小花园美在哪里",
+          "小狗怎样叫",
+          "火车怎么跑",
+          "作业有多少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句最适合接在“村里的果园就像一幅色彩斑斓的图画”后面？",
+        "options": [
+          "我今天忘带铅笔了。",
+          "老师让我们排队。",
+          "苹果红红的，梨子黄黄的，葡萄紫莹莹的。",
+          "这道数学题很难。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：一到池塘边，我就被眼前的景色吸引住了。",
+        "tokens": [
+          "海螺",
+          "一到",
+          "池塘边",
+          "我就",
+          "被眼前的景色",
+          "渔民",
+          "吸引住了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一到",
+          "池塘边",
+          "我就",
+          "被眼前的景色",
+          "吸引住了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：写一段话时，要围绕一个意思写清楚。",
+        "tokens": [
+          "榕树",
+          "贝壳",
+          "写一段话时",
+          "写清楚",
+          "围绕",
+          "一个意思",
+          "要"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "写一段话时",
+          "要",
+          "围绕",
+          "一个意思",
+          "写清楚"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "开头句"
+          },
+          {
+            "id": "l1",
+            "text": "中间句"
+          },
+          {
+            "id": "l2",
+            "text": "结尾句"
+          },
+          {
+            "id": "l3",
+            "text": "好词语"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "表达感受"
+          },
+          {
+            "id": "r3",
+            "text": "让画面更生动"
+          },
+          {
+            "id": "r0",
+            "text": "点明主要意思"
+          },
+          {
+            "id": "r1",
+            "text": "具体写景物特点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "一段话最好围绕同一个意思展开。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "写景段落中每句话都写完全无关的内容会更清楚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "围绕一句话",
+        "passage": "村里的果园真热闹。苹果树上挂满红灯笼似的果子，梨树结出金黄的梨，葡萄架下一串串葡萄亮晶晶。风一吹，果香飘得很远。",
+        "questions": [
+          {
+            "question": "这段围绕哪句话写？",
+            "options": [
+              "风一吹。",
+              "葡萄亮晶晶。",
+              "村里的果园真热闹。",
+              "梨树结出金黄的梨。"
+            ]
+          },
+          {
+            "question": "哪一项不是这段写到的景物？",
+            "options": [
+              "海底珊瑚",
+              "苹果",
+              "梨",
+              "葡萄"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一句能把“池塘真美”写具体？",
+        "options": [
+          "今天我写完了作业。",
+          "荷花粉红粉红的，水面闪闪发光。",
+          "小狗追着球跑。",
+          "铅笔盒在书包里。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "围绕一个意思写，并不等于每句话都重复同一句话。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

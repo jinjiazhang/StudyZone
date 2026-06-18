@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "犟龟片段",
+        "passage": "陶陶听说狮王二十八世要举行婚礼，决定去参加。路上，蜘蛛劝她回去，蜗牛告诉她走反了方向，壁虎又说婚礼暂时取消。陶陶虽然慢，却一直坚持赶路。",
+        "questions": [
+          {
+            "question": "陶陶要去参加什么？",
+            "options": [
+              "狮王的婚礼",
+              "小狗的比赛",
+              "老屋的聚会",
+              "狐狸的午餐"
+            ]
+          },
+          {
+            "question": "谁提醒陶陶走反了方向？",
+            "options": [
+              "鸽子",
+              "蜗牛",
+              "小公鸡",
+              "小猫"
+            ]
+          },
+          {
+            "question": "陶陶最突出的品质是什么？",
+            "options": [
+              "爱炫耀",
+              "会飞",
+              "坚持不放弃",
+              "总是偷懒"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“腿不但比你灵巧，还多一倍”是蜘蛛在？",
+        "options": [
+          "劝陶陶清醒点、回家",
+          "夸陶陶跑得快",
+          "邀请陶陶织网",
+          "告诉陶陶终点到了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "陶陶感谢蜗牛，是因为蜗牛？",
+        "options": [
+          "送她食物",
+          "帮她打猎",
+          "替她参加婚礼",
+          "给她指出方向错误"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "壁虎说婚礼取消，这让故事出现了什么变化？",
+        "options": [
+          "故事立刻结束",
+          "目标受阻，悬念增加",
+          "陶陶已经成功",
+          "所有动物睡着"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "陶陶路上听到不同消息，但没有轻易放弃。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "陶陶的速度很快，所以一天就到了宫殿。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "蜘蛛"
+          },
+          {
+            "id": "l1",
+            "text": "蜗牛"
+          },
+          {
+            "id": "l2",
+            "text": "壁虎"
+          },
+          {
+            "id": "l3",
+            "text": "陶陶"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "带来婚礼取消的消息"
+          },
+          {
+            "id": "r3",
+            "text": "坚持自己的决定"
+          },
+          {
+            "id": "r0",
+            "text": "嘲笑陶陶慢"
+          },
+          {
+            "id": "r1",
+            "text": "帮陶陶理清方向"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：理解人物。",
+        "tokens": [
+          "却",
+          "小猫",
+          "陶陶",
+          "老屋",
+          "虽然很慢",
+          "一直前进"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "陶陶",
+          "虽然很慢",
+          "却",
+          "一直前进"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：故事变化。",
+        "tokens": [
+          "改变",
+          "生日",
+          "消息",
+          "小狗",
+          "一次次",
+          "陶陶的预测"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "消息",
+          "一次次",
+          "改变",
+          "陶陶的预测"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "朗读陶陶的话“我的决定是不可改变的”时，语气应是？",
+        "options": [
+          "害怕",
+          "撒娇",
+          "坚定",
+          "嘲笑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

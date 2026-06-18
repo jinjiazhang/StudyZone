@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "小狗学叫片段",
+        "passage": "小狗不会叫，动物们告诉它这是一种缺陷。小公鸡同情它，教它喔喔叫。小狗练了很久，叫声越来越逼真。后来狐狸听见叫声，以为公鸡来了，带着刀叉和餐巾去寻找。",
+        "questions": [
+          {
+            "question": "小狗最大的烦恼是什么？",
+            "options": [
+              "不会叫",
+              "不会跑",
+              "找不到帽子",
+              "不想吃饭"
+            ]
+          },
+          {
+            "question": "谁先教小狗学叫？",
+            "options": [
+              "狐狸",
+              "小公鸡",
+              "猎人",
+              "老屋"
+            ]
+          },
+          {
+            "question": "狐狸为什么去寻找？",
+            "options": [
+              "以为公鸡来了",
+              "想修门板",
+              "想参加婚礼",
+              "要送名字"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“第一种结局”里，小狗遇到谁？",
+        "options": [
+          "狐狸",
+          "农夫",
+          "小母牛",
+          "壁虎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“第三种结局”的叫声“汪汪”最可能来自？",
+        "options": [
+          "会叫的狗",
+          "乌龟",
+          "老母鸡",
+          "小蜘蛛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事给出多种结局，主要鼓励我们？",
+        "options": [
+          "只记一个答案",
+          "不要读结尾",
+          "只看插图",
+          "展开想象，预测不同可能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小狗学公鸡叫，一次就完全成功了。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "狐狸听见逼真的公鸡叫声，心里想去找公鸡。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小公鸡"
+          },
+          {
+            "id": "l1",
+            "text": "狐狸"
+          },
+          {
+            "id": "l2",
+            "text": "猎人"
+          },
+          {
+            "id": "l3",
+            "text": "小母牛"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "对小狗开枪"
+          },
+          {
+            "id": "r3",
+            "text": "出现在一种结局里"
+          },
+          {
+            "id": "r0",
+            "text": "教小狗喔喔叫"
+          },
+          {
+            "id": "r1",
+            "text": "误以为有公鸡"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：结局想象。",
+        "tokens": [
+          "有",
+          "老屋",
+          "故事",
+          "陶陶",
+          "可以",
+          "不同结局"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "故事",
+          "可以",
+          "有",
+          "不同结局"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组句：小狗练习。",
+        "tokens": [
+          "偷偷地",
+          "名字",
+          "小狗",
+          "庆典",
+          "天天",
+          "练习叫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小狗",
+          "天天",
+          "偷偷地",
+          "练习叫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果续写小狗遇到会叫的狗，最合理的发展是？",
+        "options": [
+          "它马上学会织网",
+          "它终于学到真正的狗叫",
+          "它去参加狮王婚礼",
+          "它变成老屋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

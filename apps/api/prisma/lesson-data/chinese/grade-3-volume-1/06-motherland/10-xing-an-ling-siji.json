@@ -1,0 +1,213 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《美丽的小兴安岭》是按什么顺序写的？",
+        "options": [
+          "早、中、晚的时间顺序",
+          "海面到海底的空间顺序",
+          "人物出场顺序",
+          "春、夏、秋、冬的季节顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春天的小鹿在溪边做什么？",
+        "options": [
+          "散步、喝水、欣赏影子",
+          "采蘑菇",
+          "捕鱼",
+          "扫街道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "夏天“密密层层”写出了什么？",
+        "options": [
+          "雪很厚",
+          "鱼很多",
+          "枝叶很多很密",
+          "灯光很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋天森林献出了哪些东西？",
+        "options": [
+          "珊瑚、海参、龙虾",
+          "贝壳、海螺、军舰",
+          "车灯、霓虹灯、雕塑",
+          "山葡萄、榛子、蘑菇、木耳、人参"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "冬天写了哪些动物？",
+        "options": [
+          "海鸥、海鸟、鱼儿",
+          "黑熊、紫貂、松鼠",
+          "鹿、牛、羊",
+          "猴子、孔雀、熊猫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "春天"
+          },
+          {
+            "id": "l1",
+            "text": "夏天"
+          },
+          {
+            "id": "l2",
+            "text": "秋天"
+          },
+          {
+            "id": "l3",
+            "text": "冬天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "落叶、果实、药材"
+          },
+          {
+            "id": "r3",
+            "text": "白雪、动物"
+          },
+          {
+            "id": "r0",
+            "text": "溪水、小鹿"
+          },
+          {
+            "id": "r1",
+            "text": "枝叶、浓雾、野花"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：小兴安岭一年四季景色诱人。",
+        "tokens": [
+          "一年四季",
+          "鸟蛋",
+          "军舰",
+          "小兴安岭",
+          "景色诱人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小兴安岭",
+          "一年四季",
+          "景色诱人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文把小兴安岭比作“大花园”和“宝库”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小兴安岭只在冬天美丽。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "四季小兴安岭",
+        "passage": "春天，树木抽出新的枝条。夏天，枝叶把森林封得严严实实。秋天，森林献出酸甜可口的山葡萄和鲜嫩的蘑菇。冬天，雪花飞舞，地上的雪又松又软。",
+        "questions": [
+          {
+            "question": "这段是按什么顺序写的？",
+            "options": [
+              "季节顺序",
+              "地点顺序",
+              "事情发展顺序",
+              "数字顺序"
+            ]
+          },
+          {
+            "question": "哪一项属于秋天的景物？",
+            "options": [
+              "新枝和溪水",
+              "浓雾和野花",
+              "山葡萄和蘑菇",
+              "白雪和西北风"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“懒洋洋、慢腾腾、静悄悄”这类词语读起来有什么共同点？",
+        "options": [
+          "都是数字",
+          "都是地名",
+          "后两个字相同，画面感强",
+          "都是古诗题目"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“兴冲冲”通常形容什么？",
+        "options": [
+          "非常安静",
+          "十分混乱",
+          "特别寒冷",
+          "高兴、兴奋的样子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "懒洋洋"
+          },
+          {
+            "id": "l1",
+            "text": "慢腾腾"
+          },
+          {
+            "id": "l2",
+            "text": "静悄悄"
+          },
+          {
+            "id": "l3",
+            "text": "空荡荡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "非常安静"
+          },
+          {
+            "id": "r3",
+            "text": "空而冷清"
+          },
+          {
+            "id": "r0",
+            "text": "动作慢、不想动"
+          },
+          {
+            "id": "r1",
+            "text": "动作很慢"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "乱糟糟"
+          },
+          {
+            "id": "l1",
+            "text": "闹哄哄"
+          },
+          {
+            "id": "l2",
+            "text": "颤巍巍"
+          },
+          {
+            "id": "l3",
+            "text": "兴冲冲"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "抖动不稳"
+          },
+          {
+            "id": "r3",
+            "text": "兴奋高兴"
+          },
+          {
+            "id": "r0",
+            "text": "杂乱"
+          },
+          {
+            "id": "r1",
+            "text": "热闹嘈杂"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：阅览室里一片静悄悄。",
+        "tokens": [
+          "肥料",
+          "一片",
+          "鱼群",
+          "静悄悄",
+          "阅览室里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "阅览室里",
+          "一片",
+          "静悄悄"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把句子排通顺：他兴冲冲地跑进教室。",
+        "tokens": [
+          "兴冲冲地",
+          "跑进",
+          "他",
+          "教室",
+          "沙滩",
+          "懒洋洋"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "兴冲冲地",
+          "跑进",
+          "教室"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“慢腾腾”可以用来写动作很快。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“乱糟糟”可以写房间很杂乱。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“妈妈累得____。”横线上填哪项最合适？",
+        "options": [
+          "五光十色",
+          "直喘气",
+          "鱼成群结队",
+          "一半是水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“____得____”这种句式可以把状态写具体。",
+        "options": [
+          "热得满头大汗",
+          "海水得蓝色",
+          "树木得春天",
+          "贝壳得沙滩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}
