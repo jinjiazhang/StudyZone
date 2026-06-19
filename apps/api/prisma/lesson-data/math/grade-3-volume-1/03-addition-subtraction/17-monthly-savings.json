@@ -1,0 +1,185 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "260 - 30 = ?"
+      },
+      "answer": {
+        "value": 230,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "260 + 230 = ?"
+      },
+      "answer": {
+        "value": 490,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "九月节余260元，十月比九月少30元。十月节余多少元？",
+        "options": [
+          "260元",
+          "230元",
+          "290元",
+          "490元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "九月和十月一共节余多少元？",
+        "options": [
+          "490元",
+          "230元",
+          "520元",
+          "460元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "225 + 225 + 225 = ?"
+      },
+      "answer": {
+        "value": 675,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平均每月节余225元，洗衣机580元。几个月的钱够买一台？",
+        "options": [
+          "1个月",
+          "2个月",
+          "3个月",
+          "4个月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "225 + 225",
+        "right": "580"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "225 + 225 + 225",
+        "right": "580"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "225元存3个月：先算2个月 __ 元，再加1个月得 __ 元。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2个月"
+          },
+          {
+            "id": "b2",
+            "label": "3个月"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          450,
+          675
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "260",
+          null,
+          "30",
+          "=",
+          "230",
+          "；",
+          "260",
+          null,
+          "230",
+          "=",
+          "490"
+        ],
+        "tokens": [
+          "+",
+          "490",
+          "-",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "+"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "十月节余的钱比九月少，所以要用260 - 30。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "平均每月节余225元，2个月就能买580元的洗衣机。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

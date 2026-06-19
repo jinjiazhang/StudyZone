@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上画长方形，需要先确定什么？",
+        "options": [
+          "颜色和重量",
+          "页码和书名",
+          "三角形个数",
+          "长和宽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上画正方形，只要知道什么就能确定大小？",
+        "options": [
+          "一条边长",
+          "两个不相等的边长",
+          "圆的半径",
+          "钟面时间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "画一个长6格、宽4格的长方形，需要横向 __ 格、纵向 __ 格。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长"
+          },
+          {
+            "id": "b2",
+            "label": "宽"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "画一个边长5格的正方形，每条边应画多少格？"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "方格纸能帮助我们画出直角和等长的边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "有了长和宽，就能画出",
+          null,
+          "；知道一条边，就能画出",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "正方形",
+          "长方形",
+          "钝角",
+          "锐角"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方形",
+          "正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "在方格纸上画长方形的顺序",
+        "items": [
+          {
+            "id": "s3",
+            "text": "画出宽"
+          },
+          {
+            "id": "s1",
+            "text": "确定一个顶点"
+          },
+          {
+            "id": "s4",
+            "text": "连成封闭图形"
+          },
+          {
+            "id": "s2",
+            "text": "数格画出长"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "直角"
+          },
+          {
+            "id": "l4",
+            "text": "方格纸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "帮助数格和对齐"
+          },
+          {
+            "id": "r1",
+            "text": "需要长和宽"
+          },
+          {
+            "id": "r3",
+            "text": "画角时要方正"
+          },
+          {
+            "id": "r2",
+            "text": "需要边长"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "在方格纸上，哪组数据能画出正方形？",
+        "options": [
+          {
+            "id": "b",
+            "label": "边长5格"
+          },
+          {
+            "id": "a",
+            "label": "长6格、宽4格"
+          },
+          {
+            "id": "c",
+            "label": "三条边3、4、5格"
+          },
+          {
+            "id": "d",
+            "label": "只给一个角"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第56页“长12厘米、宽8厘米的长方形纸折正方形”，最大正方形边长是：",
+        "options": [
+          "12厘米",
+          "20厘米",
+          "8厘米",
+          "4厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

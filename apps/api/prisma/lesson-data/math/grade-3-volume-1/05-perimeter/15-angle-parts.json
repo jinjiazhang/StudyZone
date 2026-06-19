@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个角的“顶点”是哪里？",
+        "options": [
+          {
+            "id": "a",
+            "label": "两条边相交的共同端点"
+          },
+          {
+            "id": "b",
+            "label": "边上任意一点"
+          },
+          {
+            "id": "c",
+            "label": "角外面的空白处"
+          },
+          {
+            "id": "d",
+            "label": "图形最长的一条边"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "画角时，从顶点出发要画出几条边？",
+        "options": [
+          "1条",
+          "2条",
+          "3条",
+          "4条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "一个角的两条边可以不从同一点出发。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从",
+          null,
+          "出发画出",
+          null,
+          "条边，就能画出一个角。"
+        ],
+        "tokens": [
+          "顶点",
+          "圆心",
+          "2",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "顶点",
+          "2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个角有2条边，4个角一共有多少条边？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填一填：1个角有 __ 个顶点、__ 条边。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "顶点"
+          },
+          {
+            "id": "b2",
+            "label": "边"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "顶点"
+          },
+          {
+            "id": "l2",
+            "text": "边"
+          },
+          {
+            "id": "l3",
+            "text": "∠2"
+          },
+          {
+            "id": "l4",
+            "text": "角的大小"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "从顶点出发的线"
+          },
+          {
+            "id": "r4",
+            "text": "与张口大小有关"
+          },
+          {
+            "id": "r1",
+            "text": "两条边共同的端点"
+          },
+          {
+            "id": "r3",
+            "text": "读作角2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话正确？",
+        "options": [
+          "角的边越长，角一定越大",
+          "角有一个顶点",
+          "角必须是红色的",
+          "角只能在三角形里出现"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个标注最完整？",
+        "options": [
+          {
+            "id": "a",
+            "label": "只标顶点"
+          },
+          {
+            "id": "b",
+            "label": "只标一条边"
+          },
+          {
+            "id": "c",
+            "label": "标出顶点和两条边"
+          },
+          {
+            "id": "d",
+            "label": "只写角号"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "教材第50页要求“画出一个角，标出这个角的边和顶点”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

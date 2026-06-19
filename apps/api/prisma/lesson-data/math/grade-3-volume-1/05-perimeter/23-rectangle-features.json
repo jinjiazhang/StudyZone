@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第55页：长方形的对边有什么特点？",
+        "options": [
+          "四条边都不相等",
+          "只有一条边",
+          "对边相等",
+          "没有角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形的四个角都是什么角？",
+        "options": [
+          "锐角",
+          "钝角",
+          "直角",
+          "圆角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个长方形有 __ 条边、__ 个直角。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "边数"
+          },
+          {
+            "id": "b2",
+            "label": "直角数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "长方形相对的两条边长度相等。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "长方形的四个角都是锐角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方形的对边",
+          null,
+          "，四个角都是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "直角",
+          "相等",
+          "锐角",
+          "相交"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相等",
+          "直角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个最像长方形？",
+        "options": [
+          {
+            "id": "b",
+            "label": "只有三条边"
+          },
+          {
+            "id": "a",
+            "label": "四个角都是直角，对边相等"
+          },
+          {
+            "id": "c",
+            "label": "没有直角的圆"
+          },
+          {
+            "id": "d",
+            "label": "五条边都相等"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长"
+          },
+          {
+            "id": "l2",
+            "text": "宽"
+          },
+          {
+            "id": "l3",
+            "text": "对边"
+          },
+          {
+            "id": "l4",
+            "text": "四个角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "相等"
+          },
+          {
+            "id": "r1",
+            "text": "较长的一组边"
+          },
+          {
+            "id": "r4",
+            "text": "都是直角"
+          },
+          {
+            "id": "r2",
+            "text": "较短的一组边"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个长方形有4个直角，3个长方形一共有多少个直角？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，长方形有几个直角？",
+        "columns": [
+          "图形",
+          "边的特点",
+          "直角个数"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "边的特点": "对边相等",
+            "直角个数": 4
+          },
+          {
+            "图形": "正方形",
+            "边的特点": "四边相等",
+            "直角个数": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 4
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "观察分类表：锐角、直角、钝角中，哪一类比直角大？",
+        "columns": [
+          "类别",
+          "与直角比较"
+        ],
+        "rows": [
+          {
+            "类别": "锐角",
+            "与直角比较": "小"
+          },
+          {
+            "类别": "直角",
+            "与直角比较": "相等"
+          },
+          {
+            "类别": "钝角",
+            "与直角比较": "大"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "钝角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "表中哪一类与直角相等？",
+        "columns": [
+          "类别",
+          "与直角比较"
+        ],
+        "rows": [
+          {
+            "类别": "锐角",
+            "与直角比较": "小"
+          },
+          {
+            "类别": "直角",
+            "与直角比较": "相等"
+          },
+          {
+            "类别": "钝角",
+            "与直角比较": "大"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "直角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材整理页把角从小到大整理，应是：",
+        "options": [
+          "钝角、直角、锐角",
+          "锐角、直角、钝角",
+          "直角、锐角、钝角",
+          "锐角、钝角、直角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "锐角、直角、钝角都是角，都有顶点和边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "角按大小可分为",
+          null,
+          "、直角和",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "锐角",
+          "长方形",
+          "钝角",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "锐角",
+          "钝角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个角比三角板上的直角大，应归为：",
+        "options": [
+          {
+            "id": "a",
+            "label": "锐角"
+          },
+          {
+            "id": "b",
+            "label": "直角"
+          },
+          {
+            "id": "c",
+            "label": "钝角"
+          },
+          {
+            "id": "d",
+            "label": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一个角比三角板上的直角小，应归为：",
+        "options": [
+          {
+            "id": "a",
+            "label": "钝角"
+          },
+          {
+            "id": "c",
+            "label": "直角"
+          },
+          {
+            "id": "b",
+            "label": "锐角"
+          },
+          {
+            "id": "d",
+            "label": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小于直角"
+          },
+          {
+            "id": "l2",
+            "text": "等于直角"
+          },
+          {
+            "id": "l3",
+            "text": "大于直角"
+          },
+          {
+            "id": "l4",
+            "text": "四个直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "长方形特征之一"
+          },
+          {
+            "id": "r1",
+            "text": "锐角"
+          },
+          {
+            "id": "r3",
+            "text": "钝角"
+          },
+          {
+            "id": "r2",
+            "text": "直角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把观察角的方法按顺序排一排",
+        "items": [
+          {
+            "id": "s2",
+            "text": "用直角比一比"
+          },
+          {
+            "id": "s4",
+            "text": "说出角的类别"
+          },
+          {
+            "id": "s1",
+            "text": "找到顶点和边"
+          },
+          {
+            "id": "s3",
+            "text": "判断大于、小于还是等于直角"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "问题银行：有没有比钝角更大的角？这个问题属于：",
+        "options": [
+          "计算乘法",
+          "继续探究角的大小",
+          "认识小数",
+          "记录日期"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

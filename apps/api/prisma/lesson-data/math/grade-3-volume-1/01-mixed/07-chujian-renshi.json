@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25 - 10 / 5 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72 / 8 - 3 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 8 / 4 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "25 - 10 / 5：先算 __，再算 25 - __ = __。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          23
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式先算除法？",
+        "options": [
+          "25 - 10 - 5",
+          "(25 - 10) / 5",
+          "25 / (10 - 5)",
+          "25 - 10 / 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "25",
+          null,
+          "10",
+          null,
+          "5",
+          null,
+          "23"
+        ],
+        "tokens": [
+          "-",
+          "/",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "/",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "25 - 10 / 5",
+        "right": "22"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "自动铅笔促销4支12元，原价每支5元。促销后每支比原价便宜多少元？",
+        "placeholder": "例如：5-12/4"
+      },
+      "answer": {
+        "accepted": [
+          "5-12/4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 12 / 4 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "25 - 10 / 5"
+          },
+          {
+            "id": "l2",
+            "text": "72 / 8 - 3"
+          },
+          {
+            "id": "l3",
+            "text": "5 - 8 / 4"
+          },
+          {
+            "id": "l4",
+            "text": "5 - 12 / 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r1",
+            "text": "23"
+          },
+          {
+            "id": "r4",
+            "text": "2"
+          },
+          {
+            "id": "r2",
+            "text": "6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 5 - 12 / 4 时，12 / 4 表示什么？",
+        "options": [
+          "促销后每支自动铅笔的价钱",
+          "原价一共多少元",
+          "买了12支笔",
+          "便宜了12元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35 / 5 - 4 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

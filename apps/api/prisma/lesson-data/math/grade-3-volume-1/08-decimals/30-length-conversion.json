@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "9分米 = ?米",
+        "fromUnit": "分米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.9,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "75厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.75,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4米5分米7厘米 = ?米",
+        "fromUnit": "米分米厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 4.57,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "70厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.7,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2米5厘米 = ?米",
+        "fromUnit": "米厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 2.05,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.04,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "0.89米 = __米__分米__厘米",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          8,
+          9
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1.02米 = __米__分米__厘米",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          0,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1.11米 = __米__分米__厘米",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          1
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "0.1米"
+          },
+          {
+            "id": "l2",
+            "text": "0.01米"
+          },
+          {
+            "id": "l3",
+            "text": "0.75米"
+          },
+          {
+            "id": "l4",
+            "text": "2.05米"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "75厘米"
+          },
+          {
+            "id": "r1",
+            "text": "1分米"
+          },
+          {
+            "id": "r4",
+            "text": "2米5厘米"
+          },
+          {
+            "id": "r2",
+            "text": "1厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "75厘米是",
+          null,
+          "米，不是",
+          null,
+          "米"
+        ],
+        "tokens": [
+          "7.5",
+          "0.75",
+          "0.07",
+          "75"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0.75",
+          "7.5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "10厘米是0.10米，也可以写成0.1米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

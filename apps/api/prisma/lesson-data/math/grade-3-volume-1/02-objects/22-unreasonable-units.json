@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我从2分米长的床上爬起来”哪里不合理？",
+        "options": [
+          "床长应约2毫米",
+          "床长应约2千米",
+          "完全合理",
+          "床长应约2米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拿起1米长的牙刷刷牙”应改成？",
+        "options": [
+          "约1千米长的牙刷",
+          "约1分米长的牙刷",
+          "约1毫米长的牙刷",
+          "不用单位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“用70毫米长的毛巾把脸擦干”应改成更合理的是？",
+        "options": [
+          "70厘米",
+          "70千米",
+          "70米",
+          "70毫米不需要改"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“学校离我家大约900毫米远”应改成？",
+        "options": [
+          "900厘米",
+          "900分米",
+          "900米",
+          "900毫米很远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“坐在5米高的凳子上”应改成？",
+        "options": [
+          "5千米",
+          "5分米",
+          "5毫米",
+          "50米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拿出6厘米厚的数学书”更合理的是？",
+        "options": [
+          "6千米",
+          "6米",
+          "60米",
+          "6毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "牙刷全长在110毫米到180毫米之间比较合理。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "上学路程用毫米表示通常很方便。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2米",
+        "right": "2分米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "900米",
+        "right": "900毫米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "床长"
+          },
+          {
+            "id": "l2",
+            "text": "牙刷长"
+          },
+          {
+            "id": "l3",
+            "text": "上学路程"
+          },
+          {
+            "id": "l4",
+            "text": "数学书厚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "约6毫米"
+          },
+          {
+            "id": "r2",
+            "text": "约2米"
+          },
+          {
+            "id": "r3",
+            "text": "约1分米"
+          },
+          {
+            "id": "r4",
+            "text": "约900米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "学校离家约900",
+          null,
+          "；数学书厚约6",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "分米",
+          "米",
+          "千米",
+          "毫米"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "米",
+          "毫米"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

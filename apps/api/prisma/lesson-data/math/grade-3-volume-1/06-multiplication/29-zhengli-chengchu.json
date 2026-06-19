@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 × 4 = ?"
+      },
+      "answer": {
+        "value": 64,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 × 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 × 6 = ?"
+      },
+      "answer": {
+        "value": 180,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "300 × 6 = ?"
+      },
+      "answer": {
+        "value": 1800,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "180 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1800 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18个一除以6等于3个一，180个一除以6等于什么？",
+        "options": [
+          "3个十",
+          "300个一",
+          "30个一",
+          "6个十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "16 × 4",
+        "right": "65 ÷ 5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3 × 6"
+          },
+          {
+            "id": "l2",
+            "text": "30 × 6"
+          },
+          {
+            "id": "l3",
+            "text": "18 ÷ 6"
+          },
+          {
+            "id": "l4",
+            "text": "1800 ÷ 6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "300"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r2",
+            "text": "180"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "33 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "39 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 3：先分30，30÷3=__；再分12，12÷3=__；合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先分"
+          },
+          {
+            "id": "b2",
+            "label": "再分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          4,
+          14
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "46 ÷ 2 = 40÷2 + 6÷2 = ",
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "23",
+          "40",
+          "6",
+          "3",
+          "20",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "20",
+          "3",
+          "23"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“先分这4捆，每班1捆，还剩1捆怎么办？”描述的是哪道题的思路？",
+        "options": [
+          "42 ÷ 3",
+          "36 ÷ 3",
+          "39 ÷ 3",
+          "44 ÷ 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按商从小到大排列",
+        "items": [
+          {
+            "id": "i4",
+            "text": "39 ÷ 3"
+          },
+          {
+            "id": "i1",
+            "text": "30 ÷ 3"
+          },
+          {
+            "id": "i2",
+            "text": "33 ÷ 3"
+          },
+          {
+            "id": "i3",
+            "text": "36 ÷ 3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "30 ÷ 3"
+          },
+          {
+            "id": "l2",
+            "text": "33 ÷ 3"
+          },
+          {
+            "id": "l3",
+            "text": "36 ÷ 3"
+          },
+          {
+            "id": "l4",
+            "text": "39 ÷ 3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "13"
+          },
+          {
+            "id": "r3",
+            "text": "12"
+          },
+          {
+            "id": "r2",
+            "text": "11"
+          },
+          {
+            "id": "r1",
+            "text": "10"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

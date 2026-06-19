@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "49 - 3 * 8 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 + 6 * 4 = ?"
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 7 - 16 = ?"
+      },
+      "answer": {
+        "value": 19,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(99 - 78) / 3 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - (72 + 28) = ?"
+      },
+      "answer": {
+        "value": 0,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 + 65 - 85 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "100 - (72 + 28)：先算括号得 __，再算 100 - __ = __。",
+        "blanks": [
+          {
+            "id": "sum"
+          },
+          {
+            "id": "same"
+          },
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          100,
+          100,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式结果是 7？",
+        "options": [
+          "14 + 6 * 4",
+          "5 * 7 - 16",
+          "(99 - 78) / 3",
+          "49 - 3 * 8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "49 - 3 * 8",
+        "right": "5 * 7 - 16"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排列",
+        "items": [
+          {
+            "id": "a",
+            "text": "49 - 3 * 8"
+          },
+          {
+            "id": "b",
+            "text": "14 + 6 * 4"
+          },
+          {
+            "id": "c",
+            "text": "100 - (72 + 28)"
+          },
+          {
+            "id": "d",
+            "text": "5 * 7 - 16"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c",
+          "d",
+          "a",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "49 - 3 * 8"
+          },
+          {
+            "id": "l2",
+            "text": "14 + 6 * 4"
+          },
+          {
+            "id": "l3",
+            "text": "5 * 7 - 16"
+          },
+          {
+            "id": "l4",
+            "text": "(99 - 78) / 3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "38"
+          },
+          {
+            "id": "r4",
+            "text": "7"
+          },
+          {
+            "id": "r1",
+            "text": "25"
+          },
+          {
+            "id": "r3",
+            "text": "19"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "100",
+          "-",
+          null,
+          "72",
+          "+",
+          "28",
+          null,
+          "=",
+          "0"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "/",
+          "*"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

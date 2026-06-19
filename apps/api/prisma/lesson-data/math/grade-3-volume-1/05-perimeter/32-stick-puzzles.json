@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第61页：用一根6厘米和两根2厘米的小棒，能拼成长方形吗？",
+        "options": [
+          "能，因为有两组对边相等",
+          "不能，因为只有三根小棒",
+          "能，因为有直角标记",
+          "不能，因为6厘米太长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要拼成长方形，至少需要几根小棒作为四条边？",
+        "options": [
+          "2根",
+          "4根",
+          "3根",
+          "6根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只用三根小棒不能围成封闭的长方形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拼一个长方形需要 __ 条边，其中相对的边要 __ 组相等。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "边数"
+          },
+          {
+            "id": "b2",
+            "label": "相等对边组数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方形要围成封闭图形，需要",
+          null,
+          "条边，并且对边要",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "4",
+          "3",
+          "相等",
+          "相交"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "相等"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "6厘米小棒"
+          },
+          {
+            "id": "l2",
+            "text": "2厘米小棒"
+          },
+          {
+            "id": "l3",
+            "text": "4厘米小棒"
+          },
+          {
+            "id": "l4",
+            "text": "长方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "需要四条边封闭"
+          },
+          {
+            "id": "r2",
+            "text": "若作宽需两根"
+          },
+          {
+            "id": "r1",
+            "text": "若作长也需两根"
+          },
+          {
+            "id": "r3",
+            "text": "可与另一根4厘米配对"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪组小棒最适合拼成长方形？",
+        "options": [
+          {
+            "id": "b",
+            "label": "6厘米、2厘米、4厘米"
+          },
+          {
+            "id": "a",
+            "label": "6厘米、6厘米、2厘米、2厘米"
+          },
+          {
+            "id": "c",
+            "label": "6厘米、2厘米、7厘米"
+          },
+          {
+            "id": "d",
+            "label": "只有一根6厘米"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "拼一个长方形用了2根6厘米和2根2厘米小棒，一共用了几根？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "拼正方形时，四根小棒应一样长。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第61页“正方形被挡住的角”应判断为：",
+        "options": [
+          "锐角",
+          "钝角",
+          "不是角",
+          "直角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

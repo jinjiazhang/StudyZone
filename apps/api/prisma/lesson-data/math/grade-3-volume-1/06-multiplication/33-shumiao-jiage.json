@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 12 × 6 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "松树苗每捆4棵40元，平均每棵多少元？",
+        "options": [
+          "8元",
+          "12元",
+          "10元",
+          "16元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "柏树苗每捆3棵36元，平均每棵多少元？",
+        "options": [
+          "9元",
+          "12元",
+          "10元",
+          "14元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一棵松树苗和一棵柳树苗比，哪个贵，贵多少元？",
+        "options": [
+          "柳树苗贵2元",
+          "一样贵",
+          "松树苗贵4元",
+          "松树苗贵2元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "王爷爷用100元买了6棵柏树苗，还剩的钱正好买4棵杨树苗。每棵杨树苗多少元？",
+        "options": [
+          "7元",
+          "6元",
+          "8元",
+          "9元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "100元买6棵每棵12元的柏树苗，还剩的钱买4棵杨树苗。请列式求每棵杨树苗价钱。",
+        "placeholder": "(100-12×6)÷4"
+      },
+      "answer": {
+        "accepted": [
+          "(100-12×6)÷4",
+          "(100−12×6)÷4"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "松树苗每棵"
+          },
+          {
+            "id": "l2",
+            "text": "柏树苗每棵"
+          },
+          {
+            "id": "l3",
+            "text": "柳树苗每棵"
+          },
+          {
+            "id": "l4",
+            "text": "杨树苗每棵"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "7元"
+          },
+          {
+            "id": "r3",
+            "text": "8元"
+          },
+          {
+            "id": "r2",
+            "text": "12元"
+          },
+          {
+            "id": "r1",
+            "text": "10元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

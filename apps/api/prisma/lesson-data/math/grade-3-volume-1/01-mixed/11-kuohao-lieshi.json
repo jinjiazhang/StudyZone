@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一共70人，先坐满限乘46人的大车，剩下坐限乘8人的小车，至少需要几辆小车？",
+        "placeholder": "例如：(70-46)/8"
+      },
+      "answer": {
+        "accepted": [
+          "(70-46)/8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(70 - 46) / 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一本书70页，已经看了46页，余下想用8天看完，平均每天看几页？",
+        "placeholder": "例如：(70-46)/8"
+      },
+      "answer": {
+        "accepted": [
+          "(70-46)/8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有70元，买一个46元书包，剩下的钱买8元一本的本子，能买几本？",
+        "placeholder": "例如：(70-46)/8"
+      },
+      "answer": {
+        "accepted": [
+          "(70-46)/8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(60 - 36) / 4 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "(60 - 36) / 4：先算 __，再算 __ / 4 = __。",
+        "blanks": [
+          {
+            "id": "left"
+          },
+          {
+            "id": "same"
+          },
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          24,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用 (70 - 46) / 8 可以解决哪个问题？",
+        "options": [
+          "70页书已看46页，余下8天看完，平均每天几页",
+          "70人每车46人，需要几辆大车",
+          "70元买8元本子和46元书包共几元",
+          "46人和70人一共多少人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "70",
+          "-",
+          "46",
+          null,
+          "/",
+          "8",
+          "=",
+          "3"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(70 - 46) / 8",
+        "right": "4"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "余下页数"
+          },
+          {
+            "id": "l2",
+            "text": "小车数量"
+          },
+          {
+            "id": "l3",
+            "text": "剩余钱数"
+          },
+          {
+            "id": "l4",
+            "text": "每盒数量"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "(70 - 46) / 8"
+          },
+          {
+            "id": "r4",
+            "text": "(60 - 36) / 4"
+          },
+          {
+            "id": "r1",
+            "text": "70 - 46"
+          },
+          {
+            "id": "r3",
+            "text": "70 - 46"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "列式解决“70人先坐46人大车，余下坐8人小车”",
+        "items": [
+          {
+            "id": "a",
+            "text": "求剩下 70 - 46"
+          },
+          {
+            "id": "b",
+            "text": "用剩下人数除以8"
+          },
+          {
+            "id": "c",
+            "text": "写成 (70 - 46) / 8"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(48 - 24) / 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

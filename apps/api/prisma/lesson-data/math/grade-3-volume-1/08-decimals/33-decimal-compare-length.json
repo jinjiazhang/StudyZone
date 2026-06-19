@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1.44",
+        "right": "1.35"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1.07",
+        "right": "0.50"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.89",
+        "right": "1.02"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4.57",
+        "right": "4.07"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.05",
+        "right": "2.50"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.04",
+        "right": "0.40"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按长度从短到长排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "0.89米"
+          },
+          {
+            "id": "i1",
+            "text": "0.04米"
+          },
+          {
+            "id": "i4",
+            "text": "1.11米"
+          },
+          {
+            "id": "i2",
+            "text": "0.70米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按长度从长到短排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "2.05米"
+          },
+          {
+            "id": "i1",
+            "text": "4.57米"
+          },
+          {
+            "id": "i4",
+            "text": "0.75米"
+          },
+          {
+            "id": "i2",
+            "text": "3.50米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "75厘米应该写成多少米？",
+        "options": [
+          "7.5米",
+          "0.75米",
+          "75米",
+          "0.075米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "9分米应该写成多少米？",
+        "options": [
+          "0.09米",
+          "9米",
+          "0.9米",
+          "90米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "0.50米"
+          },
+          {
+            "id": "l2",
+            "text": "1.07米"
+          },
+          {
+            "id": "l3",
+            "text": "1.35米"
+          },
+          {
+            "id": "l4",
+            "text": "1.44米"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "135厘米"
+          },
+          {
+            "id": "r1",
+            "text": "50厘米"
+          },
+          {
+            "id": "r4",
+            "text": "144厘米"
+          },
+          {
+            "id": "r2",
+            "text": "107厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "0.04米比0.40米长。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

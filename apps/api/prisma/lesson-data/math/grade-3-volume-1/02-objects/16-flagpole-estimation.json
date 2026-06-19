@@ -1,0 +1,191 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "天安门广场的国旗杆净高度约30（ ）。",
+        "options": [
+          "毫米",
+          "米",
+          "厘米",
+          "千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "教学楼共4层，每层约3米，楼高约多少米？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "教学楼约12米，国旗杆比教学楼高1米，旗杆约多少米？"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "测得旗杆绳子长11米8分米，写成__米__分米。",
+        "blanks": [
+          {
+            "id": "m",
+            "label": "米"
+          },
+          {
+            "id": "dm",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          11,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "11米8分米 = __分米",
+        "blanks": [
+          {
+            "id": "dm",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          118
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "30米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 300,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "13米 = ?厘米",
+        "fromUnit": "米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 1300,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13米",
+        "right": "12米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "11米8分米",
+        "right": "118分米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估测学校旗杆高度时，哪种方法比较合理？",
+        "options": [
+          "借助教学楼每层约3米来估",
+          "用毫米尺量地面影子后直接当高度",
+          "只看照片颜色",
+          "随便猜一个数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "旗杆下面有底座，估算时要考虑底座高度。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "教学楼4层，每层约3米，国旗杆比教学楼高约1米，旗杆约多少米？",
+        "columns": [
+          "项目",
+          "数值"
+        ],
+        "rows": [
+          {
+            "项目": "教学楼高",
+            "数值": 12
+          },
+          {
+            "项目": "高出",
+            "数值": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

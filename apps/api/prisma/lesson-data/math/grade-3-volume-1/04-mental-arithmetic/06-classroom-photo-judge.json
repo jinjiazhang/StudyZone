@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照片中如果能看到同学一排排坐着，黑板在远处，可能从哪里拍？",
+        "options": [
+          "教室后方",
+          "黑板里面",
+          "桌子底下",
+          "屋顶外侧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照片中如果窗户在左侧很明显，可能站在教室的哪一边？",
+        "options": [
+          "门外正中",
+          "靠窗一侧",
+          "讲台后墙里",
+          "操场跑道上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从门口斜着看教室，照片中课桌排列会呈现什么特点？",
+        "options": [
+          "全部一样大且重合",
+          "只剩一个点",
+          "近大远小",
+          "看不到任何桌椅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断两张教室照片是否来自相近位置，可以比较什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "照片文件名长短"
+          },
+          {
+            "id": "o2",
+            "label": "纸张厚度"
+          },
+          {
+            "id": "o3",
+            "label": "题号颜色"
+          },
+          {
+            "id": "o4",
+            "label": "黑板、窗户和课桌的相对位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "站得位置越靠近某排课桌，那排课桌在照片中通常越大。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "在教室里换位置拍照，不会改变窗户出现在画面左边还是右边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "看到黑板正面"
+          },
+          {
+            "id": "l2",
+            "text": "看到窗户一侧长长一排"
+          },
+          {
+            "id": "l3",
+            "text": "看到门框附近"
+          },
+          {
+            "id": "l4",
+            "text": "看到学生正面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "可能在门口"
+          },
+          {
+            "id": "r1",
+            "text": "可能在教室后方"
+          },
+          {
+            "id": "r4",
+            "text": "可能在讲台前"
+          },
+          {
+            "id": "r2",
+            "text": "可能在窗边"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "照片里物体",
+          null,
+          "的位置，可以帮助判断拍照",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "地点",
+          "名字",
+          "相对",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相对",
+          "地点"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "比较两张教室照片的方法",
+        "items": [
+          {
+            "id": "s3",
+            "text": "比较课桌朝向"
+          },
+          {
+            "id": "s1",
+            "text": "先找黑板"
+          },
+          {
+            "id": "s4",
+            "text": "判断拍照位置"
+          },
+          {
+            "id": "s2",
+            "text": "再找窗户"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "①②③三个位置分别对应三张照片，需要填 ? 个编号"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项是判断教室照片位置的有效线索？",
+        "options": [
+          "照片边框颜色",
+          "题目编号字体",
+          "同学姓名",
+          "门、窗、黑板的位置关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果图2和图3很像，应重点比较什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "窗户和讲台分别在画面哪一侧"
+          },
+          {
+            "id": "o2",
+            "label": "哪张更清楚"
+          },
+          {
+            "id": "o3",
+            "label": "哪张更大"
+          },
+          {
+            "id": "o4",
+            "label": "哪张更靠下"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

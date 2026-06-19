@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第42页中，淘气看到水杯，笑笑看不到水杯，说明什么？",
+        "options": [
+          "物体可能被挡住",
+          "水杯消失了",
+          "笑笑闭着眼",
+          "桌子变矮了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "茶壶嘴朝右时，从正面看到的茶壶嘴通常在图的哪边？",
+        "options": [
+          "左边",
+          "右边",
+          "上边",
+          "看不见"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从茶壶正上方看，最明显的是哪一部分？",
+        "options": [
+          "桌腿",
+          "人的背影",
+          "壶盖和圆形壶身轮廓",
+          "车轮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "看到茶壶把手在左、壶嘴在右，最可能是从哪里看？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "从杯底看"
+          },
+          {
+            "id": "o2",
+            "label": "正对茶壶"
+          },
+          {
+            "id": "o3",
+            "label": "从远处背面看"
+          },
+          {
+            "id": "o4",
+            "label": "从天花板外看"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个茶壶，从不同方向看，壶嘴和把手的位置可能交换。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要是同一个水杯，从任何方向看都不会被挡住。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "从上面看茶壶"
+          },
+          {
+            "id": "l2",
+            "text": "从壶嘴一侧看"
+          },
+          {
+            "id": "l3",
+            "text": "从把手一侧看"
+          },
+          {
+            "id": "l4",
+            "text": "被桌上物体遮挡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "把手更明显"
+          },
+          {
+            "id": "r1",
+            "text": "看到壶盖"
+          },
+          {
+            "id": "r4",
+            "text": "可能看不全"
+          },
+          {
+            "id": "r2",
+            "text": "壶嘴更明显"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "观察茶壶时，要注意",
+          null,
+          "和",
+          null,
+          "的位置。"
+        ],
+        "tokens": [
+          "把手",
+          "壶盖",
+          "壶嘴",
+          "桌腿"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "壶嘴",
+          "把手"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断茶壶视图的步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "比较壶盖位置"
+          },
+          {
+            "id": "s1",
+            "text": "看壶嘴方向"
+          },
+          {
+            "id": "s4",
+            "text": "确定观察位置"
+          },
+          {
+            "id": "s2",
+            "text": "看把手方向"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个茶壶从前、后、左、右观察，可记录 ? 个方向"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话适合解释“笑笑看不到水杯”？",
+        "options": [
+          "水杯一定在地上",
+          "水杯变成了茶壶",
+          "笑笑在车里",
+          "水杯被茶壶或桌面挡住了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "观察桌面小物体时，最容易漏掉的信息是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "题目页码"
+          },
+          {
+            "id": "o2",
+            "label": "铅笔颜色"
+          },
+          {
+            "id": "o3",
+            "label": "被挡住的部分"
+          },
+          {
+            "id": "o4",
+            "label": "课本标题"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

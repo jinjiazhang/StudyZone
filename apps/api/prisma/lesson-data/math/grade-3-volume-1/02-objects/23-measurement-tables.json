@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "我的铅笔长18厘米，合多少毫米？",
+        "columns": [
+          "物品",
+          "长度",
+          "换算"
+        ],
+        "rows": [
+          {
+            "物品": "铅笔",
+            "长度": "18厘米",
+            "换算": "?"
+          },
+          {
+            "物品": "书厚",
+            "长度": "6毫米",
+            "换算": "6毫米"
+          }
+        ]
+      },
+      "answer": {
+        "value": 180,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "我的凳子高4分米，合多少厘米？",
+        "columns": [
+          "物品",
+          "长度",
+          "换算"
+        ],
+        "rows": [
+          {
+            "物品": "凳子",
+            "长度": "4分米",
+            "换算": "?"
+          },
+          {
+            "物品": "课桌",
+            "长度": "6分米",
+            "换算": "60厘米"
+          }
+        ]
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "跑道每圈200米，走5圈是多少千米？",
+        "columns": [
+          "每圈",
+          "圈数",
+          "总路程"
+        ],
+        "rows": [
+          {
+            "每圈": 200,
+            "圈数": 5,
+            "总路程": "1千米"
+          }
+        ]
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一根绳子长2米，用去7分米，还剩多少分米？"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一支铅笔长18厘米，用去30毫米后，还剩多少厘米？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从家到学校900米，再向前走100米正好到图书馆，从家到图书馆多少千米？只填千米数。"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3米5分米 = __分米",
+        "blanks": [
+          {
+            "id": "dm",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          35
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1千米250米 = __米",
+        "blanks": [
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1250
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18厘米",
+        "right": "180毫米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4分米",
+        "right": "40毫米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元学到的长度单位中，哪个最大？",
+        "options": [
+          "米",
+          "千米",
+          "分米",
+          "毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元学到的长度单位中，哪个最小？",
+        "options": [
+          "厘米",
+          "分米",
+          "米",
+          "毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

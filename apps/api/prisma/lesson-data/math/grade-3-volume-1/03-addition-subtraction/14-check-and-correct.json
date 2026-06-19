@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "森林医生：805 - 273 的正确结果是？",
+        "options": [
+          "632",
+          "532",
+          "522",
+          "542"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "森林医生：632 - 416 的正确结果是？",
+        "options": [
+          "224",
+          "116",
+          "226",
+          "216"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "森林医生：216 + 109 + 182 的正确结果是？",
+        "options": [
+          "507",
+          "407",
+          "397",
+          "517"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "805 - 273 = ?"
+      },
+      "answer": {
+        "value": 532,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "632 - 416 = ?"
+      },
+      "answer": {
+        "value": 216,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "216 + 109 + 182 = ?"
+      },
+      "answer": {
+        "value": 507,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "805 - 273",
+        "right": "632"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "632 - 416",
+        "right": "224"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "算出减法结果后，可以用“差 + 减数 = 被减数”来验算。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "805 - 273 = 632 是正确的。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "805 - 273"
+          },
+          {
+            "id": "l1",
+            "text": "632 - 416"
+          },
+          {
+            "id": "l2",
+            "text": "216 + 109 + 182"
+          },
+          {
+            "id": "l3",
+            "text": "850 - 536"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "507"
+          },
+          {
+            "id": "r0",
+            "text": "532"
+          },
+          {
+            "id": "r3",
+            "text": "314"
+          },
+          {
+            "id": "r1",
+            "text": "216"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "532",
+          null,
+          "273",
+          null,
+          "805"
+        ],
+        "tokens": [
+          "-",
+          "=",
+          "+",
+          "532"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

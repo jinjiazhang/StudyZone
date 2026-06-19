@@ -1,0 +1,264 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "胡萝卜3.25元，可以写成：",
+        "options": [
+          "3元25角",
+          "3元2角5分",
+          "2元90分",
+          "5元9角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "西红柿2.90元，可以写成：",
+        "options": [
+          "3元25角",
+          "2元90分",
+          "2元9角0分",
+          "5元9角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "竹笋5.09元，可以写成：",
+        "options": [
+          "3元25角",
+          "2元90分",
+          "5元9角",
+          "5元0角9分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红萝卜1.88元，可以写成：",
+        "options": [
+          "1元8角8分",
+          "3元25角",
+          "2元90分",
+          "5元9角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2个1元、4个1角、0个1分 = __元__角__分 = __元",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          },
+          {
+            "id": "b4",
+            "label": "小数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          4,
+          0,
+          2.4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0.01
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "8角1分 = __元__角__分 = __元",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          },
+          {
+            "id": "b4",
+            "label": "小数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          8,
+          1,
+          0.81
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0.01
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2.40元和2.04元相比，哪个表示2元4角？",
+        "options": [
+          "2.04元",
+          "2.40元",
+          "0.24元",
+          "20.4元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红萝卜1.88元，两个8分别表示什么？",
+        "options": [
+          "8元和8角",
+          "8分和8厘",
+          "8角和8分",
+          "两个都表示8角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3.25元"
+          },
+          {
+            "id": "l2",
+            "text": "2.90元"
+          },
+          {
+            "id": "l3",
+            "text": "5.09元"
+          },
+          {
+            "id": "l4",
+            "text": "1.88元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5元9分"
+          },
+          {
+            "id": "r1",
+            "text": "3元2角5分"
+          },
+          {
+            "id": "r4",
+            "text": "1元8角8分"
+          },
+          {
+            "id": "r2",
+            "text": "2元9角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5元9分写成小数是多少元？",
+        "options": [
+          "5.09元",
+          "5.90元",
+          "0.59元",
+          "5.9元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2.90元和2.9元表示的钱数相同。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "5.09元中的9在角位上。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 / 3 + 4 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 + 40 / 8 = ?"
+      },
+      "answer": {
+        "value": 29,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 / 3 + 4：先算 18 / 3 = __，再算 __ + 4 = __。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          6,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“3本作文本18元，再买1本英语本4元”对应哪个算式？",
+        "options": [
+          "18 + 3 / 4",
+          "18 - 3 + 4",
+          "18 / 4 + 3",
+          "18 / 3 + 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "3",
+          null,
+          "4",
+          null,
+          "10"
+        ],
+        "tokens": [
+          "/",
+          "+",
+          "-",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "/",
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35 / 5 + 10 = ?"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 24 / 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3本作文本18元，1本英语本4元。买1本作文本和1本英语本共多少元？",
+        "placeholder": "例如：18/3+4"
+      },
+      "answer": {
+        "accepted": [
+          "18/3+4",
+          "4+18/3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 / 3 + 4",
+        "right": "11"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "18 / 3 + 4"
+          },
+          {
+            "id": "l2",
+            "text": "24 + 40 / 8"
+          },
+          {
+            "id": "l3",
+            "text": "35 / 5 + 10"
+          },
+          {
+            "id": "l4",
+            "text": "8 + 24 / 6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "12"
+          },
+          {
+            "id": "r1",
+            "text": "10"
+          },
+          {
+            "id": "r3",
+            "text": "17"
+          },
+          {
+            "id": "r2",
+            "text": "29"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 24 + 40 / 8 时，第一步结果是多少？",
+        "options": [
+          "29",
+          "5",
+          "64",
+          "8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 81 / 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "亮亮1岁时身高是多少厘米？",
+        "columns": [
+          "年龄",
+          "身高"
+        ],
+        "rows": [
+          {
+            "年龄": "出生",
+            "身高": 52
+          },
+          {
+            "年龄": "1岁",
+            "身高": 76
+          },
+          {
+            "年龄": "2岁",
+            "身高": 87
+          },
+          {
+            "年龄": "3岁",
+            "身高": 95
+          },
+          {
+            "年龄": "4岁",
+            "身高": 104
+          },
+          {
+            "年龄": "5岁",
+            "身高": 112
+          },
+          {
+            "年龄": "6岁",
+            "身高": 118
+          }
+        ]
+      },
+      "answer": {
+        "value": 76,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "亮亮6岁时身高是多少厘米？",
+        "columns": [
+          "年龄",
+          "身高"
+        ],
+        "rows": [
+          {
+            "年龄": "出生",
+            "身高": 52
+          },
+          {
+            "年龄": "1岁",
+            "身高": 76
+          },
+          {
+            "年龄": "2岁",
+            "身高": 87
+          },
+          {
+            "年龄": "3岁",
+            "身高": 95
+          },
+          {
+            "年龄": "4岁",
+            "身高": 104
+          },
+          {
+            "年龄": "5岁",
+            "身高": 112
+          },
+          {
+            "年龄": "6岁",
+            "身高": 118
+          }
+        ]
+      },
+      "answer": {
+        "value": 118,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "76 - 52 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "87 - 76 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "95 - 87 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "104 - 95 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "112 - 104 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "118 - 112 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "亮亮哪一年身高增长得最快？",
+        "options": [
+          "1岁到2岁",
+          "3岁到4岁",
+          "出生到1岁",
+          "5岁到6岁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "亮亮从出生到6岁一共长高了多少厘米？",
+        "options": [
+          "66厘米",
+          "52厘米",
+          "118厘米",
+          "24厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "亮亮年龄越小，身高增长一定越快。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "出生到1岁"
+          },
+          {
+            "id": "l1",
+            "text": "1岁到2岁"
+          },
+          {
+            "id": "l2",
+            "text": "3岁到4岁"
+          },
+          {
+            "id": "l3",
+            "text": "5岁到6岁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "9厘米"
+          },
+          {
+            "id": "r0",
+            "text": "24厘米"
+          },
+          {
+            "id": "r3",
+            "text": "6厘米"
+          },
+          {
+            "id": "r1",
+            "text": "11厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

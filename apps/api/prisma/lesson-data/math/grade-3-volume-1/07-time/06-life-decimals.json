@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "限高标志2.9m表示什么？",
+        "options": [
+          "限高2.9米",
+          "限高29米",
+          "限高0.29米",
+          "限高2米9厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "体温计显示36.8℃，36.8表示比36℃高多少？",
+        "options": [
+          "8℃",
+          "0.08℃",
+          "0.8℃",
+          "36℃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鞋码21.5通常表示鞋内长约多少厘米？",
+        "options": [
+          "21.5米",
+          "2.15厘米",
+          "21.5厘米",
+          "215米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "体重28.8千克，填成__千克__克。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "千克"
+          },
+          {
+            "id": "b2",
+            "label": "克"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          28,
+          800
+        ],
+        "tolerances": [
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "体长3.5米，填成__米__分米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          5
+        ],
+        "tolerances": [
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.9",
+        "right": "3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36.8",
+        "right": "36"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "21.5",
+        "right": "28.8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "28.8千克是28千克",
+          null,
+          "克；3.5米是3米",
+          null,
+          "分米"
+        ],
+        "tokens": [
+          "800",
+          "80",
+          "5",
+          "50",
+          "0.8",
+          "35"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "800",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些生活中的小数从小到大排列。",
+        "items": [
+          {
+            "id": "c",
+            "text": "28.8"
+          },
+          {
+            "id": "a",
+            "text": "2.9"
+          },
+          {
+            "id": "d",
+            "text": "36.8"
+          },
+          {
+            "id": "b",
+            "text": "21.5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

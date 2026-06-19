@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第41页中，正对车头的同学最可能看到哪种图？",
+        "options": [
+          "汽车正面",
+          "汽车背面",
+          "汽车俯视图",
+          "汽车底面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果看到汽车尾灯和后车牌，观察者站在汽车的哪边？",
+        "options": [
+          "前面",
+          "后面",
+          "左侧",
+          "上面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从女孩头顶方向往下看汽车，看到的更像哪一种？",
+        "options": [
+          "正面图",
+          "后面图",
+          "俯视图",
+          "车轮特写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "看到汽车长长的侧身和两个车轮，属于哪种观察结果？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "正面图"
+          },
+          {
+            "id": "o2",
+            "label": "背面图"
+          },
+          {
+            "id": "o3",
+            "label": "上面图"
+          },
+          {
+            "id": "o4",
+            "label": "侧面图"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "车头在左、车尾在右的侧面图，可能是从汽车一侧看到的。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "汽车的俯视图主要表现车门和车轮高度。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "车头朝你"
+          },
+          {
+            "id": "l2",
+            "text": "车尾朝你"
+          },
+          {
+            "id": "l3",
+            "text": "站在车旁"
+          },
+          {
+            "id": "l4",
+            "text": "从高处看"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "侧面图"
+          },
+          {
+            "id": "r1",
+            "text": "正面图"
+          },
+          {
+            "id": "r4",
+            "text": "俯视图"
+          },
+          {
+            "id": "r2",
+            "text": "背面图"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "看到",
+          null,
+          "和前车牌，通常是从",
+          null,
+          "观察。"
+        ],
+        "tokens": [
+          "前面",
+          "车尾",
+          "车头",
+          "侧面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "车头",
+          "前面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把观察位置按顺时针方向排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "后面"
+          },
+          {
+            "id": "s1",
+            "text": "前面"
+          },
+          {
+            "id": "s4",
+            "text": "左侧"
+          },
+          {
+            "id": "s2",
+            "text": "右侧"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "汽车常见的前、后、左、右四个观察方向，一共有 ? 个方向"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一项不能作为观察汽车的位置描述？",
+        "options": [
+          "前面",
+          "侧面",
+          "上面",
+          "红色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种说法更适合判断“是谁看到的图”？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "先找图中的明显特征，再对应观察位置"
+          },
+          {
+            "id": "o2",
+            "label": "只数图片有几种颜色"
+          },
+          {
+            "id": "o3",
+            "label": "只看图画大小"
+          },
+          {
+            "id": "o4",
+            "label": "随便猜一个位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

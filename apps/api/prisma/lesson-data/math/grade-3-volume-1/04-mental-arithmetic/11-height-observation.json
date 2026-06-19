@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第46页乒乓球台情境中，蹲下看和站起看，看到的不同主要来自什么变化？",
+        "options": [
+          "眼睛高度变化",
+          "桌子颜色变化",
+          "球大小变化",
+          "地面材质变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察位置越高，通常越容易看到桌面上的哪部分？",
+        "options": [
+          "桌底",
+          "上表面",
+          "桌腿内部",
+          "地下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察位置很低时，桌面上的物体可能出现什么情况？",
+        "options": [
+          "自动变透明",
+          "全部飞起来",
+          "被桌边挡住",
+          "变成文字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "“站起来看一看”比“蹲下看一看”多了哪个观察条件？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "颜色更深"
+          },
+          {
+            "id": "o2",
+            "label": "高度更高"
+          },
+          {
+            "id": "o3",
+            "label": "声音更大"
+          },
+          {
+            "id": "o4",
+            "label": "数量更多"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "观察的高度会影响看到物体上面的多少。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-050.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "蹲下看桌面物体时，一定比站起来看得更全面。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "蹲下看"
+          },
+          {
+            "id": "l2",
+            "text": "半蹲看"
+          },
+          {
+            "id": "l3",
+            "text": "站直看"
+          },
+          {
+            "id": "l4",
+            "text": "站到台阶上看"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "视线较高"
+          },
+          {
+            "id": "r1",
+            "text": "视线较低"
+          },
+          {
+            "id": "r4",
+            "text": "更容易看上面"
+          },
+          {
+            "id": "r2",
+            "text": "高度中等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "观察位置越",
+          null,
+          "，越容易看到物体的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "上面",
+          "低",
+          "高",
+          "下面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "高",
+          "上面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按观察高度从低到高排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "站直"
+          },
+          {
+            "id": "s1",
+            "text": "蹲下"
+          },
+          {
+            "id": "s4",
+            "text": "站到凳子上"
+          },
+          {
+            "id": "s2",
+            "text": "半蹲"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从蹲下到站起，是 ? 种不同高度的观察"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项生活经历和教材情境最相似？",
+        "options": [
+          "给铅笔削尖",
+          "计算加法",
+          "称书包重量",
+          "看高柜上物品时踮脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断高低变化时，应重点比较什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "画面边框形状"
+          },
+          {
+            "id": "o2",
+            "label": "人物衣服颜色"
+          },
+          {
+            "id": "o3",
+            "label": "能看到物体上面的多少"
+          },
+          {
+            "id": "o4",
+            "label": "题目序号"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

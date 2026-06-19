@@ -1,0 +1,165 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "机灵狗家到森林老人家20千米，走了一段后还剩10千米，已经走了多少千米？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小象家到小兔家700米，小兔家到机灵狗家1300米，经过小兔家走到小象家一共多少米？"
+      },
+      "answer": {
+        "value": 2000,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小象家到机灵狗家1000米，小兔家到小象家700米，从机灵狗家到小象家是多少千米？只填千米数。"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "路线A长1000米，路线B长1300米，两条路线相差多少米？"
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 2,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1300米 = ?米",
+        "fromUnit": "米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 1300,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1000米 + 700米",
+        "right": "1300米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "700米 + 1300米",
+        "right": "2千米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从机灵狗家到小象家有1000米，也就是多少？",
+        "options": [
+          "1千米",
+          "10千米",
+          "100米",
+          "1000千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选择较短路线时，应比较什么？",
+        "options": [
+          "路上有几棵树",
+          "谁先出发",
+          "房子颜色",
+          "每条路线的总路程"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "700米、1000米、1300米都不足2千米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小兔家到小象家700米，小象家到机灵狗家1000米，两段合计多少米？",
+        "columns": [
+          "路段",
+          "路程"
+        ],
+        "rows": [
+          {
+            "路段": "小兔到小象",
+            "路程": 700
+          },
+          {
+            "路段": "小象到机灵狗",
+            "路程": 1000
+          }
+        ]
+      },
+      "answer": {
+        "value": 1700,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

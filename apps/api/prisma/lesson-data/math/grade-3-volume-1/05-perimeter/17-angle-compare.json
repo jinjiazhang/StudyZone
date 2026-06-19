@@ -1,0 +1,213 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第51页比较小鸟嘴巴张开大小，实际是在比较什么？",
+        "options": [
+          "边的长短",
+          "鸟的体重",
+          "角的大小",
+          "图的颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "角的大小和两条边张开的程度有关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "两个角重合比较时，应先让什么重合？",
+        "options": [
+          {
+            "id": "b",
+            "label": "颜色"
+          },
+          {
+            "id": "c",
+            "label": "纸张大小"
+          },
+          {
+            "id": "d",
+            "label": "题号"
+          },
+          {
+            "id": "a",
+            "label": "顶点和一条边"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果∠1张口比∠2小，那么应说：",
+        "options": [
+          "∠1小于∠2",
+          "∠1大于∠2",
+          "∠1等于∠2",
+          "无法说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "比较两个角，可以把它们的",
+          null,
+          "和一条",
+          null,
+          "重合起来看。"
+        ],
+        "tokens": [
+          "顶点",
+          "面积",
+          "边",
+          "周长"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "顶点",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30度角",
+        "right": "60度角"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "直角",
+        "right": "直角"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "张口越大"
+          },
+          {
+            "id": "l2",
+            "text": "张口越小"
+          },
+          {
+            "id": "l3",
+            "text": "完全重合"
+          },
+          {
+            "id": "l4",
+            "text": "只把边画长"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "角越小"
+          },
+          {
+            "id": "r4",
+            "text": "角大小不变"
+          },
+          {
+            "id": "r1",
+            "text": "角越大"
+          },
+          {
+            "id": "r3",
+            "text": "两个角相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "角的边画得越长，这个角就一定越大。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按角的大小从小到大排列",
+        "items": [
+          {
+            "id": "c",
+            "text": "钝角"
+          },
+          {
+            "id": "a",
+            "text": "锐角"
+          },
+          {
+            "id": "b",
+            "text": "直角"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

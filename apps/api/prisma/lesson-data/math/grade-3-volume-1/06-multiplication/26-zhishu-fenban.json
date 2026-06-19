@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "44 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 3 + 6 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 ÷ 4 + 4 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36棵树苗平均分给3个班，每班分到多少棵？",
+        "options": [
+          "9棵",
+          "10棵",
+          "12棵",
+          "18棵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三(3)班44人参加植树，每4人一组，可以分成几组？",
+        "options": [
+          "11组",
+          "10组",
+          "12组",
+          "16组"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 3：先分30棵，每班__棵；再分6棵，每班__棵；合起来每班__棵",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先分"
+          },
+          {
+            "id": "b2",
+            "label": "再分"
+          },
+          {
+            "id": "b3",
+            "label": "合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          2,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "44 ÷ 4：40÷4=__，4÷4=__，合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "整十部分"
+          },
+          {
+            "id": "b2",
+            "label": "剩下部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          1,
+          11
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "44人参加植树，每4人一组。请列式。",
+        "placeholder": "44÷4"
+      },
+      "answer": {
+        "accepted": [
+          "44÷4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "36 ÷ 3"
+          },
+          {
+            "id": "l2",
+            "text": "44 ÷ 4"
+          },
+          {
+            "id": "l3",
+            "text": "30 ÷ 3"
+          },
+          {
+            "id": "l4",
+            "text": "6 ÷ 3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "2"
+          },
+          {
+            "id": "r3",
+            "text": "10"
+          },
+          {
+            "id": "r2",
+            "text": "11"
+          },
+          {
+            "id": "r1",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

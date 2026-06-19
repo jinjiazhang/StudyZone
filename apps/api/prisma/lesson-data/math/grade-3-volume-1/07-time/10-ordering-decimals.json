@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把投铅球成绩从远到近排列，忽略“无成绩”。",
+        "items": [
+          {
+            "id": "c",
+            "text": "19.98米"
+          },
+          {
+            "id": "a",
+            "text": "20.58米"
+          },
+          {
+            "id": "e",
+            "text": "19.80米"
+          },
+          {
+            "id": "b",
+            "text": "20.53米"
+          },
+          {
+            "id": "d",
+            "text": "19.95米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "19.95、19.98、19.80、20.53、20.58中，最大的是？",
+        "options": [
+          "20.53",
+          "19.98",
+          "20.58",
+          "19.95"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "19.95、19.98、19.80、20.53、20.58中，最小的是？",
+        "options": [
+          "19.80",
+          "19.95",
+          "19.98",
+          "20.53"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "19.98",
+        "right": "19.80"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20.53",
+        "right": "20.58"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "19.95",
+        "right": "20.53"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20.58 - 20.53 = ?"
+      },
+      "answer": {
+        "value": 0.05,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "19.98 - 19.95 = ?"
+      },
+      "answer": {
+        "value": 0.03,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "巩立姣六次投掷中，最远成绩是多少米？",
+        "columns": [
+          "次数",
+          "第一次",
+          "第三次",
+          "第四次",
+          "第五次",
+          "第六次"
+        ],
+        "rows": [
+          {
+            "次数": "成绩",
+            "第一次": 19.95,
+            "第三次": 19.98,
+            "第四次": 19.8,
+            "第五次": 20.53,
+            "第六次": 20.58
+          }
+        ]
+      },
+      "answer": {
+        "value": 20.58,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "巩立姣六次投掷中，第四次成绩是多少米？",
+        "columns": [
+          "次数",
+          "第一次",
+          "第三次",
+          "第四次",
+          "第五次",
+          "第六次"
+        ],
+        "rows": [
+          {
+            "次数": "成绩",
+            "第一次": 19.95,
+            "第三次": 19.98,
+            "第四次": 19.8,
+            "第五次": 20.53,
+            "第六次": 20.58
+          }
+        ]
+      },
+      "answer": {
+        "value": 19.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    }
+  ]
+}

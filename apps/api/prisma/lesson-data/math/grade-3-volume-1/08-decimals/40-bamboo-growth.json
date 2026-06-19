@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1.4 + 0.9 = ?"
+      },
+      "answer": {
+        "value": 2.3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.0 - 2.3 = ?"
+      },
+      "answer": {
+        "value": 1.7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气身高1.4米，竹子第二天比他高0.9米，求竹子第二天高度。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "1.4+0.9",
+          "0.9+1.4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "竹子第三天4米，第二天2.3米，求第三天比第二天高多少。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "4-2.3",
+          "4.0-2.3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2.3米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 23,
+        "unit": "分米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1.7米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 17,
+        "unit": "分米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.3",
+        "right": "1.4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1.7",
+        "right": "0.9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按竹子高度从低到高排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "4.0米"
+          },
+          {
+            "id": "i1",
+            "text": "1.4米"
+          },
+          {
+            "id": "i4",
+            "text": "4.9米"
+          },
+          {
+            "id": "i2",
+            "text": "2.3米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1.4米+0.9米超过1米后，十分位满10要怎样？",
+        "options": [
+          "直接写13米",
+          "小数点去掉",
+          "不用处理",
+          "向个位进1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4.0 - 2.3 的结果是多少米？",
+        "options": [
+          "2.7米",
+          "1.3米",
+          "6.3米",
+          "1.7米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4米可以写成4.0米来做小数减法。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

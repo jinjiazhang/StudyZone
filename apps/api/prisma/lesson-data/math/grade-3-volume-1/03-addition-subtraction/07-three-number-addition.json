@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "727 + 114 + 86 = ?"
+      },
+      "answer": {
+        "value": 927,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "475 + 260 + 149 = ?"
+      },
+      "answer": {
+        "value": 884,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "397 + 304 + 120 = ?"
+      },
+      "answer": {
+        "value": 821,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "292 + 450 + 108 = ?"
+      },
+      "answer": {
+        "value": 850,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "123 + 95 + 116 = ?"
+      },
+      "answer": {
+        "value": 334,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "108 + 104 + 96 = ?"
+      },
+      "answer": {
+        "value": 308,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "140 + 295 + 320 = ?"
+      },
+      "answer": {
+        "value": 755,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "408 + 320 + 65 = ?"
+      },
+      "answer": {
+        "value": 793,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "727 + 114 + 86",
+        "right": "397 + 304 + 120"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "727 + 114 + 86"
+          },
+          {
+            "id": "l1",
+            "text": "475 + 260 + 149"
+          },
+          {
+            "id": "l2",
+            "text": "397 + 304 + 120"
+          },
+          {
+            "id": "l3",
+            "text": "292 + 450 + 108"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "821"
+          },
+          {
+            "id": "r0",
+            "text": "927"
+          },
+          {
+            "id": "r3",
+            "text": "850"
+          },
+          {
+            "id": "r1",
+            "text": "884"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算 123 + 95 = __，再加 116 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          218,
+          334
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "104",
+          null,
+          "96",
+          null,
+          "108",
+          "=",
+          "308"
+        ],
+        "tokens": [
+          "108",
+          "+",
+          "=",
+          "104",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "+"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

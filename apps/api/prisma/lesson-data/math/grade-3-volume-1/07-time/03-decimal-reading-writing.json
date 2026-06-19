@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3.15应读作什么？",
+        "options": [
+          "三点一五",
+          "三点十五",
+          "三一五",
+          "三十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4.50应读作什么？",
+        "options": [
+          "四点五",
+          "四点十五",
+          "四十五",
+          "四点五零"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12.08应读作什么？",
+        "options": [
+          "十二点八",
+          "十二点零八",
+          "一二点八",
+          "十二点十八"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出“六点六六”。",
+        "placeholder": "例如：3.15"
+      },
+      "answer": {
+        "accepted": [
+          "6.66"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出“零点八一”。",
+        "placeholder": "例如：0.81"
+      },
+      "answer": {
+        "accepted": [
+          "0.81"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出“二点零九”。",
+        "placeholder": "例如：2.09"
+      },
+      "answer": {
+        "accepted": [
+          "2.09"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5.09元读作五点零九元，填成__元__角__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          0,
+          9
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "0.60元表示__角，也可以说是__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "角"
+          },
+          {
+            "id": "b2",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          60
+        ],
+        "tolerances": [
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "0.06元是6个",
+          null,
+          "元，也就是",
+          null,
+          "分"
+        ],
+        "tokens": [
+          "0.1",
+          "0.01",
+          "60",
+          "6",
+          "1",
+          "0.6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0.01",
+          "6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "6.00元可以简写成",
+          null,
+          "元，但读写时要看清",
+          null
+        ],
+        "tokens": [
+          "6",
+          "60",
+          "小数点",
+          "0",
+          "角",
+          "分"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "小数点"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 4 + 6",
+        "right": "20 - 3 * 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 / 3 + 4",
+        "right": "25 - 10 / 5"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(29 + 25) / 9",
+        "right": "54 / (9 - 3)"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(70 - 46) / 8",
+        "right": "35 / 5 - 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排列",
+        "items": [
+          {
+            "id": "a",
+            "text": "3 * 4 + 6"
+          },
+          {
+            "id": "b",
+            "text": "20 - 3 * 4"
+          },
+          {
+            "id": "c",
+            "text": "18 / 3 + 4"
+          },
+          {
+            "id": "d",
+            "text": "(70 - 46) / 8"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "d",
+          "b",
+          "c",
+          "a"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个算式结果最大？",
+        "options": [
+          "20 - 3 * 4",
+          "18 / 3 + 4",
+          "(70 - 46) / 8",
+          "3 * 4 + 6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 4 + 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 - 3 * 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 / 3 + 4 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(70 - 46) / 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3 * 4 + 6"
+          },
+          {
+            "id": "l2",
+            "text": "20 - 3 * 4"
+          },
+          {
+            "id": "l3",
+            "text": "18 / 3 + 4"
+          },
+          {
+            "id": "l4",
+            "text": "(70 - 46) / 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "10"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          },
+          {
+            "id": "r4",
+            "text": "3"
+          },
+          {
+            "id": "r2",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "8"
+        ],
+        "tokens": [
+          ">",
+          "<",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          ">"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

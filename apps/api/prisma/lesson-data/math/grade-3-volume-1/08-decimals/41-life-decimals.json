@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2.9米表示什么？",
+        "options": [
+          "2米9分米",
+          "2米9厘米",
+          "29米",
+          "2分米9厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36.8℃表示比36℃高多少？",
+        "options": [
+          "8℃",
+          "0.8℃",
+          "36℃",
+          "0.08℃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "28.8千克表示多少千克多少克？",
+        "options": [
+          "28千克8克",
+          "2千克88克",
+          "28千克800克",
+          "288千克"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鞋子上写21.5，读作：",
+        "options": [
+          "二一点五",
+          "二十一点五零零",
+          "二百一十五",
+          "二十一点五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.01,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1分米 = ?米",
+        "fromUnit": "分米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.1,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "6厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.06,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "10厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 0.1,
+        "unit": "米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "33.87 + 0.83 = ?"
+      },
+      "answer": {
+        "value": 34.7,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "苏炳添9.83秒中的8表示什么？",
+        "options": [
+          "0.8秒",
+          "8秒",
+          "0.08秒",
+          "8分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2.9米"
+          },
+          {
+            "id": "l2",
+            "text": "36.8℃"
+          },
+          {
+            "id": "l3",
+            "text": "0.06元"
+          },
+          {
+            "id": "l4",
+            "text": "0.60米"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "6分"
+          },
+          {
+            "id": "r1",
+            "text": "2米9分米"
+          },
+          {
+            "id": "r4",
+            "text": "6分米"
+          },
+          {
+            "id": "r2",
+            "text": "比36℃高0.8℃"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "0.06元是6个0.01元，也就是6分。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

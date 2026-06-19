@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 × 3 = ?"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 × 2 + 10 = ?"
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 - 14 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 + 38 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "杨杨今年14岁，爸爸的年龄是杨杨的3倍，爸爸多少岁？",
+        "options": [
+          "28岁",
+          "38岁",
+          "42岁",
+          "48岁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈的年龄比杨杨的2倍多10岁，妈妈多少岁？",
+        "options": [
+          "38岁",
+          "24岁",
+          "28岁",
+          "42岁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "爸爸和妈妈今年一共多少岁？",
+        "options": [
+          "66岁",
+          "76岁",
+          "84岁",
+          "80岁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "杨杨14岁，妈妈比杨杨的2倍多10岁。请列式求妈妈年龄。",
+        "placeholder": "14×2+10"
+      },
+      "answer": {
+        "accepted": [
+          "14×2+10",
+          "10+14×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 × 3",
+        "right": "14 × 2 + 10",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "杨杨"
+          },
+          {
+            "id": "l2",
+            "text": "爸爸"
+          },
+          {
+            "id": "l3",
+            "text": "妈妈"
+          },
+          {
+            "id": "l4",
+            "text": "爸爸比杨杨大"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "28岁"
+          },
+          {
+            "id": "r3",
+            "text": "38岁"
+          },
+          {
+            "id": "r2",
+            "text": "42岁"
+          },
+          {
+            "id": "r1",
+            "text": "14岁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

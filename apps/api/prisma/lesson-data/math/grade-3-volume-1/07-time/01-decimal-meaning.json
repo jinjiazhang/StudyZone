@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材水果店中，3.15元可以理解为哪一种钱数？",
+        "options": [
+          "31元5角",
+          "3元1角5分",
+          "3元15角",
+          "315元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "像3.15、4.50、12.08这样的数叫什么？",
+        "options": [
+          "整数",
+          "分数",
+          "倍数",
+          "小数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3.15中的小圆点叫作什么？",
+        "options": [
+          "小数点",
+          "句号",
+          "分隔线",
+          "单位点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "苹果每盒3.15元，填成__元__角__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          1,
+          5
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "草莓每盒12.08元，填成__元__角__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          0,
+          8
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "桃子每盒6.66元，填成__元__角__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          6,
+          6
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4.50元读作",
+          null,
+          "点",
+          null,
+          "零"
+        ],
+        "tokens": [
+          "五",
+          "四",
+          "七",
+          "十",
+          "六",
+          "零"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "四",
+          "五"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "12.08元表示12元",
+          null,
+          "角",
+          null,
+          "分"
+        ],
+        "tokens": [
+          "8",
+          "1",
+          "0",
+          "2",
+          "12",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“3元1角5分”写成用元作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "3.15"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“4元5角0分”写成用元作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "4.50",
+          "4.5"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

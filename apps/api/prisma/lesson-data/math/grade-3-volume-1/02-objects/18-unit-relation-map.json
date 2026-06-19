@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 1000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长度单位从大到小排列正确的是？",
+        "options": [
+          "米、千米、分米、厘米、毫米",
+          "毫米、厘米、分米、米、千米",
+          "厘米、毫米、米、分米、千米",
+          "千米、米、分米、厘米、毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把长度单位从小到大排列。",
+        "items": [
+          {
+            "id": "cm",
+            "text": "厘米"
+          },
+          {
+            "id": "km",
+            "text": "千米"
+          },
+          {
+            "id": "mm",
+            "text": "毫米"
+          },
+          {
+            "id": "m",
+            "text": "米"
+          },
+          {
+            "id": "dm",
+            "text": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "mm",
+          "cm",
+          "dm",
+          "m",
+          "km"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些长度从短到长排列。",
+        "items": [
+          {
+            "id": "b",
+            "text": "1分米"
+          },
+          {
+            "id": "d",
+            "text": "1千米"
+          },
+          {
+            "id": "a",
+            "text": "1厘米"
+          },
+          {
+            "id": "c",
+            "text": "1米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1米",
+        "right": "9分米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1厘米",
+        "right": "9毫米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1千米",
+        "right": "999米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "米 = 1000米；1厘米 =",
+          null,
+          "毫米。"
+        ],
+        "tokens": [
+          "1千",
+          "1",
+          "10",
+          "100"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "1千",
+          "10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "在米、分米、厘米、毫米之间，相邻两个单位的进率都是10。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

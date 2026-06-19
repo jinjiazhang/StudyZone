@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第43页教室示意图中，①号位置在门附近，看到的更可能是什么？",
+        "options": [
+          "从教室门口看进去",
+          "从窗户外看进去",
+          "从讲台正前方看学生背面",
+          "从天花板往下看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "站在教室最后一排同学后面，通常看到同学的什么？",
+        "options": [
+          "正面",
+          "背面",
+          "头顶内部",
+          "桌子底面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "站在窗户一侧观察教室，照片会更像哪种视角？",
+        "options": [
+          "从门口斜看讲台",
+          "从地底向上看",
+          "侧面看一排排座位",
+          "只看到一张车票"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教室平面图中的①②③④⑤⑥表示什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "学生学号"
+          },
+          {
+            "id": "o2",
+            "label": "观察位置"
+          },
+          {
+            "id": "o3",
+            "label": "窗户数量"
+          },
+          {
+            "id": "o4",
+            "label": "课桌价格"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一间教室，站在门口和站在窗户边拍出的照片不同。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-047.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要拍的是同一间教室，所有照片中黑板都在同一位置且大小相同。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "门口位置"
+          },
+          {
+            "id": "l2",
+            "text": "最后一排后面"
+          },
+          {
+            "id": "l3",
+            "text": "窗户一侧"
+          },
+          {
+            "id": "l4",
+            "text": "讲台附近"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "侧向看课桌"
+          },
+          {
+            "id": "r1",
+            "text": "看进教室"
+          },
+          {
+            "id": "r4",
+            "text": "面对学生"
+          },
+          {
+            "id": "r2",
+            "text": "看到同学背面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "教室示意图中的编号表示拍照的",
+          null,
+          "，不是学生的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "学号",
+          "价格",
+          "位置",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "位置",
+          "学号"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "根据教室示意图找照片位置",
+        "items": [
+          {
+            "id": "s3",
+            "text": "判断照片中的方向"
+          },
+          {
+            "id": "s1",
+            "text": "确定门和窗户"
+          },
+          {
+            "id": "s4",
+            "text": "写出对应编号"
+          },
+          {
+            "id": "s2",
+            "text": "找到编号位置"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "教材教室示意图标出了①到⑥，共 ? 个观察位置"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断“图1是从门进教室拍到的”主要依据是什么？",
+        "options": [
+          "照片颜色偏亮",
+          "同学穿校服",
+          "图片下面写图1",
+          "画面能看到教室前方和座位纵深"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话最适合描述②号位置？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "在教室外操场"
+          },
+          {
+            "id": "o2",
+            "label": "在桌子里面"
+          },
+          {
+            "id": "o3",
+            "label": "在教室中间偏前，可能看到侧向座位"
+          },
+          {
+            "id": "o4",
+            "label": "在汽车后面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

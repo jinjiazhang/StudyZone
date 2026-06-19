@@ -1,0 +1,135 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12.5 + 4.3 = ?"
+      },
+      "answer": {
+        "value": 16.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13.2 + 5.7 = ?"
+      },
+      "answer": {
+        "value": 18.9,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1.2 + 5.7 = ?"
+      },
+      "answer": {
+        "value": 6.9,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2.2 + 10.7 = ?"
+      },
+      "answer": {
+        "value": 12.9,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7.5 + 0.4 = ?"
+      },
+      "answer": {
+        "value": 7.9,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.1 + 10.6 = ?"
+      },
+      "answer": {
+        "value": 14.7,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7.6 + 2.2 = ?"
+      },
+      "answer": {
+        "value": 9.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26.7 + 3.1 = ?"
+      },
+      "answer": {
+        "value": 29.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算12.5+4.3时，竖式中应该怎样对齐？",
+        "options": [
+          "个位和角随便对齐",
+          "末位数字对齐即可",
+          "先去掉小数点",
+          "小数点对齐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "12.5元+4.3元，先算12元+4元=",
+          null,
+          "元，再算5角+3角=",
+          null,
+          "角"
+        ],
+        "tokens": [
+          "16",
+          "15",
+          "8",
+          "7",
+          "168",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "16",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

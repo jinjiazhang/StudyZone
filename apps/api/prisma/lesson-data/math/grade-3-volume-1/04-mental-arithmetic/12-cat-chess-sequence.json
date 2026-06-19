@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第46页小猫看下棋，先站在地面上看，最可能看到棋盘的什么？",
+        "options": [
+          "侧面和少量棋子",
+          "完整棋盘顶面",
+          "棋盘底面",
+          "棋子内部"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小猫抬起前腿看，比站在地上看会怎样？",
+        "options": [
+          "看到更少",
+          "看到棋盘更多",
+          "只能看到桌脚",
+          "看不到棋盘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小猫爬上石桌看，最可能看到哪种视图？",
+        "options": [
+          "桌子背面",
+          "车尾图",
+          "棋盘俯视图",
+          "窗户侧面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "四幅棋局图需要按什么线索排序？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "棋子颜色深浅"
+          },
+          {
+            "id": "o2",
+            "label": "山羊位置"
+          },
+          {
+            "id": "o3",
+            "label": "熊博士衣服"
+          },
+          {
+            "id": "o4",
+            "label": "小猫观察高度"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小猫观察位置越高，越容易看清棋盘上的棋子布局。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从地面看和爬上桌看，看到的棋盘面积一定相同。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "站在地面"
+          },
+          {
+            "id": "l2",
+            "text": "抬起前腿"
+          },
+          {
+            "id": "l3",
+            "text": "站到凳子上"
+          },
+          {
+            "id": "l4",
+            "text": "爬上石桌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "接近桌面"
+          },
+          {
+            "id": "r1",
+            "text": "看到较少"
+          },
+          {
+            "id": "r4",
+            "text": "俯视棋局"
+          },
+          {
+            "id": "r2",
+            "text": "看到更多"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "小猫按",
+          null,
+          "到",
+          null,
+          "的顺序观察棋局。"
+        ],
+        "tokens": [
+          "高",
+          "近",
+          "低",
+          "远"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "低",
+          "高"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按小猫观察棋局的顺序排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "站到凳子上看"
+          },
+          {
+            "id": "s1",
+            "text": "站在地面上看"
+          },
+          {
+            "id": "s4",
+            "text": "爬上石桌看"
+          },
+          {
+            "id": "s2",
+            "text": "抬起前腿看"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小猫四次看下棋，需要标出 ? 个观察序号"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪幅图通常对应最高观察位置？",
+        "options": [
+          "只看到桌边的图",
+          "只看到桌腿的图",
+          "看不到棋盘的图",
+          "能看清棋盘网格和棋子分布的图"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果要判断一幅图是第几次观察，应先比较什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "棋盘露出的多少"
+          },
+          {
+            "id": "o2",
+            "label": "动物谁更可爱"
+          },
+          {
+            "id": "o3",
+            "label": "图片大小"
+          },
+          {
+            "id": "o4",
+            "label": "页码位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

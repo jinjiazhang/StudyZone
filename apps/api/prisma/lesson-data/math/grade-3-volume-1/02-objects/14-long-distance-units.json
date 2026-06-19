@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "港珠澳大桥全长约55（ ）。",
+        "options": [
+          "千米",
+          "米",
+          "分米",
+          "厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "汽车每小时行驶约60（ ）。",
+        "options": [
+          "厘米",
+          "毫米",
+          "千米",
+          "分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从北京到上海的铁路里程，常用哪个单位表示？",
+        "options": [
+          "厘米",
+          "毫米",
+          "千米",
+          "分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "55千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 55000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "8千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 8000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "12000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 12,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "汽车每小时行驶约60千米，2小时约行驶多少千米？"
+      },
+      "answer": {
+        "value": 120,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "飞机每小时飞行约800千米，3小时约飞行多少千米？"
+      },
+      "answer": {
+        "value": 2400,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "55千米",
+        "right": "5500米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "800千米",
+        "right": "800000米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "港珠澳大桥的全长用55毫米表示比较合适。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "港珠澳大桥"
+          },
+          {
+            "id": "l2",
+            "text": "汽车每小时行驶"
+          },
+          {
+            "id": "l3",
+            "text": "课桌长度"
+          },
+          {
+            "id": "l4",
+            "text": "眼镜片厚度"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "约3毫米"
+          },
+          {
+            "id": "r2",
+            "text": "约55千米"
+          },
+          {
+            "id": "r3",
+            "text": "几十厘米"
+          },
+          {
+            "id": "r4",
+            "text": "每小时约60千米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "104 + 96 + 108 = ?"
+      },
+      "answer": {
+        "value": 308,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "475 + 260 + 149 = ?"
+      },
+      "answer": {
+        "value": 884,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "292 + 450 + 108 = ?"
+      },
+      "answer": {
+        "value": 850,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "653 + 97 + 203 = ?"
+      },
+      "answer": {
+        "value": 953,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "104 + 96 + 108 中，哪两个数可以先凑成200？",
+        "options": [
+          "104和108",
+          "104和96",
+          "96和108",
+          "96和200"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "292 + 450 + 108 中，哪两个数可以先凑成400？",
+        "options": [
+          "450和108",
+          "292和450",
+          "292和108",
+          "108和400"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "653 + 97 + 203 中，可以先算哪两个数更方便？",
+        "options": [
+          "97和203",
+          "653和97",
+          "653和203",
+          "97和653"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "104 + 96 + 108：先算 104 + 96 = __，再加 108 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "凑整"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          200,
+          308
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "292 + 450 + 108：先算 292 + 108 = __，再加 450 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "凑整"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          400,
+          850
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "292",
+          null,
+          "108",
+          null,
+          "450",
+          "=",
+          "850"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "400",
+          "+",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "+"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "104 + 96 + 108",
+        "right": "300"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "连加时先算能凑成整百的两个数，结果不会改变。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

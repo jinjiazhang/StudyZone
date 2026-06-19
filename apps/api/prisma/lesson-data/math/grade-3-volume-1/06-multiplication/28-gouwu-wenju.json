@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(100 - 4) ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "王老师带100元，只买中性笔，每支5元，可以买多少支？",
+        "options": [
+          "15支",
+          "18支",
+          "20支",
+          "25支"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买一本4元日记本后，剩下的钱可以买多少个6元文具盒？",
+        "options": [
+          "12个",
+          "16个",
+          "15个",
+          "18个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "王老师买一些相同的文具后还剩4元，可能买的是哪一种？",
+        "options": [
+          "中性笔18支",
+          "日记本20本",
+          "文具盒15个",
+          "彩笔12盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "96 ÷ 8",
+        "right": "96 ÷ 6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三角板3元，96元"
+          },
+          {
+            "id": "l2",
+            "text": "日记本4元，96元"
+          },
+          {
+            "id": "l3",
+            "text": "彩笔8元，96元"
+          },
+          {
+            "id": "l4",
+            "text": "文具盒6元，96元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "16个"
+          },
+          {
+            "id": "r3",
+            "text": "12盒"
+          },
+          {
+            "id": "r2",
+            "text": "24本"
+          },
+          {
+            "id": "r1",
+            "text": "32套"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

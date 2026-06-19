@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一支铅笔从尺子0刻度到10厘米刻度，长多少厘米？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "红铅笔比6厘米多3个小格，长多少毫米？"
+      },
+      "answer": {
+        "value": 63,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从0刻度到4厘米7毫米，长度是__厘米__毫米。",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          },
+          {
+            "id": "mm",
+            "label": "毫米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从2厘米刻度量到8厘米刻度，物体长__厘米。",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从1厘米3毫米到6厘米3毫米，长度是__厘米。",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量物体长度时，物体一端最好对准尺子的哪个位置？",
+        "options": [
+          "0刻度",
+          "1厘米刻度",
+          "尺子末端",
+          "任意位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1厘米里的每个小格表示多少？",
+        "options": [
+          "1厘米",
+          "1分米",
+          "10毫米",
+          "1毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6厘米3毫米",
+        "right": "63毫米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4厘米7毫米",
+        "right": "5厘米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "如果物体没有从0刻度开始量，可以用末端读数减去起点读数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从2厘米刻度到9厘米刻度，长度是多少厘米？"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "12厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 120,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

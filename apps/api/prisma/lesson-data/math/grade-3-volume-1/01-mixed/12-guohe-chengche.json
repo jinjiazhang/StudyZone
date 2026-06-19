@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(29 + 25) / 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(70 - 46) / 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "男生29人，女生25人，一共有多少人？",
+        "options": [
+          "4人",
+          "54人",
+          "45人",
+          "6人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生 29 人，女生 25 人，每条大船坐 9 人，需要 __ 条大船。",
+        "blanks": [
+          {
+            "id": "boats",
+            "label": "大船",
+            "suffix": "条"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小狗和小猴一共可坐满几节车厢？已知有16只小狗、20只小猴，每节车厢坐6只。",
+        "placeholder": "例如：(16+20)/6"
+      },
+      "answer": {
+        "accepted": [
+          "(16+20)/6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(16 + 20) / 6 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "动物游乐园有48只动物，坐限坐3只和5只的两种船，如果每组用一大一小两条船，能坐满几组？",
+        "placeholder": "例如：48/(3+5)"
+      },
+      "answer": {
+        "accepted": [
+          "48/(3+5)"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 / (3 + 5) = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(16 + 20) / 6",
+        "right": "48 / (3 + 5)"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "(29 + 25) / 9"
+          },
+          {
+            "id": "l2",
+            "text": "(70 - 46) / 8"
+          },
+          {
+            "id": "l3",
+            "text": "(16 + 20) / 6"
+          },
+          {
+            "id": "l4",
+            "text": "48 / (3 + 5)"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "6组船"
+          },
+          {
+            "id": "r1",
+            "text": "6条大船"
+          },
+          {
+            "id": "r3",
+            "text": "6节车厢"
+          },
+          {
+            "id": "r2",
+            "text": "3辆小车"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "48 / (3 + 5) 中，3 + 5 表示什么？",
+        "options": [
+          "每条船3只",
+          "小船比大船多几只",
+          "一组两条船共限坐的人数",
+          "一共有48只动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "48",
+          "/",
+          null,
+          "3",
+          "+",
+          "5",
+          null,
+          "=",
+          "6"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "-",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

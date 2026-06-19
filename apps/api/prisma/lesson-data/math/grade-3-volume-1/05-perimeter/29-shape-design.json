@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第58页“用4个长方形拼出一个新图形”属于：",
+        "options": [
+          "小数计算",
+          "图形拼摆与设计",
+          "年月日计算",
+          "乘法竖式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "用4个长方形拼图，用到几个长方形？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "用6个三角形拼成教材中的六边形图案，用到几个三角形？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "设计图案时，可以先想整体样子，再选择图形拼摆。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "拼摆图案时，可以用几个",
+          null,
+          "拼出新图形，也可以用多个",
+          null,
+          "拼成六边形。"
+        ],
+        "tokens": [
+          "长方形",
+          "钟面",
+          "三角形",
+          "数字"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方形",
+          "三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4个长方形"
+          },
+          {
+            "id": "l2",
+            "text": "6个三角形"
+          },
+          {
+            "id": "l3",
+            "text": "方格纸"
+          },
+          {
+            "id": "l4",
+            "text": "重复单元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "帮助定位设计"
+          },
+          {
+            "id": "r1",
+            "text": "能拼出新图形"
+          },
+          {
+            "id": "r4",
+            "text": "让图案有规律"
+          },
+          {
+            "id": "r2",
+            "text": "能拼成六边形图案"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格纸上设计图案，最重要的是：",
+        "options": [
+          "让线条随意歪斜",
+          "只写答案",
+          "不看图形",
+          "对齐边和角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个做法更适合“找到右边的图形并涂色”？",
+        "options": [
+          {
+            "id": "a",
+            "label": "先观察目标图形，再在大图中找相同部分"
+          },
+          {
+            "id": "b",
+            "label": "随便涂满整张图"
+          },
+          {
+            "id": "c",
+            "label": "只数题号"
+          },
+          {
+            "id": "d",
+            "label": "擦掉所有线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同样的几个基本图形，拼法不同，可能形成不同图案。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "设计一个规则图案的顺序",
+        "items": [
+          {
+            "id": "s3",
+            "text": "按规律重复"
+          },
+          {
+            "id": "s1",
+            "text": "选择基本图形"
+          },
+          {
+            "id": "s4",
+            "text": "检查是否对齐"
+          },
+          {
+            "id": "s2",
+            "text": "确定排列方向"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

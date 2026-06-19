@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 × 6 = ?"
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(54 - 14) ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 + 16 × 4 = ?"
+      },
+      "answer": {
+        "value": 78,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 7 = ?"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "百合每枝14元，6枝百合一共多少元？",
+        "options": [
+          "74元",
+          "80元",
+          "90元",
+          "84元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "李阿姨买1枝百合和一些玫瑰，共花54元。玫瑰每枝5元，她买了几枝玫瑰？",
+        "options": [
+          "8枝",
+          "6枝",
+          "7枝",
+          "9枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笑笑选1枝百合和16枝康乃馨，康乃馨每枝4元，一共需要多少元？",
+        "options": [
+          "64元",
+          "70元",
+          "78元",
+          "82元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "玫瑰每枝5元，54元中先减去1枝百合14元，再求玫瑰枝数。请列式。",
+        "placeholder": "(54-14)÷5"
+      },
+      "answer": {
+        "accepted": [
+          "(54-14)÷5",
+          "(54−14)÷5"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 × 6",
+        "right": "16 × 4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "百合6枝"
+          },
+          {
+            "id": "l2",
+            "text": "玫瑰8枝"
+          },
+          {
+            "id": "l3",
+            "text": "16枝康乃馨"
+          },
+          {
+            "id": "l4",
+            "text": "1枝百合+16枝康乃馨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "78元"
+          },
+          {
+            "id": "r3",
+            "text": "64元"
+          },
+          {
+            "id": "r2",
+            "text": "40元"
+          },
+          {
+            "id": "r1",
+            "text": "84元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

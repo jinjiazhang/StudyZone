@@ -1,0 +1,299 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水果店里，每盒橘子3.15元，表示多少钱？",
+        "options": [
+          "3元1角5分",
+          "3元15角",
+          "3.15角",
+          "干扰项4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水果店里，每盒苹果4.50元，表示多少钱？",
+        "options": [
+          "3元15角",
+          "4元5角0分",
+          "4.5角",
+          "4元50角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水果店里，每盒草莓12.08元，表示多少钱？",
+        "options": [
+          "3元15角",
+          "12.08角",
+          "12元0角8分",
+          "12元8角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "水果店里，每盒桃子6.66元，表示多少钱？",
+        "options": [
+          "3元15角",
+          "6.66角",
+          "6元66角",
+          "6元6角6分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每盒橘子3.15元 = __元__角__分",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          1,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每盒苹果4.50元 = __元__角__分",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每盒草莓12.08元 = __元__角__分",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          0,
+          8
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每盒桃子6.66元 = __元__角__分",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          6,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1角"
+          },
+          {
+            "id": "l2",
+            "text": "1分"
+          },
+          {
+            "id": "l3",
+            "text": "10个1角"
+          },
+          {
+            "id": "l4",
+            "text": "10个1分"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "1元"
+          },
+          {
+            "id": "r1",
+            "text": "0.1元"
+          },
+          {
+            "id": "r4",
+            "text": "1角"
+          },
+          {
+            "id": "r2",
+            "text": "0.01元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3.15元表示",
+          null,
+          "元",
+          null,
+          "角",
+          null,
+          "分"
+        ],
+        "tokens": [
+          "5",
+          "3",
+          "15",
+          "1",
+          "0"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "1",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "12.08元表示12元8角。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4.50元可以读作四点五零，也可以写成4.5元表示同样的钱数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

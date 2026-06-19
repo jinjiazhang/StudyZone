@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "5厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 50,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "9厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 90,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "60毫米 = ?厘米",
+        "fromUnit": "毫米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 6,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "100毫米 = ?厘米",
+        "fromUnit": "毫米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3厘米5毫米 = __毫米",
+        "blanks": [
+          {
+            "id": "mm",
+            "label": "毫米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          35
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6厘米8毫米 = __毫米",
+        "blanks": [
+          {
+            "id": "mm",
+            "label": "毫米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          68
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "47毫米 = __厘米__毫米",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          },
+          {
+            "id": "mm",
+            "label": "毫米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "92毫米 = __厘米__毫米",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          },
+          {
+            "id": "mm",
+            "label": "毫米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4厘米",
+        "right": "45毫米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7厘米2毫米",
+        "right": "72毫米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "橡皮宽约25（ ），括号里填哪个单位最合适？",
+        "options": [
+          "厘米",
+          "分米",
+          "毫米",
+          "米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "58毫米可以写成5厘米8毫米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    }
+  ]
+}

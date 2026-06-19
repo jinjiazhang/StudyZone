@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "学校跑道1圈是200米，走5圈是几千米？只填千米数。"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "学校跑道1圈是200米，走3圈是多少米？"
+      },
+      "answer": {
+        "value": 600,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "学校跑道1圈是200米，走10圈是多少千米？只填千米数。"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1步约50厘米，走100步约多少米？"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1步约50厘米，走2000步约多少米？"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "走1000米约15分钟，走500米约几分钟？按一半估算。"
+      },
+      "answer": {
+        "value": 7.5,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 1,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "400米 = ?米",
+        "fromUnit": "米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 400,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5圈200米跑道",
+        "right": "1千米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想在校园里走出1千米，下面哪种计划合适？",
+        "options": [
+          "沿200米跑道走1圈",
+          "在教室里走5步",
+          "量一本书的厚度",
+          "沿200米跑道走5圈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "如果跑道一圈200米，5圈就是1000米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "跑道1圈200米，4圈是多少米？",
+        "columns": [
+          "圈数",
+          "每圈米数",
+          "总米数"
+        ],
+        "rows": [
+          {
+            "圈数": 4,
+            "每圈米数": 200,
+            "总米数": "?"
+          },
+          {
+            "圈数": 5,
+            "每圈米数": 200,
+            "总米数": 1000
+          }
+        ]
+      },
+      "answer": {
+        "value": 800,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

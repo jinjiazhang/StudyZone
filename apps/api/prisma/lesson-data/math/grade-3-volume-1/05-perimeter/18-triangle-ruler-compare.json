@@ -1,0 +1,201 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第52页比较三角板上的角，常用的方法是：",
+        "options": [
+          "只看颜色",
+          "只看边长",
+          "数页码",
+          "折一折、量一量、重合比一比"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用三角板比角时，可以把一个角覆盖到另一个角上观察。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "用三角板判断角的大小时，哪一步最关键？",
+        "options": [
+          {
+            "id": "b",
+            "label": "把纸涂色"
+          },
+          {
+            "id": "a",
+            "label": "让顶点重合"
+          },
+          {
+            "id": "c",
+            "label": "把角剪掉"
+          },
+          {
+            "id": "d",
+            "label": "数有几页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果角A与角B重合后两边也重合，说明：",
+        "options": [
+          "A比B大",
+          "A和B相等",
+          "A比B小",
+          "A不是角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "三角板比角时，先重合",
+          null,
+          "，再重合其中一条",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "顶点",
+          "长",
+          "边",
+          "宽"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "顶点",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "完全盖住且边重合"
+          },
+          {
+            "id": "l2",
+            "text": "另一条边在里面"
+          },
+          {
+            "id": "l3",
+            "text": "另一条边在外面"
+          },
+          {
+            "id": "l4",
+            "text": "只比较边长"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "原角更大"
+          },
+          {
+            "id": "r1",
+            "text": "角相等"
+          },
+          {
+            "id": "r4",
+            "text": "方法不对"
+          },
+          {
+            "id": "r2",
+            "text": "原角更小"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "两个角的大小可以通过重合比较来判断。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第52页钟面涂色角中，判断最大角应看什么？",
+        "options": [
+          "钟面是不是圆",
+          "涂色部分张开的大小",
+          "数字有几个",
+          "指针粗细"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "锐角",
+        "right": "直角"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "钝角",
+        "right": "直角"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三年级捐书情况中，三(1)班捐了多少本？",
+        "columns": [
+          "班级",
+          "数量"
+        ],
+        "rows": [
+          {
+            "班级": "三(1)班",
+            "数量": 123
+          },
+          {
+            "班级": "三(2)班",
+            "数量": 95
+          },
+          {
+            "班级": "三(3)班",
+            "数量": 116
+          }
+        ]
+      },
+      "answer": {
+        "value": 123,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三年级捐书情况中，三(2)班捐了多少本？",
+        "columns": [
+          "班级",
+          "数量"
+        ],
+        "rows": [
+          {
+            "班级": "三(1)班",
+            "数量": 123
+          },
+          {
+            "班级": "三(2)班",
+            "数量": 95
+          },
+          {
+            "班级": "三(3)班",
+            "数量": 116
+          }
+        ]
+      },
+      "answer": {
+        "value": 95,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "四年级捐书情况中，四(3)班捐了多少本？",
+        "columns": [
+          "班级",
+          "数量"
+        ],
+        "rows": [
+          {
+            "班级": "四(1)班",
+            "数量": 108
+          },
+          {
+            "班级": "四(2)班",
+            "数量": 104
+          },
+          {
+            "班级": "四(3)班",
+            "数量": 96
+          }
+        ]
+      },
+      "answer": {
+        "value": 96,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "123 + 95 + 116 = ?"
+      },
+      "answer": {
+        "value": 334,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "108 + 104 + 96 = ?"
+      },
+      "answer": {
+        "value": 308,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据教材表格，三年级三个班一共捐书多少本？",
+        "options": [
+          "308本",
+          "320本",
+          "334本",
+          "350本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据教材表格，四年级三个班一共捐书多少本？",
+        "options": [
+          "308本",
+          "334本",
+          "290本",
+          "320本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "123 + 95 + 116",
+        "right": "108 + 104 + 96"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "三(1)班"
+          },
+          {
+            "id": "l1",
+            "text": "三(2)班"
+          },
+          {
+            "id": "l2",
+            "text": "三(3)班"
+          },
+          {
+            "id": "l3",
+            "text": "四(2)班"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "116本"
+          },
+          {
+            "id": "r0",
+            "text": "123本"
+          },
+          {
+            "id": "r3",
+            "text": "104本"
+          },
+          {
+            "id": "r1",
+            "text": "95本"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "三年级三个班的捐书总数比四年级三个班多26本。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "四(1)班和四(2)班一共捐了212本。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估一估，三年级三个班大约分别看成120、90、110，总数大约是？",
+        "options": [
+          "290本",
+          "320本",
+          "350本",
+          "334本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

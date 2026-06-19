@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "钢笔每支7元，淘气上次买2支花16元。上次每支多少元？",
+        "options": [
+          "9元",
+          "8元",
+          "7元",
+          "14元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "上次买2支钢笔花16元，现在每支7元。上次每支比现在贵多少元？",
+        "placeholder": "例如：16/2-7"
+      },
+      "answer": {
+        "accepted": [
+          "16/2-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 / 2 - 7 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "自动铅笔原价5元，促销4支12元。促销后每支比原价便宜多少元？",
+        "placeholder": "例如：5-12/4"
+      },
+      "answer": {
+        "accepted": [
+          "5-12/4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 12 / 4 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4 支自动铅笔 12 元，每支 __ 元；比原价 5 元便宜 __ 元。",
+        "blanks": [
+          {
+            "id": "unit"
+          },
+          {
+            "id": "cheap"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "16",
+          "/",
+          "2",
+          null,
+          "7",
+          "=",
+          "1"
+        ],
+        "tokens": [
+          "-",
+          "+",
+          "*",
+          "/"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "16 / 2 - 7",
+        "right": "2"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "钢笔上次每支"
+          },
+          {
+            "id": "l2",
+            "text": "钢笔贵几元"
+          },
+          {
+            "id": "l3",
+            "text": "自动铅笔促销每支"
+          },
+          {
+            "id": "l4",
+            "text": "自动铅笔便宜几元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "16 / 2 - 7 = 1"
+          },
+          {
+            "id": "r4",
+            "text": "5 - 12 / 4 = 2"
+          },
+          {
+            "id": "r1",
+            "text": "16 / 2 = 8"
+          },
+          {
+            "id": "r3",
+            "text": "12 / 4 = 3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“不参加运算的部分要抄下来”适合检查哪类错误？",
+        "options": [
+          "把等号上下对齐",
+          "先算括号",
+          "把 25 - 10 / 5 算成 15 / 5",
+          "先算 10 / 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 7 + 12 = ?"
+      },
+      "answer": {
+        "value": 33,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 - 12 / 4 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

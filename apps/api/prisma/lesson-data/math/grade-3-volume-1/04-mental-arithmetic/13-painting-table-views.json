@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第46页画画情境中，不同孩子看到桌上花瓶和香蕉的位置可能怎样？",
+        "options": [
+          "左右关系不同",
+          "永远完全一样",
+          "都看不到桌子",
+          "都只看到地面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "若观察者在桌子的正前方，桌布边缘通常出现在画面的哪边？",
+        "options": [
+          "天空上方",
+          "下方或前方",
+          "画面外所有地方",
+          "车轮旁边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从桌子左侧看，花瓶和香蕉的左右位置可能与从右侧看怎样？",
+        "options": [
+          "一定相同",
+          "都消失",
+          "相反",
+          "变成数字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断是谁看到的图，要比较哪两类信息？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "衣服颜色和天气"
+          },
+          {
+            "id": "o2",
+            "label": "观察者位置和物品左右关系"
+          },
+          {
+            "id": "o3",
+            "label": "题号和页码"
+          },
+          {
+            "id": "o4",
+            "label": "画笔长短和纸张厚度"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "围着同一张桌子看，桌上物品的左右关系可能发生变化。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从四个方向看桌上物品，花瓶和香蕉一定总在同一边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正面观察"
+          },
+          {
+            "id": "l2",
+            "text": "左侧观察"
+          },
+          {
+            "id": "l3",
+            "text": "右侧观察"
+          },
+          {
+            "id": "l4",
+            "text": "背面观察"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "与左侧相反"
+          },
+          {
+            "id": "r1",
+            "text": "物品横向排列清楚"
+          },
+          {
+            "id": "r4",
+            "text": "前后关系改变"
+          },
+          {
+            "id": "r2",
+            "text": "左右关系可能改变"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "判断桌面视图时，要看花瓶在香蕉的",
+          null,
+          "还是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "右边",
+          "前面",
+          "左边",
+          "后面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "左边",
+          "右边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断画桌视图的步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "找香蕉位置"
+          },
+          {
+            "id": "s1",
+            "text": "确定孩子站位"
+          },
+          {
+            "id": "s4",
+            "text": "对应看到的图"
+          },
+          {
+            "id": "s2",
+            "text": "找花瓶位置"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四个孩子围桌观察，最多可对应 ? 个方向"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项不是桌面视图判断线索？",
+        "options": [
+          "花瓶位置",
+          "香蕉位置",
+          "桌边朝向",
+          "孩子的鞋码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果两幅图中花瓶和香蕉左右相反，可能说明什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "物体被换成了汽车"
+          },
+          {
+            "id": "o2",
+            "label": "题目错页"
+          },
+          {
+            "id": "o3",
+            "label": "观察方向相反"
+          },
+          {
+            "id": "o4",
+            "label": "没有观察者"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3时整，时针和分针形成的角通常是：",
+        "options": [
+          "锐角",
+          "钝角",
+          "不是角",
+          "直角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "9时整，时针和分针形成的角通常是：",
+        "options": [
+          "直角",
+          "锐角",
+          "钝角",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "2时整的钟面角更接近哪类角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "锐角"
+          },
+          {
+            "id": "b",
+            "label": "直角"
+          },
+          {
+            "id": "c",
+            "label": "钝角"
+          },
+          {
+            "id": "d",
+            "label": "平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "4时整的钟面较小角更接近哪类角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "直角"
+          },
+          {
+            "id": "c",
+            "label": "锐角"
+          },
+          {
+            "id": "d",
+            "label": "圆"
+          },
+          {
+            "id": "b",
+            "label": "钝角"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "钟面上的时针和分针可以组成角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3时"
+          },
+          {
+            "id": "l2",
+            "text": "2时"
+          },
+          {
+            "id": "l3",
+            "text": "4时"
+          },
+          {
+            "id": "l4",
+            "text": "6时"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "锐角"
+          },
+          {
+            "id": "r4",
+            "text": "比钝角还大的平角"
+          },
+          {
+            "id": "r1",
+            "text": "直角"
+          },
+          {
+            "id": "r3",
+            "text": "钝角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "钟面上比较角时，要看时针和分针",
+          null,
+          "的大小，而不是指针的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "张口",
+          "颜色",
+          "长度",
+          "个数"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "张口",
+          "长度"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2时的较小角",
+        "right": "3时的较小角"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4时的较小角",
+        "right": "3时的较小角"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪个时刻形成直角？",
+        "columns": [
+          "时刻",
+          "较小角类别"
+        ],
+        "rows": [
+          {
+            "时刻": "2时",
+            "较小角类别": "锐角"
+          },
+          {
+            "时刻": "3时",
+            "较小角类别": "直角"
+          },
+          {
+            "时刻": "4时",
+            "较小角类别": "钝角"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "3时",
+          "3时整"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

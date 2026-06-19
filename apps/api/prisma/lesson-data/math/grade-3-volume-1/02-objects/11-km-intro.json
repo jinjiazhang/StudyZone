@@ -1,0 +1,160 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 1000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 2000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 4000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 2,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "7000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 7,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表示比较远的距离时，常用哪个单位？",
+        "options": [
+          "毫米",
+          "厘米",
+          "分米",
+          "千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1000米可以写成什么？",
+        "options": [
+          "10千米",
+          "1千米",
+          "100千米",
+          "1米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10个100米跑道连起来是多少米？"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "走100米约210步，走1000米约多少步？"
+      },
+      "answer": {
+        "value": 2100,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "走1000米大约15分钟，走2000米大约多少分钟？"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1000米",
+        "right": "1千米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "千米也可以写作km。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

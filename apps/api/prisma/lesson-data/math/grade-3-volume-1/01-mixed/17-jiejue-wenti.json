@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "黑天鹅45只，白天鹅比黑天鹅少36只。黑天鹅的只数是白天鹅的几倍？",
+        "placeholder": "例如：45/(45-36)"
+      },
+      "answer": {
+        "accepted": [
+          "45/(45-36)"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 / (45 - 36) = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "同学们制作39块月饼，装满若干盒后还剩3块。每盒可能装6块，装满几盒？",
+        "placeholder": "例如：(39-3)/6"
+      },
+      "answer": {
+        "accepted": [
+          "(39-3)/6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(39 - 3) / 6 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "同学们制作39块月饼，装满若干盒后还剩3块。每盒可能装9块，装满几盒？",
+        "placeholder": "例如：(39-3)/9"
+      },
+      "answer": {
+        "accepted": [
+          "(39-3)/9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(39 - 3) / 9 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "39块月饼装盒后剩3块，先算什么？",
+        "options": [
+          "能装进盒子的月饼数 39 - 3",
+          "每盒多少块",
+          "一共有多少盒",
+          "39 + 3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "黑天鹅45只，白天鹅少36只，白天鹅 __ 只；45 是白天鹅的 __ 倍。",
+        "blanks": [
+          {
+            "id": "white"
+          },
+          {
+            "id": "times"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "45",
+          "/",
+          null,
+          "45",
+          "-",
+          "36",
+          null,
+          "=",
+          "5"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45 / (45 - 36)",
+        "right": "(39 - 3) / 6"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "白天鹅只数"
+          },
+          {
+            "id": "l2",
+            "text": "黑天鹅是白天鹅几倍"
+          },
+          {
+            "id": "l3",
+            "text": "可装盒的月饼数"
+          },
+          {
+            "id": "l4",
+            "text": "每盒6块装几盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "45 / (45 - 36)"
+          },
+          {
+            "id": "r4",
+            "text": "(39 - 3) / 6"
+          },
+          {
+            "id": "r1",
+            "text": "45 - 36"
+          },
+          {
+            "id": "r3",
+            "text": "39 - 3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "解决“黑天鹅是白天鹅几倍”的步骤",
+        "items": [
+          {
+            "id": "a",
+            "text": "45 - 36 = 9"
+          },
+          {
+            "id": "b",
+            "text": "45 / 9 = 5"
+          },
+          {
+            "id": "c",
+            "text": "先求白天鹅只数"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元认识的三种角是：",
+        "options": [
+          "锐角、直角、钝角",
+          "长、宽、高",
+          "米、分米、厘米",
+          "时、分、秒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元认识的两种重要四边形是：",
+        "options": [
+          "圆和球",
+          "三角形和角",
+          "长方形和正方形",
+          "年和月"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据整理表，长方形的边有什么特点？",
+        "columns": [
+          "图形",
+          "角",
+          "边"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "角": "四个直角",
+            "边": "对边相等"
+          },
+          {
+            "图形": "正方形",
+            "角": "四个直角",
+            "边": "四条边都相等"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "对边相等"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据整理表，正方形的边有什么特点？",
+        "columns": [
+          "图形",
+          "角",
+          "边"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "角": "四个直角",
+            "边": "对边相等"
+          },
+          {
+            "图形": "正方形",
+            "角": "四个直角",
+            "边": "四条边都相等"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "四条边都相等",
+          "四边相等"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "研究图形特征时，可以用折一折、量一量、比一比的方法验证。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "我们先认识了",
+          null,
+          "、锐角和钝角，又从边和角认识了",
+          null,
+          "和正方形。"
+        ],
+        "tokens": [
+          "直角",
+          "周长",
+          "长方形",
+          "小数"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "直角",
+          "长方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "锐角"
+          },
+          {
+            "id": "l2",
+            "text": "直角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "正方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "标准角"
+          },
+          {
+            "id": "r4",
+            "text": "四边相等"
+          },
+          {
+            "id": "r1",
+            "text": "比直角小"
+          },
+          {
+            "id": "r3",
+            "text": "比直角大"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从小到大整理角",
+        "items": [
+          {
+            "id": "o2",
+            "text": "直角"
+          },
+          {
+            "id": "o3",
+            "text": "钝角"
+          },
+          {
+            "id": "o1",
+            "text": "锐角"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o2",
+          "o3"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个正方形和一个长方形一共有多少个直角？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材整理页“我的问题：有没有比钝角更大的角呢？”说明学习后还可以：",
+        "options": [
+          "停止观察图形",
+          "只背答案",
+          "继续提出问题",
+          "不再动手验证"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

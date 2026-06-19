@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第49页说，角通常由什么组成？",
+        "options": [
+          "两条弧线和一个圆心",
+          "三条边和三个顶点",
+          "一个顶点和两条边",
+          "四条相等的边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "角的两条边都从同一个顶点出发。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个描述一定是一个角？",
+        "options": [
+          {
+            "id": "b",
+            "label": "两条线段互不相接"
+          },
+          {
+            "id": "a",
+            "label": "两条射线从同一点出发"
+          },
+          {
+            "id": "c",
+            "label": "一个完整圆形"
+          },
+          {
+            "id": "d",
+            "label": "一条直线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "角有一个",
+          null,
+          "，还有从它出发的两条",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "边",
+          "圆心",
+          "顶点",
+          "面积"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "顶点",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记作“∠1”，读作什么？",
+        "options": [
+          "角1",
+          "线段1",
+          "边1",
+          "顶点1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数一数：三角形有 __ 个角，五角星外轮廓至少有 __ 个尖角。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "三角形角数"
+          },
+          {
+            "id": "b2",
+            "label": "五角星尖角数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "房顶两边形成的图形"
+          },
+          {
+            "id": "l2",
+            "text": "钟面时针和分针形成的图形"
+          },
+          {
+            "id": "l3",
+            "text": "三角板的一个尖"
+          },
+          {
+            "id": "l4",
+            "text": "只画一个点"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "三角板尖能成角"
+          },
+          {
+            "id": "r1",
+            "text": "房顶两边形成角"
+          },
+          {
+            "id": "r4",
+            "text": "不是角"
+          },
+          {
+            "id": "r2",
+            "text": "钟面指针形成角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "角必须有三条边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断图形是否藏着角：哪一个不是角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "打开的书页一角"
+          },
+          {
+            "id": "b",
+            "label": "剪刀张开的口"
+          },
+          {
+            "id": "d",
+            "label": "三角尺的尖"
+          },
+          {
+            "id": "c",
+            "label": "圆形钟面边缘"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在教材第49页的画角步骤中，应先做什么？",
+        "options": [
+          "先涂一个面",
+          "先写出周长",
+          "先画一个圆",
+          "先画一个顶点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

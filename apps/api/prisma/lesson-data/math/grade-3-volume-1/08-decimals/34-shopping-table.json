@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪家商店的毛巾最便宜？",
+        "columns": [
+          "商店",
+          "毛巾",
+          "牙刷",
+          "牙膏"
+        ],
+        "rows": [
+          {
+            "商店": "小熊商店",
+            "毛巾": 3.8,
+            "牙刷": 2.5,
+            "牙膏": 4.3
+          },
+          {
+            "商店": "小猫商店",
+            "毛巾": 4,
+            "牙刷": 2.6,
+            "牙膏": 3.8
+          },
+          {
+            "商店": "小狗商店",
+            "毛巾": 4.1,
+            "牙刷": 2.4,
+            "牙膏": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "小熊商店"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪家商店的牙刷最便宜？",
+        "columns": [
+          "商店",
+          "毛巾",
+          "牙刷",
+          "牙膏"
+        ],
+        "rows": [
+          {
+            "商店": "小熊商店",
+            "毛巾": 3.8,
+            "牙刷": 2.5,
+            "牙膏": 4.3
+          },
+          {
+            "商店": "小猫商店",
+            "毛巾": 4,
+            "牙刷": 2.6,
+            "牙膏": 3.8
+          },
+          {
+            "商店": "小狗商店",
+            "毛巾": 4.1,
+            "牙刷": 2.4,
+            "牙膏": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "小狗商店"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪家商店的牙膏最便宜？",
+        "columns": [
+          "商店",
+          "毛巾",
+          "牙刷",
+          "牙膏"
+        ],
+        "rows": [
+          {
+            "商店": "小熊商店",
+            "毛巾": 3.8,
+            "牙刷": 2.5,
+            "牙膏": 4.3
+          },
+          {
+            "商店": "小猫商店",
+            "毛巾": 4,
+            "牙刷": 2.6,
+            "牙膏": 3.8
+          },
+          {
+            "商店": "小狗商店",
+            "毛巾": 4.1,
+            "牙刷": 2.4,
+            "牙膏": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "小猫商店"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小猫商店的牙膏多少钱？",
+        "columns": [
+          "商店",
+          "毛巾",
+          "牙刷",
+          "牙膏"
+        ],
+        "rows": [
+          {
+            "商店": "小熊商店",
+            "毛巾": 3.8,
+            "牙刷": 2.5,
+            "牙膏": 4.3
+          },
+          {
+            "商店": "小猫商店",
+            "毛巾": 4,
+            "牙刷": 2.6,
+            "牙膏": 3.8
+          },
+          {
+            "商店": "小狗商店",
+            "毛巾": 4.1,
+            "牙刷": 2.4,
+            "牙膏": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "value": 3.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.80",
+        "right": "4.00"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.50",
+        "right": "2.40"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4.30",
+        "right": "3.80"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3.80 + 2.50 = ?"
+      },
+      "answer": {
+        "value": 6.3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.00 + 3.80 = ?"
+      },
+      "answer": {
+        "value": 7.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.10 + 2.40 = ?"
+      },
+      "answer": {
+        "value": 6.5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "只买牙刷，去哪家最便宜？",
+        "options": [
+          "小熊商店",
+          "小猫商店",
+          "三家一样",
+          "小狗商店"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "买毛巾时，小熊商店比小狗商店便宜0.30元。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "3分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 30,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "8分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 80,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "40厘米 = ?分米",
+        "fromUnit": "厘米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 4,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "70厘米 = ?分米",
+        "fromUnit": "厘米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 7,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一拃大约有多长？",
+        "options": [
+          "1毫米",
+          "1厘米",
+          "1分米",
+          "1米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "凳子高约4（ ），括号里填哪个单位合适？",
+        "options": [
+          "分米",
+          "毫米",
+          "厘米",
+          "千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5分米",
+        "right": "60厘米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9分米",
+        "right": "90厘米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2分米6厘米 = __厘米",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          26
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "48厘米 = __分米__厘米",
+        "blanks": [
+          {
+            "id": "dm",
+            "label": "分米"
+          },
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "分米比厘米大，1分米等于10厘米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

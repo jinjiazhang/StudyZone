@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第50页找生活中的角，下面哪个最容易找到角？",
+        "options": [
+          "圆形盘子的边",
+          "水杯的圆口",
+          "篮球表面",
+          "门框的角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "国旗护卫队行进时，腿和地面可以形成什么？",
+        "options": [
+          {
+            "id": "b",
+            "label": "圆"
+          },
+          {
+            "id": "c",
+            "label": "球"
+          },
+          {
+            "id": "a",
+            "label": "角"
+          },
+          {
+            "id": "d",
+            "label": "长方体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "秋千架、门洞、三角板里都可能藏着角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "门框"
+          },
+          {
+            "id": "l2",
+            "text": "三角板"
+          },
+          {
+            "id": "l3",
+            "text": "张开的剪刀"
+          },
+          {
+            "id": "l4",
+            "text": "圆环"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "通常不按角来观察"
+          },
+          {
+            "id": "r2",
+            "text": "有多个角"
+          },
+          {
+            "id": "r1",
+            "text": "有直角"
+          },
+          {
+            "id": "r3",
+            "text": "张口形成角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "找生活中的角时，要观察两条边是否有共同的",
+          null,
+          "，还要看有没有张开的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "顶点",
+          "面积",
+          "边",
+          "体积"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "顶点",
+          "边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个说法更像数学观察？",
+        "options": [
+          "门洞下边和侧边形成一个角",
+          "这张照片很漂亮",
+          "国旗颜色鲜艳",
+          "书包很重"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一把三角尺有3个角，2把三角尺一共有多少个角？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要物体是弯弯的，就一定有角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个场景不适合直接找角？",
+        "options": [
+          {
+            "id": "c",
+            "label": "圆形车轮"
+          },
+          {
+            "id": "a",
+            "label": "打开的书"
+          },
+          {
+            "id": "b",
+            "label": "墙角"
+          },
+          {
+            "id": "d",
+            "label": "伸开的手臂和身体"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在生活中找角，主要是把物体看成什么？",
+        "options": [
+          "只看颜色",
+          "只看重量",
+          "看成两条边张开的形状",
+          "看成一个数字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

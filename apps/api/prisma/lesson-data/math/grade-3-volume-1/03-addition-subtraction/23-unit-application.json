@@ -1,0 +1,158 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "三年级共捐书800本，三(1)班276本，三(2)班314本。列式求三(3)班捐多少本。",
+        "placeholder": "例如：800-276-314"
+      },
+      "answer": {
+        "accepted": [
+          "800-276-314",
+          "800-(276+314)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "800 - 276 - 314 = ?"
+      },
+      "answer": {
+        "value": 210,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "198 + (198 - 76) = ?"
+      },
+      "answer": {
+        "value": 320,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "羽毛球卖出198个，乒乓球比羽毛球少卖76个，一共卖出多少个？",
+        "options": [
+          "122个",
+          "274个",
+          "320个",
+          "396个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "430 + 280 + 270 = ?"
+      },
+      "answer": {
+        "value": 980,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "370 + 400 + 230 = ?"
+      },
+      "answer": {
+        "value": 1000,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "明明从家到运动场，走“家-学校-电影院-运动场”一共多少米？",
+        "options": [
+          "980米",
+          "1000米",
+          "700米",
+          "270米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "明明从家到运动场，哪条路近？",
+        "options": [
+          "经过超市和银行的路",
+          "经过学校和电影院的路",
+          "两条一样近",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "280 + 310 = ?"
+      },
+      "answer": {
+        "value": 590,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一共590袋米，每次运210袋，几次能全部运完？",
+        "options": [
+          "1次",
+          "2次",
+          "4次",
+          "3次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "430 + 280 + 270",
+        "right": "370 + 400 + 230"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "每次最多运210袋，运两次最多能运420袋，不能运完590袋。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第48页三人围桌，若正对水壶，看到水壶在中间，可能是谁看到的？",
+        "options": [
+          "正对水壶的人",
+          "背对桌子的人",
+          "站在窗外的人",
+          "在桌下的人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从桌子另一侧看，水壶和盒子的左右关系可能怎样？",
+        "options": [
+          "一定相同",
+          "左右相反",
+          "都消失",
+          "变成上下关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到水壶在盒子右边，应先判断什么？",
+        "options": [
+          "水壶有多重",
+          "盒子价格",
+          "观察者站在桌子的哪一边",
+          "椅子高度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "围桌观察题中，头像通常表示什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "物品价格"
+          },
+          {
+            "id": "o2",
+            "label": "页码"
+          },
+          {
+            "id": "o3",
+            "label": "颜色编号"
+          },
+          {
+            "id": "o4",
+            "label": "观察者位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "围着桌子从不同方向看，桌上物品的前后、左右关系可能不同。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-052.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "三个人围桌观察，看到的水壶和盒子位置一定完全一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正对水壶"
+          },
+          {
+            "id": "l2",
+            "text": "在左侧看"
+          },
+          {
+            "id": "l3",
+            "text": "在右侧看"
+          },
+          {
+            "id": "l4",
+            "text": "从上方看"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "与左侧相反"
+          },
+          {
+            "id": "r1",
+            "text": "水壶更靠近自己"
+          },
+          {
+            "id": "r4",
+            "text": "物品位置最全"
+          },
+          {
+            "id": "r2",
+            "text": "左右关系变换"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "围桌观察时，要把每个人的",
+          null,
+          "和物品的",
+          null,
+          "对应起来。"
+        ],
+        "tokens": [
+          "左右",
+          "颜色",
+          "位置",
+          "重量"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "位置",
+          "左右"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断围桌物品视图的步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "找盒子"
+          },
+          {
+            "id": "s1",
+            "text": "看人物站在哪里"
+          },
+          {
+            "id": "s4",
+            "text": "选择对应视图"
+          },
+          {
+            "id": "s2",
+            "text": "找水壶"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "三个人围桌观察，至少有 ? 个不同观察位置"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项是围桌观察的常见错误？",
+        "options": [
+          "数错页码",
+          "写错日期",
+          "忘记单位换算",
+          "把左边和右边看反"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果一个视图水壶挡住了盒子，观察者可能在哪里？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "水壶与盒子在同一直线方向"
+          },
+          {
+            "id": "o2",
+            "label": "离桌子无限远"
+          },
+          {
+            "id": "o3",
+            "label": "站在桌子下面"
+          },
+          {
+            "id": "o4",
+            "label": "在汽车侧面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

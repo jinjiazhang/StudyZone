@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "三（1）班男生和女生各18人，队列表演站成4行，平均每行几人？",
+        "placeholder": "例如：(18+18)/4"
+      },
+      "answer": {
+        "accepted": [
+          "(18+18)/4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(18 + 18) / 4 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "团体操表演时，3名男生和3名女生组成一个图案，36人能组成多少个图案？",
+        "placeholder": "例如：36/(3+3)"
+      },
+      "answer": {
+        "accepted": [
+          "36/(3+3)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 / (3 + 3) = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36 / (3 + 3) 中括号里先求什么？",
+        "options": [
+          "每个图案需要几人",
+          "一共有多少人",
+          "男生有多少人",
+          "女生比男生多几人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 + 18 = __，__ / 4 = __。",
+        "blanks": [
+          {
+            "id": "sum"
+          },
+          {
+            "id": "same"
+          },
+          {
+            "id": "per"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          36,
+          36,
+          9
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "36",
+          "/",
+          null,
+          "3",
+          "+",
+          "3",
+          null,
+          "=",
+          "6"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "-",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(18 + 18) / 4",
+        "right": "36 / (3 + 3)"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "每行人数"
+          },
+          {
+            "id": "l2",
+            "text": "图案个数"
+          },
+          {
+            "id": "l3",
+            "text": "两个班合计"
+          },
+          {
+            "id": "l4",
+            "text": "每个图案人数"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "18 + 18"
+          },
+          {
+            "id": "r1",
+            "text": "(18 + 18) / 4"
+          },
+          {
+            "id": "r4",
+            "text": "3 + 3"
+          },
+          {
+            "id": "r2",
+            "text": "36 / (3 + 3)"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "解决“36人每6人一个图案”的步骤",
+        "items": [
+          {
+            "id": "a",
+            "text": "3 + 3 = 6"
+          },
+          {
+            "id": "b",
+            "text": "36 / 6 = 6"
+          },
+          {
+            "id": "c",
+            "text": "看清每个图案人数"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(24 + 24) / 6 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 / (4 + 5) = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

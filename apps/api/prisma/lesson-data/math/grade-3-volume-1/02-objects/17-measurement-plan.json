@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量铅笔长度，最合适的工具是？",
+        "options": [
+          "汽车里程表",
+          "体重秤",
+          "直尺",
+          "量杯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量旗杆高度时，直接用短直尺一段一段量最容易遇到什么问题？",
+        "options": [
+          "单位会消失",
+          "不方便也不安全",
+          "尺子会变重",
+          "结果一定是0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量校园里1千米，可以先找一段多少米的跑道更方便？",
+        "options": [
+          "2毫米",
+          "2厘米",
+          "2分米",
+          "200米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记录测量结果时，下面哪一项最完整？",
+        "options": [
+          "11",
+          "11米8分米",
+          "米",
+          "很高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一条彩带每升高1米做一个标记，升到第12个标记约是几米？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每层楼约3米，5层楼约多少米？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "12米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 120,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "15米",
+        "right": "120分米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "测量前要先想清楚测量工具、测量方法和记录方式。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个物体用不同方法测量，结果完全不需要核对。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "短物体"
+          },
+          {
+            "id": "l2",
+            "text": "旗杆高度"
+          },
+          {
+            "id": "l3",
+            "text": "校园1千米"
+          },
+          {
+            "id": "l4",
+            "text": "记录表"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "写清数值和单位"
+          },
+          {
+            "id": "r2",
+            "text": "用直尺"
+          },
+          {
+            "id": "r3",
+            "text": "借助楼层估测"
+          },
+          {
+            "id": "r4",
+            "text": "数跑道圈数"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "一组测旗杆，教学楼12米，旗杆比教学楼高1米。估计旗杆高多少米？",
+        "columns": [
+          "教学楼",
+          "高出",
+          "旗杆"
+        ],
+        "rows": [
+          {
+            "教学楼": 12,
+            "高出": 1,
+            "旗杆": "?"
+          }
+        ]
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

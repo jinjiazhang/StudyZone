@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "扇子打开形成的角，开得越大，角会怎样？",
+        "options": [
+          {
+            "id": "b",
+            "label": "越小"
+          },
+          {
+            "id": "c",
+            "label": "不变"
+          },
+          {
+            "id": "d",
+            "label": "变成正方形"
+          },
+          {
+            "id": "a",
+            "label": "越大"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第60页：比较三把扇子打开的角，主要看：",
+        "options": [
+          "扇面张开的大小",
+          "扇子的颜色",
+          "扇柄长短",
+          "编号字体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形被遮住一个角后，原来那个角仍然是直角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪个图形一定有钝角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "普通长方形"
+          },
+          {
+            "id": "c",
+            "label": "倾斜的平行四边形"
+          },
+          {
+            "id": "b",
+            "label": "正方形"
+          },
+          {
+            "id": "d",
+            "label": "钟面3时"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "判断四边形中的角，先找",
+          null,
+          "，再用直角标准比较，分成锐角、直角或",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "角",
+          "小数",
+          "钝角",
+          "页码"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "角",
+          "钝角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正方形被挡住的角"
+          },
+          {
+            "id": "l2",
+            "text": "扇子打开很小"
+          },
+          {
+            "id": "l3",
+            "text": "扇子打开很大"
+          },
+          {
+            "id": "l4",
+            "text": "长方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "角较大"
+          },
+          {
+            "id": "r1",
+            "text": "直角"
+          },
+          {
+            "id": "r4",
+            "text": "四个直角"
+          },
+          {
+            "id": "r2",
+            "text": "角较小"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪种图形所有角都是直角？",
+        "columns": [
+          "图形",
+          "角的特点"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "角的特点": "四个直角"
+          },
+          {
+            "图形": "平行四边形",
+            "角的特点": "有锐角和钝角"
+          },
+          {
+            "图形": "三角形",
+            "角的特点": "不一定"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "长方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "扇子1打开的角",
+        "right": "扇子3打开的角"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在点子图上接着画一个长方形，已有两条垂直边时，还要画：",
+        "options": [
+          "一个圆",
+          "三条斜边",
+          "一条弧线",
+          "与它们分别平行的两条边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用点子图画更大的钝角时，可以让两条边张开得更大。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

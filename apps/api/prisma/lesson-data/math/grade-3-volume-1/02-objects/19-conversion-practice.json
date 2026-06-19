@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 40,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "3000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 3,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "6千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 6000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "8厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 80,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "50毫米 = ?厘米",
+        "fromUnit": "毫米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 5,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "70厘米 = ?分米",
+        "fromUnit": "厘米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 7,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3米4分米 = __分米",
+        "blanks": [
+          {
+            "id": "dm",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          34
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5分米6厘米 = __厘米",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          56
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2千米300米 = __米",
+        "blanks": [
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2300
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5060米 = __千米__米",
+        "blanks": [
+          {
+            "id": "km",
+            "label": "千米"
+          },
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          60
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "7厘米换成毫米，应该怎样想？",
+        "options": [
+          "7个10毫米是70毫米",
+          "7个100米是700米",
+          "7减10",
+          "7厘米就是7毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "30毫米=3厘米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

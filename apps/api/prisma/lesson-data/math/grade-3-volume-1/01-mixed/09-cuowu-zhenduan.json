@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 * 3 + 18 被算成 12 = 30，错在哪里？",
+        "options": [
+          "第一步后没有把 +18 写下来",
+          "4 * 3 算错了",
+          "18 应先除以3",
+          "结果应该是12"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 3 + 18 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "25 - 10 / 5 被算成 15 / 5 = 3，错在哪里？",
+        "options": [
+          "没有写等号",
+          "结果少写单位",
+          "先算了25 - 10",
+          "10 / 5 算错了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25 - 10 / 5 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "改正：4 * 3 + 18 = __ + 18 = __。",
+        "blanks": [
+          {
+            "id": "first"
+          },
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          30
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "改正：25 - 10 / 5 = 25 - __ = __。",
+        "blanks": [
+          {
+            "id": "first"
+          },
+          {
+            "id": "result"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          23
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "25",
+          "-",
+          null,
+          "/",
+          "5",
+          "=",
+          "23"
+        ],
+        "tokens": [
+          "10",
+          "15",
+          "20",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 3 + 18",
+        "right": "25 - 10 / 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把 25 - 10 / 5 的计算步骤排正确",
+        "items": [
+          {
+            "id": "a",
+            "text": "10 / 5 = 2"
+          },
+          {
+            "id": "b",
+            "text": "25 - 2 = 23"
+          },
+          {
+            "id": "c",
+            "text": "写出 25 - 10 / 5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4 * 3 + 18"
+          },
+          {
+            "id": "l2",
+            "text": "25 - 10 / 5"
+          },
+          {
+            "id": "l3",
+            "text": "24 + 40 / 8"
+          },
+          {
+            "id": "l4",
+            "text": "49 - 3 * 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "先算40/8"
+          },
+          {
+            "id": "r1",
+            "text": "先算4*3"
+          },
+          {
+            "id": "r4",
+            "text": "先算3*8"
+          },
+          {
+            "id": "r2",
+            "text": "先算10/5"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "等号前后应该相等。哪一行是正确的？",
+        "options": [
+          "25 - 10 / 5 = 15 / 5",
+          "4 * 3 + 18 = 12",
+          "6 + 3 * 4 = 9 * 4",
+          "25 - 10 / 5 = 25 - 2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 + 40 / 8 = ?"
+      },
+      "answer": {
+        "value": 29,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

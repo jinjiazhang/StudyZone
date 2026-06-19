@@ -1,0 +1,172 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 × 3 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "500 × 3 = ?"
+      },
+      "answer": {
+        "value": 1500,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80 × 4 = ?"
+      },
+      "answer": {
+        "value": 320,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "800 × 4 = ?"
+      },
+      "answer": {
+        "value": 3200,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 70 = ?"
+      },
+      "answer": {
+        "value": 420,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 700 = ?"
+      },
+      "answer": {
+        "value": 4200,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70 × 8 = ?"
+      },
+      "answer": {
+        "value": 560,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "600 × 9 = ?"
+      },
+      "answer": {
+        "value": 5400,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每盒20个饺子，3盒一共有多少个？请列乘法算式。",
+        "placeholder": "20×3"
+      },
+      "answer": {
+        "accepted": [
+          "20×3",
+          "3×20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每箱装500个饺子，3个箱子能装多少个？",
+        "options": [
+          "500个",
+          "1000个",
+          "1500个",
+          "2000个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "8 × 4"
+          },
+          {
+            "id": "l2",
+            "text": "80 × 4"
+          },
+          {
+            "id": "l3",
+            "text": "800 × 4"
+          },
+          {
+            "id": "l4",
+            "text": "6 × 700"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "4200"
+          },
+          {
+            "id": "r3",
+            "text": "3200"
+          },
+          {
+            "id": "r2",
+            "text": "320"
+          },
+          {
+            "id": "r1",
+            "text": "32"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

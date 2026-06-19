@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(29 + 25) / 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 / (9 - 3) = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“过河”中 (29 + 25) / 9 为什么要先算括号？",
+        "options": [
+          "先求少3人",
+          "先求一共有多少名学生",
+          "先求一条大船坐几人",
+          "先求女生人数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "(29 + 25) / 9：先算 __ + __ = __，再算 __ / 9 = 6。",
+        "blanks": [
+          {
+            "id": "boys"
+          },
+          {
+            "id": "girls"
+          },
+          {
+            "id": "sum"
+          },
+          {
+            "id": "sum2"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          29,
+          25,
+          54,
+          54
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "29",
+          "+",
+          "25",
+          null,
+          "/",
+          "9",
+          "=",
+          "6"
+        ],
+        "tokens": [
+          "(",
+          ")",
+          "[",
+          "]"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "(",
+          ")"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(29 + 25) / 9",
+        "right": "29 + 25 / 9"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "男生29人，女生25人，每条大船坐9人。都坐大船需要几条船？列综合算式。",
+        "placeholder": "例如：(29+25)/9"
+      },
+      "answer": {
+        "accepted": [
+          "(29+25)/9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(70 - 46) / 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小括号的作用是什么？",
+        "options": [
+          "只让算式更好看",
+          "表示一定要最后算",
+          "表示不能计算",
+          "改变运算顺序，先算括号里的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "(29 + 25) / 9"
+          },
+          {
+            "id": "l2",
+            "text": "54 / (9 - 3)"
+          },
+          {
+            "id": "l3",
+            "text": "(70 - 46) / 8"
+          },
+          {
+            "id": "l4",
+            "text": "100 - (72 + 28)"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "0"
+          },
+          {
+            "id": "r2",
+            "text": "9"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "计算 (70 - 46) / 8 的步骤排序",
+        "items": [
+          {
+            "id": "a",
+            "text": "70 - 46 = 24"
+          },
+          {
+            "id": "b",
+            "text": "24 / 8 = 3"
+          },
+          {
+            "id": "c",
+            "text": "先看括号"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "c",
+          "a",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(99 - 78) / 3 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

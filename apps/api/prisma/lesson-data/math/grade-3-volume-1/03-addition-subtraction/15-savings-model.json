@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "奶奶每月补助185元，爸爸妈妈寄回800元，八月花了745元。列式求八月节余多少元。",
+        "placeholder": "例如：185+800-745"
+      },
+      "answer": {
+        "accepted": [
+          "185+800-745",
+          "800-745+185"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "185 + 800 - 745 = ?"
+      },
+      "answer": {
+        "value": 240,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "800 - 745 + 185 = ?"
+      },
+      "answer": {
+        "value": 240,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算每月收入：185 + 800 = __，再减 745 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "收入"
+          },
+          {
+            "id": "b2",
+            "label": "节余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          985,
+          240
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算寄回后剩下：800 - 745 = __，再加 185 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "剩下"
+          },
+          {
+            "id": "b2",
+            "label": "节余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          55,
+          240
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "185 + 800 - 745 中，985 表示什么？",
+        "options": [
+          "八月节余985元",
+          "八月花了985元",
+          "八月共收入985元",
+          "爸爸妈妈寄回985元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "800 - 745 + 185 中，55 表示什么？",
+        "options": [
+          "寄回的钱扣除花费后剩55元",
+          "奶奶的补助",
+          "八月节余",
+          "八月收入"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "185 + 800 - 745",
+        "right": "800 - 745 + 185"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "185 + 800 - 745",
+        "right": "200"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "185",
+          null,
+          "800",
+          null,
+          "745",
+          "=",
+          "240"
+        ],
+        "tokens": [
+          "+",
+          "240",
+          "-",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "-"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个问题可以从“总收入减花费”来解决。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "八月节余的钱是745元。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第47页中，淘气从窗外看笑笑和桌子，应选择哪类图？",
+        "options": [
+          "能看到笑笑背面且桌子在她旁边的图",
+          "只看到汽车正面",
+          "只看到礼品盒顶面",
+          "看不到人和桌子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气在窗外，笑笑背对窗户坐着，淘气更可能看到笑笑的什么？",
+        "options": [
+          "正面",
+          "背面",
+          "头顶内部",
+          "脚底"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果桌子在笑笑的左边，从淘气视角看应注意什么？",
+        "options": [
+          "桌子会消失",
+          "笑笑会变小狗",
+          "左右关系可能随观察方向改变",
+          "窗户会变棋盘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断窗外看到的情景，最关键的是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "窗框颜色"
+          },
+          {
+            "id": "o2",
+            "label": "对话框大小"
+          },
+          {
+            "id": "o3",
+            "label": "页码数字"
+          },
+          {
+            "id": "o4",
+            "label": "淘气、笑笑和桌子的相对位置"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "窗外观察者看到的可能是屋内人物的背面。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-051.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从窗外看屋内，看到的桌子位置一定与屋内人自己看到的完全一致。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "淘气在窗外"
+          },
+          {
+            "id": "l2",
+            "text": "笑笑背对窗户"
+          },
+          {
+            "id": "l3",
+            "text": "桌子在笑笑旁边"
+          },
+          {
+            "id": "l4",
+            "text": "选择图①②③④"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "比较左右关系"
+          },
+          {
+            "id": "r1",
+            "text": "向屋内看"
+          },
+          {
+            "id": "r4",
+            "text": "找最符合的位置"
+          },
+          {
+            "id": "r2",
+            "text": "看到背面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从窗外看，先判断人物的",
+          null,
+          "，再判断桌子的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "位置",
+          "大小",
+          "朝向",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "朝向",
+          "位置"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断窗外情景图的顺序",
+        "items": [
+          {
+            "id": "s3",
+            "text": "比较笑笑朝向"
+          },
+          {
+            "id": "s1",
+            "text": "确定窗户方向"
+          },
+          {
+            "id": "s4",
+            "text": "选择桌子位置正确的图"
+          },
+          {
+            "id": "s2",
+            "text": "判断淘气视线"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "题中给出①②③④四幅候选图，共 ? 幅"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么②号和④号都可能让人犹豫？",
+        "options": [
+          "都没有桌子",
+          "都显示汽车",
+          "都在教室外",
+          "都显示笑笑背面，需要再比较桌子位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话能帮助排除错误选项？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "淘气看到的是笑笑的背面"
+          },
+          {
+            "id": "o2",
+            "label": "桌子必须在窗户外"
+          },
+          {
+            "id": "o3",
+            "label": "笑笑必须站起来"
+          },
+          {
+            "id": "o4",
+            "label": "画面越大越正确"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

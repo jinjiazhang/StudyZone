@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一张照片从银幕正前方拍摄，画面左右比较对称，应填哪个方向描述？",
+        "options": [
+          "正面",
+          "左侧",
+          "右侧",
+          "背面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一张照片中座位从左前方向右后方延伸，可能站在影院哪侧？",
+        "options": [
+          "银幕后面",
+          "左侧走道",
+          "屋顶上",
+          "座椅底下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "若照片几乎看不到银幕，只看到侧墙和座椅，可能站在？",
+        "options": [
+          "银幕正中前方",
+          "黑板前",
+          "侧面较靠后的位置",
+          "桌面上方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "给影院照片填编号时，哪个判断最可靠？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "按照片大小排序"
+          },
+          {
+            "id": "o2",
+            "label": "按题目先后顺序填"
+          },
+          {
+            "id": "o3",
+            "label": "按自己喜欢的数字填"
+          },
+          {
+            "id": "o4",
+            "label": "把照片视角与平面图位置对应"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一编号位置只能对应一种大致拍摄方向。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "给照片填编号时，可以完全不看平面图。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "①号靠银幕前"
+          },
+          {
+            "id": "l2",
+            "text": "②号在中间"
+          },
+          {
+            "id": "l3",
+            "text": "④号在左侧"
+          },
+          {
+            "id": "l4",
+            "text": "⑤号在外侧"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "侧向看座椅"
+          },
+          {
+            "id": "r1",
+            "text": "银幕很近"
+          },
+          {
+            "id": "r4",
+            "text": "角度更偏"
+          },
+          {
+            "id": "r2",
+            "text": "视野较居中"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "把照片与编号对应时，既要看",
+          null,
+          "，也要看",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "远近",
+          "人数",
+          "方向",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "方向",
+          "远近"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "填写影院照片编号的步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "判断座椅延伸方向"
+          },
+          {
+            "id": "s1",
+            "text": "观察平面图编号"
+          },
+          {
+            "id": "s4",
+            "text": "填上对应编号"
+          },
+          {
+            "id": "s2",
+            "text": "找照片中的银幕"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "如果只判断①②③号位置，需要填写 ? 张照片的编号"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项不是判断影院照片编号的依据？",
+        "options": [
+          "银幕位置",
+          "座椅朝向",
+          "拍摄远近",
+          "座椅票价"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "照片中银幕偏右，座椅向左延伸，可能来自哪类位置？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "右侧观察位置"
+          },
+          {
+            "id": "o2",
+            "label": "正上方观察位置"
+          },
+          {
+            "id": "o3",
+            "label": "桌下位置"
+          },
+          {
+            "id": "o4",
+            "label": "汽车后方"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

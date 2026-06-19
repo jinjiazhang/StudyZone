@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第57页“欣赏与设计”中，图案常由什么排列形成？",
+        "options": [
+          "随机文字",
+          "页码",
+          "算式答案",
+          "认识过的图形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "图案里可以藏着三角形、正方形、长方形等图形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形最常用于拼出规则图案？",
+        "options": [
+          {
+            "id": "b",
+            "label": "一串文字"
+          },
+          {
+            "id": "c",
+            "label": "温度计"
+          },
+          {
+            "id": "a",
+            "label": "三角形"
+          },
+          {
+            "id": "d",
+            "label": "日期"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三角形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "长方形"
+          },
+          {
+            "id": "l4",
+            "text": "重复排列"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "可铺成长条"
+          },
+          {
+            "id": "r1",
+            "text": "可拼成星形或花纹"
+          },
+          {
+            "id": "r4",
+            "text": "形成规律图案"
+          },
+          {
+            "id": "r2",
+            "text": "可拼成方格图案"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "设计图案时，可以选用",
+          null,
+          "、正方形、长方形等图形，并按",
+          null,
+          "排列。"
+        ],
+        "tokens": [
+          "三角形",
+          "重量",
+          "规律",
+          "声音"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三角形",
+          "规律"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察图案时，第一步可以做什么？",
+        "options": [
+          "先算乘法",
+          "找一找认识的图形",
+          "只看页码",
+          "只数人物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "规则图案一定不能有重复。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，淘气的作品主要用了哪种图形？",
+        "columns": [
+          "作品",
+          "主要图形"
+        ],
+        "rows": [
+          {
+            "作品": "淘气的作品",
+            "主要图形": "三角形"
+          },
+          {
+            "作品": "笑笑的作品",
+            "主要图形": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，笑笑的作品主要用了哪种图形？",
+        "columns": [
+          "作品",
+          "主要图形"
+        ],
+        "rows": [
+          {
+            "作品": "淘气的作品",
+            "主要图形": "三角形"
+          },
+          {
+            "作品": "笑笑的作品",
+            "主要图形": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话更符合教材第57页的观察？",
+        "options": [
+          {
+            "id": "b",
+            "label": "所有图形都没有角"
+          },
+          {
+            "id": "c",
+            "label": "图案不能用颜色"
+          },
+          {
+            "id": "a",
+            "label": "图形排列有规律"
+          },
+          {
+            "id": "d",
+            "label": "只能用圆"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    }
+  ]
+}

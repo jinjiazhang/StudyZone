@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1分米等于多少米？",
+        "options": [
+          "0.01米",
+          "0.1米",
+          "10米",
+          "1米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1厘米等于多少米？",
+        "options": [
+          "0.1米",
+          "10米",
+          "1米",
+          "0.01米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1.44米是__米__分米__厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          4,
+          4
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1.07米是__米__分米__厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          0,
+          7
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "0.50米是__米__分米__厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          5,
+          0
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "0.89米是__米__分米__厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          },
+          {
+            "id": "b3",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0,
+          8,
+          9
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“4米5分米7厘米”写成用米作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "4.57"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“70厘米”写成用米作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "0.70",
+          "0.7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "75厘米是",
+          null,
+          "米，9分米是",
+          null,
+          "米"
+        ],
+        "tokens": [
+          "0.75",
+          "7.5",
+          "0.9",
+          "0.09",
+          "75",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0.75",
+          "0.9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "6个1厘米就是6个",
+          null,
+          "米，是",
+          null,
+          "米"
+        ],
+        "tokens": [
+          "0.1",
+          "0.06",
+          "0.01",
+          "6",
+          "0.6",
+          "1"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0.01",
+          "0.06"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第44页电影院示意图中，①号位置在银幕正前方附近，看到的照片更可能是什么？",
+        "options": [
+          "正对银幕",
+          "只看见侧墙",
+          "从天花板往下看",
+          "从放映机内部看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果照片中座椅在画面下方、银幕在正前方，观察位置可能在？",
+        "options": [
+          "银幕后面",
+          "观众席后方或中间",
+          "座椅下面",
+          "室外"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从影院左侧走道看，照片中座位排会怎样？",
+        "options": [
+          "完全看不到座椅",
+          "只剩一条直线",
+          "向一侧延伸",
+          "变成棋盘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "电影院照片中判断位置的关键参照物是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "水果和水杯"
+          },
+          {
+            "id": "o2",
+            "label": "银幕和座椅"
+          },
+          {
+            "id": "o3",
+            "label": "汽车轮胎"
+          },
+          {
+            "id": "o4",
+            "label": "茶壶把手"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "在影院不同位置拍摄，银幕可能出现在画面中间或偏一侧。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-048.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要照片里有银幕，就一定是在同一个编号位置拍的。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正对银幕"
+          },
+          {
+            "id": "l2",
+            "text": "左侧走道"
+          },
+          {
+            "id": "l3",
+            "text": "右侧走道"
+          },
+          {
+            "id": "l4",
+            "text": "后排位置"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "座椅向左延伸"
+          },
+          {
+            "id": "r1",
+            "text": "银幕居中"
+          },
+          {
+            "id": "r4",
+            "text": "能看到多排座椅"
+          },
+          {
+            "id": "r2",
+            "text": "座椅向右延伸"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "判断影院照片，要先找",
+          null,
+          "，再看",
+          null,
+          "的方向。"
+        ],
+        "tokens": [
+          "座椅",
+          "灯光",
+          "银幕",
+          "地毯"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "银幕",
+          "座椅"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按观察距离从近到远排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "最后一排"
+          },
+          {
+            "id": "s1",
+            "text": "银幕前排"
+          },
+          {
+            "id": "s4",
+            "text": "放映室附近"
+          },
+          {
+            "id": "s2",
+            "text": "中间座位"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "电影院示意图中①到⑤，一共表示 ? 个可能拍照位置"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照片只看到银幕和很少座椅，最可能靠近哪里？",
+        "options": [
+          "最后一排",
+          "教室门口",
+          "窗户外",
+          "银幕前方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话说明了“位置越近，看到局部越多”？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "站远银幕时，只能看到茶壶"
+          },
+          {
+            "id": "o2",
+            "label": "座椅颜色决定远近"
+          },
+          {
+            "id": "o3",
+            "label": "站近银幕时，银幕占画面更大"
+          },
+          {
+            "id": "o4",
+            "label": "编号越大就越亮"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

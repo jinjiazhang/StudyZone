@@ -1,0 +1,157 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "420 ÷ (25 - 19) = ?"
+      },
+      "answer": {
+        "value": 70,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 6 + 25 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 × 3 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "78 + 600 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 278,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 70 ÷ 7 = ?"
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(48 + 52) ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "180 ÷ 9 - 18 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 16 × 3 = ?"
+      },
+      "answer": {
+        "value": 61,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按计算结果从小到大排列",
+        "items": [
+          {
+            "id": "i4",
+            "text": "30 ÷ 6 + 25"
+          },
+          {
+            "id": "i2",
+            "text": "20 × 3 ÷ 6"
+          },
+          {
+            "id": "i1",
+            "text": "180 ÷ 9 - 18"
+          },
+          {
+            "id": "i3",
+            "text": "(48 + 52) ÷ 5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 78 + 600 ÷ 3 时，应该先算什么？",
+        "options": [
+          "78 + 600",
+          "78 + 3",
+          "600 ÷ 3",
+          "600 ÷ 78"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100 - 70 ÷ 7",
+        "right": "13 + 16 × 3",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

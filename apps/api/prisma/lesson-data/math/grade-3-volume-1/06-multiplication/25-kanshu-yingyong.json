@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "(180 - 80) ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "180 ÷ 9 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "120 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笑笑已经看了80页，一本书共180页，剩下5天看完，平均每天看多少页？",
+        "options": [
+          "16页",
+          "20页",
+          "18页",
+          "25页"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一本书180页，已看80页，剩下5天看完。请列式求平均每天看多少页。",
+        "placeholder": "(180-80)÷5"
+      },
+      "answer": {
+        "accepted": [
+          "(180-80)÷5",
+          "(180−80)÷5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "180页已看80页：剩下__页，5天平均每天__页",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "剩下页数"
+          },
+          {
+            "id": "b2",
+            "label": "每天页数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          100,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "(180 - 80) ÷ 5",
+        "right": "80 ÷ 5",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "生活中可以用 (180-80)÷5 解决的问题是：",
+        "options": [
+          "180页平均分给80人",
+          "每天看5页，80天看多少页",
+          "已看5页，还剩80页",
+          "剩下100页5天看完，平均每天看多少页"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "180 - 80"
+          },
+          {
+            "id": "l2",
+            "text": "100 ÷ 5"
+          },
+          {
+            "id": "l3",
+            "text": "80 ÷ 5"
+          },
+          {
+            "id": "l4",
+            "text": "120 ÷ 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "30"
+          },
+          {
+            "id": "r3",
+            "text": "16"
+          },
+          {
+            "id": "r2",
+            "text": "20"
+          },
+          {
+            "id": "r1",
+            "text": "100"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

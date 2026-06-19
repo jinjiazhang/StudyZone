@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一个礼品盒，观察位置从低到高变化，视图会怎样？",
+        "options": [
+          "逐渐能看到更多顶面",
+          "永远一样",
+          "只能看到底面",
+          "变成圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "站在凳子上看桌面上的礼品盒，比站在地上更可能看到什么？",
+        "options": [
+          "桌底最深处",
+          "盒子上边和桌面",
+          "盒子内部字迹",
+          "窗外汽车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从桌子侧面较低处看，礼品盒可能会被谁挡住一部分？",
+        "options": [
+          "天空",
+          "题号",
+          "桌面边缘",
+          "页脚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪项是“按顺序把四幅图连起来”的关键？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "图的颜色深浅"
+          },
+          {
+            "id": "o2",
+            "label": "括号大小"
+          },
+          {
+            "id": "o3",
+            "label": "对话框位置"
+          },
+          {
+            "id": "o4",
+            "label": "视图中礼品盒露出的多少"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "观察高度不同，看到桌上物体的多少可能不同。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要礼品盒没有移动，观察高度改变也不会影响看到的部分。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "低处看"
+          },
+          {
+            "id": "l2",
+            "text": "稍高看"
+          },
+          {
+            "id": "l3",
+            "text": "接近桌面看"
+          },
+          {
+            "id": "l4",
+            "text": "高处看"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "看到顶边"
+          },
+          {
+            "id": "r1",
+            "text": "被桌面挡住较多"
+          },
+          {
+            "id": "r4",
+            "text": "看到顶面"
+          },
+          {
+            "id": "r2",
+            "text": "露出更多侧面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "礼品盒没有动，看到的画面改变，是因为观察的",
+          null,
+          "和",
+          null,
+          "改变了。"
+        ],
+        "tokens": [
+          "位置",
+          "颜色",
+          "高度",
+          "大小"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "高度",
+          "位置"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从看到最少到看到最多排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "看到盒子侧面和顶边"
+          },
+          {
+            "id": "s1",
+            "text": "只露出盒子上端"
+          },
+          {
+            "id": "s4",
+            "text": "看到盒子顶面"
+          },
+          {
+            "id": "s2",
+            "text": "露出盒子一部分侧面"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四幅礼品盒视图需要标①②③④，共 ? 个序号"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话解释“贝贝站在地面上只能看到礼品盒一小部分”？",
+        "options": [
+          "礼品盒太透明",
+          "贝贝在汽车里",
+          "礼品盒变小了",
+          "桌面挡住了礼品盒的大部分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果要验证答案，最好的办法是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "实际摆一摆、站到不同高度看"
+          },
+          {
+            "id": "o2",
+            "label": "闭眼想一想就结束"
+          },
+          {
+            "id": "o3",
+            "label": "只看图案颜色"
+          },
+          {
+            "id": "o4",
+            "label": "数图片边框"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

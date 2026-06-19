@@ -1,0 +1,177 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 × 4 = ?"
+      },
+      "answer": {
+        "value": 68,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 × 6 = ?"
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 × 3 + 15 × 3 = ?"
+      },
+      "answer": {
+        "value": 96,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 × 4 + 15 × 6 = ?"
+      },
+      "answer": {
+        "value": 158,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买4箱苹果，每箱17元，需要多少元？",
+        "options": [
+          "64元",
+          "70元",
+          "78元",
+          "68元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买6箱梨，每箱15元，需要多少元？",
+        "options": [
+          "80元",
+          "90元",
+          "86元",
+          "96元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "幼儿园买3箱苹果和3箱梨，一共需要多少元？",
+        "options": [
+          "90元",
+          "96元",
+          "102元",
+          "108元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3箱苹果每箱17元，3箱梨每箱15元，一共多少元？请列式。",
+        "placeholder": "17×3+15×3"
+      },
+      "answer": {
+        "accepted": [
+          "17×3+15×3",
+          "15×3+17×3",
+          "(17+15)×3"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "17 × 4",
+        "right": "15 × 6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4箱苹果"
+          },
+          {
+            "id": "l2",
+            "text": "6箱梨"
+          },
+          {
+            "id": "l3",
+            "text": "3箱苹果"
+          },
+          {
+            "id": "l4",
+            "text": "3箱梨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "45元"
+          },
+          {
+            "id": "r3",
+            "text": "51元"
+          },
+          {
+            "id": "r2",
+            "text": "90元"
+          },
+          {
+            "id": "r1",
+            "text": "68元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

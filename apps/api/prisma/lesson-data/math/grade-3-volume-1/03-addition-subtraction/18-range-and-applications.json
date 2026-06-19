@@ -1,0 +1,189 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "达·芬奇出生年份要找得数在400到500之间的算式。700 - 265 的得数是？",
+        "options": [
+          "435",
+          "365",
+          "535",
+          "465"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "700 - 265 = ?"
+      },
+      "answer": {
+        "value": 435,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "300 + 200 - 65 = ?"
+      },
+      "answer": {
+        "value": 435,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1000 - 567 = ?"
+      },
+      "answer": {
+        "value": 433,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "980 - 500 - 20 = ?"
+      },
+      "answer": {
+        "value": 460,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "878 - 408 = ?"
+      },
+      "answer": {
+        "value": 470,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "700 - 265",
+        "right": "400"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "700 - 265",
+        "right": "500"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式的得数不在400到500之间？",
+        "options": [
+          "700 - 265",
+          "1000 - 567",
+          "878 - 408",
+          "130 + 460"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式的得数在400到500之间？",
+        "options": [
+          "801 - 690",
+          "830 - 620 + 240",
+          "682 - 382",
+          "748 + 22"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "判断得数是否在400到500之间，可以先算出准确结果再比较。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "700 - 265"
+          },
+          {
+            "id": "l1",
+            "text": "1000 - 567"
+          },
+          {
+            "id": "l2",
+            "text": "980 - 500 - 20"
+          },
+          {
+            "id": "l3",
+            "text": "878 - 408"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "460"
+          },
+          {
+            "id": "r0",
+            "text": "435"
+          },
+          {
+            "id": "r3",
+            "text": "470"
+          },
+          {
+            "id": "r1",
+            "text": "433"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

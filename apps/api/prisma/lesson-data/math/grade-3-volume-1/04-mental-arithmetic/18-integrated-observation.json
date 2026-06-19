@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元“我们生活的空间（一）”主要学习什么？",
+        "options": [
+          "从不同位置观察物体和场景",
+          "只学习乘法口算",
+          "只学习年月日",
+          "只学习小数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断某幅图是谁看到的，最先要确定什么？",
+        "options": [
+          "图片是否彩色",
+          "观察者的位置",
+          "题号大小",
+          "人物姓名笔画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "当两个候选图很相似时，应该进一步比较什么？",
+        "options": [
+          "哪张图更漂亮",
+          "哪张图边框更粗",
+          "关键物体的左右、前后和遮挡关系",
+          "哪张图靠左"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪项能代表本单元的核心经验？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "物体越大答案越小"
+          },
+          {
+            "id": "o2",
+            "label": "只看颜色就能判断"
+          },
+          {
+            "id": "o3",
+            "label": "所有方向看到都一样"
+          },
+          {
+            "id": "o4",
+            "label": "位置不同，看到的样子可能不同"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "实际摆一摆、看一看，有助于检验空间观察题。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "判断观察位置时，不需要关注遮挡关系。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "汽车"
+          },
+          {
+            "id": "l2",
+            "text": "教室"
+          },
+          {
+            "id": "l3",
+            "text": "礼品盒"
+          },
+          {
+            "id": "l4",
+            "text": "餐桌"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "看高度变化"
+          },
+          {
+            "id": "r1",
+            "text": "看正面、侧面、上面"
+          },
+          {
+            "id": "r4",
+            "text": "看物品左右前后"
+          },
+          {
+            "id": "r2",
+            "text": "看门、窗、黑板"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "空间观察题要抓住观察",
+          null,
+          "、物体",
+          null,
+          "和遮挡关系。"
+        ],
+        "tokens": [
+          "朝向",
+          "颜色",
+          "位置",
+          "大小"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "位置",
+          "朝向"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "解决空间观察题的一般步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "比较关键特征"
+          },
+          {
+            "id": "s1",
+            "text": "读清观察情境"
+          },
+          {
+            "id": "s4",
+            "text": "选择或填写答案"
+          },
+          {
+            "id": "s2",
+            "text": "确定观察位置"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "本单元教材从第41页到第48页，共 ? 页内容"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种做法最能避免左右看反？",
+        "options": [
+          "只看第一个选项",
+          "忽略人物朝向",
+          "把所有图都选①",
+          "转到对应位置实际看一看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "遇到“从窗外看”情境时，首先应考虑什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "观察者在屋外向屋内看"
+          },
+          {
+            "id": "o2",
+            "label": "观察者在桌子下面"
+          },
+          {
+            "id": "o3",
+            "label": "物体一定不被挡住"
+          },
+          {
+            "id": "o4",
+            "label": "所有人都正面对观察者"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

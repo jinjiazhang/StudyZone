@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 ÷ 2 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "39 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "46 ÷ 2：40÷2=__，6÷2=__，合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "整十部分"
+          },
+          {
+            "id": "b2",
+            "label": "剩下部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          20,
+          3,
+          23
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "39 ÷ 3：30÷3=__，9÷3=__，合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "整十部分"
+          },
+          {
+            "id": "b2",
+            "label": "剩下部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          3,
+          13
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "52 ÷ 4：40÷4=__，12÷4=__，合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "整十部分"
+          },
+          {
+            "id": "b2",
+            "label": "剩下部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          3,
+          13
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "42 ÷ 3：先算 30÷3=",
+          null,
+          "，再算 12÷3=",
+          null,
+          "，结果 ",
+          null
+        ],
+        "tokens": [
+          "4",
+          "12",
+          "14",
+          "30",
+          "10",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "10",
+          "4",
+          "14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "42棵树苗平均分给3个班，每班分到多少棵？",
+        "options": [
+          "14棵",
+          "12棵",
+          "13棵",
+          "15棵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "46 ÷ 2"
+          },
+          {
+            "id": "l2",
+            "text": "39 ÷ 3"
+          },
+          {
+            "id": "l3",
+            "text": "84 ÷ 4"
+          },
+          {
+            "id": "l4",
+            "text": "48 ÷ 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "12"
+          },
+          {
+            "id": "r3",
+            "text": "21"
+          },
+          {
+            "id": "r2",
+            "text": "13"
+          },
+          {
+            "id": "r1",
+            "text": "23"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

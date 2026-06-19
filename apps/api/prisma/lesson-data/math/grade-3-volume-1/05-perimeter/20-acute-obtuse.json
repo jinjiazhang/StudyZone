@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比直角小的角叫作：",
+        "options": [
+          "直角",
+          "钝角",
+          "锐角",
+          "平角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比直角大的角叫作：",
+        "options": [
+          "钝角",
+          "锐角",
+          "直角",
+          "顶点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "锐角比直角小。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "钝角比直角小。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材第54页用三角板比角，①通常是哪类角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "锐角"
+          },
+          {
+            "id": "b",
+            "label": "直角"
+          },
+          {
+            "id": "c",
+            "label": "钝角"
+          },
+          {
+            "id": "d",
+            "label": "不是角"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "比直角小的是",
+          null,
+          "，比直角大的是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "钝角",
+          "锐角",
+          "长方形",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "锐角",
+          "钝角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "锐角"
+          },
+          {
+            "id": "l2",
+            "text": "直角"
+          },
+          {
+            "id": "l3",
+            "text": "钝角"
+          },
+          {
+            "id": "l4",
+            "text": "三角板直角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "比直角大"
+          },
+          {
+            "id": "r1",
+            "text": "比直角小"
+          },
+          {
+            "id": "r4",
+            "text": "可作比较标准"
+          },
+          {
+            "id": "r2",
+            "text": "和标准直角相等"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按角的大小从小到大排列",
+        "items": [
+          {
+            "id": "d",
+            "text": "钝角"
+          },
+          {
+            "id": "b",
+            "text": "直角"
+          },
+          {
+            "id": "a",
+            "text": "锐角"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话正确？",
+        "options": [
+          "所有角都一样大",
+          "钝角没有顶点",
+          "锐角有三条边",
+          "锐角、直角、钝角可以按大小分类"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "钝角",
+        "right": "锐角"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

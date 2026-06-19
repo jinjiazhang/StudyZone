@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "饼干每包4元，蛋糕每个6元。买2包饼干和1个蛋糕，列综合算式。",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "4*2+6",
+          "6+4*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 2 + 6 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "花生每包7元，壮壮有20元，买2包花生后还剩多少元？列综合算式。",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "20-2*7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 - 2 * 7 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买 1 个巧克力面包 5 元和 1 个奶油面包 7 元，共多少元？",
+        "options": [
+          "12元",
+          "10元",
+          "14元",
+          "35元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "买 3 个菠萝面包 12 元，1 个菠萝面包 __ 元；再买 1 个巧克力面包 5 元，共 __ 元。",
+        "blanks": [
+          {
+            "id": "unit"
+          },
+          {
+            "id": "total"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 / 3 + 5 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "3",
+          "+",
+          "4",
+          "=",
+          "10"
+        ],
+        "tokens": [
+          "/",
+          "*",
+          "-",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "/"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10 / 5 + 4",
+        "right": "7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3本作文本18元，1本几元"
+          },
+          {
+            "id": "l2",
+            "text": "促销5本10元，1本几元"
+          },
+          {
+            "id": "l3",
+            "text": "1本作文本6元加英语本4元"
+          },
+          {
+            "id": "l4",
+            "text": "12元3个面包再加5元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "10 / 5 = 2"
+          },
+          {
+            "id": "r4",
+            "text": "12 / 3 + 5 = 9"
+          },
+          {
+            "id": "r1",
+            "text": "18 / 3 = 6"
+          },
+          {
+            "id": "r3",
+            "text": "6 + 4 = 10"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "促销“5本10元”表示每本多少元？",
+        "options": [
+          "10元",
+          "15元",
+          "2元",
+          "5元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 7 + 12 = ?"
+      },
+      "answer": {
+        "value": 33,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

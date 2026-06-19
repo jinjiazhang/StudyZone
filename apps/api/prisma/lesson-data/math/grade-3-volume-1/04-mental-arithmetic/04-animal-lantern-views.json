@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第42页动物看灯笼，谁最可能看到灯笼的正面？",
+        "options": [
+          "正对灯笼的小动物",
+          "站在灯笼背后的小动物",
+          "站在远处看地面的小动物",
+          "闭眼的小动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果图片中只能看到灯笼窄窄的一侧，观察者可能站在哪里？",
+        "options": [
+          "灯笼正前方",
+          "灯笼侧面",
+          "灯笼正后方",
+          "灯笼里面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到灯笼顶部和开口，最可能是从哪个方向看？",
+        "options": [
+          "下面",
+          "正面",
+          "上面",
+          "侧面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断动物与灯笼视图对应时，先看什么最有帮助？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "动物的名字"
+          },
+          {
+            "id": "o2",
+            "label": "背景颜色"
+          },
+          {
+            "id": "o3",
+            "label": "页脚数字"
+          },
+          {
+            "id": "o4",
+            "label": "灯笼的朝向和可见面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o4"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个灯笼，从正面和侧面看到的宽窄可能不同。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从上面看灯笼，一定和从正面看完全一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正前方"
+          },
+          {
+            "id": "l2",
+            "text": "侧面"
+          },
+          {
+            "id": "l3",
+            "text": "上方"
+          },
+          {
+            "id": "l4",
+            "text": "背面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "看到顶面"
+          },
+          {
+            "id": "r1",
+            "text": "看到正面宽图"
+          },
+          {
+            "id": "r4",
+            "text": "看到背面"
+          },
+          {
+            "id": "r2",
+            "text": "看到较窄侧图"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "看到灯笼比较",
+          null,
+          "的一面，可能站在灯笼",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "侧面",
+          "宽",
+          "窄",
+          "正面"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "窄",
+          "侧面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把判断灯笼视图的线索按顺序整理",
+        "items": [
+          {
+            "id": "s3",
+            "text": "找顶部或开口"
+          },
+          {
+            "id": "s1",
+            "text": "看灯笼哪一面朝向观察者"
+          },
+          {
+            "id": "s4",
+            "text": "连到对应动物"
+          },
+          {
+            "id": "s2",
+            "text": "比较图形宽窄"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四只动物分别站在四周观察，位置编号可以有 ? 个"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种描述不属于观察位置？",
+        "options": [
+          "前面",
+          "左边",
+          "右边",
+          "灯笼很漂亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果两个视图很相似，怎样做更可靠？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "比较能否看到顶部、侧边和遮挡"
+          },
+          {
+            "id": "o2",
+            "label": "只看第一个字"
+          },
+          {
+            "id": "o3",
+            "label": "按自己喜欢选"
+          },
+          {
+            "id": "o4",
+            "label": "忽略物体方向"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o1"
+      },
+      "difficulty": 2
+    }
+  ]
+}

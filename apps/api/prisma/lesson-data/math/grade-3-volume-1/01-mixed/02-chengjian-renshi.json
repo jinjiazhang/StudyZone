@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 - 3 * 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 - 2 * 7 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中“壮壮有20元，买3包饼干”可用哪个综合算式表示？",
+        "options": [
+          "20 - 3 + 4",
+          "20 / 4 - 3",
+          "3 * 20 - 4",
+          "20 - 3 * 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "20 - 3 * 4：先算 3 * 4 = __，再算 20 - __ = __。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          12,
+          8
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "20",
+          null,
+          "3",
+          null,
+          "4",
+          null,
+          "8"
+        ],
+        "tokens": [
+          "-",
+          "*",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "*",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 5 * 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "86 - 6 * 8 = ?"
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有 24 个轮子，每辆车需要 4 个轮子，装 5 辆车后还剩多少个？列综合算式。",
+        "placeholder": "例如：24-4*5"
+      },
+      "answer": {
+        "accepted": [
+          "24-4*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 49 - 3 * 8 时，第一步结果是多少？",
+        "options": [
+          "25",
+          "24",
+          "46",
+          "368"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20 - 2 * 7",
+        "right": "7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 * 7 - 34 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "20 - 3 * 4"
+          },
+          {
+            "id": "l2",
+            "text": "50 - 5 * 9"
+          },
+          {
+            "id": "l3",
+            "text": "86 - 6 * 8"
+          },
+          {
+            "id": "l4",
+            "text": "6 * 7 - 34"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "5"
+          },
+          {
+            "id": "r4",
+            "text": "8"
+          },
+          {
+            "id": "r1",
+            "text": "8"
+          },
+          {
+            "id": "r3",
+            "text": "38"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

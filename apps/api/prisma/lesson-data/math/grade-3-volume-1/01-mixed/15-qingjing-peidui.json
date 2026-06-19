@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "买2个奶油面包14元，1个巧克力面包5元，共多少元"
+          },
+          {
+            "id": "l2",
+            "text": "50元买8张儿童票，每张4元，找回多少元"
+          },
+          {
+            "id": "l3",
+            "text": "男生29人女生25人，每船9人，需要几船"
+          },
+          {
+            "id": "l4",
+            "text": "70人先坐46人大车，余下坐8人小车"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "(29 + 25) / 9"
+          },
+          {
+            "id": "r1",
+            "text": "14 + 5"
+          },
+          {
+            "id": "r4",
+            "text": "(70 - 46) / 8"
+          },
+          {
+            "id": "r2",
+            "text": "50 - 8 * 4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "50元买8张儿童票，每张4元，应找回多少元？",
+        "placeholder": "例如：50-8*4"
+      },
+      "answer": {
+        "accepted": [
+          "50-8*4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 8 * 4 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一套风景明信片20元，一套动物明信片4张、每张3元，共多少元？",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "20+4*3",
+          "4*3+20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 + 4 * 3 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每辆车需要4个轮子，一共24个轮子，装8辆车还缺多少个？”列式为？",
+        "options": [
+          "24 - 8 * 4",
+          "24 / 4 + 8",
+          "8 + 4 * 24",
+          "8 * 4 - 24"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 * 4 - 24 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "淘气买 4 盒牛奶和 1 瓶矿泉水共 34 元。牛奶每盒 8 元，矿泉水 __ 元。",
+        "blanks": [
+          {
+            "id": "water",
+            "label": "矿泉水",
+            "suffix": "元"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "牛奶每盒8元，4盒牛奶和1瓶矿泉水共34元，矿泉水每瓶多少元？",
+        "placeholder": "例如：34-4*8"
+      },
+      "answer": {
+        "accepted": [
+          "34-4*8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "34 - 4 * 8",
+        "right": "3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 8 * 4 - 24 解决的是？",
+        "options": [
+          "每辆车有多少轮子",
+          "装8辆车还缺多少个轮子",
+          "装8辆车还剩多少个轮子",
+          "24个轮子可装几辆车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 - 4 * 8 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元整理表中，“认识小数”的例子可以是？",
+        "options": [
+          "7.1>6.9",
+          "4.5+1.3=5.8",
+          "3.15、0.5",
+          "25.3-3.5=21.8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较7.1和6.9时，可以把7.1米看作？",
+        "options": [
+          "71米",
+          "7厘米1毫米",
+          "7米1分米",
+          "0.71米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.5 + 1.3 = ?"
+      },
+      "answer": {
+        "value": 5.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.5 - 1.7 = ?"
+      },
+      "answer": {
+        "value": 2.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7.1",
+        "right": "6.9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "贴画0.06元，记事本0.60元，故事书6.00元。0.60元是__角，6.00元是__元。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "角"
+          },
+          {
+            "id": "b2",
+            "label": "元"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          6
+        ],
+        "tolerances": [
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "橡皮长0.06米，茶几高0.60米，房屋高6米。0.06米是__厘米，0.60米是__分米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "厘米"
+          },
+          {
+            "id": "b2",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          6
+        ],
+        "tolerances": [
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些数从小到大排列。",
+        "items": [
+          {
+            "id": "b",
+            "text": "0.60"
+          },
+          {
+            "id": "d",
+            "text": "6.00"
+          },
+          {
+            "id": "a",
+            "text": "0.06"
+          },
+          {
+            "id": "c",
+            "text": "3.15"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "小数加减时要把",
+          null,
+          "对齐；比较时也要看",
+          null,
+          "单位"
+        ],
+        "tokens": [
+          "相同",
+          "小数点",
+          "不同",
+          "末尾",
+          "先后",
+          "数量"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "小数点",
+          "相同"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "贴画0.06元、记事本0.60元、故事书6.00元，三样一共多少元？",
+        "columns": [
+          "物品",
+          "贴画",
+          "记事本",
+          "故事书"
+        ],
+        "rows": [
+          {
+            "物品": "价格",
+            "贴画": 0.06,
+            "记事本": 0.6,
+            "故事书": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 6.66,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    }
+  ]
+}

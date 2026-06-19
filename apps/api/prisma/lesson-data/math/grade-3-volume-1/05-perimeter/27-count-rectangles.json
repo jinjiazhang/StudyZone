@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "教材第56页：一个长方形中间横着分成2份，可以数出几个长方形？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个大长方形被一条竖线分成2个小长方形，一共能数出几个长方形？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个2行2列的方格图，可以直接看到 __ 个小正方形和 __ 个大正方形。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小正方形"
+          },
+          {
+            "id": "b2",
+            "label": "大正方形"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "数长方形时，大图形和小图形都要考虑。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数图形时，最容易漏掉的是：",
+        "options": [
+          "已经标好的一个小格",
+          "题号",
+          "由几个小图形合成的大图形",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，2行3列小方格中，1格大小的小正方形有几个？",
+        "columns": [
+          "方格",
+          "数量"
+        ],
+        "rows": [
+          {
+            "方格": "1格正方形",
+            "数量": 6
+          },
+          {
+            "方格": "2格长方形",
+            "数量": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 6
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "数图形要先数",
+          null,
+          "图形，再数几个小图形合成的",
+          null,
+          "图形。"
+        ],
+        "tokens": [
+          "小",
+          "圆",
+          "大",
+          "角"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "小",
+          "大"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "只数小格"
+          },
+          {
+            "id": "l2",
+            "text": "合并相邻小格"
+          },
+          {
+            "id": "l3",
+            "text": "2行2列"
+          },
+          {
+            "id": "l4",
+            "text": "一条线分长方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "有1个大正方形"
+          },
+          {
+            "id": "r1",
+            "text": "容易漏大图形"
+          },
+          {
+            "id": "r4",
+            "text": "共有3个长方形"
+          },
+          {
+            "id": "r2",
+            "text": "能找到更多长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个长方形被分成上下两层，下面哪一个一定也要数？",
+        "options": [
+          "整个大长方形",
+          "纸的厚度",
+          "页面水印",
+          "图形颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3个横向相连的小正方形，可以数出几个长方形？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 3
+    }
+  ]
+}

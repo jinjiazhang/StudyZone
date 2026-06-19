@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "爸爸1月电话费30.2元，两个月小计61.0元，爸爸2月电话费是多少元？",
+        "columns": [
+          "家庭成员",
+          "1月",
+          "2月",
+          "小计"
+        ],
+        "rows": [
+          {
+            "家庭成员": "爸爸",
+            "1月": 30.2,
+            "2月": "",
+            "小计": 61
+          },
+          {
+            "家庭成员": "妈妈",
+            "1月": 26.7,
+            "2月": 20.4,
+            "小计": ""
+          }
+        ]
+      },
+      "answer": {
+        "value": 30.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "妈妈1月26.7元，2月20.4元，小计是多少元？",
+        "columns": [
+          "家庭成员",
+          "1月",
+          "2月"
+        ],
+        "rows": [
+          {
+            "家庭成员": "妈妈",
+            "1月": 26.7,
+            "2月": 20.4
+          }
+        ]
+      },
+      "answer": {
+        "value": 47.1,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "淘气家7月水费10.5元，8月水费14.8元，水费小计是多少元？",
+        "columns": [
+          "费用项目",
+          "7月",
+          "8月"
+        ],
+        "rows": [
+          {
+            "费用项目": "水费",
+            "7月": 10.5,
+            "8月": 14.8
+          }
+        ]
+      },
+      "answer": {
+        "value": 25.3,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "7月水费10.5元、燃气费15.3元，7月合计是多少元？",
+        "columns": [
+          "费用项目",
+          "7月"
+        ],
+        "rows": [
+          {
+            "费用项目": "水费",
+            "7月": 10.5
+          },
+          {
+            "费用项目": "燃气费",
+            "7月": 15.3
+          }
+        ]
+      },
+      "answer": {
+        "value": 25.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "61.0 - 30.2 = ?"
+      },
+      "answer": {
+        "value": 30.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26.7 + 20.4 = ?"
+      },
+      "answer": {
+        "value": 47.1,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10.5 + 14.8 = ?"
+      },
+      "answer": {
+        "value": 25.3,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10.5 + 15.3 = ?"
+      },
+      "answer": {
+        "value": 25.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30.8",
+        "right": "30.2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "表格求小计通常用",
+          null,
+          "法，已知小计和其中一项可用",
+          null,
+          "法"
+        ],
+        "tokens": [
+          "减",
+          "加",
+          "乘",
+          "除",
+          "比较",
+          "估算"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "加",
+          "减"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

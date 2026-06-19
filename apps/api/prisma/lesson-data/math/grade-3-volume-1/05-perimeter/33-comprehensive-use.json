@@ -1,0 +1,269 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个图形有四条边、四个直角、对边相等，它可能是：",
+        "options": [
+          "长方形",
+          "三角形",
+          "圆",
+          "扇形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个图形四条边都相等、四个角都是直角，它是：",
+        "options": [
+          "长方形",
+          "钝角",
+          "正方形",
+          "锐角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个角最大？",
+        "options": [
+          {
+            "id": "a",
+            "label": "锐角"
+          },
+          {
+            "id": "b",
+            "label": "直角"
+          },
+          {
+            "id": "d",
+            "label": "比锐角更小的角"
+          },
+          {
+            "id": "c",
+            "label": "钝角"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1个角"
+          },
+          {
+            "id": "l2",
+            "text": "1个长方形"
+          },
+          {
+            "id": "l3",
+            "text": "1个正方形"
+          },
+          {
+            "id": "l4",
+            "text": "1个钝角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "4个直角"
+          },
+          {
+            "id": "r4",
+            "text": "比直角大"
+          },
+          {
+            "id": "r1",
+            "text": "1个顶点2条边"
+          },
+          {
+            "id": "r3",
+            "text": "4边相等4角直"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "角的大小看",
+          null,
+          "大小；长方形和正方形都看边与",
+          null,
+          "的特点。"
+        ],
+        "tokens": [
+          "张口",
+          "颜色",
+          "角",
+          "重量"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "张口",
+          "角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪种角比直角小？",
+        "columns": [
+          "角",
+          "大小关系"
+        ],
+        "rows": [
+          {
+            "角": "锐角",
+            "大小关系": "小于直角"
+          },
+          {
+            "角": "直角",
+            "大小关系": "等于直角"
+          },
+          {
+            "角": "钝角",
+            "大小关系": "大于直角"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "锐角"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个长方形和两个正方形共有 __ 个图形、__ 个直角。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "图形数"
+          },
+          {
+            "id": "b2",
+            "label": "直角数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按学习顺序排列",
+        "items": [
+          {
+            "id": "s4",
+            "text": "图形设计"
+          },
+          {
+            "id": "s2",
+            "text": "比较和分类角"
+          },
+          {
+            "id": "s1",
+            "text": "认识角"
+          },
+          {
+            "id": "s3",
+            "text": "认识长方形和正方形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "本单元既要观察图形，也要动手折、量、比、画。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "遇到一个新图形，最合适的研究方法是：",
+        "options": [
+          {
+            "id": "a",
+            "label": "从边和角观察特征"
+          },
+          {
+            "id": "b",
+            "label": "只看颜色"
+          },
+          {
+            "id": "c",
+            "label": "只看它像不像动物"
+          },
+          {
+            "id": "d",
+            "label": "直接猜答案"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    }
+  ]
+}

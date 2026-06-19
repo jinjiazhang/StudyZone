@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从不同位置观察同一辆汽车，看到的样子通常会怎样？",
+        "options": [
+          "不完全相同",
+          "完全一样",
+          "一定看不到",
+          "只和汽车颜色有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到汽车的车头和两个前灯，最可能站在汽车的哪一面？",
+        "options": [
+          "正后方",
+          "正前方",
+          "车顶上方",
+          "车底下面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到汽车的两个车门和车身长长的一面，最可能是从哪里观察？",
+        "options": [
+          "正面",
+          "背面",
+          "侧面",
+          "车内"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "从上面观察小汽车，最接近看到什么？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "前灯和车牌"
+          },
+          {
+            "id": "o2",
+            "label": "车顶和车身轮廓"
+          },
+          {
+            "id": "o3",
+            "label": "后备箱正面"
+          },
+          {
+            "id": "o4",
+            "label": "一个车轮"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从汽车左侧和右侧观察，车头方向可能相反。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-045.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "站在汽车正前方时，一定能同时看到完整车顶和车底。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正面看汽车"
+          },
+          {
+            "id": "l2",
+            "text": "背面看汽车"
+          },
+          {
+            "id": "l3",
+            "text": "侧面看汽车"
+          },
+          {
+            "id": "l4",
+            "text": "上面看汽车"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "能看到车门"
+          },
+          {
+            "id": "r1",
+            "text": "能看到车头"
+          },
+          {
+            "id": "r4",
+            "text": "能看到车顶"
+          },
+          {
+            "id": "r2",
+            "text": "能看到车尾"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从不同",
+          null,
+          "观察，同一物体的",
+          null,
+          "可能不同。"
+        ],
+        "tokens": [
+          "形状",
+          "颜色",
+          "位置",
+          "大小"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "位置",
+          "形状"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "完成一次观察交流的合理顺序",
+        "items": [
+          {
+            "id": "s3",
+            "text": "说出看到的样子"
+          },
+          {
+            "id": "s1",
+            "text": "选定一个物体"
+          },
+          {
+            "id": "s4",
+            "text": "比较有什么不同"
+          },
+          {
+            "id": "s2",
+            "text": "换不同位置观察"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四个同学从四个方向看汽车，可形成的观察位置数是 ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气说“我看到了车尾”，他可能在汽车的哪里？",
+        "options": [
+          "前面",
+          "上面",
+          "车内",
+          "后面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话最能概括本课发现？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "只要物体不动，看到的都一样"
+          },
+          {
+            "id": "o2",
+            "label": "只有颜色会变"
+          },
+          {
+            "id": "o3",
+            "label": "观察位置变了，看到的样子会变"
+          },
+          {
+            "id": "o4",
+            "label": "站得越远越能看到车底"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

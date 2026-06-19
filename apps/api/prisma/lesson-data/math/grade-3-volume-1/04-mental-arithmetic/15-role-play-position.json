@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第47页“我扮演笑笑，我是淘气”属于哪种学习方法？",
+        "options": [
+          "模拟观察情境",
+          "背诵乘法口诀",
+          "称质量",
+          "画统计表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "模拟观察时，为什么要摆好桌子和人物位置？",
+        "options": [
+          "为了让颜色更多",
+          "位置关系会影响看到的图",
+          "为了算面积",
+          "为了改页码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同伴说“桌子在笑笑的……”时，应补充什么信息？",
+        "options": [
+          "价格",
+          "重量",
+          "方位",
+          "长度单位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "检验观察判断最有效的做法是？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "只看答案位置"
+          },
+          {
+            "id": "o2",
+            "label": "实际站到对应位置看一看"
+          },
+          {
+            "id": "o3",
+            "label": "把图片倒过来"
+          },
+          {
+            "id": "o4",
+            "label": "换一本书"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用同学合作模拟，可以帮助验证从某位置看到的样子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "模拟时人物位置随便放，也一定能得到同样结论。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "一人扮演观察者"
+          },
+          {
+            "id": "l2",
+            "text": "一人扮演被观察者"
+          },
+          {
+            "id": "l3",
+            "text": "桌子"
+          },
+          {
+            "id": "l4",
+            "text": "其他同学"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "按题意摆放"
+          },
+          {
+            "id": "r1",
+            "text": "站在指定位置"
+          },
+          {
+            "id": "r4",
+            "text": "比较看到的图"
+          },
+          {
+            "id": "r2",
+            "text": "保持朝向"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "合作模拟时，要固定人物的",
+          null,
+          "和桌子的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "位置",
+          "大小",
+          "朝向",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "朝向",
+          "位置"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "合作模拟观察的合理顺序",
+        "items": [
+          {
+            "id": "s3",
+            "text": "说出看到的样子"
+          },
+          {
+            "id": "s1",
+            "text": "摆出桌子和人物"
+          },
+          {
+            "id": "s4",
+            "text": "与候选图比较"
+          },
+          {
+            "id": "s2",
+            "text": "站到观察位置"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "四人小组中，若1人观察、1人扮演笑笑，至少有 ? 人参与关键模拟"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项会让模拟结果不可靠？",
+        "options": [
+          "认真比较左右",
+          "保持桌子不动",
+          "说明看到的方向",
+          "观察者站错位置"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "模拟完成后，应该怎样表达结论？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "这个图颜色好看"
+          },
+          {
+            "id": "o2",
+            "label": "我喜欢第一个"
+          },
+          {
+            "id": "o3",
+            "label": "我站在这个位置，看到的是第几幅图"
+          },
+          {
+            "id": "o4",
+            "label": "页码是47"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

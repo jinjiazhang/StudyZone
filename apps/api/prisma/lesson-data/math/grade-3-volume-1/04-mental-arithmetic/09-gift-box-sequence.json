@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第45页中，小狗贝贝先站在地面上看，最可能看到礼品盒的什么？",
+        "options": [
+          "一小部分侧面",
+          "完整底面",
+          "盒子内部",
+          "桌子下面全部"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "踮起脚看比蹲在地面上看，通常会看到礼品盒的哪部分更多？",
+        "options": [
+          "底面",
+          "上面",
+          "桌腿内部",
+          "看不到任何东西"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "爬到桌子上看，最可能看到什么？",
+        "options": [
+          "桌子正下方",
+          "地砖背面",
+          "礼品盒顶面",
+          "椅子轮子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "贝贝四次观察的变化主要与什么有关？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "盒子颜色变化"
+          },
+          {
+            "id": "o2",
+            "label": "观察高度变化"
+          },
+          {
+            "id": "o3",
+            "label": "桌子价格变化"
+          },
+          {
+            "id": "o4",
+            "label": "人物姓名变化"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "观察位置越高，通常越容易看到桌面上物体的上面。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-3-volume-1/pages/page-049.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "贝贝站在地面上只能看到礼品盒的全部顶面。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "站在地面上"
+          },
+          {
+            "id": "l2",
+            "text": "踮起脚"
+          },
+          {
+            "id": "l3",
+            "text": "站到凳子上"
+          },
+          {
+            "id": "l4",
+            "text": "爬上桌子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "接近桌面高度"
+          },
+          {
+            "id": "r1",
+            "text": "看到较少"
+          },
+          {
+            "id": "r4",
+            "text": "看到上面"
+          },
+          {
+            "id": "r2",
+            "text": "看到多一点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "观察高度",
+          null,
+          "，看到物体上面的部分通常",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "增多",
+          "降低",
+          "升高",
+          "减少"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "升高",
+          "增多"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按贝贝观察礼品盒的顺序排列",
+        "items": [
+          {
+            "id": "s3",
+            "text": "站到凳子上看"
+          },
+          {
+            "id": "s1",
+            "text": "站在地面上看"
+          },
+          {
+            "id": "s4",
+            "text": "爬上桌子看"
+          },
+          {
+            "id": "s2",
+            "text": "踮起脚看"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "贝贝观察礼品盒的四个步骤，共有 ? 次观察"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果①和②顺序标反了，说明忽略了什么？",
+        "options": [
+          "礼品盒颜色",
+          "桌面长度",
+          "页面页码",
+          "观察高度由低到高变化"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪幅图最可能对应“爬上桌子看”？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "只看到桌腿的图"
+          },
+          {
+            "id": "o2",
+            "label": "只看到桌子底面的图"
+          },
+          {
+            "id": "o3",
+            "label": "能看到礼品盒顶面较完整的图"
+          },
+          {
+            "id": "o4",
+            "label": "看不到礼品盒的图"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估测一粒大米的长度，常用哪个单位？",
+        "options": [
+          "分米",
+          "毫米",
+          "米",
+          "千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "做桌套要测量课桌的长和宽，常用哪个单位？",
+        "options": [
+          "厘米",
+          "千米",
+          "毫米",
+          "吨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估测从家到天安门广场有多远，常用哪个单位？",
+        "options": [
+          "毫米",
+          "厘米",
+          "千米",
+          "分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估测一本数学书厚度，最合适的单位是？",
+        "options": [
+          "米",
+          "毫米",
+          "千米",
+          "分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1拃约1分米，3拃约多少分米？"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一步约50厘米，走2步约多少厘米？"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "100厘米 = ?米",
+        "fromUnit": "厘米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 1,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "30厘米 = ?分米",
+        "fromUnit": "厘米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 3,
+        "unit": "分米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1分米",
+        "right": "9厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1米",
+        "right": "10分米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "选择单位时，要先想一想被测物体大约有多长。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "一粒大米"
+          },
+          {
+            "id": "l2",
+            "text": "课桌的宽"
+          },
+          {
+            "id": "l3",
+            "text": "教室的高"
+          },
+          {
+            "id": "l4",
+            "text": "城市间距离"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "米"
+          },
+          {
+            "id": "r2",
+            "text": "千米"
+          },
+          {
+            "id": "r3",
+            "text": "毫米"
+          },
+          {
+            "id": "r4",
+            "text": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

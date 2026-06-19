@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "850 - 256 - 280 = ?"
+      },
+      "answer": {
+        "value": 314,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1000 - 372 - 210 = ?"
+      },
+      "answer": {
+        "value": 418,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "456 - 278 - 132 = ?"
+      },
+      "answer": {
+        "value": 46,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "500 - 294 - 106 = ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "900 - 281 - 430 = ?"
+      },
+      "answer": {
+        "value": 189,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "738 - 560 - 120 = ?"
+      },
+      "answer": {
+        "value": 58,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1000 - 185 - 145 = ?"
+      },
+      "answer": {
+        "value": 670,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "930 - 80 - 480 = ?"
+      },
+      "answer": {
+        "value": 370,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "850 - 256 - 280：先算 850 - 256 = __，再减 280 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          594,
+          314
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1000 - 372 - 210：先算 1000 - 372 = __，再减 210 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          628,
+          418
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "850 - 256 - 280",
+        "right": "300"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "850 - 256 - 280"
+          },
+          {
+            "id": "l1",
+            "text": "1000 - 372 - 210"
+          },
+          {
+            "id": "l2",
+            "text": "456 - 278 - 132"
+          },
+          {
+            "id": "l3",
+            "text": "500 - 294 - 106"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "46"
+          },
+          {
+            "id": "r0",
+            "text": "314"
+          },
+          {
+            "id": "r3",
+            "text": "100"
+          },
+          {
+            "id": "r1",
+            "text": "418"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3千米",
+        "right": "30米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5000米",
+        "right": "5千米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4米",
+        "right": "40厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "40厘米",
+        "right": "4分米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30毫米",
+        "right": "3厘米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2厘米",
+        "right": "2分米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1米2分米",
+        "right": "12分米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3米5厘米",
+        "right": "35厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1千米",
+        "right": "1001米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9分米9厘米",
+        "right": "1米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按长度从短到长排列。",
+        "items": [
+          {
+            "id": "m1",
+            "text": "1米"
+          },
+          {
+            "id": "cm80",
+            "text": "80厘米"
+          },
+          {
+            "id": "dm9",
+            "text": "9分米"
+          },
+          {
+            "id": "mm700",
+            "text": "700毫米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "mm700",
+          "cm80",
+          "dm9",
+          "m1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较带单位的长度时，最稳妥的方法是？",
+        "options": [
+          "只看数字大小",
+          "只看谁写在前面",
+          "先化成同一种单位",
+          "去掉单位再比"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第55页：正方形的四条边有什么特点？",
+        "options": [
+          "都相等",
+          "只有对边相等",
+          "都不相等",
+          "没有边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形的四个角都是：",
+        "options": [
+          "锐角",
+          "钝角",
+          "平角",
+          "直角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个正方形有 __ 条相等的边、__ 个直角。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "相等边数"
+          },
+          {
+            "id": "b2",
+            "label": "直角数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形的四条边都相等。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形不是长方形，因为它没有直角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "正方形的四条边都",
+          null,
+          "，四个角都是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "相等",
+          "钝角",
+          "直角",
+          "对边"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相等",
+          "直角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个描述符合正方形？",
+        "options": [
+          {
+            "id": "b",
+            "label": "三条边都相等"
+          },
+          {
+            "id": "a",
+            "label": "四条边都相等，四个角都是直角"
+          },
+          {
+            "id": "c",
+            "label": "只有一组对边相等"
+          },
+          {
+            "id": "d",
+            "label": "没有角"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正方形"
+          },
+          {
+            "id": "l2",
+            "text": "长方形"
+          },
+          {
+            "id": "l3",
+            "text": "四个角"
+          },
+          {
+            "id": "l4",
+            "text": "四条边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "正方形中都相等"
+          },
+          {
+            "id": "r2",
+            "text": "对边相等"
+          },
+          {
+            "id": "r1",
+            "text": "四边相等且四角直"
+          },
+          {
+            "id": "r3",
+            "text": "都是直角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "用5个正方形拼图，每个正方形有4条边，单独数一共有多少条边？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪种图形四条边都相等？",
+        "columns": [
+          "图形",
+          "边的特点"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "边的特点": "对边相等"
+          },
+          {
+            "图形": "正方形",
+            "边的特点": "四条边都相等"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "正方形"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

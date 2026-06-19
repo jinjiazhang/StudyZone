@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "北京到郑州的累计里程是多少千米？",
+        "columns": [
+          "区间",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "区间": "北京-保定",
+            "里程千米": 146
+          },
+          {
+            "区间": "北京-石家庄",
+            "里程千米": 281
+          },
+          {
+            "区间": "北京-郑州",
+            "里程千米": 689
+          },
+          {
+            "区间": "北京-洛阳",
+            "里程千米": 813
+          },
+          {
+            "区间": "北京-西安",
+            "里程千米": 1200
+          }
+        ]
+      },
+      "answer": {
+        "value": 689,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "北京到西安的累计里程是多少千米？",
+        "columns": [
+          "区间",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "区间": "北京-保定",
+            "里程千米": 146
+          },
+          {
+            "区间": "北京-石家庄",
+            "里程千米": 281
+          },
+          {
+            "区间": "北京-郑州",
+            "里程千米": 689
+          },
+          {
+            "区间": "北京-洛阳",
+            "里程千米": 813
+          },
+          {
+            "区间": "北京-西安",
+            "里程千米": 1200
+          }
+        ]
+      },
+      "answer": {
+        "value": 1200,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "281 - 146 = ?"
+      },
+      "answer": {
+        "value": 135,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "689 - 281 = ?"
+      },
+      "answer": {
+        "value": 408,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "813 - 689 = ?"
+      },
+      "answer": {
+        "value": 124,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1200 - 813 = ?"
+      },
+      "answer": {
+        "value": 387,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "保定到石家庄的里程是多少千米？",
+        "options": [
+          "146千米",
+          "135千米",
+          "281千米",
+          "408千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "689 - 146 表示哪两站之间的里程？",
+        "options": [
+          "北京到郑州",
+          "石家庄到郑州",
+          "北京到保定",
+          "保定到郑州"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "689 - 146 = ?"
+      },
+      "answer": {
+        "value": 543,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1200 - 689 = ?"
+      },
+      "answer": {
+        "value": 511,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "689 - 281",
+        "right": "1200 - 813"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "保定-石家庄"
+          },
+          {
+            "id": "l1",
+            "text": "石家庄-郑州"
+          },
+          {
+            "id": "l2",
+            "text": "郑州-洛阳"
+          },
+          {
+            "id": "l3",
+            "text": "洛阳-西安"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "124千米"
+          },
+          {
+            "id": "r0",
+            "text": "135千米"
+          },
+          {
+            "id": "r3",
+            "text": "387千米"
+          },
+          {
+            "id": "r1",
+            "text": "408千米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

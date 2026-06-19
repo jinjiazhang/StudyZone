@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4.90",
+        "right": "5.10"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4.60",
+        "right": "4.50"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8.80",
+        "right": "8.08"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.80",
+        "right": "8角"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12.90",
+        "right": "11.60"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30.30",
+        "right": "45.60"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较4.9元和5.1元，可以先看什么？",
+        "options": [
+          "小数点颜色",
+          "单位名称",
+          "题号",
+          "整数部分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "0.40元和4角相比，结果是：",
+        "options": [
+          "相等",
+          "0.40元大",
+          "4角大",
+          "不能比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把价格从低到高排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "12.90元"
+          },
+          {
+            "id": "i1",
+            "text": "0.80元"
+          },
+          {
+            "id": "i4",
+            "text": "30.30元"
+          },
+          {
+            "id": "i2",
+            "text": "11.60元"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把价格从高到低排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "12.90元"
+          },
+          {
+            "id": "i1",
+            "text": "45.60元"
+          },
+          {
+            "id": "i4",
+            "text": "0.80元"
+          },
+          {
+            "id": "i2",
+            "text": "30.30元"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4.9元"
+          },
+          {
+            "id": "l2",
+            "text": "5.1元"
+          },
+          {
+            "id": "l3",
+            "text": "0.8元"
+          },
+          {
+            "id": "l4",
+            "text": "10.9元"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "8角"
+          },
+          {
+            "id": "r1",
+            "text": "49角"
+          },
+          {
+            "id": "r4",
+            "text": "10元9角"
+          },
+          {
+            "id": "r2",
+            "text": "51角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "比较同单位小数大小时，小数点对齐后，相同数位上的数依次比较。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

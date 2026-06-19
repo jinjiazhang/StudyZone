@@ -1,0 +1,167 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "29.9 - 16.8 = ?"
+      },
+      "answer": {
+        "value": 13.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气已有16.8元，想买29.9元的书包，求至少还要存多少元。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "29.9-16.8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "29.9元-16.8元，可以先转化成多少角相减？",
+        "options": [
+          "29角-16角",
+          "299分-168分",
+          "299角-168角",
+          "2.99角-1.68角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "29.9元 - 16.8元 = __元__角",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18.9 - 16.8 = ?"
+      },
+      "answer": {
+        "value": 2.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13.2 - 5.7 = ?"
+      },
+      "answer": {
+        "value": 7.5,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12.5 - 4.3 = ?"
+      },
+      "answer": {
+        "value": 8.2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13.1",
+        "right": "13.0"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "29.9 - 16.8 的结果是多少？",
+        "options": [
+          "12.1",
+          "13.1",
+          "14.1",
+          "31.1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气已有16.8元，再存13.1元后正好有多少元？",
+        "options": [
+          "28.9元",
+          "30.9元",
+          "27.9元",
+          "29.9元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "29.9-16.8的竖式中，小数点需要对齐。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "29.9-16.8=13.01。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

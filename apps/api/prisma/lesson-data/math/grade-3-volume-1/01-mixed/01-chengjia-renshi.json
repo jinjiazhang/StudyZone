@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 4 + 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 3 * 4 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4 个面包每个 3 元，再买 1 个蛋糕 6 元。一共 __ 元。先算面包 __ 元。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "一共",
+            "suffix": "元"
+          },
+          {
+            "id": "bread",
+            "label": "面包",
+            "suffix": "元"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“小熊购物”中，算式 3 * 4 + 6 应先算什么？",
+        "options": [
+          "3 * 4",
+          "4 + 6",
+          "3 + 4",
+          "6 - 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3",
+          null,
+          "4",
+          null,
+          "6",
+          null,
+          "18"
+        ],
+        "tokens": [
+          "*",
+          "+",
+          "-",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "*",
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 3 + 4 = ?"
+      },
+      "answer": {
+        "value": 19,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "买 3 个面包每个 3 元，再买 1 个蛋糕 6 元，列一个综合算式。",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "3*3+6",
+          "6+3*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 4 + 6",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有乘有加，先算乘法”这句话对应哪个算式的第一步？",
+        "options": [
+          "6 + 2 * 7 先算 6 + 2",
+          "4 + 8 * 2 先算 4 + 8",
+          "5 * 3 + 4 先算 5 * 3",
+          "5 * 3 + 4 先算 3 + 4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 * 3 + 4：先算 __，再算 __ + 4。",
+        "blanks": [
+          {
+            "id": "product"
+          },
+          {
+            "id": "same"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          15
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 + 5 = ?"
+      },
+      "answer": {
+        "value": 29,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3 * 4 + 6"
+          },
+          {
+            "id": "l2",
+            "text": "5 * 3 + 4"
+          },
+          {
+            "id": "l3",
+            "text": "4 * 6 + 5"
+          },
+          {
+            "id": "l4",
+            "text": "6 + 2 * 7"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "29"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          },
+          {
+            "id": "r4",
+            "text": "20"
+          },
+          {
+            "id": "r2",
+            "text": "19"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

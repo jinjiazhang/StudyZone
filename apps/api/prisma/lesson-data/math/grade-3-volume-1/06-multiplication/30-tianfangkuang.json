@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "__ × 2 = 60；__ ÷ 2 = 60",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘法方框"
+          },
+          {
+            "id": "b2",
+            "label": "除法方框"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          120
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "__ × 2 = 24；__ ÷ 2 = 24",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘法方框"
+          },
+          {
+            "id": "b2",
+            "label": "除法方框"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          48
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "__ × 3 = 60；__ ÷ 3 = 60",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘法方框"
+          },
+          {
+            "id": "b2",
+            "label": "除法方框"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          20,
+          180
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "__ × 3 = 12；__ ÷ 3 = 12",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘法方框"
+          },
+          {
+            "id": "b2",
+            "label": "除法方框"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          36
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "60 ÷ 2 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 × 2 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "60 × 3 = ?"
+      },
+      "answer": {
+        "value": 180,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 3 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30 × 2",
+        "right": "120 ÷ 2",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "方框 × 3 = 60，方框里应填多少？",
+        "options": [
+          "20",
+          "12",
+          "30",
+          "180"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

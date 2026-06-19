@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 - 6 * 8 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "49 - 3 * 8 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 7 - 16 = ?"
+      },
+      "answer": {
+        "value": 19,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "49 - 3 * 8：先算 __，再算 49 - __ = __。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          24,
+          25
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“先买满大车，剩下坐小车”对应计算 (70 - 46) / 8 时，第一步是？",
+        "options": [
+          "70 + 46",
+          "70 - 46",
+          "46 / 8",
+          "70 / 8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "86",
+          null,
+          "6",
+          null,
+          "8",
+          null,
+          "38"
+        ],
+        "tokens": [
+          "-",
+          "*",
+          "+",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "*",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "54 - 6 * 8",
+        "right": "7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有 34 辆单人车和 8 辆双人车，最多可供多少人骑？列综合算式。",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "34+8*2",
+          "8*2+34"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 + 8 * 2 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 - 5 * 8 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "49 - 3 * 8"
+          },
+          {
+            "id": "l2",
+            "text": "54 - 6 * 8"
+          },
+          {
+            "id": "l3",
+            "text": "5 * 7 - 16"
+          },
+          {
+            "id": "l4",
+            "text": "34 + 8 * 2"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "19"
+          },
+          {
+            "id": "r1",
+            "text": "25"
+          },
+          {
+            "id": "r4",
+            "text": "50"
+          },
+          {
+            "id": "r2",
+            "text": "6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "20 - 3 * 4 的意义可以是？",
+        "options": [
+          "20个平均分成3份",
+          "3元买20包后剩4元",
+          "20元买3包4元饼干后剩多少元",
+          "20元加3包4元饼干"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

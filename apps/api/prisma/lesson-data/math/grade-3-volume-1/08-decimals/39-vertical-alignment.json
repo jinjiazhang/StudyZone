@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小数加减法列竖式时，首先要做到什么？",
+        "options": [
+          "小数点对齐",
+          "数字都靠左",
+          "只对齐最后一位",
+          "单位可以不看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算25.3-3.5时，可以把25.3看作多少个0.1？",
+        "options": [
+          "25个0.1",
+          "253个0.1",
+          "35个0.1",
+          "253个1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "竖式中“小数点对齐”的意思是让什么对齐？",
+        "options": [
+          "相同颜色",
+          "不同单位",
+          "相同数位",
+          "题号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3.7 + 4.6 = __，个位进位后结果是__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十分位和"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          8.3
+        ],
+        "tolerances": [
+          0,
+          0.01
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 - 4.9 = __，把12写成__来减更清楚",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "差"
+          },
+          {
+            "id": "b2",
+            "label": "改写"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7.1,
+          12
+        ],
+        "tolerances": [
+          0.01,
+          0.01
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3.7 + 4.6 = ?"
+      },
+      "answer": {
+        "value": 8.3,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2.9 + 14.3 = ?"
+      },
+      "answer": {
+        "value": 17.2,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25.3 - 3.5 = ?"
+      },
+      "answer": {
+        "value": 21.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 4.9 = ?"
+      },
+      "answer": {
+        "value": 7.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个竖式思路正确？",
+        "options": [
+          "元和角对齐",
+          "小数点不用写",
+          "元和元对齐，角和角对齐",
+          "先比较大小再相加"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小数加减都可以转化成整数来想。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2.9+14.3的结果是16.2。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

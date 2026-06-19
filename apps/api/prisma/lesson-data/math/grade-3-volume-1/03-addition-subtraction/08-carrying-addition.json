@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "216 + 109 + 182：先算 216 + 109 = __，再加 182 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          325,
+          507
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "216 + 109 + 182 = ?"
+      },
+      "answer": {
+        "value": 507,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "328 + 396 + 204 = ?"
+      },
+      "answer": {
+        "value": 928,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "251 + 369 + 142 = ?"
+      },
+      "answer": {
+        "value": 762,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "653 + 97 + 203 = ?"
+      },
+      "answer": {
+        "value": 953,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "532 + 168 = ?"
+      },
+      "answer": {
+        "value": 700,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "195 + 165 + 105 = ?"
+      },
+      "answer": {
+        "value": 465,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "216 + 109 + 182",
+        "right": "407"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "森林医生中，216 + 109 + 182 的正确结果是？",
+        "options": [
+          "407",
+          "397",
+          "517",
+          "507"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "三位数连加竖式计算时，相同数位要对齐。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "328 + 396 + 204"
+          },
+          {
+            "id": "l1",
+            "text": "251 + 369 + 142"
+          },
+          {
+            "id": "l2",
+            "text": "653 + 97 + 203"
+          },
+          {
+            "id": "l3",
+            "text": "532 + 168"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "953"
+          },
+          {
+            "id": "r0",
+            "text": "928"
+          },
+          {
+            "id": "r3",
+            "text": "700"
+          },
+          {
+            "id": "r1",
+            "text": "762"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "个位满十要向",
+          null,
+          "位进",
+          null
+        ],
+        "tokens": [
+          "一",
+          "百",
+          "十",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "十",
+          "一"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

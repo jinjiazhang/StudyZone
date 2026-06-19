@@ -1,0 +1,146 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4.9",
+        "right": "5.1"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.8",
+        "right": "0.6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.9",
+        "right": "1.1"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10.9",
+        "right": "11"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1.4",
+        "right": "0.9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.3",
+        "right": "2.7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.8",
+        "right": "1"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较4.9元和5.1元，哪一个更少？",
+        "options": [
+          "4.9元",
+          "5.1元",
+          "一样多",
+          "无法比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较小数时，教材强调先看什么？",
+        "options": [
+          "数字个数越多数越大",
+          "只看小数点后第一位",
+          "只看单位名称",
+          "小数点对齐后的相同数位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些钱数从便宜到贵排列。",
+        "items": [
+          {
+            "id": "c",
+            "text": "2.60元"
+          },
+          {
+            "id": "a",
+            "text": "2.40元"
+          },
+          {
+            "id": "d",
+            "text": "3.80元"
+          },
+          {
+            "id": "b",
+            "text": "2.50元"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

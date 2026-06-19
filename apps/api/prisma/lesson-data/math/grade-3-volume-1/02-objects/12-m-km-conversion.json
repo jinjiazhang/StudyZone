@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "3千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 3000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "6千米 = ?米",
+        "fromUnit": "千米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 6000,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "9000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 9,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "5000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 5,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4千米500米 = __米",
+        "blanks": [
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4500
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2500米 = __千米__米",
+        "blanks": [
+          {
+            "id": "km",
+            "label": "千米"
+          },
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          500
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7千米80米 = __米",
+        "blanks": [
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7080
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6080米 = __千米__米",
+        "blanks": [
+          {
+            "id": "km",
+            "label": "千米"
+          },
+          {
+            "id": "m",
+            "label": "米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          80
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4千米",
+        "right": "3000米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5000米",
+        "right": "5千米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1千米200米",
+        "right": "1200米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "把千米化成米，要乘1000。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

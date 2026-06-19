@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "850 - (256 + 280) = ?"
+      },
+      "answer": {
+        "value": 314,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "368 - (168 + 122) = ?"
+      },
+      "answer": {
+        "value": 78,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "930 - (80 + 480) = ?"
+      },
+      "answer": {
+        "value": 370,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "859 - (162 + 88) = ?"
+      },
+      "answer": {
+        "value": 609,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1000 - (808 + 111) = ?"
+      },
+      "answer": {
+        "value": 81,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "850 - (256 + 280) 中，小括号里先算什么？",
+        "options": [
+          "256 + 280",
+          "850 - 256",
+          "850 - 280",
+          "850 + 256"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "368 - (168 + 122) 的小括号结果是？",
+        "options": [
+          "78",
+          "168",
+          "290",
+          "246"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "850 - 256 - 280",
+        "right": "850 - (256 + 280)"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "368 - (168 + 122)",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "368 - (168 + 122)：先算括号得 __，再算结果 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "括号"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          290,
+          78
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "850",
+          null,
+          "(",
+          "256",
+          null,
+          "280",
+          ")",
+          "=",
+          "314"
+        ],
+        "tokens": [
+          "+",
+          "314",
+          "-",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "+"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "连续减去两个数，等于减去这两个数的和。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第48页机灵狗看餐桌，看到骨头盘在前、碗在后，可能站在哪个方向？",
+        "options": [
+          "靠近骨头盘的一侧",
+          "靠近碗的一侧",
+          "桌子正上方",
+          "窗户外"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果看到碗在左、骨头盘在右，说明观察者与物品的什么有关？",
+        "options": [
+          "重量大小",
+          "左右位置关系",
+          "价格高低",
+          "声音强弱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "四只机灵狗站在桌子四周，看到的碗和骨头盘关系会怎样？",
+        "options": [
+          "一定相同",
+          "一定看不到",
+          "可能不同",
+          "只和狗的名字有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断机灵狗看到哪幅图，先看哪件物品更靠近它？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "离页面近的字"
+          },
+          {
+            "id": "o2",
+            "label": "靠近自己的物品"
+          },
+          {
+            "id": "o3",
+            "label": "颜色最深的线"
+          },
+          {
+            "id": "o4",
+            "label": "题号最大的一项"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "站在骨头盘一侧观察，骨头盘通常比碗更靠近自己。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "站在碗一侧观察，也一定看到骨头盘在自己前面。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "①号在桌上方"
+          },
+          {
+            "id": "l2",
+            "text": "②号在左侧"
+          },
+          {
+            "id": "l3",
+            "text": "③号在下方"
+          },
+          {
+            "id": "l4",
+            "text": "④号在右侧"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "从下边看"
+          },
+          {
+            "id": "r1",
+            "text": "从上边看"
+          },
+          {
+            "id": "r4",
+            "text": "从右边看"
+          },
+          {
+            "id": "r2",
+            "text": "从左边看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "看到骨头盘靠近自己，说明观察者在骨头盘",
+          null,
+          "；看到碗靠近自己，说明在碗的",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "一侧",
+          "后面",
+          "旁边",
+          "前方"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "旁边",
+          "一侧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断机灵狗视图的步骤",
+        "items": [
+          {
+            "id": "s3",
+            "text": "想象从该方向看"
+          },
+          {
+            "id": "s1",
+            "text": "确定碗和骨头的位置"
+          },
+          {
+            "id": "s4",
+            "text": "填写对应编号"
+          },
+          {
+            "id": "s2",
+            "text": "确定机灵狗编号"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "机灵狗题中①②③④表示 ? 个观察位置"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪项不是判断机灵狗位置的有效线索？",
+        "options": [
+          "碗在左还是右",
+          "骨头盘在前还是后",
+          "观察者编号",
+          "机灵狗衣服颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果两幅图分别是从相对方向看到的，它们通常有什么关系？",
+        "options": [
+          {
+            "id": "o1",
+            "label": "完全没有物体"
+          },
+          {
+            "id": "o2",
+            "label": "页码不同"
+          },
+          {
+            "id": "o3",
+            "label": "前后或左右关系相反"
+          },
+          {
+            "id": "o4",
+            "label": "颜色一定相同"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "o3"
+      },
+      "difficulty": 2
+    }
+  ]
+}

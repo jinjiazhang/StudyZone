@@ -1,0 +1,218 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第53页中，直角常用什么小标记表示？",
+        "options": [
+          "圆点",
+          "波浪线",
+          "箭头",
+          "小正方形角标"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "数学书的封面角通常可以看作直角。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个角是直角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "比直角小的角"
+          },
+          {
+            "id": "b",
+            "label": "像课本角那样方方正正的角"
+          },
+          {
+            "id": "c",
+            "label": "比直角大的角"
+          },
+          {
+            "id": "d",
+            "label": "一条直线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用三角板上的直角比一比，角1完全重合，说明角1是：",
+        "options": [
+          "直角",
+          "锐角",
+          "钝角",
+          "圆角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "直角可以用三角板上的",
+          null,
+          "来检验，标记时常画一个",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "直角",
+          "锐角",
+          "小方框",
+          "圆"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "直角",
+          "小方框"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "课桌角"
+          },
+          {
+            "id": "l2",
+            "text": "书本封面角"
+          },
+          {
+            "id": "l3",
+            "text": "张得很小的角"
+          },
+          {
+            "id": "l4",
+            "text": "墙角"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "书本封面角常见直角"
+          },
+          {
+            "id": "r3",
+            "text": "张得很小不是直角"
+          },
+          {
+            "id": "r4",
+            "text": "墙角常见直角"
+          },
+          {
+            "id": "r1",
+            "text": "课桌角常见直角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一个长方形有几个直角？"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "直角比锐角大，比钝角小。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个生活物体最可能有直角？",
+        "options": [
+          {
+            "id": "a",
+            "label": "圆形硬币"
+          },
+          {
+            "id": "c",
+            "label": "篮球"
+          },
+          {
+            "id": "d",
+            "label": "鸡蛋"
+          },
+          {
+            "id": "b",
+            "label": "长方形纸张"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第53页“哪些角是直角”中，判断时不能只靠：",
+        "options": [
+          "三角板验证",
+          "重合比较",
+          "看起来像不像",
+          "直角标记"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

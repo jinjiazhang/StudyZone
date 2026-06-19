@@ -1,0 +1,196 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同一张课桌，桌面长60厘米，等于多少分米？",
+        "columns": [
+          "项目",
+          "厘米",
+          "分米"
+        ],
+        "rows": [
+          {
+            "项目": "桌面长",
+            "厘米": 60,
+            "分米": "?"
+          },
+          {
+            "项目": "桌面宽",
+            "厘米": 40,
+            "分米": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同一张课桌，桌面厚2厘米，等于多少毫米？",
+        "columns": [
+          "项目",
+          "厘米",
+          "毫米"
+        ],
+        "rows": [
+          {
+            "项目": "桌面厚",
+            "厘米": 2,
+            "毫米": "?"
+          },
+          {
+            "项目": "书厚",
+            "厘米": 1,
+            "毫米": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "6分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 60,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 40,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 20,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "7分米 = ?厘米",
+        "fromUnit": "分米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 70,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样的课桌，60厘米和6分米表示的长度怎样？",
+        "options": [
+          "60厘米更长",
+          "6分米更长",
+          "无法比较",
+          "一样长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2厘米",
+        "right": "20毫米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7分米",
+        "right": "60厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "桌面宽4分米，也就是__厘米。",
+        "blanks": [
+          {
+            "id": "cm",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          40
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "测量结果可以用不同单位表示，只要换算正确，长度就一样。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "桌面长60厘米，也可以写成多少分米？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

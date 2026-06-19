@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 + 25 = ?"
+      },
+      "answer": {
+        "value": 49,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "33 + 7 * 3 = ?"
+      },
+      "answer": {
+        "value": 54,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 9 + 12 = ?"
+      },
+      "answer": {
+        "value": 57,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 * 9 + 12：先算 __，再算 __ + 12 = __。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "c"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          45,
+          45,
+          57
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式先算 7 * 3？",
+        "options": [
+          "33 + 7 + 3",
+          "33 * 7 + 3",
+          "7 + 3 * 33",
+          "33 + 7 * 3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "*",
+          "9",
+          "+",
+          "12",
+          "=",
+          "57"
+        ],
+        "tokens": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 6 + 25",
+        "right": "54"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每瓶饮料 3 元，买 6 瓶后又买 4 元零食，一共花多少元？列综合算式。",
+        "placeholder": "例如：6+3*4"
+      },
+      "answer": {
+        "accepted": [
+          "3*6+4",
+          "4+3*6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 + 6 * 4 = ?"
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 81 / 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4 * 6 + 25"
+          },
+          {
+            "id": "l2",
+            "text": "33 + 7 * 3"
+          },
+          {
+            "id": "l3",
+            "text": "5 * 9 + 12"
+          },
+          {
+            "id": "l4",
+            "text": "14 + 6 * 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "38"
+          },
+          {
+            "id": "r2",
+            "text": "54"
+          },
+          {
+            "id": "r1",
+            "text": "49"
+          },
+          {
+            "id": "r3",
+            "text": "57"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 6 + 3 * 4 时，不参加第一步运算的 6 应该怎样处理？",
+        "options": [
+          "照抄下来",
+          "先去掉",
+          "和3相乘",
+          "改成0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

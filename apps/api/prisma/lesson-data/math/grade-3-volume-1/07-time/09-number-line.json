@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在2米到4米的数线上，3.5米位于哪里？",
+        "options": [
+          "3米和4米之间",
+          "2米和3米之间",
+          "正好在2米处",
+          "正好在4米处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3.5米等于多少分米？",
+        "options": [
+          "3.5分米",
+          "350分米",
+          "35分米",
+          "5分米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.5",
+        "right": "3.0"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.5",
+        "right": "4.0"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3.5 - 2.7 = ?"
+      },
+      "answer": {
+        "value": 0.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.0 - 3.5 = ?"
+      },
+      "answer": {
+        "value": 0.5,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数线上从2米到3米平均分成10份，每份是__米；3.5米是__米__分米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每份"
+          },
+          {
+            "id": "b2",
+            "label": "米"
+          },
+          {
+            "id": "b3",
+            "label": "分米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          0.1,
+          3,
+          5
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些长度从短到长排列。",
+        "items": [
+          {
+            "id": "c",
+            "text": "3.5米"
+          },
+          {
+            "id": "a",
+            "text": "2.7米"
+          },
+          {
+            "id": "d",
+            "text": "4米"
+          },
+          {
+            "id": "b",
+            "text": "3米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3.5米在3米和4米之间，比3米多",
+          null,
+          "米，也就是",
+          null,
+          "分米"
+        ],
+        "tokens": [
+          "0.5",
+          "35",
+          "5",
+          "0.05",
+          "3",
+          "50"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "0.5",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.50",
+        "right": "3.5"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    }
+  ]
+}

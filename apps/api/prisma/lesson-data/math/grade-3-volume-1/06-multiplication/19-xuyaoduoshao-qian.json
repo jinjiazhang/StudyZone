@@ -1,0 +1,210 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 3 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 × 4 = ?"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 × 3 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 × 3 = ?"
+      },
+      "answer": {
+        "value": 84,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 × 3：先算 10×3=__，再算 2×3=__，最后相加=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位部分"
+          },
+          {
+            "id": "b2",
+            "label": "个位部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          6,
+          36
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 × 4：先算 10×4=__，再算 8×4=__，最后相加=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位部分"
+          },
+          {
+            "id": "b2",
+            "label": "个位部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          40,
+          32,
+          72
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买3个游泳圈，每个12元，需要多少元？",
+        "options": [
+          "15元",
+          "24元",
+          "48元",
+          "36元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "儿童充气船的价钱是皮球18元的4倍，一个儿童充气船多少元？",
+        "options": [
+          "54元",
+          "72元",
+          "68元",
+          "84元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "买3个每个12元的游泳圈，请列式。",
+        "placeholder": "12×3"
+      },
+      "answer": {
+        "accepted": [
+          "12×3",
+          "3×12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "12 × 3"
+          },
+          {
+            "id": "l2",
+            "text": "18 × 4"
+          },
+          {
+            "id": "l3",
+            "text": "16 × 3"
+          },
+          {
+            "id": "l4",
+            "text": "28 × 3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "84"
+          },
+          {
+            "id": "r3",
+            "text": "48"
+          },
+          {
+            "id": "r2",
+            "text": "72"
+          },
+          {
+            "id": "r1",
+            "text": "36"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

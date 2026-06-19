@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 10,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "4厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 40,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "7厘米 = ?毫米",
+        "fromUnit": "厘米",
+        "toUnit": "毫米"
+      },
+      "answer": {
+        "value": 70,
+        "unit": "毫米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "30毫米 = ?厘米",
+        "fromUnit": "毫米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 3,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "80毫米 = ?厘米",
+        "fromUnit": "毫米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 8,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "尺子上1厘米中有10个小格，每个小格表示什么？",
+        "options": [
+          "1厘米",
+          "1毫米",
+          "1分米",
+          "10毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "身份证大约有多厚？",
+        "options": [
+          "1厘米",
+          "1分米",
+          "1米",
+          "1毫米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数学书大约有多厚？",
+        "options": [
+          "6毫米",
+          "6厘米",
+          "6分米",
+          "6米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35毫米",
+        "right": "3厘米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20毫米",
+        "right": "2厘米"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "毫米适合表示很薄、很短的物体长度。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "1厘米",
+          null,
+          "10毫米；1毫米常用来量",
+          null,
+          "的长度。"
+        ],
+        "tokens": [
+          "很远",
+          "=",
+          "厘米",
+          ">",
+          "很短"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "=",
+          "很短"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

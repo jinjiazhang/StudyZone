@@ -1,0 +1,167 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 × 4 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 × 6 = ?"
+      },
+      "answer": {
+        "value": 78,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 × 3 = ?"
+      },
+      "answer": {
+        "value": 39,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 × 5 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 × 2 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 × 3 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31 × 3 = ?"
+      },
+      "answer": {
+        "value": 93,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 × 2 = ?"
+      },
+      "answer": {
+        "value": 68,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "13 × 6：10×6=__，3×6=__，合起来=__",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位部分"
+          },
+          {
+            "id": "b2",
+            "label": "个位部分"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          60,
+          18,
+          78
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "15 × 4 = 10×4 + ",
+          null,
+          "×4 = ",
+          null
+        ],
+        "tokens": [
+          "4",
+          "60",
+          "5",
+          "20",
+          "15",
+          "40"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "60"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5包饼干，每包15块，一共有多少块？",
+        "options": [
+          "60块",
+          "75块",
+          "70块",
+          "80块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

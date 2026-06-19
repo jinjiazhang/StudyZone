@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "淘气1月存了多少元？",
+        "columns": [
+          "月份",
+          "淘气存钱数",
+          "笑笑存钱数"
+        ],
+        "rows": [
+          {
+            "月份": "1月",
+            "淘气存钱数": 12.5,
+            "笑笑存钱数": 13.2
+          },
+          {
+            "月份": "2月",
+            "淘气存钱数": 4.3,
+            "笑笑存钱数": 5.7
+          }
+        ]
+      },
+      "answer": {
+        "value": 12.5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12.5 + 4.3 = ?"
+      },
+      "answer": {
+        "value": 16.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13.2 + 5.7 = ?"
+      },
+      "answer": {
+        "value": 18.9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16.8 + 18.9 = ?"
+      },
+      "answer": {
+        "value": 35.7,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气两个月一共存了多少元？",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "12.5+4.3",
+          "4.3+12.5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "笑笑两个月一共存了多少元？",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "13.2+5.7",
+          "5.7+13.2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12.5元 + 4.3元 = __元__角",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "12.5 + 4.3 竖式计算时，",
+          null,
+          "和",
+          null,
+          "要对齐"
+        ],
+        "tokens": [
+          "角",
+          "元",
+          "厘米",
+          "米"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "元",
+          "角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12.5元+4.3元的结果是：",
+        "options": [
+          "16.8元",
+          "15.8元",
+          "16.5元",
+          "17.8元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笑笑两个月比淘气两个月多存多少元？",
+        "options": [
+          "1.1元",
+          "2.1元",
+          "3.1元",
+          "21元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18.9 - 16.8 = ?"
+      },
+      "answer": {
+        "value": 2.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "12.5+4.3可以先算12元+4元、5角+3角。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

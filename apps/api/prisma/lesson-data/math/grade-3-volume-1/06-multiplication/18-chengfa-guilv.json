@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "8 × 4 = ",
+          null,
+          "，80 × 4 = ",
+          null
+        ],
+        "tokens": [
+          "干扰",
+          "240",
+          "320",
+          "28",
+          "32",
+          "40"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "32",
+          "320"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "6 × 7 = ",
+          null,
+          "，6 × 70 = ",
+          null
+        ],
+        "tokens": [
+          "360",
+          "干扰",
+          "420",
+          "72",
+          "600",
+          "42"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "42",
+          "420"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3 × 7 = __，30 × 7 = __，300 × 7 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一题"
+          },
+          {
+            "id": "b2",
+            "label": "第二题"
+          },
+          {
+            "id": "b3",
+            "label": "第三题"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          21,
+          210,
+          2100
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "63 ÷ 9 = __，630 ÷ 9 = __，6300 ÷ 9 = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一题"
+          },
+          {
+            "id": "b2",
+            "label": "第二题"
+          },
+          {
+            "id": "b3",
+            "label": "第三题"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          70,
+          700
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "400 × 3 = ?"
+      },
+      "answer": {
+        "value": 1200,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80 × 5 = ?"
+      },
+      "answer": {
+        "value": 400,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 × 6 = ?"
+      },
+      "answer": {
+        "value": 180,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 60 = ?"
+      },
+      "answer": {
+        "value": 240,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组算式和 8×4、80×4、800×4 的规律一样？",
+        "options": [
+          "7×5，70×5，700×5",
+          "7×5，7×6，7×7",
+          "50×2，40×2，30×2",
+          "8×4，8×40，9×40"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "80 × 5",
+        "right": "400",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "600 × 9",
+        "right": "5000",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

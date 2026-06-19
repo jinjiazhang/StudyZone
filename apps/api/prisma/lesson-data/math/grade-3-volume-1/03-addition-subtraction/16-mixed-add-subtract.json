@@ -1,0 +1,180 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "278 - 199 + 680 = ?"
+      },
+      "answer": {
+        "value": 759,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "318 + 254 - 190 = ?"
+      },
+      "answer": {
+        "value": 382,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "800 - 289 + 484 = ?"
+      },
+      "answer": {
+        "value": 995,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "653 + 97 + 203 = ?"
+      },
+      "answer": {
+        "value": 953,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "427 + 273 - 165 = ?"
+      },
+      "answer": {
+        "value": 535,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "400 - 245 + 517 = ?"
+      },
+      "answer": {
+        "value": 672,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "174 + 726 - 378 = ?"
+      },
+      "answer": {
+        "value": 522,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "468 + 376 - 168 = ?"
+      },
+      "answer": {
+        "value": 676,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "278 - 199 + 680",
+        "right": "800"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "800 - 289 + 484",
+        "right": "1000"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "318 + 254 - 190"
+          },
+          {
+            "id": "l1",
+            "text": "427 + 273 - 165"
+          },
+          {
+            "id": "l2",
+            "text": "400 - 245 + 517"
+          },
+          {
+            "id": "l3",
+            "text": "174 + 726 - 378"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "672"
+          },
+          {
+            "id": "r0",
+            "text": "382"
+          },
+          {
+            "id": "r3",
+            "text": "522"
+          },
+          {
+            "id": "r1",
+            "text": "535"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "没有小括号的加减混合运算，一般按什么顺序计算？",
+        "options": [
+          "先加后减",
+          "先减后加",
+          "从右往左",
+          "从左往右"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

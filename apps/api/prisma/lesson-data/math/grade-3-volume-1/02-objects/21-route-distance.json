@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小贝家到学校约300米，小军家到学校比小贝家远200米，小军家到学校约多少米？"
+      },
+      "answer": {
+        "value": 500,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小贝家到学校300米，另一个同学家到学校约298米，两家相差多少米？"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小象家到小兔家700米，小兔家到机灵狗家1300米，合计多少千米？只填千米数。"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一条路线1000米，另一条路线1300米，较长路线多多少米？"
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "300米 = ?米",
+        "fromUnit": "米",
+        "toUnit": "米"
+      },
+      "answer": {
+        "value": 300,
+        "unit": "米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "1000米 = ?千米",
+        "fromUnit": "米",
+        "toUnit": "千米"
+      },
+      "answer": {
+        "value": 1,
+        "unit": "千米",
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "298米",
+        "right": "300米"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "640米",
+        "right": "300米"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小贝家离学校和辰辰家离学校差不多远。辰辰家是300米，小贝家可能是？",
+        "options": [
+          "1千米",
+          "640米",
+          "298米",
+          "30千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小军家离学校比辰辰家远多了。辰辰家300米，小军家可能是？",
+        "options": [
+          "1千米",
+          "312米",
+          "195米",
+          "298米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "路线图上几段路相加，可以求总路程。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "一条路线两段分别是700米和1300米，总路程是多少米？",
+        "columns": [
+          "第一段",
+          "第二段",
+          "总路程"
+        ],
+        "rows": [
+          {
+            "第一段": 700,
+            "第二段": 1300,
+            "总路程": "?"
+          }
+        ]
+      },
+      "answer": {
+        "value": 2000,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

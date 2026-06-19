@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "格尔木到安多的里程是多少千米？",
+        "columns": [
+          "区间",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "区间": "格尔木-安多",
+            "里程千米": 694
+          },
+          {
+            "区间": "格尔木-那曲",
+            "里程千米": 820
+          },
+          {
+            "区间": "格尔木-当雄",
+            "里程千米": 978
+          },
+          {
+            "区间": "格尔木-拉萨",
+            "里程千米": 1142
+          }
+        ]
+      },
+      "answer": {
+        "value": 694,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "格尔木到那曲的里程是多少千米？",
+        "columns": [
+          "区间",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "区间": "格尔木-安多",
+            "里程千米": 694
+          },
+          {
+            "区间": "格尔木-那曲",
+            "里程千米": 820
+          },
+          {
+            "区间": "格尔木-当雄",
+            "里程千米": 978
+          },
+          {
+            "区间": "格尔木-拉萨",
+            "里程千米": 1142
+          }
+        ]
+      },
+      "answer": {
+        "value": 820,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "格尔木到拉萨的里程是多少千米？",
+        "columns": [
+          "区间",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "区间": "格尔木-安多",
+            "里程千米": 694
+          },
+          {
+            "区间": "格尔木-那曲",
+            "里程千米": 820
+          },
+          {
+            "区间": "格尔木-当雄",
+            "里程千米": 978
+          },
+          {
+            "区间": "格尔木-拉萨",
+            "里程千米": 1142
+          }
+        ]
+      },
+      "answer": {
+        "value": 1142,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "820 - 694 = ?"
+      },
+      "answer": {
+        "value": 126,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "978 - 820 = ?"
+      },
+      "answer": {
+        "value": 158,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1142 - 978 = ?"
+      },
+      "answer": {
+        "value": 164,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1142 - 694 = ?"
+      },
+      "answer": {
+        "value": 448,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1142 - 820 = ?"
+      },
+      "answer": {
+        "value": 322,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "安多到那曲有多少千米？",
+        "options": [
+          "694千米",
+          "820千米",
+          "126千米",
+          "158千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "那曲到拉萨有多少千米？",
+        "options": [
+          "322千米",
+          "164千米",
+          "448千米",
+          "1142千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "820 - 694",
+        "right": "978 - 820"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "安多到那曲"
+          },
+          {
+            "id": "l1",
+            "text": "那曲到当雄"
+          },
+          {
+            "id": "l2",
+            "text": "当雄到拉萨"
+          },
+          {
+            "id": "l3",
+            "text": "安多到拉萨"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "164千米"
+          },
+          {
+            "id": "r0",
+            "text": "126千米"
+          },
+          {
+            "id": "r3",
+            "text": "448千米"
+          },
+          {
+            "id": "r1",
+            "text": "158千米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

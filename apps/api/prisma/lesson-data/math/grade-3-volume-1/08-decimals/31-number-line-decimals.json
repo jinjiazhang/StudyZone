@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在2米到4米的数线上标出3.5米。",
+        "min": 2,
+        "max": 4,
+        "step": 0.1
+      },
+      "answer": {
+        "value": 3.5,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在0到1米的数线上标出0.6米。",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
+      },
+      "answer": {
+        "value": 0.6,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在0到1米的数线上标出0.95米。",
+        "min": 0,
+        "max": 1,
+        "step": 0.01
+      },
+      "answer": {
+        "value": 0.95,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在3米到4米的数线上标出3.15米。",
+        "min": 3,
+        "max": 4,
+        "step": 0.05
+      },
+      "answer": {
+        "value": 3.15,
+        "tolerance": 0.01
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "3.5米在数线上位于哪里？",
+        "options": [
+          "2米和3米之间",
+          "3米和4米之间",
+          "正好在4米处",
+          "1米和2米之间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "0.75米在0米到1米的数线上更接近哪里？",
+        "options": [
+          "0米",
+          "0.1米",
+          "1米",
+          "2米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.5",
+        "right": "3.0"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2.7",
+        "right": "3.5"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "0.9米"
+          },
+          {
+            "id": "i1",
+            "text": "0.4米"
+          },
+          {
+            "id": "i4",
+            "text": "1.02米"
+          },
+          {
+            "id": "i2",
+            "text": "0.75米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从大到小排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "19.98米"
+          },
+          {
+            "id": "i1",
+            "text": "20.58米"
+          },
+          {
+            "id": "i4",
+            "text": "19.80米"
+          },
+          {
+            "id": "i2",
+            "text": "20.53米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "3.5米 = ?分米",
+        "fromUnit": "米",
+        "toUnit": "分米"
+      },
+      "answer": {
+        "value": 35,
+        "unit": "分米",
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3.5米在3米和4米之间。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

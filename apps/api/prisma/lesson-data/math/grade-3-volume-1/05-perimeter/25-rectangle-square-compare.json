@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方形和正方形的共同点是：",
+        "options": [
+          "都只有三条边",
+          "都有四个直角",
+          "都没有顶点",
+          "都不能在方格纸上画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "正方形比一般长方形多出的特点是：",
+        "options": [
+          "只有两个角",
+          "四条边都相等",
+          "没有对边",
+          "不是四边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "长方形和正方形都有四条边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "所有长方形的四条边都相等。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "长方形和正方形都有",
+          null,
+          "个直角；正方形的",
+          null,
+          "条边都相等。"
+        ],
+        "tokens": [
+          "4",
+          "3",
+          "四",
+          "两"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "四"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪两种图形都有4个直角？",
+        "columns": [
+          "图形",
+          "直角个数"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "直角个数": 4
+          },
+          {
+            "图形": "正方形",
+            "直角个数": 4
+          },
+          {
+            "图形": "三角形",
+            "直角个数": 1
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "长方形和正方形",
+          "正方形和长方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "共同点"
+          },
+          {
+            "id": "l4",
+            "text": "不同点"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "四边相等"
+          },
+          {
+            "id": "r4",
+            "text": "边长关系不同"
+          },
+          {
+            "id": "r1",
+            "text": "对边相等"
+          },
+          {
+            "id": "r3",
+            "text": "四个角都是直角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话正确描述两者关系？",
+        "options": [
+          {
+            "id": "b",
+            "label": "长方形都没有直角"
+          },
+          {
+            "id": "c",
+            "label": "正方形只有三条边"
+          },
+          {
+            "id": "d",
+            "label": "两者完全没有共同点"
+          },
+          {
+            "id": "a",
+            "label": "正方形符合长方形四角直、对边相等的特点"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“更特殊”的程度排列",
+        "items": [
+          {
+            "id": "s",
+            "text": "正方形"
+          },
+          {
+            "id": "r",
+            "text": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "r",
+          "s"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2个长方形和3个正方形一共有多少个直角？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

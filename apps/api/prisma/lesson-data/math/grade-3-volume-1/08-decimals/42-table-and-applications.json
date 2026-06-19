@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "爸爸2月电话费是多少元？",
+        "columns": [
+          "家庭成员",
+          "1月",
+          "2月",
+          "小计"
+        ],
+        "rows": [
+          {
+            "家庭成员": "爸爸",
+            "1月": 30.2,
+            "2月": 30.8,
+            "小计": 61
+          },
+          {
+            "家庭成员": "妈妈",
+            "1月": 26.7,
+            "2月": 20.4,
+            "小计": 47.1
+          }
+        ]
+      },
+      "answer": {
+        "value": 30.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "妈妈两个月电话费小计是多少元？",
+        "columns": [
+          "家庭成员",
+          "1月",
+          "2月",
+          "小计"
+        ],
+        "rows": [
+          {
+            "家庭成员": "爸爸",
+            "1月": 30.2,
+            "2月": 30.8,
+            "小计": 61
+          },
+          {
+            "家庭成员": "妈妈",
+            "1月": 26.7,
+            "2月": 20.4,
+            "小计": 47.1
+          }
+        ]
+      },
+      "answer": {
+        "value": 47.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30.2 + 26.7 = ?"
+      },
+      "answer": {
+        "value": 56.9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30.8 + 20.4 = ?"
+      },
+      "answer": {
+        "value": 51.2,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "61.0 + 47.1 = ?"
+      },
+      "answer": {
+        "value": 108.1,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "61.0 - 30.2 = ?"
+      },
+      "answer": {
+        "value": 30.8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "47.1 - 26.7 = ?"
+      },
+      "answer": {
+        "value": 20.4,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "爸爸两个月电话费61.0元，1月30.2元，求2月电话费。",
+        "placeholder": "写出算式"
+      },
+      "answer": {
+        "accepted": [
+          "61.0-30.2",
+          "61-30.2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表格中“合计”通常表示什么？",
+        "options": [
+          "最大数",
+          "同一列或同一行的总数",
+          "最小数",
+          "平均数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "56.9",
+        "right": "51.2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "26.7 + 20.4 的结果是多少元？",
+        "options": [
+          "47.1元",
+          "46.1元",
+          "47.0元",
+          "48.1元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "爸爸2月电话费可以用61.0-30.2求出。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

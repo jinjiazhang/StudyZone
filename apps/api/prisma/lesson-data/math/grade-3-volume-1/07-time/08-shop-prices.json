@@ -1,0 +1,197 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小熊商店的毛巾多少元？",
+        "columns": [
+          "商品",
+          "毛巾",
+          "牙刷",
+          "牙膏"
+        ],
+        "rows": [
+          {
+            "商品": "小熊商店",
+            "毛巾": 3.8,
+            "牙刷": 2.5,
+            "牙膏": 4.3
+          },
+          {
+            "商品": "小猫商店",
+            "毛巾": 4,
+            "牙刷": 2.6,
+            "牙膏": 3.8
+          },
+          {
+            "商品": "小狗商店",
+            "毛巾": 4.1,
+            "牙刷": 2.4,
+            "牙膏": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "value": 3.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三家商店中，毛巾最便宜是多少元？",
+        "columns": [
+          "商品",
+          "小熊",
+          "小猫",
+          "小狗"
+        ],
+        "rows": [
+          {
+            "商品": "毛巾",
+            "小熊": 3.8,
+            "小猫": 4,
+            "小狗": 4.1
+          }
+        ]
+      },
+      "answer": {
+        "value": 3.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三家商店中，牙刷最便宜是多少元？",
+        "columns": [
+          "商品",
+          "小熊",
+          "小猫",
+          "小狗"
+        ],
+        "rows": [
+          {
+            "商品": "牙刷",
+            "小熊": 2.5,
+            "小猫": 2.6,
+            "小狗": 2.4
+          }
+        ]
+      },
+      "answer": {
+        "value": 2.4,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "三家商店中，牙膏最便宜是多少元？",
+        "columns": [
+          "商品",
+          "小熊",
+          "小猫",
+          "小狗"
+        ],
+        "rows": [
+          {
+            "商品": "牙膏",
+            "小熊": 4.3,
+            "小猫": 3.8,
+            "小狗": 4.5
+          }
+        ]
+      },
+      "answer": {
+        "value": 3.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买毛巾去哪里最便宜？",
+        "options": [
+          "小猫商店",
+          "小熊商店",
+          "小狗商店",
+          "三家一样"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买牙刷去哪里最便宜？",
+        "options": [
+          "小熊商店",
+          "小狗商店",
+          "小猫商店",
+          "三家一样"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买牙膏去哪里最便宜？",
+        "options": [
+          "小熊商店",
+          "小狗商店",
+          "三家一样",
+          "小猫商店"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.1 - 3.8 = ?"
+      },
+      "answer": {
+        "value": 0.3,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4.5 - 3.8 = ?"
+      },
+      "answer": {
+        "value": 0.7,
+        "tolerance": 0.001
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3.80",
+        "right": "4.00"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

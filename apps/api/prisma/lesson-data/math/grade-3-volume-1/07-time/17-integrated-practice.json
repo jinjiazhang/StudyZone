@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "30元、4角、5分写成小数是__元__角__分。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "元"
+          },
+          {
+            "id": "b2",
+            "label": "角"
+          },
+          {
+            "id": "b3",
+            "label": "分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          4,
+          5
+        ],
+        "tolerances": [
+          0.001,
+          0.001,
+          0.001
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“3元4角5分”写成用元作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "3.45"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“95厘米”写成用米作单位的小数。",
+        "placeholder": "例如：3.15=3元1角5分"
+      },
+      "answer": {
+        "accepted": [
+          "0.95"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6.8",
+        "right": "6.9"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8.1",
+        "right": "7.8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "0.40",
+        "right": "0.4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2.9 + 3.2 = ?"
+      },
+      "answer": {
+        "value": 6.1,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6.5 - 5.7 = ?"
+      },
+      "answer": {
+        "value": 0.8,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8.3 + 2.9 = ?"
+      },
+      "answer": {
+        "value": 11.2,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 18.6 = ?"
+      },
+      "answer": {
+        "value": 31.4,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "书架高95厘米，用米作单位是多少米？",
+        "columns": [
+          "物品",
+          "高度"
+        ],
+        "rows": [
+          {
+            "物品": "书架",
+            "高度": "95厘米"
+          }
+        ]
+      },
+      "answer": {
+        "value": 0.95,
+        "tolerance": 0.001
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "共940棵白菜，第一车运走275棵，第二车运走260棵。列式求还剩多少棵。",
+        "placeholder": "例如：940-275-260"
+      },
+      "answer": {
+        "accepted": [
+          "940-275-260",
+          "940-(275+260)"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "940 - 275 - 260 = ?"
+      },
+      "answer": {
+        "value": 405,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "940 - 275 - 260：先算 940 - 275 = __，再减 260 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          665,
+          405
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "275 + 260 = __，940 - 这个和 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "运走"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          535,
+          405
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "940 - (275 + 260) 先算什么？",
+        "options": [
+          "先算还剩多少棵",
+          "先算两车一共运走多少棵",
+          "先算第一车比第二车多多少棵",
+          "先算总数加第二车"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两车共运走多少棵白菜？",
+        "options": [
+          "405棵",
+          "665棵",
+          "940棵",
+          "535棵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "275 + 260",
+        "right": "940"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "940 - 275 - 260",
+        "right": "400"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "940",
+          null,
+          "(",
+          "275",
+          null,
+          "260",
+          ")",
+          "=",
+          "405"
+        ],
+        "tokens": [
+          "+",
+          "535",
+          "-",
+          "=",
+          "275"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "+"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "求还剩多少棵，可以先把两车运走的棵数加起来。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "940 - 275 - 260 的结果表示两车一共运走的白菜。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "第一车运走"
+          },
+          {
+            "id": "l1",
+            "text": "第二车运走"
+          },
+          {
+            "id": "l2",
+            "text": "两车共运走"
+          },
+          {
+            "id": "l3",
+            "text": "剩下"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "535棵"
+          },
+          {
+            "id": "r0",
+            "text": "275棵"
+          },
+          {
+            "id": "r3",
+            "text": "405棵"
+          },
+          {
+            "id": "r1",
+            "text": "260棵"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

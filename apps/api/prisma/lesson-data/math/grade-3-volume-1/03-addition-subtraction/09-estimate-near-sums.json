@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 220、160、256、290 中，哪两个数相加最接近500？",
+        "options": [
+          "220和160",
+          "160和256",
+          "220和290",
+          "256和290"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 196、210、104、385 中，哪三个数相加最接近800？",
+        "options": [
+          "196、210、385",
+          "196、104、385",
+          "210、104、385",
+          "196、210、104"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "220 + 290 = ?"
+      },
+      "answer": {
+        "value": 510,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "196 + 210 + 385 = ?"
+      },
+      "answer": {
+        "value": 791,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "220 + 290",
+        "right": "500"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "196 + 210 + 385",
+        "right": "800"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些和按从小到大排列",
+        "items": [
+          {
+            "id": "c",
+            "text": "196 + 210 + 385"
+          },
+          {
+            "id": "a",
+            "text": "160 + 256"
+          },
+          {
+            "id": "d",
+            "text": "210 + 104 + 385"
+          },
+          {
+            "id": "b",
+            "text": "220 + 290"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估算 727 + 114 + 86，最接近下面哪个整百数？",
+        "options": [
+          "700",
+          "900",
+          "800",
+          "1000"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估算 292 + 450 + 108，最接近下面哪个数？",
+        "options": [
+          "750",
+          "900",
+          "650",
+          "850"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "估算时可以先把数看成接近的整十或整百数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "220 + 160 比 220 + 290 更接近500。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "220 + 290"
+          },
+          {
+            "id": "l1",
+            "text": "160 + 256"
+          },
+          {
+            "id": "l2",
+            "text": "196 + 210 + 385"
+          },
+          {
+            "id": "l3",
+            "text": "210 + 104 + 385"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "791"
+          },
+          {
+            "id": "r0",
+            "text": "510"
+          },
+          {
+            "id": "r3",
+            "text": "699"
+          },
+          {
+            "id": "r1",
+            "text": "416"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "大熊猫1岁半时体重是多少千克？",
+        "columns": [
+          "年龄",
+          "体重千克"
+        ],
+        "rows": [
+          {
+            "年龄": "半岁",
+            "体重千克": 12
+          },
+          {
+            "年龄": "1岁",
+            "体重千克": 40
+          },
+          {
+            "年龄": "1岁半",
+            "体重千克": 73
+          },
+          {
+            "年龄": "2岁",
+            "体重千克": 88
+          },
+          {
+            "年龄": "2岁半",
+            "体重千克": 98
+          }
+        ]
+      },
+      "answer": {
+        "value": 73,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "大熊猫2岁半时体重是多少千克？",
+        "columns": [
+          "年龄",
+          "体重千克"
+        ],
+        "rows": [
+          {
+            "年龄": "半岁",
+            "体重千克": 12
+          },
+          {
+            "年龄": "1岁",
+            "体重千克": 40
+          },
+          {
+            "年龄": "1岁半",
+            "体重千克": 73
+          },
+          {
+            "年龄": "2岁",
+            "体重千克": 88
+          },
+          {
+            "年龄": "2岁半",
+            "体重千克": 98
+          }
+        ]
+      },
+      "answer": {
+        "value": 98,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 - 12 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "73 - 40 = ?"
+      },
+      "answer": {
+        "value": 33,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "88 - 73 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "98 - 88 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大熊猫在哪个阶段体重增长得最快？",
+        "options": [
+          "半岁到1岁",
+          "1岁半到2岁",
+          "2岁到2岁半",
+          "1岁到1岁半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大熊猫从半岁到2岁半一共增长多少千克？",
+        "options": [
+          "98千克",
+          "86千克",
+          "73千克",
+          "33千克"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "赵叔叔周三行驶了多少千米？",
+        "columns": [
+          "星期",
+          "里程千米"
+        ],
+        "rows": [
+          {
+            "星期": "周一",
+            "里程千米": 28
+          },
+          {
+            "星期": "周二",
+            "里程千米": 27
+          },
+          {
+            "星期": "周三",
+            "里程千米": 31
+          },
+          {
+            "星期": "周四",
+            "里程千米": 29
+          },
+          {
+            "星期": "周五",
+            "里程千米": 28
+          }
+        ]
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 + 27 + 31 + 29 + 28 = ?"
+      },
+      "answer": {
+        "value": 143,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "632 + 143 = ?"
+      },
+      "answer": {
+        "value": 775,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "周一早上里程表读数是632千米，周五晚上到家读数是多少？",
+        "options": [
+          "775千米",
+          "143千米",
+          "747千米",
+          "804千米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}
