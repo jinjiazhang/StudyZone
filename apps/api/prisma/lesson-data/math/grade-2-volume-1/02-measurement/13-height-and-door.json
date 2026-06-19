@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "晨晨身高约多少更合理？",
+        "options": [
+          "12厘米",
+          "120厘米",
+          "12米",
+          "1厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "门高2米，大约是 ? 厘米"
+      },
+      "answer": {
+        "value": 200,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "门高2米，晨晨高120厘米，门比晨晨高 ? 厘米"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "机灵狗比晨晨矮得多，估计高约：",
+        "options": [
+          "2米",
+          "600厘米",
+          "60厘米",
+          "120米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 100",
+        "right": "120"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "门高约 __ 米，也就是约 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          200
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "门高约2厘米比较合理。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-030.jpg"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "李老师身高约175厘米，可以说成约：",
+        "options": [
+          "17米5厘米",
+          "175米",
+          "1米",
+          "1米75厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "门高"
+          },
+          {
+            "id": "l2",
+            "text": "二年级学生身高"
+          },
+          {
+            "id": "l3",
+            "text": "树高"
+          },
+          {
+            "id": "l4",
+            "text": "粉笔长"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "约120厘米"
+          },
+          {
+            "id": "r4",
+            "text": "约7厘米"
+          },
+          {
+            "id": "r1",
+            "text": "约2米"
+          },
+          {
+            "id": "r3",
+            "text": "约10米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从矮到高排列",
+        "items": [
+          {
+            "id": "dog",
+            "text": "60厘米"
+          },
+          {
+            "id": "teacher",
+            "text": "175厘米"
+          },
+          {
+            "id": "chen",
+            "text": "120厘米"
+          },
+          {
+            "id": "door",
+            "text": "2米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "dog",
+          "chen",
+          "teacher",
+          "door"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

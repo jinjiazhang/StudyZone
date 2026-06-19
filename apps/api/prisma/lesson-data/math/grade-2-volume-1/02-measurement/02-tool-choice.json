@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量铅笔的长度，最合适的工具是：",
+        "options": [
+          "直尺",
+          "米尺",
+          "脚步",
+          "跳绳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量教室有多长，下面哪个工具更方便？",
+        "options": [
+          "橡皮",
+          "长卷尺",
+          "曲别针",
+          "铅笔尖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "量的时候工具可以斜着摆，这样读出的长度一定准确。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量前要统一标准，是因为：",
+        "options": [
+          "数字会变大",
+          "工具会变漂亮",
+          "方便比较和交流",
+          "不用认真读数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪种工具量黑板最合适？",
+        "columns": [
+          "物体",
+          "较合适工具",
+          "编号"
+        ],
+        "rows": [
+          {
+            "物体": "黑板",
+            "较合适工具": "米尺",
+            "编号": 1
+          },
+          {
+            "物体": "橡皮",
+            "较合适工具": "直尺",
+            "编号": 2
+          },
+          {
+            "物体": "操场跑道",
+            "较合适工具": "卷尺",
+            "编号": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "直尺"
+          },
+          {
+            "id": "l2",
+            "text": "米尺"
+          },
+          {
+            "id": "l3",
+            "text": "脚步"
+          },
+          {
+            "id": "l4",
+            "text": "卷尺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "量门高、黑板"
+          },
+          {
+            "id": "r4",
+            "text": "量较长或弯曲处"
+          },
+          {
+            "id": "r1",
+            "text": "量铅笔、橡皮"
+          },
+          {
+            "id": "r3",
+            "text": "估测教室长度"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "测量前要选择",
+          null,
+          "的工具，并尽量",
+          null,
+          "摆放。"
+        ],
+        "tokens": [
+          "直直",
+          "随意",
+          "合适",
+          "弯曲"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "合适",
+          "直直"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4",
+        "right": "6"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用脚量教室时，四组结果不同。下面哪句话最合理？",
+        "options": [
+          "大家都错了",
+          "教室变长了",
+          "只能用手量",
+          "脚的大小不同，结果可能不同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用尺子测量时，尺子的0刻度通常要对准物体的一端。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

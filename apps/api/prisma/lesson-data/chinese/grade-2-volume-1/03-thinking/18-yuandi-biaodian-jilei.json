@@ -1,0 +1,370 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一阵秋风吹过，树叶像蝴蝶一样飘落下来（ ）”应加什么标点？",
+        "options": [
+          "？",
+          "！",
+          "。",
+          "，"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我打开窗户一看（ ）竟然下雪了（ ）”最合适的标点是？",
+        "options": [
+          "，。",
+          "？？",
+          "！！",
+          "、。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这棵树的叶子真奇怪（ ）是什么树呢（ ）”最合适的标点是？",
+        "options": [
+          "。。",
+          "？！",
+          "，。",
+          "，？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白云"
+          },
+          {
+            "id": "l_1",
+            "text": "雨点"
+          },
+          {
+            "id": "l_2",
+            "text": "小溪"
+          },
+          {
+            "id": "l_3",
+            "text": "海洋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "细小的流水"
+          },
+          {
+            "id": "r_0",
+            "text": "天空中的云"
+          },
+          {
+            "id": "r_3",
+            "text": "广阔的大海"
+          },
+          {
+            "id": "r_1",
+            "text": "雨落下的小滴"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "乌云"
+          },
+          {
+            "id": "l_1",
+            "text": "霜冻"
+          },
+          {
+            "id": "l_2",
+            "text": "湖泊"
+          },
+          {
+            "id": "l_3",
+            "text": "冰雹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "陆地上的大片积水"
+          },
+          {
+            "id": "r_0",
+            "text": "颜色较暗的云"
+          },
+          {
+            "id": "r_3",
+            "text": "从云中落下的冰粒"
+          },
+          {
+            "id": "r_1",
+            "text": "寒冷时形成的霜"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出春景词句",
+        "tokens": [
+          "百花争艳",
+          "乌云",
+          "含苞欲放",
+          "雪花",
+          "小溪"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "含苞欲放",
+          "百花争艳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词句",
+        "tokens": [
+          "春色满园",
+          "河流",
+          "花红柳绿",
+          "霜冻",
+          "晚霞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花红柳绿",
+          "春色满园"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小儿垂钓",
+        "author": "[唐]胡令能",
+        "lines": [
+          [
+            "蓬头稚子学垂纶，"
+          ],
+          [
+            "侧坐莓苔草映身。"
+          ],
+          [
+            "路人借问遥招手，"
+          ],
+          [
+            "怕得鱼惊不",
+            null
+          ]
+        ],
+        "options": [
+          "见人",
+          "应人",
+          "问人",
+          "唤人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小儿垂钓",
+        "author": "[唐]胡令能",
+        "lines": [
+          [
+            "蓬头稚子",
+            null,
+            "，"
+          ],
+          [
+            "侧坐莓苔草映身。"
+          ]
+        ],
+        "options": [
+          "学垂纶",
+          "学钓鱼",
+          "坐草边",
+          "招招手"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "小儿垂钓",
+        "author": "[唐]胡令能",
+        "lines": [
+          [
+            null,
+            "稚子学垂纶，"
+          ],
+          [
+            "侧坐",
+            null,
+            "草映身。"
+          ],
+          [
+            "路人借问",
+            null,
+            "，"
+          ],
+          [
+            "怕得鱼惊",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "蓬头",
+              "白头",
+              "低头",
+              "回头"
+            ]
+          },
+          {
+            "options": [
+              "莓苔",
+              "青苔",
+              "花丛",
+              "石台"
+            ]
+          },
+          {
+            "options": [
+              "遥招手",
+              "忙回答",
+              "轻点头",
+              "高声喊"
+            ]
+          },
+          {
+            "options": [
+              "不应人",
+              "不见人",
+              "不问人",
+              "不理鱼"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“热爱书吧——这是知识的源泉！”是谁的名言？",
+        "options": [
+          "李白",
+          "张衡",
+          "高尔基",
+          "胡令能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪页有《小儿垂钓》和“口语交际：做手工”？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-039.jpg",
+            "label": "数星星课后题"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-042.jpg",
+            "label": "日积月累和口语交际"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "彩虹第一页"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "外婆家第一页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    }
+  ]
+}

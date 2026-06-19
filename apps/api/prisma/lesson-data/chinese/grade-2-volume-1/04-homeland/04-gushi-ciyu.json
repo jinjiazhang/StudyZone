@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "穷尽"
+          },
+          {
+            "id": "l1",
+            "text": "层叠"
+          },
+          {
+            "id": "l2",
+            "text": "烟云"
+          },
+          {
+            "id": "l3",
+            "text": "山川"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "烟消云散"
+          },
+          {
+            "id": "r0",
+            "text": "山穷水尽"
+          },
+          {
+            "id": "r3",
+            "text": "名山大川"
+          },
+          {
+            "id": "r1",
+            "text": "层林叠翠"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "山",
+        "tokens": [
+          "顶",
+          "烟",
+          "层",
+          "炉",
+          "川",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“山”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "川",
+            "水",
+            "顶"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "云",
+        "tokens": [
+          "雾",
+          "楼",
+          "银",
+          "欲",
+          "烟",
+          "海"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“云”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "烟",
+            "海",
+            "雾"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "尽",
+        "tokens": [
+          "力",
+          "紫",
+          "遥",
+          "布",
+          "穷",
+          "头"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“尽”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "穷",
+            "头",
+            "力"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“山穷水尽”中“穷尽”的意思接近哪一个？",
+        "options": [
+          "很富有",
+          "很热闹",
+          "很漂亮",
+          "到了尽头"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“层林叠翠”写的是哪种画面？",
+        "options": [
+          "树林一层层叠着绿色",
+          "火车票上的站名",
+          "葡萄干的颜色",
+          "湖水分成两半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：烟消云散",
+        "tokens": [
+          "云散",
+          "山川",
+          "层林",
+          "烟消"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "烟消",
+          "云散"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：名山大川",
+        "tokens": [
+          "大川",
+          "穷尽",
+          "紫烟",
+          "名山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "名山",
+          "大川"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "炉",
+        "hint": "选择“炉”的正确读音",
+        "options": [
+          "kǒng",
+          "lú",
+          "tán",
+          "tuì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "银",
+        "hint": "选择“银”的正确读音",
+        "options": [
+          "fēng",
+          "dǎo",
+          "yín",
+          "dēng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

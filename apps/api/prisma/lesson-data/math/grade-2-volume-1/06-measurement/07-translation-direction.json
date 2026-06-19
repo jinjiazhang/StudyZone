@@ -1,0 +1,301 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第74页华容道中，人物只能怎样移动？",
+        "options": [
+          "斜着移动",
+          "横向或纵向移动",
+          "跳过其他人物",
+          "随意旋转"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "从一个格子向右到相邻格子，这是什么运动？",
+        "options": [
+          {
+            "id": "g25_0",
+            "label": "对折"
+          },
+          {
+            "id": "g25_1",
+            "label": "剪纸"
+          },
+          {
+            "id": "g25_2",
+            "label": "平移"
+          },
+          {
+            "id": "g25_3",
+            "label": "旋转"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g25_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "平移时，图形的形状和大小",
+          null,
+          "，位置",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "改变",
+          "不变",
+          "剪掉",
+          "对折"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "不变",
+          "改变"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“向下走2格”中的2格表示什么？",
+        "options": [
+          "图形的颜色",
+          "人物的名字",
+          "剪刀数量",
+          "移动的距离"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "向上"
+          },
+          {
+            "id": "l1",
+            "text": "向下"
+          },
+          {
+            "id": "l2",
+            "text": "向左"
+          },
+          {
+            "id": "l3",
+            "text": "向右"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "列数变小的方向"
+          },
+          {
+            "id": "r0",
+            "text": "行数变小的方向"
+          },
+          {
+            "id": "r3",
+            "text": "列数变大的方向"
+          },
+          {
+            "id": "r1",
+            "text": "行数变大的方向"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下列哪种运动不是平移？",
+        "options": [
+          {
+            "id": "g26_0",
+            "label": "风车绕中心转动"
+          },
+          {
+            "id": "g26_1",
+            "label": "汽车直直前进一格"
+          },
+          {
+            "id": "g26_2",
+            "label": "棋子向左移两格"
+          },
+          {
+            "id": "g26_3",
+            "label": "人物向上移三格"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g26_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "平移一个图形后，下面哪项一定不变？",
+        "options": [
+          "形状和大小",
+          "所在位置",
+          "距离出口远近",
+          "经过的格数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "描述一次平移，应先后说清：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "移动几格"
+          },
+          {
+            "id": "o1",
+            "text": "移动对象"
+          },
+          {
+            "id": "o2",
+            "text": "到达位置"
+          },
+          {
+            "id": "o3",
+            "text": "移动方向"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“赵云向上移动3格”属于哪类描述？",
+        "options": [
+          "只说了颜色",
+          "只说了图案",
+          "对象、方向、距离都清楚",
+          "没有任何方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话符合课本第74页的规则？",
+        "options": [
+          {
+            "id": "g27_0",
+            "label": "人物可以斜着穿过墙"
+          },
+          {
+            "id": "g27_1",
+            "label": "人物可以跳到任意空格"
+          },
+          {
+            "id": "g27_2",
+            "label": "出口会跟着人物移动"
+          },
+          {
+            "id": "g27_3",
+            "label": "4个人物只能横向或纵向移动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g27_3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "华容道里，横向移动是向",
+          null,
+          "或向",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "右",
+          "下",
+          "左",
+          "剪"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "左",
+          "右"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一个图形向右平移2格，它的朝向会怎样？",
+        "options": [
+          "一定倒过来",
+          "一定变大",
+          "不改变",
+          "一定变成圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

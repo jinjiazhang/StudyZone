@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 元买 8 元一个的飞机，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "21 元买 3 元一个的球，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 元买 6 元一个的玩具，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 元买 2 元一个的羽毛，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "21 元买 3 元一个的球，可以买 7 个，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "21÷3=7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "30 元正好可以买 __ 顶 12 元帽子和 __ 双 3 元袜子。",
+        "blanks": [
+          {
+            "id": "caps",
+            "label": "帽子"
+          },
+          {
+            "id": "socks",
+            "label": "袜子"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "帽子 12 元，袜子 3 元，帽子的价钱是袜子的几倍？",
+        "options": [
+          "3 倍",
+          "4 倍",
+          "6 倍",
+          "9 倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "30 元正好可以买哪一种？",
+        "options": [
+          "2 双 24 元鞋",
+          "10 双 3 元袜子",
+          "3 顶 12 元帽子",
+          "6 副 4 元手套"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 6",
+        "right": "18 ÷ 2"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "40÷8"
+          },
+          {
+            "id": "l2",
+            "text": "21÷3"
+          },
+          {
+            "id": "l3",
+            "text": "24÷6"
+          },
+          {
+            "id": "l4",
+            "text": "18÷2"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "4"
+          },
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r4",
+            "text": "9"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "21",
+          null,
+          "3",
+          null,
+          "7"
+        ],
+        "tokens": [
+          "=",
+          "7",
+          "3",
+          "÷",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按商品单价从低到高排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "帽子12元"
+          },
+          {
+            "id": "i1",
+            "text": "袜子3元"
+          },
+          {
+            "id": "i4",
+            "text": "鞋24元"
+          },
+          {
+            "id": "i2",
+            "text": "手套4元"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

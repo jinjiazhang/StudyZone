@@ -1,0 +1,269 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“棉被”的“被”容易错在哪里？",
+        "options": [
+          "读成bái",
+          "加点位置或部件",
+          "写成火字旁",
+          "少写木字旁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“彩带”和“穿戴”中容易弄混的一组字是？",
+        "options": [
+          "门、问",
+          "舟、船",
+          "带、戴",
+          "低、底"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“汽水”和“气体”中要分清哪两个字？",
+        "options": [
+          "园、圆",
+          "今、令",
+          "再、在",
+          "汽、气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "带领"
+          },
+          {
+            "id": "l_1",
+            "text": "穿戴"
+          },
+          {
+            "id": "l_2",
+            "text": "已经"
+          },
+          {
+            "id": "l_3",
+            "text": "自己"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "戴"
+          },
+          {
+            "id": "r_2",
+            "text": "已"
+          },
+          {
+            "id": "r_3",
+            "text": "己"
+          },
+          {
+            "id": "r_0",
+            "text": "带"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "果园"
+          },
+          {
+            "id": "l_1",
+            "text": "圆心"
+          },
+          {
+            "id": "l_2",
+            "text": "今天"
+          },
+          {
+            "id": "l_3",
+            "text": "口令"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "圆"
+          },
+          {
+            "id": "r_2",
+            "text": "今"
+          },
+          {
+            "id": "r_3",
+            "text": "令"
+          },
+          {
+            "id": "r_0",
+            "text": "园"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成提醒句",
+        "tokens": [
+          "雪孩子",
+          "看清楚",
+          "大海",
+          "加点的字",
+          "要认真"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "加点的字",
+          "要认真",
+          "看清楚"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成提醒句",
+        "tokens": [
+          "钓鱼",
+          "分类整理",
+          "牛羊",
+          "容易弄混的字",
+          "可以"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "容易弄混的字",
+          "可以",
+          "分类整理"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“再见”的“再”和“正在”的“在”要分清。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“汽水”和“气体”都必须写成同一个字。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "戴",
+        "hint": "请选择字【戴】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "dài",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "领",
+        "hint": "请选择字【领】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "lǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "令",
+        "hint": "请选择字【令】的正确拼音",
+        "options": [
+          "lìng",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

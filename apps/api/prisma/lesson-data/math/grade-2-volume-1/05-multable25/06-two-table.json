@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "有1双、2双、3双筷子，分别有__根、__根、__根。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "1双"
+          },
+          {
+            "id": "b2",
+            "label": "2双"
+          },
+          {
+            "id": "b3",
+            "label": "3双"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          4,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2×4=__，2×6=__，2×8=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×4"
+          },
+          {
+            "id": "b2",
+            "label": "2×6"
+          },
+          {
+            "id": "b3",
+            "label": "2×8"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          12,
+          16
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 * 2 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2×5既可以表示2个5，也可以表示什么？",
+        "options": [
+          "2个2",
+          "5个2",
+          "5个5",
+          "10个5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "3 * 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "二七",
+          null,
+          "，2×7",
+          null,
+          "14"
+        ],
+        "tokens": [
+          "=",
+          "得八",
+          "十四",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "十四",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按2的口诀得数从小到大排列",
+        "items": [
+          {
+            "id": "n4",
+            "text": "2×9"
+          },
+          {
+            "id": "n1",
+            "text": "2×2"
+          },
+          {
+            "id": "n3",
+            "text": "2×7"
+          },
+          {
+            "id": "n2",
+            "text": "2×4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×4"
+          },
+          {
+            "id": "l2",
+            "text": "2×6"
+          },
+          {
+            "id": "l3",
+            "text": "2×8"
+          },
+          {
+            "id": "l4",
+            "text": "2×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "16"
+          },
+          {
+            "id": "r4",
+            "text": "18"
+          },
+          {
+            "id": "r1",
+            "text": "8"
+          },
+          {
+            "id": "r2",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

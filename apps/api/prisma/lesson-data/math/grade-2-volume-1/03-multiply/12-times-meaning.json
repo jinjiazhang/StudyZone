@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸭有2个3只，可以说鸭的只数是猴子的几倍？猴子有3只。",
+        "options": [
+          "2倍",
+          "3倍",
+          "5倍",
+          "6倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "松鼠有2只，小鸡有4个2只，小鸡共有多少只？"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸡有8只，松鼠有2只，小鸡的只数是松鼠的几倍？",
+        "options": [
+          "2倍",
+          "3倍",
+          "4倍",
+          "8倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "松鼠有2只，小鸡有4个2只。小鸡有__只，是松鼠的__倍。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小鸡只数"
+          },
+          {
+            "id": "b2",
+            "label": "倍数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "鹅有6只，小鸟有2个6只。小鸟有__只，是鹅的__倍。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小鸟只数"
+          },
+          {
+            "id": "b2",
+            "label": "倍数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "孔雀有3只，猴子有3个3只，猴子共有多少只？"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“4倍”表示什么？",
+        "options": [
+          "多4个",
+          "少4个",
+          "除以4",
+          "有4个同样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "小鸡有",
+          null,
+          "个2只，就是",
+          null,
+          "只，是松鼠的",
+          null,
+          "倍"
+        ],
+        "tokens": [
+          "8",
+          "4",
+          "2",
+          "6",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "8",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2的3倍"
+          },
+          {
+            "id": "l2",
+            "text": "3的4倍"
+          },
+          {
+            "id": "l3",
+            "text": "4的2倍"
+          },
+          {
+            "id": "l4",
+            "text": "5的3倍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "12"
+          },
+          {
+            "id": "r3",
+            "text": "8"
+          },
+          {
+            "id": "r4",
+            "text": "15"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 × 4",
+        "right": "4 × 2"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "松鼠2只，小鸡的只数是松鼠的4倍。小鸡有多少只？",
+        "columns": [
+          "松鼠只数",
+          "倍数"
+        ],
+        "rows": [
+          {
+            "松鼠只数": 2,
+            "倍数": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排",
+        "items": [
+          {
+            "id": "d",
+            "text": "4的3倍"
+          },
+          {
+            "id": "a",
+            "text": "2的3倍"
+          },
+          {
+            "id": "c",
+            "text": "2的5倍"
+          },
+          {
+            "id": "b",
+            "text": "3的3倍"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

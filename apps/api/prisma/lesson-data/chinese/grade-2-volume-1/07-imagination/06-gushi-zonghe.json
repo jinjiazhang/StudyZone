@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "两首古诗",
+        "passage": "《江雪》写雪中江面寂静，只有一位老人独自垂钓。《敕勒歌》写草原天空辽阔，风吹草低时牛羊显现。",
+        "questions": [
+          {
+            "question": "哪首诗写到了“寒江雪”？",
+            "options": [
+              "敕勒歌",
+              "夜宿山寺",
+              "雪孩子",
+              "江雪"
+            ]
+          },
+          {
+            "question": "哪首诗描写草原景象？",
+            "options": [
+              "敕勒歌",
+              "江雪",
+              "雾在哪里",
+              "分不清是鸭还是霞"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“孤舟蓑笠翁”的下一句是？",
+        "options": [
+          "万径人踪灭",
+          "独钓寒江雪",
+          "笼盖四野",
+          "风吹草低见牛羊"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“敕勒川，阴山下”的下一句是？",
+        "options": [
+          "千山鸟飞绝",
+          "独钓寒江雪",
+          "天似穹庐，笼盖四野",
+          "危楼高百尺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "江雪"
+          },
+          {
+            "id": "l_1",
+            "text": "敕勒歌"
+          },
+          {
+            "id": "l_2",
+            "text": "夜宿山寺"
+          },
+          {
+            "id": "l_3",
+            "text": "雾在哪里"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "北朝民歌"
+          },
+          {
+            "id": "r_2",
+            "text": "李白"
+          },
+          {
+            "id": "r_3",
+            "text": "谢尔古年科夫"
+          },
+          {
+            "id": "r_0",
+            "text": "柳宗元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全画面句",
+        "tokens": [
+          "牛羊",
+          "老人",
+          "草原",
+          "独钓",
+          "雪中",
+          "江上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪中",
+          "江上",
+          "老人",
+          "独钓"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全画面句",
+        "tokens": [
+          "寒江",
+          "牛羊",
+          "小舟",
+          "出现",
+          "草原",
+          "辽阔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "草原",
+          "辽阔",
+          "牛羊",
+          "出现"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《江雪》和《敕勒歌》都要求朗读课文、背诵课文。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《江雪》的写字格里有“论、猫、该”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "千山鸟飞绝，"
+          ],
+          [
+            null,
+            "人踪灭。"
+          ]
+        ],
+        "options": [
+          "孤舟",
+          "天苍苍",
+          "敕勒川",
+          "万径"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "天苍苍，"
+          ],
+          [
+            "野茫茫，"
+          ],
+          [
+            null
+          ]
+        ],
+        "options": [
+          "风吹草低见牛羊。",
+          "独钓寒江雪。",
+          "万径人踪灭。",
+          "危楼高百尺。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

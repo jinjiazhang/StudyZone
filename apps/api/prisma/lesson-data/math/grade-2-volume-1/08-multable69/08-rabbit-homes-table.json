@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "24 只小兔，每间住 4 只，需要几间房子？",
+        "columns": [
+          "每间住几只小兔",
+          "房子数"
+        ],
+        "rows": [
+          {
+            "每间住几只小兔": 4,
+            "房子数": 6
+          },
+          {
+            "每间住几只小兔": 6,
+            "房子数": 4
+          },
+          {
+            "每间住几只小兔": 8,
+            "房子数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "24 只小兔，需要 3 间房子时，每间住几只？",
+        "columns": [
+          "每间住几只小兔",
+          "房子数"
+        ],
+        "rows": [
+          {
+            "每间住几只小兔": 4,
+            "房子数": 6
+          },
+          {
+            "每间住几只小兔": 8,
+            "房子数": 3
+          },
+          {
+            "每间住几只小兔": 6,
+            "房子数": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "24 只小兔，每间 6 只，需要 ___ 间；每间 8 只，需要 ___ 间。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "6只一间"
+          },
+          {
+            "id": "b2",
+            "label": "8只一间"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "表格中“每间住几只小兔”和“房子数”有什么关系？",
+        "options": [
+          "相乘等于24",
+          "相加等于24",
+          "相减等于24",
+          "没有关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 只小兔住 8 间房，每间住几只？",
+        "options": [
+          "2只",
+          "3只",
+          "4只",
+          "6只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 4",
+        "right": "24 ÷ 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "每间4只"
+          },
+          {
+            "id": "l2",
+            "text": "每间6只"
+          },
+          {
+            "id": "l3",
+            "text": "每间8只"
+          },
+          {
+            "id": "l4",
+            "text": "每间3只"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "8间"
+          },
+          {
+            "id": "r3",
+            "text": "3间"
+          },
+          {
+            "id": "r2",
+            "text": "4间"
+          },
+          {
+            "id": "r1",
+            "text": "6间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

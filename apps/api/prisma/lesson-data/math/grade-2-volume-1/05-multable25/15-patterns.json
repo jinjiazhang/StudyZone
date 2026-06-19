@@ -1,0 +1,279 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "10，15，20，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4项"
+          },
+          {
+            "id": "b2",
+            "label": "第5项"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          25,
+          30
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18，16，14，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4项"
+          },
+          {
+            "id": "b2",
+            "label": "第5项"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          10
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "20，24，28，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4项"
+          },
+          {
+            "id": "b2",
+            "label": "第5项"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32,
+          36
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "27，24，21，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4项"
+          },
+          {
+            "id": "b2",
+            "label": "第5项"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          15
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "9，12，15，__，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4项"
+          },
+          {
+            "id": "b2",
+            "label": "第5项"
+          },
+          {
+            "id": "b3",
+            "label": "第6项"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          21,
+          24
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数列45，40，35，下一项是多少？",
+        "options": [
+          "25",
+          "32",
+          "30",
+          "40"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 8",
+        "right": "5 * 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "n3",
+            "text": "4×5"
+          },
+          {
+            "id": "n1",
+            "text": "2×6"
+          },
+          {
+            "id": "n4",
+            "text": "5×5"
+          },
+          {
+            "id": "n2",
+            "text": "3×5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "28，24，20，",
+          null,
+          "，12，",
+          null
+        ],
+        "tokens": [
+          "18",
+          "8",
+          "16",
+          "20"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "16",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "每次加5"
+          },
+          {
+            "id": "l2",
+            "text": "每次减2"
+          },
+          {
+            "id": "l3",
+            "text": "每次加4"
+          },
+          {
+            "id": "l4",
+            "text": "每次减3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "20，24，28，32"
+          },
+          {
+            "id": "r4",
+            "text": "27，24，21，18"
+          },
+          {
+            "id": "r1",
+            "text": "10，15，20，25"
+          },
+          {
+            "id": "r2",
+            "text": "18，16，14，12"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

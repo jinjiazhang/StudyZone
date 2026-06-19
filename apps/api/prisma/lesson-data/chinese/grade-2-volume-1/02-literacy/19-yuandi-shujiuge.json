@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "数九歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "一九二九",
+            null,
+            "，"
+          ],
+          [
+            "三九四九冰上走。"
+          ]
+        ],
+        "options": [
+          "不出手",
+          "看杨柳",
+          "遍地走",
+          "沿河看柳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "数九歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "三九四九",
+            null,
+            "，"
+          ],
+          [
+            "五九六九沿河看柳。"
+          ]
+        ],
+        "options": [
+          "河开",
+          "冰上走",
+          "雁来",
+          "加一九"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "数九歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "五九六九，"
+          ],
+          [
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "河开",
+          "雁来",
+          "沿河看柳",
+          "耕牛遍地走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "数九歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "七九河开，"
+          ],
+          [
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "九九加一九",
+          "一九二九",
+          "三九四九",
+          "八九雁来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "数九歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "九九加一九，"
+          ],
+          [
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "耕牛遍地走",
+          "不出手",
+          "冰上走",
+          "沿河看柳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：七九河开，八九雁来。",
+        "tokens": [
+          "三九",
+          "七九",
+          "冰上走",
+          "河开",
+          "八九",
+          "雁来"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "七九",
+          "河开",
+          "八九",
+          "雁来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：九九加一九，耕牛遍地走。",
+        "tokens": [
+          "看柳",
+          "九九",
+          "不出手",
+          "加一九",
+          "耕牛",
+          "遍地走"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "九九",
+          "加一九",
+          "耕牛",
+          "遍地走"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《数九歌》中“冰上走”对应哪一段？",
+        "options": [
+          "一九二九",
+          "三九四九",
+          "五九六九",
+          "八九"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《数九歌》写出了天气由冷到暖的变化。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“五九六九”后面是“冰上走”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小明说“四八二十四”，错在哪里？",
+        "options": [
+          "四八应是三十二",
+          "四八应是二十八",
+          "四八应是十六",
+          "四八应是四十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小红把3×7算成24，可能错用了哪句口诀？",
+        "options": [
+          "三六十八",
+          "四七二十八",
+          "三八二十四",
+          "五七三十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "二七十四，所以2×7=14。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "五六三十，所以5×7=30。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 8 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 7 = ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 8",
+        "right": "4 * 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "如果忘了4×8，可以想4×7",
+          null,
+          "4",
+          null,
+          "32"
+        ],
+        "tokens": [
+          "+",
+          "-",
+          "=",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "错：五七三十"
+          },
+          {
+            "id": "l2",
+            "text": "错：四六二十二"
+          },
+          {
+            "id": "l3",
+            "text": "错：三九二十八"
+          },
+          {
+            "id": "l4",
+            "text": "错：二八十八"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "正：三九二十七"
+          },
+          {
+            "id": "r4",
+            "text": "正：二八十六"
+          },
+          {
+            "id": "r1",
+            "text": "正：五七三十五"
+          },
+          {
+            "id": "r2",
+            "text": "正：四六二十四"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“3个2相加，也可以用乘法表示”对应的算式是？",
+        "options": [
+          "2×3",
+          "3+2",
+          "3-2",
+          "2+3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2×3读作什么？",
+        "options": [
+          "2加3",
+          "3乘2等于2",
+          "2乘3",
+          "2除以3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2 × 3 = 6 中，2叫__，3叫__，6叫__。（填序号：1=乘数，2=积）",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2的名称"
+          },
+          {
+            "id": "b2",
+            "label": "3的名称"
+          },
+          {
+            "id": "b3",
+            "label": "6的名称"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3架小飞机，每架坐2人，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "2×3",
+          "3×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 × 3 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "候车区有2行，每行4人，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×2",
+          "2×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 2 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4×2可以表示下面哪一种情况？",
+        "options": [
+          "4和2相减",
+          "4个2相除",
+          "4后面数2个数",
+          "4个2相加"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 + 2 + 2",
+        "right": "2 × 3"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "个",
+          null,
+          "相加，可以写成",
+          null,
+          "×",
+          null
+        ],
+        "tokens": [
+          "2",
+          "6",
+          "3",
+          "5",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "2",
+          "2",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5个3相加"
+          },
+          {
+            "id": "l2",
+            "text": "2个6相加"
+          },
+          {
+            "id": "l3",
+            "text": "4个4相加"
+          },
+          {
+            "id": "l4",
+            "text": "3个7相加"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "6×2"
+          },
+          {
+            "id": "r3",
+            "text": "4×4"
+          },
+          {
+            "id": "r4",
+            "text": "7×3"
+          },
+          {
+            "id": "r1",
+            "text": "3×5"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每架小飞机坐2人，有3架，一共有多少人？",
+        "columns": [
+          "项目",
+          "数量"
+        ],
+        "rows": [
+          {
+            "项目": "每架人数",
+            "数量": 2
+          },
+          {
+            "项目": "架数",
+            "数量": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

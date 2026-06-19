@@ -1,0 +1,280 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“花（ ）”应填哪个字？",
+        "options": [
+          "圆",
+          "只",
+          "支",
+          "园"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“（ ）桌”应填哪个字？",
+        "options": [
+          "园",
+          "进",
+          "圆",
+          "近"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）笔”应填哪个量词？",
+        "options": [
+          "支",
+          "只",
+          "坐",
+          "座"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）鸭”应填哪个量词？",
+        "options": [
+          "支",
+          "只",
+          "圆",
+          "园"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“远（ ）”应填哪个字？",
+        "options": [
+          "进",
+          "近",
+          "坐",
+          "座"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“（ ）出”应填哪个字？",
+        "options": [
+          "近",
+          "园",
+          "圆",
+          "进"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“（ ）位”应填哪个字？",
+        "options": [
+          "座",
+          "坐",
+          "只",
+          "支"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“（ ）车”应填哪个字？",
+        "options": [
+          "座",
+          "圆",
+          "坐",
+          "园"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "园"
+          },
+          {
+            "id": "l_1",
+            "text": "圆"
+          },
+          {
+            "id": "l_2",
+            "text": "只"
+          },
+          {
+            "id": "l_3",
+            "text": "支"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "一只鸭、一只鸟"
+          },
+          {
+            "id": "r_0",
+            "text": "花园、公园"
+          },
+          {
+            "id": "r_3",
+            "text": "一支笔、一支歌"
+          },
+          {
+            "id": "r_1",
+            "text": "圆桌、圆月"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "近"
+          },
+          {
+            "id": "l_1",
+            "text": "进"
+          },
+          {
+            "id": "l_2",
+            "text": "坐"
+          },
+          {
+            "id": "l_3",
+            "text": "座"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "坐车、坐下"
+          },
+          {
+            "id": "r_0",
+            "text": "远近、亲近"
+          },
+          {
+            "id": "r_3",
+            "text": "座位、一座桥"
+          },
+          {
+            "id": "r_1",
+            "text": "进出、前进"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "看圆月",
+          "我",
+          "花园",
+          "走进",
+          "一支笔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "走进",
+          "花园",
+          "看圆月"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "圆",
+        "tokens": [
+          "月",
+          "笔",
+          "桌",
+          "座",
+          "心",
+          "铁"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“圆”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "月",
+            "桌",
+            "心"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

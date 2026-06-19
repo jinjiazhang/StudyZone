@@ -1,0 +1,231 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "整理复习：填规律 19，12，15，___，___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          21
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "整理复习：填规律 28，24，20，___，___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "整理复习：填规律 45，40，35，___，___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          25
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 * 2",
+        "right": "10"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "3 * 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9 * 2",
+        "right": "9 + 9"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "乘法表：3行4列交叉处的积是多少？",
+        "columns": [
+          "行",
+          "列",
+          "积"
+        ],
+        "rows": [
+          {
+            "行": 3,
+            "列": 4,
+            "积": 12
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "乘法表：5行8列交叉处的积是多少？",
+        "columns": [
+          "行",
+          "列",
+          "积"
+        ],
+        "rows": [
+          {
+            "行": 5,
+            "列": 8,
+            "积": 40
+          }
+        ]
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式结果是16？",
+        "options": [
+          "4×4",
+          "5×4",
+          "3×6",
+          "2×9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式结果是24？",
+        "options": [
+          "5×4",
+          "3×7",
+          "4×6",
+          "2×9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "",
+          null,
+          " × 4 = 16，3 × ",
+          null,
+          " = 24"
+        ],
+        "tokens": [
+          "4",
+          "6",
+          "8",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "在2~5的口诀中，5×9的积最大。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

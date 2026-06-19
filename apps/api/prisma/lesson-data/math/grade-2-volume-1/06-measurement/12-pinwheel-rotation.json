@@ -1,0 +1,318 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第76页做风车，最后要让风车怎样运动？",
+        "options": [
+          "沿直线平移",
+          "围绕中心旋转",
+          "对折重合",
+          "倒退出口"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "风车叶片转起来时，哪一点基本固定？",
+        "options": [
+          {
+            "id": "g40_0",
+            "label": "每个叶片尖端"
+          },
+          {
+            "id": "g40_1",
+            "label": "纸的四个角"
+          },
+          {
+            "id": "g40_2",
+            "label": "中心钉住的位置"
+          },
+          {
+            "id": "g40_3",
+            "label": "风车外面的空气"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g40_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "风车能转，是因为叶片绕",
+          null,
+          "做",
+          null,
+          "运动。"
+        ],
+        "tokens": [
+          "旋转",
+          "中心",
+          "平移",
+          "折叠"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "中心",
+          "旋转"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "制作简单风车的顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "把角折向中心固定"
+          },
+          {
+            "id": "o1",
+            "text": "折出或画出对角线"
+          },
+          {
+            "id": "o2",
+            "text": "试着吹一吹让它转"
+          },
+          {
+            "id": "o3",
+            "text": "沿线剪到接近中心"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "固定风车时，为什么不能把叶片全部粘死？",
+        "options": [
+          "叶片要能平移到出口",
+          "叶片要剪成星星",
+          "叶片要量长度",
+          "叶片需要能绕中心转动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "风车中心"
+          },
+          {
+            "id": "l1",
+            "text": "风车叶片"
+          },
+          {
+            "id": "l2",
+            "text": "吹风"
+          },
+          {
+            "id": "l3",
+            "text": "旋转方向"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "可能顺时针或逆时针"
+          },
+          {
+            "id": "r1",
+            "text": "围绕中心运动"
+          },
+          {
+            "id": "r0",
+            "text": "固定和转动的关键点"
+          },
+          {
+            "id": "r2",
+            "text": "提供转动的力量"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪一个和风车运动最像？",
+        "options": [
+          {
+            "id": "g41_0",
+            "label": "书本直直推过去"
+          },
+          {
+            "id": "g41_1",
+            "label": "纸片对折"
+          },
+          {
+            "id": "g41_2",
+            "label": "电风扇叶片转动"
+          },
+          {
+            "id": "g41_3",
+            "label": "小车倒退"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g41_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "风车叶片转动一圈后，形状和大小怎样？",
+        "options": [
+          "变成圆形",
+          "不变",
+          "变成更小",
+          "消失"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "风车转动时，叶片的位置不断",
+          null,
+          "，但图形大小",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "不变",
+          "改变",
+          "对折",
+          "加倍"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "改变",
+          "不变"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果中心钉太紧，风车可能怎样？",
+        "options": [
+          "一定更快",
+          "会自动平移",
+          "变成停车场",
+          "不容易转动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项不是旋转现象？",
+        "options": [
+          {
+            "id": "g42_0",
+            "label": "棋子向右移2格"
+          },
+          {
+            "id": "g42_1",
+            "label": "风车转动"
+          },
+          {
+            "id": "g42_2",
+            "label": "陀螺转动"
+          },
+          {
+            "id": "g42_3",
+            "label": "门绕门轴转动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g42_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "观察风车旋转，可以依次关注：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "叶片是否能动"
+          },
+          {
+            "id": "o1",
+            "text": "转动是否顺畅"
+          },
+          {
+            "id": "o2",
+            "text": "中心是否固定"
+          },
+          {
+            "id": "o3",
+            "text": "吹风后是否转动"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

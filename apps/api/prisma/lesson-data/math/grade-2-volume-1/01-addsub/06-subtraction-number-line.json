@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42-6 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50-28 = ?"
+      },
+      "answer": {
+        "value": 22,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72-37 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23-5 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "31-6 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "82-4 = ?"
+      },
+      "answer": {
+        "value": 78,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "93-76 = ?"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "23 - 5：先从23退到20用去 __，再减剩下 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先减"
+          },
+          {
+            "id": "b2",
+            "label": "再减"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          18
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "31 - 6：先从31退到30用去 __，再减剩下 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先减"
+          },
+          {
+            "id": "b2",
+            "label": "再减"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          5,
+          25
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "42 - 6"
+          },
+          {
+            "id": "l1",
+            "text": "50 - 28"
+          },
+          {
+            "id": "l2",
+            "text": "72 - 37"
+          },
+          {
+            "id": "l3",
+            "text": "93 - 76"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "35"
+          },
+          {
+            "id": "r3",
+            "text": "17"
+          },
+          {
+            "id": "r0",
+            "text": "36"
+          },
+          {
+            "id": "r1",
+            "text": "22"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "72 - 37",
+        "right": "50 - 28"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书价：童话故事34元，奇妙的世界8元。奇妙的世界比童话故事便宜多少元？",
+        "options": [
+          "42元",
+          "26元",
+          "24元",
+          "18元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

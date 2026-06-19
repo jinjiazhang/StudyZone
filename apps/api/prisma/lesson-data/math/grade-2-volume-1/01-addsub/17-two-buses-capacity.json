@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 25 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 + 34 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25 + 34 = ?"
+      },
+      "answer": {
+        "value": 59,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 + 50 = ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两辆车每辆最多坐50名乘客，9名和25名两队坐得下吗？",
+        "options": [
+          "坐不下",
+          "坐得下",
+          "只坐下一队",
+          "无法判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18名和34名两队合坐一辆车，够坐吗？",
+        "options": [
+          "不够，超过50人",
+          "够坐，还剩2座",
+          "正好50人",
+          "只超过1人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9 + 25",
+        "right": "50"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 + 34",
+        "right": "50"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "25 + 34",
+        "right": "50"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "9 + 25"
+          },
+          {
+            "id": "l1",
+            "text": "18 + 34"
+          },
+          {
+            "id": "l2",
+            "text": "25 + 34"
+          },
+          {
+            "id": "l3",
+            "text": "50 + 50"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "59"
+          },
+          {
+            "id": "r3",
+            "text": "100"
+          },
+          {
+            "id": "r0",
+            "text": "34"
+          },
+          {
+            "id": "r1",
+            "text": "52"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "四队运动员一共有多少名？",
+        "columns": [
+          "队伍",
+          "人数"
+        ],
+        "rows": [
+          {
+            "队伍": "一队",
+            "人数": 9
+          },
+          {
+            "队伍": "二队",
+            "人数": 25
+          },
+          {
+            "队伍": "三队",
+            "人数": 18
+          },
+          {
+            "队伍": "四队",
+            "人数": 34
+          }
+        ]
+      },
+      "answer": {
+        "value": 86,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "两辆车一共最多坐100名乘客。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-021.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

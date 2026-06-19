@@ -1,0 +1,216 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 ÷ 9 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式 24 ÷ 8 = 3 的结果应该飞到哪句口诀？",
+        "options": [
+          "三八二十四",
+          "四六二十四",
+          "五六三十",
+          "四九三十六"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4 × 9 和 36 ÷ 4 都可以想到哪句口诀？",
+        "options": [
+          "三六十八",
+          "四九三十六",
+          "五六三十",
+          "三五十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "根据 3 × 8 = 24，填：24 ÷ 3 = __，24 ÷ 8 = __。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "第1个商"
+          },
+          {
+            "id": "b",
+            "label": "第2个商"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "36÷4"
+          },
+          {
+            "id": "l2",
+            "text": "15÷3"
+          },
+          {
+            "id": "l3",
+            "text": "30÷6"
+          },
+          {
+            "id": "l4",
+            "text": "24÷8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "五六三十"
+          },
+          {
+            "id": "r1",
+            "text": "四九三十六"
+          },
+          {
+            "id": "r4",
+            "text": "三八二十四"
+          },
+          {
+            "id": "r2",
+            "text": "三五十五"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "36",
+          null,
+          "9",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "9",
+          "4",
+          "÷",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36 ÷ 9",
+        "right": "15 ÷ 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

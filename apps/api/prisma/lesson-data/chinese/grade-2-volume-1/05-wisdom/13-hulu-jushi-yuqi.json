@@ -1,0 +1,218 @@
+{
+  "id": "13-hulu-jushi-yuqi",
+  "title": "我要的是葫芦句式语气",
+  "description": "依据课本/assets/textbooks/chinese/grade-2-volume-1/pages/page-067.jpg课后题，练习反问句和不同语气。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有几个虫子怕什么！”这句话表现那个人怎样的想法？",
+        "options": [
+          "很害怕蚜虫",
+          "想马上治虫",
+          "不在乎蚜虫",
+          "想种南瓜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“叶子上的虫还用治？”换个说法是？",
+        "options": [
+          "叶子上的虫必须治。",
+          "叶子上没有虫。",
+          "叶子变绿了。",
+          "叶子上的虫不用治。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“快治一治吧！”应该读出什么语气？",
+        "options": [
+          "劝告、着急",
+          "骄傲、得意",
+          "轻松、快乐",
+          "奇怪、怀疑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“什么？叶子上的虫还用治？”体现那个人怎样？",
+        "options": [
+          "知道马上要治虫",
+          "不明白叶子和葫芦的关系",
+          "很会照顾葫芦",
+          "已经治好了虫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“有几个虫子不可怕。”和“有几个虫子怕什么！”意思相近。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“叶子上的虫不用治。”和“叶子上的虫还用治？”意思相反。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原反问句",
+        "tokens": [
+          "还用",
+          "叶子上",
+          "治",
+          "的虫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "叶子上",
+          "的虫",
+          "还用",
+          "治"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原劝告句",
+        "tokens": [
+          "治一治",
+          "快",
+          "吧",
+          "叶子上的虫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "快",
+          "治一治",
+          "吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "有几个虫子怕什么！"
+          },
+          {
+            "id": "l_1",
+            "text": "快治一治吧！"
+          },
+          {
+            "id": "l_2",
+            "text": "什么？叶子上的虫还用治？"
+          },
+          {
+            "id": "l_3",
+            "text": "我要的是葫芦。"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "感到奇怪"
+          },
+          {
+            "id": "r_0",
+            "text": "不在乎"
+          },
+          {
+            "id": "r_3",
+            "text": "只关心果实"
+          },
+          {
+            "id": "r_1",
+            "text": "邻居劝告"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "句子换说法",
+        "passage": "“叶子上的虫还用治？”这句话不是在真的提问，而是说叶子上的虫不用治。那个人只想着葫芦，没有想到叶子坏了，葫芦也长不好。",
+        "questions": [
+          {
+            "question": "这句话真正表达的意思是？",
+            "options": [
+              "虫不用治",
+              "虫要马上治",
+              "没有虫"
+            ]
+          },
+          {
+            "question": "那个人的问题是什么？",
+            "options": [
+              "太勤劳",
+              "只看结果，不看原因",
+              "听劝很快"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

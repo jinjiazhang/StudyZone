@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "27 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 8 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "32 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小组用 27 块积木搭成 3 个火箭，平均每个火箭用几块？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "27/3",
+          "27÷3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小组 8 人，每人做 4 个小风车，一共做几个？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "8*4",
+          "4*8",
+          "8×4",
+          "4×8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小组 8 人折了 32 只千纸鹤，平均每人折几只？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "32/8",
+          "32÷8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "27 块积木搭 3 个火箭，平均每个 ___ 块；8 人做 32 个风车，平均每人 ___ 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "积木"
+          },
+          {
+            "id": "b2",
+            "label": "风车"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每人做 4 个，8 人一共做几个”应使用什么方法？",
+        "options": [
+          "乘法",
+          "除法",
+          "比较大小",
+          "排序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“32 只千纸鹤平均分给 8 人”求的是什么？",
+        "options": [
+          "一共有几人",
+          "平均每人几只",
+          "还剩几只",
+          "要买几张纸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "27 ÷ 3",
+        "right": "32 ÷ 8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

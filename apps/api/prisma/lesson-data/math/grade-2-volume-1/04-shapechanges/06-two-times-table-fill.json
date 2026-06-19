@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填一填：2，4，6，___，10，___，14。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 7 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 8 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "2 × ",
+          null,
+          " = 16，口诀：",
+          null
+        ],
+        "tokens": [
+          "8",
+          "6",
+          "二八十六",
+          "二六十二"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "8",
+          "二八十六"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“二九十八”表示的结果是？",
+        "options": [
+          "16",
+          "18",
+          "14",
+          "12"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道算式可以用“二四得八”？",
+        "options": [
+          "2×4",
+          "4+2",
+          "2×5",
+          "4×4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 9",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×3"
+          },
+          {
+            "id": "l2",
+            "text": "2×5"
+          },
+          {
+            "id": "l3",
+            "text": "2×7"
+          },
+          {
+            "id": "l4",
+            "text": "2×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "18"
+          },
+          {
+            "id": "r2",
+            "text": "6"
+          },
+          {
+            "id": "r3",
+            "text": "14"
+          },
+          {
+            "id": "r4",
+            "text": "10"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2×8的结果比2×7多2。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每次跳2格，从0跳到12。列式表示跳了6次。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "2*6",
+          "6*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "左脚和右脚各1只鞋，8双鞋一共有多少只？",
+        "columns": [
+          "双数",
+          "每双只数",
+          "总只数"
+        ],
+        "rows": [
+          {
+            "双数": 8,
+            "每双只数": 2,
+            "总只数": 16
+          }
+        ]
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

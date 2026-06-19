@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tóng",
+        "sentence": "朱德__志也去挑粮。",
+        "character": "同",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "同"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jūn",
+        "sentence": "红__要巩固根据地。",
+        "character": "军",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "军"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cháng",
+        "sentence": "晚上还__常整夜研究。",
+        "character": "常",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "常"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "měi",
+        "sentence": "__次挑粮大家都争着去。",
+        "character": "每",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "每"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "战__们心疼朱德同志。",
+        "character": "士",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "士"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhì",
+        "sentence": "朱德同__带领队伍。",
+        "character": "志",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "志"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dí",
+        "sentence": "山下不远处就是__人。",
+        "character": "敌",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "敌"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhàn",
+        "sentence": "朱德同志跟__士们一起挑粮。",
+        "character": "战",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "战"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "担",
+        "tokens": [
+          "夜",
+          "扁",
+          "花",
+          "重",
+          "鱼",
+          "挑",
+          "路"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“担”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "扁",
+            "重",
+            "挑"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "军",
+        "tokens": [
+          "碗",
+          "衣",
+          "水",
+          "队",
+          "楼",
+          "人",
+          "草"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“军”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "衣",
+            "队",
+            "人"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "草鞋"
+          },
+          {
+            "id": "l1",
+            "text": "斗笠"
+          },
+          {
+            "id": "l2",
+            "text": "粮食"
+          },
+          {
+            "id": "l3",
+            "text": "山高路陡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "供人吃的谷物"
+          },
+          {
+            "id": "r3",
+            "text": "山很高路很难走"
+          },
+          {
+            "id": "r0",
+            "text": "脚上穿的鞋"
+          },
+          {
+            "id": "r1",
+            "text": "戴在头上的雨具"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子",
+        "tokens": [
+          "去挑粮",
+          "斗笠",
+          "都",
+          "大家",
+          "争着",
+          "草鞋"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大家",
+          "都",
+          "争着",
+          "去挑粮"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

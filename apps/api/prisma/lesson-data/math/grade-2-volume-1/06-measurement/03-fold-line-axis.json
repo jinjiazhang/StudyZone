@@ -1,0 +1,313 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "对折后留下的折痕，在轴对称图形中通常表示什么？",
+        "options": [
+          "对称轴",
+          "边长",
+          "路线",
+          "乘号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "一张正方形纸左右对折，折痕是什么方向？",
+        "options": [
+          {
+            "id": "g9_0",
+            "label": "斜着绕一圈"
+          },
+          {
+            "id": "g9_1",
+            "label": "弯曲方向"
+          },
+          {
+            "id": "g9_2",
+            "label": "竖直方向"
+          },
+          {
+            "id": "g9_3",
+            "label": "没有方向"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g9_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "把正方形纸左右对折，左边和右边要",
+          null,
+          "，折痕可以看成",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "对称轴",
+          "重合",
+          "旋转",
+          "出口"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "重合",
+          "对称轴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要剪出左右对称的小树，应把树干画在哪里更合适？",
+        "options": [
+          "远离折边画整棵树",
+          "只画在角上",
+          "靠着折边画半棵树",
+          "画在剪刀上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪条线最可能是心形的对称轴？",
+        "options": [
+          {
+            "id": "g10_0",
+            "label": "从上到下穿过中间的竖线"
+          },
+          {
+            "id": "g10_1",
+            "label": "绕外面一圈的线"
+          },
+          {
+            "id": "g10_2",
+            "label": "只在左下角的一小段线"
+          },
+          {
+            "id": "g10_3",
+            "label": "横穿右半边的短线"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g10_0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "竖折痕"
+          },
+          {
+            "id": "l1",
+            "text": "横折痕"
+          },
+          {
+            "id": "l2",
+            "text": "斜折痕"
+          },
+          {
+            "id": "l3",
+            "text": "无规律折痕"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "常分出上下两半"
+          },
+          {
+            "id": "r3",
+            "text": "不一定形成对称"
+          },
+          {
+            "id": "r0",
+            "text": "常分出左右两半"
+          },
+          {
+            "id": "r2",
+            "text": "可能分出斜向两半"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "折纸时两个角没有对齐，会影响什么？",
+        "options": [
+          "纸张一定变成圆形",
+          "展开后的图案两边可能不一样",
+          "图案一定会自动变大",
+          "不会有任何影响"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种操作更能帮助检查图形是否对称？",
+        "options": [
+          {
+            "id": "g11_0",
+            "label": "把图形涂成红色"
+          },
+          {
+            "id": "g11_1",
+            "label": "把图形转一圈"
+          },
+          {
+            "id": "g11_2",
+            "label": "把图形放远一点看"
+          },
+          {
+            "id": "g11_3",
+            "label": "沿猜想的线对折，看两边是否重合"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g11_3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "检查剪出的星星是否左右对称，正确顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "观察两边边缘是否重合"
+          },
+          {
+            "id": "o1",
+            "text": "找到中间折痕"
+          },
+          {
+            "id": "o2",
+            "text": "再展开整理"
+          },
+          {
+            "id": "o3",
+            "text": "沿折痕合上图形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个长方形上下对折后，折痕把它分成了什么？",
+        "options": [
+          "三个三角形",
+          "一大一小两部分",
+          "一条曲线和一个圆",
+          "上下一样的两部分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下列图形中，对称轴数量最多的通常是哪一个？",
+        "options": [
+          {
+            "id": "g12_0",
+            "label": "普通字母F"
+          },
+          {
+            "id": "g12_1",
+            "label": "正方形"
+          },
+          {
+            "id": "g12_2",
+            "label": "右箭头"
+          },
+          {
+            "id": "g12_3",
+            "label": "不规则石头"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g12_1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "折痕两边的图案如果能完全",
+          null,
+          "，就说明它们关于折痕",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "对称",
+          "相加",
+          "重合",
+          "倒退"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "重合",
+          "对称"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

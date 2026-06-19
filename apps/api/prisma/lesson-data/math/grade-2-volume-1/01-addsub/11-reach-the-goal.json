@@ -1,0 +1,191 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 48 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "99 - 48 = ?"
+      },
+      "answer": {
+        "value": 51,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "51 + 1 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 40 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "60 - 8 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小红的目标是跳100次，已经跳了48次，还需要再跳多少次？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "100-48"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "100 - 48：先算 100 - 40 = __，再减 8，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一步"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          60,
+          52
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "换一种想法：100 = 99 + 1，99 - 48 = __，再加 1，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "99减48"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          51,
+          52
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100 - 48",
+        "right": "48 + 25"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“还需要再跳多少次”时，要把什么和什么比较？",
+        "options": [
+          "小亮和小东",
+          "目标次数和已跳次数",
+          "25和9",
+          "两根跳绳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "100 - 48 的结果是 52。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-016.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "100",
+          null,
+          "48",
+          null,
+          "52"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

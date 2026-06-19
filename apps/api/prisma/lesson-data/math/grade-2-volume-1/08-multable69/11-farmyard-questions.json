@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 × 6 = ?"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "墙上挂着 6 串玉米，每串 7 根，一共多少根玉米？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "6*7",
+          "7*6",
+          "6×7",
+          "7×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "54 个柿子，每盒装 6 个，可以装几盒？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "54/6",
+          "54÷6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "16 只兔子，平均住进 4 个笼子，每个笼子住几只？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "16/4",
+          "16÷4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6 串玉米，每串 7 根，一共 ___ 根；54 个柿子每盒 6 个，可装 ___ 盒。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "玉米"
+          },
+          {
+            "id": "b2",
+            "label": "盒数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          42,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“平均每个笼子住几只兔子？”属于哪类问题？",
+        "options": [
+          "求一共有多少",
+          "求每份是多少",
+          "求相差多少",
+          "求顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "豆角 42 厘米，扁豆 7 厘米，豆角身长是扁豆的几倍？",
+        "options": [
+          "5倍",
+          "6倍",
+          "7倍",
+          "8倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "54 ÷ 6",
+        "right": "7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

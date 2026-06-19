@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3×4=__，口诀：三四__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "得数"
+          },
+          {
+            "id": "b2",
+            "label": "口诀结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4×5=__，口诀：四五__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "得数"
+          },
+          {
+            "id": "b2",
+            "label": "口诀结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          20,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3×8=__，4×8=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3×8"
+          },
+          {
+            "id": "b2",
+            "label": "4×8"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          32
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 9 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 7 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 * 4 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "知道三四十二，可以怎样推出四四十六？",
+        "options": [
+          "再加1个3",
+          "再加1个4",
+          "减去4",
+          "乘以2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 9",
+        "right": "4 * 7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "四八",
+          null,
+          "，4×8",
+          null,
+          "32"
+        ],
+        "tokens": [
+          "二十八",
+          "=",
+          "三十二",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三十二",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3×6"
+          },
+          {
+            "id": "l2",
+            "text": "4×6"
+          },
+          {
+            "id": "l3",
+            "text": "3×7"
+          },
+          {
+            "id": "l4",
+            "text": "4×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "21"
+          },
+          {
+            "id": "r4",
+            "text": "36"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          },
+          {
+            "id": "r2",
+            "text": "24"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

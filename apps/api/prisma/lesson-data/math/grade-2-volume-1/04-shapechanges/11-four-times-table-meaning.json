@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 2 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 4 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "教材第47页小汽车：3辆、6辆、9辆分别需要几个轮子？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3辆"
+          },
+          {
+            "id": "b2",
+            "label": "6辆"
+          },
+          {
+            "id": "b3",
+            "label": "9辆"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          24,
+          36
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4的乘法口诀中，后一条结果比前一条多几？",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4 × 8 = ",
+          null,
+          "，口诀：",
+          null
+        ],
+        "tokens": [
+          "四八三十二",
+          "三十二",
+          "二十八",
+          "四七二十八"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三十二",
+          "四八三十二"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 7",
+        "right": "4 * 8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4辆小汽车共有16个轮子。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小汽车每辆4个轮子，8辆需要多少个轮子？",
+        "columns": [
+          "辆数",
+          "每辆轮子",
+          "总轮子"
+        ],
+        "rows": [
+          {
+            "辆数": 8,
+            "每辆轮子": 4,
+            "总轮子": 32
+          }
+        ]
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按5个5个数的顺序排列",
+        "items": [
+          {
+            "id": "n30",
+            "text": "30"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n40",
+            "text": "40"
+          },
+          {
+            "id": "n20",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n10",
+          "n20",
+          "n30",
+          "n40"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "找规律：5，10，___，20，___，30。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          25
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "找规律：45，40，___，30，___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          35,
+          25
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 3 + 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 - 5 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在教材第44页数轴上，从0跳到15，每次跳5，要跳几次？",
+        "options": [
+          "2次",
+          "4次",
+          "3次",
+          "5次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 4",
+        "right": "5 * 2 + 5 * 2"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 9 - 5 * 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "五二一十"
+          },
+          {
+            "id": "l2",
+            "text": "五四二十"
+          },
+          {
+            "id": "l3",
+            "text": "五七三十五"
+          },
+          {
+            "id": "l4",
+            "text": "五八四十"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "5×8"
+          },
+          {
+            "id": "r2",
+            "text": "5×2"
+          },
+          {
+            "id": "r3",
+            "text": "5×4"
+          },
+          {
+            "id": "r4",
+            "text": "5×7"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每个篮子装5个球，8个篮子装多少个球？",
+        "columns": [
+          "篮子数",
+          "每篮个数",
+          "总个数"
+        ],
+        "rows": [
+          {
+            "篮子数": 8,
+            "每篮个数": 5,
+            "总个数": 40
+          }
+        ]
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "5×1、5×2、5×3的结果分别是5、10、15。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个结果不是5的乘法口诀结果？",
+        "options": [
+          "32",
+          "25",
+          "35",
+          "45"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

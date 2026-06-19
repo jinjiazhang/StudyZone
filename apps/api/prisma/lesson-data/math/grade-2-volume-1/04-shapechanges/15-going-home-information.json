@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第49页“回家路上”中，小鸟信息是“树上有3组小鸟，每组有5只”，应先看哪个数量？",
+        "options": [
+          "每组5只和3组",
+          "小船数量",
+          "桥的颜色",
+          "路的长短"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "树上有3组小鸟，每组有5只。列式求一共有多少只。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "3*5",
+          "5*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "草地上有4组小猫，每组有5只。列式求一共有多少只。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "4*5",
+          "5*4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "回家路上：每条船坐4只小动物，2条船坐多少只？",
+        "columns": [
+          "船数",
+          "每船只数",
+          "总数"
+        ],
+        "rows": [
+          {
+            "船数": 2,
+            "每船只数": 4,
+            "总数": 8
+          }
+        ]
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "回家路上：3组小鸟和4组小猫，各有多少只？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小鸟"
+          },
+          {
+            "id": "b2",
+            "label": "小猫"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“桥上有2组狐狸，每组6只”可以用哪个算式？",
+        "options": [
+          "2+6",
+          "6-2",
+          "5×2",
+          "2×6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 5",
+        "right": "4 * 5"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从“每组有5只，有3组”可以想到3个5相加。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每组5只，3组共有",
+          null,
+          "只；4组共有",
+          null,
+          "只。"
+        ],
+        "tokens": [
+          "20",
+          "15",
+          "25",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "15",
+          "20"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

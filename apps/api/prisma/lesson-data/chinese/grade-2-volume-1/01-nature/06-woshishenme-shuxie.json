@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qǐ",
+        "sentence": "我越升越高，变成小水滴聚在一__。",
+        "blankPlaceholder": "__",
+        "character": "起",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "起"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yáng",
+        "sentence": "我在海__里跳舞。",
+        "blankPlaceholder": "__",
+        "character": "洋",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "洋"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zuò",
+        "sentence": "我会给人们做许多好事，也会做坏事。请写“__”。",
+        "blankPlaceholder": "__",
+        "character": "作",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "作"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fǎ",
+        "sentence": "植物妈妈有办__，水也有变化的办__。",
+        "blankPlaceholder": "__",
+        "character": "法",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "法"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lián",
+        "sentence": "小水滴聚在一起，__成一片。",
+        "blankPlaceholder": "__",
+        "character": "连",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "连"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xǔ",
+        "sentence": "我会给人们做__多好事。",
+        "blankPlaceholder": "__",
+        "character": "许",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "许"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bàn",
+        "sentence": "水能发动机器，帮人们__事。",
+        "blankPlaceholder": "__",
+        "character": "办",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "办"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "海",
+        "tokens": [
+          "洋",
+          "水",
+          "边",
+          "面",
+          "鸟",
+          "火"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“海”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "边",
+            "洋",
+            "水",
+            "面"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "法",
+        "tokens": [
+          "办",
+          "方",
+          "想",
+          "用",
+          "草",
+          "云"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“法”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "想",
+            "办",
+            "方",
+            "用"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“升、起、海、洋、作、法、连、许、办”来自哪一课的田字格？",
+        "options": [
+          "我是什么",
+          "小蝌蚪找妈妈",
+          "植物妈妈有办法",
+          "语文园地一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

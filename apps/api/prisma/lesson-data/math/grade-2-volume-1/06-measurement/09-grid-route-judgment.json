@@ -1,0 +1,326 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在方格图中，“向右移3格”表示什么？",
+        "options": [
+          "沿斜线跳3格",
+          "原地旋转3圈",
+          "沿同一行移动3个格子",
+          "剪掉3个格子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种移动仍然在同一列上？",
+        "options": [
+          {
+            "id": "g31_0",
+            "label": "向上移动"
+          },
+          {
+            "id": "g31_1",
+            "label": "向右移动"
+          },
+          {
+            "id": "g31_2",
+            "label": "斜向移动"
+          },
+          {
+            "id": "g31_3",
+            "label": "绕中心转动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g31_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "在方格里平移，向上或向下通常改变",
+          null,
+          "，向左或向右通常改变",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "列",
+          "行",
+          "颜色",
+          "大小"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "行",
+          "列"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "向上2格"
+          },
+          {
+            "id": "l1",
+            "text": "向下1格"
+          },
+          {
+            "id": "l2",
+            "text": "向左3格"
+          },
+          {
+            "id": "l3",
+            "text": "向右2格"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "位置到更左方"
+          },
+          {
+            "id": "r0",
+            "text": "位置到更上方"
+          },
+          {
+            "id": "r3",
+            "text": "位置到更右方"
+          },
+          {
+            "id": "r1",
+            "text": "位置到更下方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果移动后越过了棋盘边界，这步怎样？",
+        "options": [
+          "一定合理",
+          "不合理",
+          "一定是对称",
+          "会自动回到中间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "判断一条格子路线是否正确，应先后：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "继续按每一步移动"
+          },
+          {
+            "id": "o1",
+            "text": "看起点"
+          },
+          {
+            "id": "o2",
+            "text": "看终点是否符合目标"
+          },
+          {
+            "id": "o3",
+            "text": "按第一步移动"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话是完整的平移指令？",
+        "options": [
+          {
+            "id": "g32_0",
+            "label": "小车真漂亮"
+          },
+          {
+            "id": "g32_1",
+            "label": "移动一下"
+          },
+          {
+            "id": "g32_2",
+            "label": "小车向右移动2格"
+          },
+          {
+            "id": "g32_3",
+            "label": "向那边走"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g32_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“向左移2格，再向下移1格”和“向下移1格，再向左移2格”终点怎样？",
+        "options": [
+          "一定不同",
+          "一定不能比较",
+          "一定变成旋转",
+          "在没有障碍时终点相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全：路线中每一步都要检查有没有（ ），否则可能走不通。",
+        "options": [
+          "颜色",
+          "障碍",
+          "对称轴",
+          "价钱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "从一个位置平移到另一个位置，图形本身会怎样？",
+        "options": [
+          {
+            "id": "g33_0",
+            "label": "一定翻面"
+          },
+          {
+            "id": "g33_1",
+            "label": "一定变形"
+          },
+          {
+            "id": "g33_2",
+            "label": "没有翻转也没有旋转"
+          },
+          {
+            "id": "g33_3",
+            "label": "一定剪开"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g33_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在华容道中，人物占几个格子会影响什么？",
+        "options": [
+          "人物名字怎么写",
+          "能不能通过狭窄位置",
+          "纸能不能对折",
+          "风车能不能转"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "起点"
+          },
+          {
+            "id": "l1",
+            "text": "方向"
+          },
+          {
+            "id": "l2",
+            "text": "格数"
+          },
+          {
+            "id": "l3",
+            "text": "终点"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "移动结束的位置"
+          },
+          {
+            "id": "r1",
+            "text": "往哪里移动"
+          },
+          {
+            "id": "r0",
+            "text": "移动开始的位置"
+          },
+          {
+            "id": "r2",
+            "text": "移动多少距离"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

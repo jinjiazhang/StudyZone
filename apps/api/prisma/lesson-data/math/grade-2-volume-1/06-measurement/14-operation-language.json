@@ -1,0 +1,331 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "描述一次平移时，至少要说清什么？",
+        "options": [
+          "颜色、价格和页码",
+          "形状、材料和温度",
+          "口诀、答案和单位",
+          "对象、方向和格数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "“赵云向上移动3格”中，赵云是",
+          null,
+          "，向上是",
+          null,
+          "，3格是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "方向",
+          "距离",
+          "对象",
+          "颜色",
+          "折痕"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对象",
+          "方向",
+          "距离"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪句话最清楚？",
+        "options": [
+          {
+            "id": "g47_0",
+            "label": "关羽向左移动1格"
+          },
+          {
+            "id": "g47_1",
+            "label": "关羽动一动"
+          },
+          {
+            "id": "g47_2",
+            "label": "往那边走"
+          },
+          {
+            "id": "g47_3",
+            "label": "移很多"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g47_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "先"
+          },
+          {
+            "id": "l1",
+            "text": "再"
+          },
+          {
+            "id": "l2",
+            "text": "然后"
+          },
+          {
+            "id": "l3",
+            "text": "最后"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "表示接下来的步骤"
+          },
+          {
+            "id": "r0",
+            "text": "表示第一步"
+          },
+          {
+            "id": "r3",
+            "text": "表示结束步骤"
+          },
+          {
+            "id": "r1",
+            "text": "表示第二步"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "说清剪纸过程，可以这样排序：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "再画半边图案"
+          },
+          {
+            "id": "o1",
+            "text": "最后展开"
+          },
+          {
+            "id": "o2",
+            "text": "先对折"
+          },
+          {
+            "id": "o3",
+            "text": "然后沿线剪"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句适合描述风车？",
+        "options": [
+          "风车向左移3格",
+          "风车绕中心旋转",
+          "风车沿折线对折",
+          "风车倒退1格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "剪纸时可以说：先",
+          null,
+          "，再",
+          null,
+          "，最后",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "展开",
+          "对折",
+          "旋转",
+          "剪下",
+          "前进"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对折",
+          "剪下",
+          "展开"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "描述华容道时，“曹操先向下走2格”属于什么？",
+        "options": [
+          {
+            "id": "g48_0",
+            "label": "图形颜色"
+          },
+          {
+            "id": "g48_1",
+            "label": "剪纸结果"
+          },
+          {
+            "id": "g48_2",
+            "label": "明确的移动步骤"
+          },
+          {
+            "id": "g48_3",
+            "label": "旋转实验"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g48_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果只说“把它移过去”，问题在哪里？",
+        "options": [
+          "没有说清对象、方向或距离",
+          "太像数学语言",
+          "一定是错别字",
+          "说明格子太多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "对折"
+          },
+          {
+            "id": "l1",
+            "text": "展开"
+          },
+          {
+            "id": "l2",
+            "text": "平移"
+          },
+          {
+            "id": "l3",
+            "text": "旋转"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "绕点转动"
+          },
+          {
+            "id": "r1",
+            "text": "打开折好的纸"
+          },
+          {
+            "id": "r0",
+            "text": "把纸沿线合上"
+          },
+          {
+            "id": "r2",
+            "text": "沿直线移动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写操作步骤时，“最后”通常表示什么？",
+        "options": [
+          "第一步",
+          "中间任意一步",
+          "完成后的结果或检查",
+          "不需要做的事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全：清楚的操作语言能帮助同伴按同样的方法（ ）。",
+        "options": [
+          "变色",
+          "忘记",
+          "完成",
+          "估算"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

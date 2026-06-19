@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 9 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 8 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5×2能解决“每排有5人，排2排”。也能怎样列式？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "2*5",
+          "5*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "操场上每组5人，分成2组，一共有多少人？"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每只小船坐4人，5只小船最多坐多少人？",
+        "columns": [
+          "小船只数",
+          "每船人数",
+          "总人数"
+        ],
+        "rows": [
+          {
+            "小船只数": 5,
+            "每船人数": 4,
+            "总人数": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "综合填空：2×8、3×6、4×7的结果分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×8"
+          },
+          {
+            "id": "b2",
+            "label": "3×6"
+          },
+          {
+            "id": "b3",
+            "label": "4×7"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          18,
+          28
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 6",
+        "right": "4 * 7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个问题说“有几组，每组几个”，通常可以用什么方法解决？",
+        "options": [
+          "比较大小",
+          "乘法",
+          "量长度",
+          "看钟表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×7"
+          },
+          {
+            "id": "l2",
+            "text": "3×6"
+          },
+          {
+            "id": "l3",
+            "text": "4×8"
+          },
+          {
+            "id": "l4",
+            "text": "5×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "32"
+          },
+          {
+            "id": "r2",
+            "text": "14"
+          },
+          {
+            "id": "r3",
+            "text": "45"
+          },
+          {
+            "id": "r4",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4 × ",
+          null,
+          " = 28，5 × ",
+          null,
+          " = 35"
+        ],
+        "tokens": [
+          "7",
+          "6",
+          "8",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "解决乘法应用题时，要先找到“每组几个”和“有几组”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个结果最小？",
+        "options": [
+          "3×5",
+          "4×4",
+          "5×4",
+          "2×6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

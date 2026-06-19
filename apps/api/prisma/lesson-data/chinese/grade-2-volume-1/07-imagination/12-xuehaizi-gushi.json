@@ -1,0 +1,270 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "兔妈妈出门前，在门外给小白兔堆了什么？",
+        "options": [
+          "雪孩子",
+          "小木屋",
+          "大海",
+          "小船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小白兔玩累了，回家去做什么？",
+        "options": [
+          "写字",
+          "睡午觉",
+          "钓鱼",
+          "散步"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "屋子里为什么渐渐暖和了？",
+        "options": [
+          "太阳照进屋里",
+          "雾散开了",
+          "小白兔添了柴，火烧得旺旺的",
+          "牛羊进屋了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雪孩子看到小白兔家着火后怎么做？",
+        "options": [
+          "躲到树后",
+          "跑去唱歌",
+          "把大海藏起来",
+          "冲进屋里救小白兔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大家把火扑灭后，雪孩子变成了什么？",
+        "options": [
+          "水汽和白云",
+          "一只小猫",
+          "一条小船",
+          "一座高楼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排故事顺序",
+        "tokens": [
+          "大海藏起",
+          "屋里着火",
+          "牛羊出现",
+          "雪孩子救人",
+          "堆雪孩子",
+          "小白兔睡着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "堆雪孩子",
+          "小白兔睡着",
+          "屋里着火",
+          "雪孩子救人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排变化过程",
+        "tokens": [
+          "变成小船",
+          "飞上天空",
+          "躲进城市",
+          "变成白云",
+          "雪孩子",
+          "变成水汽"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪孩子",
+          "变成水汽",
+          "飞上天空",
+          "变成白云"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "兔妈妈"
+          },
+          {
+            "id": "l_1",
+            "text": "小白兔"
+          },
+          {
+            "id": "l_2",
+            "text": "雪孩子"
+          },
+          {
+            "id": "l_3",
+            "text": "小动物们"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "睡午觉时遇到危险"
+          },
+          {
+            "id": "r_2",
+            "text": "冲进屋里救小白兔"
+          },
+          {
+            "id": "r_3",
+            "text": "赶来救火"
+          },
+          {
+            "id": "r_0",
+            "text": "给小白兔堆雪孩子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "雪孩子为了救小白兔冲进屋里。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小白兔知道火烧起来了，立刻自己跑出了屋。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《雪孩子》的教材页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-092.jpg",
+            "label": "雪孩子"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-089.jpg",
+            "label": "雾在哪里"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-086.jpg",
+            "label": "江雪"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-098.jpg",
+            "label": "夜宿山寺"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "雪孩子救小白兔",
+        "passage": "雪孩子看见小白兔家的窗户里冒出黑烟，蹿出火星。他冒着呛人的烟、烫人的火，找到小白兔并把他抱到屋外。",
+        "questions": [
+          {
+            "question": "雪孩子看见了什么危险？",
+            "options": [
+              "雾把城市藏了",
+              "小白兔家着火了",
+              "牛羊走丢了",
+              "江面结冰了"
+            ]
+          },
+          {
+            "question": "雪孩子是怎样的形象？",
+            "options": [
+              "淘气贪玩",
+              "懒惰胆小",
+              "勇敢善良",
+              "粗心大意"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

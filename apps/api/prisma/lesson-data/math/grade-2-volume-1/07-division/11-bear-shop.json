@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 元，每辆玩具车 5 元，可以买 ? 辆。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 元，每个娃娃 9 元，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 元，每架飞机 8 元，可以买 ? 架。"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "21 元，每个球 3 元，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "20 元买每辆 5 元的玩具车，可以买 4 辆，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "20÷5=4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "36 元买 9 元一个的娃娃，可以买 __ 个；买 3 元一个的球，可以买 __ 个。",
+        "blanks": [
+          {
+            "id": "dolls",
+            "label": "娃娃"
+          },
+          {
+            "id": "balls",
+            "label": "球"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36 元可以买几个 9 元的娃娃？",
+        "options": [
+          "3 个",
+          "4 个",
+          "6 个",
+          "9 个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "20 ÷ 5 = 4 中，5 表示什么？",
+        "options": [
+          "共有 5 元",
+          "每辆车 5 元",
+          "可以买 5 辆",
+          "剩下 5 元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "40 ÷ 8",
+        "right": "21 ÷ 3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "20元买5元车"
+          },
+          {
+            "id": "l2",
+            "text": "36元买9元娃娃"
+          },
+          {
+            "id": "l3",
+            "text": "40元买8元飞机"
+          },
+          {
+            "id": "l4",
+            "text": "21元买3元球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5 架"
+          },
+          {
+            "id": "r1",
+            "text": "4 辆"
+          },
+          {
+            "id": "r4",
+            "text": "7 个"
+          },
+          {
+            "id": "r2",
+            "text": "4 个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "36",
+          null,
+          "9",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "4",
+          "9",
+          "÷",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按可以买的数量从少到多排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "21÷3=7"
+          },
+          {
+            "id": "i1",
+            "text": "20÷5=4"
+          },
+          {
+            "id": "i4",
+            "text": "36÷3=12"
+          },
+          {
+            "id": "i2",
+            "text": "40÷8=5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

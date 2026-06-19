@@ -1,0 +1,318 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "华容道游戏中，要让曹操出来，首先要理解什么？",
+        "options": [
+          "移动规则和目标",
+          "剪纸颜色",
+          "乘法口诀",
+          "纸张厚度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "在方格图中，从曹操到出口的通道被挡住时，需要做什么？",
+        "options": [
+          {
+            "id": "g28_0",
+            "label": "把棋子剪掉"
+          },
+          {
+            "id": "g28_1",
+            "label": "移动挡路的人物让出通道"
+          },
+          {
+            "id": "g28_2",
+            "label": "把方格旋转"
+          },
+          {
+            "id": "g28_3",
+            "label": "把出口藏起来"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g28_1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "路线描述“关羽向左移2格”中，关羽是",
+          null,
+          "，向左是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "方向",
+          "对象",
+          "折痕",
+          "图案"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对象",
+          "方向"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "曹操"
+          },
+          {
+            "id": "l1",
+            "text": "关羽"
+          },
+          {
+            "id": "l2",
+            "text": "赵云"
+          },
+          {
+            "id": "l3",
+            "text": "伏兵"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "可能挡住出口"
+          },
+          {
+            "id": "r3",
+            "text": "占据通道的角色"
+          },
+          {
+            "id": "r0",
+            "text": "目标人物"
+          },
+          {
+            "id": "r2",
+            "text": "可向空格移动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "根据课本第74页的讨论，设计华容道路线时可以这样想：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "按规则移动一个人物"
+          },
+          {
+            "id": "o1",
+            "text": "观察目标和出口"
+          },
+          {
+            "id": "o2",
+            "text": "检查通道是否打开"
+          },
+          {
+            "id": "o3",
+            "text": "找出挡路人物"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一步违反“只能横向或纵向移动”？",
+        "options": [
+          "关羽向左移1格",
+          "曹操向下移2格",
+          "伏兵向上移1格",
+          "赵云斜着移1格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果一个人物前方没有空格，它能直接前进吗？",
+        "options": [
+          {
+            "id": "g29_0",
+            "label": "能，跳过去即可"
+          },
+          {
+            "id": "g29_1",
+            "label": "不能，需要先移动挡路棋子"
+          },
+          {
+            "id": "g29_2",
+            "label": "能，变小后通过"
+          },
+          {
+            "id": "g29_3",
+            "label": "能，剪开棋盘"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g29_1"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "描述华容道移动时，最好避免哪种说法？",
+        "options": [
+          "曹操向下移2格",
+          "随便挪一下",
+          "关羽向左移1格",
+          "赵云向上移3格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "人物每次平移后，占用的格子会",
+          null,
+          "，形状和方向",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "不变",
+          "改变",
+          "剪开",
+          "折叠"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "改变",
+          "不变"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第74页中，“曹操先向下走2格，遇到关羽走不动了”说明什么？",
+        "options": [
+          "路线会被其他人物挡住",
+          "曹操不能移动",
+          "出口在上方",
+          "关羽是对称轴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪种策略更适合解华容道？",
+        "options": [
+          {
+            "id": "g30_0",
+            "label": "闭眼乱移"
+          },
+          {
+            "id": "g30_1",
+            "label": "只看人物颜色"
+          },
+          {
+            "id": "g30_2",
+            "label": "把所有棋子都旋转"
+          },
+          {
+            "id": "g30_3",
+            "label": "一步一步试移并说明理由"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g30_3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "说清一次路线记录的顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "写移动方向"
+          },
+          {
+            "id": "o1",
+            "text": "观察结果"
+          },
+          {
+            "id": "o2",
+            "text": "写人物名称"
+          },
+          {
+            "id": "o3",
+            "text": "写移动格数"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

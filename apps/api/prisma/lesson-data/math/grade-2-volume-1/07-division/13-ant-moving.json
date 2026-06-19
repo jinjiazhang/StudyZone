@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "27 粒米，每只蚂蚁一次运 3 粒，需要 ? 只蚂蚁一次运完。"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 棵树苗，每行栽 4 棵，可以栽 ? 行。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 棵树苗平均分给 3 个小组，每组栽 ? 棵。"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 片树叶，3 只蚂蚁平均顶回家，每只蚂蚁顶 ? 片。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "27 粒米，每只蚂蚁一次运 3 粒，需要 9 只蚂蚁，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "27÷3=9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "24 棵树苗：每行 4 棵可栽 __ 行；平均分给 3 组每组 __ 棵。",
+        "blanks": [
+          {
+            "id": "rows",
+            "label": "行数"
+          },
+          {
+            "id": "each",
+            "label": "每组"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 棵树苗每行栽 4 棵，要求的是？",
+        "options": [
+          "每行几棵",
+          "能栽几行",
+          "一共有几棵",
+          "剩几棵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "27 ÷ 3",
+        "right": "24 ÷ 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "27粒每3粒一运"
+          },
+          {
+            "id": "l2",
+            "text": "24棵每行4棵"
+          },
+          {
+            "id": "l3",
+            "text": "24棵分给3组"
+          },
+          {
+            "id": "l4",
+            "text": "18片分给3只"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "8 棵"
+          },
+          {
+            "id": "r1",
+            "text": "9 只"
+          },
+          {
+            "id": "r4",
+            "text": "6 片"
+          },
+          {
+            "id": "r2",
+            "text": "6 行"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "27",
+          null,
+          "3",
+          null,
+          "9"
+        ],
+        "tokens": [
+          "=",
+          "3",
+          "9",
+          "÷",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "24÷3=8"
+          },
+          {
+            "id": "i1",
+            "text": "24÷6=4"
+          },
+          {
+            "id": "i4",
+            "text": "27÷3=9"
+          },
+          {
+            "id": "i2",
+            "text": "24÷4=6"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "15 ÷ 3 可以解决下面哪个问题？",
+        "options": [
+          "15 粒米，每次运 3 粒，运几次",
+          "3 粒米再添 15 粒",
+          "15 粒米每只运 5 粒",
+          "3 只蚂蚁每只 15 粒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

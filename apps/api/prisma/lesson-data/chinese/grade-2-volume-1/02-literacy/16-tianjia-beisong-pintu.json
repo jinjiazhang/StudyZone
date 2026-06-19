@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：花开草长蝴蝶飞。",
+        "tokens": [
+          "谷香",
+          "花开",
+          "棉衣",
+          "草长",
+          "蝴蝶飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花开",
+          "草长",
+          "蝴蝶飞"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：采桑养蚕又插秧。",
+        "tokens": [
+          "耕田",
+          "采桑",
+          "除草",
+          "养蚕",
+          "又",
+          "插秧"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "采桑",
+          "养蚕",
+          "又",
+          "插秧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：归来戴月光。",
+        "tokens": [
+          "稻上",
+          "归来",
+          "春风",
+          "戴",
+          "月光"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "归来",
+          "戴",
+          "月光"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：大家笑盈盈。",
+        "tokens": [
+          "雪初晴",
+          "大家",
+          "黄金",
+          "笑盈盈"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大家",
+          "笑盈盈"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "田家四季歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "春季里，春风吹，"
+          ],
+          [
+            "花开草长",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "蝴蝶飞",
+          "雪初晴",
+          "粒粒香",
+          "喜洋洋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "田家四季歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "夏季里，农事忙，"
+          ],
+          [
+            null,
+            "又插秧。"
+          ]
+        ],
+        "options": [
+          "新制棉衣",
+          "采桑养蚕",
+          "稻上场",
+          "花开草长"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "田家四季歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "秋季里，稻上场，"
+          ],
+          [
+            null,
+            "粒粒香。"
+          ]
+        ],
+        "options": [
+          "桑叶正肥",
+          "雪初晴",
+          "谷像黄金",
+          "草长蝶飞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "田家四季歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "身体虽辛苦，"
+          ],
+          [
+            "心里",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "暖又轻",
+          "不出手",
+          "满院香",
+          "喜洋洋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“归来戴月光”说明农民劳动到很晚。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“心里喜洋洋”的原因最可能是什么？",
+        "options": [
+          "劳动后有收获",
+          "找不到字典",
+          "天气太冷",
+          "动物很多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

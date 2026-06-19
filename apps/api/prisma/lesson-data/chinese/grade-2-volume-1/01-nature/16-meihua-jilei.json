@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "梅",
+        "hint": "“梅花”的“梅”",
+        "options": [
+          "měi",
+          "méi",
+          "mèi",
+          "mēi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "墙角",
+        "hint": "“墙角数枝梅”的“墙角”",
+        "options": [
+          "qiáng jué",
+          "qiǎng jiǎo",
+          "qiáng jiǎo",
+          "qiáng jiào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "凌寒",
+        "hint": "“凌寒独自开”的“凌寒”",
+        "options": [
+          "lín hán",
+          "líng hǎn",
+          "lìng hán",
+          "líng hán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "梅花",
+        "author": "王安石",
+        "lines": [
+          [
+            "墙角",
+            null,
+            "梅，"
+          ],
+          [
+            "凌寒独自开。"
+          ]
+        ],
+        "options": [
+          "一朵",
+          "几树",
+          "满园",
+          "数枝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "梅花",
+        "author": "王安石",
+        "lines": [
+          [
+            "墙角数枝梅，"
+          ],
+          [
+            null,
+            "独自开。"
+          ]
+        ],
+        "options": [
+          "凌寒",
+          "迎风",
+          "春来",
+          "雪中"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "梅花",
+        "author": "王安石",
+        "lines": [
+          [
+            "遥知不是雪，"
+          ],
+          [
+            "为有",
+            null,
+            "来。"
+          ]
+        ],
+        "options": [
+          "白花",
+          "寒风",
+          "暗香",
+          "春雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "梅花",
+        "author": "王安石",
+        "lines": [
+          [
+            "墙角",
+            null,
+            "梅，"
+          ],
+          [
+            null,
+            "独自开。"
+          ],
+          [
+            "遥知不是",
+            null,
+            "，"
+          ],
+          [
+            "为有",
+            null,
+            "来。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "数枝",
+              "几只",
+              "一片",
+              "满树"
+            ]
+          },
+          {
+            "options": [
+              "春风",
+              "凌寒",
+              "晴朗",
+              "暴风"
+            ]
+          },
+          {
+            "options": [
+              "雨",
+              "云",
+              "雪",
+              "霜"
+            ]
+          },
+          {
+            "options": [
+              "清香",
+              "暗香",
+              "花香",
+              "芳香"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1,
+          2,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《梅花》第一句",
+        "tokens": [
+          "数枝梅",
+          "墙角",
+          "凌寒",
+          "暗香"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "墙角",
+          "数枝梅"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《梅花》第三句",
+        "tokens": [
+          "不是雪",
+          "遥知",
+          "为有",
+          "独自开"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "遥知",
+          "不是雪"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《梅花》的作者是哪位宋代诗人？",
+        "options": [
+          "王安石",
+          "李白",
+          "贺知章",
+          "白居易"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

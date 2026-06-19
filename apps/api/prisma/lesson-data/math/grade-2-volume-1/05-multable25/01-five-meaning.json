@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 1 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 3 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每盘5个杯子，3盘共有__个杯子。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3盘杯子，每盘5个，列乘法算式表示一共有多少个。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "3*5",
+          "5*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“三五十五”表示几个5相加？",
+        "options": [
+          "5个3",
+          "3个5",
+          "3个15",
+          "15个5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "5×4表示4个5相加，也可以表示5个4相加。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 4",
+        "right": "5 + 5 + 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5",
+          null,
+          "4",
+          null,
+          "20"
+        ],
+        "tokens": [
+          "=",
+          "×",
+          "+",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "×",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "二五一十"
+          },
+          {
+            "id": "l2",
+            "text": "五五二十五"
+          },
+          {
+            "id": "l3",
+            "text": "五七三十五"
+          },
+          {
+            "id": "l4",
+            "text": "五九四十五"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5×7=35"
+          },
+          {
+            "id": "r4",
+            "text": "5×9=45"
+          },
+          {
+            "id": "r1",
+            "text": "5×2=10"
+          },
+          {
+            "id": "r2",
+            "text": "5×5=25"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "蒲公英"
+          },
+          {
+            "id": "l1",
+            "text": "苍耳"
+          },
+          {
+            "id": "l2",
+            "text": "豌豆"
+          },
+          {
+            "id": "l3",
+            "text": "石榴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "豆荚晒炸开"
+          },
+          {
+            "id": "r1",
+            "text": "课文插图中的植物"
+          },
+          {
+            "id": "r2",
+            "text": "靠风传播"
+          },
+          {
+            "id": "r3",
+            "text": "挂住动物皮毛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蒲公英妈妈准备了什么？",
+        "options": [
+          "带刺的铠甲",
+          "降落伞",
+          "豆荚",
+          "小船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "苍耳妈妈给孩子穿上什么？",
+        "options": [
+          "雪白的肚皮",
+          "碧绿的衣裳",
+          "带刺的铠甲",
+          "红袍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "豌豆妈妈让豆荚晒在什么地方？",
+        "options": [
+          "池塘里",
+          "荷叶上",
+          "海洋里",
+          "太阳底下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "豌豆娃娃怎样离开妈妈？",
+        "options": [
+          "游过去",
+          "蹦着跳着离开",
+          "追上去",
+          "飘成雪花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出蒲公英传播种子的句子",
+        "tokens": [
+          "纷纷出发",
+          "乘着风",
+          "孩子们",
+          "豆荚炸开"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "孩子们",
+          "乘着风",
+          "纷纷出发"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出苍耳传播种子的句子",
+        "tokens": [
+          "皮毛",
+          "挂住",
+          "只要",
+          "动物的",
+          "风吹过"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "只要",
+          "挂住",
+          "动物的",
+          "皮毛"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出豌豆传播种子的句子",
+        "tokens": [
+          "炸开",
+          "太阳一晒",
+          "豆荚",
+          "降落伞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "太阳一晒",
+          "豆荚",
+          "炸开"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《植物妈妈有办法》的课文页",
+        "options": [
+          {
+            "id": "p006",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-006.jpg",
+            "label": "小蝌蚪找妈妈第一页"
+          },
+          {
+            "id": "p010",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-010.jpg",
+            "label": "我是什么第一页"
+          },
+          {
+            "id": "p013",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-013.jpg",
+            "label": "植物妈妈有办法第一页"
+          },
+          {
+            "id": "p017",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-017.jpg",
+            "label": "语文园地日积月累"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p013"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文告诉我们，了解植物传播办法要怎样？",
+        "options": [
+          "只看图画",
+          "不用读书",
+          "只听别人说",
+          "仔细观察"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

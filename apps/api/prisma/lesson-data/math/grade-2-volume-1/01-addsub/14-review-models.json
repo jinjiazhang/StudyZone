@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "37 + 15 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 - 28 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "32 - 16 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "19 + 25 = ?"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“跳绳的比跳远的多15人”求跳绳人数，用什么方法？",
+        "options": [
+          "37 + 15",
+          "37 - 15",
+          "42 - 28",
+          "32 - 16"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“绿啄木鸟比黑啄木鸟多吃几条虫？”用什么方法？",
+        "options": [
+          "42 + 28",
+          "28 - 16",
+          "42 - 28",
+          "19 + 25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有32个西红柿，吃了16个，还剩多少个？”用什么方法？",
+        "options": [
+          "32 + 16",
+          "32 - 16",
+          "37 + 15",
+          "25 - 19"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“上午捡19个瓶子，下午捡25个，一共多少个？”用什么方法？",
+        "options": [
+          "25 - 19",
+          "37 + 15",
+          "42 - 28",
+          "19 + 25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "47 + 6",
+        "right": "52 - 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "47 + 6"
+          },
+          {
+            "id": "l1",
+            "text": "35 + 37"
+          },
+          {
+            "id": "l2",
+            "text": "52 - 4"
+          },
+          {
+            "id": "l3",
+            "text": "36 - 19"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "48"
+          },
+          {
+            "id": "r3",
+            "text": "17"
+          },
+          {
+            "id": "r0",
+            "text": "53"
+          },
+          {
+            "id": "r1",
+            "text": "72"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“一共”常常用加法解决。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-019.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“还剩”常常用减法解决。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-019.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 个苹果平均分成 3 份，每份有 ? 个。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 个橘子平均分成 3 份，每份有 ? 个。"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 个圆片平均分成 6 份，每份有 ? 个。"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 个积木平均分成 5 份，每份有 ? 个。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把 12 个苹果平均分成 3 份，每份 4 个，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "12÷3=4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 16 个桃平均分成 __ 份，每份 4 个。",
+        "blanks": [
+          {
+            "id": "parts",
+            "label": "份数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“平均分”最重要的特点是什么？",
+        "options": [
+          "分得快",
+          "每份同样多",
+          "先给一个人",
+          "剩下越少越好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12 ÷ 3",
+        "right": "12 ÷ 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "12 个平均分成 3 份"
+          },
+          {
+            "id": "l2",
+            "text": "15 个平均分成 5 份"
+          },
+          {
+            "id": "l3",
+            "text": "18 个平均分成 2 份"
+          },
+          {
+            "id": "l4",
+            "text": "20 个平均分成 4 份"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "每份 9 个"
+          },
+          {
+            "id": "r1",
+            "text": "每份 4 个"
+          },
+          {
+            "id": "r4",
+            "text": "每份 5 个"
+          },
+          {
+            "id": "r2",
+            "text": "每份 3 个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "3",
+          null,
+          "6"
+        ],
+        "tokens": [
+          "=",
+          "×",
+          "3",
+          "÷",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按每份数量从少到多排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "12÷3=4"
+          },
+          {
+            "id": "i1",
+            "text": "12÷6=2"
+          },
+          {
+            "id": "i4",
+            "text": "12÷2=6"
+          },
+          {
+            "id": "i2",
+            "text": "12÷4=3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18 个圆片平均分成 3 份，每份是多少？",
+        "options": [
+          "3 个",
+          "5 个",
+          "6 个",
+          "9 个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

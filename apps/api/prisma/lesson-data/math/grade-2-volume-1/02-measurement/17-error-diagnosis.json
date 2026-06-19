@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小明量铅笔时从1厘米刻度量到8厘米，却说长8厘米。他错在：",
+        "options": [
+          "没有看终点",
+          "铅笔太短",
+          "没有用终点减起点",
+          "单位太大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从1厘米到8厘米，实际长度是 ? 厘米"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "物体一端没有对准0刻度时，可以用终点刻度减起点刻度。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个说法不合理？",
+        "options": [
+          "门高约2米",
+          "铅笔长约17厘米",
+          "橡皮长约3厘米",
+          "桌子高约70米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8 - 1",
+        "right": "8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "把2米误写成2厘米，少了 ? 厘米"
+      },
+      "answer": {
+        "value": 198,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "起点不是0"
+          },
+          {
+            "id": "l2",
+            "text": "单位漏写"
+          },
+          {
+            "id": "l3",
+            "text": "工具斜放"
+          },
+          {
+            "id": "l4",
+            "text": "估计离谱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "重新摆直"
+          },
+          {
+            "id": "r1",
+            "text": "终点减起点"
+          },
+          {
+            "id": "r4",
+            "text": "找参照再判断"
+          },
+          {
+            "id": "r2",
+            "text": "补上厘米或米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从1厘米到8厘米，长度是",
+          null,
+          null
+        ],
+        "tokens": [
+          "厘米",
+          "米",
+          "7",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "厘米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“房子高约3厘米”应改为：",
+        "options": [
+          "3米",
+          "30厘米",
+          "300米",
+          "3元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只写“长17”也很清楚，不需要单位。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

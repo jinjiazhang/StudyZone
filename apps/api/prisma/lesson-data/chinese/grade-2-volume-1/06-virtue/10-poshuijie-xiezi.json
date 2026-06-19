@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nán",
+        "sentence": "__忘的泼水节。",
+        "character": "难",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "难"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wàng",
+        "sentence": "这个泼水节令人难__。",
+        "character": "忘",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "忘"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mín",
+        "sentence": "傣族人__特别高兴。",
+        "character": "民",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "民"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yīn",
+        "sentence": "__为周总理来了。",
+        "character": "因",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "因"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lǐ",
+        "sentence": "周总__和人民一起过节。",
+        "character": "理",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "理"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuàn",
+        "sentence": "一__串花炮升上天空。",
+        "character": "串",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "串"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kù",
+        "sentence": "周总理身穿咖啡色长__。",
+        "character": "裤",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "裤"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lìng",
+        "sentence": "多么__人难忘啊！",
+        "character": "令",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "令"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "民",
+        "tokens": [
+          "楼",
+          "人",
+          "鞋",
+          "族",
+          "碗",
+          "众",
+          "夜"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“民”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "族",
+            "众"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "龙",
+        "tokens": [
+          "裤",
+          "船",
+          "油",
+          "灯",
+          "字",
+          "王",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“龙”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "船",
+            "灯",
+            "王"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "象脚鼓"
+          },
+          {
+            "id": "l1",
+            "text": "凤凰花"
+          },
+          {
+            "id": "l2",
+            "text": "银碗"
+          },
+          {
+            "id": "l3",
+            "text": "柏树枝"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "盛清水的碗"
+          },
+          {
+            "id": "r3",
+            "text": "蘸水祝福的枝条"
+          },
+          {
+            "id": "r0",
+            "text": "像象脚形状的鼓"
+          },
+          {
+            "id": "r1",
+            "text": "火红的花"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子",
+        "tokens": [
+          "高兴",
+          "凤凰花",
+          "傣族人民",
+          "特别",
+          "银碗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "傣族人民",
+          "特别",
+          "高兴"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

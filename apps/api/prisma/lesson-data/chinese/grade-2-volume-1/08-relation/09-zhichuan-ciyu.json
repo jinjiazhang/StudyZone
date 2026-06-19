@@ -1,0 +1,264 @@
+{
+  "id": "09-zhichuan-ciyu",
+  "title": "纸船词语积累",
+  "description": "积累《纸船和风筝》里的词语，理解友谊故事中的动作和心情。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纸船"
+          },
+          {
+            "id": "l2",
+            "text": "风筝"
+          },
+          {
+            "id": "l3",
+            "text": "草莓"
+          },
+          {
+            "id": "l4",
+            "text": "吵架"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "小熊扎好送上山的礼物"
+          },
+          {
+            "id": "r4",
+            "text": "因为小事争执"
+          },
+          {
+            "id": "r1",
+            "text": "松鼠放进小溪的礼物"
+          },
+          {
+            "id": "r3",
+            "text": "风筝上挂着的果子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "乐坏了"
+          },
+          {
+            "id": "l2",
+            "text": "很难过"
+          },
+          {
+            "id": "l3",
+            "text": "受不了"
+          },
+          {
+            "id": "l4",
+            "text": "愿意"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "不能再忍受"
+          },
+          {
+            "id": "r1",
+            "text": "高兴极了"
+          },
+          {
+            "id": "r4",
+            "text": "心里同意"
+          },
+          {
+            "id": "r2",
+            "text": "心里不舒服"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文里的句子。",
+        "tokens": [
+          "祝你",
+          "快乐",
+          "纸条上写着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "纸条上写着",
+          "祝你",
+          "快乐"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文里的句子。",
+        "tokens": [
+          "祝你",
+          "幸福",
+          "翅膀上写着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "翅膀上写着",
+          "祝你",
+          "幸福"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出讲和的话。",
+        "tokens": [
+          "放一只风筝吧",
+          "如果你愿意和好",
+          "就"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "如果你愿意和好",
+          "就",
+          "放一只风筝吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "船",
+        "tokens": [
+          "纸",
+          "风",
+          "小",
+          "山",
+          "木",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“船”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "纸",
+            "小",
+            "木"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "抓",
+        "tokens": [
+          "住",
+          "纸",
+          "起",
+          "愿",
+          "紧",
+          "句"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“抓”搭配的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "住",
+            "起",
+            "紧"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“纸船漂哇漂”说明纸船怎样到小熊家？",
+        "options": [
+          "顺着小溪漂到家门口",
+          "被小鸟叼过去",
+          "被风吹到山顶",
+          "自己跑上山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“风筝飘哇飘”说明风筝怎样到松鼠家？",
+        "options": [
+          "顺着水流漂走",
+          "被小熊背上山",
+          "乘着风飞到山顶",
+          "从门口滚过去"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“乐坏了”最能表示什么心情？",
+        "options": [
+          "很害怕",
+          "特别高兴",
+          "十分生气",
+          "非常疲劳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

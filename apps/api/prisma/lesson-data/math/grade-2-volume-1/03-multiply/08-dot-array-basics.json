@@ -1,0 +1,282 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点子图每行2个，共3行。每行__个，共__行，一共有__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每行"
+          },
+          {
+            "id": "b2",
+            "label": "行数"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          3,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "点子图每行5个，共4行。每行__个，共__行，一共有__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每行"
+          },
+          {
+            "id": "b2",
+            "label": "行数"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每列3个，共2列，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "3×2",
+          "2×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每行7个，共2行，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "7×2",
+          "2×7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 × 7 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 4 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "点子图“每行3个，共8行”表示哪个算式？",
+        "options": [
+          "3+8",
+          "8-3",
+          "3×3",
+          "3×8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 × 8",
+        "right": "8 × 3"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每行",
+          null,
+          "个，共",
+          null,
+          "行，可以写成",
+          null,
+          "×",
+          null
+        ],
+        "tokens": [
+          "8",
+          "3",
+          "24",
+          "5",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "8",
+          "3",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "每行2个，共7行"
+          },
+          {
+            "id": "l2",
+            "text": "每列4个，共5列"
+          },
+          {
+            "id": "l3",
+            "text": "每行6个，共3行"
+          },
+          {
+            "id": "l4",
+            "text": "每列5个，共4列"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "4×5"
+          },
+          {
+            "id": "r3",
+            "text": "6×3"
+          },
+          {
+            "id": "r4",
+            "text": "5×4"
+          },
+          {
+            "id": "r1",
+            "text": "2×7"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "点子图有3行，每行9个，一共有多少个点？",
+        "columns": [
+          "每行点数",
+          "行数"
+        ],
+        "rows": [
+          {
+            "每行点数": 9,
+            "行数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按点子总数从小到大排",
+        "items": [
+          {
+            "id": "d",
+            "text": "3×9"
+          },
+          {
+            "id": "a",
+            "text": "2×7"
+          },
+          {
+            "id": "c",
+            "text": "4×5"
+          },
+          {
+            "id": "b",
+            "text": "3×6"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小青蛙1步跳3格：1步3格，2步__格，3步__格，6步__格。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2步"
+          },
+          {
+            "id": "b2",
+            "label": "3步"
+          },
+          {
+            "id": "b3",
+            "label": "6步"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          9,
+          18
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每次跳4格：0，4，8，__，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4个刻度"
+          },
+          {
+            "id": "b2",
+            "label": "第5个刻度"
+          },
+          {
+            "id": "b3",
+            "label": "第6个刻度"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          16,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每次跳5格：0，5，__，__，20。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第2跳"
+          },
+          {
+            "id": "b2",
+            "label": "第3跳"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          15
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 3 + 3 + 3 + 3 + 3 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "数线上每次跳2格，跳5次，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "2×5",
+          "5×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "数线上每次跳6格，跳3次，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "6×3",
+          "3×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从0开始，每次跳4格，跳3次到哪里？",
+        "options": [
+          "7",
+          "12",
+          "16",
+          "9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 × 4",
+        "right": "2 × 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每次跳",
+          null,
+          "格，跳",
+          null,
+          "次，到",
+          null,
+          "格"
+        ],
+        "tokens": [
+          "12",
+          "3",
+          "6",
+          "4",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "4",
+          "12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按跳到的位置从小到大排",
+        "items": [
+          {
+            "id": "d",
+            "text": "4格跳4次"
+          },
+          {
+            "id": "b",
+            "text": "3格跳3次"
+          },
+          {
+            "id": "a",
+            "text": "2格跳4次"
+          },
+          {
+            "id": "c",
+            "text": "5格跳2次"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2格跳6次"
+          },
+          {
+            "id": "l2",
+            "text": "3格跳5次"
+          },
+          {
+            "id": "l3",
+            "text": "4格跳3次"
+          },
+          {
+            "id": "l4",
+            "text": "5格跳4次"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "15"
+          },
+          {
+            "id": "r3",
+            "text": "12（4×3）"
+          },
+          {
+            "id": "r4",
+            "text": "20"
+          },
+          {
+            "id": "r1",
+            "text": "12（2×6）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

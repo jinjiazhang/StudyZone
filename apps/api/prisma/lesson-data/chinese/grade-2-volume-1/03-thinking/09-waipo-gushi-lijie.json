@@ -1,0 +1,252 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”小时候最大的乐趣是什么？",
+        "options": [
+          "去学校",
+          "去市场",
+          "去外婆家",
+          "去河边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "外婆家在哪里？",
+        "options": [
+          "山脚下",
+          "海边",
+          "城里",
+          "草原上"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春天外婆家屋后的山上开满了什么？",
+        "options": [
+          "荷花",
+          "杜鹃花",
+          "菊花",
+          "梅花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“名字的野花”说明野花有什么特点？",
+        "options": [
+          "只有一种颜色",
+          "种类很多，说不出名字",
+          "没有香味",
+          "都长在屋里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "勇舅从山上干活回来，会带一些果子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "外婆说大山雀一叫就会逃走。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的句子",
+        "tokens": [
+          "宝贝",
+          "它们",
+          "最喜欢的",
+          "是我",
+          "山楂",
+          "外婆"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它们",
+          "是我",
+          "最喜欢的",
+          "宝贝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文信息",
+        "tokens": [
+          "开满了",
+          "每到春天",
+          "杜鹃花",
+          "山上",
+          "山雀"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "每到春天",
+          "山上",
+          "开满了",
+          "杜鹃花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "外婆家的乐趣",
+        "passage": "外婆的家在山脚下。那里有吃的，有玩的，还有看的：山上山下宝贝多，勇舅会带果子回来，屋后的山上开满杜鹃花，小山雀在林间蹦来跳去。",
+        "questions": [
+          {
+            "question": "外婆家为什么有趣？",
+            "options": [
+              "吃的、玩的、看的都多",
+              "只有许多课本",
+              "没有花也没有鸟"
+            ]
+          },
+          {
+            "question": "小山雀为什么被“我”喜欢？",
+            "options": [
+              "它会蹦跳，会唱小曲",
+              "它会写字",
+              "它会挑水"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "有吃的"
+          },
+          {
+            "id": "l_1",
+            "text": "有玩的"
+          },
+          {
+            "id": "l_2",
+            "text": "有看的"
+          },
+          {
+            "id": "l_3",
+            "text": "有香气"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "小山雀和杜鹃花"
+          },
+          {
+            "id": "r_0",
+            "text": "山楂、柿子、毛栗子"
+          },
+          {
+            "id": "r_3",
+            "text": "野花扑鼻"
+          },
+          {
+            "id": "r_1",
+            "text": "屋后的山上玩"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后题让同学交流什么？",
+        "options": [
+          "怎样计算星星数量",
+          "怎样给句子加标点",
+          "怎样写古诗",
+          "有没有类似去外婆家的经历"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“外婆总要给我留一份”表现了什么？",
+        "options": [
+          "外婆疼爱“我”",
+          "外婆忘记了果子",
+          "外婆不让“我”吃",
+          "外婆讨厌山雀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

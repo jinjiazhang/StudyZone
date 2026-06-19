@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填表：有几行5个点子？3行、6行、9行分别有多少个点子？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3行"
+          },
+          {
+            "id": "b2",
+            "label": "6行"
+          },
+          {
+            "id": "b3",
+            "label": "9行"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          30,
+          45
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 7 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 8 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 9 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5 × 4 = ",
+          null,
+          "，口诀：",
+          null
+        ],
+        "tokens": [
+          "四五二十",
+          "二十",
+          "十五",
+          "三五十五"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "二十",
+          "四五二十"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5 × ",
+          null,
+          " = 30，口诀：",
+          null
+        ],
+        "tokens": [
+          "6",
+          "7",
+          "五六三十",
+          "五七三十五"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "五六三十"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句口诀可以算 5×9？",
+        "options": [
+          "五八四十",
+          "四九三十六",
+          "二九十八",
+          "五九四十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“五三十五”中空出的字是？",
+        "options": [
+          "七",
+          "六",
+          "八",
+          "九"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 8",
+        "right": "45"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把5的口诀结果从小到大排",
+        "items": [
+          {
+            "id": "c",
+            "text": "35"
+          },
+          {
+            "id": "a",
+            "text": "15"
+          },
+          {
+            "id": "d",
+            "text": "45"
+          },
+          {
+            "id": "b",
+            "text": "25"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5×3"
+          },
+          {
+            "id": "l2",
+            "text": "5×6"
+          },
+          {
+            "id": "l3",
+            "text": "5×8"
+          },
+          {
+            "id": "l4",
+            "text": "5×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "40"
+          },
+          {
+            "id": "r2",
+            "text": "45"
+          },
+          {
+            "id": "r3",
+            "text": "15"
+          },
+          {
+            "id": "r4",
+            "text": "30"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“五六三十”和“六五三十”都可以帮助算5×6。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

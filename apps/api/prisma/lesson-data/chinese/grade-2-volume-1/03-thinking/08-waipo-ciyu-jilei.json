@@ -1,0 +1,312 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "山楂"
+          },
+          {
+            "id": "l_1",
+            "text": "柿子"
+          },
+          {
+            "id": "l_2",
+            "text": "毛栗子"
+          },
+          {
+            "id": "l_3",
+            "text": "杜鹃花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "带刺外壳里的果实"
+          },
+          {
+            "id": "r_0",
+            "text": "一种红红的果子"
+          },
+          {
+            "id": "r_3",
+            "text": "春天开放的花"
+          },
+          {
+            "id": "r_1",
+            "text": "秋天常见的橙红色果子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "宝贝"
+          },
+          {
+            "id": "l_1",
+            "text": "乐趣"
+          },
+          {
+            "id": "l_2",
+            "text": "小山雀"
+          },
+          {
+            "id": "l_3",
+            "text": "扑鼻"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "林间跳来跳去的小鸟"
+          },
+          {
+            "id": "r_0",
+            "text": "珍贵、喜欢的东西"
+          },
+          {
+            "id": "r_3",
+            "text": "香气迎面而来"
+          },
+          {
+            "id": "r_1",
+            "text": "使人快乐的趣味"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "外",
+        "tokens": [
+          "婆",
+          "衣",
+          "面",
+          "星",
+          "出",
+          "桥"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“外”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "婆",
+            "面",
+            "出"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "山",
+        "tokens": [
+          "脚",
+          "水",
+          "上",
+          "镜",
+          "雀",
+          "圆"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“山”组成课文相关词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "脚",
+            "上",
+            "雀"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "宝",
+        "tokens": [
+          "贝",
+          "花",
+          "石",
+          "鼻",
+          "库",
+          "候"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“宝”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "贝",
+            "石",
+            "库"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有吃的，有玩的，还有看的”说明外婆家怎么样？",
+        "options": [
+          "很冷清",
+          "很有趣",
+          "很危险",
+          "很吵闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "外婆总要给“我”留一份的可能是什么？",
+        "options": [
+          "课本和铅笔",
+          "镜子和水壶",
+          "星星和月亮",
+          "山楂、柿子或毛栗子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小山雀是“我”最喜欢的宝贝。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "大山雀叽叽一叫，就飞到“我”的书包里。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "香气",
+          "走起路来",
+          "小曲",
+          "扑鼻",
+          "野花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "走起路来",
+          "香气",
+          "扑鼻"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "不会逃",
+          "会唱小曲",
+          "杜鹃花",
+          "大山雀",
+          "山楂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "大山雀",
+          "不会逃",
+          "会唱小曲"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找出《去外婆家》的教材页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "彩虹"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-040.jpg",
+            "label": "语文园地三"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "去外婆家第一页"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-037.jpg",
+            "label": "数星星"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    }
+  ]
+}

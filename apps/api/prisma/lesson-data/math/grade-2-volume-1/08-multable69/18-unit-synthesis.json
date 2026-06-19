@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "63 ÷ 7 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 × 7 = ?"
+      },
+      "answer": {
+        "value": 63,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每间住 6 只小鸟，7 间房能住多少只？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "6*7",
+          "7*6",
+          "6×7",
+          "7×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "81 个气球平均分成 9 组，每组几个？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "81/9",
+          "81÷9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 只松鼠每组 4 只，最多分 ___ 组，还剩 ___ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "组数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道题适合用除法解决？",
+        "options": [
+          "每间住6只，7间能住几只",
+          "每串7根，6串共几根",
+          "48根每篮8根，可装几篮",
+          "5盒每盒6个，共几个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“最多能分几组，还剩几只”常常要用到什么想法？",
+        "options": [
+          "比较乘积有没有超过总数",
+          "只看最大的数",
+          "把所有数相加",
+          "把题目倒着读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 ÷ 4",
+        "right": "18 ÷ 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "48",
+          null,
+          "8",
+          null,
+          "6",
+          "（篮）"
+        ],
+        "tokens": [
+          "6",
+          "=",
+          "8",
+          "÷",
+          "48",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "解决乘除法应用题时，要先判断题目是在求总数、每份数，还是份数。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1米30厘米 = ? 厘米"
+      },
+      "answer": {
+        "value": 130,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "250厘米 = ? 米（只填整米数）"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "250厘米可以看作 __ 米 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          50
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个长度最适合用米作单位？",
+        "options": [
+          "橡皮长度",
+          "操场一圈",
+          "铅笔厚度",
+          "杯子高度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 * 100 + 30",
+        "right": "125"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪件物体适合用厘米作单位？",
+        "columns": [
+          "物体",
+          "建议单位",
+          "编号"
+        ],
+        "rows": [
+          {
+            "物体": "教室长",
+            "建议单位": "米",
+            "编号": 1
+          },
+          {
+            "物体": "铅笔长",
+            "建议单位": "厘米",
+            "编号": 2
+          },
+          {
+            "物体": "树高",
+            "建议单位": "米",
+            "编号": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "彩带长1米，剪去28厘米，列式求还剩多少厘米。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "100-28"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "彩带长1米，剪去28厘米，还剩 ? 厘米"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从短到长排列",
+        "items": [
+          {
+            "id": "b",
+            "text": "90厘米"
+          },
+          {
+            "id": "d",
+            "text": "1米20厘米"
+          },
+          {
+            "id": "a",
+            "text": "8厘米"
+          },
+          {
+            "id": "c",
+            "text": "1米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元学习的两个主要长度单位是：",
+        "options": [
+          "元和角",
+          "时和分",
+          "米和厘米",
+          "千克和克"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

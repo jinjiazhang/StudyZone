@@ -1,0 +1,298 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "千山",
+            null,
+            "绝"
+          ],
+          [
+            "万径人踪灭。"
+          ]
+        ],
+        "options": [
+          "鸟飞",
+          "风吹",
+          "云低",
+          "雪落"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "千山鸟飞绝，"
+          ],
+          [
+            "万径",
+            null,
+            "灭。"
+          ]
+        ],
+        "options": [
+          "船影",
+          "人踪",
+          "山路",
+          "白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "孤舟",
+            null,
+            "翁，"
+          ],
+          [
+            "独钓寒江雪。"
+          ]
+        ],
+        "options": [
+          "斗笠",
+          "竹篓",
+          "蓑笠",
+          "渔网"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "孤舟蓑笠翁，"
+          ],
+          [
+            "独钓",
+            null,
+            "雪。"
+          ]
+        ],
+        "options": [
+          "春江",
+          "长江",
+          "江南",
+          "寒江"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "千山",
+            null,
+            "绝，"
+          ],
+          [
+            "万径",
+            null,
+            "灭。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "鸟飞",
+              "人来",
+              "风吹",
+              "雪落"
+            ]
+          },
+          {
+            "options": [
+              "山影",
+              "人踪",
+              "船声",
+              "云色"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "江雪",
+        "author": "柳宗元",
+        "lines": [
+          [
+            "孤舟",
+            null,
+            "翁，"
+          ],
+          [
+            "独钓",
+            null,
+            "雪。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "斗笠",
+              "雨伞",
+              "蓑笠",
+              "柴门"
+            ]
+          },
+          {
+            "options": [
+              "大海",
+              "草原",
+              "高山",
+              "寒江"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成《江雪》的第一句",
+        "tokens": [
+          "万径",
+          "绝",
+          "孤舟",
+          "千山",
+          "鸟飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "千山",
+          "鸟飞",
+          "绝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成《江雪》的第二句",
+        "tokens": [
+          "寒江",
+          "灭",
+          "蓑笠",
+          "万径",
+          "人踪"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "万径",
+          "人踪",
+          "灭"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《江雪》写的是怎样的画面？",
+        "options": [
+          "雪天江上独钓",
+          "春天百花盛开",
+          "夏天荷叶连连",
+          "秋天果园丰收"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "诗中“孤舟”说明小船怎么样？",
+        "options": [
+          "很多",
+          "孤单",
+          "热闹",
+          "很大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“千山鸟飞绝”写出了四周十分寂静。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“独钓寒江雪”中的人是在热闹的集市钓鱼。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

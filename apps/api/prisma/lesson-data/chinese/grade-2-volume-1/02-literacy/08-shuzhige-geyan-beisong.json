@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原格言：十年树木，百年树人。",
+        "tokens": [
+          "树根",
+          "十年",
+          "叶落",
+          "树木",
+          "百年",
+          "树人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "十年",
+          "树木",
+          "百年",
+          "树人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原格言：树高百尺，叶落归根。",
+        "tokens": [
+          "开花",
+          "树高",
+          "南方",
+          "百尺",
+          "叶落",
+          "归根"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "树高",
+          "百尺",
+          "叶落",
+          "归根"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原格言：树无根不长，人无志不立。",
+        "tokens": [
+          "满院",
+          "树无根",
+          "耐寒",
+          "不长",
+          "人无志",
+          "不立"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "树无根",
+          "不长",
+          "人无志",
+          "不立"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "树之歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "杨树",
+            "高，"
+          ],
+          [
+            "榕树",
+            null,
+            "，"
+          ]
+        ],
+        "options": [
+          "香",
+          "壮",
+          "红",
+          "暖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "树之歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "银杏",
+            "水杉",
+            "活化石，"
+          ],
+          [
+            "金桂",
+            "开花",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "叶儿红",
+          "披绿装",
+          "满院香",
+          "在南方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“树无根不长，人无志不立”告诉我们什么？",
+        "options": [
+          "树不用根也能长",
+          "人不用学习",
+          "树都在北方",
+          "人要有志向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“叶落归根”中的“归”意思接近哪个词？",
+        "options": [
+          "回到",
+          "离开",
+          "生长",
+          "开放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“十年树木，百年树人”可以用来说明培养人需要很长时间。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“树高百尺，叶落归根”中的“根”指树梢。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "树木里的道理",
+        "passage": "树木要有根，才能长得稳。人也要有志向，学习和做事才有方向。课文后的格言把树和做人联系起来，读起来很有力量。",
+        "questions": [
+          {
+            "question": "哪一句和培养人才有关？",
+            "options": [
+              "十年树木，百年树人",
+              "一只海鸥，一条帆船",
+              "大大小小都有家"
+            ]
+          },
+          {
+            "question": "“人无志不立”强调什么？",
+            "options": [
+              "要有志向",
+              "要多种树",
+              "要看树叶"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

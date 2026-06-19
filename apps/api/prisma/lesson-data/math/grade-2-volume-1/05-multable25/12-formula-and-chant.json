@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×8"
+          },
+          {
+            "id": "l2",
+            "text": "3×9"
+          },
+          {
+            "id": "l3",
+            "text": "4×5"
+          },
+          {
+            "id": "l4",
+            "text": "5×7"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "四五二十"
+          },
+          {
+            "id": "r4",
+            "text": "五七三十五"
+          },
+          {
+            "id": "r1",
+            "text": "二八十六"
+          },
+          {
+            "id": "r2",
+            "text": "三九二十七"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到算式9×3，应想到哪句口诀？",
+        "options": [
+          "三八二十四",
+          "四九三十六",
+          "三九二十七",
+          "二九十八"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句口诀可以计算8×5？",
+        "options": [
+          "五八四十",
+          "四八三十二",
+          "二八十六",
+          "五七三十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 * 2 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 * 3 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 * 4 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 * 5 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "口诀“三六十八”对应算式：3",
+          null,
+          "6",
+          null,
+          "18"
+        ],
+        "tokens": [
+          "+",
+          "=",
+          "×",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "×",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "口诀“四五二十”只能计算4×5，不能计算5×4。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 8",
+        "right": "4 * 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

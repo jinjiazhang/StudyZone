@@ -1,0 +1,193 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35 - 9 = ?"
+      },
+      "answer": {
+        "value": 26,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 28 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 - 17 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 35 = ?"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "儿童画报原有35本，借走9本，还剩多少本？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "35-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "故事书原有52本，借走28本，还剩多少本？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "52-28"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "35 - 9：先算 15 - 9 = __，再把 20 加上这个数，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位剩下"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          26
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "52 - 28：先算 52 - 20 = __，再减 8，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先减20"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32,
+          24
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "52",
+          null,
+          "28",
+          null,
+          "24"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35 - 9",
+        "right": "52 - 28"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 52 - 28 时，个位 2 不够减 8，应该怎么办？",
+        "options": [
+          "向十位进1",
+          "直接写6",
+          "把减号改成加号",
+          "从十位退1当十"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "35 - 9 可以先把35拆成20和15，再算15 - 9。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-010.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "米可以写作：",
+        "options": [
+          "cm",
+          "kg",
+          "m",
+          "L"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1米 = ? 厘米"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量教室长度，较合适的单位是：",
+        "options": [
+          "厘米",
+          "克",
+          "分",
+          "米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "100根1厘米长的小棒接起来是1米。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-029.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "身高1米以上才能买票，1米大约是：",
+        "options": [
+          "100厘米",
+          "10厘米",
+          "1厘米",
+          "1000厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100",
+        "right": "99"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "2米换成厘米是多少？",
+        "fromUnit": "米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 200,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1米"
+          },
+          {
+            "id": "l2",
+            "text": "2米"
+          },
+          {
+            "id": "l3",
+            "text": "米"
+          },
+          {
+            "id": "l4",
+            "text": "厘米"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "较长长度单位"
+          },
+          {
+            "id": "r1",
+            "text": "100厘米"
+          },
+          {
+            "id": "r4",
+            "text": "较短长度单位"
+          },
+          {
+            "id": "r2",
+            "text": "200厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "1米 = ",
+          null,
+          null
+        ],
+        "tokens": [
+          "厘米",
+          "米",
+          "100",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "100",
+          "厘米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "米和厘米都是国际上通用的长度单位。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

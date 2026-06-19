@@ -1,0 +1,293 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "袋",
+        "tokens": [
+          "鼠",
+          "口",
+          "脑",
+          "子",
+          "石",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“袋”组成课本词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "脑",
+            "鼠",
+            "口"
+          ],
+          [
+            "子",
+            "脑",
+            "口"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "迎",
+        "tokens": [
+          "接",
+          "风",
+          "面",
+          "来",
+          "送",
+          "远"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“迎”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "面",
+            "接",
+            "风",
+            "来"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "活",
+        "tokens": [
+          "动",
+          "力",
+          "快",
+          "生",
+          "远",
+          "宽"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“活”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "快",
+            "动",
+            "生",
+            "力"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "脑袋"
+          },
+          {
+            "id": "l1",
+            "text": "袋鼠"
+          },
+          {
+            "id": "l2",
+            "text": "快活"
+          },
+          {
+            "id": "l3",
+            "text": "迎接"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "高兴、快乐"
+          },
+          {
+            "id": "r1",
+            "text": "头部"
+          },
+          {
+            "id": "r2",
+            "text": "到前面接待"
+          },
+          {
+            "id": "r3",
+            "text": "有育儿袋的动物"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "披着"
+          },
+          {
+            "id": "l1",
+            "text": "鼓着"
+          },
+          {
+            "id": "l2",
+            "text": "甩着"
+          },
+          {
+            "id": "l3",
+            "text": "露着"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "雪白的肚皮"
+          },
+          {
+            "id": "r1",
+            "text": "碧绿的衣裳"
+          },
+          {
+            "id": "r2",
+            "text": "长长的尾巴"
+          },
+          {
+            "id": "r3",
+            "text": "大大的眼睛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的短语：小蝌蚪的尾巴",
+        "tokens": [
+          "长长的尾巴",
+          "雪白的",
+          "甩着",
+          "小蝌蚪",
+          "鼓着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "甩着",
+          "长长的尾巴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的短语：青蛙的衣裳",
+        "tokens": [
+          "披着",
+          "大大的",
+          "碧绿的衣裳",
+          "青蛙",
+          "尾巴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "披着",
+          "碧绿的衣裳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“披着碧绿的衣裳”写的是谁的样子？",
+        "options": [
+          "青蛙",
+          "乌龟",
+          "鲤鱼",
+          "小蝌蚪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“甩着长长的尾巴”写的是小蝌蚪的什么特点？",
+        "options": [
+          "眼睛很大",
+          "尾巴很长",
+          "肚皮雪白",
+          "衣裳碧绿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《小蝌蚪找妈妈》的课文页",
+        "options": [
+          {
+            "id": "p010",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-010.jpg",
+            "label": "我是什么第一页"
+          },
+          {
+            "id": "p006",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-006.jpg",
+            "label": "小蝌蚪找妈妈第一页"
+          },
+          {
+            "id": "p013",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-013.jpg",
+            "label": "植物妈妈有办法第一页"
+          },
+          {
+            "id": "p017",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-017.jpg",
+            "label": "语文园地日积月累"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p006"
+      },
+      "difficulty": 1
+    }
+  ]
+}

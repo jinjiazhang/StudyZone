@@ -1,0 +1,194 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 9 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 * 5 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 3",
+        "right": "5 * 4"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 8",
+        "right": "40"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要算5×7，忘了结果，可以先想哪一句再加1个5？",
+        "options": [
+          "五六三十",
+          "五五二十五",
+          "二五一十",
+          "三五十五"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5×6",
+          null,
+          "5",
+          null,
+          "5×7"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          ">"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按得数从小到大排列",
+        "items": [
+          {
+            "id": "n3",
+            "text": "5×6"
+          },
+          {
+            "id": "n1",
+            "text": "5×2"
+          },
+          {
+            "id": "n4",
+            "text": "5×9"
+          },
+          {
+            "id": "n2",
+            "text": "5×4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5×3"
+          },
+          {
+            "id": "l2",
+            "text": "5×7"
+          },
+          {
+            "id": "l3",
+            "text": "5×9"
+          },
+          {
+            "id": "l4",
+            "text": "5×5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "45"
+          },
+          {
+            "id": "r4",
+            "text": "25"
+          },
+          {
+            "id": "r1",
+            "text": "15"
+          },
+          {
+            "id": "r2",
+            "text": "35"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

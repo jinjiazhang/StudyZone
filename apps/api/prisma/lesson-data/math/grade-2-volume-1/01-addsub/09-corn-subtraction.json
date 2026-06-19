@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 7 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 34 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 - 7 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气收52根，笑笑收7根，淘气比笑笑多收多少根？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "52-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "奇思收34根，淘气收52根，奇思比淘气少收多少根？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "52-34"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "52 - 7：个位 2 不够减 7，从十位退1，12 - 7 = __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位剩下"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          45
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "52 - 34：先算 52 - 30 = __，再减 4，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先减30"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          22,
+          18
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "52 - 7",
+        "right": "52 - 34"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "52 - 7"
+          },
+          {
+            "id": "l1",
+            "text": "52 - 34"
+          },
+          {
+            "id": "l2",
+            "text": "34 - 7"
+          },
+          {
+            "id": "l3",
+            "text": "52 - 27"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "27"
+          },
+          {
+            "id": "r3",
+            "text": "25"
+          },
+          {
+            "id": "r0",
+            "text": "45"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“奇思比淘气少收多少根”应该用哪个算式？",
+        "options": [
+          "52 + 34",
+          "34 - 7",
+          "52 - 7",
+          "52 - 34"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "52",
+          null,
+          "34",
+          null,
+          "18"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "求“多多少、少多少”通常用减法。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-012.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

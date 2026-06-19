@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 + 25 = ?"
+      },
+      "answer": {
+        "value": 73,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 - 9 = ?"
+      },
+      "answer": {
+        "value": 39,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 48 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小红跳了48次，小亮比小红多25次。求小亮跳了多少次。",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "48+25",
+          "25+48"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小红跳了48次，小东比小红少9次。求小东跳了多少次。",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "48-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小亮比小红多25次：先写小红 __ 次，再加 __ 次，小亮是 __ 次。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小红"
+          },
+          {
+            "id": "b2",
+            "label": "多出"
+          },
+          {
+            "id": "b3",
+            "label": "小亮"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          48,
+          25,
+          73
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小东比小红少9次：先写小红 __ 次，再减 __ 次，小东是 __ 次。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小红"
+          },
+          {
+            "id": "b2",
+            "label": "少了"
+          },
+          {
+            "id": "b3",
+            "label": "小东"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          48,
+          9,
+          39
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到“比小红多25次”，应该怎样想？",
+        "options": [
+          "把48和25合起来",
+          "用48减25",
+          "只看25",
+          "把25减48"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到“比小红少9次”，应该怎样想？",
+        "options": [
+          "用48加9",
+          "用100减48",
+          "用48减9",
+          "用25加9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "48 + 25",
+        "right": "48 - 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "画线段图能帮助看清谁多谁少。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-014.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "48",
+          null,
+          "25",
+          null,
+          "73"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

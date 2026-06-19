@@ -1,0 +1,186 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "桥洞高6厘米，汽车高4厘米，汽车能通过吗？",
+        "options": [
+          "不能",
+          "无法判断",
+          "能",
+          "要看颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "桥洞高6厘米，汽车高10厘米，汽车能通过吗？",
+        "options": [
+          "能",
+          "一定能",
+          "不用比较",
+          "不能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4",
+        "right": "6"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10",
+        "right": "6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "桥洞高10厘米，车高6厘米，空出 ? 厘米"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "桥洞高6厘米，车高3厘米，空出 ? 厘米"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪辆车不能通过6厘米高的桥洞？",
+        "columns": [
+          "车号",
+          "高度/厘米"
+        ],
+        "rows": [
+          {
+            "车号": "1号",
+            "高度/厘米": 3
+          },
+          {
+            "车号": "2号",
+            "高度/厘米": 4
+          },
+          {
+            "车号": "3号",
+            "高度/厘米": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "判断车辆能否通过桥洞，要比较高度。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-028.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "车高3厘米"
+          },
+          {
+            "id": "l2",
+            "text": "车高4厘米"
+          },
+          {
+            "id": "l3",
+            "text": "车高6厘米"
+          },
+          {
+            "id": "l4",
+            "text": "车高10厘米"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "能通过，余2厘米"
+          },
+          {
+            "id": "r4",
+            "text": "不能通过"
+          },
+          {
+            "id": "r1",
+            "text": "能通过，余3厘米"
+          },
+          {
+            "id": "r3",
+            "text": "刚好通过"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "桥洞限制高度是2米，190厘米高的小车：",
+        "options": [
+          "能通过",
+          "不能通过",
+          "一定撞上",
+          "无法换算"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4盘蛋糕，每盘4个，写出加法算式。",
+        "placeholder": "例如：4+4+4+4"
+      },
+      "answer": {
+        "accepted": [
+          "4+4+4+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "6盘蛋糕，每盘4个，写出加法算式。",
+        "placeholder": "例如：4+4+4"
+      },
+      "answer": {
+        "accepted": [
+          "4+4+4+4+4+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 + 3 + 3 + 3 + 3 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5个2相加：__ + __ + __ + __ + __ = __",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1个加数"
+          },
+          {
+            "id": "b2",
+            "label": "第2个加数"
+          },
+          {
+            "id": "b3",
+            "label": "第3个加数"
+          },
+          {
+            "id": "b4",
+            "label": "第4个加数"
+          },
+          {
+            "id": "b5",
+            "label": "第5个加数"
+          },
+          {
+            "id": "b6",
+            "label": "和"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "+",
+          null,
+          "+",
+          null,
+          "= 18"
+        ],
+        "tokens": [
+          "9",
+          "18",
+          "6",
+          "3",
+          "12"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "6",
+          "6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式能表示“4个6相加”？",
+        "options": [
+          "4+6",
+          "4+4+4+4+4+4",
+          "6+6+6+6",
+          "6-4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“7+7+7”表示几个7相加？",
+        "options": [
+          "7个3",
+          "1个21",
+          "4个7",
+          "3个7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 + 2 + 2 + 2 + 2",
+        "right": "5 + 5"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3个8相加"
+          },
+          {
+            "id": "l2",
+            "text": "4个6相加"
+          },
+          {
+            "id": "l3",
+            "text": "5个4相加"
+          },
+          {
+            "id": "l4",
+            "text": "2个9相加"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "6+6+6+6"
+          },
+          {
+            "id": "r3",
+            "text": "4+4+4+4+4"
+          },
+          {
+            "id": "r4",
+            "text": "9+9"
+          },
+          {
+            "id": "r1",
+            "text": "8+8+8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每层有6瓶果汁，有4层，一共有多少瓶？",
+        "columns": [
+          "项目",
+          "数量"
+        ],
+        "rows": [
+          {
+            "项目": "每层瓶数",
+            "数量": 6
+          },
+          {
+            "项目": "层数",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 8 + 8 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

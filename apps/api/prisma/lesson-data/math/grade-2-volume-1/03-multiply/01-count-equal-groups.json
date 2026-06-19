@@ -1,0 +1,258 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 2 + 2 + 2 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 5 + 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 4 + 4 + 4 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "糖果2块2块地数：2，4，__，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第三个数"
+          },
+          {
+            "id": "b2",
+            "label": "第四个数"
+          },
+          {
+            "id": "b3",
+            "label": "第五个数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "苹果5个5个地数：5，10，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第三个数"
+          },
+          {
+            "id": "b2",
+            "label": "第四个数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每盘有3个桃子，有6盘。下面哪句话说得对？",
+        "options": [
+          "有6个3",
+          "有3个6",
+          "一共有6个桃子",
+          "一共有9个桃子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "横着看，2行糖果，每行7块，一共有多少块？列加法算式。",
+        "placeholder": "例如：7+7"
+      },
+      "answer": {
+        "accepted": [
+          "7+7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "竖着看，3列糖果，每列4块，一共有多少块？列加法算式。",
+        "placeholder": "例如：4+4+4"
+      },
+      "answer": {
+        "accepted": [
+          "4+4+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 + 3 + 3",
+        "right": "4 + 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4个2相加"
+          },
+          {
+            "id": "l2",
+            "text": "3个5相加"
+          },
+          {
+            "id": "l3",
+            "text": "2个7相加"
+          },
+          {
+            "id": "l4",
+            "text": "5个3相加"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "5+5+5"
+          },
+          {
+            "id": "r3",
+            "text": "7+7"
+          },
+          {
+            "id": "r4",
+            "text": "3+3+3+3+3"
+          },
+          {
+            "id": "r1",
+            "text": "2+2+2+2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每篮3个松果，有6篮，一共有多少个松果？",
+        "columns": [
+          "项目",
+          "数量"
+        ],
+        "rows": [
+          {
+            "项目": "每篮松果",
+            "数量": 3
+          },
+          {
+            "项目": "篮数",
+            "数量": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从少到多排列这些清点结果",
+        "items": [
+          {
+            "id": "c",
+            "text": "4个3"
+          },
+          {
+            "id": "a",
+            "text": "2个4"
+          },
+          {
+            "id": "d",
+            "text": "5个3"
+          },
+          {
+            "id": "b",
+            "text": "3个3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

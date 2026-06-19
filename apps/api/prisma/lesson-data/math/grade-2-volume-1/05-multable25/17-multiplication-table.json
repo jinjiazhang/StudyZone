@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "乘法表中，3×4的得数是多少？",
+        "columns": [
+          "乘数",
+          "×2",
+          "×3",
+          "×4",
+          "×5"
+        ],
+        "rows": [
+          {
+            "乘数": 2,
+            "×2": 4,
+            "×3": 6,
+            "×4": 8,
+            "×5": 10
+          },
+          {
+            "乘数": 3,
+            "×2": 6,
+            "×3": 9,
+            "×4": 12,
+            "×5": 15
+          },
+          {
+            "乘数": 4,
+            "×2": 8,
+            "×3": 12,
+            "×4": 16,
+            "×5": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "乘法表中，5×4的得数是多少？",
+        "columns": [
+          "乘数",
+          "×2",
+          "×3",
+          "×4",
+          "×5"
+        ],
+        "rows": [
+          {
+            "乘数": 2,
+            "×2": 4,
+            "×3": 6,
+            "×4": 8,
+            "×5": 10
+          },
+          {
+            "乘数": 4,
+            "×2": 8,
+            "×3": 12,
+            "×4": 16,
+            "×5": 20
+          },
+          {
+            "乘数": 5,
+            "×2": 10,
+            "×3": 15,
+            "×4": 20,
+            "×5": 25
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 9 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 8 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全：2×7=__，3×7=__，4×7=__，5×7=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×7"
+          },
+          {
+            "id": "b2",
+            "label": "3×7"
+          },
+          {
+            "id": "b3",
+            "label": "4×7"
+          },
+          {
+            "id": "b4",
+            "label": "5×7"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          14,
+          21,
+          28,
+          35
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1~5的乘法口诀中，每一行得数向右增加的是哪个数？",
+        "options": [
+          "总是2",
+          "总是5",
+          "总是10",
+          "这一行的第一个乘数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 9",
+        "right": "4 * 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×9"
+          },
+          {
+            "id": "l2",
+            "text": "3×9"
+          },
+          {
+            "id": "l3",
+            "text": "4×9"
+          },
+          {
+            "id": "l4",
+            "text": "5×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "36"
+          },
+          {
+            "id": "r4",
+            "text": "45"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          },
+          {
+            "id": "r2",
+            "text": "27"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

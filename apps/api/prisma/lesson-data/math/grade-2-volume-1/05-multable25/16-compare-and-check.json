@@ -1,0 +1,169 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 * 2",
+        "right": "10"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "3 * 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9 * 2",
+        "right": "9 + 9"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 7",
+        "right": "5 * 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3×6和6×3都可以用“三六十八”计算。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4×5的得数比3×5多5。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2×9的得数比3×6少1。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个算式的得数是24？",
+        "options": [
+          "5×5",
+          "4×6",
+          "3×7",
+          "2×9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3×8",
+          null,
+          "4×6",
+          null,
+          "24"
+        ],
+        "tokens": [
+          "<",
+          "=",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "fills": [
+          "=",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "6×2"
+          },
+          {
+            "id": "l2",
+            "text": "2×8"
+          },
+          {
+            "id": "l3",
+            "text": "4×7"
+          },
+          {
+            "id": "l4",
+            "text": "5×5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "28"
+          },
+          {
+            "id": "r4",
+            "text": "25"
+          },
+          {
+            "id": "r1",
+            "text": "12"
+          },
+          {
+            "id": "r2",
+            "text": "16"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

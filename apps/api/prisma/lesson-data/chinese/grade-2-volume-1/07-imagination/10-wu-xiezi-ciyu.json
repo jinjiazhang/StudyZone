@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lùn",
+        "sentence": "无__是海水，还是船只，都看不见了。",
+        "character": "论",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "论"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "māo",
+        "sentence": "小黑__也出现了。",
+        "character": "猫",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "猫"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gāi",
+        "sentence": "现在，我__把谁藏起来呢？",
+        "character": "该",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "该"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bù",
+        "sentence": "它悠闲地散__。",
+        "character": "步",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "步"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuán",
+        "sentence": "大海连同__只都看不见了。",
+        "character": "船",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "船"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qiè",
+        "sentence": "雾把一__都藏了起来。",
+        "character": "切",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "切"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sàn",
+        "sentence": "小黑猫悠闲地__步。",
+        "character": "散",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "散"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shī",
+        "sentence": "雾消__了。",
+        "character": "失",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "失"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "船",
+        "tokens": [
+          "猫",
+          "只",
+          "火",
+          "头",
+          "风",
+          "员"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“船”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "只",
+            "头",
+            "员"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "岸",
+        "tokens": [
+          "低",
+          "边",
+          "歌",
+          "上",
+          "谁",
+          "头"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“岸”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "边",
+            "上",
+            "头"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "散步"
+          },
+          {
+            "id": "l_1",
+            "text": "消失"
+          },
+          {
+            "id": "l_2",
+            "text": "无论"
+          },
+          {
+            "id": "l_3",
+            "text": "岸边"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "不见了"
+          },
+          {
+            "id": "r_2",
+            "text": "不管"
+          },
+          {
+            "id": "r_3",
+            "text": "靠水的地方"
+          },
+          {
+            "id": "r_0",
+            "text": "慢慢走"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“散步”的“散”在课文中读作？",
+        "options": [
+          "sǎn",
+          "shàn",
+          "càn",
+          "sàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

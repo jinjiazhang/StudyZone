@@ -1,0 +1,284 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "登鹳雀楼",
+        "author": "王之涣",
+        "lines": [
+          [
+            "白日",
+            null,
+            "尽"
+          ]
+        ],
+        "options": [
+          "靠水",
+          "入海",
+          "依山",
+          "千里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "登鹳雀楼",
+        "author": "王之涣",
+        "lines": [
+          [
+            "黄河",
+            null,
+            "流"
+          ]
+        ],
+        "options": [
+          "上山",
+          "依山",
+          "落九天",
+          "入海"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "登鹳雀楼",
+        "author": "王之涣",
+        "lines": [
+          [
+            "欲穷",
+            null,
+            "目"
+          ]
+        ],
+        "options": [
+          "千里",
+          "一层",
+          "百尺",
+          "九天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "登鹳雀楼",
+        "author": "王之涣",
+        "lines": [
+          [
+            "更上",
+            null,
+            "楼"
+          ]
+        ],
+        "options": [
+          "千里",
+          "一层",
+          "黄河",
+          "白日"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "登鹳雀楼",
+        "author": "王之涣",
+        "lines": [
+          [
+            null,
+            "依山尽"
+          ],
+          [
+            "黄河",
+            null,
+            "流"
+          ],
+          [
+            "欲穷千里目"
+          ],
+          [
+            "更上",
+            null,
+            "楼"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "白日",
+              "明月",
+              "青山",
+              "夕阳"
+            ]
+          },
+          {
+            "options": [
+              "入海",
+              "出山",
+              "落日",
+              "上天"
+            ]
+          },
+          {
+            "options": [
+              "一层",
+              "千里",
+              "万丈",
+              "九天"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：白日依山尽",
+        "tokens": [
+          "尽",
+          "黄河",
+          "入海",
+          "白日",
+          "依山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "白日",
+          "依山",
+          "尽"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：黄河入海流",
+        "tokens": [
+          "流",
+          "白日",
+          "楼",
+          "黄河",
+          "入海"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄河",
+          "入海",
+          "流"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“欲穷千里目”中的“欲”意思接近哪一个？",
+        "options": [
+          "已经",
+          "不要",
+          "想要",
+          "看见"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "诗人想看得更远，应该怎么做？",
+        "options": [
+          "坐在楼下",
+          "闭上眼睛",
+          "回到家里",
+          "更上一层楼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "白日"
+          },
+          {
+            "id": "l1",
+            "text": "黄河"
+          },
+          {
+            "id": "l2",
+            "text": "千里目"
+          },
+          {
+            "id": "l3",
+            "text": "一层楼"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "看得很远"
+          },
+          {
+            "id": "r0",
+            "text": "太阳"
+          },
+          {
+            "id": "r3",
+            "text": "楼的一层"
+          },
+          {
+            "id": "r1",
+            "text": "大河"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

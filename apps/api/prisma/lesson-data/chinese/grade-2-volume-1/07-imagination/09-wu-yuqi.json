@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读“我要把大海藏起来。”时，语气应该接近什么？",
+        "options": [
+          "淘气、自信",
+          "害怕、哭泣",
+          "着急、求救",
+          "严肃、批评"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“现在，我该把谁藏起来呢？”表现雾在做什么？",
+        "options": [
+          "背古诗",
+          "想新的主意",
+          "找妈妈",
+          "写日记"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“看，我再也没有可藏的了。”说明雾怎样？",
+        "options": [
+          "害怕下雨",
+          "想去睡觉",
+          "觉得没东西可藏了",
+          "正在救火"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成雾说的话",
+        "tokens": [
+          "大海",
+          "把谁",
+          "太阳",
+          "藏起来呢",
+          "现在",
+          "我该"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "现在",
+          "我该",
+          "把谁",
+          "藏起来呢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成雾说的话",
+        "tokens": [
+          "房屋",
+          "可藏的了",
+          "桥梁",
+          "看",
+          "我再也没有"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "看",
+          "我再也没有",
+          "可藏的了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "我要把大海藏起来"
+          },
+          {
+            "id": "l_1",
+            "text": "我要把天空藏起来"
+          },
+          {
+            "id": "l_2",
+            "text": "我该把谁藏起来呢"
+          },
+          {
+            "id": "l_3",
+            "text": "我要把自己藏起来"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "决定藏天空"
+          },
+          {
+            "id": "r_2",
+            "text": "思考下一步"
+          },
+          {
+            "id": "r_3",
+            "text": "最后藏自己"
+          },
+          {
+            "id": "r_0",
+            "text": "决定藏大海"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文中雾说话的语气可以读得淘气一点。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "雾把自己藏起来后，什么都永远看不见了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "论",
+        "hint": "请选择字【论】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "lùn",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "甚",
+        "hint": "请选择字【甚】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "shèn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "至",
+        "hint": "请选择字【至】的正确拼音",
+        "options": [
+          "zhì",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "失",
+        "hint": "请选择字【失】的正确拼音",
+        "options": [
+          "shān",
+          "shī",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

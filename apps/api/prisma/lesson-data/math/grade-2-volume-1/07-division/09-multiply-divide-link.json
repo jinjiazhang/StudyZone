@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 4 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 5 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "根据 7 × 4 = 28，填：28 ÷ 7 = __，28 ÷ 4 = __。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "第1个商"
+          },
+          {
+            "id": "b",
+            "label": "第2个商"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 6 × 4 = 24 和 24 ÷ 6 = 4 中，乘法算式的积对应除法算式中的什么？",
+        "options": [
+          "除数",
+          "被除数",
+          "商",
+          "除号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "6×4=24"
+          },
+          {
+            "id": "l2",
+            "text": "5×6=30"
+          },
+          {
+            "id": "l3",
+            "text": "3×8=24"
+          },
+          {
+            "id": "l4",
+            "text": "4×9=36"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "24÷3=8"
+          },
+          {
+            "id": "r1",
+            "text": "24÷6=4"
+          },
+          {
+            "id": "r4",
+            "text": "36÷4=9"
+          },
+          {
+            "id": "r2",
+            "text": "30÷5=6"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "24",
+          null,
+          "6",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "4",
+          "6",
+          "÷",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 6",
+        "right": "24 ÷ 4"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按商从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "30÷6=5"
+          },
+          {
+            "id": "i1",
+            "text": "24÷8=3"
+          },
+          {
+            "id": "i4",
+            "text": "24÷4=6"
+          },
+          {
+            "id": "i2",
+            "text": "24÷6=4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

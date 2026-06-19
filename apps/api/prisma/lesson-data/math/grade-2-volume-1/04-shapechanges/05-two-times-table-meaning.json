@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 1 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 2 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 3 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 5 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "教材第45页摆筷子：3双、7双、9双分别有几根？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3双"
+          },
+          {
+            "id": "b2",
+            "label": "7双"
+          },
+          {
+            "id": "b3",
+            "label": "9双"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          14,
+          18
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2的乘法口诀中，后一条结果比前一条多几？",
+        "options": [
+          "1",
+          "5",
+          "10",
+          "2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "2 × 7 = ",
+          null,
+          "，口诀：",
+          null
+        ],
+        "tokens": [
+          "二七十四",
+          "十四",
+          "十六",
+          "二八十六"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "十四",
+          "二七十四"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "2 * 7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“二五一十”可以算2个5的和，也可以算5个2的和。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "摆筷子：6双筷子有几根？",
+        "columns": [
+          "双数",
+          "每双根数",
+          "总根数"
+        ],
+        "rows": [
+          {
+            "双数": 6,
+            "每双根数": 2,
+            "总根数": 12
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "绝",
+        "hint": "请选择字【绝】的正确拼音",
+        "options": [
+          "jué",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "径",
+        "hint": "请选择字【径】的正确拼音",
+        "options": [
+          "shān",
+          "jìng",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "踪",
+        "hint": "请选择字【踪】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "zōng",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "灭",
+        "hint": "请选择字【灭】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "miè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "舟",
+        "hint": "请选择字【舟】的正确拼音",
+        "options": [
+          "zhōu",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "钓",
+        "hint": "请选择字【钓】的正确拼音",
+        "options": [
+          "shān",
+          "diào",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蓑",
+        "hint": "请选择字【蓑】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "suō",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "笠",
+        "hint": "请选择字【笠】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "lì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "翁",
+        "hint": "请选择字【翁】的正确拼音",
+        "options": [
+          "wēng",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寒",
+        "hint": "请选择字【寒】的正确拼音",
+        "options": [
+          "shān",
+          "hán",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "绝"
+          },
+          {
+            "id": "l_1",
+            "text": "踪"
+          },
+          {
+            "id": "l_2",
+            "text": "孤舟"
+          },
+          {
+            "id": "l_3",
+            "text": "寒江"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "踪迹"
+          },
+          {
+            "id": "r_2",
+            "text": "孤单的小船"
+          },
+          {
+            "id": "r_3",
+            "text": "寒冷的江面"
+          },
+          {
+            "id": "r_0",
+            "text": "没有了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雪",
+        "tokens": [
+          "云",
+          "花",
+          "船",
+          "地",
+          "猫",
+          "人"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“雪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "地",
+            "人"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

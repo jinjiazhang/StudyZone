@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 1 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1辆小汽车4个轮子，8辆小汽车__个轮子。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "轮子数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          32
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5辆小汽车，每辆4个轮子，列式求一共多少个轮子。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "5*4",
+          "4*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4的口诀相邻两句得数相差多少？",
+        "options": [
+          "4",
+          "2",
+          "3",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4×7可以用4×6的得数再加4得到。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 5",
+        "right": "3 * 7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4×6",
+          null,
+          "4",
+          null,
+          "4×7"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          ">"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "四四十六"
+          },
+          {
+            "id": "l2",
+            "text": "四六二十四"
+          },
+          {
+            "id": "l3",
+            "text": "四八三十二"
+          },
+          {
+            "id": "l4",
+            "text": "四九三十六"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "4×8=32"
+          },
+          {
+            "id": "r4",
+            "text": "4×9=36"
+          },
+          {
+            "id": "r1",
+            "text": "4×4=16"
+          },
+          {
+            "id": "r2",
+            "text": "4×6=24"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

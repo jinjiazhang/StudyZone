@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第75页用不同形状纸板做陀螺，主要观察什么？",
+        "options": [
+          "哪种转得更稳",
+          "哪种更贵",
+          "哪种能平移",
+          "哪种能对折成星星"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "把火柴棍扎在圆形纸板哪里，陀螺通常更稳？",
+        "options": [
+          {
+            "id": "g37_0",
+            "label": "边缘最外侧"
+          },
+          {
+            "id": "g37_1",
+            "label": "中心位置"
+          },
+          {
+            "id": "g37_2",
+            "label": "随便一个角"
+          },
+          {
+            "id": "g37_3",
+            "label": "纸板外面"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g37_1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "陀螺转动时，是绕着",
+          null,
+          "在",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "旋转",
+          "中心",
+          "出口",
+          "平移"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "中心",
+          "旋转"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "圆形、正方形、三角形纸板中，课本引导我们怎样学习？",
+        "options": [
+          "只背答案",
+          "只看颜色",
+          "只数页码",
+          "做一做、转一转、比较发现"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "圆形陀螺"
+          },
+          {
+            "id": "l1",
+            "text": "正方形陀螺"
+          },
+          {
+            "id": "l2",
+            "text": "三角形陀螺"
+          },
+          {
+            "id": "l3",
+            "text": "扎偏的陀螺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "可能转得不如圆形稳"
+          },
+          {
+            "id": "r0",
+            "text": "通常更容易转稳"
+          },
+          {
+            "id": "r3",
+            "text": "容易摇晃"
+          },
+          {
+            "id": "r1",
+            "text": "也可以旋转比较"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项属于旋转现象？",
+        "options": [
+          {
+            "id": "g38_0",
+            "label": "小车直直前进"
+          },
+          {
+            "id": "g38_1",
+            "label": "纸对折"
+          },
+          {
+            "id": "g38_2",
+            "label": "剪下星星"
+          },
+          {
+            "id": "g38_3",
+            "label": "陀螺绕火柴棍转"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g38_3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果火柴棍扎得偏离中心，可能怎样？",
+        "options": [
+          "一定更稳",
+          "转起来容易晃",
+          "不能称为旋转",
+          "会变成平移"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "比较三种陀螺稳定性，合理顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "尽量在中心扎火柴棍"
+          },
+          {
+            "id": "o1",
+            "text": "比较转动是否平稳"
+          },
+          {
+            "id": "o2",
+            "text": "准备不同形状纸板"
+          },
+          {
+            "id": "o3",
+            "text": "分别转一转"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全：做实验时，要尽量让不同陀螺的火柴棍位置都在（ ），这样比较更公平。",
+        "options": [
+          "中心",
+          "边缘",
+          "出口",
+          "折痕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“①号陀螺转得最稳，最不稳的是……”这句话在做什么？",
+        "options": [
+          "根据观察比较结果",
+          "列乘法算式",
+          "判断钱数",
+          "剪出小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "旋转和平移的主要不同是：",
+        "options": [
+          {
+            "id": "g39_0",
+            "label": "旋转会绕一个点或轴转动"
+          },
+          {
+            "id": "g39_1",
+            "label": "旋转一定会改变大小"
+          },
+          {
+            "id": "g39_2",
+            "label": "平移一定要剪纸"
+          },
+          {
+            "id": "g39_3",
+            "label": "两者完全一样"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g39_0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察陀螺是否稳定，可以看什么？",
+        "options": [
+          "纸上有没有页码",
+          "颜色是不是红色",
+          "转动时是否摇晃、能转多久",
+          "有没有出口"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

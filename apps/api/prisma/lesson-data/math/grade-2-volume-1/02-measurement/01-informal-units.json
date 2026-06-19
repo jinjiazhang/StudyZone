@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量教室长度时，下面哪种做法更容易让结果准确？",
+        "options": [
+          "每一步尽量一样长",
+          "脚步忽大忽小",
+          "边走边跳",
+          "斜着穿过教室"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用同一个人的脚步量同一段路，每一步尽量一样长，结果更便于交流。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-024.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用不同物品量同一张课桌，结果可能不同，主要因为：",
+        "options": [
+          "课桌会变短",
+          "物品长短不同",
+          "数字不会变",
+          "尺子没有刻度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪种工具量出的教室最长？",
+        "columns": [
+          "测量工具",
+          "测量结果"
+        ],
+        "rows": [
+          {
+            "测量工具": "尺子",
+            "测量结果": 37
+          },
+          {
+            "测量工具": "文具盒",
+            "测量结果": 35
+          },
+          {
+            "测量工具": "笑笑的脚",
+            "测量结果": 38
+          }
+        ]
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "37",
+        "right": "35"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "量教室较长的一边，下面哪个工具更合适？",
+        "options": [
+          "橡皮",
+          "铅笔",
+          "长绳",
+          "纽扣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "脚步"
+          },
+          {
+            "id": "l2",
+            "text": "橡皮"
+          },
+          {
+            "id": "l3",
+            "text": "尺子"
+          },
+          {
+            "id": "l4",
+            "text": "文具盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "有统一刻度"
+          },
+          {
+            "id": "r1",
+            "text": "适合量较长的路"
+          },
+          {
+            "id": "r4",
+            "text": "可作临时工具"
+          },
+          {
+            "id": "r2",
+            "text": "适合量很短的物体"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按适合量教室长度的程度从低到高排列",
+        "items": [
+          {
+            "id": "eraser",
+            "text": "橡皮"
+          },
+          {
+            "id": "pencil",
+            "text": "铅笔"
+          },
+          {
+            "id": "rope",
+            "text": "长绳"
+          },
+          {
+            "id": "step",
+            "text": "脚步"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "eraser",
+          "pencil",
+          "step",
+          "rope"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同样的课桌，小明量得4支铅笔长，小丽量得6拃长。怎样交流更清楚？",
+        "options": [
+          "只说数字",
+          "说谁先量",
+          "把数字相加",
+          "说清测量工具和结果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用书本量桌长时，书要一个接一个摆放，尽量不重叠、不留空。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

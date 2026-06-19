@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 + 16 = ?"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 28 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 + 25 = ?"
+      },
+      "answer": {
+        "value": 73,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "100 - 48 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 + 36 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96 - 38 = ?"
+      },
+      "answer": {
+        "value": 58,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道题需要进位？",
+        "options": [
+          "52 - 28",
+          "100 - 48",
+          "28 + 16",
+          "80 - 24"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道题需要退位？",
+        "options": [
+          "28 + 16",
+          "52 - 28",
+          "16 + 36",
+          "35 + 48"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "48 + 25",
+        "right": "96 - 38"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "28 + 16"
+          },
+          {
+            "id": "l1",
+            "text": "52 - 28"
+          },
+          {
+            "id": "l2",
+            "text": "100 - 48"
+          },
+          {
+            "id": "l3",
+            "text": "96 - 38"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "52"
+          },
+          {
+            "id": "r3",
+            "text": "58"
+          },
+          {
+            "id": "r0",
+            "text": "44"
+          },
+          {
+            "id": "r1",
+            "text": "24"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把得数从小到大排列",
+        "items": [
+          {
+            "id": "i2",
+            "text": "73"
+          },
+          {
+            "id": "i0",
+            "text": "44"
+          },
+          {
+            "id": "i4",
+            "text": "58"
+          },
+          {
+            "id": "i1",
+            "text": "24"
+          },
+          {
+            "id": "i3",
+            "text": "52"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i0",
+          "i3",
+          "i4",
+          "i2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "图书角四类图书一共有多少本？",
+        "columns": [
+          "类别",
+          "本数"
+        ],
+        "rows": [
+          {
+            "类别": "海洋动物",
+            "本数": 28
+          },
+          {
+            "类别": "陆地动物",
+            "本数": 4
+          },
+          {
+            "类别": "海洋植物",
+            "本数": 16
+          },
+          {
+            "类别": "陆地植物",
+            "本数": 37
+          }
+        ]
+      },
+      "answer": {
+        "value": 85,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

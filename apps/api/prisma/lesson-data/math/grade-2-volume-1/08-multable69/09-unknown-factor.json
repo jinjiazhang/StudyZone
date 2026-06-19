@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "56 ÷ 7 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 ÷ 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 ÷ 7 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填乘数：7 × ___ = 56，___ × 9 = 45。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一空"
+          },
+          {
+            "id": "b2",
+            "label": "第二空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填乘数：7 × ___ = 28，___ × 6 = 42。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一空"
+          },
+          {
+            "id": "b2",
+            "label": "第二空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "7 × □ = 56，想哪句口诀最合适？",
+        "options": [
+          "七八五十六",
+          "七九六十三",
+          "五七三十五",
+          "六七四十二"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "□ × 9 = 45，□ 里应填几？",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "×",
+          null,
+          "=",
+          "56"
+        ],
+        "tokens": [
+          "56",
+          "8",
+          "7",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "7 × □ = 56"
+          },
+          {
+            "id": "l2",
+            "text": "□ × 9 = 45"
+          },
+          {
+            "id": "l3",
+            "text": "7 × □ = 28"
+          },
+          {
+            "id": "l4",
+            "text": "□ × 6 = 42"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "□=7"
+          },
+          {
+            "id": "r3",
+            "text": "□=4"
+          },
+          {
+            "id": "r2",
+            "text": "□=5"
+          },
+          {
+            "id": "r1",
+            "text": "□=8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

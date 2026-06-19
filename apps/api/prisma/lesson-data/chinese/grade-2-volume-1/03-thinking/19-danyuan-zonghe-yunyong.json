@@ -1,0 +1,330 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "彩虹",
+        "hint": "选择词语【彩虹】的正确读音",
+        "options": [
+          "cǎi gōng",
+          "cǎi hóng",
+          "chǎi hóng",
+          "cǎi hòng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "外婆",
+        "hint": "选择词语【外婆】的正确读音",
+        "options": [
+          "wài bō",
+          "wǎi pó",
+          "wài pō",
+          "wài pó"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "北斗七星",
+        "hint": "选择词语【北斗七星】的正确读音",
+        "options": [
+          "běi dòu qī xīn",
+          "bèi dǒu qī xīng",
+          "běi dǒu qī xīng",
+          "běi dǒu qǐ xīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元三篇课文共同适合关注什么？",
+        "options": [
+          "生活中的想象、亲情和观察",
+          "只学习动物叫声",
+          "只学习数字计算",
+          "只学习古诗作者"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一组全是本单元课文题目？",
+        "options": [
+          "场景歌、树之歌、拍手歌",
+          "彩虹、去外婆家、数星星的孩子",
+          "寒号鸟、我要的是葫芦、雪孩子",
+          "黄山奇石、日月潭、葡萄沟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "彩虹"
+          },
+          {
+            "id": "l_1",
+            "text": "去外婆家"
+          },
+          {
+            "id": "l_2",
+            "text": "数星星的孩子"
+          },
+          {
+            "id": "l_3",
+            "text": "语文园地三"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "学习观察和钻研"
+          },
+          {
+            "id": "r_0",
+            "text": "想为家人做事"
+          },
+          {
+            "id": "r_3",
+            "text": "识字、标点、积累和口语交际"
+          },
+          {
+            "id": "r_1",
+            "text": "分享童年乐趣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《彩虹》的中心表达",
+        "tokens": [
+          "做一些",
+          "为家人",
+          "我想",
+          "星星",
+          "有趣的事"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我想",
+          "为家人",
+          "做一些",
+          "有趣的事"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《去外婆家》的中心表达",
+        "tokens": [
+          "有玩的",
+          "还有看的",
+          "外婆家",
+          "有吃的",
+          "北斗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "外婆家",
+          "有吃的",
+          "有玩的",
+          "还有看的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出《数星星的孩子》的启发",
+        "tokens": [
+          "获得发现",
+          "细心观察",
+          "才能",
+          "刻苦钻研",
+          "彩虹"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "细心观察",
+          "刻苦钻研",
+          "才能",
+          "获得发现"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《彩虹》中的“我”有丰富的想象，也关心家人。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《去外婆家》主要写张衡观察北斗七星。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《数星星的孩子》告诉我们星星是在动，但不是乱动。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "第三单元综合",
+        "passage": "本单元的课文有《彩虹》《去外婆家》《数星星的孩子》。我们在《彩虹》中感受孩子关心家人的想象，在《去外婆家》中分享童年生活的乐趣，在《数星星的孩子》中认识认真观察、刻苦钻研的张衡。语文园地三还帮助我们识字、积累词句、练习标点和口语表达。",
+        "questions": [
+          {
+            "question": "哪篇课文写到了张衡？",
+            "options": [
+              "数星星的孩子",
+              "彩虹",
+              "去外婆家"
+            ]
+          },
+          {
+            "question": "语文园地三的口语交际主题是什么？",
+            "options": [
+              "做手工",
+              "讲笑话",
+              "看星星"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小儿垂钓",
+        "author": "[唐]胡令能",
+        "lines": [
+          [
+            "路人借问",
+            null,
+            "，"
+          ],
+          [
+            "怕得鱼惊不应人。"
+          ]
+        ],
+        "options": [
+          "忙回答",
+          "遥招手",
+          "采野花",
+          "数星星"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页最能代表第三单元的开始？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-040.jpg",
+            "label": "语文园地三"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "去外婆家"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "第三单元 彩虹"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-044.jpg",
+            "label": "第四单元古诗"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 只蚂蚁，每 3 只顶一片树叶，需要 ? 片树叶。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 个包子平均放进 4 个蒸笼，每笼 ? 个。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 只蚂蚁顶一片树叶，18 只蚂蚁需要 ? 片树叶。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "21 支铅笔平均分给 3 人，每人 ? 支。"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "24 个包子平均放进 4 个蒸笼，每笼 6 个，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "24÷4=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3 只蚂蚁顶一片树叶，18 只蚂蚁需要 6 片树叶，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "18÷3=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "24 个包子：平均放进 4 笼每笼 __ 个；每笼 6 个可放 __ 笼。",
+        "blanks": [
+          {
+            "id": "each",
+            "label": "每笼"
+          },
+          {
+            "id": "baskets",
+            "label": "笼数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一共 24 个包子，平均放进 4 个蒸笼”，要求的是？",
+        "options": [
+          "每笼几个",
+          "一共有几个",
+          "每个多少钱",
+          "有几只蚂蚁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 4",
+        "right": "18 ÷ 3"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "18只蚂蚁每3只一组"
+          },
+          {
+            "id": "l2",
+            "text": "24个包子分4笼"
+          },
+          {
+            "id": "l3",
+            "text": "21支铅笔分3人"
+          },
+          {
+            "id": "l4",
+            "text": "30元买5元物品"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "每人7支"
+          },
+          {
+            "id": "r1",
+            "text": "6 组"
+          },
+          {
+            "id": "r4",
+            "text": "6 个"
+          },
+          {
+            "id": "r2",
+            "text": "每笼6个"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "24",
+          null,
+          "4",
+          null,
+          "6"
+        ],
+        "tokens": [
+          "=",
+          "6",
+          "4",
+          "÷",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按答案从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "18÷3=6"
+          },
+          {
+            "id": "i1",
+            "text": "18÷6=3"
+          },
+          {
+            "id": "i4",
+            "text": "21÷3=7"
+          },
+          {
+            "id": "i2",
+            "text": "24÷6=4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

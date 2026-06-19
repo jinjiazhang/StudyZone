@@ -1,0 +1,278 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "云开雾散"
+          },
+          {
+            "id": "l_1",
+            "text": "微风习习"
+          },
+          {
+            "id": "l_2",
+            "text": "冰天雪地"
+          },
+          {
+            "id": "l_3",
+            "text": "风雨交加"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "轻柔的风吹着"
+          },
+          {
+            "id": "r_2",
+            "text": "到处冰雪"
+          },
+          {
+            "id": "r_3",
+            "text": "风雨一起来"
+          },
+          {
+            "id": "r_0",
+            "text": "云雾散开"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "云雾缭绕"
+          },
+          {
+            "id": "l_1",
+            "text": "寒风呼啸"
+          },
+          {
+            "id": "l_2",
+            "text": "鹅毛大雪"
+          },
+          {
+            "id": "l_3",
+            "text": "电闪雷鸣"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "寒风猛烈地吹"
+          },
+          {
+            "id": "r_2",
+            "text": "很大的雪"
+          },
+          {
+            "id": "r_3",
+            "text": "闪电打雷"
+          },
+          {
+            "id": "r_0",
+            "text": "云雾围绕"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个词语描写雪下得很大？",
+        "options": [
+          "鹅毛大雪",
+          "微风习习",
+          "云开雾散",
+          "安宁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个词语描写风雨很大？",
+        "options": [
+          "栋梁",
+          "风雨交加",
+          "闭门",
+          "买卖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“寒风呼啸”适合写哪种天气？",
+        "options": [
+          "晴朗无风",
+          "春暖花开",
+          "很冷、风很大",
+          "烈日炎炎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成景象短语",
+        "tokens": [
+          "冰天",
+          "云开",
+          "雪地",
+          "雾散"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "云开",
+          "雾散"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成景象短语",
+        "tokens": [
+          "微风",
+          "电闪",
+          "习习",
+          "雷鸣"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "电闪",
+          "雷鸣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“冰天雪地”和“鹅毛大雪”都可以写冬天的景象。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“微风习习”表示狂风暴雨。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读句子“雾把大海藏了起来”，有趣在什么地方？",
+        "options": [
+          "写了古诗作者",
+          "说明了部首页码",
+          "只写了动物",
+          "把雾当成人来写"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“调皮的风拿了我的手绢”把风写得像什么？",
+        "options": [
+          "人",
+          "船",
+          "山",
+          "字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择园地“看图写故事”的图片页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-098.jpg",
+            "label": "小老鼠和电脑"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-086.jpg",
+            "label": "江雪插图"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-087.jpg",
+            "label": "敕勒歌文字"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-095.jpg",
+            "label": "雪孩子练习"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    }
+  ]
+}

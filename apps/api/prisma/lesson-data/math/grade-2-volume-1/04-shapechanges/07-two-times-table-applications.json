@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每人发2本练习本，7人一共发多少本？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "2*7",
+          "7*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 7 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9双筷子一共有多少根？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6副手套一共有多少只？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每张桌子配2把椅子，5张桌子配多少把椅子？",
+        "columns": [
+          "桌子数",
+          "每桌椅子",
+          "总椅子"
+        ],
+        "rows": [
+          {
+            "桌子数": 5,
+            "每桌椅子": 2,
+            "总椅子": 10
+          }
+        ]
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“8个2是多少”用哪句口诀？",
+        "options": [
+          "二七十四",
+          "五八四十",
+          "二八十六",
+          "四八三十二"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每个盒子装2个球，",
+          null,
+          "个盒子装",
+          null,
+          "个球。"
+        ],
+        "tokens": [
+          "7",
+          "8",
+          "14",
+          "16"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 6",
+        "right": "2 * 5 + 2"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4双筷子有8根。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2人一组排队，4组、9组分别有多少人？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "4组"
+          },
+          {
+            "id": "b2",
+            "label": "9组"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          18
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个情境不能用2×6解决？",
+        "options": [
+          "6双袜子共有几只",
+          "6盒每盒5支笔",
+          "6副手套共有几只",
+          "6组每组2人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 4 + 2 * 3 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把平移说成“图形变大了”，错在哪里？",
+        "options": [
+          "平移不能改变位置",
+          "平移一定要对折",
+          "平移只能发生在纸上",
+          "平移不改变图形大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种剪纸想法容易出错？",
+        "options": [
+          {
+            "id": "g56_0",
+            "label": "先想半边形状"
+          },
+          {
+            "id": "g56_1",
+            "label": "沿画线慢慢剪"
+          },
+          {
+            "id": "g56_2",
+            "label": "对折不对齐就直接剪"
+          },
+          {
+            "id": "g56_3",
+            "label": "展开后检查"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g56_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "华容道中，斜着移动违反了“只能",
+          null,
+          "或",
+          null,
+          "移动”的规则。"
+        ],
+        "tokens": [
+          "纵向",
+          "横向",
+          "旋转",
+          "对折"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "横向",
+          "纵向"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把风车叶片直直推到右边，这不是旋转，因为没有什么？",
+        "options": [
+          "改变颜色",
+          "绕中心转动",
+          "写出格数",
+          "剪出空洞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "对折没对齐"
+          },
+          {
+            "id": "l1",
+            "text": "方向没说清"
+          },
+          {
+            "id": "l2",
+            "text": "火柴棍扎偏"
+          },
+          {
+            "id": "l3",
+            "text": "障碍车没移开"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "陀螺可能不稳"
+          },
+          {
+            "id": "r0",
+            "text": "剪纸两边可能不对应"
+          },
+          {
+            "id": "r3",
+            "text": "目标车无法出去"
+          },
+          {
+            "id": "r1",
+            "text": "同伴无法按步骤操作"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "判断空洞和剪影配对时，只看大小不看方向会怎样？",
+        "options": [
+          {
+            "id": "g57_0",
+            "label": "一定更准确"
+          },
+          {
+            "id": "g57_1",
+            "label": "一定能旋转"
+          },
+          {
+            "id": "g57_2",
+            "label": "可能配错"
+          },
+          {
+            "id": "g57_3",
+            "label": "没有影响"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g57_2"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“棋子向上移2格”后，棋子朝向变了吗？",
+        "options": [
+          "没有变",
+          "一定向下",
+          "变成左右相反",
+          "变成另一枚棋子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "发现剪纸结果不像目标，可以这样排查：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "看对折是否对齐"
+          },
+          {
+            "id": "o1",
+            "text": "看是否沿线剪"
+          },
+          {
+            "id": "o2",
+            "text": "看折边是否选对"
+          },
+          {
+            "id": "o3",
+            "text": "看画线是否像半边目标"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "停车场题中，把车横着穿过别的车，错在哪里？",
+        "options": [
+          "格子太少",
+          "车的颜色不对",
+          "没有遵守前进或倒退规则",
+          "出口太明显"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下列哪句话是错误的？",
+        "options": [
+          {
+            "id": "g58_0",
+            "label": "旋转一定不需要中心"
+          },
+          {
+            "id": "g58_1",
+            "label": "平移后形状不变"
+          },
+          {
+            "id": "g58_2",
+            "label": "对称图形可沿对称轴重合"
+          },
+          {
+            "id": "g58_3",
+            "label": "风车绕中心转动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g58_0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全：做陀螺实验时，如果比较不公平，可能是火柴棍没有都扎在（ ）附近。",
+        "options": [
+          "边缘",
+          "中心",
+          "出口",
+          "折痕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把补全对称图形画得一边大一边小，主要错在哪里？",
+        "options": [
+          "没有写算式",
+          "两边没有对应",
+          "没有平移",
+          "没有停车场"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一根绳子1米，用去35厘米，还剩 ? 厘米"
+      },
+      "answer": {
+        "value": 65,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "两条彩带分别长45厘米和38厘米，一共 ? 厘米"
+      },
+      "answer": {
+        "value": 83,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "门高2米，装饰条长150厘米，还差 ? 厘米"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一根绳子长100厘米，用去35厘米，列式求剩下多少厘米。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "100-35"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45 + 38",
+        "right": "80"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一条彩带长1米20厘米，也就是 __ 厘米。另一条80厘米，两条相差 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "总厘米"
+          },
+          {
+            "id": "b2",
+            "label": "相差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          120,
+          40
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买1米长的绳子做60厘米的作品，剩下：",
+        "options": [
+          "60厘米",
+          "40厘米",
+          "160厘米",
+          "1厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪条彩带最长？",
+        "columns": [
+          "颜色",
+          "长度/厘米"
+        ],
+        "rows": [
+          {
+            "颜色": "红",
+            "长度/厘米": 75
+          },
+          {
+            "颜色": "蓝",
+            "长度/厘米": 100
+          },
+          {
+            "颜色": "绿",
+            "长度/厘米": 90
+          }
+        ]
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "解决生活长度问题时，单位不同也可以直接相加，不用换算。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "1米20厘米 = ",
+          null,
+          null
+        ],
+        "tokens": [
+          "厘米",
+          "米",
+          "120",
+          "12"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "120",
+          "厘米"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

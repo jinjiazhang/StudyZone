@@ -1,0 +1,167 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 - 5 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 × 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 - 30 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一共造了 7 间房子，已经住了 5 间，还空几间？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "7-5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "还空 2 间，每间能住 6 只，还能住几只小鸟？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "2*6",
+          "6*2",
+          "2×6",
+          "6×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7 间房，住了 5 间，还空 ___ 间；每间 6 只，还能住 ___ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "空房"
+          },
+          {
+            "id": "b2",
+            "label": "还能住"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要求“还能住几只小鸟”，先要知道什么？",
+        "options": [
+          "已经住了几只",
+          "还空几间房",
+          "每只小鸟几岁",
+          "房子有多高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "7 间房每间 6 只，已经住了 30 只，还能住几只？",
+        "options": [
+          "6只",
+          "12只",
+          "18只",
+          "42只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "42 - 30",
+        "right": "2 × 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "(",
+          "7",
+          null,
+          "5",
+          ")",
+          null,
+          "6",
+          "=",
+          "12"
+        ],
+        "tokens": [
+          "×",
+          "-",
+          "12",
+          "+",
+          "÷",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "×"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

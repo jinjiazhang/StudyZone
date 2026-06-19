@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "70",
+        "right": "7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 * 100",
+        "right": "98"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 100 + 5",
+        "right": "205"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1米比70厘米长 ? 厘米"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2米比175厘米长 ? 厘米"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "桌子高约70厘米，7米，7厘米，谁猜得最合理？",
+        "options": [
+          "70厘米",
+          "7米",
+          "7厘米",
+          "都一样"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从短到长排列",
+        "items": [
+          {
+            "id": "a",
+            "text": "8厘米"
+          },
+          {
+            "id": "b",
+            "text": "1米"
+          },
+          {
+            "id": "c",
+            "text": "60厘米"
+          },
+          {
+            "id": "d",
+            "text": "20厘米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "d",
+          "c",
+          "b"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪个长度最短？",
+        "columns": [
+          "物体",
+          "长度/厘米"
+        ],
+        "rows": [
+          {
+            "物体": "橡皮",
+            "长度/厘米": 4
+          },
+          {
+            "物体": "杯子高",
+            "长度/厘米": 9
+          },
+          {
+            "物体": "铅笔",
+            "长度/厘米": 17
+          }
+        ]
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "2米30厘米和203厘米相比：",
+        "options": [
+          "203厘米长",
+          "2米30厘米长",
+          "一样长",
+          "不能比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "比较长度时，先把单位统一再比较更清楚。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

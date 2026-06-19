@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jué",
+        "sentence": "千山鸟飞__。",
+        "character": "绝",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "绝"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhōu",
+        "sentence": "孤__蓑笠翁。",
+        "character": "舟",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "舟"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yīn",
+        "sentence": "敕勒川，__山下。",
+        "character": "阴",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "阴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yě",
+        "sentence": "天苍苍，__茫茫。",
+        "character": "野",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "野"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "miè",
+        "sentence": "万径人踪__。",
+        "character": "灭",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "灭"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dú",
+        "sentence": "__钓寒江雪。",
+        "character": "独",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "独"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sì",
+        "sentence": "天__穹庐。",
+        "character": "似",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "似"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dī",
+        "sentence": "风吹草__见牛羊。",
+        "character": "低",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "低"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "绝",
+        "tokens": [
+          "船",
+          "句",
+          "猫",
+          "对",
+          "云",
+          "望"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“绝”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "句",
+            "对",
+            "望"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "低",
+        "tokens": [
+          "山",
+          "头",
+          "花",
+          "下",
+          "走",
+          "声"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“低”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "头",
+            "下",
+            "声"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "绝句"
+          },
+          {
+            "id": "l_1",
+            "text": "小舟"
+          },
+          {
+            "id": "l_2",
+            "text": "阴山"
+          },
+          {
+            "id": "l_3",
+            "text": "低头"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "小船"
+          },
+          {
+            "id": "r_2",
+            "text": "山名"
+          },
+          {
+            "id": "r_3",
+            "text": "把头垂下"
+          },
+          {
+            "id": "r_0",
+            "text": "一种诗"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“灭”的部首更接近下面哪一个？",
+        "options": [
+          "氵",
+          "木",
+          "火",
+          "艹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "腿",
+        "hint": "“后腿”的“腿”",
+        "options": [
+          "tǔi",
+          "duǐ",
+          "tuǐ",
+          "tuì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "甩",
+        "hint": "“甩着长长的尾巴”的“甩”",
+        "options": [
+          "suǎi",
+          "shuāi",
+          "shuài",
+          "shuǎi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "嘴",
+        "hint": "“宽嘴巴”的“嘴”",
+        "options": [
+          "zuì",
+          "zhuǐ",
+          "zuǐ",
+          "cuǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "肚",
+        "hint": "“肚皮”的“肚”",
+        "options": [
+          "dù",
+          "tǔ",
+          "dǔ",
+          "dū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tiáo",
+        "sentence": "小蝌蚪长出两__后腿。",
+        "blankPlaceholder": "__",
+        "character": "条",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "条"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kuān",
+        "sentence": "青蛙妈妈有一张__嘴巴。",
+        "blankPlaceholder": "__",
+        "character": "宽",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "宽"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "duǎn",
+        "sentence": "小蝌蚪的尾巴变__了。",
+        "blankPlaceholder": "__",
+        "character": "短",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "短"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chéng",
+        "sentence": "小蝌蚪已经长__青蛙了。",
+        "blankPlaceholder": "__",
+        "character": "成",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "成"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“迎上去”“追上去”“游过去”这些词主要表示什么？",
+        "options": [
+          "动作方向",
+          "颜色变化",
+          "天气变化",
+          "声音大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "迎上去"
+          },
+          {
+            "id": "l1",
+            "text": "追上去"
+          },
+          {
+            "id": "l2",
+            "text": "游过去"
+          },
+          {
+            "id": "l3",
+            "text": "蹲着"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "从水里到那边去"
+          },
+          {
+            "id": "r1",
+            "text": "弯腿停在原地"
+          },
+          {
+            "id": "r2",
+            "text": "主动向前相见"
+          },
+          {
+            "id": "r3",
+            "text": "在后面赶上去"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

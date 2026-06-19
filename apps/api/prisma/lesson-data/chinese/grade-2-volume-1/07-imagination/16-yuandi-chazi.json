@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“亏”用部首查字法，部首可以先查哪一笔？",
+        "options": [
+          "丨",
+          "丶",
+          "一",
+          "丿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“申”用部首查字法，常先查哪一笔？",
+        "options": [
+          "一",
+          "丶",
+          "乙",
+          "丨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“丹”用部首查字法，常先查哪一笔？",
+        "options": [
+          "丿",
+          "一",
+          "丨",
+          "丶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "亏"
+          },
+          {
+            "id": "l_1",
+            "text": "申"
+          },
+          {
+            "id": "l_2",
+            "text": "丹"
+          },
+          {
+            "id": "l_3",
+            "text": "宁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "申请"
+          },
+          {
+            "id": "r_2",
+            "text": "丹青"
+          },
+          {
+            "id": "r_3",
+            "text": "安宁"
+          },
+          {
+            "id": "r_0",
+            "text": "吃亏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "宁",
+        "tokens": [
+          "火",
+          "安",
+          "船",
+          "静",
+          "野",
+          "可"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“宁”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "安",
+            "静",
+            "可"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "库",
+        "tokens": [
+          "猫",
+          "车",
+          "低",
+          "仓",
+          "谁",
+          "房"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“库”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "车",
+            "仓",
+            "房"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jī",
+        "sentence": "他又__又饿。",
+        "character": "饥",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "饥"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "è",
+        "sentence": "小鸟肚子__了。",
+        "character": "饿",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "饿"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "níng",
+        "sentence": "这里十分安__。",
+        "character": "宁",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "宁"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kù",
+        "sentence": "车__里停着车。",
+        "character": "库",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "库"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "部首查字法可以帮助我们查不认识的字。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "查字典时完全不用知道部首。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

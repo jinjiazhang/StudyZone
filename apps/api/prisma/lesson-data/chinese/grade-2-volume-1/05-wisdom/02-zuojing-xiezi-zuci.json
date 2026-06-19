@@ -1,0 +1,247 @@
+{
+  "id": "02-zuojing-xiezi-zuci",
+  "title": "坐井观天写字组词",
+  "description": "依据课本/assets/textbooks/chinese/grade-2-volume-1/pages/page-060.jpg写字格，练习会写字和组词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guān",
+        "sentence": "坐井__天告诉我们看问题要全面。",
+        "blankPlaceholder": "__",
+        "character": "观",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "观"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dá",
+        "sentence": "小鸟回__说自己从天上来。",
+        "blankPlaceholder": "__",
+        "character": "答",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "答"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huà",
+        "sentence": "青蛙说大__，小鸟却耐心解释。",
+        "blankPlaceholder": "__",
+        "character": "话",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "话"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tái",
+        "sentence": "青蛙一__头就能看见天。",
+        "blankPlaceholder": "__",
+        "character": "抬",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "抬"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xìn",
+        "sentence": "青蛙不__小鸟说的话。",
+        "blankPlaceholder": "__",
+        "character": "信",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "信"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "néng",
+        "sentence": "跳出井口才__看见更大的天。",
+        "blankPlaceholder": "__",
+        "character": "能",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "能"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "观",
+        "tokens": [
+          "点",
+          "看",
+          "景",
+          "台",
+          "察",
+          "望",
+          "冷"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“观”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "看",
+            "景",
+            "察",
+            "望"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "信",
+        "tokens": [
+          "封",
+          "心",
+          "用",
+          "相",
+          "件",
+          "念",
+          "石"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“信”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "封",
+            "用",
+            "相",
+            "念"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "话",
+        "tokens": [
+          "说",
+          "语",
+          "童",
+          "电",
+          "题",
+          "画",
+          "水"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“话”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "说",
+            "童",
+            "电",
+            "题"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "观"
+          },
+          {
+            "id": "l_1",
+            "text": "答"
+          },
+          {
+            "id": "l_2",
+            "text": "抬"
+          },
+          {
+            "id": "l_3",
+            "text": "信"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "抬头"
+          },
+          {
+            "id": "r_0",
+            "text": "观看"
+          },
+          {
+            "id": "r_3",
+            "text": "相信"
+          },
+          {
+            "id": "r_1",
+            "text": "回答"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语适合填入“__头看天”？",
+        "options": [
+          "低",
+          "抬",
+          "跑",
+          "闭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

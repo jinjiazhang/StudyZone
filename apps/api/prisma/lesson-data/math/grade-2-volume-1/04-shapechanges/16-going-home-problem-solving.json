@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 3 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每队6人，排2队，一共有多少人？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "6*2",
+          "2*6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每排3棵树，种5排，一共有多少棵？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "3*5",
+          "5*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "解决“每层楼高3米，这座楼有多少米高”时，如果有5层，应列式为？",
+        "options": [
+          "3+5",
+          "3×5",
+          "5-3",
+          "3×3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从0开始每次跳3格，跳5次停在几？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "学校楼房每层高3米，4层楼高多少米？",
+        "columns": [
+          "层数",
+          "每层高度",
+          "总高度"
+        ],
+        "rows": [
+          {
+            "层数": 4,
+            "每层高度": 3,
+            "总高度": 12
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每袋有4个面包，2袋、5袋分别有多少个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2袋"
+          },
+          {
+            "id": "b2",
+            "label": "5袋"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 6",
+        "right": "3 * 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2×6可以表示2个6，也可以表示6个2。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

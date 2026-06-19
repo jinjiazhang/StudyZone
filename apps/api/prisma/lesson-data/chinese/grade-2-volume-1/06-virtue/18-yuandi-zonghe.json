@@ -1,0 +1,294 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“山（ ）”应选哪个字？",
+        "options": [
+          "峰",
+          "锋",
+          "蜂",
+          "蜜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蜜（ ）”应选哪个字？",
+        "options": [
+          "蜂",
+          "锋",
+          "峰",
+          "墓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“争（ ）”应选哪个字？",
+        "options": [
+          "抄",
+          "吵",
+          "炒",
+          "墓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“（ ）名”应选哪个字？",
+        "options": [
+          "幕",
+          "墓",
+          "慕",
+          "蜂"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "巴"
+          },
+          {
+            "id": "l1",
+            "text": "方"
+          },
+          {
+            "id": "l2",
+            "text": "马"
+          },
+          {
+            "id": "l3",
+            "text": "青"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "妈"
+          },
+          {
+            "id": "r3",
+            "text": "清"
+          },
+          {
+            "id": "r0",
+            "text": "把"
+          },
+          {
+            "id": "r1",
+            "text": "放"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "日积月累",
+        "author": "后汉书",
+        "lines": [
+          [
+            "有志者",
+            null,
+            "成。"
+          ]
+        ],
+        "options": [
+          "事竟",
+          "事情",
+          "志向",
+          "成功"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "日积月累",
+        "author": "诸葛亮",
+        "lines": [
+          [
+            "志当存",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "高远",
+          "遥远",
+          "长久",
+          "远方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "日积月累",
+        "author": "王勃",
+        "lines": [
+          [
+            "穷且益坚，",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "不坠青云之志",
+          "不忘泼水之节",
+          "不怕山高路陡",
+          "不觉夜幕降临"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "日积月累",
+        "author": "古代名句",
+        "lines": [
+          [
+            "有志者",
+            null,
+            "成。"
+          ],
+          [
+            "志当存",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "事竟",
+              "事情",
+              "功夫",
+              "终于"
+            ]
+          },
+          {
+            "options": [
+              "高远",
+              "低处",
+              "眼前",
+              "山路"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "留言条顺序",
+        "tokens": [
+          "留言给谁",
+          "署名",
+          "先写",
+          "标题",
+          "再写",
+          "时间"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "先写",
+          "标题",
+          "再写",
+          "留言给谁"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "留言条内容",
+        "tokens": [
+          "和时间",
+          "先写",
+          "自己的名字",
+          "最后写",
+          "称呼"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "最后写",
+          "自己的名字",
+          "和时间"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "留言条中“妈妈：”表示什么？",
+        "options": [
+          "留言留给谁",
+          "写留言的人",
+          "天气情况",
+          "课文题目"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

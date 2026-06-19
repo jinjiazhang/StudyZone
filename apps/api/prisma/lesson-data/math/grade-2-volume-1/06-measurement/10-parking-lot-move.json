@@ -1,0 +1,309 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第76页停车场题中，汽车只能怎样移动？",
+        "options": [
+          "横着飞走",
+          "斜着跳走",
+          "原地剪开",
+          "前进或倒退"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "黄色小车要开到出口，通常要先做什么？",
+        "options": [
+          {
+            "id": "g34_0",
+            "label": "移开挡住道路的车"
+          },
+          {
+            "id": "g34_1",
+            "label": "把出口变成圆形"
+          },
+          {
+            "id": "g34_2",
+            "label": "把车旋转90度"
+          },
+          {
+            "id": "g34_3",
+            "label": "把格子涂红"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g34_0"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "停车场里的车只沿车头方向",
+          null,
+          "或",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "倒退",
+          "前进",
+          "对折",
+          "剪纸"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "前进",
+          "倒退"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "横放的车"
+          },
+          {
+            "id": "l1",
+            "text": "竖放的车"
+          },
+          {
+            "id": "l2",
+            "text": "出口"
+          },
+          {
+            "id": "l3",
+            "text": "挡路的车"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "目标方向"
+          },
+          {
+            "id": "r0",
+            "text": "只能左右进退"
+          },
+          {
+            "id": "r3",
+            "text": "需要先让开"
+          },
+          {
+            "id": "r1",
+            "text": "只能上下进退"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "帮小车出停车场，思考顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "看哪些车挡路"
+          },
+          {
+            "id": "o1",
+            "text": "让目标车开出"
+          },
+          {
+            "id": "o2",
+            "text": "找目标车和出口"
+          },
+          {
+            "id": "o3",
+            "text": "按方向移开挡路车"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪种移车方式通常不符合题意？",
+        "options": [
+          "把横放的车竖着移动",
+          "横放的车向前进",
+          "竖放的车倒退",
+          "目标车向出口前进"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "车辆前方被另一辆车挡住时，目标车能直接开出吗？",
+        "options": [
+          {
+            "id": "g35_0",
+            "label": "能，穿过去"
+          },
+          {
+            "id": "g35_1",
+            "label": "能，变小通过"
+          },
+          {
+            "id": "g35_2",
+            "label": "能，变成剪纸"
+          },
+          {
+            "id": "g35_3",
+            "label": "不能，需要先移开障碍车"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g35_3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "停车场移车和华容道有什么相同点？",
+        "options": [
+          "都要剪星星",
+          "都要背6的口诀",
+          "都要按规则平移物体",
+          "都要量长度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "补全：停车场路线要一步一步试，重点看（ ）是否打开。",
+        "options": [
+          "折痕",
+          "星星",
+          "价钱",
+          "通道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪项是合理的移车指令？",
+        "options": [
+          {
+            "id": "g36_0",
+            "label": "3号车变成圆形"
+          },
+          {
+            "id": "g36_1",
+            "label": "3号竖车向上移1格"
+          },
+          {
+            "id": "g36_2",
+            "label": "3号车斜着跳2格"
+          },
+          {
+            "id": "g36_3",
+            "label": "3号车对折"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g36_1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一辆车后面没有空格，它能倒退吗？",
+        "options": [
+          "一定能",
+          "必须旋转后能",
+          "不能",
+          "剪掉车尾就能"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "记录停车场解法时，可以这样写：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "写格数"
+          },
+          {
+            "id": "o1",
+            "text": "编号车辆"
+          },
+          {
+            "id": "o2",
+            "text": "检查是否让出通道"
+          },
+          {
+            "id": "o3",
+            "text": "写方向"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

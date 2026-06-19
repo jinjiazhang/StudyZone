@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 根香蕉，每 2 根一份，可以分成 ? 份。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 根香蕉平均分成 3 份，每份 ? 根。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 个圆片，每 4 个一份，可以分成 ? 份。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 个圆片平均分成 4 份，每份 ? 个。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12 ÷ 2 = 6 可以表示什么？",
+        "options": [
+          "12 根香蕉每 2 根一份，分成 6 份",
+          "12 根香蕉每份 6 根，分成 2 份",
+          "2 根香蕉平均分成 12 份",
+          "6 根香蕉每份 12 根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12 ÷ 3 = 4 可以表示什么？",
+        "options": [
+          "12 根香蕉每 4 根一份",
+          "12 根香蕉平均分成 3 份，每份 4 根",
+          "3 根香蕉分成 12 份",
+          "4 根香蕉平均分成 12 份"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "12 根香蕉每 2 根一份，可以分成 6 份，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "12÷2=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 ÷ 3 = __，12 ÷ 4 = __。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "第1个商"
+          },
+          {
+            "id": "b",
+            "label": "第2个商"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "12÷2=6"
+          },
+          {
+            "id": "l2",
+            "text": "12÷3=4"
+          },
+          {
+            "id": "l3",
+            "text": "16÷4=4"
+          },
+          {
+            "id": "l4",
+            "text": "18÷6=3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "16 个每 4 个一份"
+          },
+          {
+            "id": "r1",
+            "text": "每 2 根一份，分 6 份"
+          },
+          {
+            "id": "r4",
+            "text": "18 个平均分成 6 份"
+          },
+          {
+            "id": "r2",
+            "text": "平均分成 3 份，每份 4 根"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "16",
+          null,
+          "4",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "4",
+          "16",
+          "÷",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12 ÷ 2",
+        "right": "16 ÷ 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "12÷3=4"
+          },
+          {
+            "id": "i1",
+            "text": "12÷6=2"
+          },
+          {
+            "id": "i4",
+            "text": "12÷2=6"
+          },
+          {
+            "id": "i2",
+            "text": "12÷4=3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

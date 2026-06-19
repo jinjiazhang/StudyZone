@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 11 = ?"
+      },
+      "answer": {
+        "value": 41,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 13 = ?"
+      },
+      "answer": {
+        "value": 39,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 16 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "52 - 20 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "知道总分52分和其中一个得分16分，另一个得分是多少？",
+        "options": [
+          "32分",
+          "36分",
+          "41分",
+          "29分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "找两个数相加得52时，先排除哪一组？",
+        "options": [
+          "16和36",
+          "20和32",
+          "11和41",
+          "11和13"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "52 - 11"
+          },
+          {
+            "id": "l1",
+            "text": "52 - 16"
+          },
+          {
+            "id": "l2",
+            "text": "52 - 20"
+          },
+          {
+            "id": "l3",
+            "text": "52 - 29"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "32"
+          },
+          {
+            "id": "r3",
+            "text": "23"
+          },
+          {
+            "id": "r0",
+            "text": "41"
+          },
+          {
+            "id": "r1",
+            "text": "36"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "52 - 16",
+        "right": "52 - 20"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "11 + 13 = 24，不能组成52分。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-018.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "13 + 29 = 42，个位相加得2，但总分不是52。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-018.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把可能与16配成52的候选数从小到大排",
+        "items": [
+          {
+            "id": "i2",
+            "text": "41"
+          },
+          {
+            "id": "i0",
+            "text": "32"
+          },
+          {
+            "id": "i3",
+            "text": "20"
+          },
+          {
+            "id": "i1",
+            "text": "36"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i3",
+          "i0",
+          "i1",
+          "i2"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "52",
+          null,
+          "16",
+          null,
+          "36"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

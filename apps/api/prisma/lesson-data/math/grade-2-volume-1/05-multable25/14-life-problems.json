@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "桥上每队有6只小狐狸，2队一共有多少只？",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "2*6",
+          "6*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每层楼高约3米，5层楼高约多少米？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1辆缆车坐2人，7辆缆车一共可坐多少人？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每张桌子坐4人，3张桌子坐多少人？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "算式2×6=12可以解决哪个问题？",
+        "options": [
+          "2队，每队6只小狐狸，共有几只",
+          "6队，每队6只",
+          "2只小狐狸，每只6条尾巴",
+          "12队，每队2只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "每层楼高约3米，5层楼大约15米。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 6",
+        "right": "3 * 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每桌4人，3桌__人；每桌4人，5桌__人。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3桌"
+          },
+          {
+            "id": "b2",
+            "label": "5桌"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "7辆缆车，每辆2人：",
+          null,
+          "×",
+          null,
+          "=14"
+        ],
+        "tokens": [
+          "7",
+          "3",
+          "2",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5层，每层3米"
+          },
+          {
+            "id": "l2",
+            "text": "7辆缆车，每辆2人"
+          },
+          {
+            "id": "l3",
+            "text": "3桌，每桌4人"
+          },
+          {
+            "id": "l4",
+            "text": "2队，每队6只狐狸"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "12人"
+          },
+          {
+            "id": "r4",
+            "text": "12只"
+          },
+          {
+            "id": "r1",
+            "text": "15米"
+          },
+          {
+            "id": "r2",
+            "text": "14人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

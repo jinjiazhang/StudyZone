@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填一填：4，8，___，16，___，24。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 7 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 8 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 9 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4 × ",
+          null,
+          " = 36，口诀：",
+          null
+        ],
+        "tokens": [
+          "9",
+          "8",
+          "四九三十六",
+          "四八三十二"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "四九三十六"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“四六二十四”表示的结果是？",
+        "options": [
+          "24",
+          "20",
+          "28",
+          "32"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道算式可以用“四七二十八”？",
+        "options": [
+          "4+7",
+          "7-4",
+          "4×7",
+          "4×8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 9",
+        "right": "36"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4×3"
+          },
+          {
+            "id": "l2",
+            "text": "4×5"
+          },
+          {
+            "id": "l3",
+            "text": "4×7"
+          },
+          {
+            "id": "l4",
+            "text": "4×8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "32"
+          },
+          {
+            "id": "r2",
+            "text": "12"
+          },
+          {
+            "id": "r3",
+            "text": "28"
+          },
+          {
+            "id": "r4",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4×8比4×7多4。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每张桌子有4条腿，6张桌子共有多少条腿？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "4*6",
+          "6*4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每盒4块橡皮，9盒共有多少块？",
+        "columns": [
+          "盒数",
+          "每盒块数",
+          "总块数"
+        ],
+        "rows": [
+          {
+            "盒数": 9,
+            "每盒块数": 4,
+            "总块数": 36
+          }
+        ]
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

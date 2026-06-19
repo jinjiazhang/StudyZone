@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bǎo",
+        "sentence": "山上山下__贝多。",
+        "blankPlaceholder": "__",
+        "character": "宝",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "宝"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiē",
+        "sentence": "会带一__山楂回来。",
+        "blankPlaceholder": "__",
+        "character": "些",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "些"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gěi",
+        "sentence": "外婆总要__我留一份。",
+        "blankPlaceholder": "__",
+        "character": "给",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "给"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qǔ",
+        "sentence": "唱支小__给你听。",
+        "blankPlaceholder": "__",
+        "character": "曲",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "曲"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiāng",
+        "sentence": "走起路来__气扑鼻。",
+        "blankPlaceholder": "__",
+        "character": "香",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "香"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huó",
+        "sentence": "舅舅从山上干__回来。",
+        "blankPlaceholder": "__",
+        "character": "活",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "活"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zǒng",
+        "sentence": "外婆__要给我留一份。",
+        "blankPlaceholder": "__",
+        "character": "总",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "总"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sù",
+        "sentence": "外婆告__我山雀不会逃。",
+        "blankPlaceholder": "__",
+        "character": "诉",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "诉"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "míng",
+        "sentence": "__字的野花开满山坡。",
+        "blankPlaceholder": "__",
+        "character": "名",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "名"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《去外婆家》写字格里没有哪个字？",
+        "options": [
+          "宝",
+          "曲",
+          "桥",
+          "香"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的句子",
+        "tokens": [
+          "真",
+          "宝贝",
+          "外婆家",
+          "山雀",
+          "有趣",
+          "衣服"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "外婆家",
+          "真",
+          "有趣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "香",
+        "tokens": [
+          "气",
+          "书",
+          "味",
+          "星",
+          "甜",
+          "桥"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“香”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "气",
+            "味",
+            "甜"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

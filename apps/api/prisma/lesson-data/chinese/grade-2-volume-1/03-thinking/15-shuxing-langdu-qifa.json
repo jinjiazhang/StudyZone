@@ -1,0 +1,276 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求想一想哪句话怎么读更好？",
+        "options": [
+          "外婆家真有趣！",
+          "雨停了。",
+          "星星是在动，可不是乱动。",
+          "我会踢足球。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读“这颗星和那颗星，中间总是隔那么远”时，应突出什么？",
+        "options": [
+          "星星之间距离有规律",
+          "声音越小越好",
+          "故意读错字音",
+          "只读最后一个字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "爷爷告诉张衡的知识不包括哪一项？",
+        "options": [
+          "星星不是乱动",
+          "彩虹是美丽的桥",
+          "北斗七星像勺子",
+          "北斗七星绕北极星转"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "张衡听了爷爷的话后，亲自观察星星。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文启发我们遇到问题不用观察。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出启发表达",
+        "tokens": [
+          "终于看清楚",
+          "张衡",
+          "反复观察",
+          "听了爷爷的话",
+          "彩虹"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "听了爷爷的话",
+          "张衡",
+          "反复观察",
+          "终于看清楚"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "中间总是",
+          "和那颗星",
+          "隔那么远",
+          "这颗星",
+          "勺子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "这颗星",
+          "和那颗星",
+          "中间总是",
+          "隔那么远"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "看得很仔细"
+          },
+          {
+            "id": "l_1",
+            "text": "一夜没睡好"
+          },
+          {
+            "id": "l_2",
+            "text": "刻苦钻研"
+          },
+          {
+            "id": "l_3",
+            "text": "带来启发"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "坚持深入研究"
+          },
+          {
+            "id": "r_0",
+            "text": "善于观察"
+          },
+          {
+            "id": "r_3",
+            "text": "向生活学习"
+          },
+          {
+            "id": "r_1",
+            "text": "心里一直想着问题"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“张衡的故事给你带来什么样的启发？”最合适的回答是？",
+        "options": [
+          "要少看天空",
+          "要细心观察，坚持探究",
+          "只要会数数就行",
+          "不要听别人说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "观察带来的发现",
+        "passage": "张衡听爷爷讲星星运行的知识后，没有只听一听就算了。他一夜几次起来看星星，终于发现北斗七星果然绕着北极星转动。",
+        "questions": [
+          {
+            "question": "张衡为什么能看清楚？",
+            "options": [
+              "他认真观察，不怕辛苦",
+              "他闭着眼睛猜",
+              "他只听奶奶一句话"
+            ]
+          },
+          {
+            "question": "这个故事告诉我们什么？",
+            "options": [
+              "知识要靠观察和钻研",
+              "星星都不会动",
+              "下雨后一定有桥"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪页有《数星星的孩子》的写字格和课后问题？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-041.jpg",
+            "label": "园地积累"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "彩虹课文"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "外婆家课文"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-039.jpg",
+            "label": "数星星课后题"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "研",
+        "tokens": [
+          "究",
+          "花",
+          "读",
+          "裙",
+          "讨",
+          "壶"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“研”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "究",
+            "读",
+            "讨"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

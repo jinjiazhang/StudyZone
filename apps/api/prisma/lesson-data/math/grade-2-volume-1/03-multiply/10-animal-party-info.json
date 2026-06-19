@@ -1,0 +1,261 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3只小兔，每只拿4根胡萝卜，一共有多少根？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3只小兔，每只拿4根胡萝卜，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×3",
+          "3×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每篮3个松果，有6篮，一共有多少个？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每盘6个桃子，有3盘，一共有多少个？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每盘6个桃子，有3盘，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "6×3",
+          "3×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "树上有3组小鸟，每组4只，一共有__只；还可以说有__个__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "总数"
+          },
+          {
+            "id": "b2",
+            "label": "组数"
+          },
+          {
+            "id": "b3",
+            "label": "每组只数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          3,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每篮3个，有6篮”应该和哪个算式连起来？",
+        "options": [
+          "3+6",
+          "6-3",
+          "3×6",
+          "3×3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小兔：3只，每只4根"
+          },
+          {
+            "id": "l2",
+            "text": "松果：每篮3个，有6篮"
+          },
+          {
+            "id": "l3",
+            "text": "桃子：每盘6个，有3盘"
+          },
+          {
+            "id": "l4",
+            "text": "小鸟：3组，每组4只"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "3×6=18（松果）"
+          },
+          {
+            "id": "r3",
+            "text": "6×3=18（桃子）"
+          },
+          {
+            "id": "r4",
+            "text": "4×3=12（小鸟）"
+          },
+          {
+            "id": "r1",
+            "text": "4×3=12（胡萝卜）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "动物聚会：小猴每盘端6个桃子，端了3盘。桃子共有多少个？",
+        "columns": [
+          "每盘个数",
+          "盘数"
+        ],
+        "rows": [
+          {
+            "每盘个数": 6,
+            "盘数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 3",
+        "right": "6 × 2"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每篮",
+          null,
+          "个松果，有",
+          null,
+          "篮，算式是",
+          null,
+          "×",
+          null,
+          "=18"
+        ],
+        "tokens": [
+          "6",
+          "18",
+          "3",
+          "9",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "6",
+          "3",
+          "6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按动物聚会里物品总数从少到多排",
+        "items": [
+          {
+            "id": "b",
+            "text": "6篮每篮3个"
+          },
+          {
+            "id": "a",
+            "text": "3只兔每只4根"
+          },
+          {
+            "id": "c",
+            "text": "3盘每盘6个"
+          },
+          {
+            "id": "d",
+            "text": "3组每组4只鸟"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

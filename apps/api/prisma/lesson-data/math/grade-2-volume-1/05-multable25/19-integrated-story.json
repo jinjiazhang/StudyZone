@@ -1,0 +1,177 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "操场上有4队同学，每队5人，一共有多少人？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3张乒乓球桌，每张桌旁2人，一共有多少人？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每组4个保龄球瓶，3组有多少个？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5个花盆，每盆4朵花，列式求一共有多少朵。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "5*4",
+          "4*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "2组同学，每组6人，列式求一共有多少人。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "2*6",
+          "6*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "右图活动场景里，5×2可以解决哪类问题？",
+        "options": [
+          "5个和2个相差多少",
+          "5组，每组2个",
+          "5个加2个",
+          "5排，每排5个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "有3张球桌，每桌2人，可以用3×2求总人数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 * 5",
+        "right": "3 * 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5盆花，每盆4朵：",
+          null,
+          "×",
+          null,
+          "=20"
+        ],
+        "tokens": [
+          "4",
+          "2",
+          "5",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4队，每队5人"
+          },
+          {
+            "id": "l2",
+            "text": "3桌，每桌2人"
+          },
+          {
+            "id": "l3",
+            "text": "3组，每组4个"
+          },
+          {
+            "id": "l4",
+            "text": "2组，每组6人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "12个"
+          },
+          {
+            "id": "r4",
+            "text": "12人"
+          },
+          {
+            "id": "r1",
+            "text": "20人"
+          },
+          {
+            "id": "r2",
+            "text": "6人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

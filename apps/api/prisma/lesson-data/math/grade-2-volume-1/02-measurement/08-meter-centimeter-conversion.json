@@ -1,0 +1,153 @@
+{
+  "exercises": [
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "3米换成厘米是多少？",
+        "fromUnit": "米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 300,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "unit_conversion",
+      "prompt": {
+        "statement": "5米换成厘米是多少？",
+        "fromUnit": "米",
+        "toUnit": "厘米"
+      },
+      "answer": {
+        "value": 500,
+        "unit": "厘米",
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "200厘米 = ? 米"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "600厘米 = ? 米"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2米30厘米写作 __ 米 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          30
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2米30厘米 = ? 厘米"
+      },
+      "answer": {
+        "value": 230,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1米15厘米 = ? 厘米"
+      },
+      "answer": {
+        "value": 115,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 * 100 + 20",
+        "right": "130"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3米 = ",
+          null,
+          null
+        ],
+        "tokens": [
+          "厘米",
+          "米",
+          "300",
+          "30"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "300",
+          "厘米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "175厘米可以看作：",
+        "options": [
+          "17米5厘米",
+          "1米75厘米",
+          "175米",
+          "1米7厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

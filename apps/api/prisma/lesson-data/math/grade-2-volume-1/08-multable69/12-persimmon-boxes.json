@@ -1,0 +1,161 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 - 30 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "54 个柿子，每盒 6 个，5 盒能装多少个？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "5*6",
+          "6*5",
+          "5×6",
+          "6×5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "54 个柿子装满 5 盒后，树上还剩多少个？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "54-5*6",
+          "54-6*5",
+          "54-5×6",
+          "54-6×5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5 盒装了 ___ 个柿子；树上还剩 ___ 个柿子。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "已装"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          24
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "树上还剩 24 个，每盒 6 个，还能再装满 ___ 盒；一共能装满 ___ 盒。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "再装"
+          },
+          {
+            "id": "b2",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“还剩多少个柿子”，要先算什么？",
+        "options": [
+          "5盒装了多少个",
+          "一棵树多高",
+          "每盒还剩多少",
+          "柿子有几种"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 × 6",
+        "right": "54"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

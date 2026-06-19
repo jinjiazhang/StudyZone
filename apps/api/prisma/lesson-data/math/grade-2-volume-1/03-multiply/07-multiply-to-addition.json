@@ -1,0 +1,249 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把3×6写成同数连加。",
+        "placeholder": "例如：6+6+6"
+      },
+      "answer": {
+        "accepted": [
+          "6+6+6",
+          "3+3+3+3+3+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把2×7写成同数连加。",
+        "placeholder": "例如：7+7"
+      },
+      "answer": {
+        "accepted": [
+          "7+7",
+          "2+2+2+2+2+2+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把5×4写成同数连加。",
+        "placeholder": "例如：4+4+4+4+4"
+      },
+      "answer": {
+        "accepted": [
+          "4+4+4+4+4",
+          "5+5+5+5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 3 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 × 2 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4×5可以看成几个5相加？",
+        "options": [
+          "4个5",
+          "5个4",
+          "4+5个",
+          "1个20"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4×5也可以看成几个4相加？",
+        "options": [
+          "4个5",
+          "9个1",
+          "5个4",
+          "20个4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3×7可以写成",
+          null,
+          "+",
+          null,
+          "+",
+          null
+        ],
+        "tokens": [
+          "3",
+          "7",
+          "14",
+          "21",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "7",
+          "7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×8"
+          },
+          {
+            "id": "l2",
+            "text": "4×3"
+          },
+          {
+            "id": "l3",
+            "text": "5×6"
+          },
+          {
+            "id": "l4",
+            "text": "3×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "3+3+3+3"
+          },
+          {
+            "id": "r3",
+            "text": "6+6+6+6+6"
+          },
+          {
+            "id": "r4",
+            "text": "9+9+9"
+          },
+          {
+            "id": "r1",
+            "text": "8+8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 × 8",
+        "right": "8 + 8"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按结果从小到大排",
+        "items": [
+          {
+            "id": "b",
+            "text": "2×9"
+          },
+          {
+            "id": "a",
+            "text": "3×4"
+          },
+          {
+            "id": "d",
+            "text": "5×5"
+          },
+          {
+            "id": "c",
+            "text": "4×5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7×3可以还原成3个__相加，结果是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "相同加数"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          21
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

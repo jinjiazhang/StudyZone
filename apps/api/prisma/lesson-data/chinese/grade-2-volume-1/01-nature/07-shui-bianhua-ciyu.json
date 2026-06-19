@@ -1,0 +1,297 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小水滴"
+          },
+          {
+            "id": "l1",
+            "text": "小硬球"
+          },
+          {
+            "id": "l2",
+            "text": "小花朵"
+          },
+          {
+            "id": "l3",
+            "text": "汽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "雪"
+          },
+          {
+            "id": "r1",
+            "text": "升到天空变成云"
+          },
+          {
+            "id": "r2",
+            "text": "雨"
+          },
+          {
+            "id": "r3",
+            "text": "冰雹"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "落下来"
+          },
+          {
+            "id": "l1",
+            "text": "打下来"
+          },
+          {
+            "id": "l2",
+            "text": "飘下来"
+          },
+          {
+            "id": "l3",
+            "text": "升到天空"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "冰雹"
+          },
+          {
+            "id": "r1",
+            "text": "汽变云"
+          },
+          {
+            "id": "r2",
+            "text": "雪"
+          },
+          {
+            "id": "r3",
+            "text": "雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r3",
+          "l1": "r0",
+          "l2": "r2",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "灌溉田地"
+          },
+          {
+            "id": "l1",
+            "text": "发动机器"
+          },
+          {
+            "id": "l2",
+            "text": "淹没庄稼"
+          },
+          {
+            "id": "l3",
+            "text": "冲毁房屋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "伤害庄稼的坏事"
+          },
+          {
+            "id": "r1",
+            "text": "让庄稼生长的好事"
+          },
+          {
+            "id": "r2",
+            "text": "破坏房屋的坏事"
+          },
+          {
+            "id": "r3",
+            "text": "帮助人们工作的好事"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出水变成雨的句子",
+        "tokens": [
+          "聚在一起",
+          "小水滴",
+          "落下来",
+          "冰雹",
+          "飘下来"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小水滴",
+          "聚在一起",
+          "落下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出水变成冰雹的句子",
+        "tokens": [
+          "小硬球",
+          "打下来",
+          "我变成",
+          "雪花",
+          "飘下来"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我变成",
+          "小硬球",
+          "打下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出水变成雪的句子",
+        "tokens": [
+          "飘下来",
+          "小花朵",
+          "我变成",
+          "落下来",
+          "云朵"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我变成",
+          "小花朵",
+          "飘下来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里“我”平常在哪里睡觉？",
+        "options": [
+          "天空中",
+          "池子里",
+          "树叶上",
+          "田地里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里“我”在江河里做什么？",
+        "options": [
+          "睡觉",
+          "散步",
+          "奔跑",
+          "跳舞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我”温和时会做什么好事？",
+        "options": [
+          "冲毁房屋",
+          "淹没庄稼",
+          "刮起暴风",
+          "灌溉田地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《我是什么》的课文页",
+        "options": [
+          {
+            "id": "p006",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-006.jpg",
+            "label": "小蝌蚪找妈妈第一页"
+          },
+          {
+            "id": "p013",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-013.jpg",
+            "label": "植物妈妈有办法第一页"
+          },
+          {
+            "id": "p017",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-017.jpg",
+            "label": "语文园地日积月累"
+          },
+          {
+            "id": "p010",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-010.jpg",
+            "label": "我是什么第一页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p010"
+      },
+      "difficulty": 1
+    }
+  ]
+}

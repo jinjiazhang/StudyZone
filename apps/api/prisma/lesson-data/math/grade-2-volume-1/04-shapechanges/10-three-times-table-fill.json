@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填一填：3，6，___，12，___，18。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第1空"
+          },
+          {
+            "id": "b2",
+            "label": "第2空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          15
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 7 = ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 8 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 9 = ?"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3 × ",
+          null,
+          " = 24，口诀：",
+          null
+        ],
+        "tokens": [
+          "8",
+          "7",
+          "三八二十四",
+          "三七二十一"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "8",
+          "三八二十四"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“三九二十七”可以算哪道题？",
+        "options": [
+          "3×9",
+          "3+9",
+          "9-3",
+          "3×7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个是3的口诀结果？",
+        "options": [
+          "22",
+          "21",
+          "25",
+          "28"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 6",
+        "right": "18"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3×4"
+          },
+          {
+            "id": "l2",
+            "text": "3×6"
+          },
+          {
+            "id": "l3",
+            "text": "3×8"
+          },
+          {
+            "id": "l4",
+            "text": "3×9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "27"
+          },
+          {
+            "id": "r2",
+            "text": "12"
+          },
+          {
+            "id": "r3",
+            "text": "24"
+          },
+          {
+            "id": "r4",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3×5和5×3的结果都是15。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每行3个圆点，摆8行。列式求一共有多少个圆点。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "3*8",
+          "8*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 8 - 3 = ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每束3朵花，7束共有多少朵？",
+        "columns": [
+          "束数",
+          "每束朵数",
+          "总朵数"
+        ],
+        "rows": [
+          {
+            "束数": 7,
+            "每束朵数": 3,
+            "总朵数": 21
+          }
+        ]
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

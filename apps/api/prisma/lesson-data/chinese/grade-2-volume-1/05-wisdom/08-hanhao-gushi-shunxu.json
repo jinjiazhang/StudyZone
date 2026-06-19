@@ -1,0 +1,221 @@
+{
+  "id": "08-hanhao-gushi-shunxu",
+  "title": "寒号鸟故事顺序",
+  "description": "依据课本/assets/textbooks/chinese/grade-2-volume-1/pages/page-061.jpg-/assets/textbooks/chinese/grade-2-volume-1/pages/page-063.jpg，梳理故事发展的时间顺序。",
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出第一段的地点关系",
+        "tokens": [
+          "河边有",
+          "喜鹊住",
+          "石崖前面",
+          "一棵杨树",
+          "寒号鸟住",
+          "崖缝"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "石崖前面",
+          "河边有",
+          "一棵杨树",
+          "喜鹊住",
+          "寒号鸟住",
+          "崖缝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出故事提示",
+        "tokens": [
+          "冬天说到就到",
+          "寒冬腊月",
+          "冬天快要到了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "冬天快要到了",
+          "冬天说到就到",
+          "寒冬腊月"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "几阵秋风后，喜鹊忙着做什么？",
+        "options": [
+          "唱歌",
+          "找青蛙",
+          "做窝",
+          "摘葫芦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "天气晴朗时，寒号鸟主要做什么？",
+        "options": [
+          "做窝",
+          "读书",
+          "搬家",
+          "出去玩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "寒号鸟第一次夜里说“明天就做窝”，第二天怎样？",
+        "options": [
+          "仍然懒惰",
+          "马上做窝",
+          "飞走了",
+          "去帮喜鹊"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "喜鹊一早飞出去，东寻西找，衔枯草做窝。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "寒号鸟每次都听了喜鹊的劝告。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "秋风来了"
+          },
+          {
+            "id": "l_1",
+            "text": "冬天到了"
+          },
+          {
+            "id": "l_2",
+            "text": "寒冬腊月"
+          },
+          {
+            "id": "l_3",
+            "text": "天亮以后"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "大雪纷飞"
+          },
+          {
+            "id": "r_0",
+            "text": "喜鹊准备过冬"
+          },
+          {
+            "id": "r_3",
+            "text": "寒号鸟冻死了"
+          },
+          {
+            "id": "r_1",
+            "text": "寒风刮着"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "寒号鸟的拖延",
+        "passage": "喜鹊劝寒号鸟做窝，寒号鸟总说“明天就做窝”。天气暖和时，它伸伸懒腰，不肯动手。等到寒冬腊月，崖缝里冷得像冰窖，它已经来不及了。",
+        "questions": [
+          {
+            "question": "寒号鸟最大的问题是什么？",
+            "options": [
+              "总拖到明天",
+              "不会找枯草",
+              "找不到喜鹊"
+            ]
+          },
+          {
+            "question": "“冷得像冰窖”说明什么？",
+            "options": [
+              "非常热闹",
+              "非常寒冷",
+              "非常明亮"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文是一个民间故事，告诉我们做事要怎样？",
+        "options": [
+          "只看天气玩耍",
+          "今天的事及时做",
+          "不听别人劝告",
+          "等冬天再准备"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

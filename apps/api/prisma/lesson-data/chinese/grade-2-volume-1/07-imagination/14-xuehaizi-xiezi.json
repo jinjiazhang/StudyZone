@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yào",
+        "sentence": "妈妈，我也__去！",
+        "character": "要",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "要"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bàn",
+        "sentence": "小白兔有了小伙__。",
+        "character": "伴",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "伴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dé",
+        "sentence": "小白兔玩__很开心。",
+        "character": "得",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "得"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "máng",
+        "sentence": "他连__把小白兔抱起来。",
+        "character": "忙",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "忙"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qì",
+        "sentence": "雪孩子变成了水__。",
+        "character": "汽",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "汽"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huǒ",
+        "sentence": "小白兔有了小__伴。",
+        "character": "伙",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "伙"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gē",
+        "sentence": "小白兔唱__给雪孩子听。",
+        "character": "歌",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "歌"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bì",
+        "sentence": "他躺在床上，__上眼睛。",
+        "character": "闭",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "闭"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shuí",
+        "sentence": "是谁救了小白兔？",
+        "character": "谁",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "谁"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "忙",
+        "tokens": [
+          "船",
+          "碌",
+          "歌",
+          "着",
+          "低",
+          "人"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“忙”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "碌",
+            "着",
+            "人"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "歌",
+        "tokens": [
+          "岸",
+          "声",
+          "猫",
+          "唱",
+          "野",
+          "曲"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“歌”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "声",
+            "唱",
+            "曲"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "伙伴"
+          },
+          {
+            "id": "l_1",
+            "text": "水汽"
+          },
+          {
+            "id": "l_2",
+            "text": "闭眼"
+          },
+          {
+            "id": "l_3",
+            "text": "连忙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "很轻的水蒸气"
+          },
+          {
+            "id": "r_2",
+            "text": "合上眼睛"
+          },
+          {
+            "id": "r_3",
+            "text": "赶紧"
+          },
+          {
+            "id": "r_0",
+            "text": "一起玩的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

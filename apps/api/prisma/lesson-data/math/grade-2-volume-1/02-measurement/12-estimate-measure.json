@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估测后实测，下面哪种说法正确？",
+        "options": [
+          "估计一定等于测量",
+          "不用写单位",
+          "越大越准",
+          "测量能检验估计"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪个物体估计与测量相差最大？",
+        "columns": [
+          "物体",
+          "估计/厘米",
+          "测量/厘米"
+        ],
+        "rows": [
+          {
+            "物体": "铅笔",
+            "估计/厘米": 15,
+            "测量/厘米": 17
+          },
+          {
+            "物体": "文具盒",
+            "估计/厘米": 25,
+            "测量/厘米": 20
+          },
+          {
+            "物体": "橡皮",
+            "估计/厘米": 4,
+            "测量/厘米": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "估计25厘米，测量20厘米，相差 ? 厘米"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "估计15厘米，测量17厘米，相差 ? 厘米"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "25 - 20",
+        "right": "15 - 17"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估计门高时，选择哪个参照更合理？",
+        "options": [
+          "自己的身高",
+          "1厘米的小格",
+          "一粒米",
+          "一角硬币"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "估测时可以先想一想1厘米或1米有多长。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "先估一估"
+          },
+          {
+            "id": "l2",
+            "text": "再量一量"
+          },
+          {
+            "id": "l3",
+            "text": "记录单位"
+          },
+          {
+            "id": "l4",
+            "text": "比较差距"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "得到较准确结果"
+          },
+          {
+            "id": "r4",
+            "text": "改进估测"
+          },
+          {
+            "id": "r1",
+            "text": "大致判断长度"
+          },
+          {
+            "id": "r3",
+            "text": "说明数字含义"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "估测时先找",
+          null,
+          "，实测后记得写",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "单位",
+          "颜色",
+          "参照",
+          "价格"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "参照",
+          "单位"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "估计82厘米，测量95厘米，列式求相差多少厘米。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "95-82"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "黑板的长更可能是：",
+        "options": [
+          "3米",
+          "3厘米",
+          "30米",
+          "300米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "黑板长3米，换成厘米是 ? 厘米"
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "课桌长60厘米，宽45厘米，长比宽多 ? 厘米"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "60",
+        "right": "45"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "课桌长 __ 厘米，宽 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "长"
+          },
+          {
+            "id": "b2",
+            "label": "宽"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          60,
+          45
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从座位走到讲台，长度单位选哪个更合适？",
+        "options": [
+          "厘米",
+          "米",
+          "克",
+          "角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪件教室物体最长？",
+        "columns": [
+          "物体",
+          "长度"
+        ],
+        "rows": [
+          {
+            "物体": "粉笔",
+            "长度": 7
+          },
+          {
+            "物体": "课桌",
+            "长度": 60
+          },
+          {
+            "物体": "黑板",
+            "长度": 300
+          }
+        ]
+      },
+      "answer": {
+        "value": 300,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课桌长6米比60厘米更合理。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "课桌长60厘米，宽45厘米，列式求长比宽多多少厘米。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "60-45"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3米 = ",
+          null,
+          null
+        ],
+        "tokens": [
+          "厘米",
+          "米",
+          "300",
+          "30"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "300",
+          "厘米"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

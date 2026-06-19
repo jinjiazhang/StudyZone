@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 7 = ?"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 ÷ 7 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "42 只小鸟，每间住 6 只，求需要几间房子。列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "42/6",
+          "42÷6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "7 间房子，每间住 6 只，求一共能住几只小鸟。列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "7*6",
+          "6*7",
+          "7×6",
+          "6×7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "每间住 6 只，7 间房子能住 ___ 只；42 只小鸟正好住 ___ 间。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "能住"
+          },
+          {
+            "id": "b2",
+            "label": "房间数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          42,
+          7
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“42 ÷ 6 = 7”在小鸟住房情境中，7 表示什么？",
+        "options": [
+          "一共有7只小鸟",
+          "每间住7只",
+          "需要7间房子",
+          "每间房用7块木板"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“6只小鸟住一间，42只小鸟能住几间”应选择哪个算式？",
+        "options": [
+          "42 × 6",
+          "42 ÷ 6",
+          "6 ÷ 42",
+          "42 - 6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 7",
+        "right": "42"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "42",
+          null,
+          "6",
+          null,
+          "7"
+        ],
+        "tokens": [
+          "7",
+          "×",
+          "42",
+          "=",
+          "÷",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

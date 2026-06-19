@@ -1,0 +1,269 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "仿照课文排句子",
+        "tokens": [
+          "帮奶奶扫地",
+          "如果我",
+          "扫帚",
+          "拿着扫帚",
+          "浇田",
+          "您高兴吗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "如果我",
+          "拿着扫帚",
+          "帮奶奶扫地",
+          "您高兴吗"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出关心家人的句子",
+        "tokens": [
+          "倒一杯水",
+          "您高兴吗",
+          "如果我",
+          "月亮",
+          "给妈妈",
+          "桥上"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "如果我",
+          "给妈妈",
+          "倒一杯水",
+          "您高兴吗"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话更像《彩虹》里的表达？",
+        "options": [
+          "如果我提着它，走到桥上，您高兴吗？",
+          "我今天吃了苹果。",
+          "小鸟飞过树林。",
+          "星星一闪一闪。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“如果我……您高兴吗？”适合用来表达什么？",
+        "options": [
+          "介绍天气",
+          "说明颜色",
+          "想为别人做事的愿望",
+          "数一数物品"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "仿写时可以先想“为谁做什么”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "仿写《彩虹》必须写真的走上彩虹桥。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子",
+        "tokens": [
+          "照着您",
+          "水壶",
+          "我拿着",
+          "梳头",
+          "圆圆的月亮",
+          "秋千"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我拿着",
+          "圆圆的月亮",
+          "照着您",
+          "梳头"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "提着水壶"
+          },
+          {
+            "id": "l_1",
+            "text": "拿着镜子"
+          },
+          {
+            "id": "l_2",
+            "text": "挂起秋千"
+          },
+          {
+            "id": "l_3",
+            "text": "仿写句子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "让哥哥快乐"
+          },
+          {
+            "id": "r_0",
+            "text": "帮爸爸浇田"
+          },
+          {
+            "id": "r_3",
+            "text": "写出关心别人"
+          },
+          {
+            "id": "r_1",
+            "text": "帮妈妈梳头"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“您”在课文中表示什么？",
+        "options": [
+          "对自己的称呼",
+          "对长辈的尊称",
+          "小朋友的名字",
+          "一种玩具"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我在下雨吗？”这句话表现了“我”的什么想象？",
+        "options": [
+          "真的遇到暴雨",
+          "不想浇田",
+          "忘记带伞",
+          "把洒水想成下雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪幅教材页有《彩虹》的写字格和课后题？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-034.jpg",
+            "label": "彩虹第二页"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-038.jpg",
+            "label": "数星星第二页"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-041.jpg",
+            "label": "园地标点"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "去外婆家第一页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "挂",
+        "tokens": [
+          "起",
+          "水",
+          "号",
+          "面",
+          "念",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“挂”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "起",
+            "号",
+            "念"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

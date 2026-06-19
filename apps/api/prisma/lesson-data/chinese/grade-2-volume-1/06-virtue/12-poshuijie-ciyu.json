@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "敲起"
+          },
+          {
+            "id": "l1",
+            "text": "撒满"
+          },
+          {
+            "id": "l2",
+            "text": "驶过"
+          },
+          {
+            "id": "l3",
+            "text": "升上"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "江面"
+          },
+          {
+            "id": "r3",
+            "text": "天空"
+          },
+          {
+            "id": "r0",
+            "text": "象脚鼓"
+          },
+          {
+            "id": "r1",
+            "text": "花瓣"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "鲜红的"
+          },
+          {
+            "id": "l1",
+            "text": "清清的"
+          },
+          {
+            "id": "l2",
+            "text": "欢乐的"
+          },
+          {
+            "id": "l3",
+            "text": "难忘的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "鼓点"
+          },
+          {
+            "id": "r3",
+            "text": "泼水节"
+          },
+          {
+            "id": "r0",
+            "text": "地毯"
+          },
+          {
+            "id": "r1",
+            "text": "水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一条条龙船”写出了龙船怎样？",
+        "options": [
+          "很多",
+          "很少",
+          "很小",
+          "很旧"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一串串花炮”写出了花炮怎样？",
+        "options": [
+          "连续升起、很多",
+          "只有一串",
+          "没有声音",
+          "全在水里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“笑容满面”可以用来描写谁？",
+        "options": [
+          "开心的人",
+          "寒冷的夜晚",
+          "陡峭的路",
+          "清油灯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "连词成句",
+        "tokens": [
+          "驶过",
+          "花炮",
+          "一条条",
+          "江面",
+          "龙船",
+          "银碗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一条条",
+          "龙船",
+          "驶过",
+          "江面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "连词成句",
+        "tokens": [
+          "象脚鼓",
+          "花瓣",
+          "人们",
+          "敲起",
+          "银碗"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人们",
+          "敲起",
+          "象脚鼓"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuàn",
+        "sentence": "一__串花炮升上天空。",
+        "character": "串",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "串"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mín",
+        "sentence": "傣族人__和周总理一起跳舞。",
+        "character": "民",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "民"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句话最能表现泼水节令人难忘？",
+        "options": [
+          "多么幸福啊，1961年的泼水节！",
+          "山高路陡。",
+          "灯就亮了。",
+          "他一点儿也不动摇。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

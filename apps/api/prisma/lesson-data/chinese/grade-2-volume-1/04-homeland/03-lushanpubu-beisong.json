@@ -1,0 +1,277 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "望庐山瀑布",
+        "author": "李白",
+        "lines": [
+          [
+            "日照香炉生",
+            null
+          ]
+        ],
+        "options": [
+          "紫烟",
+          "白云",
+          "青烟",
+          "红霞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "望庐山瀑布",
+        "author": "李白",
+        "lines": [
+          [
+            "遥看瀑布",
+            null,
+            "川"
+          ]
+        ],
+        "options": [
+          "落九",
+          "挂前",
+          "入海",
+          "依山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "望庐山瀑布",
+        "author": "李白",
+        "lines": [
+          [
+            "飞流直下",
+            null,
+            "尺"
+          ]
+        ],
+        "options": [
+          "一层",
+          "千里",
+          "三千",
+          "百丈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "望庐山瀑布",
+        "author": "李白",
+        "lines": [
+          [
+            "疑是银河落",
+            null
+          ]
+        ],
+        "options": [
+          "前川",
+          "山顶",
+          "海流",
+          "九天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "望庐山瀑布",
+        "author": "李白",
+        "lines": [
+          [
+            null,
+            "香炉生紫烟"
+          ],
+          [
+            "遥看瀑布挂",
+            null
+          ],
+          [
+            "飞流直下",
+            null,
+            "尺"
+          ],
+          [
+            "疑是银河落九天"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "日照",
+              "月照",
+              "风吹",
+              "云遮"
+            ]
+          },
+          {
+            "options": [
+              "前川",
+              "山川",
+              "山前",
+              "银川"
+            ]
+          },
+          {
+            "options": [
+              "三千",
+              "千里",
+              "一层",
+              "九天"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：飞流直下三千尺",
+        "tokens": [
+          "三千尺",
+          "银河",
+          "九天",
+          "飞流",
+          "直下"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "飞流",
+          "直下",
+          "三千尺"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“飞流直下三千尺”让人想到瀑布怎样？",
+        "options": [
+          "又高又急",
+          "很小很慢",
+          "没有水声",
+          "藏在屋里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“疑是银河落九天”把瀑布想象成什么？",
+        "options": [
+          "太阳升起来",
+          "银河从天上落下",
+          "黄河入海",
+          "桃子落石盘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "香炉"
+          },
+          {
+            "id": "l1",
+            "text": "紫烟"
+          },
+          {
+            "id": "l2",
+            "text": "银河"
+          },
+          {
+            "id": "l3",
+            "text": "九天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "天上的星河"
+          },
+          {
+            "id": "r0",
+            "text": "庐山的香炉峰"
+          },
+          {
+            "id": "r3",
+            "text": "很高的天空"
+          },
+          {
+            "id": "r1",
+            "text": "紫色的云雾"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "紫",
+        "hint": "选择“紫”的正确读音",
+        "options": [
+          "shōu",
+          "shén",
+          "zǐ",
+          "xiàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

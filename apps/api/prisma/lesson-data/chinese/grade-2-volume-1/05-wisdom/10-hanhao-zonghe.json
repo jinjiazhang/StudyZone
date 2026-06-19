@@ -1,0 +1,232 @@
+{
+  "id": "10-hanhao-zonghe",
+  "title": "寒号鸟综合运用",
+  "description": "综合练习《寒号鸟》的字词、句式和寓意。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "复",
+        "hint": "重复着哀号",
+        "options": [
+          "fú",
+          "fù",
+          "pù",
+          "hù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "将",
+        "hint": "将来难过",
+        "options": [
+          "jiàng",
+          "qiāng",
+          "jiāng",
+          "jiǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lěng",
+        "sentence": "崖缝里很__。",
+        "blankPlaceholder": "__",
+        "character": "冷",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "冷"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "liàng",
+        "sentence": "天__了，太阳出来了。",
+        "blankPlaceholder": "__",
+        "character": "亮",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "亮"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "做",
+        "tokens": [
+          "事",
+          "冷",
+          "窝",
+          "错",
+          "工",
+          "花",
+          "饭"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“做”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "事",
+            "窝",
+            "工",
+            "饭"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“现在懒惰，将来难过”是谁劝谁的话？",
+        "options": [
+          "寒号鸟劝喜鹊",
+          "青蛙劝小鸟",
+          "邻居劝种葫芦的人",
+          "喜鹊劝寒号鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "寒号鸟最后冻死，是因为它一直拖着不做窝。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原寒号鸟夜里的话",
+        "tokens": [
+          "寒风",
+          "冻死我",
+          "明天",
+          "哆啰啰",
+          "就做窝"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "哆啰啰",
+          "寒风",
+          "冻死我",
+          "明天",
+          "就做窝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "劝告"
+          },
+          {
+            "id": "l_1",
+            "text": "懒惰"
+          },
+          {
+            "id": "l_2",
+            "text": "寒冬腊月"
+          },
+          {
+            "id": "l_3",
+            "text": "哀号"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "寒冷的冬天"
+          },
+          {
+            "id": "r_0",
+            "text": "劝人改正"
+          },
+          {
+            "id": "r_3",
+            "text": "悲伤地叫"
+          },
+          {
+            "id": "r_1",
+            "text": "不愿动手做事"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "单元故事比较",
+        "passage": "《寒号鸟》中的喜鹊提前做窝，寒号鸟却一拖再拖。这个故事和《坐井观天》一样，都借动物的故事告诉我们一个道理。",
+        "questions": [
+          {
+            "question": "《寒号鸟》告诉我们的道理是？",
+            "options": [
+              "看天要坐井",
+              "做事要及时",
+              "葫芦不用管"
+            ]
+          },
+          {
+            "question": "两个故事共同的特点是？",
+            "options": [
+              "都写古代诗人",
+              "都写救护车",
+              "借故事说道理"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

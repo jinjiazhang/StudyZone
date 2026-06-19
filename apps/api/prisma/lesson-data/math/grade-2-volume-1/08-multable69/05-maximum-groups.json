@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 4 = 4 … ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 5 = 3 … ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 7 = 2 … ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 只松鼠，每组 4 只：可以分 ___ 组，还剩 ___ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "组数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 只松鼠，每组 5 只：可以分 ___ 组，还剩 ___ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "组数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每组 4 只，为什么最多只能分 4 组？",
+        "options": [
+          "4×4=16，5×4=20超过18",
+          "4×5=20正好",
+          "18比4小",
+          "4+4=8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每组 5 只，最多分 3 组，还剩几只？",
+        "options": [
+          "1只",
+          "2只",
+          "3只",
+          "4只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 4",
+        "right": "18"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 × 4",
+        "right": "18"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "5",
+          "=",
+          "3",
+          null,
+          "3"
+        ],
+        "tokens": [
+          "3",
+          "…",
+          "5",
+          "÷",
+          "=",
+          "18"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "…"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

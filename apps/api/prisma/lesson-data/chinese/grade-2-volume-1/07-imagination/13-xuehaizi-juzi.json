@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写得更具体？",
+        "options": [
+          "雪孩子变成了水汽。",
+          "雪孩子不见了。",
+          "雪孩子在屋外。",
+          "雪孩子变成了水汽，很轻很轻的水汽。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一朵美丽的白云”比“一朵白云”多写了什么？",
+        "options": [
+          "白云的样子",
+          "白云的声音",
+          "白云的味道",
+          "白云的数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“火越烧越旺”中“越……越……”说明火怎样？",
+        "options": [
+          "马上熄灭",
+          "越来越旺",
+          "一动不动",
+          "很快变小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成更具体的句子",
+        "tokens": [
+          "小白兔",
+          "很轻很轻的",
+          "大海",
+          "水汽",
+          "雪孩子",
+          "变成了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪孩子",
+          "变成了",
+          "很轻很轻的",
+          "水汽"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成更具体的句子",
+        "tokens": [
+          "天空",
+          "一朵美丽的",
+          "火星",
+          "白云",
+          "雪孩子",
+          "变成了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪孩子",
+          "变成了",
+          "一朵美丽的",
+          "白云"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "很轻很轻的"
+          },
+          {
+            "id": "l_1",
+            "text": "美丽的"
+          },
+          {
+            "id": "l_2",
+            "text": "呛人的"
+          },
+          {
+            "id": "l_3",
+            "text": "烫人的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "白云"
+          },
+          {
+            "id": "r_2",
+            "text": "烟"
+          },
+          {
+            "id": "r_3",
+            "text": "火"
+          },
+          {
+            "id": "r_0",
+            "text": "水汽"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“很轻很轻”让句子更具体、更有画面。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“雪孩子变成了白云”和“雪孩子变成了一朵美丽的白云”意思完全没有差别。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "晒",
+        "hint": "请选择字【晒】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "shài",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浑",
+        "hint": "请选择字【浑】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "hún"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "汽",
+        "hint": "请选择字【汽】的正确拼音",
+        "options": [
+          "qì",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "伙",
+        "hint": "请选择字【伙】的正确拼音",
+        "options": [
+          "shān",
+          "huǒ",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

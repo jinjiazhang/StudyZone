@@ -1,0 +1,258 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lóu",
+        "sentence": "八角__上的灯亮了。",
+        "character": "楼",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "楼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nián",
+        "sentence": "这是艰苦斗争的__代。",
+        "character": "年",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "年"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yè",
+        "sentence": "每当__幕降临，灯就亮了。",
+        "character": "夜",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "夜"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pī",
+        "sentence": "毛主席__着薄毯子写文章。",
+        "character": "披",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "披"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qīng",
+        "sentence": "他左手__轻地拨了拨灯芯。",
+        "character": "轻",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "轻"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lì",
+        "sentence": "灯光照亮了胜__的道路。",
+        "character": "利",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "利"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "楼",
+        "tokens": [
+          "水",
+          "房",
+          "衣",
+          "上",
+          "草",
+          "角",
+          "云"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“楼”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "房",
+            "上",
+            "角"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "军",
+        "tokens": [
+          "花",
+          "衣",
+          "碗",
+          "人",
+          "鱼",
+          "队",
+          "风"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“军”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "衣",
+            "人",
+            "队"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "夜",
+        "tokens": [
+          "楼",
+          "晚",
+          "鞋",
+          "深",
+          "山",
+          "半",
+          "火"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“夜”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "晚",
+            "深",
+            "半"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "薄毯子"
+          },
+          {
+            "id": "l1",
+            "text": "灯芯"
+          },
+          {
+            "id": "l2",
+            "text": "沉思"
+          },
+          {
+            "id": "l3",
+            "text": "光辉著作"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "认真深入地思考"
+          },
+          {
+            "id": "r3",
+            "text": "很有意义的文章作品"
+          },
+          {
+            "id": "r0",
+            "text": "轻薄的毯子"
+          },
+          {
+            "id": "r1",
+            "text": "油灯中点燃的部分"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子",
+        "tokens": [
+          "写文章",
+          "深夜",
+          "竹椅上",
+          "毛主席",
+          "坐在",
+          "灯下"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "毛主席",
+          "坐在",
+          "竹椅上",
+          "写文章"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中的“寒冬腊月”说明天气怎样？",
+        "options": [
+          "温暖",
+          "炎热",
+          "寒冷",
+          "凉爽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

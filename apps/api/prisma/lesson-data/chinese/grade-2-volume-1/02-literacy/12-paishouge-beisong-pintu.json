@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：动物世界很新奇。",
+        "tokens": [
+          "保护",
+          "动物",
+          "农事",
+          "世界",
+          "很",
+          "新奇"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "动物",
+          "世界",
+          "很",
+          "新奇"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：孔雀锦鸡是伙伴儿。",
+        "tokens": [
+          "猛虎",
+          "孔雀",
+          "月光",
+          "锦鸡",
+          "是",
+          "伙伴儿"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "孔雀",
+          "锦鸡",
+          "是",
+          "伙伴儿"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：天空雁群会写字。",
+        "tokens": [
+          "小溪",
+          "天空",
+          "铜号",
+          "雁群",
+          "会",
+          "写字"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天空",
+          "雁群",
+          "会",
+          "写字"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：黄鹂百灵唱不休。",
+        "tokens": [
+          "花园",
+          "黄鹂",
+          "稻田",
+          "百灵",
+          "唱",
+          "不休"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "黄鹂",
+          "百灵",
+          "唱",
+          "不休"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "拍手歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "你拍一，我拍一，"
+          ],
+          [
+            null,
+            "很新奇。"
+          ]
+        ],
+        "options": [
+          "人和动物",
+          "保护动物",
+          "动物世界",
+          "竹林熊猫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "拍手歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "你拍九，我拍九，"
+          ],
+          [
+            null,
+            "是朋友。"
+          ]
+        ],
+        "options": [
+          "大小动物",
+          "孔雀锦鸡",
+          "天空雁群",
+          "人和动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "拍手歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "你拍十，我拍十，"
+          ],
+          [
+            null,
+            "是大事。"
+          ]
+        ],
+        "options": [
+          "保护动物",
+          "动物世界",
+          "黄鹂百灵",
+          "丛林深处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“你拍五，我拍五，丛林深处有猛虎。”",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“你拍七，我拍七，竹林熊猫在唱歌。”",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这首儿歌采用了什么形式？",
+        "options": [
+          "写信",
+          "拍手游戏",
+          "问路",
+          "做饭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "苹果剪影"
+          },
+          {
+            "id": "l1",
+            "text": "花朵剪影"
+          },
+          {
+            "id": "l2",
+            "text": "心形剪影"
+          },
+          {
+            "id": "l3",
+            "text": "蝴蝶剪影"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "上凹下尖"
+          },
+          {
+            "id": "r0",
+            "text": "有圆润果身和小叶"
+          },
+          {
+            "id": "r3",
+            "text": "左右翅膀对应"
+          },
+          {
+            "id": "r1",
+            "text": "花瓣围着中心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "课本第73页第2题中，第一行图案要和什么配对？",
+        "options": [
+          {
+            "id": "g17_0",
+            "label": "乘法口诀表"
+          },
+          {
+            "id": "g17_1",
+            "label": "尺子刻度"
+          },
+          {
+            "id": "g17_2",
+            "label": "第二行剪下图案后的纸"
+          },
+          {
+            "id": "g17_3",
+            "label": "硬币价格"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g17_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "根据剪下的图案找剩下的纸，关键看什么？",
+        "options": [
+          "颜色是不是最深",
+          "数字是否最大",
+          "轮廓是否正好对应",
+          "图案是否能旋转"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "如果剪下的是心形，剩下纸上的洞应是什么形状？",
+        "options": [
+          {
+            "id": "g18_0",
+            "label": "心形空洞"
+          },
+          {
+            "id": "g18_1",
+            "label": "三角形空洞"
+          },
+          {
+            "id": "g18_2",
+            "label": "长方形空洞"
+          },
+          {
+            "id": "g18_3",
+            "label": "没有空洞"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g18_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "剪下来的图案和纸上的空洞，形状应当",
+          null,
+          "，边缘应当",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "吻合",
+          "平移",
+          "相同",
+          "相乘"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "相同",
+          "吻合"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么不能只看图案颜色来配对？",
+        "options": [
+          "颜色可能相同，但轮廓不一定对应",
+          "颜色一定会改变形状",
+          "颜色能决定方向",
+          "颜色就是答案"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种配对最合理？",
+        "options": [
+          {
+            "id": "g19_0",
+            "label": "苹果剪影配心形空洞"
+          },
+          {
+            "id": "g19_1",
+            "label": "花朵剪影配长方形空洞"
+          },
+          {
+            "id": "g19_2",
+            "label": "心形剪影配汽车路线"
+          },
+          {
+            "id": "g19_3",
+            "label": "蝴蝶剪影配蝴蝶形空洞"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g19_3"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "缺口朝左"
+          },
+          {
+            "id": "l1",
+            "text": "缺口朝右"
+          },
+          {
+            "id": "l2",
+            "text": "上下尖角"
+          },
+          {
+            "id": "l3",
+            "text": "左右翅膀"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "对应右侧被剪掉的部分"
+          },
+          {
+            "id": "r3",
+            "text": "常见于蝴蝶图案"
+          },
+          {
+            "id": "r0",
+            "text": "对应左侧被剪掉的部分"
+          },
+          {
+            "id": "r2",
+            "text": "常见于叶片或心形尖端"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一个图案翻面后，和原来的空洞还能吻合吗？",
+        "options": [
+          "一定不可以",
+          "一定变成圆形",
+          "一定只和尺子吻合",
+          "可能可以，要看形状方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪一项更像“剪纸配洞”的思考？",
+        "options": [
+          {
+            "id": "g20_0",
+            "label": "把图案数一数有几厘米"
+          },
+          {
+            "id": "g20_1",
+            "label": "把图案移到空洞上看边缘是否重合"
+          },
+          {
+            "id": "g20_2",
+            "label": "把图案改成乘法算式"
+          },
+          {
+            "id": "g20_3",
+            "label": "把图案向出口移动"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g20_1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把剪影和空洞连线时，合适的思考顺序是：",
+        "items": [
+          {
+            "id": "o0",
+            "text": "检查方向和缺口"
+          },
+          {
+            "id": "o1",
+            "text": "观察剪影外形"
+          },
+          {
+            "id": "o2",
+            "text": "连线确认"
+          },
+          {
+            "id": "o3",
+            "text": "寻找相同轮廓的空洞"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个空洞比剪影大很多，说明它们怎样？",
+        "options": [
+          "一定吻合",
+          "不吻合",
+          "一定是对称轴",
+          "一定是华容道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

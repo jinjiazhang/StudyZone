@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "大客车有 24 位乘客，面包车有 6 位乘客，大客车人数是面包车的 ? 倍。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小轿车人数是面包车的 2 倍，面包车有 6 位，小轿车有 ? 位乘客。"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "哥哥身高是弟弟的 3 倍，弟弟高 4 个单位，哥哥高 ? 个单位。"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "铅笔有 20 支，是毛笔的 5 倍，毛笔有 ? 支。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "大客车 24 位，面包车 6 位，求大客车人数是面包车的几倍。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "24÷6=4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小轿车是面包车的 2 倍，面包车 6 位，求小轿车人数。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "6×2=12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "铅笔 20 支，是毛笔的 5 倍，毛笔有 __ 支；彩笔 12 支，是毛笔的 __ 倍。",
+        "blanks": [
+          {
+            "id": "brush",
+            "label": "毛笔"
+          },
+          {
+            "id": "times",
+            "label": "倍数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“铅笔是毛笔的 5 倍”且铅笔 20 支，求毛笔支数，应列式？",
+        "options": [
+          "20×5",
+          "20÷5",
+          "20+5",
+          "20-5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "面包车 6 位，小轿车是它的 2 倍，小轿车有几位？",
+        "options": [
+          "3 位",
+          "8 位",
+          "12 位",
+          "14 位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 6",
+        "right": "20 ÷ 5"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "24是6的几倍"
+          },
+          {
+            "id": "l2",
+            "text": "12是6的几倍"
+          },
+          {
+            "id": "l3",
+            "text": "20是4的几倍"
+          },
+          {
+            "id": "l4",
+            "text": "18是6的几倍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5 倍"
+          },
+          {
+            "id": "r1",
+            "text": "4 倍"
+          },
+          {
+            "id": "r4",
+            "text": "3 倍"
+          },
+          {
+            "id": "r2",
+            "text": "2 倍"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "20",
+          null,
+          "5",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "4",
+          "5",
+          "÷",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

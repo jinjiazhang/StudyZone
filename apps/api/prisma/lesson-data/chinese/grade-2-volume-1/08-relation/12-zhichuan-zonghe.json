@@ -1,0 +1,219 @@
+{
+  "id": "12-zhichuan-zonghe",
+  "title": "纸船综合",
+  "description": "综合复习《纸船和风筝》的字词、故事顺序和情感表达。",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《纸船和风筝》的教材页面。",
+        "options": [
+          {
+            "id": "p100",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-100.jpg",
+            "label": "《称赞》开头"
+          },
+          {
+            "id": "p103",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-103.jpg",
+            "label": "《纸船和风筝》开头"
+          },
+          {
+            "id": "p106",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-106.jpg",
+            "label": "看图讲故事"
+          },
+          {
+            "id": "p109",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-109.jpg",
+            "label": "语文园地八"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p103"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "线",
+        "hint": "风筝的线",
+        "options": [
+          "qiàn",
+          "xuàn",
+          "xàn",
+          "xiàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "吵",
+        "hint": "吵架",
+        "options": [
+          "chǎo",
+          "cǎo",
+          "chāo",
+          "shǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "sentence": "__船漂到了小熊家门口。",
+        "blankPlaceholder": "__",
+        "character": "纸",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "纸"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kū",
+        "sentence": "松鼠高兴得__了。",
+        "blankPlaceholder": "__",
+        "character": "哭",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "哭"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课后提示中的句子。",
+        "tokens": [
+          "乐坏了",
+          "小熊拿起纸船一看"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小熊拿起纸船一看",
+          "乐坏了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课后提示中的句子。",
+        "tokens": [
+          "也乐坏了",
+          "松鼠一把抓住风筝的线一看"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "松鼠一把抓住风筝的线一看",
+          "也乐坏了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后题要求根据提示讲什么？",
+        "options": [
+          "背动物名称",
+          "写数字",
+          "画大山",
+          "讲这个故事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选做题请我们替谁写卡片？",
+        "options": [
+          "小熊",
+          "小獾",
+          "小河",
+          "老虎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "纸"
+          },
+          {
+            "id": "l2",
+            "text": "抓"
+          },
+          {
+            "id": "l3",
+            "text": "哭"
+          },
+          {
+            "id": "l4",
+            "text": "句"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "抓住"
+          },
+          {
+            "id": "r4",
+            "text": "一句话"
+          },
+          {
+            "id": "r1",
+            "text": "纸船"
+          },
+          {
+            "id": "r3",
+            "text": "哭了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 个小朋友平均坐在 4 边，每边 ? 人。"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "五言绝句 20 个字，每句 5 个字，一共有 ? 句。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 支铅笔，每 6 支一束，可以扎 ? 束。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 元买 5 元一个的玩具，可以买 ? 个。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "28 个小朋友平均坐在四周，每边 7 人，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "28÷4=7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "五言绝句 20 个字，每句 5 个字，一共有 4 句，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "20÷5=4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "根据 7 × 4 = 28，填：28 ÷ 4 = __，28 ÷ 7 = __。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "第1个商"
+          },
+          {
+            "id": "b",
+            "label": "第2个商"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个问题可以用 21 ÷ 3 = 7 解决？",
+        "options": [
+          "21 支笔平均分给 3 人，每人几支",
+          "21 支笔每人 7 支，分给几人",
+          "3 支笔再买 21 支",
+          "7 支笔的 3 倍是多少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "28 ÷ 4",
+        "right": "30 ÷ 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "28÷4"
+          },
+          {
+            "id": "l2",
+            "text": "20÷5"
+          },
+          {
+            "id": "l3",
+            "text": "36÷6"
+          },
+          {
+            "id": "l4",
+            "text": "30÷5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "6"
+          },
+          {
+            "id": "r1",
+            "text": "7"
+          },
+          {
+            "id": "r4",
+            "text": "6 个玩具"
+          },
+          {
+            "id": "r2",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "28",
+          null,
+          "4",
+          null,
+          "7"
+        ],
+        "tokens": [
+          "=",
+          "7",
+          "4",
+          "÷",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按商从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "28÷4=7"
+          },
+          {
+            "id": "i1",
+            "text": "20÷5=4"
+          },
+          {
+            "id": "i4",
+            "text": "36÷4=9"
+          },
+          {
+            "id": "i2",
+            "text": "30÷5=6"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

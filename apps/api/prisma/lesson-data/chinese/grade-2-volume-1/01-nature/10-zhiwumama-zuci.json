@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "植",
+        "tokens": [
+          "物",
+          "树",
+          "被",
+          "民",
+          "花",
+          "皮"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能和“植”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "树",
+            "物"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "旅",
+        "tokens": [
+          "行",
+          "客",
+          "途",
+          "店",
+          "湖",
+          "沙"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“旅”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "途",
+            "行",
+            "客",
+            "店"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "准",
+        "tokens": [
+          "备",
+          "确",
+          "时",
+          "许",
+          "粗",
+          "海"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“准”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "确",
+            "备",
+            "时"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "纷",
+        "tokens": [
+          "飞",
+          "法",
+          "乱",
+          "纷",
+          "扬",
+          "顶"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“纷”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "纷",
+            "飞",
+            "乱",
+            "扬"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "识",
+        "tokens": [
+          "知",
+          "认",
+          "字",
+          "常",
+          "袋",
+          "雪"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“识”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "字",
+            "知",
+            "认",
+            "常"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qīng",
+        "sentence": "蒲公英妈妈让孩子乘着风纷纷出发，动作很__。",
+        "blankPlaceholder": "__",
+        "character": "轻",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "轻"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǎn",
+        "sentence": "苍耳穿着带刺的铠甲，一点儿也不__小。",
+        "blankPlaceholder": "__",
+        "character": "胆",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "胆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bié",
+        "sentence": "孩子们长大了，就得告__妈妈。",
+        "blankPlaceholder": "__",
+        "character": "别",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "别"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shí",
+        "sentence": "粗心的小朋友却得不到它。请写“__”。",
+        "blankPlaceholder": "__",
+        "character": "识",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "识"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "旅行"
+          },
+          {
+            "id": "l1",
+            "text": "准备"
+          },
+          {
+            "id": "l2",
+            "text": "纷纷"
+          },
+          {
+            "id": "l3",
+            "text": "观察"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "仔细地看"
+          },
+          {
+            "id": "r1",
+            "text": "到远方去"
+          },
+          {
+            "id": "r2",
+            "text": "一个接一个地"
+          },
+          {
+            "id": "r3",
+            "text": "事先安排好"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r0"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

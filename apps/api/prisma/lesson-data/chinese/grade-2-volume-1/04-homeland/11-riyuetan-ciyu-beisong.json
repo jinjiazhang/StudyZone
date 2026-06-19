@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求背诵哪几个自然段？",
+        "options": [
+          "第1自然段",
+          "第5自然段",
+          "全文最后一句",
+          "第2-4自然段"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：群山环绕",
+        "tokens": [
+          "环绕",
+          "隐隐",
+          "约约",
+          "群山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "群山",
+          "环绕"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：蒙蒙细雨",
+        "tokens": [
+          "细雨",
+          "点点",
+          "灯光",
+          "蒙蒙"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蒙蒙",
+          "细雨"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：山清水秀",
+        "tokens": [
+          "水秀",
+          "树木",
+          "茂盛",
+          "山清"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "山清",
+          "水秀"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“隐隐约约地倒映在湖水中”写的是哪种感觉？",
+        "options": [
+          "看得不很清楚",
+          "非常响亮",
+          "颜色鲜红",
+          "十分干燥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "中午太阳高照时，景物怎样展现在眼前？",
+        "options": [
+          "完全看不见",
+          "清晰地展现",
+          "都变成夜色",
+          "只剩薄雾"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "清晨"
+          },
+          {
+            "id": "l1",
+            "text": "中午晴天"
+          },
+          {
+            "id": "l2",
+            "text": "下雨时"
+          },
+          {
+            "id": "l3",
+            "text": "风光秀丽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "像披上轻纱"
+          },
+          {
+            "id": "r0",
+            "text": "湖面飘薄雾"
+          },
+          {
+            "id": "r3",
+            "text": "吸引游客"
+          },
+          {
+            "id": "r1",
+            "text": "景物清晰"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "湖",
+        "tokens": [
+          "中",
+          "城",
+          "售",
+          "味",
+          "水",
+          "面"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“湖”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "面",
+            "中"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "吸",
+        "hint": "选择“吸”的正确读音",
+        "options": [
+          "qiǎng",
+          "hào",
+          "xī",
+          "tóng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "引",
+        "hint": "选择“引”的正确读音",
+        "options": [
+          "gǒu",
+          "yī",
+          "gān",
+          "yǐn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

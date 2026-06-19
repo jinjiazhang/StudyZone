@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一本书6元，买3本要花多少元？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一本书6元，买3本，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "6×3",
+          "3×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "摆一个三角形要3根小棒，摆6个要多少根？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "摆6个三角形，每个用3根小棒，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "3×6",
+          "6×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "每双鞋2只，7双鞋一共有多少只？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“飞流直下三千尺，疑是银河落九天”中，2×7可以表示什么？",
+        "options": [
+          "2+7个字",
+          "7-2个字",
+          "2个2个字",
+          "2个7个字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一排有5把椅子，有4排，共__把；算式可写__×__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "总数"
+          },
+          {
+            "id": "b2",
+            "label": "每排"
+          },
+          {
+            "id": "b3",
+            "label": "排数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          20,
+          5,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "买",
+          null,
+          "本书，每本",
+          null,
+          "元，一共",
+          null,
+          "元"
+        ],
+        "tokens": [
+          "18",
+          "3",
+          "9",
+          "6",
+          "12"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "3",
+          "6",
+          "18"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3本书，每本6元"
+          },
+          {
+            "id": "l2",
+            "text": "6个三角形，每个3根"
+          },
+          {
+            "id": "l3",
+            "text": "7双鞋，每双2只"
+          },
+          {
+            "id": "l4",
+            "text": "4排椅子，每排5把"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "3×6=18"
+          },
+          {
+            "id": "r3",
+            "text": "2×7=14"
+          },
+          {
+            "id": "r4",
+            "text": "5×4=20"
+          },
+          {
+            "id": "r1",
+            "text": "6×3=18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 3",
+        "right": "3 × 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每个三角形用3根小棒，摆6个三角形要多少根？",
+        "columns": [
+          "每个用小棒",
+          "个数"
+        ],
+        "rows": [
+          {
+            "每个用小棒": 3,
+            "个数": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "解决“每本6元，买3本”时，6表示什么？",
+        "options": [
+          "书的本数",
+          "一本书的钱数",
+          "一共的钱数",
+          "人数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从0刻度到4厘米，长度是 ? 厘米"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从0刻度到6厘米，长度是 ? 厘米"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从2厘米到7厘米，长度是 ? 厘米"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从3厘米到9厘米，长度是 ? 厘米"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "铅笔一端对着0刻度，另一端对着5，铅笔长：",
+        "options": [
+          "5厘米",
+          "4厘米",
+          "6厘米",
+          "10厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "物体没有从0刻度开始量，从2厘米到8厘米，长度应是：",
+        "options": [
+          "10厘米",
+          "6厘米",
+          "8厘米",
+          "2厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8 - 2",
+        "right": "5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "尺上从 __ 厘米到 __ 厘米，长度是5厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "起点"
+          },
+          {
+            "id": "b2",
+            "label": "终点"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "读尺时只看物体右端对着几，不管左端在哪里，都一定准确。"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "尺上从2厘米到9厘米，列式求这段长度。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "9-2"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

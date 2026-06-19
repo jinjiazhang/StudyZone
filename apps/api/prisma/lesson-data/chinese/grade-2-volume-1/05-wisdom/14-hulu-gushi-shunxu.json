@@ -1,0 +1,219 @@
+{
+  "id": "14-hulu-gushi-shunxu",
+  "title": "我要的是葫芦故事顺序",
+  "description": "依据课本/assets/textbooks/chinese/grade-2-volume-1/pages/page-065.jpg-/assets/textbooks/chinese/grade-2-volume-1/pages/page-067.jpg，梳理葫芦变化过程。",
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出葫芦生长顺序",
+        "tokens": [
+          "挂小葫芦",
+          "开小花",
+          "长绿叶",
+          "种葫芦"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "种葫芦",
+          "长绿叶",
+          "开小花",
+          "挂小葫芦"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出问题发展顺序",
+        "tokens": [
+          "葫芦落了",
+          "叶上生虫",
+          "邻居劝告",
+          "不肯治虫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "叶上生虫",
+          "邻居劝告",
+          "不肯治虫",
+          "葫芦落了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "葫芦藤上先长满了什么？",
+        "options": [
+          "雪花",
+          "南瓜",
+          "绿叶",
+          "小鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "花谢以后，藤上挂了什么？",
+        "options": [
+          "几个苹果",
+          "几个灯笼",
+          "几只喜鹊",
+          "几个小葫芦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "叶子上爬着什么？",
+        "options": [
+          "蚜虫",
+          "青蛙",
+          "小鸟",
+          "鱼儿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "邻居为什么劝那个人治虫？",
+        "options": [
+          "葫芦太大了",
+          "叶子有虫会影响葫芦",
+          "邻居要摘葫芦",
+          "天气太冷了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "那个人听了邻居的话，马上把虫治好了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "叶子慢慢变黄，小葫芦一个一个都落了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "绿叶"
+          },
+          {
+            "id": "l_1",
+            "text": "小花"
+          },
+          {
+            "id": "l_2",
+            "text": "蚜虫"
+          },
+          {
+            "id": "l_3",
+            "text": "小葫芦"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "爬在叶子上"
+          },
+          {
+            "id": "r_0",
+            "text": "长在藤上"
+          },
+          {
+            "id": "r_3",
+            "text": "后来落了"
+          },
+          {
+            "id": "r_1",
+            "text": "雪白可爱"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "葫芦为什么落",
+        "passage": "那个人只盯着小葫芦，认为叶子上的虫不用治。没过几天，叶子上的蚜虫更多了，葫芦慢慢变黄，一个一个都落了。",
+        "questions": [
+          {
+            "question": "小葫芦落下的主要原因是？",
+            "options": [
+              "天天下雪",
+              "藤上没有花",
+              "叶子上的虫没有治"
+            ]
+          },
+          {
+            "question": "这个故事提醒我们？",
+            "options": [
+              "事物之间有联系",
+              "只要看果实就行",
+              "邻居不该提醒"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 2 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "18 只松鼠，每组 3 只，可以分成几组？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "18/3",
+          "18÷3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "18 只松鼠，平均分成 6 组，每组几只？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "18/6",
+          "18÷6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 只松鼠分成 2 组，每组 ___ 只；分成 9 组，每组 ___ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2组每组"
+          },
+          {
+            "id": "b2",
+            "label": "9组每组"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18 ÷ 3 = 6 可以表示哪件事？",
+        "options": [
+          "18只松鼠每组3只，分6组",
+          "18只松鼠分3只",
+          "3只松鼠分18组",
+          "6只松鼠每组18只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "每组只数相同，下面哪种分法不正好分完 18 只？",
+        "options": [
+          "每组2只",
+          "每组3只",
+          "每组4只",
+          "每组6只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "18 ÷ 2"
+          },
+          {
+            "id": "l2",
+            "text": "18 ÷ 3"
+          },
+          {
+            "id": "l3",
+            "text": "18 ÷ 6"
+          },
+          {
+            "id": "l4",
+            "text": "18 ÷ 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "2组"
+          },
+          {
+            "id": "r3",
+            "text": "3组"
+          },
+          {
+            "id": "r2",
+            "text": "6组"
+          },
+          {
+            "id": "r1",
+            "text": "9组"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "18 只松鼠，如果每组 6 只，可以分成几组？",
+        "columns": [
+          "每组只数",
+          "组数"
+        ],
+        "rows": [
+          {
+            "每组只数": 2,
+            "组数": 9
+          },
+          {
+            "每组只数": 3,
+            "组数": 6
+          },
+          {
+            "每组只数": 6,
+            "组数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有时候我穿着白衣服”里的加点词“有时候”表示什么？",
+        "options": [
+          "永远这样",
+          "已经结束",
+          "马上开始",
+          "不是每次都这样"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“在小溪里散步，在江河里奔跑”运用了哪种写法？",
+        "options": [
+          "只写颜色",
+          "把水当成人来写",
+          "只写声音",
+          "写动物样子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出园地里的动作词组：甩甩手",
+        "tokens": [
+          "手",
+          "甩甩",
+          "摇摇",
+          "头",
+          "衣服"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "甩甩",
+          "手"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出园地里的动作词组：摇摇头",
+        "tokens": [
+          "头",
+          "摇摇",
+          "甩甩",
+          "腿",
+          "天气"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "摇摇",
+          "头"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "甩甩手"
+          },
+          {
+            "id": "l1",
+            "text": "摇摇头"
+          },
+          {
+            "id": "l2",
+            "text": "看看书"
+          },
+          {
+            "id": "l3",
+            "text": "拍拍球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "读一读书"
+          },
+          {
+            "id": "r1",
+            "text": "活动手臂"
+          },
+          {
+            "id": "r2",
+            "text": "用手拍球"
+          },
+          {
+            "id": "r3",
+            "text": "表示不同意或晃动头部"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词适合补进句子：“有时候我____，有时候我____。”",
+        "options": [
+          "晴朗、冰雹",
+          "宽嘴巴、长尾巴",
+          "田地、机器",
+          "散步、奔跑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“海、作”这类字时，园地提示我们注意什么？",
+        "options": [
+          "左边宽，右边窄",
+          "上下都很扁",
+          "左边窄，右边宽",
+          "不要写偏旁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "写“都、别”这类字时，园地提示我们注意什么？",
+        "options": [
+          "左边宽，右边窄",
+          "左边窄，右边宽",
+          "只写左半边",
+          "笔画越少越好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dōu",
+        "sentence": "写“__”时左边宽，右边窄。",
+        "blankPlaceholder": "__",
+        "character": "都",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "都"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bié",
+        "sentence": "写“__”时左边宽，右边窄。",
+        "blankPlaceholder": "__",
+        "character": "别",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "别"
+      },
+      "difficulty": 2
+    }
+  ]
+}

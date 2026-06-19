@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "风景"
+          },
+          {
+            "id": "l1",
+            "text": "秀丽"
+          },
+          {
+            "id": "l2",
+            "text": "神奇"
+          },
+          {
+            "id": "l3",
+            "text": "闻名"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "神秘"
+          },
+          {
+            "id": "r0",
+            "text": "风景如画"
+          },
+          {
+            "id": "r3",
+            "text": "百闻不如一见"
+          },
+          {
+            "id": "r1",
+            "text": "秀美"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“风景如画”的意思是？",
+        "options": [
+          "画上写满字",
+          "景色美得像画一样",
+          "风很大",
+          "景物会说话"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“百闻不如一见”告诉我们什么？",
+        "options": [
+          "不要去看风景",
+          "只听别人说就够了",
+          "听很多次不如亲眼看一次",
+          "一百个人一起闻花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：风景如画",
+        "tokens": [
+          "如画",
+          "神奇",
+          "秀美",
+          "风景"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "风景",
+          "如画"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：一枝独秀",
+        "tokens": [
+          "独秀",
+          "远近",
+          "闻名",
+          "一枝"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一枝",
+          "独秀"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "景",
+        "tokens": [
+          "区",
+          "烟",
+          "客",
+          "码",
+          "色",
+          "物"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“景”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "色",
+            "物",
+            "区"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "神",
+        "tokens": [
+          "气",
+          "城",
+          "孔",
+          "湾",
+          "奇",
+          "秘"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“神”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "奇",
+            "秘",
+            "气"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "顶",
+        "hint": "选择“顶”的正确读音",
+        "options": [
+          "táo",
+          "fèn",
+          "gǎi",
+          "dǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "位",
+        "hint": "选择“位”的正确读音",
+        "options": [
+          "wèi",
+          "zhī",
+          "fēng",
+          "yù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "狗",
+        "hint": "选择“狗”的正确读音",
+        "options": [
+          "hào",
+          "gǒu",
+          "fù",
+          "lú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

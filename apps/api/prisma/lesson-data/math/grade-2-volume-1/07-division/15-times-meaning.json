@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "蝴蝶 4 只，蜻蜓 12 只，蜻蜓是蝴蝶的 ? 倍。"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小鸟 9 只，蜜蜂是小鸟的 3 倍，蜜蜂有 ? 只。"
+      },
+      "answer": {
+        "value": 27,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "红花 5 朵，黄花 20 朵，黄花是红花的 ? 倍。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "铅笔 6 支，彩笔 18 支，彩笔是铅笔的 ? 倍。"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "蜻蜓 12 只，蝴蝶 4 只，求蜻蜓是蝴蝶的几倍，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "12÷4=3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小鸟 9 只，蜜蜂是小鸟的 3 倍，求蜜蜂有多少只，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "9×3=27"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12 是 4 的 __ 倍；27 是 9 的 __ 倍。",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "12和4"
+          },
+          {
+            "id": "b",
+            "label": "27和9"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“12 是 4 的几倍”，应该怎样列式？",
+        "options": [
+          "12÷4",
+          "12×4",
+          "12+4",
+          "12-4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“9 的 3 倍”表示什么？",
+        "options": [
+          "3 个 9 相加",
+          "9 个 3 相减",
+          "9 平均分成 3 份",
+          "9 除以 3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12 ÷ 4",
+        "right": "18 ÷ 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "12 是 4 的几倍"
+          },
+          {
+            "id": "l2",
+            "text": "27 是 9 的几倍"
+          },
+          {
+            "id": "l3",
+            "text": "5 的 4 倍"
+          },
+          {
+            "id": "l4",
+            "text": "6 的 3 倍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5×4=20"
+          },
+          {
+            "id": "r1",
+            "text": "12÷4=3"
+          },
+          {
+            "id": "r4",
+            "text": "6×3=18"
+          },
+          {
+            "id": "r2",
+            "text": "27÷9=3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "12",
+          null,
+          "4",
+          null,
+          "3"
+        ],
+        "tokens": [
+          "=",
+          "3",
+          "4",
+          "÷",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

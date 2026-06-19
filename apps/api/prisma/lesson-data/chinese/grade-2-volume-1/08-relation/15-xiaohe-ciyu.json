@@ -1,0 +1,266 @@
+{
+  "id": "15-xiaohe-ciyu",
+  "title": "小河词语积累",
+  "description": "积累《快乐的小河》的词语，理解小河、大山、泉水和瀑布的话。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "水花"
+          },
+          {
+            "id": "l2",
+            "text": "抱怨"
+          },
+          {
+            "id": "l3",
+            "text": "泉水"
+          },
+          {
+            "id": "l4",
+            "text": "瀑布"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "心里不满而责怪"
+          },
+          {
+            "id": "r4",
+            "text": "从高处落下来的水流"
+          },
+          {
+            "id": "r1",
+            "text": "水被激起的小花一样的浪"
+          },
+          {
+            "id": "r3",
+            "text": "从地下流出的水"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "慈祥地说"
+          },
+          {
+            "id": "l2",
+            "text": "勇敢地奔跑"
+          },
+          {
+            "id": "l3",
+            "text": "高兴地冲着"
+          },
+          {
+            "id": "l4",
+            "text": "坚硬的石头"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "开心地面对"
+          },
+          {
+            "id": "r1",
+            "text": "态度和善地说"
+          },
+          {
+            "id": "r4",
+            "text": "很硬的石头"
+          },
+          {
+            "id": "r2",
+            "text": "不怕困难向前跑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文中的短语。",
+        "tokens": [
+          "唱着歌",
+          "一条小河",
+          "向前流着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一条小河",
+          "唱着歌",
+          "向前流着"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文中的句子。",
+        "tokens": [
+          "野花",
+          "呀",
+          "为我唱歌",
+          "吧",
+          "青荇跟我游戏"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "野花",
+          "为我唱歌",
+          "青荇跟我游戏"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出大山的话。",
+        "tokens": [
+          "不平静的水",
+          "呀",
+          "才有力量"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不平静的水",
+          "才有力量"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出泉水的话。",
+        "tokens": [
+          "请你带我",
+          "呀",
+          "流向很远很远的地方"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请你带我",
+          "流向很远很远的地方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "唱",
+        "tokens": [
+          "歌",
+          "戏",
+          "响",
+          "游",
+          "软",
+          "架"
+        ],
+        "targetCount": 2,
+        "instruction": "选择能和“唱”搭配的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "歌",
+            "响"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "勇",
+        "tokens": [
+          "敢",
+          "软",
+          "气",
+          "咱",
+          "士",
+          "呢"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“勇”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "敢",
+            "气",
+            "士"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“慈祥地说”说明大山怎样安慰小河？",
+        "options": [
+          "大声责骂",
+          "偷偷离开",
+          "和善、耐心",
+          "故意吓他"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“坚硬的石头”被瀑布冲刷得怎样？",
+        "options": [
+          "松软",
+          "光滑",
+          "红红的",
+          "会唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

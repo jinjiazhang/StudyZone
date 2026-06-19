@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 ÷ 6 = 4 中的 24 表示什么？",
+        "options": [
+          "每份数量",
+          "份数",
+          "总数",
+          "商"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 ÷ 6 = 4 中的 6 可以表示什么？",
+        "options": [
+          "平均分成 6 份",
+          "一共有 6 个总数",
+          "商是 6",
+          "余下 6 个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 ÷ 6 = 4 中的 4 表示什么？",
+        "options": [
+          "被除数",
+          "除数",
+          "商",
+          "除号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 ÷ 6 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "在 18 ÷ 3 = 6 中，除数是 __，商是 __。",
+        "blanks": [
+          {
+            "id": "divisor",
+            "label": "除数"
+          },
+          {
+            "id": "quotient",
+            "label": "商"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "18 只小鸟平均住进 3 个鸟窝，每窝 6 只，请写出算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "18÷3=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "36÷4=9"
+          },
+          {
+            "id": "l2",
+            "text": "20÷5=4"
+          },
+          {
+            "id": "l3",
+            "text": "15÷3=5"
+          },
+          {
+            "id": "l4",
+            "text": "28÷7=4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5 是商"
+          },
+          {
+            "id": "r1",
+            "text": "36 是被除数"
+          },
+          {
+            "id": "r4",
+            "text": "7 是除数"
+          },
+          {
+            "id": "r2",
+            "text": "5 是除数"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "24",
+          null,
+          "6",
+          null,
+          "4"
+        ],
+        "tokens": [
+          "=",
+          "6",
+          "4",
+          "÷",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 6",
+        "right": "18 ÷ 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

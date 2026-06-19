@@ -1,0 +1,265 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "一只"
+          },
+          {
+            "id": "l_1",
+            "text": "一条"
+          },
+          {
+            "id": "l_2",
+            "text": "一艘"
+          },
+          {
+            "id": "l_3",
+            "text": "一处"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "军舰"
+          },
+          {
+            "id": "r_0",
+            "text": "海鸥"
+          },
+          {
+            "id": "r_3",
+            "text": "港湾"
+          },
+          {
+            "id": "r_1",
+            "text": "帆船"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "一方"
+          },
+          {
+            "id": "l_1",
+            "text": "一块"
+          },
+          {
+            "id": "l_2",
+            "text": "一行"
+          },
+          {
+            "id": "l_3",
+            "text": "一座"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "垂柳"
+          },
+          {
+            "id": "r_0",
+            "text": "鱼塘"
+          },
+          {
+            "id": "r_3",
+            "text": "花园"
+          },
+          {
+            "id": "r_1",
+            "text": "稻田"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "一道"
+          },
+          {
+            "id": "l_1",
+            "text": "一座"
+          },
+          {
+            "id": "l_2",
+            "text": "一丛"
+          },
+          {
+            "id": "l_3",
+            "text": "一群"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "翠竹"
+          },
+          {
+            "id": "r_0",
+            "text": "小溪"
+          },
+          {
+            "id": "r_3",
+            "text": "飞鸟"
+          },
+          {
+            "id": "r_1",
+            "text": "石桥"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）帆船”应填哪个量词？",
+        "options": [
+          "只",
+          "方",
+          "条",
+          "队"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）鱼塘”应填哪个量词？",
+        "options": [
+          "座",
+          "把",
+          "行",
+          "方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）翠竹”应填哪个量词？",
+        "options": [
+          "丛",
+          "块",
+          "艘",
+          "面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一（ ）红领巾”应填哪个量词？",
+        "options": [
+          "片",
+          "队",
+          "处",
+          "群"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文里写的是“一条帆船”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文里写的是“一块花园”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：一只海鸥，一条帆船。",
+        "tokens": [
+          "一座",
+          "一只",
+          "稻田",
+          "海鸥",
+          "一条",
+          "帆船"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一只",
+          "海鸥",
+          "一条",
+          "帆船"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

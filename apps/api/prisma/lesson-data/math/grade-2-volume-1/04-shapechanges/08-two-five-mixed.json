@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 5 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "5 * 3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 4",
+        "right": "2 * 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪两个算式结果相同？",
+        "options": [
+          "2×6 和 5×2",
+          "2×8 和 5×4",
+          "5×3 和 2×9",
+          "2×5 和 5×2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填空：2×9=___，5×4=___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×9"
+          },
+          {
+            "id": "b2",
+            "label": "5×4"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "",
+          null,
+          " × 5 = 35，2 × ",
+          null,
+          " = 14"
+        ],
+        "tokens": [
+          "7",
+          "6",
+          "8",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "二六十二"
+          },
+          {
+            "id": "l2",
+            "text": "五六三十"
+          },
+          {
+            "id": "l3",
+            "text": "二九十八"
+          },
+          {
+            "id": "l4",
+            "text": "五八四十"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "5×8"
+          },
+          {
+            "id": "r2",
+            "text": "2×6"
+          },
+          {
+            "id": "r3",
+            "text": "5×6"
+          },
+          {
+            "id": "r4",
+            "text": "2×9"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每排5人，4排；每组2人，9组。哪一个人数更多？填较大人数。",
+        "columns": [
+          "项目",
+          "组数",
+          "每组人数",
+          "总人数"
+        ],
+        "rows": [
+          {
+            "项目": "排队",
+            "组数": 4,
+            "每组人数": 5,
+            "总人数": 20
+          },
+          {
+            "项目": "分组",
+            "组数": 9,
+            "每组人数": 2,
+            "总人数": 18
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2×9比5×3大。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有5行星星，每行2颗。列式求总数。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "5*2",
+          "2*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 2 + 2 * 4 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

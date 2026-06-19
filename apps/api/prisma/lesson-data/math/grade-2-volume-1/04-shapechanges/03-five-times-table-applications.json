@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每组有5个点子，摆7组。列式求一共有多少个点子。",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "5*7",
+          "7*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 7 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每盘放5个苹果，6盘一共有多少个？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "5*6",
+          "6*5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9双手套，每双5元，一共多少元？"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8束花，每束5朵，一共有多少朵？"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“4个5相加是多少”最合适的算式是？",
+        "options": [
+          "5+4",
+          "4+4",
+          "5×4",
+          "5-4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "看表解决：每排5人，排数不同，7排有多少人？",
+        "columns": [
+          "排数",
+          "每排人数",
+          "总人数"
+        ],
+        "rows": [
+          {
+            "排数": 7,
+            "每排人数": 5,
+            "总人数": 35
+          }
+        ]
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5人一组参加活动，3组、8组分别有多少人？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "3组人数"
+          },
+          {
+            "id": "b2",
+            "label": "8组人数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          40
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 7",
+        "right": "5 * 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "求9个5是多少，可以用口诀“五九四十五”。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每盒5支笔，",
+          null,
+          "盒共有",
+          null,
+          "支。"
+        ],
+        "tokens": [
+          "6",
+          "7",
+          "30",
+          "35"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "30"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

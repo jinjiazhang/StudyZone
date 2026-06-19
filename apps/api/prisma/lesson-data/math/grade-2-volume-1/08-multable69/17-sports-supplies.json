@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 × 5 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 9 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 + 45 = ?"
+      },
+      "answer": {
+        "value": 75,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "跳绳 5 元一根，买 6 根要多少元？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "6*5",
+          "5*6",
+          "6×5",
+          "5×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "皮球 9 元一个，买 5 个要多少元？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "5*9",
+          "9*5",
+          "5×9",
+          "9×5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "买 6 根跳绳花 ___ 元，买 5 个皮球花 ___ 元，一共 ___ 元。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "跳绳"
+          },
+          {
+            "id": "b2",
+            "label": "皮球"
+          },
+          {
+            "id": "b3",
+            "label": "合计"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          45,
+          75
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "40 元正好买两种体育用品，哪一种搭配可以用完？",
+        "options": [
+          "5根跳绳和5个毽子",
+          "4个皮球和1个毽子",
+          "3个呼啦圈和2个接力棒",
+          "6个毽子和1根跳绳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "王老师买 6 根跳绳和 5 个皮球，钱数怎样计算？",
+        "options": [
+          "6×5+5×9",
+          "6+5+9",
+          "6×9-5",
+          "5×9-6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6 × 5 + 5 × 9",
+        "right": "70"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "呼啦圈 7元，买4个"
+          },
+          {
+            "id": "l2",
+            "text": "接力棒 8元，买3个"
+          },
+          {
+            "id": "l3",
+            "text": "毽子 6元，买5个"
+          },
+          {
+            "id": "l4",
+            "text": "跳绳 5元，买7根"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "35元"
+          },
+          {
+            "id": "r3",
+            "text": "30元"
+          },
+          {
+            "id": "r2",
+            "text": "24元"
+          },
+          {
+            "id": "r1",
+            "text": "28元"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

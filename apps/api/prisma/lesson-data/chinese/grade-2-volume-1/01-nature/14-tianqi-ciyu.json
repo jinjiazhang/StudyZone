@@ -1,0 +1,278 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "晴朗"
+          },
+          {
+            "id": "l1",
+            "text": "闪电"
+          },
+          {
+            "id": "l2",
+            "text": "冰雹"
+          },
+          {
+            "id": "l3",
+            "text": "雾霾"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "雷雨时天空发亮"
+          },
+          {
+            "id": "r1",
+            "text": "空气中雾和霾较重"
+          },
+          {
+            "id": "r2",
+            "text": "天空明亮，云雾少"
+          },
+          {
+            "id": "r3",
+            "text": "从云里落下的小冰块"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r0",
+          "l2": "r3",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "暴风"
+          },
+          {
+            "id": "l1",
+            "text": "霜冻"
+          },
+          {
+            "id": "l2",
+            "text": "阴转晴"
+          },
+          {
+            "id": "l3",
+            "text": "雨夹雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "雨和雪一起落下"
+          },
+          {
+            "id": "r1",
+            "text": "猛烈的风"
+          },
+          {
+            "id": "r2",
+            "text": "天气由阴变晴"
+          },
+          {
+            "id": "r3",
+            "text": "霜造成的低温冻害"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“阴转晴”表示天气怎样变化？",
+        "options": [
+          "由阴天变晴天",
+          "由晴天变暴风",
+          "一直下雪",
+          "一直打雷"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雨夹雪”里同时出现了什么？",
+        "options": [
+          "风和雾",
+          "雨和雪",
+          "霜和雷",
+          "云和汽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“冰雹”最接近下面哪种事物？",
+        "options": [
+          "小花朵",
+          "小水滴",
+          "小冰块",
+          "白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出天气词语：雷阵雨",
+        "tokens": [
+          "雨",
+          "雷",
+          "霜",
+          "阵",
+          "夹"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雷",
+          "阵",
+          "雨"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出天气词语：阴转晴",
+        "tokens": [
+          "转",
+          "晴",
+          "阴",
+          "暴",
+          "雾"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "阴",
+          "转",
+          "晴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出天气词语：雨夹雪",
+        "tokens": [
+          "雪",
+          "夹",
+          "雨",
+          "雷",
+          "晴"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雨",
+          "夹",
+          "雪"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雨",
+        "tokens": [
+          "夹",
+          "点",
+          "水",
+          "天",
+          "花",
+          "办"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“雨”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "夹",
+            "点"
+          ],
+          [
+            "天",
+            "水",
+            "点"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出语文园地一“识字加油站”的页面",
+        "options": [
+          {
+            "id": "p006",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-006.jpg",
+            "label": "小蝌蚪找妈妈第一页"
+          },
+          {
+            "id": "p016",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-016.jpg",
+            "label": "语文园地一"
+          },
+          {
+            "id": "p010",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-010.jpg",
+            "label": "我是什么第一页"
+          },
+          {
+            "id": "p013",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-013.jpg",
+            "label": "植物妈妈有办法第一页"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p016"
+      },
+      "difficulty": 1
+    }
+  ]
+}

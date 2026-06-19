@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lì",
+        "sentence": "天上出现了一座美__的桥。",
+        "blankPlaceholder": "__",
+        "character": "丽",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "丽"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ma",
+        "sentence": "您高兴__？",
+        "blankPlaceholder": "__",
+        "character": "吗",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "吗"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gē",
+        "sentence": "__哥把秋千挂在树上。",
+        "blankPlaceholder": "__",
+        "character": "哥",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "哥"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guà",
+        "sentence": "我把秋千__在彩虹桥上。",
+        "blankPlaceholder": "__",
+        "character": "挂",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "挂"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tí",
+        "sentence": "我__着水壶走到桥上。",
+        "blankPlaceholder": "__",
+        "character": "提",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "提"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuán",
+        "sentence": "我拿着__圆的月亮照着您。",
+        "blankPlaceholder": "__",
+        "character": "圆",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "圆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qiū",
+        "sentence": "哥，你系在门前树上的__千呢？",
+        "blankPlaceholder": "__",
+        "character": "秋",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "秋"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "a",
+        "sentence": "裙子飘__飘的。",
+        "blankPlaceholder": "__",
+        "character": "啊",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "啊"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字在《彩虹》的写字格里出现？",
+        "options": [
+          "园",
+          "元",
+          "圆",
+          "员"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“丽”的常见组词是哪个？",
+        "options": [
+          "美丽",
+          "美力",
+          "每丽",
+          "丽米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的句子",
+        "tokens": [
+          "出现了",
+          "美丽的桥",
+          "天上",
+          "妹妹",
+          "一座",
+          "雨后"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天上",
+          "出现了",
+          "一座",
+          "美丽的桥"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "提",
+        "tokens": [
+          "水",
+          "前",
+          "问",
+          "灯",
+          "高",
+          "鱼"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“提”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "问",
+            "高"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "草地上有2组花，每组5朵，列式求一共有多少朵。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "2*5",
+          "5*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4个花瓶，每个插5朵花，一共有多少朵？"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "树上有3组小鸟，每组5只，一共有多少只？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5个小丑，每人抛3个球，一共有多少个球？"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“5个小碗顶在头上，每个小碗上3个球”应想哪个算式？",
+        "options": [
+          "5+3",
+          "5-3",
+          "5×5",
+          "5×3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "每排5只小猫，4排小猫，可以用4×5求总数。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 7",
+        "right": "30"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1个小丑3个球，5个小丑__个球，7个小丑__个球。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "5个小丑"
+          },
+          {
+            "id": "b2",
+            "label": "7个小丑"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          21
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每组5朵，2组花：",
+          null,
+          "×",
+          null,
+          "=10"
+        ],
+        "tokens": [
+          "5",
+          "3",
+          "2",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "2",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3组小鸟，每组5只"
+          },
+          {
+            "id": "l2",
+            "text": "2组花，每组5朵"
+          },
+          {
+            "id": "l3",
+            "text": "4排小猫，每排5只"
+          },
+          {
+            "id": "l4",
+            "text": "7个小丑，每人3个球"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "20只"
+          },
+          {
+            "id": "r4",
+            "text": "21个"
+          },
+          {
+            "id": "r1",
+            "text": "15只"
+          },
+          {
+            "id": "r2",
+            "text": "10朵"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

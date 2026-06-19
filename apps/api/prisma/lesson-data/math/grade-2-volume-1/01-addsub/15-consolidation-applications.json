@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35+48 = ?"
+      },
+      "answer": {
+        "value": 83,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "49+22 = ?"
+      },
+      "answer": {
+        "value": 71,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "96-38 = ?"
+      },
+      "answer": {
+        "value": 58,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80-24 = ?"
+      },
+      "answer": {
+        "value": 56,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45+17 = ?"
+      },
+      "answer": {
+        "value": 62,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26-8 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "象宝宝9岁，象妈妈24岁。象宝宝出生时，象妈妈多少岁？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "24-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "欢欢有100张邮票，明明比欢欢少16张。明明有多少张？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "100-16"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "明明有84张邮票，晶晶比明明多9张。晶晶有多少张？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "84+9",
+          "9+84"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "45 + 17"
+          },
+          {
+            "id": "l1",
+            "text": "26 - 8"
+          },
+          {
+            "id": "l2",
+            "text": "32 - 7"
+          },
+          {
+            "id": "l3",
+            "text": "8 + 29"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "25"
+          },
+          {
+            "id": "r3",
+            "text": "37"
+          },
+          {
+            "id": "r0",
+            "text": "62"
+          },
+          {
+            "id": "r1",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "玩具柜中，买13元玩具和36元玩具，一共要多少元？",
+        "columns": [
+          "玩具",
+          "价钱"
+        ],
+        "rows": [
+          {
+            "玩具": "玩具熊",
+            "价钱": 13
+          },
+          {
+            "玩具": "小汽车",
+            "价钱": 36
+          },
+          {
+            "玩具": "皮球",
+            "价钱": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 49,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "96 - 38 的结果比 80 - 24 大。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-020.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

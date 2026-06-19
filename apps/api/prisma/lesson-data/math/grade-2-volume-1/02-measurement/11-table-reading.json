@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "铅笔长多少厘米？",
+        "columns": [
+          "物体",
+          "估计/厘米",
+          "测量/厘米"
+        ],
+        "rows": [
+          {
+            "物体": "铅笔",
+            "估计/厘米": 16,
+            "测量/厘米": 17
+          },
+          {
+            "物体": "文具盒",
+            "估计/厘米": 18,
+            "测量/厘米": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "文具盒测量结果是多少厘米？",
+        "columns": [
+          "物体",
+          "估计/厘米",
+          "测量/厘米"
+        ],
+        "rows": [
+          {
+            "物体": "铅笔",
+            "估计/厘米": 16,
+            "测量/厘米": 17
+          },
+          {
+            "物体": "文具盒",
+            "估计/厘米": 18,
+            "测量/厘米": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "文具盒20厘米，铅笔17厘米，文具盒比铅笔长 ? 厘米"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪次跳远最远？",
+        "columns": [
+          "次数",
+          "成绩/厘米"
+        ],
+        "rows": [
+          {
+            "次数": "第一次",
+            "成绩/厘米": 82
+          },
+          {
+            "次数": "第二次",
+            "成绩/厘米": 95
+          },
+          {
+            "次数": "第三次",
+            "成绩/厘米": 88
+          },
+          {
+            "次数": "第四次",
+            "成绩/厘米": 91
+          }
+        ]
+      },
+      "answer": {
+        "value": 95,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪次跳远最近？",
+        "columns": [
+          "次数",
+          "成绩/厘米"
+        ],
+        "rows": [
+          {
+            "次数": "第一次",
+            "成绩/厘米": 82
+          },
+          {
+            "次数": "第二次",
+            "成绩/厘米": 95
+          },
+          {
+            "次数": "第三次",
+            "成绩/厘米": 88
+          },
+          {
+            "次数": "第四次",
+            "成绩/厘米": 91
+          }
+        ]
+      },
+      "answer": {
+        "value": 82,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "95",
+        "right": "91"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按跳远成绩从近到远排列",
+        "items": [
+          {
+            "id": "t3",
+            "text": "88厘米"
+          },
+          {
+            "id": "t1",
+            "text": "82厘米"
+          },
+          {
+            "id": "t4",
+            "text": "91厘米"
+          },
+          {
+            "id": "t2",
+            "text": "95厘米"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "t1",
+          "t3",
+          "t4",
+          "t2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "记录测量结果时，除了数字，还要写清：",
+        "options": [
+          "天气",
+          "颜色",
+          "单位",
+          "姓名笔画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "表格能帮助我们整理多次测量的数据。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "黑板长 __ 米 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "米"
+          },
+          {
+            "id": "b2",
+            "label": "厘米"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          40
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

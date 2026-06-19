@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数轴上每次跳2格：0，2，4，__，__，__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第4个数"
+          },
+          {
+            "id": "b2",
+            "label": "第5个数"
+          },
+          {
+            "id": "b3",
+            "label": "第6个数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从0开始跳5次，每次跳2格，落在__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "位置"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 7 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 8 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "1，2，…，9分别与2相乘，会圈出哪些数？",
+        "options": [
+          "2、4、6、8、10、12、14、16、18",
+          "1到9所有数",
+          "5、10、15、20",
+          "3、6、9、12"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "在0到20的数轴上，2×9落在18。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 9",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "0，2，4，",
+          null,
+          "，8，",
+          null
+        ],
+        "tokens": [
+          "6",
+          "12",
+          "10",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按2的跳数顺序排列",
+        "items": [
+          {
+            "id": "n2",
+            "text": "8"
+          },
+          {
+            "id": "n4",
+            "text": "18"
+          },
+          {
+            "id": "n1",
+            "text": "4"
+          },
+          {
+            "id": "n3",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n1",
+          "n2",
+          "n3",
+          "n4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "跳3次，每次2格"
+          },
+          {
+            "id": "l2",
+            "text": "跳5次，每次2格"
+          },
+          {
+            "id": "l3",
+            "text": "跳8次，每次2格"
+          },
+          {
+            "id": "l4",
+            "text": "跳9次，每次2格"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "16"
+          },
+          {
+            "id": "r4",
+            "text": "18"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          },
+          {
+            "id": "r2",
+            "text": "10"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

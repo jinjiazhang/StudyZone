@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "大雁"
+          },
+          {
+            "id": "l_1",
+            "text": "老鹰"
+          },
+          {
+            "id": "l_2",
+            "text": "麻雀"
+          },
+          {
+            "id": "l_3",
+            "text": "锦鸡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "雀"
+          },
+          {
+            "id": "r_0",
+            "text": "雁"
+          },
+          {
+            "id": "r_3",
+            "text": "鸡"
+          },
+          {
+            "id": "r_1",
+            "text": "鹰"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "黄鹂"
+          },
+          {
+            "id": "l_1",
+            "text": "天鹅"
+          },
+          {
+            "id": "l_2",
+            "text": "孔雀"
+          },
+          {
+            "id": "l_3",
+            "text": "雄鹰"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "雀"
+          },
+          {
+            "id": "r_0",
+            "text": "鹂"
+          },
+          {
+            "id": "r_3",
+            "text": "鹰"
+          },
+          {
+            "id": "r_1",
+            "text": "鹅"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雁、鹰、雀”中相同的部件和什么有关？",
+        "options": [
+          "水流",
+          "树木",
+          "鸟类",
+          "农事"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语是鸟名？",
+        "options": [
+          "鱼塘",
+          "稻田",
+          "花园",
+          "黄鹂"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“老鹰”的“鹰”读作什么？",
+        "options": [
+          "yīng",
+          "yīn",
+          "yíng",
+          "yìng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“麻雀”的“雀”读作什么？",
+        "options": [
+          "qiáo",
+          "què",
+          "quē",
+          "jué"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pāi",
+        "sentence": "你__一，我拍一。",
+        "blankPlaceholder": "__",
+        "character": "拍",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "拍"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shì",
+        "sentence": "动物__界很新奇。",
+        "blankPlaceholder": "__",
+        "character": "世",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "世"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiè",
+        "sentence": "动物世__很新奇。",
+        "blankPlaceholder": "__",
+        "character": "界",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "界"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cǎi",
+        "sentence": "雄鹰飞翔云__间。",
+        "blankPlaceholder": "__",
+        "character": "彩",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "彩"
+      },
+      "difficulty": 2
+    }
+  ]
+}

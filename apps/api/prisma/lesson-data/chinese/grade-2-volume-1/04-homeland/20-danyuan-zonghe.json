@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第四单元的课文共同写了什么？",
+        "options": [
+          "动物过冬",
+          "祖国山河和美丽地方",
+          "校园生活",
+          "寓言道理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“葡萄沟真是个好地方”可以从哪两方面说明？",
+        "options": [
+          "山峰陡峭、奇石很多",
+          "湖水分成两半",
+          "水果多、老乡好客、葡萄干有名",
+          "火车票能改签"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“日月潭风光秀丽”表现在哪些时间或天气？",
+        "options": [
+          "只在晚上",
+          "只在冬天",
+          "只在火车上",
+          "清晨、中午、下雨时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "古诗二首"
+          },
+          {
+            "id": "l1",
+            "text": "黄山奇石"
+          },
+          {
+            "id": "l2",
+            "text": "日月潭"
+          },
+          {
+            "id": "l3",
+            "text": "葡萄沟"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "湖光山色"
+          },
+          {
+            "id": "r0",
+            "text": "登高望远、瀑布壮观"
+          },
+          {
+            "id": "r3",
+            "text": "水果和葡萄干"
+          },
+          {
+            "id": "r1",
+            "text": "奇形怪状的岩石"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：那里景色秀丽神奇",
+        "tokens": [
+          "秀丽",
+          "神奇",
+          "好客",
+          "葡萄",
+          "那里",
+          "景色"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "那里",
+          "景色",
+          "秀丽",
+          "神奇"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：葡萄沟真是个好地方",
+        "tokens": [
+          "个",
+          "好地方",
+          "日月潭",
+          "奇石",
+          "葡萄沟",
+          "真是"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "葡萄沟",
+          "真是",
+          "个",
+          "好地方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "山",
+        "tokens": [
+          "峰",
+          "票",
+          "鞋",
+          "码",
+          "川",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“山”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "川",
+            "水",
+            "峰"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "瀑",
+        "hint": "选择“瀑”的正确读音",
+        "options": [
+          "pù",
+          "yù",
+          "xiào",
+          "fù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "潭",
+        "hint": "选择“潭”的正确读音",
+        "options": [
+          "jìn",
+          "tán",
+          "dìng",
+          "xiào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kè",
+        "sentence": "许许多多的中外游__来到日月潭。",
+        "blankPlaceholder": "__",
+        "character": "客",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "客"
+      },
+      "difficulty": 2
+    }
+  ]
+}

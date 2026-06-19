@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 + 4 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "28 + 16 = ?"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 + 37 = ?"
+      },
+      "answer": {
+        "value": 53,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "图书角中，海洋动物 28 本、陆地动物 4 本，求和动物有关的书一共有多少本。",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "28+4",
+          "4+28"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "海洋动物 28 本、海洋中的植物 16 本，求和海洋有关的书一共有多少本。",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "28+16",
+          "16+28"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "28 + 16：先把 28 凑成 30，再加剩下的数。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "凑成30需加"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          14,
+          44
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "28",
+          null,
+          "16",
+          null,
+          "44"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "28 + 4",
+        "right": "28 + 16"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "16 + 37 中，16 表示什么？",
+        "options": [
+          "陆地动物有16本",
+          "海洋中的植物有16本",
+          "海洋动物有16本",
+          "陆地上的植物有16本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "28 + 16 可以先算 28 + 2 = 30，再算 30 + 14 = 44。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-006.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "28 + 4"
+          },
+          {
+            "id": "l1",
+            "text": "28 + 16"
+          },
+          {
+            "id": "l2",
+            "text": "16 + 37"
+          },
+          {
+            "id": "l3",
+            "text": "37 + 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "53"
+          },
+          {
+            "id": "r3",
+            "text": "41"
+          },
+          {
+            "id": "r0",
+            "text": "32"
+          },
+          {
+            "id": "r1",
+            "text": "44"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把图书数量从少到多排列",
+        "items": [
+          {
+            "id": "i2",
+            "text": "28"
+          },
+          {
+            "id": "i0",
+            "text": "4"
+          },
+          {
+            "id": "i3",
+            "text": "37"
+          },
+          {
+            "id": "i1",
+            "text": "16"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

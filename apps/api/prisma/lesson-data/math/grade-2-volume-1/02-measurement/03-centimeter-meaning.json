@@ -1,0 +1,188 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "厘米可以写作：",
+        "options": [
+          "cm",
+          "m",
+          "kg",
+          "时"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1厘米 + 1厘米 + 1厘米 = ?厘米"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个物体的长度大约是1厘米？",
+        "options": [
+          "一扇门高",
+          "一粒黄豆的宽",
+          "一间教室长",
+          "一棵树高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "厘米是常用的长度单位。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-026.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "测量橡皮长度时，适合用厘米作单位，是因为橡皮比较：",
+        "options": [
+          "重",
+          "高",
+          "短",
+          "远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9",
+        "right": "7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1厘米"
+          },
+          {
+            "id": "l2",
+            "text": "10厘米"
+          },
+          {
+            "id": "l3",
+            "text": "厘米"
+          },
+          {
+            "id": "l4",
+            "text": "直尺"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "可写作cm"
+          },
+          {
+            "id": "r1",
+            "text": "很短的长度"
+          },
+          {
+            "id": "r4",
+            "text": "可读出厘米数"
+          },
+          {
+            "id": "r2",
+            "text": "一拃的一部分"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "铅笔长约 __ 厘米，橡皮长约 __ 厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "铅笔"
+          },
+          {
+            "id": "b2",
+            "label": "橡皮"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          17,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第22页告诉我们，可以用什么测量物体长度？",
+        "options": [
+          "水杯",
+          "书包",
+          "钟表",
+          "尺子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "比较短的物体长度时，可以用厘米作单位。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

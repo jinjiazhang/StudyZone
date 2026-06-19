@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4袋苹果，每袋5个：有__个5，是5的__倍，一共有__个苹果。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "几个5"
+          },
+          {
+            "id": "b2",
+            "label": "倍数"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          4,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5篮鸡蛋，每篮3个：有__个3，是3的__倍，一共有__个鸡蛋。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "几个3"
+          },
+          {
+            "id": "b2",
+            "label": "倍数"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          5,
+          15
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4个黄脸，笑脸是黄脸的2倍：笑脸有__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "笑脸数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 2 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 × 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有4个5”表示哪个算式？",
+        "options": [
+          "4+5",
+          "5-4",
+          "5×4",
+          "4×4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“有5个3，是3的几倍？”",
+        "options": [
+          "3倍",
+          "8倍",
+          "15倍",
+          "5倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "有",
+          null,
+          "个",
+          null,
+          "，就是",
+          null,
+          "的",
+          null,
+          "倍"
+        ],
+        "tokens": [
+          "5",
+          "4",
+          "20",
+          "3",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "5",
+          "5",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "4个5"
+          },
+          {
+            "id": "l2",
+            "text": "5个3"
+          },
+          {
+            "id": "l3",
+            "text": "2个8"
+          },
+          {
+            "id": "l4",
+            "text": "3个6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "15"
+          },
+          {
+            "id": "r3",
+            "text": "16"
+          },
+          {
+            "id": "r4",
+            "text": "18"
+          },
+          {
+            "id": "r1",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 5",
+        "right": "5 × 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每筐有3个鸡蛋，有5筐，一共有多少个鸡蛋？",
+        "columns": [
+          "每筐个数",
+          "筐数"
+        ],
+        "rows": [
+          {
+            "每筐个数": 3,
+            "筐数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按总数从小到大排",
+        "items": [
+          {
+            "id": "c",
+            "text": "4个5"
+          },
+          {
+            "id": "a",
+            "text": "2个6"
+          },
+          {
+            "id": "d",
+            "text": "5个5"
+          },
+          {
+            "id": "b",
+            "text": "3个5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "id": "03-chengzan-ciyu",
+  "title": "称赞词语积累",
+  "description": "积累《称赞》中的词语，理解近义词和课文中的动作。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "红红的苹果"
+          },
+          {
+            "id": "l2",
+            "text": "小板凳"
+          },
+          {
+            "id": "l3",
+            "text": "称赞"
+          },
+          {
+            "id": "l4",
+            "text": "消除"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "夸奖，让人有信心"
+          },
+          {
+            "id": "r1",
+            "text": "又红又大的苹果"
+          },
+          {
+            "id": "r4",
+            "text": "去掉，使没有"
+          },
+          {
+            "id": "r2",
+            "text": "小獾做的木工"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "傍晚"
+          },
+          {
+            "id": "l2",
+            "text": "认真"
+          },
+          {
+            "id": "l3",
+            "text": "粗糙"
+          },
+          {
+            "id": "l4",
+            "text": "心意"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "做事细心不马虎"
+          },
+          {
+            "id": "r4",
+            "text": "心里的意思和情意"
+          },
+          {
+            "id": "r1",
+            "text": "快到晚上的时候"
+          },
+          {
+            "id": "r3",
+            "text": "表面不光滑"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "称",
+        "tokens": [
+          "赞",
+          "量",
+          "号",
+          "心",
+          "呼",
+          "做"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“称”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "赞",
+            "号",
+            "呼"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "接",
+        "tokens": [
+          "过",
+          "送",
+          "受",
+          "极",
+          "住",
+          "凳"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“接”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "过",
+            "受",
+            "住"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文里的短语。",
+        "tokens": [
+          "小板凳",
+          "粗糙",
+          "做得",
+          "很"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小板凳",
+          "做得",
+          "很",
+          "粗糙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文里的句子。",
+        "tokens": [
+          "干",
+          "你",
+          "真",
+          "能"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "真",
+          "能",
+          "干"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“粗糙”的意思最接近哪一项？",
+        "options": [
+          "不光滑",
+          "很香甜",
+          "很热闹",
+          "很安静"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“泄气”的意思最接近哪一项？",
+        "options": [
+          "跑得很快",
+          "声音很大",
+          "没有信心了",
+          "十分开心"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小刺猬用什么称赞小獾？",
+        "options": [
+          "你的苹果真香",
+          "你真能干，小板凳做得一个比一个好",
+          "你跑得真快",
+          "你唱歌真好听"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小獾最后送给小刺猬什么？",
+        "options": [
+          "一张纸条",
+          "一只风筝",
+          "一朵水花",
+          "一把椅子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

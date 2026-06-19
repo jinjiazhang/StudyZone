@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "方格图涂4行，每行3格，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "3×4",
+          "4×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "方格图涂5列，每列2格，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "2×5",
+          "5×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4×3可以涂成__行，每行__格，一共__格。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "行数"
+          },
+          {
+            "id": "b2",
+            "label": "每行"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5×2可以涂成__列，每列__格，一共__格。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "列数"
+          },
+          {
+            "id": "b2",
+            "label": "每列"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          2,
+          10
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 3",
+        "right": "5 × 2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同一个12格方格图，下面哪两个算式都可以表示？",
+        "options": [
+          "3+4和4-3",
+          "12×12和1×1",
+          "3×4和4×3",
+          "5×2和2×4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "涂",
+          null,
+          "行，每行",
+          null,
+          "格，算式",
+          null,
+          "×",
+          null,
+          "=12"
+        ],
+        "tokens": [
+          "3",
+          "12",
+          "4",
+          "6",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "3",
+          "3",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2行5格"
+          },
+          {
+            "id": "l2",
+            "text": "3行4格"
+          },
+          {
+            "id": "l3",
+            "text": "4行5格"
+          },
+          {
+            "id": "l4",
+            "text": "5行5格"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "12格"
+          },
+          {
+            "id": "r3",
+            "text": "20格"
+          },
+          {
+            "id": "r4",
+            "text": "25格"
+          },
+          {
+            "id": "r1",
+            "text": "10格"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按涂色方格数从小到大排",
+        "items": [
+          {
+            "id": "c",
+            "text": "4×5"
+          },
+          {
+            "id": "a",
+            "text": "2×5"
+          },
+          {
+            "id": "d",
+            "text": "5×5"
+          },
+          {
+            "id": "b",
+            "text": "3×4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "方格图有4行，每行3格。涂色方格有多少格？",
+        "columns": [
+          "行数",
+          "每行格数"
+        ],
+        "rows": [
+          {
+            "行数": 4,
+            "每行格数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35+8 = ?"
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24+27 = ?"
+      },
+      "answer": {
+        "value": 51,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "47+9 = ?"
+      },
+      "answer": {
+        "value": 56,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13+17 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "35 + 8：个位 5 + 8 = __，写 __ 进 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "个位写"
+          },
+          {
+            "id": "b3",
+            "label": "向十位进"
+          },
+          {
+            "id": "b4",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          3,
+          1,
+          43
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "24 + 27：个位 4 + 7 = __，写 __ 进 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "个位写"
+          },
+          {
+            "id": "b3",
+            "label": "向十位进"
+          },
+          {
+            "id": "b4",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          11,
+          1,
+          1,
+          51
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "35",
+          null,
+          "8",
+          null,
+          "43"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "35 + 8",
+        "right": "24 + 27"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "兔哥哥摘了35个苹果，妹妹比他少18个，兔哥哥和妹妹一共摘了多少个？先求妹妹摘的个数。",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "35-18"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "竖式计算 24 + 27 时，个位满十应该怎么办？",
+        "options": [
+          "把十位减1",
+          "直接写11",
+          "向十位进1",
+          "把加号改成减号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "计算 35 + 8 时，个位 5 + 8 满十，要向十位进1。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-007.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "点子图每行4个，共7行。写一个乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×7",
+          "7×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "点子图每列7个，共4列。写一个乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "7×4",
+          "4×7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4×7可以表示哪两种看法？",
+        "options": [
+          "4+7或7-4",
+          "4个7或7个4",
+          "4个4或7个7",
+          "只表示4个7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 7 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 × 4 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 7",
+        "right": "7 × 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3×8可以看成__个__，也可以看成__个__，结果是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一种份数"
+          },
+          {
+            "id": "b2",
+            "label": "第一种每份"
+          },
+          {
+            "id": "b3",
+            "label": "第二种份数"
+          },
+          {
+            "id": "b4",
+            "label": "第二种每份"
+          },
+          {
+            "id": "b5",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          8,
+          8,
+          3,
+          24
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "点子图有",
+          null,
+          "行，每行",
+          null,
+          "个，可以写成",
+          null,
+          "×",
+          null
+        ],
+        "tokens": [
+          "6",
+          "4",
+          "10",
+          "24",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "6",
+          "6",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3行8列"
+          },
+          {
+            "id": "l2",
+            "text": "2行7列"
+          },
+          {
+            "id": "l3",
+            "text": "5行4列"
+          },
+          {
+            "id": "l4",
+            "text": "6行3列"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "2×7或7×2"
+          },
+          {
+            "id": "r3",
+            "text": "5×4或4×5"
+          },
+          {
+            "id": "r4",
+            "text": "6×3或3×6"
+          },
+          {
+            "id": "r1",
+            "text": "3×8或8×3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "点子图有5行，每行6个。换个方向看，共有多少个点？",
+        "columns": [
+          "行数",
+          "每行点数"
+        ],
+        "rows": [
+          {
+            "行数": 5,
+            "每行点数": 6
+          }
+        ]
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按点子总数从小到大排",
+        "items": [
+          {
+            "id": "c",
+            "text": "3×8"
+          },
+          {
+            "id": "a",
+            "text": "2×9"
+          },
+          {
+            "id": "d",
+            "text": "5×6"
+          },
+          {
+            "id": "b",
+            "text": "4×5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "点子图横着看是5个3，竖着看是3个5，下面正确的是？",
+        "options": [
+          "5×3和3×5结果相同",
+          "结果不同",
+          "只能写5×3",
+          "只能写3+5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

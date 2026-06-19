@@ -1,0 +1,308 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "珍珠"
+          },
+          {
+            "id": "l_1",
+            "text": "碧玉盘"
+          },
+          {
+            "id": "l_2",
+            "text": "北斗七星"
+          },
+          {
+            "id": "l_3",
+            "text": "北极星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "像勺子的七颗星"
+          },
+          {
+            "id": "r_0",
+            "text": "圆润发亮的珠子"
+          },
+          {
+            "id": "r_3",
+            "text": "北边天空的重要星星"
+          },
+          {
+            "id": "r_1",
+            "text": "青绿色的玉盘"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "距离"
+          },
+          {
+            "id": "l_1",
+            "text": "绕着"
+          },
+          {
+            "id": "l_2",
+            "text": "钻研"
+          },
+          {
+            "id": "l_3",
+            "text": "天文学家"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "深入认真地研究"
+          },
+          {
+            "id": "r_0",
+            "text": "两处之间相隔的长短"
+          },
+          {
+            "id": "r_3",
+            "text": "研究天文的人"
+          },
+          {
+            "id": "r_1",
+            "text": "围着转动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "星",
+        "tokens": [
+          "星",
+          "座",
+          "光",
+          "鼻",
+          "空",
+          "趣"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“星”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "星",
+            "光",
+            "空"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "北",
+        "tokens": [
+          "斗",
+          "花",
+          "极",
+          "裙",
+          "边",
+          "服"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“北”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "斗",
+            "极",
+            "边"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "数",
+        "tokens": [
+          "学",
+          "花",
+          "字",
+          "鼻",
+          "量",
+          "衣"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“数”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "学",
+            "字",
+            "量"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“满天的星星像无数珍珠撒在碧玉盘里”把星星比作什么？",
+        "options": [
+          "珍珠",
+          "花朵",
+          "小船",
+          "水壶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碧玉盘”指的是什么？",
+        "options": [
+          "盘子里的菜",
+          "绿色的桌子",
+          "外婆家的山",
+          "夜晚的天空"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "北斗七星连起来像一把勺子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "北斗七星总是绕着月亮转。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的科学知识",
+        "tokens": [
+          "绕着",
+          "北斗七星",
+          "北极星转",
+          "一把勺子",
+          "总是"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "北斗七星",
+          "总是",
+          "绕着",
+          "北极星转"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪页画出了星空和北斗七星？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-037.jpg",
+            "label": "数星星第一页"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "去外婆家"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-040.jpg",
+            "label": "识字加油站"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "彩虹"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这个数星星的孩子名叫张衡”中，张衡后来成了什么？",
+        "options": [
+          "画家",
+          "著名的天文学家",
+          "歌唱家",
+          "厨师"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

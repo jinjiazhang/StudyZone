@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 1 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 3 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 4 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 5 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "观察教材第43页点子图：4行，每行5个，一共有多少个？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "行数"
+          },
+          {
+            "id": "b2",
+            "label": "每行个数"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          5,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“五七三十五”表示哪个算式？",
+        "options": [
+          "5+7=12",
+          "5×7=35",
+          "7-5=2",
+          "5×5=25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "5的乘法口诀中，后一条口诀的结果总比前一条多5。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 6",
+        "right": "5 * 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5 × 8 = ",
+          null,
+          "，口诀是",
+          null
+        ],
+        "tokens": [
+          "四十",
+          "三十五",
+          "五八四十",
+          "五七三十五"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "四十",
+          "五八四十"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "文物中的乘法口诀：5个5是多少？",
+        "columns": [
+          "口诀",
+          "算式",
+          "结果"
+        ],
+        "rows": [
+          {
+            "口诀": "五五二十五",
+            "算式": "5×5",
+            "结果": 25
+          }
+        ]
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

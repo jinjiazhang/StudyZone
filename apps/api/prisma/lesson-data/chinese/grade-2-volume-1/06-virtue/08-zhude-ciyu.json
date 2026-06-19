@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "挑起"
+          },
+          {
+            "id": "l1",
+            "text": "穿着"
+          },
+          {
+            "id": "l2",
+            "text": "戴着"
+          },
+          {
+            "id": "l3",
+            "text": "藏起"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "斗笠"
+          },
+          {
+            "id": "r3",
+            "text": "扁担"
+          },
+          {
+            "id": "r0",
+            "text": "粮食"
+          },
+          {
+            "id": "r1",
+            "text": "草鞋"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "巩固"
+          },
+          {
+            "id": "l1",
+            "text": "粉碎"
+          },
+          {
+            "id": "l2",
+            "text": "储备"
+          },
+          {
+            "id": "l3",
+            "text": "敬爱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "粮食"
+          },
+          {
+            "id": "r3",
+            "text": "朱德同志"
+          },
+          {
+            "id": "r0",
+            "text": "根据地"
+          },
+          {
+            "id": "r1",
+            "text": "围攻"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“戴着斗笠”中“戴”适合搭配什么？",
+        "options": [
+          "帽子",
+          "鞋子",
+          "粮食",
+          "道路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“穿着草鞋”中“穿”适合搭配什么？",
+        "options": [
+          "衣服和鞋子",
+          "饭碗",
+          "扁担",
+          "灯芯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“挑起粮食”中“挑”表示什么动作？",
+        "options": [
+          "用肩担起",
+          "用手写字",
+          "大声朗读",
+          "轻轻拨动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "连词成句",
+        "tokens": [
+          "草鞋",
+          "挑起粮食",
+          "朱德同志",
+          "斗笠",
+          "穿着",
+          "扁担"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "朱德同志",
+          "穿着",
+          "草鞋",
+          "挑起粮食"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "连词成句",
+        "tokens": [
+          "藏了起来",
+          "草鞋",
+          "战士们",
+          "扁担",
+          "把",
+          "粮食"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "战士们",
+          "把",
+          "扁担",
+          "藏了起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dài",
+        "sentence": "朱德同志__着斗笠。",
+        "character": "戴",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "戴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "měi",
+        "sentence": "__次挑粮，大家都争着去。",
+        "character": "每",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "每"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这课最适合用哪个词概括朱德同志？",
+        "options": [
+          "同甘共苦",
+          "胆小怕累",
+          "喜欢热闹",
+          "不爱劳动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    }
+  ]
+}

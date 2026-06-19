@@ -1,0 +1,396 @@
+{
+  "exercises": [
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "十二月花名歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            null,
+            "山茶",
+            "满盆开，"
+          ],
+          [
+            "二月",
+            "迎春",
+            null,
+            "。"
+          ],
+          [
+            "三月",
+            "桃花",
+            "红十里，"
+          ],
+          [
+            "四月",
+            "牡丹",
+            "国色香。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "正月",
+              "腊月",
+              "五月",
+              "六月"
+            ]
+          },
+          {
+            "options": [
+              "满枝香",
+              "斗冰霜",
+              "初开放",
+              "如雪"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "十二月花名歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "五月",
+            null,
+            "红似火，"
+          ],
+          [
+            "六月",
+            "荷花",
+            null,
+            "。"
+          ],
+          [
+            "七月",
+            "茉莉花",
+            "如雪，"
+          ],
+          [
+            "八月",
+            "桂花",
+            "满枝香。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "牡丹",
+              "石榴",
+              "菊花",
+              "芙蓉"
+            ]
+          },
+          {
+            "options": [
+              "姿百态",
+              "正上妆",
+              "案头摆",
+              "满池塘"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "十二月花名歌",
+        "author": "民间歌谣",
+        "lines": [
+          [
+            "九月",
+            "菊花",
+            null,
+            "，"
+          ],
+          [
+            "十月",
+            "芙蓉",
+            null,
+            "。"
+          ],
+          [
+            "冬月",
+            "水仙",
+            "案头摆，"
+          ],
+          [
+            "腊月",
+            "寒梅",
+            "斗冰霜。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "满盆开",
+              "红似火",
+              "姿百态",
+              "满枝香"
+            ]
+          },
+          {
+            "options": [
+              "正上妆",
+              "初开放",
+              "满池塘",
+              "斗冰霜"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "正月"
+          },
+          {
+            "id": "l_1",
+            "text": "二月"
+          },
+          {
+            "id": "l_2",
+            "text": "三月"
+          },
+          {
+            "id": "l_3",
+            "text": "四月"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "桃花"
+          },
+          {
+            "id": "r_0",
+            "text": "山茶"
+          },
+          {
+            "id": "r_3",
+            "text": "牡丹"
+          },
+          {
+            "id": "r_1",
+            "text": "迎春"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "五月"
+          },
+          {
+            "id": "l_1",
+            "text": "六月"
+          },
+          {
+            "id": "l_2",
+            "text": "七月"
+          },
+          {
+            "id": "l_3",
+            "text": "八月"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "茉莉"
+          },
+          {
+            "id": "r_0",
+            "text": "石榴"
+          },
+          {
+            "id": "r_3",
+            "text": "桂花"
+          },
+          {
+            "id": "r_1",
+            "text": "荷花"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "九月"
+          },
+          {
+            "id": "l_1",
+            "text": "十月"
+          },
+          {
+            "id": "l_2",
+            "text": "冬月"
+          },
+          {
+            "id": "l_3",
+            "text": "腊月"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "水仙"
+          },
+          {
+            "id": "r_0",
+            "text": "菊花"
+          },
+          {
+            "id": "r_3",
+            "text": "寒梅"
+          },
+          {
+            "id": "r_1",
+            "text": "芙蓉"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“六月荷花满池塘”写的是什么花？",
+        "options": [
+          "菊花",
+          "迎春",
+          "荷花",
+          "山茶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“腊月寒梅斗冰霜”表现寒梅怎样？",
+        "options": [
+          "喜欢炎热",
+          "颜色雪白",
+          "满池塘",
+          "不怕严寒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《十二月花名歌》按月份介绍花。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "花名歌里的月份",
+        "passage": "《十二月花名歌》把月份和花连起来：正月山茶、二月迎春、三月桃花、四月牡丹……读这首歌，可以认识花，也可以记住月份顺序。",
+        "questions": [
+          {
+            "question": "这首歌按照什么顺序写？",
+            "options": [
+              "月份顺序",
+              "动物大小",
+              "河流方向"
+            ]
+          },
+          {
+            "question": "“八月桂花满枝香”中的花是？",
+            "options": [
+              "桂花",
+              "水仙",
+              "寒梅"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

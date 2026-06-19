@@ -1,0 +1,236 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "句子“它好像从天上飞下来的一个大桃子”使用了什么方法？",
+        "options": [
+          "打比方",
+          "列数字",
+          "写时间",
+          "问路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：那巨石真像一位仙人",
+        "tokens": [
+          "真像",
+          "一位仙人",
+          "葡萄",
+          "湖水",
+          "那",
+          "巨石"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "那",
+          "巨石",
+          "真像",
+          "一位仙人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：它伸着手臂指向前方",
+        "tokens": [
+          "手臂",
+          "指向",
+          "前方",
+          "高高",
+          "凉棚",
+          "它",
+          "伸着"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "它",
+          "伸着",
+          "手臂",
+          "指向",
+          "前方"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照样子说石头，哪个最合适？",
+        "options": [
+          "那块石头很石头。",
+          "那块石头像一只卧着的小狗。",
+          "那块石头跑进水里。",
+          "那块石头会买票。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“奇形怪状”可以形容什么？",
+        "options": [
+          "火车票的时间",
+          "日月潭的湖水",
+          "黄山那些叫不出名字的岩石",
+          "颜色词白色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "陡峭"
+          },
+          {
+            "id": "l1",
+            "text": "翻滚"
+          },
+          {
+            "id": "l2",
+            "text": "奇形怪状"
+          },
+          {
+            "id": "l3",
+            "text": "闻名"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "形状奇特"
+          },
+          {
+            "id": "r0",
+            "text": "山峰高而险"
+          },
+          {
+            "id": "r3",
+            "text": "很有名"
+          },
+          {
+            "id": "r1",
+            "text": "上下滚动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "奇",
+        "tokens": [
+          "怪",
+          "票",
+          "客",
+          "味",
+          "石",
+          "妙"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“奇”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "石",
+            "妙",
+            "怪"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "形",
+        "tokens": [
+          "容",
+          "炉",
+          "湾",
+          "售",
+          "状",
+          "体"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“形”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "状",
+            "体",
+            "容"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "伸",
+        "hint": "选择“伸”的正确读音",
+        "options": [
+          "yìng",
+          "kè",
+          "shèng",
+          "shēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "著",
+        "hint": "选择“著”的正确读音",
+        "options": [
+          "zhù",
+          "xī",
+          "jiù",
+          "kè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雾第一次飞到哪里？",
+        "options": [
+          "山上",
+          "海上",
+          "树林里",
+          "学校里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雾先把什么藏了起来？",
+        "options": [
+          "小白兔",
+          "雪孩子",
+          "大海",
+          "牛羊"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雾把天空连同什么一起藏起来？",
+        "options": [
+          "月亮",
+          "星星",
+          "小鸟",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "雾来到岸边后，还把哪里藏了起来？",
+        "options": [
+          "海岸和城市",
+          "草原和牛羊",
+          "山寺和星辰",
+          "果园和田野"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后雾把谁藏了起来？",
+        "options": [
+          "小黑猫",
+          "自己",
+          "船只",
+          "桥梁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文里的话",
+        "tokens": [
+          "天空",
+          "大海",
+          "城市",
+          "藏起来",
+          "我要",
+          "把"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我要",
+          "把",
+          "大海",
+          "藏起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文里的话",
+        "tokens": [
+          "太阳",
+          "把",
+          "船只",
+          "自己",
+          "藏起来",
+          "现在",
+          "我要"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "现在",
+          "我要",
+          "把",
+          "自己",
+          "藏起来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "大海被藏"
+          },
+          {
+            "id": "l_1",
+            "text": "天空被藏"
+          },
+          {
+            "id": "l_2",
+            "text": "城市被藏"
+          },
+          {
+            "id": "l_3",
+            "text": "雾消失"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "四周变暗了"
+          },
+          {
+            "id": "r_2",
+            "text": "房屋、街道、桥梁看不见"
+          },
+          {
+            "id": "r_3",
+            "text": "路上走着行人"
+          },
+          {
+            "id": "r_0",
+            "text": "海水、船只、远方看不见"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "雾把大海藏起来后，远方都看不见了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "雾最后把太阳永远藏起来了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《雾在哪里》的教材页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-087.jpg",
+            "label": "敕勒歌"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-092.jpg",
+            "label": "雪孩子"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-089.jpg",
+            "label": "雾在哪里"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-098.jpg",
+            "label": "夜宿山寺"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "雾的变化",
+        "passage": "雾把大海、天空、海岸和城市藏起来，四周变暗，什么都看不见。后来雾把自己藏起来，景物又露出来了。",
+        "questions": [
+          {
+            "question": "雾把自己藏起来后，发生了什么？",
+            "options": [
+              "城市更暗了",
+              "大海消失了",
+              "景物露出来了",
+              "太阳不见了"
+            ]
+          },
+          {
+            "question": "课文把雾说成什么样的孩子？",
+            "options": [
+              "勤劳的孩子",
+              "胆小的孩子",
+              "沉默的孩子",
+              "淘气的孩子"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

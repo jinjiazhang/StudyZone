@@ -1,0 +1,266 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按顺序说经历",
+        "tokens": [
+          "听见山雀叫",
+          "我去外婆家",
+          "觉得真有趣",
+          "看见杜鹃花",
+          "山楂"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我去外婆家",
+          "看见杜鹃花",
+          "听见山雀叫",
+          "觉得真有趣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出分享句",
+        "tokens": [
+          "同学听",
+          "类似的经历",
+          "想讲给",
+          "我也有",
+          "外婆"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我也有",
+          "类似的经历",
+          "想讲给",
+          "同学听"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "交流经历时，先说哪一项更清楚？",
+        "options": [
+          "只说“很好玩”",
+          "先背识字表",
+          "什么时候、去了哪里",
+          "只说一个字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "介绍“去外婆家”的乐趣，可以围绕哪三类说？",
+        "options": [
+          "加减乘除",
+          "东南西北",
+          "吃的、玩的、看的",
+          "声母韵母"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "讲经历时可以按事情发生的顺序说。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "听别人讲经历时不用认真听。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "先说地点"
+          },
+          {
+            "id": "l_1",
+            "text": "再说事情"
+          },
+          {
+            "id": "l_2",
+            "text": "说出感受"
+          },
+          {
+            "id": "l_3",
+            "text": "认真倾听"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "外婆家真有趣"
+          },
+          {
+            "id": "r_0",
+            "text": "外婆家在山脚下"
+          },
+          {
+            "id": "r_3",
+            "text": "记住主要信息"
+          },
+          {
+            "id": "r_1",
+            "text": "看花、听鸟、吃果子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话适合表达感受？",
+        "options": [
+          "外婆家真有趣！",
+          "外婆家在第 30 页。",
+          "婆读 pó。",
+          "宝字有八画。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出完整表达",
+        "tokens": [
+          "因为那里",
+          "外婆家",
+          "我喜欢",
+          "有很多宝贝",
+          "曲子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我喜欢",
+          "外婆家",
+          "因为那里",
+          "有很多宝贝"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里“外婆告诉我”后面说的是哪种鸟？",
+        "options": [
+          "小燕子",
+          "黄鹂",
+          "乌鸦",
+          "大山雀"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "趣",
+        "tokens": [
+          "味",
+          "花",
+          "事",
+          "鼻",
+          "闻",
+          "星"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“趣”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "味",
+            "事",
+            "闻"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有《去外婆家》的写字格和课后交流题？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-036.jpg",
+            "label": "去外婆家第二页"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-034.jpg",
+            "label": "彩虹第二页"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-039.jpg",
+            "label": "数星星课后题"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-042.jpg",
+            "label": "口语交际"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    }
+  ]
+}

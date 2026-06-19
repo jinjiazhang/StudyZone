@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "3盘杯子蛋糕，每盘4个，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×3",
+          "3×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5件上衣，每件4颗扣子，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×5",
+          "5×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 5 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4个鼠窝，每窝5只小老鼠，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "5×4",
+          "4×5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 4 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“3盘，每盘4个”下面哪种列式正确？",
+        "options": [
+          "3+4",
+          "4×3",
+          "4-3",
+          "3×3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“5件上衣，每件4颗扣子”中，4表示什么？",
+        "options": [
+          "每件扣子数",
+          "上衣件数",
+          "总扣子数",
+          "题号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5件上衣，每件4颗扣子：__件，每件__颗，一共__颗。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "件数"
+          },
+          {
+            "id": "b2",
+            "label": "每件"
+          },
+          {
+            "id": "b3",
+            "label": "总数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每窝",
+          null,
+          "只，有",
+          null,
+          "窝，一共",
+          null,
+          "只"
+        ],
+        "tokens": [
+          "20",
+          "5",
+          "8",
+          "4",
+          "12"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "4",
+          "20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3盘，每盘4个"
+          },
+          {
+            "id": "l2",
+            "text": "5件，每件4颗"
+          },
+          {
+            "id": "l3",
+            "text": "4窝，每窝5只"
+          },
+          {
+            "id": "l4",
+            "text": "2盘，每盘6个"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "4×5=20"
+          },
+          {
+            "id": "r3",
+            "text": "5×4=20"
+          },
+          {
+            "id": "r4",
+            "text": "6×2=12"
+          },
+          {
+            "id": "r1",
+            "text": "4×3=12"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每件衣服有4颗扣子，5件衣服一共有多少颗扣子？",
+        "columns": [
+          "每件扣子",
+          "衣服件数"
+        ],
+        "rows": [
+          {
+            "每件扣子": 4,
+            "衣服件数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "05-zuojing-zonghe",
+  "title": "坐井观天综合运用",
+  "description": "综合练习《坐井观天》的字词、句子和道理。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "际",
+        "hint": "无边无际",
+        "options": [
+          "jǐ",
+          "jì",
+          "qí",
+          "jī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "弄错",
+        "hint": "你弄错了",
+        "options": [
+          "lòng cuò",
+          "nòng chuò",
+          "nòng cuò",
+          "nóng zuò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dá",
+        "sentence": "小鸟回__青蛙的问题。",
+        "blankPlaceholder": "__",
+        "character": "答",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "答"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "答",
+        "tokens": [
+          "应",
+          "错",
+          "案",
+          "远",
+          "复",
+          "谢",
+          "问"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“答”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "应",
+            "案",
+            "复",
+            "问"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“无边无际”中“际”的意思更接近哪一个？",
+        "options": [
+          "朋友",
+          "井水",
+          "边界",
+          "声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙认为自己不会弄错，是因为它怎样看天？",
+        "options": [
+          "飞到天上看",
+          "站到山顶看",
+          "坐船去看",
+          "从井里抬头看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“跳出井来看一看”是解决争论的好办法。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子",
+        "tokens": [
+          "看一看",
+          "不信",
+          "你",
+          "跳出",
+          "井来",
+          "吧"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不信",
+          "你",
+          "跳出",
+          "井来",
+          "看一看",
+          "吧"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "观天"
+          },
+          {
+            "id": "l_1",
+            "text": "井沿"
+          },
+          {
+            "id": "l_2",
+            "text": "口渴"
+          },
+          {
+            "id": "l_3",
+            "text": "相信"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "想喝水"
+          },
+          {
+            "id": "r_0",
+            "text": "看天"
+          },
+          {
+            "id": "r_3",
+            "text": "认为是真的"
+          },
+          {
+            "id": "r_1",
+            "text": "井口边"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "故事复盘",
+        "passage": "青蛙坐在井里，小鸟落在井沿上。青蛙问小鸟从哪儿来，小鸟说它从天上飞了一百多里。青蛙不相信天很大，小鸟让它跳出井来看一看。",
+        "questions": [
+          {
+            "question": "故事里谁的眼界更开阔？",
+            "options": [
+              "青蛙",
+              "小鸟",
+              "井水"
+            ]
+          },
+          {
+            "question": "青蛙应该怎样验证小鸟的话？",
+            "options": [
+              "继续坐着争论",
+              "把井口盖住",
+              "跳出井口看看"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选出与“坐井观天”意思相近的说法。",
+        "options": [
+          "眼界太窄",
+          "跑得太快",
+          "读书太多",
+          "说话太轻"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 - 16 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 ÷ 8 - 2 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "48 根胡萝卜，8 根装 1 篮，可以装几篮？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "48/8",
+          "48÷8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "运走 2 篮，每篮 8 根，运走多少根？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "2*8",
+          "8*2",
+          "2×8",
+          "8×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "48 根胡萝卜，每篮 8 根，可以装 ___ 篮；运走 2 篮，还剩 ___ 篮。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "总篮数"
+          },
+          {
+            "id": "b2",
+            "label": "剩余篮数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "运走 2 篮，每篮 8 根，运走 ___ 根；48 根还剩 ___ 根。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "运走"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          32
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "先求“可以装几篮”，应该用哪个算式？",
+        "options": [
+          "48 ÷ 8",
+          "48 × 8",
+          "48 - 8",
+          "8 + 48"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "48 根胡萝卜装成 6 篮，运走 2 篮后还剩多少根？",
+        "options": [
+          "16根",
+          "24根",
+          "32根",
+          "40根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "48 ÷ 8 - 2",
+        "right": "5"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

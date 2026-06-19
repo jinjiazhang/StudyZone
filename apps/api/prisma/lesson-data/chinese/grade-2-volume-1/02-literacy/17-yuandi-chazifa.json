@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "遇到不认识的字，可以用什么方法查字典？",
+        "options": [
+          "只看插图",
+          "部首查字法",
+          "只猜意思",
+          "跳过去不读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "查“诚”字读音，第一步要确定什么？",
+        "options": [
+          "颜色",
+          "季节",
+          "部首",
+          "动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材示例中，“诚”的部首是哪个？",
+        "options": [
+          "亻",
+          "氵",
+          "宀",
+          "讠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "确定部首后，要在“部首目录”里找什么？",
+        "options": [
+          "部首和页码",
+          "课文标题",
+          "插图位置",
+          "作者名字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "部首查字法可以帮助我们查不认识的字。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "查字典时不用数笔画。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "恨"
+          },
+          {
+            "id": "l_1",
+            "text": "假"
+          },
+          {
+            "id": "l_2",
+            "text": "漠"
+          },
+          {
+            "id": "l_3",
+            "text": "富"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "氵"
+          },
+          {
+            "id": "r_0",
+            "text": "忄"
+          },
+          {
+            "id": "r_3",
+            "text": "宀"
+          },
+          {
+            "id": "r_1",
+            "text": "亻"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "饥"
+          },
+          {
+            "id": "l_1",
+            "text": "诚"
+          },
+          {
+            "id": "l_2",
+            "text": "丑"
+          },
+          {
+            "id": "l_3",
+            "text": "虚"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "一"
+          },
+          {
+            "id": "r_0",
+            "text": "饣"
+          },
+          {
+            "id": "r_3",
+            "text": "虍"
+          },
+          {
+            "id": "r_1",
+            "text": "讠"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chǒu",
+        "sentence": "美对__，爱对恨。",
+        "blankPlaceholder": "__",
+        "character": "丑",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "丑"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chéng",
+        "sentence": "真__对虚假。",
+        "blankPlaceholder": "__",
+        "character": "诚",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "诚"
+      },
+      "difficulty": 2
+    }
+  ]
+}

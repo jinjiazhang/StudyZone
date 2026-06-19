@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 × 3 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 ÷ 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "看 3 行 8 个点：8 × 3 = ___，24 ÷ 3 = ___，24 ÷ 8 = ___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "积"
+          },
+          {
+            "id": "b2",
+            "label": "每行"
+          },
+          {
+            "id": "b3",
+            "label": "行数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          24,
+          8,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "由 8 × 3 = 24 可以想到哪个除法算式？",
+        "options": [
+          "24 ÷ 3 = 8",
+          "24 × 3 = 72",
+          "8 ÷ 3 = 24",
+          "3 ÷ 24 = 8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "24 ÷ □ = 3，□ 里应填几？",
+        "options": [
+          "3",
+          "6",
+          "8",
+          "24"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "24",
+          null,
+          "3",
+          null,
+          "8"
+        ],
+        "tokens": [
+          "8",
+          "÷",
+          "24",
+          "=",
+          "3",
+          "×"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "8 × 3"
+          },
+          {
+            "id": "l2",
+            "text": "24 ÷ 3"
+          },
+          {
+            "id": "l3",
+            "text": "24 ÷ 8"
+          },
+          {
+            "id": "l4",
+            "text": "3 × 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "24（3×8）"
+          },
+          {
+            "id": "r3",
+            "text": "3"
+          },
+          {
+            "id": "r2",
+            "text": "8"
+          },
+          {
+            "id": "r1",
+            "text": "24（8×3）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "24 ÷ 3",
+        "right": "24 ÷ 8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3 × 8 = 24 和 24 ÷ 8 = 3 表示的是同一组数的关系。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "宿",
+        "hint": "请选择字【宿】的正确拼音",
+        "options": [
+          "shān",
+          "sù",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寺",
+        "hint": "请选择字【寺】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "sì",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "危",
+        "hint": "请选择字【危】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "wēi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "楼",
+        "hint": "请选择字【楼】的正确拼音",
+        "options": [
+          "lóu",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "辰",
+        "hint": "请选择字【辰】的正确拼音",
+        "options": [
+          "shān",
+          "chén",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "恐",
+        "hint": "请选择字【恐】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "kǒng",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "惊",
+        "hint": "请选择字【惊】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "jīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "夜宿山寺",
+        "author": "李白",
+        "lines": [
+          [
+            null,
+            "高百尺，"
+          ],
+          [
+            "手可摘星辰。"
+          ]
+        ],
+        "options": [
+          "小楼",
+          "危楼",
+          "高山",
+          "白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "夜宿山寺",
+        "author": "李白",
+        "lines": [
+          [
+            "危楼高百尺，"
+          ],
+          [
+            "手可摘",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "白云",
+          "月光",
+          "星辰",
+          "雪花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "夜宿山寺",
+        "author": "李白",
+        "lines": [
+          [
+            null,
+            "高声语，"
+          ],
+          [
+            "恐惊天上人。"
+          ]
+        ],
+        "options": [
+          "不能",
+          "不要",
+          "不会",
+          "不敢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "夜宿山寺",
+        "author": "李白",
+        "lines": [
+          [
+            "危楼",
+            null,
+            "，"
+          ],
+          [
+            "手可摘",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "高百尺",
+              "低万丈",
+              "入云间",
+              "在山下"
+            ]
+          },
+          {
+            "options": [
+              "白雪",
+              "星辰",
+              "牛羊",
+              "寒江"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《夜宿山寺》中“危楼”指什么？",
+        "options": [
+          "危险的船",
+          "小桥",
+          "高楼",
+          "草地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

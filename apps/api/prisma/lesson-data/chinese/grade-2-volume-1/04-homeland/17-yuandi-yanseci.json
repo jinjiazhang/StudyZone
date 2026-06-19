@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "白色"
+          },
+          {
+            "id": "l1",
+            "text": "红色"
+          },
+          {
+            "id": "l2",
+            "text": "黄色"
+          },
+          {
+            "id": "l3",
+            "text": "绿色"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "土黄、鹅黄、金黄"
+          },
+          {
+            "id": "r0",
+            "text": "雪白、米白、奶白"
+          },
+          {
+            "id": "r3",
+            "text": "草绿、翠绿、墨绿"
+          },
+          {
+            "id": "r1",
+            "text": "火红、桃红、枣红"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雪白”常用来形容哪一种白？",
+        "options": [
+          "像火一样红",
+          "像草一样绿",
+          "像雪一样白",
+          "像土一样黄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“金黄”常用来形容什么颜色？",
+        "options": [
+          "很深的绿色",
+          "淡淡的白色",
+          "弯弯的月色",
+          "像金子一样的黄色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：火红的太阳",
+        "tokens": [
+          "太阳",
+          "雪白的",
+          "草地",
+          "火红的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "火红的",
+          "太阳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词语：翠绿的枝叶",
+        "tokens": [
+          "枝叶",
+          "金黄的",
+          "湖水",
+          "翠绿的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "翠绿的",
+          "枝叶"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“西瓜红、天蓝”属于哪类词语？",
+        "options": [
+          "表示颜色的词语",
+          "表示地点的词语",
+          "表示鞋子的词语",
+          "表示古诗题目的词语"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "红",
+        "tokens": [
+          "枣",
+          "雪",
+          "米",
+          "草",
+          "火",
+          "桃"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“红”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "火",
+            "桃",
+            "枣"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "绿",
+        "tokens": [
+          "墨",
+          "金",
+          "土",
+          "奶",
+          "草",
+          "翠"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“绿”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "草",
+            "翠",
+            "墨"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "枫",
+        "hint": "选择“枫”的正确读音",
+        "options": [
+          "dǎo",
+          "fēng",
+          "dìng",
+          "mì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "柳",
+        "hint": "选择“柳”的正确读音",
+        "options": [
+          "dǎo",
+          "dìng",
+          "liǔ",
+          "pō"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

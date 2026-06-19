@@ -1,0 +1,191 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "21 ÷ 3 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 ÷ 4 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 5 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "21 名男生，每顶帐篷住 3 名，需要几顶帐篷？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "21/3",
+          "21÷3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "20 名女生，每顶帐篷住 4 名，需要几顶帐篷？列式。",
+        "placeholder": "请输入算式"
+      },
+      "answer": {
+        "accepted": [
+          "20/4",
+          "20÷4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "男生需要 ___ 顶帐篷，女生需要 ___ 顶帐篷，一共需要 ___ 顶。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "男生"
+          },
+          {
+            "id": "b2",
+            "label": "女生"
+          },
+          {
+            "id": "b3",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果被除数小于除数，例如 3 ÷ 4，说明什么？",
+        "options": [
+          "不够分成1份每份4个",
+          "一定等于1",
+          "商一定比除数大",
+          "可以直接相乘"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "21 名男生，每顶住 3 名，为什么用除法？",
+        "options": [
+          "求有几个3",
+          "求3的7倍",
+          "求相差多少",
+          "求加法顺序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "21 ÷ 3",
+        "right": "20 ÷ 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "21名男生，每顶3名"
+          },
+          {
+            "id": "l2",
+            "text": "20名女生，每顶4名"
+          },
+          {
+            "id": "l3",
+            "text": "18名同学，每顶3名"
+          },
+          {
+            "id": "l4",
+            "text": "24名同学，每顶4名"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "6顶（24人）"
+          },
+          {
+            "id": "r3",
+            "text": "6顶（18人）"
+          },
+          {
+            "id": "r2",
+            "text": "5顶"
+          },
+          {
+            "id": "r1",
+            "text": "7顶"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

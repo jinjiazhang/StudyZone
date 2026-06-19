@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "孔雀锦鸡"
+          },
+          {
+            "id": "l_1",
+            "text": "雄鹰"
+          },
+          {
+            "id": "l_2",
+            "text": "天空雁群"
+          },
+          {
+            "id": "l_3",
+            "text": "丛林深处"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "会写字"
+          },
+          {
+            "id": "r_0",
+            "text": "是伙伴儿"
+          },
+          {
+            "id": "r_3",
+            "text": "有猛虎"
+          },
+          {
+            "id": "r_1",
+            "text": "飞翔云彩间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "黄鹂百灵"
+          },
+          {
+            "id": "l_1",
+            "text": "竹林熊猫"
+          },
+          {
+            "id": "l_2",
+            "text": "大小动物"
+          },
+          {
+            "id": "l_3",
+            "text": "人和动物"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "都有家"
+          },
+          {
+            "id": "r_0",
+            "text": "唱不休"
+          },
+          {
+            "id": "r_3",
+            "text": "是朋友"
+          },
+          {
+            "id": "r_1",
+            "text": "在嬉戏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“竹林熊猫在嬉戏”写的是哪种动物？",
+        "options": [
+          "孔雀",
+          "黄鹂",
+          "大雁",
+          "熊猫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“天空雁群会写字”写的是哪种动物？",
+        "options": [
+          "大雁",
+          "老鹰",
+          "麻雀",
+          "天鹅"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《拍手歌》告诉我们要保护动物。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文说“大小动物都没有家”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：人和动物是朋友。",
+        "tokens": [
+          "保护",
+          "人和",
+          "猛虎",
+          "动物",
+          "是",
+          "朋友"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人和",
+          "动物",
+          "是",
+          "朋友"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：保护动物是大事。",
+        "tokens": [
+          "世界",
+          "保护",
+          "唱歌",
+          "动物",
+          "是",
+          "大事"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "保护",
+          "动物",
+          "是",
+          "大事"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "动物朋友",
+        "passage": "课文用拍手游戏写动物世界。孔雀、锦鸡、雄鹰、大雁、猛虎、黄鹂、百灵、熊猫都来到儿歌里。最后提醒我们：人和动物是朋友，保护动物是大事。",
+        "questions": [
+          {
+            "question": "课文最后强调什么？",
+            "options": [
+              "保护动物",
+              "砍树造房",
+              "采桑养蚕"
+            ]
+          },
+          {
+            "question": "下面哪组都是课文中的动物？",
+            "options": [
+              "孔雀、锦鸡、熊猫",
+              "海鸥、帆船、稻田",
+              "泡桐、白桦、云杉"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“黄鹂百灵唱不休”写出了鸟儿怎样？",
+        "options": [
+          "不会飞",
+          "叫声动听",
+          "不会唱",
+          "在水里游"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

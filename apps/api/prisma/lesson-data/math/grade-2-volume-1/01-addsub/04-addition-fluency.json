@@ -1,0 +1,194 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "47+6 = ?"
+      },
+      "answer": {
+        "value": 53,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36+29 = ?"
+      },
+      "answer": {
+        "value": 65,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3+56 = ?"
+      },
+      "answer": {
+        "value": 59,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34+37 = ?"
+      },
+      "answer": {
+        "value": 71,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24+46 = ?"
+      },
+      "answer": {
+        "value": 70,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35+48 = ?"
+      },
+      "answer": {
+        "value": 83,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "49+22 = ?"
+      },
+      "answer": {
+        "value": 71,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45+17 = ?"
+      },
+      "answer": {
+        "value": 62,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "34 + 37",
+        "right": "24 + 46"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "47 + 6"
+          },
+          {
+            "id": "l1",
+            "text": "36 + 29"
+          },
+          {
+            "id": "l2",
+            "text": "3 + 56"
+          },
+          {
+            "id": "l3",
+            "text": "45 + 17"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "59"
+          },
+          {
+            "id": "r3",
+            "text": "62"
+          },
+          {
+            "id": "r0",
+            "text": "53"
+          },
+          {
+            "id": "r1",
+            "text": "65"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪道算式的得数是 71？",
+        "options": [
+          "34 + 37",
+          "35 + 48",
+          "24 + 46",
+          "49 + 22"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "49",
+          null,
+          "22",
+          null,
+          "71"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

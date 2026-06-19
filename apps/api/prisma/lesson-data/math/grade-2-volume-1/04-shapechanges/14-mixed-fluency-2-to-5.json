@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 8 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 6 = ?"
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 7 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 9 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 8 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 8",
+        "right": "4 * 6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 6",
+        "right": "4 * 8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "填空：2×8=___，3×7=___，4×5=___。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×8"
+          },
+          {
+            "id": "b2",
+            "label": "3×7"
+          },
+          {
+            "id": "b3",
+            "label": "4×5"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          21,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "二九十八"
+          },
+          {
+            "id": "l2",
+            "text": "三八二十四"
+          },
+          {
+            "id": "l3",
+            "text": "四七二十八"
+          },
+          {
+            "id": "l4",
+            "text": "五九四十五"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "28"
+          },
+          {
+            "id": "r2",
+            "text": "18"
+          },
+          {
+            "id": "r3",
+            "text": "45"
+          },
+          {
+            "id": "r4",
+            "text": "24"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "",
+          null,
+          " × 8 = 32，",
+          null,
+          " × 6 = 30"
+        ],
+        "tokens": [
+          "4",
+          "3",
+          "5",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "结果最大的是哪一个？",
+        "options": [
+          "4×8",
+          "3×9",
+          "5×9",
+          "2×9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3×8和4×6都等于24。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

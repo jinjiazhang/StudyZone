@@ -1,0 +1,230 @@
+{
+  "id": "06-chengzan-zonghe",
+  "title": "称赞综合",
+  "description": "综合复习《称赞》的字词、写字和内容理解。",
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《称赞》的教材页面。",
+        "options": [
+          {
+            "id": "p100",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-100.jpg",
+            "label": "《称赞》开头"
+          },
+          {
+            "id": "p103",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-103.jpg",
+            "label": "《纸船和风筝》开头"
+          },
+          {
+            "id": "p107",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-107.jpg",
+            "label": "《狐假虎威》"
+          },
+          {
+            "id": "p106",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-106.jpg",
+            "label": "看图讲故事"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "p100"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "疲",
+        "hint": "疲劳",
+        "options": [
+          "bèi",
+          "pí",
+          "bǐ",
+          "pī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "劳",
+        "hint": "疲劳",
+        "options": [
+          "náo",
+          "lǎo",
+          "láo",
+          "lào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jí",
+        "sentence": "小刺猬高兴__了。",
+        "blankPlaceholder": "__",
+        "character": "极",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "极"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiē",
+        "sentence": "小獾__过苹果。",
+        "blankPlaceholder": "__",
+        "character": "接",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "接"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "拿"
+          },
+          {
+            "id": "l2",
+            "text": "极"
+          },
+          {
+            "id": "l3",
+            "text": "送"
+          },
+          {
+            "id": "l4",
+            "text": "拉"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "高兴极了"
+          },
+          {
+            "id": "r4",
+            "text": "拉着手"
+          },
+          {
+            "id": "r1",
+            "text": "拿起"
+          },
+          {
+            "id": "r3",
+            "text": "送给"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文里的短语。",
+        "tokens": [
+          "红红的",
+          "几个",
+          "苹果"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "几个",
+          "红红的",
+          "苹果"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小刺猬为什么不好意思要椅子？",
+        "options": [
+          "他不喜欢椅子",
+          "他觉得自己没干什么",
+          "他找不到路",
+          "他要去游泳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小獾把椅子送给小刺猬，是为了表达什么？",
+        "options": [
+          "想交换风筝",
+          "想去山上",
+          "想分类动物",
+          "一点儿心意"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "赞",
+        "tokens": [
+          "美",
+          "成",
+          "同",
+          "叹",
+          "拉",
+          "纸"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“赞”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "美",
+            "成",
+            "叹"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

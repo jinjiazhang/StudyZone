@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "敕",
+        "hint": "请选择字【敕】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "chì",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "勒",
+        "hint": "请选择字【勒】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "lè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "似",
+        "hint": "请选择字【似】的正确拼音",
+        "options": [
+          "sì",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "庐",
+        "hint": "请选择字【庐】的正确拼音",
+        "options": [
+          "shān",
+          "lú",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "笼",
+        "hint": "请选择字【笼】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "lǒng",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盖",
+        "hint": "请选择字【盖】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "gài"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "苍",
+        "hint": "请选择字【苍】的正确拼音",
+        "options": [
+          "cāng",
+          "shān",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茫",
+        "hint": "请选择字【茫】的正确拼音",
+        "options": [
+          "shān",
+          "máng",
+          "shuǐ",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "阴",
+        "hint": "请选择字【阴】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "yīn",
+          "tiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "野",
+        "hint": "请选择字【野】的正确拼音",
+        "options": [
+          "shān",
+          "shuǐ",
+          "tiān",
+          "yě"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "川"
+          },
+          {
+            "id": "l_1",
+            "text": "穹庐"
+          },
+          {
+            "id": "l_2",
+            "text": "苍苍"
+          },
+          {
+            "id": "l_3",
+            "text": "茫茫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "像帐篷一样的天空"
+          },
+          {
+            "id": "r_2",
+            "text": "蓝蓝的样子"
+          },
+          {
+            "id": "r_3",
+            "text": "辽阔无边的样子"
+          },
+          {
+            "id": "r_0",
+            "text": "平原"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "野",
+        "tokens": [
+          "船",
+          "外",
+          "猫",
+          "花",
+          "歌",
+          "草"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“野”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "外",
+            "花",
+            "草"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

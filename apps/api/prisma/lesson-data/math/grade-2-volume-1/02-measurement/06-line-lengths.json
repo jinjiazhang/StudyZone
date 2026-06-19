@@ -1,0 +1,147 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "画一条8厘米线段，比6厘米线段长 ? 厘米"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "一条线段长4厘米，另一条同样长，两条一共 ? 厘米"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用断尺画6厘米线段，可以从8画到：",
+        "options": [
+          "12",
+          "15",
+          "16",
+          "14"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "从8厘米刻度到14厘米刻度，列式求线段长度。",
+        "placeholder": "例如：60-17"
+      },
+      "answer": {
+        "accepted": [
+          "14-8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 - 8",
+        "right": "6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一条线段从 __ 厘米到 __ 厘米，长6厘米。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "起点"
+          },
+          {
+            "id": "b2",
+            "label": "终点"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          14
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "只要起点和终点相差6厘米，就能画出6厘米长的线段。",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-028.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "画线段时，尺子应该尽量：",
+        "options": [
+          "放平并按住",
+          "斜放并移动",
+          "反过来不看刻度",
+          "只看中间刻度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从5厘米到13厘米的线段长 ? 厘米"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组刻度间的长度是4厘米？",
+        "options": [
+          "0到3",
+          "1到5",
+          "2到9",
+          "6到8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

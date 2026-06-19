@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26+9 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17+38 = ?"
+      },
+      "answer": {
+        "value": 55,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26+17 = ?"
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9+38 = ?"
+      },
+      "answer": {
+        "value": 47,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "27+24 = ?"
+      },
+      "answer": {
+        "value": 51,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "35+15 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "38+19 = ?"
+      },
+      "answer": {
+        "value": 57,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "26 + 9：个位 6 + 9 = __，写 __ 进 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "个位写"
+          },
+          {
+            "id": "b3",
+            "label": "进位"
+          },
+          {
+            "id": "b4",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          5,
+          1,
+          35
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "17 + 38：个位 7 + 8 = __，写 __ 进 __，结果是 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "个位写"
+          },
+          {
+            "id": "b3",
+            "label": "进位"
+          },
+          {
+            "id": "b4",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15,
+          5,
+          1,
+          55
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "26 + 9"
+          },
+          {
+            "id": "l1",
+            "text": "17 + 38"
+          },
+          {
+            "id": "l2",
+            "text": "27 + 24"
+          },
+          {
+            "id": "l3",
+            "text": "38 + 19"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "51"
+          },
+          {
+            "id": "r3",
+            "text": "57"
+          },
+          {
+            "id": "r0",
+            "text": "35"
+          },
+          {
+            "id": "r1",
+            "text": "55"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "26 + 17",
+        "right": "9 + 38"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "26 + 17 比 9 + 38 小。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-009.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

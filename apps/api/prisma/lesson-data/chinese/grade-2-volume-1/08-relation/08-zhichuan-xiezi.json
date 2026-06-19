@@ -1,0 +1,170 @@
+{
+  "id": "08-zhichuan-xiezi",
+  "title": "纸船写字练习",
+  "description": "练写《纸船和风筝》课后写字表中的生字，掌握课文关键词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǐ",
+        "sentence": "小熊想折一只__船送给松鼠。",
+        "blankPlaceholder": "__",
+        "character": "纸",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "纸"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhuā",
+        "sentence": "松鼠一把__住风筝的线。",
+        "blankPlaceholder": "__",
+        "character": "抓",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "抓"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiàn",
+        "sentence": "风筝的__上挂着草莓。",
+        "blankPlaceholder": "__",
+        "character": "线",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "线"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chǎo",
+        "sentence": "他们俩为了一点儿小事__了一架。",
+        "blankPlaceholder": "__",
+        "character": "吵",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "吵"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dàn",
+        "sentence": "山顶上再也看不到风筝，__是小熊每天还扎。",
+        "blankPlaceholder": "__",
+        "character": "但",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "但"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shòu",
+        "sentence": "松鼠再也__不了啦。",
+        "blankPlaceholder": "__",
+        "character": "受",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "受"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jù",
+        "sentence": "纸船里写着一__话。",
+        "blankPlaceholder": "__",
+        "character": "句",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "句"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kū",
+        "sentence": "松鼠高兴得__了。",
+        "blankPlaceholder": "__",
+        "character": "哭",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "哭"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "莓",
+        "hint": "草莓",
+        "options": [
+          "méi",
+          "mèi",
+          "mǎi",
+          "mái"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "纸",
+        "tokens": [
+          "船",
+          "抓",
+          "张",
+          "哭",
+          "条",
+          "线"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“纸”组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "船",
+            "张",
+            "条"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

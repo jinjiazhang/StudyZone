@@ -1,0 +1,322 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按课本第72页的方法剪出五角星，排列操作顺序。",
+        "items": [
+          {
+            "id": "o0",
+            "text": "沿画线剪下"
+          },
+          {
+            "id": "o1",
+            "text": "把纸对折"
+          },
+          {
+            "id": "o2",
+            "text": "展开得到完整星星"
+          },
+          {
+            "id": "o3",
+            "text": "在折好的纸上画半个星形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o1",
+          "o3",
+          "o0",
+          "o2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "剪星星时，为什么要先把纸对折？",
+        "options": [
+          "让纸变得更厚",
+          "让展开后的图形左右对应",
+          "为了少用剪刀",
+          "为了把颜色剪掉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪种图形最适合用“对折后剪一半”的方法得到？",
+        "options": [
+          {
+            "id": "g1_0",
+            "label": "一条斜线"
+          },
+          {
+            "id": "g1_1",
+            "label": "杂乱的折线"
+          },
+          {
+            "id": "g1_2",
+            "label": "左右对称的星星"
+          },
+          {
+            "id": "g1_3",
+            "label": "一排不同大小的圆"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g1_2"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "先把纸",
+          null,
+          "，再画",
+          null,
+          "图形，剪下后",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "展开",
+          "半个",
+          "旋转",
+          "对折",
+          "平移"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对折",
+          "半个",
+          "展开"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "沿折线剪星星时，画线应画在纸的哪里？",
+        "options": [
+          "整张纸外面",
+          "没有折到的一角随便画",
+          "纸背面空白处都可以",
+          "靠近折边的一半图形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "剪完展开后，左右两边完全对应的图形叫作什么图形？",
+        "options": [
+          {
+            "id": "g2_0",
+            "label": "轴对称图形"
+          },
+          {
+            "id": "g2_1",
+            "label": "平移图形"
+          },
+          {
+            "id": "g2_2",
+            "label": "旋转图形"
+          },
+          {
+            "id": "g2_3",
+            "label": "长方形图形"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g2_0"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本第72页中，淘气剪星星前先想到什么？",
+        "options": [
+          "怎么折、怎么画",
+          "怎样计算周长",
+          "怎样数乘法口诀",
+          "怎样比较钱数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "制作一个左右对称的衣服图案，应怎样做？",
+        "items": [
+          {
+            "id": "o0",
+            "text": "沿折边画半件衣服"
+          },
+          {
+            "id": "o1",
+            "text": "展开检查左右是否对齐"
+          },
+          {
+            "id": "o2",
+            "text": "把纸对折"
+          },
+          {
+            "id": "o3",
+            "text": "沿线剪开"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "o2",
+          "o0",
+          "o3",
+          "o1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "对折"
+          },
+          {
+            "id": "l1",
+            "text": "画半个图案"
+          },
+          {
+            "id": "l2",
+            "text": "沿线剪"
+          },
+          {
+            "id": "l3",
+            "text": "展开"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "去掉多余部分"
+          },
+          {
+            "id": "r0",
+            "text": "使两边重合"
+          },
+          {
+            "id": "r3",
+            "text": "看到完整图案"
+          },
+          {
+            "id": "r1",
+            "text": "确定剪出的轮廓"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果画线离折边太远，可能出现什么情况？",
+        "options": [
+          "一定变成圆形",
+          "一定能剪出两个完全一样的星星",
+          "展开后图案可能断开或不像样",
+          "一定不能剪动纸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "哪句话符合剪纸操作中的注意点？",
+        "options": [
+          {
+            "id": "g3_0",
+            "label": "描线像不像不重要"
+          },
+          {
+            "id": "g3_1",
+            "label": "剪之前不用想形状"
+          },
+          {
+            "id": "g3_2",
+            "label": "只能剪三角形"
+          },
+          {
+            "id": "g3_3",
+            "label": "对折一定要对齐"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "g3_3"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "剪对称图形时，折边相当于图形的",
+          null,
+          "，两边要",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "对齐",
+          "对称轴",
+          "出口",
+          "乘法"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "对称轴",
+          "对齐"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

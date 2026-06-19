@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 个橘子平均分成 3 份，每份 ? 个。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 个橘子每袋装 3 个，可以装 ? 袋。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 个苹果平均分成 6 份，每份 ? 个。"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 个苹果每袋装 4 个，可以装 ? 袋。"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "笑笑记录前两次每人各分 1 块，第 3 次每人各分 2 块。4 人一共分出多少块？",
+        "columns": [
+          "次数",
+          "每人分到"
+        ],
+        "rows": [
+          {
+            "次数": "第1次",
+            "每人分到": 1
+          },
+          {
+            "次数": "第2次",
+            "每人分到": 1
+          },
+          {
+            "次数": "第3次",
+            "每人分到": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把 18 个橘子平均分成 3 份，每份 6 个，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "18÷3=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 个橘子，平均分成 __ 份，每份 6 个。",
+        "blanks": [
+          {
+            "id": "parts",
+            "label": "份数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气一次拿 3 个橘子，拿 6 次，这说明 18 个橘子可以怎样分？",
+        "options": [
+          "平均分成 6 份，每份 3 个",
+          "平均分成 3 份，每份 6 个",
+          "剩下 6 个",
+          "不能平均分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18 ÷ 3",
+        "right": "18 ÷ 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "18÷3"
+          },
+          {
+            "id": "l2",
+            "text": "18÷6"
+          },
+          {
+            "id": "l3",
+            "text": "20÷4"
+          },
+          {
+            "id": "l4",
+            "text": "12÷3"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          },
+          {
+            "id": "r4",
+            "text": "4"
+          },
+          {
+            "id": "r2",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "18",
+          null,
+          "6",
+          null,
+          "3"
+        ],
+        "tokens": [
+          "=",
+          "18",
+          "+",
+          "÷",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按每份个数从小到大排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "18÷3=6"
+          },
+          {
+            "id": "i1",
+            "text": "18÷9=2"
+          },
+          {
+            "id": "i4",
+            "text": "18÷2=9"
+          },
+          {
+            "id": "i2",
+            "text": "18÷6=3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

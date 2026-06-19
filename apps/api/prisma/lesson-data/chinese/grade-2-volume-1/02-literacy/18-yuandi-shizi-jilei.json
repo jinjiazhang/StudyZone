@@ -1,0 +1,262 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "美"
+          },
+          {
+            "id": "l_1",
+            "text": "爱"
+          },
+          {
+            "id": "l_2",
+            "text": "真诚"
+          },
+          {
+            "id": "l_3",
+            "text": "热忱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "虚假"
+          },
+          {
+            "id": "r_0",
+            "text": "丑"
+          },
+          {
+            "id": "r_3",
+            "text": "冷漠"
+          },
+          {
+            "id": "r_1",
+            "text": "恨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "贫"
+          },
+          {
+            "id": "l_1",
+            "text": "冷"
+          },
+          {
+            "id": "l_2",
+            "text": "饥寒"
+          },
+          {
+            "id": "l_3",
+            "text": "索取"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "温饱"
+          },
+          {
+            "id": "r_0",
+            "text": "富"
+          },
+          {
+            "id": "r_3",
+            "text": "奉献"
+          },
+          {
+            "id": "r_1",
+            "text": "暖"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“美对丑，爱对恨”这一组主要练习什么？",
+        "options": [
+          "量词",
+          "反义词",
+          "动物名",
+          "树木名"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“真诚对虚假”中，“虚假”的反义词是？",
+        "options": [
+          "冷漠",
+          "饥寒",
+          "真诚",
+          "索取"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雪中送炭见真情”中的“真情”指什么？",
+        "options": [
+          "寒冷天气",
+          "一种木炭",
+          "一只动物",
+          "真诚的情意"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“人人献出一点爱，人间永远是春天”表达互相关爱。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“贫对富，冷对暖”不是反义词。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：美对丑，爱对恨。",
+        "tokens": [
+          "真诚",
+          "美",
+          "冷漠",
+          "对",
+          "丑",
+          "爱",
+          "对",
+          "恨"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "美",
+          "对",
+          "丑",
+          "爱",
+          "对",
+          "恨"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：贫对富，冷对暖。",
+        "tokens": [
+          "热忱",
+          "贫",
+          "虚假",
+          "对",
+          "富",
+          "冷",
+          "对",
+          "暖"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "贫",
+          "对",
+          "富",
+          "冷",
+          "对",
+          "暖"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "反义词里的爱",
+        "passage": "语文园地二把“美”和“丑”、“爱”和“恨”、“真诚”和“虚假”放在一起读。这样的词语意思相反，读的时候还能感受到帮助别人、献出爱心的温暖。",
+        "questions": [
+          {
+            "question": "“爱”的反义词是？",
+            "options": [
+              "恨",
+              "美",
+              "富"
+            ]
+          },
+          {
+            "question": "下面哪组是反义词？",
+            "options": [
+              "冷和暖",
+              "孔雀和锦鸡",
+              "树根和树枝"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

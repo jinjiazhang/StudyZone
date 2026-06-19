@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“五光十色”写出了葡萄的什么？",
+        "options": [
+          "味道酸",
+          "颜色多又美",
+          "数量少",
+          "地方远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "葡萄干为什么能在阴房里制成？",
+        "options": [
+          "放进湖水里泡",
+          "挂到山顶吹雪",
+          "利用流动的热空气蒸发水分",
+          "用火车运走"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：茂密的枝叶向四面展开",
+        "tokens": [
+          "向",
+          "四面",
+          "展开",
+          "湖水",
+          "灯光",
+          "茂密的",
+          "枝叶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "茂密的",
+          "枝叶",
+          "向",
+          "四面",
+          "展开"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：葡萄一大串一大串地挂在绿叶底下",
+        "tokens": [
+          "一大串地",
+          "挂在",
+          "绿叶底下",
+          "山峰",
+          "火车",
+          "葡萄",
+          "一大串"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "葡萄",
+          "一大串",
+          "一大串地",
+          "挂在",
+          "绿叶底下"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照样子补句：公园里的花都开了，有桃花、杏花、迎春花，____。",
+        "options": [
+          "火车开走了",
+          "湖水很深",
+          "巨石指向前方",
+          "五颜六色，美丽极了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“好客”的“好”在课文里读什么？",
+        "options": [
+          "hào",
+          "hǎo",
+          "gǎo",
+          "kǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "茂密"
+          },
+          {
+            "id": "l1",
+            "text": "五光十色"
+          },
+          {
+            "id": "l2",
+            "text": "好客"
+          },
+          {
+            "id": "l3",
+            "text": "阴房"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "热情招待客人"
+          },
+          {
+            "id": "r0",
+            "text": "多而密"
+          },
+          {
+            "id": "r3",
+            "text": "制作葡萄干的房子"
+          },
+          {
+            "id": "r1",
+            "text": "色彩多而鲜艳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "味",
+        "tokens": [
+          "香",
+          "顶",
+          "限",
+          "炉",
+          "道",
+          "美"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“味”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "道",
+            "美",
+            "香"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "颜",
+        "hint": "选择“颜”的正确读音",
+        "options": [
+          "céng",
+          "yán",
+          "wén",
+          "pán"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "味",
+        "hint": "选择“味”的正确读音",
+        "options": [
+          "lú",
+          "shén",
+          "wèi",
+          "xíng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

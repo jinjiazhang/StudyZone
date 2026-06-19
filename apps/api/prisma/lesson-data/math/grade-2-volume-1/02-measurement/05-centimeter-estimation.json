@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "铅笔长约17（ ），括号里应填：",
+        "options": [
+          "米",
+          "千克",
+          "厘米",
+          "元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "文具盒长约20（ ），括号里应填：",
+        "options": [
+          "米",
+          "分",
+          "时",
+          "厘米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一块橡皮长约3（ ），括号里应填：",
+        "options": [
+          "厘米",
+          "米",
+          "千米",
+          "升"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "铅笔约17厘米，橡皮约4厘米，铅笔比橡皮长 ? 厘米"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20",
+        "right": "17"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个长度最接近一支铅笔？",
+        "options": [
+          "2厘米",
+          "17厘米",
+          "2米",
+          "70米"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪个物体最长？",
+        "columns": [
+          "物体",
+          "估计长度/厘米"
+        ],
+        "rows": [
+          {
+            "物体": "橡皮",
+            "估计长度/厘米": 4
+          },
+          {
+            "物体": "铅笔",
+            "估计长度/厘米": 17
+          },
+          {
+            "物体": "文具盒",
+            "估计长度/厘米": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "橡皮"
+          },
+          {
+            "id": "l2",
+            "text": "铅笔"
+          },
+          {
+            "id": "l3",
+            "text": "文具盒"
+          },
+          {
+            "id": "l4",
+            "text": "手指宽"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "约17厘米"
+          },
+          {
+            "id": "r4",
+            "text": "约1厘米"
+          },
+          {
+            "id": "r1",
+            "text": "约3厘米"
+          },
+          {
+            "id": "r3",
+            "text": "约20厘米"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "估测后再测量，可以帮助我们判断估计是否合理。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "杯子高约9（ ），最合适的单位是：",
+        "options": [
+          "米",
+          "吨",
+          "厘米",
+          "角"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

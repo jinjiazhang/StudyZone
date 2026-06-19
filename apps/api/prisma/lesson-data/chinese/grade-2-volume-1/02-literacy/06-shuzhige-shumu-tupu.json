@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "杨树"
+          },
+          {
+            "id": "l_1",
+            "text": "榕树"
+          },
+          {
+            "id": "l_2",
+            "text": "梧桐树叶"
+          },
+          {
+            "id": "l_3",
+            "text": "枫树秋天叶儿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "像手掌"
+          },
+          {
+            "id": "r_0",
+            "text": "高"
+          },
+          {
+            "id": "r_3",
+            "text": "红"
+          },
+          {
+            "id": "r_1",
+            "text": "壮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "松柏四季"
+          },
+          {
+            "id": "l_1",
+            "text": "木棉"
+          },
+          {
+            "id": "l_2",
+            "text": "桦树"
+          },
+          {
+            "id": "l_3",
+            "text": "金桂开花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "耐寒守北疆"
+          },
+          {
+            "id": "r_0",
+            "text": "披绿装"
+          },
+          {
+            "id": "r_3",
+            "text": "满院香"
+          },
+          {
+            "id": "r_1",
+            "text": "喜暖在南方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“梧桐树叶像手掌”写的是树叶的什么？",
+        "options": [
+          "颜色",
+          "形状",
+          "味道",
+          "声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“松柏四季披绿装”说明松柏怎样？",
+        "options": [
+          "只在春天开花",
+          "秋天落光叶",
+          "四季常青",
+          "冬天发黄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种树“耐寒守北疆”？",
+        "options": [
+          "木棉",
+          "金桂",
+          "榕树",
+          "桦树"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种树“开花满院香”？",
+        "options": [
+          "金桂",
+          "杨树",
+          "银杏",
+          "水杉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《树之歌》里写“木棉喜暖在南方”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《树之歌》里写“枫树春天叶儿红”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "树",
+        "tokens": [
+          "干",
+          "枝",
+          "梢",
+          "花",
+          "鸟",
+          "根"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能与“树”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "根",
+            "干",
+            "枝",
+            "梢"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "柏",
+        "tokens": [
+          "翠",
+          "树",
+          "白",
+          "云",
+          "鱼",
+          "松"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“柏”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "松",
+            "翠",
+            "树"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

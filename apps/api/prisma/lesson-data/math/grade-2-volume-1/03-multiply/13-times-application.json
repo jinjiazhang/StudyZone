@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小兔买2支铅笔，小牛买的支数是小兔的3倍，小牛买了多少支？"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小兔买2支铅笔，小牛买的是3倍，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "2×3",
+          "3×2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "小兔花4元，小狐狸花的钱是小兔的4倍，小狐狸花了多少元？"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小兔花4元，小狐狸花的是4倍，写乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小兔有2支铅笔，小牛是3倍。小牛有__支，一共买了__支。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小牛"
+          },
+          {
+            "id": "b2",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小兔花4元，小狐狸是4倍。小狐狸花__元，两人共花__元。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小狐狸"
+          },
+          {
+            "id": "b2",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          20
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我的铅笔支数是你的3倍”表示什么？",
+        "options": [
+          "和你一样多",
+          "有3个你那么多",
+          "比你多3支",
+          "少3支"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "4元的",
+          null,
+          "倍是",
+          null,
+          "元"
+        ],
+        "tokens": [
+          "16",
+          "3",
+          "4",
+          "12",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "16"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2支的3倍"
+          },
+          {
+            "id": "l2",
+            "text": "4元的4倍"
+          },
+          {
+            "id": "l3",
+            "text": "3人的5倍"
+          },
+          {
+            "id": "l4",
+            "text": "6个的2倍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "16元"
+          },
+          {
+            "id": "r3",
+            "text": "15人"
+          },
+          {
+            "id": "r4",
+            "text": "12个"
+          },
+          {
+            "id": "r1",
+            "text": "6支"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 × 3",
+        "right": "4 × 2"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小兔买2支铅笔，小牛买的是小兔的3倍，小牛买多少支？",
+        "columns": [
+          "小兔支数",
+          "倍数"
+        ],
+        "rows": [
+          {
+            "小兔支数": 2,
+            "倍数": 3
+          }
+        ]
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小狐狸花16元，小兔花4元，小狐狸的钱数是小兔的几倍？",
+        "options": [
+          "4倍",
+          "2倍",
+          "3倍",
+          "5倍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

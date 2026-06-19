@@ -1,0 +1,309 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "水壶"
+          },
+          {
+            "id": "l_1",
+            "text": "镜子"
+          },
+          {
+            "id": "l_2",
+            "text": "秋千"
+          },
+          {
+            "id": "l_3",
+            "text": "彩虹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "挂起来供人坐着荡的玩具"
+          },
+          {
+            "id": "r_0",
+            "text": "用来盛水的器具"
+          },
+          {
+            "id": "r_3",
+            "text": "雨后天空中彩色的弧形光带"
+          },
+          {
+            "id": "r_1",
+            "text": "能照出人或物的东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "浇花"
+          },
+          {
+            "id": "l_1",
+            "text": "挑水"
+          },
+          {
+            "id": "l_2",
+            "text": "梳头"
+          },
+          {
+            "id": "l_3",
+            "text": "裙子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "用梳子整理头发"
+          },
+          {
+            "id": "r_0",
+            "text": "给花草洒水"
+          },
+          {
+            "id": "r_3",
+            "text": "穿在下身的衣服"
+          },
+          {
+            "id": "r_1",
+            "text": "担着水走"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "水",
+        "tokens": [
+          "壶",
+          "果",
+          "花",
+          "镜",
+          "田",
+          "裙"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“水”组成课文相关词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "壶",
+            "花",
+            "田"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "彩",
+        "tokens": [
+          "虹",
+          "笔",
+          "云",
+          "水",
+          "色",
+          "门"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“彩”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "虹",
+            "云",
+            "色"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "圆",
+        "tokens": [
+          "月",
+          "笔",
+          "桌",
+          "秋",
+          "珠",
+          "桥"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“圆”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "月",
+            "桌",
+            "珠"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一座美丽的桥”中的“桥”指什么？",
+        "options": [
+          "小河上的木桥",
+          "彩虹",
+          "石头桥",
+          "学校门口的桥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“裙子飘啊飘的”写出了什么？",
+        "options": [
+          "裙子很重",
+          "裙子随风摆动",
+          "裙子不见了",
+          "裙子变成水壶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《彩虹》里“我”想拿着镜子走到桥上。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《彩虹》里的“我”只想着自己玩，不关心家人。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出短语",
+        "tokens": [
+          "照着",
+          "月亮",
+          "圆圆的",
+          "秋千",
+          "您梳头",
+          "水壶"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "圆圆的",
+          "月亮",
+          "照着",
+          "您梳头"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "找出《彩虹》所在的教材页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-035.jpg",
+            "label": "去外婆家"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-033.jpg",
+            "label": "彩虹第一页"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-037.jpg",
+            "label": "数星星的孩子"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-040.jpg",
+            "label": "语文园地三"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拿着它”的“它”在妈妈那一段指什么？",
+        "options": [
+          "水壶",
+          "秋千",
+          "裙子",
+          "镜子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

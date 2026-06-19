@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《场景歌》的第一行。",
+        "tokens": [
+          "一块",
+          "一只",
+          "石桥",
+          "海鸥",
+          "一条",
+          "帆船"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一只",
+          "海鸥",
+          "一条",
+          "帆船"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《场景歌》的第二行。",
+        "tokens": [
+          "一丛",
+          "一艘",
+          "稻田",
+          "军舰",
+          "一处",
+          "港湾"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一艘",
+          "军舰",
+          "一处",
+          "港湾"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《场景歌》的第三行。",
+        "tokens": [
+          "一队",
+          "一方",
+          "小溪",
+          "鱼塘",
+          "一块",
+          "稻田"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一方",
+          "鱼塘",
+          "一块",
+          "稻田"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "请按顺序排出《场景歌》的第四行。",
+        "tokens": [
+          "一把",
+          "一行",
+          "海鸥",
+          "垂柳",
+          "一座",
+          "花园"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一行",
+          "垂柳",
+          "一座",
+          "花园"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "场景歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "一只",
+            "海鸥，"
+          ],
+          [
+            null,
+            "帆船。"
+          ]
+        ],
+        "options": [
+          "一座",
+          "一丛",
+          "一条",
+          "一片"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "场景歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "一方",
+            "鱼塘，"
+          ],
+          [
+            null,
+            "稻田。"
+          ]
+        ],
+        "options": [
+          "一艘",
+          "一群",
+          "一道",
+          "一块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "场景歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "一道",
+            "小溪，"
+          ],
+          [
+            null,
+            "石桥。"
+          ]
+        ],
+        "options": [
+          "一座",
+          "一面",
+          "一只",
+          "一处"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "场景歌",
+        "author": "人民教育出版社小学语文室",
+        "lines": [
+          [
+            "一队",
+            "“红领巾”，"
+          ],
+          [
+            null,
+            "欢笑。"
+          ]
+        ],
+        "options": [
+          "一行",
+          "一片",
+          "一方",
+          "一把"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文最后写到“一队‘红领巾’，一片欢笑”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《场景歌》主要练习的是哪类词语？",
+        "options": [
+          "反义词",
+          "时间词",
+          "数量词",
+          "颜色词"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

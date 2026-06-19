@@ -1,0 +1,260 @@
+{
+  "id": "15-hulu-zonghe",
+  "title": "我要的是葫芦综合运用",
+  "description": "综合练习《我要的是葫芦》的字词、句子和道理。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盯着",
+        "hint": "盯着小葫芦",
+        "options": [
+          "dǐng zhe",
+          "tīng zhe",
+          "dìng zhe",
+          "dīng zhe"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "赛过",
+        "hint": "赛过大南瓜",
+        "options": [
+          "sài guò",
+          "shài guò",
+          "sāi guò",
+          "sǎi guò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kē",
+        "sentence": "一__葫芦长满绿叶。",
+        "blankPlaceholder": "__",
+        "character": "棵",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "棵"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guài",
+        "sentence": "邻居的话让他觉得奇__。",
+        "blankPlaceholder": "__",
+        "character": "怪",
+        "allowedMistakes": 3,
+        "leniency": 1.15
+      },
+      "answer": {
+        "character": "怪"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "奇",
+        "tokens": [
+          "怪",
+          "次",
+          "妙",
+          "冷",
+          "特",
+          "鱼",
+          "异"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“奇”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "怪",
+            "妙",
+            "特",
+            "异"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "邻",
+        "tokens": [
+          "居",
+          "近",
+          "家",
+          "里",
+          "舍",
+          "路",
+          "花"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“邻”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "居",
+            "近",
+            "家",
+            "舍"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "那个人失败的原因最准确的是？",
+        "options": [
+          "不喜欢葫芦",
+          "没有每天去看",
+          "不懂叶子和葫芦有联系",
+          "邻居没有提醒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "照顾植物时，叶子、花和果实都很重要。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原课文句子",
+        "tokens": [
+          "小花",
+          "还开出了",
+          "绿叶",
+          "几朵",
+          "长满了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长满了",
+          "绿叶",
+          "还开出了",
+          "几朵",
+          "小花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "赛过大南瓜"
+          },
+          {
+            "id": "l_1",
+            "text": "自言自语"
+          },
+          {
+            "id": "l_2",
+            "text": "感到奇怪"
+          },
+          {
+            "id": "l_3",
+            "text": "快治一治"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "觉得不明白"
+          },
+          {
+            "id": "r_0",
+            "text": "比大南瓜还好"
+          },
+          {
+            "id": "r_3",
+            "text": "赶快处理虫害"
+          },
+          {
+            "id": "r_1",
+            "text": "自己跟自己说话"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "联系地看问题",
+        "passage": "那个人只想要葫芦，却不管叶子上的蚜虫。叶子生病了，葫芦也长不好。做事情时，我们不能只盯着结果，也要关心原因和过程。",
+        "questions": [
+          {
+            "question": "“只盯着结果”在课文里指什么？",
+            "options": [
+              "只想看叶子",
+              "只想要葫芦",
+              "只想种花"
+            ]
+          },
+          {
+            "question": "下面哪种做法更好？",
+            "options": [
+              "不听邻居劝",
+              "等葫芦落了再说",
+              "发现蚜虫马上治"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

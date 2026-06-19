@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 个苹果，每袋装 3 个，可以装 ? 袋。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 个圆片，每份 6 个，可以分成 ? 份。"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 个方块，每 5 个一堆，可以分成 ? 堆。"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "24 支铅笔，每 4 支一束，可以扎成 ? 束。"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "12 根香蕉，每 2 根一份，可以分成 6 份，请写出除法算式。",
+        "placeholder": "例如：12÷3=4"
+      },
+      "answer": {
+        "accepted": [
+          "12÷2=6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "30 个扣子，每 __ 个一组，可以分成 6 组。",
+        "blanks": [
+          {
+            "id": "each",
+            "label": "每组个数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“每 4 条一份”是在问什么？",
+        "options": [
+          "共有多少条",
+          "可以分成几份",
+          "平均分成几份",
+          "每份有几条"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20 ÷ 5",
+        "right": "18 ÷ 3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "24 个每 6 个一份"
+          },
+          {
+            "id": "l2",
+            "text": "16 个每 2 个一份"
+          },
+          {
+            "id": "l3",
+            "text": "15 个每 3 个一份"
+          },
+          {
+            "id": "l4",
+            "text": "18 个每 9 个一份"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5 份"
+          },
+          {
+            "id": "r1",
+            "text": "4 份"
+          },
+          {
+            "id": "r4",
+            "text": "2 份"
+          },
+          {
+            "id": "r2",
+            "text": "8 份"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "24",
+          null,
+          "4",
+          null,
+          "6"
+        ],
+        "tokens": [
+          "=",
+          "4",
+          "-",
+          "÷",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "÷",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按能分成的份数从少到多排列",
+        "items": [
+          {
+            "id": "i3",
+            "text": "12÷3=4"
+          },
+          {
+            "id": "i1",
+            "text": "12÷6=2"
+          },
+          {
+            "id": "i4",
+            "text": "12÷2=6"
+          },
+          {
+            "id": "i2",
+            "text": "12÷4=3"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i1",
+          "i2",
+          "i3",
+          "i4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有 21 颗糖，每 3 颗一袋，可以装几袋？",
+        "options": [
+          "6 袋",
+          "7 袋",
+          "8 袋",
+          "9 袋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

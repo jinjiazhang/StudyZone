@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5辆三轮车一共有几个轮子？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "3*5",
+          "5*3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "7辆小汽车一共有几个轮子？",
+        "placeholder": "列出算式"
+      },
+      "answer": {
+        "accepted": [
+          "4*7",
+          "7*4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 7 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8张方桌，每张4条腿，一共有多少条腿？"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6个三角形，每个3条边，一共有多少条边？"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求“9辆三轮车有多少个轮子”用哪句口诀？",
+        "options": [
+          "四九三十六",
+          "三八二十四",
+          "二九十八",
+          "三九二十七"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "每辆车4个轮子，",
+          null,
+          "辆车共有",
+          null,
+          "个轮子。"
+        ],
+        "tokens": [
+          "6",
+          "7",
+          "24",
+          "28"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "24"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 9",
+        "right": "4 * 7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "三轮车4辆、小汽车4辆，轮子数分别是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "三轮车"
+          },
+          {
+            "id": "b2",
+            "label": "小汽车"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          16
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每辆三轮车3个轮子，8辆三轮车有多少个轮子？",
+        "columns": [
+          "车辆",
+          "辆数",
+          "每辆轮子",
+          "总轮子"
+        ],
+        "rows": [
+          {
+            "车辆": "三轮车",
+            "辆数": 8,
+            "每辆轮子": 3,
+            "总轮子": 24
+          }
+        ]
+      },
+      "answer": {
+        "value": 24,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4辆三轮车和3辆小汽车的轮子数一样多。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个情境适合用4×5解决？",
+        "options": [
+          "5双筷子几根",
+          "5辆小汽车共有几个轮子",
+          "5辆三轮车几个轮子",
+          "5组每组2人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

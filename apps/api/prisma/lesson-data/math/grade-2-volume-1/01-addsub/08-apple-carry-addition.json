@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26 + 9 = ?"
+      },
+      "answer": {
+        "value": 35,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "38 + 17 = ?"
+      },
+      "answer": {
+        "value": 55,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "26 + 17 = ?"
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 38 = ?"
+      },
+      "answer": {
+        "value": 47,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "奇思摘26个，笑笑摘9个，一共摘了多少个？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "26+9",
+          "9+26"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "淘气摘17个，妙想摘38个，一共摘了多少个？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "17+38",
+          "38+17"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "26 + 17",
+        "right": "9 + 38"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "男孩们是奇思和淘气，女孩们是笑笑和妙想。谁摘得多？",
+        "options": [
+          "女孩们摘得多",
+          "男孩们摘得多",
+          "一样多",
+          "无法比较"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "四个同学一共摘了多少个苹果？",
+        "columns": [
+          "姓名",
+          "个数"
+        ],
+        "rows": [
+          {
+            "姓名": "奇思",
+            "个数": 26
+          },
+          {
+            "姓名": "笑笑",
+            "个数": 9
+          },
+          {
+            "姓名": "淘气",
+            "个数": 17
+          },
+          {
+            "姓名": "妙想",
+            "个数": 38
+          }
+        ]
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "26 + 9"
+          },
+          {
+            "id": "l1",
+            "text": "38 + 17"
+          },
+          {
+            "id": "l2",
+            "text": "26 + 17"
+          },
+          {
+            "id": "l3",
+            "text": "9 + 38"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "43"
+          },
+          {
+            "id": "r3",
+            "text": "47"
+          },
+          {
+            "id": "r0",
+            "text": "35"
+          },
+          {
+            "id": "r1",
+            "text": "55"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "17",
+          null,
+          "38",
+          null,
+          "55"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "女孩们共摘了 9 + 38 = 47 个苹果。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-008.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

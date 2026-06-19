@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“4×7”读作什么？",
+        "options": [
+          "4加7",
+          "4乘7",
+          "7乘4等于4",
+          "4个7等于11"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“6乘3”写作哪一个？",
+        "options": [
+          "6×3",
+          "6+3",
+          "3+6",
+          "6=3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出“5乘4”的算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "5×4"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出“8乘2”的算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "8×2"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 × 7 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 × 4 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 × 7",
+        "right": "7 × 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "4×7可以表示什么？",
+        "options": [
+          "只能表示4+7",
+          "只能表示7-4",
+          "4个7相加，也可以表示7个4相加",
+          "表示4比7少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "×",
+          null,
+          "=",
+          null,
+          "，读作4乘7"
+        ],
+        "tokens": [
+          "7",
+          "4",
+          "11",
+          "28",
+          "3"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "7",
+          "28"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3乘8"
+          },
+          {
+            "id": "l2",
+            "text": "2乘9"
+          },
+          {
+            "id": "l3",
+            "text": "6乘5"
+          },
+          {
+            "id": "l4",
+            "text": "7乘4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "2×9"
+          },
+          {
+            "id": "r3",
+            "text": "6×5"
+          },
+          {
+            "id": "r4",
+            "text": "7×4"
+          },
+          {
+            "id": "r1",
+            "text": "3×8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按算式结果从小到大排",
+        "items": [
+          {
+            "id": "c",
+            "text": "5×3"
+          },
+          {
+            "id": "a",
+            "text": "2×4"
+          },
+          {
+            "id": "d",
+            "text": "4×5"
+          },
+          {
+            "id": "b",
+            "text": "3×4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "每盒有7支彩笔，有4盒，一共有多少支？",
+        "columns": [
+          "项目",
+          "数量"
+        ],
+        "rows": [
+          {
+            "项目": "每盒支数",
+            "数量": 7
+          },
+          {
+            "项目": "盒数",
+            "数量": 4
+          }
+        ]
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

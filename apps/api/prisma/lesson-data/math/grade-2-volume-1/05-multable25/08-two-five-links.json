@@ -1,0 +1,174 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 5 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 6 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“二五一十”既能算2个5，也能算什么？",
+        "options": [
+          "2个2",
+          "5个5",
+          "10个2",
+          "5个2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "2×5和5×2的得数相同。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 * 8",
+        "right": "5 * 3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每组2人，5组共有多少人？列两个都可以的乘法算式。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "2*5",
+          "5*2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "2×5",
+          null,
+          "5×2",
+          null,
+          "10"
+        ],
+        "tokens": [
+          "=",
+          ">",
+          "=",
+          "<"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "=",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "2×7"
+          },
+          {
+            "id": "l2",
+            "text": "5×4"
+          },
+          {
+            "id": "l3",
+            "text": "2×9"
+          },
+          {
+            "id": "l4",
+            "text": "5×8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "18"
+          },
+          {
+            "id": "r4",
+            "text": "40"
+          },
+          {
+            "id": "r1",
+            "text": "14"
+          },
+          {
+            "id": "r2",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

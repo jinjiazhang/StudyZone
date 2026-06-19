@@ -1,0 +1,156 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70 ÷ 8 = 8 … ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "29 ÷ 6 = 4 … ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 ÷ 9 = 5 … ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "55 ÷ 9 = 6 … ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 ÷ 7 = 9 … ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 ÷ 5 = 9 … ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "括号里最大能填几：8 × ___ < 70，6 × ___ < 29。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一空"
+          },
+          {
+            "id": "b2",
+            "label": "第二空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "括号里最大能填几：9 × ___ < 50，___ × 7 < 65。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "第一空"
+          },
+          {
+            "id": "b2",
+            "label": "第二空"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "8 × ( ) < 70，为什么不能填 9？",
+        "options": [
+          "8×9=72，超过70",
+          "8×9=63",
+          "9比8大",
+          "70比9大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "( ) × 5 < 48，最大填几？",
+        "options": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

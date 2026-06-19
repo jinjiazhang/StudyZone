@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "春季"
+          },
+          {
+            "id": "l_1",
+            "text": "夏季"
+          },
+          {
+            "id": "l_2",
+            "text": "秋季"
+          },
+          {
+            "id": "l_3",
+            "text": "冬季"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "稻上场，谷粒香"
+          },
+          {
+            "id": "r_0",
+            "text": "花开草长蝴蝶飞"
+          },
+          {
+            "id": "r_3",
+            "text": "新制棉衣暖又轻"
+          },
+          {
+            "id": "r_1",
+            "text": "采桑养蚕又插秧"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "春季里，课文写了什么景象？",
+        "options": [
+          "花开草长蝴蝶飞",
+          "雪初晴",
+          "谷粒香",
+          "棉衣暖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "夏季里，农民忙什么？",
+        "options": [
+          "看柳树",
+          "采桑养蚕又插秧",
+          "做棉衣",
+          "数九"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "秋季里，稻谷有什么特点？",
+        "options": [
+          "满池塘",
+          "满枝香",
+          "像黄金粒粒香",
+          "不出手"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "冬季里，人们穿什么？",
+        "options": [
+          "红领巾",
+          "草帽",
+          "蓑衣",
+          "新制棉衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《田家四季歌》按春、夏、秋、冬的顺序写农事。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文说“冬季里，春风吹”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：春季里，春风吹。",
+        "tokens": [
+          "雪初晴",
+          "春季里",
+          "割麦",
+          "春风吹"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春季里",
+          "春风吹"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：秋季里，稻上场。",
+        "tokens": [
+          "蝴蝶飞",
+          "秋季里",
+          "新制棉衣",
+          "稻上场"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "秋季里",
+          "稻上场"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "一年农事",
+        "passage": "《田家四季歌》按四季写农村生活。春天花草生长，夏天农事繁忙，秋天收获稻谷，冬天穿上新棉衣。农民一年辛苦，收获时心里喜洋洋。",
+        "questions": [
+          {
+            "question": "课文按什么顺序写？",
+            "options": [
+              "四季顺序",
+              "动物大小",
+              "树木高矮"
+            ]
+          },
+          {
+            "question": "农民辛苦后有什么心情？",
+            "options": [
+              "喜洋洋",
+              "冷冰冰",
+              "静悄悄"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "64 - 36 = ?"
+      },
+      "answer": {
+        "value": 28,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 13 = ?"
+      },
+      "answer": {
+        "value": 37,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 18 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 7 = ?"
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "笑笑买一辆36元玩具小汽车，给售货员64元，应找回多少元？",
+        "placeholder": "例如：28+16"
+      },
+      "answer": {
+        "accepted": [
+          "64-36"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘气有50元，买哪三个玩具正好不超过50元且最接近50元？",
+        "options": [
+          "36元、13元、1个5元不可选；可选36元、7元、5元",
+          "13元、18元、36元",
+          "18元、36元、7元",
+          "36元、18元、5元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "13元、18元、7元三个玩具一共多少元？",
+        "columns": [
+          "玩具",
+          "价钱"
+        ],
+        "rows": [
+          {
+            "玩具": "玩具熊",
+            "价钱": 13
+          },
+          {
+            "玩具": "积木",
+            "价钱": 18
+          },
+          {
+            "玩具": "小玩具",
+            "价钱": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 38,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "36元、7元、5元三个玩具一共多少元？",
+        "columns": [
+          "玩具",
+          "价钱"
+        ],
+        "rows": [
+          {
+            "玩具": "小汽车",
+            "价钱": 36
+          },
+          {
+            "玩具": "小玩具",
+            "价钱": 7
+          },
+          {
+            "玩具": "皮球",
+            "价钱": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36 + 7 + 5",
+        "right": "50"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "13 + 18 + 7"
+          },
+          {
+            "id": "l1",
+            "text": "36 + 7 + 5"
+          },
+          {
+            "id": "l2",
+            "text": "64 - 36"
+          },
+          {
+            "id": "l3",
+            "text": "50 - 13"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "28"
+          },
+          {
+            "id": "r3",
+            "text": "37"
+          },
+          {
+            "id": "r0",
+            "text": "38"
+          },
+          {
+            "id": "r1",
+            "text": "48"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "64",
+          null,
+          "36",
+          null,
+          "28"
+        ],
+        "tokens": [
+          "=",
+          "-",
+          "+",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "-",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "50元可以买36元、7元和5元三个玩具。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-021.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "敕勒川，"
+          ],
+          [
+            null,
+            "下，"
+          ]
+        ],
+        "options": [
+          "黄山",
+          "雪山",
+          "阴山",
+          "高楼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "天似穹庐，"
+          ],
+          [
+            null,
+            "四野。"
+          ]
+        ],
+        "options": [
+          "飞过",
+          "照亮",
+          "吹散",
+          "笼盖"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "天苍苍，"
+          ],
+          [
+            null,
+            "茫茫，"
+          ]
+        ],
+        "options": [
+          "野",
+          "海",
+          "江",
+          "山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "风吹草低"
+          ],
+          [
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "见小舟",
+          "见牛羊",
+          "闻鸟声",
+          "看白雪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "敕勒歌",
+        "author": "北朝民歌",
+        "lines": [
+          [
+            "天",
+            null,
+            "，"
+          ],
+          [
+            "野",
+            null,
+            "，"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "蓝蓝",
+              "高高",
+              "苍苍",
+              "白白"
+            ]
+          },
+          {
+            "options": [
+              "青青",
+              "弯弯",
+              "红红",
+              "茫茫"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成诗句",
+        "tokens": [
+          "阴山下",
+          "见牛羊",
+          "天苍苍",
+          "风吹",
+          "草低"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "风吹",
+          "草低",
+          "见牛羊"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“天似穹庐”把天空比作什么？",
+        "options": [
+          "圆顶帐篷",
+          "一条小河",
+          "一只白兔",
+          "一座房屋"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪句写出了草原辽阔？",
+        "options": [
+          "独钓寒江雪",
+          "天苍苍，野茫茫",
+          "危楼高百尺",
+          "一朵美丽的白云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《敕勒歌》描写了草原上的天空、草地、牛羊。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“见牛羊”中的“见”意思是“看见”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择最适合《敕勒歌》的教材页",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-086.jpg",
+            "label": "江雪"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-087.jpg",
+            "label": "敕勒歌"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-089.jpg",
+            "label": "雾在哪里"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-092.jpg",
+            "label": "雪孩子"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "天苍苍"
+          },
+          {
+            "id": "l_1",
+            "text": "野茫茫"
+          },
+          {
+            "id": "l_2",
+            "text": "风吹草低"
+          },
+          {
+            "id": "l_3",
+            "text": "见牛羊"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "原野辽阔"
+          },
+          {
+            "id": "r_2",
+            "text": "草随风伏下"
+          },
+          {
+            "id": "r_3",
+            "text": "牛羊显现"
+          },
+          {
+            "id": "r_0",
+            "text": "天空蓝而广"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

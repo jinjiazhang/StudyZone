@@ -1,0 +1,265 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 + 36 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 + 41 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 + 32 = ?"
+      },
+      "answer": {
+        "value": 52,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 36 = ?"
+      },
+      "answer": {
+        "value": 49,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小亮套中两个动物，得分和是52分。下面哪一组可能？",
+        "options": [
+          "兔子16分和小猫36分",
+          "小鹿11分和小熊13分",
+          "小狗20分和小猴32分",
+          "小鹅29分和小羊41分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按得分高低排一排，最大的得分是哪张卡？",
+        "options": [
+          "小鹿11分",
+          "小熊13分",
+          "小羊41分",
+          "小狗20分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把套圈得分从低到高排列",
+        "items": [
+          {
+            "id": "i6",
+            "text": "36"
+          },
+          {
+            "id": "i0",
+            "text": "11"
+          },
+          {
+            "id": "i4",
+            "text": "29"
+          },
+          {
+            "id": "i2",
+            "text": "16"
+          },
+          {
+            "id": "i7",
+            "text": "41"
+          },
+          {
+            "id": "i1",
+            "text": "13"
+          },
+          {
+            "id": "i5",
+            "text": "32"
+          },
+          {
+            "id": "i3",
+            "text": "20"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3",
+          "i4",
+          "i5",
+          "i6",
+          "i7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "16 配多少分是 52"
+          },
+          {
+            "id": "l1",
+            "text": "20 配多少分是 52"
+          },
+          {
+            "id": "l2",
+            "text": "11 配多少分是 52"
+          },
+          {
+            "id": "l3",
+            "text": "13 配多少分是 52"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "41"
+          },
+          {
+            "id": "r3",
+            "text": "39"
+          },
+          {
+            "id": "r0",
+            "text": "36"
+          },
+          {
+            "id": "r1",
+            "text": "32"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "16 + 36",
+        "right": "20 + 32"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小狗20分和小猴32分合起来也是52分。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/math/grade-2-volume-1/pages/page-017.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "16",
+          null,
+          "36",
+          null,
+          "52"
+        ],
+        "tokens": [
+          "=",
+          "+",
+          "-",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "+",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "哪两个得分合起来是52？输入其中较小的得分。",
+        "columns": [
+          "动物",
+          "得分"
+        ],
+        "rows": [
+          {
+            "动物": "小鹿",
+            "得分": 11
+          },
+          {
+            "动物": "小熊",
+            "得分": 13
+          },
+          {
+            "动物": "兔子",
+            "得分": 16
+          },
+          {
+            "动物": "小猫",
+            "得分": 36
+          }
+        ]
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出故事开头",
+        "tokens": [
+          "靠着奶奶",
+          "数星星",
+          "一个孩子",
+          "北极星",
+          "坐在院子里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一个孩子",
+          "坐在院子里",
+          "靠着奶奶",
+          "数星星"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出奶奶的话",
+        "tokens": [
+          "又在",
+          "傻孩子",
+          "北斗七星",
+          "数星星了",
+          "距离"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "傻孩子",
+          "又在",
+          "数星星了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出爷爷介绍北斗七星的话",
+        "tokens": [
+          "像一把",
+          "那七颗星",
+          "北极星",
+          "勺子",
+          "连起来"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "那七颗星",
+          "连起来",
+          "像一把",
+          "勺子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子为什么一夜没睡好？",
+        "options": [
+          "他几次起来看星星",
+          "他在做手工",
+          "他去外婆家",
+          "他在荡秋千"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "孩子看清楚了什么？",
+        "options": [
+          "彩虹是一座桥",
+          "山雀不会逃",
+          "北斗七星果然绕着北极星转动",
+          "秋风吹过树叶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "爷爷告诉张衡，星星在动但不是乱动。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "奶奶一开始认为那么多星星很容易数清。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "张衡数星星",
+        "passage": "孩子仰着头数星星。爷爷告诉他：星星是在动，可不是乱动；北斗七星像一把勺子，总是绕着北极星转。孩子一夜没睡好，几次起来看星星，终于看清楚了。",
+        "questions": [
+          {
+            "question": "爷爷告诉孩子哪一组知识？",
+            "options": [
+              "星星运行有规律，北斗七星绕北极星转",
+              "彩虹可以浇田",
+              "外婆家有杜鹃花"
+            ]
+          },
+          {
+            "question": "孩子听后是怎么做的？",
+            "options": [
+              "反复观察星星",
+              "立刻睡着了",
+              "去找秋千"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-2-volume-1/pages/page-038.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "奶奶"
+          },
+          {
+            "id": "l_1",
+            "text": "爷爷"
+          },
+          {
+            "id": "l_2",
+            "text": "张衡"
+          },
+          {
+            "id": "l_3",
+            "text": "北斗七星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "反复观察星星"
+          },
+          {
+            "id": "r_0",
+            "text": "说星星多，数不清"
+          },
+          {
+            "id": "r_3",
+            "text": "像一把勺子"
+          },
+          {
+            "id": "r_1",
+            "text": "讲星星运行的知识"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文最后说张衡“刻苦钻研天文”，说明他有什么品质？",
+        "options": [
+          "粗心大意",
+          "认真坚持、爱探究",
+          "害怕观察",
+          "只爱玩耍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "按故事顺序，哪件事在最后？",
+        "options": [
+          "孩子坐在院子里",
+          "奶奶笑着说话",
+          "爷爷指出北斗七星",
+          "张衡成为著名天文学家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出结尾信息",
+        "tokens": [
+          "成了",
+          "张衡",
+          "后来",
+          "著名的天文学家",
+          "北斗七星"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "张衡",
+          "后来",
+          "成了",
+          "著名的天文学家"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

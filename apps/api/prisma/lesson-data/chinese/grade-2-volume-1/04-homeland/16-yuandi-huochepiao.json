@@ -1,0 +1,212 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "昌",
+        "hint": "选择“昌”的正确读音",
+        "options": [
+          "lú",
+          "shén",
+          "gǒu",
+          "chāng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "铺",
+        "hint": "选择“铺”的正确读音",
+        "options": [
+          "pù",
+          "yín",
+          "dǐng",
+          "táo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "卧",
+        "hint": "选择“卧”的正确读音",
+        "options": [
+          "zhí",
+          "wò",
+          "yán",
+          "pú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "签",
+        "hint": "选择“签”的正确读音",
+        "options": [
+          "jǐng",
+          "tán",
+          "qiān",
+          "shì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "退",
+        "hint": "选择“退”的正确读音",
+        "options": [
+          "xiù",
+          "dǎo",
+          "fēng",
+          "tuì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "火车票上的“南昌”是一个什么名称？",
+        "options": [
+          "地名",
+          "颜色词",
+          "鞋子名称",
+          "古诗题目"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“退票”的“退”意思接近哪一个？",
+        "options": [
+          "前进",
+          "退回",
+          "购买",
+          "到达"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "铺"
+          },
+          {
+            "id": "l1",
+            "text": "卧"
+          },
+          {
+            "id": "l2",
+            "text": "签"
+          },
+          {
+            "id": "l3",
+            "text": "退"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "改签"
+          },
+          {
+            "id": "r0",
+            "text": "下铺"
+          },
+          {
+            "id": "r3",
+            "text": "退票"
+          },
+          {
+            "id": "r1",
+            "text": "卧铺"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "票",
+        "tokens": [
+          "买",
+          "湖",
+          "葡",
+          "岩",
+          "车",
+          "退"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“票”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "车",
+            "退",
+            "买"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hào",
+        "sentence": "订单__在火车票上。",
+        "blankPlaceholder": "__",
+        "character": "号",
+        "allowedMistakes": 3,
+        "leniency": 1
+      },
+      "answer": {
+        "character": "号"
+      },
+      "difficulty": 2
+    }
+  ]
+}

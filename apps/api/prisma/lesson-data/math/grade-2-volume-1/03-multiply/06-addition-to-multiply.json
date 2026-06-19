@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把6+6+6改写成乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "6×3",
+          "3×6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把3+3+3+3+3改写成乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "3×5",
+          "5×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把7+7改写成乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "7×2",
+          "2×7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把4+4+4+4改写成乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个加法算式能改写成5×4？",
+        "options": [
+          "5+4",
+          "4+4+4+4+4",
+          "5+5+4+4",
+          "5+5+5+5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪个算式不能直接改写成乘法算式？",
+        "options": [
+          "2+2+2+2",
+          "4+5+4",
+          "6+6+6",
+          "8+8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "+",
+          null,
+          "+",
+          null,
+          "+",
+          null,
+          "=",
+          null,
+          "×4"
+        ],
+        "tokens": [
+          "4",
+          "6",
+          "5",
+          "20",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "5",
+          "5",
+          "5",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "8+8+8"
+          },
+          {
+            "id": "l2",
+            "text": "2+2+2+2+2+2"
+          },
+          {
+            "id": "l3",
+            "text": "9+9+9+9"
+          },
+          {
+            "id": "l4",
+            "text": "6+6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "2×6"
+          },
+          {
+            "id": "r3",
+            "text": "9×4"
+          },
+          {
+            "id": "r4",
+            "text": "6×2"
+          },
+          {
+            "id": "r1",
+            "text": "8×3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 + 5 + 5 + 5",
+        "right": "5 × 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 × 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4+4+4 可以写成 __ × __ = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "每份数"
+          },
+          {
+            "id": "b2",
+            "label": "份数"
+          },
+          {
+            "id": "b3",
+            "label": "积"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "同数连加改乘法：每盘4个，有5盘。一共有多少个？",
+        "columns": [
+          "每盘",
+          "盘数"
+        ],
+        "rows": [
+          {
+            "每盘": 4,
+            "盘数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

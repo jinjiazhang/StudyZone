@@ -1,0 +1,187 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 * 9 = ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 * 8 = ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 * 7 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "补全：2×8=__，3×8=__，4×8=__，5×8=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "2×8"
+          },
+          {
+            "id": "b2",
+            "label": "3×8"
+          },
+          {
+            "id": "b3",
+            "label": "4×8"
+          },
+          {
+            "id": "b4",
+            "label": "5×8"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          24,
+          32,
+          40
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每排4只小猫，4排小猫，列式求一共有多少只。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "4*4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一个问题适合用5×2解决？",
+        "options": [
+          "5朵花比2朵多多少",
+          "5朵花和2朵花一共",
+          "5组花，每组5朵",
+          "2组花，每组5朵"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "1~5的乘法口诀可以帮助解决“几个几”的问题。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 * 8",
+        "right": "4 * 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "二九十八"
+          },
+          {
+            "id": "l2",
+            "text": "三八二十四"
+          },
+          {
+            "id": "l3",
+            "text": "四七二十八"
+          },
+          {
+            "id": "l4",
+            "text": "五六三十"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "4×7"
+          },
+          {
+            "id": "r4",
+            "text": "5×6"
+          },
+          {
+            "id": "r1",
+            "text": "2×9"
+          },
+          {
+            "id": "r2",
+            "text": "3×8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

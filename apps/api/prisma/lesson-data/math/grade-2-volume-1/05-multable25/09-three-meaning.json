@@ -1,0 +1,184 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 1 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 3 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "3 * 6 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1辆三轮车3个轮子，5辆三轮车__个轮子。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "轮子数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          15
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "7辆三轮车，每辆3个轮子，列式求一共多少个轮子。",
+        "placeholder": "例如：3*4"
+      },
+      "answer": {
+        "accepted": [
+          "7*3",
+          "3*7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“三四十二”表示4个几相加？",
+        "options": [
+          "4",
+          "12",
+          "3",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "3的口诀后一得数总比前一得数多3。"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 * 8",
+        "right": "3 * 7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "3",
+          null,
+          "6",
+          null,
+          "18"
+        ],
+        "tokens": [
+          "=",
+          "×",
+          "-",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "×",
+          "="
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三三得九"
+          },
+          {
+            "id": "l2",
+            "text": "三五十五"
+          },
+          {
+            "id": "l3",
+            "text": "三七二十一"
+          },
+          {
+            "id": "l4",
+            "text": "三九二十七"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "3×7=21"
+          },
+          {
+            "id": "r4",
+            "text": "3×9=27"
+          },
+          {
+            "id": "r1",
+            "text": "3×3=9"
+          },
+          {
+            "id": "r2",
+            "text": "3×5=15"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

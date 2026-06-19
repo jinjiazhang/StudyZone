@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“你知道吗”中，1631年奥特雷德首先使用了哪个符号作乘号？",
+        "options": [
+          "+",
+          "÷",
+          "=",
+          "×"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个表示“5个4相加”？",
+        "options": [
+          "5+4",
+          "4×5",
+          "5-4",
+          "4÷5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一道不能用3×6解决？",
+        "options": [
+          "3加6",
+          "每本6元，买3本",
+          "3个6相加",
+          "6个3相加"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 × 6",
+        "right": "3 + 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5 × 4",
+        "right": "5 + 4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把错误算式“5+4”改成表示5个4相加的乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "4×5",
+          "5×4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把“3+3+3+3+3+3”改成乘法算式。",
+        "placeholder": "例如：3×4"
+      },
+      "answer": {
+        "accepted": [
+          "3×6",
+          "6×3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5×4中，两个乘数是__和__，积是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "乘数1"
+          },
+          {
+            "id": "b2",
+            "label": "乘数2"
+          },
+          {
+            "id": "b3",
+            "label": "积"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          4,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "5个4相加，不是5+4，而是",
+          null,
+          "×",
+          null,
+          "=",
+          null
+        ],
+        "tokens": [
+          "9",
+          "4",
+          "20",
+          "5",
+          "1"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "4",
+          "5",
+          "20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "5+4"
+          },
+          {
+            "id": "l2",
+            "text": "5×4"
+          },
+          {
+            "id": "l3",
+            "text": "3×6"
+          },
+          {
+            "id": "l4",
+            "text": "3+6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "表示5个4或4个5"
+          },
+          {
+            "id": "r3",
+            "text": "表示3个6或6个3"
+          },
+          {
+            "id": "r4",
+            "text": "表示3和6合起来"
+          },
+          {
+            "id": "r1",
+            "text": "表示5和4合起来"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 × 4 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "辨析：每盘4个，有5盘。总数是多少？",
+        "columns": [
+          "每盘个数",
+          "盘数"
+        ],
+        "rows": [
+          {
+            "每盘个数": 4,
+            "盘数": 5
+          }
+        ]
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

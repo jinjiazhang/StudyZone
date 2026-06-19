@@ -1,0 +1,252 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hái",
+        "sentence": "小蝌蚪也是青蛙妈妈的__子。",
+        "blankPlaceholder": "__",
+        "character": "孩",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "孩"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "nà",
+        "sentence": "小蝌蚪向__边游去。",
+        "blankPlaceholder": "__",
+        "character": "那",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "那"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zuò",
+        "sentence": "我会给人们做许多好事。请写“__”。",
+        "blankPlaceholder": "__",
+        "character": "作",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "作"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fǎ",
+        "sentence": "植物妈妈有办__。",
+        "blankPlaceholder": "__",
+        "character": "法",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "法"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gèng",
+        "sentence": "豌豆妈妈__有办法。",
+        "blankPlaceholder": "__",
+        "character": "更",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "更"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǐ",
+        "sentence": "孩子如果__经长大。",
+        "blankPlaceholder": "__",
+        "character": "已",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "已"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "孩",
+        "tokens": [
+          "子",
+          "童",
+          "儿",
+          "小",
+          "海",
+          "法"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“孩”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "儿",
+            "子",
+            "童"
+          ],
+          [
+            "小",
+            "子",
+            "儿"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "更",
+        "tokens": [
+          "加",
+          "多",
+          "好",
+          "新",
+          "龟",
+          "雷"
+        ],
+        "targetCount": 4,
+        "instruction": "选出 4 个能和“更”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "好",
+            "加",
+            "多",
+            "新"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "两"
+          },
+          {
+            "id": "l1",
+            "text": "哪"
+          },
+          {
+            "id": "l2",
+            "text": "海"
+          },
+          {
+            "id": "l3",
+            "text": "识"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "hǎi"
+          },
+          {
+            "id": "r1",
+            "text": "liǎng"
+          },
+          {
+            "id": "r2",
+            "text": "shí"
+          },
+          {
+            "id": "r3",
+            "text": "nǎ"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r1",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "升"
+          },
+          {
+            "id": "l1",
+            "text": "经"
+          },
+          {
+            "id": "l2",
+            "text": "别"
+          },
+          {
+            "id": "l3",
+            "text": "成"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0",
+            "text": "bié"
+          },
+          {
+            "id": "r1",
+            "text": "chéng"
+          },
+          {
+            "id": "r2",
+            "text": "shēng"
+          },
+          {
+            "id": "r3",
+            "text": "jīng"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r2",
+          "l1": "r3",
+          "l2": "r0",
+          "l3": "r1"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}
