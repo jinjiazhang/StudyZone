@@ -1,0 +1,290 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《动物儿歌》中，谁在“房前结网忙”？",
+        "options": [
+          "蚂蚁",
+          "蝴蝶",
+          "蜘蛛",
+          "蝌蚪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《古对今》中，“和风”对什么？",
+        "options": [
+          "细雨",
+          "夕阳",
+          "酷暑",
+          "方"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《操场上》中，哪项是体育活动？",
+        "options": [
+          "鸟语花香",
+          "芝麻开花",
+          "近处清泉",
+          "踢足球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《人之初》中，“玉不琢”的下一句是？",
+        "options": [
+          "不知义",
+          "不成器",
+          "非所宜",
+          "贵以专"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "蚂蚁"
+          },
+          {
+            "id": "l_1",
+            "text": "朝霞"
+          },
+          {
+            "id": "l_2",
+            "text": "跑步"
+          },
+          {
+            "id": "l_3",
+            "text": "学习"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "体育活动"
+          },
+          {
+            "id": "r_0",
+            "text": "运食粮"
+          },
+          {
+            "id": "r_3",
+            "text": "练习"
+          },
+          {
+            "id": "r_1",
+            "text": "对夕阳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "口字旁"
+          },
+          {
+            "id": "l_1",
+            "text": "提手旁"
+          },
+          {
+            "id": "l_2",
+            "text": "足字旁"
+          },
+          {
+            "id": "l_3",
+            "text": "食字旁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "抱、拔、拍"
+          },
+          {
+            "id": "r_3",
+            "text": "饭、饱"
+          },
+          {
+            "id": "r_0",
+            "text": "吃、叫、唱"
+          },
+          {
+            "id": "r_2",
+            "text": "跑、跳、踢"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文句子",
+        "tokens": [
+          "结网",
+          "蜘蛛",
+          "忙",
+          "房前",
+          "夕阳",
+          "跑步"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛",
+          "房前",
+          "结网",
+          "忙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成课文句子",
+        "tokens": [
+          "身体好",
+          "天天锻炼",
+          "鸟语",
+          "花香",
+          "运食粮"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "天天锻炼",
+          "身体好"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "古对今",
+        "author": "课文",
+        "lines": [
+          [
+            "桃",
+            "对",
+            null
+          ]
+        ],
+        "options": [
+          "杨",
+          "霜",
+          "暮",
+          "李"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "人之初",
+        "author": "《三字经》",
+        "lines": [
+          [
+            "人不学，",
+            null
+          ]
+        ],
+        "options": [
+          "不知义",
+          "性本善",
+          "一场空",
+          "节节高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“远处有青山，近处有清泉。”应使用哪两个字？",
+        "options": [
+          "清、青",
+          "青、清",
+          "再、在",
+          "在、再"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“十五个吊桶打水——七上八下”形容心里怎样？",
+        "options": [
+          "很凉",
+          "很香",
+          "很忙",
+          "不安"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

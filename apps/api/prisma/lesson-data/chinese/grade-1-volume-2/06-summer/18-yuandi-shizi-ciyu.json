@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "棍",
+        "hint": "“冰棍”的“棍”",
+        "options": [
+          "gǔn",
+          "kùn",
+          "gūn",
+          "gùn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "豆",
+        "hint": "“绿豆汤”的“豆”",
+        "options": [
+          "dǒu",
+          "dòu",
+          "tóu",
+          "dū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "汤",
+        "hint": "“绿豆汤”的“汤”",
+        "options": [
+          "táng",
+          "shāng",
+          "tāng",
+          "tǎng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "蚊",
+        "hint": "“蚊香”的“蚊”",
+        "options": [
+          "wěn",
+          "wèn",
+          "mén",
+          "wén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "扇",
+        "hint": "“蒲扇”的“扇”",
+        "options": [
+          "shàn",
+          "shān",
+          "sàn",
+          "shǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "椅",
+        "hint": "“竹椅”的“椅”",
+        "options": [
+          "yí",
+          "qǐ",
+          "yǐ",
+          "yì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "牵",
+        "hint": "“牵牛”的“牵”",
+        "options": [
+          "qān",
+          "qiǎn",
+          "jiān",
+          "qiān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "织",
+        "hint": "“织女”的“织”",
+        "options": [
+          "zhī",
+          "zī",
+          "zhí",
+          "zhǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "斗",
+        "hint": "“北斗星”的“斗”",
+        "options": [
+          "dòu",
+          "dǒu",
+          "dōu",
+          "tǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dòu",
+        "sentence": "夏天可以喝绿__汤。",
+        "character": "豆",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "豆"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǒu",
+        "sentence": "夜里可以看北__星。",
+        "character": "斗",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "斗"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "冰棍"
+          },
+          {
+            "id": "l_1",
+            "text": "绿豆汤"
+          },
+          {
+            "id": "l_2",
+            "text": "蚊香"
+          },
+          {
+            "id": "l_3",
+            "text": "北斗星"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "用来驱蚊"
+          },
+          {
+            "id": "r_0",
+            "text": "夏天吃的冷食"
+          },
+          {
+            "id": "r_3",
+            "text": "夜空中的星星"
+          },
+          {
+            "id": "r_1",
+            "text": "夏天喝的汤"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

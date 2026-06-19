@@ -1,0 +1,215 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板中，哪两块图形完全一样？",
+        "options": [
+          "1号和2号",
+          "3号和5号",
+          "4号和6号",
+          "5号和7号"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材填空“4号和__号图形是完全一样的”，应填几号？",
+        "options": [
+          "1",
+          "2",
+          "6",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "七巧板的1号和2号都是大三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "4号和6号大小、形状完全一样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "七巧板里大三角形2块，小三角形2块，中三角形1块，三角形共__块。",
+        "blanks": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "suffix": "块"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "看板块关系表，哪组完全一样？",
+        "columns": [
+          "组别",
+          "关系"
+        ],
+        "rows": [
+          {
+            "组别": "1号和2号",
+            "关系": "完全一样"
+          },
+          {
+            "组别": "3号和5号",
+            "关系": "不一样"
+          },
+          {
+            "组别": "4号和6号",
+            "关系": "完全一样"
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "1号和2号",
+          "4号和6号"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1号和2号"
+          },
+          {
+            "id": "l2",
+            "text": "4号和6号"
+          },
+          {
+            "id": "l3",
+            "text": "3号"
+          },
+          {
+            "id": "l4",
+            "text": "5号"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "正方形"
+          },
+          {
+            "id": "r2",
+            "text": "平行四边形"
+          },
+          {
+            "id": "r3",
+            "text": "两个大三角形"
+          },
+          {
+            "id": "r4",
+            "text": "两个小三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "七巧板中，1号和2号都是",
+          null,
+          "，4号和6号都是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "小三角形",
+          "圆",
+          "大三角形",
+          "长方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "大三角形",
+          "小三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 + 2 + 1",
+        "right": "7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较两块七巧板是否一样，最好的办法是？",
+        "options": [
+          "重合比一比",
+          "只看颜色",
+          "只看编号大小",
+          "只听同学说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tā",
+        "sentence": "棉花姑娘说：请你帮我捉害虫吧。__生病了。",
+        "blankPlaceholder": "__",
+        "character": "她",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "她"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hái",
+        "sentence": "你__是请别人帮忙吧。",
+        "blankPlaceholder": "__",
+        "character": "还",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "还"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shēn",
+        "sentence": "七星瓢虫说：我们__上有七个斑点。",
+        "blankPlaceholder": "__",
+        "character": "身",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "身"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǔ",
+        "sentence": "不__，棉花姑娘的病好了。",
+        "blankPlaceholder": "__",
+        "character": "久",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "久"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kōng",
+        "sentence": "燕子只会捉__中飞的害虫。",
+        "blankPlaceholder": "__",
+        "character": "空",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "空"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gàn",
+        "sentence": "啄木鸟只会捉树__里的害虫。",
+        "blankPlaceholder": "__",
+        "character": "干",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "干"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xīng",
+        "sentence": "七个斑点就像七颗__。",
+        "blankPlaceholder": "__",
+        "character": "星",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "星"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《棉花姑娘》写字表中，左右结构的字是哪一个？",
+        "options": [
+          "空",
+          "她",
+          "星",
+          "干"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“身”字书写时要注意什么？",
+        "options": [
+          "最后一笔是点",
+          "只写三笔",
+          "不能写撇",
+          "横折钩别写得太窄"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课文意思排句子：棉花姑娘的病好了",
+        "tokens": [
+          "长出",
+          "碧绿的叶子",
+          "雪白的棉花",
+          "棉花姑娘",
+          "吐出了",
+          "红红的花"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "棉花姑娘",
+          "长出",
+          "碧绿的叶子"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "id": "19-kouyu-gongdu",
+  "title": "电话共读表达",
+  "description": "练习口语交际“打电话”和《谁和谁好》的共读内容。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "给别人打电话时，首先要说清楚什么？",
+        "options": [
+          "字典页码",
+          "古诗题目",
+          "自己是谁",
+          "小河有多深"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "接电话时，要主动向对方做什么？",
+        "options": [
+          "喊救命",
+          "背上小公鸡",
+          "问好",
+          "折纸船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "电话里请别人转告时，下面哪句话更有礼貌？",
+        "options": [
+          "请您让他接一下电话，好吗？",
+          "快点！",
+          "你不许说话！",
+          "我不说是谁。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "喂，你好！"
+          },
+          {
+            "id": "l_1",
+            "text": "我是张阳的同学李中。"
+          },
+          {
+            "id": "l_2",
+            "text": "请您让他接一下电话，好吗？"
+          },
+          {
+            "id": "l_3",
+            "text": "谢谢阿姨！"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "礼貌提出请求"
+          },
+          {
+            "id": "r_0",
+            "text": "接电话问好"
+          },
+          {
+            "id": "r_3",
+            "text": "表示感谢"
+          },
+          {
+            "id": "r_1",
+            "text": "说明自己是谁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "谁和谁好",
+        "author": "张玉庭",
+        "lines": [
+          [
+            "藤和瓜好，"
+          ],
+          [
+            "它们手拉手，"
+          ],
+          [
+            "不吵也不",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "叫",
+          "哭",
+          "跑",
+          "闹"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "谁和谁好",
+        "author": "张玉庭",
+        "lines": [
+          [
+            "蜜蜂和花好，"
+          ],
+          [
+            "蜜蜂来采蜜，"
+          ],
+          [
+            "花儿仰脸",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "哭",
+          "笑",
+          "跑",
+          "叫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出共读句子",
+        "tokens": [
+          "瓜",
+          "蜜蜂",
+          "藤",
+          "好",
+          "和"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "藤",
+          "和",
+          "瓜",
+          "好"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出共读句子",
+        "tokens": [
+          "来采蜜",
+          "蜜蜂",
+          "花儿",
+          "汪伦",
+          "音序"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜜蜂",
+          "来采蜜"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "打电话时，说话要清楚、有礼貌。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "接电话时，可以不问好，也不用听对方说完。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

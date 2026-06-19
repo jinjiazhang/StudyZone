@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gào",
+        "sentence": "妈妈__诉我，沿着小路就会走出天山。",
+        "blankPlaceholder": "__",
+        "character": "告",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "告"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huì",
+        "sentence": "沿着弯弯的小路，就__走出天山。",
+        "blankPlaceholder": "__",
+        "character": "会",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "会"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jīng",
+        "sentence": "遥远的北__，有一座雄伟的天安门。",
+        "blankPlaceholder": "__",
+        "character": "京",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "京"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "de",
+        "sentence": "弯弯__小路通向远方。",
+        "blankPlaceholder": "__",
+        "character": "的",
+        "allowedMistakes": 2,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "的"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "běi",
+        "sentence": "遥远的__京，有一座雄伟的天安门。",
+        "blankPlaceholder": "__",
+        "character": "北",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "北"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guǎng",
+        "sentence": "__场上的升旗仪式非常壮观。",
+        "blankPlaceholder": "__",
+        "character": "广",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "广"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "北",
+        "tokens": [
+          "京",
+          "水",
+          "方",
+          "门",
+          "极",
+          "上"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“北”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "京",
+            "方",
+            "极"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "广",
+        "tokens": [
+          "场",
+          "井",
+          "大",
+          "主",
+          "阔",
+          "后"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“广”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "场",
+            "大",
+            "阔"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“的”常用来连接前后的词，如“弯弯的小路”。",
+        "options": [
+          "错",
+          "对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“京”在“北京”这个词中读什么？",
+        "options": [
+          "jīn",
+          "qīng",
+          "jīng",
+          "jǐng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

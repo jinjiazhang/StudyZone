@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "识字",
+        "hint": "读词语【识字】",
+        "options": [
+          "sí zì",
+          "shí zì",
+          "shí zhì",
+          "shì zì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "组词",
+        "hint": "读词语【组词】",
+        "options": [
+          "zhǔ cí",
+          "zǔ chí",
+          "zǔ cí",
+          "zú cí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "计算",
+        "hint": "读词语【计算】",
+        "options": [
+          "jǐ suàn",
+          "jì shuàn",
+          "jì suán",
+          "jì suàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "减法",
+        "hint": "读词语【减法】",
+        "options": [
+          "jiàn fǎ",
+          "jiǎng fǎ",
+          "jiǎn fǎ",
+          "jiǎn fà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "图形",
+        "hint": "读词语【图形】",
+        "options": [
+          "tú xíng",
+          "tǔ xíng",
+          "tú xìn",
+          "tú xíngh"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "卡片",
+        "hint": "读词语【卡片】",
+        "options": [
+          "qiǎ piàn",
+          "kǎ biàn",
+          "kǎ piān",
+          "kǎ piàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "合唱团",
+        "hint": "读词语【合唱团】",
+        "options": [
+          "hé cháng tuán",
+          "hé chàng tuán",
+          "hè chàng tuán",
+          "hé chàng duàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "识字"
+          },
+          {
+            "id": "l1",
+            "text": "计算"
+          },
+          {
+            "id": "l2",
+            "text": "图形"
+          },
+          {
+            "id": "l3",
+            "text": "合唱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "列算式"
+          },
+          {
+            "id": "r2",
+            "text": "卡片"
+          },
+          {
+            "id": "r3",
+            "text": "合唱团"
+          },
+          {
+            "id": "r0",
+            "text": "读课文"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wén",
+        "sentence": "我们读课__。",
+        "blankPlaceholder": "__",
+        "character": "文",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "文"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "piàn",
+        "sentence": "我做了一张识字卡__。",
+        "blankPlaceholder": "__",
+        "character": "片",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "片"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kǎ",
+        "sentence": "图形__片很有趣。",
+        "blankPlaceholder": "__",
+        "character": "卡",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "卡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "同学们一起__唱。",
+        "blankPlaceholder": "__",
+        "character": "合",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "合"
+      },
+      "difficulty": 2
+    }
+  ]
+}

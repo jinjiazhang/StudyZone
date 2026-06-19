@@ -1,0 +1,253 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 26：十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 34：十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          4
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 58：十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 80：十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          0
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 99：十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          9
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨 100：百位拨 ? 颗，十位拨 ? 颗，个位拨 ? 颗。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "百位"
+          },
+          {
+            "id": "blank_2",
+            "label": "十位"
+          },
+          {
+            "id": "blank_3",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          0,
+          0
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "个位上 4 颗、十位上 3 颗，写作多少？",
+        "options": [
+          "43",
+          "30",
+          "34",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "十位上 3 颗、个位上 0 颗，写作多少？",
+        "options": [
+          "3",
+          "13",
+          "30",
+          "33"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "百位上 1 颗，其余数位 0 颗，写作多少？",
+        "options": [
+          "10",
+          "100",
+          "1",
+          "101"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "34",
+        "right": "43"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "80",
+        "right": "79"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100",
+        "right": "99"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

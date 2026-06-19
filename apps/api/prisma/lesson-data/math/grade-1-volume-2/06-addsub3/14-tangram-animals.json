@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“咏鹅”图中的小房子和小动物是由什么拼成的？",
+        "options": [
+          "七巧板",
+          "算盘",
+          "尺子",
+          "钟表"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图案最像用七巧板拼成的小鱼？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"35,70 80,35 80,105\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"80,35 125,70 80,105\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"125,70 155,45 155,95\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><circle cx=\"90\" cy=\"70\" r=\"42\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"45\" width=\"90\" height=\"50\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"90,20 145,110 35,110\" fill=\"#a78bfa\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "七巧板拼动物时，可以把同一块板旋转使用。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "七巧板只能拼正方形，不能拼小动物。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拼一只小鱼用了2个大三角形、1个正方形、1个小三角形，共__块。",
+        "blanks": [
+          {
+            "id": "pieces",
+            "label": "板子",
+            "suffix": "块"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小鱼身体用了2块，尾巴用了1块，一共用了几块？请列式。",
+        "placeholder": "例如：3+4"
+      },
+      "answer": {
+        "accepted": [
+          "2+1",
+          "1+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "小鱼身体"
+          },
+          {
+            "id": "l2",
+            "text": "小鱼尾巴"
+          },
+          {
+            "id": "l3",
+            "text": "小房子屋顶"
+          },
+          {
+            "id": "l4",
+            "text": "小房子墙面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "正方形"
+          },
+          {
+            "id": "r2",
+            "text": "大三角形"
+          },
+          {
+            "id": "r3",
+            "text": "三角形"
+          },
+          {
+            "id": "r4",
+            "text": "三角形或平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板拼动物时，通常可以先确定哪一部分？",
+        "options": [
+          "主要身体",
+          "页码",
+          "乘号",
+          "钟面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4",
+        "right": "2 + 1"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "讲一讲七巧板图案时，最适合介绍什么？",
+        "options": [
+          "图案像什么、用了哪些图形",
+          "今天星期几",
+          "课桌有多高",
+          "铅笔多少钱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

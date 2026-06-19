@@ -1,0 +1,288 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "新",
+        "tokens": [
+          "年",
+          "手",
+          "旧",
+          "清",
+          "新",
+          "书"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "书",
+            "年"
+          ],
+          [
+            "手",
+            "年"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "平",
+        "tokens": [
+          "时",
+          "安",
+          "地",
+          "台",
+          "方",
+          "常"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "安",
+            "时"
+          ],
+          [
+            "地",
+            "常"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "伴",
+        "tokens": [
+          "伙",
+          "半",
+          "相",
+          "结",
+          "同",
+          "办"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "伙",
+            "相"
+          ],
+          [
+            "伙",
+            "结"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "笔",
+        "tokens": [
+          "铅",
+          "刀",
+          "纸",
+          "毛",
+          "本",
+          "盒"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "铅",
+            "毛"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "铅笔"
+          },
+          {
+            "id": "l1",
+            "text": "橡皮"
+          },
+          {
+            "id": "l2",
+            "text": "转笔刀"
+          },
+          {
+            "id": "l3",
+            "text": "文具盒"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "削铅笔的工具"
+          },
+          {
+            "id": "r0",
+            "text": "写字用的文具"
+          },
+          {
+            "id": "r3",
+            "text": "放文具的小盒子"
+          },
+          {
+            "id": "r1",
+            "text": "擦掉写错的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "仔细"
+          },
+          {
+            "id": "l1",
+            "text": "检查"
+          },
+          {
+            "id": "l2",
+            "text": "平安"
+          },
+          {
+            "id": "l3",
+            "text": "伙伴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "没有危险"
+          },
+          {
+            "id": "r0",
+            "text": "认真细心"
+          },
+          {
+            "id": "r3",
+            "text": "一起学习生活的人"
+          },
+          {
+            "id": "r1",
+            "text": "看看有没有遗漏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文里的词语",
+        "tokens": [
+          "转",
+          "文具",
+          "笔刀",
+          "铅",
+          "盒"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "文具",
+          "盒"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文里的词语",
+        "tokens": [
+          "仔",
+          "检查",
+          "铅笔",
+          "细",
+          "家"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "仔",
+          "细"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“平平安安”在课文里写的是谁回家？",
+        "options": [
+          "妈妈",
+          "老师",
+          "贝贝",
+          "狗熊"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贝贝每天放学后要检查什么？",
+        "options": [
+          "铅笔、橡皮、转笔刀",
+          "花朵和草地",
+          "桃子和西瓜",
+          "钟表和红灯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小船图案：长方形2个、三角形4个、圆3个。三角形有__个，圆有__个。",
+        "blanks": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "suffix": "个"
+          },
+          {
+            "id": "circle",
+            "label": "圆",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          3
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，哪种图形最多？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "正方形",
+            "个数": 3
+          },
+          {
+            "图形": "三角形",
+            "个数": 5
+          },
+          {
+            "图形": "圆",
+            "个数": 2
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据表格，圆有几个？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "长方形",
+            "个数": 4
+          },
+          {
+            "图形": "圆",
+            "个数": 3
+          },
+          {
+            "图形": "正方形",
+            "个数": 2
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5",
+        "right": "3 + 1"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "统计图形时，怎样做最不容易漏数？",
+        "options": [
+          "按颜色随便数",
+          "同一种图形数完再数下一种",
+          "只数大的",
+          "只数喜欢的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "同一个图案中，三角形可能比圆多。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "统计时可以把正方形和圆混在一起算成一种。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正方形"
+          },
+          {
+            "id": "l2",
+            "text": "三角形"
+          },
+          {
+            "id": "l3",
+            "text": "圆"
+          },
+          {
+            "id": "l4",
+            "text": "长方形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "有长边和短边"
+          },
+          {
+            "id": "r2",
+            "text": "4条边都一样长"
+          },
+          {
+            "id": "r1",
+            "text": "3个角"
+          },
+          {
+            "id": "r3",
+            "text": "没有角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 3 + 2 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "先数",
+          null,
+          "，再数",
+          null,
+          "，最后合起来。"
+        ],
+        "tokens": [
+          "圆",
+          "三角形",
+          "颜色",
+          "长方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三角形",
+          "圆"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "id": "14-zenme-dongbin",
+  "title": "怎么都快乐活动词语",
+  "description": "照样子积累“跳绳、踢足球、听音乐”等活动词语。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "跳"
+          },
+          {
+            "id": "l_1",
+            "text": "踢"
+          },
+          {
+            "id": "l_2",
+            "text": "听"
+          },
+          {
+            "id": "l_3",
+            "text": "打"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "音乐"
+          },
+          {
+            "id": "r_0",
+            "text": "绳"
+          },
+          {
+            "id": "r_3",
+            "text": "排球"
+          },
+          {
+            "id": "r_1",
+            "text": "足球"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "看"
+          },
+          {
+            "id": "l_1",
+            "text": "玩"
+          },
+          {
+            "id": "l_2",
+            "text": "讲"
+          },
+          {
+            "id": "l_3",
+            "text": "下"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "故事"
+          },
+          {
+            "id": "r_0",
+            "text": "书"
+          },
+          {
+            "id": "r_3",
+            "text": "象棋"
+          },
+          {
+            "id": "r_1",
+            "text": "游戏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出活动词语",
+        "tokens": [
+          "足球",
+          "踢",
+          "听",
+          "音乐",
+          "故事"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "踢",
+          "足球"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出活动词语",
+        "tokens": [
+          "音乐",
+          "打",
+          "听",
+          "排球",
+          "看书"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "听",
+          "音乐"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出活动词语",
+        "tokens": [
+          "打",
+          "跳绳",
+          "排球",
+          "书",
+          "游戏"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "打",
+          "排球"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个搭配和课本里的一样？",
+        "options": [
+          "踢音乐",
+          "听排球",
+          "打书",
+          "踢足球"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个搭配正确？",
+        "options": [
+          "听音乐",
+          "看排球",
+          "打故事",
+          "跳书"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“讲故事”中表示动作的字是哪个？",
+        "options": [
+          "故",
+          "事",
+          "讲",
+          "们"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“玩游戏”是课本要求照样子说的活动词语。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“打排球”应该说成“听排球”。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

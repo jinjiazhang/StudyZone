@@ -1,0 +1,176 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jǐng",
+        "sentence": "乡亲们在__旁边立了一块石碑。",
+        "blankPlaceholder": "__",
+        "character": "井",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "井"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiāng",
+        "sentence": "毛主席曾在__西领导革命。",
+        "blankPlaceholder": "__",
+        "character": "江",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "江"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fāng",
+        "sentence": "乡亲们吃水要到很远的地__去挑。",
+        "blankPlaceholder": "__",
+        "character": "方",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "方"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhǔ",
+        "sentence": "毛__席带领大家挖井。",
+        "blankPlaceholder": "__",
+        "character": "主",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "主"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhù",
+        "sentence": "毛主席在那儿__过。",
+        "blankPlaceholder": "__",
+        "character": "住",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "住"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hòu",
+        "sentence": "解放以__，乡亲们立了石碑。",
+        "blankPlaceholder": "__",
+        "character": "后",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "后"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "井",
+        "tokens": [
+          "口",
+          "水",
+          "村",
+          "边",
+          "花",
+          "天"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“井”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "口",
+            "水",
+            "边"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "主",
+        "tokens": [
+          "席",
+          "月",
+          "人",
+          "山",
+          "动",
+          "书"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“主”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "席",
+            "人",
+            "动"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“江”的部首和什么有关？",
+        "options": [
+          "水",
+          "火",
+          "木",
+          "口"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“住”和“主”读音相同，字形不同，意思也不同。",
+        "options": [
+          "错",
+          "对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

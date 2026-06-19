@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 + 21 = ?"
+      },
+      "answer": {
+        "value": 33,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23 + 32 = ?"
+      },
+      "answer": {
+        "value": 55,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 31 = ?"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22 + 22 = ?"
+      },
+      "answer": {
+        "value": 44,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 + 81 = ?"
+      },
+      "answer": {
+        "value": 99,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 + 54 = ?"
+      },
+      "answer": {
+        "value": 99,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12+21 和 23+32 的共同特点是什么？",
+        "options": [
+          "两个加数完全一样",
+          "都只加个位",
+          "两个加数的十位和个位交换了位置",
+          "都超过100"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要写出和是99的有趣算式，可以让十位和个位怎样？",
+        "options": [
+          "凑成10",
+          "都写0",
+          "都写1",
+          "凑成9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "写出一个和是44的有趣算式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "13+31",
+          "31+13",
+          "22+22"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18+81：个位8+1=__，十位1+8=__，结果__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          9,
+          99
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "12+21"
+          },
+          {
+            "id": "l1",
+            "text": "13+31"
+          },
+          {
+            "id": "l2",
+            "text": "23+32"
+          },
+          {
+            "id": "l3",
+            "text": "45+54"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "55"
+          },
+          {
+            "id": "r0",
+            "text": "33"
+          },
+          {
+            "id": "r3",
+            "text": "99"
+          },
+          {
+            "id": "r1",
+            "text": "44"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按得数从小到大排列。",
+        "items": [
+          {
+            "id": "i2",
+            "text": "23+32"
+          },
+          {
+            "id": "i0",
+            "text": "12+21"
+          },
+          {
+            "id": "i3",
+            "text": "45+54"
+          },
+          {
+            "id": "i1",
+            "text": "13+31"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

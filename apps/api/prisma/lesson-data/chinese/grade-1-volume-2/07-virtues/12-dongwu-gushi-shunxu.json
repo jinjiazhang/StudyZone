@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bǎi",
+        "sentence": "狗熊喊了一__遍。",
+        "blankPlaceholder": "__",
+        "character": "百",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "百"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lín",
+        "sentence": "大会在森__广场开。",
+        "blankPlaceholder": "__",
+        "character": "林",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "林"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dōu",
+        "sentence": "第二天，动物们__来了。",
+        "blankPlaceholder": "__",
+        "character": "都",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "都"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tīng",
+        "sentence": "蜻蜓__见了通知。",
+        "blankPlaceholder": "__",
+        "character": "听",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "听"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "diǎn",
+        "sentence": "上午八__开大会。",
+        "blankPlaceholder": "__",
+        "character": "点",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "点"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按故事顺序排一排",
+        "tokens": [
+          "说清时间地点",
+          "通知哪一天",
+          "忘说地点",
+          "忘说时间"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "通知哪一天",
+          "忘说时间",
+          "忘说地点",
+          "说清时间地点"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "森林广场",
+          "明天上午八点",
+          "在",
+          "开大会"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "明天上午八点",
+          "在",
+          "森林广场",
+          "开大会"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "狐狸提醒"
+          },
+          {
+            "id": "l1",
+            "text": "大灰狼提醒"
+          },
+          {
+            "id": "l2",
+            "text": "梅花鹿提醒"
+          },
+          {
+            "id": "l3",
+            "text": "老虎决定"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "说清地点"
+          },
+          {
+            "id": "r0",
+            "text": "说清哪一天"
+          },
+          {
+            "id": "r3",
+            "text": "大会时间地点"
+          },
+          {
+            "id": "r1",
+            "text": "说清具体时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这个故事告诉我们，通知别人时要怎样？",
+        "options": [
+          "把事情说清楚",
+          "越短越好，不用地点",
+          "只说一次就够了",
+          "忘了也没关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中通知最后变清楚，是因为狗熊怎样做？",
+        "options": [
+          "不再通知了",
+          "只问小猴子",
+          "听了大家提醒，一次次补充",
+          "把文具放回家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

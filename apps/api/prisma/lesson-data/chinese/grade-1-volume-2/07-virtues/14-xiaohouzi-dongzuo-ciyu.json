@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "玉",
+        "tokens": [
+          "米",
+          "兔",
+          "石",
+          "瓜",
+          "块",
+          "树"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "米",
+            "石"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "桃",
+        "tokens": [
+          "子",
+          "花",
+          "瓜",
+          "树",
+          "山",
+          "叶"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "树"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "西",
+        "tokens": [
+          "瓜",
+          "山",
+          "方",
+          "边",
+          "米",
+          "风"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "瓜",
+            "方"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "兔",
+        "tokens": [
+          "子",
+          "年",
+          "瓜",
+          "白",
+          "追",
+          "米"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "白"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "掰"
+          },
+          {
+            "id": "l1",
+            "text": "扛"
+          },
+          {
+            "id": "l2",
+            "text": "扔"
+          },
+          {
+            "id": "l3",
+            "text": "摘"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "丢下不要"
+          },
+          {
+            "id": "r0",
+            "text": "把玉米从秆上弄下来"
+          },
+          {
+            "id": "r3",
+            "text": "从枝上取下来"
+          },
+          {
+            "id": "r1",
+            "text": "放在肩上搬"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "捧"
+          },
+          {
+            "id": "l1",
+            "text": "抱"
+          },
+          {
+            "id": "l2",
+            "text": "追"
+          },
+          {
+            "id": "l3",
+            "text": "蹦蹦跳跳"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "赶在后面跑"
+          },
+          {
+            "id": "r0",
+            "text": "用双手托着"
+          },
+          {
+            "id": "r3",
+            "text": "高兴地跳来跳去"
+          },
+          {
+            "id": "r1",
+            "text": "用手臂围住"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出动作顺序",
+        "tokens": [
+          "扔玉米",
+          "掰玉米",
+          "摘桃子",
+          "追兔子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "掰玉米",
+          "扔玉米",
+          "摘桃子",
+          "追兔子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文词语",
+        "tokens": [
+          "玉米",
+          "扛着",
+          "摘",
+          "往前走"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "扛着",
+          "玉米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“掰、扛、扔、摘、捧、抱”这些词大多表示什么？",
+        "options": [
+          "动作",
+          "颜色",
+          "时间",
+          "地点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "小猴子下山",
+        "options": [
+          {
+            "id": "meeting",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-089.jpg",
+            "label": "动物开大会"
+          },
+          {
+            "id": "monkey",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-095.jpg",
+            "label": "小猴子下山"
+          },
+          {
+            "id": "garden",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-098.jpg",
+            "label": "语文园地七"
+          },
+          {
+            "id": "clock",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-086.jpg",
+            "label": "一分钟"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "monkey"
+      },
+      "difficulty": 1
+    }
+  ]
+}

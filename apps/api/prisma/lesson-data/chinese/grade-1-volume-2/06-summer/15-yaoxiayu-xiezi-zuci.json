@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhè",
+        "sentence": "__次，大雨真的下起来了。",
+        "character": "这",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "这"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yú",
+        "sentence": "小__游到水面上来了。",
+        "character": "鱼",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "鱼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wèn",
+        "sentence": "小白兔跑过去__。",
+        "character": "问",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "问"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kàn",
+        "sentence": "他__见路边有一大群蚂蚁。",
+        "character": "看",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "看"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "miàn",
+        "sentence": "小鱼游到水__上来了。",
+        "character": "面",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "面"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiā",
+        "sentence": "小白兔__快步子往家跑。",
+        "character": "加",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "加"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "问",
+        "tokens": [
+          "题",
+          "看",
+          "号",
+          "鱼",
+          "这",
+          "加"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“问”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "题",
+            "号"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鱼",
+        "tokens": [
+          "儿",
+          "问",
+          "水",
+          "面",
+          "看",
+          "雨"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“鱼”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "儿",
+            "水"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "加",
+        "tokens": [
+          "快",
+          "看",
+          "油",
+          "鱼",
+          "面",
+          "息"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“加”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "快",
+            "油"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "这次"
+          },
+          {
+            "id": "l_1",
+            "text": "水面"
+          },
+          {
+            "id": "l_2",
+            "text": "有空"
+          },
+          {
+            "id": "l_3",
+            "text": "消息"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "有时间"
+          },
+          {
+            "id": "r_0",
+            "text": "这一次"
+          },
+          {
+            "id": "r_3",
+            "text": "告诉别人的事情"
+          },
+          {
+            "id": "r_1",
+            "text": "水的表面"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字是《要下雨了》的写字字？",
+        "options": [
+          "阴",
+          "看",
+          "沉",
+          "忙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“吗、呢、呀、吧”都是课文中常见的什么？",
+        "options": [
+          "动物名",
+          "天气词",
+          "语气词",
+          "颜色词"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

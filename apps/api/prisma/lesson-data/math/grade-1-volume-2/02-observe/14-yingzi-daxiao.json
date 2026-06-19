@@ -1,0 +1,274 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中手离灯光远一些时，小兔影子变得：",
+        "options": [
+          "大一些",
+          "小一些",
+          "没有变化",
+          "变成圆形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中离灯光近一些时，影子会怎样？",
+        "options": [
+          "变小",
+          "消失",
+          "变大",
+          "变成数字7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪幅示意更像“灯光近，影子较大”？",
+        "options": [
+          {
+            "id": "lightfar",
+            "label": "灯光远，影子较小",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"80\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"132\" cy=\"50\" rx=\"28\" ry=\"14\" fill=\"#6b7280\"/></svg>"
+          },
+          {
+            "id": "lightnear",
+            "label": "灯光近，影子较大",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"58\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"82\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"136\" cy=\"50\" rx=\"46\" ry=\"22\" fill=\"#6b7280\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "lightnear"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪幅示意更像“灯光远，影子较小”？",
+        "options": [
+          {
+            "id": "lightnear",
+            "label": "灯光近，影子较大",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"58\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"82\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"136\" cy=\"50\" rx=\"46\" ry=\"22\" fill=\"#6b7280\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "lightfar",
+            "label": "灯光远，影子较小",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"80\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"132\" cy=\"50\" rx=\"28\" ry=\"14\" fill=\"#6b7280\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "lightfar"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "影子大小与什么有关？",
+        "options": [
+          "书本页码",
+          "物体名字笔画",
+          "同桌身高",
+          "物体和光源的距离"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果想让手影小兔变小，可以试试：",
+        "options": [
+          "让手离灯光远一些",
+          "让手更靠近灯光",
+          "把灯关掉再观察",
+          "换成数学本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果想让手影小兔变大，可以试试：",
+        "options": [
+          "让手离灯光更远",
+          "让手离灯光近一些",
+          "把幕布拿走",
+          "闭上眼睛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "离灯光近"
+          },
+          {
+            "id": "l2",
+            "text": "离灯光远"
+          },
+          {
+            "id": "l3",
+            "text": "物体挡住光"
+          },
+          {
+            "id": "l4",
+            "text": "幕布上"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "形成影子"
+          },
+          {
+            "id": "r1",
+            "text": "影子较大"
+          },
+          {
+            "id": "r4",
+            "text": "看到影子"
+          },
+          {
+            "id": "r2",
+            "text": "影子较小"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断：改变物体与灯光的距离，影子大小可能改变。",
+        "options": [
+          "对",
+          "错"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断：影子大小永远不变。",
+        "options": [
+          "对",
+          "错"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "做影子实验时，要比较公平，应尽量保持什么不变？",
+        "options": [
+          "同一个物体和同一块幕布",
+          "每天的天气",
+          "课本页数",
+          "铅笔颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图表示“影子较小”？",
+        "options": [
+          {
+            "id": "lightnear",
+            "label": "灯光近，影子较大",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"58\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"82\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"136\" cy=\"50\" rx=\"46\" ry=\"22\" fill=\"#6b7280\"/></svg>"
+          },
+          {
+            "id": "flower",
+            "label": "开花的植物",
+            "svg": "<svg viewBox=\"0 0 140 150\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"45\" y=\"112\" width=\"50\" height=\"22\" fill=\"#a16207\"/><path d=\"M70 112V64\" stroke=\"#166534\" stroke-width=\"6\"/><circle cx=\"70\" cy=\"52\" r=\"17\" fill=\"#facc15\"/><circle cx=\"70\" cy=\"28\" r=\"16\" fill=\"#f97316\"/><circle cx=\"70\" cy=\"76\" r=\"16\" fill=\"#f97316\"/><circle cx=\"46\" cy=\"52\" r=\"16\" fill=\"#f97316\"/><circle cx=\"94\" cy=\"52\" r=\"16\" fill=\"#f97316\"/></svg>"
+          },
+          {
+            "id": "rabbit",
+            "label": "小兔手影",
+            "svg": "<svg viewBox=\"0 0 120 140\" xmlns=\"http://www.w3.org/2000/svg\"><ellipse cx=\"42\" cy=\"34\" rx=\"11\" ry=\"28\" fill=\"#111827\"/><ellipse cx=\"72\" cy=\"32\" rx=\"11\" ry=\"30\" fill=\"#111827\"/><ellipse cx=\"60\" cy=\"82\" rx=\"36\" ry=\"44\" fill=\"#111827\"/></svg>"
+          },
+          {
+            "id": "lightfar",
+            "label": "灯光远，影子较小",
+            "svg": "<svg viewBox=\"0 0 180 100\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"30\" cy=\"50\" r=\"14\" fill=\"#facc15\"/><rect x=\"80\" y=\"38\" width=\"20\" height=\"24\" fill=\"#111827\"/><ellipse cx=\"132\" cy=\"50\" rx=\"28\" ry=\"14\" fill=\"#6b7280\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "lightfar"
+      },
+      "difficulty": 1
+    }
+  ]
+}

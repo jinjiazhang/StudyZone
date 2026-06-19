@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shén",
+        "sentence": "你姓__么？",
+        "blankPlaceholder": "__",
+        "character": "什",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "什"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "me",
+        "sentence": "什__李？木子李。",
+        "blankPlaceholder": "__",
+        "character": "么",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "么"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gǔ",
+        "sentence": "__月胡，口天吴。",
+        "blankPlaceholder": "__",
+        "character": "古",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "古"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hú",
+        "sentence": "古月__，口天吴。",
+        "blankPlaceholder": "__",
+        "character": "胡",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "胡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shuāng",
+        "sentence": "__人徐，言午许。",
+        "blankPlaceholder": "__",
+        "character": "双",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "双"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yán",
+        "sentence": "__午许，双人徐。",
+        "blankPlaceholder": "__",
+        "character": "言",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "言"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "古",
+        "tokens": [
+          "人",
+          "月",
+          "诗",
+          "红",
+          "老",
+          "飞"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【古】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "诗",
+            "老"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "言",
+        "tokens": [
+          "语",
+          "说",
+          "午",
+          "冬",
+          "行",
+          "草"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【言】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "语",
+            "午",
+            "行"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "胡",
+        "tokens": [
+          "子",
+          "月",
+          "同",
+          "春",
+          "乱",
+          "飞"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【胡】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "同",
+            "乱"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "什"
+          },
+          {
+            "id": "l1",
+            "text": "古"
+          },
+          {
+            "id": "l2",
+            "text": "双"
+          },
+          {
+            "id": "l3",
+            "text": "言"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "古月"
+          },
+          {
+            "id": "r2",
+            "text": "双人"
+          },
+          {
+            "id": "r3",
+            "text": "言午"
+          },
+          {
+            "id": "r0",
+            "text": "什么"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本写字格中，《姓氏歌》要求会写的字是哪一组？",
+        "options": [
+          "什、么、古、胡、双、言",
+          "春、冬、吹、花、飞、入",
+          "青、清、晴、请、苗、生",
+          "文、片、卡、合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“么”在“什么”中读作？",
+        "options": [
+          "mó",
+          "mā",
+          "me",
+          "mǒ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

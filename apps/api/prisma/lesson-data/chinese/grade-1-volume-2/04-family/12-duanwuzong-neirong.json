@@ -1,0 +1,196 @@
+{
+  "id": "12-duanwuzong-neirong",
+  "title": "端午粽内容理解",
+  "description": "理解粽子的样子、味道和端午节故事。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一到端午节，外婆总会煮好什么？",
+        "options": [
+          "一册书",
+          "一锅粽子",
+          "一支铅笔",
+          "一床棉被"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中谁盼着“我们”回去？",
+        "options": [
+          "同学",
+          "外婆",
+          "老师",
+          "邻居家的哥哥"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "煮熟的粽子剥开粽叶后，先飘出什么？",
+        "options": [
+          "风声",
+          "雨声",
+          "歌声",
+          "清香"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "外婆为什么把粽子分给邻居吃？",
+        "options": [
+          "粽子很多，也愿意分享",
+          "粽子不好吃",
+          "邻居不会写字",
+          "端午节没有人吃饭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "人们端午节吃粽子，传说是为了纪念谁？",
+        "options": [
+          "诗人李白",
+          "作者柯岩",
+          "爱国诗人屈原",
+          "兰兰"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "红枣粽、红豆粽、鲜肉粽都是课文里提到的粽子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文说端午节是为了纪念李白。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "端午粽",
+        "passage": "外婆用青青的箬竹叶包粽子，里面裹着白白的糯米，中间有红红的枣。煮熟后，粽子又黏又甜。",
+        "questions": [
+          {
+            "question": "外婆用什么包粽子？",
+            "options": [
+              "箬竹叶",
+              "棉被",
+              "铅笔"
+            ]
+          },
+          {
+            "question": "红枣粽中间有什么？",
+            "options": [
+              "红红的枣",
+              "明亮的月光",
+              "一册书"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-047.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《端午粽》的课本页图",
+        "options": [
+          {
+            "id": "duanwu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-047.jpg",
+            "label": "端午粽"
+          },
+          {
+            "id": "jing",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-044.jpg",
+            "label": "静夜思"
+          },
+          {
+            "id": "yese",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-045.jpg",
+            "label": "夜色"
+          },
+          {
+            "id": "xiaoshou",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-051.jpg",
+            "label": "胖乎乎的小手"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "duanwu"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "纪念爱国诗人屈原",
+        "tokens": [
+          "屈原",
+          "爱国诗人",
+          "李白",
+          "纪念"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "纪念",
+          "爱国诗人",
+          "屈原"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

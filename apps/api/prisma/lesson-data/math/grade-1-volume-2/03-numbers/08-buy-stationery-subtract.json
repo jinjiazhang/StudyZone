@@ -1,0 +1,200 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 7 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 8 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 9 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 9 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 9 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 6 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有12支铅笔，卖出7支，还剩几支？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "12-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有15本练习本，卖出9本，还剩几本？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "15-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "17 - 9",
+        "right": "11 - 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "4",
+          "13",
+          "9",
+          "6",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "13",
+          "9",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "14 - 6"
+          },
+          {
+            "id": "l1",
+            "text": "16 - 9"
+          },
+          {
+            "id": "l2",
+            "text": "11 - 6"
+          },
+          {
+            "id": "l3",
+            "text": "15 - 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "7（15 - 8）"
+          },
+          {
+            "id": "r2",
+            "text": "5"
+          },
+          {
+            "id": "r1",
+            "text": "7（16 - 9）"
+          },
+          {
+            "id": "r0",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12 - 7 可以用哪道加法来想？",
+        "options": [
+          "7 + 5 = 12",
+          "7 + 7 = 14",
+          "12 + 7 = 19",
+          "5 + 12 = 17"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

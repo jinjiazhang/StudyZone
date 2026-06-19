@@ -1,0 +1,256 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jìn",
+        "sentence": "性相__，习相远。",
+        "character": "近",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "近"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yuǎn",
+        "sentence": "性相近，习相__。",
+        "character": "远",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "远"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yù",
+        "sentence": "__不琢，不成器。",
+        "character": "玉",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "玉"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xí",
+        "sentence": "学__要专心。",
+        "character": "习",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "习"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xué",
+        "sentence": "子不__，非所宜。",
+        "character": "学",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "学"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yì",
+        "sentence": "人不学，不知__。",
+        "character": "义",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "义"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "相近"
+          },
+          {
+            "id": "l_1",
+            "text": "相反"
+          },
+          {
+            "id": "l_2",
+            "text": "知道"
+          },
+          {
+            "id": "l_3",
+            "text": "道路"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "明白、懂得"
+          },
+          {
+            "id": "r_0",
+            "text": "意思接近"
+          },
+          {
+            "id": "r_3",
+            "text": "供人车通行的路"
+          },
+          {
+            "id": "r_1",
+            "text": "意思相对"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "学习"
+          },
+          {
+            "id": "l_1",
+            "text": "练习"
+          },
+          {
+            "id": "l_2",
+            "text": "专心"
+          },
+          {
+            "id": "l_3",
+            "text": "专门"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "反复训练"
+          },
+          {
+            "id": "r_3",
+            "text": "特地、专做某事"
+          },
+          {
+            "id": "r_0",
+            "text": "获得知识本领"
+          },
+          {
+            "id": "r_2",
+            "text": "集中注意力"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "学",
+        "tokens": [
+          "习",
+          "跑",
+          "生",
+          "网",
+          "校",
+          "夕"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“学”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "习",
+            "生",
+            "校"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "义",
+        "tokens": [
+          "正",
+          "皮",
+          "意",
+          "沙",
+          "气",
+          "包"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“义”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "正",
+            "意",
+            "气"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后词语中，与“相近”意思相对的是哪一个？",
+        "options": [
+          "知道",
+          "相反",
+          "学习",
+          "专门"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

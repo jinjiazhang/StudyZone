@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chūn",
+        "sentence": "__风吹，花儿开。",
+        "blankPlaceholder": "__",
+        "character": "春",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "春"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dōng",
+        "sentence": "__雪飘，天气冷。",
+        "blankPlaceholder": "__",
+        "character": "冬",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "冬"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuī",
+        "sentence": "春风__绿了小草。",
+        "blankPlaceholder": "__",
+        "character": "吹",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "吹"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huā",
+        "sentence": "山__红，池草青。",
+        "blankPlaceholder": "__",
+        "character": "花",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "花"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fēi",
+        "sentence": "小鸟__入树林。",
+        "blankPlaceholder": "__",
+        "character": "飞",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "飞"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "rù",
+        "sentence": "鸟__林，鱼出水。",
+        "blankPlaceholder": "__",
+        "character": "入",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "入"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "春",
+        "tokens": [
+          "天",
+          "花",
+          "风",
+          "雪",
+          "雨",
+          "秋"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【春】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "天",
+            "风",
+            "雨"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "花",
+        "tokens": [
+          "红",
+          "草",
+          "儿",
+          "鸟",
+          "香",
+          "霜"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【花】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "红",
+            "儿",
+            "香"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "飞",
+        "tokens": [
+          "鸟",
+          "入",
+          "快",
+          "花",
+          "机",
+          "青"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【飞】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "鸟",
+            "快",
+            "机"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "春风"
+          },
+          {
+            "id": "l1",
+            "text": "夏雨"
+          },
+          {
+            "id": "l2",
+            "text": "秋霜"
+          },
+          {
+            "id": "l3",
+            "text": "冬雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "落"
+          },
+          {
+            "id": "r2",
+            "text": "降"
+          },
+          {
+            "id": "r3",
+            "text": "飘"
+          },
+          {
+            "id": "r0",
+            "text": "吹"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“飞”字的第一笔更像哪一种笔画？",
+        "options": [
+          "长横",
+          "竖弯",
+          "横折弯钩",
+          "点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本写字格中，《春夏秋冬》要求会写的字是哪一组？",
+        "options": [
+          "春、冬、吹、花、飞、入",
+          "青、清、晴、请、苗、生",
+          "什、么、古、胡、双、言",
+          "字、红、动、万、明"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

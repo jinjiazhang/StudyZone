@@ -1,0 +1,285 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "医生记录心跳：希希 92 次、冬冬 95 次、果果 85 次、田田 79 次。谁最多？",
+        "options": [
+          "冬冬",
+          "希希",
+          "果果",
+          "田田"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "心跳次数 92、95、85、79 中，谁最少？",
+        "options": [
+          "冬冬",
+          "希希",
+          "田田",
+          "果果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把四个心跳次数从大到小排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "85"
+          },
+          {
+            "id": "item_2",
+            "text": "95"
+          },
+          {
+            "id": "item_3",
+            "text": "79"
+          },
+          {
+            "id": "item_4",
+            "text": "92"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "85 由 ? 个十和 ? 个一组成。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "85 可以表示为哪一个算式？",
+        "options": [
+          "8 + 5",
+          "50 + 8",
+          "80 + 5",
+          "85 + 5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "92",
+        "right": "95"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "85",
+        "right": "79"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "心跳记录中，果果一分钟心跳多少次？",
+        "columns": [
+          "姓名",
+          "年龄",
+          "心跳次数"
+        ],
+        "rows": [
+          {
+            "姓名": "希希",
+            "年龄": 9,
+            "心跳次数": 92
+          },
+          {
+            "姓名": "冬冬",
+            "年龄": 6,
+            "心跳次数": 95
+          },
+          {
+            "姓名": "果果",
+            "年龄": 12,
+            "心跳次数": 85
+          },
+          {
+            "姓名": "田田",
+            "年龄": 18,
+            "心跳次数": 79
+          }
+        ]
+      },
+      "answer": {
+        "value": 85,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "心跳记录中，田田多少岁？",
+        "columns": [
+          "姓名",
+          "年龄",
+          "心跳次数"
+        ],
+        "rows": [
+          {
+            "姓名": "希希",
+            "年龄": 9,
+            "心跳次数": 92
+          },
+          {
+            "姓名": "冬冬",
+            "年龄": 6,
+            "心跳次数": 95
+          },
+          {
+            "姓名": "果果",
+            "年龄": 12,
+            "心跳次数": 85
+          },
+          {
+            "姓名": "田田",
+            "年龄": 18,
+            "心跳次数": 79
+          }
+        ]
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用数字 2、5、8 中的两张组成两位数，最小的是？",
+        "options": [
+          "28",
+          "25",
+          "52",
+          "85"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用数字 2、5、8 中的两张组成两位数，最大的是？",
+        "options": [
+          "85",
+          "82",
+          "58",
+          "25"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把 25、28、52、58、82、85 从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "58"
+          },
+          {
+            "id": "item_2",
+            "text": "25"
+          },
+          {
+            "id": "item_3",
+            "text": "85"
+          },
+          {
+            "id": "item_4",
+            "text": "28"
+          },
+          {
+            "id": "item_5",
+            "text": "82"
+          },
+          {
+            "id": "item_6",
+            "text": "52"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_6",
+          "item_1",
+          "item_5",
+          "item_3"
+        ]
+      },
+      "difficulty": 3
+    }
+  ]
+}

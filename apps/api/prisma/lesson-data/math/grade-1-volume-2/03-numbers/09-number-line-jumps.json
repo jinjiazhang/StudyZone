@@ -1,0 +1,243 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从12倒着跳4步，落到几？12 - 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从15倒着跳7步，落到几？15 - 7 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从17倒着跳9步，落到几？17 - 9 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "从11倒着跳6步，落到几？11 - 6 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数线上算 17 - 9：先从17跳到10，跳了 __ 步，再跳 __ 步，落到 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先跳"
+          },
+          {
+            "id": "b2",
+            "label": "再跳"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          2,
+          8
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "数线上算 12 - 6：先从12跳到10，跳了 __ 步，再跳 __ 步，落到 __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先跳"
+          },
+          {
+            "id": "b2",
+            "label": "再跳"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          4,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数线从小到大排列",
+        "items": [
+          {
+            "id": "n17",
+            "text": "17"
+          },
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n12",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n5",
+          "n8",
+          "n12",
+          "n17"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按数线从大到小排列",
+        "items": [
+          {
+            "id": "n11",
+            "text": "11"
+          },
+          {
+            "id": "n18",
+            "text": "18"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          },
+          {
+            "id": "n16",
+            "text": "16"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n18",
+          "n16",
+          "n11",
+          "n7"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "15 - 7",
+        "right": "12 - 4"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从 16 倒着跳 ",
+          null,
+          " 步，到 ",
+          null
+        ],
+        "tokens": [
+          "7",
+          "8",
+          "9",
+          "16",
+          "11"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在数线上做减法时，通常向哪个方向跳？",
+        "options": [
+          "向右",
+          "向左",
+          "向上",
+          "不移动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 - 9 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

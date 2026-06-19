@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 5 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 6 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "8+4中，把4分成几和几能先凑10？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "9+3中，把3分成几和几能先凑10？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个算式得数是12？",
+        "options": [
+          "5+6",
+          "8+5",
+          "9+3",
+          "7+6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "15个小朋友每人1块饼，哪两盒合适？",
+        "options": [
+          "6块和7块",
+          "5块和8块",
+          "9块和5块",
+          "8块和7块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8+4",
+        "right": "9+3"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把这些得数按从小到大排。",
+        "items": [
+          {
+            "id": "n7+6",
+            "text": "7+6"
+          },
+          {
+            "id": "n5+6",
+            "text": "5+6"
+          },
+          {
+            "id": "n9+5",
+            "text": "9+5"
+          },
+          {
+            "id": "n8+4",
+            "text": "8+4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n5+6",
+          "n8+4",
+          "n7+6",
+          "n9+5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "8+4"
+          },
+          {
+            "id": "b",
+            "text": "9+3"
+          },
+          {
+            "id": "c",
+            "text": "5+6"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "12（九加三）"
+          },
+          {
+            "id": "rc",
+            "text": "11"
+          },
+          {
+            "id": "ra",
+            "text": "12（八加四）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = 12"
+        ],
+        "tokens": [
+          "3",
+          "9",
+          "4",
+          "8",
+          "12",
+          "7"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

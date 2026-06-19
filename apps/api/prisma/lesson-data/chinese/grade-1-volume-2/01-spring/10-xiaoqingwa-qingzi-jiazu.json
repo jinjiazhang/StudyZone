@@ -1,0 +1,306 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "清"
+          },
+          {
+            "id": "l1",
+            "text": "晴"
+          },
+          {
+            "id": "l2",
+            "text": "睛"
+          },
+          {
+            "id": "l3",
+            "text": "情"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "日字旁，和太阳天气有关"
+          },
+          {
+            "id": "r2",
+            "text": "目字旁，和眼睛有关"
+          },
+          {
+            "id": "r3",
+            "text": "竖心旁，和心情有关"
+          },
+          {
+            "id": "r0",
+            "text": "三点水，和水有关"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "请"
+          },
+          {
+            "id": "l1",
+            "text": "青"
+          },
+          {
+            "id": "l2",
+            "text": "苗"
+          },
+          {
+            "id": "l3",
+            "text": "生"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "表示青绿色"
+          },
+          {
+            "id": "r2",
+            "text": "小植物"
+          },
+          {
+            "id": "r3",
+            "text": "长出来"
+          },
+          {
+            "id": "r0",
+            "text": "言字旁，和说话有关"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“河水清清天气晴”中，表示水干净的是哪个字？",
+        "options": [
+          "清",
+          "晴",
+          "情",
+          "请"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小小青蛙大眼睛”中，和“目”有关的是哪个字？",
+        "options": [
+          "清",
+          "请",
+          "情",
+          "睛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“请你爱护小青蛙”中，和说话有关的是哪个字？",
+        "options": [
+          "清",
+          "请",
+          "晴",
+          "睛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“天气晴”的“晴”为什么是日字旁？",
+        "options": [
+          "和水有关",
+          "和太阳、天气有关",
+          "和眼睛有关",
+          "和说话有关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "青",
+        "tokens": [
+          "草",
+          "春",
+          "蛙",
+          "鸟",
+          "山",
+          "冬"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【青】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "草",
+            "蛙",
+            "山"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "清",
+        "tokens": [
+          "水",
+          "早",
+          "楚",
+          "花",
+          "明",
+          "飞"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【清】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "楚",
+            "明"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "请",
+        "tokens": [
+          "问",
+          "你",
+          "客",
+          "鱼",
+          "坐",
+          "雪"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【请】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "问",
+            "客",
+            "坐"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "填一填：眼__",
+        "tokens": [
+          "晴",
+          "眼",
+          "清",
+          "睛",
+          "请"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "眼",
+          "睛"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "填一填：__水",
+        "tokens": [
+          "晴",
+          "清",
+          "情",
+          "水",
+          "睛"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "清",
+          "水"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "填一填：__问",
+        "tokens": [
+          "清",
+          "请",
+          "晴",
+          "问",
+          "睛"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请",
+          "问"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

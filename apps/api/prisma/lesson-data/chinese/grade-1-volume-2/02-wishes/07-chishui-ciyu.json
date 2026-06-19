@@ -1,0 +1,299 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "水井"
+          },
+          {
+            "id": "l_1",
+            "text": "井口"
+          },
+          {
+            "id": "l_2",
+            "text": "乡村"
+          },
+          {
+            "id": "l_3",
+            "text": "村子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "村庄"
+          },
+          {
+            "id": "r_0",
+            "text": "从地下取水的井"
+          },
+          {
+            "id": "r_3",
+            "text": "村庄里的地方"
+          },
+          {
+            "id": "r_1",
+            "text": "水井的口"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "主席"
+          },
+          {
+            "id": "l_1",
+            "text": "主动"
+          },
+          {
+            "id": "l_2",
+            "text": "乡亲"
+          },
+          {
+            "id": "l_3",
+            "text": "战士"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "自己愿意去做"
+          },
+          {
+            "id": "r_3",
+            "text": "参加战斗的人"
+          },
+          {
+            "id": "r_0",
+            "text": "主持领导的人"
+          },
+          {
+            "id": "r_2",
+            "text": "同乡的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "想念"
+          },
+          {
+            "id": "l_1",
+            "text": "念书"
+          },
+          {
+            "id": "l_2",
+            "text": "水井"
+          },
+          {
+            "id": "l_3",
+            "text": "井旁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "取水的井"
+          },
+          {
+            "id": "r_0",
+            "text": "心里惦记"
+          },
+          {
+            "id": "r_3",
+            "text": "水井旁边"
+          },
+          {
+            "id": "r_1",
+            "text": "读书"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：吃水不忘挖井人",
+        "tokens": [
+          "不忘",
+          "挖井人",
+          "吃水",
+          "想念",
+          "乡亲"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "吃水",
+          "不忘",
+          "挖井人"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：村子里没有水井",
+        "tokens": [
+          "水井",
+          "没有",
+          "村子里",
+          "石碑",
+          "有"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "村子里",
+          "没有",
+          "水井"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：乡亲们在井旁边立了一块石碑",
+        "tokens": [
+          "井旁边",
+          "在",
+          "石碑",
+          "乡亲们",
+          "立了一块"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "乡亲们",
+          "在",
+          "井旁边",
+          "立了一块",
+          "石碑"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "村",
+        "tokens": [
+          "子",
+          "井",
+          "里",
+          "口",
+          "庄",
+          "书"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“村”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "里",
+            "庄"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "想",
+        "tokens": [
+          "念",
+          "亲",
+          "法",
+          "水",
+          "象",
+          "光"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“想”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "念",
+            "法",
+            "象"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后词语中，“战士”可以和哪个词配成一对？",
+        "options": [
+          "牙膏",
+          "红领巾",
+          "战友",
+          "雪莲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“水井”和“井口”都和井有关。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

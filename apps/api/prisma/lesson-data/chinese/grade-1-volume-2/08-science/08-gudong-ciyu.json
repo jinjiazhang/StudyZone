@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "吓",
+        "tokens": [
+          "跑",
+          "人",
+          "湖",
+          "坏",
+          "草",
+          "怕"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“吓”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "坏",
+            "怕"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "怕",
+        "tokens": [
+          "跑",
+          "害",
+          "瓜",
+          "可",
+          "树",
+          "生"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“怕”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "害",
+            "可",
+            "生"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "家",
+        "tokens": [
+          "象",
+          "人",
+          "湖",
+          "门",
+          "掉",
+          "里"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“家”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "门",
+            "里"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "到",
+        "tokens": [
+          "熟",
+          "达",
+          "咚",
+          "来",
+          "鹿",
+          "处"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“到”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "达",
+            "来",
+            "处"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "拔腿就跑"
+          },
+          {
+            "id": "l_1",
+            "text": "热闹"
+          },
+          {
+            "id": "l_2",
+            "text": "拦住"
+          },
+          {
+            "id": "l_3",
+            "text": "领着"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "抬腿马上跑"
+          },
+          {
+            "id": "r_3",
+            "text": "挡住不让过去"
+          },
+          {
+            "id": "r_0",
+            "text": "带着大家一起走"
+          },
+          {
+            "id": "r_2",
+            "text": "人多声杂很有气氛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“木瓜熟了”中的“熟”意思是？",
+        "options": [
+          "可以吃了",
+          "正在学习",
+          "睡着了",
+          "声音很大"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“拔腿就跑”说明兔子怎样？",
+        "options": [
+          "跑得很慢",
+          "停下思考",
+          "在湖里游泳",
+          "马上逃跑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“这一下可热闹了”指什么场面？",
+        "options": [
+          "大家安静读书",
+          "木瓜开花了",
+          "大家都跟着跑起来",
+          "野牛睡觉了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：高高的树",
+        "tokens": [
+          "湖里",
+          "高高的",
+          "木瓜",
+          "树"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "高高的",
+          "树"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：一个跟着一个跑起来",
+        "tokens": [
+          "跑起来",
+          "一个",
+          "跟着",
+          "一个",
+          "拦住"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一个",
+          "跟着",
+          "一个",
+          "跑起来"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

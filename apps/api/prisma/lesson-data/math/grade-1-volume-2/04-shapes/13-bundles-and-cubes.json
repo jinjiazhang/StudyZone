@@ -1,0 +1,278 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4 捆小棒和 2 根小棒表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          2,
+          42
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3 捆小棒和 4 根小棒表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          4,
+          34
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6 捆小棒和 7 根小棒表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          7,
+          67
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2 条十格和 1 个方块表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1,
+          21
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2 条十格和 0 个方块表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          0,
+          20
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7 捆小棒和 5 根小棒表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5,
+          75
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 个十和 8 个一组成 ?"
+      },
+      "answer": {
+        "value": 58,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 个十和 4 个一组成 ?"
+      },
+      "answer": {
+        "value": 94,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "42 可以看成几个十和几个一？",
+        "options": [
+          "2 个十和 4 个一",
+          "4 个一和 2 个十",
+          "40 个十和 2 个一",
+          "4 个十和 2 个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "34 可以用几捆小棒和几根小棒表示？",
+        "options": [
+          "4 捆和 3 根",
+          "3 捆和 4 根",
+          "3 捆和 40 根",
+          "30 捆和 4 根"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "42",
+        "right": "34"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "75",
+        "right": "57"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "春晓",
+        "author": "孟浩然",
+        "lines": [
+          [
+            null,
+            "眠不觉晓，"
+          ],
+          [
+            "处处闻啼鸟。"
+          ],
+          [
+            "夜来风雨声，"
+          ],
+          [
+            "花落知多少。"
+          ]
+        ],
+        "options": [
+          "冬",
+          "春",
+          "秋",
+          "夏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "春晓",
+        "author": "孟浩然",
+        "lines": [
+          [
+            "春眠不觉晓，"
+          ],
+          [
+            "处处闻",
+            null,
+            "。"
+          ],
+          [
+            "夜来风雨声，"
+          ],
+          [
+            "花落知多少。"
+          ]
+        ],
+        "options": [
+          "飞鱼",
+          "红花",
+          "青草",
+          "啼鸟"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "春晓",
+        "author": "孟浩然",
+        "lines": [
+          [
+            "春眠不觉晓，"
+          ],
+          [
+            "处处闻啼鸟。"
+          ],
+          [
+            "夜来",
+            null,
+            "声，"
+          ],
+          [
+            "花落知多少。"
+          ]
+        ],
+        "options": [
+          "风雨",
+          "霜雪",
+          "山水",
+          "人声"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "春晓",
+        "author": "孟浩然",
+        "lines": [
+          [
+            "春眠不觉晓，"
+          ],
+          [
+            "处处闻啼鸟。"
+          ],
+          [
+            "夜来风雨声，"
+          ],
+          [
+            "花落知",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "几时",
+          "哪里",
+          "多少",
+          "什么"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "春晓",
+        "author": "孟浩然",
+        "lines": [
+          [
+            null,
+            "眠不觉晓，"
+          ],
+          [
+            "处处闻",
+            null,
+            "。"
+          ],
+          [
+            "夜来",
+            null,
+            "声，"
+          ],
+          [
+            "花落知",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "冬",
+              "夏",
+              "春",
+              "秋"
+            ]
+          },
+          {
+            "options": [
+              "啼鸟",
+              "飞鸟",
+              "小鸟",
+              "花鸟"
+            ]
+          },
+          {
+            "options": [
+              "霜雪",
+              "山水",
+              "雷声",
+              "风雨"
+            ]
+          },
+          {
+            "options": [
+              "东西",
+              "多少",
+              "春秋",
+              "几时"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：春眠不觉晓",
+        "tokens": [
+          "花落",
+          "春眠",
+          "风雨",
+          "不觉",
+          "多少",
+          "晓"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春眠",
+          "不觉",
+          "晓"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：处处闻啼鸟",
+        "tokens": [
+          "夜来",
+          "处处",
+          "春眠",
+          "闻",
+          "飞鸟",
+          "啼鸟"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "处处",
+          "闻",
+          "啼鸟"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：夜来风雨声",
+        "tokens": [
+          "花落",
+          "夜来",
+          "啼鸟",
+          "风雨",
+          "晓",
+          "声"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "夜来",
+          "风雨",
+          "声"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：花落知多少",
+        "tokens": [
+          "春眠",
+          "花落",
+          "处处",
+          "知",
+          "风雨",
+          "多少"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花落",
+          "知",
+          "多少"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《春晓》的作者是？",
+        "options": [
+          "李白",
+          "孟浩然",
+          "贺知章",
+          "骆宾王"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“处处闻啼鸟”中的“闻”意思是？",
+        "options": [
+          "看见",
+          "闻味道",
+          "听见",
+          "写下来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《春晓》主要写哪个季节的早晨？",
+        "options": [
+          "春天",
+          "夏天",
+          "秋天",
+          "冬天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

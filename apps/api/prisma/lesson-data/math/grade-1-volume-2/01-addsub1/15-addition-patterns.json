@@ -1,0 +1,195 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7+6=13，7+5是多少？7+4是多少？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          11
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6+9=15，7+9是多少？8+9是多少？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          17
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 5 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 5 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 5 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 9 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 9 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 9 = ?"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在6+9、7+9、8+9中，第一个数每次多1，得数会怎样？",
+        "options": [
+          "每次多1",
+          "每次少1",
+          "一直不变",
+          "变成0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7+6",
+        "right": "7+5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按得数从小到大排。",
+        "items": [
+          {
+            "id": "n7+6",
+            "text": "7+6"
+          },
+          {
+            "id": "n7+4",
+            "text": "7+4"
+          },
+          {
+            "id": "n7+5",
+            "text": "7+5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n7+4",
+          "n7+5",
+          "n7+6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "规律表：7+6=13，7+5的得数是多少？",
+        "columns": [
+          "算式",
+          "得数"
+        ],
+        "rows": [
+          {
+            "算式": "7+6",
+            "得数": 13
+          },
+          {
+            "算式": "7+5",
+            "得数": 12
+          },
+          {
+            "算式": "7+4",
+            "得数": 11
+          }
+        ]
+      },
+      "answer": {
+        "value": 12
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盒",
+        "hint": "文具盒的“盒”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "hè",
+          "hé",
+          "kē",
+          "huò"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "迟",
+        "hint": "迟到的“迟”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "cí",
+          "chǐ",
+          "zhí",
+          "chí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "通",
+        "hint": "通知的“通”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "tōng",
+          "tóng",
+          "dòng",
+          "tǒng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "摘",
+        "hint": "摘西瓜的“摘”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "zāi",
+          "zhái",
+          "zhāi",
+          "zhǎi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bāo",
+        "sentence": "文具盒就是文具的家。",
+        "blankPlaceholder": "__",
+        "character": "包",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "包"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xìng",
+        "sentence": "小猴子非常高__。",
+        "blankPlaceholder": "__",
+        "character": "兴",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "兴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "文具的家"
+          },
+          {
+            "id": "l1",
+            "text": "一分钟"
+          },
+          {
+            "id": "l2",
+            "text": "动物王国开大会"
+          },
+          {
+            "id": "l3",
+            "text": "小猴子下山"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "通知说清楚"
+          },
+          {
+            "id": "r0",
+            "text": "整理物品"
+          },
+          {
+            "id": "r3",
+            "text": "做事要专心"
+          },
+          {
+            "id": "r1",
+            "text": "珍惜时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出综合句子",
+        "tokens": [
+          "不能",
+          "做事",
+          "三心二意"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "做事",
+          "不能",
+          "三心二意"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一项最符合第七单元的共同主题？",
+        "options": [
+          "养成好习惯，做事认真负责",
+          "只学习古诗背诵",
+          "只观察天气变化",
+          "只认识动物名字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "第七单元综合",
+        "options": [
+          {
+            "id": "minute",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-086.jpg",
+            "label": "一分钟"
+          },
+          {
+            "id": "monkey",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-095.jpg",
+            "label": "小猴子下山"
+          },
+          {
+            "id": "garden7",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-098.jpg",
+            "label": "语文园地七"
+          },
+          {
+            "id": "wenju",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-083.jpg",
+            "label": "文具的家"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "garden7"
+      },
+      "difficulty": 1
+    }
+  ]
+}

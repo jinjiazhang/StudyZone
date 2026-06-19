@@ -1,0 +1,238 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "21",
+        "right": "18"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "淘淘有 21 个红果，笑笑有 18 个红果，谁的红果多？",
+        "options": [
+          "淘淘",
+          "笑笑",
+          "一样多",
+          "不能确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18, 19, 20, 21，哪个数最大？",
+        "options": [
+          "18",
+          "19",
+          "20",
+          "21"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "21 比 18 怎样？",
+        "options": [
+          "少一些",
+          "一样多",
+          "多一些",
+          "少得多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "21 由 ? 个十和 ? 个一组成。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18 由 ? 个十和 ? 个一组成。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          8
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据红果数量，淘淘有多少个红果？",
+        "columns": [
+          "人物",
+          "红果数"
+        ],
+        "rows": [
+          {
+            "人物": "淘淘",
+            "红果数": 21
+          },
+          {
+            "人物": "笑笑",
+            "红果数": 18
+          }
+        ]
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据红果数量，笑笑有多少个红果？",
+        "columns": [
+          "人物",
+          "红果数"
+        ],
+        "rows": [
+          {
+            "人物": "淘淘",
+            "红果数": 21
+          },
+          {
+            "人物": "笑笑",
+            "红果数": 18
+          }
+        ]
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "20"
+          },
+          {
+            "id": "item_2",
+            "text": "18"
+          },
+          {
+            "id": "item_3",
+            "text": "21"
+          },
+          {
+            "id": "item_4",
+            "text": "19"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20",
+        "right": "21"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 后面连续数 3 个数到 ?"
+      },
+      "answer": {
+        "value": 21,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较 21 和 18，先看哪一位更方便？",
+        "options": [
+          "十位",
+          "个位",
+          "百位",
+          "小数位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

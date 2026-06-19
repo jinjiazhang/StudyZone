@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "duì",
+        "sentence": "古__今，圆对方。",
+        "character": "对",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "对"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xuě",
+        "sentence": "__对霜。",
+        "character": "雪",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "雪"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xī",
+        "sentence": "朝霞对__阳。",
+        "character": "夕",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "夕"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jīn",
+        "sentence": "古对__。",
+        "character": "今",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "今"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xì",
+        "sentence": "和风对__雨。",
+        "character": "细",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "细"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǔ",
+        "sentence": "鸟__对花香。",
+        "character": "语",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "语"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "对",
+        "tokens": [
+          "子",
+          "雪",
+          "方",
+          "近",
+          "错",
+          "远"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“对”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "方",
+            "错"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雪",
+        "tokens": [
+          "花",
+          "语",
+          "人",
+          "细",
+          "白",
+          "运"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“雪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "人",
+            "白"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "语",
+        "tokens": [
+          "文",
+          "夕",
+          "言",
+          "足",
+          "气",
+          "包"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“语”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "文",
+            "言",
+            "气"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "对"
+          },
+          {
+            "id": "l_1",
+            "text": "雪"
+          },
+          {
+            "id": "l_2",
+            "text": "夕"
+          },
+          {
+            "id": "l_3",
+            "text": "语"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "雪花"
+          },
+          {
+            "id": "r_3",
+            "text": "鸟语"
+          },
+          {
+            "id": "r_0",
+            "text": "对子"
+          },
+          {
+            "id": "r_2",
+            "text": "夕阳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“细雨”中的“细”意思更接近哪一个？",
+        "options": [
+          "很粗",
+          "很小很密",
+          "很热",
+          "很高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

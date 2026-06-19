@@ -1,0 +1,315 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "吃"
+          },
+          {
+            "id": "l_1",
+            "text": "叫"
+          },
+          {
+            "id": "l_2",
+            "text": "吹"
+          },
+          {
+            "id": "l_3",
+            "text": "唱"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "口字旁：叫人"
+          },
+          {
+            "id": "r_3",
+            "text": "口字旁：唱歌"
+          },
+          {
+            "id": "r_0",
+            "text": "口字旁：吃饭"
+          },
+          {
+            "id": "r_2",
+            "text": "口字旁：吹气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "抱"
+          },
+          {
+            "id": "l_1",
+            "text": "拔"
+          },
+          {
+            "id": "l_2",
+            "text": "捉"
+          },
+          {
+            "id": "l_3",
+            "text": "拍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "提手旁：捉虫"
+          },
+          {
+            "id": "r_0",
+            "text": "提手旁：抱住"
+          },
+          {
+            "id": "r_3",
+            "text": "提手旁：拍手"
+          },
+          {
+            "id": "r_1",
+            "text": "提手旁：拔河"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "跑"
+          },
+          {
+            "id": "l_1",
+            "text": "跳"
+          },
+          {
+            "id": "l_2",
+            "text": "踢"
+          },
+          {
+            "id": "l_3",
+            "text": "跟"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "足字旁：跟上"
+          },
+          {
+            "id": "r_1",
+            "text": "足字旁：跳高"
+          },
+          {
+            "id": "r_0",
+            "text": "足字旁：跑步"
+          },
+          {
+            "id": "r_2",
+            "text": "足字旁：踢球"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“吃、叫、吹、唱”大多和什么有关？",
+        "options": [
+          "手",
+          "脚",
+          "眼睛",
+          "嘴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“抱、拔、捉、拍”大多和什么有关？",
+        "options": [
+          "手",
+          "口",
+          "足",
+          "水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“跑、跳、踢、跟”大多和什么有关？",
+        "options": [
+          "火",
+          "衣",
+          "脚",
+          "饭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "口",
+        "tokens": [
+          "吃",
+          "跑",
+          "叫",
+          "拔",
+          "吹",
+          "唱"
+        ],
+        "targetCount": 4,
+        "instruction": "选出口字旁的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "吃",
+            "叫",
+            "吹",
+            "唱"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "扌",
+        "tokens": [
+          "抱",
+          "唱",
+          "拔",
+          "跳",
+          "捉",
+          "拍"
+        ],
+        "targetCount": 4,
+        "instruction": "选出提手旁的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "抱",
+            "拔",
+            "捉",
+            "拍"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "足",
+        "tokens": [
+          "跑",
+          "吃",
+          "跳",
+          "拍",
+          "踢",
+          "跟"
+        ],
+        "targetCount": 4,
+        "instruction": "选出足字旁的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "跑",
+            "跳",
+            "踢",
+            "跟"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“跑”和“泡”的读音接近，但偏旁不同。“跑”和什么有关？",
+        "options": [
+          "水",
+          "火",
+          "脚",
+          "衣"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“抱”和“饱”的读音接近，但偏旁不同。“抱”和什么有关？",
+        "options": [
+          "手",
+          "饭",
+          "水",
+          "足"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 9 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 6 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 6 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 9 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "17 - 9 可以先把17分成10和7，再怎样算？",
+        "options": [
+          "17 + 9",
+          "10 - 9 + 7",
+          "9 - 7 + 10",
+          "10 + 9 - 7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "遇到 11 - 6，可以想哪道加法？",
+        "options": [
+          "6 + 6 = 12",
+          "11 + 6 = 17",
+          "6 + 5 = 11",
+          "5 + 11 = 16"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "看到 7 + 4 = 11，写一道相关减法。",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "11-7",
+          "11-4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "17 - 9",
+        "right": "11 - 6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = 11，所以 11 - 6 = ",
+          null
+        ],
+        "tokens": [
+          "6",
+          "4",
+          "5",
+          "11",
+          "7"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "6",
+          "5",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "17 - 9"
+          },
+          {
+            "id": "l1",
+            "text": "11 - 6"
+          },
+          {
+            "id": "l2",
+            "text": "12 - 6"
+          },
+          {
+            "id": "l3",
+            "text": "16 - 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "7"
+          },
+          {
+            "id": "r2",
+            "text": "6"
+          },
+          {
+            "id": "r1",
+            "text": "5"
+          },
+          {
+            "id": "r0",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "16 - 9：先算 10 - 9 = __，再算 __ + 6 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "先算"
+          },
+          {
+            "id": "b2",
+            "label": "加上"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1,
+          7
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

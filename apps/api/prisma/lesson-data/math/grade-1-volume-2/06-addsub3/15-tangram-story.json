@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“乌鸦喝水”的七巧板图案里，乌鸦的头可以用什么图形表示？",
+        "options": [
+          "圆",
+          "三角形",
+          "长方形",
+          "半圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用七巧板拼图后，可以给图案编故事。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "讲故事时不需要说明用了哪些图形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图案最像一只小鸟？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"55,45 105,25 95,75\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"95,75 135,55 120,95\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"60,80 95,75 80,115\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"50\" y=\"50\" width=\"80\" height=\"45\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><circle cx=\"90\" cy=\"70\" r=\"35\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"90,25 130,110 50,110\" fill=\"#a78bfa\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个故事图案用了3个三角形、1个正方形、1个平行四边形，共__块。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "板子",
+            "suffix": "块"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据故事图案统计，三角形有几个？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "三角形",
+            "个数": 3
+          },
+          {
+            "图形": "正方形",
+            "个数": 1
+          },
+          {
+            "图形": "平行四边形",
+            "个数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "讲七巧板故事的顺序",
+        "items": [
+          {
+            "id": "b",
+            "text": "说用了哪些图形"
+          },
+          {
+            "id": "c",
+            "text": "讲发生了什么"
+          },
+          {
+            "id": "a",
+            "text": "先说图案像什么"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "头"
+          },
+          {
+            "id": "l2",
+            "text": "身体"
+          },
+          {
+            "id": "l3",
+            "text": "翅膀"
+          },
+          {
+            "id": "l4",
+            "text": "尾巴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "三角形"
+          },
+          {
+            "id": "r1",
+            "text": "小三角形"
+          },
+          {
+            "id": "r3",
+            "text": "平行四边形"
+          },
+          {
+            "id": "r2",
+            "text": "大三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "讲拼图故事时，可以说“我用",
+          null,
+          "做头，用",
+          null,
+          "做身体”。"
+        ],
+        "tokens": [
+          "大三角形",
+          "数字",
+          "三角形",
+          "颜色"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "三角形",
+          "大三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同伴听故事时，可以提哪个数学问题？",
+        "options": [
+          "这个图案用了几个三角形？",
+          "你几点睡觉？",
+          "今天下雨吗？",
+          "你喜欢什么菜？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

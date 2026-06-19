@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 + 30 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 + 20 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 70 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 + 50 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "60 + 30 = ?"
+      },
+      "answer": {
+        "value": 90,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 + 60 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "每盘10个果子，2盘和3盘一共有多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "20+30",
+          "30+20"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "50",
+          "10",
+          "30",
+          "+",
+          "20"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "20",
+          "30",
+          "50"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "2个十加4个十，得几个十？是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "几个十"
+          },
+          {
+            "id": "b2",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          60
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "20+30 可以先想哪道算式？",
+        "options": [
+          "20+3=23",
+          "2+30=32",
+          "2+3=5",
+          "3+5=8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "10+40"
+          },
+          {
+            "id": "l1",
+            "text": "20+60"
+          },
+          {
+            "id": "l2",
+            "text": "30+30"
+          },
+          {
+            "id": "l3",
+            "text": "40+50"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "60"
+          },
+          {
+            "id": "r0",
+            "text": "50"
+          },
+          {
+            "id": "r3",
+            "text": "90"
+          },
+          {
+            "id": "r1",
+            "text": "80"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20+50",
+        "right": "30+30",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

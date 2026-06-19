@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贝贝为什么向妈妈要新的铅笔和橡皮？",
+        "options": [
+          "她想送给同学",
+          "她的文具经常找不着",
+          "老师让她买新的",
+          "文具盒太大了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "妈妈告诉贝贝，铅笔、橡皮和转笔刀也有什么？",
+        "options": [
+          "自己的家",
+          "小书包",
+          "新衣服",
+          "大森林"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“文具的家”指的是什么？",
+        "options": [
+          "卫生间",
+          "森林广场",
+          "桃树下",
+          "文具盒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "贝贝后来怎么做？",
+        "options": [
+          "把文具送给别人",
+          "不带文具上学",
+          "每天放学仔细检查文具",
+          "只找妈妈帮忙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文主要提醒我们什么？",
+        "options": [
+          "养成整理文具的好习惯",
+          "通知要说地点",
+          "夏夜很美",
+          "小猴子爱摘桃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "只用了一次"
+          },
+          {
+            "id": "l1",
+            "text": "只擦了一回"
+          },
+          {
+            "id": "l2",
+            "text": "妈妈说"
+          },
+          {
+            "id": "l3",
+            "text": "从此"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "文具也有自己的家"
+          },
+          {
+            "id": "r0",
+            "text": "铅笔不见了"
+          },
+          {
+            "id": "r3",
+            "text": "贝贝仔细检查文具"
+          },
+          {
+            "id": "r1",
+            "text": "橡皮找不着了"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课文顺序排一排",
+        "tokens": [
+          "妈妈提醒",
+          "铅笔丢了",
+          "仔细检查",
+          "橡皮丢了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "铅笔丢了",
+          "橡皮丢了",
+          "妈妈提醒",
+          "仔细检查"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "自己的家",
+          "文具盒",
+          "就是",
+          "这些文具的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "文具盒",
+          "就是",
+          "这些文具的",
+          "自己的家"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "所有的小伙伴",
+          "回家了",
+          "是不是",
+          "都"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "所有的小伙伴",
+          "是不是",
+          "都",
+          "回家了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "贝贝整理文具",
+        "options": [
+          {
+            "id": "yifenzhong",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-086.jpg",
+            "label": "元元起床"
+          },
+          {
+            "id": "wenju",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-083.jpg",
+            "label": "贝贝和妈妈"
+          },
+          {
+            "id": "yuandi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-098.jpg",
+            "label": "卫生间识字"
+          },
+          {
+            "id": "dongwu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-089.jpg",
+            "label": "动物通知"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "wenju"
+      },
+      "difficulty": 1
+    }
+  ]
+}

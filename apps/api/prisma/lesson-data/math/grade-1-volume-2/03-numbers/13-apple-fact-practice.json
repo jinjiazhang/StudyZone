@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 9 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 8 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 8 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "树上写着 17 - 9，应该摘得数为几的苹果？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "17-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "15 - 8 的得数是哪一个苹果？",
+        "options": [
+          "5",
+          "6",
+          "9",
+          "7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "17 - 8",
+        "right": "15 - 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "8",
+          "17",
+          "6",
+          "9",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "17",
+          "8",
+          "9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "13 - 9"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 8"
+          },
+          {
+            "id": "l2",
+            "text": "17 - 8"
+          },
+          {
+            "id": "l3",
+            "text": "11 - 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "2"
+          },
+          {
+            "id": "r2",
+            "text": "9"
+          },
+          {
+            "id": "r1",
+            "text": "7"
+          },
+          {
+            "id": "r0",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把得数从小到大排",
+        "items": [
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n2",
+            "text": "2"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n2",
+          "n4",
+          "n6",
+          "n9"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 9 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

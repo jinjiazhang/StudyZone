@@ -1,0 +1,215 @@
+{
+  "id": "12-zenme-xiezi",
+  "title": "怎么都快乐写字组词",
+  "description": "练写《怎么都快乐》的写字格生字，并组词运用。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kuài",
+        "sentence": "一个人玩，很__！",
+        "blankPlaceholder": "__",
+        "character": "快",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "快"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dāng",
+        "sentence": "__然还有看书。",
+        "blankPlaceholder": "__",
+        "character": "当",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "当"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huà",
+        "sentence": "一个人可以__画。",
+        "blankPlaceholder": "__",
+        "character": "画",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "画"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lè",
+        "sentence": "怎么都快__。",
+        "blankPlaceholder": "__",
+        "character": "乐",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "乐"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shū",
+        "sentence": "当然还有看__。",
+        "blankPlaceholder": "__",
+        "character": "书",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "书"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "máo",
+        "sentence": "打羽__球。",
+        "blankPlaceholder": "__",
+        "character": "毛",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "毛"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "快",
+        "tokens": [
+          "乐",
+          "门",
+          "慢",
+          "活",
+          "书",
+          "走"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“快”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "乐",
+            "门",
+            "活"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "书",
+        "tokens": [
+          "本",
+          "包",
+          "画",
+          "毛",
+          "看",
+          "写"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“书”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "本",
+            "包",
+            "看"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "快"
+          },
+          {
+            "id": "l_1",
+            "text": "画"
+          },
+          {
+            "id": "l_2",
+            "text": "书"
+          },
+          {
+            "id": "l_3",
+            "text": "毛"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "看书、书本"
+          },
+          {
+            "id": "r_0",
+            "text": "快乐、飞快"
+          },
+          {
+            "id": "r_3",
+            "text": "羽毛、毛笔"
+          },
+          {
+            "id": "r_1",
+            "text": "画画、图画"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词能和“乐”组成？",
+        "options": [
+          "快乐",
+          "河水",
+          "自己",
+          "邻居"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

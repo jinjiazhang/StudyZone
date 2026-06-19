@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在点子图上设计图案，最适合先连接什么？",
+        "options": [
+          "相邻的点",
+          "书包拉链",
+          "钟面数字",
+          "课桌边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "在点子图上连3个点，最容易画出哪个图形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"35,18 85,18 110,60 85,102 35,102 10,60\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><path d=\"M20 82 A40 40 0 0 1 100 82 Z\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "点子图可以帮助我们画直直的边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "点子图只能画圆，不能画三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个点子图案用了2个三角形、3个正方形，共__个图形。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "总数",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "2个三角形和3个正方形合起来，可以怎样列式？",
+        "placeholder": "例如：3+4"
+      },
+      "answer": {
+        "accepted": [
+          "2+3",
+          "3+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "在点子图上设计图案的顺序",
+        "items": [
+          {
+            "id": "b",
+            "text": "连接点画边"
+          },
+          {
+            "id": "a",
+            "text": "先想要画什么"
+          },
+          {
+            "id": "c",
+            "text": "数一数用了哪些图形"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "3个点围成"
+          },
+          {
+            "id": "l2",
+            "text": "4个点围成"
+          },
+          {
+            "id": "l3",
+            "text": "边一样长的四边形"
+          },
+          {
+            "id": "l4",
+            "text": "长长的四边形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "长方形"
+          },
+          {
+            "id": "r2",
+            "text": "三角形"
+          },
+          {
+            "id": "r3",
+            "text": "正方形"
+          },
+          {
+            "id": "r4",
+            "text": "四边形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r4",
+          "l3": "r3",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在点子图上画图，要让线从一个点连到另一个什么？",
+        "options": [
+          "点",
+          "颜色",
+          "页码",
+          "声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 + 3",
+        "right": "6"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

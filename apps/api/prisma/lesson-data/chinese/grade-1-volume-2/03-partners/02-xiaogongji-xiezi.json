@@ -1,0 +1,215 @@
+{
+  "id": "02-xiaogongji-xiezi",
+  "title": "小公鸡写字组词",
+  "description": "练写课后写字格中的字，并用这些字组成常用词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zǒu",
+        "sentence": "他们__进草地里。",
+        "blankPlaceholder": "__",
+        "character": "走",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "走"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shuō",
+        "sentence": "小鸭子__：“我也去。”",
+        "blankPlaceholder": "__",
+        "character": "说",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "说"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zì",
+        "sentence": "小公鸡坐在__己的背上。",
+        "blankPlaceholder": "__",
+        "character": "自",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "自"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hé",
+        "sentence": "他们走到小__边。",
+        "blankPlaceholder": "__",
+        "character": "河",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "河"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ràng",
+        "sentence": "小鸭子__小公鸡坐在自己背上。",
+        "blankPlaceholder": "__",
+        "character": "让",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "让"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jǐ",
+        "sentence": "小公鸡坐在自__的背上。",
+        "blankPlaceholder": "__",
+        "character": "己",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "己"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "走",
+        "tokens": [
+          "路",
+          "开",
+          "河",
+          "进",
+          "说",
+          "动"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“走”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "路",
+            "开",
+            "进"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "说",
+        "tokens": [
+          "话",
+          "明",
+          "河",
+          "笑",
+          "服",
+          "听"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“说”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "话",
+            "明",
+            "服"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "走"
+          },
+          {
+            "id": "l_1",
+            "text": "说"
+          },
+          {
+            "id": "l_2",
+            "text": "河"
+          },
+          {
+            "id": "l_3",
+            "text": "让"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "小河、河水"
+          },
+          {
+            "id": "r_0",
+            "text": "走路、走进"
+          },
+          {
+            "id": "r_3",
+            "text": "让开、让座"
+          },
+          {
+            "id": "r_1",
+            "text": "说话、说明"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪一个词可以用课文里的“河”组成？",
+        "options": [
+          "小说",
+          "自己",
+          "让开",
+          "小河"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "狗熊一共通知了大家几次？",
+        "options": [
+          "一次",
+          "两次",
+          "四次",
+          "十次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后一次通知里说的时间是什么？",
+        "options": [
+          "明天上午八点",
+          "今天下午三点",
+          "晚上到天明",
+          "每天放学后"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后一次通知里说的地点是什么？",
+        "options": [
+          "学校门口",
+          "森林广场",
+          "文具盒里",
+          "桃树下"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "谁最后提醒狗熊地点没有说清楚？",
+        "options": [
+          "元元",
+          "贝贝",
+          "小猴子",
+          "梅花鹿"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "大家最后为什么都准时参加了大会？",
+        "options": [
+          "通知把时间地点说清楚了",
+          "大家猜到了地点",
+          "老虎亲自去接",
+          "狗熊只喊了一遍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "哪一天"
+          },
+          {
+            "id": "l1",
+            "text": "什么时候"
+          },
+          {
+            "id": "l2",
+            "text": "在哪儿"
+          },
+          {
+            "id": "l3",
+            "text": "做什么"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "森林广场"
+          },
+          {
+            "id": "r0",
+            "text": "明天"
+          },
+          {
+            "id": "r3",
+            "text": "开大会"
+          },
+          {
+            "id": "r1",
+            "text": "上午八点"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出完整通知",
+        "tokens": [
+          "上午八点",
+          "明天",
+          "森林广场",
+          "在"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "明天",
+          "上午八点",
+          "在",
+          "森林广场"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出完整通知",
+        "tokens": [
+          "请大家",
+          "准时参加",
+          "开大会",
+          "在森林广场"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请大家",
+          "在森林广场",
+          "开大会",
+          "准时参加"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "一连",
+          "喊了",
+          "狗熊",
+          "十遍"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "狗熊",
+          "一连",
+          "喊了",
+          "十遍"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "动物王国通知开会",
+        "options": [
+          {
+            "id": "meeting",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-089.jpg",
+            "label": "狗熊通知大家"
+          },
+          {
+            "id": "yuan",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-086.jpg",
+            "label": "元元迟到"
+          },
+          {
+            "id": "wenju",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-083.jpg",
+            "label": "贝贝整理文具"
+          },
+          {
+            "id": "yuandi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-099.jpg",
+            "label": "日积月累"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "meeting"
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "20-danyuan-zonghe",
+  "title": "快乐伙伴综合",
+  "description": "综合复习第三单元的伙伴主题、生字词、查字典和古诗积累。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "小公鸡和小鸭子"
+          },
+          {
+            "id": "l_1",
+            "text": "树和喜鹊"
+          },
+          {
+            "id": "l_2",
+            "text": "怎么都快乐"
+          },
+          {
+            "id": "l_3",
+            "text": "语文园地三"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "人数不同也能玩"
+          },
+          {
+            "id": "r_0",
+            "text": "互相帮助"
+          },
+          {
+            "id": "r_3",
+            "text": "音序查字法"
+          },
+          {
+            "id": "r_1",
+            "text": "有邻居才快乐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "第三单元三篇课文共同关注的主题更接近哪一个？",
+        "options": [
+          "天气变化",
+          "伙伴和快乐",
+          "古代节日",
+          "动物王国大会"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字是《小公鸡和小鸭子》的写字字？",
+        "options": [
+          "快",
+          "叫",
+          "旦",
+          "河"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字是《树和喜鹊》的写字字？",
+        "options": [
+          "回",
+          "画",
+          "让",
+          "千"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字是《怎么都快乐》的写字字？",
+        "options": [
+          "从",
+          "己",
+          "书",
+          "寸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "乐",
+        "hint": "快乐",
+        "options": [
+          "yuè",
+          "luè",
+          "lè",
+          "lào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出单元主题句",
+        "tokens": [
+          "互相帮助",
+          "更快乐",
+          "伙伴之间",
+          "音序",
+          "桃花潭"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "伙伴之间",
+          "互相帮助",
+          "更快乐"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "赠汪伦",
+        "author": "李白",
+        "lines": [
+          [
+            "桃花潭水深千尺，"
+          ],
+          [
+            "不及汪伦",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "送我情",
+          "打招呼",
+          "飞出去",
+          "捉虫子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用音序查字法查字，要先找大写字母。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页介绍了查字典？",
+        "options": [
+          {
+            "id": "duck",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-031.jpg",
+            "label": "小公鸡和小鸭子"
+          },
+          {
+            "id": "tree",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-034.jpg",
+            "label": "树和喜鹊"
+          },
+          {
+            "id": "play",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-036.jpg",
+            "label": "怎么都快乐"
+          },
+          {
+            "id": "dict",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-039.jpg",
+            "label": "查字典"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "dict"
+      },
+      "difficulty": 1
+    }
+  ]
+}

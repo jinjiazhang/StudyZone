@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yǎn",
+        "sentence": "笑得我__泪都流出来了。",
+        "character": "眼",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "眼"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lèi",
+        "sentence": "我笑出了眼__。",
+        "character": "泪",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "泪"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tā",
+        "sentence": "__才哗哗哗地笑着跑回家。",
+        "character": "它",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "它"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qì",
+        "sentence": "浪花像淘__的小娃娃。",
+        "character": "气",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "气"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bèi",
+        "sentence": "浪花捧来雪白的__壳。",
+        "character": "贝",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "贝"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wá",
+        "sentence": "浪花就像小__娃。",
+        "character": "娃",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "娃"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "眼",
+        "tokens": [
+          "泪",
+          "光",
+          "睛",
+          "气",
+          "娃",
+          "水"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“眼”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "泪",
+            "睛"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "泪",
+        "tokens": [
+          "水",
+          "眼",
+          "花",
+          "贝",
+          "珠",
+          "白"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“泪”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "珠"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "气",
+        "tokens": [
+          "淘",
+          "生",
+          "空",
+          "贝",
+          "眼",
+          "青"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“气”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "淘",
+            "空"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "眼泪"
+          },
+          {
+            "id": "l_1",
+            "text": "贝壳"
+          },
+          {
+            "id": "l_2",
+            "text": "小虾"
+          },
+          {
+            "id": "l_3",
+            "text": "篮子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "青青的小虾"
+          },
+          {
+            "id": "r_0",
+            "text": "笑得流出来"
+          },
+          {
+            "id": "r_3",
+            "text": "装不下"
+          },
+          {
+            "id": "r_1",
+            "text": "雪白的贝壳"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中浪花捧来了什么？",
+        "options": [
+          "雪白的贝壳和青青的小虾",
+          "红红的苹果",
+          "青青的荷叶",
+          "明亮的眼睛"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“悄悄地”说明浪花怎样走来？",
+        "options": [
+          "大声地",
+          "轻轻地、不出声",
+          "飞快地",
+          "生气地"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

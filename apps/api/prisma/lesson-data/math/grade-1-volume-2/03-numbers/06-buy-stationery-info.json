@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "袋鼠妈妈有12支铅笔，小灰兔要买7支，还剩几支？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "12-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 7 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把 12 分成 10 和 __，先算 10 - 7 = __，再算 __ + __ = 5。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "分成的数"
+          },
+          {
+            "id": "b2",
+            "label": "先算得"
+          },
+          {
+            "id": "b3",
+            "label": "先算得"
+          },
+          {
+            "id": "b4",
+            "label": "剩下的数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          3,
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买文具图中，袋鼠妈妈一共有多少支铅笔？",
+        "options": [
+          "12支",
+          "7支",
+          "9本",
+          "15本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小灰兔要买7支铅笔，求还剩几支，应选哪个算式？",
+        "options": [
+          "12 + 7",
+          "12 - 7",
+          "15 - 9",
+          "9 + 7"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有9本练习本，又买来6本，一共有多少本？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "9+6",
+          "6+9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 6 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12 - 7",
+        "right": "9 - 3"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "7",
+          "12",
+          "6",
+          "5",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "12",
+          "7",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "12 - 7"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 9"
+          },
+          {
+            "id": "l2",
+            "text": "9 + 6"
+          },
+          {
+            "id": "l3",
+            "text": "12 - 2"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "10"
+          },
+          {
+            "id": "r2",
+            "text": "15"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          },
+          {
+            "id": "r0",
+            "text": "5"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“把12分成10和2”是为了先算什么？",
+        "options": [
+          "先算12 + 7",
+          "先算7 - 2",
+          "先算10 - 7",
+          "先算9 + 6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

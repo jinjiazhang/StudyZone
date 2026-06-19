@@ -1,0 +1,246 @@
+{
+  "id": "17-panghuhu-xiaoshou",
+  "title": "胖乎乎的小手阅读",
+  "description": "阅读《胖乎乎的小手》，理解兰兰的小手能做什么。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "胖乎乎",
+        "hint": "请选择【胖乎乎】的正确拼音",
+        "options": [
+          "pàng fū fū",
+          "páng hū hū",
+          "pàng hǔ hǔ",
+          "pàng hū hū"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "喜欢",
+        "hint": "请选择词语【喜欢】的正确拼音",
+        "options": [
+          "xǐ huān",
+          "xǐ huan",
+          "xī huan",
+          "xǐ guan"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "拖鞋",
+        "hint": "请选择词语【拖鞋】的正确拼音",
+        "options": [
+          "tuō xéi",
+          "tuō xié",
+          "tōu xié",
+          "tuō xiē"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "手绢",
+        "hint": "请选择词语【手绢】的正确拼音",
+        "options": [
+          "shǒu juǎn",
+          "sǒu juàn",
+          "shǒu jiàn",
+          "shǒu juàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "爸爸"
+          },
+          {
+            "id": "l_1",
+            "text": "妈妈"
+          },
+          {
+            "id": "l_2",
+            "text": "姥姥"
+          },
+          {
+            "id": "l_3",
+            "text": "兰兰"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "画了自己的小手"
+          },
+          {
+            "id": "r_1",
+            "text": "小手给我洗过手绢"
+          },
+          {
+            "id": "r_0",
+            "text": "小手替我拿过拖鞋"
+          },
+          {
+            "id": "r_2",
+            "text": "小手帮我挠过痒痒"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "家人为什么都喜欢兰兰画的这张画？",
+        "options": [
+          "因为小手帮大家做过事情",
+          "因为画上有粽子",
+          "因为画上有月亮",
+          "因为画上有电视"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "兰兰明白了什么？",
+        "options": [
+          "夜晚不能出门",
+          "粽子只能自己吃",
+          "大家喜欢这张画，是因为她的小手会帮助人",
+          "诗人都住在故乡"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "兰兰的小手帮爸爸拿过拖鞋。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "兰兰的小手只会画画，不会帮助别人。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "胖乎乎的小手",
+        "passage": "兰兰画了一张自己的小手。爸爸说，小手替他拿过拖鞋；妈妈说，小手给她洗过手绢；姥姥说，小手帮她挠过痒痒。",
+        "questions": [
+          {
+            "question": "爸爸说小手帮他做过什么？",
+            "options": [
+              "拿过拖鞋",
+              "包过粽子",
+              "望过明月"
+            ]
+          },
+          {
+            "question": "这篇短文主要写兰兰的小手怎么样？",
+            "options": [
+              "会帮助家人",
+              "只会睡觉",
+              "不喜欢做事"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-051.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《胖乎乎的小手》的课本页图",
+        "options": [
+          {
+            "id": "jing",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-044.jpg",
+            "label": "静夜思"
+          },
+          {
+            "id": "yese",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-045.jpg",
+            "label": "夜色"
+          },
+          {
+            "id": "duanwu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-047.jpg",
+            "label": "端午粽"
+          },
+          {
+            "id": "xiaoshou",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-051.jpg",
+            "label": "胖乎乎的小手"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "xiaoshou"
+      },
+      "difficulty": 1
+    }
+  ]
+}

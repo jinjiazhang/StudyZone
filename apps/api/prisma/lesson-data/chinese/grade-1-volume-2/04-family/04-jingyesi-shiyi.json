@@ -1,0 +1,265 @@
+{
+  "id": "04-jingyesi-shiyi",
+  "title": "静夜思诗意理解",
+  "description": "理解诗句中的月光、霜和思乡之情。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "床前"
+          },
+          {
+            "id": "l_1",
+            "text": "明月"
+          },
+          {
+            "id": "l_2",
+            "text": "疑是"
+          },
+          {
+            "id": "l_3",
+            "text": "故乡"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "明亮的月亮"
+          },
+          {
+            "id": "r_2",
+            "text": "好像是"
+          },
+          {
+            "id": "r_0",
+            "text": "床的前面"
+          },
+          {
+            "id": "r_3",
+            "text": "家乡"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "举头"
+          },
+          {
+            "id": "l_1",
+            "text": "低头"
+          },
+          {
+            "id": "l_2",
+            "text": "望"
+          },
+          {
+            "id": "l_3",
+            "text": "思"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "把头低下"
+          },
+          {
+            "id": "r_3",
+            "text": "想念"
+          },
+          {
+            "id": "r_0",
+            "text": "抬起头"
+          },
+          {
+            "id": "r_2",
+            "text": "看，远看"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“疑是地上霜”中，诗人把月光看成了什么？",
+        "options": [
+          "白云",
+          "雪花",
+          "地上的霜",
+          "灯光"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“低头思故乡”表达了诗人怎样的心情？",
+        "options": [
+          "想念家乡",
+          "非常开心",
+          "害怕夜晚",
+          "喜欢下雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "诗中反复出现的景物是？",
+        "options": [
+          "粽子",
+          "小鸟",
+          "铅笔",
+          "月亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《静夜思》是一首唐代诗人李白写的古诗。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“床前明月光”写的是端午节吃粽子。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "月夜思乡",
+        "passage": "夜晚，诗人看见床前明亮的月光，像地上的霜。他抬头望月，又低头想念自己的故乡。",
+        "questions": [
+          {
+            "question": "诗人看见了什么？",
+            "options": [
+              "明亮的月光",
+              "一锅粽子",
+              "一支铅笔"
+            ]
+          },
+          {
+            "question": "诗人低头想念哪里？",
+            "options": [
+              "故乡",
+              "学校",
+              "操场"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-044.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《静夜思》的课本页图",
+        "options": [
+          {
+            "id": "yese",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-045.jpg",
+            "label": "夜色"
+          },
+          {
+            "id": "duanwu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-047.jpg",
+            "label": "端午粽"
+          },
+          {
+            "id": "jing",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-044.jpg",
+            "label": "静夜思"
+          },
+          {
+            "id": "yuandi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-049.jpg",
+            "label": "语文园地四"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "jing"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "低头思故乡",
+        "tokens": [
+          "低头",
+          "故乡",
+          "望月",
+          "思",
+          "粽子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "低头",
+          "思",
+          "故乡"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

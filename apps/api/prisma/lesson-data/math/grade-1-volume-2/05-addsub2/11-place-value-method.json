@@ -1,0 +1,252 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算两位数加减两位数时，最重要的是？",
+        "options": [
+          "先把所有数字相加",
+          "只看个位",
+          "只看十位",
+          "相同数位上的数相加减"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "36+3 中，3 与哪个数位上的数相加？",
+        "options": [
+          "十位上的3",
+          "十位上的30",
+          "个位上的6",
+          "百位上的0"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "65-31 中，个位上算什么？",
+        "options": [
+          "5-1",
+          "6-3",
+          "60-30",
+          "5+1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 + 3 = ?"
+      },
+      "answer": {
+        "value": 39,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "57 - 4 = ?"
+      },
+      "answer": {
+        "value": 53,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 - 31 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "41 + 47 = ?"
+      },
+      "answer": {
+        "value": 88,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "46+23：十位上4+2=__，个位上6+3=__，结果__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位数字和"
+          },
+          {
+            "id": "b2",
+            "label": "个位数字和"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          9,
+          69
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "37-25：十位上3-2=__，个位上7-5=__，结果__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位数字差"
+          },
+          {
+            "id": "b2",
+            "label": "个位数字差"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          2,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "十位对 ",
+          null,
+          "，个位对 ",
+          null
+        ],
+        "tokens": [
+          "齐",
+          "个位",
+          "十位",
+          "相加"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "十位",
+          "个位"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "十位3、个位4"
+          },
+          {
+            "id": "l1",
+            "text": "十位5、个位7"
+          },
+          {
+            "id": "l2",
+            "text": "十位8、个位1"
+          },
+          {
+            "id": "l3",
+            "text": "十位6、个位9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "81"
+          },
+          {
+            "id": "r0",
+            "text": "34"
+          },
+          {
+            "id": "r3",
+            "text": "69"
+          },
+          {
+            "id": "r1",
+            "text": "57"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36+3",
+        "right": "36+30",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    }
+  ]
+}

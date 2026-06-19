@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七巧板一共有几块板子？",
+        "options": [
+          "5块",
+          "6块",
+          "7块",
+          "8块"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中说3号图形是什么？",
+        "options": [
+          "圆",
+          "平行四边形",
+          "长方形",
+          "半圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "七巧板由__块图形组成，其中有__个三角形。",
+        "blanks": [
+          {
+            "id": "pieces",
+            "label": "板子",
+            "suffix": "块"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          5
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据七巧板统计表，三角形有几个？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "三角形",
+            "个数": 5
+          },
+          {
+            "图形": "正方形",
+            "个数": 1
+          },
+          {
+            "图形": "平行四边形",
+            "个数": 1
+          }
+        ]
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据七巧板统计表，哪两种图形都是1个？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "三角形",
+            "个数": 5
+          },
+          {
+            "图形": "正方形",
+            "个数": 1
+          },
+          {
+            "图形": "平行四边形",
+            "个数": 1
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "正方形和平行四边形",
+          "平行四边形和正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "七巧板中没有圆。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "七巧板里所有板子都是三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "1号板"
+          },
+          {
+            "id": "l2",
+            "text": "3号板"
+          },
+          {
+            "id": "l3",
+            "text": "5号板"
+          },
+          {
+            "id": "l4",
+            "text": "7块板合起来"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "正方形"
+          },
+          {
+            "id": "r2",
+            "text": "一个完整七巧板"
+          },
+          {
+            "id": "r3",
+            "text": "大三角形"
+          },
+          {
+            "id": "r4",
+            "text": "平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "七巧板有",
+          null,
+          "块，其中大多数是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "三角形",
+          "7",
+          "圆",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "三角形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "5",
+        "right": "1 + 1"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

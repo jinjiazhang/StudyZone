@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事开始时，小白兔在山坡上做什么？",
+        "options": [
+          "游泳",
+          "唱歌",
+          "割草",
+          "采莲"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小白兔先问了谁？",
+        "options": [
+          "蚂蚁",
+          "燕子",
+          "妈妈",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小白兔后来去哪里看小鱼？",
+        "options": [
+          "沙滩上",
+          "荷叶上",
+          "教室里",
+          "池子里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小白兔看见路边有什么？",
+        "options": [
+          "一只蜻蜓",
+          "两朵荷花",
+          "一大群蚂蚁",
+          "一条小船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事结尾发生了什么？",
+        "options": [
+          "太阳出来了",
+          "大雨真的下起来了",
+          "小鱼睡着了",
+          "浪花回家了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：小白兔弯着腰在山坡上割草",
+        "tokens": [
+          "小白兔",
+          "燕子",
+          "弯着腰",
+          "水面",
+          "在山坡上",
+          "消息",
+          "割草"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小白兔",
+          "弯着腰",
+          "在山坡上",
+          "割草"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：妈妈妈妈要下雨了",
+        "tokens": [
+          "妈妈",
+          "小鱼",
+          "妈妈",
+          "蚂蚁",
+          "要下雨了",
+          "天空"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "妈妈",
+          "妈妈",
+          "要下雨了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "第一步"
+          },
+          {
+            "id": "l_1",
+            "text": "第二步"
+          },
+          {
+            "id": "l_2",
+            "text": "第三步"
+          },
+          {
+            "id": "l_3",
+            "text": "第四步"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "问小鱼"
+          },
+          {
+            "id": "r_0",
+            "text": "小白兔割草"
+          },
+          {
+            "id": "r_3",
+            "text": "告诉蚂蚁和妈妈"
+          },
+          {
+            "id": "r_1",
+            "text": "问燕子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "呀"
+          },
+          {
+            "id": "l_1",
+            "text": "吗"
+          },
+          {
+            "id": "l_2",
+            "text": "呢"
+          },
+          {
+            "id": "l_3",
+            "text": "吧"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "常用来追问"
+          },
+          {
+            "id": "r_0",
+            "text": "表示惊讶或感叹"
+          },
+          {
+            "id": "r_3",
+            "text": "表示商量或提醒"
+          },
+          {
+            "id": "r_1",
+            "text": "常用在问句末尾"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话标点更合适？",
+        "options": [
+          "是要下雨了吗？",
+          "是要下雨了吗。",
+          "是要下雨了吗，",
+          "是要下雨了吗！"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

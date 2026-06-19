@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12",
+        "right": "9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12",
+        "right": "14"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13",
+        "right": "17"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "19",
+        "right": "9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排一排。",
+        "items": [
+          {
+            "id": "n14",
+            "text": "14"
+          },
+          {
+            "id": "n12",
+            "text": "12"
+          },
+          {
+            "id": "n15",
+            "text": "15"
+          },
+          {
+            "id": "n13",
+            "text": "13"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n12",
+          "n13",
+          "n14",
+          "n15"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从大到小排一排。",
+        "items": [
+          {
+            "id": "n16",
+            "text": "16"
+          },
+          {
+            "id": "n20",
+            "text": "20"
+          },
+          {
+            "id": "n14",
+            "text": "14"
+          },
+          {
+            "id": "n18",
+            "text": "18"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n20",
+          "n18",
+          "n16",
+          "n14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "衣服上接着写数：12，13，__，__。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          14,
+          15
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "衣服上接着写数：20，18，16，__，__。",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          14,
+          12
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "12比14怎样？",
+        "options": [
+          "大",
+          "相等",
+          "多10",
+          "小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "数线9到20中，12右边紧挨着的数是几？",
+        "min": 9,
+        "max": 20,
+        "step": 1
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "看表：哪个数最大？",
+        "columns": [
+          "数"
+        ],
+        "rows": [
+          {
+            "数": 11
+          },
+          {
+            "数": 18
+          },
+          {
+            "数": 15
+          },
+          {
+            "数": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 20
+      },
+      "difficulty": 2
+    }
+  ]
+}

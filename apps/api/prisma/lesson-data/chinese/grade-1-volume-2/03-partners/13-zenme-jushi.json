@@ -1,0 +1,199 @@
+{
+  "id": "13-zenme-jushi",
+  "title": "怎么都快乐句子拼读",
+  "description": "还原诗歌句子，体会不同人数玩耍的快乐。",
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "怎么都快乐",
+        "author": "任溶溶",
+        "lines": [
+          [
+            "一个人玩，",
+            null,
+            "！"
+          ]
+        ],
+        "options": [
+          "很多",
+          "很急",
+          "很好",
+          "很孤单"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "怎么都快乐",
+        "author": "任溶溶",
+        "lines": [
+          [
+            "两个人玩，",
+            null,
+            "！"
+          ]
+        ],
+        "options": [
+          "更好",
+          "真好",
+          "很好",
+          "快乐"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "怎么都快乐",
+        "author": "任溶溶",
+        "lines": [
+          [
+            "三个人玩，",
+            null,
+            "！"
+          ]
+        ],
+        "options": [
+          "更有劲",
+          "很安静",
+          "很好",
+          "真孤单"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "怎么都快乐",
+        "author": "任溶溶",
+        "lines": [
+          [
+            "许多人玩，",
+            null,
+            "！"
+          ]
+        ],
+        "options": [
+          "很好",
+          "很多",
+          "不行",
+          "更好"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子",
+        "tokens": [
+          "静悄悄的",
+          "独自一人",
+          "踢毽子",
+          "讲故事",
+          "怎么"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "独自一人",
+          "静悄悄的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文句子",
+        "tokens": [
+          "人多",
+          "都能玩",
+          "什么游戏都能玩",
+          "孤单",
+          "打电话"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "人多",
+          "什么游戏都能玩"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“一个人玩”可以做什么？",
+        "options": [
+          "打电话问候长辈",
+          "折船、折马、踢毽子",
+          "查找“厨”字",
+          "送汪伦"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“许多人玩”可以做什么？",
+        "options": [
+          "只会安静睡觉",
+          "拔河、打排球、踢足球",
+          "只能一个人看书",
+          "只能查字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "这首儿童诗写出了一个人、两个人、三个人、许多人玩都有快乐。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文认为只有一个人玩才快乐，许多人玩不快乐。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

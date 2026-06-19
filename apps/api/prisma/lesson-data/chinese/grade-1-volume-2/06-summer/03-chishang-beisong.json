@@ -1,0 +1,279 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "池上",
+        "author": "白居易",
+        "lines": [
+          [
+            "小娃撑小艇，"
+          ],
+          [
+            null,
+            "白莲回。"
+          ]
+        ],
+        "options": [
+          "浮萍",
+          "泉眼",
+          "树阴",
+          "偷采"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "池上",
+        "author": "白居易",
+        "lines": [
+          [
+            "小娃撑小艇，"
+          ],
+          [
+            "偷采",
+            null,
+            "回。"
+          ]
+        ],
+        "options": [
+          "白莲",
+          "荷叶",
+          "小荷",
+          "晴柔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "池上",
+        "author": "白居易",
+        "lines": [
+          [
+            "不解藏踪迹，"
+          ],
+          [
+            null,
+            "一道开。"
+          ]
+        ],
+        "options": [
+          "白莲",
+          "蜻蜓",
+          "浮萍",
+          "泉眼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "池上",
+        "author": "白居易",
+        "lines": [
+          [
+            "不解藏踪迹，"
+          ],
+          [
+            "浮萍",
+            null,
+            "开。"
+          ]
+        ],
+        "options": [
+          "一首",
+          "一只",
+          "一朵",
+          "一道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "池上",
+        "author": "白居易",
+        "lines": [
+          [
+            "小娃",
+            null,
+            "小艇，"
+          ],
+          [
+            null,
+            "白莲回。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "撑",
+              "摇",
+              "停",
+              "唱"
+            ]
+          },
+          {
+            "options": [
+              "偷采",
+              "浮萍",
+              "泉眼",
+              "照水"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：小娃撑小艇",
+        "tokens": [
+          "小娃",
+          "白莲",
+          "撑",
+          "浮萍",
+          "小艇",
+          "蜻蜓"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小娃",
+          "撑",
+          "小艇"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：浮萍一道开",
+        "tokens": [
+          "浮萍",
+          "踪迹",
+          "一道",
+          "白莲",
+          "开",
+          "小艇"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "浮萍",
+          "一道",
+          "开"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《池上》中，小娃采的是什么？",
+        "options": [
+          "白莲",
+          "荷叶",
+          "西瓜",
+          "蒲扇"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小娃“不解藏”的是什么？",
+        "options": [
+          "白莲",
+          "踪迹",
+          "泉眼",
+          "蜻蜓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "撑"
+          },
+          {
+            "id": "l_1",
+            "text": "偷采"
+          },
+          {
+            "id": "l_2",
+            "text": "踪迹"
+          },
+          {
+            "id": "l_3",
+            "text": "浮萍"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "留下的痕迹"
+          },
+          {
+            "id": "r_0",
+            "text": "撑小艇"
+          },
+          {
+            "id": "r_3",
+            "text": "水面植物"
+          },
+          {
+            "id": "r_1",
+            "text": "偷采白莲"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

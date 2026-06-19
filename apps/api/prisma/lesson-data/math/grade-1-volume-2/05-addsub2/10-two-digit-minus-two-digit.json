@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 - 32 = ?"
+      },
+      "answer": {
+        "value": 33,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 - 22 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "65 - 31 = ?"
+      },
+      "answer": {
+        "value": 34,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 - 23 = ?"
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "78 - 32 = ?"
+      },
+      "answer": {
+        "value": 46,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "99 - 35 = ?"
+      },
+      "answer": {
+        "value": 64,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "大青蛙吃65只，小青蛙吃32只。小青蛙比大青蛙少吃多少只？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "65-32"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "65-32：先算60-30=__，再算5-2=__，合起来是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "十位差"
+          },
+          {
+            "id": "b2",
+            "label": "个位差"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          3,
+          33
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "34-22 的竖式里，个位上应该算什么？",
+        "options": [
+          "3-2",
+          "4-2",
+          "4+2",
+          "30-20"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "33",
+          "65",
+          "30",
+          "32",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "65",
+          "32",
+          "33"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "76-14"
+          },
+          {
+            "id": "l1",
+            "text": "68-11"
+          },
+          {
+            "id": "l2",
+            "text": "78-32"
+          },
+          {
+            "id": "l3",
+            "text": "99-35"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "46"
+          },
+          {
+            "id": "r0",
+            "text": "62"
+          },
+          {
+            "id": "r3",
+            "text": "64"
+          },
+          {
+            "id": "r1",
+            "text": "57"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "65-32",
+        "right": "65-31",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    }
+  ]
+}

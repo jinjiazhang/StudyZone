@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 - 3 = ?"
+      },
+      "answer": {
+        "value": 42,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "78 - 6 = ?"
+      },
+      "answer": {
+        "value": 72,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "67 - 2 = ?"
+      },
+      "answer": {
+        "value": 65,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "57 - 4 = ?"
+      },
+      "answer": {
+        "value": 53,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "89 - 7 = ?"
+      },
+      "answer": {
+        "value": 82,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 - 5 = ?"
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "妈妈采了45个松果，给小松鼠3个，还剩多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "45-3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "45-3：先算5-3=__，再和40合成__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位差"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          42
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 57-4 时，4 应该从哪一位减？",
+        "options": [
+          "十位",
+          "百位",
+          "十位和个位都减",
+          "个位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "3",
+          "45",
+          "42",
+          "40",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "45",
+          "3",
+          "42"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "68-5"
+          },
+          {
+            "id": "l1",
+            "text": "74-2"
+          },
+          {
+            "id": "l2",
+            "text": "59-6"
+          },
+          {
+            "id": "l3",
+            "text": "86-4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "53"
+          },
+          {
+            "id": "r0",
+            "text": "63"
+          },
+          {
+            "id": "r3",
+            "text": "82"
+          },
+          {
+            "id": "r1",
+            "text": "72"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "78-6",
+        "right": "78-60",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

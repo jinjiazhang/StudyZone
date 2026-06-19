@@ -1,0 +1,184 @@
+{
+  "id": "02-jingyesi-xiezi",
+  "title": "静夜思写字练习",
+  "description": "练写《静夜思》田字格中的生字。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sī",
+        "sentence": "低头__故乡。",
+        "blankPlaceholder": "__",
+        "character": "思",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "思"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chuáng",
+        "sentence": "__前明月光。",
+        "blankPlaceholder": "__",
+        "character": "床",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "床"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qián",
+        "sentence": "床__明月光。",
+        "blankPlaceholder": "__",
+        "character": "前",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "前"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dì",
+        "sentence": "疑是__上霜。",
+        "blankPlaceholder": "__",
+        "character": "地",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "地"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xiāng",
+        "sentence": "低头思故__。",
+        "blankPlaceholder": "__",
+        "character": "乡",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "乡"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "明月",
+        "hint": "请选择词语【明月】的正确拼音",
+        "options": [
+          "míng yè",
+          "mín yuè",
+          "míng yuè",
+          "míng yǒu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "故乡",
+        "hint": "请选择词语【故乡】的正确拼音",
+        "options": [
+          "gù xiāng",
+          "gǔ xiāng",
+          "gù xiǎng",
+          "gù xiàng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "月",
+        "tokens": [
+          "光",
+          "牙",
+          "亮",
+          "夜",
+          "明",
+          "球"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“月”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "明",
+            "光",
+            "亮"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "故",
+        "tokens": [
+          "月",
+          "乡",
+          "人",
+          "米",
+          "事",
+          "手"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“故”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "乡",
+            "事",
+            "人"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“思”字下面的部件是什么？",
+        "options": [
+          "口",
+          "木",
+          "月",
+          "心"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

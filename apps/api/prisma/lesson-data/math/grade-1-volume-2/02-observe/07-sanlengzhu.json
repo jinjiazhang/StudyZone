@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "三棱柱的三角形面可以印出什么？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tri"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "想印小鱼尾巴或房顶，最适合的基本图形是：",
+        "options": [
+          "圆形",
+          "三角形",
+          "长方形",
+          "十字形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三棱柱除了三角形面，也可能有长方形的侧面。用侧面印可能得到：",
+        "options": [
+          "圆形",
+          "骨头形",
+          "长方形",
+          "十字形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "三角形面"
+          },
+          {
+            "id": "l2",
+            "text": "长方形侧面"
+          },
+          {
+            "id": "l3",
+            "text": "尖尖的屋顶"
+          },
+          {
+            "id": "l4",
+            "text": "小鱼尾巴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "适合用三角形"
+          },
+          {
+            "id": "r1",
+            "text": "印三角形"
+          },
+          {
+            "id": "r4",
+            "text": "适合用三角形"
+          },
+          {
+            "id": "r2",
+            "text": "印长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形最适合作为房子的屋顶？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tri"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果印迹是三角形，最可能用到了哪个面？",
+        "options": [
+          "圆柱的圆面",
+          "正方体的面",
+          "长方体的长面",
+          "三棱柱的三角形面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个不是三棱柱三角形面直接印出的图形？",
+        "options": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "square"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材火箭图案里，顶部尖尖部分更像哪种图形？",
+        "options": [
+          "三角形",
+          "圆形",
+          "正方形",
+          "长方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "三角形印迹有几个角？",
+        "options": [
+          "4个",
+          "3个",
+          "1个",
+          "0个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "想在作品中做小旗子，选哪种印迹更合适？",
+        "options": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tri"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断：看到三角形印迹，就一定不可能是三棱柱做出来的。",
+        "options": [
+          "错",
+          "对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "找三棱柱能印出的形状时，应该转动它观察：",
+        "options": [
+          "颜色变化",
+          "谁拿着它",
+          "影子方向",
+          "不同的面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

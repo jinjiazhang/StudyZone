@@ -1,0 +1,228 @@
+{
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《要下雨了》的课本页",
+        "options": [
+          {
+            "id": "gushi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-066.jpg",
+            "label": "古诗二首"
+          },
+          {
+            "id": "langhua",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-069.jpg",
+            "label": "浪花"
+          },
+          {
+            "id": "heye",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-071.jpg",
+            "label": "荷叶圆圆"
+          },
+          {
+            "id": "xiayu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-074.jpg",
+            "label": "要下雨了"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "xiayu"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "燕子为什么飞得低？",
+        "options": [
+          "虫子的翅膀沾了小水珠，飞不高",
+          "它迷路了",
+          "它要睡觉",
+          "它在唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鱼为什么游到水面上？",
+        "options": [
+          "水里太亮",
+          "水里有贝壳",
+          "水里闷得很，要透透气",
+          "水里有荷叶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "蚂蚁在下雨前忙着做什么？",
+        "options": [
+          "搬东西",
+          "采白莲",
+          "放声歌唱",
+          "挠脚丫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小白兔最后把消息告诉了谁？",
+        "options": [
+          "小蜻蜓",
+          "小鱼儿",
+          "浪花",
+          "妈妈"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "燕子低飞"
+          },
+          {
+            "id": "l_1",
+            "text": "小鱼出水"
+          },
+          {
+            "id": "l_2",
+            "text": "蚂蚁搬家"
+          },
+          {
+            "id": "l_3",
+            "text": "雷声响起"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "要下雨了"
+          },
+          {
+            "id": "r_0",
+            "text": "空气潮湿，虫子飞不高"
+          },
+          {
+            "id": "r_3",
+            "text": "大雨快来了"
+          },
+          {
+            "id": "r_1",
+            "text": "水里闷，要透气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：小鱼游到水面上来了",
+        "tokens": [
+          "小鱼",
+          "燕子",
+          "游到",
+          "蚂蚁",
+          "水面上",
+          "山坡",
+          "来了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鱼",
+          "游到",
+          "水面上",
+          "来了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：蚂蚁正忙着搬东西",
+        "tokens": [
+          "蚂蚁",
+          "小白兔",
+          "正忙着",
+          "水面",
+          "搬东西",
+          "消息"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蚂蚁",
+          "正忙着",
+          "搬东西"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“阴沉沉”写出了天空怎样？",
+        "options": [
+          "又圆又绿",
+          "又阴又暗",
+          "又香又甜",
+          "又白又亮"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "谁告诉小白兔虫子飞不高的原因？",
+        "options": [
+          "燕子",
+          "蚂蚁",
+          "妈妈",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

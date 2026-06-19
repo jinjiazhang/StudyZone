@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qīng",
+        "sentence": "小__蛙爱护禾苗。",
+        "blankPlaceholder": "__",
+        "character": "青",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "青"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qīng",
+        "sentence": "河水__清天气晴。",
+        "blankPlaceholder": "__",
+        "character": "清",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "清"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qíng",
+        "sentence": "天气__，小鸟飞。",
+        "blankPlaceholder": "__",
+        "character": "晴",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "晴"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "qǐng",
+        "sentence": "__你爱护小青蛙。",
+        "blankPlaceholder": "__",
+        "character": "请",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "请"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "miáo",
+        "sentence": "小青蛙保护禾__。",
+        "blankPlaceholder": "__",
+        "character": "苗",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "苗"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shēng",
+        "sentence": "好让禾苗不__病。",
+        "blankPlaceholder": "__",
+        "character": "生",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "生"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "青",
+        "tokens": [
+          "草",
+          "色",
+          "蛙",
+          "明",
+          "山",
+          "问"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【青】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "草",
+            "蛙",
+            "山"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "生",
+        "tokens": [
+          "气",
+          "字",
+          "日",
+          "风",
+          "病",
+          "雪"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【生】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "气",
+            "日",
+            "病"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "苗",
+        "tokens": [
+          "禾",
+          "青",
+          "树",
+          "鸟",
+          "幼",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【苗】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "禾",
+            "树",
+            "幼"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "青"
+          },
+          {
+            "id": "l1",
+            "text": "清"
+          },
+          {
+            "id": "l2",
+            "text": "晴"
+          },
+          {
+            "id": "l3",
+            "text": "请"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "清水"
+          },
+          {
+            "id": "r2",
+            "text": "晴天"
+          },
+          {
+            "id": "r3",
+            "text": "请问"
+          },
+          {
+            "id": "r0",
+            "text": "青草"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本写字格中，《小青蛙》要求会写的字是哪一组？",
+        "options": [
+          "春、冬、吹、花、飞、入",
+          "什、么、古、胡、双、言",
+          "青、清、晴、请、苗、生",
+          "字、红、动、万、明"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“请、清、晴、睛、情”共同含有哪个部件？",
+        "options": [
+          "日",
+          "青",
+          "水",
+          "言"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

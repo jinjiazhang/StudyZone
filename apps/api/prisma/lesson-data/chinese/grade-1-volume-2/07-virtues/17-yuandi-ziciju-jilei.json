@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出园地词语",
+        "tokens": [
+          "花朵",
+          "草地",
+          "阳光",
+          "笑声"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花朵",
+          "笑声"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出园地词语",
+        "tokens": [
+          "告诉",
+          "喜欢",
+          "跑步",
+          "歌唱"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "告诉",
+          "歌唱"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“花朵、笑声、阳光、草地”可以用来想象什么画面？",
+        "options": [
+          "上课迟到",
+          "美好的户外景象",
+          "文具丢失",
+          "通知不清"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“房、老、着、包”的书写提示是什么？",
+        "options": [
+          "左上包围和右上包围的字先外后内",
+          "先写下面再写上面",
+          "只写里面不写外面",
+          "随便写都可以"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "不知则问"
+          },
+          {
+            "id": "l1",
+            "text": "不能则学"
+          },
+          {
+            "id": "l2",
+            "text": "读万卷书"
+          },
+          {
+            "id": "l3",
+            "text": "行万里路"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "多读书"
+          },
+          {
+            "id": "r0",
+            "text": "不知道就要请教"
+          },
+          {
+            "id": "r3",
+            "text": "多实践、多见识"
+          },
+          {
+            "id": "r1",
+            "text": "不会就要学习"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“读书破万卷，下笔如有神”告诉我们什么？",
+        "options": [
+          "不要读书",
+          "走路会迷路",
+          "多读书能帮助写作",
+          "通知不用清楚"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出日积月累句子",
+        "tokens": [
+          "不能则学",
+          "不知则问"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "不知则问",
+          "不能则学"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出日积月累句子",
+        "tokens": [
+          "行万里路",
+          "读万卷书"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "读万卷书",
+          "行万里路"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fáng",
+        "sentence": "洗手间也是卫生__。",
+        "blankPlaceholder": "__",
+        "character": "房",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "房"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhe",
+        "sentence": "小猴子扛__玉米往前走。",
+        "blankPlaceholder": "__",
+        "character": "着",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "着"
+      },
+      "difficulty": 2
+    }
+  ]
+}

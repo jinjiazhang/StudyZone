@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dào",
+        "sentence": "这__题我会做。",
+        "blankPlaceholder": "__",
+        "character": "道",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "道"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhī",
+        "sentence": "我__道文具盒是文具的家。",
+        "blankPlaceholder": "__",
+        "character": "知",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "知"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fàng",
+        "sentence": "放学后，我把铅笔__进文具盒。",
+        "blankPlaceholder": "__",
+        "character": "放",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "放"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ān",
+        "sentence": "大家平平__安回家。",
+        "blankPlaceholder": "__",
+        "character": "安",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "安"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出好习惯句子",
+        "tokens": [
+          "文具",
+          "进",
+          "文具盒",
+          "放"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "文具",
+          "放",
+          "进",
+          "文具盒"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出好习惯句子",
+        "tokens": [
+          "再回家",
+          "检查",
+          "放学后",
+          "文具"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "放学后",
+          "检查",
+          "文具",
+          "再回家"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪种做法和贝贝后来一样？",
+        "options": [
+          "把铅笔随手丢在操场",
+          "用完橡皮放回文具盒",
+          "找不到就马上买新的",
+          "书包每天不整理"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“所有的小伙伴”在课文中指什么？",
+        "options": [
+          "文具",
+          "动物朋友",
+          "同班同学",
+          "水果"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "文具回家"
+          },
+          {
+            "id": "l1",
+            "text": "每天检查"
+          },
+          {
+            "id": "l2",
+            "text": "平平安安"
+          },
+          {
+            "id": "l3",
+            "text": "仔细整理"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "顺利回家"
+          },
+          {
+            "id": "r0",
+            "text": "放进文具盒"
+          },
+          {
+            "id": "r3",
+            "text": "养成好习惯"
+          },
+          {
+            "id": "r1",
+            "text": "不丢东西"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“新书、清新”中“新”的意思都和什么有关？",
+        "options": [
+          "黑夜",
+          "奔跑",
+          "刚有的、干净 fresh",
+          "动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "15-zenme-langdu",
+  "title": "怎么都快乐朗读表达",
+  "description": "读好带感叹号的句子，表达快乐心情。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "朗读“一个人玩，很好！”应该读出怎样的心情？",
+        "options": [
+          "害怕",
+          "生气",
+          "快乐",
+          "伤心"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课后要求朗读时注意读好哪类句子？",
+        "options": [
+          "带感叹号的句子",
+          "没有标点的句子",
+          "字典页码",
+          "电话号码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“课文中的小朋友真开心，真是‘怎么都快乐’！”中的引号里是课文的什么？",
+        "options": [
+          "作者",
+          "页码",
+          "注释",
+          "题目"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出感叹句",
+        "tokens": [
+          "很好",
+          "一个人玩",
+          "孤单",
+          "安静",
+          "问好"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "一个人玩",
+          "很好"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出感叹句",
+        "tokens": [
+          "许多人玩",
+          "听音乐",
+          "更好",
+          "只有",
+          "淹死"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "许多人玩",
+          "更好"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "讲趣事",
+        "passage": "课后拓展活动说：我想到了我和小伙伴之间发生的有趣的事，我给大家讲一讲吧。",
+        "questions": [
+          {
+            "question": "拓展活动鼓励我们讲什么？",
+            "options": [
+              "和小伙伴之间的趣事",
+              "查“厨”字的页码",
+              "古诗作者",
+              "小河里的鱼"
+            ]
+          },
+          {
+            "question": "讲趣事时，应该让别人怎样？",
+            "options": [
+              "听清楚",
+              "猜不到",
+              "不能问",
+              "只看字典"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页是《怎么都快乐》？",
+        "options": [
+          {
+            "id": "duck",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-031.jpg",
+            "label": "小公鸡和小鸭子"
+          },
+          {
+            "id": "tree",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-034.jpg",
+            "label": "树和喜鹊"
+          },
+          {
+            "id": "play",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-036.jpg",
+            "label": "怎么都快乐"
+          },
+          {
+            "id": "dict",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-039.jpg",
+            "label": "查字典"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "play"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "读“很好！”“更好！”时，可以读出高兴的语气。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "讲伙伴趣事时，不需要说清楚发生了什么。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "游",
+        "hint": "游戏",
+        "options": [
+          "yǒu",
+          "yóu",
+          "yòu",
+          "liú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

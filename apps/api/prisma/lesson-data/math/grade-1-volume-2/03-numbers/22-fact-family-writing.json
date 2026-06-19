@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 9 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 5 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 5 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用 4、8、12 写关系式：4 + 8 = __，12 - 4 = __，12 - 8 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "和"
+          },
+          {
+            "id": "b2",
+            "label": "差"
+          },
+          {
+            "id": "b3",
+            "label": "差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          12,
+          8,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用 6、7、13 写关系式：6 + 7 = __，13 - 6 = __，13 - 7 = __。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "和"
+          },
+          {
+            "id": "b2",
+            "label": "差"
+          },
+          {
+            "id": "b3",
+            "label": "差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          7,
+          6
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "看到 4、8、12，写一道加法算式。",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "4+8",
+          "8+4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "看到 6、7、13，写一道减法算式。",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "13-6",
+          "13-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 - 5",
+        "right": "14 - 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "9",
+          "5",
+          "14",
+          "6",
+          "4"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "5",
+          "9",
+          "14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "5 + 9"
+          },
+          {
+            "id": "l1",
+            "text": "14 - 5"
+          },
+          {
+            "id": "l2",
+            "text": "4 + 8"
+          },
+          {
+            "id": "l3",
+            "text": "12 - 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "4"
+          },
+          {
+            "id": "r2",
+            "text": "12"
+          },
+          {
+            "id": "r1",
+            "text": "9"
+          },
+          {
+            "id": "r0",
+            "text": "14"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "5、9、14 这三个数可以写出几道相关加减算式？",
+        "options": [
+          "1道",
+          "2道",
+          "4道",
+          "3道"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    }
+  ]
+}

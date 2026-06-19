@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用长方体盒子描一描，最容易得到什么图形？",
+        "options": [
+          "圆",
+          "长方形",
+          "三角形",
+          "半圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用硬币沿边描一圈，得到的图形最像什么？",
+        "options": [
+          "正方形",
+          "圆",
+          "长方形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形可能是积木方块一个面的脚印？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><path d=\"M20 82 A40 40 0 0 1 100 82 Z\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "从生活物品上描图形，可以帮助认识平面图形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "用圆柱的侧面滚一滚，只会描出三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "数学书封面"
+          },
+          {
+            "id": "l2",
+            "text": "硬币面"
+          },
+          {
+            "id": "l3",
+            "text": "三角尺"
+          },
+          {
+            "id": "l4",
+            "text": "正方体积木面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "三角形"
+          },
+          {
+            "id": "r2",
+            "text": "正方形"
+          },
+          {
+            "id": "r3",
+            "text": "圆"
+          },
+          {
+            "id": "r4",
+            "text": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "描数学书封面常得到",
+          null,
+          "，描硬币常得到",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆",
+          "三角形",
+          "长方形",
+          "正方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方形",
+          "圆"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "同桌描出2个长方形、1个圆、3个三角形，一共描出__个图形。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "总数",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "把2个长方形和3个三角形合起来，可以怎样列式？",
+        "placeholder": "例如：3+4"
+      },
+      "answer": {
+        "accepted": [
+          "2+3",
+          "3+2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "2 + 3",
+        "right": "6"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

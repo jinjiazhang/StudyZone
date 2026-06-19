@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出三角形。",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "选出圆。",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "本单元学习了拼七巧板、折纸等活动。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "本单元的重点是100以内进位加法。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个综合图案有4个三角形、2个正方形、1个圆，共__个图形。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "总数",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据统计表，哪种图形最少？",
+        "columns": [
+          "图形",
+          "个数"
+        ],
+        "rows": [
+          {
+            "图形": "三角形",
+            "个数": 4
+          },
+          {
+            "图形": "正方形",
+            "个数": 2
+          },
+          {
+            "图形": "圆",
+            "个数": 1
+          },
+          {
+            "图形": "长方形",
+            "个数": 3
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "圆"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形"
+          },
+          {
+            "id": "l2",
+            "text": "正方形"
+          },
+          {
+            "id": "l3",
+            "text": "圆"
+          },
+          {
+            "id": "l4",
+            "text": "三角形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "3条边"
+          },
+          {
+            "id": "r2",
+            "text": "4条边一样长"
+          },
+          {
+            "id": "r3",
+            "text": "像书本封面"
+          },
+          {
+            "id": "r4",
+            "text": "没有角"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "从物体上描面能得到平面图形；用七巧板能做什么？",
+        "options": [
+          "拼出图案",
+          "读出声音",
+          "量出重量",
+          "听出节奏"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "完成一次图形探究活动的顺序",
+        "items": [
+          {
+            "id": "c",
+            "text": "说出发现"
+          },
+          {
+            "id": "a",
+            "text": "观察图形"
+          },
+          {
+            "id": "b",
+            "text": "动手摆一摆"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "4 + 2 + 1",
+        "right": "8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪句话最能总结本单元？",
+        "options": [
+          "认识并拼摆平面图形",
+          "学习乘法口诀",
+          "认识年月日",
+          "学习重量单位"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "4个三角形和2个正方形合起来，可以怎样列式？",
+        "placeholder": "例如：3+4"
+      },
+      "answer": {
+        "accepted": [
+          "4+2",
+          "2+4"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 + 3 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "32 + 5 = ?"
+      },
+      "answer": {
+        "value": 37,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "72 + 6 = ?"
+      },
+      "answer": {
+        "value": 78,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 65 = ?"
+      },
+      "answer": {
+        "value": 69,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "53 + 4 = ?"
+      },
+      "answer": {
+        "value": 57,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "81 + 7 = ?"
+      },
+      "answer": {
+        "value": 88,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "松鼠妈妈采了45个，小松鼠采了3个。一共多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "45+3",
+          "3+45"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "45+3：先算5+3=__，再和40合成__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位和"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          48
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计算 36+2 时，2 应该加在哪一位上？",
+        "options": [
+          "十位",
+          "百位",
+          "个位",
+          "十位和个位都加"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "48",
+          "45",
+          "30",
+          "3",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "45",
+          "3",
+          "48"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "24+5"
+          },
+          {
+            "id": "l1",
+            "text": "61+8"
+          },
+          {
+            "id": "l2",
+            "text": "73+4"
+          },
+          {
+            "id": "l3",
+            "text": "52+6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "77"
+          },
+          {
+            "id": "r0",
+            "text": "29"
+          },
+          {
+            "id": "r3",
+            "text": "58"
+          },
+          {
+            "id": "r1",
+            "text": "69"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45+3",
+        "right": "45+30",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    }
+  ]
+}

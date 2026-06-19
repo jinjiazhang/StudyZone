@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shǒu",
+        "sentence": "这是一__古诗。",
+        "character": "首",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "首"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cǎi",
+        "sentence": "小娃偷__白莲回。",
+        "character": "采",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "采"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiǎo",
+        "sentence": "小荷才露尖尖__。",
+        "character": "角",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "角"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chí",
+        "sentence": "小娃坐在水__边。",
+        "character": "池",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "池"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiān",
+        "sentence": "小荷露出__尖角。",
+        "character": "尖",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "尖"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zǎo",
+        "sentence": "__有蜻蜓立上头。",
+        "character": "早",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "早"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "首",
+        "tokens": [
+          "诗",
+          "都",
+          "页",
+          "一",
+          "长",
+          "头"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“首”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "诗",
+            "一"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "池",
+        "tokens": [
+          "水",
+          "边",
+          "角",
+          "塘",
+          "鱼",
+          "尖"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“池”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "塘"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "采",
+        "tokens": [
+          "白",
+          "花",
+          "叶",
+          "莲",
+          "写",
+          "早"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“采”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "莲"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "首"
+          },
+          {
+            "id": "l_1",
+            "text": "采"
+          },
+          {
+            "id": "l_2",
+            "text": "角"
+          },
+          {
+            "id": "l_3",
+            "text": "池"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "尖尖角"
+          },
+          {
+            "id": "r_0",
+            "text": "一首诗"
+          },
+          {
+            "id": "r_3",
+            "text": "水池"
+          },
+          {
+            "id": "r_1",
+            "text": "采白莲"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字在课后写字表里？",
+        "options": [
+          "泉",
+          "尖",
+          "惜",
+          "柔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“首”可以组成哪个词？",
+        "options": [
+          "首尖",
+          "首鱼",
+          "首都",
+          "首雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

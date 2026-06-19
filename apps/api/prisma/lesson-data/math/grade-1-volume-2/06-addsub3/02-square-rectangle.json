@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个是长方形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,14 106,60 60,106 14,60\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个是正方形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"36,28 104,28 84,92 16,92\" fill=\"#a78bfa\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"38\" y=\"14\" width=\"44\" height=\"92\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "长方形通常有两条长边和两条短边。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形斜着放，就不再是正方形了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中狗狗说“斜着的我还是我”，说明图形怎样变化后名称不变？",
+        "options": [
+          "颜色变深",
+          "旋转方向",
+          "数字变大",
+          "数量变少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个图案里有3个长方形、2个正方形。长方形有__个，正方形有__个。",
+        "blanks": [
+          {
+            "id": "rect",
+            "label": "长方形",
+            "suffix": "个"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "3 + 2",
+        "right": "4"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "四条边一样长"
+          },
+          {
+            "id": "l2",
+            "text": "有两条长边两条短边"
+          },
+          {
+            "id": "l3",
+            "text": "像练习本封面"
+          },
+          {
+            "id": "l4",
+            "text": "像方格纸中的一个格"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "长方形"
+          },
+          {
+            "id": "r2",
+            "text": "正方形"
+          },
+          {
+            "id": "r3",
+            "text": "正方形特点"
+          },
+          {
+            "id": "r4",
+            "text": "长方形样子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "一个长方形旋转后，仍然是",
+          null,
+          "；一个正方形旋转后，仍然是",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "圆",
+          "正方形",
+          "三角形",
+          "长方形"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "长方形",
+          "正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪组都属于四边形？",
+        "options": [
+          "圆、三角形",
+          "正方形、长方形",
+          "圆、正方形",
+          "三角形、长方形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

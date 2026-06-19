@@ -1,0 +1,328 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正方体积木"
+          },
+          {
+            "id": "l2",
+            "text": "长方体积木"
+          },
+          {
+            "id": "l3",
+            "text": "圆柱积木"
+          },
+          {
+            "id": "l4",
+            "text": "三棱柱积木"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "圆形印迹"
+          },
+          {
+            "id": "r1",
+            "text": "正方形印迹"
+          },
+          {
+            "id": "r4",
+            "text": "三角形印迹"
+          },
+          {
+            "id": "r2",
+            "text": "长方形印迹"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形最可能由三棱柱的一面印出？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tri"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形最可能由圆柱的侧面滚一滚形成？",
+        "options": [
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "longrect"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中问“图②和④是用同一个积木印出来的”，这个积木是：",
+        "options": [
+          "圆柱",
+          "正方体",
+          "长方体",
+          "三棱柱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "为什么圆柱能印出圆形，也可能滚出长方形痕迹？",
+        "options": [
+          "它只有一个面",
+          "它有圆面，也有弯曲侧面",
+          "它不能滚动",
+          "它是三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图②和③如果由同一个积木印出，可能是哪种积木？",
+        "options": [
+          "圆柱",
+          "球",
+          "三棱柱",
+          "正方体"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个不是圆柱圆面能直接印出的图形？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "tri"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个物体的平面最可能印出正方形？",
+        "options": [
+          {
+            "id": "cylinder",
+            "label": "圆柱圆面",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三棱柱三角面",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cube",
+            "label": "正方体积木",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "long",
+            "label": "长方体长面",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "cube"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到一个长方形印迹，可能由哪两类面印出？",
+        "options": [
+          "只有圆柱圆面",
+          "只有三角形面",
+          "只能用手影做",
+          "长方体的长方形面或圆柱侧面滚动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "同伴说“圆柱身上只有圆形的面”，你认为：",
+        "options": [
+          "不完整，它还有弯曲的侧面",
+          "完全正确",
+          "圆柱没有面",
+          "圆柱只能印三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "圆面"
+          },
+          {
+            "id": "l2",
+            "text": "长方形面"
+          },
+          {
+            "id": "l3",
+            "text": "三角形面"
+          },
+          {
+            "id": "l4",
+            "text": "正方形面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "可印正方形"
+          },
+          {
+            "id": "r2",
+            "text": "可印长方形"
+          },
+          {
+            "id": "r1",
+            "text": "可印圆形"
+          },
+          {
+            "id": "r3",
+            "text": "可印三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "找物体和印迹的关系时，应该重点观察什么？",
+        "options": [
+          "物体的颜色",
+          "物体接触纸的那一面",
+          "物体有多重",
+          "桌子有多高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

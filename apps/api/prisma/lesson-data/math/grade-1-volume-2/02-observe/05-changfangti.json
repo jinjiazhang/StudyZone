@@ -1,0 +1,308 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体的一个长面印出来通常是什么？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "longrect"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中说长方体能印出不同的长长方方的图案，这是因为：",
+        "options": [
+          "长方体没有平面",
+          "不同面的长短可能不同",
+          "长方体只能滚动",
+          "长方体是圆的"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "想印出很长很窄的条形，适合选择哪种图形面？",
+        "options": [
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "longrect"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体有时也可能印出接近正方形的图案吗？",
+        "options": [
+          "不可能",
+          "只能印圆",
+          "可能，要看接触的面",
+          "只能印三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方体长面"
+          },
+          {
+            "id": "l2",
+            "text": "长方体短面"
+          },
+          {
+            "id": "l3",
+            "text": "长方体上面"
+          },
+          {
+            "id": "l4",
+            "text": "长方体侧面"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "较小的长方形"
+          },
+          {
+            "id": "r4",
+            "text": "长方形"
+          },
+          {
+            "id": "r1",
+            "text": "长长的长方形"
+          },
+          {
+            "id": "r3",
+            "text": "长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形最不像长方体平面直接印出来的？",
+        "options": [
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "circle"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "长方体印迹有四个角吗？",
+        "options": [
+          "没有",
+          "只有一个",
+          "不一定有边",
+          "有"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果要印一列长长的火车车厢，用哪种印迹更合适？",
+        "options": [
+          "长方形",
+          "圆形",
+          "三角形",
+          "十字形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "长方体的印迹更接近哪种基本图形？",
+        "options": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "rect"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较长方体两个不同面的印迹，可以发现：",
+        "options": [
+          "都会变成圆",
+          "有的长，有的短",
+          "都没有直边",
+          "都不能排列"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断：长方体所有面印出的图形一定都完全一样。",
+        "options": [
+          "错",
+          "对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "教材中“能印出不同的长长方方的图案”指的是哪一类？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "bone",
+            "label": "骨头形",
+            "svg": "<svg viewBox=\"0 0 140 110\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M35 20c-12-10-30 2-22 18-17 7-8 31 10 26l35 28c13 10 29-2 22-18 18-7 9-31-10-26z\" fill=\"#fca5a5\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "longrect"
+      },
+      "difficulty": 1
+    }
+  ]
+}

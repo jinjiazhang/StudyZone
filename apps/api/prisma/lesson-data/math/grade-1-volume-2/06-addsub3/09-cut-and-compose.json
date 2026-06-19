@@ -1,0 +1,214 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材第78页用剪出的图形照样拼一拼，重点是在练什么？",
+        "options": [
+          "拼摆图案",
+          "背乘法口诀",
+          "读钟表",
+          "测量长度"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图案像用“一个半圆和一个长方形”拼成的蘑菇？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><path d=\"M50 70 A40 40 0 0 1 130 70 Z\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"4\"/><rect x=\"78\" y=\"70\" width=\"24\" height=\"50\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><circle cx=\"90\" cy=\"55\" r=\"34\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"4\"/><rect x=\"60\" y=\"90\" width=\"60\" height=\"24\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"90,25 130,95 50,95\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"45\" width=\"90\" height=\"50\" fill=\"#a78bfa\" stroke=\"#111827\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个花朵图案用1个圆、4个半圆、2个三角形，一共用了__个图形。",
+        "blanks": [
+          {
+            "id": "total",
+            "label": "总数",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "1个圆和4个半圆合起来，可以怎样列式求图形个数？",
+        "placeholder": "例如：3+4"
+      },
+      "answer": {
+        "accepted": [
+          "1+4",
+          "4+1"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "拼图时，同一个图形换个方向也可以继续用。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "剪出的三角形只能拼三角形，不能拼别的图案。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "花朵中间"
+          },
+          {
+            "id": "l2",
+            "text": "花瓣"
+          },
+          {
+            "id": "l3",
+            "text": "小鱼尾巴"
+          },
+          {
+            "id": "l4",
+            "text": "小旗杆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "长方形"
+          },
+          {
+            "id": "r2",
+            "text": "三角形"
+          },
+          {
+            "id": "r3",
+            "text": "圆"
+          },
+          {
+            "id": "r4",
+            "text": "半圆"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "用图形拼图案时，可以先想图案像什么，再选择",
+          null,
+          "和",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "大小",
+          "颜色",
+          "形状",
+          "页码"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "形状",
+          "大小"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "1 + 4 + 2",
+        "right": "6"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "合作拼图后，最适合说一说什么？",
+        "options": [
+          "用了哪些图形",
+          "吃了什么午饭",
+          "第几节课下课",
+          "铅笔多少钱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "快乐的节日（一）",
+        "passage": "小鸟在前面带路，风啊吹向我们。我们像春天一样，来到花园里，来到草地上。鲜艳的红领巾，美丽的衣裳，像许多花儿开放。",
+        "questions": [
+          {
+            "question": "谁在前面带路？",
+            "options": [
+              "小鸟",
+              "小鸭子",
+              "毛主席",
+              "童子"
+            ]
+          },
+          {
+            "question": "“红领巾”和“衣裳”像什么开放？",
+            "options": [
+              "花儿",
+              "水井",
+              "雪莲",
+              "石碑"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-029.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "快乐的节日（二）",
+        "passage": "感谢亲爱的祖国，让我们自由地成长。我们像小鸟一样，等身上的羽毛长得丰满，就勇敢地向着高空飞翔，飞向我们的理想。",
+        "questions": [
+          {
+            "question": "我们感谢谁？",
+            "options": [
+              "亲爱的祖国",
+              "遥远的北京",
+              "沙洲坝",
+              "小鸭子"
+            ]
+          },
+          {
+            "question": "长大后要飞向哪里？",
+            "options": [
+              "我们的理想",
+              "水井旁边",
+              "文具店",
+              "小路尽头"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-030.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：小鸟在前面带路",
+        "tokens": [
+          "带路",
+          "小鸟",
+          "前面",
+          "在",
+          "我们"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鸟",
+          "在",
+          "前面",
+          "带路"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：鲜艳的红领巾",
+        "tokens": [
+          "红领巾",
+          "鲜艳的",
+          "美丽的",
+          "衣裳"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鲜艳的",
+          "红领巾"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：感谢亲爱的祖国",
+        "tokens": [
+          "亲爱的",
+          "感谢",
+          "祖国",
+          "飞翔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "感谢",
+          "亲爱的",
+          "祖国"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "快乐的节日",
+        "author": "课文",
+        "lines": [
+          [
+            "小鸟在前面带路，"
+          ],
+          [
+            "风啊",
+            null,
+            "我们。"
+          ]
+        ],
+        "options": [
+          "离开",
+          "吹向",
+          "忘记",
+          "告诉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "快乐的节日",
+        "author": "课文",
+        "lines": [
+          [
+            "感谢亲爱的祖国，"
+          ],
+          [
+            "让我们",
+            null,
+            "地成长。"
+          ]
+        ],
+        "options": [
+          "孤单",
+          "安静",
+          "自由",
+          "很远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《快乐的节日》里写到了红领巾和美丽的衣裳。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "《快乐的节日》说我们要忘记祖国。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《快乐的节日》所在页",
+        "options": [
+          {
+            "id": "opt_2",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-023.jpg",
+            "label": "吃水不忘挖井人"
+          },
+          {
+            "id": "opt_0",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-025.jpg",
+            "label": "我多想去看看"
+          },
+          {
+            "id": "opt_3",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-027.jpg",
+            "label": "语文园地二"
+          },
+          {
+            "id": "opt_1",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-029.jpg",
+            "label": "快乐的节日"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "opt_1"
+      },
+      "difficulty": 1
+    }
+  ]
+}

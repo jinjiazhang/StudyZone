@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材中的中国象棋有多少个棋子？",
+        "options": [
+          "36 个",
+          "22 个",
+          "32 个",
+          "92 个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这盒彩笔有多少支？",
+        "options": [
+          "36 支",
+          "32 支",
+          "60 支",
+          "26 支"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材情境中，一分钟跳绳第一轮跳了多少次？",
+        "options": [
+          "94 次",
+          "86 次",
+          "22 次",
+          "92 次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材情境中，一分钟跳绳第二轮跳了多少次？",
+        "options": [
+          "92 次",
+          "94 次",
+          "90 次",
+          "100 次"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图书上的页码写着 100，这个数读作什么？",
+        "options": [
+          "一十",
+          "一百",
+          "十百",
+          "一十百"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“人民路 100 号”里的 100 表示什么？",
+        "options": [
+          "年龄",
+          "重量",
+          "长度",
+          "门牌号码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据身边的数，彩笔有多少支？",
+        "columns": [
+          "物品",
+          "数量"
+        ],
+        "rows": [
+          {
+            "物品": "中国象棋棋子",
+            "数量": 32
+          },
+          {
+            "物品": "彩笔",
+            "数量": 36
+          },
+          {
+            "物品": "班级同学",
+            "数量": 36
+          }
+        ]
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "根据身边的数，跳绳第二轮是多少次？",
+        "columns": [
+          "项目",
+          "数量"
+        ],
+        "rows": [
+          {
+            "项目": "第一轮跳绳",
+            "数量": 92
+          },
+          {
+            "项目": "第二轮跳绳",
+            "数量": 94
+          },
+          {
+            "项目": "鸭",
+            "数量": 92
+          }
+        ]
+      },
+      "answer": {
+        "value": 94,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 + 0 = ?"
+      },
+      "answer": {
+        "value": 36,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "92 + 0 = ?"
+      },
+      "answer": {
+        "value": 92,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "36",
+        "right": "32"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "92",
+        "right": "94"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

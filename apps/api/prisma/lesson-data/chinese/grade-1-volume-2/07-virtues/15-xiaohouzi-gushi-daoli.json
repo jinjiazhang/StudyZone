@@ -1,0 +1,206 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小猴子先走到哪里？",
+        "options": [
+          "森林广场",
+          "玉米地里",
+          "卫生间",
+          "车站"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "他看见桃子后，把什么扔了？",
+        "options": [
+          "玉米",
+          "西瓜",
+          "小兔子",
+          "书包"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "他看见西瓜后，把什么扔了？",
+        "options": [
+          "闹钟",
+          "文具盒",
+          "桃子",
+          "老虎"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "他最后为什么只好空着手回家？",
+        "options": [
+          "大家通知错了",
+          "文具盒不见了",
+          "天气太热",
+          "见一样喜欢一样，没有坚持"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "这篇课文告诉我们什么？",
+        "options": [
+          "做事要有目标，不能三心二意",
+          "一分钟不重要",
+          "通知不用说地点",
+          "文具没有家"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课文顺序排一排",
+        "tokens": [
+          "追小兔子",
+          "摘桃子",
+          "掰玉米",
+          "摘西瓜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "掰玉米",
+          "摘桃子",
+          "摘西瓜",
+          "追小兔子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "空着手",
+          "回家去",
+          "只好"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "只好",
+          "空着手",
+          "回家去"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "玉米"
+          },
+          {
+            "id": "l1",
+            "text": "桃子"
+          },
+          {
+            "id": "l2",
+            "text": "西瓜"
+          },
+          {
+            "id": "l3",
+            "text": "小兔子"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "又大又圆"
+          },
+          {
+            "id": "r0",
+            "text": "又大又多"
+          },
+          {
+            "id": "r3",
+            "text": "蹦蹦跳跳"
+          },
+          {
+            "id": "r1",
+            "text": "又大又红"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jìn",
+        "sentence": "小兔子跑__树林里。",
+        "blankPlaceholder": "__",
+        "character": "进",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "进"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wǎng",
+        "sentence": "小猴子扛着玉米__前走。",
+        "blankPlaceholder": "__",
+        "character": "往",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "往"
+      },
+      "difficulty": 2
+    }
+  ]
+}

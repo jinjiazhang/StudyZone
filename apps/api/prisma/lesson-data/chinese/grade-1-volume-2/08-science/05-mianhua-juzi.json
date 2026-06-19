@@ -1,0 +1,217 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子说：碧绿碧绿的叶子",
+        "tokens": [
+          "的",
+          "叶子",
+          "碧绿碧绿",
+          "火红火红"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "碧绿碧绿",
+          "的",
+          "叶子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子说：雪白雪白的棉花",
+        "tokens": [
+          "棉花",
+          "的",
+          "雪白雪白",
+          "金黄金黄"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "雪白雪白",
+          "的",
+          "棉花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "照样子说：火红火红的太阳",
+        "tokens": [
+          "火红火红",
+          "天空",
+          "的",
+          "太阳",
+          "雪白雪白"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "火红火红",
+          "的",
+          "太阳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“碧绿碧绿的____”最适合填什么？",
+        "options": [
+          "棉花",
+          "叶子",
+          "太阳",
+          "乌云"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“雪白雪白的____”最适合填什么？",
+        "options": [
+          "棉花",
+          "青草",
+          "火苗",
+          "树干"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“火红火红的____”最适合填什么？",
+        "options": [
+          "雪花",
+          "青蛙",
+          "星星",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "碧绿碧绿的"
+          },
+          {
+            "id": "l_1",
+            "text": "雪白雪白的"
+          },
+          {
+            "id": "l_2",
+            "text": "火红火红的"
+          },
+          {
+            "id": "l_3",
+            "text": "金黄金黄的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "叶子"
+          },
+          {
+            "id": "r_3",
+            "text": "太阳"
+          },
+          {
+            "id": "r_0",
+            "text": "稻谷"
+          },
+          {
+            "id": "r_2",
+            "text": "棉花"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原课文句子：她咧开嘴笑啦",
+        "tokens": [
+          "咧开",
+          "嘴",
+          "她",
+          "笑啦",
+          "叶子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "她",
+          "咧开",
+          "嘴",
+          "笑啦"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“请你帮我捉害虫吧！”这句话末尾用感叹号，说明语气怎样？",
+        "options": [
+          "很平淡",
+          "在数数",
+          "请求中带着着急",
+          "表示疑问"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“你们是谁呀？”这句话应该读出什么语气？",
+        "options": [
+          "惊奇",
+          "生气",
+          "难过",
+          "害怕"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

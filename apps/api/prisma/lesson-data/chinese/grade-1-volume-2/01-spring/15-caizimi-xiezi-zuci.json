@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zì",
+        "sentence": "猜__谜真有趣。",
+        "blankPlaceholder": "__",
+        "character": "字",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "字"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hóng",
+        "sentence": "左边绿，右边__。",
+        "blankPlaceholder": "__",
+        "character": "红",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "红"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dòng",
+        "sentence": "“心”至令人感__。",
+        "blankPlaceholder": "__",
+        "character": "动",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "动"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wàn",
+        "sentence": "日出__里无云。",
+        "blankPlaceholder": "__",
+        "character": "万",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "万"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "míng",
+        "sentence": "日月合成__。",
+        "blankPlaceholder": "__",
+        "character": "明",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "明"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "字",
+        "tokens": [
+          "谜",
+          "体",
+          "母",
+          "雪",
+          "典",
+          "鸟"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【字】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "谜",
+            "母",
+            "典"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "红",
+        "tokens": [
+          "花",
+          "火",
+          "色",
+          "请",
+          "叶",
+          "水"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【红】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "色",
+            "叶"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "动",
+        "tokens": [
+          "感",
+          "听",
+          "作",
+          "鱼",
+          "手",
+          "秋"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【动】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "感",
+            "作",
+            "手"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "万",
+        "tokens": [
+          "里",
+          "物",
+          "一",
+          "清",
+          "年",
+          "花"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【万】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "里",
+            "一",
+            "年"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "明",
+        "tokens": [
+          "天",
+          "月",
+          "白",
+          "水",
+          "亮",
+          "青"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【明】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "天",
+            "白",
+            "亮"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本写字格中，《猜字谜》要求会写的字是哪一组？",
+        "options": [
+          "什、么、古、胡、双、言",
+          "青、清、晴、请、苗、生",
+          "字、红、动、万、明",
+          "文、片、卡、合"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“明”由哪两个常见部件组成？",
+        "options": [
+          "日和月",
+          "木和子",
+          "古和月",
+          "口和天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

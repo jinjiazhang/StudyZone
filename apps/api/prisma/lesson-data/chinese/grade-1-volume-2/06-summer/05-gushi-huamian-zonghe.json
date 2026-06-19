@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《古诗二首》的课本页",
+        "options": [
+          {
+            "id": "langhua",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-069.jpg",
+            "label": "浪花"
+          },
+          {
+            "id": "gushi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-066.jpg",
+            "label": "古诗二首"
+          },
+          {
+            "id": "heye",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-071.jpg",
+            "label": "荷叶圆圆"
+          },
+          {
+            "id": "xiayu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-074.jpg",
+            "label": "要下雨了"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "gushi"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小娃撑小艇”中的“小艇”是什么？",
+        "options": [
+          "小伞",
+          "小虫",
+          "小鱼",
+          "小船"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“树阴照水爱晴柔”中“水”指哪里？",
+        "options": [
+          "沙滩",
+          "小池",
+          "山坡",
+          "天空"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写出了“小荷”刚露出来？",
+        "options": [
+          "小荷才露尖尖角",
+          "小娃撑小艇",
+          "浮萍一道开",
+          "泉眼无声惜细流"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写出了小娃留下了水路？",
+        "options": [
+          "早有蜻蜓立上头",
+          "树阴照水爱晴柔",
+          "浮萍一道开",
+          "偷采白莲回"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白居易"
+          },
+          {
+            "id": "l_1",
+            "text": "杨万里"
+          },
+          {
+            "id": "l_2",
+            "text": "白莲"
+          },
+          {
+            "id": "l_3",
+            "text": "蜻蜓"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "小娃偷采"
+          },
+          {
+            "id": "r_0",
+            "text": "《池上》"
+          },
+          {
+            "id": "r_3",
+            "text": "立上头"
+          },
+          {
+            "id": "r_1",
+            "text": "《小池》"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词组：树阴照水",
+        "tokens": [
+          "树阴",
+          "白莲",
+          "照水",
+          "小艇",
+          "蜻蜓"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "树阴",
+          "照水"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出词组：偷采白莲",
+        "tokens": [
+          "偷采",
+          "泉眼",
+          "白莲",
+          "小荷",
+          "晴柔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "偷采",
+          "白莲"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "荷",
+        "tokens": [
+          "叶",
+          "池",
+          "花",
+          "角",
+          "早",
+          "气"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“荷”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "叶",
+            "花"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "泉",
+        "tokens": [
+          "水",
+          "花",
+          "眼",
+          "角",
+          "清",
+          "娃"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“泉”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "水",
+            "眼"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

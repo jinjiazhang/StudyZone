@@ -1,0 +1,289 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上十位 2 颗、个位 8 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          8,
+          28
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上十位 2 颗、个位 2 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2,
+          22
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上十位 9 颗、个位 7 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          7,
+          97
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上十位 9 颗、个位 8 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          8,
+          98
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上十位 9 颗、个位 9 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十位"
+          },
+          {
+            "id": "blank_2",
+            "label": "个位"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          9,
+          99
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器上百位 1 颗、十位 0 颗、个位 0 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "百位"
+          },
+          {
+            "id": "blank_2",
+            "label": "十位"
+          },
+          {
+            "id": "blank_3",
+            "label": "个位"
+          },
+          {
+            "id": "blank_4",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          0,
+          0,
+          100
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "28 中左边的 2 表示什么？",
+        "options": [
+          "2 个十",
+          "2 个一",
+          "20 个十",
+          "8 个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "22 里两个 2 的意思一样吗？",
+        "options": [
+          "一样，都表示 2 个一",
+          "一样，都表示 2 个十",
+          "不一样，个位的 2 表示 20",
+          "不一样，十位的 2 表示 2 个十，个位的 2 表示 2 个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "100 中百位上的 1 表示什么？",
+        "options": [
+          "1 个十",
+          "1 个一",
+          "1 个百",
+          "10 个百"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "28",
+        "right": "22"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "97",
+        "right": "98"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "99",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

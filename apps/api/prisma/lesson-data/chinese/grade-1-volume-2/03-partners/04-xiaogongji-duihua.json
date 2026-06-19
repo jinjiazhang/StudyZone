@@ -1,0 +1,204 @@
+{
+  "id": "04-xiaogongji-duihua",
+  "title": "小公鸡对话朗读",
+  "description": "读好小公鸡和小鸭子的对话，理解说话时的语气。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸭子说“不行，不行，你不会游泳，会淹死的！”时，语气应该怎样？",
+        "options": [
+          "安静、轻柔",
+          "骄傲、夸耀",
+          "懒洋洋",
+          "着急、担心"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小公鸡说“我也去。”表现他怎样？",
+        "options": [
+          "不喜欢小鸭子",
+          "想跟小鸭子一起去",
+          "已经会游泳",
+          "正在查字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸭子说“鸭子哥哥，谢谢你。”时，应该读出什么语气？",
+        "options": [
+          "生气",
+          "感谢",
+          "害怕",
+          "命令"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出小鸭子的劝告",
+        "tokens": [
+          "会淹死的",
+          "不行",
+          "你",
+          "不会游泳",
+          "下棋"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "不会游泳",
+          "会淹死的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出小公鸡的感谢",
+        "tokens": [
+          "谢谢你",
+          "哥哥",
+          "鸭子哥哥",
+          "我也去",
+          "飞快地"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸭子哥哥",
+          "谢谢你"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "“我也去。”"
+          },
+          {
+            "id": "l_1",
+            "text": "“不行，不行！”"
+          },
+          {
+            "id": "l_2",
+            "text": "“救命。”"
+          },
+          {
+            "id": "l_3",
+            "text": "“谢谢你。”"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "小公鸡遇到危险"
+          },
+          {
+            "id": "r_0",
+            "text": "小公鸡想一起去"
+          },
+          {
+            "id": "r_3",
+            "text": "小公鸡表示感谢"
+          },
+          {
+            "id": "r_1",
+            "text": "小鸭子着急劝阻"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "读对话时，可以根据人物心情读出不同语气。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小鸭子劝小公鸡下水，是因为小公鸡很会游泳。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "救",
+        "hint": "救命",
+        "options": [
+          "jìu",
+          "qiú",
+          "jiǔ",
+          "jiù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "命",
+        "hint": "喊救命",
+        "options": [
+          "mìng",
+          "mǐn",
+          "mìn",
+          "míng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

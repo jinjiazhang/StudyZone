@@ -1,0 +1,273 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 + 50 = ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 - 30 = ?"
+      },
+      "answer": {
+        "value": 60,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "22 + 3 = ?"
+      },
+      "answer": {
+        "value": 25,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "89 - 30 = ?"
+      },
+      "answer": {
+        "value": 59,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从37先向右跳30，再向右跳2，最后到__；算式是37+__=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "终点"
+          },
+          {
+            "id": "b2",
+            "label": "加数"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          69,
+          32,
+          69
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "从76先向左跳40，再向左跳3，最后到__；算式是76-__=__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "终点"
+          },
+          {
+            "id": "b2",
+            "label": "减数"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          33,
+          43,
+          33
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数线从49跳到79，再跳到89，表示什么？",
+        "options": [
+          "49+40=89",
+          "49+30=79",
+          "89-49=30",
+          "79-40=39"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数线从99跳到69，再跳到68，表示什么？",
+        "options": [
+          "99-31=68",
+          "99-30=69",
+          "69+1=70",
+          "99-68=21"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "从20向右跳50到 ",
+          null,
+          "，算式 ",
+          null,
+          "+50=",
+          null
+        ],
+        "tokens": [
+          "20",
+          "70",
+          "80",
+          "60",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "70",
+          "20",
+          "70"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "37向右跳30再跳2"
+          },
+          {
+            "id": "l1",
+            "text": "76向左跳40再跳3"
+          },
+          {
+            "id": "l2",
+            "text": "21向右跳3"
+          },
+          {
+            "id": "l3",
+            "text": "89向左跳30"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "24"
+          },
+          {
+            "id": "r0",
+            "text": "69"
+          },
+          {
+            "id": "r3",
+            "text": "59"
+          },
+          {
+            "id": "r1",
+            "text": "33"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "37+32",
+        "right": "76-43",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列这些数线终点。",
+        "items": [
+          {
+            "id": "i2",
+            "text": "59"
+          },
+          {
+            "id": "i0",
+            "text": "24"
+          },
+          {
+            "id": "i3",
+            "text": "69"
+          },
+          {
+            "id": "i1",
+            "text": "33"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

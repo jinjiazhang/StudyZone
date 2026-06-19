@@ -1,0 +1,179 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 - 9 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 7 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 7 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 6 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 4 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 7 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "1把椅子配1张桌子，12把椅子、8张桌子，还缺几张桌子？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "12-8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小兰踢5下，小刚踢7下，小刚比小兰多几下？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "7-5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "17 - 4",
+        "right": "18 - 9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "13 - 8"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 9"
+          },
+          {
+            "id": "l2",
+            "text": "14 - 7"
+          },
+          {
+            "id": "l3",
+            "text": "12 - 6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "6（12 - 6）"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r1",
+            "text": "6（15 - 9）"
+          },
+          {
+            "id": "r0",
+            "text": "5"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

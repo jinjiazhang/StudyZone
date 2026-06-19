@@ -1,0 +1,279 @@
+{
+  "id": "03-jingyesi-beisong",
+  "title": "静夜思背诵拼图",
+  "description": "把古诗句子拼完整，练习熟读和背诵。",
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "床前明月光",
+        "tokens": [
+          "光",
+          "白霜",
+          "明月",
+          "床前"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "床前",
+          "明月",
+          "光"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "疑是地上霜",
+        "tokens": [
+          "月光",
+          "地上",
+          "疑是",
+          "霜"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "疑是",
+          "地上",
+          "霜"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "举头望明月",
+        "tokens": [
+          "举头",
+          "明月",
+          "低头",
+          "望"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "举头",
+          "望",
+          "明月"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "低头思故乡",
+        "tokens": [
+          "故乡",
+          "低头",
+          "思",
+          "举头"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "低头",
+          "思",
+          "故乡"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "静夜思",
+        "author": "李白",
+        "lines": [
+          [
+            "床前",
+            null,
+            "光，"
+          ],
+          [
+            "疑是地上霜。"
+          ]
+        ],
+        "options": [
+          "白云",
+          "明月",
+          "红日",
+          "灯火"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "静夜思",
+        "author": "李白",
+        "lines": [
+          [
+            "疑是",
+            null,
+            "霜。"
+          ],
+          [
+            "举头望明月，"
+          ]
+        ],
+        "options": [
+          "天上",
+          "地上",
+          "水中",
+          "山间"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "静夜思",
+        "author": "李白",
+        "lines": [
+          [
+            "举头",
+            null,
+            "明月，"
+          ],
+          [
+            "低头思故乡。"
+          ]
+        ],
+        "options": [
+          "看",
+          "听",
+          "问",
+          "望"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "静夜思",
+        "author": "李白",
+        "lines": [
+          [
+            "低头",
+            null,
+            "故乡。"
+          ]
+        ],
+        "options": [
+          "思",
+          "写",
+          "唱",
+          "画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "静夜思",
+        "author": "李白",
+        "lines": [
+          [
+            null,
+            "明月光，"
+          ],
+          [
+            "疑是",
+            null,
+            "霜。"
+          ],
+          [
+            "举头望",
+            null,
+            "，"
+          ],
+          [
+            "低头思",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "门前",
+              "窗前",
+              "床前",
+              "山前"
+            ]
+          },
+          {
+            "options": [
+              "地上",
+              "天上",
+              "水里",
+              "屋里"
+            ]
+          },
+          {
+            "options": [
+              "白云",
+              "星星",
+              "红日",
+              "明月"
+            ]
+          },
+          {
+            "options": [
+              "学校",
+              "故乡",
+              "花园",
+              "操场"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          0,
+          3,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "背诵《静夜思》时，第三句是？",
+        "options": [
+          "床前明月光",
+          "低头思故乡",
+          "举头望明月",
+          "疑是地上霜"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

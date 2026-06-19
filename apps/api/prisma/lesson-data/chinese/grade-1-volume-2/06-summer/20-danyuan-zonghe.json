@@ -1,0 +1,246 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "本单元哪一课是古诗？",
+        "options": [
+          "浪花",
+          "古诗二首",
+          "荷叶圆圆",
+          "要下雨了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“荷叶是我的歌台”是谁说的？",
+        "options": [
+          "小青蛙",
+          "小水珠",
+          "小鱼儿",
+          "小蜻蜓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“浪花就像淘气的小娃娃”用了什么说法？",
+        "options": [
+          "标点",
+          "组词",
+          "比喻",
+          "问句"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下雨前，小鱼游到水面上是为了什么？",
+        "options": [
+          "采白莲",
+          "透透气",
+          "唱歌",
+          "晒太阳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "荷",
+        "hint": "“荷叶”的“荷”",
+        "options": [
+          "hē",
+          "hè",
+          "kē",
+          "hé"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "浪",
+        "hint": "“浪花”的“浪”",
+        "options": [
+          "lánɡ",
+          "liàng",
+          "làng",
+          "nàng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "问",
+        "hint": "“小白兔问”的“问”",
+        "options": [
+          "wén",
+          "wèn",
+          "mén",
+          "wěn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "kàn",
+        "sentence": "小白兔__见蚂蚁搬家。",
+        "character": "看",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "看"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "měi",
+        "sentence": "夏夜多__呀。",
+        "character": "美",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "美"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：荷叶是我的凉伞",
+        "tokens": [
+          "荷叶",
+          "歌台",
+          "是",
+          "浪花",
+          "我的",
+          "贝壳",
+          "凉伞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "荷叶",
+          "是",
+          "我的",
+          "凉伞"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "白居易"
+          },
+          {
+            "id": "l_1",
+            "text": "杨万里"
+          },
+          {
+            "id": "l_2",
+            "text": "浪花"
+          },
+          {
+            "id": "l_3",
+            "text": "蚂蚁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "淘气的小娃娃"
+          },
+          {
+            "id": "r_0",
+            "text": "池上"
+          },
+          {
+            "id": "r_3",
+            "text": "搬东西"
+          },
+          {
+            "id": "r_1",
+            "text": "小池"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "雨",
+        "tokens": [
+          "下",
+          "点",
+          "水",
+          "伞",
+          "鱼",
+          "问"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“雨”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "下",
+            "伞"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

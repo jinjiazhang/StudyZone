@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 5 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 5 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 8 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "9只鸭子再来5只，一共有几只？",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "9"
+          },
+          {
+            "id": "b",
+            "label": "5"
+          },
+          {
+            "id": "sum"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          5,
+          14
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "4只鸡和8只鸡合起来，共几只？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "sum"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          8,
+          12
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "图中有9只鸭和5只鸭，一共有多少只？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "9+5",
+          "5+9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "14",
+          "9",
+          "4",
+          "5",
+          "10",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "5",
+          "14"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "9+5",
+        "right": "4+8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "鸭子：9只和5只"
+          },
+          {
+            "id": "b",
+            "text": "鸡：4只和8只"
+          },
+          {
+            "id": "c",
+            "text": "5只和5只"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "12只"
+          },
+          {
+            "id": "rc",
+            "text": "10只"
+          },
+          {
+            "id": "ra",
+            "text": "14只"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "9+5可以先把5分成几和几来凑10？",
+        "options": [
+          "2和3",
+          "5和0",
+          "4和1",
+          "1和4"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "农场记录：鸭子9只又来5只，一共有几只？",
+        "columns": [
+          "动物",
+          "先有",
+          "又来",
+          "一共"
+        ],
+        "rows": [
+          {
+            "动物": "鸭",
+            "先有": 9,
+            "又来": 5,
+            "一共": 14
+          },
+          {
+            "动物": "鸡",
+            "先有": 4,
+            "又来": 8,
+            "一共": 12
+          }
+        ]
+      },
+      "answer": {
+        "value": 14
+      },
+      "difficulty": 2
+    }
+  ]
+}

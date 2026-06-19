@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "照样子“荷叶圆圆的，绿绿的。”苹果可以怎样写？",
+        "options": [
+          "苹果红红的，圆圆的。",
+          "苹果唱着笑着。",
+          "苹果在山坡上割草。",
+          "苹果透明的翅膀。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“亮晶晶的眼睛”中“亮晶晶”写出了什么？",
+        "options": [
+          "很重",
+          "很吵",
+          "很亮",
+          "很远"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“一朵朵很美很美的水花”中“一朵朵”表示什么？",
+        "options": [
+          "水花很少",
+          "水花很多",
+          "水花很黑",
+          "水花会唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：荷叶圆圆的绿绿的",
+        "tokens": [
+          "荷叶",
+          "苹果",
+          "圆圆的",
+          "红红的",
+          "绿绿的",
+          "凉伞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "荷叶",
+          "圆圆的",
+          "绿绿的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：苹果红红的圆圆的",
+        "tokens": [
+          "苹果",
+          "荷叶",
+          "红红的",
+          "绿绿的",
+          "圆圆的",
+          "歌台"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "苹果",
+          "红红的",
+          "圆圆的"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出句子：小鱼儿笑嘻嘻地游来游去",
+        "tokens": [
+          "小鱼儿",
+          "小青蛙",
+          "笑嘻嘻地",
+          "荷叶",
+          "游来游去",
+          "摇篮"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鱼儿",
+          "笑嘻嘻地",
+          "游来游去"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "圆圆的"
+          },
+          {
+            "id": "l_1",
+            "text": "亮晶晶的"
+          },
+          {
+            "id": "l_2",
+            "text": "透明的"
+          },
+          {
+            "id": "l_3",
+            "text": "很美很美的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "翅膀"
+          },
+          {
+            "id": "r_0",
+            "text": "荷叶"
+          },
+          {
+            "id": "r_3",
+            "text": "水花"
+          },
+          {
+            "id": "r_1",
+            "text": "眼睛"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "填入合适词语：小白兔（ ）地跑回家。",
+        "options": [
+          "青青",
+          "雪白",
+          "亮晶晶",
+          "飞快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "填入合适词语：荷叶是小鱼儿的（ ）。",
+        "options": [
+          "歌台",
+          "铅笔",
+          "凉伞",
+          "贝壳"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "鱼",
+        "tokens": [
+          "小",
+          "水",
+          "儿",
+          "雨",
+          "问",
+          "贝"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“鱼”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "小",
+            "儿"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

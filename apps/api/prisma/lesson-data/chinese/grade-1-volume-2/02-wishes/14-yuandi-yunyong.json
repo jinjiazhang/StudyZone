@@ -1,0 +1,264 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "日",
+        "tokens": [
+          "明",
+          "地",
+          "春",
+          "场",
+          "早",
+          "阳"
+        ],
+        "targetCount": 4,
+        "instruction": "选出教材中围绕“日”发现的 4 个字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "明",
+            "春",
+            "早",
+            "阳"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "土",
+        "tokens": [
+          "地",
+          "明",
+          "尘",
+          "春",
+          "场",
+          "早"
+        ],
+        "targetCount": 3,
+        "instruction": "选出教材中围绕“土”发现的 3 个字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "地",
+            "尘",
+            "场"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "直尺"
+          },
+          {
+            "id": "l_1",
+            "text": "橡皮"
+          },
+          {
+            "id": "l_2",
+            "text": "牙膏"
+          },
+          {
+            "id": "l_3",
+            "text": "外套"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "刷牙用品"
+          },
+          {
+            "id": "r_0",
+            "text": "量长度的文具"
+          },
+          {
+            "id": "r_3",
+            "text": "穿在外面的衣服"
+          },
+          {
+            "id": "r_1",
+            "text": "擦铅笔字的文具"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "水彩笔"
+          },
+          {
+            "id": "l_1",
+            "text": "水杯"
+          },
+          {
+            "id": "l_2",
+            "text": "洗手液"
+          },
+          {
+            "id": "l_3",
+            "text": "运动鞋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "喝水用的杯子"
+          },
+          {
+            "id": "r_3",
+            "text": "运动时穿的鞋"
+          },
+          {
+            "id": "r_0",
+            "text": "画画用的彩色笔"
+          },
+          {
+            "id": "r_2",
+            "text": "洗手用的液体"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "直尺",
+        "hint": "商店里的【直尺】",
+        "options": [
+          "zí chǐ",
+          "zhí cǐ",
+          "zhí chǐ",
+          "zhí chǐr"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "橡皮",
+        "hint": "商店里的【橡皮】",
+        "options": [
+          "xiàn pí",
+          "xiàng bǐ",
+          "xiàng pī",
+          "xiàng pí"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "衬衫",
+        "hint": "商店里的【衬衫】",
+        "options": [
+          "chèn shān",
+          "cèn shān",
+          "chèn sān",
+          "chén shān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原词语：水彩笔",
+        "tokens": [
+          "彩",
+          "水",
+          "笔",
+          "杯"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "水",
+          "彩",
+          "笔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原词语：运动鞋",
+        "tokens": [
+          "鞋",
+          "动",
+          "运",
+          "外套"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "运",
+          "动",
+          "鞋"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在商店买东西时，可以用哪句礼貌用语？",
+        "options": [
+          "快给我！",
+          "我不要说谢谢。",
+          "你走开。",
+          "请问，这盒彩笔多少钱？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

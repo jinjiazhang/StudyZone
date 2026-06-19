@@ -1,0 +1,286 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "钟",
+        "tokens": [
+          "闹",
+          "一分",
+          "时",
+          "台",
+          "表",
+          "声"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "闹",
+            "时"
+          ],
+          [
+            "闹",
+            "表"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "迟",
+        "tokens": [
+          "到",
+          "早",
+          "来",
+          "晚",
+          "走",
+          "过"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "到",
+            "来"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "灯",
+        "tokens": [
+          "红",
+          "台",
+          "车",
+          "绿",
+          "光",
+          "亮"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "红",
+            "绿"
+          ],
+          [
+            "台",
+            "光"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "坐",
+        "tokens": [
+          "下",
+          "位",
+          "车",
+          "好",
+          "站",
+          "老"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "下",
+            "车"
+          ],
+          [
+            "位",
+            "下"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "闹钟"
+          },
+          {
+            "id": "l1",
+            "text": "哈欠"
+          },
+          {
+            "id": "l2",
+            "text": "绿灯"
+          },
+          {
+            "id": "l3",
+            "text": "公共汽车"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "可以通行的信号"
+          },
+          {
+            "id": "r0",
+            "text": "提醒起床的钟"
+          },
+          {
+            "id": "r3",
+            "text": "大家一起乘坐的车"
+          },
+          {
+            "id": "r1",
+            "text": "困了时张嘴吸气"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "一分钟"
+          },
+          {
+            "id": "l1",
+            "text": "迟到"
+          },
+          {
+            "id": "l2",
+            "text": "决定"
+          },
+          {
+            "id": "l3",
+            "text": "后悔"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "拿定主意"
+          },
+          {
+            "id": "r0",
+            "text": "很短的一段时间"
+          },
+          {
+            "id": "r3",
+            "text": "事后觉得不该那样做"
+          },
+          {
+            "id": "r1",
+            "text": "比规定时间晚到"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文词语",
+        "tokens": [
+          "钟",
+          "哈欠",
+          "闹",
+          "一分钟"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "闹",
+          "钟"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文词语",
+        "tokens": [
+          "公共",
+          "红灯",
+          "汽车",
+          "绿灯"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "公共",
+          "汽车"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文里“元元红着脸”是因为他怎样了？",
+        "options": [
+          "得了第一名",
+          "迟到了二十分钟",
+          "捡到了文具",
+          "通知说清楚了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“要是早一分钟就好了”说明元元心里怎样？",
+        "options": [
+          "很骄傲",
+          "一点也不急",
+          "正在唱歌",
+          "非常后悔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

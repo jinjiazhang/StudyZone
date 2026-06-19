@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 1 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 8 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 10 = ?"
+      },
+      "answer": {
+        "value": 20,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器十位1颗、个位6颗，表示几？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十位"
+          },
+          {
+            "id": "o",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          6
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器表示20：十位几颗、个位几颗？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十位"
+          },
+          {
+            "id": "o",
+            "label": "个位"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计数器个位上满10颗，通常要怎样表示？",
+        "options": [
+          "仍都放在个位",
+          "十位拨10颗",
+          "十位拨1颗，个位变0颗",
+          "不用记录"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10+9",
+        "right": "20"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10+5",
+        "right": "15"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按计数器表示的数从小到大排。",
+        "items": [
+          {
+            "id": "n19",
+            "text": "19"
+          },
+          {
+            "id": "n10",
+            "text": "10"
+          },
+          {
+            "id": "n20",
+            "text": "20"
+          },
+          {
+            "id": "n11",
+            "text": "11"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n10",
+          "n11",
+          "n19",
+          "n20"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "十位",
+          null,
+          "颗，个位",
+          null,
+          "颗，表示18"
+        ],
+        "tokens": [
+          "8",
+          "18",
+          "1",
+          "0",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "1",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "十位1，个位1"
+          },
+          {
+            "id": "b",
+            "text": "十位1，个位9"
+          },
+          {
+            "id": "c",
+            "text": "十位2，个位0"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "19"
+          },
+          {
+            "id": "rc",
+            "text": "20"
+          },
+          {
+            "id": "ra",
+            "text": "11"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在9到20的数线上标出18。",
+        "min": 9,
+        "max": 20,
+        "step": 1
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

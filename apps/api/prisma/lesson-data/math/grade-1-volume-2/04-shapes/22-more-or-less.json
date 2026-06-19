@@ -1,0 +1,207 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸡 100 只，鸭 92 只，鹅 22 只。谁最多？",
+        "options": [
+          "鸭",
+          "鸡",
+          "鹅",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸡 100 只，鸭 92 只，鹅 22 只。谁最少？",
+        "options": [
+          "鹅",
+          "鸡",
+          "鸭",
+          "一样少"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸭 92 只和鸡 100 只相比，可以说鸭比鸡怎样？",
+        "options": [
+          "多一些",
+          "多得多",
+          "一样多",
+          "少一些"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鹅 22 只和鸡 100 只相比，可以说鹅比鸡怎样？",
+        "options": [
+          "少一些",
+          "多一些",
+          "少得多",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸡 100 只和鸭 92 只相比，可以说鸡比鸭怎样？",
+        "options": [
+          "多一些",
+          "少一些",
+          "少得多",
+          "一样多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "鸡 100 只和鹅 22 只相比，可以说鸡比鹅怎样？",
+        "options": [
+          "多一些",
+          "少一些",
+          "一样多",
+          "多得多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小小养殖场中，鸭有多少只？",
+        "columns": [
+          "动物",
+          "数量"
+        ],
+        "rows": [
+          {
+            "动物": "鸡",
+            "数量": 100
+          },
+          {
+            "动物": "鸭",
+            "数量": 92
+          },
+          {
+            "动物": "鹅",
+            "数量": 22
+          }
+        ]
+      },
+      "answer": {
+        "value": 92,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小小养殖场中，鹅有多少只？",
+        "columns": [
+          "动物",
+          "数量"
+        ],
+        "rows": [
+          {
+            "动物": "鸡",
+            "数量": 100
+          },
+          {
+            "动物": "鸭",
+            "数量": 92
+          },
+          {
+            "动物": "鹅",
+            "数量": 22
+          }
+        ]
+      },
+      "answer": {
+        "value": 22,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "100",
+        "right": "92"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "92",
+        "right": "22"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "22",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果羊的只数与鹅差不多，下面哪个可能是羊的只数？",
+        "options": [
+          "70 只",
+          "26 只",
+          "3 只",
+          "99 只"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

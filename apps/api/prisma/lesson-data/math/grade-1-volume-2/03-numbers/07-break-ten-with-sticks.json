@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 5 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 8 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 7 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 13 - 6：把 6 分成 __ 和 __，13 - __ = 10，10 - __ = 7。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "到10"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          },
+          {
+            "id": "b3",
+            "label": "先减"
+          },
+          {
+            "id": "b4",
+            "label": "再减"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计算 14 - 8：把 8 分成 __ 和 __，14 - __ = 10，10 - __ = 6。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "到10"
+          },
+          {
+            "id": "b2",
+            "label": "剩下"
+          },
+          {
+            "id": "b3",
+            "label": "先减"
+          },
+          {
+            "id": "b4",
+            "label": "再减"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " - ",
+          null,
+          " = 8"
+        ],
+        "tokens": [
+          "4",
+          "12",
+          "2",
+          "8",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "12",
+          "2",
+          "2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用小棒算 16 - 8，可以先把16分成哪两个数？",
+        "options": [
+          "8和8",
+          "9和7",
+          "12和4",
+          "10和6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "先从12里减2到10，再减5，还剩几？写出原来的减法算式。",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "12-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "11 - 5",
+        "right": "16 - 8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "12 - 4"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 7"
+          },
+          {
+            "id": "l2",
+            "text": "13 - 6"
+          },
+          {
+            "id": "l3",
+            "text": "14 - 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "6"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r1",
+            "text": "8（15 - 7）"
+          },
+          {
+            "id": "r0",
+            "text": "8（12 - 4）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

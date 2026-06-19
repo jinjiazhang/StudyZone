@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "我多想去看看（一）",
+        "passage": "妈妈告诉我，沿着弯弯的小路，就会走出天山。遥远的北京，有一座雄伟的天安门，广场上的升旗仪式非常壮观。我对妈妈说，我多想去看看，我多想去看看！",
+        "questions": [
+          {
+            "question": "妈妈说沿着什么走？",
+            "options": [
+              "弯弯的小路",
+              "宽宽的公路",
+              "水井旁边",
+              "草地里"
+            ]
+          },
+          {
+            "question": "北京有什么雄伟的地方？",
+            "options": [
+              "天安门",
+              "雪莲",
+              "水井",
+              "小鸭子"
+            ]
+          }
+        ],
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-025.jpg"
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "我多想去看看（二）",
+        "passage": "爸爸告诉我，沿着宽宽的公路，就会走出北京。遥远的新疆，有美丽的天山，雪山上盛开着洁白的雪莲。我对爸爸说，我多想去看看，我多想去看看！",
+        "questions": [
+          {
+            "question": "爸爸说沿着什么走？",
+            "options": [
+              "宽宽的公路",
+              "弯弯的小路",
+              "井旁边",
+              "花园里"
+            ]
+          },
+          {
+            "question": "新疆有什么美丽的景物？",
+            "options": [
+              "天山和雪莲",
+              "天安门和广场",
+              "水井和石碑",
+              "小鸟和花儿"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个小朋友共同的愿望是什么？",
+        "options": [
+          "挖一口井",
+          "去远方看看",
+          "买文具",
+          "捉虫子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我多想去看看！”应读出怎样的语气？",
+        "options": [
+          "害怕、难过",
+          "生气、责怪",
+          "向往、激动",
+          "疲惫、无聊"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文里一个孩子想去北京看天安门。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文里另一个孩子想去沙洲坝挖井。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《我多想去看看》课文页",
+        "options": [
+          {
+            "id": "opt_3",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-027.jpg",
+            "label": "语文园地二"
+          },
+          {
+            "id": "opt_0",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-023.jpg",
+            "label": "吃水不忘挖井人"
+          },
+          {
+            "id": "opt_1",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-025.jpg",
+            "label": "我多想去看看"
+          },
+          {
+            "id": "opt_2",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-021.jpg",
+            "label": "热爱中国共产党"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "opt_1"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：广场上的升旗仪式非常壮观",
+        "tokens": [
+          "非常",
+          "升旗仪式",
+          "广场上的",
+          "壮观",
+          "雪莲"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "广场上的",
+          "升旗仪式",
+          "非常",
+          "壮观"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "北京"
+          },
+          {
+            "id": "l_1",
+            "text": "新疆"
+          },
+          {
+            "id": "l_2",
+            "text": "小路"
+          },
+          {
+            "id": "l_3",
+            "text": "公路"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "弯弯的"
+          },
+          {
+            "id": "r_0",
+            "text": "天安门"
+          },
+          {
+            "id": "r_3",
+            "text": "宽宽的"
+          },
+          {
+            "id": "r_1",
+            "text": "天山"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“看看”在课文题目中读轻声：kàn kan。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

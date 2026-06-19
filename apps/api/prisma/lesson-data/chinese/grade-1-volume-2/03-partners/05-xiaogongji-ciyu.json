@@ -1,0 +1,223 @@
+{
+  "id": "05-xiaogongji-ciyu",
+  "title": "小公鸡词句比较",
+  "description": "比较课后词句，体会“偷偷地”“飞快地”等词语的作用。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小公鸡偷偷地跟在小鸭子后面”中，“偷偷地”说明小公鸡怎样做？",
+        "options": [
+          "大声喊叫",
+          "飞快游泳",
+          "悄悄跟着",
+          "认真查字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小鸭子飞快地游到小公鸡身边”中，“飞快地”说明速度怎样？",
+        "options": [
+          "很慢",
+          "很安静",
+          "很快",
+          "很孤单"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "偷偷地"
+          },
+          {
+            "id": "l_1",
+            "text": "飞快地"
+          },
+          {
+            "id": "l_2",
+            "text": "急得直哭"
+          },
+          {
+            "id": "l_3",
+            "text": "吃得很欢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "非常着急"
+          },
+          {
+            "id": "r_0",
+            "text": "不让别人知道地"
+          },
+          {
+            "id": "r_3",
+            "text": "吃得高兴"
+          },
+          {
+            "id": "r_1",
+            "text": "速度非常快地"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课后比较句",
+        "tokens": [
+          "偷偷地",
+          "后面",
+          "小公鸡",
+          "跟在小鸭子后面",
+          "飞快地"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小公鸡",
+          "偷偷地",
+          "跟在小鸭子后面"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课后比较句",
+        "tokens": [
+          "小鸭子",
+          "游到小公鸡身边",
+          "偷偷地",
+          "飞快地",
+          "后面"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鸭子",
+          "飞快地",
+          "游到小公鸡身边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "偷",
+        "hint": "偷偷地",
+        "options": [
+          "tōu",
+          "tóu",
+          "tǒu",
+          "tòu"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "身",
+        "hint": "小公鸡身边",
+        "options": [
+          "sēn",
+          "shén",
+          "shěn",
+          "shēn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "加上“偷偷地”，句子更能写出小公鸡不听劝告、悄悄跟着。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“飞快地”说明小鸭子游得很慢。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "词语帮忙",
+        "passage": "“偷偷地”和“飞快地”让句子更清楚。读这些词时，要想象人物的动作和心情。",
+        "questions": [
+          {
+            "question": "“飞快地”写的是动作的什么？",
+            "options": [
+              "速度",
+              "颜色",
+              "大小",
+              "声音"
+            ]
+          },
+          {
+            "question": "读词语时可以想象什么？",
+            "options": [
+              "动作和心情",
+              "页码",
+              "字母表",
+              "古诗作者"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

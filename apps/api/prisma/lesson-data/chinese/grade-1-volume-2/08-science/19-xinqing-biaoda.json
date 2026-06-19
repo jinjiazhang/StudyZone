@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "高",
+        "hint": "请选择字【高】的正确拼音",
+        "options": [
+          "gǎo",
+          "gào",
+          "kāo",
+          "gāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "兴",
+        "hint": "“高兴”的“兴”读什么？",
+        "options": [
+          "xīng",
+          "xǐng",
+          "xìng",
+          "xīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "气",
+        "hint": "请选择字【气】的正确拼音",
+        "options": [
+          "qì",
+          "qǐ",
+          "xì",
+          "kì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "怕",
+        "hint": "请选择字【怕】的正确拼音",
+        "options": [
+          "bà",
+          "pā",
+          "pà",
+          "pǎ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "难",
+        "hint": "“难过”的“难”读什么？",
+        "options": [
+          "nàn",
+          "nán",
+          "lán",
+          "rǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "高兴"
+          },
+          {
+            "id": "l_1",
+            "text": "生气"
+          },
+          {
+            "id": "l_2",
+            "text": "害怕"
+          },
+          {
+            "id": "l_3",
+            "text": "难过"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "对人或事不满意"
+          },
+          {
+            "id": "r_0",
+            "text": "心里不开心，想哭"
+          },
+          {
+            "id": "r_1",
+            "text": "心里很欢喜"
+          },
+          {
+            "id": "r_2",
+            "text": "遇到危险时发慌"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_3",
+          "l_2": "r_2",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到朋友帮了自己，最可能是什么心情？",
+        "options": [
+          "害怕",
+          "生气",
+          "难过",
+          "高兴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "听到很大的陌生声音，可能会怎样？",
+        "options": [
+          "高兴",
+          "害怕",
+          "骄傲",
+          "轻松"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原表达：我很高兴",
+        "tokens": [
+          "很",
+          "我",
+          "高兴",
+          "害怕"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "很",
+          "高兴"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原表达：他有点难过",
+        "tokens": [
+          "有点",
+          "难过",
+          "他",
+          "生气"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "他",
+          "有点",
+          "难过"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

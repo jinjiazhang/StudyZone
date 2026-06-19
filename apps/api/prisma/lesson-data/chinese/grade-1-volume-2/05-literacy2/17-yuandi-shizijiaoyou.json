@@ -1,0 +1,268 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饭",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "fǎn",
+          "fàn",
+          "fāng",
+          "fáng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "饱",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "bǎo",
+          "bāo",
+          "pǎo",
+          "bào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "茶",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "cá",
+          "chá",
+          "chā",
+          "zhá"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "泡",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "pāo",
+          "bào",
+          "pào",
+          "pǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "轻",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "qīn",
+          "qíng",
+          "qǐng",
+          "qīng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "穿",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "cuān",
+          "chuáng",
+          "chuān",
+          "chuǎn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "袍",
+        "hint": "读准识字加油站的字",
+        "options": [
+          "páo",
+          "bāo",
+          "pǎo",
+          "pào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鞭炮",
+        "hint": "读准识字加油站词语",
+        "options": [
+          "biàn pào",
+          "biān bào",
+          "piān pào",
+          "biān pào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bǎo",
+        "sentence": "有饭能吃__。",
+        "character": "饱",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "饱"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bào",
+        "sentence": "有手轻轻__。",
+        "character": "抱",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "抱"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "有饭"
+          },
+          {
+            "id": "l_1",
+            "text": "有水"
+          },
+          {
+            "id": "l_2",
+            "text": "有足"
+          },
+          {
+            "id": "l_3",
+            "text": "有手"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "快快跑"
+          },
+          {
+            "id": "r_0",
+            "text": "能吃饱"
+          },
+          {
+            "id": "r_3",
+            "text": "轻轻抱"
+          },
+          {
+            "id": "r_1",
+            "text": "把茶泡"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "有衣"
+          },
+          {
+            "id": "l_1",
+            "text": "有火"
+          },
+          {
+            "id": "l_2",
+            "text": "饭"
+          },
+          {
+            "id": "l_3",
+            "text": "炮"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "放鞭炮"
+          },
+          {
+            "id": "r_3",
+            "text": "火字旁"
+          },
+          {
+            "id": "r_0",
+            "text": "穿长袍"
+          },
+          {
+            "id": "r_2",
+            "text": "食字旁"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

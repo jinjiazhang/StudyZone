@@ -1,0 +1,215 @@
+{
+  "id": "07-shuhexique-xiezi",
+  "title": "树和喜鹊写字组词",
+  "description": "练写课后写字格里的字，并积累常用词。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "cóng",
+        "sentence": "__前，这里只有一棵树。",
+        "blankPlaceholder": "__",
+        "character": "从",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "从"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "men",
+        "sentence": "他__又叽叽喳喳地一起飞回窝里。",
+        "blankPlaceholder": "__",
+        "character": "们",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "们"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tā",
+        "sentence": "__们有了邻居。",
+        "blankPlaceholder": "__",
+        "character": "他",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "他"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "hǎo",
+        "sentence": "这里种了__多好多树。",
+        "blankPlaceholder": "__",
+        "character": "好",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "好"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiào",
+        "sentence": "喜鹊们叽叽喳喳__几声。",
+        "blankPlaceholder": "__",
+        "character": "叫",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "叫"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huí",
+        "sentence": "一起飞__窝里。",
+        "blankPlaceholder": "__",
+        "character": "回",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "回"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "从",
+        "tokens": [
+          "前",
+          "来",
+          "好",
+          "小",
+          "此",
+          "叫"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“从”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "前",
+            "来",
+            "此"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "叫",
+        "tokens": [
+          "声",
+          "好",
+          "回",
+          "喊",
+          "醒",
+          "们"
+        ],
+        "targetCount": 3,
+        "instruction": "选择能和“叫”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "声",
+            "喊",
+            "醒"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "从前"
+          },
+          {
+            "id": "l_1",
+            "text": "邻居"
+          },
+          {
+            "id": "l_2",
+            "text": "招呼"
+          },
+          {
+            "id": "l_3",
+            "text": "快乐"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "见面问候"
+          },
+          {
+            "id": "r_0",
+            "text": "很久以前"
+          },
+          {
+            "id": "r_3",
+            "text": "心里高兴"
+          },
+          {
+            "id": "r_1",
+            "text": "住得近的人"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词可以和“回”组成？",
+        "options": [
+          "河水",
+          "让座",
+          "自己",
+          "回来"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

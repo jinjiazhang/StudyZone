@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有12本故事书、8本连环画，故事书比连环画多几本？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "12-8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 8 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "红苹果13个，绿苹果6个，红苹果比绿苹果多几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "13-6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "辣椒15个，圈掉9个，还剩几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "15-9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 9 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13 - 6",
+        "right": "12 - 8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "8",
+          "12",
+          "7",
+          "4",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "12",
+          "8",
+          "4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "故事书比连环画多"
+          },
+          {
+            "id": "l1",
+            "text": "红苹果比绿苹果多"
+          },
+          {
+            "id": "l2",
+            "text": "15个辣椒去掉9个"
+          },
+          {
+            "id": "l3",
+            "text": "13个蘑菇去掉8个"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5个"
+          },
+          {
+            "id": "r2",
+            "text": "6个"
+          },
+          {
+            "id": "r1",
+            "text": "7个"
+          },
+          {
+            "id": "r0",
+            "text": "4本"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比一比、算一算时，先要做什么？",
+        "options": [
+          "随便写一个数",
+          "先做加法",
+          "先排序颜色",
+          "找出两个数量"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把4、5、6、7从小到大排",
+        "items": [
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n4",
+            "text": "4"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n4",
+          "n5",
+          "n6",
+          "n7"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

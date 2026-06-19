@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 6 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 5 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 7 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "跳伞表演中，红伞14个，黄伞6个，红伞比黄伞多几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "14-6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "红伞14个，蓝伞7个，蓝伞比红伞少几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "14-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 - 6",
+        "right": "14 - 7"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "14 - 9",
+        "right": "14 - 5"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比较红伞比黄伞多几个，也可以说成什么？",
+        "options": [
+          "红伞和黄伞一样多",
+          "红伞比黄伞少几个",
+          "黄伞比红伞少几个",
+          "黄伞比蓝伞多几个"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "6",
+          "14",
+          "5",
+          "8",
+          "9"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "14",
+          "6",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "14 - 5"
+          },
+          {
+            "id": "l1",
+            "text": "14 - 6"
+          },
+          {
+            "id": "l2",
+            "text": "14 - 7"
+          },
+          {
+            "id": "l3",
+            "text": "14 - 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r1",
+            "text": "8"
+          },
+          {
+            "id": "r0",
+            "text": "9"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按得数从大到小排",
+        "items": [
+          {
+            "id": "n7",
+            "text": "7"
+          },
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n5",
+            "text": "5"
+          },
+          {
+            "id": "n8",
+            "text": "8"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n9",
+          "n8",
+          "n7",
+          "n5"
+        ]
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鱼为什么不把尾巴借给小壁虎？",
+        "options": [
+          "要用尾巴赶蝇子",
+          "要用尾巴掌握方向",
+          "要用尾巴拨水",
+          "没有尾巴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "老牛为什么不把尾巴借给小壁虎？",
+        "options": [
+          "要用尾巴拨水",
+          "要用尾巴赶蝇子",
+          "要用尾巴飞行",
+          "尾巴断了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "燕子为什么不把尾巴借给小壁虎？",
+        "options": [
+          "要用尾巴吃草",
+          "要用尾巴拨水",
+          "要用尾巴开门",
+          "要用尾巴掌握方向"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "小鱼的尾巴"
+          },
+          {
+            "id": "l_1",
+            "text": "老牛的尾巴"
+          },
+          {
+            "id": "l_2",
+            "text": "燕子的尾巴"
+          },
+          {
+            "id": "l_3",
+            "text": "小壁虎的新尾巴"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "拨水"
+          },
+          {
+            "id": "r_3",
+            "text": "掌握方向"
+          },
+          {
+            "id": "r_0",
+            "text": "可以再长出来"
+          },
+          {
+            "id": "r_2",
+            "text": "赶蝇子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_2",
+          "l_2": "r_3",
+          "l_3": "r_0"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我要用尾巴拨水呢",
+        "tokens": [
+          "用尾巴",
+          "我要",
+          "赶蝇子",
+          "拨水",
+          "呢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我要",
+          "用尾巴",
+          "拨水",
+          "呢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我要用尾巴赶蝇子呢",
+        "tokens": [
+          "赶蝇子",
+          "我要",
+          "用尾巴",
+          "呢",
+          "拨水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我要",
+          "用尾巴",
+          "赶蝇子",
+          "呢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我要用尾巴掌握方向呢",
+        "tokens": [
+          "用尾巴",
+          "方向",
+          "掌握",
+          "我要",
+          "呢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我要",
+          "用尾巴",
+          "掌握",
+          "方向",
+          "呢"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小壁虎最后借到尾巴了吗？",
+        "options": [
+          "借到了小鱼的尾巴",
+          "没有，但自己长出新尾巴",
+          "借到了老牛的尾巴",
+          "借到了燕子的尾巴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《小壁虎借尾巴》中小鱼的插图",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-111.jpg",
+            "label": "老牛甩尾"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-110.jpg",
+            "label": "小鱼摇尾"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-107.jpg",
+            "label": "木瓜落水"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-104.jpg",
+            "label": "青蛙捉虫"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“您把尾巴借给我行吗？”体现小壁虎说话怎样？",
+        "options": [
+          "有礼貌",
+          "很凶",
+          "不认真",
+          "在唱歌"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

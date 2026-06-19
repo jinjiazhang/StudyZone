@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 7 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 8 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 6 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 5 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小兰摘了7个桃子，笑笑摘了16个桃子，笑笑多摘几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "16-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "昨天鸡下了11个蛋，今天只下了5个，今天比昨天少几个？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "11-5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "16 - 7",
+        "right": "15 - 8"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“多几个”和“少几个”都可以用什么方法解决？",
+        "options": [
+          "加法",
+          "减法",
+          "数位写法",
+          "排序"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "16",
+          "8",
+          "7",
+          "9",
+          "6"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "16",
+          "7",
+          "9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "桃子16和7相差"
+          },
+          {
+            "id": "l1",
+            "text": "鸡蛋11和5相差"
+          },
+          {
+            "id": "l2",
+            "text": "15和8相差"
+          },
+          {
+            "id": "l3",
+            "text": "14和6相差"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "8"
+          },
+          {
+            "id": "r2",
+            "text": "7"
+          },
+          {
+            "id": "r1",
+            "text": "6"
+          },
+          {
+            "id": "r0",
+            "text": "9"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把差从小到大排",
+        "items": [
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n6",
+          "n7",
+          "n8",
+          "n9"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 5 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

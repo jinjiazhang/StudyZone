@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 5 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 6 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 2 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7+5：把5分成3和几，先凑10？",
+        "blanks": [
+          {
+            "id": "to10"
+          },
+          {
+            "id": "left"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "8+4：把4分成2和几，先凑10？",
+        "blanks": [
+          {
+            "id": "to10"
+          },
+          {
+            "id": "left"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "两个房子一共住12只兔，1号房住6只，2号房住几只？",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "12",
+          "7",
+          "5",
+          "10",
+          "+",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "5",
+          "12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7+5",
+        "right": "6+6"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "1号住5只"
+          },
+          {
+            "id": "b",
+            "text": "1号住8只"
+          },
+          {
+            "id": "c",
+            "text": "1号住3只"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "2号住4只"
+          },
+          {
+            "id": "rc",
+            "text": "2号住9只"
+          },
+          {
+            "id": "ra",
+            "text": "2号住7只"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "小兔安家：一共12只，1号房住8只，2号房住几只？",
+        "columns": [
+          "一共",
+          "1号房",
+          "2号房"
+        ],
+        "rows": [
+          {
+            "一共": 12,
+            "1号房": 8,
+            "2号房": 4
+          },
+          {
+            "一共": 12,
+            "1号房": 5,
+            "2号房": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 4
+      },
+      "difficulty": 2
+    }
+  ]
+}

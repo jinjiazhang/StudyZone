@@ -1,0 +1,235 @@
+{
+  "id": "15-yuandi-ziyuju",
+  "title": "园地四字词句运用",
+  "description": "练习轻声词、拼音和带点字书写规则。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "胆子"
+          },
+          {
+            "id": "l_1",
+            "text": "粽子"
+          },
+          {
+            "id": "l_2",
+            "text": "爸爸"
+          },
+          {
+            "id": "l_3",
+            "text": "妈妈"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "“粽子”的“子”读轻声"
+          },
+          {
+            "id": "r_2",
+            "text": "第二个“爸”读轻声"
+          },
+          {
+            "id": "r_3",
+            "text": "第二个“妈”读轻声"
+          },
+          {
+            "id": "r_0",
+            "text": "“胆子”的“子”读轻声"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "眼睛"
+          },
+          {
+            "id": "l_1",
+            "text": "喜欢"
+          },
+          {
+            "id": "l_2",
+            "text": "故事"
+          },
+          {
+            "id": "l_3",
+            "text": "哥哥"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_3",
+            "text": "第二个“哥”读轻声"
+          },
+          {
+            "id": "r_1",
+            "text": "“欢”读轻声"
+          },
+          {
+            "id": "r_0",
+            "text": "“睛”读轻声"
+          },
+          {
+            "id": "r_2",
+            "text": "“事”读轻声"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词语中的“子”读轻声？",
+        "options": [
+          "粽子",
+          "儿子（强调孩子）",
+          "子女",
+          "孔子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“爸爸、妈妈、哥哥”朗读时要注意什么？",
+        "options": [
+          "每个字都读一声",
+          "最后一个字读得很重",
+          "第二个字读轻声",
+          "不能连读"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写“床、间”这类点在正上方或上方的字，一般怎样写？",
+        "options": [
+          "先写点",
+          "最后写点",
+          "不写点",
+          "先写横折钩"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "书写“书、我”这类点在右上方的字，一般怎样写？",
+        "options": [
+          "先写点",
+          "不写点",
+          "先写撇",
+          "后写点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "胆子 样子 粽子",
+        "tokens": [
+          "样子",
+          "胆子",
+          "明月",
+          "粽子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "胆子",
+          "样子",
+          "粽子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "眼睛 喜欢 故事",
+        "tokens": [
+          "故事",
+          "端午",
+          "眼睛",
+          "喜欢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "眼睛",
+          "喜欢",
+          "故事"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“床”的点在上方，书写时先写点。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“书”的点在右上方，书写时通常先写点。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

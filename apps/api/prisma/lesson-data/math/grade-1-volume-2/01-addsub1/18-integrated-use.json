@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 8 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 5 = ?"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 7 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8+5",
+        "right": "12"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学校图书义卖准备了19本书，活动结束还剩7本，卖了多少本？",
+        "options": [
+          "12本",
+          "13本",
+          "14本",
+          "26本"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "19本书卖出一些后还剩7本，卖出了多少本？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "19-7"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "蜂箱里原有9只蜜蜂，外面有7只，一共有几只？",
+        "blanks": [
+          {
+            "id": "inside"
+          },
+          {
+            "id": "outside"
+          },
+          {
+            "id": "sum"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          7,
+          16
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "16",
+          "9",
+          "7",
+          "2",
+          "+",
+          "11"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "9",
+          "7",
+          "16"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "8+4"
+          },
+          {
+            "id": "b",
+            "text": "9+5"
+          },
+          {
+            "id": "c",
+            "text": "19-7"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "14"
+          },
+          {
+            "id": "rc",
+            "text": "12（减法）"
+          },
+          {
+            "id": "ra",
+            "text": "12（加法）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "综合表：活动有19本书，还剩7本，卖出多少本？",
+        "columns": [
+          "准备",
+          "剩下",
+          "卖出"
+        ],
+        "rows": [
+          {
+            "准备": 19,
+            "剩下": 7,
+            "卖出": 12
+          },
+          {
+            "准备": 15,
+            "剩下": 8,
+            "卖出": 7
+          }
+        ]
+      },
+      "answer": {
+        "value": 12
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "8+□>12，□里最小可以填几？",
+        "options": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "弯弯的"
+          },
+          {
+            "id": "l_1",
+            "text": "宽宽的"
+          },
+          {
+            "id": "l_2",
+            "text": "美丽的"
+          },
+          {
+            "id": "l_3",
+            "text": "洁白的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "公路"
+          },
+          {
+            "id": "r_3",
+            "text": "雪莲"
+          },
+          {
+            "id": "r_0",
+            "text": "小路"
+          },
+          {
+            "id": "r_2",
+            "text": "天山"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "雄伟的"
+          },
+          {
+            "id": "l_1",
+            "text": "壮观的"
+          },
+          {
+            "id": "l_2",
+            "text": "遥远的"
+          },
+          {
+            "id": "l_3",
+            "text": "美丽的"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "北京"
+          },
+          {
+            "id": "r_0",
+            "text": "天安门"
+          },
+          {
+            "id": "r_3",
+            "text": "新疆"
+          },
+          {
+            "id": "r_1",
+            "text": "升旗仪式"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：弯弯的小路",
+        "tokens": [
+          "小路",
+          "弯弯的",
+          "宽宽的",
+          "雪莲"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "弯弯的",
+          "小路"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：壮观的升旗仪式",
+        "tokens": [
+          "升旗仪式",
+          "壮观的",
+          "美丽的",
+          "天山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "壮观的",
+          "升旗仪式"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：洁白的雪莲",
+        "tokens": [
+          "雪莲",
+          "洁白的",
+          "雄伟的",
+          "天安门"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "洁白的",
+          "雪莲"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我多想去看看",
+        "tokens": [
+          "看看",
+          "多想",
+          "我",
+          "去",
+          "告诉"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "多想",
+          "去",
+          "看看"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“弯弯的”可以用来形容哪一个？",
+        "options": [
+          "水井",
+          "石碑",
+          "太阳",
+          "小路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“洁白的”可以用来形容哪一个？",
+        "options": [
+          "雪莲",
+          "天安门",
+          "广场",
+          "公路"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "会",
+        "tokens": [
+          "场",
+          "井",
+          "见",
+          "方",
+          "议",
+          "江"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“会”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "场",
+            "见",
+            "议"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“美丽的天山”和“洁白的雪莲”都是课文中的词语。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    }
+  ]
+}

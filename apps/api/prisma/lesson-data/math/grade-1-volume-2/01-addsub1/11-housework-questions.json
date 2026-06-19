@@ -1,0 +1,247 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图中“洗了7个盘子”和“洗了6个盘子”，能提出哪个加法问题？",
+        "options": [
+          "还剩几个盘子？",
+          "谁洗得快？",
+          "一共洗了多少个盘子？",
+          "多洗了几个？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“叠了6件衣服”和“叠了5件衣服”合起来，问题应是：",
+        "options": [
+          "少了几件衣服？",
+          "哪件衣服最大？",
+          "还要叠几件？",
+          "一共叠了多少件衣服？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 6 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "6 + 5 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "妈妈洗了7个盘子，爸爸洗了6个盘子，一共洗了多少个？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "7+6",
+          "6+7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "男孩叠了6件衣服，女孩叠了5件衣服，一共叠了多少件？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "6+5",
+          "5+6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "7个盘子和6个盘子合起来：两个加数和得数分别是？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "sum"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          6,
+          13
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "6件衣服和5件衣服合起来：两个加数和得数分别是？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          },
+          {
+            "id": "sum"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6,
+          5,
+          11
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null,
+          "（个）"
+        ],
+        "tokens": [
+          "13",
+          "6",
+          "7",
+          "11",
+          "+",
+          "1"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "6",
+          "13"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "7+6",
+        "right": "6+5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "家务记录：洗7个盘子和6个盘子，一共多少个？",
+        "columns": [
+          "事情",
+          "数量1",
+          "数量2",
+          "合计"
+        ],
+        "rows": [
+          {
+            "事情": "洗盘子",
+            "数量1": 7,
+            "数量2": 6,
+            "合计": 13
+          },
+          {
+            "事情": "叠衣服",
+            "数量1": 6,
+            "数量2": 5,
+            "合计": 11
+          }
+        ]
+      },
+      "answer": {
+        "value": 13
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "洗盘子：7和6"
+          },
+          {
+            "id": "b",
+            "text": "叠衣服：6和5"
+          },
+          {
+            "id": "c",
+            "text": "凑十：7加3"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "11"
+          },
+          {
+            "id": "rc",
+            "text": "10"
+          },
+          {
+            "id": "ra",
+            "text": "13"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

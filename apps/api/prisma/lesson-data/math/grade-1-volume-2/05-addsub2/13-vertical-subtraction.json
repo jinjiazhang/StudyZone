@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "34 - 22 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "33 - 21 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "54 - 23 = ?"
+      },
+      "answer": {
+        "value": 31,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "68 - 11 = ?"
+      },
+      "answer": {
+        "value": 57,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用竖式计算 34-22。请写出横式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "34-22"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "34-22 的竖式：个位4-2=__，十位3-2=__，结果__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          1,
+          12
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列竖式 34-22 时，个位和个位怎样？",
+        "options": [
+          "错开",
+          "对齐",
+          "相乘",
+          "不用看"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "54-23 的个位上应算什么？",
+        "options": [
+          "4-3",
+          "5-2",
+          "4+3",
+          "50-20"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "竖式减法：被减数写上面，",
+          null,
+          " 写下面，",
+          null,
+          " 对齐。"
+        ],
+        "tokens": [
+          "个位",
+          "减数",
+          "加数",
+          "横式"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "减数",
+          "个位"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "33-21"
+          },
+          {
+            "id": "l1",
+            "text": "54-23"
+          },
+          {
+            "id": "l2",
+            "text": "76-32"
+          },
+          {
+            "id": "l3",
+            "text": "68-11"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "44"
+          },
+          {
+            "id": "r0",
+            "text": "12"
+          },
+          {
+            "id": "r3",
+            "text": "57"
+          },
+          {
+            "id": "r1",
+            "text": "31"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "54-23",
+        "right": "68-11",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按计算结果从小到大排列。",
+        "items": [
+          {
+            "id": "i2",
+            "text": "76-32"
+          },
+          {
+            "id": "i0",
+            "text": "33-21"
+          },
+          {
+            "id": "i3",
+            "text": "68-11"
+          },
+          {
+            "id": "i1",
+            "text": "54-23"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

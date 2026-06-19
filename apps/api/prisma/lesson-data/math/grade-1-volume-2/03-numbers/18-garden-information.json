@@ -1,0 +1,227 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "美丽的田园：空中有 __ 只小鸟，树上有 __ 只小鸟。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "空中"
+          },
+          {
+            "id": "b2",
+            "label": "树上"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          10,
+          6
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 - 6 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "树上的小鸟比空中的少几只？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "10-6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "河里有8只鹅，岸上有5只鹅，河里比岸上多 __ 只。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "多"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 - 5 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "岸上有7只羊、6只山羊，一共有几只羊？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "7+6",
+          "6+7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 6 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10 - 6",
+        "right": "8 - 5"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "7",
+          "13",
+          "6",
+          "4",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "6",
+          "13"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "空中10只，树上6只"
+          },
+          {
+            "id": "l1",
+            "text": "河里8只，岸上5只"
+          },
+          {
+            "id": "l2",
+            "text": "7只羊和6只山羊"
+          },
+          {
+            "id": "l3",
+            "text": "13 - 6"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "7"
+          },
+          {
+            "id": "r2",
+            "text": "共13只"
+          },
+          {
+            "id": "r1",
+            "text": "相差3只"
+          },
+          {
+            "id": "r0",
+            "text": "相差4只"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "要知道树上的小鸟比空中的少几只，应先找到哪两个数量？",
+        "options": [
+          "树上和空中",
+          "羊和鹅",
+          "小鹿和鸭",
+          "蘑菇和辣椒"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

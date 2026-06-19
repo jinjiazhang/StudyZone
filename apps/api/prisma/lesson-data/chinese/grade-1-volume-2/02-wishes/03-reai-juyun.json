@@ -1,0 +1,235 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：花儿喜欢太阳",
+        "tokens": [
+          "太阳",
+          "喜欢",
+          "花儿",
+          "蓝天",
+          "开放"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花儿",
+          "喜欢",
+          "太阳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：花儿在阳光下开放",
+        "tokens": [
+          "阳光下",
+          "花儿",
+          "飞翔",
+          "在",
+          "开放"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "花儿",
+          "在",
+          "阳光下",
+          "开放"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：鸟儿喜欢蓝天",
+        "tokens": [
+          "喜欢",
+          "蓝天",
+          "鸟儿",
+          "花园",
+          "飞翔"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟儿",
+          "喜欢",
+          "蓝天"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：鸟儿在天空中飞翔",
+        "tokens": [
+          "天空中",
+          "飞翔",
+          "鸟儿",
+          "在",
+          "开放"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟儿",
+          "在",
+          "天空中",
+          "飞翔"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我们热爱中国共产党",
+        "tokens": [
+          "中国共产党",
+          "我们",
+          "热爱",
+          "太阳",
+          "喜欢"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "热爱",
+          "中国共产党"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "热爱中国共产党",
+        "author": "课文",
+        "lines": [
+          [
+            "花儿",
+            null,
+            "太阳，"
+          ],
+          [
+            "花儿在阳光下开放。"
+          ]
+        ],
+        "options": [
+          "喜欢",
+          "看见",
+          "来到",
+          "告诉"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "热爱中国共产党",
+        "author": "课文",
+        "lines": [
+          [
+            "鸟儿喜欢蓝天，"
+          ],
+          [
+            "鸟儿在天空中",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "开放",
+          "飞翔",
+          "成长",
+          "祝贺"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "热爱中国共产党",
+        "author": "课文",
+        "lines": [
+          [
+            "我们",
+            null,
+            "中国共产党，"
+          ],
+          [
+            "我们在党的怀抱里",
+            null,
+            "成长。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "热爱",
+              "喜欢",
+              "看见",
+              "告诉"
+            ]
+          },
+          {
+            "options": [
+              "勇敢",
+              "幸福",
+              "自由",
+              "弯弯"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          1
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文把花儿和鸟儿的快乐写了出来。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-021.jpg"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文说鸟儿在河边走。",
+        "trueLabel": "对",
+        "falseLabel": "错",
+        "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-021.jpg"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

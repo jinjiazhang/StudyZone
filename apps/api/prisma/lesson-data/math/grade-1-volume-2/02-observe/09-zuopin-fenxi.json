@@ -1,0 +1,292 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红色火箭图案中，顶部尖尖部分最像：",
+        "options": [
+          "圆形",
+          "三角形",
+          "长方形",
+          "十字形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "红色毛毛虫图案主要用了许多：",
+        "options": [
+          "三角形",
+          "长方形",
+          "圆形",
+          "十字形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鱼图案中，身体和尾巴常可用哪类图形组合？",
+        "options": [
+          "只有圆形",
+          "只有正方形",
+          "只有十字形",
+          "三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要拼一朵花，下面哪个图形最适合做花心？",
+        "options": [
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "bone",
+            "label": "骨头形",
+            "svg": "<svg viewBox=\"0 0 140 110\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M35 20c-12-10-30 2-22 18-17 7-8 31 10 26l35 28c13 10 29-2 22-18 18-7 9-31-10-26z\" fill=\"#fca5a5\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "circle"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "要拼一列小火车，下面哪个图形最适合做车厢？",
+        "options": [
+          {
+            "id": "rect",
+            "label": "长方形",
+            "svg": "<svg viewBox=\"0 0 140 100\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"28\" width=\"100\" height=\"44\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "rect"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "花心"
+          },
+          {
+            "id": "l2",
+            "text": "花茎"
+          },
+          {
+            "id": "l3",
+            "text": "屋顶"
+          },
+          {
+            "id": "l4",
+            "text": "窗户"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "正方形"
+          },
+          {
+            "id": "r2",
+            "text": "长方形"
+          },
+          {
+            "id": "r1",
+            "text": "圆形"
+          },
+          {
+            "id": "r3",
+            "text": "三角形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "用图形表达一个物体时，可以先想什么？",
+        "options": [
+          "物体由哪些部分组成",
+          "今天星期几",
+          "铅笔多少钱",
+          "课桌有多重"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果一个作品看起来像树，树冠常可以用：",
+        "options": [
+          "只有一条线",
+          "圆形组合",
+          "长方体",
+          "钟面"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形更适合作为车轮？",
+        "options": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "square",
+            "label": "正方形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"25\" y=\"25\" width=\"70\" height=\"70\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "circle"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“说一说，做一做”的学习重点是：",
+        "options": [
+          "只抄同桌答案",
+          "只看颜色",
+          "把观察到的形状表达出来",
+          "只数页码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图形更适合做铅笔的细长身体？",
+        "options": [
+          {
+            "id": "circle",
+            "label": "圆形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "tri",
+            "label": "三角形",
+            "svg": "<svg viewBox=\"0 0 120 110\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"60,15 105,92 15,92\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "longrect",
+            "label": "长长的长方形",
+            "svg": "<svg viewBox=\"0 0 180 80\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"18\" y=\"25\" width=\"144\" height=\"30\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          },
+          {
+            "id": "cross",
+            "label": "十字形",
+            "svg": "<svg viewBox=\"0 0 120 120\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M48 14h24v34h34v24H72v34H48V72H14V48h34z\" fill=\"#ef4444\" stroke=\"#991b1b\" stroke-width=\"4\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "longrect"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断：一个复杂图案可以由多个基本图形组合成。",
+        "options": [
+          "错",
+          "对"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

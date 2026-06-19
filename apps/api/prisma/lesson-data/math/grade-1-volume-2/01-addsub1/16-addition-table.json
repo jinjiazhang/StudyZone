@@ -1,0 +1,208 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 2 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 3 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 4 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "5 + 6 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 3 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 7 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "9 + 9 = ?"
+      },
+      "answer": {
+        "value": 18,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "加法表横着看，9+2、8+3、7+4的得数怎样？",
+        "options": [
+          "越来越大",
+          "都等于11",
+          "越来越小",
+          "都等于12"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "加法表竖着看，9+2、9+3、9+4的得数怎样变化？",
+        "options": [
+          "每次少1",
+          "不变",
+          "每次多1",
+          "变成9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "得数11"
+          },
+          {
+            "id": "b",
+            "text": "得数14"
+          },
+          {
+            "id": "c",
+            "text": "得数18"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "9+5"
+          },
+          {
+            "id": "rc",
+            "text": "9+9"
+          },
+          {
+            "id": "ra",
+            "text": "8+3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "加法表：9+5的得数是多少？",
+        "columns": [
+          "算式",
+          "得数"
+        ],
+        "rows": [
+          {
+            "算式": "9+2",
+            "得数": 11
+          },
+          {
+            "算式": "9+5",
+            "得数": 14
+          },
+          {
+            "算式": "9+9",
+            "得数": 18
+          }
+        ]
+      },
+      "answer": {
+        "value": 14
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = 11"
+        ],
+        "tokens": [
+          "11",
+          "8",
+          "9",
+          "3",
+          "+",
+          "2"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "8",
+          "3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǎ",
+        "sentence": "同学们在操场上__球。",
+        "character": "打",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "打"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pǎo",
+        "sentence": "我喜欢__步。",
+        "character": "跑",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "跑"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shā",
+        "sentence": "大家一起丢__包。",
+        "character": "沙",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "沙"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "pí",
+        "sentence": "他们在拍__球。",
+        "character": "皮",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "皮"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zú",
+        "sentence": "我们踢__球。",
+        "character": "足",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "足"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "bāo",
+        "sentence": "跳绳踢毽丢沙__。",
+        "character": "包",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "包"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "打",
+        "tokens": [
+          "球",
+          "雪",
+          "开",
+          "人",
+          "远",
+          "义"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“打”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "球",
+            "开"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "跑",
+        "tokens": [
+          "步",
+          "网",
+          "道",
+          "房",
+          "远",
+          "语"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“跑”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "步",
+            "道",
+            "远"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "球",
+        "tokens": [
+          "足",
+          "雪",
+          "皮",
+          "鸟",
+          "打",
+          "茶"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“球”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "足",
+            "皮",
+            "打"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "和同学说“你喜欢什么体育活动？”最合适的回答是？",
+        "options": [
+          "我喜欢跑步。",
+          "我看见蜘蛛。",
+          "夕阳很美。",
+          "芝麻开花。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "组成一句完整的话",
+        "tokens": [
+          "踢足球",
+          "我",
+          "拍",
+          "喜欢",
+          "操场",
+          "跑步"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "喜欢",
+          "踢足球"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

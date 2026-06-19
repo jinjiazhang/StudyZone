@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "草莓有10个一和2个一，一共有几个？"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "胡萝卜有1个十和4个一，一共有几个？"
+      },
+      "answer": {
+        "value": 14,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "白菜有1个十和7个一，一共有几个？"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把18画成几个十和几个一？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          8
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "把20画成几个十和几个一？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2,
+          0
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "从11开始接着数。",
+        "items": [
+          {
+            "id": "n13",
+            "text": "13"
+          },
+          {
+            "id": "n15",
+            "text": "15"
+          },
+          {
+            "id": "n11",
+            "text": "11"
+          },
+          {
+            "id": "n14",
+            "text": "14"
+          },
+          {
+            "id": "n12",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n11",
+          "n12",
+          "n13",
+          "n14",
+          "n15"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13",
+        "right": "17"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "19",
+        "right": "9"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数13时，下面哪种说法正确？",
+        "options": [
+          "3个十和1个一",
+          "1个十和3个一",
+          "13个十",
+          "10个十和3个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "数线上的15在哪里？",
+        "min": 9,
+        "max": 20,
+        "step": 1
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          "个十和",
+          null,
+          "个一是15"
+        ],
+        "tokens": [
+          "5",
+          "15",
+          "1",
+          "10",
+          "0"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "1",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "看表回答：1个十和9个一是几？",
+        "columns": [
+          "表示",
+          "数"
+        ],
+        "rows": [
+          {
+            "表示": "1个十和5个一",
+            "数": 15
+          },
+          {
+            "表示": "1个十和9个一",
+            "数": 19
+          },
+          {
+            "表示": "2个十",
+            "数": 20
+          }
+        ]
+      },
+      "answer": {
+        "value": 19
+      },
+      "difficulty": 2
+    }
+  ]
+}

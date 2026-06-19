@@ -1,0 +1,310 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "青草",
+        "hint": "读词语【青草】",
+        "options": [
+          "qīng cǎo",
+          "qīn cǎo",
+          "qīng chǎo",
+          "qíng cǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "红花",
+        "hint": "读词语【红花】",
+        "options": [
+          "hóng huà",
+          "hōng huā",
+          "hóng huā",
+          "hóng guā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "游鱼",
+        "hint": "读词语【游鱼】",
+        "options": [
+          "yǒu yú",
+          "yóu yǔ",
+          "yóu yù",
+          "yóu yú"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "飞鸟",
+        "hint": "读词语【飞鸟】",
+        "options": [
+          "fēi niǎo",
+          "fēi niáo",
+          "fēi liǎo",
+          "fěi niǎo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "春风"
+          },
+          {
+            "id": "l1",
+            "text": "夏雨"
+          },
+          {
+            "id": "l2",
+            "text": "秋霜"
+          },
+          {
+            "id": "l3",
+            "text": "冬雪"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "夏天的雨"
+          },
+          {
+            "id": "r2",
+            "text": "秋天的霜"
+          },
+          {
+            "id": "r3",
+            "text": "冬天的雪"
+          },
+          {
+            "id": "r0",
+            "text": "春天的风"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "青草"
+          },
+          {
+            "id": "l1",
+            "text": "山花"
+          },
+          {
+            "id": "l2",
+            "text": "鱼出水"
+          },
+          {
+            "id": "l3",
+            "text": "鸟入林"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "山上的花"
+          },
+          {
+            "id": "r2",
+            "text": "鱼从水里出来"
+          },
+          {
+            "id": "r3",
+            "text": "鸟飞进树林"
+          },
+          {
+            "id": "r0",
+            "text": "草是青的"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中和“山花红”意思相近的是哪一项？",
+        "options": [
+          "山上的花是红的",
+          "山上有白雪",
+          "小鸟飞出树林",
+          "池塘里的草很青"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“鱼出水，鸟入林”中，“入”的意思是？",
+        "options": [
+          "出去",
+          "落下",
+          "进入",
+          "吹动"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选出《春夏秋冬》的第一页课文图",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-007.jpg",
+            "label": "春夏秋冬"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-009.jpg",
+            "label": "姓氏歌"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-011.jpg",
+            "label": "小青蛙"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-013.jpg",
+            "label": "猜字谜"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页有“青草、红花、游鱼、飞鸟”？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-007.jpg",
+            "label": "课题页"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-008.jpg",
+            "label": "图景词语页"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-015.jpg",
+            "label": "语文园地"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-018.jpg",
+            "label": "口语交际"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文短语：春风吹",
+        "tokens": [
+          "夏雨",
+          "春风",
+          "落",
+          "吹",
+          "冬雪"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "春风",
+          "吹"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文短语：鸟入林",
+        "tokens": [
+          "鱼",
+          "鸟",
+          "出",
+          "入",
+          "水",
+          "林"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟",
+          "入",
+          "林"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

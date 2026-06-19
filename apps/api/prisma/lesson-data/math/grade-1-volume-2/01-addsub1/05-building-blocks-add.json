@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 2 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 5 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 + 5 = ?"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "8 + 2 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "先算3+2=5，再算10+5=15：原式是几加几？",
+        "blanks": [
+          {
+            "id": "a"
+          },
+          {
+            "id": "b"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          13,
+          2
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "再放2块，原来13块，一共有多少块？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "13+2",
+          "2+13"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "15",
+          "2",
+          "+",
+          "13",
+          "11",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "13",
+          "2",
+          "15"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13+2",
+        "right": "10+5"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "13+2可以先把个位上的3和2相加，再和哪个数合起来？",
+        "options": [
+          "10",
+          "2",
+          "3",
+          "15"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在数线上从13向右走2格，到几？",
+        "min": 11,
+        "max": 17,
+        "step": 1
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "13+2"
+          },
+          {
+            "id": "b",
+            "text": "12+5"
+          },
+          {
+            "id": "c",
+            "text": "10+5"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "17"
+          },
+          {
+            "id": "rc",
+            "text": "15（十加五）"
+          },
+          {
+            "id": "ra",
+            "text": "15（十三加二）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "搭积木记录表：13块再放2块，一共有几块？",
+        "columns": [
+          "原来",
+          "再放",
+          "一共"
+        ],
+        "rows": [
+          {
+            "原来": 13,
+            "再放": 2,
+            "一共": 15
+          },
+          {
+            "原来": 12,
+            "再放": 5,
+            "一共": 17
+          }
+        ]
+      },
+      "answer": {
+        "value": 15
+      },
+      "difficulty": 2
+    }
+  ]
+}

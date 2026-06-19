@@ -1,0 +1,225 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "闹钟响了，元元一开始想什么？",
+        "options": [
+          "再睡一分钟吧",
+          "马上跑去学校",
+          "先通知动物",
+          "去摘桃子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "元元走到十字路口时，前面是什么灯？",
+        "options": [
+          "蓝灯",
+          "红灯",
+          "绿灯",
+          "台灯"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "他刚想走过去时，什么亮了？",
+        "options": [
+          "月亮",
+          "红灯",
+          "车灯",
+          "星星"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "元元在车站一直没等到什么？",
+        "options": [
+          "自己的铅笔",
+          "小兔子",
+          "文具盒",
+          "公共汽车的影子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "到了学校，元元已经怎样了？",
+        "options": [
+          "上课了",
+          "放学了",
+          "开大会了",
+          "洗脸了"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "再睡一分钟"
+          },
+          {
+            "id": "l1",
+            "text": "红灯亮了"
+          },
+          {
+            "id": "l2",
+            "text": "汽车开了"
+          },
+          {
+            "id": "l3",
+            "text": "到了学校"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "没赶上车"
+          },
+          {
+            "id": "r0",
+            "text": "起床晚了"
+          },
+          {
+            "id": "r3",
+            "text": "迟到二十分钟"
+          },
+          {
+            "id": "r1",
+            "text": "没赶上过路口"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按课文顺序排一排",
+        "tokens": [
+          "车开走了",
+          "闹钟响了",
+          "迟到二十分钟",
+          "红灯亮了"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "闹钟响了",
+          "红灯亮了",
+          "车开走了",
+          "迟到二十分钟"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "早一分钟",
+          "就好了",
+          "要是"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要是",
+          "早一分钟",
+          "就好了"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子",
+        "tokens": [
+          "自己的座位上",
+          "低着头",
+          "坐到"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "低着头",
+          "坐到",
+          "自己的座位上"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "元元起床晚了",
+        "options": [
+          {
+            "id": "wenju",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-083.jpg",
+            "label": "文具的家"
+          },
+          {
+            "id": "dongwu",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-089.jpg",
+            "label": "动物开会"
+          },
+          {
+            "id": "yuan",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-086.jpg",
+            "label": "元元和闹钟"
+          },
+          {
+            "id": "houzi",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-095.jpg",
+            "label": "小猴子下山"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "yuan"
+      },
+      "difficulty": 1
+    }
+  ]
+}

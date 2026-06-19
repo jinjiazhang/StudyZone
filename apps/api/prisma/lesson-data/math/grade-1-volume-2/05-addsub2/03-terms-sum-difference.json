@@ -1,0 +1,254 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "20+30=50 中，50 叫作什么？",
+        "options": [
+          "加数",
+          "被减数",
+          "差",
+          "和"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "50-40=10 中，40 叫作什么？",
+        "options": [
+          "加数",
+          "减数",
+          "和",
+          "被减数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "50-40=10 中，50 叫作什么？",
+        "options": [
+          "减数",
+          "被减数",
+          "差",
+          "加数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "20+30=50 中，20 和 30 都叫作什么？",
+        "options": [
+          "和",
+          "差",
+          "减数",
+          "加数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 + 40 = ?"
+      },
+      "answer": {
+        "value": 70,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70 - 30 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "算一算：40+20=__，这个算式的和是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "得数"
+          },
+          {
+            "id": "b2",
+            "label": "和"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          60,
+          60
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "算一算：80-50=__，这个算式的差是__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "得数"
+          },
+          {
+            "id": "b2",
+            "label": "差"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          30,
+          30
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "加数20、加数60"
+          },
+          {
+            "id": "l1",
+            "text": "被减数90、减数40"
+          },
+          {
+            "id": "l2",
+            "text": "加数30、加数40"
+          },
+          {
+            "id": "l3",
+            "text": "被减数70、减数30"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "和70"
+          },
+          {
+            "id": "r0",
+            "text": "和80"
+          },
+          {
+            "id": "r3",
+            "text": "差40"
+          },
+          {
+            "id": "r1",
+            "text": "差50"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "20+40",
+        "right": "90-20",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "被减数 ",
+          null,
+          " 减数 ",
+          null,
+          " 差 ",
+          null
+        ],
+        "tokens": [
+          "10",
+          "40",
+          "50",
+          "70",
+          "30"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "50",
+          "40",
+          "10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "看到“比小林多3个”，通常先想到什么运算？",
+        "options": [
+          "加法",
+          "减法",
+          "乘法",
+          "除法"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

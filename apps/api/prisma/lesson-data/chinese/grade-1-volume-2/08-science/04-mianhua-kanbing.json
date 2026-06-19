@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "棉花姑娘最先请谁帮她捉害虫？",
+        "options": [
+          "青蛙",
+          "七星瓢虫",
+          "啄木鸟",
+          "燕子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "啄木鸟为什么不能帮棉花姑娘？",
+        "options": [
+          "只会捉空中飞的害虫",
+          "只会捉水田里的害虫",
+          "只会捉树干里的害虫",
+          "不会飞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "青蛙为什么不能帮棉花姑娘？",
+        "options": [
+          "只会捉水田里的害虫",
+          "只会捉树干里的害虫",
+          "只会捉棉花叶子上的害虫",
+          "害怕蚜虫"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "最后是谁治好了棉花姑娘的病？",
+        "options": [
+          "燕子",
+          "啄木鸟",
+          "七星瓢虫",
+          "青蛙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "燕子"
+          },
+          {
+            "id": "l_1",
+            "text": "啄木鸟"
+          },
+          {
+            "id": "l_2",
+            "text": "青蛙"
+          },
+          {
+            "id": "l_3",
+            "text": "七星瓢虫"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "捉棉花叶子上的害虫"
+          },
+          {
+            "id": "r_3",
+            "text": "捉水田里的害虫"
+          },
+          {
+            "id": "r_0",
+            "text": "捉树干里的害虫"
+          },
+          {
+            "id": "r_2",
+            "text": "捉空中飞的害虫"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_0",
+          "l_2": "r_3",
+          "l_3": "r_1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "按求助顺序排列",
+        "tokens": [
+          "青蛙",
+          "燕子",
+          "啄木鸟",
+          "七星瓢虫",
+          "小鱼"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "燕子",
+          "啄木鸟",
+          "青蛙",
+          "七星瓢虫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出棉花姑娘病好的变化",
+        "tokens": [
+          "吐出",
+          "雪白雪白的棉花",
+          "长出",
+          "碧绿碧绿的叶子",
+          "捉害虫"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "长出",
+          "碧绿碧绿的叶子",
+          "吐出",
+          "雪白雪白的棉花"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "七星瓢虫身上的斑点像什么？",
+        "options": [
+          "七片叶子",
+          "七颗星星",
+          "七朵棉花",
+          "七滴雨水"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "选择《棉花姑娘》中出现的治虫帮手",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-104.jpg",
+            "label": "啄木鸟和青蛙"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-107.jpg",
+            "label": "兔子和木瓜"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-110.jpg",
+            "label": "小鱼和壁虎"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-115.jpg",
+            "label": "画鸡"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "读课文中的对话时，棉花姑娘求帮助的语气应是？",
+        "options": [
+          "大声命令",
+          "开玩笑",
+          "完全不在乎",
+          "请求、着急"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "id": "03-xiaogongji-gushi",
+  "title": "小公鸡故事顺序",
+  "description": "梳理小公鸡和小鸭子互相帮助的故事顺序。",
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "故事开头，小公鸡和小鸭子去了哪里？",
+        "options": [
+          "草地里",
+          "小河边",
+          "树林里",
+          "电话亭"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸭子为什么急得直哭？",
+        "options": [
+          "不会游泳",
+          "听不见小公鸡",
+          "找不到虫子",
+          "找不到字典"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小公鸡为什么不能下水捉鱼？",
+        "options": [
+          "他要睡觉",
+          "他要查字典",
+          "他不会游泳",
+          "他要画画"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小鸭子听见小公鸡喊救命后怎样做？",
+        "options": [
+          "飞快地游到他身边",
+          "安安静静地睡觉",
+          "偷偷地跟着他",
+          "回窝里叫朋友"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的事情",
+        "tokens": [
+          "找到虫子",
+          "小鸭子",
+          "小公鸡",
+          "给小鸭子吃",
+          "河边"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小公鸡",
+          "找到虫子",
+          "给小鸭子吃"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文中的事情",
+        "tokens": [
+          "飞快地",
+          "身边",
+          "小鸭子",
+          "游到小公鸡身边",
+          "偷偷地"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小鸭子",
+          "飞快地",
+          "游到小公鸡身边"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小鸭子救了落水的小公鸡。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小公鸡一开始就听小鸭子的话，没有下水。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "互相帮助",
+        "passage": "小公鸡捉虫子给小鸭子吃。小鸭子又把落水的小公鸡救上岸。他们都帮助了伙伴。",
+        "questions": [
+          {
+            "question": "这段话主要写什么？",
+            "options": [
+              "互相帮助",
+              "查字典",
+              "打电话",
+              "背古诗"
+            ]
+          },
+          {
+            "question": "谁救了小公鸡？",
+            "options": [
+              "小鸭子",
+              "喜鹊",
+              "李白",
+              "蜜蜂"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页是《小公鸡和小鸭子》？",
+        "options": [
+          {
+            "id": "duck",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-031.jpg",
+            "label": "小公鸡和小鸭子"
+          },
+          {
+            "id": "tree",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-034.jpg",
+            "label": "树和喜鹊"
+          },
+          {
+            "id": "play",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-036.jpg",
+            "label": "怎么都快乐"
+          },
+          {
+            "id": "dict",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-039.jpg",
+            "label": "查字典"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "duck"
+      },
+      "difficulty": 1
+    }
+  ]
+}

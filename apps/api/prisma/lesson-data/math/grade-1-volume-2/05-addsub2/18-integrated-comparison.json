@@ -1,0 +1,192 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "小熊要把球投进得数是68的篮筐，哪组算式都可以投中？",
+        "options": [
+          "78-10、44+24、32+36、98-30",
+          "52+12、44+24、32+36、98-30",
+          "78-10、57+21、32+36、98-30",
+          "78-10、44+24、32+35、98-30"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "87+10",
+        "right": "78+10",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "46-5",
+        "right": "46-4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "72+6",
+        "right": "71+6",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "34+23",
+        "right": "41+16",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "42 + 6 = ?"
+      },
+      "answer": {
+        "value": 48,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23 - 20 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23 + 6 = ?"
+      },
+      "answer": {
+        "value": 29,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "46 + 41 = ?"
+      },
+      "answer": {
+        "value": 87,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "买1个篮球42元和1个皮球6元，一共多少元？",
+        "options": [
+          "36元",
+          "46元",
+          "52元",
+          "48元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有20元，想买23元的泳圈，还差多少元？",
+        "options": [
+          "3元",
+          "43元",
+          "13元",
+          "20元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "笑笑有100元，买52元上衣和41元裤子，够吗？",
+        "options": [
+          "不够，差7元",
+          "刚好100元",
+          "够，还剩7元",
+          "够，还剩17元"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "从46元衬衣、52元短袖、34元毛衣、53元长裤、41元裤子中，选一套不超过100元的衣服。写一个算式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "46+41",
+          "52+41",
+          "34+53",
+          "46+53"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

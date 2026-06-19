@@ -1,0 +1,219 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "50 - 40 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "80 - 30 = ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 - 20 = ?"
+      },
+      "answer": {
+        "value": 70,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "60 - 50 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "70 - 30 = ?"
+      },
+      "answer": {
+        "value": 40,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 - 10 = ?"
+      },
+      "answer": {
+        "value": 30,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "5个十拿走4个十，还剩多少？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "50-40"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "40",
+          "10",
+          "50",
+          "-",
+          "20"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "50",
+          "40",
+          "10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "5个十减2个十，得几个十？是多少？",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "几个十"
+          },
+          {
+            "id": "b2",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          30
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "50-40 可以先想哪道算式？",
+        "options": [
+          "5-4=1",
+          "50-4=46",
+          "4+1=5",
+          "5+4=9"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "90-40"
+          },
+          {
+            "id": "l1",
+            "text": "70-10"
+          },
+          {
+            "id": "l2",
+            "text": "60-30"
+          },
+          {
+            "id": "l3",
+            "text": "80-10"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "30"
+          },
+          {
+            "id": "r0",
+            "text": "50"
+          },
+          {
+            "id": "r3",
+            "text": "70"
+          },
+          {
+            "id": "r1",
+            "text": "60"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "80-30",
+        "right": "70-30",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

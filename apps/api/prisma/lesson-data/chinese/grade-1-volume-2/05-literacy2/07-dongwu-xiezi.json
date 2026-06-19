@@ -1,0 +1,242 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wù",
+        "sentence": "动__儿歌真有趣。",
+        "character": "物",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "物"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yùn",
+        "sentence": "蚂蚁地上__食粮。",
+        "character": "运",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "运"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fáng",
+        "sentence": "蜘蛛__前结网忙。",
+        "character": "房",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "房"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zào",
+        "sentence": "蚯蚓土里__宫殿。",
+        "character": "造",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "造"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "huān",
+        "sentence": "蝌蚪池中游得__。",
+        "character": "欢",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "欢"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "wǎng",
+        "sentence": "蜘蛛结__忙。",
+        "character": "网",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "网"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "物",
+        "tokens": [
+          "动",
+          "衣",
+          "品",
+          "网",
+          "食",
+          "房"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“物”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "动",
+            "品",
+            "食"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "运",
+        "tokens": [
+          "动",
+          "房",
+          "气",
+          "欢",
+          "食粮",
+          "网"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“运”组成词语的字或词"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "动",
+            "气",
+            "食粮"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "房",
+        "tokens": [
+          "子",
+          "飞",
+          "间",
+          "迷",
+          "前",
+          "足"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“房”组成词语的字或词"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "子",
+            "间",
+            "前"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "网",
+        "tokens": [
+          "结",
+          "凉",
+          "上",
+          "雪",
+          "鱼",
+          "初"
+        ],
+        "targetCount": 3,
+        "instruction": "选出能和“网”组成词语的字或词"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "结",
+            "上",
+            "鱼"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "物"
+          },
+          {
+            "id": "l_1",
+            "text": "运"
+          },
+          {
+            "id": "l_2",
+            "text": "房"
+          },
+          {
+            "id": "l_3",
+            "text": "网"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "房前"
+          },
+          {
+            "id": "r_0",
+            "text": "动物"
+          },
+          {
+            "id": "r_3",
+            "text": "结网"
+          },
+          {
+            "id": "r_1",
+            "text": "运动"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

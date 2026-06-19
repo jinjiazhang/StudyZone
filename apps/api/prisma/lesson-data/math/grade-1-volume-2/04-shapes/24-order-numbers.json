@@ -1,0 +1,330 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "将卡片上的数从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "50"
+          },
+          {
+            "id": "item_2",
+            "text": "98"
+          },
+          {
+            "id": "item_3",
+            "text": "10"
+          },
+          {
+            "id": "item_4",
+            "text": "51"
+          },
+          {
+            "id": "item_5",
+            "text": "38"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_3",
+          "item_5",
+          "item_1",
+          "item_4",
+          "item_2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "体育比赛得分从高到低排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "88"
+          },
+          {
+            "id": "item_2",
+            "text": "95"
+          },
+          {
+            "id": "item_3",
+            "text": "79"
+          },
+          {
+            "id": "item_4",
+            "text": "91"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "28"
+          },
+          {
+            "id": "item_2",
+            "text": "22"
+          },
+          {
+            "id": "item_3",
+            "text": "32"
+          },
+          {
+            "id": "item_4",
+            "text": "24"
+          },
+          {
+            "id": "item_5",
+            "text": "26"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_5",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "35"
+          },
+          {
+            "id": "item_2",
+            "text": "15"
+          },
+          {
+            "id": "item_3",
+            "text": "45"
+          },
+          {
+            "id": "item_4",
+            "text": "20"
+          },
+          {
+            "id": "item_5",
+            "text": "25"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_5",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从大到小排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "90"
+          },
+          {
+            "id": "item_2",
+            "text": "100"
+          },
+          {
+            "id": "item_3",
+            "text": "85"
+          },
+          {
+            "id": "item_4",
+            "text": "95"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "58"
+          },
+          {
+            "id": "item_2",
+            "text": "25"
+          },
+          {
+            "id": "item_3",
+            "text": "85"
+          },
+          {
+            "id": "item_4",
+            "text": "52"
+          },
+          {
+            "id": "item_5",
+            "text": "28"
+          },
+          {
+            "id": "item_6",
+            "text": "82"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_5",
+          "item_4",
+          "item_1",
+          "item_6",
+          "item_3"
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "10、38、50、51、98 中最小的是？",
+        "options": [
+          "38",
+          "50",
+          "98",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "10、38、50、51、98 中最大的是？",
+        "options": [
+          "51",
+          "50",
+          "98",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "95、88、91、79 中得分最高的是哪组？",
+        "options": [
+          "淘气组 95",
+          "笑笑组 88",
+          "妙想组 91",
+          "奇思组 79"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "体育比赛中，妙想组得多少分？",
+        "columns": [
+          "小组",
+          "得分"
+        ],
+        "rows": [
+          {
+            "小组": "淘气组",
+            "得分": 95
+          },
+          {
+            "小组": "笑笑组",
+            "得分": 88
+          },
+          {
+            "小组": "妙想组",
+            "得分": 91
+          },
+          {
+            "小组": "奇思组",
+            "得分": 79
+          }
+        ]
+      },
+      "answer": {
+        "value": 91,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "95",
+        "right": "91"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "79",
+        "right": "88"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    }
+  ]
+}

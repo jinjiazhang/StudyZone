@@ -1,0 +1,278 @@
+{
+  "exercises": [
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原问句：你姓什么？",
+        "tokens": [
+          "他",
+          "你",
+          "叫",
+          "姓",
+          "哪里",
+          "什么"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "姓",
+          "什么"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原回答：我姓李。",
+        "tokens": [
+          "你",
+          "我",
+          "张",
+          "姓",
+          "什么",
+          "李"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "姓",
+          "李"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原问答：什么李？木子李。",
+        "tokens": [
+          "弓长",
+          "什么",
+          "张",
+          "李",
+          "口天",
+          "木子"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "什么",
+          "李",
+          "木子",
+          "李"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原问答：什么张？弓长张。",
+        "tokens": [
+          "古月",
+          "什么",
+          "胡",
+          "张",
+          "言午",
+          "弓长"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "什么",
+          "张",
+          "弓长",
+          "张"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“什么李？木子李。”这一问答后，可以仿说哪一句？",
+        "options": [
+          "春风吹，夏雨落。",
+          "小青蛙，大眼睛。",
+          "请您帮我拿一下。",
+          "什么方？方向的方。"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中提到“中国姓氏有很多”，下面哪组全是姓氏？",
+        "options": [
+          "赵、钱、孙、李",
+          "春、夏、秋、冬",
+          "青、清、晴、请",
+          "请、问、您、谢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "赵"
+          },
+          {
+            "id": "l1",
+            "text": "钱"
+          },
+          {
+            "id": "l2",
+            "text": "周"
+          },
+          {
+            "id": "l3",
+            "text": "郑"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "qián"
+          },
+          {
+            "id": "r2",
+            "text": "zhōu"
+          },
+          {
+            "id": "r3",
+            "text": "zhèng"
+          },
+          {
+            "id": "r0",
+            "text": "zhào"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "诸葛"
+          },
+          {
+            "id": "l1",
+            "text": "东方"
+          },
+          {
+            "id": "l2",
+            "text": "上官"
+          },
+          {
+            "id": "l3",
+            "text": "王"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "课文中的复姓"
+          },
+          {
+            "id": "r2",
+            "text": "不是单字姓"
+          },
+          {
+            "id": "r3",
+            "text": "单姓"
+          },
+          {
+            "id": "r0",
+            "text": "两个字的姓氏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "姓氏歌",
+        "author": "课文",
+        "lines": [
+          [
+            null,
+            "姓什么？"
+          ],
+          [
+            "我姓李。"
+          ]
+        ],
+        "options": [
+          "他",
+          "你",
+          "她",
+          "谁"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "姓氏歌",
+        "author": "课文",
+        "lines": [
+          [
+            "什么张？"
+          ],
+          [
+            null,
+            "长张。"
+          ]
+        ],
+        "options": [
+          "口",
+          "木",
+          "古",
+          "弓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    }
+  ]
+}

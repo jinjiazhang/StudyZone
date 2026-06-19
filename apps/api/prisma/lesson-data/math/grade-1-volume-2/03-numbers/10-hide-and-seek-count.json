@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "一共有14个小朋友，13人藏起来，还有几人没藏？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "14-13"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 13 = ?"
+      },
+      "answer": {
+        "value": 1,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有13人要藏起来，8人还没藏，已经藏了多少人？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "13-8"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "13 - 8：先从个位拿走 __ 个，再从十里拿走 __ 个，还剩 __ 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位先拿"
+          },
+          {
+            "id": "b2",
+            "label": "十里再拿"
+          },
+          {
+            "id": "b3",
+            "label": "剩下"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          5,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 - 8 = ?"
+      },
+      "answer": {
+        "value": 2,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 3 = ?"
+      },
+      "answer": {
+        "value": 10,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13 - 8",
+        "right": "14 - 13"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "5",
+          "13",
+          "1",
+          "8",
+          "10"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "13",
+          "8",
+          "5"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "13人藏，8人没藏"
+          },
+          {
+            "id": "l1",
+            "text": "14人，13人藏"
+          },
+          {
+            "id": "l2",
+            "text": "13先减3"
+          },
+          {
+            "id": "l3",
+            "text": "10再减5"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "得到5"
+          },
+          {
+            "id": "r2",
+            "text": "得到10"
+          },
+          {
+            "id": "r1",
+            "text": "14 - 13"
+          },
+          {
+            "id": "r0",
+            "text": "13 - 8"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "捉迷藏情境中，“8人还没藏起来”求藏起来的人数，用什么方法？",
+        "options": [
+          "加法",
+          "乘法",
+          "减法",
+          "比较大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 8 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

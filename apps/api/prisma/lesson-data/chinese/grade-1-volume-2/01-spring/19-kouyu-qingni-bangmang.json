@@ -1,0 +1,298 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "向别人借水彩笔，哪句话更有礼貌？",
+        "options": [
+          "快把笔给我。",
+          "你必须借我笔。",
+          "我就拿你的笔了。",
+          "李山，我忘了带水彩笔，可以借你的笔用一下吗？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "请爸爸帮忙拿书，哪句话更合适？",
+        "options": [
+          "爸爸，拿书。",
+          "那本书给我。",
+          "爸爸，请您帮我拿一下那本书好吗？",
+          "你怎么还不拿？"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "别人帮了你以后，应该说什么？",
+        "options": [
+          "不客气",
+          "谢谢",
+          "没关系",
+          "快一点"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "别人对你说“谢谢”，你可以回答什么？",
+        "options": [
+          "请问",
+          "您好",
+          "给我",
+          "不客气"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课本提醒我们请求帮助时要注意使用什么？",
+        "options": [
+          "礼貌用语",
+          "谜语答案",
+          "季节词语",
+          "大写字母"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "请"
+          },
+          {
+            "id": "l1",
+            "text": "请问"
+          },
+          {
+            "id": "l2",
+            "text": "您"
+          },
+          {
+            "id": "l3",
+            "text": "谢谢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "礼貌地提问"
+          },
+          {
+            "id": "r2",
+            "text": "尊称对方"
+          },
+          {
+            "id": "r3",
+            "text": "表达感谢"
+          },
+          {
+            "id": "r0",
+            "text": "请求时使用"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "借铅笔"
+          },
+          {
+            "id": "l1",
+            "text": "拿书"
+          },
+          {
+            "id": "l2",
+            "text": "问路"
+          },
+          {
+            "id": "l3",
+            "text": "感谢"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "请您帮我拿一下书好吗？"
+          },
+          {
+            "id": "r2",
+            "text": "请问，图书馆在哪里？"
+          },
+          {
+            "id": "r3",
+            "text": "谢谢你的帮助。"
+          },
+          {
+            "id": "r0",
+            "text": "可以借你的铅笔用一下吗？"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出礼貌请求：请你帮个忙",
+        "tokens": [
+          "快点",
+          "请你",
+          "马上",
+          "帮个",
+          "不用",
+          "忙"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请你",
+          "帮个",
+          "忙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出礼貌句：请问图书馆在哪里",
+        "tokens": [
+          "谢谢",
+          "请问",
+          "不客气",
+          "图书馆",
+          "春风",
+          "在哪里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请问",
+          "图书馆",
+          "在哪里"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出感谢句：谢谢你的帮助",
+        "tokens": [
+          "请问",
+          "谢谢",
+          "您好",
+          "你的",
+          "不用",
+          "帮助"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "谢谢",
+          "你的",
+          "帮助"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "image_choice",
+      "prompt": {
+        "word": "哪一页是“请你帮个忙”？",
+        "options": [
+          {
+            "id": "a",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-011.jpg",
+            "label": "小青蛙"
+          },
+          {
+            "id": "b",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-013.jpg",
+            "label": "猜字谜"
+          },
+          {
+            "id": "c",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-017.jpg",
+            "label": "春晓"
+          },
+          {
+            "id": "d",
+            "imageUrl": "/assets/textbooks/chinese/grade-1-volume-2/pages/page-018.jpg",
+            "label": "请你帮个忙"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "d"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "如果别人正在忙，你请求帮助时要怎样说？",
+        "options": [
+          "大声命令",
+          "先礼貌称呼，再说明需要",
+          "直接抢过来",
+          "一句话也不说"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

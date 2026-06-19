@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "棉",
+        "tokens": [
+          "田",
+          "花",
+          "树",
+          "衣",
+          "水",
+          "被"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“棉”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "花",
+            "衣",
+            "被"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "病",
+        "tokens": [
+          "叶",
+          "人",
+          "风",
+          "床",
+          "虫",
+          "房"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“病”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "人",
+            "床",
+            "房"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "害",
+        "tokens": [
+          "鸟",
+          "虫",
+          "水",
+          "怕",
+          "星",
+          "处"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“害”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "虫",
+            "怕",
+            "处"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "帮",
+        "tokens": [
+          "树",
+          "忙",
+          "鱼",
+          "手",
+          "云",
+          "助"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“帮”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "忙",
+            "手",
+            "助"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "可恶"
+          },
+          {
+            "id": "l_1",
+            "text": "盼望"
+          },
+          {
+            "id": "l_2",
+            "text": "惊奇"
+          },
+          {
+            "id": "l_3",
+            "text": "帮忙"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "希望快点实现"
+          },
+          {
+            "id": "r_3",
+            "text": "帮助别人做事"
+          },
+          {
+            "id": "r_0",
+            "text": "感到很奇怪"
+          },
+          {
+            "id": "r_2",
+            "text": "令人讨厌"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_2",
+          "l_1": "r_1",
+          "l_2": "r_0",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "碧绿碧绿"
+          },
+          {
+            "id": "l_1",
+            "text": "雪白雪白"
+          },
+          {
+            "id": "l_2",
+            "text": "火红火红"
+          },
+          {
+            "id": "l_3",
+            "text": "金黄金黄"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "像草叶一样绿"
+          },
+          {
+            "id": "r_3",
+            "text": "像稻谷一样黄"
+          },
+          {
+            "id": "r_0",
+            "text": "像雪一样白"
+          },
+          {
+            "id": "r_2",
+            "text": "像太阳一样红"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_1",
+          "l_1": "r_0",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“可恶的蚜虫”中的“可恶”意思最接近哪一项？",
+        "options": [
+          "很可爱",
+          "令人讨厌",
+          "非常高兴",
+          "颜色雪白"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“盼望有医生来给她治病”说明棉花姑娘怎样？",
+        "options": [
+          "很想快点治好病",
+          "不想别人靠近",
+          "已经病好了",
+          "正在摘棉花"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：捉棉花叶子上的害虫",
+        "tokens": [
+          "棉花叶子上",
+          "的",
+          "害虫",
+          "捉",
+          "树干里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "捉",
+          "棉花叶子上",
+          "的",
+          "害虫"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原短语：碧绿碧绿的叶子",
+        "tokens": [
+          "叶子",
+          "碧绿碧绿",
+          "雪白雪白",
+          "的",
+          "太阳"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "碧绿碧绿",
+          "的",
+          "叶子"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

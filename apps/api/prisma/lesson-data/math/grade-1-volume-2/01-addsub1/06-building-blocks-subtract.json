@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "18 - 2 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 2 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "19 - 6 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 1 = ?"
+      },
+      "answer": {
+        "value": 15,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "18拿走2块，还剩几块？原数、拿走数、剩下数分别是？",
+        "blanks": [
+          {
+            "id": "start"
+          },
+          {
+            "id": "take"
+          },
+          {
+            "id": "left"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          18,
+          2,
+          16
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "原来18块，拿走2块，还剩多少块？",
+        "placeholder": "写算式"
+      },
+      "answer": {
+        "accepted": [
+          "18-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "16",
+          "18",
+          "+",
+          "2",
+          "20",
+          "-"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "18",
+          "2",
+          "16"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "18-2",
+        "right": "13+2"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "18-2在数线上怎样走？",
+        "options": [
+          "从18向右走2格",
+          "从18向左走2格",
+          "从2向右走18格",
+          "从16向右走2格"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "number_line",
+      "prompt": {
+        "statement": "在数线上从18向左走2格，到几？",
+        "min": 13,
+        "max": 20,
+        "step": 1
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "18-2"
+          },
+          {
+            "id": "b",
+            "text": "19-6"
+          },
+          {
+            "id": "c",
+            "text": "17-2"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "13"
+          },
+          {
+            "id": "rc",
+            "text": "15"
+          },
+          {
+            "id": "ra",
+            "text": "16"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "搭积木减法表：19块拿走6块，还剩几块？",
+        "columns": [
+          "原来",
+          "拿走",
+          "还剩"
+        ],
+        "rows": [
+          {
+            "原来": 18,
+            "拿走": 2,
+            "还剩": 16
+          },
+          {
+            "原来": 19,
+            "拿走": 6,
+            "还剩": 13
+          }
+        ]
+      },
+      "answer": {
+        "value": 13
+      },
+      "difficulty": 2
+    }
+  ]
+}

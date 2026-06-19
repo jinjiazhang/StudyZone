@@ -1,0 +1,199 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "湖里有55只天鹅，又飞来20只。一共有多少只？",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "55+20",
+          "20+55"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "55 + 20 = ?"
+      },
+      "answer": {
+        "value": 75,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小恐龙身长2米，大恐龙身长25米。大恐龙比小恐龙长多少米？",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "25-2"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "25 - 2 = ?"
+      },
+      "answer": {
+        "value": 23,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "车上原有23人，12人到站下车。车上现在有多少人？",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "23-12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "23 - 12 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有48瓶水，36人每人1瓶，还剩多少瓶？",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "48-36"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "48 - 36 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“又飞来20只”表示数量怎样变化？",
+        "options": [
+          "减少",
+          "不变",
+          "增加",
+          "不能确定"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“比小恐龙长多少米”通常用什么方法？",
+        "options": [
+          "两个数相加",
+          "大数减小数",
+          "只看小数",
+          "只看大数"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "有48瓶水，36人每人1瓶，还剩多少瓶？",
+        "options": [
+          "84瓶",
+          "12瓶",
+          "36瓶",
+          "48瓶"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "55只又飞来20只"
+          },
+          {
+            "id": "l1",
+            "text": "25米比2米长多少"
+          },
+          {
+            "id": "l2",
+            "text": "23人下车12人"
+          },
+          {
+            "id": "l3",
+            "text": "48瓶给36人"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "23-12"
+          },
+          {
+            "id": "r0",
+            "text": "55+20"
+          },
+          {
+            "id": "r3",
+            "text": "48-36"
+          },
+          {
+            "id": "r1",
+            "text": "25-2"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

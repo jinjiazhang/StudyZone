@@ -1,0 +1,282 @@
+{
+  "exercises": [
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "通",
+        "tokens": [
+          "知",
+          "行",
+          "车",
+          "过",
+          "信",
+          "路"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "知",
+            "过"
+          ],
+          [
+            "行",
+            "知"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "注",
+        "tokens": [
+          "意",
+          "音",
+          "明",
+          "水",
+          "视",
+          "册"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "意",
+            "明"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "百",
+        "tokens": [
+          "遍",
+          "合",
+          "年",
+          "分",
+          "花",
+          "天"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "遍",
+            "年"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "第",
+        "tokens": [
+          "一",
+          "名",
+          "弟",
+          "二",
+          "三",
+          "几"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "一",
+            "二"
+          ],
+          [
+            "一",
+            "三"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "通知"
+          },
+          {
+            "id": "l1",
+            "text": "注意"
+          },
+          {
+            "id": "l2",
+            "text": "准时"
+          },
+          {
+            "id": "l3",
+            "text": "参加"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "按规定时间"
+          },
+          {
+            "id": "r0",
+            "text": "把事情告诉大家"
+          },
+          {
+            "id": "r3",
+            "text": "加入某个活动"
+          },
+          {
+            "id": "r1",
+            "text": "认真留心"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "狗熊"
+          },
+          {
+            "id": "l1",
+            "text": "狐狸"
+          },
+          {
+            "id": "l2",
+            "text": "大灰狼"
+          },
+          {
+            "id": "l3",
+            "text": "梅花鹿"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "指出通知少了地点"
+          },
+          {
+            "id": "r0",
+            "text": "通知大家开大会"
+          },
+          {
+            "id": "r3",
+            "text": "提醒要说清楚地点"
+          },
+          {
+            "id": "r1",
+            "text": "指出通知少了时间"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出通知里的词语",
+        "tokens": [
+          "注意",
+          "森林",
+          "请",
+          "大家"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "请",
+          "注意"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出通知里的词语",
+        "tokens": [
+          "参加",
+          "准时",
+          "通知",
+          "大会"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "准时",
+          "参加"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "发布通知时，课文提醒最重要的是说清楚什么？",
+        "options": [
+          "时间和地点",
+          "水果和颜色",
+          "文具和书包",
+          "睡觉和起床"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "狗熊第一次通知为什么大家没听明白？",
+        "options": [
+          "声音太小",
+          "没有说自己名字",
+          "没有见到老虎",
+          "没有说大会是哪一天开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "古"
+          },
+          {
+            "id": "l_1",
+            "text": "圆"
+          },
+          {
+            "id": "l_2",
+            "text": "严寒"
+          },
+          {
+            "id": "l_3",
+            "text": "春暖"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "酷暑"
+          },
+          {
+            "id": "r_0",
+            "text": "今"
+          },
+          {
+            "id": "r_3",
+            "text": "秋凉"
+          },
+          {
+            "id": "r_1",
+            "text": "方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "晨"
+          },
+          {
+            "id": "l_1",
+            "text": "雪"
+          },
+          {
+            "id": "l_2",
+            "text": "和风"
+          },
+          {
+            "id": "l_3",
+            "text": "朝霞"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "霜"
+          },
+          {
+            "id": "r_3",
+            "text": "夕阳"
+          },
+          {
+            "id": "r_0",
+            "text": "暮"
+          },
+          {
+            "id": "r_2",
+            "text": "细雨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "桃"
+          },
+          {
+            "id": "l_1",
+            "text": "柳"
+          },
+          {
+            "id": "l_2",
+            "text": "莺歌"
+          },
+          {
+            "id": "l_3",
+            "text": "鸟语"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "燕舞"
+          },
+          {
+            "id": "r_0",
+            "text": "李"
+          },
+          {
+            "id": "r_3",
+            "text": "花香"
+          },
+          {
+            "id": "r_1",
+            "text": "杨"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中“严寒”对什么？",
+        "options": [
+          "秋凉",
+          "细雨",
+          "酷暑",
+          "方圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“晨对暮”中的“暮”指什么时候？",
+        "options": [
+          "傍晚",
+          "早晨",
+          "中午",
+          "夜半"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一组是课文中的对子？",
+        "options": [
+          "云对月",
+          "红对白",
+          "山对水",
+          "桃对李"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "古对今",
+        "author": "课文",
+        "lines": [
+          [
+            "和风",
+            "对",
+            null
+          ]
+        ],
+        "options": [
+          "夕阳",
+          "方圆",
+          "酷暑",
+          "细雨"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "古对今",
+        "author": "课文",
+        "lines": [
+          [
+            null,
+            "对",
+            "霜"
+          ]
+        ],
+        "options": [
+          "雨",
+          "雪",
+          "云",
+          "风"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "古对今",
+        "author": "课文",
+        "lines": [
+          [
+            "古",
+            "对",
+            null
+          ],
+          [
+            "圆",
+            "对",
+            null
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "李",
+              "今",
+              "暮",
+              "方"
+            ]
+          },
+          {
+            "options": [
+              "方",
+              "今",
+              "霜",
+              "杨"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          1,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成对子句",
+        "tokens": [
+          "夕阳",
+          "和风",
+          "对",
+          "朝霞",
+          "细雨",
+          "方圆"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "朝霞",
+          "对",
+          "夕阳"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排成对子句",
+        "tokens": [
+          "花香",
+          "莺歌",
+          "对",
+          "鸟语",
+          "燕舞",
+          "桃李"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "鸟语",
+          "对",
+          "花香"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

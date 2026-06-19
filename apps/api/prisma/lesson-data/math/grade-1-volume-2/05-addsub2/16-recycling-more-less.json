@@ -1,0 +1,244 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 3 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 + 3 - 4 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小林收集13个，小佳比小林多3个。小佳收集多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "13+3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "小佳收集16个，小强比小佳少4个。小强收集多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "16-4"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "小林13个，小佳比他多3个。小佳有__个；小强比小佳少4个，小强有__个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "小佳"
+          },
+          {
+            "id": "b2",
+            "label": "小强"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          16,
+          12
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小佳比小林多3个”与谁有关？",
+        "options": [
+          "小林和小强",
+          "小林和小佳",
+          "小强和小佳",
+          "三个都无关"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "求小佳收集多少个，要用哪些信息？",
+        "options": [
+          "小强比小佳少4个",
+          "塑料埋地下很多年",
+          "小林13个，小佳比小林多3个",
+          "小强的袋子颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "小佳：",
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "16",
+          "13",
+          "3",
+          "4",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "13",
+          "3",
+          "16"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "小林13个，小佳多3个"
+          },
+          {
+            "id": "l1",
+            "text": "小佳16个，小强少4个"
+          },
+          {
+            "id": "l2",
+            "text": "小林13个，小强12个"
+          },
+          {
+            "id": "l3",
+            "text": "小强12个，小佳16个"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "小林多1个"
+          },
+          {
+            "id": "r0",
+            "text": "16"
+          },
+          {
+            "id": "r3",
+            "text": "小强少4个"
+          },
+          {
+            "id": "r1",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "13+3",
+        "right": "16-4",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按收集数量从少到多排列。",
+        "items": [
+          {
+            "id": "i1",
+            "text": "小林13个"
+          },
+          {
+            "id": "i2",
+            "text": "小佳16个"
+          },
+          {
+            "id": "i0",
+            "text": "小强12个"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

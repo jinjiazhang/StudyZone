@@ -1,0 +1,220 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 + 30 = ?"
+      },
+      "answer": {
+        "value": 75,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "68 + 30 = ?"
+      },
+      "answer": {
+        "value": 98,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "36 + 50 = ?"
+      },
+      "answer": {
+        "value": 86,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "20 + 43 = ?"
+      },
+      "answer": {
+        "value": 63,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "57 + 20 = ?"
+      },
+      "answer": {
+        "value": 77,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 60 = ?"
+      },
+      "answer": {
+        "value": 67,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "妈妈采45个，爸爸采30个。一共多少个？请列式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "45+30",
+          "30+45"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "45+30：先算40+30=__，再加5得__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "整十和"
+          },
+          {
+            "id": "b2",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          70,
+          75
+        ],
+        "tolerances": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "45+30 中，30 应该和45的哪一部分先相加？",
+        "options": [
+          "5",
+          "40",
+          "45的个位",
+          "3"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "75",
+          "45",
+          "30",
+          "15",
+          "+"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "45",
+          "30",
+          "75"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "21+30"
+          },
+          {
+            "id": "l1",
+            "text": "56+40"
+          },
+          {
+            "id": "l2",
+            "text": "34+20"
+          },
+          {
+            "id": "l3",
+            "text": "60+27"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "54"
+          },
+          {
+            "id": "r0",
+            "text": "51"
+          },
+          {
+            "id": "r3",
+            "text": "87"
+          },
+          {
+            "id": "r1",
+            "text": "96"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45+30",
+        "right": "45+3",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 2
+    }
+  ]
+}

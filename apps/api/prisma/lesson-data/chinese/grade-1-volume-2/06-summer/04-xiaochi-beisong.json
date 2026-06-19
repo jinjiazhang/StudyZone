@@ -1,0 +1,280 @@
+{
+  "exercises": [
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小池",
+        "author": "杨万里",
+        "lines": [
+          [
+            "泉眼无声",
+            null,
+            "，"
+          ],
+          [
+            "树阴照水爱晴柔。"
+          ]
+        ],
+        "options": [
+          "立上头",
+          "尖尖角",
+          "一道开",
+          "惜细流"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小池",
+        "author": "杨万里",
+        "lines": [
+          [
+            "泉眼无声惜细流，"
+          ],
+          [
+            "树阴照水",
+            null,
+            "。"
+          ]
+        ],
+        "options": [
+          "早有",
+          "爱晴柔",
+          "才露",
+          "浮萍"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小池",
+        "author": "杨万里",
+        "lines": [
+          [
+            "小荷才露",
+            null,
+            "，"
+          ],
+          [
+            "早有蜻蜓立上头。"
+          ]
+        ],
+        "options": [
+          "白莲回",
+          "晴柔",
+          "尖尖角",
+          "一道开"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "小池",
+        "author": "杨万里",
+        "lines": [
+          [
+            "小荷才露尖尖角，"
+          ],
+          [
+            null,
+            "蜻蜓立上头。"
+          ]
+        ],
+        "options": [
+          "早有",
+          "才露",
+          "泉眼",
+          "小娃"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "小池",
+        "author": "杨万里",
+        "lines": [
+          [
+            null,
+            "无声惜细流，"
+          ],
+          [
+            "树阴照水",
+            null,
+            "。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "泉眼",
+              "荷叶",
+              "白莲",
+              "小艇"
+            ]
+          },
+          {
+            "options": [
+              "爱晴柔",
+              "一道开",
+              "尖尖角",
+              "立上头"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：小荷才露尖尖角",
+        "tokens": [
+          "小荷",
+          "泉眼",
+          "才露",
+          "晴柔",
+          "尖尖角",
+          "蜻蜓"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "小荷",
+          "才露",
+          "尖尖角"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出诗句：早有蜻蜓立上头",
+        "tokens": [
+          "早有",
+          "浮萍",
+          "蜻蜓",
+          "白莲",
+          "立上头",
+          "照水"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "早有",
+          "蜻蜓",
+          "立上头"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《小池》中，什么“立上头”？",
+        "options": [
+          "小娃",
+          "鱼儿",
+          "蜻蜓",
+          "白兔"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“小荷才露尖尖角”写的是哪个季节的景物？",
+        "options": [
+          "夏天",
+          "冬天",
+          "秋天",
+          "春天"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "泉眼"
+          },
+          {
+            "id": "l_1",
+            "text": "树阴"
+          },
+          {
+            "id": "l_2",
+            "text": "小荷"
+          },
+          {
+            "id": "l_3",
+            "text": "蜻蜓"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "才露尖尖角"
+          },
+          {
+            "id": "r_0",
+            "text": "无声惜细流"
+          },
+          {
+            "id": "r_3",
+            "text": "立上头"
+          },
+          {
+            "id": "r_1",
+            "text": "照水爱晴柔"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

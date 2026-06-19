@@ -1,0 +1,223 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“动手做（一）”要求把正方形纸折成怎样的两部分？",
+        "options": [
+          "一样的两部分",
+          "一大一小两部分",
+          "三部分",
+          "四部分"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形可以沿中间横着对折，折成一样的两部分。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "圆无论怎么折，都不能折成一样的两部分。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪条虚线更像把正方形分成一样的两部分？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"25\" width=\"90\" height=\"90\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"4\"/><line x1=\"90\" y1=\"25\" x2=\"90\" y2=\"115\" stroke=\"#111827\" stroke-width=\"4\" stroke-dasharray=\"8 6\"/></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"25\" width=\"90\" height=\"90\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"4\"/><line x1=\"65\" y1=\"25\" x2=\"100\" y2=\"115\" stroke=\"#111827\" stroke-width=\"4\" stroke-dasharray=\"8 6\"/></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"25\" width=\"90\" height=\"90\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"4\"/><line x1=\"55\" y1=\"50\" x2=\"135\" y2=\"70\" stroke=\"#111827\" stroke-width=\"4\" stroke-dasharray=\"8 6\"/></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><rect x=\"45\" y=\"25\" width=\"90\" height=\"90\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"4\"/><line x1=\"70\" y1=\"25\" x2=\"70\" y2=\"115\" stroke=\"#111827\" stroke-width=\"4\" stroke-dasharray=\"8 6\"/></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一张正方形纸对折一次，分成一样的__部分。",
+        "blanks": [
+          {
+            "id": "parts",
+            "label": "部分"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          2
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把一个长方形沿中线对折，展开后折痕两边通常怎样？",
+        "options": [
+          "一样大",
+          "左边总大",
+          "右边总大",
+          "没有关系"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按“折一折、剪一剪、比一比”的活动顺序排序",
+        "items": [
+          {
+            "id": "b",
+            "text": "沿折痕剪开"
+          },
+          {
+            "id": "c",
+            "text": "把两部分重合比较"
+          },
+          {
+            "id": "a",
+            "text": "先对折"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "对折后两边能完全重合，说明两部分怎样？",
+        "options": [
+          "一样大",
+          "不相同",
+          "一边多一个",
+          "颜色一定相同"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "正方形对折"
+          },
+          {
+            "id": "l2",
+            "text": "长方形对折"
+          },
+          {
+            "id": "l3",
+            "text": "圆对折"
+          },
+          {
+            "id": "l4",
+            "text": "三角形对折"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4",
+            "text": "可能得到两个一样的三角形"
+          },
+          {
+            "id": "r1",
+            "text": "可以得到两个半圆"
+          },
+          {
+            "id": "r3",
+            "text": "可以得到两个小三角形"
+          },
+          {
+            "id": "r2",
+            "text": "可以得到两个小长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r4"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断两部分是否一样，教材建议“剪一剪”后还要做什么？",
+        "options": [
+          "比一比",
+          "藏起来",
+          "涂黑",
+          "写算式"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

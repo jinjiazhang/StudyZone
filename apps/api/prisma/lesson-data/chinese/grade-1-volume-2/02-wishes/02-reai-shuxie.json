@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "gòng",
+        "sentence": "我们热爱中国__产党。",
+        "blankPlaceholder": "__",
+        "character": "共",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "共"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dǎng",
+        "sentence": "我们在__的怀抱里幸福成长。",
+        "blankPlaceholder": "__",
+        "character": "党",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "党"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "yáng",
+        "sentence": "花儿在__光下开放。",
+        "blankPlaceholder": "__",
+        "character": "阳",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "阳"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chǎn",
+        "sentence": "中国共产__带给我们幸福生活。",
+        "blankPlaceholder": "__",
+        "character": "产",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "产"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tài",
+        "sentence": "花儿喜欢__阳。",
+        "blankPlaceholder": "__",
+        "character": "太",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "太"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guāng",
+        "sentence": "温暖的阳__照着大地。",
+        "blankPlaceholder": "__",
+        "character": "光",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "光"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "光",
+        "tokens": [
+          "亮",
+          "日",
+          "阴",
+          "太",
+          "彩",
+          "明"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“光”组成常见词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "亮",
+            "明",
+            "太"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "阳",
+        "tokens": [
+          "太",
+          "月",
+          "光",
+          "亮",
+          "春",
+          "台"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和“阳”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "太",
+            "光",
+            "春"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中，花儿喜欢什么？",
+        "options": [
+          "太阳",
+          "蓝天",
+          "雪山",
+          "水井"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“我们在党的怀抱里幸福成长”表达了怎样的感情？",
+        "options": [
+          "害怕",
+          "热爱和感谢",
+          "生气",
+          "困惑"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

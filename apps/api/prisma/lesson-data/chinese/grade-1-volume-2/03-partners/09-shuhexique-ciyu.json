@@ -1,0 +1,204 @@
+{
+  "id": "09-shuhexique-ciyu",
+  "title": "树和喜鹊词语积累",
+  "description": "积累课后词语，学习 AABB 式词语。",
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "叽",
+        "hint": "叽叽喳喳",
+        "options": [
+          "qī",
+          "jǐ",
+          "zhī",
+          "jī"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "喳",
+        "hint": "叽叽喳喳",
+        "options": [
+          "zā",
+          "zhā",
+          "chá",
+          "zhǎ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "安",
+        "hint": "安安静静",
+        "options": [
+          "ǎn",
+          "ān",
+          "àn",
+          "hān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "叽叽喳喳"
+          },
+          {
+            "id": "l_1",
+            "text": "安安静静"
+          },
+          {
+            "id": "l_2",
+            "text": "好多好多"
+          },
+          {
+            "id": "l_3",
+            "text": "快快乐乐"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "数量很多"
+          },
+          {
+            "id": "r_0",
+            "text": "鸟叫声很热闹"
+          },
+          {
+            "id": "r_3",
+            "text": "很快乐的样子"
+          },
+          {
+            "id": "r_1",
+            "text": "很安静的样子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词和“安安静静”结构相同？",
+        "options": [
+          "小河",
+          "打电话",
+          "一棵树",
+          "高高兴兴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个词可以形容喜鹊们热闹地叫？",
+        "options": [
+          "叽叽喳喳",
+          "偷偷地",
+          "飞快地",
+          "孤单"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课后词语",
+        "tokens": [
+          "静静",
+          "孤单",
+          "安安",
+          "快乐",
+          "叽喳"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "安安",
+          "静静"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "拼出课文词语",
+        "tokens": [
+          "叫几声",
+          "安安静静",
+          "叽叽喳喳",
+          "从前",
+          "邻居"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "叽叽喳喳",
+          "叫几声"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“安安静静”是四字词语。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "“叽叽喳喳”通常表示非常安静。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "把圆沿中间对折剪开，一半最像哪个图形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><path d=\"M20 82 A40 40 0 0 1 100 82 Z\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "两个一样的半圆可以拼成一个圆。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "两个一样的三角形一定不能拼成正方形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "把一个正方形沿对角线剪开，会得到两个一样的什么图形？",
+        "options": [
+          "圆",
+          "长方形",
+          "三角形",
+          "六边形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个圆剪成2个一样的半圆，3个圆能剪出__个半圆。",
+        "blanks": [
+          {
+            "id": "half",
+            "label": "半圆",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          6
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 2 + 2 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "半圆"
+          },
+          {
+            "id": "l2",
+            "text": "半个正方形"
+          },
+          {
+            "id": "l3",
+            "text": "半个长方形"
+          },
+          {
+            "id": "l4",
+            "text": "两个一样的三角形"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "可以拼成正方形"
+          },
+          {
+            "id": "r2",
+            "text": "像圆的一半"
+          },
+          {
+            "id": "r3",
+            "text": "可能是三角形"
+          },
+          {
+            "id": "r4",
+            "text": "可能拼成长方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "两个一样的半圆可以拼成",
+          null,
+          "，两个一样的小三角形可能拼成",
+          null,
+          "。"
+        ],
+        "tokens": [
+          "正方形",
+          "圆柱",
+          "圆",
+          "长方体"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "圆",
+          "正方形"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "6",
+        "right": "2 + 3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪种说法更适合“折成一样的两部分”？",
+        "options": [
+          "两边大小相同",
+          "一边大一边小",
+          "只看颜色",
+          "只看名字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

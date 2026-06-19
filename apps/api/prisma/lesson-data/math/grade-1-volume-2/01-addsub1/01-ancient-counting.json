@@ -1,0 +1,241 @@
+{
+  "exercises": [
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1个十和1个一合起来是多少？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          1
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用小棒表示12：几个十、几个一？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          2
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用小棒表示15：几个十、几个一？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          5
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "用小棒表示19：几个十、几个一？",
+        "blanks": [
+          {
+            "id": "t",
+            "label": "十"
+          },
+          {
+            "id": "o",
+            "label": "一"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          9
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 3 = ?"
+      },
+      "answer": {
+        "value": 13,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 6 = ?"
+      },
+      "answer": {
+        "value": 16,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 9 = ?"
+      },
+      "answer": {
+        "value": 19,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "1个十和7个一是几？"
+      },
+      "answer": {
+        "value": 17,
+        "tolerance": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排一排。",
+        "items": [
+          {
+            "id": "n13",
+            "text": "13"
+          },
+          {
+            "id": "n11",
+            "text": "11"
+          },
+          {
+            "id": "n14",
+            "text": "14"
+          },
+          {
+            "id": "n12",
+            "text": "12"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n11",
+          "n12",
+          "n13",
+          "n14"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "12",
+        "right": "15"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "古人计数时，1捆小棒通常表示什么？",
+        "options": [
+          "1个十",
+          "1个一",
+          "2个十",
+          "0个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "a",
+            "text": "1个十和3个一"
+          },
+          {
+            "id": "b",
+            "text": "1个十和8个一"
+          },
+          {
+            "id": "c",
+            "text": "2个十"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb",
+            "text": "18"
+          },
+          {
+            "id": "rc",
+            "text": "20"
+          },
+          {
+            "id": "ra",
+            "text": "13"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "a": "ra",
+          "b": "rb",
+          "c": "rc"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

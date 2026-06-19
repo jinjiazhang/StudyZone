@@ -1,0 +1,213 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 3 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 2 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 4 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 6 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 5 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 3 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 9 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "11 - 3"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 6"
+          },
+          {
+            "id": "l2",
+            "text": "13 - 5"
+          },
+          {
+            "id": "l3",
+            "text": "16 - 9"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "7"
+          },
+          {
+            "id": "r2",
+            "text": "8（13 - 5）"
+          },
+          {
+            "id": "r1",
+            "text": "9"
+          },
+          {
+            "id": "r0",
+            "text": "8（11 - 3）"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "把信箱编号从小到大排",
+        "items": [
+          {
+            "id": "n8",
+            "text": "8"
+          },
+          {
+            "id": "n6",
+            "text": "6"
+          },
+          {
+            "id": "n9",
+            "text": "9"
+          },
+          {
+            "id": "n7",
+            "text": "7"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "n6",
+          "n7",
+          "n8",
+          "n9"
+        ]
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "11 - 2",
+        "right": "12 - 3"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "3",
+          "11",
+          "9",
+          "8",
+          "7"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "11",
+          "3",
+          "8"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

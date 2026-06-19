@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "折飞机的大致步骤排序",
+        "items": [
+          {
+            "id": "c",
+            "text": "把两边向中线折"
+          },
+          {
+            "id": "a",
+            "text": "准备一张长方形纸"
+          },
+          {
+            "id": "d",
+            "text": "整理机翼"
+          },
+          {
+            "id": "b",
+            "text": "先对折找中线"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“折飞机”主要用到了哪种纸？",
+        "options": [
+          "长方形纸",
+          "圆形纸",
+          "三角形纸",
+          "不规则纸"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "折纸飞机时，常会把长方形纸沿中线对折。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "折纸飞机完全不需要观察三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "折纸飞机的机头常像哪个图形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "c"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一架纸飞机图案中有2个大三角形、2个小三角形，共__个三角形。",
+        "blanks": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "2 + 2 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "长方形纸"
+          },
+          {
+            "id": "l2",
+            "text": "对折线"
+          },
+          {
+            "id": "l3",
+            "text": "机翼"
+          },
+          {
+            "id": "l4",
+            "text": "机头"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "帮助左右一样"
+          },
+          {
+            "id": "r2",
+            "text": "折前的纸"
+          },
+          {
+            "id": "r3",
+            "text": "常像三角形"
+          },
+          {
+            "id": "r4",
+            "text": "两边展开部分"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r1",
+          "l3": "r4",
+          "l4": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "折纸飞机时，先找什么更容易让左右差不多一样？",
+        "options": [
+          "圆心",
+          "中线",
+          "答案",
+          "页码"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "折好后“比一比”左右两边，主要看什么？",
+        "options": [
+          "是否差不多一样",
+          "颜色是否变深",
+          "纸是否更厚",
+          "有没有数字"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

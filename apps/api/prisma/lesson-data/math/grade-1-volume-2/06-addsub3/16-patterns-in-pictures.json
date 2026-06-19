@@ -1,0 +1,202 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“动手做（三）”中，风车主要由什么图形组成？",
+        "options": [
+          "三角形",
+          "圆",
+          "长方形",
+          "半圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "万花筒图案里有许多重复出现的三角形。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "小兔图案的头只能用正方形表示。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个图案像由4个三角形组成的风车？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 180 140\"><polygon points=\"90,70 90,20 120,60\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"90,70 140,70 100,100\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"90,70 90,120 60,80\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/><polygon points=\"90,70 40,70 80,40\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"3\"/></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><rect x=\"24\" y=\"24\" width=\"72\" height=\"72\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一个风车用4个一样的三角形，2个风车共用__个三角形。",
+        "blanks": [
+          {
+            "id": "tri",
+            "label": "三角形",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "4 + 4 = ?"
+      },
+      "answer": {
+        "value": 8,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "风车叶片"
+          },
+          {
+            "id": "l2",
+            "text": "小兔头"
+          },
+          {
+            "id": "l3",
+            "text": "鱼身体"
+          },
+          {
+            "id": "l4",
+            "text": "万花筒花纹"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "许多三角形重复"
+          },
+          {
+            "id": "r2",
+            "text": "三角形"
+          },
+          {
+            "id": "r3",
+            "text": "圆"
+          },
+          {
+            "id": "r4",
+            "text": "三角形或平行四边形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "观察复杂图案时，可以先找认识的什么？",
+        "options": [
+          "图形",
+          "课文",
+          "拼音",
+          "声音"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "8",
+        "right": "4 + 3"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "选择图案的一部分描一描、画一画，是在练习什么？",
+        "options": [
+          "观察图形组成",
+          "计算人民币",
+          "认识钟表",
+          "量身高"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

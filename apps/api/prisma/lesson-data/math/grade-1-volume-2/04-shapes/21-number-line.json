@@ -1,0 +1,205 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "数线上 35, 40, 45, 后面是 ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "数线上 70, 75, 80, 后面是 ?"
+      },
+      "answer": {
+        "value": 85,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "45 和 55 中间的整十数是 ?"
+      },
+      "answer": {
+        "value": 50,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 前面一个整十数是 ?"
+      },
+      "answer": {
+        "value": 80,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 后面一个整十数是 ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45",
+        "right": "50"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "90",
+        "right": "85"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "数线从左到右排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "50"
+          },
+          {
+            "id": "item_2",
+            "text": "10"
+          },
+          {
+            "id": "item_3",
+            "text": "98"
+          },
+          {
+            "id": "item_4",
+            "text": "38"
+          },
+          {
+            "id": "item_5",
+            "text": "51"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_5",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按从小到大排列",
+        "items": [
+          {
+            "id": "item_1",
+            "text": "60"
+          },
+          {
+            "id": "item_2",
+            "text": "35"
+          },
+          {
+            "id": "item_3",
+            "text": "100"
+          },
+          {
+            "id": "item_4",
+            "text": "45"
+          },
+          {
+            "id": "item_5",
+            "text": "80"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "item_2",
+          "item_4",
+          "item_1",
+          "item_5",
+          "item_3"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "数线越往右，数怎样变化？",
+        "options": [
+          "越大",
+          "越小",
+          "不变",
+          "没有规律"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "比 45 大的数在 45 的哪边？",
+        "options": [
+          "左边",
+          "上边",
+          "右边",
+          "下边"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "在 35 到 100 的数线上，95 离哪个数最近？",
+        "options": [
+          "35",
+          "50",
+          "100",
+          "70"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

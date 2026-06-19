@@ -1,0 +1,182 @@
+{
+  "id": "10-duanwuzong-xiezi",
+  "title": "端午粽写字练习",
+  "description": "练写《端午粽》田字格中的生字。",
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jié",
+        "sentence": "一到端午__。",
+        "blankPlaceholder": "__",
+        "character": "节",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "节"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jiān",
+        "sentence": "中__有一颗红红的枣。",
+        "blankPlaceholder": "__",
+        "character": "间",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "间"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chī",
+        "sentence": "我们美滋滋地__粽子。",
+        "blankPlaceholder": "__",
+        "character": "吃",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "吃"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "mǐ",
+        "sentence": "里面裹着白白的糯__。",
+        "blankPlaceholder": "__",
+        "character": "米",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "米"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "fēn",
+        "sentence": "__给邻居吃。",
+        "blankPlaceholder": "__",
+        "character": "分",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "分"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "ròu",
+        "sentence": "还有红豆粽和鲜__粽。",
+        "blankPlaceholder": "__",
+        "character": "肉",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "肉"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "米",
+        "tokens": [
+          "饭",
+          "香",
+          "月",
+          "书",
+          "手",
+          "粒"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“米”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "饭",
+            "粒",
+            "香"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "节",
+        "tokens": [
+          "日",
+          "目",
+          "气",
+          "米",
+          "肉",
+          "再"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能与“节”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "日",
+            "气",
+            "目"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“间”字书写时，外面的部件是？",
+        "options": [
+          "口",
+          "木",
+          "门",
+          "心"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "美滋滋",
+        "hint": "请选择词语【美滋滋】的正确拼音",
+        "options": [
+          "měi zhī zhī",
+          "měi zǐ zǐ",
+          "měi zī zī",
+          "měi zì zì"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    }
+  ]
+}

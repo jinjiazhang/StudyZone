@@ -1,0 +1,232 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材“数豆子”中，一碗豆子估成 50 粒，实际数出 28 粒。这个估计怎样？",
+        "options": [
+          "估少了",
+          "估多了",
+          "刚刚好",
+          "不能判断"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一把豆子实际有 32 粒，估成 30 粒。这个估计怎样？",
+        "options": [
+          "多得多",
+          "少得多",
+          "一定错",
+          "差不多"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "50",
+        "right": "28"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "30",
+        "right": "32"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器十位 3 颗、个位 2 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          2,
+          32
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "计数器十位 4 颗、个位 0 颗，表示 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          4,
+          0,
+          40
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "估一估后数一数，哪一把豆子实际最多？",
+        "columns": [
+          "豆子",
+          "实际粒数"
+        ],
+        "rows": [
+          {
+            "豆子": "第一把",
+            "实际粒数": 28
+          },
+          {
+            "豆子": "第二把",
+            "实际粒数": 32
+          },
+          {
+            "豆子": "第三把",
+            "实际粒数": 45
+          }
+        ]
+      },
+      "answer": {
+        "accepted": [
+          "第三把"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "table_read",
+      "prompt": {
+        "question": "估一估后数一数，第二把豆子有多少粒？",
+        "columns": [
+          "豆子",
+          "实际粒数"
+        ],
+        "rows": [
+          {
+            "豆子": "第一把",
+            "实际粒数": 28
+          },
+          {
+            "豆子": "第二把",
+            "实际粒数": 32
+          },
+          {
+            "豆子": "第三把",
+            "实际粒数": 45
+          }
+        ]
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "估计时先抓一小把数出 10 粒，再看大约有几把，这是在用什么办法？",
+        "options": [
+          "用一份的数量帮助估计",
+          "随便猜一个数",
+          "只看颜色",
+          "只看碗的大小"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "30 再添 2 是 ?"
+      },
+      "answer": {
+        "value": 32,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "40 再添 5 是 ?"
+      },
+      "answer": {
+        "value": 45,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "45",
+        "right": "32"
+      },
+      "answer": {
+        "operator": ">"
+      },
+      "difficulty": 1
+    }
+  ]
+}

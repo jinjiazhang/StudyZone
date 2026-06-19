@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 8 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 6 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 8 = ?"
+      },
+      "answer": {
+        "value": 3,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "16 - 7 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨一拨算 13 - 8：个位先拨走 __ 个，还要从十位换出 __ 个，最后剩 __ 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "再拨"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          5,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "拨一拨算 11 - 6：个位先拨走 __ 个，还要从十位换出 __ 个，最后剩 __ 个。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "再拨"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          5,
+          5
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "计数器上的一颗十位珠表示多少？",
+        "options": [
+          "1",
+          "5",
+          "20",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "13 - 8 中，先从个位拨走3个，是为了先得到什么？",
+        "options": [
+          "10",
+          "8",
+          "3",
+          "5"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "11 - 8",
+        "right": "13 - 8"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "16",
+          "9",
+          "7",
+          "8",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "16",
+          "7",
+          "9"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "11 - 8"
+          },
+          {
+            "id": "l1",
+            "text": "15 - 6"
+          },
+          {
+            "id": "l2",
+            "text": "16 - 7"
+          },
+          {
+            "id": "l3",
+            "text": "13 - 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "5"
+          },
+          {
+            "id": "r2",
+            "text": "9（16 - 7）"
+          },
+          {
+            "id": "r1",
+            "text": "9（15 - 6）"
+          },
+          {
+            "id": "r0",
+            "text": "3"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 8 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

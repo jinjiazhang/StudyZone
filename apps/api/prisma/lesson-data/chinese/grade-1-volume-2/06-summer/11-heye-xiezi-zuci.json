@@ -1,0 +1,245 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jī",
+        "sentence": "小蜻蜓说荷叶是停__坪。",
+        "character": "机",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "机"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "chàng",
+        "sentence": "小青蛙放声歌__。",
+        "character": "唱",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "唱"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "duǒ",
+        "sentence": "小鱼儿捧起一__朵水花。",
+        "character": "朵",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "朵"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "tái",
+        "sentence": "荷叶是小青蛙的歌__。",
+        "character": "台",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "台"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "sǎn",
+        "sentence": "荷叶是小鱼儿的凉__。",
+        "character": "伞",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "伞"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "měi",
+        "sentence": "很__很__的水花。",
+        "character": "美",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "美"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "机",
+        "tokens": [
+          "场",
+          "台",
+          "器",
+          "唱",
+          "水",
+          "伞"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“机”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "场",
+            "器"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "台",
+        "tokens": [
+          "灯",
+          "风",
+          "歌",
+          "朵",
+          "看",
+          "加"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“台”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "灯",
+            "歌"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "伞",
+        "tokens": [
+          "雨",
+          "鱼",
+          "凉",
+          "面",
+          "美",
+          "空"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和“伞”组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "雨",
+            "凉"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "停机坪"
+          },
+          {
+            "id": "l_1",
+            "text": "歌台"
+          },
+          {
+            "id": "l_2",
+            "text": "凉伞"
+          },
+          {
+            "id": "l_3",
+            "text": "水花"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "遮阳乘凉的伞"
+          },
+          {
+            "id": "r_0",
+            "text": "飞机停放的地方"
+          },
+          {
+            "id": "r_3",
+            "text": "水溅起的花样"
+          },
+          {
+            "id": "r_1",
+            "text": "唱歌的地方"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下面哪个字是《荷叶圆圆》的写字字？",
+        "options": [
+          "珠",
+          "摇",
+          "篮",
+          "美"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“朵”可以和哪个词组成课文中的短语？",
+        "options": [
+          "一朵朵眼泪",
+          "一朵朵水花",
+          "一朵朵飞机",
+          "一朵朵消息"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    }
+  ]
+}

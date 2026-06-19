@@ -1,0 +1,226 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "热爱",
+        "hint": "单元词语【热爱】",
+        "options": [
+          "rè āi",
+          "lè ài",
+          "rè ài",
+          "ài rè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "想念",
+        "hint": "单元词语【想念】",
+        "options": [
+          "xiǎng liàn",
+          "xiàng niàn",
+          "xiǎn niàn",
+          "xiǎng niàn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "壮观",
+        "hint": "单元词语【壮观】",
+        "options": [
+          "zhuàng guān",
+          "zhuāng guān",
+          "zuàng guān",
+          "zhuàng gān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "guāng",
+        "sentence": "花儿在阳__下开放。",
+        "blankPlaceholder": "__",
+        "character": "光",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "光"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jǐng",
+        "sentence": "吃水不忘挖__人。",
+        "blankPlaceholder": "__",
+        "character": "井",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "井"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "běi",
+        "sentence": "遥远的__京有天安门。",
+        "blankPlaceholder": "__",
+        "character": "北",
+        "allowedMistakes": 3,
+        "leniency": 1.1
+      },
+      "answer": {
+        "character": "北"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "热爱中国共产党"
+          },
+          {
+            "id": "l_1",
+            "text": "吃水不忘挖井人"
+          },
+          {
+            "id": "l_2",
+            "text": "我多想去看看"
+          },
+          {
+            "id": "l_3",
+            "text": "语文园地二"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "远方愿望"
+          },
+          {
+            "id": "r_0",
+            "text": "幸福成长"
+          },
+          {
+            "id": "r_3",
+            "text": "识字用词"
+          },
+          {
+            "id": "r_1",
+            "text": "懂得感恩"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我们热爱中国共产党",
+        "tokens": [
+          "热爱",
+          "中国共产党",
+          "我们",
+          "水井"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我们",
+          "热爱",
+          "中国共产党"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原句子：我多想去看看",
+        "tokens": [
+          "去",
+          "看看",
+          "我",
+          "多想",
+          "挖井"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "我",
+          "多想",
+          "去",
+          "看看"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "reading_comprehension",
+      "prompt": {
+        "title": "第二单元学习",
+        "passage": "这个单元里，我们读到“我们热爱中国共产党”，知道要吃水不忘挖井人，也跟着课文里的小朋友说“我多想去看看”。语文园地二还让我们认读学习要求、发现字族、积累古诗。",
+        "questions": [
+          {
+            "question": "“吃水不忘挖井人”提醒我们什么？",
+            "options": [
+              "懂得感恩",
+              "忘记别人",
+              "不去远方",
+              "不要读书"
+            ]
+          },
+          {
+            "question": "语文园地二积累了哪首古诗？",
+            "options": [
+              "寻隐者不遇",
+              "静夜思",
+              "咏柳",
+              "春晓"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

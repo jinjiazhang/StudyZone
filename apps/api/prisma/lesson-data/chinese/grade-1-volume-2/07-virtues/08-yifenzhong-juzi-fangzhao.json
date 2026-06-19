@@ -1,0 +1,204 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zuò",
+        "sentence": "元元低着头，__到了自己的座位上。",
+        "blankPlaceholder": "__",
+        "character": "坐",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "坐"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "shī",
+        "sentence": "李老__看了看手表。",
+        "blankPlaceholder": "__",
+        "character": "师",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "师"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "dēng",
+        "sentence": "红__亮了。",
+        "blankPlaceholder": "__",
+        "character": "灯",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "灯"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "zhàn",
+        "sentence": "他跑到车__。",
+        "blankPlaceholder": "__",
+        "character": "站",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "站"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "lǎo",
+        "sentence": "李__师提醒元元迟到了。",
+        "blankPlaceholder": "__",
+        "character": "老",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "老"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全课后句式",
+        "tokens": [
+          "赶上绿灯了",
+          "要是",
+          "就"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要是",
+          "赶上绿灯了",
+          "就"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "补全课后句式",
+        "tokens": [
+          "及时通过路口",
+          "要是",
+          "就"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "要是",
+          "及时通过路口",
+          "就"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一分钟能做什么？哪个说法最合理？",
+        "options": [
+          "睡一整晚",
+          "走到很远的城市",
+          "写几个字",
+          "开完大会"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "学习《一分钟》后，我们应该怎样做？",
+        "options": [
+          "珍惜时间，不拖拉",
+          "每天都晚起一分钟",
+          "通知不说时间",
+          "文具随便放"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "洗脸"
+          },
+          {
+            "id": "l1",
+            "text": "背书包"
+          },
+          {
+            "id": "l2",
+            "text": "走过路口"
+          },
+          {
+            "id": "l3",
+            "text": "看手表"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "注意红绿灯"
+          },
+          {
+            "id": "r0",
+            "text": "早晨起床后做"
+          },
+          {
+            "id": "r3",
+            "text": "知道时间"
+          },
+          {
+            "id": "r1",
+            "text": "准备上学"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

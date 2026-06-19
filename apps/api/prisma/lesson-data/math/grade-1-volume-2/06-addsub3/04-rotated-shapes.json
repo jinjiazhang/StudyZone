@@ -1,0 +1,240 @@
+{
+  "exercises": [
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "这个斜着放的图形仍然是什么？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,14 106,60 60,106 14,60\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(18 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#ef4444\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "a"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "geometry_choice",
+      "prompt": {
+        "question": "下面哪个斜着放后仍是长方形？",
+        "options": [
+          {
+            "id": "a",
+            "label": "图形A",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(30 60 60)\"><polygon points=\"60,16 104,100 16,100\" fill=\"#22c55e\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "b",
+            "label": "图形B",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(20 60 60)\"><rect x=\"16\" y=\"36\" width=\"88\" height=\"48\" fill=\"#fb923c\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "c",
+            "label": "图形C",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><circle cx=\"60\" cy=\"60\" r=\"38\" fill=\"#facc15\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          },
+          {
+            "id": "d",
+            "label": "图形D",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\"><g transform=\"rotate(0 60 60)\"><polygon points=\"35,18 85,18 110,60 85,102 35,102 10,60\" fill=\"#38bdf8\" stroke=\"#111827\" stroke-width=\"5\"/></g></svg>"
+          }
+        ]
+      },
+      "answer": {
+        "correctOptionId": "b"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "图形转一转，大小和形状没有变。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "正方形转成斜着的样子，就变成圆了。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "判断一个斜着的图形时，应该先看什么？",
+        "options": [
+          "它有几条边、边是否一样",
+          "它在第几页",
+          "它旁边是谁",
+          "它是什么颜色"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "一个正方形旋转45度，看起来像“菱形”，它本质上还是？",
+        "options": [
+          "长方形",
+          "正方形",
+          "圆",
+          "半圆"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l1",
+            "text": "斜着的正方形"
+          },
+          {
+            "id": "l2",
+            "text": "竖着的长方形"
+          },
+          {
+            "id": "l3",
+            "text": "倒着的三角形"
+          },
+          {
+            "id": "l4",
+            "text": "转过的圆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "三角形"
+          },
+          {
+            "id": "r2",
+            "text": "圆"
+          },
+          {
+            "id": "r3",
+            "text": "长方形"
+          },
+          {
+            "id": "r4",
+            "text": "正方形"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按观察图形的步骤排序",
+        "items": [
+          {
+            "id": "c",
+            "text": "说出名称"
+          },
+          {
+            "id": "a",
+            "text": "数边或看曲线"
+          },
+          {
+            "id": "b",
+            "text": "想一想旋转不改变形状"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "图形旋转后，名称一定会改变吗？",
+        "options": [
+          "一定会",
+          "不一定会",
+          "只会变成圆",
+          "只会变成三角形"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "一排图形中，2个斜正方形、3个正方形，它们都算正方形，共__个。",
+        "blanks": [
+          {
+            "id": "square",
+            "label": "正方形",
+            "suffix": "个"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          5
+        ],
+        "tolerances": [
+          0
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

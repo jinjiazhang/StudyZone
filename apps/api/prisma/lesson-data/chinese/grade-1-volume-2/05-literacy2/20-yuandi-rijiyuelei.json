@@ -1,0 +1,224 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "芝麻开花",
+        "hint": "读准歇后语",
+        "options": [
+          "zhī má kāi huā",
+          "zhī ma kāi huā",
+          "zī ma kāi huā",
+          "zhī ma kāi fā"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "节节高",
+        "hint": "读准歇后语后半句",
+        "options": [
+          "jié jié gāo",
+          "jiē jiē gāo",
+          "jié jié gǎo",
+          "jié jié kāo"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "竹篮打水",
+        "hint": "读准歇后语",
+        "options": [
+          "zú lán dǎ shuǐ",
+          "zhú lán dǎ shuǐ",
+          "zhú lán dá shuǐ",
+          "zhú nán dǎ shuǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "一场空",
+        "hint": "读准歇后语后半句",
+        "options": [
+          "yī chǎng kōng",
+          "yì cháng kòng",
+          "yì cháng kōng",
+          "yì cáng kōng"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "七上八下",
+        "hint": "读准歇后语后半句",
+        "options": [
+          "qí shàng bā xià",
+          "qī shàng bā xiá",
+          "qī sāng bā xià",
+          "qī shàng bā xià"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "芝麻开花"
+          },
+          {
+            "id": "l_1",
+            "text": "竹篮打水"
+          },
+          {
+            "id": "l_2",
+            "text": "十五个吊桶打水"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "七上八下"
+          },
+          {
+            "id": "r_0",
+            "text": "节节高"
+          },
+          {
+            "id": "r_1",
+            "text": "一场空"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“芝麻开花——节节高”常用来表示什么？",
+        "options": [
+          "白忙一场",
+          "心里不安",
+          "越来越好",
+          "动作很快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“竹篮打水——一场空”说明结果怎样？",
+        "options": [
+          "什么也没得到",
+          "越来越高",
+          "非常快乐",
+          "跑得很快"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“十五个吊桶打水——七上八下”常形容什么心情？",
+        "options": [
+          "骄傲",
+          "安静",
+          "寒冷",
+          "不安"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "日积月累",
+        "author": "歇后语",
+        "lines": [
+          [
+            "竹篮打水——",
+            null
+          ]
+        ],
+        "options": [
+          "节节高",
+          "一场空",
+          "七上八下",
+          "花香"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "日积月累",
+        "author": "歇后语",
+        "lines": [
+          [
+            "芝麻开花——",
+            null
+          ]
+        ],
+        "options": [
+          "一场空",
+          "节节高",
+          "七上八下",
+          "游得欢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    }
+  ]
+}

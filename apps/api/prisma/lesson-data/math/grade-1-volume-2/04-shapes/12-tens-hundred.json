@@ -1,0 +1,250 @@
+{
+  "exercises": [
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "10 根小棒捆成 1 捆，表示几个十？",
+        "options": [
+          "1 个十",
+          "10 个十",
+          "1 个一",
+          "100 个一"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "10 个一是几？",
+        "options": [
+          "1",
+          "100",
+          "11",
+          "10"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "10 个十是多少？",
+        "options": [
+          "10",
+          "90",
+          "100",
+          "110"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "3 个十和 6 个一是 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          6,
+          36
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "8 个十和 4 个一是 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          8,
+          4,
+          84
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "9 个十和 9 个一是 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "十"
+          },
+          {
+            "id": "blank_2",
+            "label": "一"
+          },
+          {
+            "id": "blank_3",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          9,
+          9,
+          99
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "1 个百、0 个十、0 个一是 ?。",
+        "blanks": [
+          {
+            "id": "blank_1",
+            "label": "百"
+          },
+          {
+            "id": "blank_2",
+            "label": "十"
+          },
+          {
+            "id": "blank_3",
+            "label": "一"
+          },
+          {
+            "id": "blank_4",
+            "label": "数"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          1,
+          0,
+          0,
+          100
+        ],
+        "tolerances": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "90 后面再添 10 是 ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "99 再添 1 是 ?"
+      },
+      "answer": {
+        "value": 100,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "99",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "10",
+        "right": "100"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "教材里说“10 捆小棒还能捆成更大的 1 捆”，这个数是？",
+        "options": [
+          "100",
+          "10",
+          "90",
+          "99"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

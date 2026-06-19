@@ -1,0 +1,251 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 + 31 = ?"
+      },
+      "answer": {
+        "value": 43,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "44 + 32 = ?"
+      },
+      "answer": {
+        "value": 76,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "76 + 23 = ?"
+      },
+      "answer": {
+        "value": 99,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "56 + 23 = ?"
+      },
+      "answer": {
+        "value": 79,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "用竖式计算 12+31。请写出横式。",
+        "placeholder": "如 20+30"
+      },
+      "answer": {
+        "accepted": [
+          "12+31",
+          "31+12"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "12+31 的竖式：个位2+1=__，十位1+3=__，结果__。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "个位"
+          },
+          {
+            "id": "b2",
+            "label": "十位"
+          },
+          {
+            "id": "b3",
+            "label": "结果"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          3,
+          4,
+          43
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列竖式 12+31 时，2 应该和谁对齐？",
+        "options": [
+          "3",
+          "12",
+          "31",
+          "1"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "列竖式 44+32 时，十位上应算什么？",
+        "options": [
+          "4+2",
+          "4+3",
+          "4+4",
+          "3+2"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          "竖式加法要做到：个位和 ",
+          null,
+          " 对齐，十位和 ",
+          null,
+          " 对齐。"
+        ],
+        "tokens": [
+          "十位",
+          "个位",
+          "加数",
+          "和"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "个位",
+          "十位"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "12+31"
+          },
+          {
+            "id": "l1",
+            "text": "23+21"
+          },
+          {
+            "id": "l2",
+            "text": "44+32"
+          },
+          {
+            "id": "l3",
+            "text": "56+23"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "76"
+          },
+          {
+            "id": "r0",
+            "text": "43"
+          },
+          {
+            "id": "r3",
+            "text": "79"
+          },
+          {
+            "id": "r1",
+            "text": "44"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "44+32",
+        "right": "56+23",
+        "operators": [
+          "<",
+          ">",
+          "="
+        ]
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "order_sequence",
+      "prompt": {
+        "instruction": "按计算结果从小到大排列。",
+        "items": [
+          {
+            "id": "i2",
+            "text": "44+32"
+          },
+          {
+            "id": "i0",
+            "text": "12+31"
+          },
+          {
+            "id": "i3",
+            "text": "56+23"
+          },
+          {
+            "id": "i1",
+            "text": "23+21"
+          }
+        ]
+      },
+      "answer": {
+        "orderedIds": [
+          "i0",
+          "i1",
+          "i2",
+          "i3"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

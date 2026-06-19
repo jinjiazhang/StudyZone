@@ -1,0 +1,255 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "刷",
+        "hint": "“牙刷”的“刷”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "shuā",
+          "suā",
+          "shuǎ",
+          "shuà"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "梳",
+        "hint": "“梳子”的“梳”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "sū",
+          "shù",
+          "shū",
+          "shǔ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "巾",
+        "hint": "“毛巾”的“巾”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "jīng",
+          "jīn",
+          "jìn",
+          "qīn"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "皂",
+        "hint": "“香皂”的“皂”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "zhào",
+          "cào",
+          "zǎo",
+          "zào"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "盆",
+        "hint": "“脸盆”的“盆”",
+        "narrationText": "选出这个字的正确读音。",
+        "options": [
+          "pén",
+          "pēn",
+          "pěn",
+          "bén"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "牙刷"
+          },
+          {
+            "id": "l1",
+            "text": "梳子"
+          },
+          {
+            "id": "l2",
+            "text": "毛巾"
+          },
+          {
+            "id": "l3",
+            "text": "脸盆"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "擦手"
+          },
+          {
+            "id": "r0",
+            "text": "刷牙"
+          },
+          {
+            "id": "r3",
+            "text": "洗脸"
+          },
+          {
+            "id": "r1",
+            "text": "梳头"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "虫字旁"
+          },
+          {
+            "id": "l1",
+            "text": "鸟字旁"
+          },
+          {
+            "id": "l2",
+            "text": "反犬旁"
+          },
+          {
+            "id": "l3",
+            "text": "卫生间"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "text": "猫、猴、狮"
+          },
+          {
+            "id": "r0",
+            "text": "蝴蝶、蜻蜓、蚂蚁"
+          },
+          {
+            "id": "r3",
+            "text": "毛巾、香皂、脸盆"
+          },
+          {
+            "id": "r1",
+            "text": "鸡、鸭、鸦"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "洗",
+        "tokens": [
+          "澡",
+          "手",
+          "衣",
+          "脸",
+          "澡盆",
+          "澡巾"
+        ],
+        "targetCount": 2,
+        "instruction": "选出能和这个字组成词语的字。"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "澡",
+            "脸"
+          ],
+          [
+            "手",
+            "衣"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "jīn",
+        "sentence": "毛__可以擦手。",
+        "blankPlaceholder": "__",
+        "character": "巾",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "巾"
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "pinyin_to_word",
+      "prompt": {
+        "pinyin": "xǐ",
+        "sentence": "饭前要__手。",
+        "blankPlaceholder": "__",
+        "character": "洗",
+        "narrationText": "看拼音，写出空格里的字。",
+        "allowedMistakes": 3,
+        "leniency": 1.2
+      },
+      "answer": {
+        "character": "洗"
+      },
+      "difficulty": 2
+    }
+  ]
+}

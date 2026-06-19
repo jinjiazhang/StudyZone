@@ -1,0 +1,239 @@
+{
+  "id": "11-duanwuzong-ciyu",
+  "title": "端午粽词语积累",
+  "description": "积累课文中描写粽子颜色、味道和种类的词语。",
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "青青的箬竹叶"
+          },
+          {
+            "id": "l_1",
+            "text": "白白的糯米"
+          },
+          {
+            "id": "l_2",
+            "text": "红红的枣"
+          },
+          {
+            "id": "l_3",
+            "text": "清香"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "红枣粽中间的馅"
+          },
+          {
+            "id": "r_1",
+            "text": "粽子里面的米"
+          },
+          {
+            "id": "r_3",
+            "text": "好闻的香味"
+          },
+          {
+            "id": "r_0",
+            "text": "粽子的外皮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "红枣粽"
+          },
+          {
+            "id": "l_1",
+            "text": "红豆粽"
+          },
+          {
+            "id": "l_2",
+            "text": "鲜肉粽"
+          },
+          {
+            "id": "l_3",
+            "text": "美滋滋"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "放鲜肉的粽子"
+          },
+          {
+            "id": "r_3",
+            "text": "吃得很开心"
+          },
+          {
+            "id": "r_0",
+            "text": "放红枣的粽子"
+          },
+          {
+            "id": "r_1",
+            "text": "放红豆的粽子"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "青青的箬竹叶",
+        "tokens": [
+          "红红的",
+          "箬竹叶",
+          "白白的",
+          "青青的"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "青青的",
+          "箬竹叶"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "白白的糯米",
+        "tokens": [
+          "白白的",
+          "青青的",
+          "红红的",
+          "糯米"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "白白的",
+          "糯米"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "红红的枣",
+        "tokens": [
+          "红红的",
+          "青青的",
+          "白白的",
+          "枣"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "红红的",
+          "枣"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "又黏又甜",
+        "tokens": [
+          "又甜",
+          "又白",
+          "又黏",
+          "又香"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "又黏",
+          "又甜"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "课文中，粽子“飘出一股清香”是因为外婆做了什么？",
+        "options": [
+          "掀开锅盖",
+          "打开电视",
+          "拿起铅笔",
+          "拉我散步"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "外婆包的粽子有哪些花样？",
+        "options": [
+          "月光粽、雪花粽、铅笔粽",
+          "电视粽、手机粽、上衣粽",
+          "胆子粽、样子粽、故事粽",
+          "红枣粽、红豆粽、鲜肉粽"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "课文中红枣粽里面有一颗红红的枣。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": true
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "true_false",
+      "prompt": {
+        "statement": "外婆包的粽子只有一种花样。",
+        "trueLabel": "对",
+        "falseLabel": "错"
+      },
+      "answer": {
+        "value": false
+      },
+      "difficulty": 1
+    }
+  ]
+}

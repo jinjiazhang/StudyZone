@@ -1,0 +1,198 @@
+{
+  "exercises": [
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 8 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 9 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "15 - 6 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "17 - 8 = ?"
+      },
+      "answer": {
+        "value": 9,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有13顶帽子，6副手套，帽子比手套多几件？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "13-6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 6 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有13个停车位，来了6辆车，还剩几个停车位？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "13-6"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "虾有10只，蟹有2只，一共有几只？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "10+2",
+          "2+10"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "10 + 2 = ?"
+      },
+      "answer": {
+        "value": 12,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "15 - 6",
+        "right": "17 - 8"
+      },
+      "answer": {
+        "operator": "="
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " - ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "13",
+          "7",
+          "6",
+          "9",
+          "5"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "13",
+          "6",
+          "7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "13顶帽子，6副手套"
+          },
+          {
+            "id": "l1",
+            "text": "13个车位，来了6辆"
+          },
+          {
+            "id": "l2",
+            "text": "虾10只，蟹2只"
+          },
+          {
+            "id": "l3",
+            "text": "12 - 8"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "4"
+          },
+          {
+            "id": "r2",
+            "text": "共12只"
+          },
+          {
+            "id": "r1",
+            "text": "剩7个"
+          },
+          {
+            "id": "r0",
+            "text": "多7件"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    }
+  ]
+}

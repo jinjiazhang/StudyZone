@@ -1,0 +1,285 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "蜻蜓"
+          },
+          {
+            "id": "l_1",
+            "text": "蝴蝶"
+          },
+          {
+            "id": "l_2",
+            "text": "蚯蚓"
+          },
+          {
+            "id": "l_3",
+            "text": "蚂蚁"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_2",
+            "text": "土里造宫殿"
+          },
+          {
+            "id": "r_0",
+            "text": "半空展翅飞"
+          },
+          {
+            "id": "r_3",
+            "text": "地上运食粮"
+          },
+          {
+            "id": "r_1",
+            "text": "花间捉迷藏"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l_0",
+            "text": "蝌蚪"
+          },
+          {
+            "id": "l_1",
+            "text": "蜘蛛"
+          },
+          {
+            "id": "l_2",
+            "text": "蚂蚁"
+          },
+          {
+            "id": "l_3",
+            "text": "蜻蜓"
+          }
+        ],
+        "right": [
+          {
+            "id": "r_1",
+            "text": "房前结网忙"
+          },
+          {
+            "id": "r_3",
+            "text": "半空展翅飞"
+          },
+          {
+            "id": "r_0",
+            "text": "池中游得欢"
+          },
+          {
+            "id": "r_2",
+            "text": "地上运食粮"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l_0": "r_0",
+          "l_1": "r_1",
+          "l_2": "r_2",
+          "l_3": "r_3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《动物儿歌》中“花间捉迷藏”的是谁？",
+        "options": [
+          "蚂蚁",
+          "蝴蝶",
+          "蜘蛛",
+          "蚯蚓"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蚯蚓土里造宫殿”写的是蚯蚓在哪里活动？",
+        "options": [
+          "池中",
+          "半空",
+          "房前",
+          "土里"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "哪一句写蜘蛛？",
+        "options": [
+          "蜘蛛房前结网忙",
+          "蚂蚁地上运食粮",
+          "蜻蜓半空展翅飞",
+          "蝌蚪池中游得欢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“蝌蚪池中游得欢”中的“池中”表示什么地方？",
+        "options": [
+          "房子前面",
+          "土地里",
+          "水池里",
+          "花丛中"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语排成课文句子",
+        "tokens": [
+          "飞",
+          "半空",
+          "蜘蛛",
+          "蜻蜓",
+          "展翅",
+          "土里"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜻蜓",
+          "半空",
+          "展翅",
+          "飞"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语排成课文句子",
+        "tokens": [
+          "食粮",
+          "地上",
+          "蚂蚁",
+          "花间",
+          "运",
+          "飞"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蚂蚁",
+          "地上",
+          "运",
+          "食粮"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "把词语排成课文句子",
+        "tokens": [
+          "忙",
+          "结网",
+          "蚯蚓",
+          "房前",
+          "蜘蛛",
+          "池中"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "蜘蛛",
+          "房前",
+          "结网",
+          "忙"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "动物儿歌",
+        "author": "课文",
+        "lines": [
+          [
+            "蝌蚪",
+            "池中",
+            null
+          ]
+        ],
+        "options": [
+          "结网忙",
+          "捉迷藏",
+          "游得欢",
+          "展翅飞"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "动物儿歌",
+        "author": "课文",
+        "lines": [
+          [
+            "蝴蝶",
+            "花间",
+            null
+          ]
+        ],
+        "options": [
+          "捉迷藏",
+          "造宫殿",
+          "运食粮",
+          "游得欢"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    }
+  ]
+}

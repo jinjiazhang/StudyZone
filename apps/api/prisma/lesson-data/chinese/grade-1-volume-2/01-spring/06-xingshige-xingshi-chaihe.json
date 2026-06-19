@@ -1,0 +1,297 @@
+{
+  "exercises": [
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "木子"
+          },
+          {
+            "id": "l1",
+            "text": "弓长"
+          },
+          {
+            "id": "l2",
+            "text": "古月"
+          },
+          {
+            "id": "l3",
+            "text": "口天"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "张"
+          },
+          {
+            "id": "r2",
+            "text": "胡"
+          },
+          {
+            "id": "r3",
+            "text": "吴"
+          },
+          {
+            "id": "r0",
+            "text": "李"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "双人"
+          },
+          {
+            "id": "l1",
+            "text": "言午"
+          },
+          {
+            "id": "l2",
+            "text": "诸葛"
+          },
+          {
+            "id": "l3",
+            "text": "欧阳"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "许"
+          },
+          {
+            "id": "r2",
+            "text": "两个字组成的姓"
+          },
+          {
+            "id": "r3",
+            "text": "课文里列出的复姓"
+          },
+          {
+            "id": "r0",
+            "text": "徐"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“木子李”是用什么方法介绍姓氏？",
+        "options": [
+          "说天气",
+          "数笔画",
+          "拆字法",
+          "猜动物"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“弓长张”合起来是哪个姓？",
+        "options": [
+          "张",
+          "李",
+          "胡",
+          "吴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“口天吴”合起来是哪个姓？",
+        "options": [
+          "古",
+          "许",
+          "王",
+          "吴"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一个是复姓？",
+        "options": [
+          "李",
+          "张",
+          "欧阳",
+          "孙"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "下列哪一个也是复姓？",
+        "options": [
+          "王",
+          "上官",
+          "赵",
+          "钱"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出介绍姓氏的话：木子李",
+        "tokens": [
+          "弓长",
+          "木子",
+          "张",
+          "李",
+          "古月"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "木子",
+          "李"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出介绍姓氏的话：言午许",
+        "tokens": [
+          "口天",
+          "言午",
+          "吴",
+          "许",
+          "双人"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "言午",
+          "许"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "排出课文句子：你姓什么",
+        "tokens": [
+          "我",
+          "你",
+          "叫",
+          "姓",
+          "名字",
+          "什么"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "你",
+          "姓",
+          "什么"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "姓",
+        "tokens": [
+          "氏",
+          "李",
+          "名",
+          "张",
+          "花",
+          "雨"
+        ],
+        "targetCount": 2,
+        "instruction": "选出 2 个能和【姓】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "氏",
+            "名"
+          ]
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_build",
+      "prompt": {
+        "character": "双",
+        "tokens": [
+          "手",
+          "冬",
+          "人",
+          "鸟",
+          "方",
+          "雨"
+        ],
+        "targetCount": 3,
+        "instruction": "选出 3 个能和【双】组成词语的字"
+      },
+      "answer": {
+        "acceptedSets": [
+          [
+            "手",
+            "人",
+            "方"
+          ]
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "寻",
+        "hint": "《寻隐者不遇》的“寻”",
+        "options": [
+          "xǔn",
+          "xún",
+          "xùn",
+          "qún"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "隐者",
+        "hint": "请选择【隐者】的正确拼音",
+        "options": [
+          "yǐng zhě",
+          "yǐn zě",
+          "yǐn zhě",
+          "yǐn zhè"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "不遇",
+        "hint": "《寻隐者不遇》的“不遇”",
+        "options": [
+          "bù yǔ",
+          "bú yú",
+          "pú yù",
+          "bú yù"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "寻隐者不遇",
+        "author": "贾岛",
+        "lines": [
+          [
+            "松下问",
+            null,
+            "，"
+          ],
+          [
+            "言师采药去。"
+          ]
+        ],
+        "options": [
+          "朋友",
+          "老师",
+          "童子",
+          "客人"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "寻隐者不遇",
+        "author": "贾岛",
+        "lines": [
+          [
+            "只在",
+            null,
+            "中，"
+          ],
+          [
+            "云深不知处。"
+          ]
+        ],
+        "options": [
+          "远方",
+          "花园",
+          "北京",
+          "此山"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "寻隐者不遇",
+        "author": "贾岛",
+        "lines": [
+          [
+            "只在此山中，"
+          ],
+          [
+            null,
+            "不知处。"
+          ]
+        ],
+        "options": [
+          "云深",
+          "水清",
+          "草绿",
+          "天蓝"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "寻隐者不遇",
+        "author": "贾岛",
+        "lines": [
+          [
+            null,
+            "问童子，"
+          ],
+          [
+            "言师",
+            null,
+            "去。"
+          ],
+          [
+            "只在此山中，"
+          ],
+          [
+            "云深不知处。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "树上",
+              "山外",
+              "松下",
+              "门前"
+            ]
+          },
+          {
+            "options": [
+              "看书",
+              "挖井",
+              "升旗",
+              "采药"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          2,
+          3
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：松下问童子",
+        "tokens": [
+          "童子",
+          "松下",
+          "问",
+          "采药"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "松下",
+          "问",
+          "童子"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：云深不知处",
+        "tokens": [
+          "不知处",
+          "云深",
+          "只在",
+          "此山"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "云深",
+          "不知处"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "《寻隐者不遇》的作者是？",
+        "options": [
+          "贾岛",
+          "李白",
+          "王之涣",
+          "白居易"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    }
+  ]
+}

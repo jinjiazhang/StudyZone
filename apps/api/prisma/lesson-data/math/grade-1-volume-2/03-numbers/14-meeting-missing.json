@@ -1,0 +1,222 @@
+{
+  "exercises": [
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "有11个人开会，只有7把椅子，还缺几把椅子？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "11-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "11 - 7 = ?"
+      },
+      "answer": {
+        "value": 4,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "expression_input",
+      "prompt": {
+        "statement": "7把椅子，再添几把就是11把？",
+        "placeholder": "例如：12-7"
+      },
+      "answer": {
+        "accepted": [
+          "11-7"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "7 + 4 = ?"
+      },
+      "answer": {
+        "value": 11,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "12 - 7 = ?"
+      },
+      "answer": {
+        "value": 5,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "13 - 7 = ?"
+      },
+      "answer": {
+        "value": 6,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "multi_numeric_input",
+      "prompt": {
+        "statement": "11个人配椅子：已有 __ 把，还缺 __ 把，一共 __ 把。",
+        "blanks": [
+          {
+            "id": "b1",
+            "label": "已有"
+          },
+          {
+            "id": "b2",
+            "label": "还缺"
+          },
+          {
+            "id": "b3",
+            "label": "一共"
+          }
+        ]
+      },
+      "answer": {
+        "values": [
+          7,
+          4,
+          11
+        ],
+        "tolerances": [
+          0,
+          0,
+          0
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "single_choice",
+      "prompt": {
+        "question": "“还缺几把椅子？”要比较哪两个数量？",
+        "options": [
+          "人和椅子",
+          "男生和女生",
+          "铅笔和本子",
+          "苹果和桃子"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "compare_input",
+      "prompt": {
+        "left": "11 - 7",
+        "right": "12 - 7"
+      },
+      "answer": {
+        "operator": "<"
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "math_drag_fill",
+      "prompt": {
+        "statement": [
+          null,
+          " + ",
+          null,
+          " = ",
+          null
+        ],
+        "tokens": [
+          "11",
+          "7",
+          "4",
+          "3",
+          "8"
+        ]
+      },
+      "answer": {
+        "fills": [
+          "7",
+          "4",
+          "11"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "match_pairs",
+      "prompt": {
+        "left": [
+          {
+            "id": "l0",
+            "text": "11人7椅"
+          },
+          {
+            "id": "l1",
+            "text": "12人7椅"
+          },
+          {
+            "id": "l2",
+            "text": "13人7椅"
+          },
+          {
+            "id": "l3",
+            "text": "7 + 4"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3",
+            "text": "11"
+          },
+          {
+            "id": "r2",
+            "text": "缺6把"
+          },
+          {
+            "id": "r1",
+            "text": "缺5把"
+          },
+          {
+            "id": "r0",
+            "text": "缺4把"
+          }
+        ]
+      },
+      "answer": {
+        "pairs": {
+          "l0": "r0",
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3"
+        }
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "numeric_input",
+      "prompt": {
+        "statement": "14 - 7 = ?"
+      },
+      "answer": {
+        "value": 7,
+        "tolerance": 0.01
+      },
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "exercises": [
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "画",
+        "hint": "请选择字【画】的正确拼音",
+        "options": [
+          "huá",
+          "huà",
+          "huā",
+          "hùa"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "鸡",
+        "hint": "请选择字【鸡】的正确拼音",
+        "options": [
+          "jī",
+          "qí",
+          "xī",
+          "jǐ"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "冠",
+        "hint": "“头上红冠”的“冠”读什么？",
+        "options": [
+          "guàn",
+          "guǎn",
+          "kuān",
+          "guān"
+        ]
+      },
+      "answer": {
+        "correctIndex": 3
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "pinyin_choice",
+      "prompt": {
+        "character": "裁",
+        "hint": "请选择字【裁】的正确拼音",
+        "options": [
+          "chái",
+          "cǎi",
+          "cái",
+          "zāi"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 1
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "画鸡",
+        "author": "[明]唐寅",
+        "lines": [
+          [
+            "头上红冠不用裁，"
+          ],
+          [
+            "满身雪白走将来。"
+          ],
+          [
+            "平生不敢轻言语，"
+          ],
+          [
+            "一叫",
+            null,
+            "开。"
+          ]
+        ],
+        "options": [
+          "千门万户",
+          "万户千门",
+          "千家万户",
+          "万门千户"
+        ]
+      },
+      "answer": {
+        "correctIndex": 0
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "画鸡",
+        "author": "[明]唐寅",
+        "lines": [
+          [
+            "头上红冠不用裁，"
+          ],
+          [
+            "满身雪白走将来。"
+          ],
+          [
+            "平生不敢轻言语，"
+          ],
+          [
+            "一叫",
+            null,
+            "开。"
+          ]
+        ],
+        "options": [
+          "皇冠",
+          "花冠",
+          "红冠",
+          "金冠"
+        ]
+      },
+      "answer": {
+        "correctIndex": 2
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_complete",
+      "prompt": {
+        "title": "画鸡",
+        "author": "[明]唐寅",
+        "lines": [
+          [
+            "头上红冠不用裁，"
+          ],
+          [
+            "满身雪白走将来。"
+          ],
+          [
+            "平生不敢轻言语，"
+          ],
+          [
+            "一叫",
+            null,
+            "开。"
+          ]
+        ],
+        "options": [
+          "洁白",
+          "雪白",
+          "明白",
+          "白雪"
+        ]
+      },
+      "answer": {
+        "correctIndex": 1
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "poem_multi_blank",
+      "prompt": {
+        "title": "画鸡",
+        "author": "[明]唐寅",
+        "lines": [
+          [
+            "头上",
+            null,
+            "不用裁，"
+          ],
+          [
+            "满身",
+            null,
+            "走将来。"
+          ],
+          [
+            "平生不敢轻言语，"
+          ],
+          [
+            "一叫",
+            null,
+            "开。"
+          ]
+        ],
+        "blanks": [
+          {
+            "options": [
+              "红帽",
+              "红花",
+              "红叶",
+              "红冠"
+            ]
+          },
+          {
+            "options": [
+              "雪亮",
+              "雪白",
+              "白云",
+              "白花"
+            ]
+          },
+          {
+            "options": [
+              "千门万户",
+              "万户千门",
+              "千万家门",
+              "千家万户"
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "correctIndices": [
+          3,
+          1,
+          0
+        ]
+      },
+      "difficulty": 3
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：满身雪白走将来",
+        "tokens": [
+          "走将来",
+          "满身",
+          "红冠",
+          "雪白"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "满身",
+          "雪白",
+          "走将来"
+        ]
+      },
+      "difficulty": 2
+    },
+    {
+      "type": "word_bank",
+      "prompt": {
+        "source": "还原诗句：平生不敢轻言语",
+        "tokens": [
+          "轻言语",
+          "不敢",
+          "平生",
+          "红冠"
+        ]
+      },
+      "answer": {
+        "ordered": [
+          "平生",
+          "不敢",
+          "轻言语"
+        ]
+      },
+      "difficulty": 2
+    }
+  ]
+}
